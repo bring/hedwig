@@ -2,6 +2,8 @@
   "name": "hedwig",
   "version": "0.0.1",
   "description": "Bring Design System",
+  "author": "Fredrik Jensen [Netlife Research]",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run serve\" \"npm run css:watch\" \"npm run js:watch\"",
@@ -14,8 +16,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "rollup": "rollup -c --name \"hedwig\""
   },
-  "author": "Fredrik Jensen [Netlife Research]",
-  "license": "ISC",
   "dependencies": {
     "autoprefixer": "^6.7.7",
     "babel-cli": "^6.24.0",
