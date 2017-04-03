@@ -1,0 +1,10 @@
+/**
+ * Buttons
+ */
+
+.button {
+  color: pink;
+  display: flex;
+  padding: 1rem;
+  display: inline-block;
+}
