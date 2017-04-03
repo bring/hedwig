@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Catalog</title>
+</head>
+<body>
+  <div id="catalog" />
+  <script src="https://interactivethings.github.io/catalog/catalog.min.js"></script>
+  <script>
+    Catalog.render({
+      title: 'Hedwig',
+      styles: ['../build/main.css'],
+      logoSrc: 'assets/hedwig_720.png',
+      theme: {
+        color: 'red',
+      },
+      pages: [
+        {
+          path: '/',             // The path where the page can be accessed
+          title: 'Introduction', // The page title
+          src: 'intro.md'   // Path to the Markdown document
+        },
+        {
+          title: 'Buttons',
+          pages: [{
+            path: './primary',
+            title: 'Primary button',
+            src: 'primary.md',
+          }, {
+            path: './secondary',
+            title: 'Secondary button',
+            src: 'secondary.md',
+          }]
+        }
+      ]
+    }, document.getElementById('catalog'));
+  </script>
+</body>
+</html>
