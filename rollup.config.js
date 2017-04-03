@@ -9,5 +9,5 @@ export default {
   entry: './src/index.js',
   format: 'iife',
   plugins: [ resolve() ],
-  dest: './build/rollup.js'
+  dest: './build/main.js'
 };
