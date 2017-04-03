@@ -22,5 +22,5 @@ app.use(express.static(`${__dirname}/docs`));
  * Attach server to port
  */
 app.listen(port, () => {
-  console.log(`app listening to port ${port}`);
+  console.log(`Hedwig is running on port ${port} 🎉`);
 });
