@@ -13,7 +13,8 @@
     "js:build": "rollup -c --name \"hedwig\"",
     "js:watch": "rollup -c -w --name \"hedwig\"",
     "serve": "node server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "node ./scripts/docs-build"
   },
   "dependencies": {
     "autoprefixer": "^6.7.7",
@@ -23,6 +24,7 @@
     "concurrently": "^3.4.0",
     "cssnano": "^3.10.0",
     "express": "^4.15.2",
+    "node-watch": "^0.5.2",
     "postcss-cli": "^3.0.0",
     "postcss-cssnext": "^2.10.0",
     "rollup": "^0.41.6",

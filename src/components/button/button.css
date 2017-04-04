@@ -3,8 +3,10 @@
  */
 
 .button {
-  color: blue;
-  display: flex;
-  padding: 1rem;
-  display: inline-block;
+    display: inline-block;
+    background: red;
+    color: white;
+    display: inline-block;
+    padding: 1rem;
+    border: none;
 }
