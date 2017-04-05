@@ -2,7 +2,7 @@
 
 We have different buttons.
 
-## Primary
+## Primary button
 
 Used for primary call to actions.
 
@@ -12,7 +12,7 @@ Used for primary call to actions.
   </button>
 ```
 
-## Secondary
+## Secondary button
 
 ```code
   <button class="button">
