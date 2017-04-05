@@ -88,7 +88,7 @@ function build() {
             if(err) {
                 return console.warn(err);
             }
-            console.log("The docs was saved! ✍️");
+            console.log("The docs was generated! ✍️");
         });
     })
 }
