@@ -75,8 +75,6 @@ function build() {
                 ...pagesSetup,
                 indexPage,
               ];
-
-              return;
             }
 
             /**
@@ -122,6 +120,7 @@ function build() {
          */
 
          var html = './docs/index.html';
+
          if (!fs.existsSync(html)) {
              fs.writeFile('docs/index.html', docsHtml, function(err) {
                  if(err) {
