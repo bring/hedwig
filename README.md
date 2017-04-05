@@ -9,22 +9,16 @@ You only need to include this in your document:
 <script src="http://some-cdn.com/hedwig/1.0.0/hedwig.min.js"></script>
 ```
 
-📚 And go to [Hedwig documentation](http://hedwig.surge.sh/#/) 📚
+📚 And go to [Hedwig documentation](http://hedwig.surge.sh/#/)
 
 **WTF!? I do not want to include external files in my project!**
-So. We want it to be super simple to use Hedwing in your project.
-
-The Hedwig files are super lightweight
-* CSS 000kb
-* JS is 000kb
-
-This will not do much with your perfomance budget. And is much simpler than getting it into the build pipeline.
+So. We want it to be super simple to use Hedwing in your project. The Hedwig files are super lightweight (CSS 000 kb, JS 000 kb). This will not do much with your perfomance budget. And is much simpler than getting it into your gulp-wepback-whatever build pipeline. 👍
 
 ## Development
 
-The maintainers of the project is:
+To develop on the project, please follow our [guidelines]('').
 
-## ⏩ tl;dr
+### ⏩ tl;dr
 
 ```
 clone this repo
@@ -33,13 +27,13 @@ yarn run dev
 open browser localhost:3000/docs 🚀
 ```
 
-## Docs
+### Docs
 
 Documentation are available at [Hedwig documentation](http://hedwig.surge.sh/#/).
 
 Docs are auto generated from the components markdown file. The filename will generate the menu name and URL. In development the docs live reload. It is recommended to always develop within the documentation.
 
-## Deploy
+### Deploy
 
 Right now we are hosting our docs at [Surge](https://surge.sh/).
 
@@ -52,11 +46,10 @@ To deploy the docs:
 ```
 npm run build
 surge
-> select the build folder, and hedwig as url.
-🚀
+> select the build folder, and hedwig as url 🚀
 ```
 
-## 📂 Structure
+### 📂 Structure
 
 ```
 ├─ base                          # All base style, only primitives
