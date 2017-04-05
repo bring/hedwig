@@ -30,11 +30,7 @@ function build() {
          * Make page config
          */
 
-        var pagesSetup = [{
-          path: '/',             // The path where the page can be accessed
-          title: 'Introduction', // The page title
-          src: 'intro.md'   // Path to the Markdown document
-        }];
+        var pagesSetup = [];
 
 
         /**
@@ -63,6 +59,25 @@ function build() {
 
             const filename = file.split('/').pop();
             const title = filename.split('.').shift();
+
+            /**
+             * Make index page
+             */
+
+            if (title === 'index') {
+              var indexPage = {
+                path: '/',
+                title: 'Introduction',
+                src: `md/${filename}`,
+              };
+
+              pagesSetup = [
+                ...pagesSetup,
+                indexPage,
+              ];
+
+              return;
+            }
 
             /**
             * Make config for pages
