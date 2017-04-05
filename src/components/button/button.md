@@ -6,7 +6,7 @@ We have different buttons.
 
 Used for primary call to actions.
 
-```code
+```html
   <button class="button">
     Click me!
   </button>
@@ -14,7 +14,7 @@ Used for primary call to actions.
 
 ## Secondary button
 
-```code
+```html
   <button class="button">
     Click me!
   </button>

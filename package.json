@@ -32,6 +32,8 @@
     "postcss-cssnext": "^2.10.0",
     "reload": "^1.1.1",
     "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-multi-entry": "^2.0.1",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-watch": "^3.2.2",
     "the-answer": "^1.0.0"
