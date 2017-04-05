@@ -9,6 +9,7 @@ coverage
 # production
 build
 docs
+assets
 
 # misc
 .DS_Store
