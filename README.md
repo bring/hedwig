@@ -2,6 +2,28 @@
 
 Hedwig is Brings Design System :tada:
 
+To use Hedwig in your project is super simple.
+You only need to include this in your document:
+```
+<link rel="stylesheet" href="http://some-cdn.com/hedwig/1.0.0/hedwig.min.css">
+<script src="http://some-cdn.com/hedwig/1.0.0/hedwig.min.js"></script>
+```
+
+📚 And go to [Hedwig documentation](http://hedwig.surge.sh/#/) 📚
+
+**WTF!? I do not want to include external files in my project!**
+So. We want it to be super simple to use Hedwing in your project.
+
+The Hedwig files are super lightweight
+* CSS 000kb
+* JS is 000kb
+
+This will not do much with your perfomance budget. And is much simpler than getting it into the build pipeline.
+
+## Development
+
+The maintainers of the project is:
+
 ## ⏩ tl;dr
 
 ```
@@ -13,7 +35,7 @@ open browser localhost:3000/docs 🚀
 
 ## Docs
 
-Documentation are avialabe at:[Hedwig documentation](http://hedwig.surge.sh/#/).
+Documentation are available at [Hedwig documentation](http://hedwig.surge.sh/#/).
 
 Docs are auto generated from the components markdown file. The filename will generate the menu name and URL. In development the docs live reload. It is recommended to always develop within the documentation.
 
