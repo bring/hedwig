@@ -1,4 +1,6 @@
 var watch = require('node-watch');
+var build = require('./docs-build');
+var reloadBrowser = require('../server');
 
 function filter(pattern, fn) {
   return function(evt, name) {
@@ -9,7 +11,9 @@ function filter(pattern, fn) {
 }
 
 function buildDocs(args) {
-    console.log(args, "Building ✍️");
+    console.log(args, "Building docs ✍️");
+    build();
+    reloadBrowser();
 }
 
 watch('src', { recursive: true }, filter(/\.md$/, buildDocs));

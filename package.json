@@ -12,9 +12,10 @@
     "css:watch": "postcss --replace ./src/**/*.css -o ./build/main.css -u postcss-cssnext --watch",
     "js:build": "rollup -c --name \"hedwig\"",
     "js:watch": "rollup -c -w --name \"hedwig\"",
+    "docs:build": "node ./scripts/docs-build",
+    "docs:watch": "node ./scripts/docs-watch",
     "serve": "node server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs": "node ./scripts/docs-build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "autoprefixer": "^6.7.7",
@@ -27,6 +28,7 @@
     "node-watch": "^0.5.2",
     "postcss-cli": "^3.0.0",
     "postcss-cssnext": "^2.10.0",
+    "reload": "^1.1.1",
     "rollup": "^0.41.6",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-watch": "^3.2.2",
