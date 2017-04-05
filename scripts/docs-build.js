@@ -1,13 +1,19 @@
 /**
+ *
  * DOCS BUILD SCRIPT
- * Iterate thru all markdown files in the src folder and
- * genereate a Catalog config file
+ *
+ * Iterate thru all markdown files in the src folder
+ * Move markedowns files to docs
+ * Make Catalog.js config
+ * Generate html file
+ *
  */
 
 var fs = require('fs');
 var glob = require('glob');
 
 var docsConfig = require('./docs-config');
+var docsHtml = require('./docs-html');
 
 function build() {
     glob('src/**/*.md', (err, files) => {
@@ -35,8 +41,13 @@ function build() {
          * Make directory if it does not exists
          */
 
+         var dir = './docs';
+         if (!fs.existsSync(dir)) {
+             fs.mkdirSync(dir);
+         }
+
         var dir = './docs/md';
-        if (!fs.existsSync(dir)){
+        if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir);
         }
 
@@ -90,6 +101,19 @@ function build() {
             }
             console.log("The docs was generated! ✍️");
         });
+
+        /**
+         * Copy md files to docs
+         */
+
+         var html = './docs/index.html';
+         if (!fs.existsSync(html)) {
+             fs.writeFile('docs/index.html', docsHtml, function(err) {
+                 if(err) {
+                     return console.warn(err);
+                 }
+             });
+         }
     })
 }
 
