@@ -46,7 +46,7 @@ To deploy the docs:
 ```
 npm run build
 surge
-> select the build folder, and hedwig as url 🚀
+> select the docs folder, and hedwig.surge.sh as domain 🚀
 ```
 
 ### 📂 Structure
