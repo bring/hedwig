@@ -1,6 +1,5 @@
 var watch = require('node-watch');
 var build = require('./docs-build');
-var reloadServerOnChange = require('../server').reloadServerOnChange;
 
 function filter(pattern, fn) {
   return function(evt, name) {
@@ -13,7 +12,6 @@ function filter(pattern, fn) {
 function buildDocs(args) {
     console.log("The docs was saved! ✍️");
     build();
-    reloadServerOnChange();
 }
 
 watch('src', { recursive: true }, filter(/\.md$/, buildDocs));

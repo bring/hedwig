@@ -24,7 +24,7 @@ function build() {
          * Make page config
          */
 
-        let pagesSetup = [{
+        var pagesSetup = [{
           path: '/',             // The path where the page can be accessed
           title: 'Introduction', // The page title
           src: 'intro.md'   // Path to the Markdown document
