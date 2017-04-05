@@ -1,1 +1,1 @@
-console.log('I am the button.');
+console.log('I am the button!');
