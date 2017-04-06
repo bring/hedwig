@@ -28,6 +28,7 @@
     "catalog": "^2.5.3",
     "concurrently": "^3.4.0",
     "cssnano": "^3.10.0",
+    "debounce": "^1.0.0",
     "express": "^4.15.2",
     "live-reload": "^1.1.0",
     "node-watch": "^0.5.2",
