@@ -4,7 +4,6 @@ var build = require('./docs-build');
 var filter = require('./utilities/filter');
 var spawn = require('child_process').spawn;
 var concat = require('./utilities/concat');
-var debounce = require('debounce');
 var fs = require('fs');
 
 /**
@@ -33,8 +32,8 @@ function buildJs(args) {
 }
 
 function concatCss() {
-  concat('tmp/*.css', './build/main.css');
-  console.log("Created dev css bundle! ✍️");
+  concat('src/**/*.css', './tmp/main.css');
+  console.log("Concatinated all css!");
 }
 
 function buildDocs(args) {
@@ -46,14 +45,15 @@ function startCssCompile() {
   spawn('npm', ['run', 'css:dev'], {
     stdio: 'inherit'
   });
+  console.log("Built dev css bundle! ✍️");
 }
 
 /**
 * Initial compiling
 */
 
-startCssCompile();
 concatCss();
+startCssCompile();
 buildJs();
 
 /**
@@ -62,5 +62,4 @@ buildJs();
 
 watch('src', { recursive: true }, filter(/\.js$/, buildJs));
 watch('src', { recursive: true }, filter(/\.md$/, buildDocs));
-watch('src', { recursive: true }, filter(/\.css$/, startCssCompile));
-watch('tmp', { recursive: true }, filter(/\.css$/, debounce(concatCss)), 200);
+watch('tmp', { recursive: true }, filter(/\.css$/, startCssCompile));
