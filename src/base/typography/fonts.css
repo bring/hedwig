@@ -35,27 +35,27 @@
 
  @font-face {
    font-family: 'Foundry Monoline Regular';
-   src: url('FoundryMonolinePN-Regular.eot');
-   src: url('FoundryMonolinePN-Regular.woff2') format('woff2'),
-   url('FoundryMonolinePN-Regular.woff') format('woff'),
-   url('FoundryMonolinePN-Regular.ttf') format('truetype'),
-   url('FoundryMonolinePN-Regular.svg#FoundryMonolineReg') format('svg');
+   src: url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Regular.eot');
+   src: url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Regular.woff2') format('woff2'),
+   url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Regular.woff') format('woff'),
+   url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Regular.ttf') format('truetype'),
+   url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Regular.svg#FoundryMonolineReg') format('svg');
  }
 
 @font-face {
     font-family: 'Foundry Monoline Medium';
-    src: url('FoundryMonolinePN-Medium.eot');
-    src: url('FoundryMonolinePN-Medium.woff2') format('woff2'),
-    url('FoundryMonolinePN-Medium.woff') format('woff'),
-    url('FoundryMonolinePN-Medium.ttf') format('truetype'),
-    url('FoundryMonolinePN-Medium.svg#FoundryMonolineMedium') format('svg');
+    src: url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Medium.eot');
+    src: url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Medium.woff2') format('woff2'),
+    url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Medium.woff') format('woff'),
+    url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Medium.ttf') format('truetype'),
+    url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Medium.svg#FoundryMonolineMedium') format('svg');
 }
 
 @font-face {
   font-family: 'Foundry Monoline Bold';
-  src: url('FoundryMonolinePN-Bold.eot');
-  src: url('FoundryMonolinePN-Bold.woff2') format('woff2'),
-  url('FoundryMonolinePN-Bold.woff') format('woff'),
-  url('FoundryMonolinePN-Bold.ttf') format('truetype'),
-  url('FoundryMonolinePN-Bold.svg#FoundryMonolineBold') format('svg');
+  src: url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Bold.eot');
+  src: url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Bold.woff2') format('woff2'),
+  url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Bold.woff') format('woff'),
+  url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Bold.ttf') format('truetype'),
+  url('http://localhost:3002/fonts/WEB/FoundryMonolinePN-Bold.svg#FoundryMonolineBold') format('svg');
 }

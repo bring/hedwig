@@ -1,4 +1,8 @@
 body {
   background: gray;
-  color: red;
+  font-family: 'Foundry Monoline Regular';
+}
+
+h1 {
+  font-family: 'Foundry Monoline Regular';
 }
