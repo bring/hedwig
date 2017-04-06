@@ -11,17 +11,23 @@ const port = process.env.PORT || 3000;
 /**
  * Create our express app
  */
-const app = express();
+const assets = express();
+const docs = express();
 
 /**
  * Serve static files from the appropriate folder
  */
-app.use(express.static(`${__dirname}`));
+assets.use(express.static(`${__dirname}/build`));
+docs.use(express.static(`${__dirname}/docs`));
 
 /**
- * Attach server to port
+ * Attach servers to port
  */
-app.listen(port, () => {
+assets.listen(6000, () => {
   console.log(`Hedwig is running on port ${port} 🎉`);
-  console.log(`Open docs at http://localhost/${port}/docs`);
+  console.log(`Open docs at http://localhost/${port}/assets`);
+});
+docs.listen(port, () => {
+  console.log(`Hedwig is running on port ${port} 🎉`);
+  console.log(`Open docs at http://localhost/${port}/`);
 });

@@ -1,13 +1,6 @@
 var watch = require('node-watch');
 var build = require('./docs-build');
-
-function filter(pattern, fn) {
-  return function(evt, name) {
-    if (pattern.test(name)) {
-      fn.apply(null, arguments);
-    }
-  }
-}
+var filter = require('./utilities/filter');
 
 function buildDocs(args) {
     console.log("The docs was saved! ✍️");

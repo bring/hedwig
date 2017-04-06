@@ -11,6 +11,12 @@ yarn run dev
 open browser localhost:3000/docs 🚀
 ```
 
+## Commands
+
+`dev` 
+`build` 
+`serve` 
+
 ## 📂 Structure
 
 ```
