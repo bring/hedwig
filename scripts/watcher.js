@@ -62,4 +62,5 @@ buildJs();
 
 watch('src', { recursive: true }, filter(/\.js$/, buildJs));
 watch('src', { recursive: true }, filter(/\.md$/, buildDocs));
+watch('src', { recursive: true }, filter(/\.css$/, concatCss));
 watch('tmp', { recursive: true }, filter(/\.css$/, startCssCompile));
