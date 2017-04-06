@@ -2,6 +2,9 @@ body {
   font-family: 'Foundry Monoline Regular';
 }
 
-h2 {
-  color: red;
+h1,
+h2,
+h3, {
+  background: red;
+  color: pink;
 }
