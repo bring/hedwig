@@ -11,7 +11,7 @@
     "css:build": "postcss --use postcss-cssnext --use cssnano --dir tmp/ src/**/*.css -o && node ./scripts/css-concat",
     "css:dev": "postcss --use postcss-cssnext --dir tmp/ src/**/*.css",
     "js:build": "rollup -c --name \"hedwig\"",
-    "js:watch": "rollup -c -w --name \"hedwig\"",
+    "js:dev": "rollup -c --name \"hedwig\"",
     "docs:build": "node ./scripts/docs-build",
     "watcher": "node ./scripts/watcher",
     "server": "node ./server",

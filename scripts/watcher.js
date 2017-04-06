@@ -25,6 +25,13 @@ if (!fs.existsSync(dir)) {
 * Watch tasks
 */
 
+function buildJs(args) {
+  console.log("The js was compiled! ✍️");
+  spawn('npm', ['run', 'js:dev'], {
+    stdio: 'inherit'
+  });
+}
+
 function concatCss() {
   concat('tmp/*.css', './build/main.css');
   console.log("Created dev css bundle! ✍️");
@@ -42,9 +49,18 @@ function startCssCompile() {
 }
 
 /**
+* Initial compiling
+*/
+
+startCssCompile();
+concatCss();
+buildJs();
+
+/**
 * Watch processes
 */
 
+watch('src', { recursive: true }, filter(/\.js$/, buildJs));
 watch('src', { recursive: true }, filter(/\.md$/, buildDocs));
 watch('src', { recursive: true }, filter(/\.css$/, startCssCompile));
 watch('tmp', { recursive: true }, filter(/\.css$/, debounce(concatCss)), 200);
