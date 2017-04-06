@@ -3,7 +3,7 @@ var watch = require('node-watch'),
     concat = require('./utilities/concat');
 
 function concatCss() {
-    console.log("Created css bundle! ✍️");
+    console.log("Created dev css bundle! ✍️");
     concat('tmp/**/*.css', './build/main.css');
 }
 
