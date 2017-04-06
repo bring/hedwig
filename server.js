@@ -1,35 +1,52 @@
 /**
- * Dependencies
+ * Development server
+ * ------------------
+ * Docs is on port 3000
+ * Build is on port 3001
+ * Assets is on port 3002
  */
+
 const express = require('express');
 
 /**
  * Environment / configuration
  */
-const port = process.env.PORT || 3000;
+
+const portDocs = process.env.PORT || 3000;
+const portBuild = process.env.PORT || 3001;
+const portAssets = process.env.PORT || 3002;
 
 /**
  * Create our express app
  */
-const assets = express();
+
 const docs = express();
+const build = express();
+const assets = express();
 
 /**
  * Serve static files from the appropriate folder
  */
-assets.use(express.static(`${__dirname}/build`));
+
 docs.use(express.static(`${__dirname}/docs`));
+build.use(express.static(`${__dirname}/build`));
+assets.use(express.static(`${__dirname}/assets`));
 
 /**
  * Attach servers to port
  */
 
-docs.listen(port, () => {
-  console.log(`Docs is running on port ${port} 🎉`);
-  console.log(`Open docs at http://localhost/${port}`);
+docs.listen(portDocs, () => {
+  console.log(`Docs is running on port ${portDocs} 🎉`);
+  console.log(`Open docs at http://localhost/${portDocs}`);
 });
 
-assets.listen(3001, () => {
-  console.log(`Assets is running on port 3001 🎉`);
-  console.log(`Open assets at http://localhost/3001`);
+build.listen(portBuild, () => {
+  console.log(`Docs is running on port ${portBuild} 🎉`);
+  console.log(`Open docs at http://localhost/${portBuild}`);
+});
+
+assets.listen(portAssets, () => {
+  console.log(`Docs is running on port ${portAssets} 🎉`);
+  console.log(`Open docs at http://localhost/${portAssets}`);
 });
