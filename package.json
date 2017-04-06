@@ -17,7 +17,7 @@
     "docs:watch": "node ./scripts/docs-watch",
     "server": "node ./server",
     "serve": "concurrently \"npm run server\" \"npm run livereload\"",
-    "livereload": "live-reload --port 9091 docs/",
+    "livereload": "live-reload --port 9091 docs/ build/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run server & npm run build"
   },

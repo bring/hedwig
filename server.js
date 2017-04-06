@@ -23,11 +23,13 @@ docs.use(express.static(`${__dirname}/docs`));
 /**
  * Attach servers to port
  */
-assets.listen(6000, () => {
-  console.log(`Hedwig is running on port ${port} 🎉`);
-  console.log(`Open docs at http://localhost/${port}/assets`);
-});
+
 docs.listen(port, () => {
-  console.log(`Hedwig is running on port ${port} 🎉`);
-  console.log(`Open docs at http://localhost/${port}/`);
+  console.log(`Docs is running on port ${port} 🎉`);
+  console.log(`Open docs at http://localhost/${port}`);
+});
+
+assets.listen(3001, () => {
+  console.log(`Assets is running on port 3001 🎉`);
+  console.log(`Open assets at http://localhost/3001`);
 });
