@@ -6,7 +6,7 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run serve\" \"npm run watcher\"",
+    "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
     "build": "npm run docs:build & npm run css:build & npm run js:build",
     "css:build": "node ./scripts/css-concat & postcss src/**/*.css --use postcss-cssnext cssnano --dir tmp/",
     "css:build": "postcss tmp/main.css --use postcss-cssnext cssnano -o ./build/main.css",

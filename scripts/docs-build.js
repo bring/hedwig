@@ -22,7 +22,7 @@ function build() {
          */
 
         if (err) {
-            console.warn('There was an error compiling the docs 😞')
+            console.warn('😞 There was an error compiling the docs')
             return;
         }
 
@@ -61,6 +61,14 @@ function build() {
             const title = filename.split('.').shift();
 
             /**
+             * Copy md files to docs
+             */
+
+            fs.createReadStream(file).pipe(
+                fs.createWriteStream('docs/md/' + filename)
+            );
+
+            /**
              * Make index page
              */
 
@@ -93,14 +101,6 @@ function build() {
               ...pagesSetup,
               page,
             ];
-
-            /**
-             * Copy md files to docs
-             */
-
-            fs.createReadStream(file).pipe(
-                fs.createWriteStream('docs/md/' + filename)
-            );
         });
 
         /**
@@ -114,7 +114,7 @@ function build() {
             if(err) {
                 return console.warn(err);
             }
-            console.log("The docs was generated! ✍️");
+            console.log("✍️ The docs was generated");
         });
 
         /**

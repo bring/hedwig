@@ -35,32 +35,30 @@ assets.use(function(req, res, next) {
 });
 
 /**
- * Serve static files from the appropriate folder
- */
-
-docs.use(express.static(`${__dirname}/docs`));
-
-docs.listen(portDocs, () => {
-  console.log(`Docs is running on port ${portDocs} 🎉`);
-  console.log(`Open docs at http://localhost/${portDocs}`);
-});
-
-/**
- * Start other servers if in develeop
+ * Start build and assets folders
  */
 
 if (process.env.NODE_ENV !== 'production') {
   build.use(express.static(`${__dirname}/build`));
 
   build.listen(portBuild, () => {
-    console.log(`Docs is running on port ${portBuild} 🎉`);
-    console.log(`Open docs at http://localhost/${portBuild}`);
+    console.log(`🔨 Build bundles is on port ${portBuild}`);
   });
 
   assets.use(express.static(`${__dirname}/assets`));
 
   assets.listen(portAssets, () => {
-    console.log(`Docs is running on port ${portAssets} 🎉`);
-    console.log(`Open docs at http://localhost/${portAssets}`);
+    console.log(`📦 Assets folder is on port ${portAssets}`);
   });
 }
+
+/**
+ * Serve static files from the appropriate folder
+ */
+
+docs.use(express.static(`${__dirname}/docs`));
+
+docs.listen(portDocs, () => {
+  console.log(`✍️ Docs is running on port ${portDocs}`);
+  console.log(`🚀 Open docs at http://localhost/${portDocs}`);
+});

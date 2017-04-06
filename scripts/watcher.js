@@ -25,7 +25,7 @@ if (!fs.existsSync(dir)) {
 */
 
 function buildJs(args) {
-  console.log("The js was compiled! ✍️");
+  console.log("🎉 The JS was compiled!");
   spawn('npm', ['run', 'js:dev'], {
     stdio: 'inherit'
   });
@@ -33,11 +33,11 @@ function buildJs(args) {
 
 function concatCss() {
   concat('src/**/*.css', './tmp/main.css');
-  console.log("Concatinated all css!");
+  console.log("🔨 Concatinated all CSS...");
 }
 
 function buildDocs(args) {
-  console.log("The docs was saved! ✍️");
+  console.log("✍️ The DOCS was saved");
   build();
 }
 
@@ -45,7 +45,7 @@ function startCssCompile() {
   spawn('npm', ['run', 'css:dev'], {
     stdio: 'inherit'
   });
-  console.log("Built dev css bundle! ✍️");
+  console.log("📦 Built dev CSS bundle");
 }
 
 /**
