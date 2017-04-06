@@ -1,10 +1,8 @@
-# Colors
-
 ## Main colors
 
 ```color
 value: '#7bc144'
-span: 6
+span: 1
 ```
 ```color
 value: '#222222'
