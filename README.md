@@ -27,15 +27,12 @@ yarn run dev
 open browser localhost:3000/docs 🚀
 ```
 
-<<<<<<< HEAD
 ## Commands
 
-`dev` 
-`build` 
-`serve` 
+`dev`
+`build`
+`serve`
 
-## 📂 Structure
-=======
 ### Docs
 
 Documentation are available at [Hedwig documentation](http://hedwig.surge.sh/#/).
@@ -59,7 +56,6 @@ surge
 ```
 
 ### 📂 Structure
->>>>>>> 3498ac9c738c23ce2b21ac0d9d3e3f9ca4ce6ffa
 
 ```
 ├─ base                          # All base style, only primitives
