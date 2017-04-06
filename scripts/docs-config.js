@@ -2,8 +2,8 @@ var styles;
 var scripts;
 
 if (process.env.NODE_ENV === 'production') {
-  styles = 'http://localhost:3001/main.css';
-  scripts = 'http://localhost:3001/main.js';
+  styles = 'https://s3.eu-west-2.amazonaws.com/hedwig-cdn/main.css';
+  scripts = 'https://s3.eu-west-2.amazonaws.com/hedwig-cdn/main.js';
 }
 
 if (process.env.NODE_ENV !== 'production') {

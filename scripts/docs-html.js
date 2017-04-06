@@ -1,3 +1,10 @@
+var reload = '';
+
+if (process.env.NODE_ENV !== 'production') {
+  reload = '<script src="//localhost:9091"></scripts>';
+}
+
+
 module.exports = `
     <!doctype html>
     <html>
@@ -10,7 +17,7 @@ module.exports = `
       <div id="catalog" />
       <script src="https://interactivethings.github.io/catalog/catalog.min.js"></script>
       <script src="docs-config.js"></script>
-      <script src="//localhost:9091"></script>
+      ${assets}
     </body>
     </html>
 `;
