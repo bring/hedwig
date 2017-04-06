@@ -13,8 +13,8 @@ const express = require('express');
  */
 
 const portDocs = process.env.PORT || 3000;
-const portBuild = process.env.PORT || 3001;
-const portAssets = process.env.PORT || 3002;
+const portBuild = 3001;
+const portAssets = 3002;
 
 /**
  * Create our express app
