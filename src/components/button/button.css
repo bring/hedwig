@@ -2,11 +2,125 @@
  * Buttons
  */
 
-.button {
-    display: inline-block;
-    background: blue;
-    color: white;
-    display: inline-block;
-    padding: 3rem;
-    border: none;
+.hw-button {
+  background: var(--hw-color-primary);
+  color: var(--hw-color-gray-7);
+  font-size: var(--hw-font-size-small);
+  padding: var(--hw-spacing-2) var(--hw-spacing-4);
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  transition: background 100ms, outline 50ms;
+
+  /**
+   * States
+   */
+
+  &:hover {
+    background: var(--hw-color-primary-dark);
+    color: var(--hw-color-white);
+  }
+
+  &:focus {
+    background: var(--hw-color-primary);
+    color: var(--hw-color-white);
+    outline: 3px solid var(--hw-color-primary-dark);
+  }
+
+  &:active {
+    background: var(--hw-color-primary);
+    color: var(--hw-color-white);
+    outline: 6px solid var(--hw-color-secondary);
+  }
+
+  &:disabled {
+    background: var(--hw-color-gray-3);
+    color: var(--hw-color-white);
+    cursor: auto;
+  }
+
+  /**
+   * Sizes
+   */
+
+  &--large {
+    font-size: var(--hw-font-size-p);
+    padding: var(--hw-spacing-3) var(--hw-spacing-6);
+  }
+
+  &--small {
+    padding: var(--hw-spacing-1) var(--hw-spacing-3);
+  }
+
+  /**
+   * Variants
+   */
+
+  &--secondary {
+    background: var(--hw-color-gray-5);
+    color: var(--hw-color-white);
+
+    /**
+     * States
+     */
+
+    &:hover {
+      background: var(--hw-color-gray-4);
+      color: var(--hw-color-white);
+    }
+
+    &:focus {
+      background: var(--hw-color-gray-4);
+      color: var(--hw-color-white);
+      outline: 3px solid var(--hw-color-gray-5);
+    }
+
+    &:active {
+      background: var(--hw-color-gray-4);
+      color: var(--hw-color-white);
+      outline: 6px solid var(--hw-color-secondary);
+    }
+  }
+
+  &--outline {
+    background: none;
+    color: var(--hw-color-gray-7);
+    border: 3px solid var(--hw-color-gray-3);
+
+    /**
+     * States
+     */
+
+    &:hover {
+      color: var(--hw-color-gray-7);
+      background: var(--hw-color-gray-3);
+    }
+
+    &:focus {
+      background: none;
+      color: var(--hw-color-gray-7);
+      outline: 3px solid var(--hw-color-gray-5);
+    }
+  }
+
+  &--outline-white {
+    background: none;
+    color: var(--hw-color-white);
+    border: 3px solid var(--hw-color-white);
+
+    /**
+     * States
+     */
+
+    &:hover {
+      color: var(--hw-color-gray-7);
+      background: var(--hw-color-white);
+    }
+
+    &:focus {
+      background: rgba(255, 255, 255, .8);
+      color: var(--hw-color-gray-7);
+      outline: 3px solid var(--hw-color-gray-5);
+    }
+  }
 }

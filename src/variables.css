@@ -1,7 +1,66 @@
+
 /**
- * VARIABLES
+ * Variables - Bring
  */
 
 :root {
-  --hw-primary-color: #7bc144;
+
+  /**
+   * Colors
+   */
+
+  --hw-color-primary: #7bc144;
+  --hw-color-primary-dark: #4CA200;
+  --hw-color-primary-darker: #233813;
+  --hw-color-primary-light: #b7dd98;
+  --hw-color-primary-lighter: #d8ecc9;
+
+  --hw-color-secondary: #fdbb2f;
+  --hw-color-link: #4a90e2;
+
+  --hw-color-gray-7: #222222;
+  --hw-color-gray-6: #444444;
+  --hw-color-gray-5: #666666;
+  --hw-color-gray-4: #888888;
+  --hw-color-gray-3: #c1c1c1;
+  --hw-color-gray-2: #e6e6e6;
+  --hw-color-gray-1: #f2f2f2;
+
+  --hw-color-white: #ffffff;
+  --hw-color-black: #000000;
+
+  /**
+   * Fonts
+   */
+
+  --hw-font-primay-regular: 'Foundry Monoline Regular';
+  --hw-font-primay-medium: 'Foundry Monoline Medium';
+  --hw-font-primay-bold: 'Foundry Monoline Medium';
+
+  /**
+   * Spacing
+   * NOTE: This is in PX because we watn them to specific.
+   */
+
+  --hw-spacing-1: 6px;
+  --hw-spacing-2: 12px;
+  --hw-spacing-3: 18px;
+  --hw-spacing-4: 24px;
+  --hw-spacing-5: 36px;
+  --hw-spacing-6: 42px;
+  --hw-spacing-7: 48px;
+  --hw-spacing-8: 54px;
+  --hw-spacing-9: 60px;
+
+  /**
+   * Font sizes
+   * NOTE: This is in PX because we watn them to specific.
+   */
+
+  --hw-font-size-h1: 44px;
+  --hw-font-size-h2: 28px;
+  --hw-font-size-h3: 22px;
+  --hw-font-size-lead: 22px;
+  --hw-font-size-p: 18px;
+  --hw-font-size-small: 15px;
 }

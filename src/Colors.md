@@ -2,6 +2,7 @@
 
 ```color
 value: '#7bc144'
+name: 'Primary'
 span: 1
 ```
 ```color
@@ -48,7 +49,7 @@ value: '#233813'
 span: 1
 ```
 ```color
-value: '#b7dd98'
+value: '#4CA200'
 span: 1
 ```
 ```color
