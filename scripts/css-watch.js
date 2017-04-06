@@ -7,4 +7,4 @@ function concatCss() {
     concat('tmp/**/*.css', './build/main.css');
 }
 
-watch('src', { recursive: true }, filter(/\.css$/, concatCss));
+watch('tmp', { recursive: true }, filter(/\.css$/, concatCss));
