@@ -1,7 +1,20 @@
+var styles;
+var scripts;
+
+if (process.env.NODE_ENV === 'production') {
+  styles = 'http://localhost:3001/main.css';
+  scripts = 'http://localhost:3001/main.js';
+}
+
+if (process.env.NODE_ENV !== 'production') {
+  styles = 'http://localhost:3001/main.css';
+  scripts = 'http://localhost:3001/main.js';
+}
+
 module.exports = {
   title: 'Hedwig',
-  styles: ['http://localhost:3001/main.css'],
-  scripts: ['http://localhost:3001/main.js'],
+  styles: [styles],
+  scripts: [scripts],
   // logoSrc: './assets/hedwig_720.png',
   theme: {
     color: '#7bc144',

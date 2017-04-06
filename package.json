@@ -37,5 +37,9 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-watch": "^3.2.2",
     "the-answer": "^1.0.0"
+  },
+  "engines" : {
+    "node" : "6.2.2",
+    "npm": "3.9.5"
   }
 }

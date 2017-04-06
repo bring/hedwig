@@ -45,7 +45,7 @@ url: http://localhost:3002/fonts/
 
 ```type
 {
-  "paragraphs": ["18/28"],
+  "paragraphs": ["18/27"],
   "font": "Foundry Monoline Regular",
   "color": "#444",
 }
