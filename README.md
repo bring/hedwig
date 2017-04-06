@@ -2,7 +2,23 @@
 
 Hedwig is Brings Design System :tada:
 
-## ⏩ tl;dr
+To use Hedwig in your project is super simple.
+You only need to include this in your document:
+```
+<link rel="stylesheet" href="http://some-cdn.com/hedwig/1.0.0/hedwig.min.css">
+<script src="http://some-cdn.com/hedwig/1.0.0/hedwig.min.js"></script>
+```
+
+📚 And go to [Hedwig documentation](http://hedwig.surge.sh/#/)
+
+**WTF!? I do not want to include external files in my project!**
+So. We want it to be super simple to use Hedwing in your project. The Hedwig files are super lightweight (CSS 000 kb, JS 000 kb). This will not do much with your perfomance budget. And is much simpler than getting it into your gulp-wepback-whatever build pipeline. 👍
+
+## Development
+
+To develop on the project, please follow our [guidelines]('').
+
+### ⏩ tl;dr
 
 ```
 clone this repo
@@ -11,6 +27,7 @@ yarn run dev
 open browser localhost:3000/docs 🚀
 ```
 
+<<<<<<< HEAD
 ## Commands
 
 `dev` 
@@ -18,6 +35,31 @@ open browser localhost:3000/docs 🚀
 `serve` 
 
 ## 📂 Structure
+=======
+### Docs
+
+Documentation are available at [Hedwig documentation](http://hedwig.surge.sh/#/).
+
+Docs are auto generated from the components markdown file. The filename will generate the menu name and URL. In development the docs live reload. It is recommended to always develop within the documentation.
+
+### Deploy
+
+Right now we are hosting our docs at [Surge](https://surge.sh/).
+
+First install Surge as a global dependency.
+```
+npm install --global surge
+```
+
+To deploy the docs:
+```
+npm run build
+surge
+> select the docs folder, and hedwig.surge.sh as domain 🚀
+```
+
+### 📂 Structure
+>>>>>>> 3498ac9c738c23ce2b21ac0d9d3e3f9ca4ce6ffa
 
 ```
 ├─ base                          # All base style, only primitives

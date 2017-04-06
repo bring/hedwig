@@ -9,7 +9,11 @@ coverage
 # production
 build
 docs
+<<<<<<< HEAD
 tmp
+=======
+assets
+>>>>>>> 3498ac9c738c23ce2b21ac0d9d3e3f9ca4ce6ffa
 
 # misc
 .DS_Store

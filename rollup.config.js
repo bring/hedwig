@@ -3,11 +3,19 @@
  * https://rollupjs.org/
  */
 
+import babel from 'rollup-plugin-babel';
+import multiEntry from 'rollup-plugin-multi-entry';
 import resolve from 'rollup-plugin-node-resolve';
 
 export default {
-  entry: './src/index.js',
   format: 'iife',
-  plugins: [ resolve() ],
-  dest: './build/main.js'
+  entry: 'src/**/*.js',
+  dest: 'build/main.js',
+  plugins: [
+    resolve(),
+    multiEntry(),
+    babel({
+      exclude: 'node_modules/**'
+    }),
+  ],
 };

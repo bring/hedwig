@@ -15,9 +15,11 @@
     "js:watch": "rollup -c -w --name \"hedwig\"",
     "docs:build": "node ./scripts/docs-build",
     "docs:watch": "node ./scripts/docs-watch",
-    "serve": "concurrently \"node ./server\" \"npm run livereload\"",
+    "server": "node ./server",
+    "serve": "concurrently \"npm run server\" \"npm run livereload\"",
     "livereload": "live-reload --port 9091 docs/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run server & npm run build"
   },
   "dependencies": {
     "autoprefixer": "^6.7.7",
@@ -33,6 +35,8 @@
     "postcss-cssnext": "^2.10.0",
     "reload": "^1.1.1",
     "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-multi-entry": "^2.0.1",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-watch": "^3.2.2",
     "the-answer": "^1.0.0"
