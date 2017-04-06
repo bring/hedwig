@@ -75,6 +75,8 @@ function build() {
                 ...pagesSetup,
                 indexPage,
               ];
+
+              return;
             }
 
             /**

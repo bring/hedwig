@@ -17,7 +17,7 @@ module.exports = `
       <div id="catalog" />
       <script src="https://interactivethings.github.io/catalog/catalog.min.js"></script>
       <script src="docs-config.js"></script>
-      ${assets}
+      ${reload}
     </body>
     </html>
 `;

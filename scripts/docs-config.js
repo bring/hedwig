@@ -37,11 +37,5 @@ module.exports = {
     bgDark: '#333333',
     lightColor: '#D6D6D6',
   },
-  pages: [
-    {
-      path: '/',             // The path where the page can be accessed
-      title: 'Introduction', // The page title
-      src: 'md/intro.md'   // Path to the Markdown document
-    }
-  ]
+  pages: [],
 };
