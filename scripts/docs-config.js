@@ -1,6 +1,7 @@
 module.exports = {
   title: 'Hedwig',
-  styles: ['../build/main.css'],
+  styles: ['http://localhost:3001/main.css'],
+  scripts: ['http://localhost:3001/main.js'],
   // logoSrc: './assets/hedwig_720.png',
   theme: {
     color: '#7bc144',
