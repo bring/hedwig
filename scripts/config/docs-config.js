@@ -5,10 +5,10 @@ var production = process.env.NODE_ENV === 'production';
 
 if (production) {
   styles = [
-    'http://hedwig-cdn.s3.amazonaws.com/assets/fonts/fonts.css',
-    'http://hedwig-cdn.s3.amazonaws.com/main.css'
+    'https://hedwig-cdn.s3.amazonaws.com/assets/fonts/fonts.css',
+    'https://hedwig-cdn.s3.amazonaws.com/main.css'
   ];
-  scripts = ['http://hedwig-cdn.s3.amazonaws.com/main.js'];
+  scripts = ['https://hedwig-cdn.s3.amazonaws.com/main.js'];
 }
 
 if (!production) {
