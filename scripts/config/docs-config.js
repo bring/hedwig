@@ -4,7 +4,7 @@ var scripts;
 var production = process.env.NODE_ENV === 'production';
 
 if (production) {
-  styles [
+  styles = [
     'http://hedwig-cdn.s3.amazonaws.com/assets/fonts/fonts.css',
     'https://s3.eu-west-2.amazonaws.com/hedwig-cdn/main.css'
   ];
