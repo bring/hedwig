@@ -13,7 +13,7 @@ if (production) {
 
 if (!production) {
   styles = [
-    'http://localhost:3001/assets/fonts/fonts.css',
+    'http://localhost:3002/fonts/fonts.css',
     'http://localhost:3001/main.css'
   ];
   scripts = ['http://localhost:3001/main.js'];
