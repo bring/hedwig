@@ -12,8 +12,8 @@
 var fs = require('fs');
 var glob = require('glob');
 
-var docsConfig = require('./docs-config');
-var docsHtml = require('./docs-html');
+var docsConfig = require('./config/docs-config');
+var docsHtml = require('./config/docs-html');
 
 function build() {
     glob('src/**/*.md', (err, files) => {

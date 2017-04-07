@@ -60,5 +60,5 @@ docs.use(express.static(`${__dirname}/docs`));
 
 docs.listen(portDocs, () => {
   console.log(`✍️ Docs is running on port ${portDocs}`);
-  console.log(`🚀 Open docs at http://localhost/${portDocs}`);
+  console.log(`🚀 Open docs at http://localhost:${portDocs}`);
 });
