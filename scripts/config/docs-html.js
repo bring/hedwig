@@ -1,6 +1,8 @@
-var reload = '';
 
-if (process.env.NODE_ENV !== 'production') {
+var production = process.env.NODE_ENV !== 'production';
+
+var reload = '';
+if (production) {
   reload = '<script src="//localhost:9091"></scripts>';
 }
 
@@ -11,7 +13,7 @@ module.exports = `
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>My Catalog</title>
+      <title>Hedwig</title>
     </head>
     <body>
       <div id="catalog" />

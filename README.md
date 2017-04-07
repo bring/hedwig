@@ -6,9 +6,11 @@ _[This repo might be going public](https://github.com/bring/hedwig/issues/6), so
 
 To use Hedwig in your project is super simple.
 You only need to include this in your document:
+
 ```
-<link rel="stylesheet" href="http://some-cdn.com/hedwig/1.0.0/hedwig.min.css">
-<script src="http://some-cdn.com/hedwig/1.0.0/hedwig.min.js"></script>
+Fonts: http://hedwig-cdn.s3.amazonaws.com/assets/fonts/fonts.css
+CSS: http://hedwig-cdn.s3.amazonaws.com/main.css
+JS: http://hedwig-cdn.s3.amazonaws.com/main.js
 ```
 
 📚 And go to [Hedwig documentation](http://hedwig.surge.sh/#/)
