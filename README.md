@@ -2,6 +2,8 @@
 
 Hedwig is Brings Design System :tada:
 
+_[This repo might be going public](https://github.com/bring/hedwig/issues/6), so please consider this when contributing_
+
 To use Hedwig in your project is super simple.
 You only need to include this in your document:
 ```
