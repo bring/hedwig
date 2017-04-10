@@ -1,70 +1,79 @@
-## Main colors
+## Primary
 
-```color
-value: '#7bc144'
-name: 'Primary'
-span: 1
-```
-```color
-value: '#222222'
-span: 1
-```
-
-```color
-value: '#444444'
-span: 1
-```
-```color
-value: '#666666'
-span: 1
-```
-```color
-value: '#888888'
-span: 1
-```
-```color
-value: '#c1c1c1'
-span: 1
-```
-```color
-value: '#e6e6e6'
-span: 1
-```
-```color
-value: '#f2f2f2'
-span: 1
-```
-```color
-value: '#ffffff'
-span: 1
-```
-## Secondary colors
-
-```color
-value: '#000000'
-span: 1
-```
 ```color
 value: '#233813'
+name: 'Primary darker'
 span: 1
 ```
 ```color
 value: '#4CA200'
+name: 'Primary dark'
 span: 1
 ```
 ```color
+value: '#7bc144'
+name: 'Primary'
+span: 2
+```
+```color
 value: '#b7dd98'
+name: 'Primary light'
 span: 1
 ```
 ```color
 value: '#d8ecc9'
+name: 'Primary lighter'
+span: 1
+```
+
+## Gray
+
+```color
+value: '#222222'
+span: 1
+name: 'Gray darker'
+```
+
+```color
+value: '#444444'
+name: 'Gray dark'
 span: 1
 ```
 ```color
+value: '#666666'
+name: 'Gray'
+span: 2
+```
+```color
+value: '#c1c1c1'
+name: 'Gray light'
+span: 1
+```
+```color
+value: '#e6e6e6'
+name: 'Gray lighter'
+span: 1
+```
+
+
+## Other colors
+```color
 value: '#fdbb2f'
+name: 'Secondary'
 span: 1
 ```
 ```color
 value: '#4a90e2'
+name: 'Link color'
+span: 1
+```
+```color
+value: '#000000'
+name: 'Black'
+span: 1
+```
+```color
+value: '#ffffff'
+name: white
 span: 1
 ```
