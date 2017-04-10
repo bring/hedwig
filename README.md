@@ -1,17 +1,17 @@
 # Hedwig
 
 Hedwig is Brings Design System :tada:
+
 📚 [Hedwig documentation is available here](https://hedwig-docs.herokuapp.com)
 
 _[This repo might be going public](https://github.com/bring/hedwig/issues/6), so please consider this when contributing_
 
-To use Hedwig in your project is super simple.
-You only need to include this in your document:
+Using Hedwig (beta) in your project is super simple. You only need to include this in your document:
 
 ```
-Fonts: http://hedwig-cdn.s3.amazonaws.com/dist/assets/fonts/fonts.css
-CSS: http://hedwig-cdn.s3.amazonaws.com/dist/main.css
-JS: http://hedwig-cdn.s3.amazonaws.com/dist/main.js
+Fonts: http://hedwig-cdn.s3.amazonaws.com/hewdig/assets/fonts/fonts.css
+CSS: http://hedwig-cdn.s3.amazonaws.com/hewdig/main.css
+JS: http://hedwig-cdn.s3.amazonaws.com/hewdig/main.js
 ```
 
 **WTF!? I do not want to include external files in my project!**
@@ -19,7 +19,7 @@ So. We want it to be super simple to use Hedwing in your project. The Hedwig fil
 
 ## Development
 
-To develop on the project, please follow our [guidelines]('').
+To develop on the styleguide, please follow our [guidelines]('').
 
 ### ⏩ tl;dr
 
