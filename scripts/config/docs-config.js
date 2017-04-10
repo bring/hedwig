@@ -1,5 +1,6 @@
 var styles;
 var scripts;
+var logo;
 
 var production = process.env.NODE_ENV === 'production';
 
@@ -9,6 +10,7 @@ if (production) {
     'https://hedwig-cdn.s3.amazonaws.com/main.css'
   ];
   scripts = ['https://hedwig-cdn.s3.amazonaws.com/main.js'];
+  logo = 'https://hedwig-cdn.s3.amazonaws.com/assets/images/logo.svg';
 }
 
 if (!production) {
@@ -17,6 +19,7 @@ if (!production) {
     'http://localhost:3001/main.css'
   ];
   scripts = ['http://localhost:3001/main.js'];
+  logo = 'http://localhost:3002/images/logo.svg';
 }
 
 module.exports = {
@@ -32,7 +35,7 @@ module.exports = {
     {name: 'adult', width: 1200, height: 1080},
     {name: 'elder', width: 1920, height: 1080}
   ],
-  logoSrc: 'http://localhost:3002/images/logo.svg',
+  logoSrc: logo,
   theme: {
     color: '#7bc144',
     background: '#F9F9F9',
