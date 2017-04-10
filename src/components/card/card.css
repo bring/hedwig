@@ -57,6 +57,10 @@
    * Variants
    */
 
+  &--half {
+    
+  }
+
   &--dark .hw-card__contents {
     color: white;
     background: var(  --hw-color-gray-darker);

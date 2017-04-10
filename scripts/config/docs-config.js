@@ -32,7 +32,7 @@ module.exports = {
     {name: 'adult', width: 1200, height: 1080},
     {name: 'elder', width: 1920, height: 1080}
   ],
-  // logoSrc: './assets/hedwig_720.png',
+  logoSrc: 'http://localhost:3002/images/logo.svg',
   theme: {
     color: '#7bc144',
     background: '#F9F9F9',

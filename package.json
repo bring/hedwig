@@ -4,9 +4,9 @@
   "description": "Bring Design System",
   "author": "Posten Norge AS",
   "contributors": [{
-    "name": "Fredrik Jensen (Netlife Research)",
+    "name": "Fredrik Jensen (Netlife Research)"
   }, {
-    "name": "Bård N. Hovde (Netlife Research)",
+    "name": "Bård N. Hovde (Netlife Research)"
   }],
   "license": "ISC",
   "main": "index.js",
