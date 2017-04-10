@@ -1,6 +1,7 @@
 # Hedwig
 
 Hedwig is Brings Design System :tada:
+📚 [Hedwig documentation is available here](https://hedwig-docs.herokuapp.com)
 
 _[This repo might be going public](https://github.com/bring/hedwig/issues/6), so please consider this when contributing_
 
@@ -12,8 +13,6 @@ Fonts: http://hedwig-cdn.s3.amazonaws.com/assets/fonts/fonts.css
 CSS: http://hedwig-cdn.s3.amazonaws.com/main.css
 JS: http://hedwig-cdn.s3.amazonaws.com/main.js
 ```
-
-📚 And go to [Hedwig documentation](http://hedwig.surge.sh/#/)
 
 **WTF!? I do not want to include external files in my project!**
 So. We want it to be super simple to use Hedwing in your project. The Hedwig files are super lightweight (CSS 000 kb, JS 000 kb). This will not do much with your perfomance budget. And is much simpler than getting it into your gulp-wepback-whatever build pipeline. 👍
