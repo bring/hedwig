@@ -1,0 +1,14 @@
+
+/**
+  * Margin highlighting for block demo
+  */
+
+.hw-helpers-margin-highlighter {
+  background-color: #f9cc9d;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.hw-helpers-margin-highlighter > div {
+    background-color: rgb(242, 242, 242);
+}

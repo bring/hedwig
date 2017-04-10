@@ -6,3 +6,8 @@ body {
 h1 {
   font-family: 'Foundry Monoline Regular';
 }
+
+p {
+  margin: 0;
+  padding: 0;
+}

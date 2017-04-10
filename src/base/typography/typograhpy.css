@@ -1,10 +1,58 @@
+/**
+  * Base body styles
+  */
+
 body {
-  font-family: 'Foundry Monoline Regular';
+  font-family: var(--hw-font-primay-medium);
+  font-size: 16px;
 }
 
+/**
+  * Paragraph styles
+  */
+
+p {
+  font-size: var(--hw-font-size-p);
+  font-family: var(--hw-font-primay-medium);
+  line-height: 1.4;
+  color: var(--hw-color-gray-6);
+}
+
+/**
+  * Header styles
+  */
 h1,
 h2,
 h3, {
-  background: var(--hw-primary-color);
-  color: pink;
+  color: var(--hw-color-gray-6);
+}
+
+h1 {
+  font-size: var(--hw-font-size-h1);
+}
+
+h2 {
+  font-size: var(--hw-font-size-h2);
+}
+
+h3 {
+  font-size: var(--hw-font-size-h3);
+  font-family: var(--hw-font-primay-bold);
+}
+
+/**
+  * Extra text styles
+  */
+
+.hw-text-lead {
+  font-size: var(--hw-font-size-lead);
+  font-family: var(--hw-font-primay-regular);
+  line-height: 1.4;
+  color: var(--hw-color-gray-6);
+}
+
+.hw-text-small {
+  font-size: var(--hw-font-size-small);
+  line-height: 1.4;
+  color: var(--hw-color-gray-5);
 }

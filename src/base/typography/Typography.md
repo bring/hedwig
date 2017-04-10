@@ -10,10 +10,10 @@ url: http://localhost:3002/fonts/
 
 ```type|span-2,kern,smoothen,single
 {
-    "headings": [22],
+    "headings": [44],
     "background": "#7bc144",
     "color": "#fff",
-    "font": "Foundry Monoline Regular",
+    "font": "Foundry Monoline Medium",
 }
 ```
 
