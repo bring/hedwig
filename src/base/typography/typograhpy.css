@@ -1,10 +1,11 @@
 body {
-  font-family: 'Foundry Monoline Regular';
+  font-family: var(--hw-font-primay-regular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
 h2,
 h3, {
-  background: var(--hw-primary-color);
-  color: pink;
+  
 }

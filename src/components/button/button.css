@@ -1,42 +1,39 @@
 /**
+ * HEWDIG
+ *
  * Buttons
  */
 
 .hw-button {
-  background: var(--hw-color-primary);
-  color: var(--hw-color-gray-7);
+  background: var(--hw-color-gray);
+  color: var(--hw-color-white);
   font-size: var(--hw-font-size-small);
   padding: var(--hw-spacing-2) var(--hw-spacing-4);
   display: inline-block;
   border: none;
-  cursor: pointer;
   transition: background 100ms, outline 50ms;
+  cursor: pointer;
 
   /**
    * States
    */
 
   &:hover {
-    background: var(--hw-color-primary-dark);
-    color: var(--hw-color-white);
+    background: var(--hw-color-gray-dark);
   }
 
   &:focus {
-    background: var(--hw-color-primary);
-    color: var(--hw-color-white);
-    outline: 3px solid var(--hw-color-primary-dark);
-  }
-
-  &:active {
-    background: var(--hw-color-primary);
-    color: var(--hw-color-white);
     outline: 6px solid var(--hw-color-secondary);
   }
 
+  &:active {
+    outline: 3px solid var(--hw-color-gray-darker);
+  }
+
   &:disabled {
-    background: var(--hw-color-gray-3);
     color: var(--hw-color-white);
-    cursor: auto;
+    background: var(--hw-color-gray-light);
+    cursor: none;
   }
 
   /**
@@ -56,50 +53,35 @@
    * Variants
    */
 
-  &--secondary {
-    background: var(--hw-color-gray-5);
+  &--primary {
+    background: var(--hw-color-primary);
     color: var(--hw-color-white);
 
-    /**
-     * States
-     */
-
     &:hover {
-      background: var(--hw-color-gray-4);
-      color: var(--hw-color-white);
+      background: var(--hw-color-primary-dark);
     }
 
-    &:focus {
-      background: var(--hw-color-gray-4);
-      color: var(--hw-color-white);
-      outline: 3px solid var(--hw-color-gray-5);
+    &:active:hover {
+      background: var(--hw-color-primary);
     }
 
     &:active {
-      background: var(--hw-color-gray-4);
-      color: var(--hw-color-white);
-      outline: 6px solid var(--hw-color-secondary);
+      outline: 3px solid var(--hw-color-primary-dark);
     }
   }
 
   &--outline {
     background: none;
-    color: var(--hw-color-gray-7);
-    border: 3px solid var(--hw-color-gray-3);
+    color: var(--hw-color-gray);
+    border: 3px solid var(--hw-color-gray);
 
-    /**
-     * States
-     */
-
-    &:hover {
-      color: var(--hw-color-gray-7);
-      background: var(--hw-color-gray-3);
+    &:disabled {
+      border: 0;
     }
 
-    &:focus {
-      background: none;
-      color: var(--hw-color-gray-7);
-      outline: 3px solid var(--hw-color-gray-5);
+    &:hover {
+      background: var(--hw-color-gray);
+      color: var(--hw-color-white);
     }
   }
 
@@ -108,19 +90,13 @@
     color: var(--hw-color-white);
     border: 3px solid var(--hw-color-white);
 
-    /**
-     * States
-     */
+    &:disabled {
+      border: 0;
+    }
 
     &:hover {
       color: var(--hw-color-gray-7);
       background: var(--hw-color-white);
-    }
-
-    &:focus {
-      background: rgba(255, 255, 255, .8);
-      color: var(--hw-color-gray-7);
-      outline: 3px solid var(--hw-color-gray-5);
     }
   }
 }
