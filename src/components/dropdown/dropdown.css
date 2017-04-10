@@ -1,0 +1,17 @@
+.hw-dropdown {
+
+
+
+
+  &__button {
+    cursor: pointer;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  .hw-dropdown__list--visible {
+    display: block;
+  }
+}

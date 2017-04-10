@@ -3,17 +3,19 @@
   "version": "0.0.1",
   "description": "Bring Design System",
   "author": "Posten Norge AS",
-  "contributors": [{
-    "name": "Fredrik Jensen (Netlife Research)"
-  }, {
-    "name": "Bård N. Hovde (Netlife Research)"
-  }],
+  "contributors": [
+    {
+      "name": "Fredrik Jensen (Netlife Research)"
+    },
+    {
+      "name": "Bård N. Hovde (Netlife Research)"
+    }
+  ],
   "license": "ISC",
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
     "build": "npm run docs:build & npm run css:build & npm run js:build",
-    "css:build": "node ./scripts/css-concat & postcss src/**/*.css --use postcss-cssnext cssnano --dir tmp/",
     "css:build": "postcss tmp/main.css --use postcss-cssnext cssnano -o ./build/main.css",
     "css:dev": "postcss tmp/main.css --use postcss-cssnext -o ./build/main.css",
     "js:build": "rollup -c --name \"hedwig\"",
@@ -44,8 +46,15 @@
     "rollup-watch": "^3.2.2",
     "the-answer": "^1.0.0"
   },
-  "engines" : {
-    "node" : "6.2.2",
+  "engines": {
+    "node": "6.2.2",
     "npm": "3.9.5"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
   }
 }
