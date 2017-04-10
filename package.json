@@ -2,7 +2,12 @@
   "name": "hedwig",
   "version": "0.0.1",
   "description": "Bring Design System",
-  "author": "Fredrik Jensen [Netlife Research]",
+  "author": "Posten Norge AS",
+  "contributors": [{
+    "name": "Fredrik Jensen (Netlife Research)",
+  }, {
+    "name": "Bård N. Hovde (Netlife Research)",
+  }],
   "license": "ISC",
   "main": "index.js",
   "scripts": {
