@@ -1,0 +1,73 @@
+/**
+ * Hedwig
+ * -----
+ * Checkbox
+ */
+
+
+ .hw-checkbox {
+   position: relative;
+   display: block;
+   cursor: pointer;
+   padding-left: 2rem;
+   font-size: var(--hw-font-size-p);
+
+   &__indicator {
+     position: absolute;
+     top: 0;
+     left: 0;
+     display: block;
+     width:  18px;
+     height: 18px;
+     line-height: 18px;
+     background-color: var(--hw-color-white);
+     border: 3px solid var(--hw-color-gray-light); // Always use a border on input elements for accessibility. High contrast mode in Windows will remove all background styling and render the field invisible if border is not used.
+     user-select: none;
+     text-align: center;
+     border-radius: 0;
+   }
+
+  & > input {
+     position: absolute;
+     left: -1000px;
+     opacity: 0;
+     display: none;
+
+     &:checked ~ .hw-checkbox__indicator {
+       background-color: var(--hw-color-primary);
+       border-color: var(--hw-color-primary); // Always use a border on input elements for accessibility. High contrast mode in Windows will remove all background styling and render the field invisible if border is not used.
+       color: var(--hw-color-white);
+
+       &:before {
+         content: '';
+         display: inline-block;
+         width: 10px;
+         height: 10px;
+         border-left: 3px solid white;
+         border-bottom: 3px solid white;
+         transform: translateY(-50%) rotate(-45deg);
+       }
+     }
+
+     &:active ~ .hw-checkbox__indicator {
+       outline: 3px solid var(--hw-color-secondary);
+       color: var(--hw-color-white);
+       background-color: var(--hw-color-primary);
+       border-color: var(--hw-color-primary);
+     }
+
+    &:focus ~ .hw-checkbox__indicator {
+      outline: 6px solid var(--hw-color-secondary);
+    }
+
+     &:disabled ~ .hw-checkbox__indicator {
+       border-color: var(--hw-color-gray-light);
+       background: var(--hw-color-gray-lighter);
+     }
+
+     &:disabled:checked ~ .hw-checkbox__indicator {
+       border-color: var(--hw-color-gray-light);
+       background: var(--hw-color-gray-lighter);
+     }
+   }
+ }

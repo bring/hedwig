@@ -26,6 +26,7 @@
     "serve": "concurrently \"npm run server\" \"npm run livereload\"",
     "livereload": "live-reload --port 9091 docs/ build/",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node ./scripts/s3-deploy",
     "start": "npm run docs:build & npm run server"
   },
   "dependencies": {
@@ -33,6 +34,7 @@
     "babel-preset-es2015": "^6.24.0",
     "concurrently": "^3.4.0",
     "cssnano": "^3.10.0",
+    "dotenv": "^4.0.0",
     "express": "^4.15.2",
     "live-reload": "^1.1.0",
     "node-watch": "^0.5.2",
@@ -44,6 +46,7 @@
     "rollup-plugin-multi-entry": "^2.0.1",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-watch": "^3.2.2",
+    "s3": "^4.4.0",
     "the-answer": "^1.0.0"
   },
   "engines": {

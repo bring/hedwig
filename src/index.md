@@ -6,8 +6,9 @@ Hedwig is also Posten and Brings Front-End Style Guide.
 
 Using Hedwig in your project is super simple. You only need to include this:
 ```
-<link rel="stylesheet" href="http://some-cdn.com/hedwig/1.0.0/hedwig.min.css">
-<script src="http://some-cdn.com/hedwig/1.0.0/hedwig.min.js"></script>
+Fonts: http://hedwig-cdn.s3.amazonaws.com/assets/fonts/fonts.css
+CSS: http://hedwig-cdn.s3.amazonaws.com/main.css
+JS: http://hedwig-cdn.s3.amazonaws.com/main.js
 ```
 
 **WTF!? I do not want to include external files in my project.**
