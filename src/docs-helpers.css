@@ -12,3 +12,9 @@
 .hw-helpers-margin-highlighter > div {
     background-color: rgb(242, 242, 242);
 }
+
+.hw-helpers-highlight {
+  background-color: #048ebb;
+  color: white;
+  padding: 12px;
+}
