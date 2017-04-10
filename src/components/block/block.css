@@ -45,4 +45,27 @@
   &--margin-bottom-double {
     margin-bottom: var(--hw-spacing-7);
   }
+  &--padding-top {
+    padding-top: var(--hw-spacing-4);
+  }
+
+  &--padding-bottom {
+    padding-bottom: var(--hw-spacing-4);
+  }
+
+  &--padding-top-half {
+    padding-top: var(--hw-spacing-2);
+  }
+
+  &--padding-bottom-half {
+    padding-bottom: var(--hw-spacing-2);
+  }
+
+  &--padding-top-double {
+    padding-top: var(--hw-spacing-7);
+  }
+
+  &--padding-bottom-double {
+    padding-bottom: var(--hw-spacing-7);
+  }
 }

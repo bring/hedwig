@@ -1,0 +1,23 @@
+/**
+ * HEWDIG
+ *
+ * Hr
+ */
+
+.hw-hr {
+  display: block;
+  height: 2px;
+  width: 100%;
+  max-width: 48px;
+  margin: 0;
+  background: var(--hw-color-gray-dark);
+  border: 0;
+
+  &--full {
+    max-width: initial;
+  }
+
+  &--white {
+    background: var(--hw-color-white);
+  }
+}
