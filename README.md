@@ -30,33 +30,23 @@ yarn run dev
 open browser localhost:3000/docs 🚀
 ```
 
-## Commands
-
-`dev`
-`build`
-`serve`
-
 ### Docs
-
-Documentation are available at [Hedwig documentation](http://hedwig.surge.sh/#/).
 
 Docs are auto generated from the components markdown file. The filename will generate the menu name and URL. In development the docs live reload. It is recommended to always develop within the documentation.
 
 ### Deploy
 
-Right now we are hosting our docs at [Surge](https://surge.sh/).
+The documentation is atuo-deployed to Heroku [https://hedwig-docs.herokuapp.com](https://hedwig-docs.herokuapp.com), when pushed to master.
 
-First install Surge as a global dependency.
+Production CSS, JavaScript and assets are hosted on a CDN using [Amazon S3](https://aws.amazon.com/s3/) and [Amazon Cloudfront](https://aws.amazon.com/cloudfront).
+
+To sync your application to S3:
 ```
-npm install --global surge
+npm run sync:s3
 ```
 
-To deploy the docs:
-```
-npm run build
-surge
-> select the docs folder, and hedwig.surge.sh as domain 🚀
-```
+This will both synchronize your build folder and your assets folder.
+
 
 ### 📂 Structure
 

@@ -5,52 +5,51 @@ require('dotenv').config();
  * https://github.com/andrewrk/node-s3-client
  */
 
-var s3 = require('s3');
+const s3 = require('s3');
+
+/**
+ * The s3 pacakge is using an old aws-sdk, so we need to set up our own.
+ */
+
+const AWS = require('aws-sdk');
 
 /**
  * Create client
  */
 
-var client = s3.createClient({
-  maxAsyncS3: 20,
-  s3RetryCount: 3,
-  s3RetryDelay: 1000,
-  multipartUploadThreshold: 20971520,
-  multipartUploadSize: 15728640,
-  s3Options: {
-    accessKeyId: process.env.S3_BUCKET_KEY,
-    secretAccessKey: process.env.S3_BUCKET_KEY_SECRET,
-    region: process.env.S3_BUCKET_REGION,
-    signatureVersion: 'v2',
-  },
+const awsS3Client = new AWS.S3({
+  accessKeyId: process.env.S3_BUCKET_KEY,
+  secretAccessKey: process.env.S3_BUCKET_KEY_SECRET,
+  region: process.env.S3_BUCKET_REGION,
+});
+
+const client = s3.createClient({
+  s3Client: awsS3Client,
 });
 
 /**
  * Set params
  */
 
-var params = {
-  localFile: "build/main.css",
+const params = {
+  localDir: 'build',
+  deleteRemoved: true,
   s3Params: {
-    Bucket: "hedwig-cdn",
-    Key: "dist/main.css",
+    Bucket: 'hedwig-cdn',
+    Prefix: 'test',
   },
 };
 
-var uploader = client.uploadFile(params);
+const uploader = client.uploadDir(params);
 
-/**
- * Upload file
- */
-
-uploader.on('error', function(err) {
-  console.error("unable to sync:", err.stack);
+uploader.on('error', (err) => {
+  console.error('unable to sync:', err.stack);
 });
 
-uploader.on('progress', function() {
-  console.log("progress", uploader.progressAmount, uploader.progressTotal);
+uploader.on('progress', () => {
+  console.log('progress', uploader.progressAmount, uploader.progressTotal);
 });
 
-uploader.on('end', function() {
-  console.log("done uploading");
+uploader.on('end', () => {
+  console.log('done uploading');
 });
