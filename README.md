@@ -9,9 +9,9 @@ To use Hedwig in your project is super simple.
 You only need to include this in your document:
 
 ```
-Fonts: http://hedwig-cdn.s3.amazonaws.com/assets/fonts/fonts.css
-CSS: http://hedwig-cdn.s3.amazonaws.com/main.css
-JS: http://hedwig-cdn.s3.amazonaws.com/main.js
+Fonts: http://hedwig-cdn.s3.amazonaws.com/dist/assets/fonts/fonts.css
+CSS: http://hedwig-cdn.s3.amazonaws.com/dist/main.css
+JS: http://hedwig-cdn.s3.amazonaws.com/dist/main.js
 ```
 
 **WTF!? I do not want to include external files in my project!**

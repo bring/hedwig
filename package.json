@@ -26,7 +26,8 @@
     "serve": "concurrently \"npm run server\" \"npm run livereload\"",
     "livereload": "live-reload --port 9091 docs/ build/",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sync:s3": "node ./scripts/s3-deploy",
+    "s3:download": "node ./scripts/s3-download",
+    "s3:upload": "node ./scripts/s3-upload",
     "start": "npm run docs:build & npm run server"
   },
   "dependencies": {

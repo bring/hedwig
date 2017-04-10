@@ -6,20 +6,20 @@ var production = process.env.NODE_ENV === 'production';
 
 if (production) {
   styles = [
-    'https://hedwig-cdn.s3.amazonaws.com/assets/fonts/fonts.css',
-    'https://hedwig-cdn.s3.amazonaws.com/main.css'
+    'https://hedwig-cdn.s3.amazonaws.com/hewdig/assets/fonts/fonts.css',
+    'https://hedwig-cdn.s3.amazonaws.com/hewdig/main.css'
   ];
-  scripts = ['https://hedwig-cdn.s3.amazonaws.com/main.js'];
-  logo = 'https://hedwig-cdn.s3.amazonaws.com/assets/images/logo.svg';
+  scripts = ['https://hedwig-cdn.s3.amazonaws.com/hewdig/main.js'];
+  logo = 'https://hedwig-cdn.s3.amazonaws.com/hewdig/assets/images/logo.svg';
 }
 
 if (!production) {
   styles = [
-    'http://localhost:3002/fonts/fonts.css',
+    'http://localhost:3001/assets/fonts/fonts.css',
     'http://localhost:3001/main.css'
   ];
   scripts = ['http://localhost:3001/main.js'];
-  logo = 'http://localhost:3002/images/logo.svg';
+  logo = 'http://localhost:3001/assets/images/logo.svg';
 }
 
 module.exports = {
