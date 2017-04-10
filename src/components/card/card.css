@@ -1,0 +1,69 @@
+/**
+ * HEWDIG
+ *
+ * Card
+ */
+
+.hw-card {
+  background: var(--hw-color-white);
+  transition: transform .3s;
+  cursor: pointer;
+  display: flex;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s cubic-bezier(.165, .84, .44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+  }
+
+  /**
+   * States
+   */
+
+  &:hover {
+      transform: scale3d(1.006, 1.006, 1);
+      &::after {
+        opacity: 1;
+      }
+  }
+
+  &__contents {
+    max-width: 286px;
+    padding: 0 var(--hw-spacing-6);
+  }
+
+  &__header {
+    padding: var(--hw-spacing-6) 0;
+  }
+
+  &__body {
+    padding: var(--hw-spacing-4) 0 var(--hw-spacing-6) 0;
+  }
+
+  &__media {
+    flex-grow: 1;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /**
+   * Variants
+   */
+
+  &--half {
+    
+  }
+
+  &--dark .hw-card__contents {
+    color: white;
+    background: var(  --hw-color-gray-darker);
+  }
+
+}
