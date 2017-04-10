@@ -21,7 +21,7 @@ Styling for cards.
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.</p>
       </div>
     </div>
-    <div class="hw-card__media" style="background-image: url('http://localhost:3002/images/demo-image-1.png');"></div>
+    <div class="hw-card__media" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hewdig/assets/images/demo-image-1.png');"></div>
   </article>
 ```
 
@@ -39,7 +39,7 @@ Styling for cards.
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.</p>
       </div>
     </div>
-    <div class="hw-card__media" style="background-image: url('http://localhost:3002/images/demo-image-1.png');"></div>
+    <div class="hw-card__media" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hewdig/assets/images/demo-image-1.png');"></div>
   </article>
 ```
 ```html|span-3,plain,light
@@ -53,7 +53,7 @@ Styling for cards.
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.</p>
       </div>
     </div>
-    <div class="hw-card__media" style="background-image: url('http://localhost:3002/images/demo-image-1.png');"></div>
+    <div class="hw-card__media" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hewdig/assets/images/demo-image-1.png');"></div>
   </article>
 ```
 
@@ -70,7 +70,6 @@ Styling for cards.
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.</p>
       </div>
     </div>
-    <div class="hw-card__media" style="background-image: url('http://localhost:3002/images/demo-image-2.png');"></div>
+    <div class="hw-card__media" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hewdig/assets/images/demo-image-2.png');"></div>
   </article>
 ```
-
