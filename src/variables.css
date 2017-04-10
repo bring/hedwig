@@ -18,13 +18,11 @@
   --hw-color-secondary: #fdbb2f;
   --hw-color-link: #4a90e2;
 
-  --hw-color-gray-7: #222222;
-  --hw-color-gray-6: #444444;
-  --hw-color-gray-5: #666666;
-  --hw-color-gray-4: #888888;
-  --hw-color-gray-3: #c1c1c1;
-  --hw-color-gray-2: #e6e6e6;
-  --hw-color-gray-1: #f2f2f2;
+  --hw-color-gray-darker: #222222;
+  --hw-color-gray-dark: #444444;
+  --hw-color-gray: #666666;
+  --hw-color-gray-light: #c1c1c1;
+  --hw-color-gray-lighter: #e6e6e6;
 
   --hw-color-white: #ffffff;
   --hw-color-black: #000000;
