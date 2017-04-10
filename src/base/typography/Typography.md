@@ -2,60 +2,37 @@
 
 Our font is [Foundry Monoline](https://www.fonts.com/font/the-foundry/foundry-monoline).
 
-```download|span-6
-title: Foundry Monoline
-subtitle: zip (8 KB)
-url: http://localhost:3002/fonts/
-```
+```code
+[h1]             h1
+[h2]             h2
+[h3]             h3
+[p]              p
 
-```type|span-2,kern,smoothen,single
-{
-    "headings": [22],
-    "background": "#7bc144",
-    "color": "#fff",
-    "font": "Foundry Monoline Regular",
-}
-```
-
-```type|span-2,kern,smoothen,single
-{
-    "headings": [22],
-    "background": "#7bc144",
-    "color": "#fff",
-    "font": "Foundry Monoline Medium",
-}
-```
-
-```type|span-2,kern,smoothen,single
-{
-    "headings": [22],
-    "background": "#7bc144",
-    "color": "#fff",
-    "font": "Foundry Monoline Bold",
-}
-```
-
-```type
-{
-  "headings": [44,28, 22],
-  "font": "Foundry Monoline Medium",
-  "color": "#444",
-}
-```
-
-```type
-{
-  "paragraphs": ["18/27"],
-  "font": "Foundry Monoline Regular",
-  "color": "#444",
-}
+[Lead]           hw-text-lead
+[Small]          hw-text-small
 ```
 
 
-```type|single
-{
-  "paragraphs": ["18/28"],
-  "font": "Foundry Monoline Regular",
-  "color": "#444",
-}
+### Headers
+
+```html|span-4,plain,light
+  <h1>H1 Headline example</h1>
+  <h2>H2 Headline example</h2>
+  <h3>H3 Headline example</h3>
+```
+
+### Paragraph
+
+```html|span-4,plain,light
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
+```
+
+### Lead
+```html|span-4,plain,light
+  <p class="hw-text-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
+```
+
+### Small
+```html|span-4,plain,light
+  <p class="hw-text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
 ```

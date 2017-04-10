@@ -7,10 +7,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  background: gray;
-  font-family: 'Foundry Monoline Regular';
-}
-
-h1 {
-  font-family: 'Foundry Monoline Regular';
+  font-family: var(--hw-font-primay-medium);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

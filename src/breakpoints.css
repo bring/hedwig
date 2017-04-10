@@ -1,0 +1,18 @@
+/* 1em = 16px*/
+
+@custom-media --infant (min-width: 20em);
+@custom-media --baby (min-width: 30em);
+@custom-media --child (min-width: 37.5em);
+@custom-media --teen (min-width: 48em);
+@custom-media --adult (min-width: 67.5em);
+@custom-media --elder (min-width: 83em);
+
+/* Used for min max settings */
+
+@custom-media --only-base (min-width: 0em) and (max-width: 20em);
+@custom-media --only-infant (min-width: 20em) and (max-width: 30em);
+@custom-media --only-baby (min-width: 30em) and (max-width: 37.5em);
+@custom-media --only-child (min-width: 37.5em) and (max-width: 48em);
+@custom-media --only-teen (min-width: 48em) and (max-width: 67.5em);
+@custom-media --only-adult (min-width: 67.5em) and (max-width: 83em));
+@custom-media --only-elder (min-width: 83em);

@@ -23,6 +23,15 @@ module.exports = {
   title: 'Hedwig',
   styles: styles,
   scripts: scripts,
+  responsiveSizes: [
+    {name: 'base', width: 272, height: 340},
+    {name: 'infant', width: 370, height: 768},
+    {name: 'baby', width: 500, height: 1080},
+    {name: 'child', width: 700, height: 1080},
+    {name: 'teen', width: 1024, height: 1080},
+    {name: 'adult', width: 1200, height: 1080},
+    {name: 'elder', width: 1920, height: 1080}
+  ],
   // logoSrc: './assets/hedwig_720.png',
   theme: {
     color: '#7bc144',

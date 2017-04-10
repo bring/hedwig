@@ -55,6 +55,8 @@
    * NOTE: This is in PX because we watn them to specific.
    */
 
+  --hw-font-size-h1-mobile: 35px;
+
   --hw-font-size-h1: 44px;
   --hw-font-size-h2: 28px;
   --hw-font-size-h3: 22px;

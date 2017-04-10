@@ -1,11 +1,72 @@
-body {
-  font-family: var(--hw-font-primay-regular);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/**
+  * Base body styles
+  */
+
+/**
+  * Paragraph styles
+  */
+
+p {
+  font-size: var(--hw-font-size-p);
+  font-family: var(--hw-font-primay-medium);
+  line-height: 1.4;
+  color: var(--hw-color-gray-6);
+  margin: 0;
+  padding: 0;
 }
 
+/**
+  * Header styles
+  */
 h1,
 h2,
-h3, {
-  
+h3 {
+  color: var(--hw-color-gray-6);
+  margin: 0;
+  padding: 0;
+  font-family: var(--hw-font-primay-medium);
+  font-weight: normal;
+  line-height: 1;
+}
+@media (--teen) {
+  h1,
+  h2,
+  h3 {
+    line-height: 1.5;
+  }
+}
+
+h1 {
+  font-size: var(--hw-font-size-h1-mobile);
+}
+@media (--teen) {
+  h1 {
+    font-size: var(--hw-font-size-h1);
+  }
+}
+
+h2 {
+  font-size: var(--hw-font-size-h2);
+}
+
+h3 {
+  font-size: var(--hw-font-size-h3);
+  font-family: var(--hw-font-primay-bold);
+}
+
+/**
+  * Extra text styles
+  */
+
+.hw-text-lead {
+  font-size: var(--hw-font-size-lead);
+  font-family: var(--hw-font-primay-regular);
+  line-height: 1.4;
+  color: var(--hw-color-gray-6);
+}
+
+.hw-text-small {
+  font-size: var(--hw-font-size-small);
+  line-height: 1.4;
+  color: var(--hw-color-gray-5);
 }
