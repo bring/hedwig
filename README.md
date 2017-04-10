@@ -25,28 +25,34 @@ To develop on the project, please follow our [guidelines]('').
 
 ```
 clone this repo
-yarn install
+yarn install                # to install dependencies
+yarn run s3:download         # to download assets from S3
+add .env file               # get variables from Heroku
 yarn run dev
-open browser localhost:3000/docs 🚀
+[open browser on port 3000]('http://localhost:3000/docs') 🚀
 ```
 
-### Docs
+### Documentation
 
-Docs are auto generated from the components markdown file. The filename will generate the menu name and URL. In development the docs live reload. It is recommended to always develop within the documentation.
+We use [Catalog](https://interactivethings.github.io/catalog/#/) from documentation. Read [write documentation](https://interactivethings.github.io/catalog/#/write-documentation) about how to write documentation for the compoenents.
 
-### Deploy
+Docs are auto generated from the components markdown file. The filename will generate the menu name and URL. It is recommended to save the documentation files together with your components. In development the docs live reload. It is recommended to always develop within the documentation.
 
 The documentation is atuo-deployed to Heroku [https://hedwig-docs.herokuapp.com](https://hedwig-docs.herokuapp.com), when pushed to master.
 
+### Deploy to S3
+
 Production CSS, JavaScript and assets are hosted on a CDN using [Amazon S3](https://aws.amazon.com/s3/) and [Amazon Cloudfront](https://aws.amazon.com/cloudfront).
 
-To sync your application to S3:
+To upload the build folder to S3:
 ```
-npm run sync:s3
+yarn run s3:upload
 ```
 
-This will both synchronize your build folder and your assets folder.
-
+To download the build folder from S3:
+```
+yarn run s3:download
+```
 
 ### 📂 Structure
 

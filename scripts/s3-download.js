@@ -9,7 +9,7 @@ const params = {
   deleteRemoved: false,
   s3Params: {
     Bucket: 'hedwig-cdn',
-    Prefix: 'prod',
+    Prefix: 'hewdig',
   },
 };
 
