@@ -10,8 +10,8 @@ Using Hedwig (beta) in your project is super simple. You only need to include th
 
 ```
 Fonts: http://hedwig-cdn.s3.amazonaws.com/hewdig/assets/fonts/fonts.css
-CSS: http://hedwig-cdn.s3.amazonaws.com/hewdig/main.css
-JS: http://hedwig-cdn.s3.amazonaws.com/hewdig/main.js
+CSS: http://hedwig-cdn.s3.amazonaws.com/hedwig/main.css
+JS: http://hedwig-cdn.s3.amazonaws.com/hedwig/main.js
 ```
 
 **WTF!? I do not want to include external files in my project!**
