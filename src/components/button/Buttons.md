@@ -1,15 +1,12 @@
 ## Buttons
 
-Used for primary call to actions.
+Styling for buttons.
 
 ```code
-[Base]           hw-button
-[Primary]        hw-button--primary
-[Outline]        hw-button--outline
-[Outline white]  hw-button--outline-white
+[Base]           .hw-button
 
-[Large]          hw-button--large
-[Small]          hw-button--small
+[Large]          .hw-button--large
+[Small]          .hw-button--small
 ```
 
 ### Base
@@ -29,6 +26,10 @@ Used for primary call to actions.
   </button>
 ```
 
+```code
+[Base]           .hw-button
+```
+
 ### Primary
 
 ```html|span-4,plain,light
@@ -44,6 +45,10 @@ Used for primary call to actions.
   <button class="hw-button hw-button--primary hw-button--small" disabled>
     Disabled
   </button>
+```
+
+```code
+[Primary]        .hw-button--primary
 ```
 
 ### Outline
@@ -62,6 +67,9 @@ Used for primary call to actions.
     Disabled
   </button>
 ```
+```code
+[Outline]        .hw-button--outline
+```
 
 ### Outline white
 
@@ -78,4 +86,7 @@ Used for primary call to actions.
   <button class="hw-button hw-button--outline-white hw-button--small" disabled>
     Disabled
   </button>
+```
+```code
+[Outline white]        .hw-button--outline-white
 ```

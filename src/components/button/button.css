@@ -95,7 +95,7 @@
     }
 
     &:hover {
-      color: var(--hw-color-gray-7);
+      color: var(--hw-color-gray-dark);
       background: var(--hw-color-white);
     }
   }

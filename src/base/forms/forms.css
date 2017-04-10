@@ -1,0 +1,106 @@
+/**
+ * Hedwig
+ * ------
+ * Forms
+ */
+
+/**
+ * Label
+ */
+
+label {
+  font-size: var(--hw-font-size-small);
+  margin-bottom: var(--hw-spacing-2);
+  color: var(--hw-color-gray-dark);
+  display: block;
+
+  &[disabled]{
+    color: var(--hw-color-gray-light);
+  }
+}
+
+/**
+ * Input
+ */
+
+input,
+.hw-input {
+  font-size: var(--hw-font-size-small);
+  padding: var(--hw-spacing-2);
+  border: 3px solid var(--hw-color-gray-light);
+  display: block;
+  width: 100%;
+  transition: border 100ms;
+  margin: 3px 0;
+  position: relative;
+
+  /**
+   * States
+   */
+
+  &:focus {
+    border: 3px solid var(--hw-color-gray-dark);
+    outline: 0;
+  }
+
+  &[disabled] {
+    border: 3px solid var(--hw-color-gray-lighter);
+  }
+}
+
+/**
+ * Error
+ */
+
+.hw-input-error {
+  position: relative;
+
+  & input {
+    border: 3px solid var(--hw-color-secondary);
+    transition: border 200ms;
+    position: relative;
+  }
+
+  &:before {
+    background: var(--hw-color-gray);
+    color: var(--hw-color-white);
+    position: absolute;
+    content: '!';
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    bottom: 12px;
+    right: 12px;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  &__message {
+    color: var(--hw-color-black);
+    background: var(--hw-color-secondary);
+    display: inline-block;
+    float: right;
+    padding: 3px 12px;
+    margin-bottom: -3px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 200ms;
+  }
+
+  &--is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/**
+ * Error summary
+ */
+
+.hw-error-summary {
+  border: 3px solid var(--hw-color-secondary);
+  padding: var(--hw-spacing-2);
+  background: var(--hw-color-white);
+}
