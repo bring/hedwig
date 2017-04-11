@@ -3,7 +3,27 @@
  */
 import HWDropdown from './components/dropdown/dropdown';
 
+
 /**
- * Initialise all modules
+ * HedwigApp constructor
  */
-HWDropdown();
+class HedwigApp {
+
+  constructor(options) {
+    this.name = 'Hedwig Front-End Application';
+    this.modules = {};
+    this.settings = Object.assign({}, {
+      version: 0.1,
+    }, options);
+  }
+
+  init() {
+    console.info('initialising hedwig app!');
+
+    // Attach and initialise modules
+    this.modules.HWDropdown = HWDropdown();
+    // ...
+  }
+}
+
+export default HedwigApp;

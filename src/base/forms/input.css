@@ -10,6 +10,7 @@
 
 label {
   font-size: var(--hw-font-size-small);
+  font-family: var(--hw-font-primay-bold);
   margin-bottom: var(--hw-spacing-2);
   color: var(--hw-color-gray-dark);
   display: block;
