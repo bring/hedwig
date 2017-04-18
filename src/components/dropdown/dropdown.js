@@ -62,12 +62,20 @@ const HWDropdown = ({
     const dropDownOptions = qa('.hw-dropdown__options', dropdown)[0];
     const viewportHeight = window.innerHeight;
     const position = getPosition(dropdown);
-    const dropDownHeight = dropDownOptions.offsetHeight;
+    const dropDownHeight = dropDownOptions.offsetHeight + 50;
 
     // Check if dropdown is too large for viewport
     if (dropDownHeight > viewportHeight) {
       dropdown.classList.add(tooBigClass);
       dropDownInner.style.transform = `translateY(-${position.offsetFromTop - 30}px)`;
+      return;
+    }
+
+    // Check if dropdown will poke below viewport
+    const dropDownBottom = position.offsetFromTop + dropDownHeight;
+    if (dropDownBottom > viewportHeight) {
+      const overflowAmount = dropDownBottom - viewportHeight;
+      dropDownInner.style.transform = `translateY(-${overflowAmount + 30}px)`;
     }
   }
 
