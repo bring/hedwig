@@ -1,4 +1,7 @@
+/* global window */
+
 import qa from '../../utilities/js/qa';
+import getPosition from '../../utilities/js/position';
 import KEYS from '../../utilities/js/keys';
 
 /**
@@ -10,6 +13,7 @@ import KEYS from '../../utilities/js/keys';
 const HWDropdown = ({
     dropdownSelector = '[data-hw-dropdown]',
     activeClass = 'hw-dropdown--expanded',
+    tooBigClass = 'hw-dropdown--is-too-big',
   } = {}) => {
 
   // Module settings object
@@ -48,6 +52,40 @@ const HWDropdown = ({
 
 
   /**
+   * @function handleFitInViewport
+   * @desc Triggered when dropdown is too large for viewport
+   * -> Or if the dropdown will expand below the screen end
+   * @param {node} dropdown
+   */
+  function handleFitInViewport(dropdown) {
+    const dropDownInner = qa('.hw-dropdown__inner', dropdown)[0];
+    const dropDownOptions = qa('.hw-dropdown__options', dropdown)[0];
+    const viewportHeight = window.innerHeight;
+    const position = getPosition(dropdown);
+    const dropDownHeight = dropDownOptions.offsetHeight;
+
+    // Check if dropdown is too large for viewport
+    if (dropDownHeight > viewportHeight) {
+      dropdown.classList.add(tooBigClass);
+      dropDownInner.style.transform = `translateY(-${position.offsetFromTop - 30}px)`;
+    }
+  }
+
+
+  /**
+   * @function resetPosition
+   * @desc Remove any inline styles from dropdown
+   * @param {node} dropdown
+   */
+  function resetPosition(dropdown) {
+    const dropDownContents = qa('.hw-dropdown__inner', dropdown)[0];
+    dropdown.classList.remove(tooBigClass);
+    dropDownContents.style.transform = '';
+    dropDownContents.scrollTop = 0;
+  }
+
+
+  /**
    * @function toggleDropdown
    * @desc Toggles the dropdown options list for a dropdown
    * @param {Event} e
@@ -68,9 +106,11 @@ const HWDropdown = ({
     if (list.getAttribute('aria-hidden') === 'false') {
       list.setAttribute('aria-hidden', true);
       dropdown.classList.remove(activeClass);
+      resetPosition(dropdown);
     } else {
       list.setAttribute('aria-hidden', false);
       dropdown.classList.add(activeClass);
+      handleFitInViewport(dropdown);
     }
   }
 
