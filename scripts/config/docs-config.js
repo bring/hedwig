@@ -27,13 +27,10 @@ module.exports = {
   styles: styles,
   scripts: scripts,
   responsiveSizes: [
-    {name: 'base', width: 272, height: 340},
-    {name: 'infant', width: 370, height: 768},
-    {name: 'baby', width: 500, height: 1080},
-    {name: 'child', width: 700, height: 1080},
-    {name: 'teen', width: 1024, height: 1080},
-    {name: 'adult', width: 1200, height: 1080},
-    {name: 'elder', width: 1920, height: 1080}
+    {name: 'small', width: 460, height: 340},
+    {name: 'medium', width: 720, height: 768},
+    {name: 'large', width: 940, height: 1080},
+    {name: 'xlarge', width: 1200, height: 1080}
   ],
   logoSrc: logo,
   theme: {
