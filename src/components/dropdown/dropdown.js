@@ -205,13 +205,13 @@ const HWDropdown = ({
   function init() {
     // Check if any dropdowns exist, return if not.
     if (SETTINGS.elements.length < 1) {
-      return false;
+      return;
     }
 
     console.info('Initialising the HWDropdown module');
 
     // Loop through all dropdowns and initialise
-    return SETTINGS.elements.forEach((dropdown) => {
+    SETTINGS.elements.forEach((dropdown) => {
       // Skip if already initialised
       if (dropdown.getAttribute('data-hw-dropdown-initialised') === 'true') { return false; }
 
@@ -223,12 +223,13 @@ const HWDropdown = ({
       dropdown.setAttribute('aria-role', 'listbox');
       dropdown.setAttribute('tabindex', '0');
 
+
       // Find initially selected option, otherwise display placeholder
       const defaultOption = dropdown.getAttribute('data-hw-dropdown-default-selected') || false;
       selectOption(dropdown, defaultOption);
 
       // Set up event listeners for opening dropdown
-      return bindEvents(dropdown);
+      bindEvents(dropdown);
     });
   }
 
@@ -237,4 +238,4 @@ const HWDropdown = ({
   init();
 };
 
-export default HWDropdown;
+HWDropdown();

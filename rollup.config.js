@@ -9,13 +9,16 @@ import resolve from 'rollup-plugin-node-resolve';
 
 export default {
   format: 'iife',
-  entry: 'src/**/*.js',
+  entry: {
+    include: ['src/**/*.js'],
+    exclude: ['src/**/*.test.js'],
+  },
   dest: 'build/main.js',
   plugins: [
     resolve(),
     multiEntry(),
     babel({
-      exclude: 'node_modules/**'
+      exclude: 'node_modules/**',
     }),
   ],
 };

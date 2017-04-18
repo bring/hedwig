@@ -61,11 +61,11 @@ We use the [Csswizandry grids](https://github.com/csswizardry/csswizardry-grids)
 
 ```html|span-6,plain,light,responsive
   <div class="hw-grid">
-    <div class="hw-grid__item teen--one-quarter">
-      <p class="hw-helpers-highlight">Default: one-whole, teen: one-quarter</p>
+    <div class="hw-grid__item medium--one-quarter">
+      <p class="hw-helpers-highlight">Default: one-whole, medium: one-quarter</p>
     </div><!--
-    --><div class="hw-grid__item teen--three-quarters">
-      <p class="hw-helpers-highlight">Default: one-whole, teen: three-quarters</p>
+    --><div class="hw-grid__item medium--three-quarters">
+      <p class="hw-helpers-highlight">Default: one-whole, medium: three-quarters</p>
     </div>
   </div>
 ```

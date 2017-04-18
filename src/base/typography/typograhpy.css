@@ -28,7 +28,7 @@ h3 {
   font-weight: normal;
   line-height: 1;
 }
-@media (--teen) {
+@media (--medium) {
   h1,
   h2,
   h3 {
@@ -39,7 +39,7 @@ h3 {
 h1 {
   font-size: var(--hw-font-size-h1-mobile);
 }
-@media (--teen) {
+@media (--medium) {
   h1 {
     font-size: var(--hw-font-size-h1);
   }
