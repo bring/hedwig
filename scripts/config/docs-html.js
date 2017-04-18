@@ -14,6 +14,28 @@ module.exports = `
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Hedwig</title>
+      <style>
+        /**
+          * Margin highlighting for block demo
+          */
+
+        .hw-helpers-margin-highlighter {
+          background-color: #f9cc9d;
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 24px;
+        }
+        .hw-helpers-margin-highlighter > div {
+            background-color: rgb(242, 242, 242);
+        }
+
+        .hw-helpers-highlight {
+          background-color: #048ebb;
+          color: white;
+          padding: 12px;
+        }
+
+      </style>
     </head>
     <body>
       <div id="catalog" />
