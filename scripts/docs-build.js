@@ -16,6 +16,38 @@ var docsConfig = require('./config/docs-config');
 var docsHtml = require('./config/docs-html');
 
 function build() {
+  /**
+   * Make directory if it does not exists
+   */
+
+   var dir = './docs';
+   if (!fs.existsSync(dir)) {
+       fs.mkdirSync(dir);
+   }
+
+  var dir = './docs/md';
+  if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir);
+  }
+
+  /**
+   * Copy html to docs
+   */
+
+   fs.writeFile('docs/index.html', docsHtml, function(err) {
+     if(err) {
+       return console.warn(err);
+     }
+   });
+
+
+  /**
+   * Make page config
+   */
+
+   var pagesSetup = [];
+   var categories = [];
+
     glob('src/**/*.md', (err, files) => {
         /**
          * Return if any error
@@ -24,27 +56,6 @@ function build() {
         if (err) {
             console.warn('😞 There was an error compiling the docs')
             return;
-        }
-
-        /**
-         * Make page config
-         */
-
-        var pagesSetup = [];
-
-
-        /**
-         * Make directory if it does not exists
-         */
-
-         var dir = './docs';
-         if (!fs.existsSync(dir)) {
-             fs.mkdirSync(dir);
-         }
-
-        var dir = './docs/md';
-        if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir);
         }
 
         /**
@@ -57,8 +68,8 @@ function build() {
              * Make a filename and title
              */
 
-            const filename = file.split('/').pop();
-            const title = filename.split('.').shift();
+            let filename = file.split('/').pop();
+            let title = filename.split('.').shift();
 
             /**
              * Copy md files to docs
@@ -67,6 +78,28 @@ function build() {
             fs.createReadStream(file).pipe(
                 fs.createWriteStream('docs/md/' + filename)
             );
+
+            /**
+             * Check if the page is a sub category (contains '_')
+             */
+
+            if (filename.indexOf('->') !== -1) {
+              const category = filename.split('->').shift();
+              const name = filename.split('->').pop().split('.').shift();
+
+               const categoryPage = {
+                 title: category,
+                 pages: [{
+                   title: name,
+                   path: title,
+                   src: `md/${filename}`,
+                 }],
+               };
+
+               categories.push(categoryPage);
+
+              return;
+            }
 
             /**
              * Make index page
@@ -101,7 +134,33 @@ function build() {
               ...pagesSetup,
               page,
             ];
+
+
         });
+
+        /**
+         * Make the category pages
+         */
+
+        const categoryPages = categories.reduce((result, category) => {
+          const parent = result.find(parentCat => parentCat.title === category.title);
+
+          if (!parent) {
+            return [...result, category];
+          }
+
+          parent.pages = [
+            ...parent.pages,
+            ...category.pages,
+          ];
+
+          return result;
+        }, []);
+
+        pagesSetup = [
+          ...pagesSetup,
+          ...categoryPages,
+        ];
 
         /**
          * Generate Catalog config file and write it to docs
@@ -117,19 +176,7 @@ function build() {
             console.log("✍️ The docs was generated");
         });
 
-        /**
-         * Copy md files to docs
-         */
 
-         var html = './docs/index.html';
-
-         if (!fs.existsSync(html)) {
-             fs.writeFile('docs/index.html', docsHtml, function(err) {
-                 if(err) {
-                     return console.warn(err);
-                 }
-             });
-         }
     })
 }
 

@@ -36,7 +36,11 @@ yarn run dev
 
 We use [Catalog](https://interactivethings.github.io/catalog/#/) from documentation. Read [write documentation](https://interactivethings.github.io/catalog/#/write-documentation) about how to write documentation for the compoenents.
 
-Docs are auto generated from the components markdown file. The filename will generate the menu name and URL. It is recommended to save the documentation files together with your components. In development the docs live reload. It is recommended to always develop within the documentation.
+Docs are auto generated from the components markdown file. The filename will generate the menu name and URL. It is recommended to save the documentation files together with your components.
+
+To add a subcategory, simple add an arrow in the filename. If you name the file just `Input.md` there will be a single page. But if you call it `Forms->Input.md` it will be a sub-page of Forms.
+
+In development the docs live reload. It is recommended to always develop within the documentation.
 
 The documentation is atuo-deployed to Heroku [https://hedwig-docs.herokuapp.com](https://hedwig-docs.herokuapp.com), when pushed to master.
 
