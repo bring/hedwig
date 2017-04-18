@@ -14,6 +14,7 @@ var glob = require('glob');
 
 var docsConfig = require('./config/docs-config');
 var docsHtml = require('./config/docs-html');
+var addPagesToCategories = require('./utilities/addPagesToCategories');
 
 function build() {
   /**
@@ -142,20 +143,7 @@ function build() {
          * Make the category pages
          */
 
-        const categoryPages = categories.reduce((result, category) => {
-          const parent = result.find(parentCat => parentCat.title === category.title);
-
-          if (!parent) {
-            return [...result, category];
-          }
-
-          parent.pages = [
-            ...parent.pages,
-            ...category.pages,
-          ];
-
-          return result;
-        }, []);
+        const categoryPages = addPagesToCategories(categories);
 
         pagesSetup = [
           ...pagesSetup,
