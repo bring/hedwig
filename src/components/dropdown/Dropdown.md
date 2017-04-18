@@ -24,10 +24,10 @@ Optional:
       <div class="hw-dropdown__placeholder"></div>
       <div class="hw-dropdown__arrow"></div>
       <ul class="hw-dropdown__options">
-        <li class="hw-dropdown__option" data-hw-dropdown-value="1">Alaska</li>
-        <li class="hw-dropdown__option" data-hw-dropdown-value="2">Africa</li>
-        <li class="hw-dropdown__option" data-hw-dropdown-value="3">Algerie</li>
-        <li class="hw-dropdown__option" data-hw-dropdown-value="4">Antarctica</li>
+        <li class="hw-dropdown__option" data-hw-dropdown-value="1">Afghanistan</li>
+        <li class="hw-dropdown__option" data-hw-dropdown-value="2">Algerie</li>
+        <li class="hw-dropdown__option" data-hw-dropdown-value="3">Antarctica</li>
+        <li class="hw-dropdown__option" data-hw-dropdown-value="4">Australia</li>
         <li class="hw-dropdown__option" data-hw-dropdown-value="5">Bolivia</li>
         <li class="hw-dropdown__option" data-hw-dropdown-value="6">Bosnia</li>
       </ul>
