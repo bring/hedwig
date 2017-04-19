@@ -40,15 +40,11 @@
    * NOTE: This is in PX because we watn them to specific.
    */
 
-  --hw-spacing-1: 6px;
-  --hw-spacing-2: 12px;
-  --hw-spacing-3: 18px;
-  --hw-spacing-4: 24px;
-  --hw-spacing-5: 36px;
-  --hw-spacing-6: 42px;
-  --hw-spacing-7: 48px;
-  --hw-spacing-8: 54px;
-  --hw-spacing-9: 60px;
+  --hw-spacing-xsmall: 12px;
+  --hw-spacing-small: 18px;
+  --hw-spacing: 30px;
+  --hw-spacing-large: 42px;
+  --hw-spacing-xlarge: 48px;
 
   /**
    * Font sizes
@@ -63,4 +59,23 @@
   --hw-font-size-lead: 22px;
   --hw-font-size-p: 18px;
   --hw-font-size-small: 15px;
+
+  /**
+   * Breakpoints
+   * em = 16px
+   */
+
+  @custom-media --small (min-width: 460px);
+  @custom-media --medium (min-width: 720px);
+  @custom-media --large (min-width: 940px);
+  @custom-media --xlarge (min-width: 1200px);
+
+  /* Used for min max settings */
+
+  @custom-media --only-base (min-width: 0em) and (max-width: 460px);
+  @custom-media --only-small (min-width: 460px) and (max-width: 720px);
+  @custom-media --only-medium (min-width: 720px) and (max-width: 940px);
+  @custom-media --only-large (min-width: 940px) and (max-width: 1200px);
+  @custom-media --only-xlarge (min-width: 1200px);
+
 }
