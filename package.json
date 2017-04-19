@@ -16,8 +16,8 @@
   "scripts": {
     "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
     "build": "npm run docs:build & npm run css:build & npm run js:build",
-    "css:build": "postcss tmp/main.css --use postcss-cssnext postcss-normalize cssnano -o ./build/main.css",
-    "css:dev": "postcss tmp/main.css --use postcss-cssnext postcss-normalize -o ./build/main.css",
+    "css:build": "postcss tmp/main.css --use postcss-cssnext cssnano -o ./build/main.css",
+    "css:dev": "postcss tmp/main.css --use postcss-cssnext -o ./build/main.css",
     "js:build": "rollup -c --name \"hedwig\"",
     "js:dev": "rollup -c --name \"hedwig\"",
     "docs:build": "node ./scripts/docs-build",
@@ -44,7 +44,6 @@
     "node-watch": "^0.5.2",
     "postcss-cli": "^3.0.0",
     "postcss-cssnext": "^2.10.0",
-    "postcss-normalize": "^0.3.0",
     "reload": "^1.1.1",
     "rollup": "^0.41.6",
     "rollup-plugin-babel": "^2.7.1",
@@ -52,6 +51,7 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-watch": "^3.2.2",
     "s3": "^4.4.0",
+    "sanitize.css": "^5.0.0",
     "the-answer": "^1.0.0"
   },
   "engines": {
