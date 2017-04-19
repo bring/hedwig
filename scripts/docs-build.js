@@ -69,8 +69,8 @@ function build() {
              * Make a filename and title
              */
 
-            let filename = file.split('/').pop();
-            let title = filename.split('.').shift();
+            var filename = file.split('/').pop();
+            var title = filename.split('.').shift();
 
             /**
              * Copy md files to docs
