@@ -39,6 +39,7 @@
    * NOTE: This is in PX because we watn them to specific.
    */
 
+  --hw-spacing-xxsmall: 6px;
   --hw-spacing-xsmall: 12px;
   --hw-spacing-small: 18px;
   --hw-spacing: 30px;
