@@ -4,22 +4,22 @@
 
 .hw-block {
   display: block;
-  margin: 0 var(--hw-spacing);
+  padding: 0 var(--hw-spacing);
 
   /**
-   * Variants
+   * padding and padding variations
    */
 
   &--full {
-    margin: 0;
+    padding: 0;
   }
 
   &--half {
-    margin: 0 var(--hw-spacing-small);
+    padding: 0 var(--hw-spacing-small);
   }
 
   &--double {
-    margin: 0 var(--hw-spacing-large);
+    padding: 0 var(--hw-spacing-large);
   }
 
   &--margin-top {
@@ -67,5 +67,41 @@
 
   &--padding-bottom-double {
     padding-bottom: var(--hw-spacing-large);
+  }
+
+  /**
+   * Width limitations
+   */
+
+  &--limited {
+      margin: 0 auto;
+      max-width: var(--hw-container-limit-site);
+  }
+
+  &--limited-narrow {
+      margin: 0 auto;
+      max-width: var(--hw-container-limit-narrow);
+  }
+
+  &--limited-wide {
+      margin: 0 auto;
+      max-width: var(--hw-container-limit-wide);
+  }
+
+  &--limited-text {
+      margin: 0 auto;
+      max-width: var(--hw-container-limit-text);
+  }
+
+  /**
+   * Background colors
+   */
+
+  &--col-primary {
+      background-color: var(--hw-color-primary);
+  }
+
+  &--col-gray {
+      background-color: var(--hw-color-gray);
   }
 }

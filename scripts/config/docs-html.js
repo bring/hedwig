@@ -26,6 +26,9 @@ module.exports = `
           margin-bottom: 24px;
         }
         .hw-helpers-margin-highlighter > div {
+            background-color: #C3E0B7;
+        }
+        .hw-helpers-margin-highlighter > div > p {
             background-color: rgb(242, 242, 242);
         }
 
