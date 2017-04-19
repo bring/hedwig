@@ -79,7 +79,7 @@
 }
 
 .hw-grid--narrow > .hw-grid__item {
-	padding-left: var(--hw-spacing-small);
+	padding-left: var(--hw-spacing-xsmall);
 }
 
 /**
