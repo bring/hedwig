@@ -1,12 +1,18 @@
 ## Block
 
-Used globally to wrap components and apply margin and padding
+This is the most commonly used component.
+
+The purpose of the Block component is to apply margin and padding to all components, as well as apply max-widths and background-colors.
+
+In an ideal scenario, there is no margin/padding applied to any other component, instead wrap the element in Block and use this to generate the required margin/padding.
+
+The only exception to this rule is "rich text" areas from the CMS, for this case, use the [Wysiwyg Container](/Wysiwyg).
 
 ```code
-hw-block
+<div class="hw-block">...</div>
 ```
 
-### Default
+### Example blocks
 
 ```html|span-4,plain,light
   <div class="hw-block">
@@ -14,7 +20,7 @@ hw-block
   </div>
 ```
 
-### Variants (with margins higlighted)
+### Variants (with margins & padding higlighted)
 
 ```html|span-4,plain,light
   <div class="hw-helpers-margin-highlighter">
@@ -24,17 +30,17 @@ hw-block
   </div>
   <div class="hw-helpers-margin-highlighter">
     <div class="hw-block hw-block--full">
-      <p>Block with no side margins</p>
+      <p>Block with no side padding</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
     <div class="hw-block hw-block--half">
-      <p>Block with half side margins</p>
+      <p>Block with half side padding</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
     <div class="hw-block hw-block--double">
-      <p>Block with double side margins</p>
+      <p>Block with double side padding</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
@@ -52,4 +58,36 @@ hw-block
       <p>Block with double top and bottom margins</p>
     </div>
   </div>
+```
+
+### Block modifiers (margin & padding)
+```code
+[Full]                    .hw-block--full (no side paddings)
+[Half]                    .hw-grid--half (half side paddings)
+[Margin top]              .hw-grid--margin-top
+[Half margin top]         .hw-grid--margin-top-half
+[Double margin top]       .hw-grid--margin-top-double
+[Margin bottom]           .hw-grid--margin-bottom
+[Half margin bottom]      .hw-grid--margin-bottom-half
+[Double margin bottom]    .hw-grid--margin-bottom-double
+[Padding top]             .hw-grid--padding-top
+[Half padding top]        .hw-grid--padding-top-half
+[Double padding top]      .hw-grid--padding-top-double
+[Padding bottom]          .hw-grid--padding-bottom
+[Half padding bottom]     .hw-grid--padding-bottom-half
+[Double padding bottom]   .hw-grid--padding-bottom-double
+```
+
+### Block modifiers (max-widths)
+```code
+[Limited]                 .hw-block--limited (default site width)
+[Narrow]                  .hw-block--limited-narrow
+[Wide]                    .hw-block--limited-wide
+[Text]                    .hw-block--limited-text
+```
+
+### Block modifiers (colors)
+```code
+[Primary]                 .hw-block--col-primary
+[Gray]                    .hw-block--col-gray
 ```
