@@ -35,3 +35,5 @@ if (input) {
 
   input.addEventListener('input', validateTextInput);
 }
+
+export default validateTextInput;
