@@ -1,14 +1,8 @@
 /**
- * Hedwig
- * ------
- * Forms
- */
-
-/**
  * Label
  */
 
-label {
+.hw-label {
   font-size: var(--hw-font-size-small);
   font-family: var(--hw-font-primay-bold);
   margin-bottom: var(--hw-spacing-xsmall);
@@ -24,11 +18,11 @@ label {
  * Input
  */
 
-input,
 .hw-input {
   font-size: var(--hw-font-size-small);
   padding: var(--hw-spacing-xsmall);
   border: 3px solid var(--hw-color-gray-light);
+  background-color: var(--hw-color-white);
   display: block;
   width: 100%;
   transition: border 100ms;
@@ -47,47 +41,45 @@ input,
   &[disabled] {
     border: 3px solid var(--hw-color-gray-lighter);
   }
+
+  &--error,
+  &--error:focus {
+    position: relative;
+    border: 3px solid var(--hw-color-secondary);
+    transition: border 200ms;
+
+    &:before {
+      background: var(--hw-color-gray);
+      color: var(--hw-color-white);
+      position: absolute;
+      content: '!';
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      border-radius: 50%;
+      bottom: 12px;
+      right: 12px;
+      z-index: 1000;
+      text-align: center;
+      z-index: 5000;
+    }
+  }
 }
 
 /**
  * Error
  */
 
-.hw-input-error {
-  position: relative;
-
-  & input {
-    border: 3px solid var(--hw-color-secondary);
-    transition: border 200ms;
-    position: relative;
-  }
-
-  &:before {
-    background: var(--hw-color-gray);
-    color: var(--hw-color-white);
-    position: absolute;
-    content: '!';
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    border-radius: 50%;
-    bottom: 12px;
-    right: 12px;
-    z-index: 1000;
-    text-align: center;
-  }
-
-  &__message {
-    color: var(--hw-color-black);
-    background: var(--hw-color-secondary);
-    display: inline-block;
-    float: right;
-    padding: 3px 12px;
-    margin-bottom: -3px;
-    opacity: 1;
-    transform: translateY(0);
-    transition: transform 200ms;
-  }
+.hw-error {
+  color: var(--hw-color-black);
+  background: var(--hw-color-secondary);
+  display: inline-block;
+  float: right;
+  padding: 3px 12px;
+  margin-bottom: -3px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 200ms;
 
   &--is-hidden {
     visibility: hidden;

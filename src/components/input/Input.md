@@ -3,18 +3,18 @@
 All inputs are block elements. For layout, use [grid]('/Grid').
 
 ```html
-<label>
+<label class="hw-label">
   Label
-  <input type="text" />
+  <input class="hw-input" type="text" />
 </label>
-<label disabled>
+<label class="hw-label" disabled>
   Label
-  <input type="text" disabled />
+  <input class="hw-input" type="text" disabled />
 </label>
-<label class="hw-input-error">
+<label  class="hw-label">
   Label
-  <div class="hw-input-error__message">E-postadressen er ugyldig</div>
-  <input type="text"/>
+  <div class="hw-error">E-postadressen er ugyldig</div>
+  <input class="hw-input hw-input--error" type="text"/>
 </label>
 ```
 
@@ -42,10 +42,10 @@ Error summary         .hw-error-summary
 For inline validation we use:
 
 ```html
-<label data-hw-validate="text">
+<label class="hw-label">
   Label
-  <div class="hw-input-error__message hw-input-error--is-hidden" data-hw-error-message>E-postadressen er ugyldig</div>
-  <input type="text" placeholder="Type 4 letters to test validation" />
+  <div class="hw-error hw-error--is-hidden" data-hw-error-message>E-postadressen er ugyldig</div>
+  <input type="text" class="hw-input"  data-hw-validate="text" placeholder="Type 4 letters to test validation" />
 </label>
 ```
 ```hint|neutral
