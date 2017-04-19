@@ -28,7 +28,8 @@
     "test": "jest",
     "s3:download": "node ./scripts/s3-download",
     "s3:upload": "node ./scripts/s3-upload",
-    "start": "npm run docs:build & npm run server"
+    "start": "npm run docs:build & npm run server",
+    "svg:store": "node ./scripts/svg-store"
   },
   "dependencies": {
     "aws-sdk": "^2.40.0",
@@ -52,7 +53,7 @@
     "rollup-watch": "^3.2.2",
     "s3": "^4.4.0",
     "sanitize.css": "^5.0.0",
-    "the-answer": "^1.0.0"
+    "svgstore": "^2.0.2"
   },
   "engines": {
     "node": "6.2.2",
