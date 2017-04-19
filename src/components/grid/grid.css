@@ -138,123 +138,123 @@
 /**
 * Whole
 */
-.one-whole {
+.hw-one-whole {
 	width: 100%;
 }
 
 /**
 * Halves
 */
-.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
+.hw-one-half, .hw-two-quarters, .hw-three-sixths, .hw-four-eighths, .hw-five-tenths, .hw-six-twelfths {
 	width: 50%;
 }
 
 /**
 * Thirds
 */
-.one-third, .two-sixths, .four-twelfths {
+.hw-one-third, .hw-two-sixths, .hw-four-twelfths {
 	width: 33.333%;
 }
 
-.two-thirds, .four-sixths, .eight-twelfths {
+.hw-two-thirds, .hw-four-sixths, .hw-eight-twelfths {
 	width: 66.666%;
 }
 
 /**
 * Quarters
 */
-.one-quarter, .two-eighths, .three-twelfths {
+.hw-one-quarter, .hw-two-eighths, .hw-three-twelfths {
 	width: 25%;
 }
 
-.three-quarters, .six-eighths, .nine-twelfths {
+.hw-three-quarters, .hw-six-eighths, .hw-nine-twelfths {
 	width: 75%;
 }
 
 /**
 * Fifths
 */
-.one-fifth, .two-tenths {
+.hw-one-fifth, .hw-two-tenths {
 	width: 20%;
 }
 
-.two-fifths, .four-tenths {
+.hw-two-fifths, .hw-four-tenths {
 	width: 40%;
 }
 
-.three-fifths, .six-tenths {
+.hw-three-fifths, .hw-six-tenths {
 	width: 60%;
 }
 
-.four-fifths, .eight-tenths {
+.hw-four-fifths, .hw-eight-tenths {
 	width: 80%;
 }
 
 /**
 * Sixths
 */
-.one-sixth, .two-twelfths {
+.hw-one-sixth, .hw-two-twelfths {
 	width: 16.666%;
 }
 
-.five-sixths, .ten-twelfths {
+.hw-five-sixths, .hw-ten-twelfths {
 	width: 83.333%;
 }
 
 /**
 * Eighths
 */
-.one-eighth {
+.hw-one-eighth {
 	width: 12.5%;
 }
 
-.three-eighths {
+.hw-three-eighths {
 	width: 37.5%;
 }
 
-.five-eighths {
+.hw-five-eighths {
 	width: 62.5%;
 }
 
-.seven-eighths {
+.hw-seven-eighths {
 	width: 87.5%;
 }
 
 /**
 * Tenths
 */
-.one-tenth {
+.hw-one-tenth {
 	width: 10%;
 }
 
-.three-tenths {
+.hw-three-tenths {
 	width: 30%;
 }
 
-.seven-tenths {
+.hw-seven-tenths {
 	width: 70%;
 }
 
-.nine-tenths {
+.hw-nine-tenths {
 	width: 90%;
 }
 
 /**
 * Twelfths
 */
-.one-twelfth {
+.hw-one-twelfth {
 	width: 8.333%;
 }
 
-.five-twelfths {
+.hw-five-twelfths {
 	width: 41.666%;
 }
 
-.seven-twelfths {
+.hw-seven-twelfths {
 	width: 58.333%;
 }
 
-.eleven-twelfths {
+.hw-eleven-twelfths {
 	width: 91.666%;
 }
 
@@ -265,115 +265,115 @@
   	/**
      * Whole
      */
-	.small--one-whole {
+	.hw-small--one-whole {
 		width: 100%;
 	}
   	/**
      * Halves
      */
-	.small--one-half, .small--two-quarters, .small--three-sixths, .small--four-eighths, .small--five-tenths, .small--six-twelfths {
+	.hw-small--one-half, .hw-small--two-quarters, .hw-small--three-sixths, .hw-small--four-eighths, .hw-small--five-tenths, .hw-small--six-twelfths {
 		width: 50%;
 	}
   	/**
      * Thirds
      */
-	.small--one-third, .small--two-sixths, .small--four-twelfths {
+	.hw-small--one-third, .hw-small--two-sixths, .hw-small--four-twelfths {
 		width: 33.333%;
 	}
 
-	.small--two-thirds, .small--four-sixths, .small--eight-twelfths {
+	.hw-small--two-thirds, .hw-small--four-sixths, .hw-small--eight-twelfths {
 		width: 66.666%;
 	}
   	/**
      * Quarters
      */
-	.small--one-quarter, .small--two-eighths, .small--three-twelfths {
+	.hw-small--one-quarter, .hw-small--two-eighths, .hw-small--three-twelfths {
 		width: 25%;
 	}
 
-	.small--three-quarters, .small--six-eighths, .small--nine-twelfths {
+	.hw-small--three-quarters, .hw-small--six-eighths, .hw-small--nine-twelfths {
 		width: 75%;
 	}
   	/**
      * Fifths
      */
-	.small--one-fifth, .small--two-tenths {
+	.hw-small--one-fifth, .hw-small--two-tenths {
 		width: 20%;
 	}
 
-	.small--two-fifths, .small--four-tenths {
+	.hw-small--two-fifths, .hw-small--four-tenths {
 		width: 40%;
 	}
 
-	.small--three-fifths, .small--six-tenths {
+	.hw-small--three-fifths, .hw-small--six-tenths {
 		width: 60%;
 	}
 
-	.small--four-fifths, .small--eight-tenths {
+	.hw-small--four-fifths, .hw-small--eight-tenths {
 		width: 80%;
 	}
   	/**
      * Sixths
      */
-	.small--one-sixth, .small--two-twelfths {
+	.hw-small--one-sixth, .hw-small--two-twelfths {
 		width: 16.666%;
 	}
 
-	.small--five-sixths, .small--ten-twelfths {
+	.hw-small--five-sixths, .hw-small--ten-twelfths {
 		width: 83.333%;
 	}
   	/**
      * Eighths
      */
-	.small--one-eighth {
+	.hw-small--one-eighth {
 		width: 12.5%;
 	}
 
-	.small--three-eighths {
+	.hw-small--three-eighths {
 		width: 37.5%;
 	}
 
-	.small--five-eighths {
+	.hw-small--five-eighths {
 		width: 62.5%;
 	}
 
-	.small--seven-eighths {
+	.hw-small--seven-eighths {
 		width: 87.5%;
 	}
   	/**
      * Tenths
      */
-	.small--one-tenth {
+	.hw-small--one-tenth {
 		width: 10%;
 	}
 
-	.small--three-tenths {
+	.hw-small--three-tenths {
 		width: 30%;
 	}
 
-	.small--seven-tenths {
+	.hw-small--seven-tenths {
 		width: 70%;
 	}
 
-	.small--nine-tenths {
+	.hw-small--nine-tenths {
 		width: 90%;
 	}
   	/**
      * Twelfths
      */
-	.small--one-twelfth {
+	.hw-small--one-twelfth {
 		width: 8.333%;
 	}
 
-	.small--five-twelfths {
+	.hw-small--five-twelfths {
 		width: 41.666%;
 	}
 
-	.small--seven-twelfths {
+	.hw-small--seven-twelfths {
 		width: 58.333%;
 	}
 
-	.small--eleven-twelfths {
+	.hw-small--eleven-twelfths {
 		width: 91.666%;
 	}
 }
@@ -382,115 +382,115 @@
   	/**
      * Whole
      */
-	.medium--one-whole {
+	.hw-medium--one-whole {
 		width: 100%;
 	}
   	/**
      * Halves
      */
-	.medium--one-half, .medium--two-quarters, .medium--three-sixths, .medium--four-eighths, .medium--five-tenths, .medium--six-twelfths {
+	.hw-medium--one-half, .hw-medium--two-quarters, .hw-medium--three-sixths, .hw-medium--four-eighths, .hw-medium--five-tenths, .hw-medium--six-twelfths {
 		width: 50%;
 	}
   	/**
      * Thirds
      */
-	.medium--one-third, .medium--two-sixths, .medium--four-twelfths {
+	.hw-medium--one-third, .hw-medium--two-sixths, .hw-medium--four-twelfths {
 		width: 33.333%;
 	}
 
-	.medium--two-thirds, .medium--four-sixths, .medium--eight-twelfths {
+	.hw-medium--two-thirds, .hw-medium--four-sixths, .hw-medium--eight-twelfths {
 		width: 66.666%;
 	}
   	/**
      * Quarters
      */
-	.medium--one-quarter, .medium--two-eighths, .medium--three-twelfths {
+	.hw-medium--one-quarter, .hw-medium--two-eighths, .hw-medium--three-twelfths {
 		width: 25%;
 	}
 
-	.medium--three-quarters, .medium--six-eighths, .medium--nine-twelfths {
+	.hw-medium--three-quarters, .hw-medium--six-eighths, .hw-medium--nine-twelfths {
 		width: 75%;
 	}
   	/**
      * Fifths
      */
-	.medium--one-fifth, .medium--two-tenths {
+	.hw-medium--one-fifth, .hw-medium--two-tenths {
 		width: 20%;
 	}
 
-	.medium--two-fifths, .medium--four-tenths {
+	.hw-medium--two-fifths, .hw-medium--four-tenths {
 		width: 40%;
 	}
 
-	.medium--three-fifths, .medium--six-tenths {
+	.hw-medium--three-fifths, .hw-medium--six-tenths {
 		width: 60%;
 	}
 
-	.medium--four-fifths, .medium--eight-tenths {
+	.hw-medium--four-fifths, .hw-medium--eight-tenths {
 		width: 80%;
 	}
   	/**
      * Sixths
      */
-	.medium--one-sixth, .medium--two-twelfths {
+	.hw-medium--one-sixth, .hw-medium--two-twelfths {
 		width: 16.666%;
 	}
 
-	.medium--five-sixths, .medium--ten-twelfths {
+	.hw-medium--five-sixths, .hw-medium--ten-twelfths {
 		width: 83.333%;
 	}
   	/**
      * Eighths
      */
-	.medium--one-eighth {
+	.hw-medium--one-eighth {
 		width: 12.5%;
 	}
 
-	.medium--three-eighths {
+	.hw-medium--three-eighths {
 		width: 37.5%;
 	}
 
-	.medium--five-eighths {
+	.hw-medium--five-eighths {
 		width: 62.5%;
 	}
 
-	.medium--seven-eighths {
+	.hw-medium--seven-eighths {
 		width: 87.5%;
 	}
   	/**
      * Tenths
      */
-	.medium--one-tenth {
+	.hw-medium--one-tenth {
 		width: 10%;
 	}
 
-	.medium--three-tenths {
+	.hw-medium--three-tenths {
 		width: 30%;
 	}
 
-	.medium--seven-tenths {
+	.hw-medium--seven-tenths {
 		width: 70%;
 	}
 
-	.medium--nine-tenths {
+	.hw-medium--nine-tenths {
 		width: 90%;
 	}
   	/**
      * Twelfths
      */
-	.medium--one-twelfth {
+	.hw-medium--one-twelfth {
 		width: 8.333%;
 	}
 
-	.medium--five-twelfths {
+	.hw-medium--five-twelfths {
 		width: 41.666%;
 	}
 
-	.medium--seven-twelfths {
+	.hw-medium--seven-twelfths {
 		width: 58.333%;
 	}
 
-	.medium--eleven-twelfths {
+	.hw-medium--eleven-twelfths {
 		width: 91.666%;
 	}
 }
@@ -499,115 +499,115 @@
   	/**
      * Whole
      */
-	.medium--one-whole {
+	.hw-medium--one-whole {
 		width: 100%;
 	}
   	/**
      * Halves
      */
-	.medium--one-half, .medium--two-quarters, .medium--three-sixths, .medium--four-eighths, .medium--five-tenths, .medium--six-twelfths {
+	.hw-medium--one-half, .hw-medium--two-quarters, .hw-medium--three-sixths, .hw-medium--four-eighths, .hw-medium--five-tenths, .hw-medium--six-twelfths {
 		width: 50%;
 	}
   	/**
      * Thirds
      */
-	.medium--one-third, .medium--two-sixths, .medium--four-twelfths {
+	.hw-medium--one-third, .hw-medium--two-sixths, .hw-medium--four-twelfths {
 		width: 33.333%;
 	}
 
-	.medium--two-thirds, .medium--four-sixths, .medium--eight-twelfths {
+	.hw-medium--two-thirds, .hw-medium--four-sixths, .hw-medium--eight-twelfths {
 		width: 66.666%;
 	}
   	/**
      * Quarters
      */
-	.medium--one-quarter, .medium--two-eighths, .medium--three-twelfths {
+	.hw-medium--one-quarter, .hw-medium--two-eighths, .hw-medium--three-twelfths {
 		width: 25%;
 	}
 
-	.medium--three-quarters, .medium--six-eighths, .medium--nine-twelfths {
+	.hw-medium--three-quarters, .hw-medium--six-eighths, .hw-medium--nine-twelfths {
 		width: 75%;
 	}
   	/**
      * Fifths
      */
-	.medium--one-fifth, .medium--two-tenths {
+	.hw-medium--one-fifth, .hw-medium--two-tenths {
 		width: 20%;
 	}
 
-	.medium--two-fifths, .medium--four-tenths {
+	.hw-medium--two-fifths, .hw-medium--four-tenths {
 		width: 40%;
 	}
 
-	.medium--three-fifths, .medium--six-tenths {
+	.hw-medium--three-fifths, .hw-medium--six-tenths {
 		width: 60%;
 	}
 
-	.medium--four-fifths, .medium--eight-tenths {
+	.hw-medium--four-fifths, .hw-medium--eight-tenths {
 		width: 80%;
 	}
   	/**
      * Sixths
      */
-	.medium--one-sixth, .medium--two-twelfths {
+	.hw-medium--one-sixth, .hw-medium--two-twelfths {
 		width: 16.666%;
 	}
 
-	.medium--five-sixths, .medium--ten-twelfths {
+	.hw-medium--five-sixths, .hw-medium--ten-twelfths {
 		width: 83.333%;
 	}
   	/**
      * Eighths
      */
-	.medium--one-eighth {
+	.hw-medium--one-eighth {
 		width: 12.5%;
 	}
 
-	.medium--three-eighths {
+	.hw-medium--three-eighths {
 		width: 37.5%;
 	}
 
-	.medium--five-eighths {
+	.hw-medium--five-eighths {
 		width: 62.5%;
 	}
 
-	.medium--seven-eighths {
+	.hw-medium--seven-eighths {
 		width: 87.5%;
 	}
   	/**
      * Tenths
      */
-	.medium--one-tenth {
+	.hw-medium--one-tenth {
 		width: 10%;
 	}
 
-	.medium--three-tenths {
+	.hw-medium--three-tenths {
 		width: 30%;
 	}
 
-	.medium--seven-tenths {
+	.hw-medium--seven-tenths {
 		width: 70%;
 	}
 
-	.medium--nine-tenths {
+	.hw-medium--nine-tenths {
 		width: 90%;
 	}
   	/**
      * Twelfths
      */
-	.medium--one-twelfth {
+	.hw-medium--one-twelfth {
 		width: 8.333%;
 	}
 
-	.medium--five-twelfths {
+	.hw-medium--five-twelfths {
 		width: 41.666%;
 	}
 
-	.medium--seven-twelfths {
+	.hw-medium--seven-twelfths {
 		width: 58.333%;
 	}
 
-	.medium--eleven-twelfths {
+	.hw-medium--eleven-twelfths {
 		width: 91.666%;
 	}
 }
@@ -616,115 +616,115 @@
   	/**
      * Whole
      */
-	.large--one-whole {
+	.hw-large--one-whole {
 		width: 100%;
 	}
   	/**
      * Halves
      */
-	.large--one-half, .large--two-quarters, .large--three-sixths, .large--four-eighths, .large--five-tenths, .large--six-twelfths {
+	.hw-large--one-half, .hw-large--two-quarters, .hw-large--three-sixths, .hw-large--four-eighths, .hw-large--five-tenths, .hw-large--six-twelfths {
 		width: 50%;
 	}
   	/**
      * Thirds
      */
-	.large--one-third, .large--two-sixths, .large--four-twelfths {
+	.hw-large--one-third, .hw-large--two-sixths, .hw-large--four-twelfths {
 		width: 33.333%;
 	}
 
-	.large--two-thirds, .large--four-sixths, .large--eight-twelfths {
+	.hw-large--two-thirds, .hw-large--four-sixths, .hw-large--eight-twelfths {
 		width: 66.666%;
 	}
   	/**
      * Quarters
      */
-	.large--one-quarter, .large--two-eighths, .large--three-twelfths {
+	.hw-large--one-quarter, .hw-large--two-eighths, .hw-large--three-twelfths {
 		width: 25%;
 	}
 
-	.large--three-quarters, .large--six-eighths, .large--nine-twelfths {
+	.hw-large--three-quarters, .hw-large--six-eighths, .hw-large--nine-twelfths {
 		width: 75%;
 	}
   	/**
      * Fifths
      */
-	.large--one-fifth, .large--two-tenths {
+	.hw-large--one-fifth, .hw-large--two-tenths {
 		width: 20%;
 	}
 
-	.large--two-fifths, .large--four-tenths {
+	.hw-large--two-fifths, .hw-large--four-tenths {
 		width: 40%;
 	}
 
-	.large--three-fifths, .large--six-tenths {
+	.hw-large--three-fifths, .hw-large--six-tenths {
 		width: 60%;
 	}
 
-	.large--four-fifths, .large--eight-tenths {
+	.hw-large--four-fifths, .hw-large--eight-tenths {
 		width: 80%;
 	}
   	/**
      * Sixths
      */
-	.large--one-sixth, .large--two-twelfths {
+	.hw-large--one-sixth, .hw-large--two-twelfths {
 		width: 16.666%;
 	}
 
-	.large--five-sixths, .large--ten-twelfths {
+	.hw-large--five-sixths, .hw-large--ten-twelfths {
 		width: 83.333%;
 	}
   	/**
      * Eighths
      */
-	.large--one-eighth {
+	.hw-large--one-eighth {
 		width: 12.5%;
 	}
 
-	.large--three-eighths {
+	.hw-large--three-eighths {
 		width: 37.5%;
 	}
 
-	.large--five-eighths {
+	.hw-large--five-eighths {
 		width: 62.5%;
 	}
 
-	.large--seven-eighths {
+	.hw-large--seven-eighths {
 		width: 87.5%;
 	}
   	/**
      * Tenths
      */
-	.large--one-tenth {
+	.hw-large--one-tenth {
 		width: 10%;
 	}
 
-	.large--three-tenths {
+	.hw-large--three-tenths {
 		width: 30%;
 	}
 
-	.large--seven-tenths {
+	.hw-large--seven-tenths {
 		width: 70%;
 	}
 
-	.large--nine-tenths {
+	.hw-large--nine-tenths {
 		width: 90%;
 	}
   	/**
      * Twelfths
      */
-	.large--one-twelfth {
+	.hw-large--one-twelfth {
 		width: 8.333%;
 	}
 
-	.large--five-twelfths {
+	.hw-large--five-twelfths {
 		width: 41.666%;
 	}
 
-	.large--seven-twelfths {
+	.hw-large--seven-twelfths {
 		width: 58.333%;
 	}
 
-	.large--eleven-twelfths {
+	.hw-large--eleven-twelfths {
 		width: 91.666%;
 	}
 }
@@ -733,115 +733,115 @@
   	/**
      * Whole
      */
-	.xlarge--one-whole {
+	.hw-xlarge--one-whole {
 		width: 100%;
 	}
   	/**
      * Halves
      */
-	.xlarge--one-half, .xlarge--two-quarters, .xlarge--three-sixths, .xlarge--four-eighths, .xlarge--five-tenths, .xlarge--six-twelfths {
+	.hw-xlarge--one-half, .hw-xlarge--two-quarters, .hw-xlarge--three-sixths, .hw-xlarge--four-eighths, .hw-xlarge--five-tenths, .hw-xlarge--six-twelfths {
 		width: 50%;
 	}
   	/**
      * Thirds
      */
-	.xlarge--one-third, .xlarge--two-sixths, .xlarge--four-twelfths {
+	.hw-xlarge--one-third, .hw-xlarge--two-sixths, .hw-xlarge--four-twelfths {
 		width: 33.333%;
 	}
 
-	.xlarge--two-thirds, .xlarge--four-sixths, .xlarge--eight-twelfths {
+	.hw-xlarge--two-thirds, .hw-xlarge--four-sixths, .hw-xlarge--eight-twelfths {
 		width: 66.666%;
 	}
   	/**
      * Quarters
      */
-	.xlarge--one-quarter, .xlarge--two-eighths, .xlarge--three-twelfths {
+	.hw-xlarge--one-quarter, .hw-xlarge--two-eighths, .hw-xlarge--three-twelfths {
 		width: 25%;
 	}
 
-	.xlarge--three-quarters, .xlarge--six-eighths, .xlarge--nine-twelfths {
+	.hw-xlarge--three-quarters, .hw-xlarge--six-eighths, .hw-xlarge--nine-twelfths {
 		width: 75%;
 	}
   	/**
      * Fifths
      */
-	.xlarge--one-fifth, .xlarge--two-tenths {
+	.hw-xlarge--one-fifth, .hw-xlarge--two-tenths {
 		width: 20%;
 	}
 
-	.xlarge--two-fifths, .xlarge--four-tenths {
+	.hw-xlarge--two-fifths, .hw-xlarge--four-tenths {
 		width: 40%;
 	}
 
-	.xlarge--three-fifths, .xlarge--six-tenths {
+	.hw-xlarge--three-fifths, .hw-xlarge--six-tenths {
 		width: 60%;
 	}
 
-	.xlarge--four-fifths, .xlarge--eight-tenths {
+	.hw-xlarge--four-fifths, .hw-xlarge--eight-tenths {
 		width: 80%;
 	}
   	/**
      * Sixths
      */
-	.xlarge--one-sixth, .xlarge--two-twelfths {
+	.hw-xlarge--one-sixth, .hw-xlarge--two-twelfths {
 		width: 16.666%;
 	}
 
-	.xlarge--five-sixths, .xlarge--ten-twelfths {
+	.hw-xlarge--five-sixths, .hw-xlarge--ten-twelfths {
 		width: 83.333%;
 	}
   	/**
      * Eighths
      */
-	.xlarge--one-eighth {
+	.hw-xlarge--one-eighth {
 		width: 12.5%;
 	}
 
-	.xlarge--three-eighths {
+	.hw-xlarge--three-eighths {
 		width: 37.5%;
 	}
 
-	.xlarge--five-eighths {
+	.hw-xlarge--five-eighths {
 		width: 62.5%;
 	}
 
-	.xlarge--seven-eighths {
+	.hw-xlarge--seven-eighths {
 		width: 87.5%;
 	}
   	/**
      * Tenths
      */
-	.xlarge--one-tenth {
+	.hw-xlarge--one-tenth {
 		width: 10%;
 	}
 
-	.xlarge--three-tenths {
+	.hw-xlarge--three-tenths {
 		width: 30%;
 	}
 
-	.xlarge--seven-tenths {
+	.hw-xlarge--seven-tenths {
 		width: 70%;
 	}
 
-	.xlarge--nine-tenths {
+	.hw-xlarge--nine-tenths {
 		width: 90%;
 	}
   	/**
      * Twelfths
      */
-	.xlarge--one-twelfth {
+	.hw-xlarge--one-twelfth {
 		width: 8.333%;
 	}
 
-	.xlarge--five-twelfths {
+	.hw-xlarge--five-twelfths {
 		width: 41.666%;
 	}
 
-	.xlarge--seven-twelfths {
+	.hw-xlarge--seven-twelfths {
 		width: 58.333%;
 	}
 
-	.xlarge--eleven-twelfths {
+	.hw-xlarge--eleven-twelfths {
 		width: 91.666%;
 	}
 }
