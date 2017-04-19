@@ -19,9 +19,11 @@ All inputs are block elements. For layout, use [grid]('/Grid').
 ```
 
 ```code
-Base                  input
-Class (same as base)  .hw-input
-Error                 .hw-input-error
+[Label]                .hw-label
+[Input]                .hw-input
+[Input error]          .hw-input--error
+[Error]                .hw-error
+[Error summary]          .hw-error-summary
 ```
 
 ```html
@@ -33,9 +35,6 @@ Error                 .hw-input-error
     <li>Passordet er ikke godkjent</li>
   </ul>
 </div>
-```
-```code
-Error summary         .hw-error-summary
 ```
 
 ## Validation
