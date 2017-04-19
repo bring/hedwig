@@ -9,9 +9,9 @@ _[This repo might be going public](https://github.com/bring/hedwig/issues/6), so
 Using Hedwig (beta) in your project is super simple. You only need to include this in your document:
 
 ```
-Fonts: http://hedwig-cdn.s3.amazonaws.com/hewdig/assets/fonts/fonts.css
-CSS: http://hedwig-cdn.s3.amazonaws.com/hedwig/main.css
-JS: http://hedwig-cdn.s3.amazonaws.com/hedwig/main.js
+Fonts: https://hedwig-cdn.s3.amazonaws.com/hewdig/assets/fonts/fonts.css
+CSS: https://hedwig-cdn.s3.amazonaws.com/hedwig/main.css
+JS: https://hedwig-cdn.s3.amazonaws.com/hedwig/main.js
 ```
 
 **WTF!? I do not want to include external files in my project!**

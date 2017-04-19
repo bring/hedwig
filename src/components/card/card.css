@@ -36,15 +36,15 @@
 
   &__contents {
     max-width: 286px;
-    padding: 0 var(--hw-spacing-6);
+    padding: 0 var(--hw-spacing);
   }
 
   &__header {
-    padding: var(--hw-spacing-6) 0;
+    padding: var(--hw-spacing) 0;
   }
 
   &__body {
-    padding: var(--hw-spacing-4) 0 var(--hw-spacing-6) 0;
+    padding: var(--hw-spacing) 0 var(--hw-spacing) 0;
   }
 
   &__media {
@@ -58,12 +58,12 @@
    */
 
   &--half {
-    
+
   }
 
   &--dark .hw-card__contents {
     color: white;
-    background: var(  --hw-color-gray-darker);
+    background: var(--hw-color-gray-darker);
   }
 
 }

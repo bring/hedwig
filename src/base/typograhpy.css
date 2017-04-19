@@ -10,7 +10,7 @@ p {
   font-size: var(--hw-font-size-p);
   font-family: var(--hw-font-primay-medium);
   line-height: 1.4;
-  color: var(--hw-color-gray-6);
+  color: var(--hw-color-gray-dark);
   margin: 0;
   padding: 0;
 }
@@ -21,7 +21,7 @@ p {
 h1,
 h2,
 h3 {
-  color: var(--hw-color-gray-6);
+  color: var(--hw-color-gray-dark);
   margin: 0;
   padding: 0;
   font-family: var(--hw-font-primay-medium);
@@ -62,11 +62,11 @@ h3 {
   font-size: var(--hw-font-size-lead);
   font-family: var(--hw-font-primay-regular);
   line-height: 1.4;
-  color: var(--hw-color-gray-6);
+  color: var(--hw-color-gray-dark);
 }
 
 .hw-text-small {
   font-size: var(--hw-font-size-small);
   line-height: 1.4;
-  color: var(--hw-color-gray-5);
+  color: var(--hw-color-gray-dark);
 }

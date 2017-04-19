@@ -11,7 +11,7 @@
 label {
   font-size: var(--hw-font-size-small);
   font-family: var(--hw-font-primay-bold);
-  margin-bottom: var(--hw-spacing-2);
+  margin-bottom: var(--hw-spacing-xsmall);
   color: var(--hw-color-gray-dark);
   display: block;
 
@@ -27,7 +27,7 @@ label {
 input,
 .hw-input {
   font-size: var(--hw-font-size-small);
-  padding: var(--hw-spacing-2);
+  padding: var(--hw-spacing-xsmall);
   border: 3px solid var(--hw-color-gray-light);
   display: block;
   width: 100%;
@@ -102,6 +102,6 @@ input,
 
 .hw-error-summary {
   border: 3px solid var(--hw-color-secondary);
-  padding: var(--hw-spacing-2);
+  padding: var(--hw-spacing-xsmall);
   background: var(--hw-color-white);
 }

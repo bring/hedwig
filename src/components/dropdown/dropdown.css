@@ -30,7 +30,7 @@
     position: absolute;
     width: 100%;
     max-height: 58px;
-    padding: 0 var(--hw-spacing-2);
+    padding: 0 var(--hw-spacing-xsmall);
     margin-top: 3px;
     background-color: var(--hw-color-white);
     font-size: var(--hw-font-size-small);
@@ -46,12 +46,12 @@
   }
 
   &__placeholder {
-    padding: var(--hw-spacing-2);
+    padding: var(--hw-spacing-xsmall);
     margin: 3px 0;
   }
 
   &__arrow {
-    
+
     &:before,
     &:after {
       content: '';
@@ -78,7 +78,7 @@
   }
 
   &__option {
-    padding: var(--hw-spacing-2);
+    padding: var(--hw-spacing-xsmall);
     margin: 3px 0;
     border-top: 3px solid var(--hw-color-gray-lighter);
 
