@@ -73,7 +73,7 @@ function build() {
 
         if (file.indexOf('components') !== -1) {
 
-          let filename = file.split('/').pop();
+          var filename = file.split('/').pop();
           var title = filename.split('.').shift();
 
           /**
