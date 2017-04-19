@@ -1,4 +1,4 @@
-var addPagesToCategories = require('../addPagesToCategories');
+var addPagesToComponents = require('../addPagesToComponents');
 
 const input = [{
   title: 'Category 1',
@@ -67,7 +67,7 @@ const output = [{
 
 describe('Add pages to categories', () => {
   it('Takes an flat array of pages and generates category pages', () => {
-    const test = addPagesToCategories(input);
+    const test = addPagesToComponents(input);
     expect(test).toEqual(output);
   });
 });

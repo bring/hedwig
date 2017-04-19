@@ -1,5 +1,5 @@
 
-function addPagesToCategories(categories) {
+function addPagesToComponents(categories) {
   return categories.reduce((result, category) => {
     const parent = result.find(parentCat => parentCat.title === category.title);
 
@@ -16,4 +16,4 @@ function addPagesToCategories(categories) {
   }, []);
 }
 
-module.exports = addPagesToCategories;
+module.exports = addPagesToComponents;

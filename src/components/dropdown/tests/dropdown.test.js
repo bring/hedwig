@@ -18,7 +18,7 @@ document.body.innerHTML =
     </div>
   </div>`;
 
-require('./dropdown');
+require('../dropdown');
 
 
 test('Dropdown initialises if selector found', () => {
@@ -62,4 +62,3 @@ test('Selected value updates when option selected', () => {
   expect(firstItemSelected).toEqual('true');
   expect(secondItemSelected).toEqual('false');
 });
-
