@@ -1,0 +1,20 @@
+.hw-wysiwyg {
+
+}
+
+/* Headers */
+.hw-wysiwyg h2 {
+  margin-bottom: var(--hw-spacing-small);
+  max-width: 690px;
+}
+
+/* Paragraphs */
+.hw-wysiwyg p {
+  margin-bottom: var(--hw-spacing-small);
+  max-width: 690px;
+}
+
+/* Combinations */
+.hw-wysiwyg p + h2 {
+  margin-top: var(--hw-spacing);
+}
