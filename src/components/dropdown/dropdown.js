@@ -208,7 +208,7 @@ const HWDropdown = ({
       return;
     }
 
-    console.info('Initialising the HWDropdown module');
+    // console.info('Initialising the HWDropdown module');
 
     // Loop through all dropdowns and initialise
     SETTINGS.elements.forEach((dropdown) => {
