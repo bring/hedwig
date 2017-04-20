@@ -23,8 +23,8 @@ var icons = `
 `;
 
 if (production) {
-  reload = null;
-  icons = 'https://hedwig-cdn.s3.amazonaws.com/hedwig/icons.js';
+  reload = '';
+  icons = '<script src="https://hedwig-cdn.s3.amazonaws.com/hedwig/icons.js"></scripts>';
 }
 
 
