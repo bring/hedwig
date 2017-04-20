@@ -59,6 +59,17 @@ yarn run s3:download
 
 ### Icons
 
+We use [inline SVG's for icons](https://github.com/bring/hedwig/issues/9).
+
+It works like this:
+• Place icons in the `assets/icons/` folder
+• Run `yarn run svg` to generate SVG sprite
+• Use icons like described in [the docs](https://hedwig-docs.herokuapp.com/#/Icon)
+
+To update icons in production:
+• Run `yarn run s3:upload`
+• Include `https://hedwig-cdn.s3.amazonaws.com/hedwig/icons.js` in the footer of your document
+
 ### 📂 Structure
 
 ```
