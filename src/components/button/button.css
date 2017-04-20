@@ -9,6 +9,7 @@
   color: var(--hw-color-white);
   font-size: var(--hw-font-size-small);
   padding: var(--hw-spacing-xsmall) var(--hw-spacing-small);
+  font-family: var(--hw-font-primay-medium);
   display: inline-block;
   border: none;
   transition: background 100ms, outline 50ms;
