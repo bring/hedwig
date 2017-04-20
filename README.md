@@ -9,9 +9,10 @@ _[This repo might be going public](https://github.com/bring/hedwig/issues/6), so
 Using Hedwig (beta) in your project is super simple. You only need to include this in your document:
 
 ```
-Fonts: https://hedwig-cdn.s3.amazonaws.com/hewdig/assets/fonts/fonts.css
-CSS: https://hedwig-cdn.s3.amazonaws.com/hedwig/main.css
-JS: https://hedwig-cdn.s3.amazonaws.com/hedwig/main.js
+http://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css [Fonts (head)]
+http://hedwig-cdn.s3.amazonaws.com/hedwig/main.css [CSS (head)]
+http://hedwig-cdn.s3.amazonaws.com/hedwig/main.js [JavaScript (footer)]
+https://hedwig-cdn.s3.amazonaws.com/hedwig/icons.js [Icons (footer)]
 ```
 
 **WTF!? I do not want to include external files in my project!**
@@ -32,7 +33,7 @@ yarn run dev
 [open browser on port 3000]('http://localhost:3000/docs') 🚀
 ```
 
-### Documentation
+### 📚 Write documentation
 
 We use [Catalog](https://interactivethings.github.io/catalog/#/) from documentation. Read [write documentation](https://interactivethings.github.io/catalog/#/write-documentation) about how to write documentation for the compoenents.
 
@@ -55,6 +56,8 @@ To download the build folder from S3:
 ```
 yarn run s3:download
 ```
+
+### Icons
 
 ### 📂 Structure
 

@@ -4,13 +4,14 @@
 
 var fs = require('fs');
 var glob = require('glob');
-var svgstore = require('svgstore');
+var svgSprite = require('svg2sprite');
+const sprite = svgSprite.collection({ inline: true });
 
 /**
  * config
  */
 
-var src = './build/assets/icons/**/*.svg';
+var src = './build/assets/icons/optimized/**/*.svg';
 var dist = './build/assets/svg-sprite.svg';
 
 console.log('🐝 Generating SVG sprite...');
@@ -20,7 +21,6 @@ console.log('🐝 Generating SVG sprite...');
  */
 
 glob(src, (err, files) => {
-  var sprites = svgstore();
 
   /**
    * Iterate thru files
@@ -33,16 +33,16 @@ glob(src, (err, files) => {
 
     var name = file.split('/').pop().split('.').shift();
 
-    console.log(`📎 ${name}`);
-
-    sprites.add(name, fs.readFileSync(file, 'utf8'));
+    sprite.add(name, fs.readFileSync(file, 'utf8'));
   });
 
   /**
    * Write to file
    */
 
-  fs.writeFileSync(dist, sprites);
+  const svg = sprite.compile();
+
+  fs.writeFileSync(dist, svg);
 
   console.log(`🐘 SVG sprite at '${dist}'`)
 });
