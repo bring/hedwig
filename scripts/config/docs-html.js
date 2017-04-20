@@ -1,30 +1,12 @@
 
 var production = process.env.NODE_ENV === 'production';
 
-var reload = '<script src="//localhost:9091"></scripts>';
-
-var icons = `
-  <script>
-    var url = 'http://localhost:3001/assets/svg-sprite.svg';
-
-    var ajax = new XMLHttpRequest();
-
-    ajax.open("GET", url, true);
-    ajax.send();
-
-    ajax.onload = function(e) {
-      var div = document.createElement("div");
-      div.style.display = 'none';
-      div.innerHTML = ajax.responseText;
-      document.body.insertBefore(div, document.body.childNodes[0]);
-    }
-
-  </script>
-`;
+var reload = '<script src="//localhost:9091"></script>';
+var icons = '<script src="http://localhost:3001/icons.js"></script>';
 
 if (production) {
   reload = '';
-  icons = '<script src="https://hedwig-cdn.s3.amazonaws.com/hedwig/icons.js"></scripts>';
+  icons = '<script src="https://hedwig-cdn.s3.amazonaws.com/hedwig/icons.js"></script>';
 }
 
 

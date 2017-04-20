@@ -1,13 +1,18 @@
-var url = 'http://localhost:3001/assets/svg-sprite.svg';
 
-var ajax = new XMLHttpRequest();
+var url = 'https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/svg-sprite.svg';
 
-ajax.open("GET", url, true);
-ajax.send();
+function loadIcons() {
+  var ajax = new XMLHttpRequest();
 
-ajax.onload = function(e) {
-  var div = document.createElement("div");
-  div.style.display = 'none';
-  div.innerHTML = ajax.responseText;
-  document.body.insertBefore(div, document.body.childNodes[0]);
+  ajax.open("GET", url, true);
+  ajax.send();
+
+  ajax.onload = function(e) {
+    var div = document.createElement("div");
+    div.style.display = 'none';
+    div.innerHTML = ajax.responseText;
+    document.body.insertBefore(div, document.body.childNodes[0]);
+  }
 }
+
+loadIcons();
