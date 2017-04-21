@@ -12,7 +12,7 @@
   font-family: var(--hw-font-primay-medium);
   display: inline-block;
   border: none;
-  transition: background 100ms, outline 50ms;
+  transition: outline cubic-bezier(.08,.84,.07,.96) 120ms, background 75ms;
   cursor: pointer;
 
   /**
@@ -20,15 +20,24 @@
    */
 
   &:hover {
-    background: var(--hw-color-gray-dark);
+    //background: var(--hw-color-gray-dark);
+    outline: 10px solid var(--hw-color-gray-dark);
   }
 
+  /*
+    wait
+    &:focus {
+      outline: 6px solid var(--hw-color-secondary);
+    }
+   */
+
+  &:active,
   &:focus {
-    outline: 6px solid var(--hw-color-secondary);
+    outline: 10px solid var(--hw-color-gray-dark);
   }
 
-  &:active {
-    outline: 3px solid var(--hw-color-gray-darker);
+  &:focus:hover {
+    background: var(--hw-color-gray-dark);
   }
 
   &:disabled {
@@ -59,28 +68,42 @@
     color: var(--hw-color-white);
 
     &:hover {
+      outline: 10px solid var(--hw-color-primary-dark);
+    }
+
+    &:active,
+    &:focus {
+      outline: 10px solid var(--hw-color-primary-dark);
       background: var(--hw-color-primary-dark);
     }
 
-    &:active:hover {
-      background: var(--hw-color-primary);
-    }
-
-    &:active {
-      outline: 3px solid var(--hw-color-primary-dark);
+    &:focus:hover {
+      background: var(--hw-color-primary-dark);
     }
   }
 
   &--outline {
     background: none;
     color: var(--hw-color-gray);
-    border: 3px solid var(--hw-color-gray);
+    outline: 3px solid var(--hw-color-gray);
 
     &:disabled {
-      border: 0;
+      outline: 0;
     }
 
     &:hover {
+      background: none;
+      outline: 10px solid var(--hw-color-gray);
+    }
+
+    &:active,
+    &:focus {
+      outline: 10px solid var(--hw-color-gray);
+      background: var(--hw-color-gray);
+      color: var(--hw-color-white);
+    }
+
+    &:focus:hover {
       background: var(--hw-color-gray);
       color: var(--hw-color-white);
     }
@@ -89,13 +112,24 @@
   &--outline-white {
     background: none;
     color: var(--hw-color-white);
-    border: 3px solid var(--hw-color-white);
+    outline: 3px solid var(--hw-color-white);
 
     &:disabled {
-      border: 0;
+      outline: 0;
     }
 
     &:hover {
+      outline: 10px solid var(--hw-color-white);
+    }
+
+    &:focus,
+    &:active {
+      color: var(--hw-color-gray-dark);
+      background: var(--hw-color-white);
+      outline: 10px solid var(--hw-color-white);
+    }
+
+    &:focus:hover {
       color: var(--hw-color-gray-dark);
       background: var(--hw-color-white);
     }
