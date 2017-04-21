@@ -63,19 +63,19 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 ### Block modifiers (margin & padding)
 ```code
 [Full]                    .hw-block--full (no side paddings)
-[Half]                    .hw-grid--half (half side paddings)
-[Margin top]              .hw-grid--margin-top
-[Half margin top]         .hw-grid--margin-top-half
-[Double margin top]       .hw-grid--margin-top-double
-[Margin bottom]           .hw-grid--margin-bottom
-[Half margin bottom]      .hw-grid--margin-bottom-half
-[Double margin bottom]    .hw-grid--margin-bottom-double
-[Padding top]             .hw-grid--padding-top
-[Half padding top]        .hw-grid--padding-top-half
-[Double padding top]      .hw-grid--padding-top-double
-[Padding bottom]          .hw-grid--padding-bottom
-[Half padding bottom]     .hw-grid--padding-bottom-half
-[Double padding bottom]   .hw-grid--padding-bottom-double
+[Half]                    .hw-block--half (half side paddings)
+[Margin top]              .hw-block--margin-top
+[Half margin top]         .hw-block--margin-top-half
+[Double margin top]       .hw-block--margin-top-double
+[Margin bottom]           .hw-block--margin-bottom
+[Half margin bottom]      .hw-block--margin-bottom-half
+[Double margin bottom]    .hw-block--margin-bottom-double
+[Padding top]             .hw-block--padding-top
+[Half padding top]        .hw-block--padding-top-half
+[Double padding top]      .hw-block--padding-top-double
+[Padding bottom]          .hw-block--padding-bottom
+[Half padding bottom]     .hw-block--padding-bottom-half
+[Double padding bottom]   .hw-block--padding-bottom-double
 ```
 
 ### Block modifiers (max-widths)
