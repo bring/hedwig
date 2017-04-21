@@ -18,11 +18,16 @@ https://hedwig-cdn.s3.amazonaws.com/hedwig/icons.js [Icons (footer)]
 **WTF!? I do not want to include external files in my project!**
 So. We want it to be super simple to use Hedwing in your project. The Hedwig files are super lightweight (CSS 000 kb, JS 000 kb). This will not do much with your perfomance budget. And is much simpler than getting it into your gulp-wepback-whatever build pipeline. 👍
 
+### ⏩ tl;dr
+
+```
+yarn install
+yarn run dev
+```
+
 ## Development
 
 To develop on the styleguide, please follow our [guidelines]('').
-
-### ⏩ tl;dr
 
 ```
 clone this repo
@@ -32,6 +37,8 @@ add .env file               # get variables from Heroku
 yarn run dev
 [open browser on port 3000]('http://localhost:3000/docs') 🚀
 ```
+
+To keep assets up to date, run `yarn run s3:download` do download assets from S3.
 
 ### 📚 Write documentation
 
@@ -69,6 +76,10 @@ It works like this:
 To update icons in production:
 • Run `yarn run s3:upload`
 • Include `https://hedwig-cdn.s3.amazonaws.com/hedwig/icons.js` in the footer of your document
+
+### Fonts
+
+We host our fonts on S3.
 
 ### 📂 Structure
 
