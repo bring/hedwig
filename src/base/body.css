@@ -11,6 +11,7 @@ html {
 body {
   font-family: var(--hw-font-primay-medium);
   font-size: 16px;
+  background: var(--hw-color-gray-lighter);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
