@@ -47,6 +47,7 @@
     "node-watch": "^0.5.2",
     "postcss-cli": "^3.0.0",
     "postcss-cssnext": "^2.10.0",
+    "rellax": "^1.0.0",
     "reload": "^1.1.1",
     "rollup": "^0.41.6",
     "rollup-plugin-babel": "^2.7.1",

@@ -21,4 +21,5 @@ export default {
       exclude: 'node_modules/**',
     }),
   ],
+  external: ['rellax'],
 };

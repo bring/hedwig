@@ -19,6 +19,15 @@
     background-color: rgba(0, 0, 0, .4);
   }
 
+  /* Content */
+
+  &__contents {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
 
   /**
    * Variants
@@ -29,4 +38,16 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  &--full {
+    height: 100vh;
+  }
+}
+
+.hw-hero__contents > h1,
+.hw-hero__contents > h2,
+.hw-hero__contents > h3,
+.hw-hero__contents > h4,
+.hw-hero__contents > p {
+  color: var(--hw-color-white);
 }
