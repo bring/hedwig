@@ -1,8 +1,22 @@
 .hw-image {
   margin: 0;
   padding: 0;
+  background: var(--hw-color-gray-light);
 }
 
 .hw-image img {
   max-width: 100%;
+}
+
+.hw-image figcaption {
+  font-size: var(--hw-font-size-small);
+  padding: var(--hw-spacing-xxsmall);
+  text-align: center;
+}
+
+.hw-image--large {
+  @media (--medium) {
+    margin-left: -72px;
+    margin-right: -72px;
+  }
 }
