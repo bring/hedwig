@@ -41,6 +41,24 @@ module.exports = `
           padding: 12px;
         }
 
+        .hw-helpers-icon {
+          display: inline-block;
+          width: 90px;
+          text-align: center;
+          font-size: 12px;
+          padding: .5rem;
+          margin: .5rem;
+        }
+
+        .hw-helpers-icon .hw-icon {
+          margin: .5rem;
+          background: white;
+          width: 60px;
+          height: 60px;
+          padding: 10px;
+          border: 1px solid #eee;
+        }
+
       </style>
     </head>
     <body>
