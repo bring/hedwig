@@ -1,0 +1,8 @@
+.hw-image {
+  margin: 0;
+  padding: 0;
+}
+
+.hw-image img {
+  max-width: 100%;
+}
