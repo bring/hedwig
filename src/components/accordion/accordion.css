@@ -1,0 +1,22 @@
+/**
+ * Block
+ */
+
+.hw-accordion {
+  display: block;
+  padding: 0 var(--hw-spacing);
+
+
+
+  &__contents {
+    display: none;
+  }
+
+  /**
+   * padding and padding variations
+   */
+
+  &--half {
+    padding: 0 var(--hw-spacing-small);
+  }
+}

@@ -208,9 +208,7 @@ const HWDropdown = ({
       return;
     }
 
-    // console.info('Initialising the HWDropdown module');
-
-    // Loop through all dropdowns and initialise
+    // Loop through all dropdowns and initialise each
     SETTINGS.elements.forEach((dropdown) => {
       // Skip if already initialised
       if (dropdown.getAttribute('data-hw-dropdown-initialised') === 'true') { return false; }
