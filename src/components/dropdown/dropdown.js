@@ -1,5 +1,6 @@
 /* global window */
 
+import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import getPosition from '../../utilities/js/position';
 import KEYS from '../../utilities/js/keys';
@@ -30,7 +31,7 @@ const HWDropdown = ({
    */
   function selectOption(dropdown, selectedOption) {
     const placeholder = dropdown.getAttribute('data-hw-dropdown-placeholder');
-    const placeHolderEl = qa('.hw-dropdown__placeholder', dropdown)[0];
+    const placeHolderEl = q('.hw-dropdown__placeholder', dropdown);
 
     // Check if option is false, if so select default placeholder
     if (selectedOption === false) {
@@ -58,8 +59,8 @@ const HWDropdown = ({
    * @param {node} dropdown
    */
   function handleFitInViewport(dropdown) {
-    const dropDownInner = qa('.hw-dropdown__inner', dropdown)[0];
-    const dropDownOptions = qa('.hw-dropdown__options', dropdown)[0];
+    const dropDownInner = q('.hw-dropdown__inner', dropdown);
+    const dropDownOptions = q('.hw-dropdown__options', dropdown);
     const viewportHeight = window.innerHeight;
     const position = getPosition(dropdown);
     const dropDownHeight = dropDownOptions.offsetHeight + 50;
@@ -86,7 +87,7 @@ const HWDropdown = ({
    * @param {node} dropdown
    */
   function resetPosition(dropdown) {
-    const dropDownContents = qa('.hw-dropdown__inner', dropdown)[0];
+    const dropDownContents = q('.hw-dropdown__inner', dropdown);
     dropdown.classList.remove(tooBigClass);
     dropDownContents.style.transform = '';
     dropDownContents.scrollTop = 0;
@@ -108,7 +109,7 @@ const HWDropdown = ({
     }
 
     // Find dropdown-list within dropdown container
-    const list = qa('.hw-dropdown__options', dropdown)[0];
+    const list = q('.hw-dropdown__options', dropdown);
 
     // Display/hide dropdown
     if (list.getAttribute('aria-hidden') === 'false') {
@@ -208,9 +209,7 @@ const HWDropdown = ({
       return;
     }
 
-    // console.info('Initialising the HWDropdown module');
-
-    // Loop through all dropdowns and initialise
+    // Loop through all dropdowns and initialise each
     SETTINGS.elements.forEach((dropdown) => {
       // Skip if already initialised
       if (dropdown.getAttribute('data-hw-dropdown-initialised') === 'true') { return false; }
