@@ -1,5 +1,6 @@
 /* global window */
 
+import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import getClosest from '../../utilities/js/closest';
 import KEYS from '../../utilities/js/keys';
@@ -22,6 +23,27 @@ const HWAccordion = ({
 
 
   /**
+   * @function collapseAllItems
+   * @desc Collapses all open item for given accordion
+   * @param {HTMLelement} accordion
+   */
+  function collapseAllItems(accordion) {
+    // Find all accordion items
+    const items = qa('.hw-accordion__item', accordion);
+
+    // Collapse all items
+    items.forEach((item) => {
+      const trigger = q('.hw-accordion__trigger', item);
+      const contents = q('.hw-accordion__contents', item);
+
+      trigger.setAttribute('aria-expanded', false);
+      contents.setAttribute('aria-hidden', true);
+      item.classList.remove(activeItemClass);
+    });
+  }
+
+
+  /**
    * @function toggleAccordion
    * @desc Toggles the accordion options list for a accordion
    * @param {Event} e
@@ -32,14 +54,24 @@ const HWAccordion = ({
 
     // Find contents and parent item
     const contents = target.nextElementSibling;
+    const accordion = getClosest('[data-hw-accordion]', target);
     const item = getClosest('.hw-accordion__item', target);
 
     // Display/hide accordion
     if (contents.getAttribute('aria-hidden') === 'false') {
       contents.setAttribute('aria-hidden', true);
+      target.setAttribute('aria-expanded', false);
       item.classList.remove(activeItemClass);
     } else {
+      // Check for multiple expanded allowed option
+      const allowMultiple = accordion.getAttribute('data-hw-accordion-allow-multiple');
+      if (allowMultiple === null) {
+        // Collapse all other items
+        collapseAllItems(accordion);
+      }
+
       contents.setAttribute('aria-hidden', false);
+      target.setAttribute('aria-expanded', true);
       item.classList.add(activeItemClass);
     }
   }
@@ -92,6 +124,9 @@ const HWAccordion = ({
       // Skip if already initialised
       if (accordion.getAttribute('data-hw-accordion-initialised') === 'true') { return false; }
 
+      // Mark as initialised
+      accordion.setAttribute('data-hw-accordion-initialised', true);
+
       // Find accordion name
       const accordionName = accordion.getAttribute('data-hw-accordion');
 
@@ -100,12 +135,23 @@ const HWAccordion = ({
 
       // Attach listeners and aria-attributes to all items
       items.forEach((item, index) => {
-        const trigger = qa('.hw-accordion__trigger', item)[0];
-        const contents = qa('.hw-accordion__contents', item)[0];
+        const trigger = q('.hw-accordion__trigger', item);
+        const contents = q('.hw-accordion__contents', item);
 
         trigger.setAttribute('aria-controls', `${accordionName}-${index}`);
         contents.setAttribute('id', `${accordionName}-${index}`);
-        contents.setAttribute('aria-expanded', 'false');
+
+        // Check for default expanded option
+        const openByDefault = item.getAttribute('data-hw-accordion-default-expanded');
+
+        if (openByDefault !== null) {
+          item.classList.add(activeItemClass);
+          trigger.setAttribute('aria-expanded', 'true');
+          contents.setAttribute('aria-hidden', 'false');
+        } else {
+          trigger.setAttribute('aria-expanded', 'false');
+          contents.setAttribute('aria-hidden', 'true');
+        }
 
         // Set up event listeners for opening accordion
         bindEvents(trigger);

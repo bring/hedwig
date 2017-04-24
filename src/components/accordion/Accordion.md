@@ -1,23 +1,30 @@
 ## Accordion
 
-This is the most commonly used component.
+Creates interactive accordion from `<ul>`
 
-The purpose of the Block component is to apply margin and padding to all components, as well as apply max-widths and background-colors.
-
-In an ideal scenario, there is no margin/padding applied to any other component, instead wrap the element in Block and use this to generate the required margin/padding.
-
-The only exception to this rule is "rich text" areas from the CMS, for this case, use the [Wysiwyg Container](/Wysiwyg).
+The contents are wrapped in the [Wysiwyg Container](/Wysiwyg).
 
 ```code
-<ul class="hw-accordion">...</ul>
+Required:
+
+[data-hw-accordion="name"]            name of accordion (must be unique, used for aria-roles)
+
+Optional:
+
+[data-hw-accordion-allow-multiple]    Allow multiple items to be open at once
+[data-hw-accordion-default-expanded]  Item to be open by default (added to li/item)
+
 ```
 
-### Example accorduob
+### Example accordion
 
 ```html|span-4,plain,light
-  <ul class="hw-accordion" data-hw-accordion="faqs">
+  <ul class="hw-accordion" data-hw-accordion="example1">
     <li class="hw-accordion__item">
-      <button class="hw-accordion__trigger">Hvordan finner jeg hvilket hentested som tilhører min adresse?</button>
+      <button class="hw-accordion__trigger">
+        Hvordan finner jeg hvilket hentested som tilhører min adresse?
+        <div class="hw-accordion__arrow"></div>
+      </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg">
           <p>I vårt Adressesøk kan du finne hvilket hentested som er knyttet til adressen din. I søket får du listet opp alle adressene inkludert husnummer og tilhørende postnummer. Holder du markøren over adressen vil du se hentested (for pakker og store sendinger). Du kan ved å klikke på husnummeret gå til kartløsningen, som vil vise deg mer informasjon om hentestedet.</p>
@@ -25,11 +32,113 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
     </div>
     </li>
     <li class="hw-accordion__item">
-      <button class="hw-accordion__trigger">Hva er hentefristen på sendinger jeg må hente på Posten?</button>
+      <button class="hw-accordion__trigger">
+        Hva er hentefristen på sendinger jeg må hente på Posten?
+        <div class="hw-accordion__arrow"></div>
+      </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg">
           <p>Fristen for å hente pakker og andre sendinger på postkontorene er 14 dager. Dersom du ikke henter sendingen innen 14 dager blir sendingen returnert til avsender.</p>
           <p>Vi sender ut to varsler. Hentemelding ved ankomst og en påminnelse. På mange av våre sendinger vil du bli varslet på SMS, epost eller i Digipost. Dersom sender har valgt flere varslinger kan du få flere varsler underveis fra pakken er innlevert. I forbindelse med julehøytiden tar vi hensyn til de mange høytidsdagene og gir sendingen noen ekstra dager. Avsender eier sendingen til den er utlevert og har krav på å få den tilbake hvis den ikke er hentet innen fristen på 14 dager. Postkontorene trenger også plassen til andre pakker og brev som hele tiden ankommer.</p>
+        </div>
+      </div>
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Hvilke regler gjelder når jeg skal motta en sending fra utlandet?
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg">
+          <p>Alle sendinger fra utlandet og som kan ha tollpliktig innhold vil bli tollbehandlet/tollvurdert.</p>
+          <p>Private gaver med verdi inntil kr 1000 er som oftest toll og avgiftsfrie så fremt de ikke inneholder eks alkohol og tobakksvarer</p>
+          <p>For all annen import hvor verdien er kr 350 (inkludert frakt og forsikring) eller mer må du som oftest betale mva (ev andre avgifter) til staten. Posten fortoller sendingen for deg mot betaling av tollklaring.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+```
+
+### Accordion with default opened item
+
+```html|span-4,plain,light
+  <ul class="hw-accordion" data-hw-accordion="example2">
+    <li class="hw-accordion__item" data-hw-accordion-default-expanded>
+      <button class="hw-accordion__trigger">
+        Hva er hentefristen på sendinger jeg må hente på Posten?
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg">
+          <p>Fristen for å hente pakker og andre sendinger på postkontorene er 14 dager. Dersom du ikke henter sendingen innen 14 dager blir sendingen returnert til avsender.</p>
+          <p>Vi sender ut to varsler. Hentemelding ved ankomst og en påminnelse. På mange av våre sendinger vil du bli varslet på SMS, epost eller i Digipost. Dersom sender har valgt flere varslinger kan du få flere varsler underveis fra pakken er innlevert. I forbindelse med julehøytiden tar vi hensyn til de mange høytidsdagene og gir sendingen noen ekstra dager. Avsender eier sendingen til den er utlevert og har krav på å få den tilbake hvis den ikke er hentet innen fristen på 14 dager. Postkontorene trenger også plassen til andre pakker og brev som hele tiden ankommer.</p>
+        </div>
+      </div>
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Hvordan finner jeg hvilket hentested som tilhører min adresse?
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg">
+          <p>I vårt Adressesøk kan du finne hvilket hentested som er knyttet til adressen din. I søket får du listet opp alle adressene inkludert husnummer og tilhørende postnummer. Holder du markøren over adressen vil du se hentested (for pakker og store sendinger). Du kan ved å klikke på husnummeret gå til kartløsningen, som vil vise deg mer informasjon om hentestedet.</p>
+      </div>
+    </div>
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Hvilke regler gjelder når jeg skal motta en sending fra utlandet?
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg">
+          <p>Alle sendinger fra utlandet og som kan ha tollpliktig innhold vil bli tollbehandlet/tollvurdert.</p>
+          <p>Private gaver med verdi inntil kr 1000 er som oftest toll og avgiftsfrie så fremt de ikke inneholder eks alkohol og tobakksvarer</p>
+          <p>For all annen import hvor verdien er kr 350 (inkludert frakt og forsikring) eller mer må du som oftest betale mva (ev andre avgifter) til staten. Posten fortoller sendingen for deg mot betaling av tollklaring.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+```
+
+### Accordion that allows multiple items to be open at once
+
+```html|span-4,plain,light
+  <ul class="hw-accordion" data-hw-accordion="example3" data-hw-accordion-allow-multiple>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Hva er hentefristen på sendinger jeg må hente på Posten?
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg">
+          <p>Fristen for å hente pakker og andre sendinger på postkontorene er 14 dager. Dersom du ikke henter sendingen innen 14 dager blir sendingen returnert til avsender.</p>
+          <p>Vi sender ut to varsler. Hentemelding ved ankomst og en påminnelse. På mange av våre sendinger vil du bli varslet på SMS, epost eller i Digipost. Dersom sender har valgt flere varslinger kan du få flere varsler underveis fra pakken er innlevert. I forbindelse med julehøytiden tar vi hensyn til de mange høytidsdagene og gir sendingen noen ekstra dager. Avsender eier sendingen til den er utlevert og har krav på å få den tilbake hvis den ikke er hentet innen fristen på 14 dager. Postkontorene trenger også plassen til andre pakker og brev som hele tiden ankommer.</p>
+        </div>
+      </div>
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Hvordan finner jeg hvilket hentested som tilhører min adresse?
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg">
+          <p>I vårt Adressesøk kan du finne hvilket hentested som er knyttet til adressen din. I søket får du listet opp alle adressene inkludert husnummer og tilhørende postnummer. Holder du markøren over adressen vil du se hentested (for pakker og store sendinger). Du kan ved å klikke på husnummeret gå til kartløsningen, som vil vise deg mer informasjon om hentestedet.</p>
+      </div>
+    </div>
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Hvilke regler gjelder når jeg skal motta en sending fra utlandet?
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg">
+          <p>Alle sendinger fra utlandet og som kan ha tollpliktig innhold vil bli tollbehandlet/tollvurdert.</p>
+          <p>Private gaver med verdi inntil kr 1000 er som oftest toll og avgiftsfrie så fremt de ikke inneholder eks alkohol og tobakksvarer</p>
+          <p>For all annen import hvor verdien er kr 350 (inkludert frakt og forsikring) eller mer må du som oftest betale mva (ev andre avgifter) til staten. Posten fortoller sendingen for deg mot betaling av tollklaring.</p>
         </div>
       </div>
     </li>
