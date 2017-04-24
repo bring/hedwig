@@ -6,9 +6,11 @@
   * Paragraph styles
   */
 
-p {
+p,
+a,
+button {
   font-size: var(--hw-font-size-p);
-  font-family: var(--hw-font-primay-regular );
+  font-family: var(--hw-font-primay-regular);
   line-height: 1.4;
   font-weight: 300;
   color: var(--hw-color-gray-dark);
