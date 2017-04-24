@@ -15,11 +15,13 @@
         <use xlink:href="#search"></use>
       </svg>
     </button>
-    <button class="navbar__button">
+    <button class="navbar__button" data-hw-toggle-menu>
       Menu
-      <svg class="hw-icon">
-        <use xlink:href="#burger"></use>
-      </svg>
+      <div class="hw-hamburger">
+        <span class="hw-hamburger__part"></span>
+        <span class="hw-hamburger__part"></span>
+        <span class="hw-hamburger__part"></span>
+      </div>
     </button>
   </nav>
 </header>
