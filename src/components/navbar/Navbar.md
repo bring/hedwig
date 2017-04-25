@@ -29,4 +29,7 @@
   Menu content
   <img src="https://unsplash.it/1200/700" />
 </nav>
+<div class="hw-navbar__search" data-hw-menu-search>
+  <input class="hw-input" type="text" />
+</div>
 ```
