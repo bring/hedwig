@@ -15,11 +15,11 @@ const HWNavbar = ({
   const menuButton = q(menuButtonSelector);
 
   /**
-   * @function addClassToMenuBotton
+   * @function toggleMenu
    * @desc Add class to menu button navigation
    */
 
-  function addClassToMenuBotton() {
+  function toggleMenu() {
     const menuButtonIcon = q(menuButtonIconSelector);
 
     if (menuButtonIcon.classList.contains(activeClass)) {
@@ -42,7 +42,7 @@ const HWNavbar = ({
     menuButton.setAttribute('data-hw-menu-initialised', true);
 
 
-    menuButton.addEventListener('click', addClassToMenuBotton);
+    menuButton.addEventListener('click', toggleMenu);
   }
 
   init();

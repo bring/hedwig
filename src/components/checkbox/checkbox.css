@@ -28,10 +28,9 @@
    }
 
   & > input {
-     position: absolute;
-     left: -1000px;
-     opacity: 0;
-     display: none;
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
 
      &:checked ~ .hw-checkbox__indicator {
        background-color: var(--hw-color-primary);
