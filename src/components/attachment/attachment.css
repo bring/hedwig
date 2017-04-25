@@ -1,0 +1,33 @@
+.hw-attachment {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: var(--hw-spacing-xxsmall);
+    margin-right: var(--hw-spacing-xsmall);
+    background-color: var(--hw-color-gray-dark);
+    border: 2px solid var(--hw-color-gray-dark);
+    border-radius: 50%;
+    transition: background-color .2s ease;
+  }
+
+  &:hover .hw-attachment__icon,
+  &:focus .hw-attachment__icon {
+    background-color: var(--hw-color-white);
+  }
+  &:hover .hw-attachment__icon svg,
+  &:focus .hw-attachment__icon svg {
+    fill: var(--hw-color-gray-dark);
+  }
+
+  &__icon svg {
+    fill: white;
+    transition: fill .2s ease;
+  }
+}
