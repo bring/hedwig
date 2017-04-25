@@ -5,6 +5,7 @@
   align-items: center;
   width: 100%;
   position: relative;
+  border-bottom: 1px solid var(--hw-color-gray-lighter);
 
   &__logo {
     width: 150px;
@@ -54,7 +55,6 @@
 
   &__drawer {
     background: var(--hw-color-white);
-    border-top: 1px solid var(--hw-color-gray-lighter);
     display: block;
     width: 100%;
     min-height: 100vh;
