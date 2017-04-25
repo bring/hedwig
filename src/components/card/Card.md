@@ -17,7 +17,7 @@ Styling for cards.
     </div>
     <div class="hw-card__contents">
       <div class="hw-block hw-block--margin-top">
-        <h2>Card Title</h2>
+        <h3>Card Title</h3>
       </div>
       <div class="hw-block hw-block--margin-top-half">
         <hr class="hw-hr" />
@@ -35,14 +35,14 @@ Styling for cards.
 
 ```html|span-6,plain,light
   <div class="hw-grid">
-    <div class="hw-grid__item hw-small--one-half hw-large--one-third">
+    <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
           <div class="hw-card__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
         </div>
         <div class="hw-card__contents">
           <div class="hw-block hw-block--margin-top">
-            <h2>Card Title</h2>
+            <h3>Card Title</h3>
           </div>
           <div class="hw-block hw-block--margin-top-half">
             <hr class="hw-hr" />
@@ -55,14 +55,14 @@ Styling for cards.
         </div>
       </a>
     </div><!--
- --><div class="hw-grid__item hw-small--one-half hw-large--one-third">
+ --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
           <div class="hw-card__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
         </div>
         <div class="hw-card__contents">
           <div class="hw-block hw-block--margin-top">
-            <h2>Card Title</h2>
+            <h3>Card Title</h3>
           </div>
           <div class="hw-block hw-block--margin-top-half">
             <hr class="hw-hr" />
@@ -75,14 +75,14 @@ Styling for cards.
         </div>
       </a>
     </div><!--
- --><div class="hw-grid__item hw-small--one-half hw-large--one-third">
+ --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
           <div class="hw-card__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
         </div>
         <div class="hw-card__contents">
           <div class="hw-block hw-block--margin-top">
-            <h2>Card Title</h2>
+            <h3>Card Title</h3>
           </div>
           <div class="hw-block hw-block--margin-top-half">
             <hr class="hw-hr" />
@@ -107,7 +107,7 @@ Styling for cards.
     </div>
     <div class="hw-card__contents">
       <div class="hw-block hw-block--margin-top">
-        <h2>Card Title</h2>
+        <h3>Card Title</h3>
       </div>
       <div class="hw-block hw-block--margin-top-half">
         <hr class="hw-hr hw-hr--white" />

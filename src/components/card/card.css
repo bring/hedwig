@@ -24,6 +24,7 @@
     opacity: 0;
   }
 
+
   /**
    * States
    */
@@ -61,6 +62,11 @@
   }
   &__contents p {
     font-size: var(--hw-font-size-small);
+    font-family: var(--hw-font-primay-medium);
+  }
+  &__contents h3 {
+    color: var(--hw-color-gray-dark);
+    font-family: var(--hw-font-primay-medium);
   }
 
   /**
@@ -70,7 +76,7 @@
   &--dark .hw-card__contents {
     background: var(--hw-color-gray-darker);
   }
-  &--dark .hw-card__contents h2,
+  &--dark .hw-card__contents h3,
   &--dark .hw-card__contents p {
     color: white;
   }
