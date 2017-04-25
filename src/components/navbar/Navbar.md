@@ -1,21 +1,21 @@
 
 ```html
-<header class="navbar">
-  <div class="navbar__logo">
+<header class="hw-navbar">
+  <div class="hw-navbar__logo">
     <svg>
       <use xlink:href="#logo"></use>
     </svg>
   </div>
-  <nav class="navbar__menu">
-    <a href="#" class="navbar__item">English</a>
-    <a href="#" class="navbar__item">Login</a>
-    <button class="navbar__button">
+  <nav class="hw-navbar__menu">
+    <a href="#" class="hw-navbar__item">English</a>
+    <a href="#" class="hw-navbar__item">Login</a>
+    <button class="hw-navbar__button">
       Search
       <svg class="hw-icon">
         <use xlink:href="#search"></use>
       </svg>
     </button>
-    <button class="navbar__button" data-hw-toggle-menu>
+    <button class="hw-navbar__button" data-hw-toggle-menu>
       Menu
       <div class="hw-hamburger" data-hw-menu-icon>
         <span class="hw-hamburger__part"></span>
@@ -25,4 +25,8 @@
     </button>
   </nav>
 </header>
+<nav class="hw-navbar__drawer" data-hw-menu-drawer>
+  Menu content
+  <img src="https://unsplash.it/1200/700" />
+</nav>
 ```

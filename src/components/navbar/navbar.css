@@ -1,9 +1,10 @@
-.navbar {
+.hw-navbar {
   background: var(--hw-color-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: relative;
 
   &__logo {
     width: 150px;
@@ -49,5 +50,21 @@
     background: var(--hw-color-gray-lighter);
     outline: 0;
     cursor: pointer;
+  }
+
+  &__drawer {
+    background: var(--hw-color-white);
+    border-top: 1px solid var(--hw-color-gray-lighter);
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    padding: var(--hw-spacing);
+    position: absolute;
+    display: none;
+  }
+
+  &__drawer--active {
+    animation: drawer-animation 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    display: block;
   }
 }

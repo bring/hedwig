@@ -10,7 +10,9 @@ import q from '../../utilities/js/q';
 const HWNavbar = ({
   menuButtonSelector = '[data-hw-toggle-menu]',
   menuButtonIconSelector = '[data-hw-menu-icon]',
-  activeClass = 'hw-hamburger--active',
+  drawerSelector = '[data-hw-menu-drawer]',
+  activeIconClass = 'hw-hamburger--active',
+  activeDrawerClass = 'hw-navbar__drawer--active',
 } = {}) => {
   const menuButton = q(menuButtonSelector);
 
@@ -21,13 +23,16 @@ const HWNavbar = ({
 
   function toggleMenu() {
     const menuButtonIcon = q(menuButtonIconSelector);
+    const drawer = q(drawerSelector);
 
-    if (menuButtonIcon.classList.contains(activeClass)) {
-      menuButtonIcon.classList.remove(activeClass);
+    if (menuButtonIcon.classList.contains(activeIconClass)) {
+      menuButtonIcon.classList.remove(activeIconClass);
+      drawer.classList.remove(activeDrawerClass);
       return;
     }
 
-    menuButtonIcon.classList.add(activeClass);
+    menuButtonIcon.classList.add(activeIconClass);
+    drawer.classList.add(activeDrawerClass);
   }
 
   function init() {
