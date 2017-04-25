@@ -5,7 +5,7 @@
  * @param  {String} selector The class, id, data attribute, or tag to look for
  * @return {Node} Null if no match
  */
-const getClosest = function (selector, elem) {
+const findParent = function ({ selector, elem }) {
   const firstChar = selector.charAt(0);
 
   // Get closest match
@@ -40,4 +40,4 @@ const getClosest = function (selector, elem) {
   return false;
 };
 
-export default getClosest;
+export default findParent;

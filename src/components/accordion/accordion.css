@@ -79,3 +79,11 @@
     transform: rotate(-45deg);
   }
 }
+
+/**
+  * no-js fallbacks
+  */
+
+.no-js .hw-accordion__contents {
+  display: block;
+}
