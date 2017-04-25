@@ -1,22 +1,33 @@
 import q from '../../utilities/js/q';
 
-const SETTINGS = {
-  menuButton: '[data-hw-toggle-menu]',
-  menuButtonIcon: '[data-hw-menu-icon]',
-  activeClass: 'hw-hamburger--active',
-};
+/**
+ * @function HWNavbar
+ * @version 0.0.1
+ * @desc Toggle classes for navbar
+ * @param {object} settings
+ */
 
-const HWNavbar = () => {
-  const menuButton = q(SETTINGS.menuButton);
+const HWNavbar = ({
+  menuButtonSelector = '[data-hw-toggle-menu]',
+  menuButtonIconSelector = '[data-hw-menu-icon]',
+  activeClass = 'hw-hamburger--active',
+} = {}) => {
+  const menuButton = q(menuButtonSelector);
 
-  function addClassToMenuBUtton() {
-    const menuButtonIcon = q(SETTINGS.menuButtonIcon);
+  /**
+   * @function addClassToMenuBotton
+   * @desc Add class to menu button navigation
+   */
 
-    if (menuButtonIcon.classList.contains(SETTINGS.activeClass)) {
-      menuButtonIcon.classList.remove(SETTINGS.activeClass);
+  function addClassToMenuBotton() {
+    const menuButtonIcon = q(menuButtonIconSelector);
+
+    if (menuButtonIcon.classList.contains(activeClass)) {
+      menuButtonIcon.classList.remove(activeClass);
+      return;
     }
 
-    menuButtonIcon.classList.add(SETTINGS.activeClass);
+    menuButtonIcon.classList.add(activeClass);
   }
 
   function init() {
@@ -24,10 +35,17 @@ const HWNavbar = () => {
       return;
     }
 
-    menuButton.addEventListener('click', addClassToMenuBUtton);
+    // Skip if already initialised
+    if (menuButton.getAttribute('data-hw-menu-initialised') === 'true') { return; }
+
+    // Mark as initialised
+    menuButton.setAttribute('data-hw-menu-initialised', true);
+
+
+    menuButton.addEventListener('click', addClassToMenuBotton);
   }
 
   init();
 };
 
-HWNavbar(SETTINGS);
+HWNavbar();

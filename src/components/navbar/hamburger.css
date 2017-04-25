@@ -24,25 +24,21 @@
   &:hover .hw-hamburger__part:last-child {
     transform: translateY(2px);
   }
-}
 
-/**
- * Active class
- * Animation: Hamburger to X
- */
+  /**
+   * Active class
+   * Animation: Hamburger to X
+   */
 
-.hw-hamburger--active > .hw-hamburger__part:first-child {
-  transform: translateY(9px) rotate(45deg);
-}
+  &.hw-hamburger--active > .hw-hamburger__part:first-child {
+    transform: translateY(9px) rotate(45deg);
+  }
 
-.hw-hamburger--active > .hw-hamburger__part:nth-child(2) {
-  transform: scaleX(0);
-}
+  &.hw-hamburger--active > .hw-hamburger__part:nth-child(2) {
+    transform: scaleX(0);
+  }
 
-.hw-hamburger--active > .hw-hamburger__part:last-child {
-  transform: translateY(-9px) rotate(-45deg);
-}
-
-.hw-hamburger--active:hover {
-  transform: none;
+  &.hw-hamburger--active > .hw-hamburger__part:last-child {
+    transform: translateY(-9px) rotate(-45deg);
+  }
 }
