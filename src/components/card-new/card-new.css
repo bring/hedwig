@@ -4,13 +4,12 @@
  * Card
  */
 
-.hw-card {
+.hw-card-new {
   position: relative;
   background: var(--hw-color-white);
   transition: transform .3s;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  margin-bottom: var(--hw-spacing);
 
   &:after {
     position: absolute;
@@ -24,7 +23,6 @@
     opacity: 0;
   }
 
-
   /**
    * States
    */
@@ -34,7 +32,7 @@
         opacity: 1;
       }
   }
-  &:hover .hw-card__media-inner {
+  &:hover .hw-card-new__media-inner {
     transform: scale(1.1);
   }
 
@@ -42,10 +40,22 @@
    * Elements
    */
 
+  &__contents {
+    max-width: 286px;
+    padding: 0 var(--hw-spacing);
+  }
+
+  &__header {
+    padding: var(--hw-spacing) 0;
+  }
+
+  &__body {
+    padding: var(--hw-spacing) 0 var(--hw-spacing) 0;
+  }
+
   &__media {
     flex-grow: 1;
     overflow: hidden;
-    height: 187px;
   }
 
   &__media-inner {
@@ -56,29 +66,17 @@
     transition: all 1.4s cubic-bezier(0,0,.1,1);
   }
 
-  &__contents {
-    z-index: 1;
-    min-height: 187px;
-  }
-  &__contents p {
-    font-size: var(--hw-font-size-small);
-    font-family: var(--hw-font-primay-medium);
-  }
-  &__contents h3 {
-    color: var(--hw-color-gray-dark);
-    font-family: var(--hw-font-primay-medium);
-  }
-
   /**
    * Variants
    */
 
-  &--dark .hw-card__contents {
-    background: var(--hw-color-gray-darker);
+  &--half {
+
   }
-  &--dark .hw-card__contents h3,
-  &--dark .hw-card__contents p {
+
+  &--dark .hw-card-new__contents {
     color: white;
+    background: var(--hw-color-gray-darker);
   }
 
 }

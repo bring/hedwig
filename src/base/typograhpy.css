@@ -19,6 +19,10 @@ button {
   letter-spacing: -.02em;
 }
 
+a {
+  text-decoration: none;
+}
+
 /**
   * Header styles
   */
