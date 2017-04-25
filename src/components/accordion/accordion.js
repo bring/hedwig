@@ -2,7 +2,7 @@
 
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
-import getClosest from '../../utilities/js/closest';
+import findParent from '../../utilities/js/findParent';
 import KEYS from '../../utilities/js/keys';
 
 /**
@@ -50,17 +50,17 @@ const HWAccordion = ({
    */
   function toggleAccordion(e) {
     // Determine if we've clicked on an option
-    const target = e.target;
+    const elem = e.target;
 
     // Find contents and parent item
-    const contents = target.nextElementSibling;
-    const accordion = getClosest('[data-hw-accordion]', target);
-    const item = getClosest('.hw-accordion__item', target);
+    const contents = elem.nextElementSibling;
+    const accordion = findParent({ selector: '[data-hw-accordion]', elem });
+    const item = findParent({ selector: '.hw-accordion__item', elem });
 
     // Display/hide accordion
     if (contents.getAttribute('aria-hidden') === 'false') {
       contents.setAttribute('aria-hidden', true);
-      target.setAttribute('aria-expanded', false);
+      elem.setAttribute('aria-expanded', false);
       item.classList.remove(activeItemClass);
     } else {
       // Check for multiple expanded allowed option
@@ -71,7 +71,7 @@ const HWAccordion = ({
       }
 
       contents.setAttribute('aria-hidden', false);
-      target.setAttribute('aria-expanded', true);
+      elem.setAttribute('aria-expanded', true);
       item.classList.add(activeItemClass);
     }
   }

@@ -2,7 +2,7 @@
 
 Creates interactive accordion from `<ul>`
 
-The contents are wrapped in the [Wysiwyg Container](/Wysiwyg).
+In these examples, the contents are wrapped in the [Wysiwyg Container](/Wysiwyg) component, but this is optional.
 
 ```code
 Required:
