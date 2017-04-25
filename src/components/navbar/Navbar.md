@@ -17,7 +17,7 @@
     </button>
     <button class="navbar__button" data-hw-toggle-menu>
       Menu
-      <div class="hw-hamburger">
+      <div class="hw-hamburger" data-hw-menu-icon>
         <span class="hw-hamburger__part"></span>
         <span class="hw-hamburger__part"></span>
         <span class="hw-hamburger__part"></span>

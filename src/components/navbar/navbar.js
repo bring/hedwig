@@ -1,25 +1,33 @@
-import qa from '../../utilities/js/qa';
+import q from '../../utilities/js/q';
 
-/**
- * @function HWDropdown
- * @version 0.0.1
- * @desc Creates custom dropdowns for all found elements
- * @param {object} settings
- */
-const HWNavbar = ({
-    navbarSelector = '[data-hw-toggle-menu]',
-    activeClass = 'hw-menu-icon--open',
-  } = {}) => {
-
-  // Module settings object
-  const SETTINGS = {
-    elements: qa(navbarSelector), // All dropdown DOM nodes
-  };
-
-  if (SETTINGS.elements.length < 1) {
-    return;
-  }
-  
+const SETTINGS = {
+  menuButton: '[data-hw-toggle-menu]',
+  menuButtonIcon: '[data-hw-menu-icon]',
+  activeClass: 'hw-hamburger--active',
 };
 
-HWNavbar();
+const HWNavbar = () => {
+  const menuButton = q(SETTINGS.menuButton);
+
+  function addClassToMenuBUtton() {
+    const menuButtonIcon = q(SETTINGS.menuButtonIcon);
+
+    if (menuButtonIcon.classList.contains(SETTINGS.activeClass)) {
+      menuButtonIcon.classList.remove(SETTINGS.activeClass);
+    }
+
+    menuButtonIcon.classList.add(SETTINGS.activeClass);
+  }
+
+  function init() {
+    if (!menuButton) {
+      return;
+    }
+
+    menuButton.addEventListener('click', addClassToMenuBUtton);
+  }
+
+  init();
+};
+
+HWNavbar(SETTINGS);
