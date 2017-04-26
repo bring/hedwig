@@ -21,7 +21,7 @@
 
   &:hover {
     //background: var(--hw-color-gray-dark);
-    outline: 10px solid var(--hw-color-gray-dark);
+    outline: 3px solid var(--hw-color-gray-dark);
   }
 
   /*
@@ -33,7 +33,7 @@
 
   &:active,
   &:focus {
-    outline: 10px solid var(--hw-color-gray-dark);
+    outline: 3px solid var(--hw-color-gray-dark);
   }
 
   &:focus:hover {
@@ -68,12 +68,12 @@
     color: var(--hw-color-white);
 
     &:hover {
-      outline: 10px solid var(--hw-color-primary-dark);
+      outline: 3px solid var(--hw-color-primary-dark);
     }
 
     &:active,
     &:focus {
-      outline: 10px solid var(--hw-color-primary-dark);
+      outline: 3px solid var(--hw-color-primary-dark);
       background: var(--hw-color-primary-dark);
     }
 
@@ -85,7 +85,7 @@
   &--outline {
     background: none;
     color: var(--hw-color-gray);
-    outline: 3px solid var(--hw-color-gray);
+    border: 3px solid var(--hw-color-gray);
 
     &:disabled {
       outline: 0;
@@ -93,12 +93,12 @@
 
     &:hover {
       background: none;
-      outline: 10px solid var(--hw-color-gray);
+      outline: 3px solid var(--hw-color-gray);
     }
 
     &:active,
     &:focus {
-      outline: 10px solid var(--hw-color-gray);
+      outline: 3px solid var(--hw-color-gray);
       background: var(--hw-color-gray);
       color: var(--hw-color-white);
     }
@@ -112,21 +112,21 @@
   &--outline-white {
     background: none;
     color: var(--hw-color-white);
-    outline: 3px solid var(--hw-color-white);
+    border: 3px solid var(--hw-color-white);
 
     &:disabled {
       outline: 0;
     }
 
     &:hover {
-      outline: 10px solid var(--hw-color-white);
+      outline: 3px solid var(--hw-color-white);
     }
 
     &:focus,
     &:active {
       color: var(--hw-color-gray-dark);
       background: var(--hw-color-white);
-      outline: 10px solid var(--hw-color-white);
+      outline: 3px solid var(--hw-color-white);
     }
 
     &:focus:hover {
