@@ -45,18 +45,15 @@ const HWSearch = ({
     const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 
     if (serchField.classList.contains(searchFieldClass) && scrollTop > originalDistanceToTop) {
-      console.log('allready did stick');
       return;
     }
 
     if (distanceToTop < 0) {
-      console.log('distance smaller than 0');
       serchField.classList.add(searchFieldClass);
       return;
     }
 
     if (scrollTop < originalDistanceToTop) {
-      console.log('scrolled to the original position');
       serchField.classList.remove(searchFieldClass);
     }
   }

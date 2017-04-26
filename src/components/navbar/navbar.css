@@ -6,6 +6,12 @@
   width: 100%;
   position: relative;
   border-bottom: 1px solid var(--hw-color-gray-lighter);
+  margin-bottom: 71px;
+
+
+  &--frontpage {
+    margin-bottom: 0;
+  }
 
   &__logo {
     width: 140px;
