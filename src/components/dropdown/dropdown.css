@@ -9,7 +9,7 @@
     outline: 0;
   }
   &:focus .hw-dropdown__inner {
-    outline: 6px solid var(--hw-color-secondary);
+    //outline: 6px solid var(--hw-color-secondary);
   }
 
   /* Clearfix */
