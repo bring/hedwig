@@ -29,7 +29,12 @@
   Menu content
   <img src="https://unsplash.it/1200/700" />
 </nav>
-<div class="hw-navbar__search" data-hw-menu-search>
-  <input class="hw-input" type="text" />
+<div class="hw-search" data-hw-search>
+  <input
+    data-hw-search-input
+    class="hw-search__input" type="text" placeholder="Søk pakke eller på nettstedet" />
+  <svg class="hw-search__icon">
+    <use xlink:href="#search"></use>
+  </svg>
 </div>
 ```
