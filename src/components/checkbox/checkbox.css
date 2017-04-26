@@ -10,18 +10,24 @@
    display: block;
    cursor: pointer;
    padding-left: 2rem;
-   font-size: var(--hw-font-size-p);
+   font-size: var(--hw-font-size-small);
+   margin-bottom: var(--hw-spacing-xsmall);
+   font-family: var(--hw-font-primay-regular);
+
+   &:last-child {
+     margin-bottom: 0;
+   }
 
    &__indicator {
      position: absolute;
      top: 0;
      left: 0;
      display: block;
-     width:  18px;
-     height: 18px;
-     line-height: 18px;
+     width: var(--hw-spacing);
+     height: var(--hw-spacing);
+     line-height: var(--hw-spacing);
      background-color: var(--hw-color-white);
-     border: 3px solid var(--hw-color-gray-light); // Always use a border on input elements for accessibility. High contrast mode in Windows will remove all background styling and render the field invisible if border is not used.
+     border: 3px solid var(--hw-color-gray); // Always use a border on input elements for accessibility. High contrast mode in Windows will remove all background styling and render the field invisible if border is not used.
      user-select: none;
      text-align: center;
      border-radius: 0;
@@ -31,6 +37,7 @@
     position: absolute;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
+    vertical-align: middle;
 
      &:checked ~ .hw-checkbox__indicator {
        background-color: var(--hw-color-primary);
@@ -49,14 +56,14 @@
      }
 
      &:active ~ .hw-checkbox__indicator {
-       outline: 3px solid var(--hw-color-secondary);
+       // outline: 3px solid var(--hw-color-secondary);
        color: var(--hw-color-white);
        background-color: var(--hw-color-primary);
        border-color: var(--hw-color-primary);
      }
 
     &:focus ~ .hw-checkbox__indicator {
-      outline: 6px solid var(--hw-color-secondary);
+      outline: 3px solid var(--hw-color-gray);
     }
 
      &:disabled ~ .hw-checkbox__indicator {

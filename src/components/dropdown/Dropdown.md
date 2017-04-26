@@ -17,7 +17,7 @@ Optional:
 ```
 
 ```html
-<label>
+<label class="hw-label">
   Choose country
   <div class="hw-dropdown" data-hw-dropdown="countries" data-hw-dropdown-placeholder="Choose option">
     <div class="hw-dropdown__inner">

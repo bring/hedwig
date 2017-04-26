@@ -2,7 +2,7 @@
   display: inline-block;
   width: var(--hw-spacing);
   height: var(--hw-spacing);
-  fill: var(--hw-color-gray-light);
+  fill: var(--hw-color-gray);
 }
 
 .hw-icon--small {

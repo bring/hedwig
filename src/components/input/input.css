@@ -1,18 +1,3 @@
-/**
- * Label
- */
-
-.hw-label {
-  font-size: var(--hw-font-size-small);
-  font-family: var(--hw-font-primay-bold);
-  margin-bottom: var(--hw-spacing-xsmall);
-  color: var(--hw-color-gray-dark);
-  display: block;
-
-  &[disabled]{
-    color: var(--hw-color-gray-light);
-  }
-}
 
 /**
  * Input
@@ -28,6 +13,7 @@
   transition: border 100ms;
   margin: 3px 0;
   position: relative;
+  font-family: var(--hw-font-primay-medium);
 
   /**
    * States

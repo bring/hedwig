@@ -1,0 +1,48 @@
+.hw-textarea {
+    font-size: var(--hw-font-size-small);
+    padding: var(--hw-spacing-xsmall);
+    border: 3px solid var(--hw-color-gray-light);
+    background-color: var(--hw-color-white);
+    display: block;
+    width: 100%;
+    transition: border 100ms;
+    margin: 3px 0;
+    position: relative;
+    font-family: var(--hw-font-primay-medium);
+
+    /**
+     * States
+     */
+
+    &:focus {
+      border: 3px solid var(--hw-color-gray-dark);
+      outline: 0;
+    }
+
+    &[disabled] {
+      border: 3px solid var(--hw-color-gray-lighter);
+    }
+
+    &--error,
+    &--error:focus {
+      position: relative;
+      border: 3px solid var(--hw-color-secondary);
+      transition: border 200ms;
+
+      &:before {
+        background: var(--hw-color-gray);
+        color: var(--hw-color-white);
+        position: absolute;
+        content: '!';
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        border-radius: 50%;
+        bottom: 12px;
+        right: 12px;
+        z-index: 1000;
+        text-align: center;
+        z-index: 5000;
+      }
+    }
+  }
