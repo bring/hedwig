@@ -12,9 +12,9 @@ const HWSearch = ({
   searchFieldSelector = '[data-hw-search]',
   searchFieldInputSelector = '[data-hw-search-input]',
   searchFieldClass = 'hw-search--stick',
-  originalDistanceToTop = 0,
 } = {}) => {
   const serchField = q(searchFieldSelector);
+  let originalDistanceToTop = 0;
 
   function setPlaceholderText() {
     const input = q(searchFieldInputSelector);
@@ -32,7 +32,7 @@ const HWSearch = ({
       input.placeholder = texts[interval];
 
       if (interval < (texts.length - 1)) {
-        interval++;
+        interval += 1;
       } else {
         interval = 0;
       }
@@ -42,16 +42,21 @@ const HWSearch = ({
   function addClassWhenScrolled() {
     const distanceToTop = serchField.getBoundingClientRect().top;
 
-    if (serchField.classList.contains(searchFieldClass) && window.scrollY > originalDistanceToTop) {
+    const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (serchField.classList.contains(searchFieldClass) && scrollTop > originalDistanceToTop) {
+      console.log('allready did stick');
       return;
     }
 
     if (distanceToTop < 0) {
+      console.log('distance smaller than 0');
       serchField.classList.add(searchFieldClass);
       return;
     }
 
-    if (window.scrollY < originalDistanceToTop) {
+    if (scrollTop < originalDistanceToTop) {
+      console.log('scrolled to the original position');
       serchField.classList.remove(searchFieldClass);
     }
   }
@@ -68,7 +73,7 @@ const HWSearch = ({
     // Mark as initialised
     serchField.setAttribute('data-hw-search-initialised', true);
 
-    originalDistanceToTop = serchField.getBoundingClientRect().top;
+    originalDistanceToTop = Math.round(serchField.getBoundingClientRect().top);
 
     window.addEventListener('scroll', throttle(addClassWhenScrolled, 100));
 
