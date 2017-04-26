@@ -8,8 +8,9 @@
   border-bottom: 1px solid var(--hw-color-gray-lighter);
 
   &__logo {
-    width: 150px;
+    width: 140px;
     height: 50px;
+    margin-left: 1rem;
   }
 
   &__menu {
