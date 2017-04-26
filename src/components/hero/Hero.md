@@ -12,7 +12,7 @@ Hero component
 
 ```html|span-6,plain,light
   <div class="hw-hero rellax">
-    <div class="hw-hero__image" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');">
+    <div class="hw-hero__image" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');" />
   </div>
 ```
 
@@ -21,9 +21,8 @@ Hero component
 ```html|span-6,plain,light
   <div class="hw-hero hw-hero--large rellax">
     <div class="hw-hero__image rellax" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');"
-    data-rellax-speed="-4">
-    />
-    <div class="hw-hero__overlay" />
+    data-rellax-speed="-4"></div>
+    <div class="hw-hero__overlay"></div>
     <div class="hw-hero__contents">
       <h1>Headline</h1>
     </div>
@@ -34,8 +33,8 @@ Hero component
 
 ```html|span-6,plain,light
 <div class="hw-hero hw-hero--full rellax">
-  <div class="hw-hero__image" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');" />
-  <div class="hw-hero__overlay" />
+  <div class="hw-hero__image" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');"></div>
+  <div class="hw-hero__overlay"></div>
   <div class="hw-hero__contents">
     <h1>Headline</h1>
   </div>

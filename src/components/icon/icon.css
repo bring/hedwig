@@ -2,7 +2,6 @@
   display: inline-block;
   width: var(--hw-spacing);
   height: var(--hw-spacing);
-  padding: var(hw-spacing-xsmall);
   fill: var(--hw-color-gray-light);
 }
 
