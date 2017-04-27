@@ -29,8 +29,9 @@
     border: 0;
     color: var(--hw-color-white);
 
-    &:hover {
-      background: none;
+    &:hover,
+    &:focus {
+      background: rgba(255, 255, 255, .25);
     }
   }
 
@@ -40,7 +41,15 @@
 
     &:hover,
     &:focus {
-      background: none;
+      background: rgba(255, 255, 255, .25);
+    }
+  }
+
+  &--transparent .hw-navbar__logo {
+
+    &:hover,
+    &:focus {
+      background: rgba(255, 255, 255, .25);
     }
   }
 
@@ -54,8 +63,16 @@
 
   &__logo {
     width: 100px;
-    height: 40px;
+    height: 70px;
+    padding: 6px;
     margin-left: 1rem;
+  }
+
+  &__logo:hover,
+  &__logo:focus {
+    cursor: pointer;
+    outline: 0;
+    background: var(--hw-color-gray-lightest);
   }
 
   &__menu {
@@ -74,8 +91,10 @@
     font-size: var(--hw-font-size-small);
   }
 
-  &__item:hover {
-    background: var(--hw-color-gray-lighter);
+  &__item:hover,
+  &__item:focus {
+    background: var(--hw-color-gray-lightest);
+    outline: 0;
   }
 
   &__button {
@@ -96,7 +115,7 @@
 
   &__button:hover,
   &__button:focus {
-    background: var(--hw-color-gray-lighter);
+    background: var(--hw-color-gray-lightest);
     outline: 0;
     cursor: pointer;
   }

@@ -2,7 +2,6 @@
   background: rgba(255, 255, 255, .9);
   display: block;
   position: absolute;
-  padding-left: 2rem;
   top: 71px;
   left: 0;
   width: 100%;
@@ -52,10 +51,12 @@
     border: 0;
     padding: 1.25rem;
     width: 100%;
+    padding-left: 3.25rem;
+    transition: outline 100ms;
   }
 
   &__input:focus {
-    outline: 0;
+    outline: 3px solid var(--hw-color-gray-light);
   }
 
   &__icon {
