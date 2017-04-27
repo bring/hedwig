@@ -46,21 +46,6 @@
     position: relative;
     border: 3px solid var(--hw-color-secondary);
     transition: border 150ms;
-
-    &:before {
-      position: absolute;
-      content: '!';
-      background: var(--hw-color-gray);
-      color: var(--hw-color-white);
-      width: 24px;
-      height: 24px;
-      line-height: 24px;
-      border-radius: 50%;
-      bottom: 12px;
-      right: 12px;
-      text-align: center;
-      z-index: 5000;
-    }
   }
 }
 
@@ -71,12 +56,27 @@
 .hw-error {
   color: var(--hw-color-black);
   background: var(--hw-color-secondary);
-  display: inline-block;
+  display: block;
   padding: 3px 12px;
   margin-top: -3px;
   opacity: 1;
   transform: translateY(0);
   transition: transform 200ms;
+
+  &:before {
+    position: absolute;
+    content: '!';
+    background: var(--hw-color-gray);
+    color: var(--hw-color-white);
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    top: -38px;
+    right: 12px;
+    text-align: center;
+    z-index: 5000;
+  }
 
   &--is-hidden {
     visibility: hidden;
