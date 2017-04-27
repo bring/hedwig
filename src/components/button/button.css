@@ -11,17 +11,13 @@
   padding: var(--hw-spacing-xsmall) var(--hw-spacing);
   font-family: var(--hw-font-primay-medium);
   display: inline-block;
-  border: 3px solid var(--hw-color-primary);
+  border: 3px solid var(--hw-color-gray);
   transition: outline cubic-bezier(.08,.84,.07,.96) 120ms, background 75ms;
   cursor: pointer;
 
   /**
    * States
    */
-
-  &:hover {
-    outline: 3px solid var(--hw-color-gray-dark);
-  }
 
   /*
     wait
@@ -30,6 +26,7 @@
     }
    */
 
+  &:hover,
   &:active,
   &:focus {
     outline: 3px solid var(--hw-color-gray-dark);
@@ -65,15 +62,12 @@
   &--primary {
     background: var(--hw-color-primary);
     color: var(--hw-color-white);
+    border: 3px solid var(--hw-color-gray-primary);
 
-    &:hover {
-      outline: 3px solid var(--hw-color-primary-dark);
-    }
-
+    &:hover,
     &:active,
     &:focus {
       outline: 3px solid var(--hw-color-primary-dark);
-      background: var(--hw-color-primary-dark);
     }
 
     &:focus:hover {

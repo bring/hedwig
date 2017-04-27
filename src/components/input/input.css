@@ -21,7 +21,6 @@
 
   &:hover {
     border: 3px solid var(--hw-color-gray);
-    outline: 0;
   }
 
   &:focus {

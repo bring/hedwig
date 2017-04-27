@@ -14,6 +14,10 @@
      * States
      */
 
+    &:hover {
+      border: 3px solid var(--hw-color-gray);
+    }
+
     &:focus {
       border: 3px solid var(--hw-color-gray-dark);
       outline: 0;
