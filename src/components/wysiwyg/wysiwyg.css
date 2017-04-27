@@ -23,10 +23,20 @@
 /* Paragraphs */
 .hw-wysiwyg p {
   margin-bottom: var(--hw-spacing);
-  //font-family: 'Roboto', sans-serif;
-  //font-weight: 300;
-  //font-size: 17px;
-  //line-height: 1.5;
+}
+
+/* Links */
+.hw-wysiwyg a {
+  font-family: var(--hw-font-primay-regular);
+  border-bottom: 2px solid var(--hw-color-gray);
+  transition: border-color .2s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: var(--hw-color-primary);
+    outline: 0;
+  }
 }
 
 /* Combinations */
