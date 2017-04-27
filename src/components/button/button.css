@@ -8,10 +8,10 @@
   background: var(--hw-color-gray);
   color: var(--hw-color-white);
   font-size: var(--hw-font-size-small);
-  padding: var(--hw-spacing-xsmall) var(--hw-spacing-small);
+  padding: var(--hw-spacing-xsmall) var(--hw-spacing);
   font-family: var(--hw-font-primay-medium);
   display: inline-block;
-  border: none;
+  border: 3px solid var(--hw-color-primary);
   transition: outline cubic-bezier(.08,.84,.07,.96) 120ms, background 75ms;
   cursor: pointer;
 
@@ -20,7 +20,6 @@
    */
 
   &:hover {
-    //background: var(--hw-color-gray-dark);
     outline: 3px solid var(--hw-color-gray-dark);
   }
 

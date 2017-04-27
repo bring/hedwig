@@ -12,7 +12,8 @@
    padding-left: 2rem;
    font-size: var(--hw-font-size-small);
    margin-bottom: var(--hw-spacing-xsmall);
-   font-family: var(--hw-font-primay-regular);
+   font-family: var(--hw-font-primay-medium);
+   color: var(--hw-color-gray-dark);
 
    &:last-child {
      margin-bottom: 0;
@@ -27,7 +28,7 @@
      height: var(--hw-spacing);
      line-height: var(--hw-spacing);
      background-color: var(--hw-color-white);
-     border: 3px solid var(--hw-color-gray); // Always use a border on input elements for accessibility. High contrast mode in Windows will remove all background styling and render the field invisible if border is not used.
+     border: 3px solid var(--hw-color-gray-light); // Always use a border on input elements for accessibility. High contrast mode in Windows will remove all background styling and render the field invisible if border is not used.
      user-select: none;
      text-align: center;
      border-radius: 0;
