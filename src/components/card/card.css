@@ -68,7 +68,7 @@
   &__text {
     display: inline-block;
     min-height: 60px;
-    margin-top: var(--hw-spacing-xxsmall);
+    margin-top: var(--hw-spacing-xsmall);
     font-size: var(--hw-font-size-small);
     font-family: var(--hw-font-primay-medium);
   }
