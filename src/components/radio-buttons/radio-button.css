@@ -1,0 +1,46 @@
+.hw-radio-button {
+  display: inline-block;
+  margin: .2rem 1rem 0 0;
+  cursor: pointer;
+  position: relative;
+  line-height: 1.5;
+
+  &__indicator {
+    display: inline-block;
+    float: left;
+    transition: background 60ms ease-out;
+    margin-top: 0;
+    margin-right: .4rem;
+    border: 3px solid var(--hw-color-gray-light);
+    border-radius: 50%;
+    background: var(--hw-color-white);
+    width: var(--hw-spacing);
+    height: var(--hw-spacing);
+  }
+
+  & > input {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    vertical-align: middle;
+
+    &:hover ~ .hw-radio-button__indicator {
+      border-color: var(--hw-color-gray);
+    }
+
+    &:checked ~ .hw-radio-button__indicator {
+      border-color: var(--hw-color-gray-darker);
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: var(--hw-spacing-xsmall);
+        height: var(--hw-spacing-xsmall);
+        border-radius: 50%;
+        top: 6px;
+        left: 6px;
+        background: var(--hw-color-gray-darker);
+      }
+    }
+  }
+}

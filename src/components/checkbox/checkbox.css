@@ -28,7 +28,7 @@
      height: var(--hw-spacing);
      line-height: var(--hw-spacing);
      background-color: var(--hw-color-white);
-     border: 3px solid var(--hw-color-gray-light); // Always use a border on input elements for accessibility. High contrast mode in Windows will remove all background styling and render the field invisible if border is not used.
+     border: 3px solid var(--hw-color-gray-light);
      user-select: none;
      text-align: center;
      border-radius: 0;
