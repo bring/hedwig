@@ -7,17 +7,18 @@
   line-height: var(--hw-spacing);
 
   &__legend {
-    background: var(--hw-color-gray-light);
+    background: var(--hw-color-gray-lighter);
     display: block;
     width: 100%;
     margin: 0;
     margin-bottom: 2px;
     padding: var(--hw-spacing);
-    font-size: var(--hw-font-size-h3);
+    font-size: var(--hw-font-size-p);
+    color: var(--hw-color-gray-dark);
   }
 
   &__content {
-    background: var(--hw-color-gray-light);
+    background: var(--hw-color-gray-lighter);
     padding: var(--hw-spacing);
   }
 }

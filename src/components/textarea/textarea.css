@@ -1,6 +1,6 @@
 .hw-textarea {
     font-size: var(--hw-font-size-small);
-    padding: var(--hw-spacing-xsmall);
+    padding: var(--hw-spacing-xsmall) var(--hw-spacing);
     border: 3px solid var(--hw-color-gray-light);
     background-color: var(--hw-color-white);
     display: block;
@@ -13,6 +13,10 @@
     /**
      * States
      */
+
+    &:hover {
+      border: 3px solid var(--hw-color-gray);
+    }
 
     &:focus {
       border: 3px solid var(--hw-color-gray-dark);

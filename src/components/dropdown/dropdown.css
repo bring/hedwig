@@ -8,6 +8,7 @@
   &:focus {
     outline: 0;
   }
+
   &:focus .hw-dropdown__inner {
     //outline: 6px solid var(--hw-color-secondary);
   }
@@ -45,7 +46,7 @@
   }
 
   &__placeholder {
-    padding: 9px 16px;
+    padding: 9px var(--hw-spacing);
     margin: 3px 0;
   }
 
@@ -56,16 +57,16 @@
       content: '';
       display: block;
       position: absolute;
-      top: 20px;
+      top: 22px;
       right: 10px;
-      height: 4px;
-      width: 16px;
-      background-color: currentColor;
+      height: 3px;
+      width: 10px;
+      background-color: var(--hw-color-gray);
       transform: rotate(-45deg);
       transition: transform .1s ease;
     }
     &:after {
-      right: 19px;
+      right: 15px;
       transform: rotate(45deg);
     }
   }
