@@ -57,9 +57,9 @@
       content: '';
       display: block;
       position: absolute;
-      top: 20px;
+      top: 22px;
       right: 10px;
-      height: 4px;
+      height: 3px;
       width: 10px;
       background-color: var(--hw-color-gray);
       transform: rotate(-45deg);
