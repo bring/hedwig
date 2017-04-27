@@ -133,3 +133,29 @@ Example
     </div>
   </div>
 ```
+
+### Narrow grid gutters
+
+```html|span-6,plain,light
+  <div class="hw-grid hw-grid--narrow">
+    <div class="hw-grid__item hw-one-half">
+      <p class="hw-helpers-highlight">one-half</p>
+    </div><!--
+    --><div class="hw-grid__item hw-one-half">
+      <p class="hw-helpers-highlight">one-half</p>
+    </div>
+  </div>
+```
+
+### Wide grid gutters
+
+```html|span-6,plain,light
+  <div class="hw-grid hw-grid--wide">
+    <div class="hw-grid__item hw-one-half">
+      <p class="hw-helpers-highlight">one-half</p>
+    </div><!--
+    --><div class="hw-grid__item hw-one-half">
+      <p class="hw-helpers-highlight">one-half</p>
+    </div>
+  </div>
+```
