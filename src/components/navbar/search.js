@@ -39,10 +39,12 @@ const HWSearch = ({
     }, 3000);
   }
 
+
   function addClassWhenScrolled() {
     const distanceToTop = serchField.getBoundingClientRect().top;
-
     const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+    //console.log(scrollTop, originalDistanceToTop);
 
     if (serchField.classList.contains(searchFieldClass) && scrollTop > originalDistanceToTop) {
       return;
@@ -73,6 +75,10 @@ const HWSearch = ({
     originalDistanceToTop = Math.round(serchField.getBoundingClientRect().top);
 
     window.addEventListener('scroll', throttle(addClassWhenScrolled, 100));
+
+    if (originalDistanceToTop < 0) {
+      originalDistanceToTop = 20;
+    }
 
     setPlaceholderText();
   }

@@ -9,11 +9,11 @@ Navbar
 
 ```html
 <header class="hw-navbar">
-  <div class="hw-navbar__logo">
+  <a href="#" class="hw-navbar__logo">
     <svg>
       <use xlink:href="#logo"></use>
     </svg>
-  </div>
+  </a>
   <nav class="hw-navbar__menu">
     <a href="#" class="hw-navbar__item">English</a>
     <a href="#" class="hw-navbar__item">Login</a>
