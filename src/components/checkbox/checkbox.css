@@ -41,30 +41,26 @@
     vertical-align: middle;
 
      &:checked ~ .hw-checkbox__indicator {
-       background-color: var(--hw-color-primary);
-       border-color: var(--hw-color-primary); // Always use a border on input elements for accessibility. High contrast mode in Windows will remove all background styling and render the field invisible if border is not used.
-       color: var(--hw-color-white);
+       border-color: var(--hw-color-gray-darker); // Always use a border on input elements for accessibility. High contrast mode in Windows will remove all background styling and render the field invisible if border is not used.
+       color: var(--hw-color-gray-darker);
 
        &:before {
          content: '';
          display: inline-block;
          width: 10px;
          height: 10px;
-         border-left: 3px solid white;
-         border-bottom: 3px solid white;
+         border-left: 3px solid var(--hw-color-gray-darker);
+         border-bottom: 3px solid var(--hw-color-gray-darker);
          transform: translateY(-50%) rotate(-45deg);
        }
      }
 
-     &:active ~ .hw-checkbox__indicator {
-       // outline: 3px solid var(--hw-color-secondary);
-       color: var(--hw-color-white);
-       background-color: var(--hw-color-primary);
-       border-color: var(--hw-color-primary);
+     &:hover ~ .hw-checkbox__indicator {
+       border: 3px solid var(--hw-color-gray);
      }
 
-    &:focus ~ .hw-checkbox__indicator {
-      outline: 3px solid var(--hw-color-gray);
+     &:focus ~ .hw-checkbox__indicator {
+      border: 3px solid var(--hw-color-gray-dark);
     }
 
      &:disabled ~ .hw-checkbox__indicator {
