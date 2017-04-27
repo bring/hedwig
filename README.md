@@ -25,6 +25,15 @@ yarn install
 yarn run dev
 ```
 
+## Browser support
+
+We support every browser 2 last version, pluss IE10. For IE9 we have partial support. We want it to work, but don't to looks perfect.
+
+```
+Note:
+Most components are tested in IE10, but IE9 is still yet te be tested.
+```
+
 ## Development
 
 To develop on the styleguide, please follow our [guidelines]('').
