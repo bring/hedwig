@@ -100,6 +100,7 @@ const HWDropdown = ({
    * @param {Event} e
    */
   function toggleDropdown(e) {
+    e.preventDefault();
     // Determine if we've clicked on an option
     const target = e.target;
     const dropdown = e.currentTarget;
