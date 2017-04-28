@@ -46,7 +46,7 @@
 
   &__text:after {
     content: "+";
-    margin-left: var(--hw-spacing-xsmall);
+    margin-left: var(--hw-spacing-smaller);
     font-family: var(--hw-font-primay-bold);
     font-size: var(--hw-spacing-small);
   }

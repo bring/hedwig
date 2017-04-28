@@ -5,7 +5,7 @@
 
 .hw-input {
   font-size: var(--hw-font-size-small);
-  padding: var(--hw-spacing-xsmall)  var(--hw-spacing);
+  padding: var(--hw-spacing-smaller) var(--hw-spacing);
   border: 3px solid var(--hw-color-gray-light);
   background-color: var(--hw-color-white);
   display: block;
@@ -95,6 +95,6 @@
 
 .hw-error-summary {
   border: 3px solid var(--hw-color-secondary);
-  padding: var(--hw-spacing-xsmall);
+  padding: var(--hw-spacing-smaller);
   background: var(--hw-color-white);
 }

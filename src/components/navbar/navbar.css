@@ -110,7 +110,7 @@
   }
 
   &__button svg {
-    margin-left: var(--hw-spacing-xsmall);
+    margin-left: var(--hw-spacing-smaller);
   }
 
   &__button:hover,

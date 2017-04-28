@@ -17,10 +17,10 @@
     content: '';
     position: absolute;
     background: var(--hw-color-gray-light);
-    width: var(--hw-spacing-xsmall);
-    height: var(--hw-spacing-xsmall);
+    width: var(--hw-spacing-smaller);
+    height: var(--hw-spacing-smaller);
     margin-left: -20px;
     border-radius: 50%;
-    top: var(--hw-spacing-xxsmall);
+    top: var(--hw-spacing-smallest);
   }
 }

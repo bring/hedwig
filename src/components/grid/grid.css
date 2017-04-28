@@ -75,11 +75,11 @@
  * Create grids with narrower gutters. Extends '.hw-grid'.
  */
 .hw-grid--narrow {
-	margin-left: -var(--hw-spacing-xsmall);
+	margin-left: -var(--hw-spacing-smaller);
 }
 
 .hw-grid--narrow > .hw-grid__item {
-	padding-left: var(--hw-spacing-xsmall);
+	padding-left: var(--hw-spacing-smaller);
 }
 
 /**
