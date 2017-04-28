@@ -4,6 +4,7 @@
  */
 
 .hw-input {
+  position: relative;
   font-size: var(--hw-font-size-small);
   padding: var(--hw-spacing-smaller) var(--hw-spacing);
   border: 3px solid var(--hw-color-gray-light);
@@ -12,10 +13,8 @@
   width: 100%;
   transition: border 100ms;
   margin: 3px 0;
-  position: relative;
   font-family: var(--hw-font-primay-medium);
   color: var(--hw-color-gray-darker);
-  position: relative;
 
   &::placeholder {
     color: var(--hw-color-gray);
@@ -67,7 +66,7 @@
   transform: translateY(0);
   transition: transform 200ms;
 
-  &:before {
+  &::before {
     position: absolute;
     content: '!';
     background: var(--hw-color-gray);

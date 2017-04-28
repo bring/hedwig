@@ -17,7 +17,7 @@
     border: 0;
     text-align: center;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       left: 0;
@@ -28,7 +28,7 @@
       background-color: var(--hw-color-gray-light);
     }
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       right: 0;
@@ -44,7 +44,7 @@
     }
   }
 
-  &__text:after {
+  &__text::after {
     content: "+";
     margin-left: var(--hw-spacing-smaller);
     font-family: var(--hw-font-primay-bold);
@@ -55,7 +55,6 @@
     display: none;
   }
 
-
   /**
    * padding and padding variations
    */
@@ -64,7 +63,7 @@
     display: block;
   }
 
-  &--expanded .hw-toggle__text:after {
+  &--expanded .hw-toggle__text::after {
     content: "-";
   }
 }

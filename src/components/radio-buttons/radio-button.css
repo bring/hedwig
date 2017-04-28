@@ -1,6 +1,6 @@
 .hw-radio-button {
   display: inline-block;
-  margin: .2rem 1rem 0 0;
+  margin: 0.2rem 1rem 0 0;
   cursor: pointer;
   position: relative;
   line-height: 1.5;
@@ -10,7 +10,7 @@
     float: left;
     transition: background 60ms ease-out;
     margin-top: 0;
-    margin-right: .4rem;
+    margin-right: 0.4rem;
     border: 3px solid var(--hw-color-gray-light);
     border-radius: 50%;
     background: var(--hw-color-white);
@@ -31,7 +31,7 @@
     &:checked ~ .hw-radio-button__indicator {
       border-color: var(--hw-color-gray-darker);
 
-      &:after {
+      &::after {
         content: '';
         position: absolute;
         width: var(--hw-spacing-smaller);

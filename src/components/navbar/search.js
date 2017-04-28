@@ -44,8 +44,6 @@ const HWSearch = ({
     const distanceToTop = serchField.getBoundingClientRect().top;
     const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 
-    //console.log(scrollTop, originalDistanceToTop);
-
     if (serchField.classList.contains(searchFieldClass) && scrollTop > originalDistanceToTop) {
       return;
     }

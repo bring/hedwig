@@ -1,17 +1,13 @@
 .hw-search {
-  background: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, 0.9);
   display: block;
   position: absolute;
   top: 71px;
   left: 0;
   width: 100%;
-  display: block;
-  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, .2);
+  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  transition:
-    width 400ms cubic-bezier(0.175, 0.885, 0.320, 1.275),
-    background 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275),
-  ;
+  transition: width 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275), background 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &--frontpage {
     position: absolute;
@@ -37,7 +33,7 @@
     top: 0;
     z-index: 1000;
     position: fixed;
-    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.2);
   }
 
   &--stick .hw-search__input {

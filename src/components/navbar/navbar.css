@@ -31,7 +31,7 @@
 
     &:hover,
     &:focus {
-      background: rgba(255, 255, 255, .25);
+      background: rgba(255, 255, 255, 0.25);
     }
   }
 
@@ -41,15 +41,14 @@
 
     &:hover,
     &:focus {
-      background: rgba(255, 255, 255, .25);
+      background: rgba(255, 255, 255, 0.25);
     }
   }
 
   &--transparent .hw-navbar__logo {
-
     &:hover,
     &:focus {
-      background: rgba(255, 255, 255, .25);
+      background: rgba(255, 255, 255, 0.25);
     }
   }
 
@@ -122,7 +121,6 @@
 
   &__drawer {
     background: var(--hw-color-white);
-    display: block;
     width: 100%;
     min-height: 100vh;
     padding: var(--hw-spacing);
@@ -131,7 +129,7 @@
   }
 
   &__drawer--active {
-    animation: drawer-animation 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: drawer-animation 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
     display: block;
     z-index: 2000;
   }

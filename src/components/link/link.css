@@ -7,7 +7,7 @@
 .hw-link {
   font-family: var(--hw-font-primay-regular);
   border-bottom: 2px solid var(--hw-color-gray);
-  transition: border-color .2s ease;
+  transition: border-color 0.2s ease;
   cursor: pointer;
 
   &:hover,

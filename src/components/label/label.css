@@ -9,7 +9,7 @@
   color: var(--hw-color-gray-darker);
   display: block;
 
-  &[disabled]{
+  &[disabled] {
     color: var(--hw-color-gray-light);
   }
 }
