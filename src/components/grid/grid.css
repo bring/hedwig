@@ -118,18 +118,17 @@
   }
 }
 
-
 /*
  * Grid item styles
  */
 
- @import '../../globals.css';
+@import '../../globals.css';
 
 .hw-grid__item {
   display: inline-block;
   width: 100%;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: var(--hw-spacing-small);
   vertical-align: top;
@@ -293,6 +292,7 @@
   .hw-small--one-whole {
     width: 100%;
   }
+
   /**
      * Halves
      */
@@ -304,6 +304,7 @@
   .hw-small--six-twelfths {
     width: 50%;
   }
+
   /**
      * Thirds
      */
@@ -318,6 +319,7 @@
   .hw-small--eight-twelfths {
     width: 66.666%;
   }
+
   /**
      * Quarters
      */
@@ -332,6 +334,7 @@
   .hw-small--nine-twelfths {
     width: 75%;
   }
+
   /**
      * Fifths
      */
@@ -354,6 +357,7 @@
   .hw-small--eight-tenths {
     width: 80%;
   }
+
   /**
      * Sixths
      */
@@ -366,6 +370,7 @@
   .hw-small--ten-twelfths {
     width: 83.333%;
   }
+
   /**
      * Eighths
      */
@@ -384,6 +389,7 @@
   .hw-small--seven-eighths {
     width: 87.5%;
   }
+
   /**
      * Tenths
      */
@@ -402,6 +408,7 @@
   .hw-small--nine-tenths {
     width: 90%;
   }
+
   /**
      * Twelfths
      */
@@ -429,6 +436,7 @@
   .hw-medium--one-whole {
     width: 100%;
   }
+
   /**
      * Halves
      */
@@ -440,6 +448,7 @@
   .hw-medium--six-twelfths {
     width: 50%;
   }
+
   /**
      * Thirds
      */
@@ -454,6 +463,7 @@
   .hw-medium--eight-twelfths {
     width: 66.666%;
   }
+
   /**
      * Quarters
      */
@@ -468,6 +478,7 @@
   .hw-medium--nine-twelfths {
     width: 75%;
   }
+
   /**
      * Fifths
      */
@@ -490,6 +501,7 @@
   .hw-medium--eight-tenths {
     width: 80%;
   }
+
   /**
      * Sixths
      */
@@ -502,6 +514,7 @@
   .hw-medium--ten-twelfths {
     width: 83.333%;
   }
+
   /**
      * Eighths
      */
@@ -520,6 +533,7 @@
   .hw-medium--seven-eighths {
     width: 87.5%;
   }
+
   /**
      * Tenths
      */
@@ -538,6 +552,7 @@
   .hw-medium--nine-tenths {
     width: 90%;
   }
+
   /**
      * Twelfths
      */
@@ -565,6 +580,7 @@
   .hw-medium--one-whole {
     width: 100%;
   }
+
   /**
      * Halves
      */
@@ -576,6 +592,7 @@
   .hw-medium--six-twelfths {
     width: 50%;
   }
+
   /**
      * Thirds
      */
@@ -590,6 +607,7 @@
   .hw-medium--eight-twelfths {
     width: 66.666%;
   }
+
   /**
      * Quarters
      */
@@ -604,6 +622,7 @@
   .hw-medium--nine-twelfths {
     width: 75%;
   }
+
   /**
      * Fifths
      */
@@ -626,6 +645,7 @@
   .hw-medium--eight-tenths {
     width: 80%;
   }
+
   /**
      * Sixths
      */
@@ -638,6 +658,7 @@
   .hw-medium--ten-twelfths {
     width: 83.333%;
   }
+
   /**
      * Eighths
      */
@@ -656,6 +677,7 @@
   .hw-medium--seven-eighths {
     width: 87.5%;
   }
+
   /**
      * Tenths
      */
@@ -674,6 +696,7 @@
   .hw-medium--nine-tenths {
     width: 90%;
   }
+
   /**
      * Twelfths
      */
@@ -701,6 +724,7 @@
   .hw-large--one-whole {
     width: 100%;
   }
+
   /**
      * Halves
      */
@@ -712,6 +736,7 @@
   .hw-large--six-twelfths {
     width: 50%;
   }
+
   /**
      * Thirds
      */
@@ -726,6 +751,7 @@
   .hw-large--eight-twelfths {
     width: 66.666%;
   }
+
   /**
      * Quarters
      */
@@ -740,6 +766,7 @@
   .hw-large--nine-twelfths {
     width: 75%;
   }
+
   /**
      * Fifths
      */
@@ -762,6 +789,7 @@
   .hw-large--eight-tenths {
     width: 80%;
   }
+
   /**
      * Sixths
      */
@@ -774,6 +802,7 @@
   .hw-large--ten-twelfths {
     width: 83.333%;
   }
+
   /**
      * Eighths
      */
@@ -792,6 +821,7 @@
   .hw-large--seven-eighths {
     width: 87.5%;
   }
+
   /**
      * Tenths
      */
@@ -810,6 +840,7 @@
   .hw-large--nine-tenths {
     width: 90%;
   }
+
   /**
      * Twelfths
      */
@@ -837,6 +868,7 @@
   .hw-xlarge--one-whole {
     width: 100%;
   }
+
   /**
      * Halves
      */
@@ -848,6 +880,7 @@
   .hw-xlarge--six-twelfths {
     width: 50%;
   }
+
   /**
      * Thirds
      */
@@ -862,6 +895,7 @@
   .hw-xlarge--eight-twelfths {
     width: 66.666%;
   }
+
   /**
      * Quarters
      */
@@ -876,6 +910,7 @@
   .hw-xlarge--nine-twelfths {
     width: 75%;
   }
+
   /**
      * Fifths
      */
@@ -898,6 +933,7 @@
   .hw-xlarge--eight-tenths {
     width: 80%;
   }
+
   /**
      * Sixths
      */
@@ -910,6 +946,7 @@
   .hw-xlarge--ten-twelfths {
     width: 83.333%;
   }
+
   /**
      * Eighths
      */
@@ -928,6 +965,7 @@
   .hw-xlarge--seven-eighths {
     width: 87.5%;
   }
+
   /**
      * Tenths
      */
@@ -946,6 +984,7 @@
   .hw-xlarge--nine-tenths {
     width: 90%;
   }
+
   /**
      * Twelfths
      */
@@ -965,8 +1004,6 @@
     width: 91.666%;
   }
 }
-
-
 
 /**
  * Show-hide modifiers
@@ -1008,7 +1045,6 @@
   }
 }
 
-
 /**
  * Push modifiers
  */
@@ -1018,15 +1054,15 @@
 }
 
 /**
-     * Whole
-     */
+  * Whole
+  */
 .push--one-whole {
   left: 100%;
 }
 
 /**
-     * Halves
-     */
+  * Halves
+  */
 .push--one-half,
 .push--two-quarters,
 .push--three-sixths,
@@ -1037,8 +1073,8 @@
 }
 
 /**
-     * Thirds
-     */
+  * Thirds
+  */
 .push--one-third,
 .push--two-sixths,
 .push--four-twelfths {
@@ -1052,8 +1088,8 @@
 }
 
 /**
-     * Quarters
-     */
+  * Quarters
+  */
 .push--one-quarter,
 .push--two-eighths,
 .push--three-twelfths {
@@ -1067,8 +1103,8 @@
 }
 
 /**
-     * Fifths
-     */
+  * Fifths
+  */
 .push--one-fifth,
 .push--two-tenths {
   left: 20%;
@@ -1090,8 +1126,8 @@
 }
 
 /**
-     * Sixths
-     */
+  * Sixths
+  */
 .push--one-sixth,
 .push--two-twelfths {
   left: 16.666%;
@@ -1103,8 +1139,8 @@
 }
 
 /**
-     * Eighths
-     */
+  * Eighths
+  */
 .push--one-eighth {
   left: 12.5%;
 }
@@ -1122,8 +1158,8 @@
 }
 
 /**
-     * Tenths
-     */
+  * Tenths
+  */
 .push--one-tenth {
   left: 10%;
 }
@@ -1141,8 +1177,8 @@
 }
 
 /**
-     * Twelfths
-     */
+  * Twelfths
+  */
 .push--one-twelfth {
   left: 8.333%;
 }
@@ -1161,11 +1197,12 @@
 
 @media only screen and (--small) {
   /**
-     * Whole
-     */
+    * Whole
+    */
   .push--small--one-whole {
     left: 100%;
   }
+
   /**
      * Halves
      */
@@ -1177,6 +1214,7 @@
   .push--small--six-twelfths {
     left: 50%;
   }
+
   /**
      * Thirds
      */
@@ -1191,6 +1229,7 @@
   .push--small--eight-twelfths {
     left: 66.666%;
   }
+
   /**
      * Quarters
      */
@@ -1205,6 +1244,7 @@
   .push--small--nine-twelfths {
     left: 75%;
   }
+
   /**
      * Fifths
      */
@@ -1227,6 +1267,7 @@
   .push--small--eight-tenths {
     left: 80%;
   }
+
   /**
      * Sixths
      */
@@ -1239,6 +1280,7 @@
   .push--small--ten-twelfths {
     left: 83.333%;
   }
+
   /**
      * Eighths
      */
@@ -1257,6 +1299,7 @@
   .push--small--seven-eighths {
     left: 87.5%;
   }
+
   /**
      * Tenths
      */
@@ -1275,6 +1318,7 @@
   .push--small--nine-tenths {
     left: 90%;
   }
+
   /**
      * Twelfths
      */
@@ -1302,6 +1346,7 @@
   .push--medium--one-whole {
     left: 100%;
   }
+
   /**
      * Halves
      */
@@ -1313,6 +1358,7 @@
   .push--medium--six-twelfths {
     left: 50%;
   }
+
   /**
      * Thirds
      */
@@ -1327,6 +1373,7 @@
   .push--medium--eight-twelfths {
     left: 66.666%;
   }
+
   /**
      * Quarters
      */
@@ -1341,6 +1388,7 @@
   .push--medium--nine-twelfths {
     left: 75%;
   }
+
   /**
      * Fifths
      */
@@ -1363,6 +1411,7 @@
   .push--medium--eight-tenths {
     left: 80%;
   }
+
   /**
      * Sixths
      */
@@ -1375,6 +1424,7 @@
   .push--medium--ten-twelfths {
     left: 83.333%;
   }
+
   /**
      * Eighths
      */
@@ -1393,6 +1443,7 @@
   .push--medium--seven-eighths {
     left: 87.5%;
   }
+
   /**
      * Tenths
      */
@@ -1411,6 +1462,7 @@
   .push--medium--nine-tenths {
     left: 90%;
   }
+
   /**
      * Twelfths
      */
@@ -1438,6 +1490,7 @@
   .push--medium--one-whole {
     left: 100%;
   }
+
   /**
      * Halves
      */
@@ -1449,6 +1502,7 @@
   .push--medium--six-twelfths {
     left: 50%;
   }
+
   /**
      * Thirds
      */
@@ -1463,6 +1517,7 @@
   .push--medium--eight-twelfths {
     left: 66.666%;
   }
+
   /**
      * Quarters
      */
@@ -1477,6 +1532,7 @@
   .push--medium--nine-twelfths {
     left: 75%;
   }
+
   /**
      * Fifths
      */
@@ -1499,6 +1555,7 @@
   .push--medium--eight-tenths {
     left: 80%;
   }
+
   /**
      * Sixths
      */
@@ -1511,6 +1568,7 @@
   .push--medium--ten-twelfths {
     left: 83.333%;
   }
+
   /**
      * Eighths
      */
@@ -1529,6 +1587,7 @@
   .push--medium--seven-eighths {
     left: 87.5%;
   }
+
   /**
      * Tenths
      */
@@ -1547,6 +1606,7 @@
   .push--medium--nine-tenths {
     left: 90%;
   }
+
   /**
      * Twelfths
      */
@@ -1574,6 +1634,7 @@
   .push--large--one-whole {
     left: 100%;
   }
+
   /**
      * Halves
      */
@@ -1585,6 +1646,7 @@
   .push--large--six-twelfths {
     left: 50%;
   }
+
   /**
      * Thirds
      */
@@ -1599,6 +1661,7 @@
   .push--large--eight-twelfths {
     left: 66.666%;
   }
+
   /**
      * Quarters
      */
@@ -1613,6 +1676,7 @@
   .push--large--nine-twelfths {
     left: 75%;
   }
+
   /**
      * Fifths
      */
@@ -1635,6 +1699,7 @@
   .push--large--eight-tenths {
     left: 80%;
   }
+
   /**
      * Sixths
      */
@@ -1647,6 +1712,7 @@
   .push--large--ten-twelfths {
     left: 83.333%;
   }
+
   /**
      * Eighths
      */
@@ -1665,6 +1731,7 @@
   .push--large--seven-eighths {
     left: 87.5%;
   }
+
   /**
      * Tenths
      */
@@ -1683,6 +1750,7 @@
   .push--large--nine-tenths {
     left: 90%;
   }
+
   /**
      * Twelfths
      */
@@ -1710,6 +1778,7 @@
   .push--xlarge--one-whole {
     left: 100%;
   }
+
   /**
      * Halves
      */
@@ -1721,6 +1790,7 @@
   .push--xlarge--six-twelfths {
     left: 50%;
   }
+
   /**
      * Thirds
      */
@@ -1735,6 +1805,7 @@
   .push--xlarge--eight-twelfths {
     left: 66.666%;
   }
+
   /**
      * Quarters
      */
@@ -1749,6 +1820,7 @@
   .push--xlarge--nine-twelfths {
     left: 75%;
   }
+
   /**
      * Fifths
      */
@@ -1771,6 +1843,7 @@
   .push--xlarge--eight-tenths {
     left: 80%;
   }
+
   /**
      * Sixths
      */
@@ -1783,6 +1856,7 @@
   .push--xlarge--ten-twelfths {
     left: 83.333%;
   }
+
   /**
      * Eighths
      */
@@ -1801,6 +1875,7 @@
   .push--xlarge--seven-eighths {
     left: 87.5%;
   }
+
   /**
      * Tenths
      */
@@ -1819,6 +1894,7 @@
   .push--xlarge--nine-tenths {
     left: 90%;
   }
+
   /**
      * Twelfths
      */
