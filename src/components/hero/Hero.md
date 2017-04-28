@@ -10,7 +10,7 @@ Hero component
 
 ### Default Hero
 
-```html|span-6,plain,light
+```html|span-6
   <div class="hw-hero rellax">
     <div class="hw-hero__image" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');" />
   </div>
@@ -18,7 +18,7 @@ Hero component
 
 ### Large hero with Headline
 
-```html|span-6,plain,light
+```html|span-6
   <div class="hw-hero hw-hero--large rellax">
     <div class="hw-hero__image rellax" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');"
     data-rellax-speed="-4"></div>
@@ -31,7 +31,7 @@ Hero component
 
 ### Full
 
-```html|span-6,plain,light
+```html|span-6
 <div class="hw-hero hw-hero--full rellax">
   <div class="hw-hero__image" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');"></div>
   <div class="hw-hero__overlay"></div>

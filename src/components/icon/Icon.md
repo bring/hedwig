@@ -19,7 +19,7 @@ lang: html
 
 ### Icons
 
-```html|span-6,plain,plain,noSource
+```html|span-6,noSource
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
         <use xlink:href="#alert"></use>

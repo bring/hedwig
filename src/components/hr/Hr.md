@@ -11,18 +11,18 @@ Horizontal rule
 
 ### Regular
 
-```html|span-6,plain,light
+```html|span-6
   <hr class="hw-hr" />
 ```
 
 ### White
 
-```html|span-6,plain,light
+```html|span-6
   <hr class="hw-hr hw-hr--white" />
 ```
 
 ### Full
 
-```html|span-6,plain,light
+```html|span-6
   <hr class="hw-hr hw-hr--full" />
 ```

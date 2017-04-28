@@ -11,7 +11,7 @@ Styling for buttons.
 
 ### Base
 
-```html|span-4,plain,light
+```html|span-4
   <button class="hw-button hw-button--large">
     Large
   </button>
@@ -32,7 +32,7 @@ Styling for buttons.
 
 ### Primary
 
-```html|span-4,plain,light
+```html|span-4
   <button class="hw-button hw-button--primary hw-button--large">
     Large
   </button>
@@ -53,7 +53,7 @@ Styling for buttons.
 
 ### Outline
 
-```html|span-4,plain,light
+```html|span-4
   <button class="hw-button hw-button--outline hw-button--large">
     Large
   </button>
