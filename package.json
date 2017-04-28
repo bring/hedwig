@@ -31,7 +31,8 @@
     "start": "npm run docs:build & npm run server",
     "svg:min": "svgo -f ./build/assets/icons -o ./build/assets/icons/optimized",
     "svg:sprite": "node ./scripts/svg-sprite",
-    "svg": "npm run svg:min && npm run svg:sprite"
+    "svg": "npm run svg:min && npm run svg:sprite",
+    "lint": "stylelint"
   },
   "dependencies": {
     "aws-sdk": "^2.40.0",
@@ -59,6 +60,8 @@
     "rollup-watch": "^3.2.2",
     "s3": "^4.4.0",
     "sanitize.css": "^5.0.0",
+    "stylelint": "^7.10.1",
+    "stylelint-config-idiomatic-order": "^4.0.0",
     "svg2sprite": "^2.0.1",
     "svgo": "^0.7.2"
   },

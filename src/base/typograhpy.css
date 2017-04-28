@@ -14,9 +14,9 @@ button {
   color: var(--hw-color-gray-darker);
   line-height: 1.4;
   font-weight: 400;
-  margin: 0;
   padding: 0;
-  letter-spacing: -.02em;
+  margin: 0;
+  letter-spacing: -0.02em;
 }
 
 a {
@@ -37,6 +37,7 @@ h3 {
   line-height: 1;
   letter-spacing: -.02em;
 }
+
 @media (--medium) {
   h1,
   h2,
@@ -48,6 +49,7 @@ h3 {
 h1 {
   font-size: var(--hw-font-size-h1-mobile);
 }
+
 @media (--medium) {
   h1 {
     font-size: var(--hw-font-size-h1);
