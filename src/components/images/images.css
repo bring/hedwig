@@ -10,7 +10,7 @@
 
 .hw-image figcaption {
   font-size: var(--hw-font-size-small);
-  padding: var(--hw-spacing-xxsmall);
+  padding: var(--hw-spacing-smallest);
   text-align: center;
 }
 

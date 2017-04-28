@@ -1,6 +1,6 @@
 .hw-textarea {
     font-size: var(--hw-font-size-small);
-    padding: var(--hw-spacing-xsmall) var(--hw-spacing);
+    padding: var(--hw-spacing-smaller) var(--hw-spacing);
     border: 3px solid var(--hw-color-gray-light);
     background-color: var(--hw-color-white);
     color: var(--hw-color-gray-darker);

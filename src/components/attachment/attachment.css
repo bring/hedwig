@@ -9,8 +9,8 @@
     justify-content: center;
     flex-grow: 0;
     flex-shrink: 0;
-    padding: var(--hw-spacing-xxsmall);
-    margin-right: var(--hw-spacing-xsmall);
+    padding: var(--hw-spacing-smallest);
+    margin-right: var(--hw-spacing-smaller);
     background-color: var(--hw-color-gray-dark);
     border: 2px solid var(--hw-color-gray-dark);
     border-radius: 50%;

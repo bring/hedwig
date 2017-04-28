@@ -34,8 +34,8 @@
       &:after {
         content: '';
         position: absolute;
-        width: var(--hw-spacing-xsmall);
-        height: var(--hw-spacing-xsmall);
+        width: var(--hw-spacing-smaller);
+        height: var(--hw-spacing-smaller);
         border-radius: 50%;
         top: 6px;
         left: 6px;

@@ -11,7 +11,7 @@
    cursor: pointer;
    padding-left: 2rem;
    font-size: var(--hw-font-size-small);
-   margin-bottom: var(--hw-spacing-xsmall);
+   margin-bottom: var(--hw-spacing-smaller);
    font-family: var(--hw-font-primay-medium);
    color: var(--hw-color-gray-dark);
 

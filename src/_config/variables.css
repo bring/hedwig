@@ -41,12 +41,19 @@
    * NOTE: This is in PX because we watn them to specific.
    */
 
-  --hw-spacing-xxsmall: 6px;
-  --hw-spacing-xsmall: 12px;
+  --hw-spacing-smallest: 6px;
+  --hw-spacing-smaller: 12px;
   --hw-spacing-small: 18px;
   --hw-spacing: 24px;
   --hw-spacing-large: 36px;
-  --hw-spacing-xlarge: 48px;
+  --hw-spacing-larger: 48px;
+
+  --hw-spacing-smallest: 6px;
+  --hw-spacing-smaller: 12px;
+  --hw-spacing-small: 18px;
+  --hw-spacing: 24px;
+  --hw-spacing-large: 36px;
+  --hw-spacing-larger: 48px;
 
 
   /**
