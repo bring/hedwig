@@ -18,6 +18,16 @@ It will apply the correct margins/paddings and vertical rythm for headlines, par
   <h2>Subtitle</h2>
 
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora. Consecorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.<p>
-  <p>Alias, asperiores magni tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.<p>  
+  <p>Alias, asperiores magni tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.<p>
+
+  <h3>Subtitle</h3>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora. Consecorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.<p>
+  <p>Alias, asperiores magni tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.<p>
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  <ul>
 </div>
 ```

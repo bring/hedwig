@@ -62,7 +62,7 @@
   &--primary {
     background: var(--hw-color-primary);
     color: var(--hw-color-white);
-    border: 3px solid var(--hw-color-gray-primary);
+    border: 3px solid var(--hw-color-primary);
 
     &:hover,
     &:active,
@@ -72,6 +72,10 @@
 
     &:focus:hover {
       background: var(--hw-color-primary-dark);
+    }
+
+    &:disabled {
+      border: 3px solid var(--hw-color-gray);
     }
   }
 
