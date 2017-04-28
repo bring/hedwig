@@ -1,24 +1,24 @@
 .hw-fieldset {
-  border: 0;
-  margin: 0;
   display: block;
   width: 100%;
   padding: 0;
+  border: 0;
+  margin: 0;
   line-height: var(--hw-spacing);
 
   &__legend {
-    background: var(--hw-color-gray-lighter);
     display: block;
     width: 100%;
+    padding: var(--hw-spacing);
     margin: 0;
     margin-bottom: 2px;
-    padding: var(--hw-spacing);
+    background: var(--hw-color-gray-lighter);
     font-size: var(--hw-font-size-p);
     color: var(--hw-color-gray-dark);
   }
 
   &__content {
-    background: var(--hw-color-gray-lighter);
     padding: var(--hw-spacing);
+    background: var(--hw-color-gray-lighter);
   }
 }

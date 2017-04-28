@@ -15,11 +15,11 @@
     width: 100%;
     padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
     padding-right: var(--hw-spacing-larger);
+    border: 0;
+    border-bottom: 3px solid var(--hw-color-gray-lighter);
     margin: 3px 0;
     font-family: var(--hw-font-primay-medium);
     font-size: var(--hw-font-size-small);
-    border: 0;
-    border-bottom: 3px solid var(--hw-color-gray-lighter);
     text-align: left;
 
     &:hover,
@@ -31,21 +31,21 @@
   }
 
   &__arrow {
-
-    &:before,
-    &:after {
-      content: '';
-      display: block;
+    &::before,
+    &::after {
       position: absolute;
       top: 22px;
       right: 20px;
-      height: 4px;
+      display: block;
       width: 16px;
+      height: 4px;
+      content: '';
       background-color: currentColor;
       transform: rotate(-45deg);
-      transition: transform .1s ease;
+      transition: transform 0.1s ease;
     }
-    &:after {
+
+    &::after {
       right: 29px;
       transform: rotate(45deg);
     }
@@ -56,7 +56,6 @@
     padding: var(--hw-spacing-small);
     border-bottom: 3px solid var(--hw-color-gray-lighter);
   }
-
 
   /**
    * padding and padding variations
@@ -70,11 +69,11 @@
     color: var(--hw-color-primary-dark);
   }
 
-  &__item--expanded .hw-accordion__arrow:before {
+  &__item--expanded .hw-accordion__arrow::before {
     transform: rotate(45deg);
   }
 
-  &__item--expanded .hw-accordion__arrow:after {
+  &__item--expanded .hw-accordion__arrow::after {
     transform: rotate(-45deg);
   }
 }

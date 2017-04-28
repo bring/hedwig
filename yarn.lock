@@ -1097,7 +1097,7 @@ color@^0.11.0, color@^0.11.3, color@^0.11.4:
     color-convert "^1.3.0"
     color-string "^0.3.0"
 
-colorguard@^1.2.0:
+colorguard@^1.1.1, colorguard@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/colorguard/-/colorguard-1.2.0.tgz#f3facaf5caaeba4ef54653d9fb25bb73177c0d84"
   dependencies:
@@ -1214,6 +1214,19 @@ core-js@^2.4.0:
 core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
+
+cosmiconfig@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-1.1.0.tgz#0dea0f9804efdfb929fbb1b188e25553ea053d37"
+  dependencies:
+    graceful-fs "^4.1.2"
+    js-yaml "^3.4.3"
+    minimist "^1.2.0"
+    object-assign "^4.0.1"
+    os-homedir "^1.0.1"
+    parse-json "^2.2.0"
+    pinkie-promise "^2.0.0"
+    require-from-string "^1.1.0"
 
 cosmiconfig@^2.1.0, cosmiconfig@^2.1.1:
   version "2.1.2"
@@ -1370,13 +1383,13 @@ debug@2.2.0, debug@~2.2.0:
   dependencies:
     ms "0.7.1"
 
-debug@2.6.1, debug@^2.1.1, debug@^2.2.0, debug@^2.6.0:
+debug@2.6.1, debug@^2.1.1, debug@^2.2.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
   dependencies:
     ms "0.7.2"
 
-debug@2.6.4:
+debug@2.6.4, debug@^2.6.0:
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.4.tgz#7586a9b3c39741c0282ae33445c4e8ac74734fe0"
   dependencies:
@@ -1484,7 +1497,7 @@ doctrine@^2.0.0:
     esutils "^2.0.2"
     isarray "^1.0.0"
 
-doiuse@^2.4.1:
+doiuse@^2.3.0, doiuse@^2.4.1:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/doiuse/-/doiuse-2.6.0.tgz#1892d10b61a9a356addbf2b614933e81f8bb3834"
   dependencies:
@@ -2240,6 +2253,16 @@ glob-parent@^2.0.0:
   dependencies:
     is-glob "^2.0.0"
 
+glob@^6.0.1:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-6.0.4.tgz#0f08860f6a155127b2fadd4f9ce24b1aab6e4d22"
+  dependencies:
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "2 || 3"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
 glob@^7.0.0, glob@^7.0.3, glob@^7.0.5:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
@@ -2271,6 +2294,17 @@ globals@^9.0.0, globals@^9.14.0:
   version "9.17.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-9.17.0.tgz#0c0ca696d9b9bb694d2e5470bd37777caad50286"
 
+globby@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-4.1.0.tgz#080f54549ec1b82a6c60e631fc82e1211dbe95f8"
+  dependencies:
+    array-union "^1.0.1"
+    arrify "^1.0.0"
+    glob "^6.0.1"
+    object-assign "^4.0.1"
+    pify "^2.0.0"
+    pinkie-promise "^2.0.0"
+
 globby@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/globby/-/globby-5.0.0.tgz#ebd84667ca0dbb330b99bcfc68eac2bc54370e0d"
@@ -2292,7 +2326,7 @@ globby@^6.0.0, globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-globjoin@^0.1.4:
+globjoin@^0.1.2, globjoin@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/globjoin/-/globjoin-0.1.4.tgz#2f4494ac8919e3767c5cbb691e9f463324285d43"
 
@@ -3398,7 +3432,7 @@ mimic-fn@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.1.0.tgz#e667783d92e89dbd342818b5230b9d62a672ad18"
 
-minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3:
+"minimatch@2 || 3", minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.3.tgz#2a4e4090b96b2db06a9d7df01055a62a77c9b774"
   dependencies:
@@ -3434,7 +3468,7 @@ ms@0.7.3:
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.3.tgz#708155a5e44e33f5fd0fc53e81d0d40a91be1fff"
 
-multimatch@^2.0.0:
+multimatch@^2.0.0, multimatch@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/multimatch/-/multimatch-2.1.0.tgz#9c7906a22fb4c02919e2f5f75161b4cdbd4b2a2b"
   dependencies:
@@ -4088,6 +4122,12 @@ postcss-less@^0.14.0:
   dependencies:
     postcss "^5.0.21"
 
+postcss-less@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/postcss-less/-/postcss-less-0.9.0.tgz#146936ee8aac28c3c4379340e76882375f9178fd"
+  dependencies:
+    postcss "^5.0.19"
+
 postcss-load-config@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-1.2.0.tgz#539e9afc9ddc8620121ebf9d8c3673e0ce50d28a"
@@ -4250,7 +4290,7 @@ postcss-replace-overflow-wrap@^1.0.0:
   dependencies:
     postcss "^5.0.16"
 
-postcss-reporter@^1.2.1, postcss-reporter@^1.3.3:
+postcss-reporter@^1.2.1, postcss-reporter@^1.3.0, postcss-reporter@^1.3.3:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/postcss-reporter/-/postcss-reporter-1.4.1.tgz#c136f0a5b161915f379dd3765c61075f7e7b9af2"
   dependencies:
@@ -4272,6 +4312,12 @@ postcss-resolve-nested-selector@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/postcss-resolve-nested-selector/-/postcss-resolve-nested-selector-0.1.1.tgz#29ccbc7c37dedfac304e9fff0bf1596b3f6a0e4e"
 
+postcss-scss@^0.1.3:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/postcss-scss/-/postcss-scss-0.1.9.tgz#7606caff64bb4b34b7605ab749574cf78d886b08"
+  dependencies:
+    postcss "^5.1.0"
+
 postcss-scss@^0.4.0:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/postcss-scss/-/postcss-scss-0.4.1.tgz#ad771b81f0f72f5f4845d08aa60f93557653d54c"
@@ -4292,7 +4338,7 @@ postcss-selector-not@^2.0.0:
     balanced-match "^0.2.0"
     postcss "^5.0.0"
 
-postcss-selector-parser@^1.1.4:
+postcss-selector-parser@^1.1.4, postcss-selector-parser@^1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-1.3.3.tgz#d2ee19df7a64f8ef21c1a71c86f7d4835c88c281"
   dependencies:
@@ -4337,7 +4383,7 @@ postcss-zindex@^2.0.1:
     postcss "^5.0.4"
     uniqs "^2.0.0"
 
-postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.18, postcss@^5.0.19, postcss@^5.0.2, postcss@^5.0.20, postcss@^5.0.21, postcss@^5.0.3, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.8, postcss@^5.1.1, postcss@^5.2.0, postcss@^5.2.12, postcss@^5.2.13, postcss@^5.2.16, postcss@^5.2.4:
+postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.18, postcss@^5.0.19, postcss@^5.0.2, postcss@^5.0.20, postcss@^5.0.21, postcss@^5.0.3, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.8, postcss@^5.1.0, postcss@^5.1.1, postcss@^5.2.0, postcss@^5.2.12, postcss@^5.2.13, postcss@^5.2.16, postcss@^5.2.4:
   version "5.2.17"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.17.tgz#cf4f597b864d65c8a492b2eabe9d706c879c388b"
   dependencies:
@@ -5043,6 +5089,10 @@ spdx-license-ids@^1.0.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz#c9df7a3424594ade6bd11900d596696dc06bac57"
 
+specificity@^0.1.5:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/specificity/-/specificity-0.1.6.tgz#aa501048f96e69485ddc95ef9f7a5b77f01232aa"
+
 specificity@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/specificity/-/specificity-0.3.0.tgz#332472d4e5eb5af20821171933998a6bc3b1ce6f"
@@ -5162,7 +5212,7 @@ style-search@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
 
-stylehacks@^2.3.2:
+stylehacks@^2.3.0, stylehacks@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-2.3.2.tgz#64c83e0438a68c9edf449e8c552a7d9ab6009b0b"
   dependencies:
@@ -5189,7 +5239,39 @@ stylelint-config-standard@^11.0.0:
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-standard/-/stylelint-config-standard-11.0.0.tgz#cff01471660efd050c44e4363f3653b86e3eaaf1"
 
-stylelint@^7.0.3, stylelint@^7.10.1:
+stylelint@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-6.0.1.tgz#986a2faefa607b86595e759acfa8648a7b39c116"
+  dependencies:
+    autoprefixer "^6.0.0"
+    balanced-match "^0.4.0"
+    chalk "^1.1.1"
+    colorguard "^1.1.1"
+    cosmiconfig "^1.1.0"
+    doiuse "^2.3.0"
+    execall "^1.0.0"
+    get-stdin "^5.0.0"
+    globby "^4.0.0"
+    globjoin "^0.1.2"
+    lodash "^4.0.0"
+    log-symbols "^1.0.2"
+    meow "^3.3.0"
+    multimatch "^2.1.0"
+    normalize-selector "^0.2.0"
+    postcss "^5.0.4"
+    postcss-less "^0.9.0"
+    postcss-reporter "^1.3.0"
+    postcss-resolve-nested-selector "^0.1.1"
+    postcss-scss "^0.1.3"
+    postcss-selector-parser "^1.3.3"
+    postcss-value-parser "^3.1.1"
+    resolve-from "^2.0.0"
+    specificity "^0.1.5"
+    stylehacks "^2.3.0"
+    sugarss "^0.1.2"
+    table "^3.7.8"
+
+stylelint@^7.0.3:
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-7.10.1.tgz#209a7ce5e781fc2a62489fbb31ec0201ec675db2"
   dependencies:
@@ -5230,6 +5312,12 @@ stylelint@^7.0.3, stylelint@^7.10.1:
     sugarss "^0.2.0"
     svg-tags "^1.0.0"
     table "^4.0.1"
+
+sugarss@^0.1.2:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/sugarss/-/sugarss-0.1.6.tgz#fe3ac0e1e07282aef1de84a80b72386ff4e7ea37"
+  dependencies:
+    postcss "^5.2.0"
 
 sugarss@^0.2.0:
   version "0.2.0"

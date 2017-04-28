@@ -15,7 +15,6 @@ const HWAccordion = ({
     accordionSelector = '[data-hw-accordion]',
     activeItemClass = 'hw-accordion__item--expanded',
   } = {}) => {
-
   // Module settings object
   const SETTINGS = {
     elements: qa(accordionSelector), // All accordion DOM nodes
@@ -156,6 +155,8 @@ const HWAccordion = ({
         // Set up event listeners for opening accordion
         bindEvents(trigger);
       });
+
+      return null;
     });
   }
 

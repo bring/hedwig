@@ -109,7 +109,13 @@ We host our fonts on S3.
 
 ## 🔧 Linting
 
-JavaScript: We use [ESLint]() with the [Airbnb]
+Linting our project is import to keep a holistic code style.
+
+**JavaScript**
+[ESLint](eslint.org) with the [Airbnb config](https://github.com/airbnb/javascript).
+
+**CSS**
+[Stylelint](https://github.com/stylelint/stylelint) with [idiomatic config](https://github.com/ream88/stylelint-config-idiomatic-order). More about [idiomatic css](https://github.com/necolas/idiomatic-css).
 
 ## 📦 Dependencies
 
