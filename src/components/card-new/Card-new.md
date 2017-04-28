@@ -10,7 +10,7 @@ Styling for cards.
 
 ### Regular card
 
-```html|span-6,plain,light
+```html|span-6
   <article class="hw-card-new">
     <div class="hw-card-new__contents">
       <div class="hw-card-new__header">
@@ -30,7 +30,7 @@ Styling for cards.
 
 ### Half cards
 
-```html|span-3,plain,light
+```html|span-3
   <article class="hw-card-new hw-card-new--half">
     <div class="hw-card-new__contents">
       <div class="hw-card-new__header">
@@ -46,7 +46,7 @@ Styling for cards.
     </div>
   </article>
 ```
-```html|span-3,plain,light
+```html|span-3
   <article class="hw-card-new hw-card-new--half">
     <div class="hw-card-new__contents">
       <div class="hw-card-new__header">
@@ -65,7 +65,7 @@ Styling for cards.
 
 ### Dark card
 
-```html|span-6,plain,light
+```html|span-6
   <article class="hw-card-new hw-card-new--dark">
     <div class="hw-card-new__contents">
       <div class="hw-card-new__header">

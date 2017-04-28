@@ -11,7 +11,7 @@ Required:
 
 ### Example toggle
 
-```html|span-6,plain,light
+```html|span-6
   <section class="hw-toggle" data-hw-toggle="example1">
       <button class="hw-toggle__trigger">
         <span class="hw-toggle__text">Show more</span>

@@ -12,7 +12,7 @@ We use the [Csswizandry grids](https://github.com/csswizardry/csswizardry-grids)
 
 ### Example grids
 
-```html|span-6,plain,light
+```html|span-6
   <div class="hw-grid">
     <div class="hw-grid__item hw-one-half">
       <p class="hw-helpers-highlight">one-half</p>
@@ -23,7 +23,7 @@ We use the [Csswizandry grids](https://github.com/csswizardry/csswizardry-grids)
   </div>
 ```
 
-```html|span-6,plain,light
+```html|span-6
   <div class="hw-grid">
     <div class="hw-grid__item hw-one-quarter">
       <p class="hw-helpers-highlight">one-quarter</p>
@@ -34,7 +34,7 @@ We use the [Csswizandry grids](https://github.com/csswizardry/csswizardry-grids)
   </div>
 ```
 
-```html|span-6,plain,light
+```html|span-6
   <div class="hw-grid">
     <div class="hw-grid__item hw-one-sixth">
       <p class="hw-helpers-highlight">one-sixth</p>
@@ -123,7 +123,7 @@ Example
 
 ### Responsive example
 
-```html|span-6,plain,light,responsive
+```html|span-6,responsive
   <div class="hw-grid">
     <div class="hw-grid__item hw-medium--one-quarter">
       <p class="hw-helpers-highlight">medium-one-quarter</p>
@@ -136,7 +136,7 @@ Example
 
 ### Narrow grid gutters
 
-```html|span-6,plain,light
+```html|span-6
   <div class="hw-grid hw-grid--narrow">
     <div class="hw-grid__item hw-one-half">
       <p class="hw-helpers-highlight">one-half</p>
@@ -149,7 +149,7 @@ Example
 
 ### Wide grid gutters
 
-```html|span-6,plain,light
+```html|span-6
   <div class="hw-grid hw-grid--wide">
     <div class="hw-grid__item hw-one-half">
       <p class="hw-helpers-highlight">one-half</p>

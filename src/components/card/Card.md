@@ -10,7 +10,7 @@ Styling for cards.
 
 ### Regular card
 
-```html|span-3,plain,light
+```html|span-3
   <a href="#" class="hw-card">
     <div class="hw-card__media">
       <div class="hw-card__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
@@ -29,7 +29,7 @@ Styling for cards.
 
 ### Cards in grid
 
-```html|span-6,plain,light
+```html|span-6
   <div class="hw-grid">
     <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card">
@@ -84,7 +84,7 @@ Styling for cards.
 
 ### Dark card
 
-```html|span-3,plain,light
+```html|span-3
   <a href="#" class="hw-card hw-card--dark">
     <div class="hw-card__media">
       <div class="hw-card__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
@@ -103,7 +103,7 @@ Styling for cards.
 
 ### Card with actions bar
 
-```html|span-3,plain,light
+```html|span-3
   <a href="#" class="hw-card">
     <div class="hw-card__actions">
       <button class="hw-card__tag-button">Tag it</button>

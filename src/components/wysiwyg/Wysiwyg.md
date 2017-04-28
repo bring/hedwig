@@ -6,7 +6,7 @@ It will apply the correct margins/paddings and vertical rythm for headlines, par
 
 ### Example
 
-```html|span-6,plain,light
+```html|span-6,white,light
 <div class="hw-wysiwyg">
   <h1>Owl ruins bake-off competition</h1>
   <h2>Winged menace causes havoc at Hogwarts event</h2>

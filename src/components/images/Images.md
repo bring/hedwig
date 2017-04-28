@@ -4,7 +4,7 @@
 [Base]     .hw-image
 ```
 
-```html|span-3,plain
+```html|span-3
 <figure class="hw-image">
   <img
     alt="Picture of happy people"
@@ -13,7 +13,7 @@
 </figure>
 ```
 
-```html|span-3,plain
+```html|span-3
 <figure class="hw-image">
   <img
     alt="Picture of happy people"
