@@ -17,6 +17,10 @@
   color: var(--hw-color-gray-darker);
   position: relative;
 
+  &::placeholder {
+    color: var(--hw-color-gray);
+  }
+
   /**
    * States
    */
