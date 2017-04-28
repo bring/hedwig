@@ -55,8 +55,8 @@
       top: 22px;
       right: 10px;
       display: block;
-      width: 10px;
-      height: 3px;
+      width: 12px;
+      height: 4px;
       content: '';
       background-color: var(--hw-color-gray);
       transform: rotate(-45deg);
@@ -64,7 +64,7 @@
     }
 
     &::after {
-      right: 15px;
+      right: 16px;
       transform: rotate(45deg);
     }
   }
@@ -76,9 +76,9 @@
   }
 
   &__option {
-    padding: var(--hw-spacing-smaller) var(--hw-spacing);
+    padding: var(--hw-spacing-smaller) 0;
     border-top: 3px solid var(--hw-color-gray-lighter);
-    margin: 3px 0;
+    margin: 3px var(--hw-spacing);
 
     &:hover {
       color: var(--hw-color-primary-dark);
