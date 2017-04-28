@@ -40,7 +40,7 @@ Optional:
 ### Dropdown with default option selected
 
 ```html
-<label>
+<label class="hw-label">
   Choose character
   <div class="hw-dropdown"
     data-hw-dropdown="characters"
@@ -63,7 +63,7 @@ Optional:
 ### Dropdown with list too long for the screen
 
 ```html
-<label>
+<label class="hw-label">
   Choose country
   <div class="hw-dropdown" data-hw-dropdown="longContries" data-hw-dropdown-placeholder="Choose option">
     <div class="hw-dropdown__inner">

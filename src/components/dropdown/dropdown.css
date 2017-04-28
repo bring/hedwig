@@ -3,6 +3,7 @@
   position: relative;
   height: 58px;
   font-family: var(--hw-font-primay-medium);
+  color: var(--hw-color-gray-darker);
 
   /* Focus styles */
   &:focus {
@@ -41,7 +42,7 @@
     transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
 
     &:hover {
-      border-color: var(--hw-color-gray-dark);
+      border-color: var(--hw-color-gray-darker);
     }
   }
 
@@ -78,7 +79,7 @@
   }
 
   &__option {
-    padding: var(--hw-spacing-xsmall);
+    padding: var(--hw-spacing-xsmall) var(--hw-spacing);
     margin: 3px 0;
     border-top: 3px solid var(--hw-color-gray-lighter);
 
@@ -98,7 +99,7 @@
   */
   &--expanded .hw-dropdown__inner {
     max-height: calc(100vh - 60px);
-    border-color: var(--hw-color-gray-dark);
+    border-color: var(--hw-color-gray-darker);
     z-index: 2;
   }
 
