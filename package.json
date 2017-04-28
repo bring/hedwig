@@ -31,8 +31,7 @@
     "start": "npm run docs:build & npm run server",
     "svg:min": "svgo -f ./build/assets/icons -o ./build/assets/icons/optimized",
     "svg:sprite": "node ./scripts/svg-sprite",
-    "svg": "npm run svg:min && npm run svg:sprite",
-    "lint": "stylelint"
+    "svg": "npm run svg:min && npm run svg:sprite"
   },
   "dependencies": {
     "aws-sdk": "^2.40.0",
