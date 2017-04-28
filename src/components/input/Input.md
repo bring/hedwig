@@ -5,7 +5,7 @@ All inputs are block elements. For layout, use [grid]('/Grid').
 ```html
 <label class="hw-label">
   Label
-  <input class="hw-input" type="text" />
+  <input class="hw-input" type="text" placeholder="Placeholder" />
 </label>
 <label class="hw-label" disabled>
   Label
@@ -13,8 +13,8 @@ All inputs are block elements. For layout, use [grid]('/Grid').
 </label>
 <label  class="hw-label">
   Label
-  <div class="hw-error">E-postadressen er ugyldig</div>
   <input class="hw-input hw-input--error" type="text"/>
+  <div class="hw-error">E-postadressen er ugyldig</div>
 </label>
 ```
 
@@ -43,8 +43,8 @@ For inline validation we use:
 ```html
 <label class="hw-label">
   Label
-  <div class="hw-error hw-error--is-hidden" data-hw-error-message>E-postadressen er ugyldig</div>
   <input type="text" class="hw-input"  data-hw-validate="text" placeholder="Type 4 letters to test validation" />
+  <div class="hw-error hw-error--is-hidden" data-hw-error-message>E-postadressen er ugyldig</div>
 </label>
 ```
 ```hint|neutral

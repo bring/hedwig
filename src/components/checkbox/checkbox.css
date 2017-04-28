@@ -32,6 +32,7 @@
      user-select: none;
      text-align: center;
      border-radius: 0;
+     transition: border 100ms;
    }
 
   & > input {
@@ -41,16 +42,26 @@
     vertical-align: middle;
 
      &:checked ~ .hw-checkbox__indicator {
-       border-color: var(--hw-color-gray-darker); // Always use a border on input elements for accessibility. High contrast mode in Windows will remove all background styling and render the field invisible if border is not used.
-       color: var(--hw-color-gray-darker);
+       border-color: var(--hw-color-gray-darker);
 
        &:before {
          content: '';
          display: inline-block;
-         width: 10px;
+         width: 12px;
          height: 10px;
-         border-left: 3px solid var(--hw-color-gray-darker);
          border-bottom: 3px solid var(--hw-color-gray-darker);
+         transform: translateY(-50%) rotate(-45deg);
+       }
+
+       &:after {
+         position: absolute;
+         left: 3px;
+         top: 7px;
+         content: '';
+         display: inline-block;
+         width: 10px;
+         height: 8px;
+         border-left: 3px solid var(--hw-color-gray-darker);
          transform: translateY(-50%) rotate(-45deg);
        }
      }

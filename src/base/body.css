@@ -12,8 +12,6 @@ body {
   font-family: var(--hw-font-primay-regular);
   font-size: 16px;
   background: var(--hw-color-gray-lightest);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 img,

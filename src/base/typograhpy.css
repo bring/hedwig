@@ -13,7 +13,7 @@ button {
   font-family: var(--hw-font-primay-regular);
   line-height: 1.4;
   font-weight: 300;
-  color: var(--hw-color-gray-dark);
+  color: var(--hw-color-gray-darker);
   margin: 0;
   padding: 0;
   letter-spacing: -.02em;
@@ -60,7 +60,6 @@ h2 {
 
 h3 {
   font-size: var(--hw-font-size-h3);
-  font-family: var(--hw-font-primay-bold);
 }
 
 /**
