@@ -11,7 +11,7 @@
   }
 
   &:focus .hw-dropdown__inner {
-    //outline: 6px solid var(--hw-color-secondary);
+    border-color: var(--hw-color-gray-darker);
   }
 
   /* Clearfix */
