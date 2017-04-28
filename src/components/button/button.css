@@ -5,14 +5,14 @@
  */
 
 .hw-button {
+  display: inline-block;
+  padding: var(--hw-spacing-smaller) var(--hw-spacing);
+  border: 3px solid var(--hw-color-gray);
   background: var(--hw-color-gray);
   color: var(--hw-color-white);
   font-size: var(--hw-font-size-small);
-  padding: var(--hw-spacing-smaller) var(--hw-spacing);
   font-family: var(--hw-font-primay-medium);
-  display: inline-block;
-  border: 3px solid var(--hw-color-gray);
-  transition: outline cubic-bezier(.08,.84,.07,.96) 120ms, background 75ms;
+  transition: outline cubic-bezier(0.08, 0.84, 0.07, 0.96) 120ms, background 75ms;
   cursor: pointer;
 
   /**
@@ -47,8 +47,8 @@
    */
 
   &--large {
-    font-size: var(--hw-font-size-p);
     padding: var(--hw-spacing-small) var(--hw-spacing-large);
+    font-size: var(--hw-font-size-p);
   }
 
   &--small {
@@ -60,9 +60,9 @@
    */
 
   &--primary {
+    border: 3px solid var(--hw-color-primary);
     background: var(--hw-color-primary);
     color: var(--hw-color-white);
-    border: 3px solid var(--hw-color-primary);
 
     &:hover,
     &:active,
@@ -80,9 +80,9 @@
   }
 
   &--outline {
+    border: 3px solid var(--hw-color-gray);
     background: none;
     color: var(--hw-color-gray);
-    border: 3px solid var(--hw-color-gray);
 
     &:disabled {
       outline: 0;
@@ -107,9 +107,9 @@
   }
 
   &--outline-white {
+    border: 3px solid var(--hw-color-white);
     background: none;
     color: var(--hw-color-white);
-    border: 3px solid var(--hw-color-white);
 
     &:disabled {
       outline: 0;

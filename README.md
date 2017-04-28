@@ -107,6 +107,10 @@ We host our fonts on S3.
 └─ helpers                       # Helpers classes, Takyions (?)
 ```
 
+## 🔧 Linting
+
+JavaScript: We use [ESLint]() with the [Airbnb]
+
 ## 📦 Dependencies
 
 * [Catalog](https://github.com/interactivethings/catalog) - for documentation
