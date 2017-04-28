@@ -16,7 +16,7 @@
 
   /* Opaque overlay */
   &__overlay {
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   /* Content */
@@ -27,7 +27,6 @@
     transform: translateY(-50%);
     text-align: center;
   }
-
 
   /**
    * Variants

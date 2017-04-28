@@ -30,12 +30,12 @@ h1,
 h2,
 h3 {
   color: var(--hw-color-gray-darker);
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-family: var(--hw-font-primay-medium);
   font-weight: normal;
   line-height: 1;
-  letter-spacing: -.02em;
+  letter-spacing: -0.02em;
 }
 
 @media (--medium) {
