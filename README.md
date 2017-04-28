@@ -22,7 +22,7 @@ So. We want it to be super simple to use Hedwing in your project. The Hedwig fil
 
 ```
 yarn install
-yarn run dev
+yarn dev
 ```
 
 ## Browser support
@@ -41,13 +41,13 @@ To develop on the styleguide, please follow our [guidelines]('').
 ```
 clone this repo
 yarn install                # to install dependencies
-yarn run s3:download         # to download assets from S3
+yarn s3:download         # to download assets from S3
 add .env file               # get variables from Heroku
-yarn run dev
+yarn dev
 [open browser on port 3000]('http://localhost:3000/docs') 🚀
 ```
 
-To keep assets up to date, run `yarn run s3:download` do download assets from S3.
+To keep assets up to date, run `yarn s3:download` do download assets from S3.
 
 ### 📚 Write documentation
 
@@ -65,12 +65,12 @@ Production CSS, JavaScript and assets are hosted on a CDN using [Amazon S3](http
 
 To upload the build folder to S3:
 ```
-yarn run s3:upload
+yarn s3:upload
 ```
 
 To download the build folder from S3:
 ```
-yarn run s3:download
+yarn s3:download
 ```
 
 ### Icons
