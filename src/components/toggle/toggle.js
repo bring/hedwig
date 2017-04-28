@@ -22,11 +22,11 @@ const HWToggle = ({
 
 
   /**
-   * @function toggletoggle
-   * @desc Toggles the toggle options list for a toggle
+   * @function toggleContents
+   * @desc Toggles the visibility of the contents
    * @param {Event} e
    */
-  function toggletoggle(e) {
+  function toggleContents(e) {
     // Determine if we've clicked on an option
     const elem = e.target;
 
@@ -53,7 +53,7 @@ const HWToggle = ({
    * @param {node} trigger
    */
   function bindEvents(trigger) {
-    trigger.addEventListener('click', toggletoggle);
+    trigger.addEventListener('click', toggleContents);
   }
 
 

@@ -48,14 +48,6 @@
   --hw-spacing-large: 36px;
   --hw-spacing-larger: 48px;
 
-  --hw-spacing-smallest: 6px;
-  --hw-spacing-smaller: 12px;
-  --hw-spacing-small: 18px;
-  --hw-spacing: 24px;
-  --hw-spacing-large: 36px;
-  --hw-spacing-larger: 48px;
-
-
   /**
    * Site width limitations
    */
@@ -71,7 +63,6 @@
    */
 
   --hw-font-size-h1-mobile: 35px;
-
   --hw-font-size-h1: 44px;
   --hw-font-size-h2: 28px;
   --hw-font-size-h3: 22px;

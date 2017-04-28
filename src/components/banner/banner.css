@@ -1,0 +1,73 @@
+/**
+ * Banner
+ */
+
+.hw-banner {
+  display: block;
+  color: var(--hw-color-gray-darkest);
+
+  &__trigger {
+    display: block;
+    width: 100%;
+    padding: var(--hw-spacing-smallest);
+    font-family: var(--hw-font-primay-medium);
+    border: 0;
+    text-align: center;
+    background-color: var(--hw-color-secondary);
+
+    &:hover {
+      color: var(--hw-color-primary-dark);
+    }
+  }
+
+  &__trigger svg {
+    width: 15px;
+    fill: var(--hw-color-gray-darkest);
+    margin-left: var(--hw-spacing-smaller);
+  }
+
+  &__trigger-close {
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+    fill: var(--hw-color-gray-darkest);
+    border: 0;
+  }
+
+  &__contents {
+    display: none;
+    background-color: var(--hw-color-secondary);
+    text-align: center;
+  }
+
+  &__contents time {
+    margin: var(--hw-spacing-smaller);
+    font-family: var(--hw-font-primay-medium);
+    font-size: var(--hw-font-size-p);
+    color: var(--hw-color-gray-darkest);
+  }
+
+  &__contents h1,
+  &__contents h3 {
+    color: var(--hw-color-gray-darkest);
+  }
+
+  /**
+   * padding and padding variations
+   */
+
+  &--expanded .hw-banner__trigger {
+    display: none;
+  }
+  &--expanded .hw-banner__contents {
+    display: block;
+  }
+}
+
+/**
+  * no-js fallbacks
+  */
+
+.no-js .hw-banner__contents {
+  display: block;
+}
