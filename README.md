@@ -115,7 +115,7 @@ Linting our project is import to keep a holistic code style.
 [ESLint](eslint.org) with the [Airbnb config](https://github.com/airbnb/javascript).
 
 **CSS**
-[Stylelint](https://github.com/stylelint/stylelint) with [idiomatic config](https://github.com/ream88/stylelint-config-idiomatic-order). More about [idiomatic css](https://github.com/necolas/idiomatic-css).
+[Stylelint](https://github.com/stylelint/stylelint) with [the standard config](hhttps://github.com/stylelint/stylelint-config-standard).
 
 ## 📦 Dependencies
 
