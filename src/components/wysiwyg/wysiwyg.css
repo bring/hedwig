@@ -38,3 +38,8 @@
 .hw-wysiwyg hr {
   margin-bottom: var(--hw-spacing);
 }
+
+/* List */
+.hw-wysiwyg ul {
+  @extend .hw-list;
+}
