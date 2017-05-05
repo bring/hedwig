@@ -9,41 +9,14 @@ Styling for buttons.
 [Small]          .hw-button--small
 ```
 
-### Base
-
-```html|span-4
-  <button class="hw-button hw-button--large">
-    Large
-  </button>
-  <button class="hw-button">
-    Normal
-  </button>
-  <button class="hw-button hw-button--small">
-    Small
-  </button>
-  <button class="hw-button hw-button--small" disabled>
-    Disabled
-  </button>
-```
-
-```code
-[Base]           .hw-button
-```
-
 ### Primary
 
 ```html|span-4
-  <button class="hw-button hw-button--primary hw-button--large">
-    Large
+  <button class="hw-button hw-button--primary">
+    Normal state
   </button>
-  <button class="hw-button hw-button--primary ">
-    Normal
-  </button>
-  <button class="hw-button hw-button--primary hw-button--small">
-    Small
-  </button>
-  <button class="hw-button hw-button--primary hw-button--small" disabled>
-    Disabled
+  <button class="hw-button hw-button--primary" disabled>
+    Disabled state
   </button>
 ```
 
@@ -51,22 +24,33 @@ Styling for buttons.
 [Primary]        .hw-button--primary
 ```
 
+### Secondary
+
+```html|span-4
+  <button class="hw-button hw-button--secondary">
+    Normal state
+  </button>
+  <button class="hw-button hw-button--secondary" disabled>
+    Disabled state
+  </button>
+```
+
+```code
+[Base]           .hw-button
+```
+
+
 ### Outline
 
 ```html|span-4
-  <button class="hw-button hw-button--outline hw-button--large">
-    Large
-  </button>
   <button class="hw-button hw-button--outline">
-    Normal
+    Normal state
   </button>
-  <button class="hw-button hw-button--outline hw-button--small">
-    Small
-  </button>
-  <button class="hw-button hw-button--outline hw-button--small" disabled>
-    Disabled
+  <button class="hw-button hw-button--outline" disabled>
+    Disabled state
   </button>
 ```
+
 ```code
 [Outline]        .hw-button--outline
 ```
@@ -74,19 +58,30 @@ Styling for buttons.
 ### Outline white
 
 ```html|span-4,plain,dark
-  <button class="hw-button hw-button--outline-white hw-button--large">
-    Large
-  </button>
   <button class="hw-button hw-button--outline-white">
-    Normal
+    Normal state
   </button>
-  <button class="hw-button hw-button--outline-white hw-button--small">
-    Small
-  </button>
-  <button class="hw-button hw-button--outline-white hw-button--small" disabled>
-    Disabled
+  <button class="hw-button hw-button--outline-white" disabled>
+    Disabled state
   </button>
 ```
+
 ```code
 [Outline white]        .hw-button--outline-white
+```
+
+### Extra modifiers
+
+```html|span-4
+  <button class="hw-button hw-button--large">
+    Large button
+  </button>
+  <button class="hw-button hw-button--small">
+    Small button
+  </button>
+```
+
+```code
+[Large]        .hw-button--large
+[Small]        .hw-button--small
 ```
