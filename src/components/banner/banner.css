@@ -15,8 +15,14 @@
     text-align: center;
     background-color: var(--hw-color-secondary);
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--hw-color-primary-dark);
+      outline: 0;
+    }
+    &:hover svg,
+    &:focus svg {
+      fill: var(--hw-color-primary-dark);
     }
   }
 
@@ -32,6 +38,16 @@
     margin: 0 auto;
     fill: var(--hw-color-gray-darkest);
     border: 0;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      outline: 0;
+    }
+    &:hover svg,
+    &:focus svg {
+      fill: var(--hw-color-primary-dark);
+    }
   }
 
   &__contents {
@@ -52,6 +68,54 @@
     color: var(--hw-color-gray-darkest);
   }
 
+  &__read-more-button {
+    position: relative;
+    bottom: -15px;
+    width: 70px;
+    height: 70px;
+    margin-top: -30px;
+    background-color: var(--hw-color-secondary);
+    text-align: center;
+    border: 0;
+    transform: rotate(45deg);
+
+    &:hover,
+    &:focus {
+      color: var(--hw-color-primary-dark);
+      outline: 0;
+    }
+    &:hover svg,
+    &:focus svg {
+      fill: var(--hw-color-primary-dark);
+    }
+    &:hover span,
+    &:focus span {
+      border-bottom: 1px solid var(--hw-color-primary-dark);
+    }
+  }
+  &__read-more-button span {
+    position: absolute;
+    top: 10px;
+    left: -13px;
+    display: block;
+    font-size: var(--hw-font-size-small);
+    transform: rotate(-45deg);
+    border-bottom: 1px solid var(--hw-color-gray-darkest);
+  }
+  &__read-more-button svg {
+    position: absolute;
+    bottom: 5px;
+    transform: rotate(-45deg);
+    left: 41px;
+    fill: var(--hw-color-gray-darkest); 
+  }
+  
+  &__read-more-contents {
+    display: none;
+    padding: var(--hw-spacing-larger) 0;
+    background-color: var(--hw-color-gray-lightest);
+  }
+
   /**
    * padding and padding variations
    */
@@ -62,6 +126,9 @@
   &--expanded .hw-banner__contents {
     display: block;
   }
+  &--read-more-expanded .hw-banner__read-more-contents {
+    display: block;
+  }
 }
 
 /**
@@ -69,5 +136,8 @@
   */
 
 .no-js .hw-banner__contents {
+  display: block;
+}
+.no-js .hw-banner__read-more-contents {
   display: block;
 }

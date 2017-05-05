@@ -13,6 +13,7 @@ import findParent from '../../utilities/js/findParent';
 const HWBanner = ({
     bannerSelector = '[data-hw-banner]',
     activeItemClass = 'hw-banner--expanded',
+    readMoreClass = 'hw-banner--read-more-expanded',
   } = {}) => {
 
   // Module settings object
@@ -46,13 +47,38 @@ const HWBanner = ({
     }
   }
 
+  /**
+   * @function toggleReadMore
+   * @desc Toggles the "read more" contents for a toggle
+   * @param {Event} e
+   */
+  function toggleReadMore(e) {
+    // Determine if we've clicked on an option
+    const elem = e.target;
+
+    // Find container and elem
+    const container = findParent({ selector: '[data-hw-banner]', elem });
+    const contents = q('.hw-banner__read-more-contents', container);
+
+    // Display/hide banner
+    if (contents.getAttribute('aria-hidden') === 'false') {
+      contents.setAttribute('aria-hidden', true);
+      elem.setAttribute('aria-expanded', false);
+      container.classList.remove(readMoreClass);
+    } else {
+      contents.setAttribute('aria-hidden', false);
+      elem.setAttribute('aria-expanded', true);
+      container.classList.add(readMoreClass);
+    }
+  }
+
 
   /**
-   * @function bindEvents
+   * @function bindToggleEvents
    * @desc Adds listener to banner
    * @param {node} trigger
    */
-  function bindEvents(trigger) {
+  function bindToggleEvents(trigger) {
     trigger.addEventListener('click', toggleBanner);
   }
 
@@ -88,8 +114,19 @@ const HWBanner = ({
       contents.setAttribute('id', `banner-${bannerName}`);
 
       // Set up event listeners for opening banner
-      bindEvents(trigger);
-      bindEvents(closeTrigger);
+      bindToggleEvents(trigger);
+      bindToggleEvents(closeTrigger);
+
+      // Check for "read more" functionality
+      const readMoreTrigger = q('.hw-banner__read-more-button', banner);
+      const readMoreContents = q('.hw-banner__read-more-contents', banner);
+
+      if (readMoreTrigger) {
+        // Apply aria-roles
+        readMoreTrigger.setAttribute('aria-controls', `banner-readmore-${bannerName}`);
+        readMoreContents.setAttribute('id', `banner-readmore-${bannerName}`);
+        readMoreTrigger.addEventListener('click', toggleReadMore);
+      }
     });
   }
 
