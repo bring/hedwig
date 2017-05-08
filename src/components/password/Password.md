@@ -30,19 +30,19 @@ Input field with password strength indicator
         <svg class="hw-icon">
           <use xlink:href="#alert"></use>
         </svg>
-        Ikke sikkert nok
+        <span>Ikke sikkert nok</span>
       </span>
       <span class="hw-password__feedback-ok">
         <svg class="hw-icon">
           <use xlink:href="#checkmark"></use>
         </svg>
-        Bra
+        <span>Bra</span>
       </span>
       <span class="hw-password__feedback-good">
         <svg class="hw-icon">
           <use xlink:href="#star"></use>
         </svg>
-        Supersikkert
+        <span>Supersikkert</span>
       </span>
     </div>
   </div>
