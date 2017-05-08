@@ -4,9 +4,9 @@ Input field with password strength indicator
 
 ```code
 [data-hw-password]                        Attach js functionality
-[data-hw-password-min-length=8]           Minimum length
-[data-hw-password-caps-required=true]     Capital character required (true/false)
-[data-hw-password-special-required=true]  Special characters required (true/false)
+[data-hw-password-min-length=8]           (optional) Minimum length
+[data-hw-password-caps-required=true]     (optional) Capital character required
+[data-hw-password-special-required=true]  (optional) Special characters required
 ```
 
 ## Default validation rules
@@ -24,6 +24,26 @@ Input field with password strength indicator
     <input class="hw-password__input" type="password" placeholder="Start typing" />
     <div class="hw-password__bar-container">
       <span class="hw-password__bar" />
+    </div>
+    <div class="hw-password__feedback">
+      <span class="hw-password__feedback-bad">
+        <svg class="hw-icon">
+          <use xlink:href="#alert"></use>
+        </svg>
+        Ikke sikkert nok
+      </span>
+      <span class="hw-password__feedback-ok">
+        <svg class="hw-icon">
+          <use xlink:href="#checkmark"></use>
+        </svg>
+        Bra
+      </span>
+      <span class="hw-password__feedback-good">
+        <svg class="hw-icon">
+          <use xlink:href="#star"></use>
+        </svg>
+        Supersikkert
+      </span>
     </div>
   </div>
 </label>
