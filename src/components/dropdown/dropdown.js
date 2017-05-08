@@ -30,23 +30,24 @@ const HWDropdown = ({
    * @param {string} option
    */
   function selectOption(dropdown, selectedOption) {
-    const placeholder = dropdown.getAttribute('data-hw-dropdown-placeholder');
+    const { hwDropdownPlaceholder } = dropdown.dataset;
     const placeHolderEl = q('.hw-dropdown__placeholder', dropdown);
 
     // Check if option is false, if so select default placeholder
     if (selectedOption === false) {
-      placeHolderEl.innerText = placeholder;
+      placeHolderEl.innerText = hwDropdownPlaceholder;
       return false;
     }
 
     // Otherwise, select passed options
     const allOptions = qa('.hw-dropdown__option', dropdown);
     return allOptions.forEach((option) => {
-      if (option.getAttribute('data-hw-dropdown-value') === selectedOption) {
-        option.setAttribute('data-hw-dropdown-option-selected', true);
+      const { hwDropdownValue } = option.dataset;
+      if (hwDropdownValue === selectedOption) {
+        option.dataset.hwDropdownOptionSelected = true;
         placeHolderEl.innerText = option.innerText;
       } else {
-        option.setAttribute('data-hw-dropdown-option-selected', false);
+        option.dataset.hwDropdownOptionSelected = false;
       }
     });
   }
@@ -104,9 +105,10 @@ const HWDropdown = ({
     // Determine if we've clicked on an option
     const target = e.target;
     const dropdown = e.currentTarget;
-    const targetValue = target.getAttribute('data-hw-dropdown-value');
-    if (targetValue) {
-      selectOption(e.currentTarget, targetValue);
+    const { hwDropdownValue } = target.dataset;
+
+    if (hwDropdownValue) {
+      selectOption(e.currentTarget, hwDropdownValue);
     }
 
     // Find dropdown-list within dropdown container
@@ -141,8 +143,9 @@ const HWDropdown = ({
 
     // If value already exists, select next/previous element
     if (selected.length > 0) {
-      const selectedValue = selected[0].getAttribute('data-hw-dropdown-value');
-      const currentIndex = allOptions.findIndex(i => i.getAttribute('data-hw-dropdown-value') === selectedValue);
+      
+      const { hwDropdownValue } = selected[0].dataset;
+      const currentIndex = allOptions.findIndex(i => i.getAttribute('data-hw-dropdown-value') === hwDropdownValue);
       if (direction === 'next') {
         nextEl = allOptions[currentIndex + 1] || allOptions[0];
       } else {
