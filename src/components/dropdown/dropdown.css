@@ -44,7 +44,7 @@
   }
 
   &__placeholder {
-    padding: 9px var(--hw-spacing);
+    padding: 9px var(--hw-spacing-small);
     margin: 3px 0;
     line-height: var(--hw-font-size-p);
     white-space: nowrap;
@@ -62,7 +62,7 @@
     &::after {
       position: absolute;
       top: 19px;
-      right: 24px;
+      right: var(--hw-spacing-small);
       display: block;
       width: 12px;
       height: 4px;
@@ -73,7 +73,7 @@
     }
 
     &::after {
-      right: 30px;
+      right: 24px;
       transform: rotate(45deg);
     }
   }
@@ -87,7 +87,7 @@
   &__option {
     padding: var(--hw-spacing-smaller) 0;
     border-top: 3px solid var(--hw-color-gray-lighter);
-    margin: 3px var(--hw-spacing);
+    margin: 3px var(--hw-spacing-small);
     line-height: var(--hw-font-size-p);
 
     &:hover {

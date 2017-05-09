@@ -15,16 +15,6 @@
     text-align: center;
     background-color: var(--hw-color-secondary);
 
-    &:hover,
-    &:focus {
-      color: var(--hw-color-primary-dark);
-      outline: 0;
-    }
-    &:hover svg,
-    &:focus svg {
-      fill: var(--hw-color-primary-dark);
-    }
-
     &::after {
       content: '';
       position: absolute;

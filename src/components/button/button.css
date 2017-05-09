@@ -69,16 +69,16 @@
   /* Secondary button */
 
   &--secondary {
-    border: 3px solid var(--hw-color-gray-dark);
+    border: 2px solid var(--hw-color-gray-dark);
     background: var(--hw-color-gray-dark);
     color: var(--hw-color-white);
 
     &:hover,
     &:active,
     &:focus {
-      border-color: var(--hw-color-primary-darker);
-      background: var(--hw-color-primary-darker);
-      outline: 1px solid var(--hw-color-primary-darker);
+      border-color: var(--hw-color-gray-darker);
+      background: var(--hw-color-gray-darker);
+      outline: 1px solid var(--hw-color-gray-darker);
     }
 
     &:active {

@@ -66,11 +66,11 @@
     }
 
     &:hover ~ .hw-checkbox__indicator {
-      border: 3px solid var(--hw-color-gray);
+      border: 3px solid var(--hw-color-gray-darker);
     }
 
     &:focus ~ .hw-checkbox__indicator {
-      border: 3px solid var(--hw-color-gray-dark);
+      border: 3px solid var(--hw-color-gray-darker);
     }
 
     &:disabled ~ .hw-checkbox__indicator {
