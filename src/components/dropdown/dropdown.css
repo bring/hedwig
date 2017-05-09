@@ -47,9 +47,17 @@
     padding: 9px var(--hw-spacing);
     margin: 3px 0;
     line-height: var(--hw-font-size-p);
+    white-space: nowrap;
   }
 
   &__arrow {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 60px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.86);
+
     &::before,
     &::after {
       position: absolute;
@@ -107,6 +115,16 @@
 
   &--expanded .hw-dropdown__arrow::after {
     transform: rotate(-45deg);
+  }
+
+  &--small {
+    & .hw-dropdown__arrow::before {
+      right: 9px;
+    }
+
+    & .hw-dropdown__arrow::after {
+      right: 15px;
+    }
   }
 
   /**

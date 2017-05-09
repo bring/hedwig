@@ -2,7 +2,7 @@
 
 Example form (using other components)
 
-```html|span-6,plain,light
+```html|span-4,plain,light
  <form>
   <label class="hw-label">
     Hva kan vi hjelpe deg med?

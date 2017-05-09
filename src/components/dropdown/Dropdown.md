@@ -124,3 +124,30 @@ Optional:
   </div>
 </label>
 ```
+
+### Small dropdown (arrow in fixed position)
+
+```code
+.hw-dropdown--small
+
+```
+
+```html|span-1
+<label class="hw-label">
+  Country code
+  <div class="hw-dropdown hw-dropdown--small"
+    data-hw-dropdown="numbers"
+    data-hw-dropdown-placeholder="+47"
+  >
+    <div class="hw-dropdown__inner">
+      <div class="hw-dropdown__placeholder"></div>
+      <div class="hw-dropdown__arrow"></div>
+      <ul class="hw-dropdown__options">
+        <li class="hw-dropdown__option" data-hw-dropdown-value="1">+47</li>
+        <li class="hw-dropdown__option" data-hw-dropdown-value="2">+48</li>
+        <li class="hw-dropdown__option" data-hw-dropdown-value="3">+49</li>
+      </ul>
+    </div>
+  </div>
+</label>
+```
