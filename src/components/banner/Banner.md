@@ -67,12 +67,14 @@ Required:
           <div class="hw-block hw-block--full hw-block--padding-top-half">
             <time>24.09.76</time>|<time>17:45</time>
           </div>
-          <div class="hw-block hw-block--full hw-block--padding-top-half hw-block--padding-bottom-double">
+          <div class="hw-block hw-block--full hw-block--padding-top-half">
             <h3>The blizzard is causing delays across the Oslo region.</h3>
+          </div>
+          <div class="hw-block hw-block--full hw-block--padding-top-half">
+            <a href="#" class="hw-banner__read-more-link">Read more</a>
           </div>
       </div>
       <button class="hw-banner__read-more-button">
-          <span>Read more</span>
           <svg class="hw-icon">
             <use xlink:href="#caret-down"></use>
           </svg>

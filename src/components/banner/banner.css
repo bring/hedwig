@@ -68,6 +68,20 @@
     color: var(--hw-color-gray-darkest);
   }
 
+  &__read-more-link {
+    position: relative;
+    font-size: var(--hw-font-size-small);
+    border-bottom: 1px solid var(--hw-color-gray-darkest);
+    z-index: 1;
+
+    &:hover,
+    &:focus {
+      color: var(--hw-color-primary-dark);
+      border-color: var(--hw-color-primary-dark);
+      outline: 0;
+    }
+  }
+
   &__read-more-button {
     position: relative;
     bottom: -15px;
@@ -92,24 +106,16 @@
     &:focus span {
       border-bottom: 1px solid var(--hw-color-primary-dark);
     }
+
+    & svg {
+      position: absolute;
+      bottom: 5px;
+      transform: rotate(-45deg);
+      left: 41px;
+      fill: var(--hw-color-gray-darkest);
+    }
   }
-  &__read-more-button span {
-    position: absolute;
-    top: 10px;
-    left: -13px;
-    display: block;
-    font-size: var(--hw-font-size-small);
-    transform: rotate(-45deg);
-    border-bottom: 1px solid var(--hw-color-gray-darkest);
-  }
-  &__read-more-button svg {
-    position: absolute;
-    bottom: 5px;
-    transform: rotate(-45deg);
-    left: 41px;
-    fill: var(--hw-color-gray-darkest); 
-  }
-  
+
   &__read-more-contents {
     display: none;
     padding: var(--hw-spacing-larger) 0;
