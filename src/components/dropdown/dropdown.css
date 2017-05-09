@@ -118,6 +118,10 @@
   }
 
   &--small {
+    & .hw-dropdown__arrow {
+      width: 30px;
+    }
+
     & .hw-dropdown__arrow::before {
       right: 9px;
     }

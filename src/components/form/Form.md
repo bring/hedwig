@@ -49,7 +49,7 @@ Example form (using other components)
         Telefonnummer
         <div class="hw-grid hw-grid--narrow">
           <div class="hw-grid__item hw-one-third">
-            <div class="hw-dropdown"
+            <div class="hw-dropdown hw-dropdown--small"
               data-hw-dropdown="characters"
               data-hw-dropdown-placeholder="Choose option"
               data-hw-dropdown-default-selected="2"
