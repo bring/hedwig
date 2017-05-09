@@ -24,12 +24,38 @@
     &:focus svg {
       fill: var(--hw-color-primary-dark);
     }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 25px solid var(--hw-color-secondary);
+      transform: translateX(-50%);
+
+      @media (--medium) {
+        display: none;
+      }
+    }
   }
 
   &__trigger svg {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
     width: 15px;
     fill: var(--hw-color-gray-darkest);
-    margin-left: var(--hw-spacing-smaller);
+    transform: translateX(-50%);
+    z-index: 1;
+
+    @media (--medium) {
+      position: static;
+      margin-left: var(--hw-spacing-smaller);
+    }
   }
 
   &__trigger-close {
@@ -101,10 +127,6 @@
     &:hover svg,
     &:focus svg {
       fill: var(--hw-color-primary-dark);
-    }
-    &:hover span,
-    &:focus span {
-      border-bottom: 1px solid var(--hw-color-primary-dark);
     }
 
     & svg {
