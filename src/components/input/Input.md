@@ -28,7 +28,7 @@ All inputs are block elements. For layout, use [grid]('/Grid').
 
 ```html
 <div class="hw-error-summary">
-  <h2>Brukerprofilen din ble ikke opprettet fordi</h2>
+  <h3>Brukerprofilen din ble ikke opprettet fordi</h3>
   <ul>
     <li>E-postadressen er ugyldig</li>
     <li>Mobilnummeret må inneholde 8 tall</li>

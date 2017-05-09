@@ -14,8 +14,8 @@
     border: 3px solid var(--hw-color-gray-light);
     border-radius: 50%;
     background: var(--hw-color-white);
-    width: var(--hw-spacing);
-    height: var(--hw-spacing);
+    width: 22px;
+    height: 22px;
   }
 
   & > input {
@@ -34,11 +34,11 @@
       &::after {
         content: '';
         position: absolute;
-        width: var(--hw-spacing-smaller);
-        height: var(--hw-spacing-smaller);
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
-        top: 6px;
-        left: 6px;
+        top: var(--hw-spacing-smallest);
+        left: var(--hw-spacing-smallest);
         background: var(--hw-color-gray-darker);
       }
     }

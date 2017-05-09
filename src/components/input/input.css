@@ -6,6 +6,7 @@
 .hw-input {
   position: relative;
   font-size: var(--hw-font-size-small);
+  line-height: var(--hw-font-size-p);
   padding: var(--hw-spacing-smaller) var(--hw-spacing);
   border: 3px solid var(--hw-color-gray-light);
   background-color: var(--hw-color-white);
@@ -66,12 +67,12 @@
   opacity: 1;
 
   &::before {
-    content: '!';
+    content: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/exclamation-mark-circle.svg');
     position: absolute;
     top: -41px;
     right: var(--hw-spacing);
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     font-family: var(--hw-font-primay-bold);
     font-size: 17px;
     background: var(--hw-color-gray-darker);

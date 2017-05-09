@@ -1,6 +1,7 @@
 .hw-dropdown {
   position: relative;
-  height: 58px;
+  height: 48px;
+  margin: 3px 0;
   font-family: var(--hw-font-primay-medium);
   color: var(--hw-color-gray-darker);
 
@@ -30,9 +31,8 @@
     display: block;
     overflow: hidden;
     width: 100%;
-    max-height: 52px;
+    max-height: 48px;
     border: 3px solid var(--hw-color-gray-light);
-    margin-top: 3px;
     background-color: var(--hw-color-white);
     font-size: var(--hw-font-size-small);
     cursor: pointer;
@@ -46,14 +46,15 @@
   &__placeholder {
     padding: 9px var(--hw-spacing);
     margin: 3px 0;
+    line-height: var(--hw-font-size-p);
   }
 
   &__arrow {
     &::before,
     &::after {
       position: absolute;
-      top: 22px;
-      right: 10px;
+      top: 19px;
+      right: 24px;
       display: block;
       width: 12px;
       height: 4px;
@@ -64,7 +65,7 @@
     }
 
     &::after {
-      right: 16px;
+      right: 30px;
       transform: rotate(45deg);
     }
   }
@@ -79,6 +80,7 @@
     padding: var(--hw-spacing-smaller) 0;
     border-top: 3px solid var(--hw-color-gray-lighter);
     margin: 3px var(--hw-spacing);
+    line-height: var(--hw-font-size-p);
 
     &:hover {
       color: var(--hw-color-primary-dark);
