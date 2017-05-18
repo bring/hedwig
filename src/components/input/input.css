@@ -103,6 +103,7 @@
     position: relative;
     padding-left: var(--hw-spacing-large);
     font-family: var(--hw-font-primay-medium);
+    color: var(--hw-color-gray-dark);
 
     &::before {
       content: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/exclamation-mark-circle.svg');
