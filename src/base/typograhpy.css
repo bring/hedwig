@@ -77,6 +77,7 @@ h3 {
 
 .hw-text-small {
   font-size: var(--hw-font-size-small);
+  font-family: var(--hw-font-primay-medium);
   line-height: 1.4;
   color: var(--hw-color-gray-darker);
 }
