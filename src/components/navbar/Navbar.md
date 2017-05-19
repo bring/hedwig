@@ -16,7 +16,8 @@ Navbar
   </a>
   <nav class="hw-navbar__menu">
     <a href="#" class="hw-navbar__item">English</a>
-    <a href="#" class="hw-navbar__item">Login</a>
+    <a href="#" class="hw-navbar__item">Logg inn</a>
+    <a href="#" class="hw-navbar__item">Søk</a>
     <button class="hw-navbar__button" data-hw-toggle-menu>
       Menu
       <div class="hw-hamburger" data-hw-menu-icon>

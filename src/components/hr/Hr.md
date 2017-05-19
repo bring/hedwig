@@ -7,6 +7,7 @@ Horizontal rule
 
 [Full]           .hw-hr--full
 [White]          .hw-hr--white
+[Centered]       .hw-hr--centered
 ```
 
 ### Regular
@@ -25,4 +26,10 @@ Horizontal rule
 
 ```html|span-6
   <hr class="hw-hr hw-hr--full" />
+```
+
+### Centered (on hover)
+
+```html|span-6
+  <hr class="hw-hr hw-hr--animated" />
 ```

@@ -4,7 +4,7 @@
  * Card
  */
 
-.hw-card-new {
+.hw-card-v2 {
   position: relative;
   display: flex;
   background: var(--hw-color-white);
@@ -33,7 +33,7 @@
     }
   }
 
-  &:hover .hw-card-new__media-inner {
+  &:hover .hw-card-v2__media-inner {
     transform: scale(1.1);
   }
 
@@ -71,7 +71,7 @@
    * Variants
    */
 
-  &--dark .hw-card-new__contents {
+  &--dark .hw-card-v2__contents {
     color: white;
     background: var(--hw-color-gray-darker);
   }
