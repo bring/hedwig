@@ -52,7 +52,7 @@
         </div>
       </section>
 
-      <section class="hw-block hw-block--margin-top-double hw-block--margin-bottom-double">
+      <section class="hw-block hw-block--limited hw-block--margin-top-double hw-block--margin-bottom-double">
 
         <div class="hw-grid">
           <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
@@ -90,13 +90,43 @@
           </div>
         </div>
       </section>
+
+      <!-- Flexcards -->
+
+      <section class="hw-flexcards">
+        <article class="hw-flexcard">
+          <div class="hw-flexcard__media" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/flexcard-1.png');" />
+          <div class="hw-flexcard__overlay" />
+          <div class="hw-flexcard__contents">
+            <h3 class="hw-flexcard__title">Smartere logistikk på 1-2-3</h3>
+            <p class="hw-flexcard__subtitle">Få verdifulle tips på hvordan din bedrift kan spare tid og penger!</p>
+          </div>
+        </article>
+        <article class="hw-flexcard">
+          <div class="hw-flexcard__media" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/flexcard-2.png');" />
+          <div class="hw-flexcard__overlay" />
+          <div class="hw-flexcard__contents">
+            <h3 class="hw-flexcard__title">LOAD.17</h3>
+            <p class="hw-flexcard__subtitle">Norges strørste netthandelslkonferanse</p>
+          </div>
+        </article>
+        <article class="hw-flexcard">
+          <div class="hw-flexcard__media" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/flexcard-1.png');" />
+          <div class="hw-flexcard__overlay" />
+          <div class="hw-flexcard__contents">
+            <h3 class="hw-flexcard__title">Smartere logistikk på 1-2-3</h3>
+            <p class="hw-flexcard__subtitle">Få verdifulle tips på hvordan din bedrift kan spare tid og penger!</p>
+          </div>
+        </article>
+      </section>
+
     </main>
 
     <!-- Footer -->
 
     <footer class="hw-footer">
 
-      <div class="hw-footer__desktop">
+      <div class="hw-footer__desktop hw-block--limited">
         <div class="hw-grid">
           <div class="hw-grid__item hw-one-quarter">
             <p class="hw-footer__title">Kundeservice</p>
