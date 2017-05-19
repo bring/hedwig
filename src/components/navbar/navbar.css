@@ -1,4 +1,5 @@
 .hw-navbar {
+  position: relative;
   background: var(--hw-color-white);
   display: flex;
   justify-content: space-between;
@@ -125,6 +126,7 @@
     min-height: 100vh;
     padding: var(--hw-spacing);
     position: absolute;
+    top: 71px;
     display: none;
   }
 

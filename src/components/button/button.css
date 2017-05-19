@@ -41,6 +41,10 @@
     padding: 0 var(--hw-spacing-smaller);
   }
 
+  &--full {
+    width: 100%;
+  }
+
   /**
    * Variants
    */

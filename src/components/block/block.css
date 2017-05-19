@@ -113,4 +113,12 @@
   &--col-white {
     background-color: var(--hw-color-white);
   }
+
+  /**
+   * Other variants
+   */
+
+  &--relative {
+    position: relative;
+  }
 }

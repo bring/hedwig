@@ -152,3 +152,38 @@ Optional:
     </li>
   </ul>
 ```
+
+
+### Dark accordion
+
+```html|span-6
+  <ul class="hw-accordion hw-accordion--dark" data-hw-accordion="example3" data-hw-accordion-allow-multiple>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Kundeservice
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <p>contents</p>
+      </div>
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Våre tjenester
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <p>contents</p>
+      </div>
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Søk etter
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <p>contents</p>
+      </div>
+    </li>
+  </ul>
+```
