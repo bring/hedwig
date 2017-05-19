@@ -109,4 +109,8 @@
   &--col-gray-light {
     background-color: var(--hw-color-gray-light);
   }
+
+  &--col-white {
+    background-color: var(--hw-color-white);
+  }
 }
