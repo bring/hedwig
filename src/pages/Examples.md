@@ -11,6 +11,7 @@ All Components are available in the codepens as they are pulled in via the CDN.
 [Article with alternative paragraph text 2 (Roboto Slab)](http://codepen.io/fredjens/full/dd4714f3d7b3829929231ef875fc1779/)
 [Article with mixed content](https://codepen.io/bnhovde/full/aWdWzz/)
 
+[Frontpage (UPDATED)](https://codepen.io/bnhovde/full/dWgqBo/)
 [Frontpage](http://codepen.io/fredjens/full/c13655428686cce6dc42bd42d37b628e/)
 [Frontpage with transparent header](http://codepen.io/fredjens/full/f6d33925cb97608606ea4abd758fe907/)
 
