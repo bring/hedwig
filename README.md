@@ -11,10 +11,10 @@ Hedwig is Brings Design System.
 Using Hedwig (beta) in your project is super simple. You only need to include this in your document:
 
 ```
-[Fonts]    https://bring-hedwig.amazonaws.com/hedwig/assets/fonts/fonts.css
-[CSS]      https://bring-hedwig.amazonaws.com/hedwig/main.css
-[JS]       https://bring-hedwig.amazonaws.com/hedwig/main.js
-[Icons]    https://bring-hedwig.amazonaws.com/hedwig/icons.js
+[Fonts]    https://bring-hedwig.s3.amazonaws.com/hedwig/assets/fonts/fonts.css
+[CSS]      https://bring-hedwig.s3.amazonaws.com/hedwig/main.css
+[JS]       https://bring-hedwig.s3.amazonaws.com/hedwig/main.js
+[Icons]    https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js
 ```
 
 **WTF!? I do not want to include external files in my project!**
@@ -82,11 +82,11 @@ It works like this:
 
 To update icons in production:
 * Run `yarn run s3:upload`
-* Include `https://bring-hedwig.amazonaws.com/hedwig/icons.js` in the footer of the document
+* Include `https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js` in the footer of the document
 
 ### 🅰️ Fonts
 
-We host our fonts on S3 ([http://bring-hedwig.amazonaws.com/assets/fonts/fonts.css](http://bring-hedwig.amazonaws.com/assets/fonts)). To update the fonts, update font files in `assets/fonts` on S3. We do it this way both to keep Hedwig clean and to avoid legal issues with publishing the fonts on our open-sourced repo.
+We host our fonts on S3 ([http://bring-hedwig.s3.amazonaws.com/assets/fonts/fonts.css](http://bring-hedwig.s3.amazonaws.com/assets/fonts)). To update the fonts, update font files in `assets/fonts` on S3. We do it this way both to keep Hedwig clean and to avoid legal issues with publishing the fonts on our open-sourced repo.
 
 ## 🔧 Linting
 
