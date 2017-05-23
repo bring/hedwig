@@ -1,11 +1,11 @@
 .hw-navbar {
+  position: relative;
   background: var(--hw-color-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   border-bottom: 1px solid var(--hw-color-gray-lighter);
-  margin-bottom: 65px;
 
   &--absolute {
     position: absolute;
@@ -13,6 +13,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
+    margin-bottom: 65px;
   }
 
   &--transparent {
@@ -125,6 +126,7 @@
     min-height: 100vh;
     padding: var(--hw-spacing);
     position: absolute;
+    top: 71px;
     display: none;
   }
 

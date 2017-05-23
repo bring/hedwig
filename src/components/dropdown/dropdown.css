@@ -1,6 +1,7 @@
 .hw-dropdown {
   position: relative;
-  height: 58px;
+  height: 48px;
+  margin: 3px 0;
   font-family: var(--hw-font-primay-medium);
   color: var(--hw-color-gray-darker);
 
@@ -30,9 +31,8 @@
     display: block;
     overflow: hidden;
     width: 100%;
-    max-height: 52px;
+    max-height: 48px;
     border: 3px solid var(--hw-color-gray-light);
-    margin-top: 3px;
     background-color: var(--hw-color-white);
     font-size: var(--hw-font-size-small);
     cursor: pointer;
@@ -44,19 +44,27 @@
   }
 
   &__placeholder {
-    padding: 9px var(--hw-spacing);
+    padding: 9px var(--hw-spacing-small);
     margin: 3px 0;
+    line-height: var(--hw-font-size-p);
+    white-space: nowrap;
   }
 
   &__arrow {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.86);
+
     &::before,
     &::after {
       position: absolute;
-      top: 22px;
-      right: 10px;
+      top: 19px;
+      right: var(--hw-spacing-small);
       display: block;
-      width: 10px;
-      height: 3px;
+      width: 12px;
+      height: 4px;
       content: '';
       background-color: var(--hw-color-gray);
       transform: rotate(-45deg);
@@ -64,7 +72,7 @@
     }
 
     &::after {
-      right: 15px;
+      right: 24px;
       transform: rotate(45deg);
     }
   }
@@ -76,9 +84,10 @@
   }
 
   &__option {
-    padding: var(--hw-spacing-smaller) var(--hw-spacing);
+    padding: var(--hw-spacing-smaller) 0;
     border-top: 3px solid var(--hw-color-gray-lighter);
-    margin: 3px 0;
+    margin: 3px var(--hw-spacing-small);
+    line-height: var(--hw-font-size-p);
 
     &:hover {
       color: var(--hw-color-primary-dark);
@@ -105,6 +114,20 @@
 
   &--expanded .hw-dropdown__arrow::after {
     transform: rotate(-45deg);
+  }
+
+  &--small {
+    & .hw-dropdown__arrow {
+      width: 30px;
+    }
+
+    & .hw-dropdown__arrow::before {
+      right: 9px;
+    }
+
+    & .hw-dropdown__arrow::after {
+      right: 15px;
+    }
   }
 
   /**

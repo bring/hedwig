@@ -14,5 +14,5 @@ Default link styles
 ```
 
 ```html|span-6
-  <a href="#" class="hw-link">This is a link on it's own</a>
+  <a href="#" class="hw-link hw-link--small">This is a link on it's own</a>
 ```

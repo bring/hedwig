@@ -16,6 +16,7 @@
 
   --hw-color-secondary: #fdbb2f;
   --hw-color-link: #4a90e2;
+  --hw-color-avocado: #26b576;
 
   --hw-color-gray-lightest: #f2f2f2;
   --hw-color-gray-lighter: #E6E6E6;
@@ -48,14 +49,6 @@
   --hw-spacing-large: 36px;
   --hw-spacing-larger: 48px;
 
-  --hw-spacing-smallest: 6px;
-  --hw-spacing-smaller: 12px;
-  --hw-spacing-small: 18px;
-  --hw-spacing: 24px;
-  --hw-spacing-large: 36px;
-  --hw-spacing-larger: 48px;
-
-
   /**
    * Site width limitations
    */
@@ -71,7 +64,6 @@
    */
 
   --hw-font-size-h1-mobile: 35px;
-
   --hw-font-size-h1: 44px;
   --hw-font-size-h2: 28px;
   --hw-font-size-h3: 22px;

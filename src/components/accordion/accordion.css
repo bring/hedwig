@@ -8,16 +8,27 @@
   margin: 0 0 var(--hw-spacing) 0;
   list-style: none;
   background-color: white;
+  border: 3px solid var(--hw-color-gray-lighter);
+
+  &__item {
+    &:last-child {
+      margin-bottom: var(--hw-spacing-large);
+    }
+
+    &:first-child .hw-accordion__trigger {
+      border: 0;
+    }
+  }
 
   &__trigger {
     position: relative;
     display: block;
-    width: 100%;
-    padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
-    padding-right: var(--hw-spacing-larger);
+    width: calc(100% - var(--hw-spacing-small) * 2);
+    margin: 0 var(--hw-spacing-small);
+    padding: var(--hw-spacing-smaller) 0;
+    padding-right: var(--hw-spacing-small);
     border: 0;
-    border-bottom: 3px solid var(--hw-color-gray-lighter);
-    margin: 3px 0;
+    border-top: 3px solid var(--hw-color-gray-lighter);
     font-family: var(--hw-font-primay-medium);
     font-size: var(--hw-font-size-small);
     text-align: left;
@@ -35,9 +46,9 @@
     &::after {
       position: absolute;
       top: 22px;
-      right: 20px;
+      right: 0;
       display: block;
-      width: 16px;
+      width: 12px;
       height: 4px;
       content: '';
       background-color: currentColor;
@@ -46,15 +57,14 @@
     }
 
     &::after {
-      right: 29px;
+      right: 6px;
       transform: rotate(45deg);
     }
   }
 
   &__contents {
     display: none;
-    padding: var(--hw-spacing-small);
-    border-bottom: 3px solid var(--hw-color-gray-lighter);
+    padding: var(--hw-spacing-small) var(--hw-spacing-small) var(--hw-spacing) var(--hw-spacing-small);
   }
 
   /**
@@ -67,6 +77,7 @@
 
   &__item--expanded .hw-accordion__trigger {
     color: var(--hw-color-primary-dark);
+    font-family: var(--hw-font-primay-bold);
   }
 
   &__item--expanded .hw-accordion__arrow::before {
@@ -75,6 +86,31 @@
 
   &__item--expanded .hw-accordion__arrow::after {
     transform: rotate(-45deg);
+  }
+
+  /**
+   * Variants
+   */
+
+  &--dark {
+    background: var(--hw-color-gray);
+    border: 0;
+
+    & .hw-accordion__trigger {
+      color: var(--hw-color-white);
+      font-size: var(--hw-font-size-h3);
+      border-width: 1px;
+      border-color: rgba(242, 242, 242, 0.1);
+    }
+
+    & .hw-accordion__item:hover {
+      background: var(--hw-color-gray-dark);
+      color: var(--hw-color-white);
+    }
+
+    & .hw-accordion__contents {
+      background: var(--hw-color-gray);
+    }
   }
 }
 

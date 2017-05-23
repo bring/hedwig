@@ -30,23 +30,20 @@ const HWDropdown = ({
    * @param {string} option
    */
   function selectOption(dropdown, selectedOption) {
-    const placeholder = dropdown.getAttribute('data-hw-dropdown-placeholder');
     const placeHolderEl = q('.hw-dropdown__placeholder', dropdown);
 
-    // Check if option is false, if so select default placeholder
-    if (selectedOption === false) {
-      placeHolderEl.innerText = placeholder;
-      return false;
-    }
+    // Update native select element with selected value
+    dropdown.nextElementSibling.value = selectedOption;
 
-    // Otherwise, select passed options
+    // Loop through options and select passed option
     const allOptions = qa('.hw-dropdown__option', dropdown);
     return allOptions.forEach((option) => {
-      if (option.getAttribute('data-hw-dropdown-value') === selectedOption) {
-        option.setAttribute('data-hw-dropdown-option-selected', true);
+      const { hwDropdownValue } = option.dataset;
+      if (hwDropdownValue === selectedOption) {
+        option.dataset.hwDropdownOptionSelected = true;
         placeHolderEl.innerText = option.innerText;
       } else {
-        option.setAttribute('data-hw-dropdown-option-selected', false);
+        option.dataset.hwDropdownOptionSelected = false;
       }
     });
   }
@@ -104,9 +101,10 @@ const HWDropdown = ({
     // Determine if we've clicked on an option
     const target = e.target;
     const dropdown = e.currentTarget;
-    const targetValue = target.getAttribute('data-hw-dropdown-value');
-    if (targetValue) {
-      selectOption(e.currentTarget, targetValue);
+    const { hwDropdownValue } = target.dataset;
+
+    if (hwDropdownValue) {
+      selectOption(e.currentTarget, hwDropdownValue);
     }
 
     // Find dropdown-list within dropdown container
@@ -141,8 +139,9 @@ const HWDropdown = ({
 
     // If value already exists, select next/previous element
     if (selected.length > 0) {
-      const selectedValue = selected[0].getAttribute('data-hw-dropdown-value');
-      const currentIndex = allOptions.findIndex(i => i.getAttribute('data-hw-dropdown-value') === selectedValue);
+      
+      const { hwDropdownValue } = selected[0].dataset;
+      const currentIndex = allOptions.findIndex(i => i.getAttribute('data-hw-dropdown-value') === hwDropdownValue);
       if (direction === 'next') {
         nextEl = allOptions[currentIndex + 1] || allOptions[0];
       } else {
@@ -201,6 +200,34 @@ const HWDropdown = ({
 
 
   /**
+   * @function renderMarkup
+   * @desc Build custom markup from native select element
+   * @param {node} dropdown
+   */
+  function renderMarkup(dropdown, dropdownName) {
+    const isSmall = dropdown.getAttribute('data-hw-dropdown-small') !== null;
+
+    const options = [...dropdown.children].reduce((string, option) => {
+      return `${string}<li class="hw-dropdown__option" data-hw-dropdown-value="${option.value}">${option.text}</li>`;
+    }, '');
+
+    const markup = `
+      <div class="hw-dropdown ${isSmall && 'hw-dropdown--small'}" data-hw-dropdown-custom="${dropdownName}">
+        <div class="hw-dropdown__inner">
+          <div class="hw-dropdown__placeholder"></div>
+          <div class="hw-dropdown__arrow"></div>
+          <ul class="hw-dropdown__options">
+            ${options}
+          </ul>
+        </div>
+      </div>
+    `;
+
+    dropdown.insertAdjacentHTML('beforebegin', markup);
+  }
+
+
+  /**
    * @function init
    * @desc Initialises the dropdown
    */
@@ -216,20 +243,26 @@ const HWDropdown = ({
       if (dropdown.getAttribute('data-hw-dropdown-initialised') === 'true') { return false; }
 
       // Add aria roles and attributes
-      const targetList = dropdown.getAttribute('data-hw-dropdown');
+      const dropdownName = dropdown.getAttribute('data-hw-dropdown');
+
+      // Render custom markup
+      renderMarkup(dropdown, dropdownName);
+      const customDropdown = q(`[data-hw-dropdown-custom="${dropdownName}"]`);
 
       dropdown.setAttribute('data-hw-dropdown-initialised', true);
-      dropdown.setAttribute('aria-controls', targetList);
-      dropdown.setAttribute('aria-role', 'listbox');
-      dropdown.setAttribute('tabindex', '0');
+      customDropdown.setAttribute('aria-controls', dropdownName);
+      customDropdown.setAttribute('aria-role', 'listbox');
+      customDropdown.setAttribute('tabindex', '0');
 
+      // Hide native select element
+      dropdown.style.display = 'none';
 
-      // Find initially selected option, otherwise display placeholder
-      const defaultOption = dropdown.getAttribute('data-hw-dropdown-default-selected') || false;
-      selectOption(dropdown, defaultOption);
+      // Find initially selected option, otherwise select first element
+      const defaultOption = dropdown.getAttribute('data-hw-dropdown-default-selected') || dropdown.children[0].value;
+      selectOption(customDropdown, defaultOption);
 
       // Set up event listeners for opening dropdown
-      bindEvents(dropdown);
+      bindEvents(customDropdown);
     });
   }
 

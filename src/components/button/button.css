@@ -7,39 +7,25 @@
 .hw-button {
   display: inline-block;
   padding: var(--hw-spacing-smaller) var(--hw-spacing);
-  border: 3px solid var(--hw-color-gray);
+  border: 2px solid var(--hw-color-gray);
   background: var(--hw-color-gray);
   color: var(--hw-color-white);
   font-size: var(--hw-font-size-small);
   font-family: var(--hw-font-primay-medium);
-  transition: outline cubic-bezier(0.08, 0.84, 0.07, 0.96) 120ms, background 75ms;
+  line-height: var(--hw-font-size-p);
+  transition: all cubic-bezier(0.08, 0.84, 0.07, 0.96) 120ms, background 75ms;
   cursor: pointer;
 
   /**
    * States
    */
 
-  /*
-    wait
-    &:focus {
-      outline: 6px solid var(--hw-color-secondary);
-    }
-   */
-
-  &:hover,
-  &:active,
-  &:focus {
-    outline: 3px solid var(--hw-color-gray-dark);
-  }
-
-  &:focus:hover {
-    background: var(--hw-color-gray-dark);
-  }
-
   &:disabled {
-    color: var(--hw-color-white);
-    background: var(--hw-color-gray-light);
-    cursor: none;
+    color: var(--hw-color-white) !important;
+    background: var(--hw-color-gray-light) !important;
+    border: 2px solid var(--hw-color-gray-light) !important;
+    outline: 0 !important;
+    cursor: default;
   }
 
   /**
@@ -47,88 +33,103 @@
    */
 
   &--large {
-    padding: var(--hw-spacing-small) var(--hw-spacing-large);
+    padding: var(--hw-spacing-smaller) var(--hw-spacing-large);
     font-size: var(--hw-font-size-p);
   }
 
   &--small {
-    padding: var(--hw-spacing-smallest) var(--hw-spacing-smaller);
+    padding: 0 var(--hw-spacing-smaller);
+  }
+
+  &--full {
+    width: 100%;
   }
 
   /**
    * Variants
    */
 
+  /* Primary button */
+
   &--primary {
-    border: 3px solid var(--hw-color-primary);
+    border: 2px solid var(--hw-color-primary);
     background: var(--hw-color-primary);
+    color: var(--hw-color-black);
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--hw-color-white);
+      border-color: var(--hw-color-primary-dark);
+      background: var(--hw-color-primary-dark);
+      outline: 1px solid var(--hw-color-primary-dark);
+    }
+
+    &:active {
+      background: var(--hw-color-primary) !important;
+    }
+  }
+
+  /* Secondary button */
+
+  &--secondary {
+    border: 2px solid var(--hw-color-gray-dark);
+    background: var(--hw-color-gray-dark);
     color: var(--hw-color-white);
 
     &:hover,
     &:active,
     &:focus {
-      outline: 3px solid var(--hw-color-primary-dark);
+      border-color: var(--hw-color-gray-darker);
+      background: var(--hw-color-gray-darker);
+      outline: 1px solid var(--hw-color-gray-darker);
     }
 
-    &:focus:hover {
-      background: var(--hw-color-primary-dark);
-    }
-
-    &:disabled {
-      border: 3px solid var(--hw-color-gray);
+    &:active {
+      background: var(--hw-color-gray-dark) !important;
     }
   }
+
+  /* Outline button */
 
   &--outline {
     border: 3px solid var(--hw-color-gray);
     background: none;
     color: var(--hw-color-gray);
 
-    &:disabled {
-      outline: 0;
-    }
-
-    &:hover {
-      background: none;
-      outline: 3px solid var(--hw-color-gray);
-    }
-
+    &:hover,
     &:active,
     &:focus {
-      outline: 3px solid var(--hw-color-gray);
-      background: var(--hw-color-gray);
       color: var(--hw-color-white);
+      border-color: var(--hw-color-gray);
+      background: var(--hw-color-gray);
+      outline: 1px solid var(--hw-color-gray);
     }
 
-    &:focus:hover {
-      background: var(--hw-color-gray);
-      color: var(--hw-color-white);
+    &:active {
+      border-color: var(--hw-color-gray-darker);
+      outline: 1px solid var(--hw-color-gray-darker);
     }
   }
+
+  /* White outlined button */
 
   &--outline-white {
     border: 3px solid var(--hw-color-white);
     background: none;
     color: var(--hw-color-white);
 
-    &:disabled {
-      outline: 0;
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--hw-color-gray-darker);
+      border-color: var(--hw-color-white);
+      background: var(--hw-color-white);
+      outline: 1px solid var(--hw-color-white);
     }
 
-    &:hover {
-      outline: 3px solid var(--hw-color-white);
-    }
-
-    &:focus,
     &:active {
-      color: var(--hw-color-gray-dark);
-      background: var(--hw-color-white);
-      outline: 3px solid var(--hw-color-white);
-    }
-
-    &:focus:hover {
-      color: var(--hw-color-gray-dark);
-      background: var(--hw-color-white);
+      background: var(--hw-color-gray-lightest);
     }
   }
 }

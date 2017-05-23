@@ -98,11 +98,11 @@ Linting our project is import to keep a holistic code base. It is recommended to
 
 ### 🌐 Browser support
 
-We support every browser 2 last version, pluss IE10. For IE9 we have partial support. We want it to work, but don't to looks perfect.
+We support every browser 2 last version, pluss IE10. For IE9 we have partial support. We want it to work, but it won't look perfect.
 
 ```
 Note:
-Most components are tested in IE10, but IE9 is still yet te be tested.
+Most components are tested in IE10, but IE9 is still yet to be tested.
 ```
 
 ### 📂 Structure

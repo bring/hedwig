@@ -8,14 +8,14 @@
   &__indicator {
     display: inline-block;
     float: left;
-    transition: background 60ms ease-out;
     margin-top: 0;
     margin-right: 0.4rem;
     border: 3px solid var(--hw-color-gray-light);
     border-radius: 50%;
     background: var(--hw-color-white);
-    width: var(--hw-spacing);
-    height: var(--hw-spacing);
+    width: 22px;
+    height: 22px;
+    transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
   }
 
   & > input {
@@ -25,7 +25,7 @@
     vertical-align: middle;
 
     &:hover ~ .hw-radio-button__indicator {
-      border-color: var(--hw-color-gray);
+      border-color: var(--hw-color-gray-darker);
     }
 
     &:checked ~ .hw-radio-button__indicator {
@@ -34,11 +34,11 @@
       &::after {
         content: '';
         position: absolute;
-        width: var(--hw-spacing-smaller);
-        height: var(--hw-spacing-smaller);
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
-        top: 6px;
-        left: 6px;
+        top: var(--hw-spacing-smallest);
+        left: var(--hw-spacing-smallest);
         background: var(--hw-color-gray-darker);
       }
     }

@@ -28,12 +28,16 @@ All inputs are block elements. For layout, use [grid]('/Grid').
 
 ```html
 <div class="hw-error-summary">
-  <h2>Brukerprofilen din ble ikke opprettet fordi</h2>
-  <ul>
-    <li>E-postadressen er ugyldig</li>
-    <li>Mobilnummeret må inneholde 8 tall</li>
-    <li>Passordet er ikke godkjent</li>
-  </ul>
+  <p class="hw-error-summary__title">
+    Brukerprofilen din ble ikke opprettet fordi
+  </p>
+  <div class="hw-block hw-block--half hw-block--margin-top-half">
+    <ul class="hw-list hw-list--small">
+      <li>E-postadressen er ugyldig</li>
+      <li>Mobilnummeret må inneholde 8 tall</li>
+      <li>Passordet er ikke godkjent</li>
+    </ul>
+  </div>
 </div>
 ```
 

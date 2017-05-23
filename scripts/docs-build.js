@@ -48,6 +48,7 @@ function build() {
 
    var pagesSetup = [];
    var components = [];
+   var pages = [];
 
    glob('src/**/*.md', (err, files) => {
       /**
@@ -99,8 +100,44 @@ function build() {
 
            components.push(componentPage);
 
-        return;
-      }
+          return;
+        }
+
+        /**
+         * Check if the page is a page example
+         let title = filename.split('.').shift();
+        */
+
+        if (file.indexOf('pages') !== -1) {
+
+          var filename = file.split('/').pop();
+          var title = filename.split('.').shift();
+
+          /**
+           * Copy md files to docs
+           */
+
+          fs.createReadStream(file).pipe(
+              fs.createWriteStream('docs/md/' + filename)
+          );
+
+          /**
+           * Add page to a pages array to iterate over later
+           */
+
+           var pageData = {
+             title: 'Pages',
+             pages: [{
+               title: title,
+               path: title,
+               src: `md/${filename}`,
+             }],
+           };
+
+           pages.push(pageData);
+
+          return;
+        }
 
       /**
        * Make index page
@@ -140,10 +177,12 @@ function build() {
    */
 
    const categoryPages = addPagesToComponents(components);
+   const pagePages = addPagesToComponents(pages);
 
    pagesSetup = [
      ...pagesSetup,
      ...categoryPages,
+     ...pagePages,
    ];
 
   /**

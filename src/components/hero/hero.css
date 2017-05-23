@@ -19,6 +19,15 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 
+  /* White angle overlay */
+  &__overlay-angle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(176deg, rgba(52, 173, 255, 0) 55%, #fff 55%);
+  }
+
   /* Content */
 
   &__contents {
@@ -33,7 +42,7 @@
    */
 
   &--large {
-    height: 39vh;
+    height: 45vh;
   }
 
   &--full {

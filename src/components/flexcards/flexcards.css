@@ -1,0 +1,55 @@
+/**
+ * HEWDIG
+ *
+ * Card
+ */
+
+.hw-flexcards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hw-flexcard {
+  flex: 1;
+  position: relative;
+  height: 40vh;
+  min-width: 350px;
+  border: 2px solid white;
+
+  /**
+   * Elements
+   */
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.65) 100%);
+  }
+
+  &__contents {
+    padding: var(--hw-spacing-larger);
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: var(--hw-color-white);
+  }
+
+  &__subtitle {
+    margin-top: var(--hw-spacing-smallest);
+    color: var(--hw-color-white);
+  }
+
+  &__media {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: all 1.4s cubic-bezier(0, 0, 0.1, 1);
+  }
+}
