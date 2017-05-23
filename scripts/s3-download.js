@@ -8,7 +8,7 @@ const params = {
   localDir: 'build',
   deleteRemoved: false,
   s3Params: {
-    Bucket: 'hedwig-cdn',
+    Bucket: 'bring-hedwig',
     Prefix: 'hedwig',
   },
 };
