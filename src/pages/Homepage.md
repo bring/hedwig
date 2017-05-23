@@ -1,4 +1,4 @@
-## Homepage
+### Example homepage layout
 
 
 ```html

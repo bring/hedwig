@@ -30,16 +30,12 @@ const HWDropdown = ({
    * @param {string} option
    */
   function selectOption(dropdown, selectedOption) {
-    const { hwDropdownPlaceholder } = dropdown.dataset;
     const placeHolderEl = q('.hw-dropdown__placeholder', dropdown);
 
-    // Check if option is false, if so select default placeholder
-    if (selectedOption === false) {
-      placeHolderEl.innerText = hwDropdownPlaceholder;
-      return false;
-    }
+    // Update native select element with selected value
+    dropdown.nextElementSibling.value = selectedOption;
 
-    // Otherwise, select passed options
+    // Loop through options and select passed option
     const allOptions = qa('.hw-dropdown__option', dropdown);
     return allOptions.forEach((option) => {
       const { hwDropdownValue } = option.dataset;
@@ -204,6 +200,34 @@ const HWDropdown = ({
 
 
   /**
+   * @function renderMarkup
+   * @desc Build custom markup from native select element
+   * @param {node} dropdown
+   */
+  function renderMarkup(dropdown, dropdownName) {
+    const isSmall = dropdown.getAttribute('data-hw-dropdown-small') !== null;
+
+    const options = [...dropdown.children].reduce((string, option) => {
+      return `${string}<li class="hw-dropdown__option" data-hw-dropdown-value="${option.value}">${option.text}</li>`;
+    }, '');
+
+    const markup = `
+      <div class="hw-dropdown ${isSmall && 'hw-dropdown--small'}" data-hw-dropdown-custom="${dropdownName}">
+        <div class="hw-dropdown__inner">
+          <div class="hw-dropdown__placeholder"></div>
+          <div class="hw-dropdown__arrow"></div>
+          <ul class="hw-dropdown__options">
+            ${options}
+          </ul>
+        </div>
+      </div>
+    `;
+
+    dropdown.insertAdjacentHTML('beforebegin', markup);
+  }
+
+
+  /**
    * @function init
    * @desc Initialises the dropdown
    */
@@ -219,20 +243,26 @@ const HWDropdown = ({
       if (dropdown.getAttribute('data-hw-dropdown-initialised') === 'true') { return false; }
 
       // Add aria roles and attributes
-      const targetList = dropdown.getAttribute('data-hw-dropdown');
+      const dropdownName = dropdown.getAttribute('data-hw-dropdown');
+
+      // Render custom markup
+      renderMarkup(dropdown, dropdownName);
+      const customDropdown = q(`[data-hw-dropdown-custom="${dropdownName}"]`);
 
       dropdown.setAttribute('data-hw-dropdown-initialised', true);
-      dropdown.setAttribute('aria-controls', targetList);
-      dropdown.setAttribute('aria-role', 'listbox');
-      dropdown.setAttribute('tabindex', '0');
+      customDropdown.setAttribute('aria-controls', dropdownName);
+      customDropdown.setAttribute('aria-role', 'listbox');
+      customDropdown.setAttribute('tabindex', '0');
 
+      // Hide native select element
+      dropdown.style.display = 'none';
 
-      // Find initially selected option, otherwise display placeholder
-      const defaultOption = dropdown.getAttribute('data-hw-dropdown-default-selected') || false;
-      selectOption(dropdown, defaultOption);
+      // Find initially selected option, otherwise select first element
+      const defaultOption = dropdown.getAttribute('data-hw-dropdown-default-selected') || dropdown.children[0].value;
+      selectOption(customDropdown, defaultOption);
 
       // Set up event listeners for opening dropdown
-      bindEvents(dropdown);
+      bindEvents(customDropdown);
     });
   }
 
