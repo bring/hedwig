@@ -2,21 +2,16 @@
 
 // Set up our document body
 document.body.innerHTML =
-  `<div class="hw-dropdown"
-    data-hw-dropdown="characters"
-    data-hw-dropdown-placeholder="Choose option"
-    data-hw-dropdown-default-selected="2"
-  >
-    <div class="hw-dropdown__inner">
-      <div class="hw-dropdown__placeholder"></div>
-      <div class="hw-dropdown__arrow"></div>
-      <ul class="hw-dropdown__options">
-        <li class="hw-dropdown__option" data-hw-dropdown-value="1">Harry</li>
-        <li class="hw-dropdown__option" data-hw-dropdown-value="2">Hedwig</li>
-        <li class="hw-dropdown__option" data-hw-dropdown-value="3">Fredrik</li>
-      </ul>
-    </div>
-  </div>`;
+  `<label class="hw-label">
+      Choose character
+      <select
+        data-hw-dropdown="characters"
+        data-hw-dropdown-default-selected="2">
+        <option value="1">Harry</option>
+        <option value="2">Hedwig</option>
+        <option value="3">Fredrik</option>
+      </select>
+    </label>`;
 
 require('../dropdown');
 
