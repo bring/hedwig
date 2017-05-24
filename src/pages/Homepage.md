@@ -9,15 +9,18 @@
 
     <header class="hw-navbar">
       <a href="#" class="hw-navbar__logo">
-        <svg>
+        <svg class="hw-navbar__logo-standard">
           <use xlink:href="#logo"></use>
+        </svg>
+        <svg class="hw-navbar__logo-white">
+          <use xlink:href="#logo-white"></use>
         </svg>
       </a>
       <nav class="hw-navbar__menu">
         <a href="#" class="hw-navbar__item">English</a>
         <a href="#" class="hw-navbar__item">Logg inn</a>
         <button class="hw-navbar__button" data-hw-toggle-menu>
-          Menu
+          <span>Menu</span>
           <div class="hw-hamburger" data-hw-menu-icon>
             <span class="hw-hamburger__part"></span>
             <span class="hw-hamburger__part"></span>
@@ -25,11 +28,7 @@
           </div>
         </button>
       </nav>
-
-      <nav class="hw-navbar__drawer" data-hw-menu-drawer>
-        Menu content
-        <img src="https://unsplash.it/1200/700" />
-      </nav>
+      <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
     </header>
 
 
@@ -126,7 +125,7 @@
 
     <footer class="hw-footer">
 
-      <div class="hw-footer__desktop hw-block--limited">
+      <div class="hw-footer__desktop">
         <div class="hw-grid">
           <div class="hw-grid__item hw-one-quarter">
             <p class="hw-footer__title">Kundeservice</p>
@@ -167,23 +166,21 @@
             </div>
           </div><!--
           --><div class="hw-grid__item hw-one-quarter">
-            <p class="hw-footer__title">Knapper</p>
-            <hr class="hw-hr hw-hr--white" />
-            <div class="hw-block hw-block--full hw-block--margin-top-half">
-              <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
-              <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
-            </div>
+            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
+            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
           </div>
         </div>
       </div>
     
       <div class="hw-footer__mobile">
-        <div class="hw-grid hw-grid--narrow">
-          <div class="hw-grid__item hw-medium--one-half">
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
-          </div><!--
-          --><div class="hw-grid__item hw-medium--one-half">
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
+        <div class="hw-block hw-block--half hw-block--padding-top-half">
+          <div class="hw-grid">
+            <div class="hw-grid__item hw-small--one-half">
+              <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
+            </div><!--
+            --><div class="hw-grid__item hw-small--one-half">
+              <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
+            </div>
           </div>
         </div>
 
@@ -218,11 +215,21 @@
         </ul>
       </div>
 
-      <div class="hw-block hw-block--full hw-block--margin-top">
+      <div class="hw-block hw-block--full hw-block--padding-bottom-half">
         <div class="hw-footer__logo">
           <svg class="hw-icon">
             <use xlink:href="#logo-white"></use>
           </svg>
+        </div>
+      </div>
+
+      <div class="hw-block hw-block--full hw-block--col-white hw-block--padding-top-half hw-block--padding-bottom-half">
+        <div class="hw-footer__legal">
+          <a href="#">© Posten Norge</a>
+          <span>|</span>
+          <a href="#">Personvern og sikkerhet</a>
+          <span>|</span>
+          <a href="#">Cookies</a>
         </div>
       </div>
     </footer>

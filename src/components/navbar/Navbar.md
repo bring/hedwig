@@ -10,8 +10,11 @@ Navbar
 ```html
 <header class="hw-navbar">
   <a href="#" class="hw-navbar__logo">
-    <svg>
+    <svg class="hw-navbar__logo-standard">
       <use xlink:href="#logo"></use>
+    </svg>
+    <svg class="hw-navbar__logo-white">
+      <use xlink:href="#logo-white"></use>
     </svg>
   </a>
   <nav class="hw-navbar__menu">
@@ -19,7 +22,7 @@ Navbar
     <a href="#" class="hw-navbar__item">Logg inn</a>
     <a href="#" class="hw-navbar__item">Søk</a>
     <button class="hw-navbar__button" data-hw-toggle-menu>
-      Menu
+      <span>Menu</span>
       <div class="hw-hamburger" data-hw-menu-icon>
         <span class="hw-hamburger__part"></span>
         <span class="hw-hamburger__part"></span>
@@ -27,11 +30,8 @@ Navbar
       </div>
     </button>
   </nav>
+  <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
 </header>
-<nav class="hw-navbar__drawer" data-hw-menu-drawer>
-  Menu content
-  <img src="https://unsplash.it/1200/700" />
-</nav>
 ```
 
 ```html
@@ -45,7 +45,7 @@ Navbar
     <a href="#" class="hw-navbar__item">English</a>
     <a href="#" class="hw-navbar__item">Login</a>
     <button class="hw-navbar__button" data-hw-toggle-menu>
-      Menu
+      <span>Menu</span>
       <div class="hw-hamburger" data-hw-menu-icon>
         <span class="hw-hamburger__part"></span>
         <span class="hw-hamburger__part"></span>
@@ -53,11 +53,8 @@ Navbar
       </div>
     </button>
   </nav>
+  <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
 </header>
-<nav class="hw-navbar__drawer" data-hw-menu-drawer>
-  Menu content
-  <img src="https://unsplash.it/1200/700" />
-</nav>
 <div class="hw-search" data-hw-search>
   <input
     data-hw-search-input
@@ -79,7 +76,7 @@ Navbar
     <a href="#" class="hw-navbar__item">English</a>
     <a href="#" class="hw-navbar__item">Login</a>
     <button class="hw-navbar__button" data-hw-toggle-menu>
-      Menu
+      <span>Menu</span>
       <div class="hw-hamburger" data-hw-menu-icon>
         <span class="hw-hamburger__part"></span>
         <span class="hw-hamburger__part"></span>
@@ -87,11 +84,8 @@ Navbar
       </div>
     </button>
   </nav>
+  <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
 </header>
-<nav class="hw-navbar__drawer" data-hw-menu-drawer>
-  Menu content
-  <img src="https://unsplash.it/1200/700" />
-</nav>
 <div class="hw-search" data-hw-search>
   <input
     data-hw-search-input

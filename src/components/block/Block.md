@@ -90,4 +90,5 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 ```code
 [Primary]                 .hw-block--col-primary
 [Gray]                    .hw-block--col-gray
+[White]                   .hw-block--col-white
 ```

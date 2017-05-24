@@ -7,6 +7,142 @@
   width: 100%;
   border-bottom: 1px solid var(--hw-color-gray-lighter);
 
+  &__logo {
+    position: relative;
+    width: 100px;
+    height: 70px;
+    padding: 6px;
+    margin: 0 auto;
+
+    @media (--medium) {
+      position: relative;
+      margin: 0 0 0 1rem;
+    }
+  }
+
+  &__logo-white {
+    display: none;
+  }
+
+  &__logo:hover,
+  &__logo:focus {
+    cursor: pointer;
+    outline: 0;
+    background: var(--hw-color-gray-lightest);
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__item {
+    padding: var(--hw-spacing);
+    display: none;
+    color: var(--hw-color-gray-dark);
+    border-left: 1px solid var(--hw-color-gray-lighter);
+    text-decoration: none;
+    transition: background 100ms;
+    font-family: var(--hw-font-primay-bold);
+    text-transform: uppercase;
+    font-size: var(--hw-font-size-small);
+
+    @media (--medium) {
+      display: inline-block;
+    }
+  }
+
+  &__item:hover,
+  &__item:focus {
+    background: var(--hw-color-gray-lightest);
+    outline: 0;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: var(--hw-spacing);
+    border: 0;
+    color: var(--hw-color-gray-dark);
+    font-family: var(--hw-font-primay-bold);
+    text-transform: uppercase;
+    font-size: var(--hw-font-size-small);
+
+    & > span {
+      display: none;
+
+      @media (--medium) {
+        display: inline;
+      }
+    }
+
+    @media (--medium) {
+      position: relative;
+      border-left: 1px solid var(--hw-color-gray-lighter);
+    }
+  }
+
+  &__button svg {
+    margin-left: var(--hw-spacing-smaller);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background: var(--hw-color-gray-lightest);
+    outline: 0;
+    cursor: pointer;
+  }
+
+  &__drawer {
+    background: var(--hw-color-gray);
+    width: 100%;
+    min-height: 100vh;
+    padding: var(--hw-spacing);
+    position: absolute;
+    top: 0;
+    display: none;
+  }
+
+  /**
+  * States
+  */
+
+  &--active {
+    background: transparent;
+
+    & .hw-navbar__drawer {
+      animation: drawer-animation 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+      display: block;
+      z-index: 2000;
+    }
+
+    & .hw-navbar__logo {
+      z-index: 2001;
+      background: transparent !important;
+    }
+
+    & .hw-navbar__logo-standard {
+      display: none;
+    }
+
+    & .hw-navbar__logo-white {
+      display: block;
+    }
+
+    & .hw-navbar__button {
+      z-index: 2001;
+      color: var(--hw-color-white);
+      background: transparent !important;
+      border-color: transparent !important;
+    }
+  }
+
+  /**
+  * Variants
+  */
+
   &--absolute {
     position: absolute;
     top: 0;
@@ -59,80 +195,5 @@
 
   &--frontpage {
     margin-bottom: 0;
-  }
-
-  &__logo {
-    width: 100px;
-    height: 70px;
-    padding: 6px;
-    margin-left: 1rem;
-  }
-
-  &__logo:hover,
-  &__logo:focus {
-    cursor: pointer;
-    outline: 0;
-    background: var(--hw-color-gray-lightest);
-  }
-
-  &__menu {
-    display: flex;
-  }
-
-  &__item {
-    padding: var(--hw-spacing);
-    display: inline-block;
-    color: var(--hw-color-gray-dark);
-    border-left: 1px solid var(--hw-color-gray-lighter);
-    text-decoration: none;
-    transition: background 100ms;
-    font-family: var(--hw-font-primay-bold);
-    text-transform: uppercase;
-    font-size: var(--hw-font-size-small);
-  }
-
-  &__item:hover,
-  &__item:focus {
-    background: var(--hw-color-gray-lightest);
-    outline: 0;
-  }
-
-  &__button {
-    display: flex;
-    align-items: center;
-    padding: var(--hw-spacing);
-    border: 0;
-    color: var(--hw-color-gray-dark);
-    border-left: 1px solid var(--hw-color-gray-lighter);
-    font-family: var(--hw-font-primay-bold);
-    text-transform: uppercase;
-    font-size: var(--hw-font-size-small);
-  }
-
-  &__button svg {
-    margin-left: var(--hw-spacing-smaller);
-  }
-
-  &__button:hover,
-  &__button:focus {
-    background: var(--hw-color-gray-lightest);
-    outline: 0;
-    cursor: pointer;
-  }
-
-  &__drawer {
-    background: var(--hw-color-white);
-    width: 100%;
-    min-height: 100vh;
-    padding: var(--hw-spacing);
-    position: absolute;
-    top: 71px;
-    display: none;
-  }
-
-  &__drawer--active {
-    animation: drawer-animation 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-    display: block;
-    z-index: 2000;
   }
 }

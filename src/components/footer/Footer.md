@@ -49,23 +49,21 @@
           </div>
         </div><!--
         --><div class="hw-grid__item hw-one-quarter">
-          <p class="hw-footer__title">Knapper</p>
-          <hr class="hw-hr hw-hr--white" />
-          <div class="hw-block hw-block--full hw-block--margin-top-half">
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
-          </div>
+          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
+          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
         </div>
       </div>
     </div>
   
     <div class="hw-footer__mobile">
-      <div class="hw-grid hw-grid--narrow">
-        <div class="hw-grid__item hw-medium--one-half">
-          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
-        </div><!--
-        --><div class="hw-grid__item hw-medium--one-half">
-          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
+      <div class="hw-block hw-block--half hw-block--padding-top-half">
+        <div class="hw-grid">
+          <div class="hw-grid__item hw-small--one-half">
+            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
+          </div><!--
+          --><div class="hw-grid__item hw-small--one-half">
+            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
+          </div>
         </div>
       </div>
 
@@ -100,11 +98,21 @@
       </ul>
     </div>
 
-    <div class="hw-block hw-block--full hw-block--margin-top">
+    <div class="hw-block hw-block--full hw-block--padding-bottom-half">
       <div class="hw-footer__logo">
         <svg class="hw-icon">
           <use xlink:href="#logo-white"></use>
         </svg>
+      </div>
+    </div>
+
+    <div class="hw-block hw-block--full hw-block--col-white hw-block--padding-top-half hw-block--padding-bottom-half">
+      <div class="hw-footer__legal">
+        <a href="#">© Posten Norge</a>
+        <span>|</span>
+        <a href="#">Personvern og sikkerhet</a>
+        <span>|</span>
+        <a href="#">Cookies</a>
       </div>
     </div>
   </footer>

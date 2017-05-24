@@ -8,13 +8,19 @@ import q from '../../utilities/js/q';
  */
 
 const HWNavbar = ({
+  navbarSelector = '.hw-navbar',
   menuButtonSelector = '[data-hw-toggle-menu]',
-  menuButtonIconSelector = '[data-hw-menu-icon]',
-  drawerSelector = '[data-hw-menu-drawer]',
-  activeIconClass = 'hw-hamburger--active',
-  activeDrawerClass = 'hw-navbar__drawer--active',
+  hamburgerIcon = '[data-hw-menu-icon]',
+  activeClass = 'hw-navbar--active',
+  activeHamburgerClass = 'hw-hamburger--active',
 } = {}) => {
-  const menuButton = q(menuButtonSelector);
+
+  // Module settings object
+  const SETTINGS = {
+    navbar: q(navbarSelector), // All dropdown DOM nodes
+    menuButton: q(menuButtonSelector),
+    hamburgerIcon: q(hamburgerIcon),
+  };
 
   /**
    * @function toggleMenu
@@ -22,32 +28,29 @@ const HWNavbar = ({
    */
 
   function toggleMenu() {
-    const menuButtonIcon = q(menuButtonIconSelector);
-    const drawer = q(drawerSelector);
-
-    if (menuButtonIcon.classList.contains(activeIconClass)) {
-      menuButtonIcon.classList.remove(activeIconClass);
-      drawer.classList.remove(activeDrawerClass);
+    if (SETTINGS.navbar.classList.contains(activeClass)) {
+      SETTINGS.navbar.classList.remove(activeClass);
+      SETTINGS.hamburgerIcon.classList.remove(activeHamburgerClass);
       return;
     }
 
-    menuButtonIcon.classList.add(activeIconClass);
-    drawer.classList.add(activeDrawerClass);
+    SETTINGS.navbar.classList.add(activeClass);
+    SETTINGS.hamburgerIcon.classList.add(activeHamburgerClass);
   }
 
   function init() {
-    if (!menuButton) {
+    if (!SETTINGS.navbar) {
       return;
     }
 
     // Skip if already initialised
-    if (menuButton.getAttribute('data-hw-menu-initialised') === 'true') { return; }
+    if (SETTINGS.menuButton.getAttribute('data-hw-menu-initialised') === 'true') { return; }
 
     // Mark as initialised
-    menuButton.setAttribute('data-hw-menu-initialised', true);
+    SETTINGS.menuButton.setAttribute('data-hw-menu-initialised', true);
 
-
-    menuButton.addEventListener('click', toggleMenu);
+    // Attach event listeners
+    SETTINGS.menuButton.addEventListener('click', toggleMenu);
   }
 
   init();

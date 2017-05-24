@@ -29,6 +29,10 @@
    * Animation: Hamburger to X
    */
 
+  &.hw-hamburger--active .hw-hamburger__part {
+    background: var(--hw-color-white);
+  }
+
   &.hw-hamburger--active > .hw-hamburger__part:first-child {
     transform: translateY(9px) rotate(45deg);
   }

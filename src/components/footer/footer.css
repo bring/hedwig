@@ -5,11 +5,6 @@
 .hw-footer {
   display: block;
   background: var(--hw-color-gray);
-  padding: var(--hw-spacing) var(--hw-spacing) var(--hw-spacing-smaller) var(--hw-spacing);
-
-  @media (--medium) {
-    padding: var(--hw-spacing) var(--hw-spacing-larger) var(--hw-spacing-smaller) var(--hw-spacing-larger);
-  }
 
   /**
    * Elements
@@ -23,6 +18,7 @@
 
   &__desktop {
     display: none;
+    padding: var(--hw-spacing) var(--hw-spacing-larger) var(--hw-spacing-smaller) var(--hw-spacing-larger);
 
     @media (--medium) {
       display: block;
@@ -33,6 +29,7 @@
     color: var(--hw-color-white);
     margin-bottom: var(--hw-spacing-smaller);
     font-family: var(--hw-font-primay-medium);
+    font-size: var(--hw-font-size-lead);
   }
 
   &__links {
@@ -41,7 +38,6 @@
     list-style: none;
 
     & a {
-      font-size: var(--hw-font-size-small);
       font-family: var(--hw-font-primay-medium);
       line-height: 1.5;
       color: var(--hw-color-white);
@@ -49,7 +45,8 @@
   }
 
   &__button {
-    margin-bottom: var(--hw-spacing-smallest);
+    margin-bottom: var(--hw-spacing-smaller);
+    font-family: var(--hw-font-primay-bold);
   }
 
   &__logo svg {
@@ -57,6 +54,35 @@
     height: 70px;
     width: 120px;
     margin: 0 auto;
+  }
+
+  &__legal {
+    display: flex;
+    justify-content: space-around;
+    max-width: 90%;
+    margin: 0 auto;
+
+    @media (--medium) {
+      max-width: 600px;
+    }
+
+    & a {
+      font-family: var(--hw-font-primay-medium);
+      font-size: 12px;
+
+      @media (--medium) {
+        font-size: var(--hw-font-size-small);
+      }
+    }
+
+    & span {
+      font-family: var(--hw-font-primay-regular);
+      font-size: 12px;
+
+      @media (--medium) {
+        font-size: var(--hw-font-size-small);
+      }
+    }
   }
 }
 
