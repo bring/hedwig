@@ -1,7 +1,10 @@
 .hw-hamburger {
   width: var(--hw-spacing);
   display: inline-block;
-  margin-left: var(--hw-spacing-smaller);
+
+  @media (--large) {
+    margin-left: var(--hw-spacing-smaller);
+  }
 
   &__part {
     display: block;

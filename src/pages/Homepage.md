@@ -126,48 +126,50 @@
     <footer class="hw-footer">
 
       <div class="hw-footer__desktop">
-        <div class="hw-grid">
-          <div class="hw-grid__item hw-one-quarter">
-            <p class="hw-footer__title">Kundeservice</p>
-            <hr class="hw-hr hw-hr--white" />
-            <div class="hw-block hw-block--full hw-block--margin-top-half">
-              <ul class="hw-footer__links">
-                <li><a href="#">Kontakt oss</a></li>
-                <li><a href="#">Aktuelt nå</a></li>
-                <li><a href="#">Driftsmeldinger</a></li>
-                <li><a href="#">Reklamasjon og klager</a></li>
-                <li><a href="#">Fakturaspørsmål</a></li>
-              </ul>
+        <div class="hw-block hw-block--full hw-block--limited">
+          <div class="hw-grid">
+            <div class="hw-grid__item hw-one-quarter">
+              <p class="hw-footer__title">Kundeservice</p>
+              <hr class="hw-hr hw-hr--white" />
+              <div class="hw-block hw-block--full hw-block--margin-top-half">
+                <ul class="hw-footer__links">
+                  <li><a href="#">Kontakt oss</a></li>
+                  <li><a href="#">Aktuelt nå</a></li>
+                  <li><a href="#">Driftsmeldinger</a></li>
+                  <li><a href="#">Reklamasjon og klager</a></li>
+                  <li><a href="#">Fakturaspørsmål</a></li>
+                </ul>
+              </div>
+            </div><!--
+            --><div class="hw-grid__item hw-one-quarter">
+              <p class="hw-footer__title">Om Bring</p>
+              <hr class="hw-hr hw-hr--white" />
+              <div class="hw-block hw-block--full hw-block--margin-top-half">
+                <ul class="hw-footer__links">
+                  <li><a href="#">Våre tjenester</a></li>
+                  <li><a href="#">Priser</a></li>
+                  <li><a href="#">Vilkår</a></li>
+                  <li><a href="#">Jobb og karriere</a></li>
+                  <li><a href="#">Miljø</a></li>
+                </ul>
+              </div>
+            </div><!--
+            --><div class="hw-grid__item hw-one-quarter">
+              <p class="hw-footer__title">Søk etter</p>
+              <hr class="hw-hr hw-hr--white" />
+              <div class="hw-block hw-block--full hw-block--margin-top-half">
+                <ul class="hw-footer__links">
+                  <li><a href="#">Postkontor og åpningstider</a></li>
+                  <li><a href="#">Navn og adresser</a></li>
+                  <li><a href="#">Postnummert og sted</a></li>
+                  <li><a href="#">Ledige stillinger</a></li>
+                </ul>
+              </div>
+            </div><!--
+            --><div class="hw-grid__item hw-one-quarter">
+              <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
+              <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
             </div>
-          </div><!--
-          --><div class="hw-grid__item hw-one-quarter">
-            <p class="hw-footer__title">Om Bring</p>
-            <hr class="hw-hr hw-hr--white" />
-            <div class="hw-block hw-block--full hw-block--margin-top-half">
-              <ul class="hw-footer__links">
-                <li><a href="#">Våre tjenester</a></li>
-                <li><a href="#">Priser</a></li>
-                <li><a href="#">Vilkår</a></li>
-                <li><a href="#">Jobb og karriere</a></li>
-                <li><a href="#">Miljø</a></li>
-              </ul>
-            </div>
-          </div><!--
-          --><div class="hw-grid__item hw-one-quarter">
-            <p class="hw-footer__title">Søk etter</p>
-            <hr class="hw-hr hw-hr--white" />
-            <div class="hw-block hw-block--full hw-block--margin-top-half">
-              <ul class="hw-footer__links">
-                <li><a href="#">Postkontor og åpningstider</a></li>
-                <li><a href="#">Navn og adresser</a></li>
-                <li><a href="#">Postnummert og sted</a></li>
-                <li><a href="#">Ledige stillinger</a></li>
-              </ul>
-            </div>
-          </div><!--
-          --><div class="hw-grid__item hw-one-quarter">
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
           </div>
         </div>
       </div>
