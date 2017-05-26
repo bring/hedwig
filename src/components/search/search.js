@@ -12,6 +12,7 @@ import findParent from '../../utilities/js/findParent';
 const HWSearch = ({
   activeClass = 'hw-search--active',
   dirtyClass = 'hw-search--dirty',
+  staticClass = 'hw-search--static',
   searchContainerSelector = '[data-hw-search]',
   searchInputSelector = '[data-hw-search-input]',
   placeholderSelector = '[data-hw-search-placeholder]',
@@ -36,6 +37,12 @@ const HWSearch = ({
     const texts = JSON.parse(hwSearchPlaceholders);
 
     placeholder.innerText = texts[0];
+
+    // Bail out if only one text
+    if (texts.length < 2) {
+      search.classList.add(staticClass);
+      return;
+    }
 
     let interval = 1;
 
@@ -102,6 +109,8 @@ const HWSearch = ({
 
       // Set up event listeners
       bindEvents(search);
+
+      // Start placeholder rotation
       startPlaceholderRotate(search);
     });
   }

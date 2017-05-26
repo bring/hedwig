@@ -54,6 +54,12 @@
    * Variants
    */
 
+  &--static {
+    & .hw-search__placeholder {
+      animation: none;
+    }
+  }
+
   &--active {
     & .hw-search__placeholder {
       visibility: hidden;
