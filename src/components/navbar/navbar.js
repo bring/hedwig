@@ -10,8 +10,10 @@ import q from '../../utilities/js/q';
 const HWNavbar = ({
   navbarSelector = '.hw-navbar',
   menuButtonSelector = '[data-hw-toggle-menu]',
+  searchButtonSelector = '[data-hw-toggle-search]',
   hamburgerIcon = '[data-hw-menu-icon]',
   activeClass = 'hw-navbar--active',
+  showSearchClass = 'hw-navbar--searching',
   activeHamburgerClass = 'hw-hamburger--active',
 } = {}) => {
 
@@ -19,6 +21,7 @@ const HWNavbar = ({
   const SETTINGS = {
     navbar: q(navbarSelector), // All dropdown DOM nodes
     menuButton: q(menuButtonSelector),
+    searchButton: q(searchButtonSelector),
     hamburgerIcon: q(hamburgerIcon),
   };
 
@@ -38,6 +41,15 @@ const HWNavbar = ({
     SETTINGS.hamburgerIcon.classList.add(activeHamburgerClass);
   }
 
+  function toggleSearch() {
+    if (SETTINGS.navbar.classList.contains(showSearchClass)) {
+      SETTINGS.navbar.classList.remove(showSearchClass);
+      return;
+    }
+
+    SETTINGS.navbar.classList.add(showSearchClass);
+  }
+
   function init() {
     if (!SETTINGS.navbar) {
       return;
@@ -51,6 +63,11 @@ const HWNavbar = ({
 
     // Attach event listeners
     SETTINGS.menuButton.addEventListener('click', toggleMenu);
+
+    // Optional search button
+    if (SETTINGS.searchButton) {
+      SETTINGS.searchButton.addEventListener('click', toggleSearch);
+    }
   }
 
   init();

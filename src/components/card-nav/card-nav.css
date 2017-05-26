@@ -51,7 +51,7 @@
     z-index: 1;
   }
   &__title {
-    color: var(--hw-color-gray-dark);
+    color: var(--hw-color-gray-darker);
     font-size: var(--hw-font-size-h1);
     font-family: var(--hw-font-primay-medium);
     margin-bottom: var(--hw-spacing-smallest);

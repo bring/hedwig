@@ -1,11 +1,13 @@
 
-Navbar
+## Navbar
 
 ```code
 [Base]            .hw-navbar
 [Absolute]        .hw-navbar--absolute
 [Transparent]     .hw-navbar--transparent
 ```
+
+### Default navbar (with search)
 
 ```html
 <header class="hw-navbar">
@@ -20,8 +22,13 @@ Navbar
   <nav class="hw-navbar__menu">
     <a href="#" class="hw-navbar__item">English</a>
     <a href="#" class="hw-navbar__item">Logg inn</a>
-    <a href="#" class="hw-navbar__item">Søk</a>
-    <button class="hw-navbar__button" data-hw-toggle-menu>
+    <button class="hw-navbar__search-button" data-hw-toggle-search>
+      Søk
+      <svg class="hw-navbar__search-icon">
+        <use xlink:href="#search"></use>
+      </svg>
+    </button>
+    <button class="hw-navbar__menu-button" data-hw-toggle-menu>
       <span>Menu</span>
       <div class="hw-hamburger" data-hw-menu-icon>
         <span class="hw-hamburger__part"></span>
@@ -31,8 +38,27 @@ Navbar
     </button>
   </nav>
   <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
+  <section class="hw-navbar__search">
+    <div class="hw-search"
+      data-hw-search
+      data-hw-search-placeholders='["Søk etter pakke", "Eks.: 1212012381238123", "Eller på nettstedet", "Eks.: Bedriftspakke"]'
+    >
+      <span class="hw-search__background"></span>
+      <div class="hw-search__inner">
+        <input
+          data-hw-search-input
+          class="hw-search__input" type="text" />
+        <svg class="hw-search__icon">
+          <use xlink:href="#search"></use>
+        </svg>
+        <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+      </div>
+    </div>
+  </section>
 </header>
 ```
+
+### Navbar without search
 
 ```html
 <header class="hw-navbar">
@@ -44,7 +70,7 @@ Navbar
   <nav class="hw-navbar__menu">
     <a href="#" class="hw-navbar__item">English</a>
     <a href="#" class="hw-navbar__item">Login</a>
-    <button class="hw-navbar__button" data-hw-toggle-menu>
+    <button class="hw-navbar__menu-button" data-hw-toggle-menu>
       <span>Menu</span>
       <div class="hw-hamburger" data-hw-menu-icon>
         <span class="hw-hamburger__part"></span>
@@ -55,15 +81,9 @@ Navbar
   </nav>
   <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
 </header>
-<div class="hw-search" data-hw-search>
-  <input
-    data-hw-search-input
-    class="hw-search__input" type="text" placeholder="Søk pakke eller på nettstedet" />
-  <svg class="hw-search__icon">
-    <use xlink:href="#search"></use>
-  </svg>
-</div>
 ```
+
+### Transparent navbar
 
 ```html
 <header class="hw-navbar hw-navbar--transparent">
@@ -75,7 +95,7 @@ Navbar
   <nav class="hw-navbar__menu">
     <a href="#" class="hw-navbar__item">English</a>
     <a href="#" class="hw-navbar__item">Login</a>
-    <button class="hw-navbar__button" data-hw-toggle-menu>
+    <button class="hw-navbar__menu-button" data-hw-toggle-menu>
       <span>Menu</span>
       <div class="hw-hamburger" data-hw-menu-icon>
         <span class="hw-hamburger__part"></span>
@@ -86,12 +106,4 @@ Navbar
   </nav>
   <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
 </header>
-<div class="hw-search" data-hw-search>
-  <input
-    data-hw-search-input
-    class="hw-search__input" type="text" placeholder="Søk pakke eller på nettstedet" />
-  <svg class="hw-search__icon">
-    <use xlink:href="#search"></use>
-  </svg>
-</div>
 ```

@@ -37,6 +37,32 @@
     text-align: center;
   }
 
+  /* Full page overlay (used by search variant) */
+
+  &__overlay {
+    visibility: hidden;
+    background: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  &__search-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    @media (--medium) {
+      width: 600px;
+    }
+  }
+
   /**
    * Variants
    */
@@ -47,6 +73,31 @@
 
   &--full {
     height: 100vh;
+  }
+
+  /**
+   * States
+   */
+
+  &--searching {
+    & .hw-hero__overlay {
+      visibility: visible;
+      opacity: 0.3;
+      z-index: 1;
+    }
+  }
+
+  &--search-sticky {
+    & .hw-search__inner {
+      transform: none;
+      width: 100vw;
+      right: 0;
+      left: 0;
+      top: 0;
+      z-index: 1000;
+      position: fixed;
+      box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.2);
+    }
   }
 }
 
