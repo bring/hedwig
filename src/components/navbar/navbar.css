@@ -14,7 +14,7 @@
   &__logo {
     position: relative;
     width: 121px;
-    height: 71px;
+    height: 73px;
     margin: 0 auto;
 
     @media (--large) {
@@ -113,6 +113,20 @@
     display: none;
     position: absolute;
     width: 100%;
+    padding: 0 220px;
+    z-index: 2000;
+  }
+
+  &__overlay {
+    visibility: hidden;
+    background: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
 
   &__drawer {
@@ -169,6 +183,17 @@
   &--searching {
     & .hw-navbar__search {
       display: block;
+      z-index: 4000;
+    }
+
+    & .hw-navbar__menu {
+      display: none;
+    }
+
+    & .hw-navbar__overlay {
+      visibility: visible;
+      opacity: 0.3;
+      z-index: 3000;
     }
   }
 

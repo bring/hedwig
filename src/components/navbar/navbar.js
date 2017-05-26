@@ -11,6 +11,7 @@ const HWNavbar = ({
   navbarSelector = '.hw-navbar',
   menuButtonSelector = '[data-hw-toggle-menu]',
   searchButtonSelector = '[data-hw-toggle-search]',
+  overlaySelector = '[data-hw-navbar-overlay]',
   hamburgerIcon = '[data-hw-menu-icon]',
   activeClass = 'hw-navbar--active',
   showSearchClass = 'hw-navbar--searching',
@@ -19,9 +20,10 @@ const HWNavbar = ({
 
   // Module settings object
   const SETTINGS = {
-    navbar: q(navbarSelector), // All dropdown DOM nodes
+    navbar: q(navbarSelector), // All navbar DOM nodes
     menuButton: q(menuButtonSelector),
     searchButton: q(searchButtonSelector),
+    overlay: q(overlaySelector),
     hamburgerIcon: q(hamburgerIcon),
   };
 
@@ -67,6 +69,7 @@ const HWNavbar = ({
     // Optional search button
     if (SETTINGS.searchButton) {
       SETTINGS.searchButton.addEventListener('click', toggleSearch);
+      SETTINGS.overlay.addEventListener('click', toggleSearch);
     }
   }
 

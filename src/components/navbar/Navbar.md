@@ -38,6 +38,7 @@
     </button>
   </nav>
   <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
+  <div class="hw-navbar__overlay" data-hw-navbar-overlay></div>
   <section class="hw-navbar__search">
     <div class="hw-search"
       data-hw-search
