@@ -36,23 +36,25 @@
 
       <!-- Hero -->
 
-      <section class="hw-hero hw-hero--large">
+      <section class="hw-hero hw-hero--large" data-hw-hero>
         <div class="hw-hero__image rellax" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero.png');"
         data-rellax-speed="-4"></div>
           <div class="hw-hero__overlay-angle"></div>
-          <div class="hw-search hw-search--frontpage"
-            data-hw-search
-            data-hw-search-placeholders='["Søk etter pakke", "Eks.: 1212012381238123", "Eller på nettstedet", "Eks.: Bedriftspakke"]'
-          >
-            <span class="hw-search__background"></span>
-            <div class="hw-search__inner">
-              <input
-                data-hw-search-input
-                class="hw-search__input" type="text" />
-              <svg class="hw-search__icon">
-                <use xlink:href="#search"></use>
-              </svg>
-              <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+          <div class="hw-hero__overlay"></div>
+          <div class="hw-hero__search-container">
+            <div class="hw-search"
+              data-hw-search
+              data-hw-search-placeholders='["Søk etter pakke", "Eks.: 1212012381238123", "Eller på nettstedet", "Eks.: Bedriftspakke"]'
+            >
+              <div class="hw-search__inner">
+                <input
+                  data-hw-search-input
+                  class="hw-search__input" type="text" />
+                <svg class="hw-search__icon">
+                  <use xlink:href="#search"></use>
+                </svg>
+                <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+              </div>
             </div>
           </div>
         </div>

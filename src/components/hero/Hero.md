@@ -32,9 +32,15 @@ Hero component
 
 ### Large hero with angled overlay and search
 
+
+```code
+[data-hw-hero-search]   Attaches interactivity (required)
+
+```
+
 ```html|span-6
-  <div class="hw-hero hw-hero--large rellax">
-    <div class="hw-hero__image rellax" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');"
+  <div class="hw-hero hw-hero--large" data-hw-hero>
+    <div class="hw-hero__image" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');"
     data-rellax-speed="-4"></div>
     <div class="hw-hero__overlay-angle"></div>
     <div class="hw-hero__overlay"></div>

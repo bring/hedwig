@@ -10,17 +10,17 @@ import findParent from '../../utilities/js/findParent';
  */
 
 const HWSearch = ({
+  selector = '[data-hw-search]',
   activeClass = 'hw-search--active',
   dirtyClass = 'hw-search--dirty',
   staticClass = 'hw-search--static',
-  searchContainerSelector = '[data-hw-search]',
   searchInputSelector = '[data-hw-search-input]',
   placeholderSelector = '[data-hw-search-placeholder]',
 } = {}) => {
 
   // Module settings object
   const SETTINGS = {
-    elements: qa(searchContainerSelector), // All dropdown DOM nodes
+    elements: qa(selector), // All dropdown DOM nodes
   };
 
   // const searchContainer = q(searchContainerSelector);

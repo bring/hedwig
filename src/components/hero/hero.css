@@ -57,6 +57,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    z-index: 1000;
 
     @media (--medium) {
       width: 600px;
