@@ -13,7 +13,6 @@ Copy any of the below code snippets into a `.html` file and play around.
     <title>Hedwig - blank page</title>
     <link href="https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
     <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   </head>
 <body>
 
@@ -30,7 +29,7 @@ Copy any of the below code snippets into a `.html` file and play around.
       <!-- Enter block contents here -->
 
     </section>
-  
+
   </main>
   <script src="http://bring-hedwig.s3.amazonaws.com/hedwig/main.js"></script>
   <script src="https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js"></script>
@@ -46,7 +45,6 @@ Copy any of the below code snippets into a `.html` file and play around.
   <title>Article - example</title>
   <link href="https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
   <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 </head>
 <body>
 
@@ -68,7 +66,7 @@ Copy any of the below code snippets into a `.html` file and play around.
         <p class="hw-text-lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         <hr class="hw-hr" />
         <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        
+
         <h3>Where does it come from</h3>
         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
         <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
@@ -90,7 +88,7 @@ Copy any of the below code snippets into a `.html` file and play around.
         <h3>Where does it come from</h3>
         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
         <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-  
+
         <div class="hw-block hw-block--full hw-block--margin-bottom-double hw-block--margin-top-double">
           <figure class="hw-image">
             <img src="http://www.owlcentre.com/images/2013_owl_for_leaflet_cover_large.jpg" />
@@ -102,10 +100,10 @@ Copy any of the below code snippets into a `.html` file and play around.
 
         <h3>Final headline</h3>
         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-      
+
       </div> <!-- End of wysiwyg -->
     </article>
-  
+
   </main>
   <script src="http://bring-hedwig.s3.amazonaws.com/hedwig/main.js"></script>
   <script src="https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js"></script>
@@ -122,7 +120,6 @@ Copy any of the below code snippets into a `.html` file and play around.
     <title>Hedwig - Form example</title>
     <link href="https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
     <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   </head>
 <body>
 
@@ -148,7 +145,7 @@ Copy any of the below code snippets into a `.html` file and play around.
 
       <form>
         <div class="hw-block hw-block--full hw-block--margin-bottom">
-          
+
           <fieldset class="hw-fieldset">
             <legend class="hw-fieldset__legend">
               Hva slags tjenester er du interessert i?
@@ -157,31 +154,31 @@ Copy any of the below code snippets into a `.html` file and play around.
             <div class="hw-fieldset__content">
               <div class="hw-grid">
                 <div class="hw-grid__item hw-one-half">
-                  
+
                   <label class="hw-checkbox">
                     Ekspress
                     <input type="checkbox" />
                     <div class="hw-checkbox__indicator"></div>
                   </label>
-                  
+
                   <label class="hw-checkbox">
                     Post
                     <input type="checkbox" />
                     <div class="hw-checkbox__indicator"></div>
                   </label>
-                  
+
                   <label class="hw-checkbox">
                     E-handel
                     <input type="checkbox" />
                     <div class="hw-checkbox__indicator"></div>
                   </label>
-                  
+
                   <label class="hw-checkbox">
                     Reklame
                     <input type="checkbox" />
                     <div class="hw-checkbox__indicator"></div>
                   </label>
-                  
+
                   <label class="hw-checkbox">
                     Termo
                     <input type="checkbox" />
@@ -190,19 +187,19 @@ Copy any of the below code snippets into a `.html` file and play around.
 
                 </div><!--
                 --><div class="hw-grid__item hw-one-half">
-                  
+
                   <label class="hw-checkbox">
                     Interasjonal transport
                     <input type="checkbox" />
                     <div class="hw-checkbox__indicator"></div>
                   </label>
-                  
+
                   <label class="hw-checkbox">
                     Nasjonal transportransport
                     <input type="checkbox" />
                     <div class="hw-checkbox__indicator"></div>
                   </label>
-                  
+
                   <label class="hw-checkbox">
                     Lager
                     <input type="checkbox" />
@@ -297,9 +294,9 @@ Copy any of the below code snippets into a `.html` file and play around.
         </div>
 
       </form>
-      
+
     </section>
-  
+
   </main>
   <script src="http://bring-hedwig.s3.amazonaws.com/hedwig/main.js"></script>
   <script src="https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js"></script>
