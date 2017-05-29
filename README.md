@@ -137,3 +137,8 @@ Most components are tested in IE10, but IE9 is still yet to be tested.
 * [concurrently](https://www.npmjs.com/package/concurrently) - to run multiple scripts
 * [Catalog](https://github.com/interactivethings/catalog) - for documentation
 * [svgo](https://github.com/svg/svgo), [svg2sprite](https://github.com/mrmlnc/svg2sprite) - for SVG's
+
+## ⚖️ Licenses
+
+* Source code is licensed under [BSD 2-Clause](https://github.com/bring/hedwig/LICENSE.txt)
+* All icons and images are licensed under [Creative Commons Attribution-NoDerivatives 4.0](https://github.com/bring/hedwig/LICENSE-icons-images.txt)
