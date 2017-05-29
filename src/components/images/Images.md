@@ -1,5 +1,7 @@
 # Images
 
+TODO: Image sizes
+
 ```code
 [Base]     .hw-image
 ```

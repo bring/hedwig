@@ -5,22 +5,15 @@ Example form (using other components)
 ```html|span-4,plain,light
  <form>
   <label class="hw-label">
-    Hva kan vi hjelpe deg med?
-    <div class="hw-dropdown"
-      data-hw-dropdown="characters"
-      data-hw-dropdown-placeholder="Choose option"
-      data-hw-dropdown-default-selected="2"
-    >
-      <div class="hw-dropdown__inner">
-        <div class="hw-dropdown__placeholder"></div>
-        <div class="hw-dropdown__arrow"></div>
-        <ul class="hw-dropdown__options">
-          <li class="hw-dropdown__option" data-hw-dropdown-value="1">Harry</li>
-          <li class="hw-dropdown__option" data-hw-dropdown-value="2">Hedwig</li>
-          <li class="hw-dropdown__option" data-hw-dropdown-value="3">Fredrik</li>
-        </ul>
-      </div>
-    </div>
+    Select country
+    <select data-hw-dropdown="countries">
+      <option value="1">Afghanistan</option>
+      <option value="2">Algerie</option>
+      <option value="3">Antarctica</option>
+      <option value="4">Austraoptiona</option>
+      <option value="5">Booptionvia</option>
+      <option value="6">Bosnia</option>
+    </select>
   </label>
   <label class="hw-label">
     Fortell oss litt om hva vi kan hjelpe deg med
@@ -49,21 +42,15 @@ Example form (using other components)
         Telefonnummer
         <div class="hw-grid hw-grid--narrow">
           <div class="hw-grid__item hw-one-third">
-            <div class="hw-dropdown hw-dropdown--small"
-              data-hw-dropdown="characters"
-              data-hw-dropdown-placeholder="Choose option"
-              data-hw-dropdown-default-selected="2"
-            >
-              <div class="hw-dropdown__inner">
-                <div class="hw-dropdown__placeholder"></div>
-                <div class="hw-dropdown__arrow"></div>
-                <ul class="hw-dropdown__options">
-                  <li class="hw-dropdown__option" data-hw-dropdown-value="1">+46</li>
-                  <li class="hw-dropdown__option" data-hw-dropdown-value="2">+47</li>
-                  <li class="hw-dropdown__option" data-hw-dropdown-value="3">+48</li>
-                </ul>
-              </div>
-            </div>
+            <label class="hw-label">
+              <select
+                data-hw-dropdown="numbers"
+                data-hw-dropdown-small>
+                <option value="1">+47</option>
+                <option value="2">+48</option>
+                <option value="3">+49</option>
+              </select>
+            </label>
           </div><!--
           --><div class="hw-grid__item hw-two-thirds">
               <input class="hw-input" type="text" placeholder="00000000" />

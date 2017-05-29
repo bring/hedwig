@@ -13,7 +13,6 @@ Copy any of the below code snippets into a `.html` file and play around.
     <title>Hedwig - blank page</title>
     <link href="https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
     <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   </head>
 <body>
 
@@ -46,7 +45,6 @@ Copy any of the below code snippets into a `.html` file and play around.
   <title>Article - example</title>
   <link href="https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
   <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 </head>
 <body>
 
@@ -122,7 +120,6 @@ Copy any of the below code snippets into a `.html` file and play around.
     <title>Hedwig - Form example</title>
     <link href="https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
     <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   </head>
 <body>
 

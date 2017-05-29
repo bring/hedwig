@@ -45,6 +45,7 @@
     @media (--medium) {
       position: static;
       margin-left: var(--hw-spacing-smaller);
+      transform: none;
     }
   }
 
