@@ -12,7 +12,7 @@ Hero component
 ### Default Hero
 
 ```html|span-6
-  <div class="hw-hero rellax">
+  <div class="hw-hero">
     <div class="hw-hero__image" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');" />
   </div>
 ```

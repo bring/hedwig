@@ -56,8 +56,9 @@
     </header>
 
 
-    <main>
-      <div class="hw-block hw-block--full hw-block--limited-text">
+    <main class="hw-block hw-block--full hw-block--limited-text">
+
+      <article>
         <div class="hw-block hw-block--margin-top-double">
           <div class="hw-wysiwyg">
             <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
@@ -104,6 +105,7 @@
           </div>
         </div>
       </article>
+
     </main>
 
     <!-- Footer -->

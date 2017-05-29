@@ -112,8 +112,8 @@
   &__search {
     display: none;
     position: absolute;
-    width: 100%;
-    padding: 0 220px;
+    left: 220px;
+    right: 220px;
     z-index: 2000;
   }
 

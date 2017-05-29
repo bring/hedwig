@@ -44,6 +44,9 @@
       border-color: var(--hw-color-gray-darker);
 
       &::before {
+        position: absolute;
+        top: 6px;
+        left: 3px;
         display: inline-block;
         width: 10px;
         height: 9px;
