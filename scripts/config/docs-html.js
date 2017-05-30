@@ -6,29 +6,62 @@ module.exports = `
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Hedwig</title>
       <style>
+
+        body {
+          margin: 0;
+          background: #f2f2f2;
+        }
+
         /**
           * Switcher styles
           */
 
-        #switcher {
-          position: fixed;
-          right: 0;
-          top: 0;
-          z-index: 1;
-          background-color: #26b576;
-          padding: 10px;
+        .hw-app-switcher {
+          display: flex;
+          height: 100vh;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
         }
-        #switcher a {
-          padding: 10px 20px;
-          color: white;
+        .hw-app-switcher__item {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+          height: 100%;
+          transition: background 0.3s ease;
+        }
+        .hw-app-switcher__item:hover {
+          background: white;
+        }
+        .hw-app-switcher__item:hover .hw-app-switcher__owl {
+          transform: translateY(0%);
+        }
+
+        .hw-app-switcher__logo {
+          height: 70px;
+        }
+        .hw-app-switcher__owl {
+          position: absolute;
+          bottom: 0;
+          transition: transform 0.3s ease;
+          transform: translateY(33%);
         }
 
       </style>
     </head>
     <body>
-      <nav id="switcher">
-        <a href="/bring.html">Bring</a>
-        <a href="/posten.html">Posten</a>
+      <nav class="hw-app-switcher">
+        <a class="hw-app-switcher__item" href="/bring.html">
+          <img class="hw-app-switcher__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bring_logo.svg/1280px-Bring_logo.svg.png" alt="logo" />
+          <img class="hw-app-switcher__owl" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/logo.svg" alt="owl" />
+        </a>
+        <a class="hw-app-switcher__item" href="/posten.html">
+          <img class="hw-app-switcher__logo" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Posten-Norge-Logo.svg" alt="logo" />
+          <img class="hw-app-switcher__owl" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/logo.svg" alt="owl" />
+        </a>
       </nav>
     </body>
     </html>

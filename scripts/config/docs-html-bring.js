@@ -68,7 +68,6 @@ module.exports = `
           position: absolute;
           right: 0;
           top: 0;
-          left: 0;
           background: #3a3a3a;
           text-align: right;
           z-index: 1;
@@ -77,6 +76,7 @@ module.exports = `
         @media (min-width: 1000px) {
           .hw-app-switcher {
             margin-left: 251px;
+            left: 0;
           }
         }
 
