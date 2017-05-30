@@ -1,0 +1,92 @@
+/**
+ * Variables - Bring
+ */
+
+:root {
+
+  /**
+   * Colors
+   */
+
+  --hw-color-primary: red;
+  --hw-color-primary-dark: red;
+  --hw-color-primary-darker: red;
+  --hw-color-primary-light: red;
+  --hw-color-primary-lighter: red;
+
+  --hw-color-secondary: #fdbb2f;
+  --hw-color-link: #4a90e2;
+  --hw-color-avocado: #26b576;
+
+  --hw-color-gray-lightest: #f2f2f2;
+  --hw-color-gray-lighter: #E6E6E6;
+  --hw-color-gray-light: #C1C1C1;
+  --hw-color-gray: #888888;
+  --hw-color-gray-dark: #666666;
+  --hw-color-gray-darker: #444444;
+  --hw-color-gray-darkest: #222222;
+
+  --hw-color-white: #ffffff;
+  --hw-color-black: #000000;
+
+  /**
+   * Fonts
+   */
+
+  --hw-font-primay-regular: 'Foundry Monoline Regular';
+  --hw-font-primay-medium: 'Foundry Monoline Medium';
+  --hw-font-primay-bold: 'Foundry Monoline Bold';
+
+  /**
+   * Spacing
+   * NOTE: This is in PX because we watn them to specific.
+   */
+
+  --hw-spacing-smallest: 6px;
+  --hw-spacing-smaller: 12px;
+  --hw-spacing-small: 18px;
+  --hw-spacing: 24px;
+  --hw-spacing-large: 36px;
+  --hw-spacing-larger: 48px;
+
+  /**
+   * Site width limitations
+   */
+
+  --hw-container-limit-site: 1065px;
+  --hw-container-limit-narrow: 600px;
+  --hw-container-limit-wide: 1200px;
+  --hw-container-limit-text: 690px;
+
+  /**
+   * Font sizes
+   * NOTE: This is in PX because we watn them to specific.
+   */
+
+  --hw-font-size-h1-mobile: 35px;
+  --hw-font-size-h1: 44px;
+  --hw-font-size-h2: 28px;
+  --hw-font-size-h3: 22px;
+  --hw-font-size-lead: 22px;
+  --hw-font-size-p: 18px;
+  --hw-font-size-small: 15px;
+
+  /**
+   * Breakpoints
+   * em = 16px
+   */
+
+  @custom-media --small (min-width: 460px);
+  @custom-media --medium (min-width: 720px);
+  @custom-media --large (min-width: 940px);
+  @custom-media --xlarge (min-width: 1200px);
+
+  /* Used for min max settings */
+
+  @custom-media --only-base (min-width: 0em) and (max-width: 460px);
+  @custom-media --only-small (min-width: 460px) and (max-width: 720px);
+  @custom-media --only-medium (min-width: 720px) and (max-width: 940px);
+  @custom-media --only-large (min-width: 940px) and (max-width: 1200px);
+  @custom-media --only-xlarge (min-width: 1200px);
+
+}
