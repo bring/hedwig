@@ -10,6 +10,7 @@ module.exports = `
         body {
           margin: 0;
           background: #f2f2f2;
+          overflow: hidden;
         }
 
         /**
