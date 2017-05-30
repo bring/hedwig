@@ -93,9 +93,9 @@ function build() {
 
       const filePath = file.split('/');
       const fileSection = filePath[1]; // Will be shared, posten or bring
-      let components;
-      let pageExamples;
-      let pages;
+      var components;
+      var pageExamples;
+      var pages;
 
       switch (fileSection) {
           case 'posten':
@@ -118,7 +118,7 @@ function build() {
 
       /**
        * Check if the page is a component
-       let title = filename.split('.').shift();
+       var title = filename.split('.').shift();
       */
 
       if (file.indexOf('components') !== -1) {
@@ -148,7 +148,7 @@ function build() {
 
       /**
        * Check if the page is a page example
-       let title = filename.split('.').shift();
+       var title = filename.split('.').shift();
       */
 
       if (file.indexOf('pages') !== -1) {

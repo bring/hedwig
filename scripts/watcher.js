@@ -24,6 +24,11 @@ if (!fs.existsSync(dir)) {
 * Watch tasks
 */
 
+function buildDocs(args) {
+  console.log("✍️ The DOCS was saved");
+  build();
+}
+
 function buildJs(args) {
   console.log("🎉 The JS was compiled!");
   spawn('npm', ['run', 'js:dev'], {
@@ -46,16 +51,18 @@ function concatPostenCss() {
   console.log("🔨 Concatinated all Posten CSS...");
 }
 
-function buildDocs(args) {
-  console.log("✍️ The DOCS was saved");
-  build();
-}
-
-function startCssCompile() {
-  spawn('npm', ['run', 'css:dev'], {
+function startBringCssCompile() {
+  spawn('npm', ['run', 'css:dev:bring'], {
     stdio: 'inherit'
   });
-  console.log("📦 Built dev CSS bundle");
+  console.log("📦 Built bring dev CSS bundle");
+}
+
+function startPostenCssCompile() {
+  spawn('npm', ['run', 'css:dev:posten'], {
+    stdio: 'inherit'
+  });
+  console.log("📦 Built posten dev CSS bundle");
 }
 
 /**
@@ -63,7 +70,8 @@ function startCssCompile() {
 */
 
 concatCss();
-startCssCompile();
+startBringCssCompile();
+startPostenCssCompile();
 buildJs();
 
 /**
@@ -72,5 +80,8 @@ buildJs();
 
 watch('src', { recursive: true }, filter(/\.js$/, buildJs));
 watch('src', { recursive: true }, filter(/\.md$/, buildDocs));
-watch('src', { recursive: true }, filter(/\.css$/, concatCss));
-watch('tmp', { recursive: true }, filter(/\.css$/, startCssCompile));
+watch('src/shared', { recursive: true }, filter(/\.css$/, concatCss));
+watch('src/bring', { recursive: true }, filter(/\.css$/, concatBringCss));
+watch('src/posten', { recursive: true }, filter(/\.css$/, concatPostenCss));
+watch('tmp', { recursive: true }, filter(/bring.css$/, startBringCssCompile));
+watch('tmp', { recursive: true }, filter(/posten.css$/, startPostenCssCompile));
