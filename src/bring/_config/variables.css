@@ -8,11 +8,11 @@
    * Colors
    */
 
-  --hw-color-primary: red;
-  --hw-color-primary-dark: red;
-  --hw-color-primary-darker: red;
-  --hw-color-primary-light: red;
-  --hw-color-primary-lighter: red;
+  --hw-color-primary: #7bc144;
+  --hw-color-primary-dark: #4CA200;
+  --hw-color-primary-darker: #233813;
+  --hw-color-primary-light: #b7dd98;
+  --hw-color-primary-lighter: #d8ecc9;
 
   --hw-color-secondary: #fdbb2f;
   --hw-color-link: #4a90e2;

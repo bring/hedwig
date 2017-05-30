@@ -32,8 +32,18 @@ function buildJs(args) {
 }
 
 function concatCss() {
-  concat('src/**/*.css', './tmp/main.css');
-  console.log("🔨 Concatinated all CSS...");
+  concatBringCss();
+  concatPostenCss();
+}
+
+function concatBringCss() {
+  concat('src/+(bring|shared)/**/*.css', './tmp/bring.css');
+  console.log("🔨 Concatinated all Bring CSS...");
+}
+
+function concatPostenCss() {
+  concat('src/+(posten|shared)/**/*.css', './tmp/posten.css');
+  console.log("🔨 Concatinated all Posten CSS...");
 }
 
 function buildDocs(args) {

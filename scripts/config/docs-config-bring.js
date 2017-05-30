@@ -11,12 +11,10 @@ if (production) {
   ];
   scripts = ['https://bring-hedwig.s3.amazonaws.com/hedwig/main.js'];
   logo = 'https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/logo.svg';
-}
-
-if (!production) {
+} else {
   styles = [
     'http://localhost:3001/assets/fonts/fonts.css',
-    'http://localhost:3001/main.css'
+    'http://localhost:3001/bring.css'
   ];
   scripts = ['http://localhost:3001/main.js'];
   logo = 'http://localhost:3001/assets/images/logo.svg';
