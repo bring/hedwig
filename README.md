@@ -140,5 +140,5 @@ Most components are tested in IE10, but IE9 is still yet to be tested.
 
 ## ⚖️ Licenses
 
-* Source code is licensed under [BSD 2-Clause](https://github.com/bring/hedwig/LICENSE.txt)
-* All icons and images are licensed under [Creative Commons Attribution-NoDerivatives 4.0](https://github.com/bring/hedwig/LICENSE-icons-images.txt)
+* Source code is licensed under [BSD 2-Clause](LICENSE.txt)
+* All icons and images are licensed under [Creative Commons Attribution-NoDerivatives 4.0](LICENSE-icons-images.txt)
