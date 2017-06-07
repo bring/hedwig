@@ -29,32 +29,53 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--full">
+    <div class="
+      hw-block 
+      hw-block--full
+    ">
       <p>Block with no side padding</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--half">
+    <div class="
+      hw-block 
+      hw-block--half
+    ">
       <p>Block with half side padding</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--double">
+    <div class="
+      hw-block 
+      hw-block--double
+    ">
       <p>Block with double side padding</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--margin-top hw-block--margin-bottom">
+    <div class="
+      hw-block 
+      hw-block--margin-top 
+      hw-block--margin-bottom
+    ">
       <p>Block with top and bottom margins</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--margin-top-half hw-block--margin-bottom-half">
+    <div class="
+      hw-block 
+      hw-block--margin-top-half 
+      hw-block--margin-bottom-half
+    ">
       <p>Block with half top and bottom margins</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--margin-top-double hw-block--margin-bottom-double">
+    <div class="
+      hw-block 
+      hw-block--margin-top-double 
+      hw-block--margin-bottom-double
+    ">
       <p>Block with double top and bottom margins</p>
     </div>
   </div>
