@@ -15,15 +15,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
-    "build": "npm run docs:build & npm run css:build & npm run js:build",
+    "build": "npm run getversion && npm run docs:build & npm run css:build & npm run js:build",
     "css:dev": "npm run css:dev:bring & npm run css:dev:posten",
     "css:dev:bring": "postcss tmp/bring.css --use postcss-cssnext postcss-extend -o ./build/bring.css",
     "css:dev:posten": "postcss tmp/posten.css --use postcss-cssnext postcss-extend -o ./build/posten.css",
     "css:build": "npm run css:build:bring & npm run css:build:posten",
-    "css:build:bring": "postcss tmp/bring.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./build/bring.css",
-    "css:build:posten": "postcss tmp/posten.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./build/posten.css",
+    "css:build:bring": "VERSION=$(cat tmp/.version) && postcss tmp/bring.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./build/bring-$VERSION.css",
+    "css:build:posten": "VERSION=$(cat tmp/.version) && postcss tmp/posten.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./build/posten-$VERSION.css",
     "js:dev": "rollup -c --name \"hedwig\"",
-    "js:build": "rollup -c --name \"hedwig\"",
+    "js:build": "VERSION=$(cat tmp/.version) && rollup -c --name \"hedwig\" --output build/main-$VERSION.js",
     "docs:build": "node ./scripts/docs-build",
     "watcher": "node ./scripts/watcher",
     "server": "node ./server",
@@ -36,7 +36,9 @@
     "svg:min": "svgo -f ./build/assets/icons -o ./build/assets/icons/optimized",
     "svg:sprite": "node ./scripts/svg-sprite",
     "svg": "npm run svg:min && npm run svg:sprite",
-    "css:fix": "stylelint 'src/**/*.css' --fix"
+    "css:fix": "stylelint 'src/**/*.css' --fix",
+    "getversion" : "echo $(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') > tmp/.version",
+    "postpublish" : "npm run getversion && VERSION=$(cat tmp/.version) && git tag $VERSION && git push --tags"
   },
   "dependencies": {
     "aws-sdk": "^2.40.0",
