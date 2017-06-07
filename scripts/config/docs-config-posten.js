@@ -1,15 +1,18 @@
+var package = require('../../package.json');
+
 var styles;
 var scripts;
 var logo;
 
 var production = process.env.NODE_ENV === 'production';
+var version = package.version;
 
 if (production) {
   styles = [
     'https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css',
-    'https://bring-hedwig.s3.amazonaws.com/hedwig/posten.css'
+    `https://bring-hedwig.s3.amazonaws.com/hedwig/releases/posten-${version}.css`
   ];
-  scripts = ['https://bring-hedwig.s3.amazonaws.com/hedwig/main.js'];
+  scripts = [`https://bring-hedwig.s3.amazonaws.com/hedwig/releases/main-${version}.js`];
   logo = 'https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/logo.svg';
 } else {
   styles = [
