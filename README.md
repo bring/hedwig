@@ -2,23 +2,33 @@
 
 Hedwig is Brings Design System.
 
+[![release](http://github-release-version.herokuapp.com/github/bring/hedwig/release.svg?style=flat)](https://github.com/bring/hedwig/releases/latest)
+
+[![GitHub tag](https://img.shields.io/github/tag/bring/hedwig.svg)]()
+
+
 📚 [Hedwig documentation is available here](https://hedwig-docs.herokuapp.com)
 
 🚨 _[This repo is public](https://github.com/bring/hedwig/issues/6), so please consider this when contributing_ 🚨
 
-### Using Hedwing in your project
+### Getting started
 
-Using Hedwig (beta) in your project is super simple. You only need to include this in your document:
+Using Hedwig in your project is super simple. You only need to include the following..
 
+In the document `head`:
 ```
 [Fonts]    https://bring-hedwig.s3.amazonaws.com/hedwig/assets/fonts/fonts.css
-[CSS]      https://bring-hedwig.s3.amazonaws.com/hedwig/main.css
-[JS]       https://bring-hedwig.s3.amazonaws.com/hedwig/main.js
+[CSS]      https://bring-hedwig.s3.amazonaws.com/hedwig/releases/{posten/bring}-{version}.css
+[JS]       https://bring-hedwig.s3.amazonaws.com/hedwig/releases/{posten/bring}-{version}.js
+```
+
+Before closing `body` tag:
+```
 [Icons]    https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js
 ```
 
 **WTF!? I do not want to include external files in my project!**
-So. We want it to be super simple to use Hedwing in your project. The Hedwig files are super lightweight (CSS 000 kb, JS 000 kb). This will not do much with your perfomance budget. And is much simpler than getting it into your gulp-wepback-whatever build pipeline. 👍
+So. We want it to be super simple to use Hedwing. The files are lightweight (CSS 55KB, JS 16KB). This will not do much with your perfomance budget. So we prefer not to put it into your gulp-wepback-whatever build pipeline. 👍
 
 ### ⏩ tl;dr
 
