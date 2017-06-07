@@ -38,7 +38,7 @@
     left: 50%;
     bottom: 5px;
     width: 15px;
-    fill: var(--hw-color-gray-darkest);
+    fill: var(--hw-color-gray-darker);
     transform: translateX(-50%);
     z-index: 1;
 
@@ -53,17 +53,18 @@
     display: block;
     width: 40px;
     margin: 0 auto;
-    fill: var(--hw-color-gray-darkest);
+    opacity: 0.5;
     border: 0;
     cursor: pointer;
+
+    & svg {
+      fill: var(--hw-color-black);
+    }
 
     &:hover,
     &:focus {
       outline: 0;
-    }
-    &:hover svg,
-    &:focus svg {
-      fill: var(--hw-color-primary-dark);
+      opacity: 1;
     }
   }
 
@@ -88,13 +89,14 @@
   &__read-more-link {
     position: relative;
     font-size: var(--hw-font-size-small);
-    border-bottom: 1px solid var(--hw-color-gray-darkest);
+    font-family: var(--hw-font-primay-medium);
+    border-bottom: 2px solid var(--hw-color-gray-darkest);
     z-index: 1;
 
     &:hover,
     &:focus {
-      color: var(--hw-color-primary-dark);
-      border-color: var(--hw-color-primary-dark);
+      color: var(--hw-color-white);
+      border-color: var(--hw-color-white);
       outline: 0;
     }
   }
@@ -110,23 +112,24 @@
     border: 0;
     transform: rotate(45deg);
 
-    &:hover,
-    &:focus {
-      color: var(--hw-color-primary-dark);
-      outline: 0;
-    }
-    &:hover svg,
-    &:focus svg {
-      fill: var(--hw-color-primary-dark);
-    }
-
     & svg {
       position: absolute;
       bottom: 5px;
       transform: rotate(-45deg);
       left: 41px;
-      fill: var(--hw-color-gray-darkest);
+      fill: var(--hw-color-black);
+      opacity: 0.5;
     }
+
+    &:hover,
+    &:focus {
+      outline: 0;
+    }
+    &:hover svg,
+    &:focus svg {
+      opacity: 01;
+    }
+
   }
 
   &__read-more-contents {

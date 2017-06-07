@@ -71,6 +71,15 @@
       visibility: hidden;
     }
   }
+
+  &--large {
+    & .hw-search__input {
+      height: 72px;
+    }
+    & .hw-search__placeholder {
+      padding: var(--hw-spacing-small) var(--hw-spacing-large);
+    }
+  }
 }
 
 /**

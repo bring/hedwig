@@ -14,7 +14,7 @@
   &__logo {
     position: relative;
     width: 121px;
-    height: 73px;
+    height: 72px;
     margin: 0 auto;
 
     @media (--large) {
@@ -40,7 +40,8 @@
 
   &__item,
   &__search-button {
-    padding: calc(var(--hw-spacing) + 3px) var(--hw-spacing-large) var(--hw-spacing) var(--hw-spacing-large);
+    padding: 0 var(--hw-spacing-large);
+    line-height: 72px;
     display: none;
     color: var(--hw-color-gray-darker);
     border-left: 1px solid var(--hw-color-gray-lightest);
@@ -84,7 +85,7 @@
 
     @media (--large) {
       position: relative;
-      padding: calc(var(--hw-spacing) + 3px) var(--hw-spacing-larger) var(--hw-spacing) var(--hw-spacing-large);
+      padding: 0 var(--hw-spacing-larger) 0 var(--hw-spacing-large);
       border-left: 1px solid var(--hw-color-gray-lightest);
     }
   }
@@ -95,8 +96,8 @@
   }
 
   &__search-icon {
-    height: 17px;
-    width: 23px;
+    height: 24px;
+    width: 24px;
     margin: 0 0 4px 3px;
   }
 

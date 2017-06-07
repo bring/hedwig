@@ -1,0 +1,45 @@
+/**
+ * Variables - Shared
+ */
+
+:root {
+
+  /**
+   * Spacing
+   * NOTE: This is in PX because we watn them to specific.
+   */
+
+  --hw-spacing-smallest: 6px;
+  --hw-spacing-smaller: 12px;
+  --hw-spacing-small: 18px;
+  --hw-spacing: 24px;
+  --hw-spacing-large: 36px;
+  --hw-spacing-larger: 48px;
+
+  /**
+   * Site width limitations
+   */
+
+  --hw-container-limit-site: 1065px;
+  --hw-container-limit-narrow: 600px;
+  --hw-container-limit-wide: 1200px;
+  --hw-container-limit-text: 690px;
+
+  /**
+   * Breakpoints
+   * em = 16px
+   */
+
+  @custom-media --small (min-width: 460px);
+  @custom-media --medium (min-width: 720px);
+  @custom-media --large (min-width: 940px);
+  @custom-media --xlarge (min-width: 1200px);
+
+  /* Used for min max settings */
+
+  @custom-media --only-base (min-width: 0em) and (max-width: 460px);
+  @custom-media --only-small (min-width: 460px) and (max-width: 720px);
+  @custom-media --only-medium (min-width: 720px) and (max-width: 940px);
+  @custom-media --only-large (min-width: 940px) and (max-width: 1200px);
+  @custom-media --only-xlarge (min-width: 1200px);
+}
