@@ -12,7 +12,7 @@
     position: relative;
     display: block;
     width: 100%;
-    font-family: var(--hw-font-primay-medium);
+    font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-small);
     border: 0;
     text-align: center;
@@ -47,7 +47,7 @@
   &__text::after {
     content: "+";
     margin-left: var(--hw-spacing-smaller);
-    font-family: var(--hw-font-primay-bold);
+    font-family: var(--hw-font-primary-bold);
     font-size: var(--hw-spacing-small);
   }
 

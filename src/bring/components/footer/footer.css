@@ -31,7 +31,7 @@
   &__title {
     color: var(--hw-color-white);
     margin-bottom: var(--hw-spacing-smaller);
-    font-family: var(--hw-font-primay-medium);
+    font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-lead);
   }
 
@@ -41,7 +41,7 @@
     list-style: none;
 
     & a {
-      font-family: var(--hw-font-primay-medium);
+      font-family: var(--hw-font-primary-medium);
       line-height: 1.5;
       color: var(--hw-color-white);
     }
@@ -49,7 +49,7 @@
 
   &__button {
     margin-bottom: var(--hw-spacing-smaller);
-    font-family: var(--hw-font-primay-bold);
+    font-family: var(--hw-font-primary-bold);
   }
 
   &__logo svg {
@@ -71,7 +71,7 @@
     }
 
     & a {
-      font-family: var(--hw-font-primay-medium);
+      font-family: var(--hw-font-primary-medium);
       font-size: 12px;
       color: var(--hw-color-gray-dark);
 
@@ -81,7 +81,7 @@
     }
 
     & span {
-      font-family: var(--hw-font-primay-regular);
+      font-family: var(--hw-font-primary-regular);
       font-size: 12px;
 
       @media (--large) {

@@ -60,7 +60,7 @@
   }
   &__title {
     color: var(--hw-color-gray-dark);
-    font-family: var(--hw-font-primay-medium);
+    font-family: var(--hw-font-primary-medium);
     margin-bottom: var(--hw-spacing-smallest);
   }
 
@@ -69,7 +69,7 @@
     min-height: 60px;
     margin-top: var(--hw-spacing-smaller);
     font-size: var(--hw-font-size-small);
-    font-family: var(--hw-font-primay-medium);
+    font-family: var(--hw-font-primary-medium);
   }
 
   &__actions {
@@ -90,13 +90,13 @@
     padding: var(--hw-spacing-smallest);
     border: 0;
     background-color: var(--hw-color-secondary);
-    font-family: var(--hw-font-primay-medium);
+    font-family: var(--hw-font-primary-medium);
   }
 
   &__date {
     color: var(--hw-color-white);
     font-size: var(--hw-font-size-lead);
-    font-family: var(--hw-font-primay-medium);
+    font-family: var(--hw-font-primary-medium);
   }
   &__date svg {
     width: 19px;

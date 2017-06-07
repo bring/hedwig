@@ -1,7 +1,7 @@
 
 .hw-list {
   font-size: var(--hw-font-size-p);
-  font-family: var(--hw-font-primay-regular);
+  font-family: var(--hw-font-primary-regular);
   color: var(--hw-color-gray-darker);
   list-style: none;
   margin: 0;
@@ -30,7 +30,7 @@
 
   &--small {
     font-size: var(--hw-font-size-small);
-    font-family: var(--hw-font-primay-medium);
+    font-family: var(--hw-font-primary-medium);
     color: var(--hw-color-gray);
 
     & li {

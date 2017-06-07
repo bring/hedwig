@@ -29,7 +29,7 @@
     padding-right: var(--hw-spacing-small);
     border: 0;
     border-top: 3px solid var(--hw-color-gray-lighter);
-    font-family: var(--hw-font-primay-medium);
+    font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-small);
     text-align: left;
 
@@ -77,7 +77,7 @@
 
   &__item--expanded .hw-accordion__trigger {
     color: var(--hw-color-primary-dark);
-    font-family: var(--hw-font-primay-bold);
+    font-family: var(--hw-font-primary-bold);
   }
 
   &__item--expanded .hw-accordion__arrow::before {

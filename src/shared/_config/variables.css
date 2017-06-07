@@ -17,6 +17,21 @@
   --hw-spacing-larger: 48px;
 
   /**
+   * Shared colors
+   */
+
+  --hw-color-gray-lightest: #f2f2f2;
+  --hw-color-gray-lighter: #E6E6E6;
+  --hw-color-gray-light: #C1C1C1;
+  --hw-color-gray: #888888;
+  --hw-color-gray-dark: #666666;
+  --hw-color-gray-darker: #444444;
+  --hw-color-gray-darkest: #222222;
+
+  --hw-color-white: #ffffff;
+  --hw-color-black: #000000;
+
+  /**
    * Site width limitations
    */
 
@@ -24,6 +39,27 @@
   --hw-container-limit-narrow: 600px;
   --hw-container-limit-wide: 1200px;
   --hw-container-limit-text: 690px;
+
+  /**
+   * Fonts
+   */
+
+  --hw-font-primary-regular: 'Foundry Monoline Regular';
+  --hw-font-primary-medium: 'Foundry Monoline Medium';
+  --hw-font-primary-bold: 'Foundry Monoline Bold';
+
+  /**
+   * Font sizes
+   * NOTE: This is in PX because we watn them to specific.
+   */
+
+  --hw-font-size-h1-mobile: 35px;
+  --hw-font-size-h1: 44px;
+  --hw-font-size-h2: 28px;
+  --hw-font-size-h3: 22px;
+  --hw-font-size-lead: 22px;
+  --hw-font-size-p: 18px;
+  --hw-font-size-small: 15px;
 
   /**
    * Breakpoints
