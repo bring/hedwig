@@ -4,7 +4,7 @@ Hedwig is Brings Design System.
 
 📚 [Hedwig documentation is available here](https://hedwig-docs.herokuapp.com)
 
-🚨 _[This repo might be going public](https://github.com/bring/hedwig/issues/6), so please consider this when contributing_ 🚨
+🚨 _[This repo is public](https://github.com/bring/hedwig/issues/6), so please consider this when contributing_ 🚨
 
 ### Using Hedwing in your project
 
