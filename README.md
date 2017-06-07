@@ -1,11 +1,10 @@
 # Hedwig
 
+[![GitHub release](https://img.shields.io/github/release/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig)
+
+[![GitHub issues](https://img.shields.io/github/issues/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig)
+
 Hedwig is Brings Design System.
-
-[![release](http://github-release-version.herokuapp.com/github/bring/hedwig/release.svg?style=flat)](https://github.com/bring/hedwig/releases/latest)
-
-[![GitHub tag](https://img.shields.io/github/tag/bring/hedwig.svg)]()
-
 
 📚 [Hedwig documentation is available here](https://hedwig-docs.herokuapp.com)
 
@@ -14,6 +13,8 @@ Hedwig is Brings Design System.
 ### Getting started
 
 Using Hedwig in your project is super simple. You only need to include the following..
+
+PS: Check [releases](https://github.com/bring/hedwig/releases) for latest version
 
 In the document `head`:
 ```
