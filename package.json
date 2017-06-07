@@ -15,7 +15,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
-    "build": "npm run getversion && npm run docs:build & npm run css:build & npm run js:build",
+    "build": "npm run getversion && npm run docs:build && npm run css:build && npm run js:build",
     "css:dev": "npm run css:dev:bring & npm run css:dev:posten",
     "css:dev:bring": "postcss tmp/bring.css --use postcss-cssnext postcss-extend -o ./build/bring.css",
     "css:dev:posten": "postcss tmp/posten.css --use postcss-cssnext postcss-extend -o ./build/posten.css",
