@@ -66,3 +66,20 @@ NB: The search field position and the opaque background overlay is not controlle
   </div>
 </div>
 ```
+
+### Standalone version with submit button
+
+```html
+<div class="hw-search hw-search--standalone"
+  data-hw-search
+  data-hw-search-placeholders='["Hi!"]'
+>
+  <div class="hw-search__inner">
+    <input
+      data-hw-search-input
+      class="hw-search__input" type="text" />
+    <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+    <button type="submit" class="hw-button hw-button--primary">Search</button>
+  </div>
+</div>
+```
