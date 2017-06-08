@@ -1,6 +1,6 @@
 # Hedwig
 
-[![GitHub release](https://img.shields.io/github/release/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig) [![GitHub issues](https://img.shields.io/github/issues/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig)
+[![GitHub release](https://img.shields.io/github/release/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig/releases) [![GitHub issues](https://img.shields.io/github/issues/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig/issues)
 
 Hedwig is Brings Design System.
 
