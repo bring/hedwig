@@ -79,7 +79,7 @@ NB: The search field position and the opaque background overlay is not controlle
       data-hw-search-input
       class="hw-search__input" type="text" />
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
-    <button type="submit" class="hw-button hw-button--primary">Search</button>
   </div>
+  <button type="submit" class="hw-button hw-button--primary">Search</button>
 </div>
 ```

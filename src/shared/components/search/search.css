@@ -35,7 +35,7 @@
     font-family: var(--hw-font-primary-medium);
     color: var(--hw-color-gray-light);
     animation: movePlaceholder 3s ease-out infinite 0.3s;
-    z-index: 1;
+    z-index: -1;
   }
 
   &__input:focus {
@@ -90,21 +90,21 @@
   }
 
   &--standalone {
+    display: flex;
+
     & .hw-search__inner {
-      display: flex;
-      background: transparent;
+      width: 100%;
       box-shadow: none;
+      margin-right: var(--hw-spacing-smallest);
     }
 
     & .hw-search__input {
       border: 3px solid var(--hw-color-gray-darker);
-      padding: var(--hw-spacing-smallest) var(--hw-spacing-small);
-      margin-right: var(--hw-spacing-smallest);
-      background: rgba(255, 255, 255, 0.95);
+      padding: var(--hw-spacing-smallest) var(--hw-spacing);
     }
 
     & .hw-search__placeholder {
-      padding: var(--hw-spacing-smallest) var(--hw-spacing-small);
+      padding: var(--hw-spacing-smallest) var(--hw-spacing);
       border: 3px solid transparent;
     }
   }
