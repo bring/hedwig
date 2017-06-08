@@ -37,7 +37,7 @@
       <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
       <div class="hw-navbar__overlay" data-hw-navbar-overlay></div>
       <section class="hw-navbar__search">
-        <div class="hw-search"
+        <div class="hw-search hw-search--large"
           data-hw-search
           data-hw-search-placeholders='["Søk etter pakke", "Eks.: 1212012381238123", "Eller på nettstedet", "Eks.: Bedriftspakke"]'
         >
