@@ -20,6 +20,8 @@ const getPosition = (elem) => {
   return {
     top: Math.round(top),
     offsetFromTop: Math.round(box.top),
+    left: box.left,
+    right: box.right,
   };
 };
 
