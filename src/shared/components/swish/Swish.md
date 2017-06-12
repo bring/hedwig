@@ -23,8 +23,8 @@ Triggers:
         <div class="
           hw-block  
           hw-block--col-primary
-          hw-block--padding-top
-          hw-block--padding-bottom
+          hw-block--pt
+          hw-block--pb
         ">
           <button class="hw-button hw-button--secondary" data-hw-swish-next>Next</button>
         </div>
@@ -33,8 +33,8 @@ Triggers:
         <div class="
           hw-block  
           hw-block--col-gray
-          hw-block--padding-top
-          hw-block--padding-bottom
+          hw-block--pt
+          hw-block--pb
         ">
           <button class="hw-button hw-button--outline-white" data-hw-swish-previous>Previous</button>
           <button class="hw-button hw-button--outline-white" data-hw-swish-next>Next</button>
@@ -44,8 +44,8 @@ Triggers:
         <div class="
           hw-block  
           hw-block--col-gray-light
-          hw-block--padding-top
-          hw-block--padding-bottom
+          hw-block--pt
+          hw-block--pb
         ">
           <button class="hw-button hw-button--secondary" data-hw-swish-previous>Previous</button>
         </div>

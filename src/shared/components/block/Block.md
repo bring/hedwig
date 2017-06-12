@@ -55,8 +55,8 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   <div class="hw-helpers-margin-highlighter">
     <div class="
       hw-block 
-      hw-block--margin-top 
-      hw-block--margin-bottom
+      hw-block--mt 
+      hw-block--mb
     ">
       <p>Block with top and bottom margins</p>
     </div>
@@ -64,8 +64,8 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   <div class="hw-helpers-margin-highlighter">
     <div class="
       hw-block 
-      hw-block--margin-top-half 
-      hw-block--margin-bottom-half
+      hw-block--mt-half 
+      hw-block--mb-half
     ">
       <p>Block with half top and bottom margins</p>
     </div>
@@ -73,8 +73,8 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   <div class="hw-helpers-margin-highlighter">
     <div class="
       hw-block 
-      hw-block--margin-top-double 
-      hw-block--margin-bottom-double
+      hw-block--mt-double 
+      hw-block--mb-double
     ">
       <p>Block with double top and bottom margins</p>
     </div>
@@ -85,18 +85,18 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 ```code
 [Full]                    .hw-block--full (no side paddings)
 [Half]                    .hw-block--half (half side paddings)
-[Margin top]              .hw-block--margin-top
-[Half margin top]         .hw-block--margin-top-half
-[Double margin top]       .hw-block--margin-top-double
-[Margin bottom]           .hw-block--margin-bottom
-[Half margin bottom]      .hw-block--margin-bottom-half
-[Double margin bottom]    .hw-block--margin-bottom-double
-[Padding top]             .hw-block--padding-top
-[Half padding top]        .hw-block--padding-top-half
-[Double padding top]      .hw-block--padding-top-double
-[Padding bottom]          .hw-block--padding-bottom
-[Half padding bottom]     .hw-block--padding-bottom-half
-[Double padding bottom]   .hw-block--padding-bottom-double
+[Margin top]              .hw-block--mt
+[Half margin top]         .hw-block--mt-half
+[Double margin top]       .hw-block--mt-double
+[Margin bottom]           .hw-block--mb
+[Half margin bottom]      .hw-block--mb-half
+[Double margin bottom]    .hw-block--mb-double
+[Padding top]             .hw-block--pt
+[Half padding top]        .hw-block--pt-half
+[Double padding top]      .hw-block--pt-double
+[Padding bottom]          .hw-block--pb
+[Half padding bottom]     .hw-block--pb-half
+[Double padding bottom]   .hw-block--pb-double
 ```
 
 ### Block modifiers (max-widths)

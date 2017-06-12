@@ -22,19 +22,19 @@ Required:
         </svg>
       </button>
       <div class="hw-banner__contents">
-        <div class="hw-block hw-block--full hw-block--padding-top">
+        <div class="hw-block hw-block--full hw-block--pt">
           <button class="hw-banner__trigger-close">
             <svg class="hw-icon">
               <use xlink:href="#caret-up"></use>
             </svg>
           </button>
       </div>
-        <div class="hw-block hw-block--padding-top-half hw-block--limited-narrow">
+        <div class="hw-block hw-block--pt-half hw-block--limited-narrow">
           <h1>Hot! Hot! Hot!</h1>
-          <div class="hw-block hw-block--full hw-block--padding-top-half">
+          <div class="hw-block hw-block--full hw-block--pt-half">
             <time>24.09.76</time>|<time>17:45</time>
           </div>
-          <div class="hw-block hw-block--full hw-block--padding-top-half hw-block--padding-bottom-double">
+          <div class="hw-block hw-block--full hw-block--pt-half hw-block--pb-double">
             <h3>Asfalten på veiene smelter og bilene våre kjører seg fast i tjukk olje. Droneleveransene våre går som normalt.</h3>
           </div>
       </div>
@@ -55,22 +55,22 @@ Required:
         </svg>
       </button>
       <div class="hw-banner__contents">
-        <div class="hw-block hw-block--full hw-block--padding-top">
+        <div class="hw-block hw-block--full hw-block--pt">
           <button class="hw-banner__trigger-close">
             <svg class="hw-icon">
               <use xlink:href="#caret-up"></use>
             </svg>
           </button>
       </div>
-        <div class="hw-block hw-block--padding-top-half hw-block--limited-narrow">
+        <div class="hw-block hw-block--pt-half hw-block--limited-narrow">
           <h1>14 Meters of snow expected</h1>
-          <div class="hw-block hw-block--full hw-block--padding-top-half">
+          <div class="hw-block hw-block--full hw-block--pt-half">
             <time>24.09.76</time>|<time>17:45</time>
           </div>
-          <div class="hw-block hw-block--full hw-block--padding-top-half">
+          <div class="hw-block hw-block--full hw-block--pt-half">
             <h3>The blizzard is causing delays across the Oslo region.</h3>
           </div>
-          <div class="hw-block hw-block--full hw-block--padding-top-half">
+          <div class="hw-block hw-block--full hw-block--pt-half">
             <a href="#" class="hw-banner__read-more-link">Read more</a>
           </div>
       </div>

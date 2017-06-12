@@ -60,12 +60,12 @@
         </div>
       </section>
 
-      <section class="hw-block hw-block--limited hw-block--margin-top-double hw-block--margin-bottom-double">
+      <section class="hw-block hw-block--limited hw-block--mt-double hw-block--mb-double">
 
         <div class="hw-grid">
           <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
             <a href="#" class="hw-card-nav">
-              <div class="hw-block hw-block--margin-top-double hw-block--margin-bottom-double">
+              <div class="hw-block hw-block--mt-double hw-block--mb-double">
                 <h2 class="hw-card-nav__title">Sende</h2>
                 <hr class="hw-hr hw-hr--centered" />
                 <p class="hw-card-nav__text">
@@ -76,7 +76,7 @@
           </div><!--
       --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
             <a href="#" class="hw-card-nav">
-              <div class="hw-block hw-block--margin-top-double hw-block--margin-bottom-double">
+              <div class="hw-block hw-block--mt-double hw-block--mb-double">
                 <h2 class="hw-card-nav__title">Motta</h2>
                 <hr class="hw-hr hw-hr--centered" />
                 <div class="hw-card-nav__text">
@@ -87,7 +87,7 @@
           </div><!--
       --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
             <a href="#" class="hw-card-nav">
-              <div class="hw-block hw-block--margin-top-double hw-block--margin-bottom-double">
+              <div class="hw-block hw-block--mt-double hw-block--mb-double">
                 <h2 class="hw-card-nav__title">Mer om</h2>
                 <hr class="hw-hr hw-hr--centered" />
                 <div class="hw-card-nav__text">
@@ -140,7 +140,7 @@
             <div class="hw-grid__item hw-one-quarter">
               <p class="hw-footer__title">Kundeservice</p>
               <hr class="hw-hr hw-hr--white" />
-              <div class="hw-block hw-block--full hw-block--margin-top-half">
+              <div class="hw-block hw-block--full hw-block--mt-half">
                 <ul class="hw-footer__links">
                   <li><a href="#">Kontakt oss</a></li>
                   <li><a href="#">Aktuelt nå</a></li>
@@ -153,7 +153,7 @@
             --><div class="hw-grid__item hw-one-quarter">
               <p class="hw-footer__title">Om Bring</p>
               <hr class="hw-hr hw-hr--white" />
-              <div class="hw-block hw-block--full hw-block--margin-top-half">
+              <div class="hw-block hw-block--full hw-block--mt-half">
                 <ul class="hw-footer__links">
                   <li><a href="#">Våre tjenester</a></li>
                   <li><a href="#">Priser</a></li>
@@ -166,7 +166,7 @@
             --><div class="hw-grid__item hw-one-quarter">
               <p class="hw-footer__title">Søk etter</p>
               <hr class="hw-hr hw-hr--white" />
-              <div class="hw-block hw-block--full hw-block--margin-top-half">
+              <div class="hw-block hw-block--full hw-block--mt-half">
                 <ul class="hw-footer__links">
                   <li><a href="#">Postkontor og åpningstider</a></li>
                   <li><a href="#">Navn og adresser</a></li>
@@ -184,7 +184,7 @@
       </div>
     
       <div class="hw-footer__mobile">
-        <div class="hw-block hw-block--half hw-block--padding-top-half">
+        <div class="hw-block hw-block--half hw-block--pt-half">
           <div class="hw-grid">
             <div class="hw-grid__item hw-small--one-half">
               <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
@@ -226,7 +226,7 @@
         </ul>
       </div>
 
-      <div class="hw-block hw-block--full hw-block--padding-bottom-half">
+      <div class="hw-block hw-block--full hw-block--pb-half">
         <div class="hw-footer__logo">
           <svg class="hw-icon">
             <use xlink:href="#logo-white"></use>
@@ -234,7 +234,7 @@
         </div>
       </div>
 
-      <div class="hw-block hw-block--full hw-block--col-white hw-block--padding-top-half hw-block--padding-bottom-half">
+      <div class="hw-block hw-block--full hw-block--col-white hw-block--pt-half hw-block--pb-half">
         <div class="hw-footer__legal">
           <a href="#">© Posten Norge</a>
           <span>|</span>

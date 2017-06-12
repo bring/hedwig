@@ -59,7 +59,7 @@
     <main class="hw-block hw-block--full hw-block--limited-text">
 
       <article>
-        <div class="hw-block hw-block--margin-top-double">
+        <div class="hw-block hw-block--mt-double">
           <div class="hw-wysiwyg">
             <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
             <p class="hw-text-lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -70,7 +70,7 @@
             <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
             <p>-- callout --</p>
             <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <div class="hw-block hw-block--full hw-block--margin-bottom-double hw-block--margin-top-double">
+            <div class="hw-block hw-block--full hw-block--mb-double hw-block--mt-double">
               <figure class="hw-image hw-image--large">
                 <img src="https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/article-image-1.jpg" />
                 <figcaption>
@@ -118,7 +118,7 @@
             <div class="hw-grid__item hw-one-quarter">
               <p class="hw-footer__title">Kundeservice</p>
               <hr class="hw-hr hw-hr--white" />
-              <div class="hw-block hw-block--full hw-block--margin-top-half">
+              <div class="hw-block hw-block--full hw-block--mt-half">
                 <ul class="hw-footer__links">
                   <li><a href="#">Kontakt oss</a></li>
                   <li><a href="#">Aktuelt nå</a></li>
@@ -131,7 +131,7 @@
             --><div class="hw-grid__item hw-one-quarter">
               <p class="hw-footer__title">Om Bring</p>
               <hr class="hw-hr hw-hr--white" />
-              <div class="hw-block hw-block--full hw-block--margin-top-half">
+              <div class="hw-block hw-block--full hw-block--mt-half">
                 <ul class="hw-footer__links">
                   <li><a href="#">Våre tjenester</a></li>
                   <li><a href="#">Priser</a></li>
@@ -144,7 +144,7 @@
             --><div class="hw-grid__item hw-one-quarter">
               <p class="hw-footer__title">Søk etter</p>
               <hr class="hw-hr hw-hr--white" />
-              <div class="hw-block hw-block--full hw-block--margin-top-half">
+              <div class="hw-block hw-block--full hw-block--mt-half">
                 <ul class="hw-footer__links">
                   <li><a href="#">Postkontor og åpningstider</a></li>
                   <li><a href="#">Navn og adresser</a></li>
@@ -162,7 +162,7 @@
       </div>
     
       <div class="hw-footer__mobile">
-        <div class="hw-block hw-block--half hw-block--padding-top-half">
+        <div class="hw-block hw-block--half hw-block--pt-half">
           <div class="hw-grid">
             <div class="hw-grid__item hw-small--one-half">
               <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
@@ -204,7 +204,7 @@
         </ul>
       </div>
 
-      <div class="hw-block hw-block--full hw-block--padding-bottom-half">
+      <div class="hw-block hw-block--full hw-block--pb-half">
         <div class="hw-footer__logo">
           <svg class="hw-icon">
             <use xlink:href="#logo-white"></use>
@@ -212,7 +212,7 @@
         </div>
       </div>
 
-      <div class="hw-block hw-block--full hw-block--col-white hw-block--padding-top-half hw-block--padding-bottom-half">
+      <div class="hw-block hw-block--full hw-block--col-white hw-block--pt-half hw-block--pb-half">
         <div class="hw-footer__legal">
           <a href="#">© Posten Norge</a>
           <span>|</span>
