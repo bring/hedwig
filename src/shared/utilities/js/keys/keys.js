@@ -1,3 +1,6 @@
+/**
+ * Helper key-codes for common keys
+ */
 export default {
   TAB: 9,
   ENTER: 13,
