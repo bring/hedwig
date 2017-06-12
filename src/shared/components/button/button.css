@@ -25,6 +25,7 @@
     background: var(--hw-color-gray-light) !important;
     border: 2px solid var(--hw-color-gray-light) !important;
     outline: 0 !important;
+    box-shadow: none !important;
     cursor: default;
   }
 
@@ -132,4 +133,29 @@
       background: var(--hw-color-gray-lightest);
     }
   }
+
+  /* Chat button */
+
+  &--icon {
+    border: 2px solid var(--hw-color-primary);
+    color: var(--hw-color-white);
+    fill: var(--hw-color-white);
+    background: var(--hw-color-primary);
+    padding: var(--hw-spacing-smaller);
+    border-radius: 50%;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: var(--hw-color-primary-dark);
+      background: var(--hw-color-primary-dark);
+      box-shadow: 0px 0px 0px 1px var(--hw-color-primary-dark);
+      outline: 0;
+    }
+
+    &:active {
+      background: var(--hw-color-primary);
+    }
+  }
+
 }

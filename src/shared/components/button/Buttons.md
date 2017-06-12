@@ -70,6 +70,25 @@ Styling for buttons.
 [Outline white]        .hw-button--outline-white
 ```
 
+### Icon
+
+```html|span-4
+  <button class="hw-button hw-button--icon">
+    <svg class="hw-icon">
+      <use xlink:href="#binders"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--icon" disabled>
+    <svg class="hw-icon">
+      <use xlink:href="#binders"></use>
+    </svg>
+  </button>
+```
+
+```code
+[Icon]        .hw-button--icon
+```
+
 ### Extra modifiers
 
 ```html|span-4
