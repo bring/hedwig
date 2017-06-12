@@ -131,7 +131,7 @@ Most components are tested in IE10, but IE9 is still yet to be tested.
 └─ helpers                       # Helpers classes, Takyions (?)
 ```
 
-## 📦 Dependencies
+## 📦 Dependencies (development helpers)
 
 * [PostCSS](https://github.com/postcss/postcss), [cssnano](https://github.com/ben-eb/cssnano), [postcss-cli](https://github.com/postcss/postcss-cli), [postcss-cssnext](https://github.com/MoOx/postcss-cssnext), [postcss-extend](https://github.com/travco/postcss-extend) - for transpiling CSS
 * [sanitize.css](https://github.com/jonathantneal/sanitize.css) to make CSS sane (a lightweight version of Normalize)
@@ -146,6 +146,10 @@ Most components are tested in IE10, but IE9 is still yet to be tested.
 * [concurrently](https://www.npmjs.com/package/concurrently) - to run multiple scripts
 * [Catalog](https://github.com/interactivethings/catalog) - for documentation
 * [svgo](https://github.com/svg/svgo), [svg2sprite](https://github.com/mrmlnc/svg2sprite) - for SVG's
+
+
+## 📦 Dependencies (included in bundle)
+* [Zenscroll](https://github.com/zengabor/zenscroll) - Tiny smooth-scroll helper
 
 ## ⚖️ Licenses
 

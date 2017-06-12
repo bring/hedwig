@@ -87,6 +87,9 @@ const HWSticky = ({
     // Attach event listeners
     window.addEventListener('scroll', throttle(checkPosition, 50));
     window.addEventListener('resize', throttle(resetPosition, 50));
+
+    // Fire initial check (in case user starts halfway down page)
+    checkPosition();
   }
 
   init();

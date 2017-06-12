@@ -18,6 +18,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body,
+.smooth-container {
+  scroll-behavior: smooth;
+}
+
 img,
 svg {
   max-width: 100%;

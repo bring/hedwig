@@ -1,3 +1,5 @@
+import zenscroll from 'zenscroll';
+
 import q from './utilities/js/q';
 import checkSupport from './utilities/js/checkSupport';
 
@@ -10,6 +12,9 @@ const HWApp = () => {
   // Module settings object
   const SETTINGS = {
     document: q('html'), // All password DOM nodes
+    zenscroll: {
+      edgeOffset: 100, // px
+    },
   };
 
   /**
@@ -22,6 +27,9 @@ const HWApp = () => {
 
     // Mark as initialised
     SETTINGS.document.setAttribute('data-hw-app-initialised', true);
+
+    // Initialise zenscroll
+    zenscroll.setup(null, SETTINGS.zenscroll.edgeOffset);
 
     // Check for js support, and remove `no-js` class from body.
     checkSupport();
