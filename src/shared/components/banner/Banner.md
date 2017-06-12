@@ -29,12 +29,12 @@ Required:
             </svg>
           </button>
       </div>
-        <div class="hw-block hw-block--pt-half hw-block--limited-narrow">
+        <div class="hw-block hw-block--pt-small hw-block--limited-narrow">
           <h1>Hot! Hot! Hot!</h1>
-          <div class="hw-block hw-block--full hw-block--pt-half">
+          <div class="hw-block hw-block--full hw-block--pt-small">
             <time>24.09.76</time>|<time>17:45</time>
           </div>
-          <div class="hw-block hw-block--full hw-block--pt-half hw-block--pb-double">
+          <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-large">
             <h3>Asfalten på veiene smelter og bilene våre kjører seg fast i tjukk olje. Droneleveransene våre går som normalt.</h3>
           </div>
       </div>
@@ -62,15 +62,15 @@ Required:
             </svg>
           </button>
       </div>
-        <div class="hw-block hw-block--pt-half hw-block--limited-narrow">
+        <div class="hw-block hw-block--pt-small hw-block--limited-narrow">
           <h1>14 Meters of snow expected</h1>
-          <div class="hw-block hw-block--full hw-block--pt-half">
+          <div class="hw-block hw-block--full hw-block--pt-small">
             <time>24.09.76</time>|<time>17:45</time>
           </div>
-          <div class="hw-block hw-block--full hw-block--pt-half">
+          <div class="hw-block hw-block--full hw-block--pt-small">
             <h3>The blizzard is causing delays across the Oslo region.</h3>
           </div>
-          <div class="hw-block hw-block--full hw-block--pt-half">
+          <div class="hw-block hw-block--full hw-block--pt-small">
             <a href="#" class="hw-banner__read-more-link">Read more</a>
           </div>
       </div>

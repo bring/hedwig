@@ -19,7 +19,7 @@ Example form (using other components)
     Fortell oss litt om hva vi kan hjelpe deg med
     <textarea class="hw-textarea" rows="4" cols="50" placeholder="Skriv tekst her"></textarea>
   </label>
-  <div class="hw-block hw-block--full hw-block--pt-double hw-block--pb">
+  <div class="hw-block hw-block--full hw-block--pt-large hw-block--pb">
     <h2>Kontaktinformasjon</h2>
   </div>
   <label class="hw-label">
@@ -70,7 +70,7 @@ Example form (using other components)
       <div class="hw-checkbox__indicator"></div>
     </label>
   </div>
-  <div class="hw-block hw-block--full hw-block--mt-double">
+  <div class="hw-block hw-block--full hw-block--mt-large">
     <button class="hw-button hw-button--primary">
       Send skjema
     </button>

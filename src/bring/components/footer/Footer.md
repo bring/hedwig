@@ -13,7 +13,7 @@
         <div class="hw-grid__item hw-one-quarter">
           <p class="hw-footer__title">Kundeservice</p>
           <hr class="hw-hr hw-hr--white" />
-          <div class="hw-block hw-block--full hw-block--mt-half">
+          <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
               <li><a href="#">Kontakt oss</a></li>
               <li><a href="#">Aktuelt nå</a></li>
@@ -26,7 +26,7 @@
         --><div class="hw-grid__item hw-one-quarter">
           <p class="hw-footer__title">Om Bring</p>
           <hr class="hw-hr hw-hr--white" />
-          <div class="hw-block hw-block--full hw-block--mt-half">
+          <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
               <li><a href="#">Våre tjenester</a></li>
               <li><a href="#">Priser</a></li>
@@ -39,7 +39,7 @@
         --><div class="hw-grid__item hw-one-quarter">
           <p class="hw-footer__title">Søk etter</p>
           <hr class="hw-hr hw-hr--white" />
-          <div class="hw-block hw-block--full hw-block--mt-half">
+          <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
               <li><a href="#">Postkontor og åpningstider</a></li>
               <li><a href="#">Navn og adresser</a></li>
@@ -56,7 +56,7 @@
     </div>
   
     <div class="hw-footer__mobile">
-      <div class="hw-block hw-block--half hw-block--pt-half">
+      <div class="hw-block hw-block--half hw-block--pt-small">
         <div class="hw-grid">
           <div class="hw-grid__item hw-small--one-half">
             <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
@@ -98,7 +98,7 @@
       </ul>
     </div>
 
-    <div class="hw-block hw-block--full hw-block--pb-half">
+    <div class="hw-block hw-block--full hw-block--pb-small">
       <div class="hw-footer__logo">
         <svg class="hw-icon">
           <use xlink:href="#logo-white"></use>
