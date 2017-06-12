@@ -43,8 +43,8 @@
     "svg:sprite": "node ./scripts/svg-sprite",
     "svg": "npm run svg:min && npm run svg:sprite",
     "css:fix": "stylelint 'src/**/*.css' --fix",
-    "getversion" : "echo $(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') > tmp/.version",
-    "postpublish" : "npm run getversion && VERSION=$(cat tmp/.version) && git tag $VERSION && git push --tags"
+    "getversion": "echo $(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') > tmp/.version",
+    "postpublish": "npm run getversion && VERSION=$(cat tmp/.version) && git tag $VERSION && git push --tags"
   },
   "dependencies": {
     "aws-sdk": "^2.40.0",

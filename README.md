@@ -45,8 +45,8 @@ To develop on the styleguide, please follow our [guidelines]('').
 ```
 clone this repo
 yarn install             # to install dependencies
-yarn s3:download         # to download assets from S3
 add .env file            # get variables from Heroku
+yarn s3:download         # to download assets from S3
 yarn dev
 [open browser on port 3000]('http://localhost:3000/docs') 🚀
 ```
