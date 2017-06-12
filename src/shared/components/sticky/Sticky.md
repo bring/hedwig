@@ -15,8 +15,8 @@ The component left/right position will be based on the original width of the ele
 <div data-hw-sticky>
   <div class="
     hw-block
-    hw-block--padding-top
-    hw-block--padding-bottom
+    hw-block--pt
+    hw-block--pb
     hw-block--col-primary
   ">
     Watch me stick!

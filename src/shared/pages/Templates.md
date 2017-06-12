@@ -24,7 +24,7 @@ Copy any of the below code snippets into a `.html` file and play around.
 
   <main class="hw-block hw-block--full hw-block--limited-text">
 
-    <section class="hw-block hw-block--margin-top">
+    <section class="hw-block hw-block--mt">
 
       <!-- Enter block contents here -->
 
@@ -57,7 +57,7 @@ Copy any of the below code snippets into a `.html` file and play around.
 
   <main class="hw-block hw-block--full hw-block--limited-text">
 
-    <article class="hw-block hw-block--margin-top">
+    <article class="hw-block hw-block--mt">
 
       <!-- wysiwyg contents (rich text) -->
 
@@ -71,7 +71,7 @@ Copy any of the below code snippets into a `.html` file and play around.
         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
         <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
 
-        <div class="hw-block hw-block--full hw-block--margin-bottom-double hw-block--margin-top-double">
+        <div class="hw-block hw-block--full hw-block--mb-large hw-block--mt-large">
           <figure class="hw-image hw-image--large">
             <img src="http://weknowyourdreams.com/images/owl/owl-05.jpg" />
             <figcaption>
@@ -89,7 +89,7 @@ Copy any of the below code snippets into a `.html` file and play around.
         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
         <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
 
-        <div class="hw-block hw-block--full hw-block--margin-bottom-double hw-block--margin-top-double">
+        <div class="hw-block hw-block--full hw-block--mb-large hw-block--mt-large">
           <figure class="hw-image">
             <img src="http://www.owlcentre.com/images/2013_owl_for_leaflet_cover_large.jpg" />
             <figcaption>
@@ -131,7 +131,7 @@ Copy any of the below code snippets into a `.html` file and play around.
 
   <main class="hw-block hw-block--full hw-block--limited-text">
 
-    <section class="hw-block hw-block--margin-top">
+    <section class="hw-block hw-block--mt">
 
       <div class="hw-wysiwyg">
         <h1>Kontakt oss</h1>
@@ -144,7 +144,7 @@ Copy any of the below code snippets into a `.html` file and play around.
       <!-- Form contents -->
 
       <form>
-        <div class="hw-block hw-block--full hw-block--margin-bottom">
+        <div class="hw-block hw-block--full hw-block--mb">
 
           <fieldset class="hw-fieldset">
             <legend class="hw-fieldset__legend">
@@ -228,7 +228,7 @@ Copy any of the below code snippets into a `.html` file and play around.
           <textarea class="hw-textarea" rows="4" cols="50" placeholder="Skriv tekst her"></textarea>
         </label>
 
-        <div class="hw-block hw-block--full hw-block--padding-top-double hw-block--padding-bottom">
+        <div class="hw-block hw-block--full hw-block--pt-large hw-block--pb">
           <h2>Kontaktinformasjon</h2>
         </div>
 
@@ -279,7 +279,7 @@ Copy any of the below code snippets into a `.html` file and play around.
           <input class="hw-input" type="text" placeholder="F.eks.: ola@nordmann.no"/>
         </label>
 
-        <div class="hw-block hw-block--full hw-block--margin-top">
+        <div class="hw-block hw-block--full hw-block--mt">
           <label class="hw-checkbox">
             Ja takk, jeg ønsker at Posten Norge AS og dets datterselskaper bruker opplysningene jeg har oppgitt til å sende meg informasjon via epost og SMS som er relevant for min bedrift.
             <input type="checkbox" />
@@ -287,7 +287,7 @@ Copy any of the below code snippets into a `.html` file and play around.
           </label>
         </div>
 
-        <div class="hw-block hw-block--full hw-block--margin-top-double">
+        <div class="hw-block hw-block--full hw-block--mt-large">
           <button class="hw-button hw-button--primary">
             Send skjema
           </button>

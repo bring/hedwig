@@ -39,24 +39,24 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   <div class="hw-helpers-margin-highlighter">
     <div class="
       hw-block 
-      hw-block--half
+      hw-block--small
     ">
-      <p>Block with half side padding</p>
+      <p>Block with small side padding</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
     <div class="
       hw-block 
-      hw-block--double
+      hw-block--large
     ">
-      <p>Block with double side padding</p>
+      <p>Block with large side padding</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
     <div class="
       hw-block 
-      hw-block--margin-top 
-      hw-block--margin-bottom
+      hw-block--mt 
+      hw-block--mb
     ">
       <p>Block with top and bottom margins</p>
     </div>
@@ -64,39 +64,40 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   <div class="hw-helpers-margin-highlighter">
     <div class="
       hw-block 
-      hw-block--margin-top-half 
-      hw-block--margin-bottom-half
+      hw-block--mt-small 
+      hw-block--mb-small
     ">
-      <p>Block with half top and bottom margins</p>
+      <p>Block with small top and bottom margins</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
     <div class="
       hw-block 
-      hw-block--margin-top-double 
-      hw-block--margin-bottom-double
+      hw-block--mt-large 
+      hw-block--mb-large
     ">
-      <p>Block with double top and bottom margins</p>
+      <p>Block with large top and bottom margins</p>
     </div>
   </div>
 ```
 
 ### Block modifiers (margin & padding)
 ```code
-[Full]                    .hw-block--full (no side paddings)
-[Half]                    .hw-block--half (half side paddings)
-[Margin top]              .hw-block--margin-top
-[Half margin top]         .hw-block--margin-top-half
-[Double margin top]       .hw-block--margin-top-double
-[Margin bottom]           .hw-block--margin-bottom
-[Half margin bottom]      .hw-block--margin-bottom-half
-[Double margin bottom]    .hw-block--margin-bottom-double
-[Padding top]             .hw-block--padding-top
-[Half padding top]        .hw-block--padding-top-half
-[Double padding top]      .hw-block--padding-top-double
-[Padding bottom]          .hw-block--padding-bottom
-[Half padding bottom]     .hw-block--padding-bottom-half
-[Double padding bottom]   .hw-block--padding-bottom-double
+[Full]                      .hw-block--full (no side paddings)
+[Small]                     .hw-block--small (half side paddings)
+[Large]                     .hw-block--large (large side paddings)
+[Margin top]                .hw-block--mt
+[Small margin top]          .hw-block--mt-small
+[Large margin top]          .hw-block--mt-large
+[Margin bottom]             .hw-block--mb
+[Small margin bottom]       .hw-block--mb-small
+[Large margin bottom]       .hw-block--mb-large
+[Padding top]               .hw-block--pt
+[Small padding top]         .hw-block--pt-small
+[Large padding top]         .hw-block--pt-large
+[Padding bottom]            .hw-block--pb
+[Small padding bottom]      .hw-block--pb-small
+[Large padding bottom]      .hw-block--pb-large
 ```
 
 ### Block modifiers (max-widths)

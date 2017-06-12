@@ -19,7 +19,7 @@ Example form (using other components)
     Fortell oss litt om hva vi kan hjelpe deg med
     <textarea class="hw-textarea" rows="4" cols="50" placeholder="Skriv tekst her"></textarea>
   </label>
-  <div class="hw-block hw-block--full hw-block--padding-top-double hw-block--padding-bottom">
+  <div class="hw-block hw-block--full hw-block--pt-large hw-block--pb">
     <h2>Kontaktinformasjon</h2>
   </div>
   <label class="hw-label">
@@ -63,14 +63,14 @@ Example form (using other components)
     E-postadresse
     <input class="hw-input" type="text" placeholder="F.eks.: ola@nordmann.no"/>
   </label>
-  <div class="hw-block hw-block--full hw-block--margin-top">
+  <div class="hw-block hw-block--full hw-block--mt">
     <label class="hw-checkbox">
       Ja takk, jeg ønsker at Posten Norge AS og dets datterselskaper bruker opplysningene jeg har oppgitt til å sende meg informasjon via epost og SMS som er relevant for min bedrift.
       <input type="checkbox" />
       <div class="hw-checkbox__indicator"></div>
     </label>
   </div>
-  <div class="hw-block hw-block--full hw-block--margin-top-double">
+  <div class="hw-block hw-block--full hw-block--mt-large">
     <button class="hw-button hw-button--primary">
       Send skjema
     </button>
