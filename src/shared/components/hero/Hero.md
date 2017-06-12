@@ -25,7 +25,9 @@ Hero component
     data-rellax-speed="-4"></div>
     <div class="hw-hero__overlay"></div>
     <div class="hw-hero__contents">
-      <h1>Headline</h1>
+      <div class="hw-animate hw-animate--slide-in-bottom">
+        <h1>Headline</h1>
+      </div>
     </div>
   </div>
 ```
@@ -70,7 +72,9 @@ Hero component
   <div class="hw-hero__image" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');"></div>
   <div class="hw-hero__overlay"></div>
   <div class="hw-hero__contents">
-    <h1>Headline</h1>
+    <div class="hw-animate hw-animate--slide-in-bottom">
+      <h1>Headline</h1>
+    </div>
   </div>
 </div>
 ```

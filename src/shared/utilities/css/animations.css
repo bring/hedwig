@@ -1,0 +1,22 @@
+/* Animation classes */
+
+.hw-animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  &--slide-in-bottom {
+    animation-name: slide-in-bottom;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(64px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
