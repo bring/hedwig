@@ -2,9 +2,9 @@
 
 /**
  * @function getPosition
- * @desc Returns an elements top position in the viewport
+ * @desc Returns an elements position in the viewport
  * @param {htmlElement} [elem] target element
- * @return {string} - Pixels from the top of the viewport.
+ * @return {object} - Object with position values
  */
 const getPosition = (elem) => {
   const box = elem.getBoundingClientRect();
