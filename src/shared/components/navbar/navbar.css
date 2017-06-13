@@ -115,7 +115,7 @@
     position: absolute;
     left: 220px;
     right: 220px;
-    z-index: 2000;
+    z-index: var(--z-index--navbar-search);
   }
 
   &__overlay {
@@ -151,11 +151,11 @@
     & .hw-navbar__drawer {
       animation: drawer-animation 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
       display: block;
-      z-index: 2000;
+      z-index: var(--z-index--navbar-drawer);
     }
 
     & .hw-navbar__logo {
-      z-index: 2001;
+      z-index: var(--z-index--navbar-drawer-foreground);
       background: transparent !important;
     }
 
@@ -168,24 +168,24 @@
     }
 
     & .hw-navbar__search-button {
-      z-index: 2001;
       color: var(--hw-color-white);
       background: transparent !important;
       border-color: transparent !important;
+      z-index: var(--z-index--navbar-drawer-foreground);
     }
 
     & .hw-navbar__menu-button {
-      z-index: 2001;
       color: var(--hw-color-white);
       background: transparent !important;
       border-color: transparent !important;
+      z-index: var(--z-index--navbar-drawer-foreground);
     }
   }
 
   &--searching {
     & .hw-navbar__search {
       display: block;
-      z-index: 4000;
+      z-index: var(--z-index--navbar-search-foreground);
     }
 
     & .hw-navbar__menu {
@@ -195,7 +195,7 @@
     & .hw-navbar__overlay {
       visibility: visible;
       opacity: 0.3;
-      z-index: 3000;
+      z-index: var(--z-index--navbar-search);
     }
   }
 

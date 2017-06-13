@@ -57,7 +57,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    z-index: 1000;
+    z-index: var(--z-index--hero-search);
 
     @media (--medium) {
       width: 600px;
@@ -95,17 +95,13 @@
       right: 0;
       left: 0;
       top: 0;
-      z-index: 1000;
+      z-index: var(--z-index--hero-search);
       position: fixed;
       box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.2);
     }
   }
 }
 
-.hw-hero__contents > h1,
-.hw-hero__contents > h2,
-.hw-hero__contents > h3,
-.hw-hero__contents > h4,
-.hw-hero__contents > p {
+.hw-hero__title {
   color: var(--hw-color-white);
 }

@@ -80,7 +80,7 @@
     line-height: 24px;
     border-radius: 50%;
     text-align: center;
-    z-index: 5000;
+    z-index: 1;
   }
 
   &--is-hidden {

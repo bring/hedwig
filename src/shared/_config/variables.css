@@ -78,4 +78,18 @@
   @custom-media --only-medium (min-width: 720px) and (max-width: 940px);
   @custom-media --only-large (min-width: 940px) and (max-width: 1200px);
   @custom-media --only-xlarge (min-width: 1200px);
+
+
+  /**
+   * Global z-index values
+   */
+
+  --z-index--stickynav: 100;
+  --z-index--navbar: 100;
+  --z-index--navbar-drawer: 200;
+  --z-index--navbar-drawer-foreground: 300;
+  --z-index--navbar-search: 300;
+  --z-index--navbar-search-foreground: 400;
+  --z-index--hero-search: 100;
+
 }

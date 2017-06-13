@@ -50,7 +50,7 @@
       bottom: 12px;
       right: 12px;
       text-align: center;
-      z-index: 5000;
+      z-index: 1;
     }
   }
 }

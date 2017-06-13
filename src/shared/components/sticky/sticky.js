@@ -19,11 +19,10 @@ const HWSticky = ({
   };
 
   function fix(el) {
-    const { hwStickyInitialLeft, hwStickyInitialRight } = el.dataset;
     el.style.position = 'fixed';
     el.style.top = 0;
-    el.style.left = `${hwStickyInitialLeft}px`;
-    el.style.right = `${window.innerWidth - hwStickyInitialRight}px`;
+    el.style.left = 0;
+    el.style.right = 0;
     el.setAttribute('data-hw-sticky-stuck', true);
   }
 
@@ -53,10 +52,8 @@ const HWSticky = ({
 
   function resetPosition() {
     SETTINGS.elements.forEach((sticky) => {
-      const { offsetFromTop, left, right } = getPosition(sticky);
+      const { offsetFromTop } = getPosition(sticky);
       sticky.setAttribute('data-hw-sticky-initial-top', offsetFromTop);
-      sticky.setAttribute('data-hw-sticky-initial-left', left);
-      sticky.setAttribute('data-hw-sticky-initial-right', right);
     });
   }
 
@@ -75,10 +72,8 @@ const HWSticky = ({
       sticky.setAttribute('data-hw-sticky-initialised', true);
 
       // Append initial position
-      const { offsetFromTop, left, right } = getPosition(sticky);
+      const { offsetFromTop } = getPosition(sticky);
       sticky.setAttribute('data-hw-sticky-initial-top', offsetFromTop);
-      sticky.setAttribute('data-hw-sticky-initial-left', left);
-      sticky.setAttribute('data-hw-sticky-initial-right', right);
 
       // Add HW acceleration
       sticky.style.willChange = 'top';
@@ -86,7 +81,7 @@ const HWSticky = ({
 
     // Attach event listeners
     window.addEventListener('scroll', throttle(checkPosition, 50));
-    window.addEventListener('resize', throttle(resetPosition, 50));
+    window.addEventListener('resize', throttle(resetPosition, 100));
 
     // Fire initial check (in case user starts halfway down page)
     checkPosition();

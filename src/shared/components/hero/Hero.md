@@ -26,7 +26,7 @@ Hero component
     <div class="hw-hero__overlay"></div>
     <div class="hw-hero__contents">
       <div class="hw-animate hw-animate--slide-in-bottom">
-        <h1>Headline</h1>
+        <h1 class="hw-hero__title">Headline</h1>
       </div>
     </div>
   </div>
@@ -73,7 +73,7 @@ Hero component
   <div class="hw-hero__overlay"></div>
   <div class="hw-hero__contents">
     <div class="hw-animate hw-animate--slide-in-bottom">
-      <h1>Headline</h1>
+      <h1 class="hw-hero__title">Headline</h1>
     </div>
   </div>
 </div>
