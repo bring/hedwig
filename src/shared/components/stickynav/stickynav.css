@@ -1,15 +1,12 @@
 .hw-stickynav {
-  --height-mobile: 45px;
-  --height-desktop: 72px;
-
   position: relative;
   width: 100%;
-  height: var(--height-mobile);
+  height: 45px;
   background-color: var(--hw-color-white);
   z-index: var(--z-index--stickynav);
 
   @media (--medium) {
-    height: var(--height-desktop);
+    height: 72px;
   }
 
   /**
@@ -17,16 +14,16 @@
    */
 
   &__nav {
-    height: var(--height-mobile);
+    height: 45px;
     background-color: var(--hw-color-white);
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     text-align: center;
-    padding: 0 var(--hw-spacing-spacing);
+    padding: 0 var(--hw-spacing);
 
     @media (--medium) {
-      height: var(--height-desktop);
+      height: 72px;
     }
 
     &::after {
