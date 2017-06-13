@@ -208,7 +208,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: var(--z-index--navbar);
     margin-bottom: 65px;
   }
 
@@ -217,7 +217,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: var(--z-index--navbar);
     background: none;
     border: 0;
   }
