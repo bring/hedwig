@@ -16,6 +16,9 @@
   }
 
   &__item {
+    transition: height 0.5s ease;
+    overflow: hidden;
+
     &:last-child {
       margin-bottom: var(--hw-spacing-large);
     }
@@ -67,10 +70,7 @@
   }
 
   &__contents {
-    height: 0;
-    overflow: hidden;
-    transition: padding 0.8s ease;
-    padding: 0 var(--hw-spacing-small);
+    padding: var(--hw-spacing-small);
   }
 
   /**
@@ -78,8 +78,7 @@
    */
 
   &__item--expanded .hw-accordion__contents {
-    height: auto;
-    padding: var(--hw-spacing-small);
+    /* Fill */
   }
 
   &__item--expanded .hw-accordion__trigger {

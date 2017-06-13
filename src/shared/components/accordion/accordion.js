@@ -34,9 +34,11 @@ const HWAccordion = ({
     items.forEach((item) => {
       const trigger = q('.hw-accordion__trigger', item);
       const contents = q('.hw-accordion__contents', item);
+      const triggerHeight = trigger.getAttribute('data-hw-accordion-trigger-height');
 
       trigger.setAttribute('aria-expanded', false);
       contents.setAttribute('aria-hidden', true);
+      item.style.height = `$(triggerHeight}0px`;
       item.classList.remove(activeItemClass);
     });
   }
@@ -50,15 +52,22 @@ const HWAccordion = ({
   function toggleAccordion(e) {
     // Determine if we've clicked on an option
     const elem = e.target;
+    console.log(elem);
 
     // Find contents and parent item
     const contents = elem.nextElementSibling;
     const accordion = findParent({ selector: '[data-hw-accordion]', elem });
     const item = findParent({ selector: '.hw-accordion__item', elem });
 
+    // Find heights
+    const contentsHeight = contents.getAttribute('data-hw-accordion-contents-height');
+    const triggerHeight = elem.getAttribute('data-hw-accordion-trigger-height');
+    const totalHeight = parseInt(contentsHeight) + parseInt(triggerHeight);
+
     // Display/hide accordion
     if (contents.getAttribute('aria-hidden') === 'false') {
       contents.setAttribute('aria-hidden', true);
+      item.style.height = `${triggerHeight}px`;
       elem.setAttribute('aria-expanded', false);
       item.classList.remove(activeItemClass);
     } else {
@@ -70,6 +79,7 @@ const HWAccordion = ({
       }
 
       contents.setAttribute('aria-hidden', false);
+      item.style.height = `${totalHeight}px`;
       elem.setAttribute('aria-expanded', true);
       item.classList.add(activeItemClass);
     }
@@ -137,8 +147,19 @@ const HWAccordion = ({
         const trigger = q('.hw-accordion__trigger', item);
         const contents = q('.hw-accordion__contents', item);
 
+        // Get heights
+        const triggerHeight = trigger.offsetHeight;
+        const contentsHeight = contents.offsetHeight;
+
+        // Set attributes
         trigger.setAttribute('aria-controls', `${accordionName}-${index}`);
         contents.setAttribute('id', `${accordionName}-${index}`);
+
+        // Set heights
+        item.style.height = `${triggerHeight}px`;
+        trigger.setAttribute('data-hw-accordion-trigger-height', triggerHeight);
+        contents.setAttribute('data-hw-accordion-contents-height', contentsHeight);
+
 
         // Check for default expanded option
         const openByDefault = item.getAttribute('data-hw-accordion-default-expanded');
