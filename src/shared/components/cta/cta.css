@@ -1,0 +1,13 @@
+/**
+ * HEWDIG
+ *
+ * CTA
+ */
+
+.hw-cta {
+  text-align: center;
+
+  &__title {
+    padding-bottom: var(--hw-spacing);
+  }
+}

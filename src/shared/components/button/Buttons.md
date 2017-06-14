@@ -7,6 +7,7 @@ Styling for buttons.
 
 [Large]          .hw-button--large
 [Small]          .hw-button--small
+[Full]           .hw-button--full
 ```
 
 ### Primary

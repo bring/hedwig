@@ -110,6 +110,10 @@
     background-color: var(--hw-color-gray-light);
   }
 
+  &--col-gray-lighter {
+    background-color: var(--hw-color-gray-lighter);
+  }
+
   &--col-white {
     background-color: var(--hw-color-white);
   }
