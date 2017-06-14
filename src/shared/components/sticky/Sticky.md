@@ -17,7 +17,7 @@ The component left/right position will be based on the original width of the ele
     hw-block
     hw-block--pt
     hw-block--pb
-    hw-block--col-primary
+    hw-block--bg-primary
   ">
     Watch me stick!
   </div>

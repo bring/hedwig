@@ -22,7 +22,7 @@ Triggers:
       <li class="hw-swish__item">
         <div class="
           hw-block  
-          hw-block--col-primary
+          hw-block--bg-primary
           hw-block--pt
           hw-block--pb
         ">
@@ -32,7 +32,7 @@ Triggers:
       <li class="hw-swish__item">
         <div class="
           hw-block  
-          hw-block--col-gray
+          hw-block--bg-gray
           hw-block--pt
           hw-block--pb
         ">
@@ -43,7 +43,7 @@ Triggers:
       <li class="hw-swish__item">
         <div class="
           hw-block  
-          hw-block--col-gray-light
+          hw-block--bg-gray-light
           hw-block--pt
           hw-block--pb
         ">

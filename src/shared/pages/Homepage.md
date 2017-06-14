@@ -3,7 +3,7 @@
 
 ```html
 ---
-  <section class="hw-block hw-block--full hw-block--col-white">
+  <section class="hw-block hw-block--full hw-block--bg-white">
 
     <!-- Header -->
 
@@ -234,7 +234,7 @@
         </div>
       </div>
 
-      <div class="hw-block hw-block--full hw-block--col-white hw-block--pt-small hw-block--pb-small">
+      <div class="hw-block hw-block--full hw-block--bg-white hw-block--pt-small hw-block--pb-small">
         <div class="hw-footer__legal">
           <a href="#">© Posten Norge</a>
           <span>|</span>

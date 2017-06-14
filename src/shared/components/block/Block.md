@@ -110,7 +110,7 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 
 ### Block modifiers (colors)
 ```code
-[Primary]                 .hw-block--col-primary
-[Gray]                    .hw-block--col-gray
-[White]                   .hw-block--col-white
+[Primary]                 .hw-block--bg-primary
+[Gray]                    .hw-block--bg-gray
+[White]                   .hw-block--bg-white
 ```
