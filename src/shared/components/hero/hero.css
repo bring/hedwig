@@ -1,6 +1,9 @@
 .hw-hero {
   position: relative;
-  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 270px;
 
   &__image,
   &__overlay {
@@ -31,9 +34,7 @@
   /* Content */
 
   &__contents {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    /* Not anything yet */
   }
 
   /* Full page overlay (used by search variant) */
@@ -68,7 +69,7 @@
    */
 
   &--large {
-    height: 45vh;
+    min-height: 45vh;
   }
 
   &--full {

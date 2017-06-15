@@ -4,7 +4,7 @@
  * Card
  */
 
-.hw-card-nav {
+.hw-card-cta {
   position: relative;
   transition: transform 0.3s;
   display: flex;
@@ -33,7 +33,7 @@
       opacity: 1;
     }
 
-    & .hw-card-nav__title {
+    & .hw-card-cta__title {
       color: var(--hw-color-black);
     }
 

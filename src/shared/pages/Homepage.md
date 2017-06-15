@@ -3,7 +3,7 @@
 
 ```html
 ---
-  <section class="hw-block hw-block--full hw-block--col-white">
+  <section class="hw-block hw-block--full hw-block--bg-white">
 
     <!-- Header -->
 
@@ -64,33 +64,33 @@
 
         <div class="hw-grid">
           <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
-            <a href="#" class="hw-card-nav">
+            <a href="#" class="hw-card-cta">
               <div class="hw-block hw-block--mt-large hw-block--mb-large">
-                <h2 class="hw-card-nav__title">Sende</h2>
+                <h2 class="hw-card-cta__title">Sende</h2>
                 <hr class="hw-hr hw-hr--centered" />
-                <p class="hw-card-nav__text">
+                <p class="hw-card-cta__text">
                   Finn riktig tjeneste og bestill
                 </p>
               </div>
             </a>
           </div><!--
       --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
-            <a href="#" class="hw-card-nav">
+            <a href="#" class="hw-card-cta">
               <div class="hw-block hw-block--mt-large hw-block--mb-large">
-                <h2 class="hw-card-nav__title">Motta</h2>
+                <h2 class="hw-card-cta__title">Motta</h2>
                 <hr class="hw-hr hw-hr--centered" />
-                <div class="hw-card-nav__text">
+                <div class="hw-card-cta__text">
                   Adresseendring og mottakkertjenester.
                 </div>
               </div>
             </a>
           </div><!--
       --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
-            <a href="#" class="hw-card-nav">
+            <a href="#" class="hw-card-cta">
               <div class="hw-block hw-block--mt-large hw-block--mb-large">
-                <h2 class="hw-card-nav__title">Mer om</h2>
+                <h2 class="hw-card-cta__title">Mer om</h2>
                 <hr class="hw-hr hw-hr--centered" />
-                <div class="hw-card-nav__text">
+                <div class="hw-card-cta__text">
                   Netthandel, kundedialog, adresser, transport, lagring og mer.
                 </div>
               </div>
@@ -234,7 +234,7 @@
         </div>
       </div>
 
-      <div class="hw-block hw-block--full hw-block--col-white hw-block--pt-small hw-block--pb-small">
+      <div class="hw-block hw-block--full hw-block--bg-white hw-block--pt-small hw-block--pb-small">
         <div class="hw-footer__legal">
           <a href="#">© Posten Norge</a>
           <span>|</span>

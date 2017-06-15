@@ -3,7 +3,7 @@
 
 ```html
 ---
-  <section class="hw-block hw-block--full hw-block--col-white">
+  <section class="hw-block hw-block--full hw-block--bg-white">
 
     <!-- Header -->
 
@@ -62,25 +62,36 @@
       <div class="hw-hero__contents">
         <div class="hw-animate hw-animate--slide-in-bottom">
           <div class="
-            hw-block 
+            hw-block
             hw-block--pt
             hw-block--pb
-            hw-block--limited-text 
-            hw-block--col-white
+            hw-block--limited-text
+            hw-block--bg-primary-lighter
           ">
-            <h1 class="hw-h2">Spor pakker, post og gods</h1>
-            <label class="hw-label">
-            <div class="hw-search hw-search--standalone"
-              data-hw-search
-              data-hw-search-placeholders='["Hi!"]'
-            >
-              <div class="hw-search__inner">
-                <input
-                  data-hw-search-input
-                  class="hw-search__input" type="text" />
-                <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+            <div class="hw-block hw-block--full">
+              <h2 class="hw-h2">Spor pakker, post og gods</h2>
+            </div>
+            <div class="hw-block hw-block--full hw-block--mt-small">
+              <label class="hw-label">Skriv inn referanse-, sendings- eller kollinummer.
+              <div class="hw-search hw-search--standalone"
+                data-hw-search
+                data-hw-search-placeholders='["f.eks AB123456789NO"]'
+              >
+                <div class="hw-search__inner">
+                  <input
+                    data-hw-search-input
+                    class="hw-search__input" type="text" />
+                  <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+                </div>
+                <button type="submit" class="hw-button hw-button--primary">Spor</button>
               </div>
-              <button type="submit" class="hw-button hw-button--primary">Search</button>
+              </label>
+            </div>
+            <div class="hw-block hw-block--full hw-block--mt-large">
+              <a href="#" class="hw-link">Sporing av container</a>
+            </div>
+            <div class="hw-block hw-block--full hw-block--mt-small">
+              <a href="#" class="hw-link">Sporing av flytransport</a>
             </div>
           </div>
         </div>
@@ -268,7 +279,7 @@
           </div>
         </div>
       </div>
-    
+
       <div class="hw-footer__mobile">
         <div class="hw-block hw-block--half hw-block--pt-small">
           <div class="hw-grid">
@@ -320,7 +331,7 @@
         </div>
       </div>
 
-      <div class="hw-block hw-block--full hw-block--col-white hw-block--pt-small hw-block--pb-small">
+      <div class="hw-block hw-block--full hw-block--bg-white hw-block--pt-small hw-block--pb-small">
         <div class="hw-footer__legal">
           <a href="#">© Posten Norge</a>
           <span>|</span>

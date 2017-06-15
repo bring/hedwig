@@ -106,7 +106,7 @@
       </div>
     </div>
 
-    <div class="hw-block hw-block--full hw-block--col-white">
+    <div class="hw-block hw-block--full hw-block--bg-white">
       <div class="hw-footer__legal">
         <a href="#">© Posten Norge</a>
         <span>|</span>

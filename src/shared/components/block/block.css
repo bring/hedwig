@@ -98,19 +98,27 @@
    * Background colors
    */
 
-  &--col-primary {
+  &--bg-primary {
     background-color: var(--hw-color-primary);
   }
 
-  &--col-gray {
+  &--bg-primary-lighter {
+    background-color: var(--hw-color-primary-lighter);
+  }
+
+  &--bg-gray {
     background-color: var(--hw-color-gray);
   }
 
-  &--col-gray-light {
+  &--bg-gray-light {
     background-color: var(--hw-color-gray-light);
   }
 
-  &--col-white {
+  &--bg-gray-lighter {
+    background-color: var(--hw-color-gray-lighter);
+  }
+
+  &--bg-white {
     background-color: var(--hw-color-white);
   }
 
