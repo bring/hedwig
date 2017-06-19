@@ -61,14 +61,17 @@ function build() {
   const sharedComponents = [];
   const sharedPageExamples = [];
   const sharedPages = [];
+  const sharedUtilities = [];
 
   const bringComponents = [];
   const bringPageExamples = [];
   const bringPages = [];
+  const bringUtilities = [];
 
   const postenComponents = [];
   const postenPageExamples = [];
   const postenPages = [];
+  const postenUtilities = [];
 
 
   /**
@@ -96,23 +99,27 @@ function build() {
       var components;
       var pageExamples;
       var pages;
+      var utilities;
 
       switch (fileSection) {
           case 'posten':
               components = postenComponents;
               pageExamples = postenPageExamples;
               pages = postenPages;
+              utilities = postenUtilities;
               break;
           case 'bring':
               components = bringComponents;
               pageExamples = bringPageExamples;
               pages = bringPages;
+              utilities = bringUtilities;
               break;
           default:
           case 'shared':
               components = sharedComponents;
               pageExamples = sharedPageExamples;
               pages = sharedPages;
+              utilities = sharedUtilities;
               break;
       }
 
@@ -177,6 +184,36 @@ function build() {
       }
 
       /**
+       * Check if the page is an utility
+       var title = filename.split('.').shift();
+      */
+
+      if (file.indexOf('utilities') !== -1) {
+
+        var filename = file.split('/').pop();
+        var title = filename.split('.').shift();
+
+        /**
+         * Copy md files to docs
+         */
+
+        fs.createReadStream(file).pipe(
+          fs.createWriteStream(`docs/md/${fileSection}/` + filename)
+        );
+
+        /**
+         * Add page to a pages array
+         */
+        utilities.push({
+          title: title,
+          path: title,
+          src: `md/${fileSection}/${filename}`,
+        });
+
+        return;
+      }
+
+      /**
        * Process remaining pages
        */
 
@@ -226,6 +263,13 @@ function build() {
       ...bringPageExamples,
     ]),
   });
+  bringMergedPages.push({
+    title: 'Utilities',
+    pages: sortPages([
+      ...sharedUtilities,
+      ...bringUtilities,
+    ]),
+  });
 
   const bringCatalogSettings = Object.assign(bringDocsConfig, { pages: sortPages(bringMergedPages) });
   const CatalogJSBring = `Catalog.render(${JSON.stringify(bringCatalogSettings)}, document.getElementById('catalog'))`;
@@ -253,6 +297,13 @@ function build() {
     pages: sortPages([
       ...sharedPageExamples,
       ...postenPageExamples,
+    ]),
+  });
+  postenMergedPages.push({
+    title: 'Utilities',
+    pages: sortPages([
+      ...sharedUtilities,
+      ...postenUtilities,
     ]),
   });
 
