@@ -11,7 +11,7 @@ Copy any of the below code snippets into a `.html` file and play around.
 <html>
   <head>
     <title>Hedwig - blank page</title>
-    <link href="https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
+    <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
     <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
   </head>
 <body>
@@ -43,7 +43,7 @@ Copy any of the below code snippets into a `.html` file and play around.
 <html>
 <head>
   <title>Article - example</title>
-  <link href="https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
+  <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
   <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
 </head>
 <body>
@@ -118,13 +118,13 @@ Copy any of the below code snippets into a `.html` file and play around.
 <html>
   <head>
     <title>Hedwig - Form example</title>
-    <link href="https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
+    <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
     <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
   </head>
 <body>
 
   <div class="hw-hero">
-    <div class="hw-hero__image" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');" ></div>
+    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');" ></div>
   </div>
 
   <!-- Main contents -->

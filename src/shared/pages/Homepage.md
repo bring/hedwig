@@ -37,7 +37,7 @@
       <!-- Hero -->
 
       <section class="hw-hero hw-hero--large" data-hw-hero>
-        <div class="hw-hero__image rellax" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero.png');"
+        <div class="hw-hero__image rellax" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero.png');"
         data-rellax-speed="-4"></div>
           <div class="hw-hero__overlay-angle"></div>
           <div class="hw-hero__overlay"></div>
@@ -103,7 +103,7 @@
 
       <section class="hw-flexcards">
         <article class="hw-flexcard">
-          <div class="hw-flexcard__media" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/flexcard-1.png');" />
+          <div class="hw-flexcard__media" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/flexcard-1.png');" />
           <div class="hw-flexcard__overlay" />
           <div class="hw-flexcard__contents">
             <h3 class="hw-flexcard__title">Smartere logistikk på 1-2-3</h3>
@@ -111,7 +111,7 @@
           </div>
         </article>
         <article class="hw-flexcard">
-          <div class="hw-flexcard__media" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/flexcard-2.png');" />
+          <div class="hw-flexcard__media" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/flexcard-2.png');" />
           <div class="hw-flexcard__overlay" />
           <div class="hw-flexcard__contents">
             <h3 class="hw-flexcard__title">LOAD.17</h3>
@@ -119,7 +119,7 @@
           </div>
         </article>
         <article class="hw-flexcard">
-          <div class="hw-flexcard__media" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/flexcard-1.png');" />
+          <div class="hw-flexcard__media" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/flexcard-1.png');" />
           <div class="hw-flexcard__overlay" />
           <div class="hw-flexcard__contents">
             <h3 class="hw-flexcard__title">Smartere logistikk på 1-2-3</h3>

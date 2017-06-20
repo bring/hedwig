@@ -6,7 +6,7 @@ var icons = '<script src="http://localhost:3001/icons.js"></script>';
 
 if (production) {
   reload = '';
-  icons = '<script src="https://hedwig-cdn.s3.amazonaws.com/hedwig/icons.js"></script>';
+  icons = '<script src="https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js"></script>';
 }
 
 

@@ -10,7 +10,7 @@ TODO: Image sizes
 <figure class="hw-image">
   <img
     alt="Picture of happy people"
-    src="https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/article-image-1.jpg"
+    src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
   />
 </figure>
 ```
@@ -19,7 +19,7 @@ TODO: Image sizes
 <figure class="hw-image">
   <img
     alt="Picture of happy people"
-    src="https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/article-image-1.jpg"
+    src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
   />
   <figcaption>
     With caption

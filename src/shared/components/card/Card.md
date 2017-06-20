@@ -13,7 +13,7 @@ Styling for cards.
 ```html|span-3
   <a href="#" class="hw-card">
     <div class="hw-card__media">
-      <div class="hw-card__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
     </div>
     <div class="hw-card__body">
       <div class="hw-block hw-block--mt hw-block--mb">
@@ -34,7 +34,7 @@ Styling for cards.
     <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
-          <div class="hw-card__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
+          <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
         </div>
         <div class="hw-card__body">
           <div class="hw-block hw-block--mt hw-block--mb">
@@ -50,7 +50,7 @@ Styling for cards.
  --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
-          <div class="hw-card__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
+          <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
         </div>
         <div class="hw-card__body">
           <div class="hw-block hw-block--mt hw-block--mb">
@@ -66,7 +66,7 @@ Styling for cards.
  --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
-          <div class="hw-card__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
+          <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
         </div>
         <div class="hw-card__body">
           <div class="hw-block hw-block--mt hw-block--mb">
@@ -87,7 +87,7 @@ Styling for cards.
 ```html|span-3
   <a href="#" class="hw-card hw-card--dark">
     <div class="hw-card__media">
-      <div class="hw-card__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
     </div>
     <div class="hw-card__body">
       <div class="hw-block hw-block--mt hw-block--mb">
@@ -115,7 +115,7 @@ Styling for cards.
       </div>
     </div>
     <div class="hw-card__media">
-      <div class="hw-card__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
     </div>
     <div class="hw-card__body">
       <div class="hw-block hw-block--mt hw-block--mb">

@@ -56,7 +56,7 @@
     </header>
 
     <div class="hw-hero hw-hero--large rellax">
-      <div class="hw-hero__image rellax" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/hero-image-1.png');"
+      <div class="hw-hero__image rellax" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"
       data-rellax-speed="-4"></div>
       <div class="hw-hero__overlay"></div>
       <div class="hw-hero__contents">

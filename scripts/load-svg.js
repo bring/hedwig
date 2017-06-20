@@ -1,5 +1,5 @@
 
-var url = 'https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/svg-sprite.svg';
+var url = 'https://bring-hedwig.s3.amazonaws.com/hedwig/assets/svg-sprite.svg';
 
 function loadIcons() {
   var ajax = new XMLHttpRequest();

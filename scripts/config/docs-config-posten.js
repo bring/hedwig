@@ -9,7 +9,7 @@ var version = package.version;
 
 if (production) {
   styles = [
-    'https://hedwig-cdn.s3.amazonaws.com/hedwig/assets/fonts/fonts.css',
+    'https://bring-hedwig.s3.amazonaws.com/hedwig/assets/fonts/fonts.css',
     `https://bring-hedwig.s3.amazonaws.com/hedwig/releases/posten-${version}.css`
   ];
   scripts = [`https://bring-hedwig.s3.amazonaws.com/hedwig/releases/main-${version}.js`];

@@ -67,7 +67,7 @@
   opacity: 1;
 
   &::before {
-    content: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/exclamation-mark-circle.svg');
+    content: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/exclamation-mark-circle.svg');
     position: absolute;
     top: -40px;
     right: var(--hw-spacing-small);
@@ -106,7 +106,7 @@
     color: var(--hw-color-gray-dark);
 
     &::before {
-      content: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/exclamation-mark-circle.svg');
+      content: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/exclamation-mark-circle.svg');
       position: absolute;
       left: 0;
       width: 25px;

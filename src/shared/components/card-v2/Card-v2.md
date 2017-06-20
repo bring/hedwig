@@ -22,7 +22,7 @@ Styling for cards.
       </div>
     </div>
     <div class="hw-card-v2__media">
-      <div class="hw-card-v2__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card-v2__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
     </div>
   </article>
 ```
@@ -42,7 +42,7 @@ Styling for cards.
       </div>
     </div>
     <div class="hw-card-v2__media">
-      <div class="hw-card-v2__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card-v2__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
     </div>
   </article>
 ```
@@ -58,7 +58,7 @@ Styling for cards.
       </div>
     </div>
     <div class="hw-card-v2__media">
-      <div class="hw-card-v2__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card-v2__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
     </div>
   </article>
 ```
@@ -77,7 +77,7 @@ Styling for cards.
       </div>
     </div>
     <div class="hw-card-v2__media">
-      <div class="hw-card-v2__media-inner" style="background-image: url('https://s3.eu-west-2.amazonaws.com/hedwig-cdn/hedwig/assets/images/demo-image-2.png');"></div>
+      <div class="hw-card-v2__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-2.png');"></div>
     </div>
   </article>
 ```
