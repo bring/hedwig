@@ -13,10 +13,10 @@
 <header class="hw-navbar">
   <a href="#" class="hw-navbar__logo">
     <svg class="hw-navbar__logo-standard">
-      <use xlink:href="#logo"></use>
+      <use xlink:href="#logo-bring"></use>
     </svg>
     <svg class="hw-navbar__logo-white">
-      <use xlink:href="#logo-white"></use>
+      <use xlink:href="#logo-bring-white"></use>
     </svg>
   </a>
   <nav class="hw-navbar__menu">
@@ -65,7 +65,7 @@
 <header class="hw-navbar">
   <div class="hw-navbar__logo">
     <svg>
-      <use xlink:href="#logo"></use>
+      <use xlink:href="#logo-bring"></use>
     </svg>
   </div>
   <nav class="hw-navbar__menu">
@@ -90,7 +90,7 @@
 <header class="hw-navbar hw-navbar--transparent">
   <div class="hw-navbar__logo">
     <svg>
-      <use xlink:href="#logo"></use>
+      <use xlink:href="#logo-bring"></use>
     </svg>
   </div>
   <nav class="hw-navbar__menu">
