@@ -5,7 +5,7 @@ import findParent from '../../utilities/js/findParent';
 /**
  * @function HWHero
  * @version 0.0.1
- * @desc Attaches interactivity to hero
+ * @desc Attaches interactivity to hero with search field. (not required otherwise)
  * @param {object} settings
  */
 
@@ -17,7 +17,7 @@ const HWHero = ({
 
   // Module settings object
   const SETTINGS = {
-    elements: qa(selector), // All dropdown DOM nodes
+    elements: qa(selector), // All hero DOM nodes
   };
 
 

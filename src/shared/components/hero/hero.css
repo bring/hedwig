@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 270px;
+  overflow: hidden;
 
   &__image,
   &__overlay {
