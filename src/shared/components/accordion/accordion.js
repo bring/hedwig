@@ -27,7 +27,6 @@ const HWAccordion = ({
    * @param {HTMLelement} accordion
    */
   function collapseAllItems(accordion) {
-    console.log('collapseAllItems');
     // Find all accordion items
     const items = qa('.hw-accordion__item', accordion);
 
