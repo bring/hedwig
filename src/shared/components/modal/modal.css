@@ -1,3 +1,8 @@
+/**
+ * Modal
+ */
+
+
 .hw-modal {
   position: fixed;
   display: none;
@@ -6,25 +11,49 @@
   width: 100%;
   height: 100%;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   z-index: var(--z-index--modal);
-  background: 0;
+  overflow-y: scroll;
+
+  @media (--medium) {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: var(--z-index--modal);
+  }
 
   &--open {
     display: flex;
-    transition: background 0.5s ease;
-    background: rgba(0, 0, 0, 0.4);
-  }
-
-  &__window {
-    z-index: var(--z-index--modal-foreground);
-    width: 500px;
-    background: #fff;
   }
 
   &__close {
     display: block;
     float: right;
+    outline: none;
+    border: 0;
+    margin-left: var(--hw-spacing-smaller);
+    margin-bottom: var(--hw-spacing-smaller);
+  }
+
+  &__window {
+    z-index: var(--z-index--modal-foreground);
+    width: 100%;
+    margin: var(--hw-spacing);
+    background: #fff;
+
+    @media (--medium) {
+      max-width: 700px;
+      margin: var(--hw-spacing-larger);
+    }
+  }
+
+  &__actions {
+    text-align: right;
   }
 }
 

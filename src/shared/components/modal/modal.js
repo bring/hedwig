@@ -27,16 +27,18 @@ const HWModal = ({
     // Grab clicked element and modal associated with it
     const elem = e.currentTarget;
     const modalId = elem.getAttribute('data-hw-modal-trigger');
+    const body = document.getElementsByTagName('BODY')[0];
     const modal = q(`[data-hw-modal=${modalId}`);
     const modalHidden = modal.getAttribute('aria-hidden');
-    console.log(modalHidden);
     // Toggle modal
     if (modalHidden === 'true') {
       modal.setAttribute('aria-hidden', false);
       modal.classList.add('hw-modal--open');
+      body.style.overflow = 'hidden';
     } else {
       modal.setAttribute('aria-hidden', true);
       modal.classList.remove('hw-modal--open');
+      body.style.overflow = 'visible';
     }
   }
 

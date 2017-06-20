@@ -22,6 +22,7 @@
 
   &:disabled {
     color: var(--hw-color-white) !important;
+    fill: var(--hw-color-white) !important;
     background: var(--hw-color-gray-light) !important;
     border: 2px solid var(--hw-color-gray-light) !important;
     outline: 0 !important;
@@ -134,15 +135,15 @@
     }
   }
 
-  /* Chat button */
+  /* Icon buttons */
 
   &--icon {
     border: 2px solid var(--hw-color-primary);
-    color: var(--hw-color-white);
     fill: var(--hw-color-white);
     background: var(--hw-color-primary);
     padding: var(--hw-spacing-smaller);
     border-radius: 50%;
+    cursor: pointer;
 
     &:hover,
     &:active,
@@ -155,6 +156,51 @@
 
     &:active {
       background: var(--hw-color-primary);
+      outline: 0;
+    }
+  }
+
+  &--icon-outline {
+    border: 3px solid var(--hw-color-gray);
+    fill: var(--hw-color-gray);
+    background: transparent;
+    padding: var(--hw-spacing-smaller);
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--hw-color-gray);
+      fill: var(--hw-color-white);
+      box-shadow: 0px 0px 0px 1px var(--hw-color-gray);
+      outline: 0;
+    }
+
+    &:active {
+      border-color: var(--hw-color-gray-darker);
+      outline: 0;
+    }
+  }
+
+  &--icon-stripped {
+    border: 0;
+    fill: var(--hw-color-gray);
+    background: transparent;
+    padding: var(--hw-spacing-smaller);
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+      fill: var(--hw-color-gray-darker);
+      box-shadow: 0;
+      outline: 0;
+    }
+
+    &:active {
+      fill: var(--hw-color-gray-darker);
+      outline: 0;
     }
   }
 }

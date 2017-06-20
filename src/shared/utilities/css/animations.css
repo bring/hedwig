@@ -1,11 +1,15 @@
 /* Animation classes */
 
 .hw-animate {
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
 
   &--slide-in-bottom {
     animation-name: slide-in-bottom;
+  }
+
+  &--fade-in-overlay {
+    animation-name: fade-in-overlay;
   }
 }
 
@@ -18,5 +22,25 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes fade-in-overlay {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes fade-out-overlay {
+  0% {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  100% {
+    background: rgba(0, 0, 0, 0);
   }
 }

@@ -76,18 +76,30 @@ Styling for buttons.
 ```html|span-4
   <button class="hw-button hw-button--icon">
     <svg class="hw-icon">
-      <use xlink:href="#binders"></use>
+      <use xlink:href="#star"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--icon-outline">
+    <svg class="hw-icon">
+      <use xlink:href="#star"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--icon-stripped">
+    <svg class="hw-icon">
+      <use xlink:href="#star"></use>
     </svg>
   </button>
   <button class="hw-button hw-button--icon" disabled>
     <svg class="hw-icon">
-      <use xlink:href="#binders"></use>
+      <use xlink:href="#star"></use>
     </svg>
   </button>
 ```
 
 ```code
-[Icon]        .hw-button--icon
+[Icon regular]        .hw-button--icon
+[Icon outline]        .hw-button--icon-outline
+[Icon stripped]        .hw-button--icon-stripped
 ```
 
 ### Extra modifiers
