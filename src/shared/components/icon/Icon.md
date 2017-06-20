@@ -129,6 +129,12 @@ lang: html
     </svg>
     star
   </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+      <use xlink:href="#close"></use>
+    </svg>
+    close
+  </div>
 ```
 
 ### Variations
