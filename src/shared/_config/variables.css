@@ -91,5 +91,6 @@
   --z-index--navbar-search: 300;
   --z-index--navbar-search-foreground: 400;
   --z-index--hero-search: 100;
-
+  --z-index--modal: 400;
+  --z-index--modal-foreground: 500;
 }
