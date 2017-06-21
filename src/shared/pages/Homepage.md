@@ -10,10 +10,10 @@
     <header class="hw-navbar">
       <a href="#" class="hw-navbar__logo">
         <svg class="hw-navbar__logo-standard">
-          <use xlink:href="#logo"></use>
+          <use xlink:href="#logo-bring"></use>
         </svg>
         <svg class="hw-navbar__logo-white">
-          <use xlink:href="#logo-white"></use>
+          <use xlink:href="#logo-bring-white"></use>
         </svg>
       </a>
       <nav class="hw-navbar__menu">
@@ -37,8 +37,8 @@
       <!-- Hero -->
 
       <section class="hw-hero hw-hero--large" data-hw-hero>
-        <div class="hw-hero__image rellax" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero.png');"
-        data-rellax-speed="-4"></div>
+        <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero.png');"
+        data-hw-parallax data-hw-parallax-amount="5" data-hw-parallax-start="400"></div>
           <div class="hw-hero__overlay-angle"></div>
           <div class="hw-hero__overlay"></div>
           <div class="hw-hero__search-container">
