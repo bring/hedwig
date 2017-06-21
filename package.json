@@ -59,6 +59,7 @@
     "live-reload": "^1.1.0",
     "lodash": "^4.17.4",
     "node-watch": "^0.5.2",
+    "pikaday": "^1.6.1",
     "postcss-cli": "^3.0.0",
     "postcss-cssnext": "^2.10.0",
     "postcss-extend": "^1.0.5",
