@@ -1,5 +1,5 @@
 /**
- * Uplad to S3
+ * Upload to S3
  */
 
 var client = require('./config/s3');

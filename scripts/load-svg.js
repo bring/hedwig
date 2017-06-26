@@ -1,4 +1,3 @@
-
 var url = 'https://bring-hedwig.s3.amazonaws.com/hedwig/assets/svg-sprite.svg';
 
 function loadIcons() {

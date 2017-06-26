@@ -144,6 +144,11 @@ Most components are tested in IE10, but IE9 is still yet to be tested.
     ├── / package.json              - Contains all npm scripts
     └── / *.*                       - Various dotfiles and config files
 
+## Build scripts
+The `/scripts` folder contains a set of custom scripts that helps compile the docs.
+
+List of npm scripts:
+- `dev`: Starts the watcher and starts the node server (in development mode)
 
 ## Found a bug?
 - If you've found a bug, you can create a new [issue](https://github.com/bring/hedwig/issues) via github. 
