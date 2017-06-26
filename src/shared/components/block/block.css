@@ -7,7 +7,7 @@
   padding: 0 var(--hw-spacing);
 
   /**
-   * Modifiers: padding and padding variations
+   * Modifiers: sizes
    */
 
   &--full {
@@ -21,6 +21,10 @@
   &--large {
     padding: 0 var(--hw-spacing-large);
   }
+
+  /**
+   * Modifiers: padding and padding variations
+   */
 
   &--mt {
     margin-top: var(--hw-spacing);
