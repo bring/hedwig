@@ -10,6 +10,8 @@ import commonjs from 'rollup-plugin-commonjs';
 
 export default {
   format: 'iife',
+  sourceMap: true,
+  sourceMapFile: 'build/main.js.map',
   entry: {
     include: ['src/**/*.js'],
     exclude: ['src/**/*.test.js'],
@@ -26,5 +28,4 @@ export default {
       include: 'node_modules/**',
     }),
   ],
-  external: ['rellax'],
 };
