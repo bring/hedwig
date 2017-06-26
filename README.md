@@ -25,7 +25,7 @@ npm run s3:download         # to download assets from S3
 
 npm run dev                 # start local development server
 ```
-[open browser on port 3000]('http://localhost:3000/docs') 🚀
+[Open http://localhost:3000](http://localhost:3000/docs) 🚀
 
 To keep assets up to date, run `npm run s3:download` do download the latest assets from S3.
 
@@ -37,7 +37,7 @@ Docs are auto generated from the components markdown file. The filename will gen
 
 In development, the docs will live reload. It is recommended to always develop the components within the documentation.
 
-The documentation is **atuo-deployed** to Heroku [https://hedwig-docs.herokuapp.com](https://hedwig-docs.herokuapp.com) when pushed to master.
+The documentation is **auto-deployed** to Heroku [https://hedwig-docs.herokuapp.com](https://hedwig-docs.herokuapp.com) when pushed to master.
 
 ## Guidelines
 - All components should do one thing, and do that thing well.
