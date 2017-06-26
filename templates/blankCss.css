@@ -1,0 +1,38 @@
+/**
+ * Block
+ */
+
+.hw-module {
+  position: relative;
+  background: var(--hw-color-white);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--hw-spacing);
+
+  /**
+   * Elements
+   */
+
+  &__element-name {
+    overflow: hidden;
+    height: 160px;
+    flex-grow: 1;
+  }
+
+  /* Optional element description */
+
+  &__element-name {
+    overflow: hidden;
+    height: 160px;
+    flex-grow: 1;
+  }
+
+  /**
+   * Modifiers
+   */
+
+  &--variant-name {
+    background: var(--hw-color-gray-darker);
+  }
+}
