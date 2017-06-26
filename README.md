@@ -24,12 +24,12 @@ add .env file               # get variables from Heroku or ask for keys in the H
 npm run s3:download         # to download assets from S3
 
 npm run dev                 # start local development server
-[open browser on port 3000]('http://localhost:3000/docs') 🚀
 ```
+[open browser on port 3000]('http://localhost:3000/docs') 🚀
 
 To keep assets up to date, run `npm run s3:download` do download the latest assets from S3.
 
-### 📚 Documentation
+## 📚 Documentation
 
 We use [Catalog](https://interactivethings.github.io/catalog/#/) from documentation. [Read the documentation for Catalog](https://interactivethings.github.io/catalog/#/write-documentation).
 
@@ -39,7 +39,7 @@ In development, the docs will live reload. It is recommended to always develop t
 
 The documentation is **atuo-deployed** to Heroku [https://hedwig-docs.herokuapp.com](https://hedwig-docs.herokuapp.com) when pushed to master.
 
-### Guidelines
+## Guidelines
 - All components should do one thing, and do that thing well.
 - All CSS should be written to adhere to the BEM methology.
 - All JS should be classless and use `data-attributes` to attach functionality.
@@ -54,7 +54,7 @@ All right, you need to change or add something. What do you do?
   
   3: If you've found a bug, follow the below "Found a bug?" guide below.
 
-### Development
+## Development
 To develop on the project, please first read our guidelines and the contributing section above.
 
 To add a new feature:
@@ -122,7 +122,7 @@ Most components are tested in IE10, but IE9 is still yet to be tested.
 ```
 
 
-### 📂 Application structure
+## 📂 Application structure
     ├── /build                      - Build folder. Contains minified assets. - auto generated
     ├── /docs                       - Contains the style guide system (Catalog) - auto generated
     ├── /scripts                    - Contains all scripts for building and compiling
@@ -145,18 +145,20 @@ Most components are tested in IE10, but IE9 is still yet to be tested.
     └── / *.*                       - Various dotfiles and config files
 
 
-### Found a bug?
+## Found a bug?
 - If you've found a bug, you can create a new [issue](https://github.com/bring/hedwig/issues) via github. 
 - If you want to fix this issue yourself, do so and then follow the development guide above.
 
-### FAQ
+## FAQ
   Q: I have a question! Who do i ask?
   A: Use the Hedwig slack channel!
 
-### Maintainers
+## Maintainers
 WIP
 
-### 📦 Dependencies (development helpers)
+## 📦 Dependencies 
+
+development helpers:
 
 * [PostCSS](https://github.com/postcss/postcss), [cssnano](https://github.com/ben-eb/cssnano), [postcss-cli](https://github.com/postcss/postcss-cli), [postcss-cssnext](https://github.com/MoOx/postcss-cssnext), [postcss-extend](https://github.com/travco/postcss-extend) - for transpiling CSS
 * [sanitize.css](https://github.com/jonathantneal/sanitize.css) to make CSS sane (a lightweight version of Normalize)
@@ -173,9 +175,9 @@ WIP
 * [svgo](https://github.com/svg/svgo), [svg2sprite](https://github.com/mrmlnc/svg2sprite) - for SVG's
 
 
-### 📦 Dependencies (included in bundle)
+included in bundle:
 * [Zenscroll](https://github.com/zengabor/zenscroll) - Tiny smooth-scroll helper
 
-### ⚖️ Licenses
+## ⚖️ Licenses
 * Source code is licensed under [BSD 2-Clause](LICENSE.txt)
 * All icons and images are licensed under [Creative Commons Attribution-NoDerivatives 4.0](LICENSE-icons-images.txt)
