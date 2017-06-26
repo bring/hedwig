@@ -22,7 +22,7 @@ Copy any of the below code snippets into a `.html` file and play around.
     </div>
   </header>
 
-  <main class="hw-block hw-block--full hw-block--limited-text">
+  <main class="hw-block hw-block--full hw-block--limited-article">
 
     <section class="hw-block hw-block--mt">
 
@@ -55,7 +55,7 @@ Copy any of the below code snippets into a `.html` file and play around.
 
   <!-- Main contents -->
 
-  <main class="hw-block hw-block--full hw-block--limited-text">
+  <main class="hw-block hw-block--full hw-block--limited-article">
 
     <article class="hw-block hw-block--mt">
 
@@ -129,7 +129,7 @@ Copy any of the below code snippets into a `.html` file and play around.
 
   <!-- Main contents -->
 
-  <main class="hw-block hw-block--full hw-block--limited-text">
+  <main class="hw-block hw-block--full hw-block--limited-article">
 
     <section class="hw-block hw-block--mt">
 

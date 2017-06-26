@@ -65,7 +65,7 @@
             hw-block
             hw-block--pt
             hw-block--pb
-            hw-block--limited-text
+            hw-block--limited-article
             hw-block--bg-primary-lighter
           ">
             <div class="hw-block hw-block--full">
@@ -99,7 +99,7 @@
     </div>
 
 
-    <main class="hw-block hw-block--full hw-block--limited-text">
+    <main class="hw-block hw-block--full hw-block--limited-article">
 
       <div class="hw-block hw-block--mt-large">
         <h2>Ofte stilte spørsmål</h2>

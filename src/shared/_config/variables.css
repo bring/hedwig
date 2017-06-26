@@ -35,10 +35,9 @@
    * Site width limitations
    */
 
-  --hw-container-limit-site: 1065px;
-  --hw-container-limit-narrow: 600px;
-  --hw-container-limit-wide: 1200px;
-  --hw-container-limit-text: 690px;
+  --hw-width-site: 1065px; /* Default site width, used in footer etc */
+  --hw-width-article: 690px; /* Max text width (articles) */
+  --hw-width-article-narrow: 300px;
 
   /**
    * Fonts

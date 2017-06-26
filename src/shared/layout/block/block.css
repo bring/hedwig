@@ -75,24 +75,20 @@
    */
 
   &--limited {
-    max-width: var(--hw-container-limit-site);
+    max-width: var(--hw-width-site);
+    margin: 0 auto;
+  }
+
+  &--limited-article {
+    max-width: var(--hw-width-article);
     margin: 0 auto;
   }
 
   &--limited-narrow {
-    max-width: var(--hw-container-limit-narrow);
+    max-width: var(--hw-width-article-narrow);
     margin: 0 auto;
   }
 
-  &--limited-wide {
-    max-width: var(--hw-container-limit-wide);
-    margin: 0 auto;
-  }
-
-  &--limited-text {
-    max-width: var(--hw-container-limit-text);
-    margin: 0 auto;
-  }
 
   /**
    * Modifiers: background colors
