@@ -56,7 +56,7 @@
     </header>
 
 
-    <main class="hw-block hw-block--full hw-block--limited-text">
+    <main class="hw-block hw-block--full hw-block--limited-article">
 
       <article>
         <div class="hw-block hw-block--mt-large">

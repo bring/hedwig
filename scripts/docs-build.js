@@ -62,16 +62,19 @@ function build() {
   const sharedPageExamples = [];
   const sharedPages = [];
   const sharedUtilities = [];
+  const sharedLayout = [];
 
   const bringComponents = [];
   const bringPageExamples = [];
   const bringPages = [];
   const bringUtilities = [];
+  const bringLayout = [];
 
   const postenComponents = [];
   const postenPageExamples = [];
   const postenPages = [];
   const postenUtilities = [];
+  const postenLayout = [];
 
 
   /**
@@ -99,6 +102,7 @@ function build() {
       var components;
       var pageExamples;
       var pages;
+      var layout;
       var utilities;
 
       switch (fileSection) {
@@ -106,12 +110,14 @@ function build() {
               components = postenComponents;
               pageExamples = postenPageExamples;
               pages = postenPages;
+              layout = postenLayout;
               utilities = postenUtilities;
               break;
           case 'bring':
               components = bringComponents;
               pageExamples = bringPageExamples;
               pages = bringPages;
+              layout = bringLayout;
               utilities = bringUtilities;
               break;
           default:
@@ -119,6 +125,7 @@ function build() {
               components = sharedComponents;
               pageExamples = sharedPageExamples;
               pages = sharedPages;
+              layout = sharedLayout;
               utilities = sharedUtilities;
               break;
       }
@@ -175,6 +182,36 @@ function build() {
          * Add page to a pages array
          */
         pageExamples.push({
+          title: title,
+          path: title,
+          src: `md/${fileSection}/${filename}`,
+        });
+
+        return;
+      }
+
+      /**
+       * Check if the page is a layout helper
+       var title = filename.split('.').shift();
+      */
+
+      if (file.indexOf('layout') !== -1) {
+
+        var filename = file.split('/').pop();
+        var title = filename.split('.').shift();
+
+        /**
+         * Copy md files to docs
+         */
+
+        fs.createReadStream(file).pipe(
+          fs.createWriteStream(`docs/md/${fileSection}/` + filename)
+        );
+
+        /**
+         * Add page to a pages array
+         */
+        layout.push({
           title: title,
           path: title,
           src: `md/${fileSection}/${filename}`,
@@ -249,6 +286,13 @@ function build() {
     ...sharedPages,
     ...bringPages,
   ];
+  bringMergedPages.push({
+    title: 'Layout',
+    pages: sortPages([
+      ...sharedLayout,
+      ...bringLayout,
+    ]),
+  });
   bringMergedPages.push({
     title: 'Components',
     pages: sortPages([

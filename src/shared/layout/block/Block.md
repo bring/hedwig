@@ -105,7 +105,7 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 [Limited]                 .hw-block--limited (default site width)
 [Narrow]                  .hw-block--limited-narrow
 [Wide]                    .hw-block--limited-wide
-[Text]                    .hw-block--limited-text
+[Text]                    .hw-block--limited-article
 ```
 
 ### Block modifiers (colors)

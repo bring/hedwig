@@ -29,7 +29,7 @@ Required:
             </svg>
           </button>
       </div>
-        <div class="hw-block hw-block--pt-small hw-block--limited-narrow">
+        <div class="hw-block hw-block--pt-small hw-block--limited-article">
           <h1>Hot! Hot! Hot!</h1>
           <div class="hw-block hw-block--full hw-block--pt-small">
             <time>24.09.76</time>|<time>17:45</time>
@@ -62,7 +62,7 @@ Required:
             </svg>
           </button>
       </div>
-        <div class="hw-block hw-block--pt-small hw-block--limited-narrow">
+        <div class="hw-block hw-block--pt-small hw-block--limited-article">
           <h1>14 Meters of snow expected</h1>
           <div class="hw-block hw-block--full hw-block--pt-small">
             <time>24.09.76</time>|<time>17:45</time>
@@ -80,7 +80,7 @@ Required:
           </svg>
       </button>
       <div class="hw-banner__read-more-contents">
-        <div class="hw-block hw-block--limited-narrow">
+        <div class="hw-block hw-block--limited-article">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
       </div>
