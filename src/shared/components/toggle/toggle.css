@@ -8,6 +8,10 @@
   margin: 0;
   list-style: none;
 
+  /**
+   * Elements
+   */
+
   &__trigger {
     position: relative;
     display: block;
@@ -56,7 +60,7 @@
   }
 
   /**
-   * padding and padding variations
+   * Modifiers
    */
 
   &--expanded .hw-toggle__contents {

@@ -1,3 +1,7 @@
+/**
+ * Block
+ */
+
 .hw-dropdown {
   position: relative;
   height: 48px;
@@ -5,7 +9,6 @@
   font-family: var(--hw-font-primary-medium);
   color: var(--hw-color-gray-darker);
 
-  /* Focus styles */
   &:focus {
     outline: 0;
   }
@@ -99,7 +102,7 @@
   }
 
   /**
-  * Variations
+  * Modifiers
   */
 
   &--expanded .hw-dropdown__inner {
@@ -131,7 +134,7 @@
   }
 
   /**
-  * Extra settings
+  * Modifiers: Extra settings
   */
 
   &--is-too-big .hw-dropdown__inner {

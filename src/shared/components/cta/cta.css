@@ -1,11 +1,13 @@
 /**
- * HEWDIG
- *
- * CTA
+ * Block
  */
 
 .hw-cta {
   text-align: center;
+
+  /**
+   * Elements
+   */
 
   &__title {
     padding-bottom: var(--hw-spacing);

@@ -1,7 +1,6 @@
 /**
- * Modal
+ * Block
  */
-
 
 .hw-modal {
   position: fixed;
@@ -20,15 +19,15 @@
     justify-content: center;
   }
 
+  /**
+   * Elements
+   */
+
   &__overlay {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: var(--z-index--modal);
-  }
-
-  &--open {
-    display: flex;
   }
 
   &__close {
@@ -55,7 +54,19 @@
   &__actions {
     text-align: right;
   }
+
+  /**
+   * Modifiers
+   */
+
+  &--open {
+    display: flex;
+  }
 }
+
+/**
+ * No-js fallback
+ */
 
 .no-js .hw-modal {
   position: relative;

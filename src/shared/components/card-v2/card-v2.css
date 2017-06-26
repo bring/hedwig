@@ -1,7 +1,5 @@
 /**
- * HEWDIG
- *
- * Card
+ * Block
  */
 
 .hw-card-v2 {
@@ -22,10 +20,6 @@
     content: '';
     opacity: 0;
   }
-
-  /**
-   * States
-   */
 
   &:hover {
     &::after {
@@ -68,7 +62,7 @@
   }
 
   /**
-   * Variants
+   * Modifiers
    */
 
   &--dark .hw-card-v2__contents {

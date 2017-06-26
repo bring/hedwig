@@ -1,9 +1,17 @@
+/**
+ * Block
+ */
+
 .hw-radio-button {
   display: inline-block;
   margin: 0.2rem 1rem 0 0;
   cursor: pointer;
   position: relative;
   line-height: 1.5;
+
+  /**
+   * Elements
+   */
 
   &__indicator {
     display: inline-block;

@@ -1,23 +1,31 @@
+/**
+ * Block
+ */
+
 .hw-image {
   margin: 0;
   padding: 0;
   background: var(--hw-color-gray-lighter);
-}
 
-.hw-image img {
-  max-width: 100%;
-}
+  & img {
+    max-width: 100%;
+  }
 
-.hw-image figcaption {
-  font-size: var(--hw-font-size-small);
-  font-family: var(--hw-font-primary-medium);
-  padding: var(--hw-spacing-smallest);
-  text-align: center;
-}
+  & figcaption {
+    font-size: var(--hw-font-size-small);
+    font-family: var(--hw-font-primary-medium);
+    padding: var(--hw-spacing-smallest);
+    text-align: center;
+  }
 
-.hw-image--large {
-  @media (--medium) {
-    margin-left: -72px;
-    margin-right: -72px;
+  /**
+   * Modifiers
+   */
+
+  &--large {
+    @media (--medium) {
+      margin-left: -72px;
+      margin-right: -72px;
+    }
   }
 }

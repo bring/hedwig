@@ -1,7 +1,5 @@
 /**
- * HEWDIG
- *
- * Buttons
+ * Block
  */
 
 .hw-button {
@@ -16,10 +14,6 @@
   transition: all cubic-bezier(0.08, 0.84, 0.07, 0.96) 120ms, background 75ms;
   cursor: pointer;
 
-  /**
-   * States
-   */
-
   &:disabled {
     color: var(--hw-color-white) !important;
     fill: var(--hw-color-white) !important;
@@ -31,7 +25,7 @@
   }
 
   /**
-   * Sizes
+   * Modifiers: sizes
    */
 
   &--large {
@@ -48,10 +42,8 @@
   }
 
   /**
-   * Variants
+   * Modifiers: types
    */
-
-  /* Primary button */
 
   &--primary {
     border: 2px solid var(--hw-color-primary);
@@ -72,8 +64,6 @@
     }
   }
 
-  /* Secondary button */
-
   &--secondary {
     border: 2px solid var(--hw-color-gray-dark);
     background: var(--hw-color-gray-dark);
@@ -91,8 +81,6 @@
       background: var(--hw-color-gray-dark) !important;
     }
   }
-
-  /* Outline button */
 
   &--outline {
     border: 3px solid var(--hw-color-gray);
@@ -114,8 +102,6 @@
     }
   }
 
-  /* White outlined button */
-
   &--outline-white {
     border: 3px solid var(--hw-color-white);
     background: none;
@@ -134,8 +120,6 @@
       background: var(--hw-color-gray-lightest);
     }
   }
-
-  /* Icon buttons */
 
   &--icon {
     border: 2px solid var(--hw-color-primary);

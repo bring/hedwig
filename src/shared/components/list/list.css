@@ -1,3 +1,6 @@
+/**
+ * Block
+ */
 
 .hw-list {
   font-size: var(--hw-font-size-p);
@@ -25,7 +28,7 @@
   }
 
   /**
-   * Variants
+   * Modifers
    */
 
   &--small {

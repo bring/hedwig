@@ -1,3 +1,7 @@
+/**
+ * Block
+ */
+
 .hw-fieldset {
   display: block;
   width: 100%;
@@ -5,6 +9,10 @@
   border: 0;
   margin: 0;
   line-height: var(--hw-spacing);
+
+  /**
+   * Elements
+   */
 
   &__legend {
     display: block;

@@ -1,3 +1,7 @@
+/**
+ * Block
+ */
+
 .hw-textarea {
   font-size: var(--hw-font-size-small);
   padding: var(--hw-spacing-smaller) var(--hw-spacing);
@@ -15,10 +19,6 @@
     color: var(--hw-color-gray);
   }
 
-  /**
-     * States
-     */
-
   &:hover {
     border: 3px solid var(--hw-color-gray);
   }
@@ -31,6 +31,10 @@
   &[disabled] {
     border: 3px solid var(--hw-color-gray-lighter);
   }
+
+  /**
+   * Modifiers
+   */
 
   &--error,
   &--error:focus {

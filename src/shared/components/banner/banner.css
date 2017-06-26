@@ -1,10 +1,14 @@
 /**
- * Banner
+ * Block
  */
 
 .hw-banner {
   display: block;
   color: var(--hw-color-gray-darkest);
+
+  /**
+   * Elements
+   */
 
   &__trigger {
     display: block;
@@ -125,11 +129,11 @@
     &:focus {
       outline: 0;
     }
+
     &:hover svg,
     &:focus svg {
       opacity: 01;
     }
-
   }
 
   &__read-more-contents {
@@ -139,15 +143,17 @@
   }
 
   /**
-   * padding and padding variations
+   * Modifiers
    */
 
   &--expanded .hw-banner__trigger {
     display: none;
   }
+
   &--expanded .hw-banner__contents {
     display: block;
   }
+
   &--read-more-expanded .hw-banner__read-more-contents {
     display: block;
   }

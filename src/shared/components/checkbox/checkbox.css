@@ -1,7 +1,5 @@
 /**
- * Hedwig
- * -----
- * Checkbox
+ * Block
  */
 
 .hw-checkbox {
@@ -17,6 +15,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  /**
+   * Elements
+   */
 
   &__indicator {
     position: absolute;

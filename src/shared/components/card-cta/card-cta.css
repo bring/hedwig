@@ -1,7 +1,5 @@
 /**
- * HEWDIG
- *
- * Card
+ * Block
  */
 
 .hw-card-cta {
@@ -23,10 +21,6 @@
     content: '';
     opacity: 0;
   }
-
-  /**
-   * States
-   */
 
   &:hover {
     &::after {
@@ -50,6 +44,7 @@
   &__body {
     z-index: 1;
   }
+
   &__title {
     color: var(--hw-color-gray-darker);
     font-size: var(--hw-font-size-h1);

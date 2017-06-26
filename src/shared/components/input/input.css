@@ -1,6 +1,5 @@
-
 /**
- * Input
+ * Block: Input
  */
 
 .hw-input {
@@ -20,10 +19,6 @@
   &::placeholder {
     color: var(--hw-color-gray);
   }
-
-  /**
-   * States
-   */
 
   &:hover {
     border: 3px solid var(--hw-color-gray);
@@ -46,6 +41,10 @@
     border: 3px solid var(--hw-color-gray-lighter);
   }
 
+  /**
+   * Modifers
+   */
+
   &--error {
     position: relative;
     border: 3px solid var(--hw-color-secondary) !important;
@@ -54,7 +53,7 @@
 }
 
 /**
- * Error
+ * Block: Error
  */
 
 .hw-error {
@@ -83,6 +82,10 @@
     z-index: 1;
   }
 
+  /**
+   * Modifers
+   */
+
   &--is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -91,13 +94,17 @@
 }
 
 /**
- * Error summary
+ * Block: Error summary
  */
 
 .hw-error-summary {
   border: 3px solid var(--hw-color-secondary);
   padding: var(--hw-spacing);
   background: var(--hw-color-white);
+
+  /**
+   * Elements
+   */
 
   &__title {
     position: relative;
