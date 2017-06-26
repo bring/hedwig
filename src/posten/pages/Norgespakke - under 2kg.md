@@ -10,15 +10,13 @@
     <header class="hw-navbar">
       <a href="#" class="hw-navbar__logo">
         <svg class="hw-navbar__logo-standard">
-          <use xlink:href="#logo"></use>
+          <use xlink:href="#logo-posten"></use>
         </svg>
         <svg class="hw-navbar__logo-white">
-          <use xlink:href="#logo-white"></use>
+          <use xlink:href="#logo-posten-white"></use>
         </svg>
       </a>
       <nav class="hw-navbar__menu">
-        <a href="#" class="hw-navbar__item">English</a>
-        <a href="#" class="hw-navbar__item">Logg inn</a>
         <button class="hw-navbar__search-button" data-hw-toggle-search>
           Søk
           <svg class="hw-navbar__search-icon">
@@ -59,14 +57,14 @@
 
     <main>
 
-      <div class="hw-hero hw-hero--full">
-        <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');" ></div>
-        <div class="hw-hero__overlay"></div>
-        <div class="hw-hero__contents">
-          <div class="hw-animate hw-animate--slide-in-bottom">
-            <h1 class="hw-hero__title">Headline</h1>
+      <div class="hw-block--full hw-block--bg-gray-lighter">
+        <div class="hw-block hw-block--limited-narrow">
+          <div class="hw-block hw-block--centered">
+            <object data="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/illustration-send.svg" type="image/svg+xml">
+            </object>
           </div>
         </div>
+          <h1>Hva skal du sende?</h1>
       </div>
 
     </main>

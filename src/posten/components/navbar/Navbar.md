@@ -68,7 +68,7 @@
   </div>
   <nav class="hw-navbar__menu">
     <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-      <span>Menu</span>
+      <span>Meny</span>
       <div class="hw-hamburger" data-hw-menu-icon>
         <span class="hw-hamburger__part"></span>
         <span class="hw-hamburger__part"></span>
@@ -77,6 +77,7 @@
     </button>
   </nav>
   <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
+  <div class="hw-navbar__overlay" data-hw-navbar-overlay></div>
 </header>
 ```
 
