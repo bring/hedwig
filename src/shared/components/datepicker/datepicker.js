@@ -25,13 +25,10 @@ const HWDatePicker = ({
     if (SETTINGS.elements.length < 1) {
       return;
     }
-    console.log('init');
     // Loop through all modules and initialise each
     SETTINGS.elements.forEach((datepicker, index) => {
       // Skip if already initialised
       if (datepicker.getAttribute('data-hw-module-initialised') === 'true') { return false; }
-
-      console.log('runned?');
 
       // Mark as initialised
       datepicker.setAttribute('data-hw-module-initialised', true);
