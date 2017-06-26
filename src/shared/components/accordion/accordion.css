@@ -1,5 +1,5 @@
 /**
- * Accordion
+ * Block
  */
 
 .hw-accordion {
@@ -14,6 +14,10 @@
   &:hover {
     border-color: var(--hw-color-gray-darker);
   }
+
+  /**
+   * Elements
+   */
 
   &__item {
     transition: height 0.5s ease;
@@ -74,12 +78,8 @@
   }
 
   /**
-   * padding and padding variations
+   * Modifiers
    */
-
-  &__item--expanded .hw-accordion__contents {
-    /* Fill */
-  }
 
   &__item--expanded .hw-accordion__trigger {
     color: var(--hw-color-primary-dark);
@@ -93,10 +93,6 @@
   &__item--expanded .hw-accordion__arrow::after {
     transform: rotate(-45deg);
   }
-
-  /**
-   * Variants
-   */
 
   &--dark {
     background: var(--hw-color-gray);

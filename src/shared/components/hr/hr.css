@@ -1,5 +1,5 @@
 /**
- * Hedwig: Hr
+ * Block
  */
 
 .hw-hr {
@@ -10,6 +10,10 @@
   border: 0;
   margin: 0;
   background: var(--hw-color-gray-dark);
+
+  /**
+   * Modifers
+   */
 
   &--full {
     max-width: initial;

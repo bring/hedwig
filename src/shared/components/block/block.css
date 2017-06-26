@@ -7,7 +7,7 @@
   padding: 0 var(--hw-spacing);
 
   /**
-   * padding and padding variations
+   * Modifiers: padding and padding variations
    */
 
   &--full {
@@ -71,7 +71,7 @@
   }
 
   /**
-   * Width limitations
+   * Modifiers:: width limitations
    */
 
   &--limited {
@@ -95,7 +95,7 @@
   }
 
   /**
-   * Background colors
+   * Modifiers: background colors
    */
 
   &--bg-primary {
@@ -123,7 +123,7 @@
   }
 
   /**
-   * Other variants
+   * Modifiers: other variants
    */
 
   &--relative {

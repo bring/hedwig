@@ -1,20 +1,28 @@
+/**
+ * Block
+ */
+
 .hw-icon {
   display: inline-block;
   width: var(--hw-spacing);
   height: var(--hw-spacing);
   fill: inherit;
-}
 
-.hw-icon--small {
-  width: var(--hw-spacing-small);
-  height: var(--hw-spacing-small);
-}
+  /**
+   * Modifiers
+   */
 
-.hw-icon--large {
-  width: var(--hw-spacing-large);
-  height: var(--hw-spacing-large);
-}
+  &--small {
+    width: var(--hw-spacing-small);
+    height: var(--hw-spacing-small);
+  }
 
-.hw-icon--primary {
-  fill: var(--hw-color-primary);
+  &--large {
+    width: var(--hw-spacing-large);
+    height: var(--hw-spacing-large);
+  }
+
+  &--primary {
+    fill: var(--hw-color-primary);
+  }
 }

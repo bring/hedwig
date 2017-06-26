@@ -1,7 +1,5 @@
 /**
- * HEWDIG
- *
- * Buttons
+ * Block
  */
 
 .hw-button {
@@ -16,10 +14,6 @@
   transition: all cubic-bezier(0.08, 0.84, 0.07, 0.96) 120ms, background 75ms;
   cursor: pointer;
 
-  /**
-   * States
-   */
-
   &:disabled {
     color: var(--hw-color-white) !important;
     fill: var(--hw-color-white) !important;
@@ -31,7 +25,7 @@
   }
 
   /**
-   * Sizes
+   * Modifiers: sizes
    */
 
   &--large {
@@ -48,10 +42,8 @@
   }
 
   /**
-   * Variants
+   * Modifiers: types
    */
-
-  /* Primary button */
 
   &--primary {
     border: 2px solid var(--hw-color-primary);
@@ -72,8 +64,6 @@
     }
   }
 
-  /* Secondary button */
-
   &--secondary {
     border: 2px solid var(--hw-color-gray-dark);
     background: var(--hw-color-gray-dark);
@@ -91,8 +81,6 @@
       background: var(--hw-color-gray-dark) !important;
     }
   }
-
-  /* Outline button */
 
   &--outline {
     border: 3px solid var(--hw-color-gray);
@@ -114,8 +102,6 @@
     }
   }
 
-  /* White outlined button */
-
   &--outline-white {
     border: 3px solid var(--hw-color-white);
     background: none;
@@ -135,8 +121,6 @@
     }
   }
 
-  /* Icon buttons */
-
   &--icon {
     border: 2px solid var(--hw-color-primary);
     fill: var(--hw-color-white);
@@ -150,7 +134,7 @@
     &:focus {
       border-color: var(--hw-color-primary-dark);
       background: var(--hw-color-primary-dark);
-      box-shadow: 0px 0px 0px 1px var(--hw-color-primary-dark);
+      box-shadow: 0 0 0 1px var(--hw-color-primary-dark);
       outline: 0;
     }
 
@@ -173,7 +157,7 @@
     &:focus {
       background-color: var(--hw-color-gray);
       fill: var(--hw-color-white);
-      box-shadow: 0px 0px 0px 1px var(--hw-color-gray);
+      box-shadow: 0 0 0 1px var(--hw-color-gray);
       outline: 0;
     }
 

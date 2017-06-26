@@ -1,5 +1,5 @@
 /**
- * Spinner
+ * Block
  */
 
 .hw-spinner,
@@ -24,6 +24,10 @@
   -webkit-animation: spin 1.1s infinite linear;
   animation: spin 1.1s infinite linear;
 }
+
+/**
+ * Animations
+ */
 
 @-webkit-keyframes spin {
   0% {

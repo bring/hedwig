@@ -6,6 +6,10 @@
   position: relative;
   overflow: hidden;
 
+  /**
+   * Elements
+   */
+
   &__inner {
     display: flex;
     padding: 0;
