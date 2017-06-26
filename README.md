@@ -4,53 +4,30 @@
 
 Hedwig is Brings Design System.
 
-📚 [Hedwig documentation is available here](https://hedwig-docs.herokuapp.com)
+  📚 [Hedwig documentation is available here](https://hedwig-docs.herokuapp.com)
 
-🚨 _[This repo is public](https://github.com/bring/hedwig/issues/6), so please consider this when contributing_ 🚨
-
-### Getting started
-
-Using Hedwig in your project is super simple. You only need to include the following..
-
-PS: Check [releases](https://github.com/bring/hedwig/releases) for latest version
-
-In the document `head`:
-```
-[Fonts]    https://bring-hedwig.s3.amazonaws.com/hedwig/assets/fonts/fonts.css
-[CSS]      https://bring-hedwig.s3.amazonaws.com/hedwig/releases/{posten/bring}-{version}.css
-[JS]       https://bring-hedwig.s3.amazonaws.com/hedwig/releases/main-{version}.js
-```
-
-Before closing `body` tag:
-```
-[Icons]    https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js
-```
-
-**WTF!? I do not want to include external files in my project!**
-So. We want it to be super simple to use Hedwing. The files are lightweight (CSS 55KB, JS 16KB). This will not do much with your perfomance budget. So we prefer not to put it into your gulp-wepback-whatever build pipeline. 👍
+  🚨 [This repo is public](https://github.com/bring/hedwig/issues/6), so please consider this when contributing
 
 ### ⏩ tl;dr
 
 ```
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
-### :neckbeard: Getting started developing
-
-To develop on the styleguide, please follow our [guidelines]('').
+### :neckbeard: Running Hedwig locally
 
 ```
 clone this repo
-yarn install             # to install dependencies
-add .env file            # get variables from Heroku - Ask for keys in the Hedwig slack channel
-yarn s3:download         # to download assets from S3
+npm install                 # to install dependencies
+add .env file               # get variables from Heroku or ask for keys in the Hedwig slack channel
+npm run s3:download         # to download assets from S3
 
-yarn dev
+npm run dev                 # start local development server
 [open browser on port 3000]('http://localhost:3000/docs') 🚀
 ```
 
-To keep assets up to date, run `yarn s3:download` do download the latest assets from S3.
+To keep assets up to date, run `npm run s3:download` do download the latest assets from S3.
 
 ### 📚 Documentation
 
@@ -62,18 +39,49 @@ In development, the docs will live reload. It is recommended to always develop t
 
 The documentation is **atuo-deployed** to Heroku [https://hedwig-docs.herokuapp.com](https://hedwig-docs.herokuapp.com) when pushed to master.
 
-### 🔨 Deployment
+### Guidelines
+- All components should do one thing, and do that thing well.
+- All CSS should be written to adhere to the BEM methology.
+- All JS should be classless and use `data-attributes` to attach functionality.
+- New functionality should be reviewed by at least one other person before going into Hedwig.
+
+### Contributing
+All right, you need to change or add something. What do you do?
+
+  1: If the thing you're changing or adding is specific to your project, and not all sites using Hedwig, use a separate css file to add or override functionality using your own classes and components.
+
+  2: If you're adding new functionality to Hedwig, follow the below development guide below.
+  
+  3: If you've found a bug, follow the below "Found a bug?" guide below.
+
+### Development
+To develop on the project, please first read our guidelines and the contributing section above.
+
+To add a new feature:
+- Create a new feature branch (`git checkout -b branchname`)
+- Develop the new feature (Template css and js files can be found in the `/templates` folder)
+- Document and test the new feature
+- Create a pull request and ask for a review
+
+To modify an existing feature follow the same process, but also remember the versioning system. If there is a breaking change, or if this might impact existing sites using hedwig, update the version number. See below for details.
+
+### Versioning
+Hedwig uses [semantic versioning](http://semver.org/) to make sure once a site starts using it, the CSS file won't suddenly change and break the site. The version number is located in `package.json`, and will be appended to the `.css` and `.js` files. Example - `bring-1.0.3.css`.
+
+When a breaking change is added, a new major version is required.
+
+### 🔨 Hosting
 
 Production CSS, JavaScript and assets are hosted on a **CDN** using [Amazon S3](https://aws.amazon.com/s3/) and [Amazon Cloudfront](https://aws.amazon.com/cloudfront).
 
 To upload the build folder to S3:
 ```
-yarn s3:upload
+npm run s3:upload
 ```
 
 To download the build folder from S3:
 ```
-yarn s3:download
+npm run s3:download
 ```
 Remember to fill en the keys in `.env`.
 
@@ -84,13 +92,13 @@ We use [inline SVG's for icons](https://github.com/bring/hedwig/issues/9).
 For the future it will probably be a good idea to have a own repository for icons, (i.e. `hedwig-icons`), where both source "master" files (AI, Sketch) and the SVG's can be stored.
 
 It works like this:
-* Place icons in the `build/assets/icons/` folder (for now)
-* Run `yarn run svg` to generate SVG sprite
-* Use icons like described in [the docs](https://hedwig-docs.herokuapp.com/#/Icon)
+- Place icons in the `build/assets/icons/` folder (for now)
+- Run `npm run svg` to generate SVG sprite
+- Use icons like described in [the docs](https://hedwig-docs.herokuapp.com/#/Icon)
 
 To update icons in production:
-* Run `yarn run s3:upload`
-* Include `https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js` in the footer of the document
+- Run `npm run s3:upload`
+- Include `https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js` in the footer of the document
 
 ### 🅰️ Fonts
 
@@ -113,8 +121,8 @@ Note:
 Most components are tested in IE10, but IE9 is still yet to be tested.
 ```
 
-### 📂 Application structure
 
+### 📂 Application structure
     ├── /build                      - Build folder. Contains minified assets. - auto generated
     ├── /docs                       - Contains the style guide system (Catalog) - auto generated
     ├── /scripts                    - Contains all scripts for building and compiling
@@ -136,6 +144,18 @@ Most components are tested in IE10, but IE9 is still yet to be tested.
     ├── / package.json              - Contains all npm scripts
     └── / *.*                       - Various dotfiles and config files
 
+
+### Found a bug?
+- If you've found a bug, you can create a new [issue](https://github.com/bring/hedwig/issues) via github. 
+- If you want to fix this issue yourself, do so and then follow the development guide above.
+
+### FAQ
+  Q: I have a question! Who do i ask?
+  A: Use the Hedwig slack channel!
+
+### Maintainers
+WIP
+
 ### 📦 Dependencies (development helpers)
 
 * [PostCSS](https://github.com/postcss/postcss), [cssnano](https://github.com/ben-eb/cssnano), [postcss-cli](https://github.com/postcss/postcss-cli), [postcss-cssnext](https://github.com/MoOx/postcss-cssnext), [postcss-extend](https://github.com/travco/postcss-extend) - for transpiling CSS
@@ -153,10 +173,9 @@ Most components are tested in IE10, but IE9 is still yet to be tested.
 * [svgo](https://github.com/svg/svgo), [svg2sprite](https://github.com/mrmlnc/svg2sprite) - for SVG's
 
 
-## 📦 Dependencies (included in bundle)
+### 📦 Dependencies (included in bundle)
 * [Zenscroll](https://github.com/zengabor/zenscroll) - Tiny smooth-scroll helper
 
-## ⚖️ Licenses
-
+### ⚖️ Licenses
 * Source code is licensed under [BSD 2-Clause](LICENSE.txt)
 * All icons and images are licensed under [Creative Commons Attribution-NoDerivatives 4.0](LICENSE-icons-images.txt)
