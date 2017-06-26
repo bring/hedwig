@@ -330,6 +330,13 @@ function build() {
     ...postenPages,
   ];
   postenMergedPages.push({
+    title: 'Layout',
+    pages: sortPages([
+      ...sharedLayout,
+      ...bringLayout,
+    ]),
+  });
+  postenMergedPages.push({
     title: 'Components',
     pages: sortPages([
       ...sharedComponents,

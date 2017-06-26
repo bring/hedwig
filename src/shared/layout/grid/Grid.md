@@ -147,13 +147,23 @@ Example
   </div>
 ```
 
-### Push and Pull
+### Push classes
 
 To offset grid items, push and pull classes are available:
 
 ```code
 .hw-push--[breakpoint]--[size]
 ```
+
+Example:
+```html|span-6
+  <div class="hw-grid hw-grid--wide">
+    <div class="hw-grid__item hw-one-half hw-push--one-third">
+      <p class="hw-helpers-highlight">one-half, hw-push--one-third</p>
+    </div>
+  </div>
+```
+
 
 ### Wide grid gutters
 
