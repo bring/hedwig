@@ -1,4 +1,4 @@
-import q from '../../utilities/js/q';
+import q from '../../../shared/utilities/js/q';
 
 /**
  * @function HWNavbar
