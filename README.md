@@ -36,22 +36,21 @@ yarn install
 yarn dev
 ```
 
-## Documentation
-
-### :neckbeard: Development
+### :neckbeard: Getting started developing
 
 To develop on the styleguide, please follow our [guidelines]('').
 
 ```
 clone this repo
 yarn install             # to install dependencies
-add .env file            # get variables from Heroku
+add .env file            # get variables from Heroku - Ask for keys in the Hedwig slack channel
 yarn s3:download         # to download assets from S3
+
 yarn dev
 [open browser on port 3000]('http://localhost:3000/docs') 🚀
 ```
 
-To keep assets up to date, run `yarn s3:download` do download assets from S3.
+To keep assets up to date, run `yarn s3:download` do download the latest assets from S3.
 
 ### 📚 Documentation
 
@@ -97,7 +96,7 @@ To update icons in production:
 
 We host our fonts on S3 ([http://bring-hedwig.s3.amazonaws.com/assets/fonts/fonts.css](http://bring-hedwig.s3.amazonaws.com/assets/fonts)). To update the fonts, update font files in `assets/fonts` on S3. We do it this way both to keep Hedwig clean and to avoid legal issues with publishing the fonts on our open-sourced repo.
 
-## 🔧 Linting
+### 🔧 Linting
 
 Linting our project is import to keep a holistic code base. It is recommended to use a linting plugin for your editor while developing.
 
@@ -114,24 +113,30 @@ Note:
 Most components are tested in IE10, but IE9 is still yet to be tested.
 ```
 
-### 📂 Structure
+### 📂 Application structure
 
-```
-├─ base                          # All base style, only primitives
-|    ├─ body          
-|    ├─ forms         
-|    └─ typogray
-├─ components                    # Only classes, with BEM style
-|    ├─ component-1          
-|    |    ├─ component-1.css     # css
-|    |    ├─ component-1.js      # js
-|    |    └─ component-1.md      # documentation
-|    ├─ component-2          
-|    └─ component-3          
-└─ helpers                       # Helpers classes, Takyions (?)
-```
+    ├── /build                      - Build folder. Contains minified assets. - auto generated
+    ├── /docs                       - Contains the style guide system (Catalog) - auto generated
+    ├── /scripts                    - Contains all scripts for building and compiling
+    │
+    ├── /src/[posten/bring/shared]  - All modules, split up by area
+    │   ├── /_config                - CSS Variables
+    │   ├── /base                   - Global CSS - Body and typography
+    │   │
+    │   └── /module
+    │       ├── / *.css             - Module styles
+    │       ├── / *.js              - Module scripts (if any)
+    │       └── / *.md              - Module documentation (for Catalog)
+    │
+    ├── /tmp                        - Temporary folder - auto generated
+    ├── /templates                  - Contains example `.css` and `.js` files
+    │
+    ├── / .env                      - Environment variables, required for publishing updates to s3
+    ├── / server.js                 - Node server, starts local web servers for docs and assets
+    ├── / package.json              - Contains all npm scripts
+    └── / *.*                       - Various dotfiles and config files
 
-## 📦 Dependencies (development helpers)
+### 📦 Dependencies (development helpers)
 
 * [PostCSS](https://github.com/postcss/postcss), [cssnano](https://github.com/ben-eb/cssnano), [postcss-cli](https://github.com/postcss/postcss-cli), [postcss-cssnext](https://github.com/MoOx/postcss-cssnext), [postcss-extend](https://github.com/travco/postcss-extend) - for transpiling CSS
 * [sanitize.css](https://github.com/jonathantneal/sanitize.css) to make CSS sane (a lightweight version of Normalize)

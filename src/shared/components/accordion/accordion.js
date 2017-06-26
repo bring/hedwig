@@ -59,9 +59,8 @@ const HWAccordion = ({
     const item = findParent({ selector: '.hw-accordion__item', elem });
 
     // Find heights
-    const contentsHeight = contents.getAttribute('data-hw-accordion-contents-height');
     const triggerHeight = elem.getAttribute('data-hw-accordion-trigger-height');
-    const totalHeight = item.getAttribute('data-hw-accordion-item-height');;
+    const totalHeight = item.getAttribute('data-hw-accordion-item-height');
 
     // Display/hide accordion
     if (contents.getAttribute('aria-hidden') === 'false') {
@@ -153,7 +152,7 @@ const HWAccordion = ({
         // Get heights
         const triggerHeight = trigger.offsetHeight;
         const contentsHeight = contents.offsetHeight;
-        const totalHeight = parseInt(contentsHeight) + parseInt(triggerHeight);
+        const totalHeight = parseInt(contentsHeight, 10) + parseInt(triggerHeight, 10);
 
         // Set height attributes
         trigger.setAttribute('data-hw-accordion-trigger-height', triggerHeight);

@@ -1,6 +1,6 @@
 ## Dropdowns
 
-The custom dropdown will progressively enhance a native select element into a custom dropdown list.
+The custom dropdown will progressively enhance a native `<select />` element into a custom dropdown list.
 
 Upon selecting an option, the native select will be updated with the correct value.
 
