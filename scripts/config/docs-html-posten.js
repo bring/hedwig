@@ -100,7 +100,7 @@ module.exports = `
         <a class="hw-app-switcher__link hw-app-switcher__link--active" href="/posten.html">Posten</a>
       </nav>
       <div id="catalog" />
-      <script src="https://interactivethings.github.io/catalog/catalog.min.js"></script>
+      <script src="https://unpkg.com/catalog@3.0.0-rc.3/dist/catalog-standalone.min.js"></script>
       <script src="docs-config-posten.js"></script>
       ${icons}
       ${reload}
