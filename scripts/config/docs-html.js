@@ -5,6 +5,7 @@ module.exports = `
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Hedwig</title>
+      <link rel="icon" type="image/x-icon" href="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/favicon.ico" />
       <style>
 
         body {
