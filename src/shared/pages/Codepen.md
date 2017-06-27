@@ -4,7 +4,11 @@ Below you'll also find example pages are hosted on codepen. Feel free to fork th
 
 All Components are available in the codepens as they are pulled in via the CDN.
 
-### Example pages
+### Blank codepen
+
+You can fork the below codepen and start playing around: [Blank page template](https://codepen.io/bnhovde/pen/aWdWzz?editors=1000)
+
+### Example pages (OUTDATED)
 
 [Article](http://codepen.io/fredjens/full/0797f8e2a9b13f5978055e6c44263d51/)
 [Article with alternative paragraph text (Roboto)](https://codepen.io/fredjens/full/f53fd7756c8538982ebf108b64d8fdd5/)
