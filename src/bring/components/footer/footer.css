@@ -25,6 +25,8 @@
 
     @media (--large) {
       display: block;
+      max-width: var(--hw-width-wide);
+      margin: 0 auto;
     }
   }
 
