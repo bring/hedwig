@@ -2,7 +2,7 @@
 
 This is the most commonly used component.
 
-The purpose of the Block component is to apply margin and padding to all components, as well as apply max-widths and background-colors.
+The purpose of the Block component is to apply margin, padding and background-colors to all components.
 
 In an ideal scenario, there is no margin/padding applied to any other component, instead wrap the element in Block and use this to generate the required margin/padding.
 
@@ -30,7 +30,7 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   </div>
   <div class="hw-helpers-margin-highlighter">
     <div class="
-      hw-block 
+      hw-block
       hw-block--full
     ">
       <p>Block with no side padding</p>
@@ -38,8 +38,8 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   </div>
   <div class="hw-helpers-margin-highlighter">
     <div class="
-      hw-block 
-      hw-block--mt 
+      hw-block
+      hw-block--mt
       hw-block--mb
     ">
       <p>Block with top and bottom margins</p>
@@ -47,8 +47,8 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   </div>
   <div class="hw-helpers-margin-highlighter">
     <div class="
-      hw-block 
-      hw-block--mt-small 
+      hw-block
+      hw-block--mt-small
       hw-block--mb-small
     ">
       <p>Block with small top and bottom margins</p>
@@ -56,8 +56,8 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   </div>
   <div class="hw-helpers-margin-highlighter">
     <div class="
-      hw-block 
-      hw-block--mt-large 
+      hw-block
+      hw-block--mt-large
       hw-block--mb-large
     ">
       <p>Block with large top and bottom margins</p>

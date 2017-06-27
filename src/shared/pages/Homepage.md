@@ -60,41 +60,42 @@
         </div>
       </section>
 
-      <section class="hw-block hw-block--limited hw-block--mt-large hw-block--mb-large">
-
-        <div class="hw-grid">
-          <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
-            <a href="#" class="hw-card-cta">
-              <div class="hw-block hw-block--mt-large hw-block--mb-large">
-                <h2 class="hw-card-cta__title">Sende</h2>
-                <hr class="hw-hr hw-hr--centered" />
-                <p class="hw-card-cta__text">
-                  Finn riktig tjeneste og bestill
-                </p>
-              </div>
-            </a>
-          </div><!--
-      --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
-            <a href="#" class="hw-card-cta">
-              <div class="hw-block hw-block--mt-large hw-block--mb-large">
-                <h2 class="hw-card-cta__title">Motta</h2>
-                <hr class="hw-hr hw-hr--centered" />
-                <div class="hw-card-cta__text">
-                  Adresseendring og mottakkertjenester.
+      <section class="hw-container hw-container--wide">
+        <div class="hw-block hw-block--mt-large hw-block--mb-large">
+          <div class="hw-grid">
+            <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
+              <a href="#" class="hw-card-cta">
+                <div class="hw-block hw-block--mt-large hw-block--mb-large">
+                  <h2 class="hw-card-cta__title">Sende</h2>
+                  <hr class="hw-hr hw-hr--centered" />
+                  <p class="hw-card-cta__text">
+                    Finn riktig tjeneste og bestill
+                  </p>
                 </div>
-              </div>
-            </a>
-          </div><!--
-      --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
-            <a href="#" class="hw-card-cta">
-              <div class="hw-block hw-block--mt-large hw-block--mb-large">
-                <h2 class="hw-card-cta__title">Mer om</h2>
-                <hr class="hw-hr hw-hr--centered" />
-                <div class="hw-card-cta__text">
-                  Netthandel, kundedialog, adresser, transport, lagring og mer.
+              </a>
+            </div><!--
+        --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
+              <a href="#" class="hw-card-cta">
+                <div class="hw-block hw-block--mt-large hw-block--mb-large">
+                  <h2 class="hw-card-cta__title">Motta</h2>
+                  <hr class="hw-hr hw-hr--centered" />
+                  <div class="hw-card-cta__text">
+                    Adresseendring og mottakkertjenester.
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div><!--
+        --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
+              <a href="#" class="hw-card-cta">
+                <div class="hw-block hw-block--mt-large hw-block--mb-large">
+                  <h2 class="hw-card-cta__title">Mer om</h2>
+                  <hr class="hw-hr hw-hr--centered" />
+                  <div class="hw-card-cta__text">
+                    Netthandel, kundedialog, adresser, transport, lagring og mer.
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -182,7 +183,7 @@
           </div>
         </div>
       </div>
-    
+
       <div class="hw-footer__mobile">
         <div class="hw-block hw-block--half hw-block--pt-small">
           <div class="hw-grid">
