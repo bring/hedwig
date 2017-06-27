@@ -59,19 +59,19 @@ function build() {
    */
 
   const sharedComponents = [];
-  const sharedPageExamples = [];
+  const sharedExamples = [];
   const sharedPages = [];
   const sharedUtilities = [];
   const sharedLayout = [];
 
   const bringComponents = [];
-  const bringPageExamples = [];
+  const bringExamples = [];
   const bringPages = [];
   const bringUtilities = [];
   const bringLayout = [];
 
   const postenComponents = [];
-  const postenPageExamples = [];
+  const postenExamples = [];
   const postenPages = [];
   const postenUtilities = [];
   const postenLayout = [];
@@ -100,7 +100,7 @@ function build() {
       const filePath = file.split('/');
       const fileSection = filePath[1]; // Will be shared, posten or bring
       var components;
-      var pageExamples;
+      var examples;
       var pages;
       var layout;
       var utilities;
@@ -108,14 +108,14 @@ function build() {
       switch (fileSection) {
           case 'posten':
               components = postenComponents;
-              pageExamples = postenPageExamples;
+              examples = postenExamples;
               pages = postenPages;
               layout = postenLayout;
               utilities = postenUtilities;
               break;
           case 'bring':
               components = bringComponents;
-              pageExamples = bringPageExamples;
+              examples = bringExamples;
               pages = bringPages;
               layout = bringLayout;
               utilities = bringUtilities;
@@ -123,7 +123,7 @@ function build() {
           default:
           case 'shared':
               components = sharedComponents;
-              pageExamples = sharedPageExamples;
+              examples = sharedExamples;
               pages = sharedPages;
               layout = sharedLayout;
               utilities = sharedUtilities;
@@ -165,7 +165,7 @@ function build() {
        var title = filename.split('.').shift();
       */
 
-      if (file.indexOf('pages') !== -1) {
+      if (file.indexOf('examples') !== -1) {
 
         var filename = file.split('/').pop();
         var title = filename.split('.').shift();
@@ -181,7 +181,7 @@ function build() {
         /**
          * Add page to a pages array
          */
-        pageExamples.push({
+        examples.push({
           title: title,
           path: title,
           src: `md/${fileSection}/${filename}`,
@@ -301,10 +301,10 @@ function build() {
     ]),
   });
   bringMergedPages.push({
-    title: 'Pages',
+    title: 'Examples',
     pages: sortPages([
-      ...sharedPageExamples,
-      ...bringPageExamples,
+      ...sharedExamples,
+      ...bringExamples,
     ]),
   });
   bringMergedPages.push({
@@ -344,10 +344,10 @@ function build() {
     ]),
   });
   postenMergedPages.push({
-    title: 'Pages',
+    title: 'Examples',
     pages: sortPages([
-      ...sharedPageExamples,
-      ...postenPageExamples,
+      ...sharedExamples,
+      ...postenExamples,
     ]),
   });
   postenMergedPages.push({
