@@ -11,7 +11,7 @@
 
 ```html
 <header class="hw-navbar">
-  <div class="hw-navbar__contents">
+  <div class="hw-navbar__content">
     <a href="#" class="hw-navbar__logo">
       <svg class="hw-navbar__logo-standard">
         <use xlink:href="#logo-bring"></use>
@@ -65,24 +65,26 @@
 
 ```html
 <header class="hw-navbar">
-  <div class="hw-navbar__logo">
-    <svg>
-      <use xlink:href="#logo-bring"></use>
-    </svg>
+  <div class="hw-navbar__content">
+    <div class="hw-navbar__logo">
+      <svg>
+        <use xlink:href="#logo-bring"></use>
+      </svg>
+    </div>
+    <nav class="hw-navbar__menu">
+      <a href="#" class="hw-navbar__item">English</a>
+      <a href="#" class="hw-navbar__item">Login</a>
+      <button class="hw-navbar__menu-button" data-hw-toggle-menu>
+        <span>Menu</span>
+        <div class="hw-hamburger" data-hw-menu-icon>
+          <span class="hw-hamburger__part"></span>
+          <span class="hw-hamburger__part"></span>
+          <span class="hw-hamburger__part"></span>
+        </div>
+      </button>
+    </nav>
+    <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
   </div>
-  <nav class="hw-navbar__menu">
-    <a href="#" class="hw-navbar__item">English</a>
-    <a href="#" class="hw-navbar__item">Login</a>
-    <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-      <span>Menu</span>
-      <div class="hw-hamburger" data-hw-menu-icon>
-        <span class="hw-hamburger__part"></span>
-        <span class="hw-hamburger__part"></span>
-        <span class="hw-hamburger__part"></span>
-      </div>
-    </button>
-  </nav>
-  <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
 </header>
 ```
 
@@ -90,23 +92,25 @@
 
 ```html
 <header class="hw-navbar hw-navbar--transparent">
-  <div class="hw-navbar__logo">
-    <svg>
-      <use xlink:href="#logo-bring"></use>
-    </svg>
+  <div class="hw-navbar__content">
+    <div class="hw-navbar__logo">
+      <svg>
+        <use xlink:href="#logo-bring"></use>
+      </svg>
+    </div>
+    <nav class="hw-navbar__menu">
+      <a href="#" class="hw-navbar__item">English</a>
+      <a href="#" class="hw-navbar__item">Login</a>
+      <button class="hw-navbar__menu-button" data-hw-toggle-menu>
+        <span>Menu</span>
+        <div class="hw-hamburger" data-hw-menu-icon>
+          <span class="hw-hamburger__part"></span>
+          <span class="hw-hamburger__part"></span>
+          <span class="hw-hamburger__part"></span>
+        </div>
+      </button>
+    </nav>
+    <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
   </div>
-  <nav class="hw-navbar__menu">
-    <a href="#" class="hw-navbar__item">English</a>
-    <a href="#" class="hw-navbar__item">Login</a>
-    <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-      <span>Menu</span>
-      <div class="hw-hamburger" data-hw-menu-icon>
-        <span class="hw-hamburger__part"></span>
-        <span class="hw-hamburger__part"></span>
-        <span class="hw-hamburger__part"></span>
-      </div>
-    </button>
-  </nav>
-  <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
 </header>
 ```
