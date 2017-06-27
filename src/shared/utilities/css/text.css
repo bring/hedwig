@@ -1,0 +1,27 @@
+.hw-text-center {
+  text-align: center;
+}
+
+.hw-text-left {
+  text-align: left;
+}
+
+.hw-text-right {
+  text-align: left;
+}
+
+.hw-text-uppercase {
+  text-transform: uppercase;
+}
+
+.hw-text-lowercase {
+  text-transform: lowercase;
+}
+
+.hw-text-capitalize {
+  text-transform: capitalize;
+}
+
+.hw-text-ellipsis {
+  text-overflow: ellipsis;
+}

@@ -13,8 +13,13 @@
   --hw-color-primary-darker: red;
   --hw-color-primary-light: red;
   --hw-color-primary-lighter: red;
-
   --hw-color-secondary: #fdbb2f;
   --hw-color-link: #4a90e2;
   --hw-color-avocado: #26b576;
+
+  /**
+   * Color mappings
+   */
+
+  --hw-color-button-text: var(--hw-color-white);
 }
