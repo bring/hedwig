@@ -5,15 +5,19 @@
 .hw-navbar {
   position: relative;
   background: var(--hw-color-white);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
   border-bottom: 1px solid var(--hw-color-gray-lightest);
 
   /**
    * Elements
    */
+
+  &__content {
+    max-width: var(--hw-width-wide: 1065px);
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__logo {
     position: relative;
