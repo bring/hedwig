@@ -1,0 +1,23 @@
+/**
+ * Container
+ */
+
+.hw-container {
+  display: block;
+  padding: 0 auto;
+  max-width: var(--hw-width-contents);
+
+  /**
+   * Modifiers
+   */
+
+  &--wide {
+    max-width: var(--hw-width-wide);
+    margin: 0 auto;
+  }
+
+  &--narrow {
+    max-width: var(--hw-width-narrow);
+    margin: 0 auto;
+  }
+}

@@ -39,22 +39,6 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   <div class="hw-helpers-margin-highlighter">
     <div class="
       hw-block 
-      hw-block--small
-    ">
-      <p>Block with small side padding</p>
-    </div>
-  </div>
-  <div class="hw-helpers-margin-highlighter">
-    <div class="
-      hw-block 
-      hw-block--large
-    ">
-      <p>Block with large side padding</p>
-    </div>
-  </div>
-  <div class="hw-helpers-margin-highlighter">
-    <div class="
-      hw-block 
       hw-block--mt 
       hw-block--mb
     ">
@@ -84,8 +68,6 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 ### Block modifiers (margin & padding)
 ```code
 [Full]                      .hw-block--full (no side paddings)
-[Small]                     .hw-block--small (half side paddings)
-[Large]                     .hw-block--large (large side paddings)
 [Margin top]                .hw-block--mt
 [Small margin top]          .hw-block--mt-small
 [Large margin top]          .hw-block--mt-large
@@ -98,14 +80,6 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 [Padding bottom]            .hw-block--pb
 [Small padding bottom]      .hw-block--pb-small
 [Large padding bottom]      .hw-block--pb-large
-```
-
-### Block modifiers (max-widths)
-```code
-[Limited]                 .hw-block--limited (default site width)
-[Narrow]                  .hw-block--limited-narrow
-[Wide]                    .hw-block--limited-wide
-[Text]                    .hw-block--limited-article
 ```
 
 ### Block modifiers (colors)

@@ -32,12 +32,12 @@
   --hw-color-black: #000000;
 
   /**
-   * Site width limitations
+   * Width limitations
    */
 
-  --hw-width-site: 1065px; /* Default site width, used in footer etc */
-  --hw-width-article: 690px; /* Max text width (articles) */
-  --hw-width-article-narrow: 300px;
+  --hw-width-contents: 690px; /* Max default width (articles) */
+  --hw-width-wide: 1065px; /* Default site width, used in footer etc */
+  --hw-width-narrow: 300px; /* Narrow column for centered contents */
 
   /**
    * Fonts

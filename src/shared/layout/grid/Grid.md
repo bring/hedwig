@@ -152,7 +152,8 @@ Example
 To offset grid items, push and pull classes are available:
 
 ```code
-.hw-push--[breakpoint]--[size]
+.hw-push--[size]
+.hw-push--[breakpoint]--[size] (responsive version)
 ```
 
 Example:

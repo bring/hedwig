@@ -14,14 +14,6 @@
     padding: 0;
   }
 
-  &--small {
-    padding: 0 var(--hw-spacing-small);
-  }
-
-  &--large {
-    padding: 0 var(--hw-spacing-large);
-  }
-
   /**
    * Modifiers: padding and padding variations
    */
@@ -72,25 +64,6 @@
 
   &--pb-large {
     padding-bottom: var(--hw-spacing-large);
-  }
-
-  /**
-   * Modifiers:: width limitations
-   */
-
-  &--limited {
-    max-width: var(--hw-width-site);
-    margin: 0 auto;
-  }
-
-  &--limited-article {
-    max-width: var(--hw-width-article);
-    margin: 0 auto;
-  }
-
-  &--limited-narrow {
-    max-width: var(--hw-width-article-narrow);
-    margin: 0 auto;
   }
 
 
