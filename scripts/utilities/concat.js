@@ -1,3 +1,12 @@
+/**
+ *
+ * concat
+ *
+ * -> Concatinate contents of given files
+ * -> Will replace old file if existing
+ *
+ */
+
 var fs = require('fs'),
     glob = require('glob');
 
@@ -5,7 +14,7 @@ function concat(input, output) {
     // First delete old file
     if (fs.existsSync(output)) {
       fs.unlinkSync(output, function(err){
-        console.log('Deleted old css file');
+        console.log('Deleted old file');
       });  
     }
 

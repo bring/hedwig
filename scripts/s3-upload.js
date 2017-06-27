@@ -1,5 +1,9 @@
 /**
- * Upload to S3
+ *
+ * s3-upload
+ *
+ * -> Upload assets to s3
+ *
  */
 
 var client = require('./config/s3');

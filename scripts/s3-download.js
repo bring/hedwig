@@ -1,5 +1,9 @@
 /**
- * Download from S3
+ *
+ * s3-download
+ *
+ * -> Download assets from s3
+ *
  */
 
 var client = require('./config/s3');

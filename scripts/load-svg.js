@@ -1,3 +1,11 @@
+/**
+ *
+ * load-svg
+ *
+ * -> Load svg icons from s3 and inject into body
+ *
+ */
+
 var url = 'https://bring-hedwig.s3.amazonaws.com/hedwig/assets/svg-sprite.svg';
 
 function loadIcons() {

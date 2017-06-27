@@ -1,3 +1,11 @@
+/**
+ *
+ * sortPages
+ *
+ * -> Given array of pages, sorts pages by title (alphabetically)
+ *
+ */
+
 function sortPages(arr) {
   return arr.sort((a, b) => {
     var sortStringA = a.src ? a.src.split('/').pop() : a.title;

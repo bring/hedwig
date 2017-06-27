@@ -1,3 +1,11 @@
+/**
+ *
+ * Watcher
+ *
+ * -> Watches all source files and runs appropriate tasks
+ *
+ */
+
 var packageJson = require('../package.json');
 var watch = require('node-watch');
 var build = require('./docs-build');

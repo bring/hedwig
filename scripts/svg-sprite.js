@@ -1,5 +1,9 @@
 /**
- * Generate a SVG sprite
+ *
+ * svg-sprite
+ *
+ * -> Generate a SVG sprite from files in /icons/optimised folder
+ *
  */
 
 var fs = require('fs');

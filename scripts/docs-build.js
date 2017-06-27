@@ -1,11 +1,11 @@
 /**
  *
- * DOCS BUILD SCRIPT
+ * Docs build
  *
- * - Iterate through all markdown files in the src folder
- * - Move markedowns files to docs
- * - Make Catalog.js config
- * - Generate html file
+ * -> Iterate through all markdown files in the src folder
+ * -> Move markedowns files to docs
+ * -> Make Catalog.js config
+ * -> Generate html file
  *
  */
 

@@ -1,9 +1,9 @@
 /**
  *
- * ENVCHECKER
+ * Env-checker
  *
- * - Checks that user has added an .env file
- * - Alerts user if not and aborts task
+ * -> Checks that user has added an .env file
+ * -> Alerts user if not and aborts task
  *
  */
 
