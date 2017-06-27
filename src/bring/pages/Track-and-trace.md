@@ -60,12 +60,11 @@
       data-rellax-speed="-4"></div>
       <div class="hw-hero__overlay"></div>
       <div class="hw-hero__contents">
-        <div class="hw-animate hw-animate--slide-in-bottom">
+        <div class="hw-container hw-animate hw-animate--slide-in-bottom">
           <div class="
             hw-block
             hw-block--pt
             hw-block--pb
-            hw-block--limited-article
             hw-block--bg-primary-lighter
           ">
             <div class="hw-block hw-block--full">
@@ -99,7 +98,7 @@
     </div>
 
 
-    <main class="hw-block hw-block--full hw-block--limited-article">
+    <main class="hw-container">
 
       <div class="hw-block hw-block--mt-large">
         <h2>Ofte stilte spørsmål</h2>

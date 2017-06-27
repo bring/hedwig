@@ -56,7 +56,7 @@
     </header>
 
 
-    <main class="hw-block hw-block--full hw-block--limited-article">
+    <main class="hw-container">
 
       <article>
         <div class="hw-block hw-block--mt-large">
@@ -121,7 +121,7 @@
     <footer class="hw-footer">
 
       <div class="hw-footer__desktop">
-        <div class="hw-block hw-block--full hw-block--limited">
+        <div class="hw-container hw-container--wide">
           <div class="hw-grid">
             <div class="hw-grid__item hw-one-quarter">
               <p class="hw-footer__title">Kundeservice</p>
@@ -170,7 +170,7 @@
       </div>
 
       <div class="hw-footer__mobile">
-        <div class="hw-block hw-block--half hw-block--pt-small">
+        <div class="hw-container">
           <div class="hw-grid">
             <div class="hw-grid__item hw-small--one-half">
               <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>

@@ -55,15 +55,13 @@
 
     <!-- Footer -->
 
-    <main>
+    <main class="hw-block--full hw-block--bg-gray-lighter">
 
-      <div class="hw-block--full hw-block--bg-gray-lighter">
-        <div class="hw-block hw-block--limited-narrow">
-          <div class="hw-block hw-block--centered">
-            <object data="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/illustration-send.svg" type="image/svg+xml">
-            </object>
-          </div>
-        </div>
+      <div class="hw-container--narrow">
+        <object data="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/illustration-send.svg" type="image/svg+xml">
+        </object>
+      </div>
+      <div class="hw-container">
           <h1>Hva skal du sende?</h1>
       </div>
 
