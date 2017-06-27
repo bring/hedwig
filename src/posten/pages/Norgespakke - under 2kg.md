@@ -63,12 +63,13 @@
         </div>
       </div>
       <div class="hw-container">
-        <div class="hw-block hw-block--mt hw-block--mb">
-          <h1 class="hw-text-center">Hva skal du sende?</h1>
-          <h3 class="hw-text-center">Finn pris og sendemåte på det du skal sende</h3>
+        <div class="hw-block
+          hw-block--mt
+          hw-block--mb
+          hw-text-center">
+          <h1>Hva skal du sende?</h1>
+          <h3>Finn pris og sendemåte på det du skal sende</h3>
         </div>
-      </div>
-      <div class="hw-container--narrow">
         <div class="hw-block
           hw-block--full
           hw-block--mt
@@ -77,6 +78,7 @@
           <button class="hw-button hw-button--primary">Pakke</button>
           <button class="hw-button hw-button--primary">Brev</button>
         </div>
+      </div>
       </div>
 
     </main>

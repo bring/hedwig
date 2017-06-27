@@ -8,7 +8,7 @@
   border: 2px solid var(--hw-color-gray);
   min-width: 183px;
   background: var(--hw-color-gray);
-  color: var(--hw-color-white);
+  color: var(--hw-color-button-text);
   font-size: var(--hw-font-size-small);
   font-family: var(--hw-font-primary-medium);
   line-height: var(--hw-font-size-p);
@@ -49,7 +49,7 @@
   &--primary {
     border: 2px solid var(--hw-color-primary);
     background: var(--hw-color-primary);
-    color: var(--hw-color-black);
+    color: var(--hw-color-button-text);
 
     &:hover,
     &:active,
@@ -127,6 +127,7 @@
     fill: var(--hw-color-white);
     background: var(--hw-color-primary);
     padding: var(--hw-spacing-smaller);
+    min-width: 0;
     border-radius: 50%;
     cursor: pointer;
 
@@ -150,6 +151,7 @@
     fill: var(--hw-color-gray);
     background: transparent;
     padding: var(--hw-spacing-smaller);
+    min-width: 0;
     border-radius: 50%;
     cursor: pointer;
 
@@ -173,6 +175,7 @@
     fill: var(--hw-color-gray);
     background: transparent;
     padding: var(--hw-spacing-smaller);
+    min-width: 0;
     cursor: pointer;
 
     &:hover,
