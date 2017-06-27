@@ -6,6 +6,7 @@
   display: inline-block;
   padding: var(--hw-spacing-smaller) var(--hw-spacing);
   border: 2px solid var(--hw-color-gray);
+  min-width: 183px;
   background: var(--hw-color-gray);
   color: var(--hw-color-white);
   font-size: var(--hw-font-size-small);
