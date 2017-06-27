@@ -55,33 +55,46 @@
 
     <!-- Footer -->
 
-    <main class="hw-block--full hw-block--bg-gray-lightest">
+    <section class="hw-block hw-block--pt-large hw-block--pb-large hw-block--bg-gray-lightest">
 
-      <div class="hw-container--narrow">
-        <div class="hw-block hw-block--full hw-block--pt-large hw-block--pb-large">
-          <img src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/illustration-send.svg" type="image/svg+xml" />
+        <div class="hw-container--narrow">
+          <div class="hw-block hw-block--full hw-block--pt-large hw-block--pb-large">
+            <img src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/illustration-send.svg" type="image/svg+xml" />
+          </div>
         </div>
-      </div>
+
+        <div class="hw-container">
+          <div class="hw-block
+            hw-block--pt
+            hw-block--pb
+            hw-text-center">
+            <h1>Hva skal du sende?</h1>
+            <h3>Finn pris og sendemåte på det du skal sende</h3>
+          </div>
+          <div class="hw-block
+            hw-block--full
+            hw-block--pt
+            hw-block--pb
+            hw-text-center">
+            <button class="hw-button hw-button--primary">Pakke</button>
+            <button class="hw-button hw-button--primary">Brev</button>
+          </div>
+        </div>
+
+    </section>
+
+    <section class="hw-block hw-block--pt-large hw-block--pb-large">
+
       <div class="hw-container">
         <div class="hw-block
-          hw-block--mt
-          hw-block--mb
+          hw-block--pt
+          hw-block--pb
           hw-text-center">
-          <h1>Hva skal du sende?</h1>
-          <h3>Finn pris og sendemåte på det du skal sende</h3>
+          <h1>Her er en tittel til</h1>
         </div>
-        <div class="hw-block
-          hw-block--full
-          hw-block--mt
-          hw-block--mb
-          hw-text-center">
-          <button class="hw-button hw-button--primary">Pakke</button>
-          <button class="hw-button hw-button--primary">Brev</button>
-        </div>
-      </div>
       </div>
 
-    </main>
+    </section>
 
     <footer class="hw-footer">
 
