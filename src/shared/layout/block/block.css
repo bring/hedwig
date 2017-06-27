@@ -91,6 +91,10 @@
     background-color: var(--hw-color-gray-lighter);
   }
 
+  &--bg-gray-lightest {
+    background-color: var(--hw-color-gray-lightest);
+  }
+
   &--bg-white {
     background-color: var(--hw-color-white);
   }

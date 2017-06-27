@@ -55,14 +55,28 @@
 
     <!-- Footer -->
 
-    <main class="hw-block--full hw-block--bg-gray-lighter">
+    <main class="hw-block--full hw-block--bg-gray-lightest">
 
       <div class="hw-container--narrow">
-        <object data="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/illustration-send.svg" type="image/svg+xml">
-        </object>
+        <div class="hw-block hw-block--full hw-block--pt-large hw-block--pb-large">
+          <img src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/illustration-send.svg" type="image/svg+xml" />
+        </div>
       </div>
       <div class="hw-container">
-          <h1>Hva skal du sende?</h1>
+        <div class="hw-block hw-block--mt hw-block--mb">
+          <h1 class="hw-text-center">Hva skal du sende?</h1>
+          <h3 class="hw-text-center">Finn pris og sendemåte på det du skal sende</h3>
+        </div>
+      </div>
+      <div class="hw-container--narrow">
+        <div class="hw-block
+          hw-block--full
+          hw-block--mt
+          hw-block--mb
+          hw-text-center">
+          <button class="hw-button hw-button--primary">Pakke</button>
+          <button class="hw-button hw-button--primary">Brev</button>
+        </div>
       </div>
 
     </main>
