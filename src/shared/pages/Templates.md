@@ -12,7 +12,7 @@ Copy any of the below code snippets into a `.html` file and play around.
   <head>
     <title>Hedwig - blank page</title>
     <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
-    <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
+    <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/releases/bring-0.0.3.css"  rel="stylesheet"/>
   </head>
 <body>
 
@@ -44,7 +44,7 @@ Copy any of the below code snippets into a `.html` file and play around.
 <head>
   <title>Article - example</title>
   <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
-  <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
+  <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/bring-0.0.3.css"  rel="stylesheet"/>
 </head>
 <body>
 
@@ -119,7 +119,7 @@ Copy any of the below code snippets into a `.html` file and play around.
   <head>
     <title>Hedwig - Form example</title>
     <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/fonts/fonts.css" rel="stylesheet"/>
-    <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/main.css"  rel="stylesheet"/>
+    <link href="https://bring-hedwig.s3.amazonaws.com/hedwig/bring-0.0.3.css.css"  rel="stylesheet"/>
   </head>
 <body>
 
