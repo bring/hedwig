@@ -35,10 +35,6 @@ const HWModal = ({
     if (modalHidden === 'true') {
       modal.setAttribute('aria-hidden', false);
       modal.classList.add('hw-modal--open');
-      const modalContent = q('.hw-modal__window', modal);
-      const modalContentHeight = modalContent.offsetHeight + 100;
-      const overlay = q('.hw-modal__overlay', modal);
-      overlay.style.height = `${modalContentHeight}px`;
       body.style.overflow = 'hidden';
     } else {
       modal.setAttribute('aria-hidden', true);
