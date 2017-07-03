@@ -111,9 +111,13 @@ Styling for buttons.
   <button class="hw-button hw-button--small">
     Small button
   </button>
+  <button class="hw-button hw-button--full">
+    Full button
+  </button>
 ```
 
 ```code
 [Large]        .hw-button--large
 [Small]        .hw-button--small
+[Full]        .hw-button--full
 ```

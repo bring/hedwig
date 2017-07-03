@@ -99,6 +99,14 @@
     background-color: var(--hw-color-white);
   }
 
+  &--bg-alt:nth-child(even) {
+    background: var(--hw-color-gray-lightest);
+  }
+
+  &--bg-alt:nth-child(odd) {
+    background: var(--hw-color-white);
+  }
+
   /**
    * Modifiers: other variants
    */
