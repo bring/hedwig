@@ -63,6 +63,20 @@ Hero component
   </div>
 ```
 
+### Lagre hero with content aligned to bottom
+
+```html|span-6
+<div class="hw-hero hw-hero--large">
+  <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');" ></div>
+  <div class="hw-hero__overlay"></div>
+  <div class="hw-hero__content hw-hero__content--bottom">
+    <div class="hw-block hw-block--bg-white hw-block--pt hw-block--pb hw-animate hw-animate--slide-in-bottom">
+      <h1 class="hw-text-center">Headline</h1>
+    </div>
+  </div>
+</div>
+```
+
 ### Full
 
 ```html|span-6
