@@ -28,16 +28,17 @@ const HWModal = ({
     const elem = e.currentTarget;
     const modalId = elem.getAttribute('data-hw-modal-trigger');
     const body = document.getElementsByTagName('BODY')[0];
-    const documentHeight = document.body.scrollHeight;
     const modal = q(`[data-hw-modal=${modalId}]`);
-    const overlay = q('.hw-modal__overlay', modal);
-    overlay.style.height = `${documentHeight}px`;
 
     const modalHidden = modal.getAttribute('aria-hidden');
     // Toggle modal
     if (modalHidden === 'true') {
       modal.setAttribute('aria-hidden', false);
       modal.classList.add('hw-modal--open');
+      const modalContent = q('.hw-modal__window', modal);
+      const modalContentHeight = modalContent.offsetHeight + 100;
+      const overlay = q('.hw-modal__overlay', modal);
+      overlay.style.height = `${modalContentHeight}px`;
       body.style.overflow = 'hidden';
     } else {
       modal.setAttribute('aria-hidden', true);
