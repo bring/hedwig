@@ -28,7 +28,7 @@ const HWModal = ({
     const elem = e.currentTarget;
     const modalId = elem.getAttribute('data-hw-modal-trigger');
     const body = document.getElementsByTagName('BODY')[0];
-    const modal = q(`[data-hw-modal=${modalId}`);
+    const modal = q(`[data-hw-modal=${modalId}]`);
     const modalHidden = modal.getAttribute('aria-hidden');
     // Toggle modal
     if (modalHidden === 'true') {
