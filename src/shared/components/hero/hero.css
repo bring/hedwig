@@ -5,6 +5,7 @@
 .hw-hero {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   min-height: 270px;
@@ -29,6 +30,17 @@
   &__title {
     color: var(--hw-color-white);
     text-align: center;
+  }
+
+  &__content {
+    flex-basis: auto;
+    flex-grow: 1;
+    max-width: var(--hw-width-contents);
+    overflow: hidden;
+
+    &--bottom {
+      align-self: flex-end;
+    }
   }
 
   /* Opaque overlay */

@@ -61,14 +61,14 @@
       <div class="hw-hero__image rellax" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"
       data-rellax-speed="-4"></div>
       <div class="hw-hero__overlay"></div>
-      <div class="hw-hero__contents">
-        <div class="hw-container hw-animate hw-animate--slide-in-bottom">
-          <div class="
-            hw-block
-            hw-block--pt
-            hw-block--pb
-            hw-block--bg-primary-lighter
-          ">
+      <div class="hw-hero__content">
+            <div class="
+              hw-block
+              hw-block--pt
+              hw-block--pb
+              hw-block--bg-primary-lighter
+              hw-animate hw-animate--slide-in-bottom
+            ">
             <div class="hw-block hw-block--full">
               <h2 class="hw-h2">Spor pakker, post og gods</h2>
             </div>
@@ -95,7 +95,6 @@
               <a href="#" class="hw-link">Sporing av flytransport</a>
             </div>
           </div>
-        </div>
       </div>
     </div>
 
