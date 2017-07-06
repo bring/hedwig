@@ -9,8 +9,27 @@
   <footer class="hw-footer">
 
     <div class="hw-footer__desktop">
-      <div class="hw-grid">
-        <h1>Posten footer!</h1>
+      <div class="hw-container--wide">
+        <div class="hw-grid hw-text-center">
+          <div class="hw-grid__item hw-one-sixth">
+            <a class="hw-link hw-link--big hw-link--inverted">Kundeservice</a>
+          </div><!--
+          --><div class="hw-grid__item hw-one-sixth">
+            <a class="hw-link hw-link--big hw-link--inverted">Åpningstider og kart</a>
+          </div><!--
+          --><div class="hw-grid__item hw-one-sixth">
+            <a class="hw-link hw-link--big hw-link--inverted">Jobb i Posten</a>
+          </div><!--
+          --><div class="hw-grid__item hw-one-sixth">
+            <a class="hw-link hw-link--big hw-link--inverted">English</a>
+          </div><!--
+          --><div class="hw-grid__item hw-one-sixth">
+            <a class="hw-link hw-link--big hw-link--inverted">Bring</a>
+          </div><!--
+          --><div class="hw-grid__item hw-one-sixth">
+            <a class="hw-link hw-link--big hw-link--inverted">Posten Norge</a>
+          </div>
+        </div>
       </div>
     </div>
 
