@@ -52,6 +52,7 @@
 
   &__body {
     z-index: 1;
+    padding: var(--hw-spacing);
   }
 
   &__title {

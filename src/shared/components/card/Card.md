@@ -16,12 +16,10 @@ Styling for cards.
       <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
     </div>
     <div class="hw-card__body">
-      <div class="hw-block hw-block--mt hw-block--mb">
-        <h3 class="hw-card__title">Card Title</h3>
-        <hr class="hw-hr" />
-        <div class="hw-card__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
-        </div>
+      <h3 class="hw-card__title">Card Title</h3>
+      <hr class="hw-hr" />
+      <div class="hw-card__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
       </div>
     </div>
   </a>
@@ -37,12 +35,10 @@ Styling for cards.
           <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
         </div>
         <div class="hw-card__body">
-          <div class="hw-block hw-block--mt hw-block--mb">
-            <h3 class="hw-card__title">Card Title</h3>
-            <hr class="hw-hr" />
-            <div class="hw-card__text">
-              (This text is too long and will be trimmed) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
-            </div>
+          <h3 class="hw-card__title">Card Title</h3>
+          <hr class="hw-hr" />
+          <div class="hw-card__text">
+            (This text is too long and will be trimmed) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
           </div>
         </div>
       </a>
@@ -53,12 +49,10 @@ Styling for cards.
           <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
         </div>
         <div class="hw-card__body">
-          <div class="hw-block hw-block--mt hw-block--mb">
-            <h3 class="hw-card__title">Card Title</h3>
-            <hr class="hw-hr" />
-            <div class="hw-card__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
-            </div>
+          <h3 class="hw-card__title">Card Title</h3>
+          <hr class="hw-hr" />
+          <div class="hw-card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
           </div>
         </div>
       </a>
@@ -69,12 +63,10 @@ Styling for cards.
           <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
         </div>
         <div class="hw-card__body">
-          <div class="hw-block hw-block--mt hw-block--mb">
-            <h3 class="hw-card__title">Card Title</h3>
-            <hr class="hw-hr" />
-            <div class="hw-card__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
-            </div>
+          <h3 class="hw-card__title">Card Title</h3>
+          <hr class="hw-hr" />
+          <div class="hw-card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
           </div>
         </div>
       </a>
@@ -90,12 +82,10 @@ Styling for cards.
       <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
     </div>
     <div class="hw-card__body">
-      <div class="hw-block hw-block--mt hw-block--mb">
-        <h3 class="hw-card__title">Card Title</h3>
-        <hr class="hw-hr hw-hr--white" />
-        <div class="hw-card__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
-        </div>
+      <h3 class="hw-card__title">Card Title</h3>
+      <hr class="hw-hr hw-hr--white" />
+      <div class="hw-card__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
       </div>
     </div>
   </a>
@@ -118,12 +108,10 @@ Styling for cards.
       <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
     </div>
     <div class="hw-card__body">
-      <div class="hw-block hw-block--mt hw-block--mb">
-        <h3 class="hw-card__title">Card Title</h3>
-        <hr class="hw-hr" />
-        <div class="hw-card__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
-        </div>
+      <h3 class="hw-card__title">Card Title</h3>
+      <hr class="hw-hr" />
+      <div class="hw-card__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
       </div>
     </div>
   </a>

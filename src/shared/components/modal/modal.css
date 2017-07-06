@@ -41,11 +41,12 @@
     margin-bottom: var(--hw-spacing-smaller);
   }
 
-  &__window {
+  &__content {
     z-index: var(--z-index--modal-foreground);
     width: 100%;
-    margin: var(--hw-spacing);
     background: #fff;
+    padding: var(--hw-spacing);
+    margin: var(--hw-spacing);
 
     @media (--medium) {
       max-width: 700px;
@@ -53,8 +54,13 @@
     }
   }
 
+  &__body {
+    padding-top: var(--hw-spacing);
+  }
+
   &__actions {
     text-align: right;
+    padding-top: var(--hw-spacing);
   }
 
   /**

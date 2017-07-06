@@ -7,7 +7,7 @@
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--hw-spacing);
+  padding: var(--hw-spacing-larger) var(--hw-spacing);
   text-align: center;
 
   &::after {
