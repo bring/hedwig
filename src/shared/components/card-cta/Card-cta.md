@@ -3,7 +3,7 @@
 Used on the home page
 
 ```code
-[Base]           .hw-card-cta-nav
+[Base]           .hw-card-cta
 ```
 
 ### Regular card

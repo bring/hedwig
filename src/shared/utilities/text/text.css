@@ -25,3 +25,11 @@
 .hw-text-ellipsis {
   text-overflow: ellipsis;
 }
+
+.hw-text-color--primary {
+  color: var(--hw-color-primary);
+}
+
+.hw-text-color--white {
+  color: var(--hw-color-white);
+}
