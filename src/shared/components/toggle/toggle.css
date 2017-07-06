@@ -57,6 +57,7 @@
 
   &__contents {
     display: none;
+    margin: var(--hw-spacing) 0;
   }
 
   /**

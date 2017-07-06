@@ -9,6 +9,12 @@
    * Elements
    */
 
+  &__contents {
+    margin: var(--hw-spacing-large) 0;
+    padding: var(--hw-spacing);
+    background-color: var(--hw-color-gray-lighter);
+  }
+
   &__title {
     padding-bottom: var(--hw-spacing);
   }

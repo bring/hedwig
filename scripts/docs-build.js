@@ -179,6 +179,12 @@ function build() {
         );
 
         /**
+         * Find subsection
+         */
+
+        console.log(file);
+
+        /**
          * Add page to a pages array
          */
         examples.push({

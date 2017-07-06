@@ -120,4 +120,8 @@
       height: 25px;
     }
   }
+
+  &__contents {
+    margin: var(--hw-spacing-small) 0 0 var(--hw-spacing-small);
+  }
 }
