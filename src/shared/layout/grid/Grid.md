@@ -121,6 +121,26 @@ Example
 .hw-medium--eleven-twelfths
 ```
 
+### Responsive hide-classes
+
+This will hide the grid item on a set screen size (only until the next breakpoint)
+
+
+```code
+[Base]            .hw--none
+[Small]           .hw-small--none
+[Medium]          .hw-medium--none
+[Large]           .hw-large--none
+[XLarge]          .hw-xlarge--none
+```
+
+Example
+```code
+.hw-small--none
+.hw-medium--none
+.hw-large--none
+```
+
 ### Responsive example
 
 ```html|span-6,responsive
