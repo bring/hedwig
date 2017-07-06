@@ -65,6 +65,24 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   </div>
 ```
 
+### Variants (Alternating)
+
+```html|span-4,plain,light
+    <div class="hw-block hw-block--bg-alt">
+      <p>Default block</p>
+    </div>
+    <div class="hw-block hw-block--bg-alt">
+      <p>Default block</p>
+    </div>
+    <div class="hw-block hw-block--bg-alt">
+      <p>Default block</p>
+    </div>
+    <div class="hw-block hw-block--bg-alt">
+      <p>Default block</p>
+    </div>
+```
+
+
 ### Block modifiers (margin & padding)
 ```code
 [Full]                      .hw-block--full (no side paddings)
@@ -87,4 +105,5 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 [Primary]                 .hw-block--bg-primary
 [Gray]                    .hw-block--bg-gray
 [White]                   .hw-block--bg-white
+[Alternating]             .hw-block--bg-alt
 ```
