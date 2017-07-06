@@ -8,6 +8,8 @@ In an ideal scenario, there is no margin/padding applied to any other component,
 
 The only exception to this rule is "rich text" areas from the CMS, for this case, use the [Wysiwyg Container](/Wysiwyg).
 
+**NB:** Do not to use blocks inside reusable components, as it will be difficult to apply style changes to all components at a later point.
+
 ```code
 <div class="hw-block">...</div>
 ```
