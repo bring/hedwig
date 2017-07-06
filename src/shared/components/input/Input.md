@@ -31,7 +31,7 @@ All inputs are block elements. For layout, use [grid]('/Grid').
   <p class="hw-error-summary__title">
     Brukerprofilen din ble ikke opprettet fordi
   </p>
-  <div class="hw-block hw-block--half hw-block--mt-small">
+  <div class="hw-error-summary__contents">
     <ul class="hw-list hw-list--small">
       <li>E-postadressen er ugyldig</li>
       <li>Mobilnummeret må inneholde 8 tall</li>

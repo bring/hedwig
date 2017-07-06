@@ -5,6 +5,7 @@
 .hw-banner {
   display: block;
   color: var(--hw-color-gray-darkest);
+  background-color: var(--hw-color-gray-lightest);
 
   /**
    * Elements
@@ -76,22 +77,36 @@
     display: none;
     background-color: var(--hw-color-secondary);
     text-align: center;
+    padding: var(--hw-spacing) var(--hw-spacing) var(--hw-spacing-large) var(--hw-spacing);
   }
 
-  &__contents time {
-    margin: var(--hw-spacing-smaller);
-    font-family: var(--hw-font-primary-medium);
-    font-size: var(--hw-font-size-p);
+  &__title {
+    max-width: var(--hw-width-contents);
+    margin: var(--hw-spacing-small) auto 0 auto;
     color: var(--hw-color-gray-darkest);
   }
 
-  &__contents h1,
-  &__contents h3 {
+  &__time {
+    margin-top: var(--hw-spacing-small);
+    font-family: var(--hw-font-primary-medium);
+    font-size: var(--hw-font-size-p);
+    color: var(--hw-color-gray-darkest);
+
+    & time {
+      margin: var(--hw-spacing-smaller);
+    }
+  }
+
+  &__subtitle {
+    max-width: var(--hw-width-contents);
+    margin: var(--hw-spacing-small) auto 0 auto;
     color: var(--hw-color-gray-darkest);
   }
 
   &__read-more-link {
+    display: inline-block;
     position: relative;
+    margin-top: var(--hw-spacing-small);
     font-size: var(--hw-font-size-small);
     font-family: var(--hw-font-primary-medium);
     border-bottom: 2px solid var(--hw-color-gray-darkest);
@@ -107,6 +122,9 @@
 
   &__read-more-button {
     position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -40px;
     bottom: -15px;
     width: 70px;
     height: 70px;
@@ -138,8 +156,9 @@
 
   &__read-more-contents {
     display: none;
-    padding: var(--hw-spacing-larger) 0;
-    background-color: var(--hw-color-gray-lightest);
+    max-width: var(--hw-width-contents);
+    margin: 0 auto;
+    padding: var(--hw-spacing-larger) var(--hw-spacing);
   }
 
   /**
