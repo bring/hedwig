@@ -24,7 +24,7 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 
 ### Variants (with margins & padding higlighted)
 
-```html|span-4,plain,light
+```html|span-4,plain,light,no-source
   <div class="hw-helpers-margin-highlighter">
     <div class="hw-block">
       <p>Default block</p>
