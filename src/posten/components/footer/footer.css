@@ -33,7 +33,7 @@
   &__navigation-items {
     display: block;
     padding: 0;
-    margin-bottom: 1px solid var(hw-color--white);
+    margin-bottom: 1px solid var(hw-color-white);
 
     @media (--large) {
       display: flex;
