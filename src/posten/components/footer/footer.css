@@ -21,7 +21,7 @@
 
   &__desktop {
     display: none;
-    padding-top: var(--hw-spacing-large);
+    padding: var(--hw-spacing-large) var(--hw-spacing) 0 var(--hw-spacing);
 
     @media (--large) {
       display: block;
