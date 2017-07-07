@@ -36,7 +36,7 @@
    */
 
   --hw-width-contents: 690px; /* Max default width (articles) */
-  --hw-width-wide: 1065px; /* Default site width, used in footer etc */
+  --hw-width-wide: 1200px; /* Default site width, used in footer etc */
   --hw-width-narrow: 300px; /* Narrow column for centered contents */
 
   /**
@@ -77,7 +77,6 @@
   @custom-media --only-medium (min-width: 720px) and (max-width: 940px);
   @custom-media --only-large (min-width: 940px) and (max-width: 1200px);
   @custom-media --only-xlarge (min-width: 1200px);
-
 
   /**
    * Global z-index values

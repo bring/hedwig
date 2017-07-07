@@ -11,8 +11,8 @@
    */
 
   &__mobile {
-    max-width: 510px;
     margin: 0 auto;
+    padding: var(--hw-spacing);
 
     @media (--large) {
       display: none;
@@ -30,28 +30,33 @@
     }
   }
 
-  &__title {
-    color: var(--hw-color-white);
-    margin-bottom: var(--hw-spacing-smaller);
-    font-family: var(--hw-font-primary-medium);
-    font-size: var(--hw-font-size-lead);
-  }
-
-  &__links {
-    margin: 0;
+  &__navigation-items {
+    display: block;
     padding: 0;
-    list-style: none;
+    margin-bottom: 1px solid var(--hw-color-white);
 
-    & a {
-      font-family: var(--hw-font-primary-medium);
-      line-height: 1.5;
-      color: var(--hw-color-white);
+    @media (--large) {
+      display: flex;
+      justify-content: space-between;
     }
   }
 
-  &__button {
-    margin-bottom: var(--hw-spacing-smaller);
-    font-family: var(--hw-font-primary-bold);
+  &__navigation-item {
+    border-bottom: 1px solid var(--hw-color-gray-light);
+    padding: var(--hw-spacing-small) 0;
+
+    @media (--large) {
+      border-bottom: 0;
+    }
+
+    & a {
+      font-size: var(--hw-font-size-p);
+      font-family: var(--hw-font-primary-medium);
+
+      @media (--large) {
+        font-size: var(--hw-font-size-h3);
+      }
+    }
   }
 
   &__logo svg {
