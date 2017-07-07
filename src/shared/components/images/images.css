@@ -28,4 +28,10 @@
       margin-right: -72px;
     }
   }
+
+  &--full {
+    & img {
+      width: 100%;
+    }
+  }
 }
