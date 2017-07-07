@@ -70,12 +70,10 @@
       </div>
     </div>
 
-    <div class="hw-block hw-block--full hw-block--pb-small">
-      <div class="hw-footer__logo">
-        <svg class="hw-icon">
-          <use xlink:href="#logo-posten-white"></use>
-        </svg>
-      </div>
+    <div class="hw-footer__logo">
+      <svg class="hw-icon">
+        <use xlink:href="#logo-posten-white"></use>
+      </svg>
     </div>
 
 

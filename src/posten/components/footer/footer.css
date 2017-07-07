@@ -21,7 +21,7 @@
 
   &__desktop {
     display: none;
-    padding: var(--hw-spacing) var(--hw-spacing-larger) var(--hw-spacing-smaller) var(--hw-spacing-larger);
+    padding-top: var(--hw-spacing-large);
 
     @media (--large) {
       display: block;
@@ -33,6 +33,7 @@
   &__navigation-items {
     display: block;
     padding: 0;
+    margin: 0;
     margin-bottom: 1px solid var(--hw-color-white);
 
     @media (--large) {
@@ -43,10 +44,10 @@
 
   &__navigation-item {
     border-bottom: 1px solid var(--hw-color-gray-light);
-    padding: var(--hw-spacing-small) 0;
 
     @media (--large) {
       border-bottom: 0;
+      line-height: 1;
     }
 
     & a {
@@ -59,11 +60,15 @@
     }
   }
 
-  &__logo svg {
-    display: block;
-    height: 70px;
-    width: 120px;
-    margin: 0 auto;
+  &__logo {
+    padding: var(--hw-spacing-large) 0;
+
+    & svg {
+      display: block;
+      margin: 0 auto;
+      height: 70px;
+      width: 120px;
+    }
   }
 
   &__legal {
