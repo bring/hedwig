@@ -16,7 +16,7 @@ Media object component
         <img src="http://placehold.it/100x100" alt="#">        
       </div>
       <div class="hw-media__body">
-        <h3 class="hw-media__title">Subject</h3>
+        <h3>Subject</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, voluptatibus minus necessitatibus veritatis itaque magnam</p>
       </div>
   </div>
@@ -26,12 +26,41 @@ Media object component
 
 ```html|span-6
   <div class="hw-media hw-media--reversed">
+      <div class="hw-media__body">
+        <h3>Subject</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, voluptatibus minus necessitatibus veritatis itaque magnam</p>
+      </div>
+      <div class="hw-media__img">
+        <img src="http://placehold.it/100x100" alt="#">        
+      </div>
+  </div>
+```
+
+### Media object (top aligned)
+
+```html|span-6
+  <div class="hw-media hw-media--top">
       <div class="hw-media__img">
         <img src="http://placehold.it/100x100" alt="#">        
       </div>
       <div class="hw-media__body">
-        <h3 class="hw-media__title">Subject</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, voluptatibus minus necessitatibus veritatis itaque magnam</p>
+        <h3>Subject</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, voluptatibus minus necessitatibus veritatis itaque magnam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, voluptatibus minus necessitatibus veritatis itaque magnam Esse, voluptatibus minus necessitatibus veritatis itaque magnam. Consectetur adipisicing elit. Esse, voluptatibus minus necessitatibus veritatis itaque magnam Esse, voluptatibus minus necessitatibus veritatis itaque magnam.</p>
+        </div>
+      </div>
+  </div>
+```
+
+### Media object (bottom aligned)
+
+```html|span-6
+  <div class="hw-media hw-media--bottom">
+      <div class="hw-media__img">
+        <img src="http://placehold.it/100x100" alt="#">        
+      </div>
+      <div class="hw-media__body">
+        <h3>Subject</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, voluptatibus minus necessitatibus veritatis itaque magnam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, voluptatibus minus necessitatibus veritatis itaque magnam Esse, voluptatibus minus necessitatibus veritatis itaque magnam. Consectetur adipisicing elit. Esse, voluptatibus minus necessitatibus veritatis itaque magnam Esse, voluptatibus minus necessitatibus veritatis itaque magnam.</p>
       </div>
   </div>
 ```
@@ -44,7 +73,7 @@ Media object component
         <img src="http://placehold.it/100x100" alt="#">        
       </div>
       <div class="hw-media__body">
-        <h3 class="hw-media__title">Subject</h3>
+        <h3>Subject</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, voluptatibus minus necessitatibus veritatis itaque magnam</p>
       </div>
   </div>
@@ -58,7 +87,7 @@ Media object component
         <img src="http://placehold.it/300x300" alt="#">        
       </div>
       <div class="hw-media__body">
-        <h3 class="hw-media__title">Subject</h3>
+        <h3>Subject</h3>
         <div class="
           hw-block
           hw-block--full
