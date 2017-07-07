@@ -20,7 +20,6 @@
    */
 
   &--inverted {
-    font-size: var(--hw-font-size-small);
     color: var(--hw-color-white);
   }
 
