@@ -50,5 +50,20 @@
         background: var(--hw-color-gray-darker);
       }
     }
+
+    &:focus ~ .hw-radio-button__indicator {
+      border-color: var(--hw-color-gray-darker);
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        top: var(--hw-spacing-smallest);
+        left: var(--hw-spacing-smallest);
+        background: var(--hw-color-gray-darker);
+      }
+    }
   }
 }

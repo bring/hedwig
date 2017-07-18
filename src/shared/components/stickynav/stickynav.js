@@ -15,7 +15,6 @@ const HWStickyNav = ({
   linkSelector = '.hw-stickynav__link',
   activeItemClass = 'hw-stickynav__link--active',
 } = {}) => {
-
   // Module settings object
   const SETTINGS = {
     navbarHeight: 71, // px
@@ -94,7 +93,10 @@ const HWStickyNav = ({
 
     // Attach event listeners
     window.addEventListener('scroll', throttle(checkPosition, 50));
-    window.addEventListener('resize', throttle(findSectionPositions, 100));
+    window.addEventListener('resize', throttle(() => {
+      init();
+      // Used this before findSectionPositions();
+    }, 100));
 
     // Fire initial check (in case user starts halfway down page)
     checkPosition();

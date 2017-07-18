@@ -20,8 +20,7 @@
   &__nav {
     height: 45px;
     background-color: var(--hw-color-white);
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: auto;
     white-space: nowrap;
     text-align: center;
     padding: 0 var(--hw-spacing);

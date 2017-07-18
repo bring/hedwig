@@ -7,7 +7,7 @@ hw-radio-button
 ```html
 <label class="hw-radio-button">
   One
-  <input type="radio" name="hedwdig" value="one" checked />
+  <input type="radio" name="hedwdig" value="one" />
   <i class="hw-radio-button__indicator"></i>
 </label>
 
