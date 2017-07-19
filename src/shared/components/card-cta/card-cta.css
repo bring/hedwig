@@ -5,6 +5,7 @@
 .hw-card-cta {
   position: relative;
   transition: transform 0.3s;
+  background: var(--hw-color-white);
   display: flex;
   flex-direction: column;
   padding: var(--hw-spacing-larger) var(--hw-spacing);
