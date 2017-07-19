@@ -24,7 +24,7 @@
     overflow: hidden;
 
     &:last-child {
-      margin-bottom: var(--hw-spacing-large);
+      margin-bottom: var(--hw-spacing-small);
     }
 
     &:first-child .hw-accordion__trigger {
@@ -74,7 +74,7 @@
   }
 
   &__contents {
-    padding: var(--hw-spacing-small);
+    padding: 0 var(--hw-spacing-larger) var(--hw-spacing-small) var(--hw-spacing-small);
   }
 
   /**
@@ -83,7 +83,7 @@
 
   &__item--expanded .hw-accordion__trigger {
     color: var(--hw-color-primary-dark);
-    font-family: var(--hw-font-primary-bold);
+    font-family: var(--hw-font-primary-medium);
   }
 
   &__item--expanded .hw-accordion__arrow::before {
