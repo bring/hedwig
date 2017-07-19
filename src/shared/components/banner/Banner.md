@@ -27,12 +27,12 @@ Required:
             <use xlink:href="#caret-up"></use>
           </svg>
         </button>
-        <h1 class="hw-banner__title">Hot! Hot! Hot!</h1>
+        <div class="hw-banner__title">Hot! Hot! Hot!</div>
         <div class="hw-banner__time">
           <time>24.09.76</time>|<time>17:45</time>
         </div>
         <div class="hw-banner__subtitle">
-          <h3>Asfalten på veiene smelter og bilene våre kjører seg fast i tjukk olje. Droneleveransene våre går som normalt.</h3>
+          Asfalten på veiene smelter og bilene våre kjører seg fast i tjukk olje. Droneleveransene våre går som normalt.
         </div>
     </div>
   </section>
@@ -56,12 +56,12 @@ Required:
             <use xlink:href="#caret-up"></use>
           </svg>
         </button>
-        <h1 class="hw-banner__title">14 Meters of snow expected</h1>
+        <div class="hw-banner__title">14 Meters of snow expected</div>
         <div class="hw-banner__time">
           <time>24.09.76</time>|<time>17:45</time>
         </div>
         <div class="hw-banner__subtitle">
-          <h3>The blizzard is causing delays across the Oslo region.</h3>
+          The blizzard is causing delays across the Oslo region.
         </div>
         <a href="#" class="hw-banner__read-more-link">Read more</a>
         <button class="hw-banner__read-more-button">

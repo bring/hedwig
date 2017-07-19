@@ -17,6 +17,7 @@
     padding: var(--hw-spacing-smallest);
     font-family: var(--hw-font-primary-medium);
     border: 0;
+    color: var(--hw-color-gray-darkest);
     text-align: center;
     background-color: var(--hw-color-secondary);
 
@@ -56,7 +57,7 @@
 
   &__trigger-close {
     display: block;
-    width: 40px;
+    width: 100%;
     margin: 0 auto;
     opacity: 0.5;
     border: 0;
@@ -82,6 +83,8 @@
 
   &__title {
     max-width: var(--hw-width-contents);
+    font-size: var(--hw-font-size-h1);
+    font-weight: 900;
     margin: var(--hw-spacing-small) auto 0 auto;
     color: var(--hw-color-gray-darkest);
   }
@@ -89,7 +92,7 @@
   &__time {
     margin-top: var(--hw-spacing-small);
     font-family: var(--hw-font-primary-medium);
-    font-size: var(--hw-font-size-p);
+    font-size: var(--hw-font-size-small);
     color: var(--hw-color-gray-darkest);
 
     & time {
@@ -99,6 +102,7 @@
 
   &__subtitle {
     max-width: var(--hw-width-contents);
+    font-size: var(  --hw-font-size-h3);
     margin: var(--hw-spacing-small) auto 0 auto;
     color: var(--hw-color-gray-darkest);
   }
