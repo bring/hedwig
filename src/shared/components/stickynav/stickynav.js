@@ -95,7 +95,7 @@ const HWStickyNav = ({
     window.addEventListener('scroll', throttle(checkPosition, 50));
     window.addEventListener('resize', throttle(() => {
       init();
-      // Used this before findSectionPositions();
+      // findSectionPositions();
     }, 100));
 
     // Fire initial check (in case user starts halfway down page)

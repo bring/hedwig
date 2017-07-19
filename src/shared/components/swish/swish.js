@@ -47,9 +47,7 @@ const HWSwish = ({
    */
   function changeSlide(e) {
     // Find clicked element
-    const elem = e.target;
-
-    console.log(elem);
+    const elem = e.currentTarget;
 
     // Find parent wrapper
     const swish = findParent({ selector: '[data-hw-swish]', elem });
