@@ -36,7 +36,7 @@ const HWValidate = ({
     const parent = input.offsetParent;
     const message = e.target.nextElementSibling;
     const locationElem = q('[data-hw-validate-location]', parent);
-    const country = 'NO';
+    const country = input.getAttribute('data-hw-validate-country');
     const apiURL = `https://api.bring.com/shippingguide/api/postalCode.json?pnr=${value}&Country=${country}&clientUrl=hedwig`;
 
     if (value > 3) {

@@ -61,6 +61,7 @@ For inline validation we use:
       <input type="text"
              class="hw-input"  
              data-hw-validate="postal-code"
+             data-hw-validate-country="NO"
              placeholder="Type postal code for validation" />
       <div class="hw-error hw-error--is-hidden" data-hw-error-message>Postnr er ugyldig</div>
     </div><!--
