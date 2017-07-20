@@ -6,6 +6,7 @@
   position: relative;
   background: var(--hw-color-white);
   border-bottom: 1px solid var(--hw-color-gray-lightest);
+  height: 72px;
 
   /**
    * Elements
