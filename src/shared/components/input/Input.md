@@ -56,12 +56,24 @@ For inline validation we use:
 </label>
 <label class="hw-label">
   Postal code
-  <input type="text"
-         maxlength="4"
-         class="hw-input"  
-         data-hw-validate="postal-code"
-         placeholder="Type postal code for validation" />
-  <div class="hw-error hw-error--is-hidden" data-hw-error-message>Postnr er ugyldig</div>
+  <div class="hw-grid hw-grid--narrow">
+    <div class="hw-grid__item hw-one-third">
+      <input type="text"
+             class="hw-input"  
+             data-hw-validate="postal-code"
+             placeholder="Type postal code for validation" />
+      <div class="hw-error hw-error--is-hidden" data-hw-error-message>Postnr er ugyldig</div>
+    </div><!--
+    --><div class="hw-grid__item hw-one-third">
+      <input type="text"
+             class="hw-input"
+             disabled
+             data-hw-validate-location
+             placeholder="Poststed" />
+      <div class="hw-error hw-error--is-hidden" data-hw-error-message>Postnr er ugyldig</div>
+    </div>
+  </div>
+
 </label>
 <label class="hw-label">
   Telefonnummer

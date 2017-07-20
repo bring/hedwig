@@ -1,6 +1,7 @@
 /**
  * Validation
  */
+import throttle from 'lodash/throttle';
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import { checkCreditCard } from '../input/creditcard';
@@ -32,13 +33,29 @@ const HWValidate = ({
   function validatePostalCode(e) {
     const value = e.target.value;
     const input = e.target;
+    const parent = input.offsetParent;
     const message = e.target.nextElementSibling;
-    if (!/\D/.test(value) && value.length === 4) {
-      input.classList.remove('hw-input--error');
-      message.classList.add('hw-error--is-hidden');
-    } else {
-      input.classList.add('hw-input--error');
-      message.classList.remove('hw-error--is-hidden');
+    const locationElem = q('[data-hw-validate-location]', parent);
+    const country = 'NO';
+    const apiURL = `https://api.bring.com/shippingguide/api/postalCode.json?pnr=${value}&Country=${country}&clientUrl=hedwig`;
+
+    if (value > 3) {
+      fetch(apiURL)
+        .then(response => response.json())
+        .then((postnumber) => {
+          if (postnumber.valid) {
+            input.classList.remove('hw-input--error');
+            message.classList.add('hw-error--is-hidden');
+            locationElem.value = postnumber.result;
+          } else {
+            input.classList.add('hw-input--error');
+            message.classList.remove('hw-error--is-hidden');
+            locationElem.value = postnumber.result;
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     }
   }
 
@@ -74,7 +91,7 @@ const HWValidate = ({
       trigger.addEventListener('input', validateEmail);
     }
     if (validateType === 'postal-code') {
-      trigger.addEventListener('input', validatePostalCode);
+      trigger.addEventListener('input', throttle(validatePostalCode, 1000));
     }
     if (validateType === 'phone-number') {
       trigger.addEventListener('input', validatePhoneNumber);
