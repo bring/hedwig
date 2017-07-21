@@ -22,6 +22,18 @@ Horizontal rule
   <hr class="hw-hr hw-hr--white" />
 ```
 
+### Gray
+
+```html|span-6
+  <hr class="hw-hr hw-hr--gray" />
+```
+
+### Gray light
+
+```html|span-6
+  <hr class="hw-hr hw-hr--gray-light" />
+```
+
 ### Full
 
 ```html|span-6

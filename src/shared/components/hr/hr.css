@@ -23,6 +23,14 @@
     background: var(--hw-color-white);
   }
 
+  &--gray {
+    background: var(--hw-color-gray);
+  }
+
+  &--gray-light {
+    background: var(--hw-color-gray-light);
+  }
+
   &--centered {
     background: var(--hw-color-gray-lighter);
     margin: 0 auto;

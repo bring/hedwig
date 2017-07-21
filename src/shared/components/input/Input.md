@@ -55,6 +55,14 @@ For inline validation we use:
   <div class="hw-error hw-error--is-hidden" data-hw-error-message>E-postadressen er ugyldig</div>
 </label>
 <label class="hw-label">
+  Bank account number
+  <input type="text"
+         class="hw-input"  
+         data-hw-validate="bank-account"
+         placeholder="0000 00 00000" />
+  <div class="hw-error hw-error--is-hidden" data-hw-error-message>Ugyldig kontonummer</div>
+</label>
+<label class="hw-label">
   Postal code
   <div class="hw-grid hw-grid--narrow">
     <div class="hw-grid__item hw-one-third">
@@ -95,7 +103,7 @@ For inline validation we use:
                type="text"
                maxlength="8"
                data-hw-validate="phone-number"
-               placeholder="00000000" />
+               placeholder="000 00 000" />
         <div class="hw-error hw-error--is-hidden" data-hw-error-message>Telefonnummer må inneholde 8 nummber</div>
     </div>
   </div>
@@ -105,7 +113,7 @@ For inline validation we use:
            class="hw-input"  
            data-hw-validate="credit-card"
            data-hw-validate-card-type="Visa"
-           placeholder="Type Visa card number for validation" />
+           placeholder="4242 4242 4242 4242" />
     <div class="hw-error hw-error--is-hidden" data-hw-error-message>Kedittkortnummer er ugyldig</div>
   </label>
 </label>

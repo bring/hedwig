@@ -5,6 +5,7 @@ import throttle from 'lodash/throttle';
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import { checkCreditCard } from '../input/creditcard';
+import { checkMod11 } from '../input/mod11';
 
 
 const HWValidate = ({
@@ -30,6 +31,22 @@ const HWValidate = ({
     }
   }
 
+  function validateBankAccount(e) {
+    const value = e.target.value;
+    const accountNumber = value.toString().replace(/\./g, '');
+    const input = e.target;
+    const message = e.target.nextElementSibling;
+    const isValid = parseInt(accountNumber.charAt(accountNumber.length - 1), 10)
+      === checkMod11(accountNumber);
+    if (isValid) {
+      input.classList.remove('hw-input--error');
+      message.classList.add('hw-error--is-hidden');
+    } else {
+      input.classList.add('hw-input--error');
+      message.classList.remove('hw-error--is-hidden');
+    }
+  }
+
   function validatePostalCode(e) {
     const value = e.target.value;
     const input = e.target;
@@ -44,6 +61,7 @@ const HWValidate = ({
         .then(response => response.json())
         .then((postnumber) => {
           if (postnumber.valid) {
+            console.log(postnumber);
             input.classList.remove('hw-input--error');
             message.classList.add('hw-error--is-hidden');
             locationElem.value = postnumber.result;
@@ -98,6 +116,9 @@ const HWValidate = ({
     }
     if (validateType === 'credit-card') {
       trigger.addEventListener('input', validateCardNumber);
+    }
+    if (validateType === 'bank-account') {
+      trigger.addEventListener('input', validateBankAccount);
     }
   }
 

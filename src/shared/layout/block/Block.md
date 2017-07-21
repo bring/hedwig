@@ -106,6 +106,10 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 ```code
 [Primary]                 .hw-block--bg-primary
 [Gray]                    .hw-block--bg-gray
+[Gray light]              .hw-block--bg-gray-light
+[Gray lighter]            .hw-block--bg-gray-lighter
+[Gray lightest]           .hw-block--bg-gray-lightest
+
 [White]                   .hw-block--bg-white
 [Alternating]             .hw-block--bg-alt
 ```
