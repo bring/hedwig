@@ -1,12 +1,12 @@
 /**
  * Validation
  */
+import 'whatwg-fetch';
 import throttle from 'lodash/throttle';
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import { checkCreditCard } from '../input/creditcard';
 import { checkMod11 } from '../input/mod11';
-
 
 const HWValidate = ({
     validateSelector = '[data-hw-validate]',

@@ -76,6 +76,7 @@
     "stylelint-config-standard": "^16.0.0",
     "svg2sprite": "^2.0.1",
     "svgo": "^0.7.2",
+    "whatwg-fetch": "^2.0.3",
     "zenscroll": "^4.0.0"
   },
   "engines": {
