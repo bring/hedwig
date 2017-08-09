@@ -96,6 +96,10 @@
     height: 100vh;
   }
 
+  &--bordered {
+    border-bottom: var(--hw-spacing-smallest) solid var(--hw-color-secondary);
+  }
+
   /**
    * Modifiers: states
    */
