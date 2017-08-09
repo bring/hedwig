@@ -4,17 +4,18 @@
 
 .hw-input {
   position: relative;
-  font-size: var(--hw-font-size-small);
-  line-height: var(--hw-font-size-p);
-  padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
-  border: 3px solid var(--hw-color-gray-light);
-  background-color: var(--hw-color-white);
   display: block;
   width: 100%;
-  transition: border 100ms;
+  height: var(--hw-spacing-larger);
   margin: 3px 0;
-  font-family: var(--hw-font-primary-medium);
+  padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
   color: var(--hw-color-gray-darker);
+  background-color: var(--hw-color-white);
+  font-family: var(--hw-font-primary-medium);
+  font-size: var(--hw-font-size-small);
+  line-height: normal;
+  border: 3px solid var(--hw-color-gray-light);
+  transition: border 100ms;
 
   &::placeholder {
     color: var(--hw-color-gray);

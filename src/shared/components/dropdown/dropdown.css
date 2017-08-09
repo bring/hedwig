@@ -4,7 +4,7 @@
 
 .hw-dropdown {
   position: relative;
-  height: 48px;
+  height: var(--hw-spacing-larger);
   margin: 3px 0;
   font-family: var(--hw-font-primary-medium);
   color: var(--hw-color-gray-darker);
@@ -34,7 +34,7 @@
     display: block;
     overflow: hidden;
     width: 100%;
-    max-height: 48px;
+    max-height: var(--hw-spacing-larger);
     border: 3px solid var(--hw-color-gray-light);
     background-color: var(--hw-color-white);
     font-size: var(--hw-font-size-small);
