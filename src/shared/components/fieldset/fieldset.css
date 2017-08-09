@@ -30,7 +30,12 @@
     background: var(--hw-color-gray-lighter);
   }
 
+  /**
+   * Variant for odd cases where a grid in the contents may require
+   * custom margins and paddings
+   */
   &__content--full {
     padding: 0;
+    padding-top: var(--hw-spacing);
   }
 }
