@@ -34,12 +34,28 @@
     margin-bottom: var(--hw-spacing-small);
   }
 
+  &--mt-smaller {
+    margin-top: var(--hw-spacing-smaller);
+  }
+
+  &--mb-smaller {
+    margin-bottom: var(--hw-spacing-smaller);
+  }
+
   &--mt-large {
     margin-top: var(--hw-spacing-large);
   }
 
   &--mb-large {
     margin-bottom: var(--hw-spacing-large);
+  }
+
+  &--mt-larger {
+    margin-top: var(--hw-spacing-larger);
+  }
+
+  &--mb-larger {
+    margin-bottom: var(--hw-spacing-larger);
   }
 
   &--pt {
@@ -58,12 +74,28 @@
     padding-bottom: var(--hw-spacing-small);
   }
 
+  &--pt-smaller {
+    padding-top: var(--hw-spacing-smaller);
+  }
+
+  &--pb-smaller {
+    padding-bottom: var(--hw-spacing-smaller);
+  }
+
   &--pt-large {
     padding-top: var(--hw-spacing-large);
   }
 
   &--pb-large {
     padding-bottom: var(--hw-spacing-large);
+  }
+
+  &--pt-larger {
+    padding-top: var(--hw-spacing-larger);
+  }
+
+  &--pb-larger {
+    padding-bottom: var(--hw-spacing-larger);
   }
 
 
