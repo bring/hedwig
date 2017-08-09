@@ -58,13 +58,15 @@ const HWNavbar = ({
     }
 
     // Skip if already initialised
-    if (SETTINGS.menuButton.getAttribute('data-hw-menu-initialised') === 'true') { return; }
+    if (SETTINGS.menuButton) {
+      if (SETTINGS.menuButton.getAttribute('data-hw-menu-initialised') === 'true') { return; }
 
-    // Mark as initialised
-    SETTINGS.menuButton.setAttribute('data-hw-menu-initialised', true);
+      // Mark as initialised
+      SETTINGS.menuButton.setAttribute('data-hw-menu-initialised', true);
 
-    // Attach event listeners
-    SETTINGS.menuButton.addEventListener('click', toggleMenu);
+      // Attach event listeners
+      SETTINGS.menuButton.addEventListener('click', toggleMenu);
+    }
 
     // Optional search button
     if (SETTINGS.searchButton) {
