@@ -29,4 +29,8 @@
     padding: var(--hw-spacing);
     background: var(--hw-color-gray-lighter);
   }
+
+  &__content--full {
+    padding: 0;
+  }
 }
