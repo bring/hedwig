@@ -9,7 +9,7 @@
   position: relative;
   background: var(--hw-color-white);
   border: 3px solid var(--hw-color-gray-darker);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--hw-font-primary-regular), Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -43,8 +43,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
 .pika-lendar {
   float: left;
-  width: 300px;
-  margin: var(--hw-spacing-small);
+  width: inherit;
+  padding: var(--hw-spacing);
 }
 
 .pika-title {
@@ -107,14 +107,13 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-prev,
 .is-rtl .pika-next {
   float: left;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAUklEQVR42u3VMQoAIBADQf8Pgj+OD9hG2CtONJB2ymQkKe0HbwAP0xucDiQWARITIDEBEnMgMQ8S8+AqBIl6kKgHiXqQqAeJepBo/z38J/U0uAHlaBkBl9I4GwAAAABJRU5ErkJggg==');
-  *left: 0;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHRpdGxlPmNhcmV0LWxlZnQ8L3RpdGxlPjxnIGlkPSJJY29ucyI+PGcgaWQ9Iklrb25lciI+PHBvbHlnb24gaWQ9IlNoYXBlIiBwb2ludHM9IjIwLjM3IDMwIDI0Ljg1IDI1LjYzIDE0LjEgMTUgMjQuODUgNC4zOCAyMC4zNyAwIDUuMTUgMTUgMjAuMzcgMzAiLz48L2c+PC9nPjwvc3ZnPg==');
 }
 
 .pika-next,
 .is-rtl .pika-prev {
   float: right;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAU0lEQVR42u3VOwoAMAgE0dwfAnNjU26bYkBCFGwfiL9VVWoO+BJ4Gf3gtsEKKoFBNTCoCAYVwaAiGNQGMUHMkjGbgjk2mIONuXo0nC8XnCf1JXgArVIZAQh5TKYAAAAASUVORK5CYII=');
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHRpdGxlPmNhcmV0LXJpZ2h0PC90aXRsZT48ZyBpZD0iSWNvbnMiPjxnIGlkPSJJa29uZXIiPjxwb2x5Z29uIGlkPSJTaGFwZSIgcG9pbnRzPSI5LjYzIDAgNS4xNSA0LjM4IDE1LjkgMTUgNS4xNSAyNS42MyA5LjYzIDMwIDI0Ljg1IDE1IDkuNjMgMCIvPjwvZz48L2c+PC9zdmc+');
   *right: 0;
 }
 

@@ -9,6 +9,6 @@ Datepicker component
 
 ### Default Hero
 
-```html|span-6
+```html|span-2
   <input type="text" class="hw-input" data-hw-datepicker placeholder="Velg en dato" />
 ```

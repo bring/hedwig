@@ -34,9 +34,11 @@ const HWDatePicker = ({
       datepicker.setAttribute('data-hw-module-initialised', true);
       datepicker.setAttribute('id', `datepicker-${index}`);
       const datePickerId = `datepicker-${index}`;
+      const datePickerWidth = datepicker.offsetWidth;
+      console.log(datepicker.offsetWidth);
 
-      // Example of binding event to button
-      new Pikaday({
+      // Create a new pikadate instance
+      const pikaday = new Pikaday({
         field: document.getElementById(datePickerId),
         firstDay: 1,
         i18n: {
@@ -48,7 +50,6 @@ const HWDatePicker = ({
         },
       });
 
-      // Other things here
     });
   }
 
