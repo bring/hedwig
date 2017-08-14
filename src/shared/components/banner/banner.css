@@ -82,9 +82,9 @@
   }
 
   &__title {
+    @extend .hw-h1;
+
     max-width: var(--hw-width-contents);
-    font-size: var(--hw-font-size-h1);
-    font-weight: 900;
     margin: var(--hw-spacing-small) auto 0 auto;
     color: var(--hw-color-gray-darkest);
   }
@@ -101,8 +101,9 @@
   }
 
   &__subtitle {
+    @extend .hw-h3;
+
     max-width: var(--hw-width-contents);
-    font-size: var(  --hw-font-size-h3);
     margin: var(--hw-spacing-small) auto 0 auto;
     color: var(--hw-color-gray-darkest);
   }
@@ -189,6 +190,7 @@
 .no-js .hw-banner__contents {
   display: block;
 }
+
 .no-js .hw-banner__read-more-contents {
   display: block;
 }

@@ -7,6 +7,7 @@ Hero component
 
 [Large]          .hw-hero--large
 [Full]           .hw-hero--full
+[Bordered]       .hw-hero--bordered
 ```
 
 ### Default Hero
@@ -31,8 +32,15 @@ Hero component
   </div>
 ```
 
-### Large hero with angled overlay and search
+### Hero with border
 
+```html|span-6
+  <div class="hw-hero hw-hero--bordered">
+    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"/>
+  </div>
+```
+
+### Large hero with angled overlay and search
 
 ```code
 [data-hw-hero-search]   Attaches interactivity (required)
