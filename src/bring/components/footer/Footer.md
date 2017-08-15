@@ -50,11 +50,16 @@
         </div><!--
         --><div class="hw-grid__item hw-one-quarter">
           <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
-          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
+          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
+            <svg class="hw-icon">
+              <use xlink:href="#globe"></use>
+            </svg>
+            ENGLISH
+          </button>
         </div>
       </div>
     </div>
-  
+
     <div class="hw-footer__mobile">
       <div class="hw-block hw-block--half hw-block--pt-small">
         <div class="hw-grid">
@@ -62,7 +67,12 @@
             <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
           </div><!--
           --><div class="hw-grid__item hw-small--one-half">
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">ENGLISH</button>
+            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
+            <svg class="hw-icon">
+              <use xlink:href="#globe"></use>
+            </svg>
+            ENGLISH
+            </button>
           </div>
         </div>
       </div>

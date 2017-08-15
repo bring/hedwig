@@ -19,3 +19,13 @@ Various list styles
   <li>List item 3</li>
 </ul>
 ```
+
+## Numbered List
+
+```html
+<ol class="hw-list hw-list--numbered">
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+</ol>
+```

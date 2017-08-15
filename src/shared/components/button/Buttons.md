@@ -71,35 +71,46 @@ Styling for buttons.
 [Outline white]        .hw-button--outline-white
 ```
 
-### Icon
+### Button with icon
 
 ```html|span-4
-  <button class="hw-button hw-button--icon">
+  <button class="hw-button hw-button--primary">
     <svg class="hw-icon">
-      <use xlink:href="#star"></use>
+      <use xlink:href="#globe"></use>
+    </svg>
+    Button with icon
+  </button>
+```
+
+### Round button with icon
+
+```html|span-4
+  <button class="hw-button hw-button--round hw-button--primary">
+    <svg class="hw-icon">
+      <use xlink:href="#globe"></use>
     </svg>
   </button>
-  <button class="hw-button hw-button--icon-outline">
+  <button class="hw-button hw-button--round hw-button--secondary">
     <svg class="hw-icon">
-      <use xlink:href="#star"></use>
+      <use xlink:href="#globe"></use>
     </svg>
   </button>
-  <button class="hw-button hw-button--icon-stripped">
+  <button class="hw-button hw-button--round hw-button--outline">
     <svg class="hw-icon">
-      <use xlink:href="#star"></use>
+      <use xlink:href="#globe"></use>
     </svg>
   </button>
-  <button class="hw-button hw-button--icon" disabled>
+  <button class="hw-button hw-button--round" disabled>
     <svg class="hw-icon">
-      <use xlink:href="#star"></use>
+      <use xlink:href="#globe"></use>
     </svg>
   </button>
 ```
 
 ```code
-[Icon regular]        .hw-button--icon
-[Icon outline]        .hw-button--icon-outline
-[Icon stripped]        .hw-button--icon-stripped
+[Icon regular]        .hw-button--round
+[Icon outline]        .hw-button--round-outline
+[Icon stripped]       .hw-button--round-stripped
 ```
 
 ### Extra modifiers
@@ -117,7 +128,7 @@ Styling for buttons.
 ```
 
 ```code
-[Large]        .hw-button--large
-[Small]        .hw-button--small
+[Large]       .hw-button--large
+[Small]       .hw-button--small
 [Full]        .hw-button--full
 ```
