@@ -51,7 +51,7 @@
         --><div class="hw-grid__item hw-one-quarter">
           <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">BE OM TILBUD</button>
           <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
-            <svg class="hw-icon">
+            <svg class="hw-icon hw-icon--small">
               <use xlink:href="#globe"></use>
             </svg>
             ENGLISH
@@ -68,7 +68,7 @@
           </div><!--
           --><div class="hw-grid__item hw-small--one-half">
             <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
-            <svg class="hw-icon">
+            <svg class="hw-icon hw-icon--small">
               <use xlink:href="#globe"></use>
             </svg>
             ENGLISH

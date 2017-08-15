@@ -27,7 +27,7 @@
   }
 
   & .hw-icon {
-    margin-right: var(--hw-spacing-small);
+    margin-right: var(--hw-spacing-smallest);
   }
 
   /**
@@ -61,6 +61,7 @@
     &:active,
     &:focus {
       color: var(--hw-color-white);
+      fill: var(--hw-color-white);
       border-color: var(--hw-color-primary-dark);
       background: var(--hw-color-primary-dark);
       outline: 1px solid var(--hw-color-primary-dark);
