@@ -65,6 +65,12 @@ To add a new feature:
 
 To modify an existing feature follow the same process, but also remember the versioning system. If there is a breaking change, or if this might impact existing sites using hedwig, update the version number. See below for details.
 
+Tip: In order to test changes on a locally running application which uses hedwig, replace the dependencies with the following dev server URLs (after running hedwig locally):
+```
+http://localhost:3001/posten.css
+
+http://localhost:3001/main.js   
+```
 ### Versioning
 Hedwig uses [semantic versioning](http://semver.org/) to make sure once a site starts using it, the CSS file won't suddenly change and break the site. The version number is located in `package.json`, and will be appended to the `.css` and `.js` files. Example - `bring-1.0.3.css`.
 
