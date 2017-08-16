@@ -34,7 +34,13 @@ const HWDropdown = ({
 
     // Update native select element with selected value
     dropdown.nextElementSibling.value = selectedOption;
-    dropdown.fireEvent('onChange', selectedOption);
+    if ('createEvent' in document) {
+      const evt = document.createEvent('HTMLEvents');
+      evt.initEvent('change', false, true);
+      dropdown.dispatchEvent(evt);
+    } else {
+      dropdown.fireEvent('onchange');
+    }
 
     // Loop through options and select passed option
     const allOptions = qa('.hw-dropdown__option', dropdown);
