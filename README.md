@@ -20,7 +20,7 @@ npm run dev
 ```
 clone this repo
 npm install                 # to install dependencies
-add .env file               # get variables from Heroku or ask for keys in the Hedwig slack channel
+add .env file               # get variables from Heroku or Hedwig slack channel. See .env.example file
 npm run s3:download         # to download assets from S3
 
 npm run dev                 # start local development server
