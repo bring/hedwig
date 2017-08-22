@@ -47,6 +47,10 @@
       line-height: 1.5;
       color: var(--hw-color-white);
     }
+
+    & a:hover {
+      border-bottom: 2px solid var(--hw-color-yellow);
+    }
   }
 
   &__button {
