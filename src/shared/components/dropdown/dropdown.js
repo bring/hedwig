@@ -34,6 +34,7 @@ const HWDropdown = ({
 
     // Update native select element with selected value
     dropdown.nextElementSibling.value = selectedOption;
+    // dropdown.fireEvent('onchange');
     if ('createEvent' in document) {
       const evt = document.createEvent('HTMLEvents');
       evt.initEvent('change', false, true);
@@ -146,7 +147,7 @@ const HWDropdown = ({
 
     // If value already exists, select next/previous element
     if (selected.length > 0) {
-      
+
       const { hwDropdownValue } = selected[0].dataset;
       const currentIndex = allOptions.findIndex(i => i.getAttribute('data-hw-dropdown-value') === hwDropdownValue);
       if (direction === 'next') {

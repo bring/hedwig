@@ -47,10 +47,12 @@
   }
 
   &__placeholder {
-    padding: 9px var(--hw-spacing-small);
+    padding: 9px var(--hw-spacing-large) 9px var(--hw-spacing-small);
     margin: 3px 0;
     line-height: var(--hw-font-size-p);
     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   &__arrow {
