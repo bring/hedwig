@@ -3,9 +3,9 @@
 Flexible card grid
 
 ```code
-[Base]           .hw-card-v2
+[Wrapper]           .hw-flexcards
 
-[Dark]           .hw-card-v2--dark
+[Card]              .hw-flexcard
 ```
 
 ### Default flexgrid
