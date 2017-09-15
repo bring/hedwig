@@ -47,21 +47,3 @@
     }
   }
 }
-
-.hw-table--fixed-header {
-  table-layout: fixed;
-  border-collapse: collapse;
-  width: 500px;
-
-  & thead {
-    width: 500px;
-  }
-
-  & thead tr {
-    display: block;
-  }
-  & tbody {
-    display: block;
-    overflow: auto;
-  }
-}
