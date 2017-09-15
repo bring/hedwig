@@ -61,7 +61,9 @@
     </div>
 
     <div class="hw-footer__mobile">
+
       <div class="hw-block hw-block--half hw-block--pt-small">
+
         <div class="hw-grid">
           <div class="hw-grid__item hw-small--one-half">
             <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">Be om tilbud</button>
@@ -75,40 +77,44 @@
             </button>
           </div>
         </div>
+        
       </div>
 
-      <ul class="hw-accordion hw-accordion--dark" data-hw-accordion="footer-menu">
-        <li class="hw-accordion__item">
-          <button class="hw-accordion__trigger">
-            Kundeservice
-            <div class="hw-accordion__arrow"></div>
-          </button>
-          <div class="hw-accordion__contents">
-            awdawdaw
-        </div>
-        </li>
-        <li class="hw-accordion__item">
-          <button class="hw-accordion__trigger">
-            Våre tjenester
-            <div class="hw-accordion__arrow"></div>
-          </button>
-          <div class="hw-accordion__contents">
-            addwaawd
+      <div class="hw-block hw-block--pt-small">
+        <ul class="hw-accordion hw-accordion--dark" data-hw-accordion="footer-menu">
+          <li class="hw-accordion__item">
+            <button class="hw-accordion__trigger">
+              Kundeservice
+              <div class="hw-accordion__arrow"></div>
+            </button>
+            <div class="hw-accordion__contents">
+              awdawdaw
           </div>
-        </li>
-        <li class="hw-accordion__item">
-          <button class="hw-accordion__trigger">
-            Søk etter
-            <div class="hw-accordion__arrow"></div>
-          </button>
-          <div class="hw-accordion__contents">
-            dawdawd
-          </div>
-        </li>
-      </ul>
+          </li>
+          <li class="hw-accordion__item">
+            <button class="hw-accordion__trigger">
+              Våre tjenester
+              <div class="hw-accordion__arrow"></div>
+            </button>
+            <div class="hw-accordion__contents">
+              addwaawd
+            </div>
+          </li>
+          <li class="hw-accordion__item">
+            <button class="hw-accordion__trigger">
+              Søk etter
+              <div class="hw-accordion__arrow"></div>
+            </button>
+            <div class="hw-accordion__contents">
+              dawdawd
+            </div>
+          </li>
+        </ul>
+      </div>
+
     </div>
 
-    <div class="hw-block hw-block--full hw-block--pb-small">
+    <div class="hw-block hw-block--full hw-block--pt hw-block--pb-small">
       <div class="hw-footer__logo">
         <svg class="hw-icon">
           <use xlink:href="#logo-white"></use>
