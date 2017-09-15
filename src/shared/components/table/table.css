@@ -5,12 +5,17 @@
 .hw-table {
   width: 100%;
   border: 0;
+  overflow: scroll;
   table-layout: fixed;
   display: table;
 
   /**
    * Elements
    */
+
+  & table {
+    width: 100%;
+  }
 
   & thead {
     background-color: var(--hw-color-gray);
