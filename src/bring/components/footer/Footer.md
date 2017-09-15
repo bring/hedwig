@@ -11,45 +11,43 @@
     <div class="hw-footer__desktop">
       <div class="hw-grid">
         <div class="hw-grid__item hw-one-quarter">
-          <p class="hw-footer__title">Kundeservice</p>
+          <p class="hw-footer__title">Lorum ipsum</p>
           <hr class="hw-hr hw-hr--white" />
           <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
-              <li><a href="#">Kontakt oss</a></li>
-              <li><a href="#">Aktuelt nå</a></li>
-              <li><a href="#">Driftsmeldinger</a></li>
-              <li><a href="#">Reklamasjon og klager</a></li>
-              <li><a href="#">Fakturaspørsmål</a></li>
+            <li><a href="#">Aliquam consequat</a></li>
+            <li><a href="#">Vivamus eros</a></li>
+            <li><a href="#">Vivamus pulvinar</a></li>
+            <li><a href="#">Cras at</a></li>
             </ul>
           </div>
         </div><!--
         --><div class="hw-grid__item hw-one-quarter">
-          <p class="hw-footer__title">Om Bring</p>
+          <p class="hw-footer__title">Lorem ipsum</p>
           <hr class="hw-hr hw-hr--white" />
           <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
-              <li><a href="#">Våre tjenester</a></li>
-              <li><a href="#">Priser</a></li>
-              <li><a href="#">Vilkår</a></li>
-              <li><a href="#">Jobb og karriere</a></li>
-              <li><a href="#">Miljø</a></li>
+            <li><a href="#">Aliquam consequat</a></li>
+            <li><a href="#">Vivamus eros</a></li>
+            <li><a href="#">Vivamus pulvinar</a></li>
+            <li><a href="#">Cras at</a></li>
             </ul>
           </div>
         </div><!--
         --><div class="hw-grid__item hw-one-quarter">
-          <p class="hw-footer__title">Søk etter</p>
+          <p class="hw-footer__title">Lorem Ipsum</p>
           <hr class="hw-hr hw-hr--white" />
           <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
-              <li><a href="#">Postkontor og åpningstider</a></li>
-              <li><a href="#">Navn og adresser</a></li>
-              <li><a href="#">Postnummert og sted</a></li>
-              <li><a href="#">Ledige stillinger</a></li>
+              <li><a href="#">Aliquam consequat</a></li>
+              <li><a href="#">Vivamus eros</a></li>
+              <li><a href="#">Vivamus pulvinar</a></li>
+              <li><a href="#">Cras at</a></li>
             </ul>
           </div>
         </div><!--
         --><div class="hw-grid__item hw-one-quarter">
-          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">Be om tilbud</button>
+          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">Lorem ipsum</button>
           <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
             <svg class="hw-icon hw-icon--small">
               <use xlink:href="#globe"></use>
@@ -66,7 +64,7 @@
 
         <div class="hw-grid">
           <div class="hw-grid__item hw-small--one-half">
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">Be om tilbud</button>
+            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">Lorem ipsum</button>
           </div><!--
           --><div class="hw-grid__item hw-small--one-half">
             <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
@@ -77,36 +75,36 @@
             </button>
           </div>
         </div>
-        
+
       </div>
 
       <div class="hw-block hw-block--pt-small">
         <ul class="hw-accordion hw-accordion--dark" data-hw-accordion="footer-menu">
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
-              Kundeservice
+              Lorem ispum
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
-              awdawdaw
+              Lorem ipsum
           </div>
           </li>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
-              Våre tjenester
+              Lorem ispum
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
-              addwaawd
+              Lorem ipsum
             </div>
           </li>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
-              Søk etter
+              Lorem ispum
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
-              dawdawd
+              Lorem ipsum
             </div>
           </li>
         </ul>
