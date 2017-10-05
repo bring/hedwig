@@ -13,10 +13,12 @@
 <header class="hw-navbar">
   <div class="hw-navbar__content">
     <a href="#" class="hw-navbar__logo">
-      <svg class="hw-navbar__logo-standard">
+      <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
+        <title id="Logo">Go to homepage</title>
         <use xlink:href="#logo-bring"></use>
       </svg>
-      <svg class="hw-navbar__logo-white">
+      <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+        <title id="Logo">Go to homepage</title>
         <use xlink:href="#logo-bring-white"></use>
       </svg>
     </a>
@@ -67,8 +69,13 @@
 <header class="hw-navbar">
   <div class="hw-navbar__content">
     <div class="hw-navbar__logo">
-      <svg>
+      <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
+        <title id="Logo">Go to homepage</title>
         <use xlink:href="#logo-bring"></use>
+      </svg>
+      <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+        <title id="Logo">Go to homepage</title>
+        <use xlink:href="#logo-bring-white"></use>
       </svg>
     </div>
     <nav class="hw-navbar__menu">
@@ -94,8 +101,13 @@
 <header class="hw-navbar hw-navbar--transparent">
   <div class="hw-navbar__content">
     <div class="hw-navbar__logo">
-      <svg>
+      <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
+        <title id="Logo">Go to homepage</title>
         <use xlink:href="#logo-bring"></use>
+      </svg>
+      <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+        <title id="Logo">Go to homepage</title>
+        <use xlink:href="#logo-bring-white"></use>
       </svg>
     </div>
     <nav class="hw-navbar__menu">
