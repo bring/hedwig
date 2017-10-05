@@ -11,7 +11,7 @@
     <div class="hw-footer__desktop">
       <div class="hw-grid">
         <div class="hw-grid__item hw-one-quarter">
-          <p class="hw-footer__title">Lorum ipsum</p>
+          <h3 class="hw-footer__title">Lorum ipsum</h3>
           <hr class="hw-hr hw-hr--white" />
           <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
@@ -23,7 +23,7 @@
           </div>
         </div><!--
         --><div class="hw-grid__item hw-one-quarter">
-          <p class="hw-footer__title">Lorem ipsum</p>
+          <h3 class="hw-footer__title">Lorem ipsum</h3>
           <hr class="hw-hr hw-hr--white" />
           <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
@@ -35,7 +35,7 @@
           </div>
         </div><!--
         --><div class="hw-grid__item hw-one-quarter">
-          <p class="hw-footer__title">Lorem Ipsum</p>
+          <h3 class="hw-footer__title">Lorem Ipsum</h3>
           <hr class="hw-hr hw-hr--white" />
           <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
