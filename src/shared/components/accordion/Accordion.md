@@ -154,7 +154,9 @@ Optional:
   </ul>
 ```
 
+<!-- DARK ACCORDION USED IN FOOTER - NOT SHOWN TO PREVENT PEOPLE FROM USING OTHER PLACES FOR NOW -->
 
+<!--
 ### Dark accordion
 
 ```html|span-6
@@ -188,3 +190,5 @@ Optional:
     </li>
   </ul>
 ```
+
+-->
