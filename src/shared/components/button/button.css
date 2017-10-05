@@ -134,6 +134,19 @@
     }
   }
 
+  &--stripped {
+    outline: 0;
+    border: 0;
+    background: none;
+    fill: var(--hw-color-gray-dark);
+    color: var(--hw-color-gray-darker);
+
+    &:hover {
+      fill: var(--hw-color-gray-darker);
+      color: var(--hw-color-gray-darker);
+    }
+  }
+
   &--round {
     padding: var(--hw-spacing-smallest);
     min-width: 0;

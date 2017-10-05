@@ -17,7 +17,7 @@ Modal component
     <div class="hw-modal__content hw-animate hw-animate--slide-in-bottom">
       <div class="hw-modal__header">
         <div class="hw-modal__close">
-          <button class="hw-button--icon-stripped" data-hw-modal-trigger="Modal1">
+          <button class="hw-button hw-button--round hw-button--stripped" data-hw-modal-trigger="Modal1">
             <svg class="hw-icon">
                <use xlink:href="#cross"></use>
             </svg>
@@ -46,7 +46,7 @@ Modal component
     <div class="hw-modal__content hw-animate hw-animate--slide-in-bottom">
       <div class="hw-modal__header">
         <div class="hw-modal__close">
-          <button class="hw-button--icon-stripped" data-hw-modal-trigger="Modal2">
+          <button class="hw-button hw-button--round hw-button--stripped" data-hw-modal-trigger="Modal2">
             <svg class="hw-icon">
                <use xlink:href="#cross"></use>
             </svg>

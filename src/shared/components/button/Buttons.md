@@ -100,6 +100,11 @@ Styling for buttons.
       <use xlink:href="#globe"></use>
     </svg>
   </button>
+  <button class="hw-button hw-button--round hw-button--stripped">
+    <svg class="hw-icon">
+      <use xlink:href="#globe"></use>
+    </svg>
+  </button>
   <button class="hw-button hw-button--round" disabled>
     <svg class="hw-icon">
       <use xlink:href="#globe"></use>
