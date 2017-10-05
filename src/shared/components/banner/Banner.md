@@ -17,13 +17,15 @@ Required:
         <span class="hw-banner__text">
           All traffic in Norway is on hold due to the heat wave
         </span>
-        <svg class="hw-icon">
+        <svg class="hw-icon" aria-labelledby="arrow-down" role="img">
+          <title id="arrow-down">Open banner information</title>
           <use xlink:href="#caret-down"></use>
         </svg>
       </button>
       <div class="hw-banner__contents">
         <button class="hw-banner__trigger-close">
-          <svg class="hw-icon">
+          <svg class="hw-icon" aria-labelledby="arrow-up" role="img">
+            <title id="arrow-up">Close banner information</title>
             <use xlink:href="#caret-up"></use>
           </svg>
         </button>
@@ -46,13 +48,15 @@ Required:
         <span class="hw-banner__text">
           Snow storm causes delays
         </span>
-        <svg class="hw-icon">
+        <svg class="hw-icon" aria-labelledby="arrow-down" role="img">
+          <title id="arrow-down">Open banner information</title>
           <use xlink:href="#caret-down"></use>
         </svg>
       </button>
       <div class="hw-banner__contents">
         <button class="hw-banner__trigger-close">
-          <svg class="hw-icon">
+          <svg class="hw-icon" aria-labelledby="arrow-up" role="img">
+            <title id="arrow-up">Close banner information</title>
             <use xlink:href="#caret-up"></use>
           </svg>
         </button>
