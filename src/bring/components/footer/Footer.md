@@ -115,7 +115,7 @@
     <div class="hw-block hw-block--full hw-block--pt hw-block--pb-small">
       <div class="hw-footer__logo">
         <svg class="hw-icon">
-          <use xlink:href="#logo-white"></use>
+          <use xlink:href="#logo-bring-white"></use>
         </svg>
       </div>
     </div>
