@@ -231,37 +231,6 @@
     border: 0;
   }
 
-  &--transparent .hw-navbar__item {
-    border: 0;
-    color: var(--hw-color-white);
-
-    &:hover,
-    &:focus {
-      background: rgba(255, 255, 255, 0.25);
-    }
-  }
-
-  &--transparent .hw-navbar__button {
-    border: 0;
-    color: var(--hw-color-white);
-
-    &:hover,
-    &:focus {
-      background: rgba(255, 255, 255, 0.25);
-    }
-  }
-
-  &--transparent .hw-navbar__logo {
-    &:hover,
-    &:focus {
-      background: rgba(255, 255, 255, 0.25);
-    }
-  }
-
-  &--transparent .hw-hamburger__part {
-    background: var(--hw-color-white);
-  }
-
   &--frontpage {
     margin-bottom: 0;
   }
