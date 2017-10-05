@@ -15,11 +15,11 @@ Uses the `sticky` helper to create a sticky nav
 <section class="hw-stickynav" data-hw-sticky-nav>
   <div class="hw-stickynav__inner" data-hw-sticky>
     <nav class="hw-stickynav__nav">
-      <a class="hw-stickynav__link" href="#anchor-1">Section 1</a>
-      <a class="hw-stickynav__link" href="#anchor-2">Section 2</a>
-      <a class="hw-stickynav__link" href="#anchor-3">Section 3</a>
-      <a class="hw-stickynav__link" href="#anchor-4">Section 4</a>
-      <a class="hw-stickynav__link" href="#anchor-5">Section 5</a>
+      <a class="hw-stickynav__link" href="#anchor-1">Section 1</a><!--
+   --><a class="hw-stickynav__link" href="#anchor-2">Section 2</a><!--
+   --><a class="hw-stickynav__link" href="#anchor-3">Section 3</a><!--
+   --><a class="hw-stickynav__link" href="#anchor-4">Section 4</a><!--
+   --><a class="hw-stickynav__link" href="#anchor-5">Section 5</a>
     </nav>
   </div>
 </section>

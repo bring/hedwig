@@ -44,7 +44,7 @@
     position: relative;
     display: inline-block;
     padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
-    color: var(--hw-color-gray-darker);
+    color: var(--hw-color-gray-dark);
     font-size: var(--hw-font-size-small);
     font-family: var(--hw-font-primary-bold);
     text-transform: uppercase;
@@ -55,7 +55,21 @@
     }
 
     &:hover {
-      color: var(--hw-color-primary);
+      color: var(--hw-color-gray-darker);
+    }
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--hw-color-primary-light);
+      height: var(--hw-spacing-smallest);
+    }
+
+    &.hw-stickynav__link--active {
+      color: var(--hw-color-gray-darker);
     }
 
     &.hw-stickynav__link--active::after {
