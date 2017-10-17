@@ -31,6 +31,10 @@
     background: var(--hw-color-gray-light);
   }
 
+  &--gray-lighter {
+    background: var(--hw-color-gray-lighter);
+  }
+
   &--centered {
     background: var(--hw-color-gray-lighter);
     margin: 0 auto;
