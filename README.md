@@ -27,7 +27,7 @@ npm run dev                 # start local development server
 ```
 [Open http://localhost:3000](http://localhost:3000/docs) 🚀
 
-To keep assets up to date, run `npm run s3:download` do download the latest assets from S3.
+To keep assets up to date, run `npm run s3:download` to download the latest assets from S3. If you're having trouble downloading, try to disconnect your VPN.
 
 ## 📚 Documentation
 
