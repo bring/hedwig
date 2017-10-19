@@ -108,7 +108,7 @@ We use the [Csswizandry grids](https://github.com/csswizardry/csswizardry-grids)
 Example
 ```code
 .hw-medium--one-whole
-.hw-medium--half
+.hw-medium--one-half
 .hw-medium--one-third
 .hw-medium--two-third
 .hw-medium--one-quarter
