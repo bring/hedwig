@@ -36,6 +36,7 @@ Required:
         <div class="hw-banner__subtitle">
           Asfalten på veiene smelter og bilene våre kjører seg fast i tjukk olje. Droneleveransene våre går som normalt.
         </div>
+        <a href="#" class="hw-banner__read-more-link">Read more</a>
     </div>
   </section>
 ```
