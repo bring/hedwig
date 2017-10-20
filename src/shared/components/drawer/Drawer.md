@@ -6,8 +6,6 @@ Drawer component
 [Normal]           .hw-drawer
 ```
 
-### Drawer
-
 ```html
 
   <button class="hw-button hw-button--primary" data-hw-drawer-trigger="Drawer2">Drawer with action buttons</button>
