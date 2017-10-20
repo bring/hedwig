@@ -18,7 +18,8 @@ Modal component
       <div class="hw-modal__header">
         <div class="hw-modal__close">
           <button class="hw-button hw-button--round hw-button--stripped" data-hw-modal-trigger="Modal1">
-            <svg class="hw-icon">
+            <svg class="hw-icon" role="img" aria-labelledby="close">
+               <title id="close">Close modal</title>
                <use xlink:href="#cross"></use>
             </svg>
           </button>
@@ -47,7 +48,8 @@ Modal component
       <div class="hw-modal__header">
         <div class="hw-modal__close">
           <button class="hw-button hw-button--round hw-button--stripped" data-hw-modal-trigger="Modal2">
-            <svg class="hw-icon">
+            <svg class="hw-icon" role="img" aria-labelledby="close">
+               <title id="close">Close modal</title>
                <use xlink:href="#cross"></use>
             </svg>
           </button>
