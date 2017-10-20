@@ -130,6 +130,33 @@ const HWDropdown = ({
     }
   }
 
+  /**
+   * @function closeToggleOutside
+   * @desc Closes the dropdown if user clicks outside the dropdown
+   * @param {Event} e
+   */
+  function closeToggleOutside(e) {
+    e.preventDefault();
+
+    const dropDownSelectors = qa('.hw-dropdown');
+
+    dropDownSelectors.forEach((dropdown) => {
+      if (e.target === dropdown || dropdown.contains(e.target)) {
+        console.log('is dropdown');
+      } else {
+        // Find dropdown-list within dropdown container
+        const list = q('.hw-dropdown__options', dropdown);
+
+        // Display/hide dropdown
+        if (list.getAttribute('aria-hidden') === 'false') {
+          list.setAttribute('aria-hidden', true);
+          dropdown.classList.remove(activeClass);
+          resetPosition(dropdown);
+        }
+      }
+    });
+  }
+
 
   /**
    * @function navigateOptions
@@ -202,6 +229,7 @@ const HWDropdown = ({
    * @param {node} dropdown
    */
   function bindEvents(dropdown) {
+    window.addEventListener('click', closeToggleOutside)
     dropdown.addEventListener('click', toggleDropdown);
     dropdown.addEventListener('keydown', handleKeyboardEvents);
   }
