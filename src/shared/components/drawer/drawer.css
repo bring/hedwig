@@ -1,0 +1,119 @@
+/**
+ * Block
+ */
+
+.hw-drawer {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: var(--z-index--modal);
+  overflow-y: scroll;
+
+  @media (--medium) {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  /**
+   * Elements
+   */
+
+  &__overlay {
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    overflow: auto;
+    z-index: var(--z-index--modal);
+  }
+
+  &__close {
+    display: block;
+    float: left;
+    width: 100%;
+    outline: none;
+    border: 0;
+    margin-left: var(--hw-spacing-smaller);
+    margin-bottom: var(--hw-spacing-small);
+  }
+
+  &__close-button {
+    cursor: pointer;
+    padding: var(--hw-spacing-smaller);
+    background-color: var(--hw-color-gray-lighter);
+    border-radius: 50%;
+    border: 0;
+
+    &:hover {
+      fill: var(--hw-color-black);
+      /*background-color: var(--hw-color-gray-light);*/
+    }
+  }
+
+  &__content {
+    z-index: var(--z-index--modal-foreground);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    animation-name: slide-in-drawer;
+    animation-duration: 0.2s;
+    background: #fff;
+    padding: var(--hw-spacing);
+
+    @media (--medium) {
+      max-width: 700px;
+    }
+  }
+
+  &__body {
+    padding-top: var(--hw-spacing);
+  }
+
+  &__actions {
+    text-align: right;
+    padding-top: var(--hw-spacing);
+  }
+
+  /**
+   * Modifiers
+   */
+
+  &--open {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/**
+ * No-js fallback
+ */
+
+.no-js .hw-drawer {
+  position: relative;
+  display: flex;
+  background: none;
+  z-index: 0;
+
+  &__window {
+    z-index: 0;
+    width: 100%;
+    background: #fff;
+  }
+}
+
+@keyframes slide-in-drawer {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
