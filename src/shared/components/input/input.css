@@ -18,7 +18,7 @@
   transition: border 100ms;
 
   &::placeholder {
-    color: var(--hw-color-gray);
+    color: var(--hw-color-gray-dark);
   }
 
   &:hover {
