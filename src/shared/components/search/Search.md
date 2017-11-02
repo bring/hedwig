@@ -20,7 +20,8 @@ NB: The search field position and the opaque background overlay is not controlle
   <div class="hw-search__inner">
     <input
       data-hw-search-input
-      class="hw-search__input" type="text" />
+      class="hw-search__input" type="text"
+      aria-label="Search" />
     <svg class="hw-search__icon">
       <use xlink:href="#search"></use>
     </svg>
@@ -39,7 +40,8 @@ NB: The search field position and the opaque background overlay is not controlle
   <div class="hw-search__inner">
     <input
       data-hw-search-input
-      class="hw-search__input" type="text" />
+      class="hw-search__input" type="text"
+      aria-label="Search" />
     <svg class="hw-search__icon">
       <use xlink:href="#search"></use>
     </svg>
@@ -58,7 +60,8 @@ NB: The search field position and the opaque background overlay is not controlle
   <div class="hw-search__inner">
     <input
       data-hw-search-input
-      class="hw-search__input" type="text" />
+      class="hw-search__input" type="text"
+      aria-label="Search" />
     <svg class="hw-search__icon">
       <use xlink:href="#search"></use>
     </svg>
@@ -77,7 +80,8 @@ NB: The search field position and the opaque background overlay is not controlle
   <div class="hw-search__inner">
     <input
       data-hw-search-input
-      class="hw-search__input" type="text" />
+      class="hw-search__input" type="text"
+      aria-label="Search" />
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
   </div>
   <button type="submit" class="hw-button hw-button--primary">Search</button>
