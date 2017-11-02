@@ -47,7 +47,8 @@
         <div class="hw-search__inner">
           <input
             data-hw-search-input
-            class="hw-search__input" type="text" />
+            class="hw-search__input" type="text"
+            aria-label="Search" />
           <svg class="hw-search__icon">
             <use xlink:href="#search"></use>
           </svg>
