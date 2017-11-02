@@ -88,4 +88,16 @@
       background: var(--hw-color-gray-lighter);
     }
   }
+
+  /**
+   * Modifiers
+   */
+
+  &--horisontal {
+    display: inline-block;
+    margin-left: var(--hw-spacing);
+    &.hw-text-small {
+      display: inline-block;
+    }
+  }
 }
