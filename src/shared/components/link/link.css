@@ -3,15 +3,21 @@
  */
 
 .hw-link {
-  border-bottom: 2px solid var(--hw-color-gray);
-  color: var(--hw-color-gray-dark);
+  border-bottom: 2px solid var(--hw-color-link);
+  color: var(--hw-color-link);
   transition: all 0.2s ease;
   cursor: pointer;
 
   &:hover,
+  :active {
+    color: var(--hw-color-link-hover);
+    border-color: var(--hw-link-hover);
+  }
   &:focus {
-    color: var(--hw-color-primary-darker);
-    border-color: var(--hw-color-primary);
+    background: var(--hw-color-link);
+    box-shadow: 0 0 0 4px var(--hw-color-link);
+    color: var(--hw-color-white);
+    border: none;
     outline: 0;
   }
 
