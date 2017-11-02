@@ -11,7 +11,7 @@
   &:hover,
   :active {
     color: var(--hw-color-link-hover);
-    border-color: var(--hw-link-hover);
+    border-color: var(--hw-color-link-hover);
   }
   &:focus {
     background: var(--hw-color-link);
