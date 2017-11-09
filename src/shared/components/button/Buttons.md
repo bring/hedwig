@@ -75,7 +75,7 @@ Styling for buttons.
 
 ```html|span-4
   <button class="hw-button hw-button--primary">
-    <svg class="hw-icon">
+    <svg class="hw-icon hw-icon--small">
       <use xlink:href="#globe"></use>
     </svg>
     Button with icon
