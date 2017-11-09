@@ -337,6 +337,13 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#cross-thin"></use>
+      </svg>
+      cross-thin
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
         <use xlink:href="#flag"></use>
       </svg>
       flag

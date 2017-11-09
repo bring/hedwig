@@ -47,7 +47,7 @@ Modal component
         <button class="hw-modal__close" data-hw-modal-trigger="Modal2">
           <svg class="hw-icon" role="img" aria-labelledby="close">
              <title id="close">Close modal</title>
-             <use xlink:href="#cross"></use>
+             <use xlink:href="#cross-thin"></use>
           </svg>
         </button>
         <div class="hw-modal__title">
@@ -80,7 +80,7 @@ Modal component
         <button class="hw-button hw-button--round hw-button--stripped" data-hw-modal-trigger="Modal1">
           <svg class="hw-icon" role="img" aria-labelledby="close">
              <title id="close">Close modal</title>
-             <use xlink:href="#cross"></use>
+             <use xlink:href="#cross-thin"></use>
           </svg>
         </button>
       </div>
