@@ -19,7 +19,7 @@ Modal component
         <button class="hw-modal__close" data-hw-modal-trigger="Modal1">
           <svg class="hw-icon" role="img" aria-labelledby="close">
              <title id="close">Close modal</title>
-             <use xlink:href="#cross"></use>
+             <use xlink:href="#cross-thin"></use>
           </svg>
         </button>
         <div class="hw-modal__title">
