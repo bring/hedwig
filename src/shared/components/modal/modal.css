@@ -33,12 +33,26 @@
   }
 
   &__close {
+    cursor: pointer;
+    background: var(--hw-color-white);
+    border-radius: 50%;
     display: block;
     float: right;
-    outline: none;
     border: 0;
     margin-left: var(--hw-spacing-smaller);
     margin-bottom: var(--hw-spacing-smaller);
+
+    @media (--medium) {
+      background: var(--hw-color-gray-lightest);
+      position: absolute;
+      padding: var(--hw-spacing-smaller);
+      right: -var(--hw-spacing-small);
+      top: -var(--hw-spacing-small);
+    }
+
+    &:hover {
+      fill: var(--hw-color-gray-dark);
+    }
   }
 
   &__content {
