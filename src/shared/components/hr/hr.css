@@ -3,6 +3,7 @@
  */
 
 .hw-hr {
+  text-align: left; /* IE */
   display: block;
   width: 100%;
   max-width: 48px;
@@ -36,6 +37,7 @@
   }
 
   &--centered {
+    text-align: center; /* IE */
     background: var(--hw-color-gray-lighter);
     margin: 0 auto;
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
