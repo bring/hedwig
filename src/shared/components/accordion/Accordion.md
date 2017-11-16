@@ -154,6 +154,54 @@ Optional:
   </ul>
 ```
 
+### Gray accordion
+
+```html|span-6
+  <ul class="hw-accordion hw-accordion--gray" data-hw-accordion="example1">
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Hvordan finner jeg hvilket hentested som tilhører min adresse?
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg hw-wysiwyg--small">
+          <p>I vårt Adressesøk kan du finne hvilket hentested som er knyttet til adressen din. I søket får du listet opp alle adressene inkludert husnummer og tilhørende postnummer. Holder du markøren over adressen vil du se hentested (for pakker og store sendinger). Du kan ved å klikke på husnummeret gå til kartløsningen, som vil vise deg mer informasjon om hentestedet.
+          </p>
+      </div>
+    </div>
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Hva er hentefristen på sendinger jeg må hente på Posten?
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg hw-wysiwyg--small">
+          <p>Fristen for å hente pakker og andre sendinger på postkontorene er 14 dager. Dersom du ikke henter sendingen innen 14 dager blir sendingen returnert til avsender.</p>
+          <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Hvilke regler gjelder når jeg skal motta en sending fra utlandet?
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg hw-wysiwyg--small">
+          <p>Alle sendinger fra utlandet og som kan ha tollpliktig innhold vil bli tollbehandlet/tollvurdert.</p>
+          <p>Private gaver med verdi inntil kr 1000 er som oftest toll og avgiftsfrie så fremt de ikke inneholder eks alkohol og tobakksvarer</p>
+          <p>For all annen import hvor verdien er kr 350 (inkludert frakt og forsikring) eller mer må du som oftest betale mva (ev andre avgifter) til staten. Posten fortoller sendingen for deg mot betaling av tollklaring.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+```
+
 <!-- DARK ACCORDION USED IN FOOTER - NOT SHOWN TO PREVENT PEOPLE FROM USING OTHER PLACES FOR NOW -->
 
 <!--
