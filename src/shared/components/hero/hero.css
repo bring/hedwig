@@ -10,6 +10,7 @@
   justify-content: center;
   min-height: 239px;
   overflow: hidden;
+  border-bottom: var(--hw-spacing-smallest) solid var(--hw-color-secondary);
 
   /**
    * Elements
@@ -43,85 +44,11 @@
     }
   }
 
-  /* Opaque overlay */
-  &__overlay {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  /* White angle overlay */
-  &__overlay-angle {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background-image: linear-gradient(176deg, rgba(52, 173, 255, 0) 55%, #fff 55%);
-  }
-
-  /* Full page overlay (used by search variant) */
-
-  &__overlay {
-    visibility: hidden;
-    background: black;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-  }
-
-  &__search-container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    z-index: var(--z-index--hero-search);
-
-    @media (--medium) {
-      width: 600px;
-    }
-  }
-
   /**
    * Modifiers: sizes
    */
 
   &--large {
-    min-height: 45vh;
-  }
-
-  &--full {
-    height: 100vh;
-  }
-
-  &--bordered {
-    border-bottom: var(--hw-spacing-smallest) solid var(--hw-color-secondary);
-  }
-
-  /**
-   * Modifiers: states
-   */
-
-  &--searching {
-    & .hw-hero__overlay {
-      visibility: visible;
-      opacity: 0.3;
-      z-index: 1;
-    }
-  }
-
-  &--search-sticky {
-    & .hw-search__inner {
-      transform: none;
-      width: 100vw;
-      right: 0;
-      left: 0;
-      top: 0;
-      z-index: var(--z-index--hero-search);
-      position: fixed;
-      box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.2);
-    }
+    min-height: 40vh;
   }
 }
