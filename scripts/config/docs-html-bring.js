@@ -101,7 +101,7 @@ module.exports = `
         <a class="hw-app-switcher__link" href="/posten.html">Posten</a>
       </nav>
       <div id="catalog" />
-      <script src="https://unpkg.com/catalog@3/dist/catalog-standalone.development.js"></script>
+      <script src="https://unpkg.com/catalog@3/dist/catalog-standalone.min.js"></script>
       <script src="docs-config-bring.js"></script>
       ${icons}
       ${reload}
