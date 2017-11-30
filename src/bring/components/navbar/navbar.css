@@ -175,6 +175,29 @@
 
   &__title {
     color: var(--hw-color-white);
+    margin-bottom: var(--hw-spacing-smallest);
+  }
+
+  &__menu-group {
+    margin-top: var(--hw-spacing-larger);
+  }
+
+  &__menu-group-title {
+    color: var(--hw-color-white);
+  }
+
+  &__menu-group-links {
+    list-style: none;
+    padding-left: 0;
+
+    & a {
+      color: var(--hw-color-white);
+      text-decoration: none;
+    }
+
+    & a:hover {
+      border-bottom: 2px solid var(--hw-color-yellow);
+    }
   }
 
   /**
