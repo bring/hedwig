@@ -15,6 +15,15 @@ button {
   letter-spacing: -0.02em;
 }
 
+p,
+a {
+  font-family: var(--hw-font-primary-medium);
+
+  @media (--medium) {
+    font-family: var(--hw-font-primary-regular);
+  }
+}
+
 a {
   text-decoration: none;
 }
