@@ -25,7 +25,7 @@
     </a>
 
     <nav class="hw-navbar__menu">
-      <a href="#" class="hw-navbar__item" data-hw-toggle-menu>Logg inn</a>
+      <a href="#" class="hw-navbar__item">Logg inn</a>
       <button class="hw-navbar__search-button" data-hw-toggle-search>
         Søk
         <svg class="hw-navbar__search-icon">
