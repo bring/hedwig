@@ -12,6 +12,7 @@
 ```html
 <header class="hw-navbar">
   <div class="hw-navbar__content">
+
     <a href="#" class="hw-navbar__logo">
       <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
         <title id="Logo">Go to homepage</title>
@@ -22,8 +23,8 @@
         <use xlink:href="#logo-bring-white"></use>
       </svg>
     </a>
+
     <nav class="hw-navbar__menu">
-      <a href="#" class="hw-navbar__item">English</a>
       <a href="#" class="hw-navbar__item">Logg inn</a>
       <button class="hw-navbar__search-button" data-hw-toggle-search>
         Søk
@@ -40,7 +41,98 @@
         </div>
       </button>
     </nav>
-    <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
+    <section class="hw-navbar__drawer" data-hw-menu-drawer>
+      <div class="hw-navbar__drawer-content">
+
+        <div class="hw-navbar__drawer-mobile">
+
+          <div class="hw-search"
+            data-hw-search
+            data-hw-search-placeholders='["Sok"]'
+          >
+            <div class="hw-search__inner">
+              <input
+                data-hw-search-input
+                class="hw-search__input" type="text"
+                aria-label="Search" />
+              <svg class="hw-search__icon">
+                <use xlink:href="#search"></use>
+              </svg>
+              <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+            </div>
+          </div>
+
+          <div class="hw-block hw-block--full hw-block--mt-large">
+            <ul class="hw-accordion hw-accordion--dark" data-hw-accordion="example3" data-hw-accordion-allow-multiple>
+              <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                  Logg inn
+                  <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                   <a href="#" class="hw-link hw-link--inverted">This is an inverted link</a>
+                </div>
+              </li>
+              <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                  Sende
+                  <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                  <p>contents</p>
+                </div>
+              </li>
+              <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                  Motta
+                  <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                  <p>contents</p>
+                </div>
+              </li>
+              <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                  Rådgivning
+                  <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                  <p>contents</p>
+                </div>
+              </li>
+              <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                  Kundeservice
+                  <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                  <p>contents</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="hw-navbar__drawer-desktop">
+          <div class="hw-grid">
+            <div class="hw-grid__item hw-one-quarter">
+              <h2 class="hw-navbar__title">Title</h2>
+            </div><!--
+            --><div class="hw-grid__item hw-one-quarter">
+              <h2 class="hw-navbar__title">Title</h2>
+            </div><!--
+            --><div class="hw-grid__item hw-one-quarter">
+              <h2 class="hw-navbar__title">Title</h2>
+            </div><!--
+            --><div class="hw-grid__item hw-one-quarter">
+              <h2 class="hw-navbar__title">Title</h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
     <div class="hw-navbar__overlay" data-hw-navbar-overlay></div>
     <section class="hw-navbar__search">
       <div class="hw-search hw-search--large"
@@ -63,6 +155,8 @@
   </div>
 </header>
 ```
+
+<!--
 
 ### Navbar without search
 
@@ -127,3 +221,5 @@
   </div>
 </header>
 ```
+
+-->
