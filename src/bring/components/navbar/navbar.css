@@ -178,12 +178,9 @@
     margin-bottom: var(--hw-spacing-smallest);
   }
 
-  &__menu-group {
-    margin-top: var(--hw-spacing-larger);
-  }
-
   &__menu-group-title {
     color: var(--hw-color-white);
+    margin-top: var(--hw-spacing-larger);
   }
 
   &__menu-group-links {
@@ -193,6 +190,7 @@
     & a {
       color: var(--hw-color-white);
       text-decoration: none;
+      width: 100%;
     }
 
     & a:hover {

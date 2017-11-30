@@ -70,7 +70,16 @@
                   <div class="hw-accordion__arrow"></div>
                 </button>
                 <div class="hw-accordion__contents">
-                   <a href="#" class="hw-link hw-link--inverted">This is an inverted link</a>
+                  <div class="hw-navbar__menu-group">
+                    <ul class="hw-navbar__menu-group-links">
+                      <li>
+                        <a href="#">My bring</a>
+                      </li>
+                      <li>
+                        <a href="#">Min post</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </li>
               <li class="hw-accordion__item">

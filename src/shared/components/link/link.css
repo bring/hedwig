@@ -9,10 +9,11 @@
   cursor: pointer;
 
   &:hover,
-  :active {
+  &:active {
     color: var(--hw-color-link-hover);
     border-color: var(--hw-color-link-hover);
   }
+
   &:focus {
     background: var(--hw-color-link);
     box-shadow: 0 0 0 4px var(--hw-color-link);
