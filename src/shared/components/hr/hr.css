@@ -24,6 +24,10 @@
     background: var(--hw-color-white);
   }
 
+  &--primary {
+    background: var(--hw-color-primary);
+  }
+
   &--gray {
     background: var(--hw-color-gray);
   }
