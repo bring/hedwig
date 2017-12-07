@@ -85,22 +85,22 @@ Styling for buttons.
 ### Round button with icon
 
 ```html|span-4
-  <button class="hw-button hw-button--round hw-button--primary">
+  <button class="hw-button hw-button--primary hw-button--round">
     <svg class="hw-icon">
       <use xlink:href="#globe"></use>
     </svg>
   </button>
-  <button class="hw-button hw-button--round hw-button--secondary">
+  <button class="hw-button hw-button--secondary hw-button--round">
     <svg class="hw-icon">
       <use xlink:href="#globe"></use>
     </svg>
   </button>
-  <button class="hw-button hw-button--round hw-button--outline">
+  <button class="hw-button hw-button--outline hw-button--round">
     <svg class="hw-icon">
       <use xlink:href="#globe"></use>
     </svg>
   </button>
-  <button class="hw-button hw-button--round hw-button--stripped">
+  <button class="hw-button hw-button--stripped hw-button--round">
     <svg class="hw-icon">
       <use xlink:href="#globe"></use>
     </svg>

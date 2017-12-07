@@ -98,6 +98,10 @@
     color: var(--hw-color-gray);
     fill: var(--hw-color-gray);
 
+    &:not([disabled],.hw-button--round) {
+      padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
+    }
+
     &:hover,
     &:active,
     &:focus {
@@ -119,6 +123,10 @@
     background: none;
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
+
+    &:not([disabled],.hw-button--round) {
+      padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
+    }
 
     &:hover,
     &:active,
