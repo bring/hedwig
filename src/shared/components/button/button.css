@@ -16,6 +16,7 @@
   line-height: var(--hw-font-size-p);
   transition: all cubic-bezier(0.08, 0.84, 0.07, 0.96) 120ms, background 75ms;
   cursor: pointer;
+  outline: 1px solid transparent;
 
   &:disabled {
     color: var(--hw-color-white) !important;
