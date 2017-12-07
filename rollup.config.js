@@ -14,6 +14,12 @@ export default {
     include: ['src/**/*.js'],
     exclude: ['src/**/*.test.js'],
   },
+  onwarn: (warning) => {
+    // Skip certain warnings
+    if (warning.code === 'THIS_IS_UNDEFINED') { return; }
+    // console.warn everything else
+    console.warn(warning.message);
+  },
   dest: 'build/main.js',
   plugins: [
     resolve(),
