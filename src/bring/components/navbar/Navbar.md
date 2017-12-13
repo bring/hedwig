@@ -25,7 +25,7 @@
     </a>
 
     <nav class="hw-navbar__menu">
-      <a href="#" class="hw-navbar__item">Logg inn</a>
+      <button class="hw-navbar__item" data-hw-toggle-login>Logg inn</button>
       <button class="hw-navbar__search-button" data-hw-toggle-search>
         Søk
         <svg class="hw-navbar__search-icon">
@@ -41,6 +41,41 @@
         </div>
       </button>
     </nav>
+
+    <section class="hw-navbar__login" data-hw-menu-drawer>
+      <div class="hw-navbar__login-content">
+        <div class="hw-grid">
+          <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
+            <a href="#" class="hw-card-cta">
+              <h2 class="hw-card-cta__title">Logg inn her</h2>
+              <hr class="hw-hr hw-hr--centered" />
+              <p class="hw-card-cta__text">
+                
+              </p>
+            </a>
+          </div><!--
+       --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
+            <a href="#" class="hw-card-cta">    
+              <h2 class="hw-card-cta__title">Logg inn der</h2>
+              <hr class="hw-hr hw-hr--centered" />
+              <div class="hw-card-cta__text">
+
+              </div>
+            </a>
+          </div><!--
+       --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
+            <a href="#" class="hw-card-cta">
+              <h2 class="hw-card-cta__title">Logg in her og der</h2>
+              <hr class="hw-hr hw-hr--centered" />
+              <div class="hw-card-cta__text">
+
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="hw-navbar__drawer" data-hw-menu-drawer>
       <div class="hw-navbar__drawer-content">
 
