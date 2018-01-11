@@ -10,5 +10,8 @@ Datepicker component
 ### Default Hero
 
 ```html|span-2
-  <input type="text" class="hw-input" data-hw-datepicker placeholder="Velg en dato" />
+  <label class="hw-label">
+    Tidspunkt for levering
+    <input type="text" class="hw-input" data-hw-datepicker placeholder="Velg en dato" />
+  </label>
 ```
