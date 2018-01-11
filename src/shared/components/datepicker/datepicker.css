@@ -3,13 +3,31 @@
  * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
  */
 
+.hw-datepicker {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.hw-datepicker__icon {
+  position: absolute;
+  right: var(--hw-spacing-smaller);
+  bottom: var(--hw-spacing-smaller);
+}
+
 .pika-single {
   z-index: 9999;
   display: block;
-  position: relative;
+  position: absolute !important;
+  width: 100%;
+  min-width: 300px;
   background: var(--hw-color-white);
   border: 3px solid var(--hw-color-gray-darker);
   font-family: var(--hw-font-primary-regular), Helvetica, Arial, sans-serif;
+}
+
+.pika-title {
+  color: var(--hw-color-gray-dark);
 }
 
 /*

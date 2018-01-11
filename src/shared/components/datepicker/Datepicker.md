@@ -9,9 +9,14 @@ Datepicker component
 
 ### Default Hero
 
-```html|span-2
-  <label class="hw-label">
-    Tidspunkt for levering
+```html|span-3
+  <label class="hw-datepicker">
+    <p class="hw-text-small">Tidspunkt for levering</p>
     <input type="text" class="hw-input" data-hw-datepicker placeholder="Velg en dato" />
+    <span class="hw-datepicker__icon">
+      <svg class="hw-icon">
+        <use xlink:href="#calendar"></use>
+      </svg>
+    </span>
   </label>
 ```

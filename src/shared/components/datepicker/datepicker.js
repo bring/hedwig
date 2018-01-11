@@ -39,7 +39,8 @@ const HWDatePicker = ({
 
       // Create a new pikadate instance
       const pikaday = new Pikaday({
-        field: document.getElementById(datePickerId),
+        field: datepicker,
+        container: datepicker.parentNode,
         firstDay: 1,
         i18n: {
           previousMonth: 'Forrige måned',
