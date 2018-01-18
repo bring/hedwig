@@ -50,6 +50,25 @@ Optional:
 </label>
 ```
 
+### Dropdown searchable
+
+```html
+<label class="hw-label">
+  Select country
+  <select
+    data-hw-dropdown-searchable
+    data-hw-dropdown-default-selected="2"
+    data-hw-dropdown="countries2">
+    <option value="1">Afghanistan</option>
+    <option value="2">Algerie</option>
+    <option value="3">Antarctica</option>
+    <option value="4">Austraoptiona</option>
+    <option value="5">Booptionvia</option>
+    <option value="6">Bosnia</option>
+  </select>
+</label>
+```
+
 ### Dropdown with list too long for the screen
 
 ```html
