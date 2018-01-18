@@ -50,6 +50,7 @@
     padding: 9px var(--hw-spacing-large) 9px var(--hw-spacing-small);
     margin: 3px 0;
     line-height: var(--hw-font-size-p);
+    width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -119,6 +120,13 @@
 
   &--expanded .hw-dropdown__arrow::after {
     transform: rotate(-45deg);
+  }
+
+  &--searchable {
+    & .hw-dropdown__placeholder {
+      outline: 0;
+      border: 0;
+    }
   }
 
   &--small {

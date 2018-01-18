@@ -31,6 +31,7 @@ const HWDropdown = ({
    */
   function selectOption(dropdown, selectedOption) {
     const placeHolderEl = q('.hw-dropdown__placeholder', dropdown);
+    const isSearchable = dropdown.getAttribute('data-hw-dropdown-searchable');
 
     // Update native select element with selected value
     dropdown.nextElementSibling.value = selectedOption;
@@ -49,7 +50,10 @@ const HWDropdown = ({
       const { hwDropdownValue } = option.dataset;
       if (hwDropdownValue === selectedOption) {
         option.dataset.hwDropdownOptionSelected = true;
-        placeHolderEl.innerText = option.innerText;
+        // Set selected value in either input-placeholder or div-placeholder
+        isSearchable === 'true' ?
+          placeHolderEl.placeholder = option.innerText :
+          placeHolderEl.innerText = option.innerText;
       } else {
         option.dataset.hwDropdownOptionSelected = false;
       }
@@ -104,7 +108,7 @@ const HWDropdown = ({
    * @desc Toggles the dropdown options list for a dropdown
    * @param {Event} e
    */
-  function toggleDropdown(e) {
+  function toggleDropdown(e, isSearchable) {
     e.preventDefault();
     // Determine if we've clicked on an option
     const target = e.target;
@@ -131,18 +135,18 @@ const HWDropdown = ({
   }
 
   /**
-   * @function closeToggleOutside
+   * @function clickOutside
    * @desc Closes the dropdown if user clicks outside the dropdown
    * @param {Event} e
    */
-  function closeToggleOutside(e) {
+  function clickOutside(e) {
     e.preventDefault();
 
     const dropDownSelectors = qa('.hw-dropdown');
 
     dropDownSelectors.forEach((dropdown) => {
       if (e.target === dropdown || dropdown.contains(e.target)) {
-        console.log('is dropdown');
+        return;
       } else {
         // Find dropdown-list within dropdown container
         const list = q('.hw-dropdown__options', dropdown);
@@ -222,16 +226,40 @@ const HWDropdown = ({
     }
   }
 
+  /**
+   * @function searchInDropdown
+   * @desc Adds listener to list button
+   * @param {node} dropdown
+   */
+  function searchInDropdown(e, dropdown) {
+    const searchText = e.target.value.toLowerCase();
+    const dropDownOptions = qa('.hw-dropdown__option', dropdown);
+
+    dropDownOptions.forEach((option) => {
+      const optionText = option.innerHTML.toLowerCase();
+      if (!optionText.includes(searchText)) {
+        option.style.display = 'none';
+      } else {
+        option.style.display = 'block';
+      }
+    });
+  }
+
 
   /**
    * @function bindEvents
    * @desc Adds listener to dropdown
    * @param {node} dropdown
    */
-  function bindEvents(dropdown) {
-    window.addEventListener('click', closeToggleOutside)
+  function bindEvents(dropdown, isSearchable) {
+    window.addEventListener('click', clickOutside)
     dropdown.addEventListener('click', toggleDropdown);
     dropdown.addEventListener('keydown', handleKeyboardEvents);
+
+    if (isSearchable) {
+      const searchInput = q('input', dropdown);
+      searchInput.addEventListener('input', e => searchInDropdown(e, dropdown));
+    }
   }
 
 
@@ -240,17 +268,16 @@ const HWDropdown = ({
    * @desc Build custom markup from native select element
    * @param {node} dropdown
    */
-  function renderMarkup(dropdown, dropdownName) {
-    const isSmall = dropdown.getAttribute('data-hw-dropdown-small') !== null;
+  function renderMarkup(dropdown, dropdownName, isSearchable, isSmall) {
 
     const options = [...dropdown.children].reduce((string, option) => {
       return `${string}<li class="hw-dropdown__option" data-hw-dropdown-value="${option.value}">${option.text}</li>`;
     }, '');
 
     const markup = `
-      <div class="hw-dropdown ${isSmall && 'hw-dropdown--small'}" data-hw-dropdown-custom="${dropdownName}">
+      <div class="hw-dropdown ${isSmall ? 'hw-dropdown--small' : null} ${isSearchable ? 'hw-dropdown--searchable' : null}" data-hw-dropdown-custom="${dropdownName}">
         <div class="hw-dropdown__inner">
-          <div class="hw-dropdown__placeholder"></div>
+          ${isSearchable ? '<input class="hw-dropdown__placeholder"></input>' : '<div class="hw-dropdown__placeholder"></div>'}
           <div class="hw-dropdown__arrow"></div>
           <ul class="hw-dropdown__options">
             ${options}
@@ -281,14 +308,20 @@ const HWDropdown = ({
       // Add aria roles and attributes
       const dropdownName = dropdown.getAttribute('data-hw-dropdown');
 
+      const isSearchable = dropdown.getAttribute('data-hw-dropdown-searchable') !== null;
+      const isSmall = dropdown.getAttribute('data-hw-dropdown-small') !== null;
+
       // Render custom markup
-      renderMarkup(dropdown, dropdownName);
+      renderMarkup(dropdown, dropdownName, isSearchable, isSmall);
       const customDropdown = q(`[data-hw-dropdown-custom="${dropdownName}"]`);
 
       dropdown.setAttribute('data-hw-dropdown-initialised', true);
       customDropdown.setAttribute('aria-controls', dropdownName);
       customDropdown.setAttribute('aria-role', 'listbox');
       customDropdown.setAttribute('tabindex', '0');
+      if (isSearchable) {
+        customDropdown.setAttribute('data-hw-dropdown-searchable', true);
+      }
 
       // Hide native select element
       dropdown.style.display = 'none';
@@ -298,7 +331,7 @@ const HWDropdown = ({
       selectOption(customDropdown, defaultOption);
 
       // Set up event listeners for opening dropdown
-      bindEvents(customDropdown);
+      bindEvents(customDropdown, isSearchable);
     });
   }
 
