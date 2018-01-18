@@ -51,9 +51,12 @@ const HWDropdown = ({
       if (hwDropdownValue === selectedOption) {
         option.dataset.hwDropdownOptionSelected = true;
         // Set selected value in either input-placeholder or div-placeholder
-        isSearchable === 'true' ?
-          placeHolderEl.placeholder = option.innerText :
+        if (isSearchable === 'true') {
+          placeHolderEl.placeholder = option.innerText;
+          placeHolderEl.value = option.innerText;
+        } else {
           placeHolderEl.innerText = option.innerText;
+        }
       } else {
         option.dataset.hwDropdownOptionSelected = false;
       }
@@ -171,7 +174,21 @@ const HWDropdown = ({
     // Find dropdown-list within dropdown container
     let nextEl;
     const dropdown = e.currentTarget;
-    const allOptions = qa('.hw-dropdown__option', dropdown);
+
+    // TODO: Make an array of the options and filter out the ones that are hidden
+
+    const options = qa('.hw-dropdown__option', dropdown);
+    const optionList = Array.from(options);
+    console.log(optionList);
+    const allOptions = optionList.filter((option) => {
+      const isHidden = option.getAttribute('data-hw-dropdown-option-hidden') !== false;
+      console.log('isHidden', isHidden);
+      return !isHidden;
+    });
+
+    // TODO end
+
+    console.log(allOptions);
 
     // Find previously selected value
     const selected = qa('[data-hw-dropdown-option-selected="true"]', dropdown);
@@ -232,6 +249,12 @@ const HWDropdown = ({
    * @param {node} dropdown
    */
   function searchInDropdown(e, dropdown) {
+    // Always open the dropdown when searcing
+    const list = q('.hw-dropdown__options', dropdown);
+    list.setAttribute('aria-hidden', false);
+    dropdown.classList.add(activeClass);
+    handleFitInViewport(dropdown);
+
     const searchText = e.target.value.toLowerCase();
     const dropDownOptions = qa('.hw-dropdown__option', dropdown);
 
@@ -239,8 +262,10 @@ const HWDropdown = ({
       const optionText = option.innerHTML.toLowerCase();
       if (!optionText.includes(searchText)) {
         option.style.display = 'none';
+        option.setAttribute('data-hw-dropdown-option-hidden', true);
       } else {
         option.style.display = 'block';
+        option.setAttribute('data-hw-dropdown-option-hidden', false);
       }
     });
   }
@@ -328,7 +353,8 @@ const HWDropdown = ({
 
       // Find initially selected option, otherwise select first element
       const defaultOption = dropdown.getAttribute('data-hw-dropdown-default-selected') || dropdown.children[0].value;
-      selectOption(customDropdown, defaultOption);
+      // Only init select if dropdown is not searchable
+      if (!isSearchable) { selectOption(customDropdown, defaultOption); }
 
       // Set up event listeners for opening dropdown
       bindEvents(customDropdown, isSearchable);

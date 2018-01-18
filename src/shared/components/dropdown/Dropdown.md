@@ -52,12 +52,13 @@ Optional:
 
 ### Dropdown searchable
 
+Don't use default selected here as you want the user to start with an empty input.
+
 ```html
 <label class="hw-label">
   Select country
   <select
     data-hw-dropdown-searchable
-    data-hw-dropdown-default-selected="2"
     data-hw-dropdown="countries2">
     <option value="1">Afghanistan</option>
     <option value="2">Algerie</option>
