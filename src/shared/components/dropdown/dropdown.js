@@ -175,20 +175,15 @@ const HWDropdown = ({
     let nextEl;
     const dropdown = e.currentTarget;
 
-    // TODO: Make an array of the options and filter out the ones that are hidden
-
-    const options = qa('.hw-dropdown__option', dropdown);
-    const optionList = Array.from(options);
-    console.log(optionList);
-    const allOptions = optionList.filter((option) => {
-      const isHidden = option.getAttribute('data-hw-dropdown-option-hidden') !== false;
-      console.log('isHidden', isHidden);
-      return !isHidden;
+    // Find all options in dropdown and put in an array
+    const options = [...dropdown.querySelectorAll('.hw-dropdown__option')];
+    // Return only the visible options (attributes set by search)
+    const allOptions = options.filter((option) => {
+      const isHidden = option.getAttribute('data-hw-dropdown-option-hidden');
+      // Convert attribute string to boolean
+      const isHiddenBoolean = (isHidden === 'true');
+      return !isHiddenBoolean;
     });
-
-    // TODO end
-
-    console.log(allOptions);
 
     // Find previously selected value
     const selected = qa('[data-hw-dropdown-option-selected="true"]', dropdown);
