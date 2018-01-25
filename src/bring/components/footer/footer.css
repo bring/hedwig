@@ -11,7 +11,7 @@
    */
 
   &__mobile {
-    max-width: 510px;
+    max-width: var(--hw-width-contents);
     margin: 0 auto;
 
     @media (--large) {
