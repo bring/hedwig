@@ -6,11 +6,11 @@
     <thead>
       <tr>
        <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
-        <th data-hw-sort-default>First name</th>
-        <th data-hw-sort-default>Last name</th>
-        <th data-hw-sort-default>Age</th>
-        <th data-hw-sort-default>Sex</th>
-        <th data-hw-sort-default>Country</th>
+        <th data-hw-sort-method="none" data-hw-sort-default>First name</th>
+        <th data-hw-sort-arrows="true" data-hw-sort>Last name</th>
+        <th data-hw-sort-arrows="true" data-hw-sort>Age</th>
+        <th data-hw-sort-arrows="true" data-hw-sort>Sex</th>
+        <th data-hw-sort-arrows="true" data-hw-sort>Country</th>
       </tr>
     </thead>
     <tbody>
@@ -54,11 +54,11 @@
     <thead>
       <tr>
        <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
-        <th data-hw-sort-default>First name</th>
-        <th data-hw-sort-default>Last name</th>
-        <th data-hw-sort-default>Age</th>
-        <th data-hw-sort-default>Sex</th>
-        <th data-hw-sort-default>Country</th>
+        <th data-hw-sort-arrows="true">First name</th>
+        <th data-hw-sort-arrows="true">Last name</th>
+        <th data-hw-sort-arrows="true">Age</th>
+        <th data-hw-sort-arrows="true">Sex</th>
+        <th data-hw-sort-arrows="true" data-hw-sort-default>Country</th>
       </tr>
     </thead>
     <tbody>

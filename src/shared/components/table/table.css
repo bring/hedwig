@@ -26,19 +26,63 @@
   & th {
     padding: var(--hw-spacing-small);
     border: 0;
+    position: relative;
+    border-right: 2px solid #e6e6e6;
   }
 
-  & th[data-hw-sort-method] {
+  & th:nth-last-of-type {
+    border-right: 0;
+  }
+
+  & th[data-hw-sort-arrows] {
     cursor: pointer;
   }
 
-  & th[data-hw-sort-default] {
-    cursor: pointer;
+  & th[data-hw-sort-arrows]:hover {
+    background-color: var(--hw-color-gray-dark);
+  }
+
+  & th[data-hw-sort-arrows]::after {
+    content: '';
+    position: absolute;
+    right: var(--hw-spacing-small);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  & th[data-hw-sort-arrows]:hover::after {
+    content: '\2193';
+    opacity: 1;
+    background-color: var(--hw-color-gray-dark);
+  }
+
+  & th[aria-sort="ascending"] {
+    background-color: var(--hw-color-gray-dark);
+  }
+
+  & th[aria-sort="descending"] {
+    background-color: var(--hw-color-gray-dark);
+  }
+
+  & th[data-hw-sort-arrows][aria-sort="ascending"]::after {
+    opacity: 1;
+    content: '\2191';
+  }
+
+  & th[data-hw-sort-arrows][aria-sort="descending"]::after {
+    opacity: 1;
+    content: '\2193';
   }
 
   & tbody {
     background-color: var(--hw-color-white);
+    color: var(--hw-color-black);
   }
+
+  /*& tbody tr:nth-of-type(even) {
+    background-color: var(--hw-color-gray-lightest);
+    color: var(--hw-color-black);
+  }*/
 
   & td {
     padding: var(--hw-spacing-small);
@@ -51,4 +95,9 @@
       background-color: var(--hw-color-gray-lightest);
     }
   }
+
+  /**
+   * Modifiers
+   */
+
 }

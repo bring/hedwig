@@ -39,7 +39,7 @@ const HWTable = ({
         table.tBodies[0].style.height = `${tableHeight}px`;
       }
 
-      // Create a new pikadate instance
+      // Create a new table instance
       const newTable = new Tablesort(table);
     });
   }
