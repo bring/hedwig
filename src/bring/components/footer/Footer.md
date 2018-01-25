@@ -15,10 +15,10 @@
           <hr class="hw-hr hw-hr--white" />
           <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
-            <li><a href="#">Aliquam consequat</a></li>
-            <li><a href="#">Vivamus eros</a></li>
-            <li><a href="#">Vivamus pulvinar</a></li>
-            <li><a href="#">Cras at</a></li>
+            <li><a class="hw-footer__link" href="#">Aliquam consequat</a></li>
+            <li><a class="hw-footer__link" href="#">Vivamus eros</a></li>
+            <li><a class="hw-footer__link" href="#">Vivamus pulvinar</a></li>
+            <li><a class="hw-footer__link" href="#">Cras at</a></li>
             </ul>
           </div>
         </div><!--
@@ -27,10 +27,10 @@
           <hr class="hw-hr hw-hr--white" />
           <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
-            <li><a href="#">Aliquam consequat</a></li>
-            <li><a href="#">Vivamus eros</a></li>
-            <li><a href="#">Vivamus pulvinar</a></li>
-            <li><a href="#">Cras at</a></li>
+            <li><a class="hw-footer__link" href="#">Aliquam consequat</a></li>
+            <li><a class="hw-footer__link" href="#">Vivamus eros</a></li>
+            <li><a class="hw-footer__link" href="#">Vivamus pulvinar</a></li>
+            <li><a class="hw-footer__link" href="#">Cras at</a></li>
             </ul>
           </div>
         </div><!--
@@ -39,10 +39,10 @@
           <hr class="hw-hr hw-hr--white" />
           <div class="hw-block hw-block--full hw-block--mt-small">
             <ul class="hw-footer__links">
-              <li><a href="#">Aliquam consequat</a></li>
-              <li><a href="#">Vivamus eros</a></li>
-              <li><a href="#">Vivamus pulvinar</a></li>
-              <li><a href="#">Cras at</a></li>
+              <li><a class="hw-footer__link" href="#">Aliquam consequat</a></li>
+              <li><a class="hw-footer__link" href="#">Vivamus eros</a></li>
+              <li><a class="hw-footer__link" href="#">Vivamus pulvinar</a></li>
+              <li><a class="hw-footer__link" href="#">Cras at</a></li>
             </ul>
           </div>
         </div><!--
@@ -86,7 +86,26 @@
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
-              Lorem ipsum
+              <ul class="hw-footer__links">
+                <li>
+                  <a class="hw-footer__link" href="https://www.postennorge.no/om-oss">Om Bring</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/tjenester">Våre tjenester</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/priser">Priser</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/vilkar">Vilkår</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/jobb">Jobb og karriere</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/radgivning/bringnettverket/om-bring">Miljø</a>
+                </li>
+              </ul>
           </div>
           </li>
           <li class="hw-accordion__item">
@@ -95,7 +114,26 @@
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
-              Lorem ipsum
+              <ul class="hw-footer__links">
+                <li>
+                  <a class="hw-footer__link" href="https://www.postennorge.no/om-oss">Om Bring</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/tjenester">Våre tjenester</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/priser">Priser</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/vilkar">Vilkår</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/jobb">Jobb og karriere</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/radgivning/bringnettverket/om-bring">Miljø</a>
+                </li>
+              </ul>
             </div>
           </li>
           <li class="hw-accordion__item">
@@ -104,7 +142,26 @@
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
-              Lorem ipsum
+              <ul class="hw-footer__links">
+                <li>
+                  <a class="hw-footer__link" href="https://www.postennorge.no/om-oss">Om Bring</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/tjenester">Våre tjenester</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/priser">Priser</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/vilkar">Vilkår</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/jobb">Jobb og karriere</a>
+                </li>
+                <li>
+                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/radgivning/bringnettverket/om-bring">Miljø</a>
+                </li>
+              </ul>
             </div>
           </li>
         </ul>
