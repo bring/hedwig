@@ -17,6 +17,28 @@ const HWTable = ({
   };
 
   /**
+   * @function scrollHeader
+   * @desc Scroll the header when table body is scrolled
+   * @param {node} table
+   */
+
+  function scrollHeader(e, table) {
+    const tableHead = table.tHead;
+    const scrollPosition = e.target.scrollLeft;
+    tableHead.scrollTo(scrollPosition, 0);
+  }
+
+/**
+ * @function bindEvents
+ * @desc Adds listener to the table
+ * @param {node} table
+ */
+
+  function bindEvents(table) {
+    table.tBodies[0].addEventListener('scroll', e => scrollHeader(e, table));
+  }
+
+  /**
    * @function init
    * @desc Initialises the module
    */
@@ -38,6 +60,8 @@ const HWTable = ({
       if (tableHeight) {
         table.tBodies[0].style.height = `${tableHeight}px`;
       }
+
+      bindEvents(table);
 
       // Create a new table instance
       const newTable = new Tablesort(table);

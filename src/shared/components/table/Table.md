@@ -49,7 +49,7 @@
 ### Table - fixed header
 
 ```html
-<div class="hw-table" data-hw-table-height="200">
+<div class="hw-table hw-table--fixed-header" data-hw-table-height="200">
   <table data-hw-table="tablename" >
     <thead>
       <tr>

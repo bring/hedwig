@@ -18,12 +18,12 @@
   }
 
   & thead {
-    background-color: var(--hw-color-gray);
     color: var(--hw-color-white);
     text-align: left;
   }
 
   & th {
+    background-color: var(--hw-color-gray);
     padding: var(--hw-spacing-small);
     border: 0;
     position: relative;
@@ -79,15 +79,11 @@
     color: var(--hw-color-black);
   }
 
-  /*& tbody tr:nth-of-type(even) {
-    background-color: var(--hw-color-gray-lightest);
-    color: var(--hw-color-black);
-  }*/
-
   & td {
     padding: var(--hw-spacing-small);
     border-width: 2px;
     border-style: solid;
+    background-color: var(--hw-color-white);
     border-color: var(--hw-color-gray-lighter);
     border-top: 0;
 
@@ -100,4 +96,47 @@
    * Modifiers
    */
 
+  &--fixed-header {
+    & table {
+      table-layout: fixed;
+      border-collapse: collapse;
+      display: block;
+      overflow: hidden;
+    }
+
+    & th {
+      min-width: 300px;
+    }
+
+    & td {
+      min-width: 300px;
+    }
+
+    & tr {
+      display: block;
+      position: relative;
+    }
+
+    & thead {
+      display: block;
+      overflow: scroll;
+      width: 100%;
+
+      & tr {
+        position: relative;
+        display: block;
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    & tbody {
+      overflow: scroll;
+      display: block;
+      height: 300px;
+      width: 100%;
+    }
+  }
 }
