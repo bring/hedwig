@@ -44,18 +44,19 @@ const HWDropdown = ({
       dropdown.fireEvent('onchange');
     }
 
-    // Loop through options and select passed option
+    // Find all list options
     const allOptions = qa('.hw-dropdown__option', dropdown);
+    // Loop through options and select passed option
     return allOptions.forEach((option) => {
-      const { hwDropdownValue } = option.dataset;
+      const { hwDropdownValue, hwDropdownPlaceholder } = option.dataset;
       if (hwDropdownValue === selectedOption) {
         option.dataset.hwDropdownOptionSelected = true;
         // Set selected value in either input-placeholder or div-placeholder
         if (isSearchable === 'true') {
-          placeHolderEl.placeholder = option.innerText;
+          placeHolderEl.placeholder = hwDropdownPlaceholder || option.innerText;
           placeHolderEl.value = option.innerText;
         } else {
-          placeHolderEl.innerText = option.innerText;
+          placeHolderEl.innerText = hwDropdownPlaceholder || option.innerText;
         }
       } else {
         option.dataset.hwDropdownOptionSelected = false;
@@ -291,7 +292,11 @@ const HWDropdown = ({
   function renderMarkup(dropdown, dropdownName, isSearchable, isSmall) {
 
     const options = [...dropdown.children].reduce((string, option) => {
-      return `${string}<li class="hw-dropdown__option" data-hw-dropdown-value="${option.value}">${option.text}</li>`;
+      const placeholder = option.getAttribute('data-hw-dropdown-placeholder');
+      return `${string}
+      <li class="hw-dropdown__option" data-hw-dropdown-placeholder="${placeholder}" data-hw-dropdown-value="${option.value}">
+      ${option.text}
+      </li>`;
     }, '');
 
     const markup = `

@@ -16,7 +16,9 @@ Required:
 Optional:
 
 [data-hw-dropdown-default-selected]   Value of option that should be selected by default
+[data-hw-dropdown-searchable]         Makes the dropdown searchable
 [data-hw-dropdown-small]              Reduced version (see bottom of page)
+[data-hw-dropdown-searchable]         Overrides the placeholder with custom value
 
 ```
 
