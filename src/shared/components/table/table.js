@@ -1,3 +1,4 @@
+import throttle from 'lodash/throttle';
 import Tablesort from './table-sort';
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
@@ -8,9 +9,7 @@ import qa from '../../utilities/js/qa';
  * @desc
  * @param {object} settings
  */
-const HWTable = ({
-    tableSelector = '[data-hw-table]',
-  } = {}) => {
+const HWTable = ({ tableSelector = '[data-hw-table]' } = {}) => {
   // Module settings object
   const SETTINGS = {
     elements: qa(tableSelector), // All module DOM nodes
@@ -22,20 +21,29 @@ const HWTable = ({
    * @param {node} table
    */
 
-  function scrollHeader(e, table) {
-    const tableHead = table.tHead;
+  function scrollHeader(e, headersFixedLeft, topHeader) {
     const scrollPosition = e.target.scrollLeft;
-    tableHead.scrollTo(scrollPosition, 0);
+
+    topHeader.scrollLeft = scrollPosition;
+    headersFixedLeft.forEach((head) => {
+      head.style.transform = `translateX(${scrollPosition}px)`;
+    });
   }
 
-/**
- * @function bindEvents
- * @desc Adds listener to the table
- * @param {node} table
- */
+  /**
+   * @function bindEvents
+   * @desc Adds listener to the table
+   * @param {node} table
+   */
 
   function bindEvents(table) {
-    table.tBodies[0].addEventListener('scroll', e => scrollHeader(e, table));
+    const topHeader = table.querySelector('thead');
+    const headersFixedLeft = [...table.querySelectorAll('[data-hw-table-fixed-left]')];
+
+    table.addEventListener('scroll', (e) => {
+      scrollHeader(e, headersFixedLeft, topHeader);
+      /* renderFixedLeft(headersFixedLeft); */
+    });
   }
 
   /**
@@ -50,7 +58,9 @@ const HWTable = ({
     // Loop through all modules and initialise each
     SETTINGS.elements.forEach((table, index) => {
       // Skip if already initialised
-      if (table.getAttribute('data-hw-table-initialised') === 'true') { return false; }
+      if (table.getAttribute('data-hw-table-initialised') === 'true') {
+        return false;
+      }
 
       // Mark as initialised
       table.setAttribute('data-hw-table-initialised', true);
@@ -67,7 +77,6 @@ const HWTable = ({
       const newTable = new Tablesort(table);
     });
   }
-
 
   // Initialise HWTable component
   init();

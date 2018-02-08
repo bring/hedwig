@@ -43,7 +43,7 @@
   }
 
   & th[data-hw-sort-arrows]::after {
-    content: '';
+    content: "";
     position: absolute;
     right: var(--hw-spacing-small);
     top: 50%;
@@ -51,7 +51,7 @@
   }
 
   & th[data-hw-sort-arrows]:hover::after {
-    content: '\2193';
+    content: "\2193";
     opacity: 1;
     background-color: var(--hw-color-gray-dark);
   }
@@ -66,17 +66,23 @@
 
   & th[data-hw-sort-arrows][aria-sort="ascending"]::after {
     opacity: 1;
-    content: '\2191';
+    content: "\2191";
   }
 
   & th[data-hw-sort-arrows][aria-sort="descending"]::after {
     opacity: 1;
-    content: '\2193';
+    content: "\2193";
   }
 
   & tbody {
     background-color: var(--hw-color-white);
     color: var(--hw-color-black);
+
+    & th {
+      background-color: var(--hw-color-white);
+      border-color: var(--hw-color-gray-lighter);
+      display: block;
+    }
   }
 
   & td {
@@ -97,43 +103,44 @@
    */
 
   &--fixed-header {
+    position: relative;
+    display: block;
+
     & table {
       table-layout: fixed;
       border-collapse: collapse;
       display: block;
-      overflow: hidden;
+      overflow: auto;
     }
 
     & th {
       min-width: 300px;
     }
 
+    & th[data-hw-table-fixed-left] {
+      position: relative;
+      box-shadow: 2px 0 3px rgba(0, 0, 0, 0.25);
+      z-index: 99;
+    }
+
     & td {
       min-width: 300px;
     }
 
-    & tr {
-      display: block;
-      position: relative;
-    }
-
     & thead {
+      position: absolute;
+      overflow: hidden;
+      left: 0;
+      top: 0;
+      z-index: 100;
       display: block;
-      overflow: scroll;
+      vertical-align: middle;
       width: 100%;
-
-      & tr {
-        position: relative;
-        display: block;
-      }
-
-      &::-webkit-scrollbar {
-        display: none;
-      }
     }
 
     & tbody {
-      overflow: scroll;
+      padding-top: 60px;
+      position: relative;
       display: block;
       height: 300px;
       width: 100%;
