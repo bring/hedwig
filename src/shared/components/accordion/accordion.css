@@ -123,23 +123,17 @@
 
     /* Dark version has top/bottom borders */
     & .hw-accordion__item {
+      border-top: 3px solid rgba(242, 242, 242, 0.1);
+
       &:last-child {
         margin-bottom: 0;
-      }
-
-      &:first-child .hw-accordion__trigger {
-        border-top: 1px solid rgba(242, 242, 242, 0.1);
-      }
-
-      &:last-child .hw-accordion__trigger {
-        border-bottom: 1px solid rgba(242, 242, 242, 0.1);
       }
     }
 
     & .hw-accordion__trigger {
+      border: 0;
       color: var(--hw-color-white);
       font-size: var(--hw-font-size-h3);
-      border-width: 1px;
       border-color: rgba(242, 242, 242, 0.1);
     }
 
