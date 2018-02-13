@@ -65,8 +65,12 @@
     background: #fff;
     padding: var(--hw-spacing);
 
-    @media (--medium) {
-      max-width: 700px;
+    @media (--large) {
+      max-width: 50vw;
+    }
+
+    @media (--xlarge) {
+      max-width: 33vw;
     }
   }
 
