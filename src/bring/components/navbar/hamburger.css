@@ -34,6 +34,10 @@
 
   &.hw-hamburger--active .hw-hamburger__part {
     background: var(--hw-color-white);
+
+    @media (--large) {
+      background: var(--hw-color-gray-darker);
+    }
   }
 
   &.hw-hamburger--active > .hw-hamburger__part:first-child {

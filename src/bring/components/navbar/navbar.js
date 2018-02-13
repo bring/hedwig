@@ -10,7 +10,6 @@ import q from '../../../shared/utilities/js/q';
 const HWNavbar = ({
   navbarSelector = '.hw-navbar',
   menuButtonSelector = '[data-hw-toggle-menu]',
-  loginButtonSelector = '[data-hw-toggle-login]',
   searchButtonSelector = '[data-hw-toggle-search]',
   overlaySelector = '[data-hw-navbar-overlay]',
   hamburgerIcon = '[data-hw-menu-icon]',
@@ -24,7 +23,6 @@ const HWNavbar = ({
   const SETTINGS = {
     navbar: q(navbarSelector), // All navbar DOM nodes
     menuButton: q(menuButtonSelector),
-    loginButton: q(loginButtonSelector),
     searchButton: q(searchButtonSelector),
     overlay: q(overlaySelector),
     hamburgerIcon: q(hamburgerIcon),
@@ -52,17 +50,6 @@ const HWNavbar = ({
     SETTINGS.hamburgerIcon.classList.add(activeHamburgerClass);
   }
 
-  function toggleLogin() {
-    if (SETTINGS.navbar.classList.contains(loginActiveClass)) {
-      SETTINGS.navbar.classList.remove(loginActiveClass);
-      SETTINGS.hamburgerIcon.classList.remove(activeHamburgerClass);
-      return;
-    }
-
-    SETTINGS.navbar.classList.add(loginActiveClass);
-    SETTINGS.hamburgerIcon.classList.add(activeHamburgerClass);
-  }
-
   function toggleSearch() {
     if (SETTINGS.navbar.classList.contains(showSearchClass)) {
       SETTINGS.navbar.classList.remove(showSearchClass);
@@ -86,17 +73,6 @@ const HWNavbar = ({
 
       // Attach event listeners
       SETTINGS.menuButton.addEventListener('click', toggleMenu);
-    }
-
-    // Skip if already initialised
-    if (SETTINGS.loginButton) {
-      if (SETTINGS.loginButton.getAttribute('data-hw-menu-initialised') === 'true') { return; }
-
-      // Mark as initialised
-      SETTINGS.loginButton.setAttribute('data-hw-menu-initialised', true);
-
-      // Attach event listeners
-      SETTINGS.loginButton.addEventListener('click', toggleLogin);
     }
 
     // Optional search button
