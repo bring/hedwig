@@ -5,9 +5,10 @@
 .hw-table {
   width: 100%;
   border: 0;
-  overflow: scroll;
   table-layout: fixed;
   display: table;
+  font-family: var(--hw-font-primary-medium);
+  font-size: var(--hw-font-size-small);
 
   /**
    * Elements
@@ -20,6 +21,10 @@
   & thead {
     color: var(--hw-color-white);
     text-align: left;
+  }
+
+  & tbody {
+    color: var(--hw-color-gray-darker);
   }
 
   & th {
@@ -43,7 +48,7 @@
   }
 
   & th[data-hw-sort-arrows]::after {
-    content: "";
+    content: '';
     position: absolute;
     right: var(--hw-spacing-small);
     top: 50%;
@@ -51,27 +56,27 @@
   }
 
   & th[data-hw-sort-arrows]:hover::after {
-    content: "\2193";
+    content: '\2193';
     opacity: 1;
     background-color: var(--hw-color-gray-dark);
   }
 
-  & th[aria-sort="ascending"] {
+  & th[aria-sort='ascending'] {
     background-color: var(--hw-color-gray-dark);
   }
 
-  & th[aria-sort="descending"] {
+  & th[aria-sort='descending'] {
     background-color: var(--hw-color-gray-dark);
   }
 
-  & th[data-hw-sort-arrows][aria-sort="ascending"]::after {
+  & th[data-hw-sort-arrows][aria-sort='ascending']::after {
     opacity: 1;
-    content: "\2191";
+    content: '\2191';
   }
 
-  & th[data-hw-sort-arrows][aria-sort="descending"]::after {
+  & th[data-hw-sort-arrows][aria-sort='descending']::after {
     opacity: 1;
-    content: "\2193";
+    content: '\2193';
   }
 
   & tbody {
