@@ -170,7 +170,7 @@
 
   &__menu-group-title {
     font-size: var(--hw-font-size-p);
-    color: var(--hw-color-gray-white);
+    color: var(--hw-color-white);
     padding-bottom: var(--hw-spacing-smallest);
 
     @media (--large) {
