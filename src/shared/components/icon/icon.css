@@ -25,4 +25,8 @@
   &--primary {
     fill: var(--hw-color-primary);
   }
+
+  &--gray-lighter {
+    fill: var(--hw-color-gray-lighter);
+  }
 }
