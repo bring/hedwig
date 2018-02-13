@@ -50,7 +50,7 @@
             <button class="hw-drawer__close-button" data-hw-drawer-trigger="login">
               <svg class="hw-icon" role="img" aria-labelledby="close-drawer">
                  <title id="close-drawer">Close drawer</title>
-                 <use xlink:href="#cross"></use>
+                 <use xlink:href="#cross-thin"></use>
               </svg>
             </button>
           </div>
