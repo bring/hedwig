@@ -37,57 +37,6 @@
     font-size: var(--hw-font-size-lead);
   }
 
-  &__links {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-  }
-
-  &__link {
-    position: relative;
-    font-family: var(--hw-font-primary-medium);
-    line-height: 1.5;
-    color: var(--hw-color-white);
-    fill: var(--hw-color-gray-light);
-    padding-top: var(--hw-spacing-smaller);
-    padding-bottom: var(--hw-spacing-smaller);
-    padding-left: var(--hw-spacing);
-    display: block;
-    &:before {
-      position: absolute;
-      left:0;
-      top: 50%;
-      transform: translateY(-50%);
-      content: '';
-      width: var(--hw-spacing-small);
-      height: var(--hw-spacing-small);
-      display: inline-block;
-      background-size: contain;
-      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCAyMCAzMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5TaGFwZTwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZGVmcz48L2RlZnM+ICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9ImNhcmV0LXJpZ2h0IiBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iPiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgcG9pbnRzPSI0LjYzIDAgMC4xNSA0LjM4IDEwLjkgMTUgMC4xNSAyNS42MyA0LjYzIDMwIDE5Ljg1IDE1Ij48L3BvbHlnb24+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=);
-    }
-    @media (--large) {
-      padding: 0;
-      display: inline;
-      &:before {
-        content: none;
-      }
-    }
-    &:hover {
-      background-color: var(--hw-color-gray-dark);
-      @media (--large) {
-        background-color: transparent;
-        border-bottom: 2px solid var(--hw-color-yellow);
-      }
-    }
-    &:active {
-      background-color: var(--hw-color-gray-dark);
-      @media (--large) {
-        background-color: transparent;
-      }
-    }
-  }
-
   &__button {
     margin-bottom: var(--hw-spacing-smallest);
     font-family: var(--hw-font-primary-bold);
