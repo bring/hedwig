@@ -247,14 +247,14 @@ Optional:
         <div class="hw-accordion__arrow"></div>
       </button>
       <div class="hw-accordion__contents">
-      <ul class="hw-accordion__link-items">
-        <li class="hw-accordion__link-item">
-          <a href="#" class="hw-accordion__link">Lenke</a>
-        </li>
-        <li class="hw-accordion__link-item">
-          <a href="#" class="hw-accordion__link">Lenke</a>
-        </li>
-      </ul>
+        <ul class="hw-accordion__link-items">
+          <li class="hw-accordion__link-item">
+            <a href="#" class="hw-accordion__link">Lenke</a>
+          </li>
+          <li class="hw-accordion__link-item">
+            <a href="#" class="hw-accordion__link">Lenke</a>
+          </li>
+        </ul>
       </div>
     </li>
   </ul>

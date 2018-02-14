@@ -86,52 +86,12 @@
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
-              <ul class="hw-footer__links">
-                <li>
-                  <a class="hw-footer__link" href="https://www.postennorge.no/om-oss">Om Bring</a>
+              <ul class="hw-accordion__link-items">
+                <li class="hw-accordion__link-item">
+                  <a href="#" class="hw-accordion__link">Lenke</a>
                 </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/tjenester">Våre tjenester</a>
-                </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/priser">Priser</a>
-                </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/vilkar">Vilkår</a>
-                </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/jobb">Jobb og karriere</a>
-                </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/radgivning/bringnettverket/om-bring">Miljø</a>
-                </li>
-              </ul>
-          </div>
-          </li>
-          <li class="hw-accordion__item">
-            <button class="hw-accordion__trigger">
-              Lorem ispum
-              <div class="hw-accordion__arrow"></div>
-            </button>
-            <div class="hw-accordion__contents">
-              <ul class="hw-footer__links">
-                <li>
-                  <a class="hw-footer__link" href="https://www.postennorge.no/om-oss">Om Bring</a>
-                </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/tjenester">Våre tjenester</a>
-                </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/priser">Priser</a>
-                </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/vilkar">Vilkår</a>
-                </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/jobb">Jobb og karriere</a>
-                </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/radgivning/bringnettverket/om-bring">Miljø</a>
+                <li class="hw-accordion__link-item">
+                  <a href="#" class="hw-accordion__link">Lenke</a>
                 </li>
               </ul>
             </div>
@@ -142,24 +102,28 @@
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
-              <ul class="hw-footer__links">
-                <li>
-                  <a class="hw-footer__link" href="https://www.postennorge.no/om-oss">Om Bring</a>
+              <ul class="hw-accordion__link-items">
+                <li class="hw-accordion__link-item">
+                  <a href="#" class="hw-accordion__link">Lenke</a>
                 </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/tjenester">Våre tjenester</a>
+                <li class="hw-accordion__link-item">
+                  <a href="#" class="hw-accordion__link">Lenke</a>
                 </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/priser">Priser</a>
+              </ul>
+            </div>
+          </li>
+          <li class="hw-accordion__item">
+            <button class="hw-accordion__trigger">
+              Lorem ispum
+              <div class="hw-accordion__arrow"></div>
+            </button>
+            <div class="hw-accordion__contents">
+              <ul class="hw-accordion__link-items">
+                <li class="hw-accordion__link-item">
+                  <a href="#" class="hw-accordion__link">Lenke</a>
                 </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/vilkar">Vilkår</a>
-                </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/jobb">Jobb og karriere</a>
-                </li>
-                <li>
-                  <a class="hw-footer__link" href="/admin/portal/preview/draft/bring.no/bring-no/radgivning/bringnettverket/om-bring">Miljø</a>
+                <li class="hw-accordion__link-item">
+                  <a href="#" class="hw-accordion__link">Lenke</a>
                 </li>
               </ul>
             </div>
