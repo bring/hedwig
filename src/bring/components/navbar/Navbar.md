@@ -96,9 +96,9 @@
 
         <div class="hw-navbar__drawer-mobile">
 
-          <div class="hw-search"
+          <div class="hw-search hw-search--standalone"
             data-hw-search
-            data-hw-search-placeholders='["Sok"]'
+            data-hw-search-placeholders='["Søk"]'
           >
             <div class="hw-search__inner">
               <input
@@ -106,7 +106,7 @@
                 class="hw-search__input" type="text"
                 aria-label="Search" />
               <svg class="hw-search__icon">
-                <use xlink:href="#search"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
               </svg>
               <span class="hw-search__placeholder" data-hw-search-placeholder></span>
             </div>
