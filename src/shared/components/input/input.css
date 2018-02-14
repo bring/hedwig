@@ -7,7 +7,7 @@
   display: block;
   width: 100%;
   height: var(--hw-spacing-larger);
-  margin: 3px 0;
+  margin-top: 3px;
   padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
   color: var(--hw-color-gray-darker);
   background-color: var(--hw-color-white);

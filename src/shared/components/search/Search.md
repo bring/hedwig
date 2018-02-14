@@ -10,6 +10,45 @@ NB: The search field position and the opaque background overlay is not controlle
 [data-hw-search-placeholders]   Array of placeholders   (required)
 ```
 
+### Standalone version with icon
+
+```html
+<div class="hw-search hw-search--standalone"
+  data-hw-search
+  data-hw-search-placeholders='["Hi!"]'
+>
+  <div class="hw-search__inner">
+    <input
+      data-hw-search-input
+      class="hw-search__input" type="text"
+      aria-label="Search" />
+    <svg class="hw-search__icon">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+    </svg>
+    <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+  </div>
+</div>
+```
+
+
+### Standalone version with button
+
+```html
+<div class="hw-search hw-search--standalone"
+  data-hw-search
+  data-hw-search-placeholders='["Hi!"]'
+>
+  <div class="hw-search__inner">
+    <input
+      data-hw-search-input
+      class="hw-search__input" type="text"
+      aria-label="Search" />
+    <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+  </div>
+  <button type="submit" class="hw-button hw-button--primary">Search</button>
+</div>
+```
+
 ### Default search
 
 ```html
@@ -67,23 +106,5 @@ NB: The search field position and the opaque background overlay is not controlle
     </svg>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
   </div>
-</div>
-```
-
-### Standalone version with submit button
-
-```html
-<div class="hw-search hw-search--standalone"
-  data-hw-search
-  data-hw-search-placeholders='["Hi!"]'
->
-  <div class="hw-search__inner">
-    <input
-      data-hw-search-input
-      class="hw-search__input" type="text"
-      aria-label="Search" />
-    <span class="hw-search__placeholder" data-hw-search-placeholder></span>
-  </div>
-  <button type="submit" class="hw-button hw-button--primary">Search</button>
 </div>
 ```
