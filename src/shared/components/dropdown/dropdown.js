@@ -49,14 +49,16 @@ const HWDropdown = ({
     // Loop through options and select passed option
     return allOptions.forEach((option) => {
       const { hwDropdownValue, hwDropdownPlaceholder } = option.dataset;
+      const customPlaceholder = (hwDropdownPlaceholder === 'null') ? '' : hwDropdownPlaceholder;
+
       if (hwDropdownValue === selectedOption) {
         option.dataset.hwDropdownOptionSelected = true;
         // Set selected value in either input-placeholder or div-placeholder
         if (isSearchable === 'true') {
-          placeHolderEl.placeholder = hwDropdownPlaceholder || option.innerText;
+          placeHolderEl.placeholder = customPlaceholder || option.innerText;
           placeHolderEl.value = option.innerText;
         } else {
-          placeHolderEl.innerText = hwDropdownPlaceholder || option.innerText;
+          placeHolderEl.innerText = customPlaceholder || option.innerText;
         }
       } else {
         option.dataset.hwDropdownOptionSelected = false;
