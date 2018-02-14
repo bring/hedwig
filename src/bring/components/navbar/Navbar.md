@@ -301,7 +301,7 @@
     <section class="hw-navbar__search">
       <div class="hw-search hw-search--large"
         data-hw-search
-        data-hw-search-placeholders='["Søk etter pakke", "Eks.: 1212012381238123", "Eller på nettstedet", "Eks.: Bedriftspakke"]'
+        data-hw-search-placeholders='["Søk"]'
       >
         <span class="hw-search__background"></span>
         <div class="hw-search__inner">
