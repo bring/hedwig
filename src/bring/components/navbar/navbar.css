@@ -209,7 +209,7 @@
 
     & a:hover {
       @media (--large) {
-        color: var(--hw-color-gray-black);
+        color: var(--hw-color-black);
       }
     }
 
