@@ -146,7 +146,6 @@ const HWDropdown = ({
    * @param {Event} e
    */
   function clickOutside(e) {
-    e.preventDefault();
 
     const dropDownSelectors = qa('.hw-dropdown');
 
