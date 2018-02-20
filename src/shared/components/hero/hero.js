@@ -68,7 +68,7 @@ const HWHero = ({
       const images = JSON.parse(hwHeroImages);
       const imageContainer = q('.hw-hero__image', hero);
       toggleImages(imageContainer, images);
-      window.addEventListener('resize', toggleImages(imageContainer, images));
+      window.addEventListener('resize', () => toggleImages(imageContainer, images));
     }
   }
 
