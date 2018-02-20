@@ -58,6 +58,13 @@
     background: var(--hw-color-gray-lightest);
   }
 
+  &__drawer {
+    transform: rotateX(90deg);
+    transform-origin: top;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
   &__menu {
     display: flex;
   }
@@ -189,6 +196,7 @@
 
     & a {
       font-size: var(--hw-font-size-small);
+      font-family: var(--hw-font-primary-medium);
       color: var(--hw-color-white);
       display: block;
       position: relative;
@@ -199,7 +207,7 @@
       padding-left: var(--hw-spacing);
 
       @media (--large) {
-        color: var(--hw-color-gray);
+        color: var(--hw-color-gray-darker);
         display: inline;
         padding-top: 0;
         padding-bottom: 0;
@@ -271,7 +279,9 @@
     background: transparent;
 
     & .hw-navbar__drawer {
-      animation: drawer-animation 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+      transform: rotateX(0deg);
+      transform-origin: top;
+      opacity: 1;
       visibility: visible;
       z-index: var(--z-index--navbar-drawer);
     }
