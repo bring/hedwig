@@ -320,17 +320,15 @@
 </header>
 ```
 
-<!--
-
-### Navbar without search
+### Transparent navbar
 
 ```html
-<header class="hw-navbar">
+<header class="hw-navbar hw-navbar--transparent">
   <div class="hw-navbar__content">
     <div class="hw-navbar__logo">
       <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
         <title id="Logo">Go to homepage</title>
-        <use xlink:href="#logo-bring"></use>
+        <use xlink:href="#logo-bring-white"></use>
       </svg>
       <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
         <title id="Logo">Go to homepage</title>
@@ -354,10 +352,12 @@
 </header>
 ```
 
-### Transparent navbar
+<!--
+
+### Navbar without search
 
 ```html
-<header class="hw-navbar hw-navbar--transparent">
+<header class="hw-navbar">
   <div class="hw-navbar__content">
     <div class="hw-navbar__logo">
       <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
