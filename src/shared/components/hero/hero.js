@@ -38,13 +38,38 @@ const HWHero = ({
   }
 
   /**
+   * @function toggleImages
+   * @desc Toggle the images on breakpoints
+   */
+  function toggleImages(imageContainer, images) {
+    const width = window.innerWidth;
+    const { small, large } = images;
+    if (width < 720) {
+      imageContainer.style.backgroundImage = `url("${small}")`;
+    } else {
+      imageContainer.style.backgroundImage = `url("${large}")`;
+    }
+  }
+
+  /**
    * @function bindEvents
    * @desc Adds listener to dropdown
    */
   function bindEvents(hero) {
     const searchInput = q(searchInputSelector, hero);
-    searchInput.addEventListener('focus', toggleActive);
-    searchInput.addEventListener('blur', toggleActive);
+    const { hwHeroImages } = hero.dataset;
+
+    if (searchInput) {
+      searchInput.addEventListener('focus', toggleActive);
+      searchInput.addEventListener('blur', toggleActive);
+    }
+
+    if (hwHeroImages) {
+      const images = JSON.parse(hwHeroImages);
+      const imageContainer = q('.hw-hero__image', hero);
+      toggleImages(imageContainer, images);
+      window.addEventListener('resize', toggleImages(imageContainer, images));
+    }
   }
 
 
