@@ -10,7 +10,7 @@
   height: 3px;
   border: 0;
   margin: 0;
-  background: var(--hw-color-gray-dark);
+  background: var(--hw-color-gray-darker);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   /**
@@ -23,10 +23,6 @@
 
   &--white {
     background: var(--hw-color-white);
-  }
-
-  &--primary {
-    background: var(--hw-color-primary);
   }
 
   &--gray {

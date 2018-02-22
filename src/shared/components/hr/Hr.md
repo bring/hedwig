@@ -22,12 +22,6 @@ Horizontal rule
   <hr class="hw-hr hw-hr--white" />
 ```
 
-### Primary
-
-```html|span-6
-  <hr class="hw-hr hw-hr--primary" />
-```
-
 ### Gray
 
 ```html|span-6
