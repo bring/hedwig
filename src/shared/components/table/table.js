@@ -31,6 +31,33 @@ const HWTable = ({ tableSelector = '[data-hw-table]' } = {}) => {
   }
 
   /**
+   * @function setSize
+   * @desc Scroll the header when table body is scrolled
+   * @param {node} table
+   */
+
+  function setSize(table) {
+    const tHeader = table.tHead;
+    const tBody = table.tBodies[0];
+    const tHeads = qa('th', tHeader);
+    const tRows = qa('tr', tBody);
+
+    // Set padding on body to height of fixed header
+    tBody.style.paddingTop = `${tHeader.offsetHeight}px`;
+
+    // Find width of each table header and set every table column the same width
+    tHeads.forEach((head, headerIndex) => {
+      const headerWidth = head.offsetWidth;
+      head.style.width = `${headerWidth}px`;
+
+      tRows.forEach(row => {
+        const columns = [...qa('td', row)];
+        columns[headerIndex].style.width = `${headerWidth}px`;
+      });
+    });
+  }
+
+  /**
    * @function bindEvents
    * @desc Adds listener to the table
    * @param {node} table
@@ -38,11 +65,10 @@ const HWTable = ({ tableSelector = '[data-hw-table]' } = {}) => {
 
   function bindEvents(table) {
     const topHeader = table.querySelector('thead');
-    const headersFixedLeft = [...table.querySelectorAll('[data-hw-table-fixed-left]')];
+    const headersFixedLeft = [...qa('[data-hw-table-fixed-left]', table)];
 
     table.addEventListener('scroll', (e) => {
       scrollHeader(e, headersFixedLeft, topHeader);
-      /* renderFixedLeft(headersFixedLeft); */
     });
   }
 
@@ -65,11 +91,7 @@ const HWTable = ({ tableSelector = '[data-hw-table]' } = {}) => {
       // Mark as initialised
       table.setAttribute('data-hw-table-initialised', true);
 
-      const tableHeight = table.getAttribute('data-hw-table-height');
-
-      if (tableHeight) {
-        table.tBodies[0].style.height = `${tableHeight}px`;
-      }
+      setSize(table);
 
       bindEvents(table);
 
