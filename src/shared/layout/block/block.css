@@ -66,14 +66,6 @@
     margin-bottom: var(--hw-spacing-larger);
   }
 
-  &--mt-largest {
-    margin-top: var(--hw-spacing-larger);
-  }
-
-  &--mb-largest {
-    margin-bottom: var(--hw-spacing-largest);
-  }
-
   &--pt {
     padding-top: var(--hw-spacing);
   }
@@ -120,14 +112,6 @@
 
   &--pb-larger {
     padding-bottom: var(--hw-spacing-larger);
-  }
-
-  &--pt-largest {
-    padding-top: var(--hw-spacing-largest);
-  }
-
-  &--pb-largest {
-    padding-bottom: var(--hw-spacing-largest);
   }
 
 
