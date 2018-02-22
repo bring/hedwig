@@ -107,15 +107,79 @@ Styling for buttons.
   </button>
   <button class="hw-button hw-button--round" disabled>
     <svg class="hw-icon">
-      <use xlink:href="#globe"></use>
+      <use xlink:href="#chat"></use>
     </svg>
   </button>
 ```
 
-```code
-[Icon regular]        .hw-button--round
-[Icon outline]        .hw-button--round-outline
-[Icon stripped]       .hw-button--round-stripped
+### Social media buttons - outline
+
+```html|span-4
+  <button class="hw-button hw-button--outline hw-button--facebook hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-facebook"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--outline hw-button--twitter hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-twitter"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--outline hw-button--linkedin hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-linkedin"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--outline hw-button--email hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-email"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--outline hw-button--google hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-google"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--outline hw-button--instagram hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-instagram"></use>
+    </svg>
+  </button>
+```
+
+### Social media buttons - secondary
+
+```html|span-4
+  <button class="hw-button hw-button--secondary hw-button--facebook hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-facebook"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--secondary hw-button--twitter hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-twitter"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--secondary hw-button--linkedin hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-linkedin"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--secondary hw-button--email hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-email"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--secondary hw-button--google hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-google"></use>
+    </svg>
+  </button>
+  <button class="hw-button hw-button--secondary hw-button--instagram hw-button--round">
+    <svg class="hw-icon">
+      <use xlink:href="#some-instagram"></use>
+    </svg>
+  </button>
 ```
 
 ### Extra modifiers
