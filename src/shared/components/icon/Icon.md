@@ -391,7 +391,48 @@ lang: html
       logo-bring-white
     </div>
   </div>
-
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#some-facebook"></use>
+      </svg>
+      some-facebook
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#some-twitter"></use>
+      </svg>
+      some-twitter
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#some-instagram"></use>
+      </svg>
+      some-instagram
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#some-email"></use>
+      </svg>
+      some-email
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#some-linkedin"></use>
+      </svg>
+      some-linkedin
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#some-google"></use>
+      </svg>
+      some-google
+    </div>
+  </div>
 ```
 
 ### Variations
