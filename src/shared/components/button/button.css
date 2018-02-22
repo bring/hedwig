@@ -18,6 +18,11 @@
   text-align: center;/* Center text when this is an <a> */
   cursor: pointer;
   outline: 1px solid transparent;
+  margin-right: 3px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 
   &:disabled {
     color: var(--hw-color-white) !important;
@@ -95,7 +100,7 @@
   }
 
   &--outline {
-    border: 2px solid var(--hw-color-gray);
+    border: 3px solid var(--hw-color-gray);
     background: none;
     color: var(--hw-color-gray);
     fill: var(--hw-color-gray);
@@ -160,6 +165,7 @@
 
   &--round {
     padding: 7px;
+    border-width: 2px !important;
     min-width: 0;
     border-radius: 50%;
     cursor: pointer;
