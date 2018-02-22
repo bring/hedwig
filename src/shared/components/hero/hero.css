@@ -51,4 +51,8 @@
   &--large {
     min-height: 40vh;
   }
+
+  &--no-border {
+    border-bottom: none;
+  }
 }
