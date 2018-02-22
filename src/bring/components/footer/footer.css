@@ -58,10 +58,10 @@
   &__link {
     position: relative;
     font-family: var(--hw-font-primary-medium);
-    line-height: 1.5;
+    line-height: 1.0;
     color: var(--hw-color-white);
     fill: var(--hw-color-gray-light);
-    padding-top: var(--hw-spacing-smaller);
+    padding-top: var(--hw-spacing-smallest);
     display: inline-block;
     background-color: transparent;
     border-bottom: 2px solid transparent;
