@@ -26,7 +26,10 @@ TODO: Image sizes
     src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
   />
   <figcaption>
-    With caption
+    <svg class="hw-image__caption-icon">
+      <use xlink:href="#arrow-up"></use>
+    </svg>
+    Can I help you? Yeah, can I have a dozen red roses, please? Oh, hi, Johnny. I didn't know it was you. 
   </figcaption>
 </figure>
 ```

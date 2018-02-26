@@ -5,17 +5,26 @@
 .hw-image {
   margin: 0;
   padding: 0;
-  background: var(--hw-color-gray-lighter);
 
   & img {
     max-width: 100%;
   }
 
   & figcaption {
+    position: relative;
     font-size: var(--hw-font-size-small);
+    color: var(--hw-color-gray-darker);
     font-family: var(--hw-font-primary-medium);
-    padding: var(--hw-spacing-smallest);
-    text-align: center;
+    padding-top: var(--hw-spacing-smallest);
+    text-align: left;
+  }
+
+  &__caption-icon {
+    margin-right: calc(var(--hw-spacing-smallest) / 2);
+    fill: var(--hw-color-primary);
+    margin-top: -2px;
+    width: var(--hw-spacing-smaller);
+    height: var(--hw-spacing-smaller);
   }
 
   /**
