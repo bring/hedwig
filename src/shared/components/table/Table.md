@@ -7,17 +7,17 @@
   <table data-hw-table="tablename">
     <thead>
       <tr>
-        <th data-hw-sort-arrows="true">Leveringsmetode</th>
-        <th data-hw-sort-arrows="true">PDF</th>
-        <th data-hw-sort-arrows="true">Kort distanse</th>
-        <th data-hw-sort-arrows="true">Langtur</th>
-        <th data-hw-sort-arrows="true">Avdeling</th>
+        <th data-hw-sort-method="none">Leveringsmetode</th>
+        <th data-hw-sort-method="none">PDF</th>
+        <th data-hw-sort-method="none">Kort distanse</th>
+        <th data-hw-sort-method="none">Langtur</th>
+        <th data-hw-sort-method="none">Avdeling</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>
-          Budbil/varebil
+          Audbil/varebil
         </td>
         <td>
           <a class="hw-table__link hw-table__link--download" href="#">
@@ -113,7 +113,12 @@
     </tbody>
   </table>
   <div class="hw-table__scroll-hint">
-    Scroll >>
+    <small>
+      Scroll
+      <svg class="hw-icon">
+        <use xlink:href="#swipe-right"></use>
+      </svg>
+    </small>
   </div>
 </div>
 ```

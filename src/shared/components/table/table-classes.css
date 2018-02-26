@@ -1,6 +1,6 @@
 .hw-table {
   &__scroll-hint {
-    margin-top: var(--hw-spacing-small);
+    margin-top: var(--hw-spacing-smaller);
     text-align: right;
   }
 

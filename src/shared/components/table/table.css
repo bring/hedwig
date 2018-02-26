@@ -73,7 +73,7 @@
     vertical-align: middle;
 
     & th {
-      background-color: var(--hw-color-gray);
+      background-color: var(--hw-color-gray-darker);
       border: 0;
       position: relative;
     }
