@@ -12,16 +12,16 @@
   */
 
   &__button {
-    fill: var(--hw-color-white);
+    background-color: transparent;
+    border-color: var(--hw-color-gray-light);
+    fill: var(--hw-color-gray-darker);
     padding: 6px;
     line-height: 3px;
     width: 30px;
     height: 30px;
-    background-color: var(--hw-color-gray);
-    border-color: var(--hw-color-gray);
     border-width: 2px !important;
-    margin-right: var(--hw-spacing-smallest);
-    margin-bottom: var(--hw-spacing-smallest);
+    margin-right: calc(var(--hw-spacing-smallest) / 2);
+    margin-bottom: 3px;
     min-width: 0;
     border-radius: 50%;
     cursor: pointer;
@@ -39,6 +39,7 @@
     &:active,
     &:focus {
       outline: 0;
+      fill: var(--hw-color-white);
     }
 
     &:active {
@@ -47,6 +48,18 @@
 
     & .hw-icon {
       margin: 0;
+    }
+
+    &--google {
+      padding: 5px;
+    }
+
+    &--facebook {
+      padding: 5px;
+
+      & svg {
+        transform: translateX(-1px);
+      }
     }
 
     &--facebook:hover {
@@ -89,7 +102,7 @@
 
     & .hw-some__button {
       margin-right: 0;
-      margin-bottom: var(--hw-spacing-smallest);
+      margin-bottom: calc(var(--hw-spacing-smallest) / 2);
 
       &:last-of-type {
         margin-bottom: 0;
@@ -97,10 +110,11 @@
     }
   }
 
-  &--outline {
+  &--dark {
     & .hw-some__button {
-      background-color: transparent;
-      fill: var(--hw-color-gray);
+      background-color: var(--hw-color-gray-dark);
+      border-color: var(--hw-color-gray-dark);
+      fill: var(--hw-color-white);
 
       &:hover {
         fill: var(--hw-color-white);
