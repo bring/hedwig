@@ -100,13 +100,18 @@
 
     & .hw-search__input {
       background: var(--hw-color-white);
-      border: 3px solid var(--hw-color-gray-darker);
+      border: 3px solid var(--hw-color-gray-light);
       margin-top: 3px;
       padding: var(--hw-spacing-smallest) var(--hw-spacing);
     }
 
+    & .hw-search__input:hover {
+      border-color: var(--hw-color-gray);
+    }
+
     & .hw-search__input:focus {
-      outline: 3px solid var(--hw-color-gray-light);
+      border-color: var(--hw-color-gray-darker);
+      outline: 0;
     }
 
     & .hw-search__placeholder {
