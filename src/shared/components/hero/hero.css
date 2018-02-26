@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  min-height: 239px;
+  min-height: 55vh;
   overflow: hidden;
   border-bottom: var(--hw-spacing-smallest) solid var(--hw-color-secondary);
 
@@ -48,8 +48,12 @@
    * Modifiers: sizes
    */
 
-  &--large {
-    min-height: 55vh;
+  &--small {
+    min-height: 20vh;
+  }
+
+  &--full {
+    min-height: 100vh;
   }
 
   &--no-border {
