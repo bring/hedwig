@@ -21,9 +21,9 @@
   }
 
   & .hw-dropdown {
-    width: 80px;
+    width: auto;
     max-height: 42px;
-    top: 3px;
+    border: 3px solid transparent;
     overflow: hidden;
     position: absolute;
     color: var(--hw-color-gray);
@@ -34,21 +34,9 @@
 
     &__inner {
       border: 0;
-      background: transparent;
-    }
-
-    &__options {
-      background: var(--hw-color-white);
-      border: 3px solid var(--hw-color-gray);
-    }
-
-    &__option:first-of-type {
-      border-top: 0;
-    }
-
-    &__placeholder {
       position: relative;
-      width: 80px;
+      background: transparent;
+      height: 42px;
 
       &::after {
         content: '';
@@ -63,12 +51,33 @@
       }
     }
 
+    &__options {
+      background: var(--hw-color-white);
+      border: 3px solid var(--hw-color-gray);
+      width: 0;
+    }
+
+    &__option:first-of-type {
+      border-top: 0;
+    }
+
+    &__placeholder {
+      position: relative;
+      padding: 9px var(--hw-spacing-smallest) 9px var(--hw-spacing-small) !important;
+      display: inline-block;
+      width: auto !important;
+    }
+
     &:focus .hw-dropdown__placeholder::after {
       background-color: var(--hw-color-gray-dark);
     }
 
     &__arrow {
-      left: 50px;
+      display: inline-block;
+      position: relative !important;
+      height: 41px;
+      width: 24px;
+      background: transparent;
     }
 
     &__arrow::before {
@@ -88,13 +97,41 @@
     }
 
     &--expanded {
-      width: 500px;
+      max-width: 100%;
+      width: 100%;
       overflow: visible;
+      border: 0;
+
+      & .hw-dropdown__inner {
+        height: auto;
+        border: 3px solid var(--hw-color-gray);
+        background: #fff;
+
+        &::after {
+          top: 0;
+          right: 0;
+          display: none;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 42px;
+          width: 100%;
+          height: 3px;
+          background: var(--hw-color-gray-lighter);
+        }
+      }
+
+      & .hw-dropdown__options {
+        width: 100%;
+        border: 0;
+      }
     }
   }
 
   & .hw-input {
     width: 100%;
-    padding-left: 100px;
+    padding-left: 80px;
   }
 }
