@@ -10,7 +10,6 @@
   justify-content: center;
   min-height: 55vh;
   overflow: hidden;
-  border-bottom: var(--hw-spacing-smallest) solid var(--hw-color-secondary);
 
   /**
    * Elements
@@ -56,7 +55,7 @@
     min-height: 100vh;
   }
 
-  &--no-border {
-    border-bottom: none;
+  &--border {
+    border-bottom: var(--hw-spacing-smallest) solid var(--hw-color-secondary);
   }
 }
