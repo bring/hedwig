@@ -13,6 +13,7 @@
 
   &__button {
     background-color: transparent;
+    border-style: solid;
     border-color: var(--hw-color-gray-light);
     fill: var(--hw-color-gray-darker);
     padding: 6px;
@@ -42,54 +43,66 @@
       fill: var(--hw-color-white);
     }
 
-    &:active {
-      outline: 0;
-    }
-
     & .hw-icon {
       margin: 0;
-    }
-
-    &--google {
-      padding: 5px;
     }
 
     &--facebook {
       padding: 5px;
 
-      & svg {
-        transform: translateX(-1px);
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #3d5a98;
+        border-color: #3d5a98;
       }
     }
 
-    &--facebook:hover {
-      background-color: #3d5a98;
-      border-color: #3d5a98;
+    &--twitter {
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #5fa8dc;
+        border-color: #5fa8dc;
+      }
     }
 
-    &--twitter:hover {
-      background-color: #5fa8dc;
-      border-color: #5fa8dc;
+    &--linkedin {
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #006295;
+        border-color: #006295;
+      }
     }
 
-    &--linkedin:hover {
-      background-color: #006295;
-      border-color: #006295;
+    &--google {
+      padding: 5px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #cd3c28;
+        border-color: #cd3c28;
+      }
     }
 
-    &--google:hover {
-      background-color: #cd3c28;
-      border-color: #cd3c28;
+    &--instagram {
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #c94274;
+        border-color: #c94274;
+      }
     }
 
-    &--instagram:hover {
-      background-color: #c94274;
-      border-color: #c94274;
-    }
-
-    &--email:hover {
-      background-color: #7bc144;
-      border-color: #7bc144;
+    &--email {
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #7bc144;
+        border-color: #7bc144;
+      }
     }
   }
 
@@ -116,7 +129,10 @@
       border-color: var(--hw-color-gray-dark);
       fill: var(--hw-color-white);
 
-      &:hover {
+      &:hover,
+      &:active,
+      &:focus {
+        outline: 0;
         fill: var(--hw-color-white);
       }
 
