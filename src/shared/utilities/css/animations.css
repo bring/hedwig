@@ -13,6 +13,18 @@
   }
 }
 
+@keyframes expand {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: center top;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    transform-origin: center top;
+  }
+}
+
 @keyframes slide-in-bottom {
   0% {
     transform: translateY(64px);

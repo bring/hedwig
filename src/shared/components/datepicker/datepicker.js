@@ -16,6 +16,14 @@ const HWDatePicker = ({
     elements: qa(datePickerSelector), // All module DOM nodes
   };
 
+  const TRANSLATION = {
+    previousMonth: 'Forrige måned',
+    nextMonth: 'Neste måned',
+    months: ['januar', 'februar', 'mars', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'desember'],
+    weekdays: ['Søndag', 'Mandag', 'Tirsdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lørdag'],
+    weekdaysShort: ['Søn', 'Man', 'Tir', 'Ons', 'Tor', 'Fre', 'Lør'],
+  };
+
   /**
    * @function init
    * @desc Initialises the module
@@ -33,22 +41,25 @@ const HWDatePicker = ({
       // Mark as initialised
       datepicker.setAttribute('data-hw-module-initialised', true);
       datepicker.setAttribute('id', `datepicker-${index}`);
-      const datePickerId = `datepicker-${index}`;
-      const datePickerWidth = datepicker.offsetWidth;
-      console.log(datepicker.offsetWidth);
 
       // Create a new pikadate instance
       const pikaday = new Pikaday({
         field: datepicker,
         container: datepicker.parentNode,
-        firstDay: 1,
-        i18n: {
-          previousMonth: 'Forrige måned',
-          nextMonth: 'Neste måned',
-          months: ['Januar', 'Februar', 'Mars', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Desember'],
-          weekdays: ['Søndag', 'Mandag', 'Tirsdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lørdag'],
-          weekdaysShort: ['Søn', 'Man', 'Tir', 'Ons', 'Tor', 'Fre', 'Lør'],
+        format: 'D MMM YYYY',
+        position: 'bottom left',
+        onOpen: () => {
+          datepicker.parentNode.scrollIntoView();
         },
+        onSelect: (date) => {
+          const day = date.getDate();
+          const month = TRANSLATION.months[date.getMonth()];
+          const year = date.getFullYear();
+          datepicker.value = `${day}. ${month} ${year}`;
+        },
+        disableWeekends: true,
+        firstDay: 1,
+        i18n: TRANSLATION,
       });
 
     });

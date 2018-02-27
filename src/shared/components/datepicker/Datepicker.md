@@ -7,7 +7,7 @@ Datepicker component
 
 ```
 
-### Default Hero
+### Default calendar
 
 ```html|span-3
   <label class="hw-datepicker">

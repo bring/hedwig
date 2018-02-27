@@ -11,13 +11,15 @@
 
 .hw-datepicker__icon {
   position: absolute;
+  cursor: pointer;
   right: var(--hw-spacing-smaller);
   bottom: var(--hw-spacing-smaller);
 }
 
 .pika-single {
-  z-index: 9999;
+  z-index: var(--z-index--navbar-search);
   display: block;
+  margin-top: calc(var(--hw-spacing-smallest) / 2);
   position: absolute !important;
   width: 100%;
   min-width: 300px;
@@ -26,8 +28,16 @@
   font-family: var(--hw-font-primary-regular), Helvetica, Arial, sans-serif;
 }
 
+.pika-select option {
+  & option {
+    font-size: 14px;
+  }
+}
+
 .pika-title {
+  font-family: var(--hw-font-primary-medium);
   color: var(--hw-color-gray-dark);
+  text-transform: capitalize;
 }
 
 /*
@@ -54,9 +64,10 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
 .pika-single.is-bound {
   position: absolute;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
   animation-fill-mode: both;
-  animation-name: slide-in-bottom;
+  animation-name: expand;
 }
 
 .pika-lendar {
@@ -78,7 +89,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   overflow: hidden;
   margin: 0;
   padding: var(--hw-spacing-smallest) var(--hw-spacing-smallest);
-  font-family: var(--hw-font-primary-bold);
+  font-family: var(--hw-font-primary-medium);
   font-size: var(--hw-font-size-h3);
   line-height: 20px;
 }
@@ -183,6 +194,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   padding: var(--hw-spacing-smallest);
   color: var(--hw-color-white);
   font-size: var(--hw-font-size-p);
+  font-family: var(--hw-font-primary-medium);
   line-height: 15px;
   text-align: center;
   background: var(--hw-color-gray);
@@ -229,8 +241,9 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
 .is-disabled .pika-button {
   pointer-events: none;
-  cursor: default;
-  color: var(--hw-color-gray-light);
+  cursor: not-allowed;
+  color: var(--hw-color-gray);
+  background-color: var(--hw-color-gray-lighter);
   opacity: 0.3;
 }
 
@@ -247,7 +260,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-button:hover,
 .pika-row.pick-whole-week:hover .pika-button {
   color: #fff;
-  background: var(--hw-color-primary);
+  background: var(--hw-color-gray-darker);
   box-shadow: none;
 }
 
