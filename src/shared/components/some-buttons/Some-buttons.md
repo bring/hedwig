@@ -44,7 +44,7 @@ Styling for social media buttons.
 </div>
 ```
 
-### Ouline style
+### Dark style
 
 ```html|span-4
 <div class="hw-some hw-some--dark">
@@ -116,7 +116,7 @@ Styling for social media buttons.
     </svg>
   </button>
 </div>
-<div class="hw-some hw-some--outline hw-some--vertical">
+<div class="hw-some hw-some--dark hw-some--vertical">
   <button class="hw-some__button hw-some__button--facebook">
     <svg class="hw-icon">
       <use xlink:href="#some-facebook"></use>

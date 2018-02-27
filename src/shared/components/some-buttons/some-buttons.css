@@ -136,34 +136,62 @@
         fill: var(--hw-color-white);
       }
 
-      &--facebook:hover {
-        background-color: #3d5a98;
-        border-color: #3d5a98;
+      &--facebook {
+        padding: 5px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #3d5a98;
+          border-color: #3d5a98;
+        }
       }
 
-      &--twitter:hover {
-        background-color: #5fa8dc;
-        border-color: #5fa8dc;
+      &--twitter {
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #5fa8dc;
+          border-color: #5fa8dc;
+        }
       }
 
-      &--linkedin:hover {
-        background-color: #006295;
-        border-color: #006295;
+      &--linkedin {
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #006295;
+          border-color: #006295;
+        }
       }
 
-      &--google:hover {
-        background-color: #cd3c28;
-        border-color: #cd3c28;
+      &--google {
+        padding: 5px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #cd3c28;
+          border-color: #cd3c28;
+        }
       }
 
-      &--instagram:hover {
-        background-color: #c94274;
-        border-color: #c94274;
+      &--instagram {
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #c94274;
+          border-color: #c94274;
+        }
       }
 
-      &--email:hover {
-        background-color: #7bc144;
-        border-color: #7bc144;
+      &--email {
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #7bc144;
+          border-color: #7bc144;
+        }
       }
     }
   }
