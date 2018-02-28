@@ -30,10 +30,10 @@
   </div>
 
   <ul id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
-    <li class="hw-autocomplete__suggestion" role="option" tabindex="0">
+    <li class="hw-autocomplete__suggestion" role="option">
       <span class="hw-autocomplete__suggestion-text">One</span>
     </li>
-    <li class="hw-autocomplete__suggestion" role="option" tabindex="0">
+    <li class="hw-autocomplete__suggestion" role="option">
       <span class="hw-autocomplete__suggestion-text">Two</span>
     </li>
   </ul>
@@ -66,10 +66,10 @@
   </div>
 
   <ul id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
-    <li class="hw-autocomplete__suggestion" role="option" tabindex="0">
+    <li class="hw-autocomplete__suggestion" role="option">
       <span class="hw-autocomplete__suggestion-text">One</span>
     </li>
-    <li class="hw-autocomplete__suggestion" role="option" tabindex="0">
+    <li class="hw-autocomplete__suggestion" role="option">
       <span class="hw-autocomplete__suggestion-text">Two</span>
     </li>
   </ul>
