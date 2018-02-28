@@ -1,0 +1,133 @@
+/**
+ * Block
+ */
+
+.hw-autocomplete {
+  position: relative;
+
+  /**
+   * Elements
+   */
+
+  &__input-wrapper {
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+
+  &__input {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: var(--hw-spacing-larger);
+    margin-top: 3px;
+    padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
+    color: var(--hw-color-gray-darker);
+    background-color: var(--hw-color-white);
+    font-family: var(--hw-font-primary-medium);
+    font-size: var(--hw-font-size-small);
+    line-height: normal;
+    border: 3px solid var(--hw-color-gray-light);
+    transition: border 100ms;
+
+    &::placeholder {
+      color: var(--hw-color-gray-dark);
+    }
+
+    &:hover {
+      border: 3px solid var(--hw-color-gray);
+    }
+
+    &:focus {
+      border: 3px solid var(--hw-color-gray-darker);
+      outline: 0;
+    }
+
+    &::-webkit-input-placeholder { /* Not autprefixed - Chrome/Opera/Safari */
+      color: var(--hw-color-gray);
+    }
+
+    &:-ms-input-placeholder { /* Not autprefixed - IE 10+ */
+      color: var(--hw-color-gray);
+    }
+
+    &[disabled] {
+      border: 3px solid var(--hw-color-gray-lighter);
+    }
+  }
+
+  &__input-remove {
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    fill: var(--hw-color-gray-light);
+    display: none;
+    position: absolute;
+    right: var(--hw-spacing-smaller);
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:hover,
+    &:focus {
+      fill: var(--hw-color-gray);
+    }
+
+    &:active {
+      fill: var(--hw-color-gray-dark);
+    }
+  }
+
+  /* Optional element description */
+
+  &__suggestions {
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: calc(var(--hw-spacing-larger) + 3px);
+    width: 100%;
+    background: #fff;
+    border: 3px solid var(--hw-color-gray-darker);
+  }
+
+  &__suggestion {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    padding: 0 var(--hw-spacing-small);
+
+    &:last-of-type {
+      & .hw-autocomplete__suggestion-text {
+        border-bottom: 0;
+      }
+    }
+
+    &:hover {
+      color: var(--hw-color-primary);
+    }
+  }
+
+  &__suggestion-text {
+    width: 100%;
+    padding: var(--hw-spacing-smaller) 0;
+    height: var(--hw-spacing-larger);
+    line-height: normal;
+    display: block;
+    border-bottom: 3px solid var(--hw-color-gray-lighter);
+  }
+
+  /**
+   * Modifiers
+   */
+
+  &--active {
+    & .hw-autocomplete__suggestions {
+      height: auto;
+      display: block;
+    }
+
+    & .hw-autocomplete__input-remove {
+      display: block;
+    }
+  }
+}
