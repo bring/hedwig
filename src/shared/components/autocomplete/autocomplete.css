@@ -31,6 +31,7 @@
     transition: border 100ms;
 
     &::placeholder {
+      font-family: var(--hw-font-primary-medium);
       color: var(--hw-color-gray-dark);
     }
 
@@ -44,10 +45,12 @@
     }
 
     &::-webkit-input-placeholder { /* Not autprefixed - Chrome/Opera/Safari */
+      font-family: var(--hw-font-primary-medium);
       color: var(--hw-color-gray);
     }
 
     &:-ms-input-placeholder { /* Not autprefixed - IE 10+ */
+      font-family: var(--hw-font-primary-medium);
       color: var(--hw-color-gray);
     }
 
@@ -92,6 +95,8 @@
 
   &__suggestion {
     width: 100%;
+    color: var(--hw-color-gray-darker);
+    font-family: var(--hw-font-primary-medium);
     display: block;
     cursor: pointer;
     padding: 0 var(--hw-spacing-small);
