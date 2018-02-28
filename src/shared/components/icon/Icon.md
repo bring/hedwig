@@ -344,6 +344,13 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#remove"></use>
+      </svg>
+      exclamation
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
         <use xlink:href="#flag"></use>
       </svg>
       flag
