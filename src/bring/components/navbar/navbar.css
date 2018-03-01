@@ -111,6 +111,10 @@
       background: var(--hw-color-primary-dark);
     }
 
+    &:focus .hw-hamburger__part {
+      background: var(--hw-color-primary-dark);
+    }
+
     & > span {
       display: none;
 
