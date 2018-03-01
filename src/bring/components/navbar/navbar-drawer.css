@@ -19,7 +19,7 @@
   }
 
   &__drawer-mobile {
-    max-width: 510px;
+    max-width: 690px;
     margin: 0 auto;
     padding-left: var(--hw-spacing);
     padding-right: var(--hw-spacing);
