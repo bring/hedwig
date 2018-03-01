@@ -129,7 +129,8 @@
     border: 0;
   }
 
-  &__search-icon {
+  &__search-icon,
+  &__login-icon {
     height: 24px;
     width: 24px;
     margin: 0 0 4px 3px;
