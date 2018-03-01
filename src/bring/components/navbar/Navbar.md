@@ -33,7 +33,7 @@
         </svg>
       </button>
       <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-        <span>Menu</span>
+        <span>Meny</span>
         <div class="hw-hamburger" data-hw-menu-icon>
           <span class="hw-hamburger__part"></span>
           <span class="hw-hamburger__part"></span>
@@ -339,7 +339,7 @@
       <a href="#" class="hw-navbar__item">English</a>
       <a href="#" class="hw-navbar__item">Login</a>
       <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-        <span>Menu</span>
+        <span>Meny</span>
         <div class="hw-hamburger" data-hw-menu-icon>
           <span class="hw-hamburger__part"></span>
           <span class="hw-hamburger__part"></span>

@@ -6,7 +6,7 @@
   position: relative;
   background: var(--hw-color-white);
   border-bottom: 1px solid var(--hw-color-gray-lightest);
-  height: 72px;
+  height: 78px;
 
   /**
    * Elements
@@ -14,7 +14,6 @@
 
   &__content {
     width: 100%;
-    max-width: var(--hw-width-wide);
     margin: 0 auto;
     align-items: center;
     display: flex;
@@ -24,7 +23,7 @@
   &__logo {
     position: relative;
     width: 121px;
-    height: 72px;
+    height: 78px;
     margin: 0 auto;
     transform: translateY(0);
     opacity: 1;
@@ -73,17 +72,15 @@
   &__item,
   &__search-button {
     padding: 0 var(--hw-spacing-small);
-    line-height: 72px;
+    line-height: 78px;
     display: none;
     outline: 0;
     color: var(--hw-color-gray-darker);
     border: 0;
     cursor: pointer;
-    border-left: 1px solid var(--hw-color-gray-lightest);
     text-decoration: none;
     transition: background 100ms;
     font-family: var(--hw-font-primary-bold);
-    text-transform: uppercase;
     font-size: var(--hw-font-size-small);
 
     @media (--large) {
@@ -93,8 +90,9 @@
 
   &__item:hover,
   &__item:focus {
-    background: rgba(0, 0, 0, 0.03);
     outline: 0;
+    fill: var(--hw-color-primary);
+    color: var(--hw-color-primary);
   }
 
   &__menu-button {
@@ -107,8 +105,11 @@
     border: 0;
     color: var(--hw-color-gray-darker);
     font-family: var(--hw-font-primary-bold);
-    text-transform: uppercase;
     font-size: var(--hw-font-size-small);
+
+    &:hover .hw-hamburger__part {
+      background: var(--hw-color-primary);
+    }
 
     & > span {
       display: none;
@@ -121,13 +122,11 @@
     @media (--large) {
       position: relative;
       padding: 0 var(--hw-spacing-larger) 0 var(--hw-spacing-small);
-      border-left: 1px solid var(--hw-color-gray-lightest);
     }
   }
 
   &__search-button {
     border: 0;
-    border-left: 1px solid var(--hw-color-gray-lightest);
   }
 
   &__search-icon {
@@ -140,7 +139,8 @@
   &__menu-button:focus,
   &__search-button:hover,
   &__search-button:focus {
-    background: rgba(0, 0, 0, 0.03);
+    fill: var(--hw-color-primary);
+    color: var(--hw-color-primary);
     outline: 0;
     cursor: pointer;
   }
@@ -329,7 +329,10 @@
 
       @media (--large) {
         color: var(--hw-color-gray-darker);
-        border-left: 1px solid var(--hw-color-gray-lightest);
+
+        &:hover {
+          color: var(--hw-color-primary);
+        }
       }
     }
 
@@ -341,7 +344,10 @@
 
       @media (--large) {
         color: var(--hw-color-gray-darker);
-        border-left: 1px solid var(--hw-color-gray-lightest);
+
+        &:hover {
+          color: var(--hw-color-primary);
+        }
       }
     }
   }
