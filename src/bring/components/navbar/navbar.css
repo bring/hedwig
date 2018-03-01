@@ -80,7 +80,7 @@
     cursor: pointer;
     text-decoration: none;
     transition: background 100ms;
-    font-family: var(--hw-font-primary-bold);
+    font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-small);
 
     @media (--large) {
@@ -91,8 +91,8 @@
   &__item:hover,
   &__item:focus {
     outline: 0;
-    fill: var(--hw-color-primary);
-    color: var(--hw-color-primary);
+    fill: var(--hw-color-primary-dark);
+    color: var(--hw-color-primary-dark);
   }
 
   &__menu-button {
@@ -104,11 +104,11 @@
     padding: calc(var(--hw-spacing) + 3px) var(--hw-spacing-small) var(--hw-spacing) var(--hw-spacing-small);
     border: 0;
     color: var(--hw-color-gray-darker);
-    font-family: var(--hw-font-primary-bold);
+    font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-small);
 
     &:hover .hw-hamburger__part {
-      background: var(--hw-color-primary);
+      background: var(--hw-color-primary-dark);
     }
 
     & > span {
@@ -140,8 +140,8 @@
   &__menu-button:focus,
   &__search-button:hover,
   &__search-button:focus {
-    fill: var(--hw-color-primary);
-    color: var(--hw-color-primary);
+    fill: var(--hw-color-primary-dark);
+    color: var(--hw-color-primary-dark);
     outline: 0;
     cursor: pointer;
   }
