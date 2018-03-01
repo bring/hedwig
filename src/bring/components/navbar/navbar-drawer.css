@@ -3,7 +3,7 @@
     background: var(--hw-color-gray);
     width: 100%;
     min-height: 100vh;
-    padding: 0 var(--hw-spacing-larger);
+    padding: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -21,6 +21,8 @@
   &__drawer-mobile {
     max-width: 510px;
     margin: 0 auto;
+    padding-left: var(--hw-spacing);
+    padding-right: var(--hw-spacing);
 
     @media (--large) {
       display: none;
@@ -29,6 +31,8 @@
 
   &__drawer-desktop {
     display: none;
+    padding-left: var(--hw-spacing-larger);
+    padding-right: var(--hw-spacing-larger);
 
     @media (--large) {
       display: block;
