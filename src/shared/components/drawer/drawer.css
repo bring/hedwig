@@ -29,7 +29,7 @@
     top: 0;
     position: fixed;
     overflow: auto;
-    z-index: var(--z-index--modal);
+    z-index: -1;
   }
 
   &__close {
@@ -45,13 +45,19 @@
   &__close-button {
     cursor: pointer;
     padding: var(--hw-spacing-smaller);
-    background-color: var(--hw-color-gray-lighter);
+    background-size: 50%;
+    background-color: transparent;
     border-radius: 50%;
     border: 0;
+    transition: background 0.3s ease;
 
     &:hover {
       fill: var(--hw-color-black);
-      /*background-color: var(--hw-color-gray-light);*/
+    }
+
+    &:active {
+      background-color: var(--hw-color-gray-light);
+      background-size: 100%;
     }
   }
 
