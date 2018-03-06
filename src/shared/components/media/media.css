@@ -1,6 +1,7 @@
 .hw-media {
   display: table;
   width: 100%;
+  text-align: left;
 
   /**
    * Elements
