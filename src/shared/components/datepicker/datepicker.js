@@ -40,7 +40,7 @@ const HWDatePicker = ({
 
       // Mark as initialised
       datepicker.setAttribute('data-hw-module-initialised', true);
-      datepicker.setAttribute('id', `datepicker-${index}`);
+      datepicker.setAttribute('data-hw-datepicker-index', index);
 
       // Create a new pikadate instance
       const pikaday = new Pikaday({
@@ -61,7 +61,6 @@ const HWDatePicker = ({
         firstDay: 1,
         i18n: TRANSLATION,
       });
-
     });
   }
 
