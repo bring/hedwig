@@ -103,16 +103,25 @@
     align-items: center;
     padding: calc(var(--hw-spacing) + 3px) var(--hw-spacing-small) var(--hw-spacing) var(--hw-spacing-small);
     border: 0;
+    background: var(--hw-color-white);
     color: var(--hw-color-gray-darker);
     font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-small);
 
     &:hover .hw-hamburger__part {
-      background: var(--hw-color-primary-dark);
+      background: var(--hw-color-gray-darker);
+
+      @media (--large) {
+        background: var(--hw-color-primary-dark);
+      }
     }
 
     &:focus .hw-hamburger__part {
-      background: var(--hw-color-primary-dark);
+      background: var(--hw-color-gray-darker);
+
+      @media (--large) {
+        background: var(--hw-color-primary-dark);
+      }
     }
 
     & > span {
@@ -210,7 +219,7 @@
       width: 100%;
       padding-top: var(--hw-spacing-smaller);
       padding-bottom: var(--hw-spacing-smaller);
-      padding-left: var(--hw-spacing);
+      padding-left: 0;
 
       @media (--large) {
         color: var(--hw-color-gray-darker);
