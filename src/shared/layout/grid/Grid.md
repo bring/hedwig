@@ -127,7 +127,7 @@ This will hide the grid item on a set screen size (only until the next breakpoin
 
 
 ```code
-[Base]            .hw--none
+[Base]            .hw-none
 [Small]           .hw-small--none
 [Medium]          .hw-medium--none
 [Large]           .hw-large--none
