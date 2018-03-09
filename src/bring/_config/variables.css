@@ -3,7 +3,6 @@
  */
 
 :root {
-
   /**
    * Colors
    */
@@ -13,7 +12,15 @@
   --hw-color-primary-darker: #233813;
   --hw-color-primary-light: #b7dd98;
   --hw-color-primary-lighter: #d8ecc9;
-  --hw-color-link: #0066dd;
+
+  /**
+    * Link Colors
+    */
+
+  --hw-color-link: #3b7e00;
+  --hw-color-link-underline: #b7dd98;
+  --hw-color-link-hover: #233813;
+  --hw-color-link-hover-underline: #7bc144;
 
   /**
    * Color mappings
