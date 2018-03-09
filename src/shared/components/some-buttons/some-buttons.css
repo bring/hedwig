@@ -195,4 +195,55 @@
       }
     }
   }
+
+  &--outline-dark {
+    & .hw-some__button {
+      border-color: var(--hw-color-gray-dark);
+      &--facebook {
+        &:hover, &:focus, &:active {
+          border-color: #3d5a98;
+        }
+      }
+
+      &--twitter {
+        &:hover,
+        &:focus,
+        &:active {
+          border-color: #5fa8dc;
+        }
+      }
+
+      &--linkedin {
+        &:hover,
+        &:focus,
+        &:active {
+          border-color: #006295;
+        }
+      }
+
+      &--google {
+        &:hover,
+        &:focus,
+        &:active {
+          border-color: #cd3c28;
+        }
+      }
+
+      &--instagram {
+        &:hover,
+        &:focus,
+        &:active {
+          border-color: #c94274;
+        }
+      }
+
+      &--email {
+        &:hover,
+        &:focus,
+        &:active {
+          border-color: #7bc144;
+        }
+      }
+    }
+  }
 }
