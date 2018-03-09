@@ -17,10 +17,10 @@
     * Link Colors
     */
 
-  --hw-color-link: #cd291f;
-  --hw-color-link-underline: rgba(var(--hw-color-link), 0.5);
-  --hw-color-link-hover: #9e1d15;
-  --hw-color-link-underline-hover: rgba(var(--hw-color-link-hover), 0.5);
+  --hw-color-link: rgb(205, 41, 31);
+  --hw-color-link-underline: rgb(205, 41, 31, 0.5);
+  --hw-color-link-hover: rgb(158, 29, 21);
+  --hw-color-link-underline-hover: rgb(205, 158, 29, 0.5);
 
   /**
    * Color mappings
