@@ -1,0 +1,38 @@
+/**
+ * Block
+ */
+
+.hw-contentbox {
+  width: 100%;
+  position: relative;
+  display: block;
+  border-left: 3px solid var(--hw-color-gray-light);
+  border-right: 3px solid var(--hw-color-gray-light);
+  border-bottom: 3px solid var(--hw-color-gray-light);
+  padding: var(--hw-spacing);
+  background-color: var(--hw-color-white);
+
+  &::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -3px;
+    width: calc(100% + 6px);
+    content: '';
+    height: 6px;
+    background: var(--hw-color-gray-dark);
+  }
+
+  /**
+   * Elements
+   */
+
+  &__contents {
+    padding-top: var(--hw-spacing-small);
+  }
+
+  &__title {
+    padding-bottom: var(--hw-spacing-small);
+    border-bottom: 3px solid var(--hw-color-gray-lightest);
+  }
+}
