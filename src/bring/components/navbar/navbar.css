@@ -20,6 +20,19 @@
     justify-content: space-between;
   }
 
+  &__top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: var(--hw-spacing);
+    padding-right: var(--hw-spacing);
+
+    @media (--xlarge) {
+      padding-left: var(--hw-spacing-large);
+      padding-right: var(--hw-spacing-large);
+    }
+  }
+
   &__logo {
     position: relative;
     width: 121px;
@@ -31,7 +44,7 @@
 
     @media (--large) {
       position: relative;
-      margin: 0 0 0 var(--hw-spacing-larger);
+      margin: 0;
     }
   }
 
@@ -134,7 +147,7 @@
 
     @media (--large) {
       position: relative;
-      padding: 0 var(--hw-spacing-larger) 0 var(--hw-spacing-small);
+      padding: 0 0 0 var(--hw-spacing-small);
     }
   }
 

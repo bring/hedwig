@@ -13,34 +13,36 @@
 <header class="hw-navbar">
   <div class="hw-navbar__content">
 
-    <a href="#" class="hw-navbar__logo">
-      <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
-        <title id="Logo">Go to homepage</title>
-        <use xlink:href="#logo-bring"></use>
-      </svg>
-      <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
-        <title id="Logo">Go to homepage</title>
-        <use xlink:href="#logo-bring-white"></use>
-      </svg>
-    </a>
-
-    <nav class="hw-navbar__menu">
-      <button class="hw-navbar__item" data-hw-drawer-trigger="login">Logg inn</button>
-      <button class="hw-navbar__search-button" data-hw-toggle-search>
-        Søk
-        <svg class="hw-navbar__search-icon">
-          <use xlink:href="#search"></use>
+    <div class="hw-navbar__top">
+      <a href="#" class="hw-navbar__logo">
+        <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
+          <title id="Logo">Go to homepage</title>
+          <use xlink:href="#logo-bring"></use>
         </svg>
-      </button>
-      <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-        <span>Meny</span>
-        <div class="hw-hamburger" data-hw-menu-icon>
-          <span class="hw-hamburger__part"></span>
-          <span class="hw-hamburger__part"></span>
-          <span class="hw-hamburger__part"></span>
-        </div>
-      </button>
-    </nav>
+        <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+          <title id="Logo">Go to homepage</title>
+          <use xlink:href="#logo-bring-white"></use>
+        </svg>
+      </a>
+
+      <nav class="hw-navbar__menu">
+        <button class="hw-navbar__item" data-hw-drawer-trigger="login">Logg inn</button>
+        <button class="hw-navbar__search-button" data-hw-toggle-search>
+          Søk
+          <svg class="hw-navbar__search-icon">
+            <use xlink:href="#search"></use>
+          </svg>
+        </button>
+        <button class="hw-navbar__menu-button" data-hw-toggle-menu>
+          <span>Meny</span>
+          <div class="hw-hamburger" data-hw-menu-icon>
+            <span class="hw-hamburger__part"></span>
+            <span class="hw-hamburger__part"></span>
+            <span class="hw-hamburger__part"></span>
+          </div>
+        </button>
+      </nav>
+    </div>
 
     <div class="hw-drawer" data-hw-drawer="login">
       <div class="hw-drawer__overlay hw-animate hw-animate--fade-in-overlay" data-hw-drawer-trigger="Drawer2"></div>
@@ -325,28 +327,30 @@
 ```html
 <header class="hw-navbar hw-navbar--transparent">
   <div class="hw-navbar__content">
-    <div class="hw-navbar__logo">
-      <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
-        <title id="Logo">Go to homepage</title>
-        <use xlink:href="#logo-bring-white"></use>
-      </svg>
-      <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
-        <title id="Logo">Go to homepage</title>
-        <use xlink:href="#logo-bring-white"></use>
-      </svg>
+    <div class="hw-navbar__top">
+      <div class="hw-navbar__logo">
+        <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
+          <title id="Logo">Go to homepage</title>
+          <use xlink:href="#logo-bring-white"></use>
+        </svg>
+        <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+          <title id="Logo">Go to homepage</title>
+          <use xlink:href="#logo-bring-white"></use>
+        </svg>
+      </div>
+      <nav class="hw-navbar__menu">
+        <a href="#" class="hw-navbar__item">English</a>
+        <a href="#" class="hw-navbar__item">Login</a>
+        <button class="hw-navbar__menu-button" data-hw-toggle-menu>
+          <span>Meny</span>
+          <div class="hw-hamburger" data-hw-menu-icon>
+            <span class="hw-hamburger__part"></span>
+            <span class="hw-hamburger__part"></span>
+            <span class="hw-hamburger__part"></span>
+          </div>
+        </button>
+      </nav>
     </div>
-    <nav class="hw-navbar__menu">
-      <a href="#" class="hw-navbar__item">English</a>
-      <a href="#" class="hw-navbar__item">Login</a>
-      <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-        <span>Meny</span>
-        <div class="hw-hamburger" data-hw-menu-icon>
-          <span class="hw-hamburger__part"></span>
-          <span class="hw-hamburger__part"></span>
-          <span class="hw-hamburger__part"></span>
-        </div>
-      </button>
-    </nav>
     <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
   </div>
 </header>
