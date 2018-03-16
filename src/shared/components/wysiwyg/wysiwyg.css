@@ -43,6 +43,35 @@
     @extend .hw-list;
   }
 
+  /* Image */
+  & figure {
+    margin: 0;
+    width: 100%;
+    margin-bottom: var(--hw-spacing);
+    padding: 0;
+  }
+
+  & figcaption {
+    margin-top: var(--hw-spacing-smallest);
+    font-size: var(--hw-font-size-small);
+    color: var(--hw-color-gray-darker);
+    font-family: var(--hw-font-primary-medium);
+    text-align: left;
+
+    &:empty {
+      display: none;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-right: var(--hw-spacing-smallest);
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid var(--hw-color-primary);
+    }
+  }
+
   /**
    * Modifiers
    */

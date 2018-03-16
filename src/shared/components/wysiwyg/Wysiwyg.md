@@ -24,6 +24,14 @@ It will apply the correct margins/paddings and vertical rythm for headlines, par
 
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora. Consecorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.</p>
   <p>Alias, asperiores magni tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.</p>
+
+  <figure>
+    <img alt="Picture of happy people" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg">
+    <figcaption>
+      Can I help you? Yeah, can I have a dozen red roses, please? Oh, hi, Johnny. I didn't know it was you.
+    </figcaption>
+  </figure>
+
   <ul>
     <li>List item 1</li>
     <li>List item 2</li>
