@@ -21,10 +21,10 @@
 
   &__desktop {
     display: none;
-    padding: var(--hw-spacing) var(--hw-spacing-larger) var(--hw-spacing-smaller) var(--hw-spacing-larger);
 
     @media (--large) {
       display: block;
+      padding: var(--hw-spacing) var(--hw-spacing) var(--hw-spacing-smaller) var(--hw-spacing);
       max-width: var(--hw-width-wide);
       margin: 0 auto;
     }
