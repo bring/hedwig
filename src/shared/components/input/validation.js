@@ -77,6 +77,22 @@ const HWValidate = ({
     }
   }
 
+  function validateRegEx(e) {
+    const value = e.target.value;
+    const regexString = e.target.dataset.hwRegex;
+    const parts = /\/(.*)\/(.*)/.exec(regexString);
+    const regEx = new RegExp(parts[1], parts[2]);
+    const input = e.target;
+    const message = e.target.nextElementSibling;
+    if (regEx.test(value)) {
+      input.classList.remove('hw-input--error');
+      message.classList.add('hw-error--is-hidden');
+    } else {
+      input.classList.add('hw-input--error');
+      message.classList.remove('hw-error--is-hidden');
+    }
+  }
+
   function validatePhoneNumber(e) {
     const value = e.target.value;
     const input = e.target;
@@ -119,6 +135,9 @@ const HWValidate = ({
     }
     if (validateType === 'bank-account') {
       trigger.addEventListener('input', validateBankAccount);
+    }
+    if (validateType === 'regex') {
+      trigger.addEventListener('input', validateRegEx);
     }
   }
 

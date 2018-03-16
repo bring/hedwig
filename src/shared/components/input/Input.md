@@ -107,15 +107,25 @@ For inline validation we use:
         <div class="hw-error hw-error--is-hidden" data-hw-error-message>Telefonnummer må inneholde 8 nummber</div>
     </div>
   </div>
-  <label class="hw-label">
-    Visa Card (see other cards under)
-    <input type="text"
-           class="hw-input"  
-           data-hw-validate="credit-card"
-           data-hw-validate-card-type="Visa"
-           placeholder="4242 4242 4242 4242" />
-    <div class="hw-error hw-error--is-hidden" data-hw-error-message>Kedittkortnummer er ugyldig</div>
-  </label>
+</label>
+<label class="hw-label">
+  Visa Card (see other cards under)
+  <input type="text"
+         class="hw-input"  
+         data-hw-validate="credit-card"
+         data-hw-validate-card-type="Visa"
+         placeholder="4242 4242 4242 4242" />
+  <div class="hw-error hw-error--is-hidden" data-hw-error-message>Kedittkortnummer er ugyldig</div>
+</label>
+<label class="hw-label">
+  Regex
+  <input type="text"
+         class="hw-input"  
+         data-hw-validate="regex"
+         data-hw-regex="/e/"
+         placeholder="Write something with an e in" />
+  <div class="hw-error hw-error--is-hidden" data-hw-error-message>
+    Du må skrive bokstaven e.</div>
 </label>
 ```
 
@@ -126,6 +136,13 @@ For inline validation we use:
 [Phone]                [data-hw-validate="phone-number"]
 [Postal code]          [data-hw-validate="postal-code"]
 [Card]                 [data-hw-validate="card"]
+```
+
+### Regex
+
+```code
+[Regex]                [data-hw-validate="regex"]
+[Expression]           [data-hw-regex="/example/"]
 ```
 
 ### Credit cards (combine with card validator)
