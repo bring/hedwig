@@ -30,6 +30,10 @@
     margin-top: var(--hw-spacing-small);
   }
 
+  &--mb-small {
+    margin-bottom: var(--hw-spacing-small);
+  }
+
   &--mb-smaller {
     margin-bottom: var(--hw-spacing-small);
   }
