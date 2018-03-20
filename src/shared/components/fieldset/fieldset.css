@@ -8,6 +8,7 @@
   padding: 0;
   border: 0;
   margin: 0;
+  margin-bottom: var(--hw-spacing-small);
   line-height: var(--hw-spacing);
 
   /**
