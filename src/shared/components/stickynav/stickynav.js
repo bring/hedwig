@@ -73,6 +73,21 @@ const HWStickyNav = ({
       };
     });
   }
+  // Gives smooth scroll effect
+  function smoothScroll(){
+      const links = qa(linkSelector, SETTINGS.element);
+      links.forEach((link) => {
+        link.addEventListener('click',  function(event){
+          const el = getPosition(q(link.hash));
+          event.preventDefault();
+          window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            top: el.top - SETTINGS.navbarHeight + 1  // scrolls till nav bar bottom
+          });
+        });
+      });
+  }
 
   function init() {
     if (!SETTINGS.element) {
@@ -90,6 +105,8 @@ const HWStickyNav = ({
 
     // Add HW acceleration
     SETTINGS.element.style.willChange = 'top';
+    // Add onclick event listener for smooth scroll
+    smoothScroll();
 
     // Attach event listeners
     window.addEventListener('scroll', throttle(checkPosition, 50));
