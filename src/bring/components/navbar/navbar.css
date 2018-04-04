@@ -353,7 +353,6 @@
       color: var(--hw-color-white);
       background: transparent !important;
       border-color: transparent !important;
-      z-index: var(--z-index--navbar-drawer-foreground);
 
       @media (--large) {
         color: var(--hw-color-gray-darker);
