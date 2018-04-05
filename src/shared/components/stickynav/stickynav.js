@@ -13,6 +13,7 @@ import getPosition from '../../utilities/js/position';
 const HWStickyNav = ({
   selector = '[data-hw-sticky-nav]',
   linkSelector = '.hw-stickynav__link',
+  innerSelector = '.hw-stickynav__nav',
   activeItemClass = 'hw-stickynav__link--active',
 } = {}) => {
   // Module settings object
@@ -88,6 +89,15 @@ const HWStickyNav = ({
       left: 0,
       top: (target.top - SETTINGS.element.clientHeight) + 1,  // scrolls till nav bar bottom
     });
+
+    // Scroll internally
+    const innerElement = q(innerSelector);
+    const offset = (element.offsetLeft - (innerElement.clientWidth / 2)) + (element.clientWidth / 2);
+    innerElement.scroll({
+      behavior: 'smooth',
+      left: offset,
+      top: 0,
+    });
   }
 
   function init() {
@@ -111,7 +121,7 @@ const HWStickyNav = ({
     SETTINGS.element.addEventListener('click', handleClick);
     window.addEventListener('scroll', throttle(checkPosition, 50));
     window.addEventListener('resize', throttle(() => {
-      findSectionPositions();
+      init();
     }, 100));
 
     // Fire initial check (in case user starts halfway down page)
