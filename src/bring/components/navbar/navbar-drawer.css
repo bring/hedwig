@@ -8,10 +8,6 @@
     top: 0;
     left: 0;
     visibility: hidden;
-
-    @media (--large) {
-      background: var(--hw-color-white);
-    }
   }
 
   &__drawer-content {
