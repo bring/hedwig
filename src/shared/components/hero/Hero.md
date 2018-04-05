@@ -16,14 +16,6 @@ Hero component
   </div>
 ```
 
-### Hero with border
-
-```html|span-6
-  <div class="hw-hero hw-hero--border">
-    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"/>
-  </div>
-```
-
 ### Hero small (20vh)
 
 ```html|span-6

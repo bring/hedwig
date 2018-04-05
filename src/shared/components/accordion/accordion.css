@@ -20,7 +20,7 @@
    */
 
   &__item {
-    transition: height 0.5s ease;
+    transition: height 0.3s ease;
     overflow: hidden;
 
     &:last-child {
