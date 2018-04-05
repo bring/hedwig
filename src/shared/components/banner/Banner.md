@@ -41,7 +41,7 @@ Required:
   </section>
 ```
 
-### Banner with read more
+### Banner with read more (WIP)
 
 ```html
   <section class="hw-banner" data-hw-banner="example2">
