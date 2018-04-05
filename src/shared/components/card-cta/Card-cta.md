@@ -51,3 +51,32 @@ Used on the home page
     </div>
   </div>
 ```
+
+
+### Cards in flex
+
+```html|span-6
+  <section class="hw-flex hw-flex--guttered">
+      <a href="#" class="hw-card-cta">
+        <h2 class="hw-card-cta__title">Sende</h2>
+        <hr class="hw-hr hw-hr--centered" />
+        <p class="hw-card-cta__text">
+          Finn riktig tjeneste og bestill
+        </p>
+      </a>
+      <a href="#" class="hw-card-cta">    
+        <h2 class="hw-card-cta__title">Motta</h2>
+        <hr class="hw-hr hw-hr--centered" />
+        <div class="hw-card-cta__text">
+          Adresseendring og mottakkertjenester.
+        </div>
+      </a>
+      <a href="#" class="hw-card-cta">
+        <h2 class="hw-card-cta__title">Mer om</h2>
+        <hr class="hw-hr hw-hr--centered" />
+        <div class="hw-card-cta__text">
+          Netthandel, kundedialog, adresser, transport, lagring og mer.
+        </div>
+      </a>
+  </section>
+```
