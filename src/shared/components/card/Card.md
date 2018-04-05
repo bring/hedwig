@@ -96,7 +96,7 @@ Styling for cards.
 ```html|span-3
   <a href="#" class="hw-card">
     <div class="hw-card__actions">
-      <button class="hw-card__tag-button">Tag it</button>
+      <div class="hw-card__tag">Tag it</div>
       <div class="hw-card__date">
         <svg class="hw-icon">
           <use xlink:href="#clock"></use>
