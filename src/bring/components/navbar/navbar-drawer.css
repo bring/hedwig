@@ -8,14 +8,10 @@
     top: 0;
     left: 0;
     visibility: hidden;
-
-    @media (--large) {
-      background: var(--hw-color-white);
-    }
   }
 
   &__drawer-content {
-    margin-top: 120px;
+    margin-top: 96px;
     padding-left: var(--hw-spacing);
     padding-right: var(--hw-spacing);
 
