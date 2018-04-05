@@ -32,7 +32,7 @@
     "css:build:bring:test": "postcss tmp/bring.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./build/releases/bring-test.css",
     "css:build:posten": "postcss tmp/posten.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./build/releases/posten-${npm_package_version}.css",
     "css:build:posten:test": "postcss tmp/posten.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./build/releases/posten-test.css",
-    "js:dev": "rollup -c --name \"hedwig\"",
+    "js:dev": "rollup -m inline -c --name \"hedwig\"",
     "js:build": "rollup -c --name \"hedwig\" --output build/releases/main-${npm_package_version}.js",
     "js:build:test": "rollup -c --name \"hedwig\" --output build/releases/main-test.js",
     "docs:build": "node ./scripts/docs-build",
