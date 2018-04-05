@@ -46,8 +46,8 @@ Horizontal rule
   <hr class="hw-hr hw-hr--full" />
 ```
 
-### Centered (on hover)
+### Centered
 
 ```html|span-6
-  <hr class="hw-hr hw-hr--animated" />
+  <hr class="hw-hr hw-hr--centered" />
 ```
