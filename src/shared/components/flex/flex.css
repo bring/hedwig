@@ -1,0 +1,34 @@
+/**
+ * Block
+ */
+
+.hw-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    flex: 1;
+  }
+
+  /*
+   * Modifiers
+  */
+
+  &--responsive {
+    flex-direction: column;
+
+    @media (--medium) {
+      flex-direction: row;
+    }
+  }
+
+  &--guttered {
+    & > * {
+      margin-left: var(--hw-spacing);
+    }
+
+    & > *:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
