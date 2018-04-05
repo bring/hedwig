@@ -94,29 +94,6 @@
     transform: rotate(-45deg);
   }
 
-  &--gray {
-    background: var(--hw-color-gray-lighter);
-    color: var(--hw-color-gray-darkest);
-
-    & .hw-accordion__trigger {
-      color: var(--hw-color-gray-darkest);
-
-      &:hover,
-      &:focus {
-        color: var(--hw-color-primary-dark);
-        outline: 0;
-      }
-    }
-
-    & .hw-accordion__trigger {
-      border-top: 3px solid var(--hw-color-gray-light);
-    }
-
-    & .hw-accordion__contents p {
-      color: var(--hw-color-gray-darkest);
-    }
-  }
-
   /* TODO: Dark accordion does a lot of overriding – make as an own component? */
 
   &--dark {
