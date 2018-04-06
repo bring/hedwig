@@ -17,6 +17,7 @@ const HWNavbar = ({
   loginActiveClass = 'hw-navbar--login-active',
   showSearchClass = 'hw-navbar--searching',
   activeHamburgerClass = 'hw-hamburger--active',
+  desktopSearchFieldSelector = '.hw-navbar__search .hw-search__input',
 } = {}) => {
 
   // Module settings object
@@ -26,6 +27,7 @@ const HWNavbar = ({
     searchButton: q(searchButtonSelector),
     overlay: q(overlaySelector),
     hamburgerIcon: q(hamburgerIcon),
+    desktopSearchField: q(desktopSearchFieldSelector)
   };
 
   /**
@@ -57,6 +59,9 @@ const HWNavbar = ({
     }
 
     SETTINGS.navbar.classList.add(showSearchClass);
+    if(SETTINGS.desktopSearchField) {
+      SETTINGS.desktopSearchField.focus();
+    }
   }
 
   function init() {
