@@ -71,6 +71,21 @@ Styling for buttons.
 [Outline white]        .hw-button--outline-white
 ```
 
+### Outline dark
+
+```html|span-4
+  <button class="hw-button hw-button--outline-dark">
+    Normal state
+  </button>
+  <button class="hw-button hw-button--outline-dark" disabled>
+    Disabled state
+  </button>
+```
+
+```code
+[Outline dark]        .hw-button--outline-dark
+```
+
 ### Button with icon
 
 ```html|span-4

@@ -125,6 +125,31 @@
     }
   }
 
+  &--outline-dark {
+    border: 3px solid var(--hw-color-gray-darkest);
+    background: none;
+    color: var(--hw-color-gray-darkest);
+    fill: var(--hw-color-gray-darkest);
+
+    &:not([disabled],.hw-button--round) {
+      padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--hw-color-white);
+      fill: var(--hw-color-white);
+      border-color: var(--hw-color-gray-darkest);
+      background: var(--hw-color-gray-darkest);
+      outline: 1px solid var(--hw-color-gray-darkest);
+    }
+
+    &:active {
+      background: var(--hw-color-gray);
+    }
+  }
+
   &--outline-white {
     border: 3px solid var(--hw-color-white);
     background: none;
