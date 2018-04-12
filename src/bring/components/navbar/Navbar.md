@@ -303,14 +303,14 @@
     <section class="hw-navbar__search">
       <div class="hw-search hw-search--large"
         data-hw-search
-        data-hw-search-placeholders='["Søk"]'
       >
         <span class="hw-search__background"></span>
         <div class="hw-search__inner">
           <input
             data-hw-search-input
             class="hw-search__input" type="text"
-            aria-label="Search" />
+            aria-label="Søk"
+            placeholder="Søk" />
           <svg class="hw-search__icon">
             <use xlink:href="#search"></use>
           </svg>
