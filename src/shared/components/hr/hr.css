@@ -36,9 +36,4 @@
   &--gray-lighter {
     background: var(--hw-color-gray-lighter);
   }
-
-  &--centered {
-    text-align: center; /* IE */
-    margin: 0 auto;
-  }
 }

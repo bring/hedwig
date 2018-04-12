@@ -11,7 +11,7 @@ Used on the home page
 ```html|span-3
   <a href="#" class="hw-card-cta">
     <h2 class="hw-card-cta__title">Sende</h2>
-    <hr class="hw-hr hw-hr--centered" />
+    <hr class="hw-card-cta__hr" />
     <p class="hw-card-cta__text">
       Finn riktig tjeneste og bestill
     </p>
@@ -25,7 +25,7 @@ Used on the home page
     <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card-cta">
         <h2 class="hw-card-cta__title">Sende</h2>
-        <hr class="hw-hr hw-hr--centered" />
+        <hr class="hw-card-cta__hr" />
         <p class="hw-card-cta__text">
           Finn riktig tjeneste og bestill
         </p>
@@ -34,7 +34,7 @@ Used on the home page
  --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card-cta">    
         <h2 class="hw-card-cta__title">Motta</h2>
-        <hr class="hw-hr hw-hr--centered" />
+        <hr class="hw-card-cta__hr" />
         <div class="hw-card-cta__text">
           Adresseendring og mottakkertjenester.
         </div>
@@ -43,7 +43,7 @@ Used on the home page
  --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card-cta">
         <h2 class="hw-card-cta__title">Mer om</h2>
-        <hr class="hw-hr hw-hr--centered" />
+        <hr class="hw-card-cta__hr" />
         <div class="hw-card-cta__text">
           Netthandel, kundedialog, adresser, transport, lagring og mer.
         </div>
@@ -59,21 +59,21 @@ Used on the home page
   <section class="hw-flex hw-flex--guttered">
       <a href="#" class="hw-card-cta">
         <h2 class="hw-card-cta__title">Sende</h2>
-        <hr class="hw-hr hw-hr--centered" />
+        <hr class="hw-card-cta__hr" />
         <p class="hw-card-cta__text">
           Finn riktig tjeneste og bestill
         </p>
       </a>
       <a href="#" class="hw-card-cta">    
         <h2 class="hw-card-cta__title">Motta</h2>
-        <hr class="hw-hr hw-hr--centered" />
+        <hr class="hw-card-cta__hr" />
         <div class="hw-card-cta__text">
           Adresseendring og mottakkertjenester.
         </div>
       </a>
       <a href="#" class="hw-card-cta">
         <h2 class="hw-card-cta__title">Mer om</h2>
-        <hr class="hw-hr hw-hr--centered" />
+        <hr class="hw-card-cta__hr" />
         <div class="hw-card-cta__text">
           Netthandel, kundedialog, adresser, transport, lagring og mer.
         </div>

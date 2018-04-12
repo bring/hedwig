@@ -8,6 +8,9 @@ Horizontal rule
 [Full]           .hw-hr--full
 [White]          .hw-hr--white
 [Centered]       .hw-hr--centered
+[Gray]           .hw-hr--gray
+[Gray light]     .hw-hr--gray-light
+[Gray lighter]   .hw-hr--gray-lighter
 ```
 
 ### Regular
@@ -21,6 +24,14 @@ Horizontal rule
 ```html|span-6
   <hr class="hw-hr hw-hr--white" />
 ```
+
+### Full
+
+```html|span-6
+  <hr class="hw-hr hw-hr--full" />
+```
+
+## Other colors
 
 ### Gray
 
@@ -38,16 +49,4 @@ Horizontal rule
 
 ```html|span-6
   <hr class="hw-hr hw-hr--gray-lighter" />
-```
-
-### Full
-
-```html|span-6
-  <hr class="hw-hr hw-hr--full" />
-```
-
-### Centered (on hover)
-
-```html|span-6
-  <hr class="hw-hr hw-hr--animated" />
 ```

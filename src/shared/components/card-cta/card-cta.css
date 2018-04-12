@@ -32,7 +32,7 @@
       color: var(--hw-color-black);
     }
 
-    & .hw-hr {
+    & .hw-card-cta__hr {
       transform: scaleX(2);
       background-color: var(--hw-color-primary);
     }
@@ -51,6 +51,16 @@
     font-family: var(--hw-font-primary-medium);
     margin-bottom: var(--hw-spacing-smallest);
     transition: color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  &__hr {
+    transition: 0.2s ease all;
+    border: 0;
+    background: var(--hw-color-gray);
+    height: 3px;
+    width: 100%;
+    max-width: 36px;
+    margin: 0 auto;
   }
 
   &__text {
