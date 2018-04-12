@@ -64,6 +64,7 @@
 
     @media (--medium) {
       max-width: 700px;
+      padding: var(--hw-spacing-large);
       margin: var(--hw-spacing-larger);
     }
   }
