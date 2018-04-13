@@ -47,11 +47,6 @@ const HWTab = ({
     }
 
     SETTINGS.items.forEach((item) => {
-      /**
-       * Hide the border for the item when using this script
-       * When this script is not in use, only show the border below the selected item
-       * @type {string}
-       */
       // Attach event listener
       item.addEventListener('click', clickItem);
       if(item.classList.contains(selectedClass)){
@@ -61,6 +56,10 @@ const HWTab = ({
         moveMarkerTo(item);
         SETTINGS.marker.style.transition = existingTransition;
       }
+      /**
+       * Hide the border for the selected item when using this script. Use marker instead to show the sliding marker
+       * When this script is not in use, only show the border below the selected item
+       */
       item.style.borderColor = 'transparent';
     });
 
