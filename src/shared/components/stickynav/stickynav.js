@@ -83,7 +83,6 @@ const HWStickyNav = ({
     if (!element.classList.contains('hw-stickynav__link')) { return; }
 
     const target = getPosition(q(element.hash));
-    event.preventDefault();
     window.scroll({
       behavior: 'smooth',
       left: 0,
