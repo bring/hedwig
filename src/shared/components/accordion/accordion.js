@@ -51,7 +51,7 @@ const HWAccordion = ({
    */
   function toggleAccordion(e) {
     // Determine if we've clicked on an option
-    const elem = e.target;
+    const elem = findParent({selector: '.hw-accordion__trigger', elem: e.target});
 
     // Find contents and parent item
     const contents = elem.nextElementSibling;
