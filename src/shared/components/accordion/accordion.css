@@ -94,6 +94,11 @@
     transform: rotate(-45deg);
   }
 
+  &--transparent {
+    background: none;
+    border: 0;
+  }
+
   /* TODO: Dark accordion does a lot of overriding – make as an own component? */
 
   &--dark {
