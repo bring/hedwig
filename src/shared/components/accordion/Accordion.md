@@ -228,5 +228,37 @@ This version is used in the footer and navbar (on mobile)
         </div>
       </div>
     </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Kundeservice
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg hw-wysiwyg--small">
+          <p>Alle sendinger fra utlandet og som kan ha tollpliktig innhold vil bli tollbehandlet/tollvurdert.</p>
+          <p>Private gaver med verdi inntil kr 1000 er som oftest toll og avgiftsfrie så fremt de ikke inneholder eks alkohol og tobakksvarer</p>
+          <p>For all annen import hvor verdien er kr 350 (inkludert frakt og forsikring) eller mer må du som oftest betale mva (ev andre avgifter) til staten. Posten fortoller sendingen for deg mot betaling av tollklaring.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+```
+### Transparent accordion with only one item
+
+```html|span-6
+  <ul class="hw-accordion hw-accordion--transparent" data-hw-accordion="example3" data-hw-accordion-allow-multiple>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Kundeservice
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg hw-wysiwyg--small">
+          <p>Alle sendinger fra utlandet og som kan ha tollpliktig innhold vil bli tollbehandlet/tollvurdert.</p>
+          <p>Private gaver med verdi inntil kr 1000 er som oftest toll og avgiftsfrie så fremt de ikke inneholder eks alkohol og tobakksvarer</p>
+          <p>For all annen import hvor verdien er kr 350 (inkludert frakt og forsikring) eller mer må du som oftest betale mva (ev andre avgifter) til staten. Posten fortoller sendingen for deg mot betaling av tollklaring.</p>
+        </div>
+      </div>
+    </li>
   </ul>
 ```

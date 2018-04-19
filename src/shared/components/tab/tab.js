@@ -15,7 +15,6 @@ const HWTab = ({
 
 
   function clickItem(e) {
-    e.preventDefault();
     var clickedItem = e.target;
     if(clickedItem.classList.contains(selectedClass)){
       //Already selected, don't do anything
