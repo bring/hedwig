@@ -1,0 +1,49 @@
+.hw-tab {
+  overflow-x: scroll;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  margin: 0;
+  padding-left: 0;
+
+  &::-webkit-scrollbar {
+     display: none;
+  }
+  /* The box-shadow creates the gray bar under the tab items */
+  box-shadow: inset 0px -3px 0px 0px var(--hw-color-gray-light);
+  &__item {
+    font-size:var(--hw-font-size-small);
+    display: inline-block;
+    margin-left: var(--hw-spacing-large);
+    padding-bottom: 3px;
+    &--selected {
+      /**
+       * Border color will be set to transparent during runtime
+       * This border is shown only if the hw-tab javascript is not running
+       */
+      border-bottom: 3px solid var(--hw-color-primary-dark);
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+  &__marker {
+    top: 25px;
+    position: absolute;
+    height: 0;
+    border-bottom: 3px solid var(--hw-color-primary-dark);
+    /**
+     * The following will be modified by javascript during runtime to move the marker around
+     * - transition
+     * - left
+     * - width
+     */
+    transition: left 200ms, width 200ms;
+    left: 0;
+    width: 0;
+  }
+}
+
+
+

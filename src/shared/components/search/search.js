@@ -34,6 +34,9 @@ const HWSearch = ({
   function startPlaceholderRotate(search) {
     const placeholder = q(placeholderSelector, search);
     const { hwSearchPlaceholders } = search.dataset;
+    if(!hwSearchPlaceholders){
+      return;
+    }
     const texts = JSON.parse(hwSearchPlaceholders);
 
     placeholder.innerText = texts[0];
