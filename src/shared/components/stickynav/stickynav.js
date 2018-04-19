@@ -1,7 +1,9 @@
+import zenscroll from 'zenscroll';
 import throttle from 'lodash/throttle';
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import getPosition from '../../utilities/js/position';
+import verticalScroll from '../../utilities/js/verticalScroll';
 
 /**
  * @function HWStickyNav
@@ -19,6 +21,7 @@ const HWStickyNav = ({
   // Module settings object
   const SETTINGS = {
     element: q(selector), // All sticky DOM nodes
+    internalScroller: zenscroll.createScroller(q(innerSelector)),
   };
 
   /**
@@ -83,20 +86,22 @@ const HWStickyNav = ({
     if (!element.classList.contains('hw-stickynav__link')) { return; }
 
     const target = getPosition(q(element.hash));
-    window.scroll({
-      behavior: 'smooth',
-      left: 0,
-      top: (target.top - SETTINGS.element.clientHeight) + 1,  // scrolls till nav bar bottom
-    });
+    zenscroll.toY((target.top - SETTINGS.element.clientHeight) + 1);
 
     // Scroll internally
     const innerElement = q(innerSelector);
     const offset = (element.offsetLeft - (innerElement.clientWidth / 2)) + (element.clientWidth / 2);
-    innerElement.scroll({
-      behavior: 'smooth',
-      left: offset,
-      top: 0,
-    });
+    
+    // Scroll vertically (if using supported browser)
+    if (innerElement.scroll) {
+      innerElement.scroll({
+        behavior: 'smooth',
+        left: offset,
+        top: 0,
+      });
+    } else {
+      verticalScroll(innerElement, offset);
+    }
   }
 
   function init() {
