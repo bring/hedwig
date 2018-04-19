@@ -16,94 +16,43 @@ const HWAutoComplete = ({
     elements: qa(moduleSelector), // All module DOM nodes
   };
 
-  /**
-   * @function selectOption
-   * @desc Select option in list
-   * @param {Event} e
+    /**
+   * @function onArrowDown
+   * @desc Select the first item in the list
+   * @param {node} trigger
    */
 
-  function selectOption(autocomplete) {
-    const input = q('[data-hw-autocomplete-input]', autocomplete);
-    const selectedOption = q('[data-hw-autocomplete-selected="true"]', autocomplete);
-    const selectedValue = selectedOption.getAttribute('data-hw-autocomplete-value');
-    input.value = selectedValue;
+  function onArrowDown(e, suggestion) {
+    if (e.keyCode === 40) {
+      suggestion.focus();
+      const input = q('input', suggestion);
+      input.checked = true;
+      const change = new Event('change');
+      input.dispatchEvent(change);
+    };
   }
 
-  /**
-   * @function navigateSuggestions
-   * @desc Navigate the list based in direction
-   * @param {Event} e
+      /**
+   * @function onSugChange
+   * @desc Bind the value of input to suggestion
+   * @param {node} trigger
    */
-  function navigateOptions(autocomplete, direction) {
-    // Find all options
-    const options = [...qa('[data-hw-autocomplete-suggestion]', autocomplete)];
-    const optionsLength = options.length;
-    // Find index of selected option
-    const currentIndex = options.findIndex(option => {
-      return option.getAttribute('data-hw-autocomplete-selected') === 'true';
-    });
 
-    const choosePrev = (index) => {
-      // If nothing or first option is selected – select the last option
-      if (index === -1 || index === 0) {
-        options[0].setAttribute('data-hw-autocomplete-selected', false);
-        options[optionsLength - 1].setAttribute('data-hw-autocomplete-selected', true);
-      } else {
-        options[index].setAttribute('data-hw-autocomplete-selected', false);
-        options[index - 1].setAttribute('data-hw-autocomplete-selected', true);
-      }
-    };
-
-    const chooseNext = (index) => {
-      // If nothing or last option is selected – select the fist option
-      if (index === -1 || index === optionsLength - 1) {
-        options[optionsLength - 1].setAttribute('data-hw-autocomplete-selected', false);
-        options[0].setAttribute('data-hw-autocomplete-selected', true);
-      } else {
-        options[index].setAttribute('data-hw-autocomplete-selected', false);
-        options[index + 1].setAttribute('data-hw-autocomplete-selected', true);
-      }
-    };
-
-    if (direction === 'prev') { choosePrev(currentIndex); }
-    if (direction === 'next') { chooseNext(currentIndex); }
-  }
-
-  /**
-   * @function handleKeyboardEvents
-   * @desc Handle key presses
-   * @param {node} dropdown
-   */
-  function handleKeyboardEvents(e, autocomplete) {
-    const key = e.keyCode || e.which;
-
-    switch (key) {
-      case KEYS.UP:
-        e.preventDefault();
-        navigateOptions(autocomplete, 'prev');
-        break;
-      case KEYS.DOWN:
-        e.preventDefault();
-        navigateOptions(autocomplete, 'next');
-        break;
-      case KEYS.SPACE:
-      case KEYS.ESCAPE:
-      case KEYS.ENTER:
-        e.preventDefault();
-        selectOption(autocomplete);
-        break;
-      default:
-        break;
-    }
+  function onSugChange(e, searchField) {
+    console.log(e);
   }
 
   /**
    * @function bindEvents
    * @desc Adds listener to module
-   * @param {node} trigger
+   * @param {node, node} trigger
    */
-  function bindEvents(autocomplete) {
-    autocomplete.addEventListener('keydown', (e) => handleKeyboardEvents(e, autocomplete));
+  function bindEvents(searchField, suggestions) {
+    suggestions.forEach((suggestion) => {
+      q('input', suggestion).addEventListener('change', e => onSugChange(e, searchField));
+    });
+
+    searchField.addEventListener('keydown', e => onArrowDown(e, suggestions[0]));
   }
 
 
@@ -125,7 +74,10 @@ const HWAutoComplete = ({
       // Mark as initialised
       autocomplete.setAttribute('data-hw-autocomplete-initialised', true);
 
-      bindEvents(autocomplete);
+      const searchField = q('[data-hw-autocomplete-input]', autocomplete);
+      const suggestions = qa('[data-hw-autocomplete-suggestion]', autocomplete);
+
+      bindEvents(searchField, suggestions);
 
       // Other things here
     });

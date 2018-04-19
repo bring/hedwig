@@ -1,4 +1,7 @@
-# Work in progress
+# Autocomplete - WORK IN PORGRESS
+
+This component is meant to be used when searching up something with an API.
+Use your own javascript to toggle the active class, and to bind the selected value to the input field.
 
 ```code
 [Base]           .hw-autocomplete
@@ -6,41 +9,37 @@
 [Active]         .hw-autocomplete--active
 ```
 
-
 ## Closed autocomplete
 
 ```html
 <label for="autcomplete">Your address</label>
 
-<div class="hw-autocomplete">
+<div class="hw-autocomplete" data-hw-autocomplete>
 
   <div class="hw-autocomplete__input-wrapper">
     <input
       type="text"
+      data-hw-autocomplete-input
       id="autcomplete"
       class="hw-autocomplete__input"
       role=”combobox”
       aria-owns="suggestions"
       placeholder="Placeholder"
     />
-    <span class="hw-autocomplete__input-remove">
-      <svg class="hw-icon">
-        <use xlink:href="#remove"></use>
-      </svg>
-    </span>
   </div>
 
-  <ul id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
-    <li class="hw-autocomplete__suggestion" role="option" hw-data-autosuggestion-selection>
+  <div id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
+    <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+      <input type="radio" name="hedwig" value="one" />
       <span class="hw-autocomplete__suggestion-text">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
       </span>
-    </li>
-    <li class="hw-autocomplete__suggestion" role="option" hw-data-autosuggestion-selection>
+    </label>
+    <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+      <input type="radio" name="hedwig" value="two" />
       <span class="hw-autocomplete__suggestion-text">Two</span>
-    </li>
-  </ul>
+    </label>
+  </div>
 
 </div>
 ```
@@ -63,24 +62,20 @@
       aria-owns="suggestions"
       placeholder="Placeholder"
     />
-    <button tabindex="-1" class="hw-autocomplete__input-remove">
-      <svg class="hw-icon hw-icon--small">
-        <use xlink:href="#remove"></use>
-      </svg>
-    </button>
   </div>
 
-  <ul id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
-    <li class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion data-hw-autocomplete-value="One">
+  <div id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
+    <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+      <input type="radio" name="hedwig" value="one" />
       <span class="hw-autocomplete__suggestion-text">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
       </span>
-    </li>
-    <li class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion data-hw-autocomplete-value="Two">
+    </label>
+    <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+      <input type="radio" name="hedwig" value="two" />
       <span class="hw-autocomplete__suggestion-text">Two</span>
-    </li>
-  </ul>
+    </label>
+  </div>
 
 </div>
 ```

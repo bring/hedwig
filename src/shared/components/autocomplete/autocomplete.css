@@ -60,27 +60,6 @@
     }
   }
 
-  &__input-remove {
-    outline: 0;
-    border: 0;
-    cursor: pointer;
-    fill: var(--hw-color-gray-light);
-    display: none;
-    position: absolute;
-    right: var(--hw-spacing-smaller);
-    top: 50%;
-    transform: translateY(-50%);
-
-    &:hover,
-    &:focus {
-      fill: var(--hw-color-gray);
-    }
-
-    &:active {
-      fill: var(--hw-color-gray-dark);
-    }
-  }
-
   /* Optional element description */
 
   &__suggestions {
@@ -96,11 +75,20 @@
 
   &__suggestion {
     width: 100%;
-    color: var(--hw-color-gray-darker);
-    font-family: var(--hw-font-primary-medium);
     display: block;
     cursor: pointer;
     padding: 0 var(--hw-spacing-small);
+
+    & > input {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    vertical-align: middle;
+
+      &:checked ~ .hw-autocomplete__suggestion-text {
+        color: var(--hw-color-primary);
+      }
+    }
 
     &:last-of-type {
       & .hw-autocomplete__suggestion-text {
@@ -108,19 +96,21 @@
       }
     }
 
-    &[data-hw-autocomplete-selected="true"] {
-      color: var(--hw-color-primary);
-    }
+    &:hover,
+    &:focus {
 
-    &:hover {
-      color: var(--hw-color-primary);
+      & .hw-autocomplete__suggestion-text {
+        color: var(--hw-color-primary);
+      }
     }
   }
 
   &__suggestion-text {
     width: 100%;
+    font-family: var(--hw-font-primary-medium);
     padding: var(--hw-spacing-smaller) 0;
     height: var(--hw-spacing-larger);
+    color: var(--hw-color-gray-darker);
     line-height: normal;
     display: block;
     overflow: hidden;
@@ -137,14 +127,6 @@
     & .hw-autocomplete__suggestions {
       height: auto;
       display: block;
-    }
-
-    & .hw-autocomplete__input-remove {
-      display: block;
-
-      @media(--large) {
-        display: none;
-      }
     }
   }
 }
