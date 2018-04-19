@@ -11,7 +11,7 @@ import commonjs from 'rollup-plugin-commonjs';
 export default {
   format: 'iife',
   entry: {
-    include: ['src/**/*.js'],
+    include: ['src/shared/utilities/js/polyfills/*.js','src/**/*.js'],
     exclude: ['src/**/*.test.js'],
   },
   onwarn: (warning) => {
