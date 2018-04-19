@@ -14,7 +14,27 @@ Default link styles
 ```
 
 ```html|span-6
-  <a href="#" class="hw-link hw-link--small">This is a link on it's own</a>
+  <a href="#" class="hw-link hw-link--small">This is a small link on it's own</a>
+```
+
+
+```html|span-6
+<a href="#" class="hw-link hw-link--with-icon">
+  <svg class="hw-icon hw-icon--small hw-color-link">
+    <use xlink:href="#download"></use>
+  </svg>
+  <span class="hw-link__text">This is a link with an icon</span>
+</a>
+```
+
+
+```html|span-6
+<a href="#" class="hw-link hw-link--with-icon hw-link--dark">
+  <svg class="hw-icon hw-icon--small hw-color-link">
+    <use xlink:href="#download"></use>
+  </svg>
+  <span class="hw-link__text">This is a dark link with an icon</span>
+</a>
 ```
 
 
