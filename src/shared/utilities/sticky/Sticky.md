@@ -1,7 +1,7 @@
 
 ## Sticky
 
-Makes a component stick to the top of the viewport.
+Makes wrapped contents stick to the top of the viewport.
 
 The component left/right position will be based on the original width of the element/container
 

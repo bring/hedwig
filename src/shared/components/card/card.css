@@ -82,12 +82,13 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
   }
 
-  &__tag-button {
+  &__tag {
     min-width: 130px;
     padding: var(--hw-spacing-smallest);
     border: 0;
     background-color: var(--hw-color-secondary);
     font-family: var(--hw-font-primary-medium);
+    text-align: center;
   }
 
   &__date {

@@ -6,21 +6,25 @@ import getPosition from '../../utilities/js/position';
 /**
  * @function HWStickyNav
  * @version 0.0.1
- * @desc Sticku navigation with hash navigation
+ * @desc Sticky navigation with hash navigation
  * @param {object} settings
  */
 
 const HWStickyNav = ({
   selector = '[data-hw-sticky-nav]',
   linkSelector = '.hw-stickynav__link',
+  innerSelector = '.hw-stickynav__nav',
   activeItemClass = 'hw-stickynav__link--active',
 } = {}) => {
   // Module settings object
   const SETTINGS = {
-    navbarHeight: 71, // px
     element: q(selector), // All sticky DOM nodes
   };
 
+  /**
+   * @function updateLinks
+   * @desc add and remove active classes as needed
+   */
   function updateLinks(activeLinkId) {
     const links = qa(linkSelector, SETTINGS.element);
 
@@ -42,15 +46,14 @@ const HWStickyNav = ({
    * @desc Check the scroll position and add active class to link(s)
    */
   function checkPosition() {
-    const offset = window.pageYOffset + SETTINGS.navbarHeight;
-
-    const match = SETTINGS.sections.find((section) => {
-      return offset >= section.top && offset <= section.bottom;
-    });
+    const offset = window.pageYOffset + SETTINGS.element.clientHeight;
+    const match = SETTINGS.sections
+      .find(section => offset >= section.top && offset <= section.bottom);
 
     // Check if there is no match (we're not within a section)
     if (!match) {
-      return updateLinks();
+      updateLinks();
+      return;
     }
 
     // Check if we need to change the currently active item
@@ -74,19 +77,27 @@ const HWStickyNav = ({
     });
   }
   // Gives smooth scroll effect
-  function smoothScroll(){
-      const links = qa(linkSelector, SETTINGS.element);
-      links.forEach((link) => {
-        link.addEventListener('click',  function(event){
-          const el = getPosition(q(link.hash));
-          event.preventDefault();
-          window.scroll({
-            behavior: 'smooth',
-            left: 0,
-            top: el.top - SETTINGS.navbarHeight + 1  // scrolls till nav bar bottom
-          });
-        });
-      });
+  function handleClick(e) {
+    e.preventDefault();
+    const element = e.target;
+    if (!element.classList.contains('hw-stickynav__link')) { return; }
+
+    const target = getPosition(q(element.hash));
+    event.preventDefault();
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: (target.top - SETTINGS.element.clientHeight) + 1,  // scrolls till nav bar bottom
+    });
+
+    // Scroll internally
+    const innerElement = q(innerSelector);
+    const offset = (element.offsetLeft - (innerElement.clientWidth / 2)) + (element.clientWidth / 2);
+    innerElement.scroll({
+      behavior: 'smooth',
+      left: offset,
+      top: 0,
+    });
   }
 
   function init() {
@@ -95,7 +106,7 @@ const HWStickyNav = ({
     }
 
     // Skip if already initialised
-    if (SETTINGS.element.getAttribute('data-hw-sticky-nav-initialised') === 'true') { return false; }
+    if (SETTINGS.element.getAttribute('data-hw-sticky-nav-initialised') === 'true') { return; }
 
     // Mark as initialised
     SETTINGS.element.setAttribute('data-hw-sticky-nav-initialised', true);
@@ -105,14 +116,12 @@ const HWStickyNav = ({
 
     // Add HW acceleration
     SETTINGS.element.style.willChange = 'top';
-    // Add onclick event listener for smooth scroll
-    smoothScroll();
 
     // Attach event listeners
+    SETTINGS.element.addEventListener('click', handleClick);
     window.addEventListener('scroll', throttle(checkPosition, 50));
     window.addEventListener('resize', throttle(() => {
       init();
-      // findSectionPositions();
     }, 100));
 
     // Fire initial check (in case user starts halfway down page)

@@ -92,3 +92,7 @@ h3,
   line-height: 1.4;
   color: var(--hw-color-gray-darker);
 }
+
+.hw-color-primary-dark {
+  color: var(--hw-color-primary-dark)
+}

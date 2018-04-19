@@ -194,7 +194,7 @@
   }
 
   &__title {
-    color: var(--hw-color-gray-darker);
+    color: var(--hw-color-white);
     margin-bottom: var(--hw-spacing);
   }
 
@@ -208,10 +208,6 @@
     font-size: var(--hw-font-size-p);
     color: var(--hw-color-white);
     padding-bottom: var(--hw-spacing-smallest);
-
-    @media (--large) {
-      color: var(--hw-color-gray-darker);
-    }
   }
 
   &__menu-group-links {
@@ -236,17 +232,10 @@
       padding-left: 0;
 
       @media (--large) {
-        color: var(--hw-color-gray-darker);
         display: inline;
         padding-top: 0;
         padding-bottom: 0;
         padding-left: 0;
-      }
-    }
-
-    & a:hover {
-      @media (--large) {
-        color: var(--hw-color-black);
       }
     }
 
@@ -268,7 +257,7 @@
         transition: all 0.5s ease;
         transform: translateX(0);
         left: -var(--hw-spacing-small);
-        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjlweCIgdmlld0JveD0iMCAwIDYgOSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNDguMiAoNDczMjcpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPlBhZ2UgMTwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJOYXZiYXJfLUhvdmVyX01lbnktQ29weS0yIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQ1LjAwMDAwMCwgLTI0MS4wMDAwMDApIj4KICAgICAgICA8cG9seWdvbiBpZD0iUGFnZS0xIiBmaWxsPSIjNENBMjAwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDguMDAwMDAwLCAyNDUuNTAwMDAwKSByb3RhdGUoLTkwLjAwMDAwMCkgdHJhbnNsYXRlKC0xNDguMDAwMDAwLCAtMjQ1LjUwMDAwMCkgIiBwb2ludHM9IjE0OCAyNDUuNzcyNjcyIDE0NC44MTI4IDI0Mi41IDE0My41IDI0My44NjM1MTIgMTQ4IDI0OC41IDE1Mi41IDI0My44NjM1MTIgMTUxLjE4NzggMjQyLjUiPjwvcG9seWdvbj4KICAgIDwvZz4KPC9zdmc+");
+        background-image: url('data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMwIDMwIj48dGl0bGU+Y2FyZXQtcmlnaHQ8L3RpdGxlPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNOS42MyAwTDUuMTUgNC4zOCAxNS45IDE1IDUuMTUgMjUuNjMgOS42MyAzMGwxNS4yMi0xNUw5LjYzIDB6Ii8+PC9zdmc+');
       }
     }
 
@@ -314,7 +303,9 @@
       visibility: visible;
       z-index: var(--z-index--navbar-drawer);
     }
-
+    /**
+     * Logo while the menu is open
+     */
     & .hw-navbar__logo {
       z-index: var(--z-index--navbar-drawer-foreground);
       transform: translateY(-100%);
@@ -334,9 +325,6 @@
 
       @media (--large) {
         display: block;
-        height: auto;
-        visibility: visible;
-        opacity: 1;
       }
     }
 
@@ -345,25 +333,14 @@
       visibility: visible;
 
       @media (--large) {
-        display: none;
+        display: block;
+        height: auto;
       }
     }
 
-    & .hw-navbar__search-button {
-      color: var(--hw-color-white);
-      background: transparent !important;
-      border-color: transparent !important;
-      z-index: var(--z-index--navbar-drawer-foreground);
-
-      @media (--large) {
-        color: var(--hw-color-gray-darker);
-
-        &:hover {
-          color: var(--hw-color-primary);
-        }
-      }
-    }
-
+    /**
+     * Menu button while the menu is open
+     */
     & .hw-navbar__menu-button {
       color: var(--hw-color-white);
       background: transparent !important;
@@ -371,10 +348,23 @@
       z-index: var(--z-index--navbar-drawer-foreground);
 
       @media (--large) {
-        color: var(--hw-color-gray-darker);
-
+        &:focus {
+          color: var(--hw-color-gray-darker);
+        }
         &:hover {
-          color: var(--hw-color-primary);
+          color: var(--hw-color-gray-lighter);
+        }
+      }
+
+      &:focus .hw-hamburger__part {
+        @media (--large) {
+          background: var(--hw-color-gray-darker);
+        }
+      }
+      &:hover .hw-hamburger__part {
+        background: var(--hw-color-gray-darker);
+        @media (--large) {
+          background: var(--hw-color-gray-lighter);
         }
       }
     }

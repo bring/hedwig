@@ -23,7 +23,7 @@ const HWApp = () => {
    */
   function init() {
     // Skip if already initialised
-    if (SETTINGS.document.getAttribute('data-hw-app-initialised') === 'true') { return false; }
+    if (SETTINGS.document.getAttribute('data-hw-app-initialised') === 'true') { return; }
 
     // Mark as initialised
     SETTINGS.document.setAttribute('data-hw-app-initialised', true);
