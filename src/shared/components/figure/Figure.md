@@ -6,6 +6,7 @@ Can contain images or video.
 [Base]      .hw-figure
 [Large]     .hw-figure--large
 [Full]      .hw-figure--full
+[Figcaption].hw-figure__figcaption
 ```
 
 ### Default figure
@@ -25,10 +26,7 @@ Can contain images or video.
     alt="Picture of happy people"
     src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
   />
-  <figcaption>
-    <svg class="hw-figure__caption-icon">
-      <use xlink:href="#arrow-up"></use>
-    </svg>
+  <figcaption class="hw-figure__figcaption">
     Can I help you? Yeah, can I have a dozen red roses, please? Oh, hi, Johnny. I didn't know it was you. 
   </figcaption>
 </figure>

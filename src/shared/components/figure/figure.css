@@ -20,12 +20,14 @@
     text-align: left;
   }
 
-  &__caption-icon {
-    margin-right: calc(var(--hw-spacing-smallest) / 2);
-    fill: var(--hw-color-primary);
-    margin-top: -2px;
-    width: var(--hw-spacing-smaller);
-    height: var(--hw-spacing-smaller);
+  &__figcaption::before {
+     content: '';
+     display: inline-block;
+     margin-right: 3px;
+     /* These three borders result in a green triangle */
+     border-left: 7px solid transparent;
+     border-right: 7px solid transparent;
+     border-bottom: 12px solid var(--hw-color-primary);
   }
 
   /**
