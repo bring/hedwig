@@ -135,7 +135,7 @@
       border-top: 3px solid rgba(242, 242, 242, 0.1);
 
       &:last-child {
-        margin-bottom: 0;
+        margin-bottom: var(--hw-spacing);
       }
     }
 
@@ -180,7 +180,7 @@
     & .hw-accordion__contents {
       color: var(--hw-color-white);
       background: var(--hw-color-gray);
-      padding-bottom: 0;
+      padding-bottom: var(--hw-spacing);
     }
 
     & .hw-accordion__link-items {
