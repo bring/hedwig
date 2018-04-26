@@ -18,8 +18,8 @@
     fill: var(--hw-color-gray-darker);
     padding: 6px;
     line-height: 3px;
-    width: 30px;
-    height: 30px;
+    width: var(--hw-spacing-large);
+    height: var(--hw-spacing-large);
     border-width: 2px !important;
     margin-right: calc(var(--hw-spacing-smallest) / 2);
     margin-bottom: 3px;
