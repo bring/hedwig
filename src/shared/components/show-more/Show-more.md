@@ -1,4 +1,4 @@
-## Toggle
+## Show more
 
 Creates a show button for loading more content on a site.
 
