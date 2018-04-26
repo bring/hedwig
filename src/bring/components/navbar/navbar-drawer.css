@@ -11,11 +11,12 @@
   }
 
   &__drawer-content {
-    margin-top: 96px;
+    margin-top: 70px;
     padding-left: var(--hw-spacing);
     padding-right: var(--hw-spacing);
 
     @media (--large) {
+      margin-top: 96px;
       padding-left: var(--hw-spacing);
       padding-right: var(--hw-spacing);
     }
