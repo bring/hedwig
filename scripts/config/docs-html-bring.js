@@ -3,6 +3,7 @@ var production = process.env.NODE_ENV === 'production';
 
 var reload = '<script src="//localhost:9091"></script>';
 var icons = '<script src="http://localhost:3001/icons.js"></script>';
+var pikaday = '<script src="https://cdn.jsdelivr.net/npm/pikaday@1.7.0/pikaday.min.js"></script>';
 
 if (production) {
   reload = '';
@@ -17,6 +18,7 @@ module.exports = `
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Hedwig - Bring</title>
+      ${pikaday}
       <link rel="icon" type="image/x-icon" href="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/favicon.ico" />
       <style>
         /**
