@@ -16,7 +16,7 @@ const HWStickyNav = ({
   selector = '[data-hw-sticky-nav]',
   linkSelector = '.hw-stickynav__link',
   innerSelector = '.hw-stickynav__nav',
-  activeItemClass = 'hw-stickynav__link--active',
+  activeItemClass = 'hw-stickynav__link--active'
 } = {}) => {
   // Module settings object
   const SETTINGS = {
@@ -75,7 +75,7 @@ const HWStickyNav = ({
       return {
         id,
         top: pos.top,
-        bottom: pos.bottom,
+        bottom: pos.bottom
       };
     });
   }
