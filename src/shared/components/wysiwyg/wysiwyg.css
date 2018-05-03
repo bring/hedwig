@@ -8,7 +8,7 @@
   }
 
   & h2 {
-    margin-bottom: var(--hw-spacing);
+    margin-bottom: var(--hw-spacing-smallest);
     max-width: 690px;
   }
 
