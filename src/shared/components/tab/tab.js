@@ -66,3 +66,12 @@ const HWTab = ({
     init();
 };
 HWTab();
+
+export function HWTab_adjustMarker(){
+  const tab = q('.hw-tab');
+  const marker = q('.hw-tab__marker');
+  const itemProperties = q('.hw-tab__item--selected').getBoundingClientRect();
+  const left = itemProperties.x - tab.getBoundingClientRect().x + tab.scrollLeft;
+  marker.style.left = left + 'px';
+  marker.style.width = itemProperties.width + 'px';
+}
