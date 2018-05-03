@@ -21,10 +21,10 @@ Used in articles
       <h3 class="hw-h3">Lurer du på hva Bring kan gjøre med fortolling av sendingene dine?</h3>
     </div>
     <div class="block hw-block--mt-smaller">
-      <hr class="hw-hr hw-hr--gray hw-hr--full" />
+      <hr class="hw-hr hw-hr--gray-lighter hw-hr--full" />
     </div>
-    <div class="hw-block hw-block--mt">
-      <button class="hw-button hw-button--primary hw-button--full">
+    <div class="hw-block hw-block--full hw-block--mt-small">
+      <button class="hw-button hw-button--primary">
         Kontakt oss
       </button>
     </div>
