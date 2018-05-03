@@ -35,6 +35,7 @@
         </button>
         <button class="hw-navbar__menu-button" data-hw-toggle-menu>
           <span>Meny</span>
+          <span>Lukk</span>
           <div class="hw-hamburger" data-hw-menu-icon>
             <span class="hw-hamburger__part"></span>
             <span class="hw-hamburger__part"></span>

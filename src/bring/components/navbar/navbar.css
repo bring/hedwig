@@ -121,6 +121,10 @@
     font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-small);
     transition: color 0.3s ease;
+    & > span + span {
+      /* Don't display the second span */
+      display: none;
+    }
 
     &:hover .hw-hamburger__part {
       background: var(--hw-color-gray-darker);
@@ -366,6 +370,19 @@
         @media (--large) {
           background: var(--hw-color-gray-lighter);
         }
+      }
+      /*
+        Toggle between displaying the first and the second span.
+        If only one span exists, always show it
+      */
+      & > span:first-child {
+        display: none;
+      }
+      & > span + span {
+        display: inline;
+      }
+      & > span:only-of-type {
+        display: inline;
       }
     }
   }
