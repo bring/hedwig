@@ -1,5 +1,6 @@
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
+import findParent from '../../utilities/js/findParent';
 const HWTab = ({
   tabSelector = '.hw-tab',
   selectedClass = 'hw-tab__item--selected',
@@ -15,7 +16,8 @@ const HWTab = ({
 
 
   function clickItem(e) {
-    var clickedItem = e.target;
+    //If e.target is an element within an hw-tab__item, find the surrounding hw-tab__item
+    const clickedItem = findParent({ selector: itemSelector, elem: e.target });
     if(clickedItem.classList.contains(selectedClass)){
       //Already selected, don't do anything
       return;
