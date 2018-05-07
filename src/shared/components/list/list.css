@@ -4,10 +4,11 @@
 
 .hw-list {
   font-size: var(--hw-font-size-p);
-  font-family: var(--hw-font-primary-regular);
+  font-family: var(--hw-font-primary-medium);
   color: var(--hw-color-gray-darker);
   list-style: none;
   margin: 0;
+  margin-bottom: var(--hw-spacing);
   padding-left: 20px;
   line-height: 1.4;
 
