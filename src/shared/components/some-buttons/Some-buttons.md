@@ -45,6 +45,7 @@ Styling for social media buttons.
 ```
 
 ### Outline dark
+For use on top of images only
 
 ```html|span-4
 <div class="hw-some hw-some--outline-dark">
@@ -82,6 +83,7 @@ Styling for social media buttons.
 ```
 
 ### Dark style
+For use in footer only
 
 ```html|span-4
 <div class="hw-some hw-some--dark">
