@@ -26,6 +26,7 @@
     min-width: 0;
     border-radius: 50%;
     cursor: pointer;
+    text-align: center;
 
     &:last-of-type {
       margin-right: 0;
@@ -33,7 +34,7 @@
 
     & .hw-icon {
       width: var(--hw-spacing-small);
-      height: var(--hw-spacing-small);
+      height: 22px;
     }
 
     &:hover,
