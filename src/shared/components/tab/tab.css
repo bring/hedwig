@@ -22,7 +22,8 @@
        * Border color will be set to transparent during runtime
        * This border is shown only if the hw-tab javascript is not running
        */
-      border-bottom: 3px solid var(--hw-color-primary-dark);
+      color: var(--hw-color-primary-dark);
+      border-bottom: 3px solid var(--hw-color-primary);
     }
     &:first-of-type {
       margin-left: 0;
