@@ -94,35 +94,6 @@
     transform: rotate(-45deg);
   }
 
-  &--transparent {
-    background: none;
-    border: 0;
-    margin: 0;
-    & .hw-accordion__trigger {
-      margin: 0;
-    }
-
-    & .hw-accordion__item:last-child {
-        margin-bottom: 0;
-    }
-    & .hw-accordion__item:first-child {
-      & .hw-accordion__trigger {
-          padding-top: 0;
-      }
-      & .hw-accordion__arrow {
-        &::before,
-        &::after {
-          top: 10px;
-        }
-      }
-    }
-
-    & .hw-accordion__contents {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
   /* TODO: Dark accordion does a lot of overriding – make as an own component? */
 
   &--dark {

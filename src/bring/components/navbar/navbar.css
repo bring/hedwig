@@ -358,6 +358,19 @@
         &:hover {
           color: var(--hw-color-gray-lighter);
         }
+        /*
+          Toggle between displaying the first and the second span.
+          If only one span exists, always show it
+        */
+        & > span:first-child {
+              display: none;
+        }
+        & > span + span {
+              display: inline;
+        }
+        & > span:only-of-type {
+              display: inline;
+        }
       }
 
       &:focus .hw-hamburger__part {
@@ -370,19 +383,6 @@
         @media (--large) {
           background: var(--hw-color-gray-lighter);
         }
-      }
-      /*
-        Toggle between displaying the first and the second span.
-        If only one span exists, always show it
-      */
-      & > span:first-child {
-        display: none;
-      }
-      & > span + span {
-        display: inline;
-      }
-      & > span:only-of-type {
-        display: inline;
       }
     }
   }
