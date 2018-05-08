@@ -19,7 +19,7 @@ Provides styling for sliding a marker between selected tabs
   --><a href="#/Tab#item-2" class="hw-tab__item">Item 2</a><!--
   --><a href="#/Tab#item-3" class="hw-tab__item hw-tab__item--selected">Item 3</a><!--
   --><a href="#/Tab#item-4" class="hw-tab__item">Item 4 longer</a><!--
-  --><a href="#/Tab#item-5" class="hw-tab__item">Item 5</a><!--
+  --><a href="#/Tab#item-5" class="hw-tab__item">Item 5<span class="hw-text-small"> (12)</span></a><!--
   --><a href="#/Tab#item-6" class="hw-tab__item">Item 6</a><!--
   --><div class="hw-tab__marker"></div>
 </div>

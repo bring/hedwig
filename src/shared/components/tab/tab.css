@@ -24,6 +24,9 @@
        */
       color: var(--hw-color-primary-dark);
       border-bottom: 3px solid var(--hw-color-primary);
+      & span {
+        color: var(--hw-color-primary-dark);
+      }
     }
     &:first-of-type {
       margin-left: 0;
