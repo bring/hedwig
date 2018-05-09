@@ -121,12 +121,7 @@
     }
 
     & .hw-accordion__trigger:focus {
-      background: var(--hw-color-gray);
-
-      @media (--large) {
-        background: var(--hw-color-gray-dark);
-        color: var(--hw-color-white);
-      }
+      background: var(--hw-color-gray-dark);
     }
 
     & .hw-accordion__trigger {
@@ -151,7 +146,7 @@
     & .hw-accordion__contents {
       color: var(--hw-color-white);
       background: var(--hw-color-gray);
-      padding-bottom: var(--hw-spacing);
+      padding: 0 0 var(--hw-spacing) 0;
     }
 
     & .hw-accordion__link-items {
@@ -161,21 +156,24 @@
     }
 
     & .hw-accordion__link-item {
-      padding: var(--hw-spacing-smaller) 0;
-      padding-left: var(--hw-spacing-small);
     }
 
     & a.hw-accordion__link {
       display: block;
       width: 100%;
       color: var(--hw-color-white);
-      padding-left: var(--hw-spacing);
+      padding: var(--hw-spacing-smallest) var(--hw-spacing) var(--hw-spacing-smallest) var(--hw-spacing-larger);
       position: relative;
+
+      &:hover,
+      &:focus {
+        background-color: var(--hw-color-gray-dark);
+      }
     }
 
     & a.hw-accordion__link::before {
       position: absolute;
-      left: 0;
+      left: var(--hw-spacing);
       top: 50%;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
