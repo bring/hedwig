@@ -5,7 +5,7 @@
 .hw-accordion {
   display: block;
   padding: 0;
-  margin: 0 0 var(--hw-spacing) 0;
+  margin: 0;
   list-style: none;
   background-color: white;
   border: 3px solid var(--hw-color-gray-light);
