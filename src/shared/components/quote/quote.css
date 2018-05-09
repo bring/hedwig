@@ -1,0 +1,34 @@
+.hw-quote {
+  display: block;
+  margin: var(--hw-spacing-larger) 0;
+  padding: 0 var(--hw-spacing);
+  border-left: 6px solid var(--hw-color-primary);
+  box-shadow: -6px 0 0 0 var(--hw-color-primary-dark);
+  width: 100%;
+}
+
+.hw-quote--pull-right {
+  float: right;
+  max-width: var(--hw-width-narrow);
+}
+
+.hw-quote__content {
+  margin-bottom: var(--hw-spacing);
+}
+
+.hw-quote__content:before {
+  content: '\00AB';
+  font-size: 1.2em;
+  padding-right: var(--hw-spacing-smaller);
+}
+
+.hw-quote__content:after {
+  content: '\00BB';
+  font-size: 1.2em;
+  padding-left: var(--hw-spacing-smaller);
+}
+
+.hw-quote__author {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
