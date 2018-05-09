@@ -47,6 +47,10 @@
     height: 70px;
     width: 120px;
     margin: 0 auto;
+
+    @media(--small) {
+      width: 160px;
+    }
   }
 
   &__links {
