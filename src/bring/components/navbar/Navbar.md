@@ -119,29 +119,18 @@
             <ul class="hw-accordion hw-accordion--dark" data-hw-accordion="example3" data-hw-accordion-allow-multiple>
               <li class="hw-accordion__item">
                 <button class="hw-accordion__trigger">
-                  Logg inn
-                  <div class="hw-accordion__arrow"></div>
-                </button>
-                <div class="hw-accordion__contents">
-                  <div class="hw-navbar__menu-group">
-                    <ul class="hw-navbar__menu-group-links">
-                      <li>
-                        <a href="#">My bring</a>
-                      </li>
-                      <li>
-                        <a href="#">Min post</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="hw-accordion__item">
-                <button class="hw-accordion__trigger">
                   Sende
                   <div class="hw-accordion__arrow"></div>
                 </button>
                 <div class="hw-accordion__contents">
-                  <p>contents</p>
+                  <ul class="hw-accordion__link-items">
+                    <li class="hw-accordion__link-item">
+                      <a href="#" class="hw-accordion__link">Post</a>
+                    </li>
+                    <li class="hw-accordion__link-item">
+                      <a href="#" class="hw-accordion__link">Pakker</a>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li class="hw-accordion__item">
@@ -150,7 +139,16 @@
                   <div class="hw-accordion__arrow"></div>
                 </button>
                 <div class="hw-accordion__contents">
-                  <p>contents</p>
+                  <ul class="hw-accordion__link-items">
+                    <li class="hw-accordion__link-item">
+                      <a href="#" class="hw-accordion__link">Spore en forsendelse</a>
+                    </li>
+                    <li class="hw-accordion__link-item">
+                      <a href="#" class="hw-accordion__link">
+                        Adresseendring og oppbevaring av post
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li class="hw-accordion__item">
@@ -159,16 +157,14 @@
                   <div class="hw-accordion__arrow"></div>
                 </button>
                 <div class="hw-accordion__contents">
-                  <p>contents</p>
-                </div>
-              </li>
-              <li class="hw-accordion__item">
-                <button class="hw-accordion__trigger">
-                  Kundeservice
-                  <div class="hw-accordion__arrow"></div>
-                </button>
-                <div class="hw-accordion__contents">
-                  <p>contents</p>
+                 <ul class="hw-accordion__link-items">
+                    <li class="hw-accordion__link-item">
+                      <a href="#" class="hw-accordion__link">Lagerløsninger</a>
+                    </li>
+                    <li class="hw-accordion__link-item">
+                      <a href="#" class="hw-accordion__link">Netthandel</a>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
