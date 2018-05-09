@@ -64,7 +64,6 @@
     }
   }
 
-  &__logo:hover,
   &__logo:focus {
     cursor: pointer;
     outline: 0;
