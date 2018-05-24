@@ -14,6 +14,7 @@ body {
   font-family: var(--hw-font-primary-regular);
   font-size: var(--hw-font-size-p);
   fill: var(--hw-color-gray);
+  color: var(--hw-color-gray-darker);
   background: var(--hw-color-gray-lightest);
   display: flex;
   flex-direction: column;

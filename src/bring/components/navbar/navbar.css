@@ -80,7 +80,6 @@
     line-height: 78px;
     display: none;
     outline: 0;
-    color: var(--hw-color-gray-darker);
     border: 0;
     cursor: pointer;
     text-decoration: none;
@@ -109,7 +108,6 @@
     padding: calc(var(--hw-spacing) + 3px) var(--hw-spacing-small) var(--hw-spacing) var(--hw-spacing-small);
     border: 0;
     background: var(--hw-color-white);
-    color: var(--hw-color-gray-darker);
     font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-small);
     transition: color 0.3s ease;

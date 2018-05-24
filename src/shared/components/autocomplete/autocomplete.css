@@ -23,7 +23,6 @@
     margin-top: 3px;
     padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
     padding-right: var(--hw-spacing-large);
-    color: var(--hw-color-gray-darker);
     background-color: var(--hw-color-white);
     font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-small);
@@ -110,7 +109,6 @@
     font-family: var(--hw-font-primary-medium);
     padding: var(--hw-spacing-smaller) 0;
     height: var(--hw-spacing-larger);
-    color: var(--hw-color-gray-darker);
     line-height: normal;
     display: block;
     overflow: hidden;

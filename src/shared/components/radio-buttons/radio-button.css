@@ -8,7 +8,6 @@
   cursor: pointer;
   font-family: var(--hw-font-primary-medium);
   font-size: var(--hw-font-size-small);
-  color: var(--hw-color-gray-darker);
   position: relative;
   line-height: 1.5;
 

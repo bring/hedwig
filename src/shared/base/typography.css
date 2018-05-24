@@ -7,7 +7,6 @@ a,
 button {
   font-size: var(--hw-font-size-p);
   font-family: var(--hw-font-primary-regular);
-  color: var(--hw-color-gray-darker);
   line-height: 1.4;
   font-weight: 400;
   padding: 0;
@@ -21,6 +20,7 @@ a {
 }
 
 a {
+  color: var(--hw-color-gray-darker);
   text-decoration: none;
 }
 
@@ -33,7 +33,6 @@ h3,
 .hw-h1,
 .hw-h2,
 .hw-h3 {
-  color: var(--hw-color-gray-darker);
   padding: 0;
   margin: 0;
   font-family: var(--hw-font-primary-medium);
@@ -72,21 +71,18 @@ h3,
   font-size: var(--hw-font-size-lead);
   font-family: var(--hw-font-primary-medium);
   line-height: 1.4;
-  color: var(--hw-color-gray-darker);
 }
 
 .hw-text-small {
   font-size: var(--hw-font-size-small);
   font-family: var(--hw-font-primary-medium);
   line-height: 1.4;
-  color: var(--hw-color-gray-darker);
 }
 
 .hw-text-smaller {
   font-size: var(--hw-font-size-smaller);
   font-family: var(--hw-font-primary-medium);
   line-height: 1.4;
-  color: var(--hw-color-gray-darker);
 }
 
 .hw-color-primary-dark {
