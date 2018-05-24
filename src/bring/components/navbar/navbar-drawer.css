@@ -8,6 +8,10 @@
     top: 0;
     left: 0;
     visibility: hidden;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   &__drawer-content {
