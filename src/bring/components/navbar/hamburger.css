@@ -1,3 +1,21 @@
+.hw-navbar__menu-button {
+  &:hover .hw-hamburger__part {
+    background: var(--hw-color-gray-darker);
+
+    @media (--large) {
+      background: var(--hw-color-primary-dark);
+    }
+  }
+
+  &:focus .hw-hamburger__part {
+    background: var(--hw-color-gray-darker);
+
+    @media (--large) {
+      background: var(--hw-color-primary-dark);
+    }
+  }
+}
+
 .hw-hamburger {
   width: var(--hw-spacing);
   display: inline-block;
