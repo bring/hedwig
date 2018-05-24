@@ -133,7 +133,6 @@
     position: relative;
     display: block;
     max-height: 70vh;
-    color: var(--hw-color-gray-darker);
 
     @media (--medium) {
       max-height: 80vh;

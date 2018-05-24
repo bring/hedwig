@@ -33,7 +33,7 @@
     }
   }
   &__marker {
-    top: 25px;
+    bottom: 0;
     position: absolute;
     height: 0;
     border-bottom: 3px solid var(--hw-color-primary-dark);

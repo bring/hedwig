@@ -14,7 +14,6 @@
     position: relative;
     font-size: var(--hw-font-size-small);
     line-height: 1.2;
-    color: var(--hw-color-gray-darker);
     font-family: var(--hw-font-primary-medium);
     margin-top: var(--hw-spacing-smallest);
     text-align: left;
@@ -23,11 +22,11 @@
   &__figcaption::before {
      content: '';
      display: inline-block;
-     margin-right: 3px;
+     margin-right: var(--hw-spacing-smallest);
      /* These three borders result in a green triangle */
-     border-left: 7px solid transparent;
-     border-right: 7px solid transparent;
-     border-bottom: 12px solid var(--hw-color-primary);
+     border-left: 5px solid transparent;
+     border-right: 5px solid transparent;
+     border-bottom: 10px solid var(--hw-color-primary);
   }
 
   /**
