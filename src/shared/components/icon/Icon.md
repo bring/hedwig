@@ -346,7 +346,7 @@ lang: html
     <svg class="hw-icon">
         <use xlink:href="#remove"></use>
       </svg>
-      exclamation
+      remove
     </div>
   </div>
   <div class="hw-helpers-icon">
