@@ -31,4 +31,7 @@
 .hw-quote__author {
   text-transform: uppercase;
   font-size: 1rem;
+  font-style: normal;
+  font-family: var(--hw-font-primary-medium);
+  color: var(--hw-color-gray-darker);
 }
