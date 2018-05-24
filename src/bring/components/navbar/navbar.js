@@ -27,7 +27,9 @@ const HWNavbar = ({
     searchButton: q(searchButtonSelector),
     overlay: q(overlaySelector),
     hamburgerIcon: q(hamburgerIcon),
-    desktopSearchField: q(desktopSearchFieldSelector)
+    desktopSearchField: q(desktopSearchFieldSelector),
+    footer: q('footer'),
+    main: q('main'),
   };
 
   /**
@@ -39,6 +41,8 @@ const HWNavbar = ({
     if (SETTINGS.navbar.classList.contains(activeClass)) {
       SETTINGS.navbar.classList.remove(activeClass);
       SETTINGS.hamburgerIcon.classList.remove(activeHamburgerClass);
+      SETTINGS.main.style.display = 'block';
+      SETTINGS.footer.style.display = 'block';
       return;
     }
 
@@ -50,6 +54,8 @@ const HWNavbar = ({
 
     SETTINGS.navbar.classList.add(activeClass);
     SETTINGS.hamburgerIcon.classList.add(activeHamburgerClass);
+    SETTINGS.main.style.display = 'none';
+    SETTINGS.footer.style.display = 'none';
   }
 
   function toggleSearch() {
@@ -59,7 +65,7 @@ const HWNavbar = ({
     }
 
     SETTINGS.navbar.classList.add(showSearchClass);
-    if(SETTINGS.desktopSearchField) {
+    if (SETTINGS.desktopSearchField) {
       SETTINGS.desktopSearchField.focus();
     }
   }
