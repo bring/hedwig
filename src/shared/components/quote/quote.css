@@ -19,13 +19,13 @@
 .hw-quote__content:before {
   content: '\00AB';
   font-size: 1.2em;
-  padding-right: var(--hw-spacing-smaller);
+  padding-right: 3px;
 }
 
 .hw-quote__content:after {
   content: '\00BB';
   font-size: 1.2em;
-  padding-left: var(--hw-spacing-smaller);
+  padding-left: 3px;
 }
 
 .hw-quote__author {
