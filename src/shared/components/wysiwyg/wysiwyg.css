@@ -12,6 +12,10 @@
     max-width: 690px;
   }
 
+  & .hw-quote .hw-quote__content {
+    @extend .hw-quote__content;
+  }
+
   & p.hw-text-lead {
     font-size: var(--hw-font-size-lead);
     line-height: 1.4;
