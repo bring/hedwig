@@ -21,6 +21,10 @@
     max-width: initial;
   }
 
+  &--centered {
+    margin: 0 auto;
+  }
+
   &--white {
     background: var(--hw-color-white);
   }

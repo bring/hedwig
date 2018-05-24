@@ -31,6 +31,12 @@ Horizontal rule
   <hr class="hw-hr hw-hr--full" />
 ```
 
+### Centered
+
+```html|span-6
+  <hr class="hw-hr hw-hr--centered" />
+```
+
 ## Other colors
 
 ### Gray
