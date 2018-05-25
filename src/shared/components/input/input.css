@@ -10,7 +10,6 @@
   margin-top: 3px;
   padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
   background-color: var(--hw-color-white);
-  font-family: var(--hw-font-primary-medium);
   font-size: var(--hw-font-size-small);
   line-height: normal;
   border: 3px solid var(--hw-color-gray-light);
@@ -71,7 +70,6 @@
     right: var(--hw-spacing-small);
     width: 25px;
     height: 25px;
-    font-family: var(--hw-font-primary-bold);
     font-size: 17px;
     background: var(--hw-color-gray-darker);
     color: var(--hw-color-white);
@@ -110,7 +108,6 @@
   &__title {
     position: relative;
     padding-left: var(--hw-spacing-large);
-    font-family: var(--hw-font-primary-medium);
 
     &::before {
       content: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/exclamation-mark-circle.svg');

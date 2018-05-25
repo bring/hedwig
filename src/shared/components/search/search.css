@@ -20,7 +20,6 @@
 
   &__input {
     font-size: var(--hw-font-size-h2);
-    font-family: var(--hw-font-primary-medium);
     margin: 0;
     border: 0;
     padding: var(--hw-spacing-smaller) var(--hw-spacing-large);
@@ -35,7 +34,6 @@
     left: 0;
     padding: var(--hw-spacing-smaller) var(--hw-spacing-large);
     font-size: var(--hw-font-size-h2);
-    font-family: var(--hw-font-primary-medium);
     color: var(--hw-color-gray-dark);
     animation: movePlaceholder 3s ease-out infinite 0.3s;
     z-index: -1;

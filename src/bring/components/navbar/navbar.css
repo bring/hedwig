@@ -84,7 +84,6 @@
     cursor: pointer;
     text-decoration: none;
     transition: background 100ms, color 0.3s ease;
-    font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-small);
 
     @media (--large) {
@@ -108,7 +107,6 @@
     padding: calc(var(--hw-spacing) + 3px) var(--hw-spacing-small) var(--hw-spacing) var(--hw-spacing-small);
     border: 0;
     background: var(--hw-color-white);
-    font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-small);
     transition: color 0.3s ease;
     & > span + span {
@@ -199,7 +197,6 @@
 
     & a {
       font-size: var(--hw-font-size-small);
-      font-family: var(--hw-font-primary-medium);
       color: var(--hw-color-white);
       display: block;
       position: relative;

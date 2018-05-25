@@ -6,7 +6,6 @@ p,
 a,
 button {
   font-size: var(--hw-font-size-p);
-  font-family: var(--hw-font-primary-regular);
   line-height: 1.4;
   font-weight: 400;
   padding: 0;
@@ -14,8 +13,10 @@ button {
   letter-spacing: -0.02em;
 }
 
-p,
-a {
+input,
+textarea,
+select,
+button {
   font-family: var(--hw-font-primary-medium);
 }
 
@@ -35,7 +36,6 @@ h3,
 .hw-h3 {
   padding: 0;
   margin: 0;
-  font-family: var(--hw-font-primary-medium);
   font-weight: normal;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -69,19 +69,16 @@ h3,
 
 .hw-text-lead {
   font-size: var(--hw-font-size-lead);
-  font-family: var(--hw-font-primary-medium);
   line-height: 1.4;
 }
 
 .hw-text-small {
   font-size: var(--hw-font-size-small);
-  font-family: var(--hw-font-primary-medium);
   line-height: 1.4;
 }
 
 .hw-text-smaller {
   font-size: var(--hw-font-size-smaller);
-  font-family: var(--hw-font-primary-medium);
   line-height: 1.4;
 }
 

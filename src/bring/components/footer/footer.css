@@ -33,7 +33,6 @@
   &__title {
     color: var(--hw-color-white);
     margin-bottom: var(--hw-spacing-smaller);
-    font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-lead);
   }
 
@@ -61,7 +60,6 @@
 
   &__link {
     position: relative;
-    font-family: var(--hw-font-primary-medium);
     line-height: 1.0;
     color: var(--hw-color-white);
     fill: var(--hw-color-gray-light);
@@ -86,7 +84,6 @@
     }
 
     & a {
-      font-family: var(--hw-font-primary-medium);
       font-size: 12px;
       color: var(--hw-color-gray-dark);
 

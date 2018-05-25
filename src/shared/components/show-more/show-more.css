@@ -8,7 +8,6 @@
   position: relative;
   display: block;
   width: 100%;
-  font-family: var(--hw-font-primary-medium);
   font-size: var(--hw-font-size-small);
   border: 0;
   text-align: center;
