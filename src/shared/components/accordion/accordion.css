@@ -155,9 +155,6 @@
       list-style: none;
     }
 
-    & .hw-accordion__link-item {
-    }
-
     & a.hw-accordion__link {
       display: block;
       width: 100%;

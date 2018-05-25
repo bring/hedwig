@@ -79,10 +79,10 @@
     padding: 0 var(--hw-spacing-small);
 
     & > input {
-    position: absolute;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    vertical-align: middle;
+      position: absolute;
+      clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+      clip: rect(1px, 1px, 1px, 1px);
+      vertical-align: middle;
 
       &:checked ~ .hw-autocomplete__suggestion-text {
         color: var(--hw-color-primary);
@@ -97,7 +97,6 @@
 
     &:hover,
     &:focus {
-
       & .hw-autocomplete__suggestion-text {
         color: var(--hw-color-primary);
       }

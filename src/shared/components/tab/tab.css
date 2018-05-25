@@ -3,20 +3,22 @@
   white-space: nowrap;
   position: relative;
   width: 100%;
-  white-space: nowrap;
   margin: 0;
   padding-left: 0;
 
   &::-webkit-scrollbar {
-     display: none;
+    display: none;
   }
+
   /* The box-shadow creates the gray bar under the tab items */
-  box-shadow: inset 0px -3px 0px 0px var(--hw-color-gray-light);
+  box-shadow: inset 0 -3px 0 0 var(--hw-color-gray-light);
+
   &__item {
-    font-size:var(--hw-font-size-small);
+    font-size: var(--hw-font-size-small);
     display: inline-block;
     margin-left: var(--hw-spacing-large);
     padding-bottom: 3px;
+
     &--selected {
       /**
        * Border color will be set to transparent during runtime
@@ -24,14 +26,17 @@
        */
       color: var(--hw-color-primary-dark);
       border-bottom: 3px solid var(--hw-color-primary);
+
       & span {
         color: var(--hw-color-primary-dark);
       }
     }
+
     &:first-of-type {
       margin-left: 0;
     }
   }
+
   &__marker {
     bottom: 0;
     position: absolute;
@@ -48,6 +53,3 @@
     width: 0;
   }
 }
-
-
-

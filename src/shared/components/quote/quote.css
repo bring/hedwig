@@ -16,13 +16,13 @@
   margin-bottom: var(--hw-spacing);
 }
 
-.hw-quote__content:before {
+.hw-quote__content::before {
   content: '\00AB';
   font-size: 1.2em;
   padding-right: 3px;
 }
 
-.hw-quote__content:after {
+.hw-quote__content::after {
   content: '\00BB';
   font-size: 1.2em;
   padding-left: 3px;

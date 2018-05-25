@@ -19,6 +19,7 @@
     color: var(--hw-color-link-hover);
     fill: var(--hw-color-link-hover);
     border-color: var(--hw-color-link-underline-hover);
+
     & .hw-link__text {
       border-color: var(--hw-color-link-underline-hover);
     }
@@ -31,6 +32,7 @@
     fill: var(--hw-color-white);
     border: none;
     outline: 0;
+
     & .hw-link__text {
       border-color: var(--hw-color-white);
     }
@@ -57,10 +59,12 @@
 
   &--with-icon {
     border-bottom: none;
+
     & .hw-link__text {
       transition: all 0.2s ease;
       border-bottom: 2px solid var(--hw-color-link-underline);
     }
+
     & .hw-icon {
       vertical-align: bottom;
       margin-right: var(--hw-spacing-smallest);
@@ -71,13 +75,16 @@
     color: var(--hw-color-gray-dark);
     fill: var(--hw-color-gray-dark);
     border-bottom-color: var(--hw-color-gray-dark);
+
     & .hw-link__text {
       border-bottom-color: var(--hw-color-gray-dark);
     }
+
     &:hover {
       border-bottom-color: var(--hw-color-link-hover);
+
       & .hw-link__text {
-          border-bottom-color: var(--hw-color-link-hover);
+        border-bottom-color: var(--hw-color-link-hover);
       }
     }
   }
