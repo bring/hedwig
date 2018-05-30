@@ -111,6 +111,7 @@
     font-family: var(--hw-font-primary-medium);
     font-size: var(--hw-font-size-small);
     transition: color 0.3s ease;
+
     & > span + span {
       /* Don't display the second span */
       display: none;
@@ -281,6 +282,7 @@
       visibility: visible;
       z-index: var(--z-index--navbar-drawer);
     }
+
     /**
      * Logo while the menu is open
      */
@@ -329,21 +331,25 @@
         &:focus {
           color: var(--hw-color-gray-darker);
         }
+
         &:hover {
           color: var(--hw-color-gray-lighter);
         }
+
         /*
           Toggle between displaying the first and the second span.
           If only one span exists, always show it
         */
         & > span:first-child {
-              display: none;
+          display: none;
         }
+
         & > span + span {
-              display: inline;
+          display: inline;
         }
+
         & > span:only-of-type {
-              display: inline;
+          display: inline;
         }
       }
 
@@ -352,8 +358,10 @@
           background: var(--hw-color-gray-darker);
         }
       }
+
       &:hover .hw-hamburger__part {
         background: var(--hw-color-gray-darker);
+
         @media (--large) {
           background: var(--hw-color-gray-lighter);
         }
