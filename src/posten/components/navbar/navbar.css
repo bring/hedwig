@@ -54,7 +54,6 @@
     border-left: 1px solid var(--hw-color-gray-lightest);
     text-decoration: none;
     transition: background 100ms;
-    font-family: var(--hw-font-primary-bold);
     text-transform: uppercase;
     font-size: var(--hw-font-size-small);
 
@@ -77,7 +76,6 @@
     align-items: center;
     padding: calc(var(--hw-spacing) + 3px) var(--hw-spacing-small) var(--hw-spacing) var(--hw-spacing-small);
     border: 0;
-    font-family: var(--hw-font-primary-bold);
     text-transform: uppercase;
     font-size: var(--hw-font-size-small);
 

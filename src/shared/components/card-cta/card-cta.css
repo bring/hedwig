@@ -47,7 +47,6 @@
   }
 
   &__title {
-    font-family: var(--hw-font-primary-medium);
     margin-bottom: var(--hw-spacing-smallest);
     transition: color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
@@ -64,6 +63,5 @@
 
   &__text {
     margin-top: var(--hw-spacing-smaller);
-    font-family: var(--hw-font-primary-medium);
   }
 }

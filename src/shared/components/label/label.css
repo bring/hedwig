@@ -4,7 +4,6 @@
 
 .hw-label {
   font-size: var(--hw-font-size-small);
-  font-family: var(--hw-font-primary-medium);
   margin-bottom: var(--hw-spacing-small);
   display: block;
 

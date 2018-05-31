@@ -53,7 +53,6 @@
 
     & a {
       font-size: var(--hw-font-size-p);
-      font-family: var(--hw-font-primary-medium);
 
       @media (--large) {
         font-size: var(--hw-font-size-h3);
@@ -84,7 +83,6 @@
     }
 
     & a {
-      font-family: var(--hw-font-primary-medium);
       font-size: 12px;
       color: var(--hw-color-gray-dark);
 
