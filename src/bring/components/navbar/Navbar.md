@@ -1,4 +1,3 @@
-
 ## Navbar
 
 ```code
@@ -350,6 +349,27 @@
     </div>
     <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
   </div>
+</header>
+```
+
+## Navbar without menu
+
+```html
+<header class="hw-navbar">
+  <div class="hw-navbar__content">
+
+    <div class="hw-navbar__top">
+      <a href="#" class="hw-navbar__logo">
+        <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
+          <title id="Logo">Go to homepage</title>
+          <use xlink:href="#logo-bring"></use>
+        </svg>
+        <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+          <title id="Logo">Go to homepage</title>
+          <use xlink:href="#logo-bring-white"></use>
+        </svg>
+      </a>
+    </div>
 </header>
 ```
 
