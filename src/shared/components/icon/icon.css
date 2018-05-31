@@ -26,6 +26,10 @@
     fill: var(--hw-color-primary);
   }
 
+  &--success {
+    fill: var(--hw-color-success);
+  }
+
   &--gray-lighter {
     fill: var(--hw-color-gray-lighter);
   }
