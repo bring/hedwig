@@ -7,7 +7,8 @@
     margin-bottom: var(--hw-spacing);
   }
 
-  & h2, & h3 {
+  & h2,
+  & h3 {
     margin-bottom: var(--hw-spacing-smallest);
     max-width: 690px;
   }
@@ -33,7 +34,8 @@
   }
 
   /* Combinations */
-  & p + h2, & p + h3 {
+  & p + h2,
+  & p + h3 {
     margin-top: var(--hw-spacing);
   }
 
@@ -49,6 +51,7 @@
   /* Image */
   & figure {
     @extend .hw-figure;
+
     margin-top: var(--hw-spacing-large);
     margin-bottom: var(--hw-spacing-large);
   }
