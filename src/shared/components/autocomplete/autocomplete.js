@@ -8,15 +8,13 @@ import KEYS from '../../utilities/js/keys';
  * @desc Autcomplete component
  * @param {object} settings
  */
-const HWAutoComplete = ({
-    moduleSelector = '[data-hw-autocomplete]',
-  } = {}) => {
+const HWAutoComplete = ({ moduleSelector = '[data-hw-autocomplete]' } = {}) => {
   // Module settings object
   const SETTINGS = {
     elements: qa(moduleSelector), // All module DOM nodes
   };
 
-    /**
+  /**
    * @function onArrowDown
    * @desc Select the first item in the list
    * @param {node} trigger
@@ -29,10 +27,10 @@ const HWAutoComplete = ({
       input.checked = true;
       const change = new Event('change');
       input.dispatchEvent(change);
-    };
+    }
   }
 
-      /**
+  /**
    * @function onSugChange
    * @desc Bind the value of input to suggestion
    * @param {node} trigger
@@ -49,12 +47,15 @@ const HWAutoComplete = ({
    */
   function bindEvents(searchField, suggestions) {
     suggestions.forEach((suggestion) => {
-      q('input', suggestion).addEventListener('change', e => onSugChange(e, searchField));
+      q('input', suggestion).addEventListener('change', e =>
+        onSugChange(e, searchField),
+      );
     });
 
-    searchField.addEventListener('keydown', e => onArrowDown(e, suggestions[0]));
+    searchField.addEventListener('keydown', e =>
+      onArrowDown(e, suggestions[0]),
+    );
   }
-
 
   /**
    * @function init
@@ -69,7 +70,11 @@ const HWAutoComplete = ({
     // Loop through all modules and initialise each
     SETTINGS.elements.forEach((autocomplete) => {
       // Skip if already initialised
-      if (autocomplete.getAttribute('data-hw-autocomplete-initialised') === 'true') { return false; }
+      if (
+        autocomplete.getAttribute('data-hw-autocomplete-initialised') === 'true'
+      ) {
+        return false;
+      }
 
       // Mark as initialised
       autocomplete.setAttribute('data-hw-autocomplete-initialised', true);
@@ -82,7 +87,6 @@ const HWAutoComplete = ({
       // Other things here
     });
   }
-
 
   // Initialise HWAutoComplete component
   init();
