@@ -98,37 +98,6 @@
     color: var(--hw-color-primary-dark);
   }
 
-  &__menu-button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    padding: calc(var(--hw-spacing) + 3px) var(--hw-spacing-small) var(--hw-spacing) var(--hw-spacing-small);
-    border: 0;
-    background: var(--hw-color-white);
-    font-size: var(--hw-font-size-small);
-    transition: color 0.3s ease;
-
-    & > span + span {
-      /* Don't display the second span */
-      display: none;
-    }
-
-    & > span {
-      display: none;
-
-      @media (--large) {
-        display: inline;
-      }
-    }
-
-    @media (--large) {
-      position: relative;
-      padding: 0 0 0 var(--hw-spacing-small);
-    }
-  }
-
   &__search-button {
     border: 0;
   }
@@ -140,8 +109,6 @@
     margin: 0 0 4px 3px;
   }
 
-  &__menu-button:hover,
-  &__menu-button:focus,
   &__search-button:hover,
   &__search-button:focus {
     fill: var(--hw-color-primary-dark);
@@ -233,7 +200,7 @@
         transition: all 0.5s ease;
         transform: translateX(0);
         left: -var(--hw-spacing-small);
-        background-image: url('data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMwIDMwIj48dGl0bGU+Y2FyZXQtcmlnaHQ8L3RpdGxlPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNOS42MyAwTDUuMTUgNC4zOCAxNS45IDE1IDUuMTUgMjUuNjMgOS42MyAzMGwxNS4yMi0xNUw5LjYzIDB6Ii8+PC9zdmc+');
+        background-image: url("data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMwIDMwIj48dGl0bGU+Y2FyZXQtcmlnaHQ8L3RpdGxlPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNOS42MyAwTDUuMTUgNC4zOCAxNS45IDE1IDUuMTUgMjUuNjMgOS42MyAzMGwxNS4yMi0xNUw5LjYzIDB6Ii8+PC9zdmc+");
       }
     }
 
@@ -272,14 +239,6 @@
   &--active {
     background: transparent;
 
-    & .hw-navbar__drawer {
-      transform: rotateX(0deg);
-      transform-origin: top;
-      opacity: 1;
-      visibility: visible;
-      z-index: var(--z-index--navbar-drawer);
-    }
-
     /**
      * Logo while the menu is open
      */
@@ -312,56 +271,6 @@
       @media (--large) {
         display: block;
         height: auto;
-      }
-    }
-
-    /**
-     * Menu button while the menu is open
-     */
-    & .hw-navbar__menu-button {
-      color: var(--hw-color-white);
-      background: transparent !important;
-      border-color: transparent !important;
-      z-index: var(--z-index--navbar-drawer-foreground);
-
-      @media (--large) {
-        &:focus {
-          color: var(--hw-color-gray-darker);
-        }
-
-        &:hover {
-          color: var(--hw-color-gray-lighter);
-        }
-
-        /*
-          Toggle between displaying the first and the second span.
-          If only one span exists, always show it
-        */
-        & > span:first-child {
-          display: none;
-        }
-
-        & > span + span {
-          display: inline;
-        }
-
-        & > span:only-of-type {
-          display: inline;
-        }
-      }
-
-      &:focus .hw-hamburger__part {
-        @media (--large) {
-          background: var(--hw-color-gray-darker);
-        }
-      }
-
-      &:hover .hw-hamburger__part {
-        background: var(--hw-color-gray-darker);
-
-        @media (--large) {
-          background: var(--hw-color-gray-lighter);
-        }
       }
     }
   }

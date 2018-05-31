@@ -19,7 +19,6 @@ const HWNavbar = ({
   activeHamburgerClass = 'hw-hamburger--active',
   desktopSearchFieldSelector = '.hw-navbar__search .hw-search__input',
 } = {}) => {
-
   // Module settings object
   const SETTINGS = {
     navbar: q(navbarSelector), // All navbar DOM nodes
@@ -41,8 +40,10 @@ const HWNavbar = ({
     if (SETTINGS.navbar.classList.contains(activeClass)) {
       SETTINGS.navbar.classList.remove(activeClass);
       SETTINGS.hamburgerIcon.classList.remove(activeHamburgerClass);
-      SETTINGS.main.style.display = 'block';
-      SETTINGS.footer.style.display = 'block';
+      if (SETTINGS.footer && SETTINGS.main) {
+        SETTINGS.main.style.display = 'block';
+        SETTINGS.footer.style.display = 'block';
+      }
       return;
     }
 
@@ -54,8 +55,10 @@ const HWNavbar = ({
 
     SETTINGS.navbar.classList.add(activeClass);
     SETTINGS.hamburgerIcon.classList.add(activeHamburgerClass);
-    SETTINGS.main.style.display = 'none';
-    SETTINGS.footer.style.display = 'none';
+    if (SETTINGS.footer && SETTINGS.main) {
+      SETTINGS.main.style.display = 'none';
+      SETTINGS.footer.style.display = 'none';
+    }
   }
 
   function toggleSearch() {
@@ -77,7 +80,11 @@ const HWNavbar = ({
 
     // Skip if already initialised
     if (SETTINGS.menuButton) {
-      if (SETTINGS.menuButton.getAttribute('data-hw-menu-initialised') === 'true') { return; }
+      if (
+        SETTINGS.menuButton.getAttribute('data-hw-menu-initialised') === 'true'
+      ) {
+        return;
+      }
 
       // Mark as initialised
       SETTINGS.menuButton.setAttribute('data-hw-menu-initialised', true);
