@@ -477,4 +477,7 @@ lang: html
 <svg class="hw-icon hw-icon--success">
   <use xlink:href="#check-circle"></use>
 </svg>
+<svg class="hw-icon hw-icon--postencolor">
+  <use xlink:href="#remove"></use>
+</svg>
 ```

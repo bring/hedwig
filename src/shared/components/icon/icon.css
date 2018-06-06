@@ -30,6 +30,10 @@
     fill: var(--hw-color-success);
   }
 
+  &--postencolor {
+    fill: var(--hw-color-posten);
+  }
+
   &--gray-lighter {
     fill: var(--hw-color-gray-lighter);
   }
