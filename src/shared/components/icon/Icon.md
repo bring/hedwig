@@ -462,6 +462,9 @@ lang: html
 
 ### Examples
 ```html
+<svg class="hw-icon hw-icon--smaller">
+  <use xlink:href="#envelope"></use>
+</svg>
 <svg class="hw-icon hw-icon--small">
   <use xlink:href="#envelope"></use>
 </svg>

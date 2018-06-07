@@ -12,6 +12,11 @@
    * Modifiers
    */
 
+  &--smaller {
+    width: var(--hw-spacing-smaller);
+    height: var(--hw-spacing-smaller);
+  }
+
   &--small {
     width: var(--hw-spacing-small);
     height: var(--hw-spacing-small);
