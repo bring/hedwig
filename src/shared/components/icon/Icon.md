@@ -477,10 +477,10 @@ lang: html
 <svg class="hw-icon hw-icon--large">
   <use xlink:href="#envelope"></use>
 </svg>
-<svg class="hw-icon hw-icon--success">
+<svg class="hw-icon hw-icon--green">
   <use xlink:href="#check-circle"></use>
 </svg>
-<svg class="hw-icon hw-icon--postencolor">
+<svg class="hw-icon hw-icon--red">
   <use xlink:href="#remove"></use>
 </svg>
 ```

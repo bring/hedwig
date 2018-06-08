@@ -1,0 +1,46 @@
+.hw-badge {
+  display: inline-block;
+  border-color: var(--hw-color-white);
+  border-style: solid;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-radius: 3px;
+  line-height: 1.1;
+  background-color: var(--hw-color-white);
+
+
+  &--red {
+    background-color: var(--hw-color-red);
+    border-color: var(--hw-color-red);
+    color: var(--hw-color-white);
+  }
+
+  &--green {
+    background-color: var(--hw-color-green);
+    border-color: var(--hw-color-green);
+    color: var(--hw-color-white);
+  }
+
+  &--large {
+    font-size: var(--hw-font-size-h2);
+  }
+
+  &--larger {
+    font-size: var(--hw-font-size-h1);
+    border-left-width: 7px;
+    border-right-width: 7px;
+  }
+
+  &--small {
+    font-size: var(--hw-font-size-small);
+    border-top-width: 4px;
+  }
+
+  &--smaller {
+    font-size: var(--hw-font-size-smaller);
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

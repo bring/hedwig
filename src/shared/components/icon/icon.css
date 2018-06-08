@@ -31,12 +31,12 @@
     fill: var(--hw-color-primary);
   }
 
-  &--success {
-    fill: var(--hw-color-success);
+  &--green {
+    fill: var(--hw-color-green);
   }
 
-  &--postencolor {
-    fill: var(--hw-color-posten);
+  &--red {
+    fill: var(--hw-color-red);
   }
 
   &--gray-lighter {
