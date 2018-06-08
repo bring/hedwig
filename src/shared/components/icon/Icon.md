@@ -24,7 +24,8 @@ lang: html
 [Small]    .hw-icon--small
 [Large]    .hw-icon--large
 [Primary]  .hw-icon--primary
-[Success]  .hw-icon--success
+[Green]    .hw-icon--green
+[Red]      .hw-icon--red
 ```
 
 
