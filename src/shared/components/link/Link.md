@@ -29,16 +29,6 @@ Default link styles
 
 
 ```html|span-6
-<a href="#" class="hw-link hw-link--with-icon hw-link--dark">
-  <svg class="hw-icon hw-icon--small hw-color-link">
-    <use xlink:href="#download"></use>
-  </svg>
-  <span class="hw-link__text">This is a dark link with an icon</span>
-</a>
-```
-
-
-```html|span-6
   <a href="#" class="hw-link hw-link--big">This is a big link</a>
 ```
 
