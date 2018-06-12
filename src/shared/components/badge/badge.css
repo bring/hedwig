@@ -1,34 +1,24 @@
 .hw-badge {
   display: inline-block;
-  border-color: var(--hw-color-white);
+  border-color: var(--hw-color-primary-dark);
   border-style: solid;
   border-left-width: 5px;
   border-right-width: 5px;
   border-radius: 3px;
   line-height: 1.1;
-  background-color: var(--hw-color-white);
+  background-color: var(--hw-color-primary-dark);
+  color: var(--hw-color-white);
 
-
-  &--red {
-    background-color: var(--hw-color-red);
-    border-color: var(--hw-color-red);
-    color: var(--hw-color-white);
-  }
-
-  &--green {
-    background-color: var(--hw-color-green);
-    border-color: var(--hw-color-green);
-    color: var(--hw-color-white);
-  }
-
-  &--large {
+ &--large {
     font-size: var(--hw-font-size-h2);
+    border-left-width: 7px;
+    border-right-width: 7px;
   }
 
   &--larger {
     font-size: var(--hw-font-size-h1);
-    border-left-width: 7px;
-    border-right-width: 7px;
+    border-left-width: 11px;
+    border-right-width: 11px;
   }
 
   &--small {

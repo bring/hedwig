@@ -16,50 +16,50 @@ Provides styling for badges
 [Large]    .hw-badge--large
 [Larger]   .hw-badge--larger
 
-[Red]      .hw-badge--green
-[Green]    .hw-badge--red
-
 [Uppercase].hw-badge--uppercase
 ```
 
 ### Primary
 
 ```html|span-4
-<div class="hw-badge hw-badge--green">
+<div class="hw-badge">
   Badge
 </div>
+```
+### In a sentence
 
-<div class="hw-badge hw-badge--red">
+```html|span-4
+I am a <div class="hw-badge hw-badge--small">
   Badge
-</div>
+</div> in a sentence
 ```
 
 ### Sizes
 ```html
-<div class="hw-badge hw-badge--red hw-badge--larger">
+<div class="hw-badge hw-badge--larger">
   Badge
 </div>
 
-<div class="hw-badge hw-badge--red hw-badge--large">
+<div class="hw-badge hw-badge--large">
   Badge
 </div>
 
-<div class="hw-badge hw-badge--red">
+<div class="hw-badge">
   Badge
 </div>
 
-<div class="hw-badge hw-badge--red hw-badge--small">
+<div class="hw-badge hw-badge--small">
   Badge
 </div>
 
-<div class="hw-badge hw-badge--red hw-badge--smaller">
+<div class="hw-badge hw-badge--smaller">
   Badge
 </div>
 ```
 
 ### Uppercase
 ```html
-<div class="hw-badge hw-badge--red hw-badge--uppercase">
+<div class="hw-badge hw-badge--uppercase">
   Badge
 </div>
 ```
