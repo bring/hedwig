@@ -94,15 +94,7 @@ const HWStickyNav = ({
     const offset = (element.offsetLeft - (innerElement.clientWidth / 2)) + (element.clientWidth / 2);
     
     // Scroll horizontally (if using supported browser)
-    if (innerElement.scroll) {
-      innerElement.scroll({
-        behavior: 'smooth',
-        left: offset,
-        top: 0,
-      });
-    } else {
-      horizontalScroll(innerElement, offset);
-    }
+    horizontalScroll(innerElement, offset);
   }
 
   function init() {
