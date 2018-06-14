@@ -3,7 +3,7 @@ import throttle from 'lodash/throttle';
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import getPosition from '../../utilities/js/position';
-import verticalScroll from '../../utilities/js/verticalScroll';
+import horizontalScroll from '../../utilities/js/horizontalScroll';
 
 /**
  * @function HWStickyNav
@@ -85,14 +85,15 @@ const HWStickyNav = ({
     const element = e.target;
     if (!element.classList.contains('hw-stickynav__link')) { return; }
 
+    // Scroll the content up or down according to the selected item
     const target = getPosition(q(element.hash));
     zenscroll.toY((target.top - SETTINGS.element.clientHeight) + 1);
 
-    // Scroll internally
+    // Scroll menu to the right or left
     const innerElement = q(innerSelector);
     const offset = (element.offsetLeft - (innerElement.clientWidth / 2)) + (element.clientWidth / 2);
     
-    // Scroll vertically (if using supported browser)
+    // Scroll horizontally (if using supported browser)
     if (innerElement.scroll) {
       innerElement.scroll({
         behavior: 'smooth',
@@ -100,7 +101,7 @@ const HWStickyNav = ({
         top: 0,
       });
     } else {
-      verticalScroll(innerElement, offset);
+      horizontalScroll(innerElement, offset);
     }
   }
 
