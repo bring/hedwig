@@ -5,7 +5,8 @@ const HWTab = ({
   tabSelector = '.hw-tab',
   selectedClass = 'hw-tab__item--selected',
   itemSelector = '.hw-tab__item',
-  markerSelector = '.hw-tab__marker'
+  markerSelector = '.hw-tab__marker',
+  initClass = 'hw-tab__initialized'
 } = {}) => {
   // Module settings object
   const SETTINGS = {
@@ -27,9 +28,7 @@ const HWTab = ({
 
     // Toggle selected class
     SETTINGS.items.forEach((item) => {
-      if (item.classList.contains(selectedClass)) {
-        item.classList.remove(selectedClass);
-      }
+      item.classList.remove(selectedClass);
     });
     clickedItem.classList.add(selectedClass);
   }
@@ -43,7 +42,8 @@ const HWTab = ({
 
 
   function init() {
-    if (!SETTINGS.tab || !SETTINGS.marker) {
+    // Don't initialize when already initialized
+    if (!SETTINGS.tab || !SETTINGS.marker || SETTINGS.tab.classList.contains(initClass)) {
       return;
     }
 
@@ -63,9 +63,10 @@ const HWTab = ({
        */
       item.style.borderColor = 'transparent';
     });
-
+    // Mark this Tab as initialized
+    SETTINGS.tab.classList.add(initClass);
   }
-    init();
+  init();
 };
 HWTab();
 
