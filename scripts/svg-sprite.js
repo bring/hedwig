@@ -6,17 +6,18 @@
  *
  */
 
-var fs = require('fs');
-var glob = require('glob');
-var svgSprite = require('svg2sprite');
+const fs = require('fs');
+const glob = require('glob');
+const svgSprite = require('svg2sprite');
+
 const sprite = svgSprite.collection({ inline: true });
 
 /**
  * config
  */
 
-var src = './build/assets/icons/optimized/**/*.svg';
-var dist = './build/assets/svg-sprite.svg';
+const src = './assets/icons/optimized/**/*.svg';
+const dist = './assets/svg-sprite.svg';
 
 console.log('🐝 Generating SVG sprite...');
 
@@ -25,7 +26,6 @@ console.log('🐝 Generating SVG sprite...');
  */
 
 glob(src, (err, files) => {
-
   /**
    * Iterate thru files
    */
@@ -35,7 +35,11 @@ glob(src, (err, files) => {
      * Generate name for filename and add to sprite
      */
 
-    var name = file.split('/').pop().split('.').shift();
+    const name = file
+      .split('/')
+      .pop()
+      .split('.')
+      .shift();
 
     sprite.add(name, fs.readFileSync(file, 'utf8'));
   });
@@ -48,5 +52,5 @@ glob(src, (err, files) => {
 
   fs.writeFileSync(dist, svg);
 
-  console.log(`🐘 SVG sprite at '${dist}'`)
+  console.log(`🐘 SVG sprite at '${dist}'`);
 });
