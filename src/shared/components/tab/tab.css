@@ -11,7 +11,7 @@
   }
 
   /* The box-shadow creates the gray bar under the tab items */
-  box-shadow: inset 0 -3px 0 0 var(--hw-color-gray-light);
+  box-shadow: inset 0 -3px 0 0 var(--hw-color-gray-lighter);
 
   &__item {
     font-size: var(--hw-font-size-small);
@@ -41,13 +41,15 @@
     bottom: 0;
     position: absolute;
     height: 0;
-    border-bottom: 3px solid var(--hw-color-primary-dark);
+    border-bottom: 3px solid var(--hw-color-primary);
+
     /**
      * The following will be modified by javascript during runtime to move the marker around
      * - transition
      * - left
      * - width
      */
+
     transition: left 200ms, width 200ms;
     left: 0;
     width: 0;
