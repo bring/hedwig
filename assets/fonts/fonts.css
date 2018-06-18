@@ -1,0 +1,61 @@
+
+/*
+ * http://caniuse.com/#feat=woff2
+ * Firefox 39, Chrome 36, Opera 23, Android 5-6.x WebView: Chromium 46,
+ * Opera 33 for Android, Chrome 47 for Android and Firefox 42 for Android
+ *
+ * http://caniuse.com/#feat=woff
+ * IE9, Edge 12, Firefox 3.6, Chrome 5, Safari 5.1, Opera 11.5,
+ * Safari & Chrome for iOS 5.0, Android 4.4 browser, Blackberry browser 7,
+ * Opera Mobile 12, Chrome 47 for Android, Firefox 42 for Android, IE Mobile 10,
+ * UC Browser 9.9 for Android
+ *
+ * http://caniuse.com/#feat=ttf
+ * Partial(IE9-11), Edge 12, Firefox 3.5, Chrome 4, Safari 3.1, Opera 10.0,
+ * Safari & Chrome for iOS 4.2, Android 2.2 browser, Blackberry browser 7,
+ * Opera Mobile 12, Chrome 47 for Android, Firefox 42 for Android,
+ * Partial(IE Mobile 10-11), UC Browser 9.9 for Android
+ *
+ * http://caniuse.com/#feat=svg-fonts
+ * Chrome 4-37, Safari 3.2, Opera 10.0-24, Safari & Chrome for iOS 3.2,
+ * Android 3-4.4.4, Blackberry browser 7, Opera Mobile 12,
+ * UC Browser 9.9 for Android
+ *
+ * http://caniuse.com/#feat=eot
+ * IE8-11 (no other browsers)
+ *
+ * NOTE:
+ * -----
+ * The Foundry Monoline PN font has a bug in Safari that means that we can't use the locally installed font, but
+ * instead have to download the webfont. This would only affect users with the font installed locally, which -
+ * since it's a licenced font - will restrict it to our programmers and designers (not regular users).
+ *
+ */
+
+
+ @font-face {
+   font-family: 'Foundry Monoline Regular';
+   src: url('FoundryMonolinePN-Regular.eot');
+   src: url('FoundryMonolinePN-Regular.woff2') format('woff2'),
+   url('FoundryMonolinePN-Regular.woff') format('woff'),
+   url('FoundryMonolinePN-Regular.ttf') format('truetype'),
+   url('FoundryMonolinePN-Regular.svg#FoundryMonolineReg') format('svg');
+ }
+
+@font-face {
+    font-family: 'Foundry Monoline Medium';
+    src: url('FoundryMonolinePN-Medium.eot');
+    src: url('FoundryMonolinePN-Medium.woff2') format('woff2'),
+    url('FoundryMonolinePN-Medium.woff') format('woff'),
+    url('FoundryMonolinePN-Medium.ttf') format('truetype'),
+    url('FoundryMonolinePN-Medium.svg#FoundryMonolineMedium') format('svg');
+}
+
+@font-face {
+  font-family: 'Foundry Monoline Bold';
+  src: url('FoundryMonolinePN-Bold.eot');
+  src: url('FoundryMonolinePN-Bold.woff2') format('woff2'),
+  url('FoundryMonolinePN-Bold.woff') format('woff'),
+  url('FoundryMonolinePN-Bold.ttf') format('truetype'),
+  url('FoundryMonolinePN-Bold.svg#FoundryMonolineBold') format('svg');
+}
