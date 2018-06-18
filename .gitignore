@@ -17,4 +17,4 @@ tmp
 .env
 npm-debug.log
 yarn-error.log
-./vscode
+.vscode/
