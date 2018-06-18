@@ -1,37 +1,31 @@
-var package = require('../../package.json');
+let styles;
+let scripts;
+let logo;
 
-var styles;
-var scripts;
-var logo;
-
-var production = process.env.NODE_ENV === 'production';
-var version = package.version;
+const production = process.env.NODE_ENV === 'production';
 
 if (production) {
   styles = [
-    'https://bring-hedwig.s3.amazonaws.com/hedwig/assets/fonts/fonts.css',
-    `https://bring-hedwig.s3.amazonaws.com/hedwig/releases/posten-${version}.css`
+    'https://jsdeliver/hedwig/assets/fonts.css',
+    'https://cdn.jsdelivr.net/npm/hedwig-test@latest/dist/posten.css',
   ];
-  scripts = [`https://bring-hedwig.s3.amazonaws.com/hedwig/releases/main-${version}.js`];
-  logo = 'https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/logo.svg';
+  scripts = ['https://cdn.jsdelivr.net/npm/hedwig-test@latest'];
+  logo = 'https://cdn.jsdelivr.net/npm/hedwig-test@latest/assets/hedwig-logo.svg';
 } else {
-  styles = [
-    'http://localhost:3001/assets/fonts/fonts.css',
-    'http://localhost:3001/posten.css'
-  ];
+  styles = ['http://localhost:3001/fonts.css', 'http://localhost:3001/posten.css'];
   scripts = ['http://localhost:3001/main.js'];
-  logo = 'http://localhost:3001/assets/images/logo.svg';
+  logo = 'http://localhost:3001/hedwig-logo.svg';
 }
 
 module.exports = {
   title: 'Hedwig/Posten',
-  styles: styles,
-  scripts: scripts,
+  styles,
+  scripts,
   responsiveSizes: [
-    {name: 'small', width: 460, height: 340},
-    {name: 'medium', width: 720, height: 768},
-    {name: 'large', width: 940, height: 1080},
-    {name: 'xlarge', width: 1200, height: 1080}
+    { name: 'small', width: 460, height: 340 },
+    { name: 'medium', width: 720, height: 768 },
+    { name: 'large', width: 940, height: 1080 },
+    { name: 'xlarge', width: 1200, height: 1080 },
   ],
   logoSrc: logo,
   theme: {

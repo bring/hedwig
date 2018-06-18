@@ -1,15 +1,14 @@
+const production = process.env.NODE_ENV === 'production';
 
-var production = process.env.NODE_ENV === 'production';
-
-var reload = '<script src="//localhost:9091"></script>';
-var icons = '<script src="http://localhost:3001/icons.js"></script>';
-var pikaday = '<script src="https://cdn.jsdelivr.net/npm/pikaday@1.7.0/pikaday.min.js"></script>';
+let reload = '<script src="//localhost:9091"></script>';
+let icons = '<script id="hw-icons" src="http://localhost:3001/icons.js"></script>';
+const pikaday = '<script src="https://cdn.jsdelivr.net/npm/pikaday@1.7.0/pikaday.min.js"></script>';
 
 if (production) {
   reload = '';
-  icons = '<script src="https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js"></script>';
+  icons =
+    '<script id="hw-icons" src="https://cdn.jsdelivr.net/npm/hedwig-test@latest/assets/icons.js"></script>';
 }
-
 
 module.exports = `
     <!doctype html>
@@ -19,7 +18,7 @@ module.exports = `
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Hedwig - Bring</title>
       ${pikaday}
-      <link rel="icon" type="image/x-icon" href="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/favicon.ico" />
+      <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/hedwig-test@latest/assets/favicon.ico" />
       <style>
         /**
           * Margin highlighting for block demo
