@@ -23,7 +23,7 @@ export default {
     console.warn(warning.message);
   },
   output: {
-    file: 'build/main.js',
+    file: 'dist/main.js',
     format: 'iife',
   },
   plugins: [
