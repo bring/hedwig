@@ -7,20 +7,25 @@ import babel from 'rollup-plugin-babel';
 import multiEntry from 'rollup-plugin-multi-entry';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
+import { uglify } from 'rollup-plugin-uglify';
 
 export default {
-  format: 'iife',
-  entry: {
-    include: ['src/shared/utilities/js/polyfills/*.js','src/**/*.js'],
+  input: {
+    include: ['src/shared/utilities/js/polyfills/*.js', 'src/**/*.js'],
     exclude: ['src/**/*.test.js'],
   },
   onwarn: (warning) => {
     // Skip certain warnings
-    if (warning.code === 'THIS_IS_UNDEFINED') { return; }
+    if (warning.code === 'THIS_IS_UNDEFINED') {
+      return;
+    }
     // console.warn everything else
     console.warn(warning.message);
   },
-  dest: 'build/main.js',
+  output: {
+    file: 'build/main.js',
+    format: 'iife',
+  },
   plugins: [
     resolve(),
     multiEntry(),
@@ -31,5 +36,6 @@ export default {
     commonjs({
       include: 'node_modules/**',
     }),
+    uglify(),
   ],
 };
