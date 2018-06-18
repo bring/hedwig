@@ -38,8 +38,6 @@
     "serve": "concurrently \"npm run server\" \"npm run livereload\"",
     "livereload": "live-reload --port 9091 docs/ build/",
     "test": "jest",
-    "s3:download": "node scripts/env-checker.js && node ./scripts/s3-download",
-    "s3:upload": "node scripts/env-checker.js && node ./scripts/s3-upload",
     "start": "npm run docs:build & npm run server",
     "svg:min": "svgo -f ./dist/assets/icons -o ./dist/assets/icons/optimized",
     "svg:sprite": "node ./scripts/svg-sprite",
