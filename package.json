@@ -1,6 +1,6 @@
 {
-  "name": "hedwig",
-  "version": "6.1.2",
+  "name": "hedwig-test",
+  "version": "0.0.0",
   "description": "Bring Design System",
   "author": "Posten Norge AS",
   "contributors": [
@@ -18,32 +18,19 @@
     }
   ],
   "license": "BSD-2-Clause",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
     "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
     "build": "npm run docs:build && npm run css:build && npm run js:build",
-    "build:test": "npm run css:build:test && npm run js:build:test",
     "css:dev": "npm run css:dev:bring & npm run css:dev:posten",
-    "css:dev:bring":
-      "postcss tmp/bring.css --use postcss-cssnext postcss-extend -o ./build/bring.css",
-    "css:dev:posten":
-      "postcss tmp/posten.css --use postcss-cssnext postcss-extend -o ./build/posten.css",
+    "css:dev:bring": "postcss tmp/bring.css --use postcss-cssnext postcss-extend -o ./build/bring.css",
+    "css:dev:posten": "postcss tmp/posten.css --use postcss-cssnext postcss-extend -o ./build/posten.css",
     "css:build": "npm run css:build:bring & npm run css:build:posten",
-    "css:build:test":
-      "npm run css:build:bring:test & npm run css:build:posten:test",
-    "css:build:bring":
-      "postcss tmp/bring.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./build/releases/bring-${npm_package_version}.css",
-    "css:build:bring:test":
-      "postcss tmp/bring.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./build/test/bring-test.css",
-    "css:build:posten":
-      "postcss tmp/posten.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./build/releases/posten-${npm_package_version}.css",
-    "css:build:posten:test":
-      "postcss tmp/posten.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./build/test/posten-test.css",
+    "css:build:test": "npm run css:build:bring:test & npm run css:build:posten:test",
+    "css:build:bring": "postcss tmp/bring.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./dist/bring.css",
+    "css:build:posten": "postcss tmp/posten.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./dist/posten.css",
     "js:dev": "rollup -m inline -c --name \"hedwig\"",
-    "js:build":
-      "rollup -c --name \"hedwig\" --output build/releases/main-${npm_package_version}.js",
-    "js:build:test":
-      "rollup -c --name \"hedwig\" --output build/test/main-test.js",
+    "js:build": "rollup -c --name \"hedwig\" --output dist/main.js",
     "docs:build": "node ./scripts/docs-build",
     "watcher": "node ./scripts/watcher",
     "server": "node ./server",
@@ -52,14 +39,13 @@
     "test": "jest",
     "s3:download": "node scripts/env-checker.js && node ./scripts/s3-download",
     "s3:upload": "node scripts/env-checker.js && node ./scripts/s3-upload",
-    "s3:upload:test":
-      "node scripts/env-checker.js && node ./scripts/s3-upload-test",
     "start": "npm run docs:build & npm run server",
-    "svg:min": "svgo -f ./build/assets/icons -o ./build/assets/icons/optimized",
+    "svg:min": "svgo -f ./dist/assets/icons -o ./dist/assets/icons/optimized",
     "svg:sprite": "node ./scripts/svg-sprite",
     "svg": "npm run svg:min && npm run svg:sprite",
     "css:fix": "stylelint 'src/**/*.css' --fix",
-    "postpublish": "git tag ${npm_package_version} && git push --tags"
+    "postpublish": "git tag ${npm_package_version} && git push --tags",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "aws-sdk": "^2.40.0",
