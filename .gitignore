@@ -8,12 +8,13 @@ coverage
 
 # production
 build
+dist
 docs
 tmp
-assets
 
 # misc
 .DS_Store
 .env
 npm-debug.log
 yarn-error.log
+./vscode
