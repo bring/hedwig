@@ -45,8 +45,7 @@
     "svg:min": "svgo -f ./assets/icons -o ./assets/icons/optimized",
     "svg:sprite": "node ./scripts/svg-sprite",
     "svg": "npm run svg:min && npm run svg:sprite",
-    "css:fix": "stylelint 'src/**/*.css' --fix",
-    "prepublishOnly": "npm run build"
+    "css:fix": "stylelint 'src/**/*.css' --fix"
   },
   "dependencies": {
     "express": "^4.15.2",
