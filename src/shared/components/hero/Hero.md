@@ -16,7 +16,10 @@ Hero component
   </div>
 ```
 
-### Hero small (20vh)
+### Hero small (35vh)
+```hint
+Changed from 20vh to 35vh in version 6.1.4
+```
 
 ```html|span-6
   <div class="hw-hero hw-hero--small">
@@ -32,7 +35,7 @@ Hero component
   </div>
 ```
 
-### Hero large with serveral images for breakpoints (prevent loading of big images on mobile)
+### Hero large with several images for breakpoints (prevent loading of big images on mobile)
 
 ```html|span-6
   <div class="hw-hero" data-hw-hero data-hw-hero-images='{"small": "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png", "large": "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-2.png"}'>

@@ -12,6 +12,12 @@ Required:
 
 ```
 
+### Client-side rendering - React / Angular
+If rendering a curtain is done in the frontend, this component needs to be initialized after rendering.
+```code
+hedwig.HWCurtain();
+```
+
 ### Example curtain
 
 ```html|span-6

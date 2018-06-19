@@ -68,22 +68,4 @@
       margin-right: var(--hw-spacing-smallest);
     }
   }
-
-  &--dark {
-    color: var(--hw-color-gray-dark);
-    fill: var(--hw-color-gray-dark);
-    border-bottom-color: var(--hw-color-gray-dark);
-
-    & .hw-link__text {
-      border-bottom-color: var(--hw-color-gray-dark);
-    }
-
-    &:hover {
-      border-bottom-color: var(--hw-color-link-hover);
-
-      & .hw-link__text {
-        border-bottom-color: var(--hw-color-link-hover);
-      }
-    }
-  }
 }

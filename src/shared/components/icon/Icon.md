@@ -17,6 +17,18 @@ lang: html
 </svg>
 ```
 
+### Variations
+
+```code
+[Normal]   .hw-icon
+[Small]    .hw-icon--small
+[Large]    .hw-icon--large
+[Primary]  .hw-icon--primary
+[Green]    .hw-icon--green
+[Red]      .hw-icon--red
+```
+
+
 ### Icons
 
 ```html|span-6,noSource
@@ -109,6 +121,13 @@ lang: html
         <use xlink:href="#check"></use>
       </svg>
       check
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#check-circle"></use>
+      </svg>
+      check-circle
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -442,16 +461,11 @@ lang: html
   </div>
 ```
 
-### Variations
-
-```code
-[Normal]   .hw-icon
-[Small]    .hw-icon--small
-[Large]    .hw-icon--large
-[Primary]  .hw-icon--primary      
-```
-
+### Examples
 ```html
+<svg class="hw-icon hw-icon--smaller">
+  <use xlink:href="#envelope"></use>
+</svg>
 <svg class="hw-icon hw-icon--small">
   <use xlink:href="#envelope"></use>
 </svg>
@@ -463,5 +477,11 @@ lang: html
 </svg>
 <svg class="hw-icon hw-icon--large">
   <use xlink:href="#envelope"></use>
+</svg>
+<svg class="hw-icon hw-icon--green">
+  <use xlink:href="#check-circle"></use>
+</svg>
+<svg class="hw-icon hw-icon--red">
+  <use xlink:href="#remove"></use>
 </svg>
 ```
