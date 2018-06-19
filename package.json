@@ -38,7 +38,7 @@
     "serve": "concurrently \"npm run server\" \"npm run livereload\"",
     "livereload": "live-reload --port 9091 docs/ dist/",
     "test": "jest",
-    "start": "npm run docs:build & npm run server",
+    "start": "npm run docs:build & NODE_ENV=production npm run server",
     "svg:min": "svgo -f ./assets/icons -o ./assets/icons/optimized",
     "svg:sprite": "node ./scripts/svg-sprite",
     "svg": "npm run svg:min && npm run svg:sprite",
