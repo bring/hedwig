@@ -316,17 +316,17 @@ function build() {
     ]),
   });
   bringMergedPages.push({
-    title: 'Components',
-    pages: sortPages([
-      ...sharedComponents,
-      ...bringComponents,
-    ]),
-  });
-  bringMergedPages.push({
     title: 'Layout',
     pages: sortPages([
       ...sharedLayout,
       ...bringLayout,
+    ]),
+  });
+  bringMergedPages.push({
+    title: 'Components',
+    pages: sortPages([
+      ...sharedComponents,
+      ...bringComponents,
     ]),
   });
   bringMergedPages.push({
@@ -359,17 +359,17 @@ function build() {
     ]),
   });
   postenMergedPages.push({
-    title: 'Components',
-    pages: sortPages([
-      ...sharedComponents,
-      ...postenComponents,
-    ]),
-  });
-  postenMergedPages.push({
     title: 'Layout',
     pages: sortPages([
       ...sharedLayout,
       ...bringLayout,
+    ]),
+  });
+  postenMergedPages.push({
+    title: 'Components',
+    pages: sortPages([
+      ...sharedComponents,
+      ...postenComponents,
     ]),
   });
   postenMergedPages.push({
