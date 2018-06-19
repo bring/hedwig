@@ -6,12 +6,19 @@
   },
   "description": "Bring Design System",
   "author": "Posten Norge AS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bring/hedwig"
+  },
   "contributors": [
     {
       "name": "Fredrik Jensen (Netlife Research)"
     },
     {
       "name": "Bård N. Hovde (Netlife Research)"
+    },
+    {
+      "name": "Leif Riksheim (Netlife Research)"
     },
     {
       "name": "Elisabeth Irgens"
