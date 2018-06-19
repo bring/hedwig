@@ -58,20 +58,34 @@ function build() {
    * Make empty component and page config files
    */
 
-  const sharedComponents = [];
-  const sharedExamples = [];
+  //  Desired structure:
+  // About
+  // Getting started
+  // Guidelines
+  //   - Logo
+  //   - Typo
+  //   - Spacing
+  //   - Colors
+  //   - Layout
+  // Components
+  // Icons
+  // Utilities
+  // Contact
+
+  const sharedComponents = []; // KEEP
+  const sharedGuidelines = [];
   const sharedPages = [];
   const sharedUtilities = [];
   const sharedLayout = [];
 
   const bringComponents = [];
-  const bringExamples = [];
+  const bringGuidelines = [];
   const bringPages = [];
   const bringUtilities = [];
   const bringLayout = [];
 
   const postenComponents = [];
-  const postenExamples = [];
+  const postenGuidelines = [];
   const postenPages = [];
   const postenUtilities = [];
   const postenLayout = [];
@@ -100,7 +114,7 @@ function build() {
       const filePath = file.split('/');
       const fileSection = filePath[1]; // Will be shared, posten or bring
       var components;
-      var examples;
+      var guidelines;
       var pages;
       var layout;
       var utilities;
@@ -108,14 +122,14 @@ function build() {
       switch (fileSection) {
           case 'posten':
               components = postenComponents;
-              examples = postenExamples;
+              guidelines = postenGuidelines;
               pages = postenPages;
               layout = postenLayout;
               utilities = postenUtilities;
               break;
           case 'bring':
               components = bringComponents;
-              examples = bringExamples;
+              guidelines = bringGuidelines;
               pages = bringPages;
               layout = bringLayout;
               utilities = bringUtilities;
@@ -123,7 +137,7 @@ function build() {
           default:
           case 'shared':
               components = sharedComponents;
-              examples = sharedExamples;
+              guidelines = sharedGuidelines;
               pages = sharedPages;
               layout = sharedLayout;
               utilities = sharedUtilities;
@@ -131,137 +145,14 @@ function build() {
       }
 
       /**
-       * Check if the page is a component
+       * Check if the page is a Guideline
        var title = filename.split('.').shift();
       */
 
-      if (file.indexOf('components') !== -1) {
-
-        var filename = file.split('/').pop();
-        var title = filename.split('.').shift();
-
-        /**
-         * Copy md files to docs
-         */
-
-        fs.createReadStream(file).pipe(
-          fs.createWriteStream(`docs/md/${fileSection}/` + filename)
-        );
-
-        /**
-         * Add components pages to the compoents array
-         */
-        components.push({
-          title: title,
-          path: title,
-          src: `md/${fileSection}/${filename}`,
-        });
-
-        return;
-      }
-
-      /**
-       * Check if the page is a page example
-       var title = filename.split('.').shift();
-      */
-
-      if (file.indexOf('examples') !== -1) {
-
-        var filename = file.split('/').pop();
-        var title = filename.split('.').shift();
-
-        /**
-         * Copy md files to docs
-         */
-
-        fs.createReadStream(file).pipe(
-          fs.createWriteStream(`docs/md/${fileSection}/` + filename)
-        );
-
-        /**
-         * Find subsection
-         */
-
-        console.log(file);
-
-        /**
-         * Add page to a pages array
-         */
-        examples.push({
-          title: title,
-          path: title,
-          src: `md/${fileSection}/${filename}`,
-        });
-
-        return;
-      }
-
-      /**
-       * Check if the page is a layout helper
-       var title = filename.split('.').shift();
-      */
-
-      if (file.indexOf('layout') !== -1) {
-
-        var filename = file.split('/').pop();
-        var title = filename.split('.').shift();
-
-        /**
-         * Copy md files to docs
-         */
-
-        fs.createReadStream(file).pipe(
-          fs.createWriteStream(`docs/md/${fileSection}/` + filename)
-        );
-
-        /**
-         * Add page to a pages array
-         */
-        layout.push({
-          title: title,
-          path: title,
-          src: `md/${fileSection}/${filename}`,
-        });
-
-        return;
-      }
-
-      /**
-       * Check if the page is an utility
-       var title = filename.split('.').shift();
-      */
-
-      if (file.indexOf('utilities') !== -1) {
-
-        var filename = file.split('/').pop();
-        var title = filename.split('.').shift();
-
-        /**
-         * Copy md files to docs
-         */
-
-        fs.createReadStream(file).pipe(
-          fs.createWriteStream(`docs/md/${fileSection}/` + filename)
-        );
-
-        /**
-         * Add page to a pages array
-         */
-        utilities.push({
-          title: title,
-          path: title,
-          src: `md/${fileSection}/${filename}`,
-        });
-
-        return;
-      }
-
-      /**
-       * Process remaining pages
-       */
+     if (file.indexOf('guidelines') !== -1) {
 
       var filename = file.split('/').pop();
-      var title = filename.split('.')[1];
+      var title = filename.split('.').shift();
 
       /**
        * Copy md files to docs
@@ -272,16 +163,141 @@ function build() {
       );
 
       /**
-      * Make config for pages in root directory
-      */
+       * Find subsection
+       */
 
-      var path = title === 'Introduction' ? '/' : title;
-      pages.push({
-        path,
+      console.log(file);
+
+      /**
+       * Add page to a pages array
+       */
+      guidelines.push({
+        title: title,
+        path: title,
         src: `md/${fileSection}/${filename}`,
-        title,
       });
+
+      return;
+    }
+
+    /**
+     * Check if the page is a component
+     var title = filename.split('.').shift();
+    */
+
+    if (file.indexOf('components') !== -1) {
+
+      var filename = file.split('/').pop();
+      var title = filename.split('.').shift();
+
+      /**
+       * Copy md files to docs
+       */
+
+      fs.createReadStream(file).pipe(
+        fs.createWriteStream(`docs/md/${fileSection}/` + filename)
+      );
+
+      /**
+       * Add components pages to the compoents array
+       */
+      components.push({
+        title: title,
+        path: title,
+        src: `md/${fileSection}/${filename}`,
+      });
+
+      return;
+    }
+
+    
+
+    /**
+     * Check if the page is a layout helper
+     var title = filename.split('.').shift();
+    */
+
+    if (file.indexOf('layout') !== -1) {
+
+      var filename = file.split('/').pop();
+      var title = filename.split('.').shift();
+
+      /**
+       * Copy md files to docs
+       */
+
+      fs.createReadStream(file).pipe(
+        fs.createWriteStream(`docs/md/${fileSection}/` + filename)
+      );
+
+      /**
+       * Add page to a pages array
+       */
+      layout.push({
+        title: title,
+        path: title,
+        src: `md/${fileSection}/${filename}`,
+      });
+
+      return;
+    }
+
+    /**
+     * Check if the page is an utility
+     var title = filename.split('.').shift();
+    */
+
+    if (file.indexOf('utilities') !== -1) {
+
+      var filename = file.split('/').pop();
+      var title = filename.split('.').shift();
+
+      /**
+       * Copy md files to docs
+       */
+
+      fs.createReadStream(file).pipe(
+        fs.createWriteStream(`docs/md/${fileSection}/` + filename)
+      );
+
+      /**
+       * Add page to a pages array
+       */
+      utilities.push({
+        title: title,
+        path: title,
+        src: `md/${fileSection}/${filename}`,
+      });
+
+      return;
+    }
+
+    /**
+     * Process remaining pages
+     */
+
+    var filename = file.split('/').pop();
+    var title = filename.split('.')[1];
+
+    /**
+     * Copy md files to docs
+     */
+
+    fs.createReadStream(file).pipe(
+      fs.createWriteStream(`docs/md/${fileSection}/` + filename)
+    );
+
+    /**
+    * Make config for pages in root directory
+    */
+
+    var path = title === 'About' ? '/' : title;
+    pages.push({
+      path,
+      src: `md/${fileSection}/${filename}`,
+      title,
     });
+  });
 
 
   /**
@@ -293,10 +309,10 @@ function build() {
     ...bringPages,
   ];
   bringMergedPages.push({
-    title: 'Layout',
+    title: 'Guidelines',
     pages: sortPages([
-      ...sharedLayout,
-      ...bringLayout,
+      ...sharedGuidelines,
+      ...bringGuidelines,
     ]),
   });
   bringMergedPages.push({
@@ -307,10 +323,10 @@ function build() {
     ]),
   });
   bringMergedPages.push({
-    title: 'Examples',
+    title: 'Layout',
     pages: sortPages([
-      ...sharedExamples,
-      ...bringExamples,
+      ...sharedLayout,
+      ...bringLayout,
     ]),
   });
   bringMergedPages.push({
@@ -321,7 +337,7 @@ function build() {
     ]),
   });
 
-  const bringCatalogSettings = Object.assign(bringDocsConfig, { pages: sortPages(bringMergedPages) });
+  const bringCatalogSettings = Object.assign(bringDocsConfig, { pages: bringMergedPages });
   const CatalogJSBring = `Catalog.render(${JSON.stringify(bringCatalogSettings)}, document.getElementById('catalog'))`;
 
   fs.writeFile('docs/docs-config-bring.js', CatalogJSBring, function(err) {
@@ -336,10 +352,10 @@ function build() {
     ...postenPages,
   ];
   postenMergedPages.push({
-    title: 'Layout',
+    title: 'Guidelines',
     pages: sortPages([
-      ...sharedLayout,
-      ...bringLayout,
+      ...sharedGuidelines,
+      ...postenGuidelines,
     ]),
   });
   postenMergedPages.push({
@@ -350,10 +366,10 @@ function build() {
     ]),
   });
   postenMergedPages.push({
-    title: 'Examples',
+    title: 'Layout',
     pages: sortPages([
-      ...sharedExamples,
-      ...postenExamples,
+      ...sharedLayout,
+      ...bringLayout,
     ]),
   });
   postenMergedPages.push({
@@ -364,7 +380,7 @@ function build() {
     ]),
   });
 
-  const postenCatalogSettings = Object.assign(postenDocsConfig, { pages: sortPages(postenMergedPages) });
+  const postenCatalogSettings = Object.assign(postenDocsConfig, { pages: postenMergedPages });
   const CatalogJSPosten = `Catalog.render(${JSON.stringify(postenCatalogSettings)}, document.getElementById('catalog'))`;
 
   fs.writeFile('docs/docs-config-posten.js', CatalogJSPosten, function(err) {
