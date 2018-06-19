@@ -6,7 +6,7 @@ const production = process.env.NODE_ENV === 'production';
 
 if (production) {
   styles = [
-    'https://jsdeliver/hedwig-test/assets/fonts.css',
+    'https://cdn.jsdelivr.net/npm/hedwig-test@latest/assets/fonts.css',
     'https://cdn.jsdelivr.net/npm/hedwig-test@latest/dist/bring.css',
   ];
   scripts = ['https://cdn.jsdelivr.net/npm/hedwig-test@latest'];
