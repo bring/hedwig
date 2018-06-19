@@ -7,10 +7,10 @@ const production = process.env.NODE_ENV === 'production';
 if (production) {
   styles = [
     'https://jsdeliver/hedwig/assets/fonts.css',
-    'https://cdn.jsdelivr.net/npm/hedwig-test@latest/dist/posten.css',
+    'https://cdn.jsdelivr.net/npm/hedwig@latest/dist/posten.css',
   ];
-  scripts = ['https://cdn.jsdelivr.net/npm/hedwig-test@latest'];
-  logo = 'https://cdn.jsdelivr.net/npm/hedwig-test@latest/assets/hedwig-logo.svg';
+  scripts = ['https://cdn.jsdelivr.net/npm/hedwig@latest'];
+  logo = 'https://cdn.jsdelivr.net/npm/hedwig@latest/assets/hedwig-logo.svg';
 } else {
   styles = ['http://localhost:3001/fonts.css', 'http://localhost:3001/posten.css'];
   scripts = ['http://localhost:3001/main.js'];
