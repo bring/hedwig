@@ -1,6 +1,9 @@
 {
-  "name": "hedwig",
-  "version": "7.0.0-0",
+  "name": "@posten/hedwig",
+  "version": "6.2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Bring Design System",
   "author": "Posten Norge AS",
   "contributors": [
