@@ -10,7 +10,7 @@ if (production) {
     'https://cdn.jsdelivr.net/npm/hedwig-test@latest/dist/bring.css',
   ];
   scripts = ['https://cdn.jsdelivr.net/npm/hedwig-test@latest'];
-  logo = 'https://cdn.jsdelivr.net/npm/hedwig-test@latest/assets/hedwig-logo.svg';
+  logo = 'https://cdn.jsdelivr.net/npm/hedwig-test@next/assets/hedwig-logo.svg';
 } else {
   styles = ['http://localhost:3001/fonts.css', 'http://localhost:3001/bring.css'];
   scripts = ['http://localhost:3001/main.js'];
