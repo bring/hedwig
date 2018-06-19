@@ -12,6 +12,10 @@ module.exports = `
           margin: 0;
           background: #f2f2f2;
           overflow: hidden;
+          font-family: 'Foundry Monoline Medium', sans-serif;
+          font-size: 18px;
+          color: #444444;
+          letter-spacing: -0.02em;
         }
 
         /**
