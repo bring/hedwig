@@ -7,7 +7,7 @@ const pikaday = '<script src="https://cdn.jsdelivr.net/npm/pikaday@1.7.0/pikaday
 if (production) {
   reload = '';
   icons =
-    '<script id="hw-icons" src="https://cdn.jsdelivr.net/npm/hedwig-test@latest/assets/icons.js"></script>';
+    '<script id="hw-icons" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/icons.js"></script>';
 }
 
 module.exports = `
@@ -18,7 +18,7 @@ module.exports = `
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Hedwig - Bring</title>
       ${pikaday}
-      <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/hedwig-test@latest/assets/favicon.ico" />
+      <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/favicon.ico" />
       <style>
         /**
           * Margin highlighting for block demo
