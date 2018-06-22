@@ -18,3 +18,5 @@ tmp
 npm-debug.log
 yarn-error.log
 .vscode/
+.idea/
+hedwig.iml
