@@ -29,6 +29,24 @@ lang: html
 ```
 
 
+### Font Awesome icons
+
+```html|span-6,noSource
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#check-circle"></use>
+      </svg>
+      check-circle
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+      <use xlink:href="#user"></use>
+    </svg>
+    user
+  </div>
+```
+
 ### Icons
 
 ```html|span-6,noSource
@@ -121,13 +139,6 @@ lang: html
         <use xlink:href="#check"></use>
       </svg>
       check
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#check-circle"></use>
-      </svg>
-      check-circle
     </div>
   </div>
   <div class="hw-helpers-icon">
