@@ -42,4 +42,8 @@
   &--gray-lighter {
     fill: var(--hw-color-gray-lighter);
   }
+
+  &--gray-darker {
+    fill: var(--hw-color-gray-darker);
+  }
 }

@@ -484,4 +484,10 @@ lang: html
 <svg class="hw-icon hw-icon--red">
   <use xlink:href="#remove"></use>
 </svg>
+<svg class="hw-icon hw-icon--gray-darker">
+  <use xlink:href="#remove"></use>
+</svg>
+<svg class="hw-icon hw-icon--gray-lighter">
+  <use xlink:href="#remove"></use>
+</svg>
 ```
