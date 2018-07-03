@@ -11,9 +11,9 @@ Hedwig will automatically style the datepicker with custom styles.
 ### Default calendar
 
 ```html|span-3
-  <label id="datepicker-ajsd4ks8" class="hw-label hw-datepicker">
+  <label class="hw-label hw-datepicker">
     Tidspunkt for levering
-    <div class="hw-datepicker__inner">
+    <div id="datepicker-ajsd4ks8" class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" />
       <span class="hw-datepicker__icon">
         <svg class="hw-icon">
@@ -28,9 +28,9 @@ Hedwig will automatically style the datepicker with custom styles.
 ### Calendar with error
 
 ```html|span-3
-  <label id="datepicker-ajsd4ks9" class="hw-label hw-datepicker">
+  <label class="hw-label hw-datepicker">
     Tidspunkt for levering
-    <div class="hw-datepicker__inner">
+    <div id="datepicker-ajsd4ks9" class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input hw-input--error" placeholder="Select a date" />
       <span class="hw-datepicker__icon">
         <svg class="hw-icon">
@@ -45,7 +45,7 @@ Hedwig will automatically style the datepicker with custom styles.
 ### Example javascript
 
 ```
-const datepickerWrapper = document.getElementById('datepicker-ajsd4ks8').querySelector('.hw-datepicker__inner');
+const datepickerWrapper = document.getElementById('datepicker-ajsd4ks8');
 var picker = new Pikaday({ 
   container: datepickerWrapper,
   field: datepickerWrapper.querySelector('input'), 
