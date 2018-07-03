@@ -17,6 +17,15 @@
   bottom: var(--hw-spacing-smaller);
 }
 
+/* Don't show the icon for error for datepicker */
+.hw-datepicker .hw-error::before {
+  content: none;
+}
+
+.hw-datepicker__inner {
+  position: relative;
+}
+
 .pika-single {
   z-index: var(--z-index--navbar-search);
   display: block;

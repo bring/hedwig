@@ -11,21 +11,41 @@ Hedwig will automatically style the datepicker with custom styles.
 ### Default calendar
 
 ```html|span-3
-  <label id="datepicker-ajsd4ks8" class="hw-datepicker">
-    <p class="hw-text-small">Tidspunkt for levering</p>
-    <input type="text" readonly="readonly" class="hw-input" placeholder="Velg en dato" />
-    <span class="hw-datepicker__icon">
-      <svg class="hw-icon">
-        <use xlink:href="#calendar"></use>
-      </svg>
-    </span>
+  <label id="datepicker-ajsd4ks8" class="hw-label hw-datepicker">
+    Tidspunkt for levering
+    <div class="hw-datepicker__inner">
+      <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" />
+      <span class="hw-datepicker__icon">
+        <svg class="hw-icon">
+          <use xlink:href="#calendar"></use>
+        </svg>
+      </span>
+    </div>
+    <div class="hw-error hw-error--is-hidden">You must select a date</div>
+  </label>
+```
+
+### Calendar with error
+
+```html|span-3
+  <label id="datepicker-ajsd4ks9" class="hw-label hw-datepicker">
+    Tidspunkt for levering
+    <div class="hw-datepicker__inner">
+      <input type="text" readonly="readonly" class="hw-input hw-input--error" placeholder="Select a date" />
+      <span class="hw-datepicker__icon">
+        <svg class="hw-icon">
+          <use xlink:href="#calendar"></use>
+        </svg>
+      </span>
+    </div>
+    <div class="hw-error">You must select a date</div>
   </label>
 ```
 
 ### Example javascript
 
 ```
-const datepickerWrapper = document.getElementById('datepicker-ajsd4ks8');
+const datepickerWrapper = document.getElementById('datepicker-ajsd4ks8').querySelector('.hw-datepicker__inner');
 var picker = new Pikaday({ 
   container: datepickerWrapper,
   field: datepickerWrapper.querySelector('input'), 
