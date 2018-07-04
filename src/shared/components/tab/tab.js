@@ -1,6 +1,8 @@
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import findParent from '../../utilities/js/findParent';
+import horizontalScroll from '../../utilities/js/horizontalScroll';
+
 const HWTab = ({
   tabSelector = '.hw-tab',
   selectedClass = 'hw-tab__item--selected',
@@ -38,6 +40,8 @@ const HWTab = ({
     var left = itemProperties.x - SETTINGS.tab.getBoundingClientRect().x + SETTINGS.tab.scrollLeft;
     SETTINGS.marker.style.left = left + 'px';
     SETTINGS.marker.style.width = itemProperties.width + 'px';
+    const offset = item.offsetLeft - (SETTINGS.tab.clientWidth / 2) + (item.clientWidth / 2);
+    horizontalScroll(SETTINGS.tab, offset);
   }
 
 
