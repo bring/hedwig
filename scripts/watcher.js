@@ -73,14 +73,44 @@ function startPostenCssCompile() {
   console.log('📦 Built posten dev CSS bundle');
 }
 
+function svg(){
+  spawn('npm', ['run', 'svg'], {
+    stdio: 'inherit'
+  });
+  console.log('Optimized all SVGs and built SVG sprite');
+}
+
+function svgSprite() {
+  spawn('npm', ['run', 'svg:sprite'], {
+    stdio: 'inherit'
+  });
+  console.log('Built SVG sprite');
+}
+
+
+//Optimize the updated SVG and builds the SVG sprite
+function processOneSvg(evt, name){
+  if(evt == 'update'){
+    spawn('node', ['node_modules/svgo/bin/svgo', '-i', name, '-o', name.replace('assets/icons', 'dist/icons')], {stdio: 'inherit'});
+    svgSprite();
+  }
+}
+
+function buildIconsJs() {
+  spawn('npm', ['run', 'js:build:icons']);
+  console.log('The icons JS was compiled');
+}
+
 /**
  * Initial compiling
  */
 
+svg();
 concatCss();
 startBringCssCompile();
 startPostenCssCompile();
 buildJs();
+buildIconsJs();
 
 /**
  * Watch processes
@@ -93,3 +123,5 @@ watch('src/bring', { recursive: true }, filter(/\.css$/, concatBringCss));
 watch('src/posten', { recursive: true }, filter(/\.css$/, concatPostenCss));
 watch('tmp', { recursive: true }, filter(/bring.css$/, startBringCssCompile));
 watch('tmp', { recursive: true }, filter(/posten.css$/, startPostenCssCompile));
+watch('assets', { recursive: true }, filter(/icons.js$/, buildIconsJs));
+watch('assets/icons', { recursive: true },filter(/\.svg$/, (evt, name) => { processOneSvg(evt, name) }));
