@@ -2,7 +2,7 @@
 
 To use the icons set, add this script in your footer:
 ```code
-https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js
+https://cdn.jsdelivr.net/npm/@posten/hedwig@6/dist/icons.min.js
 ```
 This will add an icon sprite into your document with ajax after page load. The whole icon set is 20.5 KB.
 

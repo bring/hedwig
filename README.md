@@ -95,16 +95,12 @@ Remember to fill en the keys in `.env`.
 
 We use [inline SVG's for icons](https://github.com/bring/hedwig/issues/9).
 
-For the future it will probably be a good idea to have a own repository for icons, (i.e. `hedwig-icons`), where both source "master" files (AI, Sketch) and the SVG's can be stored.
+Icons works like this:
+- Place icons in the `assets/icons/` folder 
+- Run `npm run svg` to generate SVG sprite. `npm run build` or `npm run dev` will both also produce the SVG sprite
+- Use icons like described in [the docs](https://hedwig-docs.herokuapp.com/bring.html#/Icon)
 
-It works like this:
-- Place icons in the `build/assets/icons/` folder (for now)
-- Run `npm run svg` to generate SVG sprite
-- Use icons like described in [the docs](https://hedwig-docs.herokuapp.com/#/Icon)
-
-To update icons in production:
-- Run `npm run s3:upload`
-- Include `https://bring-hedwig.s3.amazonaws.com/hedwig/icons.js` in the footer of the document
+- Include `https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/icons.min.js` in the footer of the document
 
 ### 🅰️ Fonts
 
