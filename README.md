@@ -2,7 +2,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig/releases) [![GitHub issues](https://img.shields.io/github/issues/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig/issues)
 
-Hedwig is Brings Design System.
+Hedwig is Bring and Postens Design System.
 
   📚 [Hedwig documentation is available here](https://hedwig-docs.herokuapp.com)
 
@@ -20,14 +20,10 @@ npm run dev
 ```
 clone this repo
 npm install                 # to install dependencies
-add .env file               # get variables from Heroku or Hedwig slack channel. See .env.example file
-npm run s3:download         # to download assets from S3
 
 npm run dev                 # start local development server
 ```
 [Open http://localhost:3000](http://localhost:3000/docs) 🚀
-
-To keep assets up to date, run `npm run s3:download` to download the latest assets from S3. If you're having trouble downloading, try to disconnect your VPN.
 
 ## 📚 Documentation
 
