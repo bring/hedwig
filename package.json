@@ -31,7 +31,7 @@
   "main": "dist/main.js",
   "scripts": {
     "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
-    "build": "npm run docs:build && npm run css:build && npm run js:build",
+    "build": "npm run docs:build && npm run css:build && npm run js:build && npm run svg",
     "release": "np --any-branch",
     "css:dev": "npm run css:dev:bring & npm run css:dev:posten",
     "css:dev:bring": "postcss tmp/bring.css --use postcss-cssnext postcss-extend -o ./dist/bring.css",
@@ -41,7 +41,9 @@
     "css:build:bring": "postcss tmp/bring.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./dist/bring.css",
     "css:build:posten": "postcss tmp/posten.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./dist/posten.css",
     "js:dev": "rollup -m inline -c --name \"hedwig\"",
-    "js:build": "rollup -c --name \"hedwig\" --output.file dist/main.js",
+    "js:build": "npm run js:build:main && npm run js:build:icons",
+    "js:build:main": "rollup -c --name \"hedwig\" --output.file dist/main.js",
+    "js:build:icons": "rollup -c rollup.config.icons.js",
     "docs:build": "node ./scripts/docs-build",
     "watcher": "node ./scripts/watcher",
     "server": "node ./server",
@@ -49,7 +51,7 @@
     "livereload": "live-reload --port 9091 docs/ dist/",
     "test": "jest",
     "start": "npm run docs:build & npm run server",
-    "svg:min": "svgo -f ./assets/icons -o ./assets/icons/optimized",
+    "svg:min": "svgo -f ./assets/icons -o ./dist/icons",
     "svg:sprite": "node ./scripts/svg-sprite",
     "svg": "npm run svg:min && npm run svg:sprite",
     "css:fix": "stylelint 'src/**/*.css' --fix"

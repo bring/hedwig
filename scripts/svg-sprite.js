@@ -16,8 +16,8 @@ const sprite = svgSprite.collection({ inline: true });
  * config
  */
 
-const src = './assets/icons/optimized/**/*.svg';
-const dist = './assets/svg-sprite.svg';
+const src = './dist/icons/**/*.svg';
+const dist = './dist/svg-sprite.svg';
 
 console.log('🐝 Generating SVG sprite...');
 
