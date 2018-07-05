@@ -20,12 +20,14 @@ lang: html
 ### Variations
 
 ```code
-[Normal]   .hw-icon
-[Small]    .hw-icon--small
-[Large]    .hw-icon--large
-[Primary]  .hw-icon--primary
-[Green]    .hw-icon--green
-[Red]      .hw-icon--red
+[Normal]       .hw-icon
+[Small]        .hw-icon--small
+[Large]        .hw-icon--large
+[Primary]      .hw-icon--primary
+[Green]        .hw-icon--green
+[Red]          .hw-icon--red
+[Gray Darker]  .hw-icon--gray-lighter
+[Gray Lighter] .hw-icon--gray-darker
 ```
 
 
