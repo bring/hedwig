@@ -206,6 +206,83 @@ lang: html
       utenforhuset
     </div>
   </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#adresseendringogoppbevaring"></use>
+      </svg>
+      adresseendringogoppbevaring
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#bankogfinans"></use>
+      </svg>
+      bankogfinans
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#billetter"></use>
+      </svg>
+      billetter
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#brev"></use>
+      </svg>
+      brev
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#digitaltfrimerke"></use>
+      </svg>
+      digitaltfrimerke
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#frimerker"></use>
+      </svg>
+      frimerker
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#frimerkertilsamling"></use>
+      </svg>
+      frimerkertilsamling
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#henteipostkassen"></use>
+      </svg>
+      henteipostkassen
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#hvordanmottapost"></use>
+      </svg>
+      hvordanmottapost
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#pakkerstykkgodsogdellast"></use>
+      </svg>
+      pakkerstykkgodsogdellast
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#sporing"></use>
+      </svg>
+      sporing
+    </div>
+  </div>
   <br/>
   <div class="hw-helpers-icon hw-helpers-icon--service-wide">
     <svg class="hw-icon">
