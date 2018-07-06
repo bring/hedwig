@@ -70,6 +70,24 @@ module.exports = `
           border: 1px solid #eee;
         }
 
+        .hw-helpers-icon--service {
+          width: 130px;
+        }
+
+        .hw-helpers-icon--service-wide {
+          width: 185px;
+        }
+
+        .hw-helpers-icon--service .hw-icon {
+          width: 100px;
+          height: 100px;
+        }
+
+        .hw-helpers-icon--service-wide .hw-icon {
+          width: 155px;
+          height: 100px;
+        }
+
 
         /**
           * Switcher styles

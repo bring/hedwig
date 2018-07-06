@@ -43,9 +43,190 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#remove"></use>
+      </svg>
+      remove
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
       <use xlink:href="#user"></use>
     </svg>
     user
+  </div>
+```
+
+### Service icons
+
+```html|span-6,noSource
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      bud
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#ekspress"></use>
+      </svg>
+      ekspress
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#ekspressfly"></use>
+      </svg>
+      ekspressfly
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#flytransport"></use>
+      </svg>
+      flytransport
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#foer07"></use>
+      </svg>
+      foer07
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#hentested"></use>
+      </svg>
+      hentested
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#innenfordoeren"></use>
+      </svg>
+      innenfordoeren
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#internasjonalt"></use>
+      </svg>
+      internasjonalt
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#leverthjem"></use>
+      </svg>
+      leverthjem
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#leverttilbedrift"></use>
+      </svg>
+      leverttilbedrift
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#paadoeren"></use>
+      </svg>
+      paadoeren
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#pakke"></use>
+      </svg>
+      pakke
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#palltilbedrift"></use>
+      </svg>
+      palltilbedrift
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#partigods"></use>
+      </svg>
+      partigods
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#postkasse"></use>
+      </svg>
+      postkasse
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#retur"></use>
+      </svg>
+      retur
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#skreddersoem"></use>
+      </svg>
+      skreddersoem
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#stykkgods"></use>
+      </svg>
+      stykkgods
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#temperaturregulert"></use>
+      </svg>
+      temperaturregulert
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#toll"></use>
+      </svg>
+      toll
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service">
+    <svg class="hw-icon">
+        <use xlink:href="#utenforhuset"></use>
+      </svg>
+      utenforhuset
+    </div>
+  </div>
+  <br/>
+  <div class="hw-helpers-icon hw-helpers-icon--service-wide">
+    <svg class="hw-icon">
+        <use xlink:href="#budirute"></use>
+      </svg>
+      budirute
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service-wide">
+    <svg class="hw-icon">
+        <use xlink:href="#godstransport"></use>
+      </svg>
+      godstransport
+    </div>
+  </div>
+  <div class="hw-helpers-icon hw-helpers-icon--service-wide">
+    <svg class="hw-icon">
+        <use xlink:href="#sjoetransport"></use>
+      </svg>
+      sjoetransport
+    </div>
   </div>
 ```
 
@@ -372,13 +553,6 @@ lang: html
         <use xlink:href="#cross-thin"></use>
       </svg>
       cross-thin
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#remove"></use>
-      </svg>
-      remove
     </div>
   </div>
   <div class="hw-helpers-icon">
