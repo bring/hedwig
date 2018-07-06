@@ -22,7 +22,7 @@ const getPosition = (elem) => {
     bottom: box.bottom,
     offsetFromTop: Math.round(box.top),
     left: box.left,
-    right: box.right,
+    right: box.right
   };
 };
 
