@@ -4,10 +4,13 @@ We use the [Csswizandry grids](https://github.com/csswizardry/csswizardry-grids)
 
 ```code
 <div class="hw-grid [grid-modifiers]">
-  <div class="hw-grid__item [size modifiers]">...</div>
-  <div class="hw-grid__item [size modifiers]">...</div>
-  <div class="hw-grid__item [size modifiers]">...</div>
+    <div class="hw-grid__item [size modifiers]">...</div><!--
+ --><div class="hw-grid__item [size modifiers]">...</div><!--
+ --><div class="hw-grid__item [size modifiers]">...</div>
 </div>
+
+Note: Are your grids breaking? Note that white space between grid items tend to do this.
+Add comments <!--   --> between the grid items to avoid breaking.
 ```
 
 ### Example grids
