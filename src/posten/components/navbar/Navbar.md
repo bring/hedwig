@@ -36,8 +36,9 @@
         </div>
       </button>
     </nav>
-    <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
+  </div>
     <div class="hw-navbar__overlay" data-hw-navbar-overlay></div>
+    <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
     <section class="hw-navbar__search">
       <div class="hw-search hw-search--large"
         data-hw-search
@@ -56,7 +57,6 @@
         </div>
       </div>
     </section>
-  </div>
 </header>
 ```
 
@@ -65,11 +65,15 @@
 ```html
 <header class="hw-navbar">
   <div class="hw-navbar__content">
-    <div class="hw-navbar__logo">
-      <svg>
+    <a href="#" class="hw-navbar__logo">
+      <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
         <use xlink:href="#logo-posten"></use>
       </svg>
-    </div>
+      <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+        <title id="Logo">Go to homepage</title>
+        <use xlink:href="#logo-bring-white"></use>
+      </svg>
+    </a>
     <nav class="hw-navbar__menu">
       <button class="hw-navbar__menu-button" data-hw-toggle-menu>
         <span>Meny</span>
@@ -81,7 +85,7 @@
       </button>
     </nav>
     <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
-    <div class="hw-navbar__overlay" data-hw-navbar-overlay></div>
+    <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
   </div>
 </header>
 ```
