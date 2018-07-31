@@ -2,8 +2,16 @@
 
 Drawer component
 
+### Base
 ```code
 [Normal]           .hw-drawer
+```
+
+### Required data attributes
+```code
+[data-hw-drawer]            Specifies a unique name for a drawer. Used to target a drawer with buttons.
+[data-hw-drawer-trigger]    Refers to a specific drawer that you want to toggle. Will toggle drawer if a 
+                            clicked button with this parameter matches data-hw-drawer attribute for a drawer.
 ```
 
 ```html
