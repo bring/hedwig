@@ -11,10 +11,10 @@ import KEYS from '../../utilities/js/keys';
  * @desc Creates custom dropdowns for all found elements
  * @param {object} settings
  */
-const HWDropdown = ({
+export const HWDropdown = ({
     dropdownSelector = '[data-hw-dropdown]',
     activeClass = 'hw-dropdown--expanded',
-    tooBigClass = 'hw-dropdown--is-too-big',
+    tooBigClass = 'hw-dropdown--is-too-big'
   } = {}) => {
 
   // Module settings object
@@ -328,11 +328,21 @@ const HWDropdown = ({
 
     // Loop through all dropdowns and initialise each
     SETTINGS.elements.forEach((dropdown) => {
+      const dropdownName = dropdown.getAttribute('data-hw-dropdown');
+      if (dropdown.getAttribute('data-hw-dropdown-dirty') === 'true'){
+        // Remove the previously rendered markup
+        const outdatedDropdown = q(`[data-hw-dropdown-custom=${dropdownName}]`);
+        if(outdatedDropdown) {
+          outdatedDropdown.remove();
+        }
+        dropdown.setAttribute('data-hw-dropdown-initialised', false);
+        dropdown.setAttribute('data-hw-dropdown-dirty', false);
+      }
+
       // Skip if already initialised
       if (dropdown.getAttribute('data-hw-dropdown-initialised') === 'true') { return false; }
 
       // Add aria roles and attributes
-      const dropdownName = dropdown.getAttribute('data-hw-dropdown');
 
       const isSearchable = dropdown.getAttribute('data-hw-dropdown-searchable') !== null;
       const isSmall = dropdown.getAttribute('data-hw-dropdown-small') !== null;

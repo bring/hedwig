@@ -19,13 +19,15 @@ Optional:
 [data-hw-dropdown-searchable]         Makes the dropdown searchable
 [data-hw-dropdown-small]              Reduced version (see bottom of page)
 [data-hw-dropdown-searchable]         Overrides the placeholder with custom value
+[data-hw-dropdown-dirty]              Set to 'true' when updates are needed for a specific dropdown
 
+Client side rendering, see further down
 ```
 
 ```html
 <label class="hw-label">
   Select country
-  <select data-hw-dropdown="countries">
+  <select data-hw-dropdown="countries" id="countries">
     <option value="1">Afghanistan</option>
     <option value="2">Algerie</option>
     <option value="3">Antarctica</option>
@@ -151,4 +153,17 @@ Don't use default selected here as you want the user to start with an empty inpu
     <option value="3">+49</option>
   </select>
 </label>
+```
+
+### Client-side rendering - React / Angular / jQuery
+If rendering a dropdown is done in the frontend, this component needs to be initialized after rendering.
+```code
+hedwig.HWDropdown();
+```
+
+If the dropdown is changed after first rendering it with Hedwig, an update can be done.
+```code
+var countriesDropdown = document.getElementById('countries');
+countriesDropdown.setAttribute('data-hw-dropdown-dirty', true);
+hedwig.HWDropdown();
 ```
