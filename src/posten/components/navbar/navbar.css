@@ -70,6 +70,7 @@
 
   &__menu-button {
     position: absolute;
+    line-height: 72px;
     right: 0;
     top: 0;
     display: flex;
