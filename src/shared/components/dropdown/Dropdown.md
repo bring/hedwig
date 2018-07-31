@@ -19,6 +19,7 @@ Optional:
 [data-hw-dropdown-searchable]         Makes the dropdown searchable
 [data-hw-dropdown-small]              Reduced version (see bottom of page)
 [data-hw-dropdown-searchable]         Overrides the placeholder with custom value
+[data-hw-dropdown-placeholder]        Add short placeholder to an option
 [data-hw-dropdown-dirty]              Set to 'true' when updates are needed for a specific dropdown
 
 Client side rendering, see further down
@@ -151,6 +152,20 @@ Don't use default selected here as you want the user to start with an empty inpu
     <option value="1">+47</option>
     <option value="2">+48</option>
     <option value="3">+49</option>
+  </select>
+</label>
+```
+
+### Small dropdown with placeholders
+```html|span-1
+<label class="hw-label">
+  Country code
+  <select
+    data-hw-dropdown="numbers2"
+    data-hw-dropdown-small>
+    <option data-hw-dropdown-placeholder="+47" value="1">+47 Norway</option>
+    <option data-hw-dropdown-placeholder="+45" value="2">+45 Denmark</option>
+    <option data-hw-dropdown-placeholder="+46" value="3">+46 Sweden</option>
   </select>
 </label>
 ```
