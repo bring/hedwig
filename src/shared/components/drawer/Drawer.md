@@ -51,3 +51,12 @@ Drawer component
     </div>
   </div>
 ```
+
+### Client-side rendering - React / Angular
+```hint
+Added in version 7.1.2
+```
+If rendering a drawer is done in the frontend, this component needs to be initialized after rendering.
+```code
+hedwig.HWDrawer();
+```

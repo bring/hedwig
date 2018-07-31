@@ -7,7 +7,7 @@ import qa from '../../utilities/js/qa';
  * @desc Describe your module here
  * @param {object} settings
  */
-const HWDrawer = ({
+export const HWDrawer = ({
     drawerSelector = '[data-hw-drawer]',
     drawerTrigger = '[data-hw-drawer-trigger]',
   } = {}) => {
