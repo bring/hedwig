@@ -18,8 +18,10 @@ Do not use for production
 ```
 
 #### Major
-Will load the latest of major version 7. Including minor updates and patches. Recommended for production.
-
+Will load the latest of major version 7. Including minor updates and patches
+```hint
+Recommended for production
+```
 ```code
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@7/dist/icons.min.js" id="hw-icons"></script>
 ```
