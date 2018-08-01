@@ -2,7 +2,38 @@
 
 To use the icons set, add this script in your footer:
 ```code
-https://cdn.jsdelivr.net/npm/@posten/hedwig@6/dist/icons.min.js
+https://cdn.jsdelivr.net/npm/@posten/hedwig@[version]/dist/icons.min.js
+```
+Also, the ID for the script tag must be "hw-icons"
+
+### Examples of including
+#### Latest
+Will load the latest version. Including major updates, minor updates and patches
+```hint
+Do not use for production
+```
+
+```code
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/icons.min.js" id="hw-icons"></script>
+```
+
+#### Major
+Will load the latest of major version 7. Including minor updates and patches. Recommended for production.
+
+```code
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@7/dist/icons.min.js" id="hw-icons"></script>
+```
+
+#### Minor
+Will load the latest of minor version 7.1. Including patches
+```code
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@7.1/dist/icons.min.js" id="hw-icons"></script>
+```
+
+#### Patch
+Will load a specific patch version 7.1.1.
+```code
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@7.1.1/dist/icons.min.js" id="hw-icons"></script>
 ```
 This will add an icon sprite into your document with ajax after page load. The whole icon set is 20.5 KB.
 
