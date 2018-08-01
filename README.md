@@ -74,18 +74,7 @@ When a breaking change is added, a new major version is required.
 
 ### 🔨 Hosting
 
-Production CSS, JavaScript and assets are hosted on a **CDN** using [Amazon S3](https://aws.amazon.com/s3/) and [Amazon Cloudfront](https://aws.amazon.com/cloudfront).
-
-To upload the build folder to S3:
-```
-npm run s3:upload
-```
-
-To download the build folder from S3:
-```
-npm run s3:download
-```
-Remember to fill en the keys in `.env`.
+Production CSS, JavaScript and assets are served through a **CDN** using [jsDelivr](https://www.jsdelivr.com/).
 
 ### ⭐ Icons
 
@@ -97,10 +86,6 @@ Icons works like this:
 - Use icons like described in [the docs](https://hedwig-docs.herokuapp.com/bring.html#/Icon)
 
 - Include `https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/icons.min.js` in the footer of the document
-
-### 🅰️ Fonts
-
-We host our fonts on S3 ([http://bring-hedwig.s3.amazonaws.com/assets/fonts/fonts.css](http://bring-hedwig.s3.amazonaws.com/assets/fonts)). To update the fonts, update font files in `assets/fonts` on S3. We do it this way both to keep Hedwig clean and to avoid legal issues with publishing the fonts on our open-sourced repo.
 
 ### 🔧 Linting
 
