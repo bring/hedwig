@@ -2,6 +2,7 @@
 
 ```code
 [Base]  .hw-linklist
+[Large] .hw-linklist--large
 ```
 
 
