@@ -675,7 +675,7 @@ lang: html
     </div>
   </div>
   <div class="hw-helpers-icon">
-    <svg class="hw-icon">
+    <svg class="hw-icon" style="background-color: #888888">
         <use xlink:href="#logo-bring-white"></use>
       </svg>
       logo-bring-white
