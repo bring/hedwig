@@ -18,4 +18,8 @@
     @extend .hw-link;
     font-size: var(--hw-font-size-small);
   }
+  /** Modifications **/
+  &--large a{
+    font-size: var(--hw-font-size-p);
+  }
 }
