@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: flex-start;
   z-index: var(--z-index--modal);
-  overflow-y: scroll;
+  overflow-y: auto;
 
   @media (--medium) {
     align-items: flex-start;
@@ -86,10 +86,14 @@
     height: 60px;
     padding-left: var(--hw-spacing-smaller);
     padding-right: var(--hw-spacing);
-
+    z-index: var(--z-index--modal-foreground);
     @media (--large) {
       padding-left: var(--hw-spacing-small);
       padding-right: var(--hw-spacing-large);
+      max-width: calc(50vw - 36px);
+    }
+    @media (--xlarge) {
+      max-width: calc(33vw - 36px);
     }
   }
 
