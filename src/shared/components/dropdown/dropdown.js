@@ -29,13 +29,15 @@ export const HWDropdown = ({
    * @param {HTMLElement} dropdown
    * @param {string} option
    */
-  function selectOption(dropdown, selectedOption) {
-    const placeHolderEl = q('.hw-dropdown__placeholder', dropdown);
-    const isSearchable = dropdown.getAttribute('data-hw-dropdown-searchable');
+  function selectOption(customDropdown, selectedOption) {
+    const placeHolderEl = q('.hw-dropdown__placeholder', customDropdown);
+    const isSearchable = customDropdown.getAttribute('data-hw-dropdown-searchable');
 
     // Update native select element with selected value
-    dropdown.nextElementSibling.value = selectedOption;
-    // dropdown.fireEvent('onchange');
+    customDropdown.nextElementSibling.value = selectedOption;
+
+    const name = customDropdown.dataset.hwDropdownCustom;
+    const dropdown =  q('[data-hw-dropdown="' + name + '"]');
     if ('createEvent' in document) {
       const evt = document.createEvent('HTMLEvents');
       evt.initEvent('change', false, true);
@@ -45,7 +47,7 @@ export const HWDropdown = ({
     }
 
     // Find all list options
-    const allOptions = qa('.hw-dropdown__option', dropdown);
+    const allOptions = qa('.hw-dropdown__option', customDropdown);
     // Loop through options and select passed option
     return allOptions.forEach((option) => {
       const { hwDropdownValue, hwDropdownPlaceholder } = option.dataset;
@@ -73,16 +75,16 @@ export const HWDropdown = ({
    * -> Or if the dropdown will expand below the screen end
    * @param {node} dropdown
    */
-  function handleFitInViewport(dropdown) {
-    const dropDownInner = q('.hw-dropdown__inner', dropdown);
-    const dropDownOptions = q('.hw-dropdown__options', dropdown);
+  function handleFitInViewport(customDropdown) {
+    const dropDownInner = q('.hw-dropdown__inner', customDropdown);
+    const dropDownOptions = q('.hw-dropdown__options', customDropdown);
     const viewportHeight = window.innerHeight;
-    const position = getPosition(dropdown);
+    const position = getPosition(customDropdown);
     const dropDownHeight = dropDownOptions.offsetHeight + 50;
 
     // Check if dropdown is too large for viewport
     if (dropDownHeight > viewportHeight) {
-      dropdown.classList.add(tooBigClass);
+      customDropdown.classList.add(tooBigClass);
       dropDownInner.style.transform = `translateY(-${position.offsetFromTop - 30}px)`;
       return;
     }
@@ -101,9 +103,9 @@ export const HWDropdown = ({
    * @desc Remove any inline styles from dropdown
    * @param {node} dropdown
    */
-  function resetPosition(dropdown) {
-    const dropDownContents = q('.hw-dropdown__inner', dropdown);
-    dropdown.classList.remove(tooBigClass);
+  function resetPosition(customDropdown) {
+    const dropDownContents = q('.hw-dropdown__inner', customDropdown);
+    customDropdown.classList.remove(tooBigClass);
     dropDownContents.style.transform = '';
     dropDownContents.scrollTop = 0;
   }
@@ -118,7 +120,7 @@ export const HWDropdown = ({
     e.preventDefault();
     // Determine if we've clicked on an option
     const target = e.target;
-    const dropdown = e.currentTarget;
+    const customDropdown = e.currentTarget;
     const { hwDropdownValue } = target.dataset;
 
     if (hwDropdownValue) {
@@ -126,17 +128,17 @@ export const HWDropdown = ({
     }
 
     // Find dropdown-list within dropdown container
-    const list = q('.hw-dropdown__options', dropdown);
+    const list = q('.hw-dropdown__options', customDropdown);
 
     // Display/hide dropdown
     if (list.getAttribute('aria-hidden') === 'false') {
       list.setAttribute('aria-hidden', true);
-      dropdown.classList.remove(activeClass);
-      resetPosition(dropdown);
+      customDropdown.classList.remove(activeClass);
+      resetPosition(customDropdown);
     } else {
       list.setAttribute('aria-hidden', false);
-      dropdown.classList.add(activeClass);
-      handleFitInViewport(dropdown);
+      customDropdown.classList.add(activeClass);
+      handleFitInViewport(customDropdown);
     }
   }
 
@@ -149,18 +151,18 @@ export const HWDropdown = ({
 
     const dropDownSelectors = qa('.hw-dropdown');
 
-    dropDownSelectors.forEach((dropdown) => {
-      if (e.target === dropdown || dropdown.contains(e.target)) {
+    dropDownSelectors.forEach((customDropdown) => {
+      if (e.target === customDropdown || customDropdown.contains(e.target)) {
         return;
       } else {
         // Find dropdown-list within dropdown container
-        const list = q('.hw-dropdown__options', dropdown);
+        const list = q('.hw-dropdown__options', customDropdown);
 
         // Display/hide dropdown
         if (list.getAttribute('aria-hidden') === 'false') {
           list.setAttribute('aria-hidden', true);
-          dropdown.classList.remove(activeClass);
-          resetPosition(dropdown);
+          customDropdown.classList.remove(activeClass);
+          resetPosition(customDropdown);
         }
       }
     });
@@ -245,15 +247,15 @@ export const HWDropdown = ({
    * @desc Adds listener to list button
    * @param {node} dropdown
    */
-  function searchInDropdown(e, dropdown) {
+  function searchInDropdown(e, customDropdown) {
     // Always open the dropdown when searcing
-    const list = q('.hw-dropdown__options', dropdown);
+    const list = q('.hw-dropdown__options', customDropdown);
     list.setAttribute('aria-hidden', false);
-    dropdown.classList.add(activeClass);
-    handleFitInViewport(dropdown);
+    customDropdown.classList.add(activeClass);
+    handleFitInViewport(customDropdown);
 
     const searchText = e.target.value.toLowerCase();
-    const dropDownOptions = qa('.hw-dropdown__option', dropdown);
+    const dropDownOptions = qa('.hw-dropdown__option', customDropdown);
 
     dropDownOptions.forEach((option) => {
       const optionText = option.innerHTML.toLowerCase();
@@ -273,14 +275,14 @@ export const HWDropdown = ({
    * @desc Adds listener to dropdown
    * @param {node} dropdown
    */
-  function bindEvents(dropdown, isSearchable) {
+  function bindEvents(customDropdown, isSearchable) {
     window.addEventListener('click', clickOutside)
-    dropdown.addEventListener('click', toggleDropdown);
-    dropdown.addEventListener('keydown', handleKeyboardEvents);
+    customDropdown.addEventListener('click', toggleDropdown);
+    customDropdown.addEventListener('keydown', handleKeyboardEvents);
 
     if (isSearchable) {
-      const searchInput = q('input', dropdown);
-      searchInput.addEventListener('input', e => searchInDropdown(e, dropdown));
+      const searchInput = q('input', customDropdown);
+      searchInput.addEventListener('input', e => searchInDropdown(e, customDropdown));
     }
   }
 
