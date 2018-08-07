@@ -23,7 +23,7 @@ npm install                 # to install dependencies
 
 npm run dev                 # start local development server
 ```
-[Open http://localhost:3000](http://localhost:3000/docs) 🚀
+[Open http://localhost:3000](http://localhost:3000) 🚀
 
 ## 📚 Documentation
 
