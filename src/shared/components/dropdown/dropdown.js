@@ -38,14 +38,15 @@ export const HWDropdown = ({
 
     const name = customDropdown.dataset.hwDropdownCustom;
     const dropdown =  q('[data-hw-dropdown="' + name + '"]');
-    if ('createEvent' in document) {
-      const evt = document.createEvent('HTMLEvents');
-      evt.initEvent('change', false, true);
-      dropdown.dispatchEvent(evt);
-    } else {
-      dropdown.fireEvent('onchange');
+    if(dropdown) {
+      if ('createEvent' in document) {
+        const evt = document.createEvent('HTMLEvents');
+        evt.initEvent('change', false, true);
+        dropdown.dispatchEvent(evt);
+      } else {
+        dropdown.fireEvent('onchange');
+      }
     }
-
     // Find all list options
     const allOptions = qa('.hw-dropdown__option', customDropdown);
     // Loop through options and select passed option
