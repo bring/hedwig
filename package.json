@@ -32,7 +32,7 @@
   "scripts": {
     "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
     "build": "npm run docs:build && npm run css:build && npm run js:build && npm run svg",
-    "release": "np --any-branch",
+    "release": "np --any-branch && npm run cache:purge:jsdelivr",
     "css:dev": "npm run css:dev:bring & npm run css:dev:posten",
     "css:dev:bring": "postcss tmp/bring.css --use postcss-cssnext postcss-extend -o ./dist/bring.css",
     "css:dev:posten": "postcss tmp/posten.css --use postcss-cssnext postcss-extend -o ./dist/posten.css",
@@ -54,7 +54,8 @@
     "svg:min": "svgo -f ./assets/icons -o ./dist/icons",
     "svg:sprite": "node ./scripts/svg-sprite",
     "svg": "npm run svg:min && npm run svg:sprite",
-    "css:fix": "stylelint 'src/**/*.css' --fix"
+    "css:fix": "stylelint 'src/**/*.css' --fix",
+    "cache:purge:jsdelivr": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"/npm/@posten/hedwig@7/dist/bring.css\",\"/npm/@posten/hedwig@7/dist/icons.min.css\",\"/npm/@posten/hedwig@7/dist/main.js\",\"/npm/@posten/hedwig@7/dist/posten.css\",\"/npm/@posten/hedwig@7/dist/svg-sprite.svg\",\"/npm/@posten/hedwig@latest/dist/bring.css\",\"/npm/@posten/hedwig@latest/dist/icons.min.css\",\"/npm/@posten/hedwig@latest/dist/main.js\",\"/npm/@posten/hedwig@latest/dist/posten.css\",\"/npm/@posten/hedwig@latest/dist/svg-sprite.svg\"]}'"
   },
   "dependencies": {
     "express": "^4.15.2",
