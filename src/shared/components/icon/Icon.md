@@ -72,7 +72,7 @@ lang: html
         <use xlink:href="#award"></use>
       </svg>
       award
-    </div>
+  </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
         <use xlink:href="#check-circle"></use>
