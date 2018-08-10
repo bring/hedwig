@@ -29,7 +29,7 @@ export const HWDropdown = ({
    * @param {HTMLElement} dropdown
    * @param {string} option
    */
-  function selectOption(customDropdown, selectedOption) {
+  function selectOption(customDropdown, selectedOption, fireEvent = true) {
     const placeHolderEl = q('.hw-dropdown__placeholder', customDropdown);
     const isSearchable = customDropdown.getAttribute('data-hw-dropdown-searchable');
 
@@ -37,14 +37,16 @@ export const HWDropdown = ({
     customDropdown.nextElementSibling.value = selectedOption;
 
     const name = customDropdown.dataset.hwDropdownCustom;
-    const dropdown =  q('[data-hw-dropdown="' + name + '"]');
-    if(dropdown) {
-      if ('createEvent' in document) {
-        const evt = document.createEvent('HTMLEvents');
-        evt.initEvent('change', false, true);
-        dropdown.dispatchEvent(evt);
-      } else {
-        dropdown.fireEvent('onchange');
+    if(fireEvent) {
+      const dropdown = q('[data-hw-dropdown="' + name + '"]');
+      if (dropdown) {
+        if ('createEvent' in document) {
+          const evt = document.createEvent('HTMLEvents');
+          evt.initEvent('change', false, true);
+          dropdown.dispatchEvent(evt);
+        } else {
+          dropdown.fireEvent('onchange');
+        }
       }
     }
     // Find all list options
@@ -368,7 +370,8 @@ export const HWDropdown = ({
       // Find initially selected option, otherwise select first element
       const defaultOption = dropdown.getAttribute('data-hw-dropdown-default-selected') || dropdown.children[0].value;
       // Only init select if dropdown is not searchable
-      if (!isSearchable) { selectOption(customDropdown, defaultOption); }
+      // The third option is to prevent firing a change event on the dropdown while initializing
+      if (!isSearchable) { selectOption(customDropdown, defaultOption, false); }
 
       // Set up event listeners for opening dropdown
       bindEvents(customDropdown, isSearchable);
