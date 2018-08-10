@@ -68,6 +68,12 @@ lang: html
 
 ```html|span-6,noSource
   <div class="hw-helpers-icon">
+      <svg class="hw-icon">
+        <use xlink:href="#award"></use>
+      </svg>
+      award
+    </div>
+  <div class="hw-helpers-icon">
     <svg class="hw-icon">
         <use xlink:href="#check-circle"></use>
       </svg>
