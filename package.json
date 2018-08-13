@@ -55,7 +55,12 @@
     "svg:sprite": "node ./scripts/svg-sprite",
     "svg": "npm run svg:min && npm run svg:sprite",
     "css:fix": "stylelint 'src/**/*.css' --fix",
-    "cache:purge:jsdelivr": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"/npm/@posten/hedwig@7/dist/bring.css\",\"/npm/@posten/hedwig@7/dist/icons.min.css\",\"/npm/@posten/hedwig@7/dist/main.js\",\"/npm/@posten/hedwig@7/dist/posten.css\",\"/npm/@posten/hedwig@7/dist/svg-sprite.svg\",\"/npm/@posten/hedwig@latest/dist/bring.css\",\"/npm/@posten/hedwig@latest/dist/icons.min.css\",\"/npm/@posten/hedwig@latest/dist/main.js\",\"/npm/@posten/hedwig@latest/dist/posten.css\",\"/npm/@posten/hedwig@latest/dist/svg-sprite.svg\"]}'"
+    "cache:purge:jsdelivr": "npm run cache:purge:jsdelivr:svg && npm run cache:purge:jsdelivr:iconsjs && npm run cache:purge:jsdelivr:css:bring && npm run cache:purge:jsdelivr:css:posten && npm run cache:purge:jsdelivr:js",
+    "cache:purge:jsdelivr:svg": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"/npm/@posten/hedwig@7/dist/svg-sprite.svg\",\"/npm/@posten/hedwig@latest/dist/svg-sprite.svg\"]}'",
+    "cache:purge:jsdelivr:iconsjs": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@7/dist/icons.min.js\",\"npm/@posten/hedwig@latest/dist/icons.min.js\"]}'",
+    "cache:purge:jsdelivr:css:bring": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@7/dist/bring.css\",\"npm/@posten/hedwig@latest/dist/bring.css\"]}'",
+    "cache:purge:jsdelivr:css:posten": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@7/dist/posten.css\",\"npm/@posten/hedwig@latest/dist/posten.css\"]}'",
+    "cache:purge:jsdelivr:js": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@7/dist/main.js\",\"npm/@posten/hedwig@latest/dist/main.js\"]}'"
   },
   "dependencies": {
     "express": "^4.15.2",
