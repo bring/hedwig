@@ -23,17 +23,23 @@ caret-down  | chevron-down
 caret-left  | chevron-left
 caret-right  | chevron-right
 caret-up  | chevron-up
+cart | shopping-cart
 chat  | comments
+computer  | desktop
+document | file
+download | cloud-download
 lock-open   | unlock
 marker   | map-marker-alt
 remove   | times-circle
 refresh   | sync-alt
 target   | dot-circle
+upload   | cloud-upload
 
 
 #### Changed icons
 Looks different, but same name
 
+- at
 - box
 - calculator
 - calendar
@@ -46,11 +52,15 @@ Looks different, but same name
 - folder
 - globe
 - home
+- info
 - key
 - lock
+- minus
 - paperclip
 - pencil
 - phone
+- plus
+- reply
 - search
 - star
 
@@ -117,6 +127,13 @@ lang: html
 ### Font Awesome icons
 
 ```html|span-6,noSource
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#at"></use>
+      </svg>
+      at
+    </div>
+  </div>
   <div class="hw-helpers-icon">
       <svg class="hw-icon">
         <use xlink:href="#award"></use>
@@ -209,6 +226,20 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#cloud-upload"></use>
+      </svg>
+      cloud-upload
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#cloud-download"></use>
+      </svg>
+      cloud-download
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
         <use xlink:href="#comments"></use>
       </svg>
       comments
@@ -219,6 +250,13 @@ lang: html
         <use xlink:href="#credit-card"></use>
       </svg>
       credit-card
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#desktop"></use>
+      </svg>
+      desktop
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -258,6 +296,13 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#file"></use>
+      </svg>
+      file
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
         <use xlink:href="#folder"></use>
       </svg>
       folder
@@ -275,6 +320,13 @@ lang: html
         <use xlink:href="#home"></use>
       </svg>
       home
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#info"></use>
+      </svg>
+      info
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -300,6 +352,13 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#minus"></use>
+      </svg>
+      minus
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
         <use xlink:href="#paperclip"></use>
       </svg>
       paperclip
@@ -321,9 +380,30 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#plus"></use>
+      </svg>
+      plus
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#reply"></use>
+      </svg>
+      reply
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
         <use xlink:href="#search"></use>
       </svg>
       search
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#shopping-cart"></use>
+      </svg>
+      shopping-cart
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -623,76 +703,6 @@ lang: html
 ### Icons
 
 ```html|span-6,noSource0
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#computer"></use>
-      </svg>
-      computer
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#reply"></use>
-      </svg>
-      reply
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#document"></use>
-      </svg>
-      document
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#minus"></use>
-      </svg>
-      minus
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#plus"></use>
-      </svg>
-      plus
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#at"></use>
-      </svg>
-      at
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#upload"></use>
-      </svg>
-      upload
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#download"></use>
-      </svg>
-      download
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#cart"></use>
-      </svg>
-      cart
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#info"></use>
-      </svg>
-      info
-    </div>
-  </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
         <use xlink:href="#cross"></use>
