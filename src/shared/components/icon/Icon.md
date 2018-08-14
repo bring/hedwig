@@ -24,12 +24,16 @@ caret-left  | chevron-left
 caret-right  | chevron-right
 caret-up  | chevron-up
 cart | shopping-cart
+chart  | chart-line
 chat  | comments
 computer  | desktop
+cross  | times
+cross-thin  | times
 document | file
 download | cloud-download
 lock-open   | unlock
 marker   | map-marker-alt
+questionmark-circle  | question-circle
 remove   | times-circle
 refresh   | sync-alt
 target   | dot-circle
@@ -43,12 +47,14 @@ Looks different, but same name
 - box
 - calculator
 - calendar
+- camera
 - check
 - clock
 - envelope
 - envelope-open
 - exclamation
 - eye
+- flag
 - folder
 - globe
 - home
@@ -56,6 +62,7 @@ Looks different, but same name
 - key
 - lock
 - minus
+- mobile
 - paperclip
 - pencil
 - phone
@@ -173,6 +180,20 @@ lang: html
         <use xlink:href="#calendar"></use>
       </svg>
       calendar
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#camera"></use>
+      </svg>
+      camera
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#chart-line"></use>
+      </svg>
+      chart-line
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -303,6 +324,13 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#flag"></use>
+      </svg>
+      flag
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
         <use xlink:href="#folder"></use>
       </svg>
       folder
@@ -359,6 +387,13 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#mobile"></use>
+      </svg>
+      mobile
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
         <use xlink:href="#paperclip"></use>
       </svg>
       paperclip
@@ -383,6 +418,13 @@ lang: html
         <use xlink:href="#plus"></use>
       </svg>
       plus
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#question-circle"></use>
+      </svg>
+      question-circle
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -418,6 +460,13 @@ lang: html
         <use xlink:href="#sync-alt"></use>
       </svg>
       sync-alt
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#times"></use>
+      </svg>
+      times
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -703,55 +752,6 @@ lang: html
 ### Icons
 
 ```html|span-6,noSource0
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#cross"></use>
-      </svg>
-      cross
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#cross-thin"></use>
-      </svg>
-      cross-thin
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#flag"></use>
-      </svg>
-      flag
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#chart"></use>
-      </svg>
-      chart
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#camera"></use>
-      </svg>
-      camera
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#mobile"></use>
-      </svg>
-      mobile
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#questionmark-circle"></use>
-      </svg>
-      questionmark-circle
-    </div>
-  </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
         <use xlink:href="#logo-bring"></use>
