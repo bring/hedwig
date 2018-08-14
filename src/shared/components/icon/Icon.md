@@ -6,6 +6,27 @@ https://cdn.jsdelivr.net/npm/@posten/hedwig@[version]/dist/icons.min.js
 ```
 Also, the ID for the script tag must be "hw-icons"
 
+### Moving from major version 7 to 8
+Major version change from 7 to 8 is about icons
+
+
+#### Renamed icons
+**Old name** | **New name**
+-------- | ------
+burger   | bars
+marker   | map-marker-alt
+remove   | times-circle
+
+
+#### Changed icons
+Looks different, but same name
+
+- exclamation
+- search
+- star
+
+
+
 ### Examples of including
 #### Latest
 Will load the latest version. Including major updates, minor updates and patches
@@ -75,6 +96,13 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#bars"></use>
+      </svg>
+      bars
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
         <use xlink:href="#check-circle"></use>
       </svg>
       check-circle
@@ -85,6 +113,27 @@ lang: html
         <use xlink:href="#exclamation"></use>
       </svg>
       exclamation
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#map-marker-alt"></use>
+      </svg>
+      map-marker-alt
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#search"></use>
+      </svg>
+      search
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#star"></use>
+      </svg>
+      star
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -355,35 +404,7 @@ lang: html
 
 ### Icons
 
-```html|span-6,noSource
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#search"></use>
-      </svg>
-      search
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#star"></use>
-      </svg>
-      star
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#marker"></use>
-      </svg>
-      marker
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#burger"></use>
-      </svg>
-      burger
-    </div>
-  </div>
+```html|span-6,noSource0
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
         <use xlink:href="#lock-open"></use>
