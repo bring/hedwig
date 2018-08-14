@@ -82,9 +82,16 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
-        <use xlink:href="#remove"></use>
+        <use xlink:href="#exclamation"></use>
       </svg>
-      remove
+      exclamation
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#times-circle"></use>
+      </svg>
+      times-circle
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -349,13 +356,6 @@ lang: html
 ### Icons
 
 ```html|span-6,noSource
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#exclamation"></use>
-      </svg>
-      exclamation
-    </div>
-  </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
         <use xlink:href="#search"></use>
