@@ -13,7 +13,9 @@ Major version change from 7 to 8 is about icons
 #### Renamed icons
 **Old name** | **New name**
 -------- | ------
+attachment  | paperclip
 avatar   | user
+bin | trash-alt
 burger   | bars
 caret-down  | chevron-down
 caret-left  | chevron-left
@@ -22,13 +24,22 @@ caret-up  | chevron-up
 lock-open   | unlock
 marker   | map-marker-alt
 remove   | times-circle
+target   | dot-circle
 
 
 #### Changed icons
 Looks different, but same name
 
+- calendar
+- check
+- clock
+- envelope
+- envelope-open
 - exclamation
+- folder
+- globe
 - lock
+- paperclip
 - search
 - star
 
@@ -110,6 +121,27 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#calendar"></use>
+      </svg>
+      calendar
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#check"></use>
+      </svg>
+      check
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#check-circle"></use>
+      </svg>
+      check-circle
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
         <use xlink:href="#chevron-down"></use>
       </svg>
       chevron-down
@@ -138,9 +170,30 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
-        <use xlink:href="#check-circle"></use>
+        <use xlink:href="#clock"></use>
       </svg>
-      check-circle
+      clock
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#dot-circle"></use>
+      </svg>
+      dot-circle
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#envelope"></use>
+      </svg>
+      envelope
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#envelope-open"></use>
+      </svg>
+      envelope-open
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -148,6 +201,20 @@ lang: html
         <use xlink:href="#exclamation"></use>
       </svg>
       exclamation
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#folder"></use>
+      </svg>
+      folder
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#globe"></use>
+      </svg>
+      globe
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -162,6 +229,13 @@ lang: html
         <use xlink:href="#map-marker-alt"></use>
       </svg>
       map-marker-alt
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#paperclip"></use>
+      </svg>
+      paperclip
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -183,6 +257,13 @@ lang: html
         <use xlink:href="#times-circle"></use>
       </svg>
       times-circle
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#trash-alt"></use>
+      </svg>
+      trash-alt
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -454,83 +535,6 @@ lang: html
 ### Icons
 
 ```html|span-6,noSource0
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#check"></use>
-      </svg>
-      check
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#attachment"></use>
-      </svg>
-      attachment
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#envelope-open"></use>
-      </svg>
-      envelope-open
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#envelope"></use>
-      </svg>
-      envelope
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#paperclip"></use>
-      </svg>
-      paperclip
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#clock"></use>
-      </svg>
-      clock
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#calendar"></use>
-      </svg>
-      calendar
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#target"></use>
-      </svg>
-      target
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#bin"></use>
-      </svg>
-      bin
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#folder"></use>
-      </svg>
-      folder
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#globe"></use>
-      </svg>
-      globe
-    </div>
-  </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
         <use xlink:href="#card"></use>
