@@ -13,7 +13,13 @@ Major version change from 7 to 8 is about icons
 #### Renamed icons
 **Old name** | **New name**
 -------- | ------
+avatar   | user
 burger   | bars
+caret-down  | chevron-down
+caret-left  | chevron-left
+caret-right  | chevron-right
+caret-up  | chevron-up
+lock-open   | unlock
 marker   | map-marker-alt
 remove   | times-circle
 
@@ -22,6 +28,7 @@ remove   | times-circle
 Looks different, but same name
 
 - exclamation
+- lock
 - search
 - star
 
@@ -103,6 +110,34 @@ lang: html
   </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
+        <use xlink:href="#chevron-down"></use>
+      </svg>
+      chevron-down
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#chevron-left"></use>
+      </svg>
+      chevron-left
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#chevron-right"></use>
+      </svg>
+      chevron-right
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#chevron-up"></use>
+      </svg>
+      chevron-up
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
         <use xlink:href="#check-circle"></use>
       </svg>
       check-circle
@@ -113,6 +148,13 @@ lang: html
         <use xlink:href="#exclamation"></use>
       </svg>
       exclamation
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#lock"></use>
+      </svg>
+      lock
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -141,6 +183,13 @@ lang: html
         <use xlink:href="#times-circle"></use>
       </svg>
       times-circle
+    </div>
+  </div>
+  <div class="hw-helpers-icon">
+    <svg class="hw-icon">
+        <use xlink:href="#unlock"></use>
+      </svg>
+      unlock
     </div>
   </div>
   <div class="hw-helpers-icon">
@@ -405,55 +454,6 @@ lang: html
 ### Icons
 
 ```html|span-6,noSource0
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#lock-open"></use>
-      </svg>
-      lock-open
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#lock"></use>
-      </svg>
-      lock
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#avatar"></use>
-      </svg>
-      avatar
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#caret-up"></use>
-      </svg>
-      caret-up
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#caret-down"></use>
-      </svg>
-      caret-down
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#caret-left"></use>
-      </svg>
-      caret-left
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#caret-right"></use>
-      </svg>
-      caret-right
-    </div>
-  </div>
   <div class="hw-helpers-icon">
     <svg class="hw-icon">
         <use xlink:href="#check"></use>
