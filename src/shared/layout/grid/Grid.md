@@ -189,6 +189,16 @@ Example:
 ```
 
 
+#### Example pushing a grid item for medium and up
+```html|span-6,responsive
+  <div class="hw-grid">
+    <div class="hw-grid__item hw-one-half hw-push--medium--one-third">
+      <p class="hw-helpers-highlight">one-half</p>
+    </div>
+  </div>
+```
+
+
 ### Wide grid gutters
 
 ```html|span-6
