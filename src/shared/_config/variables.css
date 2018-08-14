@@ -79,10 +79,10 @@
 
   /* Used for min max settings */
 
-  @custom-media --only-base (min-width: 0em) and (max-width: 460px);
-  @custom-media --only-small (min-width: 460px) and (max-width: 720px);
-  @custom-media --only-medium (min-width: 720px) and (max-width: 940px);
-  @custom-media --only-large (min-width: 940px) and (max-width: 1200px);
+  @custom-media --only-base (min-width: 0em) and (max-width: 459px);
+  @custom-media --only-small (min-width: 460px) and (max-width: 719px);
+  @custom-media --only-medium (min-width: 720px) and (max-width: 939px);
+  @custom-media --only-large (min-width: 940px) and (max-width: 1199px);
   @custom-media --only-xlarge (min-width: 1200px);
 
   /**
