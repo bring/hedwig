@@ -368,7 +368,7 @@ export const HWDropdown = ({
       dropdown.style.display = 'none';
 
       // Find initially selected option, otherwise select first element
-      const defaultOption = dropdown.getAttribute('data-hw-dropdown-default-selected') || dropdown.children[0].value;
+      const defaultOption = dropdown.getAttribute('data-hw-dropdown-default-selected') || dropdown.options[dropdown.selectedIndex].value || dropdown.children[0].value;
       // Only init select if dropdown is not searchable
       // The third option is to prevent firing a change event on the dropdown while initializing
       if (!isSearchable) { selectOption(customDropdown, defaultOption, false); }

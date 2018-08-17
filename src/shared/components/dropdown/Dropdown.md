@@ -43,6 +43,8 @@ Client side rendering, see further down
 ### Dropdown with default option selected
 
 ```html
+
+Select default option by using `data-hw-dropdown-default-selected`
 <label class="hw-label">
   Choose character
   <select
@@ -51,6 +53,18 @@ Client side rendering, see further down
     <option value="1">Harry</option>
     <option value="2">Hedwig</option>
     <option value="3">Fredrik</option>
+  </select>
+</label>
+
+Select default option by marking selected option with `selected`
+<label class="hw-label">
+  Choose another character
+  <select
+    data-hw-dropdown="characters2"
+    id="characters2">
+    <option value="4">Another Harry</option>
+    <option value="5" selected="selected">Another Hedwig</option>
+    <option value="6">Anothe Fredrik</option>
   </select>
 </label>
 ```
