@@ -3,10 +3,11 @@
  */
 
 .hw-icon {
-  display: inline-block;
-  width: var(--hw-spacing);
-  height: var(--hw-spacing);
-  fill: inherit;
+  /*display: inline-block;*/
+  /*width: var(--hw-spacing);
+  height: var(--hw-spacing);*/
+  /*fill: inherit;*/
+  /*font-size: 24px;*/
 
   /**
    * Modifiers
@@ -25,6 +26,7 @@
   &--large {
     width: var(--hw-spacing-large);
     height: var(--hw-spacing-large);
+    /*font-size: 36px;*/
   }
 
   &--primary {

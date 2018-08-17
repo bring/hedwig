@@ -1,8 +1,17 @@
 ## Icon
 
+Hedwig uses two types of icons **Font Awesome Icons** and **Service Icons**
+
+Generally the icons from Font Awesome are functional icons while the Service Icons are used to illustrate a service
+There are also logos for Posten and Bring
+
+
+To use Service Icons and logos,
+
+
 To use the icons set, add this script in your footer:
 ```code
-https://cdn.jsdelivr.net/npm/@posten/hedwig@[version]/dist/icons.min.js
+https://cdn.jsdelivr.net/npm/@posten/hedwig@[version]/dist/icons.min.js id="hw-icons"
 ```
 Also, the ID for the script tag must be "hw-icons"
 
@@ -36,6 +45,10 @@ marker   | map-marker-alt
 questionmark-circle  | question-circle
 remove   | times-circle
 refresh   | sync-alt
+some-facebook | facebook-f
+some-instagram | instagram
+some-google | google-plus-g
+some-facebook | facebook-f
 target   | dot-circle
 upload   | cloud-upload
 
@@ -131,372 +144,81 @@ lang: html
 ```
 
 
-### Font Awesome icons
+### Font Awesome icons intro
+
+We use icons from three different Font Awesome sets
+- Solid - fas
+- Regular - far
+- Brands - 
+
+
+```code
+<i class="hw-icon fas fa-calculator"></i>
+```
+
+
+
+
+### Font Awesome icons - Solid - Full list
 
 ```html|span-6,noSource
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#at"></use>
-      </svg>
-      at
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-      <svg class="hw-icon">
-        <use xlink:href="#award"></use>
-      </svg>
-      award
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#barcode-alt"></use>
-      </svg>
-      barcode-alt
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#bars"></use>
-      </svg>
-      bars
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#box"></use>
-      </svg>
-      box
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#calculator"></use>
-      </svg>
-      calculator
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#calendar"></use>
-      </svg>
-      calendar
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#camera"></use>
-      </svg>
-      camera
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#chart-line"></use>
-      </svg>
-      chart-line
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#check"></use>
-      </svg>
-      check
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#check-circle"></use>
-      </svg>
-      check-circle
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#chevron-down"></use>
-      </svg>
-      chevron-down
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#chevron-left"></use>
-      </svg>
-      chevron-left
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#chevron-right"></use>
-      </svg>
-      chevron-right
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#chevron-up"></use>
-      </svg>
-      chevron-up
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#clock"></use>
-      </svg>
-      clock
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#cloud-upload"></use>
-      </svg>
-      cloud-upload
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#cloud-download"></use>
-      </svg>
-      cloud-download
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#comments"></use>
-      </svg>
-      comments
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#credit-card"></use>
-      </svg>
-      credit-card
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#desktop"></use>
-      </svg>
-      desktop
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#dot-circle"></use>
-      </svg>
-      dot-circle
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#envelope"></use>
-      </svg>
-      envelope
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#envelope-open"></use>
-      </svg>
-      envelope-open
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#exclamation"></use>
-      </svg>
-      exclamation
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#eye"></use>
-      </svg>
-      eye
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#file"></use>
-      </svg>
-      file
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#flag"></use>
-      </svg>
-      flag
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#folder"></use>
-      </svg>
-      folder
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#globe"></use>
-      </svg>
-      globe
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#home"></use>
-      </svg>
-      home
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#info"></use>
-      </svg>
-      info
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#key"></use>
-      </svg>
-      key
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#lock"></use>
-      </svg>
-      lock
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#map-marker-alt"></use>
-      </svg>
-      map-marker-alt
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#minus"></use>
-      </svg>
-      minus
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#mobile"></use>
-      </svg>
-      mobile
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#paperclip"></use>
-      </svg>
-      paperclip
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#pencil"></use>
-      </svg>
-      pencil
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#phone"></use>
-      </svg>
-      phone
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#plus"></use>
-      </svg>
-      plus
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#question-circle"></use>
-      </svg>
-      question-circle
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#reply"></use>
-      </svg>
-      reply
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#search"></use>
-      </svg>
-      search
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#shopping-cart"></use>
-      </svg>
-      shopping-cart
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#star"></use>
-      </svg>
-      star
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#sync-alt"></use>
-      </svg>
-      sync-alt
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#times"></use>
-      </svg>
-      times
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#times-circle"></use>
-      </svg>
-      times-circle
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#trash-alt"></use>
-      </svg>
-      trash-alt
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#unlock"></use>
-      </svg>
-      unlock
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-      <use xlink:href="#user"></use>
-    </svg>
-    user
-  </div>
+<i class="hw-icon fa-2x fa-fw fas fa-at"></i> fas fa-at<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-award"></i> fas fa-award<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-barcode-alt"></i> fas fa-barcode-alt<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-bars"></i> fas fa-bars<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-box"></i> fas fa-box<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-calculator"></i> fas fa-calculator<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-camera"></i> fas fa-camera<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-chart-line"></i> fas fa-chart-line<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-check"></i> fas fa-check<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-check-circle"></i> fas fa-check-circle<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-chevron-down"></i> fas fa-chevron-down<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-chevron-left"></i> fas fa-chevron-left<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-chevron-right"></i> fas fa-chevron-right<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-chevron-up"></i> fas fa-chevron-up<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-clock"></i> fas fa-clock<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-cloud-download"></i> fas fa-cloud-download<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-cloud-upload"></i> fas fa-cloud-upload<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-comments"></i> fas fa-comments<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-credit-card"></i> fas fa-credit-card<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-desktop"></i> fas fa-desktop<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-dot-circle"></i> fas fa-dot-circle<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-envelope"></i> fas fa-envelope<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-envelope-open"></i> fas fa-envelope-open<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-exclamation"></i> fas fa-exclamation<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-eye"></i> fas fa-eye<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-file"></i> fas fa-file<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-flag"></i> fas fa-flag<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-folder"></i> fas fa-folder<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-globe"></i> fas fa-globe<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-home"></i> fas fa-home<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-info"></i> fas fa-info<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-key"></i> fas fa-key<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-lock"></i> fas fa-lock<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-map-marker-alt"></i> fas fa-map-marker-alt<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-minus"></i> fas fa-minus<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-mobile"></i> fas fa-mobile<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-paperclip"></i> fas fa-paperclip<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-pencil"></i> fas fa-pencil<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-phone"></i> fas fa-phone<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-plus"></i> fas fa-plus<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-question-circle"></i> fas fa-question-circle<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-reply"></i> fas fa-reply<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-search"></i> fas fa-search<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-shopping-cart"></i> fas fa-shopping-cart<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-star"></i> fas fa-star<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-sync-alt"></i> fas fa-sync-alt<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-times"></i> fas fa-times<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-times-circle"></i> fas fa-times-circle<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-trash-alt"></i> fas fa-trash-alt<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-unlock"></i> fas fa-unlock<br/><br/>
+<i class="hw-icon fa-2x fa-fw fas fa-user"></i> fas fa-user<br/><br/>
 ```
+#### Example
+```html
+<i class="hw-icon fa-2x fas fa-shopping-cart"></i>
+```
+
 
 ### Service icons
 
@@ -749,7 +471,8 @@ lang: html
   </div>
 ```
 
-### Icons
+
+### Logos
 
 ```html|span-6,noSource0
   <div class="hw-helpers-icon">
@@ -766,52 +489,25 @@ lang: html
       logo-bring-white
     </div>
   </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#some-facebook"></use>
-      </svg>
-      some-facebook
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#some-twitter"></use>
-      </svg>
-      some-twitter
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#some-instagram"></use>
-      </svg>
-      some-instagram
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#some-email"></use>
-      </svg>
-      some-email
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#some-linkedin"></use>
-      </svg>
-      some-linkedin
-    </div>
-  </div>
-  <div class="hw-helpers-icon">
-    <svg class="hw-icon">
-        <use xlink:href="#some-google"></use>
-      </svg>
-      some-google
-    </div>
-  </div>
+```
+
+
+### Social Media Icons
+
+```html|span-6,noSource0
+<i class="hw-icon fa-fw fas fa-at"></i> fas fa-at<br/><br/>
+<i class="hw-icon fa-fw fab fa-facebook-f"></i> fab fa-facebook-f<br/><br/>
+<i class="hw-icon fa-fw fab fa-google-plus-g"></i> fab fa-google-plus-g<br/><br/>
+<i class="hw-icon fa-fw fab fa-instagram"></i> fab fa-instagram<br/><br/>
+<i class="hw-icon fa-fw fab fa-twitter"></i> fab fa-twitter<br/><br/>
+<i class="hw-icon fa-fw fab fa-linkedin-in"></i> fab fa-linkedin-in<br/><br/>
 ```
 
 ### Examples
 ```html
+
+
+<i class="hw-icon fa-2x fas fa-cloud-download"></i>
 <svg class="hw-icon hw-icon--smaller">
   <use xlink:href="#envelope"></use>
 </svg>
