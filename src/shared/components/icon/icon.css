@@ -24,7 +24,6 @@
   &--large {
     width: var(--hw-spacing-large);
     height: var(--hw-spacing-large);
-    /*font-size: 36px;*/
   }
 
   &--primary {
