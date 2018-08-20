@@ -199,13 +199,22 @@ For functional icons we are using Font Awesome. [Scroll up to see how to get sta
 #### Conversion table from old functional icons
 **Old name** | **New name** | **Icon set**
 ------------ | ------------ | ------------
+add | plus | fas
+alert | exclamation | fas
+arrow-down | chevron-down | fas
+arrow-left | chevron-left | fas
+arrow-right | chevron-right | fas
+arrow-up | chevron-up | fas
 at | at | fas
 attachment  | paperclip | fas
 avatar   | user | fas, far
+award | award | fas
 barcode | barcode-alt | fas
 bin | trash-alt | fas
+binders | paperclip | fas
 bars | bars | fas, far
 box | box | fas
+brev | envelope | fas
 burger   | bars | fas
 calculator | calculator | fas
 calendar | calendar | fas
@@ -219,7 +228,10 @@ cart | shopping-cart | fas
 chart  | chart-line | fas
 chat  | comments | fas
 check | check | fas
+check-circle | check-circle | fas
+checkmark | check | fas
 clock | clock | fas
+close | times | fas
 computer  | desktop | fas
 cross  | times | fas
 cross-thin  | times | fas
@@ -240,7 +252,9 @@ lock-open   | unlock | fas
 marker   | map-marker-alt | fas
 minus | minus | fas
 mobile | mobile | fas
+pakke | box | fas
 paperclip | paperclip | fas
+parcel | box | fas
 pencil | pencil | fas
 phone | phone | fas
 plus | plus | fas
@@ -248,12 +262,17 @@ questionmark-circle  | question-circle | fas
 remove   | times-circle | fas
 refresh   | sync-alt | fas
 reply | reply | fas
+retur | reply | fas
 search | search | fas, far
+some-email | at | fas
 some-facebook | facebook-f | fab
 some-instagram | instagram | fab
 some-linkedin | linkedin-in | fab
 some-google | google-plus-g | fab
 some-twitter | twitter | fab
 star | star | fas
+success | check-circle | fas
+swipe-right | *discontinued* | 
 target   | dot-circle | fas
 upload   | cloud-upload | fas
+user   | user | fas
