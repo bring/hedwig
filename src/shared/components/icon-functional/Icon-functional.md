@@ -215,7 +215,7 @@ binders | paperclip | fas
 bars | bars | fas, far
 box | box | fas
 brev | envelope | fas
-burger   | bars | fas
+burger   | bars | fas, far
 calculator | calculator | fas
 calendar | calendar | fas
 camera | camera | fas
@@ -275,4 +275,4 @@ success | check-circle | fas
 swipe-right | *discontinued* | 
 target   | dot-circle | fas
 upload   | cloud-upload | fas
-user   | user | fas
+user   | user | fas, far
