@@ -1,0 +1,26 @@
+.hw-icon-functional {
+  &--primary {
+    fill: var(--hw-color-primary);
+    color: var(--hw-color-primary);
+  }
+
+  &--green {
+    fill: var(--hw-color-green);
+    color: var(--hw-color-green);
+  }
+
+  &--red {
+    fill: var(--hw-color-red);
+    color: var(--hw-color-red);
+  }
+
+  &--gray-lighter {
+    fill: var(--hw-color-gray-lighter);
+    color: var(--hw-color-gray-lighter);
+  }
+
+  &--gray-darker {
+    fill: var(--hw-color-gray-darker);
+    color: var(--hw-color-gray-darker);
+  }
+}
