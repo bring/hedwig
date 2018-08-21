@@ -262,7 +262,6 @@ questionmark-circle  | question-circle | fas
 remove   | times-circle | fas
 refresh   | sync-alt | fas
 reply | reply | fas
-retur | reply | fas
 search | search | fas, far
 some-email | at | fas
 some-facebook | facebook-f | fab
