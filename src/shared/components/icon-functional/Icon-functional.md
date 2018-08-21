@@ -112,6 +112,7 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-envelope"></i> envelope<br/><br/>
 <i class="fa-2x fa-fw fas fa-envelope-open"></i> envelope-open<br/><br/>
 <i class="fa-2x fa-fw fas fa-exclamation"></i> exclamation<br/><br/>
+<i class="fa-2x fa-fw fas fa-exclamation-circle"></i> exclamation-circle<br/><br/>
 <i class="fa-2x fa-fw fas fa-eye"></i> eye<br/><br/>
 <i class="fa-2x fa-fw fas fa-file"></i> file<br/><br/>
 <i class="fa-2x fa-fw fas fa-flag"></i> flag<br/><br/>

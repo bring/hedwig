@@ -7,13 +7,21 @@ import * as fab from '@fortawesome/free-brands-svg-icons';
  *
  * Documentation from Font Awesome:
  * https://fontawesome.com/how-to-use/on-the-web/advanced/svg-javascript-core
+ * https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers#installing-pro
  *
  * fas - Font Awesome Solid
  * fab - Font Awesome Brands
  * far - Font Awesome Regular
- *
- *
  */
+
+
+/** Enable searching through pseudo elements like ::before and ::after for icons
+  *  Also see https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
+  */
+
+window.FontAwesomeConfig = {
+  searchPseudoElements: true
+};
 
 // We are only using the some of the icons
 library.add(fas.faAt);
@@ -40,6 +48,7 @@ library.add(fas.faDotCircle);
 library.add(fas.faEnvelope);
 library.add(fas.faEnvelopeOpen);
 library.add(fas.faExclamation);
+library.add(fas.faExclamationCircle);
 library.add(fas.faEye);
 library.add(fas.faFile);
 library.add(fas.faFlag);

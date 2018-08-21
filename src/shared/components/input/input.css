@@ -64,17 +64,20 @@
   opacity: 1;
 
   &::before {
-    content: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/exclamation-mark-circle.svg');
+    /* Font Awesome creates an svg from this, see the next rule for styling this */
+    content: '\f06a';/* exclamation-circle */
+    font-family: "Font Awesome 5 Solid";
+    font-weight: 900;
+    display: none;
+  }
+
+   & [data-fa-pseudo-element=":before"]{
     position: absolute;
-    top: -40px;
+    top: -38px;
     right: var(--hw-spacing-small);
     width: 25px;
     height: 25px;
-    font-size: 17px;
-    background: var(--hw-color-gray-darker);
-    color: var(--hw-color-white);
     line-height: 24px;
-    border-radius: 50%;
     text-align: center;
     z-index: 1;
   }
