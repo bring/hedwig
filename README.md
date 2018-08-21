@@ -78,14 +78,24 @@ Production CSS, JavaScript and assets are served through a **CDN** using [jsDeli
 
 ### ⭐ Icons
 
+```hint
+Old functional icons are being deprecated soon. From Hedwig version 7.4 you should switch to using functional icons from Font Awesome.
+```
 We use [inline SVG's for icons](https://github.com/bring/hedwig/issues/9).
 
-Icons works like this:
+..in two different ways:
+- SVG sprite - for special icons and logos
+- Font Awesome - for functional icons
+
+#### SVG Sprite Icons works like this:
 - Place icons in the `assets/icons/` folder 
 - Run `npm run svg` to generate SVG sprite. `npm run build` or `npm run dev` will both also produce the SVG sprite
 - Use icons like described in [the docs](https://hedwig-docs.herokuapp.com/bring.html#/Icon)
 
-- Include `https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/icons.min.js` in the footer of the document
+
+#### Font Awesome Icons works like this
+- [Add npm.fontawesome.com in your npm registry](https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers). An authToken is required for this step. For Posten and Bring developers, contact Hedwig contributors. Otherwise, [you can get a licence](https://fontawesome.com/pricing).
+- Use functional icons like described in [the docs](https://hedwig-docs.herokuapp.com/bring.html#/Icon-functional)
 
 ### 🔧 Linting
 

@@ -81,7 +81,3 @@ h3,
   font-size: var(--hw-font-size-smaller);
   line-height: 1.4;
 }
-
-.hw-color-primary-dark {
-  color: var(--hw-color-primary-dark);
-}

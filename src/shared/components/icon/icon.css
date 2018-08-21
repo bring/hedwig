@@ -6,7 +6,6 @@
   display: inline-block;
   width: var(--hw-spacing);
   height: var(--hw-spacing);
-  fill: inherit;
 
   /**
    * Modifiers
