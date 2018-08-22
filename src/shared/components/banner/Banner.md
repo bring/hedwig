@@ -17,17 +17,11 @@ Required:
         <span class="hw-banner__text">
           All traffic in Norway is on hold due to the heat wave
         </span>
-        <svg class="hw-icon" aria-labelledby="arrow-down" role="img">
-          <title id="arrow-down">Open banner information</title>
-          <use xlink:href="#caret-down"></use>
-        </svg>
+        <i class="fas fa-chevron-down" data-fa-transform="down-2" title="Open banner information"></i>
       </button>
       <div class="hw-banner__contents">
         <button class="hw-banner__trigger-close">
-          <svg class="hw-icon" aria-labelledby="arrow-up" role="img">
-            <title id="arrow-up">Close banner information</title>
-            <use xlink:href="#caret-up"></use>
-          </svg>
+          <i class="fas fa-lg fa-chevron-up" title="Close banner information"></i>
         </button>
         <div class="hw-banner__title">Hot! Hot! Hot!</div>
         <div class="hw-banner__time">
@@ -49,17 +43,11 @@ Required:
         <span class="hw-banner__text">
           Snow storm causes delays
         </span>
-        <svg class="hw-icon" aria-labelledby="arrow-down" role="img">
-          <title id="arrow-down">Open banner information</title>
-          <use xlink:href="#caret-down"></use>
-        </svg>
+        <i class="fas fa-chevron-down" data-fa-transform="down-2" title="Open banner information"></i>
       </button>
       <div class="hw-banner__contents">
         <button class="hw-banner__trigger-close">
-          <svg class="hw-icon" aria-labelledby="arrow-up" role="img">
-            <title id="arrow-up">Close banner information</title>
-            <use xlink:href="#caret-up"></use>
-          </svg>
+          <i class="fas fa-lg fa-chevron-up" title="Close banner information"></i>
         </button>
         <div class="hw-banner__title">14 Meters of snow expected</div>
         <div class="hw-banner__time">
@@ -70,9 +58,7 @@ Required:
         </div>
         <a href="#" class="hw-banner__read-more-link">Read more</a>
         <button class="hw-banner__read-more-button">
-            <svg class="hw-icon">
-              <use xlink:href="#caret-down"></use>
-            </svg>
+          <i class="fas fa-lg fa-chevron-down" title="Read more"></i>
         </button>
       </div>
       <div class="hw-banner__read-more-contents">
