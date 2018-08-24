@@ -1,0 +1,44 @@
+.hw-help-tip {
+    display: inline-block;
+    position: relative;
+
+    &__button {
+        border: 0;
+    }
+
+    &__button::before {
+        content: '\f059'; /* question-circle */
+        font-family: "Font Awesome 5 Solid";
+        font-weight: 900;
+        display: none;
+    }
+
+    &__button:focus ~ &__content, &__button:hover ~ &__content {
+        visibility: visible;
+    }
+
+    &__content {
+        display: block;
+        visibility: hidden;
+        color: var(--hw-color-gray-lightest);
+        background-color: var(--hw-color-gray-darkest);
+        padding: var(--hw-spacing-smaller);
+        max-width: 200px;
+        width: 200px;
+        position: absolute;
+        bottom: 120%;
+        left: 50%;
+        margin-left: -100px;
+
+        &::after{
+            content: " ";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: var(--hw-color-gray-darkest) transparent transparent transparent;
+        }
+    }
+}
