@@ -1,0 +1,206 @@
+.hw-help-tip {
+    display: inline-block;
+    position: relative;
+
+    &__button {
+        border: 0;
+    }
+
+    &__button::before {
+        content: '\f059'; /* question-circle */
+        font-family: "Font Awesome 5 Solid";
+        font-weight: 900;
+        display: none;
+    }
+
+    &__button:focus ~ &__content, &__button:hover ~ &__content {
+        visibility: visible;
+    }
+
+    &__content {
+        display: block;
+        visibility: hidden;
+        color: var(--hw-color-gray-lightest);
+        background-color: var(--hw-color-gray-darkest);
+        padding: var(--hw-spacing-smaller);
+        max-width: 200px;
+        width: 200px;
+        position: absolute;
+        bottom: 120%;
+        left: 50%;
+        margin-left: -100px;
+
+        &::after{
+            content: " ";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: var(--hw-color-gray-darkest) transparent transparent transparent;
+        }
+    }
+}
+
+/* Not responsive */
+
+/* Left */
+.hw-help-tip--left .hw-help-tip__content {
+  left: -80px;
+  &::after {
+    left: 94%;
+  }
+}
+
+/* Right */
+.hw-help-tip--right .hw-help-tip__content {
+  left: 95px;
+  &::after {
+    left: 7%;
+  }
+}
+
+/* Middle not needed as it is the deafult */
+
+/* end not responsive */
+
+
+/* Small */
+
+/* Left */
+@media (--small) {
+  .hw-help-tip--small--right .hw-help-tip__content {
+    left: 95px;
+    &::after {
+      left: 7%;
+    }
+  }
+}
+
+/* Right */
+@media (--small) {
+  .hw-help-tip--small--left .hw-help-tip__content {
+    left: -80px;
+    &::after {
+      left: 94%;
+    }
+  }
+}
+
+/* Middle */
+@media (--small) {
+  .hw-help-tip--small--middle .hw-help-tip__content {
+    left: 50%;
+    &::after {
+      left: 50%;
+    }
+  }
+}
+
+/* End Small */
+
+
+/* Medium */
+
+/* Left */
+@media (--medium) {
+  .hw-help-tip--medium--left .hw-help-tip__content {
+    left: -80px;
+    &::after {
+      left: 94%;
+    }
+  }
+}
+
+/* Right */
+@media (--medium) {
+  .hw-help-tip--medium--right .hw-help-tip__content {
+    left: 95px;
+    &::after {
+      left: 7%;
+    }
+  }
+}
+
+/* Middle */
+@media (--medium) {
+  .hw-help-tip--medium--middle .hw-help-tip__content {
+    left: 50%;
+    &::after {
+      left: 50%;
+    }
+  }
+}
+
+/* End medium */
+
+
+/* Large */
+
+/* Left */
+@media (--large) {
+  .hw-help-tip--large--left .hw-help-tip__content {
+    left: -80px;
+    &::after {
+      left: 94%;
+    }
+  }
+}
+
+/* Right */
+@media (--large) {
+  .hw-help-tip--large--right .hw-help-tip__content {
+    left: 95px;
+    &::after {
+      left: 7%;
+    }
+  }
+}
+
+/* Middle */
+@media (--large) {
+  .hw-help-tip--large--middle .hw-help-tip__content {
+    left: 50%;
+    &::after {
+      left: 50%;
+    }
+  }
+}
+
+
+/* End Large */
+
+/* XLarge */
+
+/* Left */
+@media (--xlarge) {
+  .hw-help-tip--xlarge--left .hw-help-tip__content {
+    left: -80px;
+    &::after {
+      left: 94%;
+    }
+  }
+}
+
+/* Right */
+@media (--xlarge) {
+  .hw-help-tip--xlarge--right .hw-help-tip__content {
+    left: 95px;
+    &::after {
+      left: 7%;
+    }
+  }
+}
+
+/* Middle */
+@media (--xlarge) {
+  .hw-help-tip--xlarge--middle .hw-help-tip__content {
+    left: 50%;
+    &::after {
+      left: 50%;
+    }
+  }
+}
+
+/* End XLarge */
