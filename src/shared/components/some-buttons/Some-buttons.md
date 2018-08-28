@@ -44,11 +44,11 @@ Styling for social media buttons.
 </div>
 ```
 
-### Outline dark
+### Outline darkest
 For use on top of images only
 
 ```html|span-4
-<div class="hw-some hw-some--outline-dark">
+<div class="hw-some hw-some--outline-darkest">
   <button class="hw-some__button hw-some__button--facebook">
     <svg class="hw-icon">
       <use xlink:href="#some-facebook"></use>

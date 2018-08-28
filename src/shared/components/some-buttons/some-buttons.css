@@ -197,9 +197,9 @@
     }
   }
 
-  &--outline-dark {
+  &--outline-darkest {
     & .hw-some__button {
-      border-color: var(--hw-color-gray-dark);
+      border-color: var(--hw-color-gray-darkest);
 
       &--facebook {
         &:hover,
