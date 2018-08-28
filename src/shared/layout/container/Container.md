@@ -33,9 +33,7 @@ Narrow container is available if you want to center content to a smaller max-wid
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="
-      hw-container
-      hw-container--narrows">
+    <div class="hw-container hw-container--narrow">
       <p>narrow container</p>
     </div>
   </div>
