@@ -33,17 +33,54 @@ Narrow container is available if you want to center content to a smaller max-wid
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="
-      hw-container
-      hw-container--narrow
-    ">
+    <div class="hw-container hw-container--narrow">
       <p>narrow container</p>
     </div>
   </div>
 ```
 
-### container modifiers
+### Container modifiers
 ```code
 [Narrow]                      .hw-container--narrow
 [Wide]                        .hw-container--wide
+[Padding top]                 .hw-container--pt-[size]
+[Padding bottom]              .hw-container--pb-[size]
+```
+
+```html
+<div class="hw-helpers-margin-highlighter">
+  <div class="hw-container hw-container--pt hw-container--pb">
+    <p>container with standard padding on top and bottom</p>
+  </div>
+</div>
+
+<div class="hw-helpers-margin-highlighter">
+  <div class="hw-container hw-container--pt-large hw-container--pb">
+    <p>container with large padding top and standard padding bottom</p>
+  </div>
+</div>
+```
+
+### Responsive classes for spacing
+Responsive classes apply to its size and bigger (i.e medium applies to tablets and desktops)
+```code
+[Small]           .hw-container-small--[modifier and size]
+[Medium]          .hw-container-medium--[modifier and size]
+[Large]           .hw-container-large--[modifier and size]
+[XLarge]          .hw-container-larger--[modifier and size]
+```
+
+```html|span-6,responsive
+<div class="hw-helpers-margin-highlighter">
+  <div class="hw-container hw-container-medium--pt hw-container-medium--pb">
+    <p>container with no padding on mobile, but standard padding on tablets and bigger viewports</p>
+  </div>
+</div>
+
+<div class="hw-helpers-margin-highlighter">
+  <div class="hw-container hw-container--pt hw-container--pb hw-container-large--pt-large hw-container-large--pb-large hw-container-xlarge--pt-larger hw-container-xlarge--pb-larger">
+    <p>container with more padding on desktop and larger viewports</p>
+  </div>
+</div>
+
 ```
