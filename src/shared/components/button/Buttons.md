@@ -40,6 +40,17 @@ Styling for buttons.
 [Base]           .hw-button
 ```
 
+### Dark
+
+```html|span-4
+  <button class="hw-button hw-button--dark">
+    Normal state
+  </button>
+```
+
+```code
+[Dark]        .hw-button--dark
+```
 
 ### Outline
 
