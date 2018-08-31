@@ -18,8 +18,7 @@
   }
 
   & p.hw-text-lead {
-    font-size: var(--hw-font-size-lead);
-    line-height: 1.4;
+    @extend .hw-text-lead;
   }
 
   /* Paragraphs */

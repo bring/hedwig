@@ -7,7 +7,6 @@ a,
 button {
   font-size: var(--hw-font-size-p);
   line-height: 1.4;
-  font-weight: 400;
   padding: 0;
   margin: 0;
   letter-spacing: -0.02em;
@@ -38,7 +37,6 @@ h3,
   margin: 0;
   font-weight: normal;
   line-height: 1.1;
-  letter-spacing: -0.02em;
 }
 
 h1,
@@ -69,15 +67,12 @@ h3,
 
 .hw-text-lead {
   font-size: var(--hw-font-size-lead);
-  line-height: 1.4;
 }
 
 .hw-text-small {
   font-size: var(--hw-font-size-small);
-  line-height: 1.4;
 }
 
 .hw-text-smaller {
   font-size: var(--hw-font-size-smaller);
-  line-height: 1.4;
 }

@@ -11,6 +11,8 @@ It will apply the correct margins/paddings and vertical rythm for headlines, par
   <h1>Owl ruins bake-off competition</h1>
   <h2>Winged menace causes havoc at Hogwarts event</h2>
 
+  <p class="hw-text-lead">The yearly Hogwarts bake-off was held on the 14th of june was interrupted when Harry's owl, Hedwig caused panic amognst the contenders.</p>
+
   <p>The yearly Hogwarts bake-off was held on the 14th of june was interrupted when Harry's owl, Hedwig caused panic amognst the contenders.</p>
   <p>Just before the <a href="#">judging were to commence</a>, the bird arrived and proceeded to attack the members of the jury.</p>
   <p>The organisers decided to cancel the event after most of the cakes had been destroyed by the commotion.</p>

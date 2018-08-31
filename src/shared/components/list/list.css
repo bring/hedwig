@@ -3,12 +3,10 @@
  */
 
 .hw-list {
-  font-size: var(--hw-font-size-p);
   list-style: none;
   margin: 0;
   margin-bottom: var(--hw-spacing);
   padding-left: 20px;
-  line-height: 1.4;
 
   & li {
     margin-bottom: 3px;
