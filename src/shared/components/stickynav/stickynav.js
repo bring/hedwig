@@ -4,6 +4,7 @@ import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import getPosition from '../../utilities/js/position';
 import horizontalScroll from '../../utilities/js/horizontalScroll';
+import stickybits from 'stickybits';
 
 /**
  * @function HWStickyNav
@@ -13,7 +14,7 @@ import horizontalScroll from '../../utilities/js/horizontalScroll';
  */
 
 const HWStickyNav = ({
-  selector = '[data-hw-sticky-nav]',
+  selector = '.hw-stickynav',
   linkSelector = '.hw-stickynav__link',
   innerSelector = '.hw-stickynav__nav',
   activeItemClass = 'hw-stickynav__link--active'
@@ -102,6 +103,7 @@ const HWStickyNav = ({
       return;
     }
 
+    stickybits('.hw-stickynav__inner');
     // Skip if already initialised
     if (SETTINGS.element.getAttribute('data-hw-sticky-nav-initialised') === 'true') { return; }
 
@@ -111,14 +113,12 @@ const HWStickyNav = ({
     // Find all section positions
     findSectionPositions();
 
-    // Add HW acceleration
-    SETTINGS.element.style.willChange = 'top';
-
     // Attach event listeners
     SETTINGS.element.addEventListener('click', handleClick);
     window.addEventListener('scroll', throttle(checkPosition, 50));
     window.addEventListener('resize', throttle(() => {
       init();
+      findSectionPositions();
     }, 100));
 
     // Fire initial check (in case user starts halfway down page)

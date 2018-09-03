@@ -3,7 +3,8 @@
  */
 
 .hw-stickynav {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 45px;
   background-color: var(--hw-color-white);
@@ -16,6 +17,11 @@
   /**
    * Elements
    */
+
+  &__inner {
+    position: sticky;
+    top: 0;
+  }
 
   &__nav {
     height: 45px;
