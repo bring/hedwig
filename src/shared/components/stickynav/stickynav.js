@@ -103,12 +103,12 @@ const HWStickyNav = ({
       return;
     }
 
-    stickybits('.hw-stickynav__inner');
     // Skip if already initialised
     if (SETTINGS.element.getAttribute('data-hw-sticky-nav-initialised') === 'true') { return; }
 
     // Mark as initialised
     SETTINGS.element.setAttribute('data-hw-sticky-nav-initialised', true);
+    stickybits('.hw-stickynav__inner');
 
     // Find all section positions
     findSectionPositions();
