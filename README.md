@@ -94,8 +94,14 @@ We use [inline SVG's for icons](https://github.com/bring/hedwig/issues/9).
 
 
 #### Font Awesome Icons works like this
-- [Add npm.fontawesome.com in your npm registry](https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers). An authToken is required for this step. For Posten and Bring developers, contact Hedwig contributors. Otherwise, [you can get a licence](https://fontawesome.com/pricing).
+- You need to add an environment variable with your authToken from Font Awesome. For Posten and Bring developers, contact Hedwig contributors. Otherwise, [you can get a licence](https://fontawesome.com/pricing).
 - Use functional icons like described in [the docs](https://hedwig-docs.herokuapp.com/bring.html#/Icon-functional)
+
+To add the authToken to your environment, in ~/.bashrc add the following line:
+```
+export NPM_TOKEN=[authToken]
+```
+The token needs to be replaced by a real token.
 
 ### 🔧 Linting
 
