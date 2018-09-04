@@ -3,11 +3,13 @@
 
 The stickynav component.
 
-Uses the `sticky` helper to create a sticky nav
+Uses the `stickybits` node module to create a sticky nav
 
 ```code
-[Base]            [data-hw-sticky-nav]
-[Autocenter]      [data-hw-sticky-nav="autocenter"]      Centers the selected item
+[Base]      .hw-stickynav
+[Inner]     .hw-stickynav__inner
+[Nav]       .hw-stickynav__nav
+[Link]      .hw-stickynav__link
 ```
 
 ### Default behavior
@@ -29,9 +31,6 @@ Uses the `sticky` helper to create a sticky nav
     </nav>
   </div>
 </section>
-```
-
-```html|no-source
 <section id="anchor-1" style="height: 100vh; background: #4caf50">
   <h2>Anchor 1 section</h2>
 </section>

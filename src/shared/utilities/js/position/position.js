@@ -17,9 +17,10 @@ const getPosition = (elem) => {
 
   const top = (box.top + scrollTop) - clientTop;
 
+  const bottom = (box.bottom + scrollTop) - clientTop;
   return {
     top: Math.round(top),
-    bottom: box.bottom,
+    bottom: Math.round(bottom),
     offsetFromTop: Math.round(box.top),
     left: box.left,
     right: box.right
