@@ -41,7 +41,7 @@
     &:active,
     &:focus {
       outline: 0;
-      fill: var(--hw-color-white);
+      color: var(--hw-color-white);
     }
 
     & .hw-icon {
@@ -128,13 +128,12 @@
     & .hw-some__button {
       background-color: var(--hw-color-gray-dark);
       border-color: var(--hw-color-gray-dark);
-      fill: var(--hw-color-white);
+      color: var(--hw-color-white);
 
       &:hover,
       &:active,
       &:focus {
         outline: 0;
-        fill: var(--hw-color-white);
       }
 
       &--facebook {
@@ -199,7 +198,7 @@
 
   &--outline-dark {
     & .hw-some__button {
-      border-color: var(--hw-color-gray-dark);
+      border-color: var(--hw-color-gray-darkest);
 
       &--facebook {
         &:hover,
