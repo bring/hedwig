@@ -12,34 +12,22 @@ Styling for social media buttons.
 ```html|span-4
 <div class="hw-some">
   <button class="hw-some__button hw-some__button--facebook">
-    <svg class="hw-icon">
-      <use xlink:href="#some-facebook"></use>
-    </svg>
+    <i class="fab fa-facebook-f"></i>
   </button>
   <button class="hw-some__button hw-some__button--twitter">
-    <svg class="hw-icon">
-      <use xlink:href="#some-twitter"></use>
-    </svg>
+    <i class="fab fa-twitter"></i>
   </button>
   <button class="hw-some__button hw-some__button--linkedin">
-    <svg class="hw-icon">
-      <use xlink:href="#some-linkedin"></use>
-    </svg>
+    <i class="fab fa-linkedin-in"></i>
   </button>
   <button class="hw-some__button hw-some__button--email">
-    <svg class="hw-icon">
-      <use xlink:href="#some-email"></use>
-    </svg>
+    <i class="fas fa-at"></i>
   </button>
   <button class="hw-some__button hw-some__button--google">
-    <svg class="hw-icon">
-      <use xlink:href="#some-google"></use>
-    </svg>
+    <i class="fab fa-google-plus-g"></i>
   </button>
   <button class="hw-some__button hw-some__button--instagram">
-    <svg class="hw-icon">
-      <use xlink:href="#some-instagram"></use>
-    </svg>
+    <i class="fab fa-instagram"></i>
   </button>
 </div>
 ```
@@ -50,34 +38,22 @@ For use on top of images only
 ```html|span-4
 <div class="hw-some hw-some--outline-dark">
   <button class="hw-some__button hw-some__button--facebook">
-    <svg class="hw-icon">
-      <use xlink:href="#some-facebook"></use>
-    </svg>
+    <i class="fab fa-facebook-f"></i>
   </button>
   <button class="hw-some__button hw-some__button--twitter">
-    <svg class="hw-icon">
-      <use xlink:href="#some-twitter"></use>
-    </svg>
+    <i class="fab fa-twitter"></i>
   </button>
   <button class="hw-some__button hw-some__button--linkedin">
-    <svg class="hw-icon">
-      <use xlink:href="#some-linkedin"></use>
-    </svg>
+    <i class="fab fa-linkedin-in"></i>
   </button>
   <button class="hw-some__button hw-some__button--email">
-    <svg class="hw-icon">
-      <use xlink:href="#some-email"></use>
-    </svg>
+    <i class="fas fa-at"></i>
   </button>
   <button class="hw-some__button hw-some__button--google">
-    <svg class="hw-icon">
-      <use xlink:href="#some-google"></use>
-    </svg>
+    <i class="fab fa-google-plus-g"></i>
   </button>
   <button class="hw-some__button hw-some__button--instagram">
-    <svg class="hw-icon">
-      <use xlink:href="#some-instagram"></use>
-    </svg>
+    <i class="fab fa-instagram"></i>
   </button>
 </div>
 ```
@@ -88,34 +64,22 @@ For use in footer only
 ```html|span-4
 <div class="hw-some hw-some--dark">
   <button class="hw-some__button hw-some__button--facebook">
-    <svg class="hw-icon">
-      <use xlink:href="#some-facebook"></use>
-    </svg>
+    <i class="fab fa-facebook-f"></i>
   </button>
   <button class="hw-some__button hw-some__button--twitter">
-    <svg class="hw-icon">
-      <use xlink:href="#some-twitter"></use>
-    </svg>
+    <i class="fab fa-twitter"></i>
   </button>
   <button class="hw-some__button hw-some__button--linkedin">
-    <svg class="hw-icon">
-      <use xlink:href="#some-linkedin"></use>
-    </svg>
+    <i class="fab fa-linkedin-in"></i>
   </button>
   <button class="hw-some__button hw-some__button--email">
-    <svg class="hw-icon">
-      <use xlink:href="#some-email"></use>
-    </svg>
+    <i class="fas fa-at"></i>
   </button>
   <button class="hw-some__button hw-some__button--google">
-    <svg class="hw-icon">
-      <use xlink:href="#some-google"></use>
-    </svg>
+    <i class="fab fa-google-plus-g"></i>
   </button>
   <button class="hw-some__button hw-some__button--instagram">
-    <svg class="hw-icon">
-      <use xlink:href="#some-instagram"></use>
-    </svg>
+    <i class="fab fa-instagram"></i>
   </button>
 </div>
 ```
@@ -125,98 +89,62 @@ For use in footer only
 ```html|span-4
 <div class="hw-some hw-some--vertical">
   <button class="hw-some__button hw-some__button--facebook">
-    <svg class="hw-icon">
-      <use xlink:href="#some-facebook"></use>
-    </svg>
+    <i class="fab fa-facebook-f"></i>
   </button>
   <button class="hw-some__button hw-some__button--twitter">
-    <svg class="hw-icon">
-      <use xlink:href="#some-twitter"></use>
-    </svg>
+    <i class="fab fa-twitter"></i>
   </button>
   <button class="hw-some__button hw-some__button--linkedin">
-    <svg class="hw-icon">
-      <use xlink:href="#some-linkedin"></use>
-    </svg>
+    <i class="fab fa-linkedin-in"></i>
   </button>
   <button class="hw-some__button hw-some__button--email">
-    <svg class="hw-icon">
-      <use xlink:href="#some-email"></use>
-    </svg>
+    <i class="fas fa-at"></i>
   </button>
   <button class="hw-some__button hw-some__button--google">
-    <svg class="hw-icon">
-      <use xlink:href="#some-google"></use>
-    </svg>
+    <i class="fab fa-google-plus-g"></i>
   </button>
   <button class="hw-some__button hw-some__button--instagram">
-    <svg class="hw-icon">
-      <use xlink:href="#some-instagram"></use>
-    </svg>
+    <i class="fab fa-instagram"></i>
   </button>
 </div>
 <div class="hw-some hw-some--dark hw-some--vertical">
   <button class="hw-some__button hw-some__button--facebook">
-    <svg class="hw-icon">
-      <use xlink:href="#some-facebook"></use>
-    </svg>
+    <i class="fab fa-facebook-f"></i>
   </button>
   <button class="hw-some__button hw-some__button--twitter">
-    <svg class="hw-icon">
-      <use xlink:href="#some-twitter"></use>
-    </svg>
+    <i class="fab fa-twitter"></i>
   </button>
   <button class="hw-some__button hw-some__button--linkedin">
-    <svg class="hw-icon">
-      <use xlink:href="#some-linkedin"></use>
-    </svg>
+    <i class="fab fa-linkedin-in"></i>
   </button>
   <button class="hw-some__button hw-some__button--email">
-    <svg class="hw-icon">
-      <use xlink:href="#some-email"></use>
-    </svg>
+    <i class="fas fa-at"></i>
   </button>
   <button class="hw-some__button hw-some__button--google">
-    <svg class="hw-icon">
-      <use xlink:href="#some-google"></use>
-    </svg>
+    <i class="fab fa-google-plus-g"></i>
   </button>
   <button class="hw-some__button hw-some__button--instagram">
-    <svg class="hw-icon">
-      <use xlink:href="#some-instagram"></use>
-    </svg>
+    <i class="fab fa-instagram"></i>
   </button>
 </div>
 <div class="hw-some hw-some--outline-dark hw-some--vertical">
   <button class="hw-some__button hw-some__button--facebook">
-    <svg class="hw-icon">
-      <use xlink:href="#some-facebook"></use>
-    </svg>
+    <i class="fab fa-facebook-f"></i>
   </button>
   <button class="hw-some__button hw-some__button--twitter">
-    <svg class="hw-icon">
-      <use xlink:href="#some-twitter"></use>
-    </svg>
+    <i class="fab fa-twitter"></i>
   </button>
   <button class="hw-some__button hw-some__button--linkedin">
-    <svg class="hw-icon">
-      <use xlink:href="#some-linkedin"></use>
-    </svg>
+    <i class="fab fa-linkedin-in"></i>
   </button>
   <button class="hw-some__button hw-some__button--email">
-    <svg class="hw-icon">
-      <use xlink:href="#some-email"></use>
-    </svg>
+    <i class="fas fa-at"></i>
   </button>
   <button class="hw-some__button hw-some__button--google">
-    <svg class="hw-icon">
-      <use xlink:href="#some-google"></use>
-    </svg>
+    <i class="fab fa-google-plus-g"></i>
   </button>
   <button class="hw-some__button hw-some__button--instagram">
-    <svg class="hw-icon">
-      <use xlink:href="#some-instagram"></use>
-    </svg>
+    <i class="fab fa-instagram"></i>
   </button>
 </div>
 ```
