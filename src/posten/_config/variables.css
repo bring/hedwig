@@ -27,4 +27,10 @@
    */
 
   --hw-color-button-text: var(--hw-color-white);
+
+  /**
+   * Logo width adjusted for Posten logo
+   */
+  --hw-logo-width: 158px;
+
 }
