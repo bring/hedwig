@@ -88,6 +88,7 @@
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: var(--hw-font-size-small);
+    line-height: 54px;
 
     @media (--large) {
       display: inline-block;
@@ -99,6 +100,9 @@
   }
 
   @media (--large) {
+    &__item {
+      line-height: 72px;
+    }
     &__icon, & .hw-hamburger {
       margin-left: var(--hw-spacing-smallest);
     }
