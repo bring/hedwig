@@ -27,4 +27,10 @@
    */
 
   --hw-color-button-text: var(--hw-color-black);
+
+  /**
+   * Logo width
+   */
+  --hw-logo-width: 128px;
+  /*--hw-logo-width-large: 127px;*/
 }

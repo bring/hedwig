@@ -4,6 +4,7 @@
 [Base]            .hw-navbar
 [Absolute]        .hw-navbar--absolute
 [Transparent]     .hw-navbar--transparent
+[Sticky]          .hw-navbar--sticky
 ```
 
 ### Default navbar (with search)
@@ -25,12 +26,12 @@
       </a>
 
       <nav class="hw-navbar__menu">
-        <button class="hw-navbar__item" data-hw-drawer-trigger="login">Logg inn</button>
         <button class="hw-navbar__search-button" data-hw-toggle-search>
-          Søk
-          <svg class="hw-navbar__search-icon">
-            <use xlink:href="#search"></use>
-          </svg>
+          <span class="hw-navbar__search-text">Søk</span><!--
+          --><i class="hw-navbar__icon far fa-search fa-2x"></i>
+        </button>
+        <button class="hw-navbar__item" data-hw-drawer-trigger="login">Logg inn<!--
+          --><i class="hw-navbar__icon far fa-user fa-2x"></i>
         </button>
         <button class="hw-navbar__menu-button" data-hw-toggle-menu>
           <span>Meny</span>
@@ -50,10 +51,7 @@
         <div class="hw-drawer__header">
           <div class="hw-drawer__close">
             <button class="hw-drawer__close-button" data-hw-drawer-trigger="login">
-              <svg class="hw-icon" role="img" aria-labelledby="close-drawer">
-                 <title id="close-drawer">Close drawer</title>
-                 <use xlink:href="#cross-thin"></use>
-              </svg>
+              <i class="fas fa-times fa-3x" title="Close drawer"></i>
             </button>
           </div>
         </div>
@@ -336,7 +334,9 @@
       </div>
       <nav class="hw-navbar__menu">
         <a href="#" class="hw-navbar__item">English</a>
-        <a href="#" class="hw-navbar__item">Login</a>
+        <a href="#" class="hw-navbar__item">Login<!--
+          --><i class="hw-navbar__icon far fa-user fa-2x"></i>
+        </a>
         <button class="hw-navbar__menu-button" data-hw-toggle-menu>
           <span>Meny</span>
           <div class="hw-hamburger" data-hw-menu-icon>
@@ -392,7 +392,9 @@
       </a>
       <nav class="hw-navbar__menu">
         <a href="#" class="hw-navbar__item">English</a>
-        <a href="#" class="hw-navbar__item">Login</a>
+        <a href="#" class="hw-navbar__item">Login<!--
+        --><i class="hw-navbar__icon far fa-user fa-2x"></i>
+        </a>
         <button class="hw-navbar__menu-button" data-hw-toggle-menu>
           <span>Menu</span>
           <div class="hw-hamburger" data-hw-menu-icon>

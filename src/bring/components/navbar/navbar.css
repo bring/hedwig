@@ -6,7 +6,10 @@
   position: relative;
   background: var(--hw-color-white);
   border-bottom: 1px solid var(--hw-color-gray-lightest);
-  height: 78px;
+  height: 54px;
+  @media (--large) {
+    height: 72px;
+  }
 
   /**
    * Elements
@@ -35,8 +38,9 @@
 
   &__logo {
     position: relative;
-    width: 133px;
-    height: 78px;
+    width: var(--hw-logo-width);
+    height: 54px;
+    padding: 9px;
     margin: 0 auto;
     transform: translateY(0);
     opacity: 1;
@@ -45,6 +49,8 @@
     @media (--large) {
       position: relative;
       margin: 0;
+      height: 72px;
+      padding: 0;
     }
   }
 
@@ -74,16 +80,13 @@
     display: flex;
   }
 
-  &__item,
-  &__search-button {
-    padding: 0 var(--hw-spacing-small);
-    line-height: 78px;
+  &__item {
     display: none;
     outline: 0;
     border: 0;
     cursor: pointer;
     text-decoration: none;
-    transition: background 100ms, color 0.3s ease;
+    transition: color 0.3s ease;
     font-size: var(--hw-font-size-small);
 
     @media (--large) {
@@ -91,30 +94,23 @@
     }
   }
 
+  &__icon, & .hw-hamburger {
+    vertical-align: middle;
+  }
+
+  @media (--large) {
+    &__icon, & .hw-hamburger {
+      margin-left: var(--hw-spacing-smallest);
+    }
+    &__item, &__menu-button, &__search-button {
+      padding-left: var(--hw-spacing-smaller);
+    }
+  }
+
   &__item:hover,
   &__item:focus {
-    outline: 0;
     fill: var(--hw-color-primary-dark);
     color: var(--hw-color-primary-dark);
-  }
-
-  &__search-button {
-    border: 0;
-  }
-
-  &__search-icon,
-  &__login-icon {
-    height: 24px;
-    width: 24px;
-    margin: 0 0 4px 3px;
-  }
-
-  &__search-button:hover,
-  &__search-button:focus {
-    fill: var(--hw-color-primary-dark);
-    color: var(--hw-color-primary-dark);
-    outline: 0;
-    cursor: pointer;
   }
 
   &__search {

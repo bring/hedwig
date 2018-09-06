@@ -1,20 +1,21 @@
 .hw-navbar__menu-button {
-  color: var(--hw-color-gray-dark);
   z-index: var(--z-index--navbar-drawer-foreground);
   position: absolute;
   right: 0;
   top: 0;
   display: flex;
   align-items: center;
-  padding: calc(var(--hw-spacing) + 3px) var(--hw-spacing-small)
-    var(--hw-spacing) var(--hw-spacing-small);
+  padding-left: 12px;
+  padding-right: 12px;
   border: 0;
   font-size: var(--hw-font-size-small);
   transition: color 0.2s ease;
+  height: 54px;
 
   @media (--large) {
     position: relative;
-    padding: 0 0 0 var(--hw-spacing-small);
+    height: 72px;
+    padding-right: 0;
   }
 
   &:hover,
@@ -63,7 +64,7 @@
 
 .hw-navbar .hw-navbar__menu-button {
   & .hw-hamburger__part {
-    background: var(--hw-color-gray-dark);
+    background: var(--hw-color-gray-darker);
   }
 
   &:hover .hw-hamburger__part,
@@ -86,11 +87,6 @@
 .hw-hamburger {
   width: var(--hw-spacing);
   display: inline-block;
-
-  @media (--large) {
-    margin-left: var(--hw-spacing-smaller);
-  }
-
   &__part {
     display: block;
     margin-bottom: 5px;
