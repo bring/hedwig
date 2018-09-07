@@ -4,7 +4,7 @@
 [Base]            .hw-navbar
 [Absolute]        .hw-navbar--absolute
 [Transparent]     .hw-navbar--transparent
-[Sticky]          .hw-navbar--sticky
+[Sticky]          .hw-navbar--fixed
 ```
 
 ### Default navbar (with search)

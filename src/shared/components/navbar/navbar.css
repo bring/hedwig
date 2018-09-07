@@ -236,6 +236,15 @@
    * Modifiers: variants
    */
 
+  &--fixed &__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--hw-color-white);
+    z-index: var(--z-index--navbar);
+  }
+
   &--active {
     background: transparent;
 
