@@ -10,7 +10,7 @@ Horizontal rule
 [Centered]       .hw-hr--centered
 [Gray]           .hw-hr--gray
 [Gray light]     .hw-hr--gray-light
-[Gray lighter]   .hw-hr--gray-lighter
+[Gray lightest]   .hw-hr--gray-lightest
 ```
 
 ### Regular
@@ -51,8 +51,8 @@ Horizontal rule
   <hr class="hw-hr hw-hr--gray-light" />
 ```
 
-### Gray lighter
+### Gray lightest
 
 ```html|span-6
-  <hr class="hw-hr hw-hr--gray-lighter" />
+  <hr class="hw-hr hw-hr--gray-lightest" />
 ```
