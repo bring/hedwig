@@ -37,7 +37,7 @@
     background: var(--hw-color-gray-light);
   }
 
-  &--gray-lighter {
-    background: var(--hw-color-gray-lighter);
+  &--gray-lightest {
+    background: var(--hw-color-gray-lightest);
   }
 }
