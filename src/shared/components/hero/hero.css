@@ -44,7 +44,7 @@
   &__content {
     flex-basis: auto;
     flex-grow: 1;
-    max-width: var(--hw-width-contents);
+    max-width: var(--hw-width-default);
     overflow: hidden;
 
     &--bottom {

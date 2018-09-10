@@ -5,7 +5,7 @@
 .hw-container {
   display: block;
   margin: 0 auto;
-  max-width: var(--hw-width-contents);
+  max-width: var(--hw-width-default);
 
   /**
    * Modifiers
