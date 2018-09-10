@@ -11,7 +11,7 @@
    */
 
   &__mobile {
-    max-width: var(--hw-width-contents);
+    max-width: var(--hw-width-default);
     margin: 0 auto;
 
     @media (--large) {
