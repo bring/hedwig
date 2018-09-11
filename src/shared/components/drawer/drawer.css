@@ -53,7 +53,7 @@
 
   &__close-button {
     cursor: pointer;
-    padding: var(--hw-spacing-smaller);
+    padding: var(--hw-spacing-smallest);
     background-size: 50%;
     background-color: var(--hw-color-gray-lightest);
     border-radius: 50%;

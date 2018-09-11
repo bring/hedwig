@@ -8,22 +8,22 @@
   width: 100%;
   display: block;
   margin-bottom: var(--hw-spacing-small);
-}
 
-.hw-datepicker__icon {
-  position: absolute;
-  cursor: pointer;
-  right: var(--hw-spacing-smaller);
-  bottom: var(--hw-spacing-smaller);
-}
+  &__icon {
+    position: absolute;
+    cursor: pointer;
+    right: var(--hw-spacing-smaller);
+    bottom: var(--hw-spacing-smaller);
+  }
 
-/* Don't show the icon for error for datepicker */
-.hw-datepicker .hw-error::before {
-  content: none;
-}
+  &__inner {
+    position: relative;
+  }
 
-.hw-datepicker__inner {
-  position: relative;
+  /* Don't show the icon for error for datepicker */
+  & .hw-error [data-fa-pseudo-element=":before"] {
+    display: none;
+  }
 }
 
 .pika-single {
@@ -126,10 +126,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   text-indent: 20px; /* hide text using text-indent trick, using width value (it's enough) */
   white-space: nowrap;
   overflow: hidden;
-  background-color: transparent;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 75% 75%;
   opacity: 0.5;
   *position: absolute; /* IE7 */
   *top: 0; /* IE7 */
@@ -140,16 +136,37 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   opacity: 1;
 }
 
+.pika-prev, .pika-next {
+  &::before {
+    font-family: "Font Awesome 5 Solid";
+    font-weight: 900;
+    display: none;
+  }
+
+  & [data-fa-pseudo-element=":before"]{
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .pika-prev,
 .is-rtl .pika-next {
   float: left;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHRpdGxlPmNhcmV0LWxlZnQ8L3RpdGxlPjxnIGlkPSJJY29ucyI+PGcgaWQ9Iklrb25lciI+PHBvbHlnb24gaWQ9IlNoYXBlIiBwb2ludHM9IjIwLjM3IDMwIDI0Ljg1IDI1LjYzIDE0LjEgMTUgMjQuODUgNC4zOCAyMC4zNyAwIDUuMTUgMTUgMjAuMzcgMzAiLz48L2c+PC9nPjwvc3ZnPg==');
+
+  &::before {
+    content: "\f053";
+  }
+
 }
 
 .pika-next,
 .is-rtl .pika-prev {
   float: right;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHRpdGxlPmNhcmV0LXJpZ2h0PC90aXRsZT48ZyBpZD0iSWNvbnMiPjxnIGlkPSJJa29uZXIiPjxwb2x5Z29uIGlkPSJTaGFwZSIgcG9pbnRzPSI5LjYzIDAgNS4xNSA0LjM4IDE1LjkgMTUgNS4xNSAyNS42MyA5LjYzIDMwIDI0Ljg1IDE1IDkuNjMgMCIvPjwvZz48L2c+PC9zdmc+');
+
+  &::before {
+    content: "\f054";
+  }
   *right: 0;
 }
 

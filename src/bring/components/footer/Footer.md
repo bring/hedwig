@@ -46,9 +46,7 @@
         --><div class="hw-grid__item hw-one-quarter">
           <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">Lorem ipsum</button>
           <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
-            <svg class="hw-icon hw-icon--small">
-              <use xlink:href="#globe"></use>
-            </svg>
+            <i class="fas fa-globe"></i>
             English
           </button>
         </div>
@@ -65,10 +63,8 @@
           </div><!--
           --><div class="hw-grid__item hw-small--one-half">
             <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
-            <svg class="hw-icon hw-icon--small">
-              <use xlink:href="#globe"></use>
-            </svg>
-            English
+              <i class="fas fa-globe"></i>
+              English
             </button>
           </div>
         </div>
@@ -196,9 +192,7 @@
         --><div class="hw-grid__item hw-one-quarter">
           <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">Lorem ipsum</button>
           <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
-            <svg class="hw-icon hw-icon--small">
-              <use xlink:href="#globe"></use>
-            </svg>
+            <i class="fas fa-globe"></i>
             English
           </button>
                   <div class="hw-block hw-block--full hw-block--mt-small">
@@ -209,19 +203,13 @@
 
           <div class="hw-some hw-some--dark">
               <button class="hw-some__button hw-some__button--facebook">
-                <svg class="hw-icon">
-                  <use xlink:href="#some-facebook"></use>
-                </svg>
+                <i class="fab fa-facebook-f"></i>
               </button>
               <button class="hw-some__button hw-some__button--twitter">
-                <svg class="hw-icon">
-                  <use xlink:href="#some-twitter"></use>
-                </svg>
+                <i class="fab fa-twitter"></i>
               </button>
               <button class="hw-some__button hw-some__button--google">
-                <svg class="hw-icon">
-                  <use xlink:href="#some-google"></use>
-                </svg>
+                <i class="fab fa-google-plus-g"></i>
               </button>
             </div>
           </div>
@@ -240,10 +228,8 @@
           </div><!--
           --><div class="hw-grid__item hw-small--one-half">
             <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
-            <svg class="hw-icon hw-icon--small">
-              <use xlink:href="#globe"></use>
-            </svg>
-            English
+              <i class="fas fa-globe"></i>
+              English
             </button>
           </div>
         </div>
@@ -256,19 +242,13 @@
 
           <div class="hw-some hw-some--dark">
             <button class="hw-some__button hw-some__button--facebook">
-              <svg class="hw-icon">
-                <use xlink:href="#some-facebook"></use>
-              </svg>
+                <i class="fab fa-facebook-f"></i>
             </button>
             <button class="hw-some__button hw-some__button--twitter">
-              <svg class="hw-icon">
-                <use xlink:href="#some-twitter"></use>
-              </svg>
+                <i class="fab fa-twitter"></i>
             </button>
             <button class="hw-some__button hw-some__button--google">
-              <svg class="hw-icon">
-                <use xlink:href="#some-google"></use>
-              </svg>
+                <i class="fab fa-google-plus-g"></i>
             </button>
           </div>
         </div>

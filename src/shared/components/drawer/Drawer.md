@@ -23,10 +23,7 @@ Drawer component
     <div class="hw-drawer__content">
       <div class="hw-drawer__header">
         <button class="hw-drawer__close-button" data-hw-drawer-trigger="Drawer2">
-          <svg class="hw-icon" role="img" aria-labelledby="close-drawer">
-              <title id="close-drawer">Close drawer</title>
-              <use xlink:href="#cross-thin"></use>
-          </svg>
+          <i class="fal fa-times fa-2x" title="Close drawer"></i>
         </button>
       </div>
       <div class="hw-drawer__body">
