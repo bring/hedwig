@@ -25,6 +25,7 @@ window.FontAwesomeConfig = {
 
 // We are only using the some of the icons
 library.add(fas.faAt);
+library.add(fas.faArrowsAltH);
 library.add(fas.faAward);
 library.add(fas.faBarcodeAlt);
 library.add(fas.faBars);

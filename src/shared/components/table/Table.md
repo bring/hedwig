@@ -115,9 +115,7 @@
   <div class="hw-table__scroll-hint">
     <small>
       Scroll
-      <svg class="hw-icon">
-        <use xlink:href="#swipe-right"></use>
-      </svg>
+      <i class="fas fa-arrows-alt-h fa-2x" data-fa-transform="down-3"></i>
     </small>
   </div>
 </div>
