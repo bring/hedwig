@@ -36,7 +36,7 @@ Narrow container is available if you want to center content to a smaller max-wid
 [Padding left and right]      .hw-container-px
 
 Usage:
-.hw-container--pt-small will add a 18px top margin to the container
+.hw-container--pt-small will add a 18px top padding to the container
 .hw-container--slim will make the container have a max width of 510px
 ```
 
