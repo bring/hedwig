@@ -7,6 +7,115 @@
 [Sticky]          .hw-navbar--sticky
 ```
 
+
+
+
+### Navbar with menu
+
+```html
+<header class="hw-navbar">
+  <div class="hw-navbar__content">
+    <div class="hw-navbar__top">
+      <a href="#" class="hw-navbar__logo">
+        <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
+          <title id="Logo">Go to homepage</title>
+          <use xlink:href="#logo-bring"></use>
+        </svg>
+        <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+          <title id="Logo">Go to homepage</title>
+          <use xlink:href="#logo-bring-white"></use>
+        </svg>
+      </a>
+      <nav class="hw-navbar__menu">
+        <button class="hw-navbar__menu-button" data-hw-toggle-menu>
+          <span>Menu</span>
+          <div class="hw-hamburger" data-hw-menu-icon>
+            <span class="hw-hamburger__part"></span>
+            <span class="hw-hamburger__part"></span>
+            <span class="hw-hamburger__part"></span>
+          </div>
+        </button>
+      </nav>
+    </div>
+    <section class="hw-navbar__drawer" data-hw-menu-drawer>
+      <div class="hw-navbar__drawer-content">
+        <div class="hw-navbar__drawer-mobile">
+        </div>
+        <div class="hw-navbar__drawer-desktop">
+          <div class="hw-grid">
+            <div class="hw-grid__item hw-one-quarter">
+              <h2>Sende</h2>
+              <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
+                <hr class="hw-hr hw-hr--gray-light"/>
+              </div>
+              <ul class="hw-linklist">
+                <li><a href="#">Post - like formater</a></li>
+                <li><a href="#">Post - blandede formater</a></li>
+                <li><a href="#">Brev med sikkerhet</a></li>
+                <li><a href="#">Pakker til postkassen</a></li>
+                <li><a href="#">Frankering</a></li>
+                <li><a href="#">Pakker til bedrift</a></li>
+                <li><a href="#">Pakker til private</a></li>
+                <li><a href="#">Gods i Norge</a></li>
+                <li><a href="#">Gods internasjonalt</a></li>
+              </ul>
+            </div><!--
+            --><div class="hw-grid__item hw-one-quarter">
+              <h2>Motta</h2>
+              <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
+                <hr class="hw-hr hw-hr--gray-light"/>
+              </div>
+              <ul class="hw-linklist">
+                <li><a href="#">Spore</a></li>
+                <li><a href="#">Adresseendring, varig</a></li>
+                <li><a href="#">Adresseendring, midlertidig</a></li>
+                <li><a href="#">Oppbevaring av post</a></li>
+                <li><a href="#">Leie av postboks</a></li>
+                <li><a href="#">Import og fortolling</a></li>
+              </ul>
+            </div><!--
+            --><div class="hw-grid__item hw-one-quarter">
+              <h2>Rådgivning</h2>
+              <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
+                <hr class="hw-hr hw-hr--gray-light"/>
+              </div>
+              <ul class="hw-linklist">
+                <li><a href="#">Farlig gods</a></li>
+                <li><a href="#">Klargjøring av forsendelse</a></li>
+                <li><a href="#">Returløsninger</a></li>
+                <li><a href="#">Adressetjenester</a></li>
+                <li><a href="#">Våre integrasjonsløsninger</a></li>
+                <li><a href="#">Lagerløsninger</a></li>
+                <li><a href="#">Netthandel</a></li>
+                <li><a href="#">Kundedialog</a></li>
+                <li><a href="#">Logistikkløsninger</a></li>
+              </ul>
+            </div><!--
+            --><div class="hw-grid__item hw-one-quarter">
+              <h2>Kundeservice</h2>
+              <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
+                <hr class="hw-hr hw-hr--gray-light"/>
+              </div>
+              <ul class="hw-linklist">
+                <li><a href="#">Reklamasjon og klage</a></li>
+                <li><a href="#">Fakturaspørsmål</a></li>
+                <li><a href="#">Driftsmeldinger</a></li>
+                <li><a href="#">Finn postkontor og åpningstider</a></li>
+                <li><a href="#">Min profil</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</header>
+```
+
+
+
+
+
 ### Default navbar (with search)
 
 ```html
