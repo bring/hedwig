@@ -8,9 +8,19 @@
 </a>
 ```
 
-### Example inverted
+### Example gray
 ```html|span-2
-<a class="hw-icon-link hw-icon-link--invert" href="#">
+<a class="hw-icon-link hw-icon-link--gray" href="#">
+  <svg class="hw-icon">
+    <use xlink:href="#bud"></use>
+  </svg>
+  <span class="hw-icon-link__text">Here is the link text</span>
+</a>
+```
+
+### Example white
+```html|span-2,dark
+<a class="hw-icon-link hw-icon-link--white" href="#">
   <svg class="hw-icon">
     <use xlink:href="#bud"></use>
   </svg>
@@ -28,9 +38,9 @@
 </a>
 ```
 
-### Example inverted with border
+### Example gray with border
 ```html|span-2
-<a class="hw-icon-link hw-icon-link--border hw-icon-link--invert" href="#">
+<a class="hw-icon-link hw-icon-link--border hw-icon-link--gray" href="#">
   <svg class="hw-icon">
     <use xlink:href="#bud"></use>
   </svg>
@@ -43,7 +53,7 @@
 <div class="hw-flex hw-flex--guttered">
   <a class="hw-icon-link" href="#">
     <svg class="hw-icon">
-      <use xlink:href="#hentested"></use>
+      <use xlink:href="#adresseendringogoppbevaring"></use>
     </svg>
     <span class="hw-icon-link__text">Adresseendring og oppbevaring</span>
   </a>
@@ -68,28 +78,28 @@
 </div>
 ```
 
-### Example in flex inverted with border
+### Example in flex gray with border
 ```html
 <div class="hw-flex hw-flex--guttered">
-  <a class="hw-icon-link hw-icon-link--invert hw-icon-link--border" href="#">
+  <a class="hw-icon-link hw-icon-link--gray hw-icon-link--border" href="#">
     <svg class="hw-icon">
-      <use xlink:href="#hentested"></use>
+      <use xlink:href="#adresseendringogoppbevaring"></use>
     </svg>
     <span class="hw-icon-link__text">Adresseendring og oppbevaring</span>
   </a>
-  <a class="hw-icon-link hw-icon-link--invert hw-icon-link--border" href="#">
+  <a class="hw-icon-link hw-icon-link--gray hw-icon-link--border" href="#">
     <svg class="hw-icon">
       <use xlink:href="#brev"></use>
     </svg>
     <span class="hw-icon-link__text">Pakker og brev</span>
   </a>
-  <a class="hw-icon-link hw-icon-link--invert hw-icon-link--border" href="#">
+  <a class="hw-icon-link hw-icon-link--gray hw-icon-link--border" href="#">
     <svg class="hw-icon">
       <use xlink:href="#sporing"></use>
     </svg>
     <span class="hw-icon-link__text">Sporing</span>
   </a>
-  <a class="hw-icon-link hw-icon-link--invert hw-icon-link--border" href="#">
+  <a class="hw-icon-link hw-icon-link--gray hw-icon-link--border" href="#">
     <svg class="hw-icon">
       <use xlink:href="#toll"></use>
     </svg>
