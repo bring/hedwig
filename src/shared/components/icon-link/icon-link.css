@@ -11,8 +11,12 @@
     display: block;
   }
 
-  &--invert {
+  &--gray {
     color: var(--hw-color-gray-darkest);
+  }
+
+  &--white {
+    color: var(--hw-color-white);
   }
 
   &--border {
@@ -28,10 +32,17 @@
     }
   }
 
-  &--invert:hover {
+  &--gray:hover {
     color: var(--hw-color-link);
     & .hw-icon-link__text {
       border-bottom: 2px solid var(--hw-color-link-underline);
+    }
+  }
+
+  &--white:hover {
+    color: var(--hw-color-white);
+    & .hw-icon-link__text {
+      border-bottom: 2px solid var(--hw-color-white);
     }
   }
 
