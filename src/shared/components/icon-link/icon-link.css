@@ -6,7 +6,7 @@
   transition: color 0.3s ease;
   & .hw-icon {
     margin: 0 auto var(--hw-spacing);
-    width: var(--hw-spacing-larger);
+    width: 74px;
     height: var(--hw-spacing-larger);
     display: block;
   }
