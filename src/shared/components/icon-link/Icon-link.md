@@ -65,7 +65,7 @@
   </a>
   <a class="hw-icon-link" href="#">
     <svg class="hw-icon">
-      <use xlink:href="#sporing"></use>
+      <use xlink:href="#godstransport"></use>
     </svg>
     <span class="hw-icon-link__text">Sporing</span>
   </a>
