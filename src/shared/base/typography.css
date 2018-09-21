@@ -30,9 +30,11 @@ a {
 h1,
 h2,
 h3,
+h4,
 .hw-h1,
 .hw-h2,
-.hw-h3 {
+.hw-h3,
+.hw-h4 {
   padding: 0;
   margin: 0;
   font-weight: normal;
@@ -41,13 +43,13 @@ h3,
 
 h1,
 .hw-h1 {
-  font-size: var(--hw-font-size-h1-mobile);
+  font-size: var(--hw-font-size-h1);
 }
 
-@media (--medium) {
+@media (--xlarge) {
   h1,
   .hw-h1 {
-    font-size: var(--hw-font-size-h1);
+    font-size: var(--hw-font-size-max-h1)px;
   }
 }
 
@@ -56,9 +58,35 @@ h2,
   font-size: var(--hw-font-size-h2);
 }
 
+@media (--xlarge) {
+  h2,
+  .hw-h2 {
+    font-size: var(--hw-font-size-max-h2)px;
+  }
+}
+
 h3,
 .hw-h3 {
   font-size: var(--hw-font-size-h3);
+}
+
+@media (--xlarge) {
+  h3,
+  .hw-h3 {
+    font-size: var(--hw-font-size-max-h3)px;
+  }
+}
+
+h4,
+.hw-h4 {
+  font-size: var(--hw-font-size-h4);
+}
+
+@media (--xlarge) {
+  h4,
+  .hw-h4 {
+    font-size: var(--hw-font-size-max-h4)px;
+  }
 }
 
 /**

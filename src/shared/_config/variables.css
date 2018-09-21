@@ -56,13 +56,23 @@
 
   /**
    * Font sizes
-   * NOTE: This is in PX because we want them to specific.
+   * NOTE: 
    */
+  --hw-font-size-max-view-port:1200;
+  --hw-font-size-min-view-port:300;
+  --hw-font-size-max-h1:56;
+  --hw-font-size-min-h1:28;
+  --hw-font-size-max-h2:42;
+  --hw-font-size-min-h2:25;
+  --hw-font-size-max-h3:31;
+  --hw-font-size-min-h3:22;
+  --hw-font-size-max-h4:23;
+  --hw-font-size-min-h4:20;
 
-  --hw-font-size-h1-mobile: 35px;
-  --hw-font-size-h1: 44px;
-  --hw-font-size-h2: 28px;
-  --hw-font-size-h3: 22px;
+  --hw-font-size-h1: calc(var(--hw-font-size-min-h1)px + (var(--hw-font-size-max-h1) - var(--hw-font-size-min-h1)) * ((100vw - var(--hw-font-size-min-view-port)px) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-h2: calc(var(--hw-font-size-min-h2)px + (var(--hw-font-size-max-h2) - var(--hw-font-size-min-h2)) * ((100vw - var(--hw-font-size-min-view-port)px) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-h3: calc(var(--hw-font-size-min-h3)px + (var(--hw-font-size-max-h3) - var(--hw-font-size-min-h3)) * ((100vw - var(--hw-font-size-min-view-port)px) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-h4: calc(var(--hw-font-size-min-h4)px + (var(--hw-font-size-max-h4) - var(--hw-font-size-min-h4)) * ((100vw - var(--hw-font-size-min-view-port)px) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-lead: 22px;
   --hw-font-size-p: 18px;
   --hw-font-size-small: 15px;

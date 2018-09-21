@@ -6,6 +6,7 @@ Our font is [Foundry Monoline](https://www.fonts.com/font/the-foundry/foundry-mo
 [h1]             h1
 [h2]             h2
 [h3]             h3
+[h4]             h4
 [p]              p
 
 [Lead]           hw-text-lead
@@ -17,10 +18,11 @@ Our font is [Foundry Monoline](https://www.fonts.com/font/the-foundry/foundry-mo
 
 ### Headers
 
-```html|span-4,plain,light
+```html|span-6,plain,light
   <h1>H1 Headline example</h1>
   <h2>H2 Headline example</h2>
   <h3>H3 Headline example</h3>
+  <h4>H4 Headline example</h4>
 ```
 
 ### Paragraph
