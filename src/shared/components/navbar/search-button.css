@@ -1,4 +1,5 @@
 .hw-navbar__search-button {
+  z-index: var(--z-index--navbar-drawer-foreground);
   position: absolute;
   left: 0;
   border: 0;
@@ -8,13 +9,6 @@
   height: 54px;
   transition: color 0.3s ease;
 
-  &:hover,
-  &:focus {
-    fill: var(--hw-color-primary-dark);
-    color: var(--hw-color-primary-dark);
-    outline: 0;
-    cursor: pointer;
-  }
 
   & .hw-navbar__search-text {
     display: none;

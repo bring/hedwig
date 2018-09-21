@@ -18,13 +18,6 @@
     padding-right: 0;
   }
 
-  &:hover,
-  &:focus {
-    color: var(--hw-color-primary-dark);
-    outline: 0;
-    cursor: pointer;
-  }
-
   & > span {
     display: none;
 
@@ -40,12 +33,6 @@
 }
 
 .hw-navbar--active .hw-navbar__menu-button {
-  color: var(--hw-color-gray-light);
-
-  &:hover,
-  &:focus {
-    color: var(--hw-color-white);
-  }
 
   & > span + span {
     /* Don't display the second span */
@@ -62,26 +49,8 @@
  * Hamburger
  */
 
-.hw-navbar .hw-navbar__menu-button {
-  & .hw-hamburger__part {
-    background: var(--hw-color-gray-darker);
-  }
-
-  &:hover .hw-hamburger__part,
-  &:focus .hw-hamburger__part {
-    background: var(--hw-color-primary);
-  }
-}
-
-.hw-navbar--active .hw-navbar__menu-button {
-  & .hw-hamburger__part {
-    background: var(--hw-color-gray-light);
-  }
-
-  &:hover .hw-hamburger__part,
-  &:focus .hw-hamburger__part {
-    background: var(--hw-color-white);
-  }
+.hw-navbar .hw-navbar__menu-button span {
+  padding-right: 6px;
 }
 
 .hw-hamburger {
