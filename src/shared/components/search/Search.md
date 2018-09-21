@@ -10,21 +10,15 @@ NB: The search field position and the opaque background overlay is not controlle
 [data-hw-search-placeholders]   Array of placeholders   (required)
 ```
 
-### Standalone version with icon
+### Standalone
 
 ```html
-<div class="hw-search hw-search--standalone"
-  data-hw-search
-  data-hw-search-placeholders='["Hi!"]'
->
+<div class="hw-search hw-search--standalone" 
+  data-hw-search 
+  data-hw-search-placeholders='["Placeholder", "Another one"]'>
   <div class="hw-search__inner">
-    <input
-      data-hw-search-input
-      class="hw-search__input" type="text"
-      aria-label="Search" />
-    <svg class="hw-search__icon">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
-    </svg>
+    <input class="hw-search__input" type="text" data-hw-search-input type="text" />
+    <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
   </div>
 </div>
@@ -43,9 +37,10 @@ NB: The search field position and the opaque background overlay is not controlle
       data-hw-search-input
       class="hw-search__input" type="text"
       aria-label="Search" />
+    <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
   </div>
-  <button type="submit" class="hw-button hw-button--primary">Search</button>
+  <button type="submit" class="hw-button hw-button--primary hw-search__button">Search</button>
 </div>
 ```
 
@@ -61,9 +56,7 @@ NB: The search field position and the opaque background overlay is not controlle
       data-hw-search-input
       class="hw-search__input" type="text"
       aria-label="Search" />
-    <svg class="hw-search__icon">
-      <use xlink:href="#search"></use>
-    </svg>
+    <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
   </div>
 </div>
@@ -81,18 +74,15 @@ NB: The search field position and the opaque background overlay is not controlle
       data-hw-search-input
       class="hw-search__input" type="text"
       aria-label="Search" />
-    <svg class="hw-search__icon">
-      <use xlink:href="#search"></use>
-    </svg>
+    <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
   </div>
 </div>
 ```
-
-### Larger version (for navbar version)
+### Search with button
 
 ```html
-<div class="hw-search hw-search--large"
+<div class="hw-search"
   data-hw-search
   data-hw-search-placeholders='["Hi!"]'
 >
@@ -101,10 +91,9 @@ NB: The search field position and the opaque background overlay is not controlle
       data-hw-search-input
       class="hw-search__input" type="text"
       aria-label="Search" />
-    <svg class="hw-search__icon">
-      <use xlink:href="#search"></use>
-    </svg>
+    <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
   </div>
+  <button type="submit" class="hw-button hw-button--primary hw-search__button">Search</button>
 </div>
 ```

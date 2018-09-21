@@ -91,6 +91,7 @@ const HWNavbar = ({
 
       // Attach event listeners
       SETTINGS.menuButton.addEventListener('click', toggleMenu);
+      SETTINGS.menuButton.style.width = SETTINGS.menuButton.offsetWidth + 'px';
     }
 
     // Optional search button
