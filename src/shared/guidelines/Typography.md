@@ -1,12 +1,13 @@
 # Fonts
 
 Our font is [Foundry Monoline](https://www.fonts.com/font/the-foundry/foundry-monoline).
+The font size on H-tags are responsive on viewports between 300 - 1200px, and static on viewports smaller and bigger viewports
 
 ```code
-[h1]             h1
-[h2]             h2
-[h3]             h3
-[h4]             h4
+[h1]             h1 font size 28 - 56px
+[h2]             h2 font size 25 - 42px
+[h3]             h3 font size 22 - 31px
+[h4]             h4 font size 20 - 23px
 [p]              p
 
 [Lead]           hw-text-lead
@@ -14,7 +15,7 @@ Our font is [Foundry Monoline](https://www.fonts.com/font/the-foundry/foundry-mo
 [Smaller]        hw-text-smaller
 ```
 
-[Example article](https://codepen.io/fredjens/full/f53fd7756c8538982ebf108b64d8fdd5/) showing typography in use.
+[Example article](https://www.bring.no/test/articles/designsystems) showing typography in use.
 
 ### Headers
 

@@ -56,8 +56,11 @@
 
   /**
    * Font sizes
-   * NOTE: 
+   * NOTE: To achieve fluid font sizes on h-tags we used the calculation described here:
+   * https://css-tricks.com/snippets/css/fluid-typography/
    */
+
+   
   --hw-font-size-max-view-port:1200;
   --hw-font-size-min-view-port:300;
   --hw-font-size-max-h1:56;
