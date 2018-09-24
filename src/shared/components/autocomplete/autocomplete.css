@@ -42,12 +42,14 @@
       outline: 0;
     }
 
-    &::-webkit-input-placeholder { /* Not autprefixed - Chrome/Opera/Safari */
-      color: var(--hw-color-gray);
+    &::-webkit-input-placeholder {
+      /* Not autprefixed - Chrome/Opera/Safari */
+      color: var(--hw-color-gray-dark);
     }
 
-    &:-ms-input-placeholder { /* Not autprefixed - IE 10+ */
-      color: var(--hw-color-gray);
+    &:-ms-input-placeholder {
+      /* Not autprefixed - IE 10+ */
+      color: var(--hw-color-gray-dark);
     }
 
     &[disabled] {
