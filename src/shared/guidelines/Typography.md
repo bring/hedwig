@@ -13,6 +13,7 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 [Lead]           hw-text-lead
 [Small]          hw-text-small
 [Smaller]        hw-text-smaller
+[Primary]        hw-text-primary
 ```
 
 [Example article](https://www.bring.no/test/articles/designsystems) showing typography in use.
@@ -45,4 +46,9 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 ### Smaller
 ```html|span-4,plain,light
   <p class="hw-text-smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
+```
+
+### Primary
+```html|span-4,plain,light
+  <p class="hw-text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
 ```
