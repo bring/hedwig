@@ -126,6 +126,7 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-minus"></i> minus<br/><br/>
 <i class="fa-2x fa-fw fas fa-mobile"></i> mobile<br/><br/>
 <i class="fa-2x fa-fw fas fa-paperclip"></i> paperclip<br/><br/>
+<i class="fa-2x fa-fw fas fa-play"></i> play<br/><br/>
 <i class="fa-2x fa-fw fas fa-pencil"></i> pencil<br/><br/>
 <i class="fa-2x fa-fw fas fa-phone"></i> phone<br/><br/>
 <i class="fa-2x fa-fw fas fa-plus"></i> plus<br/><br/>
