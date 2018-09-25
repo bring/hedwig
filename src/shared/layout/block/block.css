@@ -4,19 +4,14 @@
 
 .hw-block {
   display: block;
-  padding: 0 var(--hw-spacing);
-
-  /**
-   * Modifiers: sizes
-   */
-
-  &--full {
-    padding: 0;
-  }
 
   /**
    * Modifiers: padding and padding variations
    */
+
+  &--px {
+    padding: 0 var(--hw-spacing);
+  }
 
   &--mt {
     margin-top: var(--hw-spacing);
