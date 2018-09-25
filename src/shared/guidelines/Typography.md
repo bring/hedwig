@@ -14,6 +14,9 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 [Small]          hw-text-small
 [Smaller]        hw-text-smaller
 [Primary]        hw-text-primary
+
+[Color primary]       hw-color-primary
+[Color primary dark]  hw-color-primary-dark
 ```
 
 [Example article](https://www.bring.no/test/articles/designsystems) showing typography in use.
@@ -48,7 +51,20 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
   <p class="hw-text-smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
 ```
 
-### Primary
+### Colors
+```hint
+Posten uses color primary and Bring uses color primary darker because of accessability purposes
+```
+
+#### Primary
 ```html|span-4,plain,light
-  <p class="hw-text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
+  <p class="hw-color-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
+```
+
+#### Primary dark
+```html|span-4,plain,light
+  <svg class="hw-icon hw-color-primary-dark">
+  <use xlink:href="#bud"></use>
+  </svg>
+  <p class="hw-color-primary-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
 ```
