@@ -15,6 +15,39 @@
     display: block;
   }
 
+  &__input-reset {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    padding: 0;
+    border: none;
+    opacity: 0.33;
+  }
+
+  &[data-hw-autocomplete-reset-visible='true']
+    .hw-autocomplete__input:focus
+    + .hw-autocomplete__input-reset {
+    display: block;
+  }
+
+  &[data-hw-autocomplete-reset-visible='true']
+    .hw-autocomplete__input:hover
+    + .hw-autocomplete__input-reset {
+    display: block;
+  }
+
+  &[data-hw-autocomplete-reset-visible='true']
+    .hw-autocomplete__input-reset:hover {
+    display: block;
+  }
+
+  &[data-hw-autocomplete-reset-visible='true']
+    .hw-autocomplete__input-reset:active {
+    display: block;
+    opacity: 0.66;
+  }
+
   &__input {
     position: relative;
     display: block;
