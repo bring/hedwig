@@ -13,7 +13,6 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 [Lead]           hw-text-lead
 [Small]          hw-text-small
 [Smaller]        hw-text-smaller
-[Primary]        hw-text-primary
 
 [Color primary]       hw-color-primary
 [Color primary dark]  hw-color-primary-dark
