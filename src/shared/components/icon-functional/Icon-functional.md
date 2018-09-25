@@ -89,11 +89,13 @@ hw-color-gray-darker
 #### Solid icons - fas
 ```html
 <i class="fa-2x fa-fw fas fa-at"></i> at<br/><br/>
+<i class="fa-2x fa-fw fas fa-arrows-alt-h"></i> arrows-alt-h<br/><br/>
 <i class="fa-2x fa-fw fas fa-award"></i> award<br/><br/>
 <i class="fa-2x fa-fw fas fa-barcode-alt"></i> barcode-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-bars"></i> bars<br/><br/>
 <i class="fa-2x fa-fw fas fa-box"></i> box<br/><br/>
 <i class="fa-2x fa-fw fas fa-calculator"></i> calculator<br/><br/>
+<i class="fa-2x fa-fw fas fa-calendar"></i> calendar<br/><br/>
 <i class="fa-2x fa-fw fas fa-camera"></i> camera<br/><br/>
 <i class="fa-2x fa-fw fas fa-chart-line"></i> chart-line<br/><br/>
 <i class="fa-2x fa-fw fas fa-check"></i> check<br/><br/>
@@ -150,8 +152,12 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw far fa-user"></i> user<br/><br/>
 ```
 
-#### Brand icons - fab
+#### Light icons - fal
+```html
+<i class="fa-2x fa-fw fal fa-times"></i> times<br/><br/>
+```
 
+#### Brand icons - fab
 ```html
 <i class="fa-2x fa-fw fab fa-facebook-f"></i> facebook-f<br/><br/>
 <i class="fa-2x fa-fw fab fa-google-plus-g"></i> google-plus-g<br/><br/>
@@ -273,7 +279,7 @@ some-google | google-plus-g | fab
 some-twitter | twitter | fab
 star | star | fas
 success | check-circle | fas
-swipe-right | *discontinued* | 
+swipe-right | arrows-alt-h | fas
 target   | dot-circle | fas
 upload   | cloud-upload | fas
 user   | user | fas, far

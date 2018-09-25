@@ -6,15 +6,17 @@
 
   &__column--check {
     position: relative;
-
     &::after {
-      content: '';
+      /* Font Awesome creates an svg from this, see the next rule for styling this */
+      content: "\f00c";
+      font-family: "Font Awesome 5 Solid";
+      font-weight: 900;
+      display: none;
+    }
+    & [data-fa-pseudo-element=":after"] {
+      color: var(--hw-color-green);
       display: block;
-      margin-left: 50%;
-      transform: translateX(-50%);
-      width: 20px;
-      height: 20px;
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzAgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICA8ZyBpZD0iY2hlY2siIGZpbGw9IiMyNkI1NzYiIGZpbGwtcnVsZT0ibm9uemVybyI+ICAgICAgPHBvbHlsaW5lIGlkPSJTaGFwZSIgcG9pbnRzPSIyNS43NSAwLjkyIDIzLjExIDMuNTcgMTEuMjQgMTUuMDUgNi44OSAxMC45NCA0LjE0IDguMjkgMCAxMi4yNSAyLjc1IDE0LjkgOC40OCAyMC40MyAxMS4xMiAyMy4wOCAxMy44NyAyMC40MyAyNy4yNSA3LjUzIDMwIDQuODgiPjwvcG9seWxpbmU+ICA8L2c+PC9zdmc+);
+      margin: 0 auto;
     }
   }
 
@@ -22,55 +24,53 @@
     position: relative;
 
     &::after {
-      content: '';
+      /* Font Awesome creates an svg from this, see the next rule for styling this */
+      content: "\f00d";
+      font-family: "Font Awesome 5 Solid";
+      font-weight: 900;
+      display: none;
+    }
+    & [data-fa-pseudo-element=":after"]{
+      color: var(--hw-color-red);
       display: block;
-      margin-left: 50%;
-      transform: translateX(-50%);
-      width: 15px;
-      height: 15px;
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzAgMzAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICAgIDxnIGlkPSJjcm9zcyIgZmlsbD0iI0UzMkQyMiIgZmlsbC1ydWxlPSJub256ZXJvIj4gICAgICA8cG9seWdvbiBpZD0iU2hhcGUiIHBvaW50cz0iMjAuMzMgMTUuMDYgMjcuMjUgOC4xNCAzMCA1LjM5IDI0LjUgMCAyMS44NiAyLjc1IDE1LjA2IDkuNTUgOC4xNCAyLjc1IDUuMzkgMCAwIDUuMzkgMi43NSA4LjE0IDkuNTUgMTUuMDYgMi43NSAyMS44NiAwIDI0LjUgNS4zOSAzMCA4LjE0IDI3LjI1IDE1LjA2IDIwLjMzIDIxLjg2IDI3LjI1IDI0LjUgMzAgMzAgMjQuNSAyNy4yNSAyMS44NiI+PC9wb2x5Z29uPiAgPC9nPjwvc3ZnPg==);
+      margin: 0 auto;
     }
   }
 
   &__link--download {
     position: relative;
-    padding-right: var(--hw-spacing);
 
-    &::before {
-      position: absolute;
-      top: 3px;
-      content: "";
-      width: 20px;
-      height: 20px;
-      right: -var(--hw-spacing-small);
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzEgMzAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICA8ZyBpZD0iYXR0YWNobWVudCIgZmlsbD0iIzQ0NDQ0NCIgZmlsbC1ydWxlPSJub256ZXJvIj4gICAgICA8cGF0aCBkPSJNMjAuNTEsMjAuMTUgQzIwLjIwNDc3NTIsMjAuMTM3MTkzMSAxOS45Mjk4OTksMTkuOTYxNTc3NyAxOS43OSwxOS42OSBDMTkuNTI0MjU4MiwxOS4xMDg5NDIxIDE5LjUyNDI1ODIsMTguNDQxMDU3OSAxOS43OSwxNy44NiBDMTkuOTI3ODU0OCwxNy41NzQ1MjI1IDIwLjIxMzEyMjQsMTcuMzg5NDg0MSAyMC41MywxNy4zOCBMMjQuMSwxNy4zOCBDMjUuMjE1NjQ0LDE3LjM4MDAwMzIgMjYuMjg1NDQ4NywxNi45MzYxMzIgMjcuMDczMzg5NiwxNi4xNDYzMTUxIEMyNy44NjEzMzA1LDE1LjM1NjQ5ODEgMjguMzAyNjU2MywxNC4yODU2NDA5IDI4LjMsMTMuMTcgQzI4LjMsMTMuMTcgMjguMywxMy4xMiAyOC4zLDEzLjA5IEMyOC4zMjA1ODksMTEuMzI0NTY1MiAyNy4yNDUwMjg5LDkuNzMxMTQyODEgMjUuNiw5LjA5IEMyNS4xMTUzOTg3LDguOTAyNjQ3MTMgMjQuNzc4NDc2OCw4LjQ1NzI5MDU1IDI0LjczLDcuOTQgQzI0LjQ5NjU2NDcsNS45Njk1NTExOCAyMi44MjQyMjQ2LDQuNDg2MzcwMzcgMjAuODQsNC40OSBDMjAuMzI2Njc1Nyw0LjQ4MzQ3NjU1IDE5LjgxNjAwNTUsNC41NjQ2NDI2NyAxOS4zMyw0LjczIEMxOC44MzU1MDg4LDQuOTIwMzIwOTIgMTguMjc1MDYxNiw0Ljc5NDAyMjk4IDE3LjkxLDQuNDEgQzE2Ljk5MDg4MzcsMy4zOTE5MzEzOSAxNS42ODE1Njc4LDIuODEzNjUwMTggMTQuMzEsMi44MiBDMTMuNTExMzk4NiwyLjgwMjczNDQ5IDEyLjcxOTk4MDYsMi45NzQwMzcwOSAxMiwzLjMyIEMxMC4zODI2OTg0LDQuMTUxMjI5MzEgOS4zMDA3NjMzOCw1Ljc0OTYyODA2IDkuMTMsNy41NiBDOS4wNjAxNTE0NCw4LjI0ODI3NTM2IDguNDkxNDc1NCw4Ljc3ODQ2OTU2IDcuOCw4LjggQzUuNDg5NTgwNjMsOC44NTk5OTg4IDMuNjY0MDYxMjIsMTAuNzc5NDc4OCAzLjcyLDEzLjA5IEMzLjY1ODMzMjY2LDE1LjM5Njc5MjYgNS40NzM0Njg4MywxNy4zMTkyMjc0IDcuNzgsMTcuMzkgTDEyLjcyLDE3LjM5IEMxMy4wMzgzMDY2LDE3LjM5NDg0ODEgMTMuMzI1Nzk1NywxNy41ODEzMjc1IDEzLjQ2LDE3Ljg3IEMxMy43MjU3NDE4LDE4LjQ1MTA1NzkgMTMuNzI1NzQxOCwxOS4xMTg5NDIxIDEzLjQ2LDE5LjcgQzEzLjM0MzY1NTUsMjAuMDA2MDEzNSAxMy4wMzU1MDY1LDIwLjE5NTAxMTUgMTIuNzEsMjAuMTYgTDcuNzgsMjAuMTYgQzMuOTQ1MzI2MzYsMjAuMDc4MDEwMyAwLjg5MDc2ODA4MywxNi45MjUzNDk0IDAuOTMsMTMuMDkgQzAuODc1ODM1NTA1LDkuNjYwNjQ4MDkgMy4zMTQzODQ4Nyw2LjY5NzEzMzI0IDYuNjksNi4wOSBDNy41MTk2NTc5MywyLjU0ODU1MzAxIDEwLjY2MjgyMDIsMC4wMzMxOTcxNDU0IDE0LjMsNy40Mzk3Mjc1NGUtMTYgQzE2LjEwOTczODMsLTAuMDAxNDg1NjU1NzUgMTcuODU1NjkzOSwwLjY2ODM5MTIwMiAxOS4yLDEuODggTDE5LjYxLDEuOCBDMjAuMDA5MTQ2OSwxLjcyNjU5ODEyIDIwLjQxNDE2MDEsMS42ODk3Nzg3NCAyMC44MiwxLjY5IEMyMy44ODE0MDMyLDEuNzE2MjI5MTUgMjYuNTIyODY4LDMuODQ0MzA1ODUgMjcuMiw2LjgzIEMyOS41MTI4MDY3LDguMDY0ODYwNjggMzAuOTUyMzQ2MSwxMC40NzgyMDYxIDMwLjk0LDEzLjEgQzMwLjk3MzYzOTQsMTYuOTM1Mjg1NiAyNy45MTQ2Njg5LDIwLjA4MzQzODkgMjQuMDgsMjAuMTYgTDIwLjUxLDIwLjE2IEwyMC41MSwyMC4xNSBaIiBpZD0iRmlsbC0xIj48L3BhdGg+ICAgICAgPHBvbHlnb24gaWQ9IkZpbGwtNCIgcG9pbnRzPSIxNS41MyAxMS44NSAxNS41MyAyMy4xOSAxMS4xOCAyMy4xOSAxNi42OSAzMCAyMi4wOSAyMy4xOSAxNy43MiAyMy4xOSAxNy43MiAxMS44NSI+PC9wb2x5Z29uPiAgPC9nPjwvc3ZnPg==);
+    &::after {
+      /* Font Awesome creates an svg from this, see the next rule for styling this */
+      content: '\f0ed';
+      font-family: "Font Awesome 5 Solid";
+      font-weight: 900;
+      display: none;
     }
-
-    &:hover::before {
-      width: 19px;
-      height: 19px;
-      background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMzAgMzAiPiAgPGc+ICAgIDxwYXRoIGlkPSJGaWxsLTEiIGQ9Ik0xOS41MSwyMC4xNWEuODUuODUsMCwwLDEtLjcyLS40NiwyLjIsMi4yLDAsMCwxLDAtMS44My44NS44NSwwLDAsMSwuNzQtLjQ4SDIzLjFhNC4yLDQuMiwwLDAsMCw0LjItNC4yMXMwLS4wNSwwLS4wOGE0LjI0LDQuMjQsMCwwLDAtMi43LTQsMS4zNywxLjM3LDAsMCwxLS44Ny0xLjE1LDMuOTEsMy45MSwwLDAsMC0zLjg5LTMuNDUsNC41MSw0LjUxLDAsMCwwLTEuNTEuMjQsMS4zMSwxLjMxLDAsMCwxLTEuNDItLjMyLDQuODIsNC44MiwwLDAsMC0zLjYtMS41OUE1LjA4LDUuMDgsMCwwLDAsMTEsMy4zMiw1LjMzLDUuMzMsMCwwLDAsOC4xMyw3LjU2LDEuMzgsMS4zOCwwLDAsMSw2LjgsOC44YTQuMTksNC4xOSwwLDAsMC00LjA4LDQuMjksNC4xOSw0LjE5LDAsMCwwLDQuMDYsNC4zaDQuOTRhLjgzLjgzLDAsMCwxLC43NC40OCwyLjIsMi4yLDAsMCwxLDAsMS44My43Mi43MiwwLDAsMS0uNzUuNDZINi43OEE3LDcsMCwwLDEtLjA3LDEzLjA5YTcsNywwLDAsMSw1Ljc2LTdBNy44OSw3Ljg5LDAsMCwxLDEzLjMsMGE3LjMxLDcuMzEsMCwwLDEsNC45LDEuODhsLjQxLS4wOGE2LjY3LDYuNjcsMCwwLDEsMS4yMS0uMTEsNi42LDYuNiwwLDAsMSw2LjM4LDUuMTQsNy4wNyw3LjA3LDAsMCwxLDMuNzQsNi4yNyw3LDcsMCwwLDEtNi44Niw3LjA2SDE5LjUxWiIvPiAgICA8cG9seWdvbiBpZD0iRmlsbC00IiBwb2ludHM9IjE0LjUzIDExLjg1IDE0LjUzIDIzLjE5IDEwLjE4IDIzLjE5IDE1LjY5IDMwIDIxLjA5IDIzLjE5IDE2LjcyIDIzLjE5IDE2LjcyIDExLjg1IDE0LjUzIDExLjg1Ii8+ICA8L2c+ICA8L3N2Zz4=);
+    & [data-fa-pseudo-element=":after"]{
+      margin-left: var(--hw-spacing);
     }
   }
 
   &__link--arrow {
     position: relative;
-    margin-left: var(--hw-spacing);
 
     &::before {
-      position: absolute;
-      content: "";
-      width: 15px;
-      height: 15px;
-      top: 50%;
-      transition: all 0.5s ease;
-      transform: translateX(0) translateY(-50%);
-      left: -var(--hw-spacing-small);
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNiA5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPiAgICA8ZyBpZD0iTmF2YmFyXy1Ib3Zlcl9NZW55LUNvcHktMiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE0NS4wMDAwMDAsIC0yNjUuMDAwMDAwKSI+ICAgICAgICA8cG9seWdvbiBpZD0iUGFnZS0xIiBmaWxsPSIjMjZCNTc2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDguMDAwMDAwLCAyNjkuNTAwMDAwKSByb3RhdGUoLTkwLjAwMDAwMCkgdHJhbnNsYXRlKC0xNDguMDAwMDAwLCAtMjY5LjUwMDAwMCkgIiBwb2ludHM9IjE1MS4xODcyIDI2Ni41IDE0OCAyNjkuNzcyNjcyIDE0NC44MTI4IDI2Ni41IDE0NC44MTIyIDI2Ni41IDE0My41IDI2Ny44NjM1MTIgMTQ4IDI3Mi41IDE1Mi41IDI2Ny44NjM1MTIgMTUxLjE4NzggMjY2LjUiPjwvcG9seWdvbj4gICAgPC9nPjwvc3ZnPg==);
+      /* Font Awesome creates an svg from this, see the next rule for styling this */
+      content: '\f054';
+      font-family: "Font Awesome 5 Solid";
+      font-weight: 900;
+      display: none;
     }
-
-    &:hover::before {
-      transform: translateX(var(--hw-spacing-smallest)) translateY(-50%);
+    & [data-fa-pseudo-element=":before"]{
+      margin-left: var(--hw-spacing-smallest);
+      margin-right: var(--hw-spacing-smallest);
+      color: var(--hw-color-green);
+      transition: all 0.5s ease;
+      transform: translateX(0);
+    }
+    &:hover [data-fa-pseudo-element=":before"]{
+      transform: translateX(var(--hw-spacing-smallest));
     }
   }
 }

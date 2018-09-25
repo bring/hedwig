@@ -17,10 +17,7 @@ Modal component
     <div class="hw-modal__content hw-animate hw-animate--slide-in-bottom">
       <div class="hw-modal__header">
         <button class="hw-modal__close" data-hw-modal-trigger="Modal1">
-          <svg class="hw-icon" role="img" aria-labelledby="close">
-             <title id="close">Close modal</title>
-             <use xlink:href="#cross-thin"></use>
-          </svg>
+          <i class="fal fa-times fa-2x" title="Close modal"></i>
         </button>
         <div class="hw-modal__title">
           <h1>Lorem ipsum dolor sit ameter</h1>
@@ -45,10 +42,7 @@ Modal component
     <div class="hw-modal__content hw-animate hw-animate--slide-in-bottom">
       <div class="hw-modal__header">
         <button class="hw-modal__close" data-hw-modal-trigger="Modal2">
-          <svg class="hw-icon" role="img" aria-labelledby="close">
-             <title id="close">Close modal</title>
-             <use xlink:href="#cross-thin"></use>
-          </svg>
+          <i class="fal fa-times fa-2x" title="Close modal"></i>
         </button>
         <div class="hw-modal__title">
           <h1>Lorem ipsum dolor sit ameter</h1>
