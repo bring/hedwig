@@ -56,6 +56,7 @@ const HWAutoComplete = ({ moduleSelector = '[data-hw-autocomplete]' } = {}) => {
   function onReset(e, searchField, autocomplete) {
     autocomplete.setAttribute('data-hw-autocomplete-reset-visible', false);
     searchField.value = '';
+    searchField.focus();
   }
 
   /**
