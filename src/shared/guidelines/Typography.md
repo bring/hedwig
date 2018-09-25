@@ -62,8 +62,5 @@ Posten uses color primary and Bring uses color primary darker because of accessa
 
 #### Primary dark
 ```html|span-4,plain,light
-  <svg class="hw-icon hw-color-primary-dark">
-  <use xlink:href="#bud"></use>
-  </svg>
   <p class="hw-color-primary-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
 ```
