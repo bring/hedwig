@@ -43,4 +43,13 @@
       margin-bottom: 0;
     }
   }
+
+  &--no-bullets {
+    list-style: none;
+    padding-left: 0;
+
+    & li::before {
+      display: none;
+    }
+  }
 }
