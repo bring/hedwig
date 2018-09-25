@@ -12,46 +12,37 @@
   transition: color 0.2s ease;
   height: 54px;
 
+  &-label-menu, &-label-close {
+    display: none;
+  }
+
   @media (--large) {
     position: relative;
     height: 72px;
     padding-right: 0;
-  }
 
-  & > span {
-    display: none;
-
-    @media (--large) {
-      display: inline;
+    &-label-menu, &-label-close {
+      padding-right: 6px;
     }
   }
-
-  & > span + span {
-    /* Don't display the second span */
-    display: none;
-  }
 }
 
-.hw-navbar--active .hw-navbar__menu-button {
-
-  & > span + span {
-    /* Don't display the second span */
+@media(--large) {
+  .hw-navbar .hw-navbar__menu-button-label-menu {
     display: inline;
   }
-
-  & > span {
-    /* Don't display the second span */
-    display: none;
+  .hw-navbar--active {
+    & .hw-navbar__menu-button-label-close {
+      display: inline;
+    }
+    & .hw-navbar__menu-button-label-menu {
+      display: none;
+    }
   }
 }
-
 /**
  * Hamburger
  */
-
-.hw-navbar .hw-navbar__menu-button span {
-  padding-right: 6px;
-}
 
 .hw-hamburger {
   width: var(--hw-spacing);

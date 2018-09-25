@@ -23,6 +23,8 @@ const HWNavbar = ({
   const SETTINGS = {
     navbar: q(navbarSelector), // All navbar DOM nodes
     menuButton: q(menuButtonSelector),
+    menuButtonLabelMenu: q('.hw-navbar__menu-button-label-menu'),
+    menuButtonLabelClose: q('.hw-navbar__menu-button-label-close'),
     searchButton: q(searchButtonSelector),
     overlay: q(overlaySelector),
     hamburgerIcon: q(hamburgerIcon),
@@ -30,6 +32,14 @@ const HWNavbar = ({
     footer: q('footer'),
     main: q('main'),
   };
+
+
+  function setMenuButtonLabelWidths(){
+    if(SETTINGS.menuButtonLabelMenu.offsetWidth > 0) {
+      SETTINGS.menuButtonLabelMenu.style.width = SETTINGS.menuButtonLabelMenu.offsetWidth + 'px';
+      SETTINGS.menuButtonLabelClose.style.width = SETTINGS.menuButtonLabelMenu.offsetWidth + 'px';
+    }
+  }
 
   /**
    * @function toggleMenu
@@ -53,6 +63,9 @@ const HWNavbar = ({
       return;
     }
 
+    if(!SETTINGS.menuButtonLabelClose.style.width){
+      setMenuButtonLabelWidths();
+    }
     SETTINGS.navbar.classList.add(activeClass);
     SETTINGS.hamburgerIcon.classList.add(activeHamburgerClass);
     if (SETTINGS.footer && SETTINGS.main) {
@@ -91,7 +104,8 @@ const HWNavbar = ({
 
       // Attach event listeners
       SETTINGS.menuButton.addEventListener('click', toggleMenu);
-      SETTINGS.menuButton.style.width = SETTINGS.menuButton.offsetWidth + 'px';
+
+      setMenuButtonLabelWidths();
     }
 
     // Optional search button
