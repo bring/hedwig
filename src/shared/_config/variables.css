@@ -41,7 +41,7 @@
    * Width limitations
    */
 
-  --hw-width-slim:510px;
+  --hw-width-slim: 590px;
   --hw-width-default: 690px; /* Max default width (articles) */
   --hw-width-wide: 1200px; /* Default site width, used in footer etc */
   --hw-width-narrow: 300px; /* Narrow column for centered contents */
