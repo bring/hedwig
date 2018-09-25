@@ -27,4 +27,10 @@
    */
 
   --hw-color-button-text: var(--hw-color-black);
+
+  /**
+   * Logo width adjusted for Bring logo
+   */
+  --hw-logo-width: 128px;
+
 }

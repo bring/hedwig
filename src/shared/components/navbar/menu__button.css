@@ -1,96 +1,52 @@
 .hw-navbar__menu-button {
-  color: var(--hw-color-gray-dark);
   z-index: var(--z-index--navbar-drawer-foreground);
   position: absolute;
   right: 0;
   top: 0;
   display: flex;
   align-items: center;
-  padding: calc(var(--hw-spacing) + 3px) var(--hw-spacing-small)
-    var(--hw-spacing) var(--hw-spacing-small);
+  padding-left: var(--hw-spacing-smaller);
+  padding-right: var(--hw-spacing-smaller);
   border: 0;
   font-size: var(--hw-font-size-small);
   transition: color 0.2s ease;
+  height: 54px;
+
+  &-label-menu, &-label-close {
+    display: none;
+  }
 
   @media (--large) {
     position: relative;
-    padding: 0 0 0 var(--hw-spacing-small);
-  }
+    height: 72px;
+    padding-right: 0;
 
-  &:hover,
-  &:focus {
-    color: var(--hw-color-primary-dark);
-    outline: 0;
-    cursor: pointer;
-  }
-
-  & > span {
-    display: none;
-
-    @media (--large) {
-      display: inline;
+    &-label-menu, &-label-close {
+      padding-right: 6px;
     }
   }
-
-  & > span + span {
-    /* Don't display the second span */
-    display: none;
-  }
 }
 
-.hw-navbar--active .hw-navbar__menu-button {
-  color: var(--hw-color-gray-light);
-
-  &:hover,
-  &:focus {
-    color: var(--hw-color-white);
-  }
-
-  & > span + span {
-    /* Don't display the second span */
+@media(--large) {
+  .hw-navbar .hw-navbar__menu-button-label-menu {
     display: inline;
   }
-
-  & > span {
-    /* Don't display the second span */
-    display: none;
+  .hw-navbar--active {
+    & .hw-navbar__menu-button-label-close {
+      display: inline;
+    }
+    & .hw-navbar__menu-button-label-menu {
+      display: none;
+    }
   }
 }
-
 /**
  * Hamburger
  */
 
-.hw-navbar .hw-navbar__menu-button {
-  & .hw-hamburger__part {
-    background: var(--hw-color-gray-dark);
-  }
-
-  &:hover .hw-hamburger__part,
-  &:focus .hw-hamburger__part {
-    background: var(--hw-color-primary);
-  }
-}
-
-.hw-navbar--active .hw-navbar__menu-button {
-  & .hw-hamburger__part {
-    background: var(--hw-color-gray-light);
-  }
-
-  &:hover .hw-hamburger__part,
-  &:focus .hw-hamburger__part {
-    background: var(--hw-color-white);
-  }
-}
-
 .hw-hamburger {
   width: var(--hw-spacing);
   display: inline-block;
-
-  @media (--large) {
-    margin-left: var(--hw-spacing-smaller);
-  }
-
   &__part {
     display: block;
     margin-bottom: 5px;

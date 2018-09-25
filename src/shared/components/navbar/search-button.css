@@ -1,0 +1,25 @@
+.hw-navbar__search-button {
+  z-index: var(--z-index--navbar-drawer-foreground);
+  position: absolute;
+  left: 0;
+  border: 0;
+  font-size: var(--hw-font-size-smaller);
+  padding-left: var(--hw-spacing-smaller);
+  padding-right: var(--hw-spacing-smaller);
+  height: 54px;
+  transition: color 0.3s ease;
+
+
+  & .hw-navbar__search-text {
+    display: none;
+  }
+  @media (--large) {
+    position: relative;
+    font-size: var(--hw-font-size-small);
+    height: 72px;
+    padding-right: 0;
+    & .hw-navbar__search-text {
+      display: inline-block;
+    }
+  }
+}
