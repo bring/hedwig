@@ -96,15 +96,6 @@
     }
   }
 
-  &__error {
-    display: block;
-    padding: var(--hw-spacing-smallest) 0;
-    text-align: right;
-    transform: translateY(0);
-    transition: transform 200ms;
-    opacity: 1;
-  }
-
   /* Optional element description */
 
   &__suggestions {

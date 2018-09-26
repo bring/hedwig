@@ -52,7 +52,7 @@
         width: 10px;
         height: 9px;
         border-bottom: 3px solid var(--hw-color-gray-darker);
-        content: '';
+        content: "";
         transform: translateY(-50%) rotate(-45deg);
       }
 
@@ -64,7 +64,7 @@
         width: 11px;
         height: 7px;
         border-left: 3px solid var(--hw-color-gray-darker);
-        content: '';
+        content: "";
         transform: translateY(-50%) rotate(-45deg);
       }
     }
@@ -89,8 +89,17 @@
   }
 
   /**
-   * Modifiers
+   * Modifers
    */
+
+  &--error {
+    position: relative;
+  }
+
+  &--error .hw-checkbox__indicator {
+    border: 3px solid var(--hw-color-secondary) !important;
+    transition: border 150ms;
+  }
 
   &--horisontal {
     display: inline-block;

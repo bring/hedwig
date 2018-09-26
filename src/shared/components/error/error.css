@@ -30,17 +30,6 @@
     z-index: 1;
   }
 
-  /**
-   * Modifers
-   */
-
-  &--simple {
-    &::before {
-      content: "" !important;
-      font-family: "";
-    }
-  }
-
   &--is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -48,6 +37,20 @@
     padding: 0;
     transform: translateY(-4px);
   }
+
+  &--align-left {
+    text-align: left !important;
+  }
+}
+
+.hw-error-simple {
+  display: block;
+  padding: var(--hw-spacing-smallest) 0;
+  font-size: var(--hw-font-size-small);
+  text-align: right;
+  transform: translateY(0);
+  transition: transform 200ms;
+  opacity: 1;
 }
 
 /**

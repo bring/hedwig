@@ -72,7 +72,7 @@ Use your own javascript to toggle the active class, and to bind the selected val
 
     </div>
 
-    <div class="hw-autocomplete__error">No results found</div>
+    <div class="hw-error-simple">No results found</div>
 
     <div id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>

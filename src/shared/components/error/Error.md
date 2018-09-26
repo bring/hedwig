@@ -12,22 +12,28 @@ Generic error message for input fields
 ### Modifiers
 
 ```code
-[Simple version]         .hw-error--simple
+[Align left version]      .hw-error--align-left
+[Hidden version]          .hw-error--is-hidden
 ```
+
+### Variants
+
+```code
+[Default error]           .hw-error
+[Simple version]          .hw-error-simple      (no icon)
+[Summary version]         .hw-error-summary     (Error detail box)
+```
+
+### Simple version
 
 ```html
 <input type="text" class="hw-input hw-input--error" />
-<div class="hw-error hw-error--simple">
+<div class="hw-error-simple">
   Simple error message
 </div>
 ```
 
-```code
-[Label]                 .hw-error
-[Error summary]         .hw-error-summary
-```
-
-## Error summary
+### Error summary
 
 ```html
 <div class="hw-error-summary">
