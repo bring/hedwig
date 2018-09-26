@@ -9,7 +9,7 @@
   background-color: var(--hw-color-primary-dark);
   color: var(--hw-color-white);
 
- &--large {
+  &--large {
     font-size: var(--hw-font-size-h2);
     border-left-width: 7px;
     border-right-width: 7px;
@@ -28,9 +28,5 @@
 
   &--smaller {
     font-size: var(--hw-font-size-smaller);
-  }
-
-  &--uppercase {
-    text-transform: uppercase;
   }
 }

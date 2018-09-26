@@ -26,6 +26,7 @@ Provides styling for badges
   Badge
 </div>
 ```
+
 ### In a sentence
 
 ```html|span-4
@@ -35,6 +36,7 @@ I am a <div class="hw-badge hw-badge--small">
 ```
 
 ### Sizes
+
 ```html
 <div class="hw-badge hw-badge--larger">
   Badge
@@ -53,13 +55,6 @@ I am a <div class="hw-badge hw-badge--small">
 </div>
 
 <div class="hw-badge hw-badge--smaller">
-  Badge
-</div>
-```
-
-### Uppercase
-```html
-<div class="hw-badge hw-badge--uppercase">
   Badge
 </div>
 ```
