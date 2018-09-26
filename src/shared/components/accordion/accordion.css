@@ -93,14 +93,11 @@
   }
 
   &--menu {
-    /*padding-left: var(--hw-spacing);
-    padding-right: var(--hw-spacing);*/
     border: 0;
     color: var(--hw-color-primary-dark);
-    /*background-color: var(--hw-color-gray-lighter);*/
     background-color: transparent;
     & .hw-accordion__item:not(:first-child) {
-        border-top: 3px solid var(--hw-color-gray-lightest);
+      border-top: 3px solid var(--hw-color-gray-lightest);
     }
     & .hw-accordion__trigger {
       font-size: var(--hw-font-size-p);
