@@ -17,8 +17,8 @@
     * Link Colors
     */
 
-  --hw-color-link: #377500;
   --hw-color-link-underline: rgb(123, 193, 68, 0.25);
+  --hw-color-link: #4ca200;
   --hw-color-link-hover: #000;
   --hw-color-link-underline-hover: #000;
 
