@@ -33,6 +33,7 @@ const HWAccordion = ({
     // Collapse all items
     items.forEach((item) => {
       const trigger = q('.hw-accordion__trigger', item);
+      if(!trigger) return;
       const contents = q('.hw-accordion__contents', item);
       const triggerHeight = trigger.getAttribute('data-hw-accordion-trigger-height');
 
@@ -143,6 +144,7 @@ const HWAccordion = ({
       // Attach listeners, aria-attributes and heights to all items
       items.forEach((item, index) => {
         const trigger = q('.hw-accordion__trigger', item);
+        if(!trigger) return;
         const contents = q('.hw-accordion__contents', item);
 
         // Set name and index attributes

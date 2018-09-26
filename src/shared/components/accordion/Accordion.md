@@ -9,6 +9,10 @@ Required:
 
 [data-hw-accordion="name"]            name of accordion (must be unique, used for aria-roles)
 
+Modifiers:
+[Dark]    .hw-accordion--dark
+[Menu]    .hw-accordion--menu
+
 Optional:
 
 [data-hw-accordion-allow-multiple]    Allow multiple items to be open at once
@@ -207,6 +211,69 @@ This version is used in the footer and navbar (on mobile)
           </li>
         </ul>
       </div>
+    </li>
+  </ul>
+```
+
+### Menu accordion
+
+This version is used in the menu on mobile
+
+```html|span-4
+  <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="example4" data-hw-accordion-allow-multiple>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Kundeservice
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+      <ul class="hw-accordion__link-items">
+        <li class="hw-accordion__link-item">
+          <a href="#" class="hw-accordion__link">Lenke</a>
+        </li>
+        <li class="hw-accordion__link-item">
+          <a href="#" class="hw-accordion__link">Lenke</a>
+        </li>
+      </ul>
+      </div>
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Våre tjenester
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <ul class="hw-accordion__link-items">
+          <li class="hw-accordion__link-item">
+            <a href="#" class="hw-accordion__link">Lenke</a>
+          </li>
+          <li class="hw-accordion__link-item">
+            <a href="#" class="hw-accordion__link">Lenke</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Søk etter
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <ul class="hw-accordion__link-items">
+          <li class="hw-accordion__link-item">
+            <a href="#" class="hw-accordion__link">Lenke</a>
+          </li>
+          <li class="hw-accordion__link-item">
+            <a href="#" class="hw-accordion__link">Lenke</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="hw-accordion__item">
+      <a class="hw-accordion__link" href="#">Lenke</a>
+    </li>
+    <li class="hw-accordion__item">
+      <a class="hw-accordion__link" href="#">Lenke</a>
     </li>
   </ul>
 ```
