@@ -78,8 +78,9 @@
     }
 
     &:disabled ~ .hw-checkbox__indicator {
-      border-color: var(--hw-color-gray-light);
-      background: var(--hw-color-gray-lighter);
+      border-color: var(--hw-color-gray-lighter);
+      background-color: transparent;
+      cursor: not-allowed;
     }
 
     &:disabled:checked ~ .hw-checkbox__indicator {
