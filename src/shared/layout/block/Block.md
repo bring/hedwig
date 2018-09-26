@@ -69,7 +69,12 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 ```html|span-6,responsive
   <div class="hw-helpers-margin-highlighter">
     <div class="hw-block hw-block--px">
-      <p>Default container</p>
+      <p>Default px block</p>
+    </div>
+  </div>
+  <div class="hw-helpers-margin-highlighter">
+    <div class="hw-block hw-block--px-fluid">
+      <p>Fluid px block</p>
     </div>
   </div>
 ```
@@ -95,6 +100,7 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 
 ```code
 [Padding sides]             .hw-block--px
+[Fluid Padding sides]       .hw-block--px-fluid
 [Margin top]                .hw-block--mt
 [Small margin top]          .hw-block--mt-small
 [Large margin top]          .hw-block--mt-large

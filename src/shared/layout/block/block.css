@@ -157,21 +157,21 @@
     position: relative;
   }
 
-  &--px-fixed {
-    padding: 0 var(--hw-spacing-smaller);
+  &--px {
+    padding: 0 var(--hw-spacing);
   }
 
   /**
    * Modifiers: Responsive gutter
    */
 
-  &--px {
+  &--px-fluid {
     padding: 0 var(--hw-spacing-smaller);
   }
 }
 
 @media (--medium) {
-  .hw-block--px {
+  .hw-block--px-fluid {
     padding: 0 var(--hw-spacing-large);
   }
 }
