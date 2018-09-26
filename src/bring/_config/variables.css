@@ -18,7 +18,7 @@
     */
 
   --hw-color-link: #377500;
-  --hw-color-link-underline: rgb(123, 193, 68, 0.5);
+  --hw-color-link-underline: rgb(123, 193, 68, 0.25);
   --hw-color-link-hover: #000;
   --hw-color-link-underline-hover: #000;
 
@@ -32,5 +32,4 @@
    * Logo width adjusted for Bring logo
    */
   --hw-logo-width: 128px;
-
 }
