@@ -1,8 +1,8 @@
-import { library, dom } from '@fortawesome/fontawesome-svg-core';
-import * as fas from '@fortawesome/pro-solid-svg-icons';
-import * as far from '@fortawesome/pro-regular-svg-icons';
-import * as fal from '@fortawesome/pro-light-svg-icons';
-import * as fab from '@fortawesome/free-brands-svg-icons';
+import { library, dom } from "@fortawesome/fontawesome-svg-core";
+import * as fas from "@fortawesome/pro-solid-svg-icons";
+import * as far from "@fortawesome/pro-regular-svg-icons";
+import * as fal from "@fortawesome/pro-light-svg-icons";
+import * as fab from "@fortawesome/free-brands-svg-icons";
 
 /**
  *
@@ -15,10 +15,9 @@ import * as fab from '@fortawesome/free-brands-svg-icons';
  * far - Font Awesome Regular
  */
 
-
 /** Enable searching through pseudo elements like ::before and ::after for icons
-  *  Also see https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
-  */
+ *  Also see https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
+ */
 
 window.FontAwesomeConfig = {
   searchPseudoElements: true
@@ -80,6 +79,8 @@ library.add(fas.faTimesCircle);
 library.add(fas.faTrashAlt);
 library.add(fas.faUnlock);
 library.add(fas.faUser);
+library.add(fas.faLocationArrow);
+library.add(fas.faBoxOpen);
 
 library.add(fab.faFacebookF);
 library.add(fab.faGooglePlusG);
