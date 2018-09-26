@@ -22,9 +22,9 @@
           <title id="Logo">Go to homepage</title>
           <use xlink:href="#logo-posten"></use>
         </svg>
-        <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+        <svg class="hw-navbar__logo-gray" aria-labelledby="Logo" role="img">
           <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-posten-white"></use>
+          <use xlink:href="#logo-posten-gray"></use>
         </svg>
       </a>
 
@@ -101,7 +101,7 @@
         <div class="hw-navbar__drawer-desktop">
           <div class="hw-grid">
             <div class="hw-grid__item hw-one-quarter">
-              <h2>Sende</h2>
+              <h3>Sende</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -118,7 +118,7 @@
               </ul>
             </div><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h2>Motta</h2>
+              <h3>Motta</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -132,7 +132,7 @@
               </ul>
             </div><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h2>Rådgivning</h2>
+              <h3>Rådgivning</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -149,7 +149,7 @@
               </ul>
             </div><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h2>Kundeservice</h2>
+              <h3>Kundeservice</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -197,9 +197,9 @@
           <title id="Logo">Go to homepage</title>
           <use xlink:href="#logo-posten"></use>
         </svg>
-        <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+        <svg class="hw-navbar__logo-gray" aria-labelledby="Logo" role="img">
           <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-posten-white"></use>
+          <use xlink:href="#logo-posten-gray"></use>
         </svg>
       </a>
       <nav class="hw-navbar__menu">
@@ -221,7 +221,7 @@
         <div class="hw-navbar__drawer-desktop">
           <div class="hw-grid">
             <div class="hw-grid__item hw-one-quarter">
-              <h2>Sende</h2>
+              <h3>Sende</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -238,7 +238,7 @@
               </ul>
             </div><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h2>Motta</h2>
+              <h3>Motta</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -252,7 +252,7 @@
               </ul>
             </div><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h2>Rådgivning</h2>
+              <h3>Rådgivning</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -269,7 +269,7 @@
               </ul>
             </div><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h2>Kundeservice</h2>
+              <h3>Kundeservice</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -304,9 +304,9 @@
           <title id="Logo">Go to homepage</title>
           <use xlink:href="#logo-posten-white"></use>
         </svg>
-        <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+        <svg class="hw-navbar__logo-gray" aria-labelledby="Logo" role="img">
           <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-posten-white"></use>
+          <use xlink:href="#logo-posten-gray"></use>
         </svg>
       </div>
       <nav class="hw-navbar__menu">
@@ -342,9 +342,9 @@
           <title id="Logo">Go to homepage</title>
           <use xlink:href="#logo-posten"></use>
         </svg>
-        <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+        <svg class="hw-navbar__logo-gray" aria-labelledby="Logo" role="img">
           <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-posten-white"></use>
+          <use xlink:href="#logo-posten-gray"></use>
         </svg>
       </a>
     </div>
@@ -363,9 +363,9 @@
           <title id="Logo">Go to homepage</title>
           <use xlink:href="#logo-posten"></use>
         </svg>
-        <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+        <svg class="hw-navbar__logo-gray" aria-labelledby="Logo" role="img">
           <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-posten-white"></use>
+          <use xlink:href="#logo-posten-gray"></use>
         </svg>
       </a>
       <nav class="hw-navbar__menu">
