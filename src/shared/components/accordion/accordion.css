@@ -92,6 +92,50 @@
     transform: rotate(-45deg);
   }
 
+  &--menu {
+    /*padding-left: var(--hw-spacing);
+    padding-right: var(--hw-spacing);*/
+    border: 0;
+    color: var(--hw-color-primary-dark);
+    /*background-color: var(--hw-color-gray-lighter);*/
+    background-color: transparent;
+    & .hw-accordion__item:not(:first-child) {
+        border-top: 3px solid var(--hw-color-gray-lightest);
+    }
+    & .hw-accordion__trigger {
+      font-size: var(--hw-font-size-p);
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      border: 0;
+      transition: background-color 0.5s ease;
+      &:active {
+        background-color: rgb(0,0,0,0.1);
+        transition: 0s;
+      }
+    }
+    & .hw-accordion__link {
+      padding-top: var(--hw-spacing-smaller);
+      padding-bottom: var(--hw-spacing-smaller);
+      display: inline-block;
+      color: var(--hw-color-primary-dark);
+      width: 100%;
+      transition: background-color 0.5s ease;
+      &:active {
+        background-color: rgb(0,0,0,0.1);
+        transition: background-color 0s;
+      }
+    }
+    & .hw-accordion__link-items {
+      list-style: none;
+      padding-left: var(--hw-spacing);
+    }
+
+    & .hw-accordion__contents {
+      padding-left: 0;
+    }
+  }
+
   /* TODO: Dark accordion does a lot of overriding – make as an own component? */
 
   &--dark {
