@@ -42,6 +42,11 @@
     animation-duration: 0.2s;
     background: #fff;
 
+    &--animate-out {
+      animation-name: slide-out-drawer;
+      animation-duration: 0.2s;
+    }
+
     @media (--large) {
       max-width: 50vw;
     }
@@ -118,8 +123,9 @@
   }
 
   &--animate-out {
-    animation-name: slide-out-drawer;
-    animation-duration: 0.2s;
+    animation-name: fade-out-drawer;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
   }
 }
 
@@ -160,6 +166,16 @@
 
   100% {
     transform: translateX(500px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out-overlay {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
     opacity: 0;
   }
 }

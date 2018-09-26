@@ -41,13 +41,11 @@ function trapFocus(element) {
  */
 export const HWDrawer = ({
   drawerSelector = '[data-hw-drawer]',
-  drawerTrigger = '[data-hw-drawer-trigger]'
+  drawerTrigger = '[data-hw-drawer-trigger]',
+  drawerContentSelector = '[data-hw-drawer-content]'
 } = {}) => {
   // Module settings object
-  const SETTINGS = {
-    drawers: qa(drawerSelector), // All drawer DOM nodes
-    triggers: qa(drawerTrigger)
-  };
+  const SETTINGS = { drawers: qa(drawerSelector), triggers: qa(drawerTrigger) }; // All drawer DOM nodes
 
   /**
    * @function moduleMethod
@@ -60,6 +58,7 @@ export const HWDrawer = ({
     const drawerId = elem.getAttribute('data-hw-drawer-trigger');
     const body = document.getElementsByTagName('BODY')[0];
     const drawer = q(`[data-hw-drawer=${drawerId}]`);
+    const drawerContent = q(drawerContentSelector, drawer);
     // add EventListeners to focusable elements in drawer to trap focus in drawer
     trapFocus(drawer);
 
@@ -69,6 +68,7 @@ export const HWDrawer = ({
       returnFocusEl = elem;
       drawer.setAttribute('aria-hidden', false);
       body.style.overflow = 'hidden';
+      drawerContent.classList.remove('hw-drawer__content--animate-out');
       drawer.classList.remove('hw-drawer--animate-out');
       drawer.classList.add('hw-drawer--open');
 
@@ -79,6 +79,7 @@ export const HWDrawer = ({
     } else {
       drawer.setAttribute('aria-hidden', true);
       // animation out drawer
+      drawerContent.classList.add('hw-drawer__content--animate-out');
       drawer.classList.add('hw-drawer--animate-out');
       setTimeout(() => {
         drawer.classList.remove('hw-drawer--open');
