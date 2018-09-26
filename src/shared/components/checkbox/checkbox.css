@@ -52,7 +52,7 @@
         width: 10px;
         height: 9px;
         border-bottom: 3px solid var(--hw-color-gray-darker);
-        content: '';
+        content: "";
         transform: translateY(-50%) rotate(-45deg);
       }
 
@@ -64,7 +64,7 @@
         width: 11px;
         height: 7px;
         border-left: 3px solid var(--hw-color-gray-darker);
-        content: '';
+        content: "";
         transform: translateY(-50%) rotate(-45deg);
       }
     }
@@ -78,8 +78,9 @@
     }
 
     &:disabled ~ .hw-checkbox__indicator {
-      border-color: var(--hw-color-gray-light);
-      background: var(--hw-color-gray-lighter);
+      border-color: var(--hw-color-gray-lighter);
+      background-color: transparent;
+      cursor: not-allowed;
     }
 
     &:disabled:checked ~ .hw-checkbox__indicator {
@@ -89,8 +90,17 @@
   }
 
   /**
-   * Modifiers
+   * Modifers
    */
+
+  &--error {
+    position: relative;
+  }
+
+  &--error .hw-checkbox__indicator {
+    border: 3px solid var(--hw-color-secondary) !important;
+    transition: border 150ms;
+  }
 
   &--horisontal {
     display: inline-block;

@@ -25,7 +25,8 @@
     background: var(--hw-color-white);
     width: 22px;
     height: 22px;
-    transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
+    transition: border-color 0.3s ease, max-height 0.3s ease,
+      transform 0.3s ease;
   }
 
   & > input {
@@ -42,7 +43,7 @@
       border-color: var(--hw-color-gray-darker);
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 10px;
         height: 10px;
@@ -58,7 +59,7 @@
       border-color: var(--hw-color-gray-darker);
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 10px;
         height: 10px;
@@ -69,5 +70,14 @@
         background: var(--hw-color-gray-darker);
       }
     }
+  }
+
+  /**
+   * Modifiers
+   */
+
+  &--error .hw-radio-button__indicator {
+    border: 3px solid var(--hw-color-secondary) !important;
+    transition: border 150ms;
   }
 }

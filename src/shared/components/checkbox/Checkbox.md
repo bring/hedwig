@@ -3,8 +3,10 @@
 ```code
 [Normal]          .hw-checkbox
 [Horisontal]      .hw-checkbox--horisontal
+[Error]           .hw-checkbox--error
 ```
 
+### Normal checkbox
 
 ```html
 <form>
@@ -28,6 +30,8 @@
 </form>
 ```
 
+### Horizontal checkboxes
+
 ```html
 <form>
   <label class="hw-checkbox hw-checkbox--horisontal">
@@ -47,5 +51,18 @@
     <input type="checkbox" disabled />
     <i class="hw-checkbox__indicator"></i>
   </label>
+</form>
+```
+
+### Checkbox with error
+
+```html
+<form>
+  <label class="hw-checkbox hw-checkbox--error">
+    <p class="hw-text-small">Checkbox</p>
+    <input type="checkbox" />
+    <i class="hw-checkbox__indicator"></i>
+  </label>
+  <div class="hw-error-simple hw-error--align-left">Error message!</div>
 </form>
 ```
