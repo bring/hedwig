@@ -9,10 +9,6 @@
    * Modifiers: padding and padding variations
    */
 
-  &--px {
-    padding: 0 var(--hw-spacing);
-  }
-
   &--mt {
     margin-top: var(--hw-spacing);
   }
@@ -159,5 +155,23 @@
 
   &--relative {
     position: relative;
+  }
+
+  &--px {
+    padding: 0 var(--hw-spacing);
+  }
+
+  /**
+   * Modifiers: Responsive gutter
+   */
+
+  &--px-fluid {
+    padding: 0 var(--hw-spacing-smaller);
+  }
+}
+
+@media (--medium) {
+  .hw-block--px-fluid {
+    padding: 0 var(--hw-spacing-large);
   }
 }

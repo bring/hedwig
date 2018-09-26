@@ -7,11 +7,13 @@ For service icons and logos, see [Icon](/Icon)
 ```
 
 ### Example code
+
 ```code
 <i class="fas fa-2x fa-eye"></i>
 ```
 
 ### Explanation of parts
+
 ```code
 fas: Icon set Solid
 fa-2x: Sizing
@@ -19,12 +21,15 @@ fa-eye: Name of icon
 ```
 
 ### Example icon
+
 ```html
 <i class="fas fa-2x fa-eye"></i>
 ```
 
 ### Icon sets
+
 We use three different icon sets from Font Awesome
+
 ```code
 fas: Solid
 far: Regular
@@ -32,16 +37,17 @@ fab: Brands
 ```
 
 ### Example icon sets
+
 ```html
 <i class="fa-fw fas fa-user"></i> Solid<br/>
 <i class="fa-fw far fa-user"></i> Regular<br/>
 <i class="fa-fw fab fa-facebook-f"></i> Brands<br/>
-
 ```
 
 ### Sizes
 
 Icon sizes are, by default, relative to the current font size.
+
 ```code
 fa-xs: extra small
 fa-sm: small
@@ -49,8 +55,9 @@ fa-ls: large
 fa-2x: double
 fa-3x: triple
 fa-4x: quadruple
-style="font-size: 100px" custom 
+style="font-size: 100px" custom
 ```
+
 Also see the [full sizing documentation from Font Awesome](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons)
 
 ### Example sizes
@@ -67,6 +74,7 @@ Also see the [full sizing documentation from Font Awesome](https://fontawesome.c
 ```
 
 ### Colors
+
 ```code
 hw-color-primary
 hw-color-green
@@ -76,6 +84,7 @@ hw-color-gray-darker
 ```
 
 ### Example colors
+
 ```html
 <i class="hw-color-primary fa-2x fas fa-eye"></i>
 <i class="hw-color-green fa-2x fas fa-eye"></i>
@@ -87,6 +96,7 @@ hw-color-gray-darker
 ### Full list
 
 #### Solid icons - fas
+
 ```html
 <i class="fa-2x fa-fw fas fa-at"></i> at<br/><br/>
 <i class="fa-2x fa-fw fas fa-arrows-alt-h"></i> arrows-alt-h<br/><br/>
@@ -94,6 +104,7 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-barcode-alt"></i> barcode-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-bars"></i> bars<br/><br/>
 <i class="fa-2x fa-fw fas fa-box"></i> box<br/><br/>
+<i class="fa-2x fa-fw fas fa-box-open"></i> box-open<br/><br/>
 <i class="fa-2x fa-fw fas fa-calculator"></i> calculator<br/><br/>
 <i class="fa-2x fa-fw fas fa-calendar"></i> calendar<br/><br/>
 <i class="fa-2x fa-fw fas fa-camera"></i> camera<br/><br/>
@@ -124,6 +135,7 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-info"></i> info<br/><br/>
 <i class="fa-2x fa-fw fas fa-key"></i> key<br/><br/>
 <i class="fa-2x fa-fw fas fa-lock"></i> lock<br/><br/>
+<i class="fa-2x fa-fw fas fa-location-arrow"></i> location-arrow<br/><br/>
 <i class="fa-2x fa-fw fas fa-map-marker-alt"></i> map-marker-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-minus"></i> minus<br/><br/>
 <i class="fa-2x fa-fw fas fa-mobile"></i> mobile<br/><br/>
@@ -146,6 +158,7 @@ hw-color-gray-darker
 ```
 
 #### Regular icons - far
+
 ```html
 <i class="fa-2x fa-fw far fa-bars"></i> bars<br/><br/>
 <i class="fa-2x fa-fw far fa-search"></i> search<br/><br/>
@@ -153,11 +166,13 @@ hw-color-gray-darker
 ```
 
 #### Light icons - fal
+
 ```html
 <i class="fa-2x fa-fw fal fa-times"></i> times<br/><br/>
 ```
 
 #### Brand icons - fab
+
 ```html
 <i class="fa-2x fa-fw fab fa-facebook-f"></i> facebook-f<br/><br/>
 <i class="fa-2x fa-fw fab fa-google-plus-g"></i> google-plus-g<br/><br/>
@@ -166,8 +181,8 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fab fa-linkedin-in"></i> linkedin-in<br/><br/>
 ```
 
-
 ### Full documentation from Font Awesome
+
 - [Sizing icons](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons)
 - [Fixed-Width Icons](https://fontawesome.com/how-to-use/on-the-web/styling/fixed-width-icons)
 - [Icons in a list](https://fontawesome.com/how-to-use/on-the-web/styling/icons-in-a-list)
@@ -179,14 +194,15 @@ hw-color-gray-darker
 - [Masking icons](https://fontawesome.com/how-to-use/on-the-web/styling/masking)
 - [Layering, text and counters](https://fontawesome.com/how-to-use/on-the-web/styling/layering)
 
-
 ### Functional icons moving to Font Awesome
 
 Starting from version 7.4, Hedwig uses functional icons from Font Awesome. The previous functional icons will be deprecated from version 8.
 This means that if you are using functional icons **you need to update your code to be able to use functional icons**
 
 The code must be changed from the previous format to the new format
+
 #### Previous format
+
 ```code
 <svg class="hw-icon">
   <use xlink:href="#[name]"></use>
@@ -194,92 +210,90 @@ The code must be changed from the previous format to the new format
 ```
 
 #### New format
+
 ```code
 <i class="[icon-set] fa-[name]"></i>
 ```
 
-
 For functional icons we are using Font Awesome. [Scroll up to see how to get started](#icon---functional).
 
-
-
-
 #### Conversion table from old functional icons
-**Old name** | **New name** | **Icon set**
------------- | ------------ | ------------
-add | plus | fas
-alert | exclamation | fas
-arrow-down | chevron-down | fas
-arrow-left | chevron-left | fas
-arrow-right | chevron-right | fas
-arrow-up | chevron-up | fas
-at | at | fas
-attachment  | paperclip | fas
-avatar   | user | fas, far
-award | award | fas
-barcode | barcode-alt | fas
-bin | trash-alt | fas
-binders | paperclip | fas
-bars | bars | fas, far
-box | box | fas
-brev | envelope | fas
-burger   | bars | fas, far
-calculator | calculator | fas
-calendar | calendar | fas
-camera | camera | fas
-card | credit-card | fas
-caret-down  | chevron-down | fas
-caret-left  | chevron-left | fas
-caret-right  | chevron-right | fas
-caret-up  | chevron-up | fas
-cart | shopping-cart | fas
-chart  | chart-line | fas
-chat  | comments | fas
-check | check | fas
-check-circle | check-circle | fas
-checkmark | check | fas
-clock | clock | fas
-close | times | fas
-computer  | desktop | fas
-cross  | times | fas
-cross-thin  | times | fas
-document | file | fas
-download | cloud-download | fas
-envelope | envelope | fas
-envelope-open | envelope-open | fas
-exclamation | exclamation | fas
-eye | eye | fas
-flag | flag | fas
-folder | folder | fas
-globe | globe | fas
-home | home | fas
-info | info | fas
-key | key |fas
-lock | lock | fas
-lock-open   | unlock | fas
-marker   | map-marker-alt | fas
-minus | minus | fas
-mobile | mobile | fas
-pakke | box | fas
-paperclip | paperclip | fas
-parcel | box | fas
-pencil | pencil | fas
-phone | phone | fas
-plus | plus | fas
-questionmark-circle  | question-circle | fas
-remove   | times-circle | fas
-refresh   | sync-alt | fas
-reply | reply | fas
-search | search | fas, far
-some-email | at | fas
-some-facebook | facebook-f | fab
-some-instagram | instagram | fab
-some-linkedin | linkedin-in | fab
-some-google | google-plus-g | fab
-some-twitter | twitter | fab
-star | star | fas
-success | check-circle | fas
-swipe-right | arrows-alt-h | fas
-target   | dot-circle | fas
-upload   | cloud-upload | fas
-user   | user | fas, far
+
+| **Old name**        | **New name**    | **Icon set** |
+| ------------------- | --------------- | ------------ |
+| add                 | plus            | fas          |
+| alert               | exclamation     | fas          |
+| arrow-down          | chevron-down    | fas          |
+| arrow-left          | chevron-left    | fas          |
+| arrow-right         | chevron-right   | fas          |
+| arrow-up            | chevron-up      | fas          |
+| at                  | at              | fas          |
+| attachment          | paperclip       | fas          |
+| avatar              | user            | fas, far     |
+| award               | award           | fas          |
+| barcode             | barcode-alt     | fas          |
+| bin                 | trash-alt       | fas          |
+| binders             | paperclip       | fas          |
+| bars                | bars            | fas, far     |
+| box                 | box             | fas          |
+| brev                | envelope        | fas          |
+| burger              | bars            | fas, far     |
+| calculator          | calculator      | fas          |
+| calendar            | calendar        | fas          |
+| camera              | camera          | fas          |
+| card                | credit-card     | fas          |
+| caret-down          | chevron-down    | fas          |
+| caret-left          | chevron-left    | fas          |
+| caret-right         | chevron-right   | fas          |
+| caret-up            | chevron-up      | fas          |
+| cart                | shopping-cart   | fas          |
+| chart               | chart-line      | fas          |
+| chat                | comments        | fas          |
+| check               | check           | fas          |
+| check-circle        | check-circle    | fas          |
+| checkmark           | check           | fas          |
+| clock               | clock           | fas          |
+| close               | times           | fas          |
+| computer            | desktop         | fas          |
+| cross               | times           | fas          |
+| cross-thin          | times           | fas          |
+| document            | file            | fas          |
+| download            | cloud-download  | fas          |
+| envelope            | envelope        | fas          |
+| envelope-open       | envelope-open   | fas          |
+| exclamation         | exclamation     | fas          |
+| eye                 | eye             | fas          |
+| flag                | flag            | fas          |
+| folder              | folder          | fas          |
+| globe               | globe           | fas          |
+| home                | home            | fas          |
+| info                | info            | fas          |
+| key                 | key             | fas          |
+| lock                | lock            | fas          |
+| lock-open           | unlock          | fas          |
+| marker              | map-marker-alt  | fas          |
+| minus               | minus           | fas          |
+| mobile              | mobile          | fas          |
+| pakke               | box             | fas          |
+| paperclip           | paperclip       | fas          |
+| parcel              | box             | fas          |
+| pencil              | pencil          | fas          |
+| phone               | phone           | fas          |
+| plus                | plus            | fas          |
+| questionmark-circle | question-circle | fas          |
+| remove              | times-circle    | fas          |
+| refresh             | sync-alt        | fas          |
+| reply               | reply           | fas          |
+| search              | search          | fas, far     |
+| some-email          | at              | fas          |
+| some-facebook       | facebook-f      | fab          |
+| some-instagram      | instagram       | fab          |
+| some-linkedin       | linkedin-in     | fab          |
+| some-google         | google-plus-g   | fab          |
+| some-twitter        | twitter         | fab          |
+| star                | star            | fas          |
+| success             | check-circle    | fas          |
+| swipe-right         | arrows-alt-h    | fas          |
+| target              | dot-circle      | fas          |
+| upload              | cloud-upload    | fas          |
+| user                | user            | fas, far     |
