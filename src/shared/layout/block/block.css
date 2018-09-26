@@ -157,6 +157,10 @@
     position: relative;
   }
 
+  &--bordered {
+    border: 6px solid var(--hw-color-secondary);
+  }
+
   &--px {
     padding: 0 var(--hw-spacing);
   }

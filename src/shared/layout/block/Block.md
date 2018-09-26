@@ -123,6 +123,7 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 [Gray light]              .hw-block--bg-gray-light
 [Gray lighter]            .hw-block--bg-gray-lighter
 [Gray lightest]           .hw-block--bg-gray-lightest
+[Yellow border]           .hw-block--bordered
 
 [White]                   .hw-block--bg-white
 [Alternating]             .hw-block--bg-alt

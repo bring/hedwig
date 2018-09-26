@@ -56,4 +56,8 @@
   &--light {
     font-family: var(--hw-font-primary-regular);
   }
+
+  &--no-padding {
+    margin-bottom: 0;
+  }
 }
