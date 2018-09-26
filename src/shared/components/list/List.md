@@ -39,3 +39,13 @@ Various list styles
   <li>List item</li>
 </ul>
 ```
+
+## Light List
+
+```html
+<ul class="hw-list hw-list--light">
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+</ul>
+```

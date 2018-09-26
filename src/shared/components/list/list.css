@@ -14,7 +14,7 @@
   }
 
   & li::before {
-    content: '';
+    content: "";
     position: absolute;
     background: var(--hw-color-gray-light);
     width: 10px;
@@ -51,5 +51,9 @@
     & li::before {
       display: none;
     }
+  }
+
+  &--light {
+    font-family: var(--hw-font-primary-regular);
   }
 }
