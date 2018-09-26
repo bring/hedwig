@@ -9,7 +9,7 @@ Creates a show button for loading more content on a site.
 ### Show more button
 
 ```html|span-6
-  <button class="hw-show-more">
-    <span class="hw-show-more__text">Show more</span>
-  </button>
+    <span class="hw-show-more">
+    <button class="hw-show-more__button">Show more</button>
+    </span>
 ```

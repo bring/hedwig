@@ -12,7 +12,7 @@
   text-align: center;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 50%;
@@ -23,7 +23,7 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     top: 50%;
@@ -41,8 +41,12 @@
   * Elements
   */
 
-  &__text::after {
-    content: "+";
+  &__button {
+    border: none;
+  }
+
+  &__button::after {
+    content: '+';
     margin-left: var(--hw-spacing-smaller);
     font-family: var(--hw-font-primary-bold);
     font-size: var(--hw-spacing-small);
@@ -56,8 +60,8 @@
     display: block;
   }
 
-  &--expanded .hw-toggle__text::after {
-    content: "-";
+  &--expanded .hw-toggle__button::after {
+    content: '-';
   }
 }
 
