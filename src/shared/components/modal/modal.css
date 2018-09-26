@@ -41,11 +41,13 @@
     border: 0;
     margin-left: var(--hw-spacing-smaller);
     margin-bottom: var(--hw-spacing-smaller);
+    width: 50px;
+    height: 50px;
 
     @media (--medium) {
       background: var(--hw-color-gray-lightest);
       position: absolute;
-      padding: var(--hw-spacing-smaller);
+      padding: var(--hw-spacing-smallest);
       right: -var(--hw-spacing-small);
       top: -var(--hw-spacing-small);
     }

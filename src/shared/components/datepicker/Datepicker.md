@@ -16,9 +16,7 @@ Hedwig will automatically style the datepicker with custom styles.
     <div id="datepicker-ajsd4ks8" class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" />
       <span class="hw-datepicker__icon">
-        <svg class="hw-icon">
-          <use xlink:href="#calendar"></use>
-        </svg>
+        <i class="fas fa-calendar"></i>
       </span>
     </div>
     <div class="hw-error hw-error--is-hidden">You must select a date</div>
@@ -33,9 +31,7 @@ Hedwig will automatically style the datepicker with custom styles.
     <div id="datepicker-ajsd4ks9" class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input hw-input--error" placeholder="Select a date" />
       <span class="hw-datepicker__icon">
-        <svg class="hw-icon">
-          <use xlink:href="#calendar"></use>
-        </svg>
+        <i class="fas fa-calendar"></i>
       </span>
     </div>
     <div class="hw-error">You must select a date</div>

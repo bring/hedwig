@@ -104,7 +104,3 @@ h4,
 .hw-text-smaller {
   font-size: var(--hw-font-size-smaller);
 }
-
-.hw-text-primary {
-  color: var(--hw-color-primary-dark);
-}

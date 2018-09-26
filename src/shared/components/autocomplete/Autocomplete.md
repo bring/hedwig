@@ -13,9 +13,9 @@ Use your own javascript to toggle the active class, and to bind the selected val
 
 ```html
 <label class="hw-label">Your address
-  
+
   <div class="hw-autocomplete" data-hw-autocomplete>
-  
+
     <div class="hw-autocomplete__input-wrapper">
       <input
         type="text"
@@ -26,8 +26,12 @@ Use your own javascript to toggle the active class, and to bind the selected val
         aria-owns="suggestions"
         placeholder="Placeholder"
       />
+      <button data-hw-autocomplete-reset class="hw-autocomplete__input-reset">
+        <i class="fa-sm fas fa-times-circle"></i>
+      </button>
+
     </div>
-  
+
     <div id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
         <input type="radio" name="hedwig" value="one" />
@@ -40,10 +44,9 @@ Use your own javascript to toggle the active class, and to bind the selected val
         <span class="hw-autocomplete__suggestion-text">Two</span>
       </label>
     </div>
-  
+
   </div>
 </label>
-
 ```
 
 ## Active autocomplete
@@ -51,7 +54,7 @@ Use your own javascript to toggle the active class, and to bind the selected val
 ```html
 <label class="hw-label">Your address
   <div class="hw-autocomplete hw-autocomplete--active" data-hw-autocomplete>
-  
+
     <div class="hw-autocomplete__input-wrapper">
       <input
         type="text"
@@ -63,8 +66,12 @@ Use your own javascript to toggle the active class, and to bind the selected val
         aria-owns="suggestions"
         placeholder="Placeholder"
       />
+
+      <button data-hw-autocomplete-reset class="hw-autocomplete__input-reset">
+        <i class="fa-sm fas fa-times-circle"></i>
+      </button>
     </div>
-  
+
     <div id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
         <input type="radio" name="hedwig" value="one" />
@@ -77,7 +84,7 @@ Use your own javascript to toggle the active class, and to bind the selected val
         <span class="hw-autocomplete__suggestion-text">Two</span>
       </label>
     </div>
-  
+
   </div>
 </label>
 ```

@@ -90,9 +90,7 @@ Styling for buttons.
 
 ```html|span-4
   <button class="hw-button hw-button--primary">
-    <svg class="hw-icon hw-icon--small">
-      <use xlink:href="#globe"></use>
-    </svg>
+    <i class="fas fa-globe"></i>
     Button with icon
   </button>
 ```

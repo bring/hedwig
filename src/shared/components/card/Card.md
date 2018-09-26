@@ -98,9 +98,7 @@ Styling for cards.
     <div class="hw-card__actions">
       <div class="hw-card__tag">Tag it</div>
       <div class="hw-card__date">
-        <svg class="hw-icon">
-          <use xlink:href="#clock"></use>
-        </svg>
+        <i class="fas fa-clock"></i>
         <time>18. Apr</time>
       </div>
     </div>

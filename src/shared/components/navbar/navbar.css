@@ -1,0 +1,252 @@
+/**
+ * Block
+ */
+
+.hw-navbar {
+  position: relative;
+  background: var(--hw-color-white);
+  border-bottom: 1px solid var(--hw-color-gray-lightest);
+  height: 54px;
+  @media (--large) {
+    height: 72px;
+  }
+
+  /**
+   * Elements
+   */
+
+  &__content {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: var(--hw-spacing);
+    padding-right: var(--hw-spacing);
+
+    @media (--xlarge) {
+      padding-left: var(--hw-spacing-large);
+      padding-right: var(--hw-spacing-large);
+    }
+  }
+
+  &__logo {
+    position: relative;
+    width: var(--hw-logo-width);
+    height: 54px;
+    padding: 9px;
+    margin: 0 auto;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    @media (--large) {
+      position: relative;
+      margin: 0;
+      height: 72px;
+      padding: 0;
+    }
+  }
+
+  &__logo-standard {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+
+  &__logo-white {
+    visibility: hidden;
+    transition: all 0s ease;
+    opacity: 0;
+
+    @media (--large) {
+      display: none;
+    }
+  }
+
+  &__logo:focus {
+    cursor: pointer;
+    outline: 0;
+    background: var(--hw-color-gray-lightest);
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__item {
+    z-index: var(--z-index--navbar-drawer-foreground);
+    display: none;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: var(--hw-font-size-small);
+    line-height: 54px;
+
+    @media (--large) {
+      display: inline-block;
+    }
+  }
+
+  &__icon, & .hw-hamburger {
+    vertical-align: middle;
+  }
+
+  @media (--large) {
+    &__item {
+      line-height: 72px;
+    }
+    &__icon {
+      margin-left: var(--hw-spacing-smallest);
+    }
+    & .hw-hamburger {
+      margin-left: auto;
+      margin-right: 0;
+    }
+    &__item, &__menu-button, &__search-button {
+      padding-left: var(--hw-spacing-smaller);
+    }
+  }
+
+  & .hw-navbar__item, & .hw-navbar__search-button, & .hw-navbar__menu-button {
+    outline: 0;
+    & .hw-hamburger__part {
+      background: var(--hw-color-gray-darker);
+    }
+    &:hover, &:focus {
+      color: var(--hw-color-primary-dark);
+      & .hw-hamburger__part {
+        background: var(--hw-color-primary-dark);
+      }
+    }
+  }
+
+  &__search {
+    display: none;
+    position: absolute;
+    left: 220px;
+    right: 220px;
+    z-index: var(--z-index--navbar-search);
+  }
+
+  &__overlay {
+    visibility: hidden;
+    background: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  /**
+  * Modifers: states
+  */
+
+  &--searching {
+    & .hw-navbar__search {
+      display: block;
+      z-index: var(--z-index--navbar-search-foreground);
+    }
+
+    & .hw-navbar__menu {
+      display: none;
+    }
+
+    & .hw-navbar__overlay {
+      visibility: visible;
+      opacity: 0.3;
+      z-index: var(--z-index--navbar-search);
+    }
+  }
+
+  /**
+   * Modifiers: variants
+   */
+
+  &--fixed &__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--hw-color-white);
+    z-index: var(--z-index--navbar);
+  }
+
+  &--active {
+    background: transparent;
+
+    & .hw-navbar__search-button, & .hw-navbar__item, & .hw-navbar__menu-button {
+      color: var(--hw-color-gray);
+      & .hw-hamburger__part {
+        background: var(--hw-color-gray);
+      }
+    }
+    /**
+     * Logo while the menu is open
+     */
+    & .hw-navbar__logo {
+      z-index: var(--z-index--navbar-drawer-foreground);
+      transform: translateY(-100%);
+      background: transparent !important;
+      opacity: 0;
+
+      @media (--large) {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    & .hw-navbar__logo-standard {
+      height: 0;
+      visibility: hidden;
+      opacity: 0;
+
+      @media (--large) {
+        display: block;
+      }
+    }
+
+    & .hw-navbar__logo-white {
+      opacity: 1;
+      visibility: visible;
+
+      @media (--large) {
+        display: block;
+        height: auto;
+      }
+    }
+  }
+
+  &--absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-index--navbar);
+    margin-bottom: 65px;
+  }
+
+  &--transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-index--navbar);
+    background: none;
+    border: 0;
+  }
+
+  &--frontpage {
+    margin-bottom: 0;
+  }
+}

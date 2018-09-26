@@ -1,0 +1,31 @@
+/**
+ * Block
+ */
+
+.hw-icon {
+  display: inline-block;
+
+  /**
+   * Modifiers
+   */
+
+  &--primary {
+    fill: var(--hw-color-primary);
+  }
+
+  &--green {
+    fill: var(--hw-color-green);
+  }
+
+  &--red {
+    fill: var(--hw-color-red);
+  }
+
+  &--gray-lighter {
+    fill: var(--hw-color-gray-lighter);
+  }
+
+  &--gray-darker {
+    fill: var(--hw-color-gray-darker);
+  }
+}

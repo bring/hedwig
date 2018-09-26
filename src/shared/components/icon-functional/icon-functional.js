@@ -1,6 +1,7 @@
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import * as fas from '@fortawesome/pro-solid-svg-icons';
 import * as far from '@fortawesome/pro-regular-svg-icons';
+import * as fal from '@fortawesome/pro-light-svg-icons';
 import * as fab from '@fortawesome/free-brands-svg-icons';
 
 /**
@@ -25,11 +26,13 @@ window.FontAwesomeConfig = {
 
 // We are only using the some of the icons
 library.add(fas.faAt);
+library.add(fas.faArrowsAltH);
 library.add(fas.faAward);
 library.add(fas.faBarcodeAlt);
 library.add(fas.faBars);
 library.add(fas.faBox);
 library.add(fas.faCalculator);
+library.add(fas.faCalendar);
 library.add(fas.faCamera);
 library.add(fas.faChartLine);
 library.add(fas.faCheck);
@@ -62,6 +65,7 @@ library.add(fas.faMapMarkerAlt);
 library.add(fas.faMinus);
 library.add(fas.faMobile);
 library.add(fas.faPaperclip);
+library.add(fas.faPlay);
 library.add(fas.faPencil);
 library.add(fas.faPhone);
 library.add(fas.faPlus);
@@ -87,6 +91,7 @@ library.add(far.faBars);
 library.add(far.faSearch);
 library.add(far.faUser);
 
+library.add(fal.faTimes);
 
 // Replace any existing <i> tags with <svg> and set up a MutationObserver to
 // continue doing this as the DOM changes.
