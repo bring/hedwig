@@ -59,7 +59,7 @@
 
 .hw-error-summary {
   border: 3px solid var(--hw-color-secondary);
-  padding: var(--hw-spacing);
+  padding: var(--hw-spacing) var(--hw-spacing) 0 var(--hw-spacing);
   background: var(--hw-color-white);
 
   /**
@@ -86,6 +86,6 @@
   }
 
   &__contents {
-    margin: var(--hw-spacing-small) 0 0 var(--hw-spacing-small);
+    margin-top: var(--hw-spacing-smaller);
   }
 }
