@@ -110,7 +110,7 @@
     background: #fff;
     border: 3px solid var(--hw-color-gray-darker);
     overflow-y: scroll;
-    z-index: 1;
+    z-index: 2;
   }
 
   &__suggestion {
