@@ -41,18 +41,4 @@
   &--big {
     font-size: var(--hw-font-size-h3);
   }
-
-  &--with-icon {
-    border-bottom: none;
-
-    & .hw-link__text {
-      transition: all 0.2s ease;
-      border-bottom: 2px solid var(--hw-color-link-underline);
-    }
-
-    & .hw-icon {
-      vertical-align: bottom;
-      margin-right: var(--hw-spacing-smallest);
-    }
-  }
 }
