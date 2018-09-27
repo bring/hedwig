@@ -176,6 +176,6 @@
 
 @media (--medium) {
   .hw-block--px-fluid {
-    padding: 0 var(--hw-spacing-large);
+    padding: 0 var(--hw-spacing);
   }
 }
