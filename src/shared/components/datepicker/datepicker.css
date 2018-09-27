@@ -98,7 +98,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   overflow: hidden;
   margin: 0;
   padding: var(--hw-spacing-smallest) var(--hw-spacing-smallest);
-  font-size: var(--hw-font-size-h3);
+  font-size: var(--hw-font-size-p);
   line-height: 20px;
 }
 
