@@ -97,6 +97,81 @@
     <section class="hw-navbar__drawer" data-hw-menu-drawer>
       <div class="hw-navbar__drawer-content">
         <div class="hw-navbar__drawer-mobile">
+          <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Sende
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/sende/post/like-formater">Post - like formater</a>
+                        </li>
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/sende/post/blandede-formater">Post - blandede formater</a>
+                        </li>
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="https://www.aftenposten.no" target="_blank">En ekstern lenke</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Motta
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/motta/spore">Spore</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Kundeservice
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="https://www.posten.no" target="_blank">Må ha en lenke ja</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Ekstra Kolonne
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="https://www.reddit.com" target="_blank">Hmm</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/kundeservice">Kundeservice</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/load-copy/load.17-customer-obsession" target="_blank">Tittel med passe lengde</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/content/artikler/nettbutikkboksen/frimerker-og-frankopatrykk" target="_blank">Frimerker til samling</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/bli-bedriftskunde">Adresseendring og oppbevaring</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/load-copy/katarina-gospic" target="_blank">Femte</a>
+            </li>
+          </ul>
         </div>
         <div class="hw-navbar__drawer-desktop">
           <div class="hw-grid">
@@ -217,6 +292,81 @@
     <section class="hw-navbar__drawer" data-hw-menu-drawer>
       <div class="hw-navbar__drawer-content">
         <div class="hw-navbar__drawer-mobile">
+          <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu2" data-hw-accordion-allow-multiple>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Sende
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/sende/post/like-formater">Post - like formater</a>
+                        </li>
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/sende/post/blandede-formater">Post - blandede formater</a>
+                        </li>
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="https://www.aftenposten.no" target="_blank">En ekstern lenke</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Motta
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/motta/spore">Spore</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Kundeservice
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="https://www.posten.no" target="_blank">Må ha en lenke ja</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Ekstra Kolonne
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="https://www.reddit.com" target="_blank">Hmm</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/kundeservice">Kundeservice</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/load-copy/load.17-customer-obsession" target="_blank">Tittel med passe lengde</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/content/artikler/nettbutikkboksen/frimerker-og-frankopatrykk" target="_blank">Frimerker til samling</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/bli-bedriftskunde">Adresseendring og oppbevaring</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/load-copy/katarina-gospic" target="_blank">Femte</a>
+            </li>
+          </ul>
         </div>
         <div class="hw-navbar__drawer-desktop">
           <div class="hw-grid">
