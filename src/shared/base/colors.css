@@ -57,3 +57,68 @@
 .hw-color-secondary{
   color: var(--hw-color-secondary);
 }
+
+/* Background colors */
+
+.hw-background-color-primary-darker {
+  background-color:var(--hw-color-primary-darker);
+}
+.hw-background-color-primary-dark {
+  background-color: var(--hw-color-primary-dark);
+}
+.hw-background-color-primary {
+  background-color: var(--hw-color-primary);
+}
+.hw-background-color-primary-light {
+  background-color: var(--hw-color-primary-light);
+}
+.hw-background-color-primary-lighter {
+  background-color: var(--hw-color-primary-lighter);
+}
+
+.hw-background-color-gray-lightest{
+  background-color: var(--hw-color-gray-lightest);
+}
+.hw-background-color-gray-lighter{
+  background-color: var(--hw-color-gray-lighter);
+}
+.hw-background-color-gray-light{
+  background-color: var(--hw-color-gray-light);
+}
+.hw-background-color-gray{
+  background-color: var(--hw-color-gray);
+}
+.hw-background-color-gray-dark{
+  background-color: var(--hw-color-gray-dark);
+}
+.hw-background-color-gray-darker{
+  background-color: var(--hw-color-gray-darker);
+}
+.hw-background-color-gray-darkest{
+  background-color: var(--hw-color-gray-darkest);
+}
+
+.hw-background-color-yellow{
+  background-color: var(--hw-color-yellow);
+}
+.hw-background-color-green{
+  background-color: var(--hw-color-green);
+}
+.hw-background-color-red{
+  background-color: var(--hw-color-red);
+}
+.hw-background-color-white{
+  background-color: var(--hw-color-white);
+}
+.hw-background-color-black{
+  background-color: var(--hw-color-black);
+}
+.hw-background-color-avocado{
+  background-color: var(--hw-color-avocado);
+}
+.hw-background-color-secondary{
+  background-color: var(--hw-color-secondary);
+}
+
+
+
