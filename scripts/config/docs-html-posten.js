@@ -128,7 +128,7 @@ module.exports = `
         <a class="hw-app-switcher__link" href="/bring.html">Bring</a>
         <a class="hw-app-switcher__link hw-app-switcher__link--active" href="/posten.html">Posten</a>
       </nav>
-      <div id="catalog" />
+      <div id="catalog"></div>
       <script src="https://unpkg.com/catalog@3/dist/catalog-standalone.min.js"></script>
       <script src="docs-config-posten.js"></script>
       ${icons}
