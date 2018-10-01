@@ -164,7 +164,7 @@ Don't use default selected here as you want the user to start with an empty inpu
     data-hw-dropdown="numbers"
     data-hw-dropdown-small>
     <option value="1">+47</option>
-    <option value="2">+48</option>
+    <option value="2" selected="selected">+48</option>
     <option value="3">+49</option>
   </select>
 </label>
