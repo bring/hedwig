@@ -86,3 +86,36 @@ value: '#ffffff'
 name: white
 span: 1
 ```
+## Background colors
+### Available classes
+The following classes can be used to set the background of an element
+```code
+hw-background-color-primary-darker                     
+hw-background-color-primary-dark
+hw-background-color-primary
+hw-background-color-primary-light
+hw-background-color-primary-lighter
+hw-background-color-gray-lightest
+hw-background-color-gray-lighter
+hw-background-color-gray-light
+hw-background-color-gray
+hw-background-color-gray-dark
+hw-background-color-gray-darker
+hw-background-color-gray-darkest
+hw-background-color-yellow
+hw-background-color-green
+hw-background-color-red
+hw-background-color-white
+hw-background-color-black
+hw-background-color-avocado
+hw-background-color-secondary
+```
+
+```html|span-4
+<div class="hw-block hw-block--pt hw-block--pb hw-background-color-primary">
+Block with background color primary
+</div>
+<div class="hw-block hw-block--pt hw-block--pb hw-background-color-primary-lighter">
+Block with background color primary-lighter
+</div>
+```
