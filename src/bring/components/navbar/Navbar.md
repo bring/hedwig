@@ -106,13 +106,13 @@
                 <div class="hw-accordion__contents">
                     <ul class="hw-accordion__link-items">
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/sende/post/like-formater">Post - like formater</a>
+                            <a class="hw-accordion__link" href="#">Post - like formater</a>
                         </li>
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/sende/post/blandede-formater">Post - blandede formater</a>
+                            <a class="hw-accordion__link" href="#">Post - blandede formater</a>
                         </li>
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="https://www.aftenposten.no" target="_blank">En ekstern lenke</a>
+                            <a class="hw-accordion__link" href="#" target="_blank">En ekstern lenke</a>
                         </li>
                     </ul>
                 </div>
@@ -125,7 +125,7 @@
                 <div class="hw-accordion__contents">
                     <ul class="hw-accordion__link-items">
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/motta/spore">Spore</a>
+                            <a class="hw-accordion__link" href="#">Spore</a>
                         </li>
                     </ul>
                 </div>
@@ -138,7 +138,7 @@
                 <div class="hw-accordion__contents">
                     <ul class="hw-accordion__link-items">
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="https://www.posten.no" target="_blank">Må ha en lenke ja</a>
+                            <a class="hw-accordion__link" href="#" target="_blank">Må ha en lenke ja</a>
                         </li>
                     </ul>
                 </div>
@@ -151,25 +151,25 @@
                 <div class="hw-accordion__contents">
                     <ul class="hw-accordion__link-items">
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="https://www.reddit.com" target="_blank">Hmm</a>
+                            <a class="hw-accordion__link" href="#" target="_blank">Hmm</a>
                         </li>
                     </ul>
                 </div>
             </li>
             <li class="hw-accordion__item">
-                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/kundeservice">Kundeservice</a>
+                <a class="hw-accordion__link" href="#">Kundeservice</a>
             </li>
             <li class="hw-accordion__item">
-                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/load-copy/load.17-customer-obsession" target="_blank">Tittel med passe lengde</a>
+                <a class="hw-accordion__link" href="#" target="_blank">Tittel med passe lengde</a>
             </li>
             <li class="hw-accordion__item">
-                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/content/artikler/nettbutikkboksen/frimerker-og-frankopatrykk" target="_blank">Frimerker til samling</a>
+                <a class="hw-accordion__link" href="#" target="_blank">Frimerker til samling</a>
             </li>
             <li class="hw-accordion__item">
-                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/bli-bedriftskunde">Adresseendring og oppbevaring</a>
+                <a class="hw-accordion__link" href="#">Adresseendring og oppbevaring</a>
             </li>
             <li class="hw-accordion__item">
-                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/load-copy/katarina-gospic" target="_blank">Femte</a>
+                <a class="hw-accordion__link" href="#" target="_blank">Femte</a>
             </li>
           </ul>
         </div>
@@ -301,13 +301,13 @@
                 <div class="hw-accordion__contents">
                     <ul class="hw-accordion__link-items">
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/sende/post/like-formater">Post - like formater</a>
+                            <a class="hw-accordion__link" href="#">Post - like formater</a>
                         </li>
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/sende/post/blandede-formater">Post - blandede formater</a>
+                            <a class="hw-accordion__link" href="#">Post - blandede formater</a>
                         </li>
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="https://www.aftenposten.no" target="_blank">En ekstern lenke</a>
+                            <a class="hw-accordion__link" href="#" target="_blank">En ekstern lenke</a>
                         </li>
                     </ul>
                 </div>
@@ -320,7 +320,7 @@
                 <div class="hw-accordion__contents">
                     <ul class="hw-accordion__link-items">
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/motta/spore">Spore</a>
+                            <a class="hw-accordion__link" href="#">Spore</a>
                         </li>
                     </ul>
                 </div>
@@ -333,7 +333,7 @@
                 <div class="hw-accordion__contents">
                     <ul class="hw-accordion__link-items">
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="https://www.posten.no" target="_blank">Må ha en lenke ja</a>
+                            <a class="hw-accordion__link" href="#" target="_blank">Må ha en lenke ja</a>
                         </li>
                     </ul>
                 </div>
@@ -346,25 +346,25 @@
                 <div class="hw-accordion__contents">
                     <ul class="hw-accordion__link-items">
                         <li class="hw-accordion__link-item">
-                            <a class="hw-accordion__link" href="https://www.reddit.com" target="_blank">Hmm</a>
+                            <a class="hw-accordion__link" href="#" target="_blank">Hmm</a>
                         </li>
                     </ul>
                 </div>
             </li>
             <li class="hw-accordion__item">
-                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/kundeservice">Kundeservice</a>
+                <a class="hw-accordion__link" href="#">Kundeservice</a>
             </li>
             <li class="hw-accordion__item">
-                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/load-copy/load.17-customer-obsession" target="_blank">Tittel med passe lengde</a>
+                <a class="hw-accordion__link" href="#" target="_blank">Tittel med passe lengde</a>
             </li>
             <li class="hw-accordion__item">
-                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/content/artikler/nettbutikkboksen/frimerker-og-frankopatrykk" target="_blank">Frimerker til samling</a>
+                <a class="hw-accordion__link" href="#" target="_blank">Frimerker til samling</a>
             </li>
             <li class="hw-accordion__item">
-                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/bli-bedriftskunde">Adresseendring og oppbevaring</a>
+                <a class="hw-accordion__link" href="#">Adresseendring og oppbevaring</a>
             </li>
             <li class="hw-accordion__item">
-                <a class="hw-accordion__link" href="/portal/master/bring.no/bring-no/load-copy/katarina-gospic" target="_blank">Femte</a>
+                <a class="hw-accordion__link" href="#" target="_blank">Femte</a>
             </li>
           </ul>
         </div>
