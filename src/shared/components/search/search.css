@@ -18,13 +18,15 @@
     width: 100%;
   }
 
+  &__input, &__placeholder {
+    font-size: var(--hw-font-size-lead);
+    padding: 21px calc(var(--hw-spacing-larger) + var(--hw-spacing-smaller));
+  }
+
   &__input {
-    font-size: var(--hw-font-size-h2);
     margin: 0;
     border: 0;
-    padding: var(--hw-spacing-smaller) calc(var(--hw-spacing-larger) + var(--hw-spacing-smaller));
     width: 100%;
-    padding-right: 90px;
     transition: outline 100ms;
     height: 72px;
   }
@@ -33,9 +35,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: var(--hw-spacing-small) calc(var(--hw-spacing-larger) + var(--hw-spacing-smaller));
-
-    font-size: var(--hw-font-size-h2);
     color: var(--hw-color-gray-dark);
     animation: movePlaceholder 3s ease-out infinite 0.3s;
     z-index: -1;
