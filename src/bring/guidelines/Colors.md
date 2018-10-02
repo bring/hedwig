@@ -13,7 +13,7 @@ span: 1
 ```color
 value: '#7bc144'
 name: 'Primary'
-span: 2
+span: 1
 ```
 ```color
 value: '#b7dd98'
@@ -69,11 +69,6 @@ span: 1
 ```color
 value: '#fdbb2f'
 name: 'Secondary'
-span: 1
-```
-```color
-value: '#0066dd'
-name: 'Link color'
 span: 1
 ```
 ```color

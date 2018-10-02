@@ -15,7 +15,7 @@ span: 1
 ```color
 value: '#e32d22'
 name: 'Primary'
-span: 2
+span: 1
 ```
 
 ```color
