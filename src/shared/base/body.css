@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background: var(--hw-color-white);
+  background: var(--hw-color-gray-lightest);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
