@@ -161,6 +161,7 @@ hw-color-gray-darker
 
 ```html
 <i class="fa-2x fa-fw far fa-bars"></i> bars<br/><br/>
+<i class="fa-2x fa-fw far fa-lock-open-alt"></i> lock-open-alt<br/><br/>
 <i class="fa-2x fa-fw far fa-search"></i> search<br/><br/>
 <i class="fa-2x fa-fw far fa-user"></i> user<br/><br/>
 ```
