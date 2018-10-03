@@ -27,7 +27,7 @@ A simple component for adding one or more pieces of content into a frame, with o
 
 ```html|span-6
   <div class="hw-frame">
-    <div class="hw-frame__item hw-frame__item--pl">
+    <div class="hw-frame__item">
       <div class="hw-block hw-block--pt hw-block--pb">
         <h3 class="hw-h3">First and only item</h3>
       </div>
