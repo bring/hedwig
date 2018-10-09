@@ -1,4 +1,5 @@
 import q from '../../../shared/utilities/js/q';
+import KEYS from '../../utilities/js/keys';
 
 /**
  * @function HWNavbar
@@ -86,6 +87,12 @@ const HWNavbar = ({
     }
   }
 
+  function onEscape(e){
+    if(e.keyCode === KEYS.ESCAPE) {
+      toggleSearch();
+    }
+  }
+
   function init() {
     if (!SETTINGS.navbar) {
       return;
@@ -112,6 +119,7 @@ const HWNavbar = ({
     if (SETTINGS.searchButton) {
       SETTINGS.searchButton.addEventListener('click', toggleSearch);
       SETTINGS.overlay.addEventListener('click', toggleSearch);
+      q('.hw-navbar__search').addEventListener('keydown', e => onEscape(e));
     }
   }
 
