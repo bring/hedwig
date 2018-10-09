@@ -81,10 +81,10 @@ NB: The search field position and the opaque background overlay is not controlle
 ```
 
 
-### Search with hotlist
+### Search with suggestions
 
 ```html|span-4
-<!-- Some space to get past the hotlist -->
+<!-- Some space to get past the suggestions -->
 
 
 
@@ -103,23 +103,23 @@ NB: The search field position and the opaque background overlay is not controlle
     <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
   </div>
-  <ul class="hw-search__hotlist">
-    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
-      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
-        <p class="hw-search__hotlist-title">Flyttetips</p>
-        <p class="hw-search__hotlist-extra">Innhold</p>
+  <ul class="hw-search__suggestions">
+    <li class="hw-search__suggestion" data-hw-search-suggestion>
+      <a class="hw-search__suggestion-link" tabindex="-1" href="#">
+        <p class="hw-search__suggestion-title">Flyttetips</p>
+        <p class="hw-search__suggestion-extra">Innhold</p>
       </a>
     </li>
-    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
-      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
-        <p class="hw-search__hotlist-title">Oslo Sentrum bedriftssenter</p>
-        <p class="hw-search__hotlist-extra">Postkontor</p>
+    <li class="hw-search__suggestion" data-hw-search-suggestion>
+      <a class="hw-search__suggestion-link" tabindex="-1" href="#">
+        <p class="hw-search__suggestion-title">Oslo Sentrum bedriftssenter</p>
+        <p class="hw-search__suggestion-extra">Postkontor</p>
       </a>
     </li>
-    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
-      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
-        <p class="hw-search__hotlist-title">Digitalt frimerke <span class="hw-badge hw-badge--smaller">Pdf</span></p>
-        <p class="hw-search__hotlist-extra">Innhold</p>
+    <li class="hw-search__suggestion" data-hw-search-suggestion>
+      <a class="hw-search__suggestion-link" tabindex="-1" href="#">
+        <p class="hw-search__suggestion-title">Digitalt frimerke <span class="hw-badge hw-badge--smaller">Pdf</span></p>
+        <p class="hw-search__suggestion-extra">Innhold</p>
       </a>
     </li>
   </ul>
@@ -135,10 +135,10 @@ NB: The search field position and the opaque background overlay is not controlle
 
 
 
-### Search with simple hotlist
+### Search with simple suggestions
 
 ```html|span-4
-<!-- Some space to get past the hotlist -->
+<!-- Some space to get past the suggestions -->
 
 
 
@@ -157,25 +157,25 @@ NB: The search field position and the opaque background overlay is not controlle
     <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
   </div>
-  <ul class="hw-search__hotlist hw-search__hotlist--simple">
-    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
-      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
-        <p class="hw-search__hotlist-title">Spore pakker</p>
+  <ul class="hw-search__suggestions hw-search__suggestions--simple">
+    <li class="hw-search__suggestion" data-hw-search-suggestion>
+      <a class="hw-search__suggestion-link" tabindex="-1" href="#">
+        <p class="hw-search__suggestion-title">Spore pakker</p>
       </a>
     </li>
-    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
-      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
-        <p class="hw-search__hotlist-title">Sende Norgespakke</p>
+    <li class="hw-search__suggestion" data-hw-search-suggestion>
+      <a class="hw-search__suggestion-link" tabindex="-1" href="#">
+        <p class="hw-search__suggestion-title">Sende Norgespakke</p>
       </a>
     </li>
-    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
-      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
-        <p class="hw-search__hotlist-title">Sende Brev</p>
+    <li class="hw-search__suggestion" data-hw-search-suggestion>
+      <a class="hw-search__suggestion-link" tabindex="-1" href="#">
+        <p class="hw-search__suggestion-title">Sende Brev</p>
       </a>
     </li>
-    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
-      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
-        <p class="hw-search__hotlist-title">Melde adresseendring</p>
+    <li class="hw-search__suggestion" data-hw-search-suggestion>
+      <a class="hw-search__suggestion-link" tabindex="-1" href="#">
+        <p class="hw-search__suggestion-title">Melde adresseendring</p>
       </a>
     </li>
   </ul>
