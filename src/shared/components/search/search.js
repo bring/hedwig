@@ -1,6 +1,7 @@
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import findParent from '../../utilities/js/findParent';
+import KEYS from '../../utilities/js/keys';
 
 /**
  * @function HWSearch
@@ -9,7 +10,7 @@ import findParent from '../../utilities/js/findParent';
  * @param {object} settings
  */
 
-const HWSearch = ({
+export const HWSearch = ({
   selector = '[data-hw-search]',
   activeClass = 'hw-search--active',
   dirtyClass = 'hw-search--dirty',
@@ -84,6 +85,21 @@ const HWSearch = ({
     }
   }
 
+  function onArrowDown(e, targetItem) {
+    if (e.keyCode === KEYS.DOWN) {
+      targetItem.focus();
+      e.preventDefault();
+    }
+  }
+
+  function onArrowUp(e, targetItem) {
+    if (e.keyCode === KEYS.UP) {
+      targetItem.focus();
+      e.preventDefault();
+    }
+  }
+
+
   /**
    * @function bindEvents
    * @desc Adds listener to dropdown
@@ -94,6 +110,18 @@ const HWSearch = ({
     input.addEventListener('blur', toggleActive);
   }
 
+  function bindHotlistKeys(search) {
+    const input = q(searchInputSelector, search);
+    let hotlistLinks = qa('[data-hw-search-hotlist-item] a', search); //Find the current search field's hotlistLinks
+    input.addEventListener('keydown', e => onArrowDown(e, hotlistLinks[0]));
+    input.addEventListener('keydown', e => onArrowUp(e, hotlistLinks[hotlistLinks.length - 1]));
+    hotlistLinks.forEach(function (hotlistLink, index) {
+      let next = hotlistLinks[index + 1] || input;
+      hotlistLink.addEventListener('keydown', e => onArrowDown(e, next));
+      let previous = hotlistLinks[index - 1] || input;
+      hotlistLink.addEventListener('keydown', e => onArrowUp(e, previous));
+    });
+  }
 
   function init() {
     // Check if any search fields exist, return if not.
@@ -104,6 +132,7 @@ const HWSearch = ({
     // Loop through all search fields and initialise each
     SETTINGS.elements.forEach((search) => {
 
+      bindHotlistKeys(search);
       // Skip if already initialised
       if (search.getAttribute('data-hw-search-initialised') === 'true') { return; }
 

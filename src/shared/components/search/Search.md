@@ -79,6 +79,116 @@ NB: The search field position and the opaque background overlay is not controlle
   </div>
 </div>
 ```
+
+
+### Search with hotlist
+
+```html|span-4
+<!-- Some space to get past the hotlist -->
+
+
+
+
+
+
+<div class="hw-search"
+  data-hw-search
+  data-hw-search-placeholders='["Hi!"]'
+>
+  <div class="hw-search__inner">
+    <input
+      data-hw-search-input
+      class="hw-search__input" type="text"
+      aria-label="Search" />
+    <i class="far fa-search hw-search__icon"></i>
+    <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+  </div>
+  <ul class="hw-search__hotlist">
+    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
+      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
+        <p class="hw-search__hotlist-title">Flyttetips</p>
+        <p class="hw-search__hotlist-extra">Innhold</p>
+      </a>
+    </li>
+    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
+      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
+        <p class="hw-search__hotlist-title">Oslo Sentrum bedriftssenter</p>
+        <p class="hw-search__hotlist-extra">Postkontor</p>
+      </a>
+    </li>
+    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
+      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
+        <p class="hw-search__hotlist-title">Digitalt frimerke <span class="hw-badge hw-badge--smaller">Pdf</span></p>
+        <p class="hw-search__hotlist-extra">Innhold</p>
+      </a>
+    </li>
+  </ul>
+</div>
+```
+
+.
+.
+.
+.
+.
+.
+
+
+
+### Search with simple hotlist
+
+```html|span-4
+<!-- Some space to get past the hotlist -->
+
+
+
+
+
+
+<div class="hw-search"
+  data-hw-search
+  data-hw-search-placeholders='["Hi!"]'
+>
+  <div class="hw-search__inner">
+    <input
+      data-hw-search-input
+      class="hw-search__input" type="text"
+      aria-label="Search" />
+    <i class="far fa-search hw-search__icon"></i>
+    <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+  </div>
+  <ul class="hw-search__hotlist hw-search__hotlist--simple">
+    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
+      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
+        <p class="hw-search__hotlist-title">Spore pakker</p>
+      </a>
+    </li>
+    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
+      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
+        <p class="hw-search__hotlist-title">Sende Norgespakke</p>
+      </a>
+    </li>
+    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
+      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
+        <p class="hw-search__hotlist-title">Sende Brev</p>
+      </a>
+    </li>
+    <li class="hw-search__hotlist-item" data-hw-search-hotlist-item>
+      <a class="hw-search__hotlist-link" tabindex="-1" href="#">
+        <p class="hw-search__hotlist-title">Melde adresseendring</p>
+      </a>
+    </li>
+  </ul>
+</div>
+```
+
+.
+.
+.
+.
+.
+.
+
 ### Search with button
 
 ```html
