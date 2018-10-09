@@ -10,7 +10,7 @@ import KEYS from '../../utilities/js/keys';
  * @param {object} settings
  */
 
-export const HWSearch = ({
+const HWSearch = ({
   selector = '[data-hw-search]',
   activeClass = 'hw-search--active',
   dirtyClass = 'hw-search--dirty',
@@ -85,16 +85,36 @@ export const HWSearch = ({
     }
   }
 
-  function onArrowDown(e, targetItem) {
+  function onArrowDownOrUp(e) {
     if (e.keyCode === KEYS.DOWN) {
-      targetItem.focus();
+      const hwSearch = findParent({ selector, elem: e.target });
+      if(e.target.tagName == 'INPUT'){
+        const hotlistLinks = qa('[data-hw-search-hotlist-item] a', hwSearch); //Find the current search field's hotlistLinks
+        hotlistLinks[0].focus();
+      } else if ( e.target.tagName == 'A'){
+        const next = findParent({ selector: '.hw-search__hotlist-item', elem: e.target }).nextSibling;
+        if(next){
+          q('.hw-search__hotlist-link', next).focus();
+        } else {
+          q(searchInputSelector, hwSearch).focus();
+        }
+      }
       e.preventDefault();
     }
-  }
 
-  function onArrowUp(e, targetItem) {
-    if (e.keyCode === KEYS.UP) {
-      targetItem.focus();
+    if(e.keyCode === KEYS.UP) {
+      const hwSearch = findParent({ selector, elem: e.target });
+      if(e.target.tagName == 'INPUT'){
+        const hotlistLinks = qa('[data-hw-search-hotlist-item] a', hwSearch); //Find the current search field's hotlistLinks
+        hotlistLinks[hotlistLinks.length - 1].focus();
+      } else if ( e.target.tagName == 'A'){
+        const previous = findParent({ selector: '.hw-search__hotlist-item', elem: e.target }).previousSibling;
+        if(previous){
+          q('.hw-search__hotlist-link', previous).focus();
+        } else {
+          q(searchInputSelector, hwSearch).focus();
+        }
+      }
       e.preventDefault();
     }
   }
@@ -108,19 +128,10 @@ export const HWSearch = ({
     const input = q(searchInputSelector, search);
     input.addEventListener('focus', toggleActive);
     input.addEventListener('blur', toggleActive);
-  }
-
-  function bindHotlistKeys(search) {
-    const input = q(searchInputSelector, search);
-    let hotlistLinks = qa('[data-hw-search-hotlist-item] a', search); //Find the current search field's hotlistLinks
-    input.addEventListener('keydown', e => onArrowDown(e, hotlistLinks[0]));
-    input.addEventListener('keydown', e => onArrowUp(e, hotlistLinks[hotlistLinks.length - 1]));
-    hotlistLinks.forEach(function (hotlistLink, index) {
-      let next = hotlistLinks[index + 1] || input;
-      hotlistLink.addEventListener('keydown', e => onArrowDown(e, next));
-      let previous = hotlistLinks[index - 1] || input;
-      hotlistLink.addEventListener('keydown', e => onArrowUp(e, previous));
-    });
+    const hotlist = q('.hw-search__hotlist', search);
+    if(hotlist) {
+      search.addEventListener('keydown', e => onArrowDownOrUp(e));
+    }
   }
 
   function init() {
@@ -132,7 +143,6 @@ export const HWSearch = ({
     // Loop through all search fields and initialise each
     SETTINGS.elements.forEach((search) => {
 
-      bindHotlistKeys(search);
       // Skip if already initialised
       if (search.getAttribute('data-hw-search-initialised') === 'true') { return; }
 
