@@ -1,0 +1,43 @@
+/**
+ * Block
+ */
+
+.hw-footer {
+  display: block;
+  background: var(--hw-color-gray-lighter);
+
+  /**
+   * Elements
+   */
+
+  &__mobile {
+    margin: 0 auto;
+   /* padding: var(--hw-spacing);*/
+
+    @media (--large) {
+      display: none;
+    }
+  }
+
+  &__desktop {
+    display: none;
+  /*  padding: 0 var(--hw-spacing);*/
+
+    @media (--large) {
+      display: block;
+    /*  max-width: var(--hw-width-wide);*/
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    padding: var(--hw-spacing-smallest) 0;
+
+    & svg {
+      display: block;
+      height: 70px;
+      width: 120px;
+    }
+  }
+
+}
