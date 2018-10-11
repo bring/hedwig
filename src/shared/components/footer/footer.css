@@ -31,12 +31,37 @@
   }
 
   &__logo {
-    padding: var(--hw-spacing-smallest) 0;
+    
+    position:relative;
 
     & svg {
       display: block;
       height: 70px;
       width: 120px;
+    }
+
+    &-standard {
+      transition: opacity 0.3s ease;
+      visibility: visible;
+      opacity: 1;
+    }
+
+
+    &-gray {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover {
+      & .hw-footer__logo-standard {
+        opacity: 0;
+      }
+      & .hw-footer__logo-gray {
+        opacity: 1;
+      }
     }
   }
 
