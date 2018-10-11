@@ -29,14 +29,14 @@
 
     &-link {
       position:relative;
-      height: 70px;
-      width:120px;
+      height: 80px;
+      width:150px;
       display:inline-block;
 
       & svg {
         display: block;
-        height: 70px;
-        width: 120px;
+        height: 80px;
+        width: 150px;
       }
 
       &-standard {
