@@ -193,13 +193,15 @@
     <div class="hw-footer__shared">
       
       <!-- Logo -->
-      <div class="hw-footer__logo">
-        <svg class="hw-footer__logo-standard">
+       <div class="hw-footer__logo">
+      <a href="#" class="hw-footer__logo-link">
+        <svg class="hw-footer__logo-link-standard">
           <use xlink:href="#logo-posten"></use>
         </svg>
-        <svg class="hw-footer__logo-gray">
+        <svg class="hw-footer__logo-link-gray">
           <use xlink:href="#logo-posten-gray"></use>
         </svg>
+        </a>
       </div>
 
       <div class="hw-block">
@@ -276,12 +278,6 @@
               </button>
               <button class="hw-some__button hw-some__button--linkedin">
                 <i class="fab fa-linkedin-in"></i>
-              </button>
-              <button class="hw-some__button hw-some__button--email">
-                <i class="fas fa-at"></i>
-              </button>
-              <button class="hw-some__button hw-some__button--google">
-                <i class="fab fa-google-plus-g"></i>
               </button>
             </div>
           </div>
@@ -375,12 +371,14 @@
       
       <!-- Logo -->
       <div class="hw-footer__logo">
-        <svg class="hw-footer__logo-standard">
+      <a href="#" class="hw-footer__logo-link">
+        <svg class="hw-footer__logo-link-standard">
           <use xlink:href="#logo-posten"></use>
         </svg>
-        <svg class="hw-footer__logo-gray">
+        <svg class="hw-footer__logo-link-gray">
           <use xlink:href="#logo-posten-gray"></use>
         </svg>
+        </a>
       </div>
 
       <div class="hw-block">
