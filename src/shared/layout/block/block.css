@@ -170,12 +170,14 @@
    */
 
   &--px-fluid {
-    padding: 0 var(--hw-spacing-smaller);
+    padding-left: var(--hw-spacing-smaller);
+    padding-right: var(--hw-spacing-smaller);
   }
 }
 
 @media (--medium) {
   .hw-block--px-fluid {
-    padding: 0 var(--hw-spacing);
+    padding-left: var(--hw-spacing);
+    padding-right: var(--hw-spacing);
   }
 }
