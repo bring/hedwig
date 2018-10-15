@@ -58,6 +58,7 @@
 
   &__title {
     margin-bottom: var(--hw-spacing-smallest);
+    font-size: var(--hw-font-size-h4);
   }
 
   &__text {
