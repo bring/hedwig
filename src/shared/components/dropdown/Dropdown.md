@@ -25,10 +25,30 @@ Optional:
 Client side rendering, see further down
 ```
 
+
+### Example
 ```html
 <label class="hw-label">
   Select country
   <select data-hw-dropdown="countries" id="countries">
+    <option value="1">Afghanistan</option>
+    <option value="2">Algerie</option>
+    <option value="3">Antarctica</option>
+    <option value="4">Austraoptiona</option>
+    <option value="5">Booptionvia</option>
+    <option value="6">Bosnia</option>
+  </select>
+</label>
+```
+
+### With disabled option
+Will make one option disabled, to use as a placeholder value or instruction to the end user.
+
+```html
+<label class="hw-label">
+  Select country
+  <select data-hw-dropdown="countries-disabled-option" id="countries-disabled-option">
+    <option selected="true" disabled="disabled">Select country</option>
     <option value="1">Afghanistan</option>
     <option value="2">Algerie</option>
     <option value="3">Antarctica</option>

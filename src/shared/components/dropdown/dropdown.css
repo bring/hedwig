@@ -96,6 +96,12 @@
     &:hover {
       color: var(--hw-color-primary-dark);
     }
+    &--disabled {
+      color: var(--hw-color-gray);
+      &:hover {
+        color: var(--hw-color-gray);
+      }
+    }
   }
 
   &__option[data-hw-dropdown-option-selected="true"] {
