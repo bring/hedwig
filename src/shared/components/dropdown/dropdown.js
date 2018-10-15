@@ -125,7 +125,9 @@ export const HWDropdown = ({
     const target = e.target;
     const customDropdown = e.currentTarget;
     const { hwDropdownValue } = target.dataset;
-
+    if(target.dataset.hwDropdownOptionDisabled){
+      return;
+    }
     if (hwDropdownValue) {
       selectOption(e.currentTarget, hwDropdownValue);
     }
@@ -189,6 +191,9 @@ export const HWDropdown = ({
       const isHidden = option.getAttribute('data-hw-dropdown-option-hidden');
       // Convert attribute string to boolean
       const isHiddenBoolean = (isHidden === 'true');
+      if(option.getAttribute('data-hw-dropdown-option-disabled')){
+        return false;
+      }
       return !isHiddenBoolean;
     });
 
@@ -299,8 +304,9 @@ export const HWDropdown = ({
 
     const options = [...dropdown.children].reduce((string, option) => {
       const placeholder = option.getAttribute('data-hw-dropdown-placeholder');
+      const disabled = option.disabled ? 'data-hw-dropdown-option-disabled="true"' : '';
       return `${string}
-      <li class="hw-dropdown__option" data-hw-dropdown-placeholder="${placeholder}" data-hw-dropdown-value="${option.value}">
+      <li class="hw-dropdown__option ${option.disabled ? 'hw-dropdown__option--disabled' : ''}" ${disabled} data-hw-dropdown-placeholder="${placeholder}" data-hw-dropdown-value="${option.value}">
       ${option.text}
       </li>`;
     }, '');
