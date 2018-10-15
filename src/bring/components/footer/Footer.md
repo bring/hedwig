@@ -1,331 +1,396 @@
 ## Footer
 
-### Default footer
 
-```html|span-6
-  <footer class="hw-footer">
 
-    <div class="hw-footer__desktop">
-      <div class="hw-grid">
-        <div class="hw-grid__item hw-one-quarter">
-          <h3 class="hw-footer__title">Lorum ipsum</h3>
-          <hr class="hw-hr hw-hr--white" />
-          <div class="hw-block hw-block--full hw-block--mt-small">
-            <ul class="hw-footer__links">
-            <li><a class="hw-footer__link" href="#">Aliquam consequat</a></li>
-            <li><a class="hw-footer__link" href="#">Vivamus eros</a></li>
-            <li><a class="hw-footer__link" href="#">Vivamus pulvinar</a></li>
-            <li><a class="hw-footer__link" href="#">Cras at</a></li>
-            </ul>
-          </div>
-        </div><!--
-        --><div class="hw-grid__item hw-one-quarter">
-          <h3 class="hw-footer__title">Lorem ipsum</h3>
-          <hr class="hw-hr hw-hr--white" />
-          <div class="hw-block hw-block--full hw-block--mt-small">
-            <ul class="hw-footer__links">
-            <li><a class="hw-footer__link" href="#">Aliquam consequat</a></li>
-            <li><a class="hw-footer__link" href="#">Vivamus eros</a></li>
-            <li><a class="hw-footer__link" href="#">Vivamus pulvinar</a></li>
-            <li><a class="hw-footer__link" href="#">Cras at</a></li>
-            </ul>
-          </div>
-        </div><!--
-        --><div class="hw-grid__item hw-one-quarter">
-          <h3 class="hw-footer__title">Lorem Ipsum</h3>
-          <hr class="hw-hr hw-hr--white" />
-          <div class="hw-block hw-block--full hw-block--mt-small">
-            <ul class="hw-footer__links">
-              <li><a class="hw-footer__link" href="#">Aliquam consequat</a></li>
-              <li><a class="hw-footer__link" href="#">Vivamus eros</a></li>
-              <li><a class="hw-footer__link" href="#">Vivamus pulvinar</a></li>
-              <li><a class="hw-footer__link" href="#">Cras at</a></li>
-            </ul>
-          </div>
-        </div><!--
-        --><div class="hw-grid__item hw-one-quarter">
-          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">Lorem ipsum</button>
-          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
-            <i class="fas fa-globe"></i>
-            English
+
+### Default footer width 4 columns
+
+```html
+
+
+<footer class="hw-footer">
+  <div class="hw-container">
+    <div class="hw-block hw-block--pt-large hw-block--pb-large">
+      <div class="hw-footer__desktop">
+        
+
+      <div class="hw-grid"><!--
+      --><div class="hw-grid__item hw-one-quarter">
+        <h4 class="">Lorum ipsum</h4>
+        <div class="hw-block hw-block hw-block--pt-smaller hw-block--pb-smaller">
+          <div class="hw-hr hw-hr--gray-light"></div>
+        </div>
+        <div class="hw-block">
+          <ul class="hw-linklist">
+            <li><a href="#">Aliquam consequat</a></li>
+            <li><a href="#">Vivamus eros</a></li>
+            <li><a href="#">Vivamus pulvinar</a></li>
+            <li><a href="#">Cras at</a></li>
+          </ul>
+        </div>
+      </div><div class="hw-grid__item hw-one-quarter">
+        <h4 class="">Lorum ipsum</h4>
+        <div class="hw-block hw-block hw-block--pt-smaller hw-block--pb-smaller">
+          <div class="hw-hr hw-hr--gray-light"></div>
+        </div>
+        <div class="hw-block">
+          <ul class="hw-linklist">
+            <li><a href="#">Aliquam consequat</a></li>
+            <li><a href="#">Vivamus eros</a></li>
+            <li><a href="#">Vivamus pulvinar</a></li>
+            <li><a href="#">Cras at</a></li>
+          </ul>
+        </div>
+      </div><div class="hw-grid__item hw-one-quarter">
+        <h4 class="">Lorum ipsum</h4>
+        <div class="hw-block hw-block hw-block--pt-smaller hw-block--pb-smaller">
+          <div class="hw-hr hw-hr--gray-light"></div>
+        </div>
+        <div class="hw-block">
+          <ul class="hw-linklist">
+            <li><a href="#">Aliquam consequat</a></li>
+            <li><a href="#">Vivamus eros</a></li>
+            <li><a href="#">Vivamus pulvinar</a></li>
+            <li><a href="#">Cras at</a></li>
+          </ul>
+        </div>
+      </div><div class="hw-grid__item hw-one-quarter">
+        <div class="hw-block hw-block--mb-smaller">
+          <button class="hw-button hw-button--full hw-button--primary">
+            A button
           </button>
         </div>
-      </div>
-    </div>
-
-    <div class="hw-footer__mobile">
-
-      <div class="hw-block hw-block--half hw-block--pt-small">
-
-        <div class="hw-grid">
-          <div class="hw-grid__item hw-small--one-half">
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">Lorem ipsum</button>
-          </div><!--
-          --><div class="hw-grid__item hw-small--one-half">
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
-              <i class="fas fa-globe"></i>
-              English
+        <button class="hw-button hw-button--full hw-button--secondary">
+          <i class="fa-x fa-fw fas fa-globe"></i> English site
+        </button>
+        <div class="hw-block hw-block--mt">
+          <div class="hw-block hw-block--mb-smallest">
+            <p class="hw-text-small">Follow us on social media</p>
+          </div>
+          <div class="hw-some">
+            <button class="hw-some__button hw-some__button--facebook">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="hw-some__button hw-some__button--twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button class="hw-some__button hw-some__button--linkedin">
+              <i class="fab fa-linkedin-in"></i>
             </button>
           </div>
-        </div>
-
+          
+        </div></div>
       </div>
-
-      <div class="hw-block hw-block--pt-small">
-        <ul class="hw-accordion hw-accordion--dark" data-hw-accordion="footer-menu">
+      <div class="hw-block hw-block--pt">
+        <div class="hw-hr hw-hr--full hw-hr--gray-lightest"></div>
+      </div> 
+    </div>
+    <div class="hw-footer__mobile">
+      <nav class="hw-footer__navigation">
+        <button class="hw-button hw-button--full hw-button--primary">
+          A button
+        </button>
+        <button class="hw-button hw-button--full hw-button--secondary">
+          <i class="fa-x fa-fw fas fa-globe"></i> English site
+        </button>
+        <div class="hw-block hw-block--mt">
+        <div class="hw-block hw-block--mb-smallest">
+        <p class="hw-text-small">Follow us on social media</p>
+        </div>
+        <div class="hw-some">
+          <button class="hw-some__button hw-some__button--facebook">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button class="hw-some__button hw-some__button--twitter">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button class="hw-some__button hw-some__button--linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </button>
+        </div>
+        
+      </div>
+        <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
-              Lorem ispum
+              Lorum ipsum
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
               <ul class="hw-accordion__link-items">
-                <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                <li class="hw-accordion__link-item">                            
+                  <a class="hw-accordion__link"></a> 
                 </li>
                 <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                  <a href="#" class="hw-accordion__link">Aliquam consequat</a>
+                </li>
+                <li  class="hw-accordion__link-item">
+                  <a href="#" class="hw-accordion__link">Vivamus eros</a>
+                </li>
+                <li>
+                  <a href="#" class="hw-accordion__link">Vivamus pulvinar</a>
+                </li>
+                <li>
+                  <a href="#" class="hw-accordion__link">Cras at</a>
                 </li>
               </ul>
             </div>
           </li>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
-              Lorem ispum
+              Lorum ipsum
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
               <ul class="hw-accordion__link-items">
-                <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                <li class="hw-accordion__link-item">                            
+                  <a class="hw-accordion__link"></a> 
                 </li>
                 <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                  <a href="#" class="hw-accordion__link">Aliquam consequat</a>
+                </li>
+                <li  class="hw-accordion__link-item">
+                  <a href="#" class="hw-accordion__link">Vivamus eros</a>
+                </li>
+                <li>
+                  <a href="#" class="hw-accordion__link">Vivamus pulvinar</a>
+                </li>
+                <li>
+                  <a href="#" class="hw-accordion__link">Cras at</a>
                 </li>
               </ul>
             </div>
           </li>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
-              Lorem ispum
+              Lorum ipsum
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
               <ul class="hw-accordion__link-items">
-                <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                <li class="hw-accordion__link-item">                            
+                  <a class="hw-accordion__link"></a> 
                 </li>
                 <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                  <a href="#" class="hw-accordion__link">Aliquam consequat</a>
+                </li>
+                <li  class="hw-accordion__link-item">
+                  <a href="#" class="hw-accordion__link">Vivamus eros</a>
+                </li>
+                <li>
+                  <a href="#" class="hw-accordion__link">Vivamus pulvinar</a>
+                </li>
+                <li>
+                  <a href="#" class="hw-accordion__link">Cras at</a>
                 </li>
               </ul>
             </div>
           </li>
         </ul>
-      </div>
-
+      </nav>
+      
     </div>
-
-    <div class="hw-block hw-block--full hw-block--pt hw-block--pb-small">
+    <div class="hw-footer__shared">
+      
+      <!-- Logo -->
       <div class="hw-footer__logo">
-        <svg class="hw-icon">
-          <use xlink:href="#logo-bring-white"></use>
+         <div class="hw-footer__logo">
+      <a href="#" class="hw-footer__logo-link">
+        <svg class="hw-footer__logo-link-standard">
+          <use xlink:href="#logo-bring"></use>
         </svg>
+        <svg class="hw-footer__logo-link-gray">
+          <use xlink:href="#logo-bring-gray"></use>
+        </svg>
+        </a>
+      </div>
+      <div class="hw-block">
+        <div class="hw-block hw-block--pb-smaller">All rights reserved @ bring</div>
+        <a href="#" class="hw-link">Privacy and security</a>  
+        <a href="#" class="hw-link">Cookies</a>
       </div>
     </div>
+  </div>
+</div>
+</div>
+</footer>
 
-    <div class="hw-block hw-block--full hw-block--bg-white">
-      <div class="hw-footer__legal">
-        <a href="#">© Posten Norge</a>
-        <span>|</span>
-        <a href="#">Personvern og sikkerhet</a>
-        <span>|</span>
-        <a href="#">Cookies</a>
-      </div>
-    </div>
-  </footer>
 ```
 
-### Footer with Social media button
+### Footer with 3 columns
+
 
 ```html
-  <footer class="hw-footer">
 
+<footer class="hw-footer">
+ <div class="hw-container">
+   <div class="hw-block hw-block--pt-large hw-block--pb-large">
     <div class="hw-footer__desktop">
-      <div class="hw-grid">
-        <div class="hw-grid__item hw-one-quarter">
-          <h3 class="hw-footer__title">Lorum ipsum</h3>
-          <hr class="hw-hr hw-hr--white" />
-          <div class="hw-block hw-block--full hw-block--mt-small">
-            <ul class="hw-footer__links">
-            <li><a class="hw-footer__link" href="#">Aliquam consequat</a></li>
-            <li><a class="hw-footer__link" href="#">Vivamus eros</a></li>
-            <li><a class="hw-footer__link" href="#">Vivamus pulvinar</a></li>
-            <li><a class="hw-footer__link" href="#">Cras at</a></li>
-            </ul>
-          </div>
-        </div><!--
-        --><div class="hw-grid__item hw-one-quarter">
-          <h3 class="hw-footer__title">Lorem ipsum</h3>
-          <hr class="hw-hr hw-hr--white" />
-          <div class="hw-block hw-block--full hw-block--mt-small">
-            <ul class="hw-footer__links">
-            <li><a class="hw-footer__link" href="#">Aliquam consequat</a></li>
-            <li><a class="hw-footer__link" href="#">Vivamus eros</a></li>
-            <li><a class="hw-footer__link" href="#">Vivamus pulvinar</a></li>
-            <li><a class="hw-footer__link" href="#">Cras at</a></li>
-            </ul>
-          </div>
-        </div><!--
-        --><div class="hw-grid__item hw-one-quarter">
-          <h3 class="hw-footer__title">Lorem Ipsum</h3>
-          <hr class="hw-hr hw-hr--white" />
-          <div class="hw-block hw-block--full hw-block--mt-small">
-            <ul class="hw-footer__links">
-              <li><a class="hw-footer__link" href="#">Aliquam consequat</a></li>
-              <li><a class="hw-footer__link" href="#">Vivamus eros</a></li>
-              <li><a class="hw-footer__link" href="#">Vivamus pulvinar</a></li>
-              <li><a class="hw-footer__link" href="#">Cras at</a></li>
-            </ul>
-          </div>
-        </div><!--
-        --><div class="hw-grid__item hw-one-quarter">
-          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">Lorem ipsum</button>
-          <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
-            <i class="fas fa-globe"></i>
-            English
+      
+
+      <div class="hw-grid"><!--
+      --><div class="hw-grid__item hw-three-eighths">
+        <h4 class="">Lorum ipsum</h4>
+        <div class="hw-block hw-block hw-block--pt-smaller hw-block--pb-smaller">
+          <div class="hw-hr hw-hr--gray-light"></div>
+        </div>
+        <div class="hw-block">
+          <ul class="hw-linklist">
+            <li><a href="#">Aliquam consequat</a></li>
+            <li><a href="#">Vivamus eros</a></li>
+            <li><a href="#">Vivamus pulvinar</a></li>
+            <li><a href="#">Cras at</a></li>
+          </ul>
+        </div>
+      </div><div class="hw-grid__item hw-three-eighths">
+        <h4 class="">Lorum ipsum</h4>
+        <div class="hw-block hw-block hw-block--pt-smaller hw-block--pb-smaller">
+          <div class="hw-hr hw-hr--gray-light"></div>
+        </div>
+        <div class="hw-block">
+          <ul class="hw-linklist">
+            <li><a href="#">Aliquam consequat</a></li>
+            <li><a href="#">Vivamus eros</a></li>
+            <li><a href="#">Vivamus pulvinar</a></li>
+            <li><a href="#">Cras at</a></li>
+          </ul>
+        </div>
+      </div><div class="hw-grid__item hw-one-quarter">
+        <div class="hw-block hw-block--mb-smaller">
+          <button class="hw-button hw-button--full hw-button--primary">
+            A button
           </button>
-                  <div class="hw-block hw-block--full hw-block--mt-small">
-
-          <div class="hw-block hw-block--full hw-block--mb-smaller">
-            <p class="hw-text-small hw-text-color--white">Følg oss på sosiale medier</p>
+        </div>
+        <button class="hw-button hw-button--full hw-button--secondary">
+          <i class="fa-x fa-fw fas fa-globe"></i> English site
+        </button>
+        <div class="hw-block hw-block--mt">
+        <div class="hw-block hw-block--mb-smallest">
+          <p class="hw-text-small">Follow us on social media</p>
           </div>
-
-          <div class="hw-some hw-some--dark">
+          <div data-th-if="${footer.soMeLinks}" class="hw-some">
+              <div class="hw-some">
               <button class="hw-some__button hw-some__button--facebook">
                 <i class="fab fa-facebook-f"></i>
               </button>
               <button class="hw-some__button hw-some__button--twitter">
                 <i class="fab fa-twitter"></i>
               </button>
-              <button class="hw-some__button hw-some__button--google">
-                <i class="fab fa-google-plus-g"></i>
+              <button class="hw-some__button hw-some__button--linkedin">
+                <i class="fab fa-linkedin-in"></i>
               </button>
             </div>
           </div>
-
-        </div>
+        </div></div>
       </div>
+      <div class="hw-block hw-block--pt">
+        <div class="hw-hr hw-hr--full hw-hr--gray-lightest"></div>
+      </div> 
     </div>
-
     <div class="hw-footer__mobile">
-
-      <div class="hw-block hw-block--half hw-block--pt-small">
-
-        <div class="hw-grid">
-          <div class="hw-grid__item hw-small--one-half">
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">Lorem ipsum</button>
-          </div><!--
-          --><div class="hw-grid__item hw-small--one-half">
-            <button class="hw-footer__button hw-button hw-button--full hw-button--secondary">
-              <i class="fas fa-globe"></i>
-              English
-            </button>
-          </div>
+      <nav class="hw-footer__navigation">
+        <button class="hw-button hw-button--full hw-button--primary">
+          A button
+        </button>
+        <button class="hw-button hw-button--full hw-button--secondary">
+          <i class="fa-x fa-fw fas fa-globe"></i> English site
+        </button>
+        <div class="hw-block hw-block--mt">
+        <div class="hw-block hw-block--mb-smallest">
+        <p class="hw-text-small">Follow us on social media</p>
         </div>
-
-        <div class="hw-block hw-block--full hw-block--mt-small">
-
-          <div class="hw-block hw-block--full hw-block--mb-smaller">
-            <p class="hw-text-small hw-text-color--white">Følg oss på sosiale medier</p>
-          </div>
-
-          <div class="hw-some hw-some--dark">
-            <button class="hw-some__button hw-some__button--facebook">
-                <i class="fab fa-facebook-f"></i>
-            </button>
-            <button class="hw-some__button hw-some__button--twitter">
-                <i class="fab fa-twitter"></i>
-            </button>
-            <button class="hw-some__button hw-some__button--google">
-                <i class="fab fa-google-plus-g"></i>
-            </button>
-          </div>
+        <div class="hw-some">
+          <button class="hw-some__button hw-some__button--facebook">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button class="hw-some__button hw-some__button--twitter">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button class="hw-some__button hw-some__button--linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </button>
         </div>
-
+        
       </div>
-
-      <div class="hw-block hw-block--pt-small">
-        <ul class="hw-accordion hw-accordion--dark" data-hw-accordion="footer-menu">
+        <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
-              Lorem ispum
+              Lorum ipsum
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
               <ul class="hw-accordion__link-items">
-                <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                <li class="hw-accordion__link-item">                            
+                  <a class="hw-accordion__link"></a> 
                 </li>
                 <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                  <a href="#" class="hw-accordion__link">Aliquam consequat</a>
+                </li>
+                <li  class="hw-accordion__link-item">
+                  <a href="#" class="hw-accordion__link">Vivamus eros</a>
+                </li>
+                <li>
+                  <a href="#" class="hw-accordion__link">Vivamus pulvinar</a>
+                </li>
+                <li>
+                  <a href="#" class="hw-accordion__link">Cras at</a>
                 </li>
               </ul>
             </div>
           </li>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
-              Lorem ispum
+              Lorum ipsum
               <div class="hw-accordion__arrow"></div>
             </button>
             <div class="hw-accordion__contents">
               <ul class="hw-accordion__link-items">
-                <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                <li class="hw-accordion__link-item">                            
+                  <a class="hw-accordion__link"></a> 
                 </li>
                 <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                  <a href="#" class="hw-accordion__link">Aliquam consequat</a>
                 </li>
-              </ul>
-            </div>
-          </li>
-          <li class="hw-accordion__item">
-            <button class="hw-accordion__trigger">
-              Lorem ispum
-              <div class="hw-accordion__arrow"></div>
-            </button>
-            <div class="hw-accordion__contents">
-              <ul class="hw-accordion__link-items">
-                <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                <li  class="hw-accordion__link-item">
+                  <a href="#" class="hw-accordion__link">Vivamus eros</a>
                 </li>
-                <li class="hw-accordion__link-item">
-                  <a href="#" class="hw-accordion__link">Lenke</a>
+                <li>
+                  <a href="#" class="hw-accordion__link">Vivamus pulvinar</a>
+                </li>
+                <li>
+                  <a href="#" class="hw-accordion__link">Cras at</a>
                 </li>
               </ul>
             </div>
           </li>
         </ul>
-      </div>
-
+      </nav>
+      
     </div>
-
-    <div class="hw-block hw-block--full hw-block--pt hw-block--pb-small">
-      <div class="hw-footer__logo">
-        <svg class="hw-icon">
-          <use xlink:href="#logo-bring-white"></use>
+    <div class="hw-footer__shared">
+      
+      <!-- Logo -->
+       <div class="hw-footer__logo">
+      <a href="#" class="hw-footer__logo-link">
+        <svg class="hw-footer__logo-link-standard">
+          <use xlink:href="#logo-bring"></use>
         </svg>
+        <svg class="hw-footer__logo-link-gray">
+          <use xlink:href="#logo-bring-gray"></use>
+        </svg>
+        </a>
       </div>
-    </div>
 
-    <div class="hw-block hw-block--full hw-block--bg-white">
-      <div class="hw-footer__legal">
-        <a href="#">© Posten Norge</a>
-        <span>|</span>
-        <a href="#">Personvern og sikkerhet</a>
-        <span>|</span>
-        <a href="#">Cookies</a>
+      <div class="hw-block">
+        <div class="hw-block hw-block--pb-smaller">All rights reserved @ bring</div>
+        <a href="#" class="hw-link">Privacy and security</a>  
+        <a href="#" class="hw-link">Cookies</a>
       </div>
     </div>
-  </footer>
+  </div>
+</div>
+</div>
+</footer>
+
+
 ```
