@@ -394,3 +394,39 @@
 
 
 ```
+
+### Slim footer
+
+
+```html
+
+<footer class="hw-footer">
+ <div class="hw-container">
+   <div class="hw-block hw-block--pt hw-block--pb-large">
+    <div class="hw-footer__shared">
+      
+      <!-- Logo -->
+       <div class="hw-footer__logo">
+      <a href="#" class="hw-footer__logo-link">
+        <svg class="hw-footer__logo-link-standard">
+          <use xlink:href="#logo-posten"></use>
+        </svg>
+        <svg class="hw-footer__logo-link-gray">
+          <use xlink:href="#logo-posten-gray"></use>
+        </svg>
+        </a>
+      </div>
+
+      <div class="hw-block">
+        <div class="hw-block hw-block--pb-smaller">All rights reserved @ posten</div>
+        <a href="#" class="hw-link">Privacy and security</a>  
+        <a href="#" class="hw-link">Cookies</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+
+
+```
