@@ -30,5 +30,15 @@
     & > *:first-of-type {
       margin-left: 0;
     }
+    &.hw-flex--responsive > * {
+      margin-left: 0;
+      margin-top: var(--hw-spacing);
+      @media (--medium) {
+        margin-left: var(--hw-spacing);
+      }
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
   }
 }
