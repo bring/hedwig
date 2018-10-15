@@ -69,7 +69,7 @@ Select default option by marking selected option with `selected`
 </label>
 ```
 
-### Dropdown searchable NOT READY
+### Search Selection
 
 Don't use default selected here as you want the user to start with an empty input.
 
