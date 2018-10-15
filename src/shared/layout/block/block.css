@@ -162,7 +162,8 @@
   }
 
   &--px {
-    padding: 0 var(--hw-spacing);
+    padding-top: var(--hw-spacing);
+    padding-bottom: var(--hw-spacing);
   }
 
   /**
