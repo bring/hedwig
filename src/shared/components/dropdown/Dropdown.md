@@ -42,6 +42,8 @@ Client side rendering, see further down
 ```
 
 ### With disabled option
+Will make one option disabled, to use as a placeholder value or instruction to the end user.
+
 ```html
 <label class="hw-label">
   Select country
