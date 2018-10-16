@@ -162,8 +162,8 @@
   }
 
   &--px {
-    padding-top: var(--hw-spacing);
-    padding-bottom: var(--hw-spacing);
+    padding-left: var(--hw-spacing);
+    padding-right: var(--hw-spacing);
   }
 
   /**
