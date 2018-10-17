@@ -2,13 +2,9 @@
  * Block
  */
 
-.hw-hero {
+ .hw-hero {
   background: var(--hw-color-gray-lightest);
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   min-height: 55vh;
   overflow: hidden;
 
@@ -25,8 +21,8 @@
    * Elements
    */
 
-  &__image,
-  &__overlay {
+   &__image,
+   &__overlay {
     position: absolute;
     top: 0;
     right: 0;
@@ -35,21 +31,39 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  &__title {
-    color: var(--hw-color-white);
-    text-align: center;
+    opacity: 0.85;
   }
 
   &__content {
-    flex-basis: auto;
-    flex-grow: 1;
-    max-width: var(--hw-width-default);
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    max-width: var(--hw-width-wide);
     overflow: hidden;
 
     &--bottom {
-      align-self: flex-end;
+      justify-content:flex-end;
+    }
+
+    &--top {
+      justify-content: flex-start;
+    }
+
+    &--middle {
+      justify-content:center;
+    }
+
+    &--left {     
+      align-items:flex-start;
+    }
+
+    &--right {
+      
+      align-items:flex-end;
+    }
+
+    &--center {
+      align-items:center;
     }
   }
 
@@ -57,7 +71,7 @@
    * Modifiers: sizes
    */
 
-  &--small {
+   &--small {
     min-height: 35vh;
   }
 
