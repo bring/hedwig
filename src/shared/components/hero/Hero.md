@@ -47,12 +47,12 @@ Changed from 20vh to 35vh in version 6.1.4
 Content can be placed on top of the hero image and positioned right, left or center, and top, bottom or middle
 
 ```code
-[Top]           .hw-hero__content-top
-[Bottom]        .hw-hero__content-bottom
-[Middle]        .hw-hero__content-middle
-[Left]          .hw-hero__content-left
-[Right]         .hw-hero__content-right
-[Center]        .hw-hero__content-center
+[Top]           .hw-hero__content--top
+[Bottom]        .hw-hero__content--bottom
+[Middle]        .hw-hero__content--middle
+[Left]          .hw-hero__content--left
+[Right]         .hw-hero__content--right
+[Center]        .hw-hero__content--center
 
 ```
 
