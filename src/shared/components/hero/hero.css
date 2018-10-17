@@ -36,33 +36,34 @@
 
   &__content {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     height:100%;
     max-width: var(--hw-width-wide);
     overflow: hidden;
 
     &--bottom {
-      align-items:flex-end;
-    }
-
-    &--top {
-      align-items:flex-start;
-    }
-
-    &--middle {
-      align-items:center;
-    }
-
-    &--left {
-      justify-content: flex-start;
-    }
-
-    &--right {
       justify-content:flex-end;
     }
 
-    &--center {
+    &--top {
+      justify-content: flex-start;
+    }
+
+    &--middle {
       justify-content:center;
+    }
+
+    &--left {     
+      align-items:flex-start;
+    }
+
+    &--right {
+      
+      align-items:flex-end;
+    }
+
+    &--center {
+      align-items:center;
     }
   }
 
