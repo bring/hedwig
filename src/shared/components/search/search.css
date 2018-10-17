@@ -54,7 +54,14 @@
     padding-top: initial;
     padding-bottom: initial;
     margin-left: var(--hw-spacing-smallest);
+  }
 
+  &__button-inside {
+    position: absolute;
+    right: var(--hw-spacing-small);
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
   }
 
   &__suggestions {
@@ -65,6 +72,8 @@
     padding-left: 0;
     width: 100%;
     background-color: var(--hw-color-white);
+    left: 0;
+    right: 0;
   }
 
   &__suggestion {

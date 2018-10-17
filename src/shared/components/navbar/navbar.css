@@ -142,8 +142,8 @@
   &__search {
     display: none;
     position: absolute;
-    left: 220px;
-    right: 220px;
+    left: 0;
+    right: 0;
     z-index: var(--z-index--navbar-search);
   }
 
@@ -165,6 +165,7 @@
 
   &--searching {
     & .hw-navbar__search {
+      top: 0;
       display: block;
       z-index: var(--z-index--navbar-search-foreground);
     }
