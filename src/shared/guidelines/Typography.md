@@ -55,6 +55,29 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 Posten uses color primary and Bring uses color primary darker because of accessability purposes
 ```
 
+### Available font colors
+```code
+hw-color-primary-darker
+hw-color-primary-dark
+hw-color-primary
+hw-color-primary-light
+hw-color-primary-lighter
+hw-color-gray-lightest
+hw-color-gray-lighter
+hw-color-gray-light
+hw-color-gray
+hw-color-gray-dark
+hw-color-gray-darker
+hw-color-gray-darkest
+hw-color-yellow
+hw-color-green
+hw-color-red
+hw-color-white
+hw-color-black
+hw-color-avocado
+hw-color-secondary
+```
+
 #### Primary
 ```html|span-4,plain,light
   <p class="hw-color-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
