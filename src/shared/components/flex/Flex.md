@@ -5,7 +5,7 @@ Flexible card grid
 ```code
 [Flex]           .hw-flex
 [Responsive]     .hw-flex--responsive
-[Guttered]       .hw-flex--guttered
+[Guttered]       .hw-flex--guttered - Gives a margin between elements
 ```
 
 ### Default flex
