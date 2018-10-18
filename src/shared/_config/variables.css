@@ -38,6 +38,29 @@
   --hw-color-secondary: #fdbb2f;
 
   /**
+  * Colors with opacity 85%
+  */
+  
+  --hw-color-opaque-gray-lightest: rgba(242,242,242, 0.85); /* #f2f2f2 */
+  --hw-color-opaque-gray-lighter: rgba(230,230,230,0.85); /* #E6E6E6 */
+  --hw-color-opaque-gray-light: rgba(193,193,193, 0.85); /* #C1C1C1 */
+  --hw-color-opaque-gray: rgba(136,136,136, 0.85); /* #888888 */
+  --hw-color-opaque-gray-dark: rgba(102,102,102, 0.85); /* #666666 */
+  --hw-color-opaque-gray-darker: rgba(68,68,68, 0.85); /* #444444*/
+  --hw-color-opaque-gray-darkest: rgba(34,34,34, 0.85); /* #222222 */
+
+  --hw-color-opaque-yellow: rgba(253,187,47, 0.85); /* #fdbb2 */
+  --hw-color-opaque-green: rgba(38,181,118, 0.85); /* #26b576 */
+  --hw-color-opaque-red: rgba(227,45,34, 0.85); /* #e32d22 */
+
+  --hw-color-opaque-white: rgba(255,255,255, 0.85); /* #ffffff */
+  --hw-color-opaque-black: rgba(0,0,0, 0.85); /* #000000 */
+  --hw-color-opaque-avocado: rgba(38,181,118, 0.85); /* #26b576 */
+  --hw-color-opaque-secondary: rgba(253,187,47, 0.85); /* #fdbb2f */
+
+
+
+  /**
    * Width limitations
    */
 

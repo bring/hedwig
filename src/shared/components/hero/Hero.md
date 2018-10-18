@@ -60,7 +60,7 @@ Content can be placed on top of the hero image and positioned right, left or cen
   
   <div class="hw-hero">
     <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"/>
-    <div class="hw-hero__overlay hw-background-color-primary">
+    <div class="hw-hero__overlay hw-background-color-opaque-primary">
       <div class="hw-hero__content hw-hero__content--center hw-hero__content--middle">
         <div class="hw-block">
           <p class="hw-color-white">Hero with overlay and some white content (center and middle)</p>
