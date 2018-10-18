@@ -75,7 +75,6 @@
 .hw-background-color-primary-lighter {
   background-color: var(--hw-color-primary-lighter);
 }
-
 .hw-background-color-gray-lightest{
   background-color: var(--hw-color-gray-lightest);
 }
@@ -97,7 +96,6 @@
 .hw-background-color-gray-darkest{
   background-color: var(--hw-color-gray-darkest);
 }
-
 .hw-background-color-yellow{
   background-color: var(--hw-color-yellow);
 }
@@ -119,6 +117,17 @@
 .hw-background-color-secondary{
   background-color: var(--hw-color-secondary);
 }
+
+/* Background colors with opacity*/
+
+.hw-background-color-opaque-primary {
+  background-color: var(--hw-color-opaque-primary);
+}
+.hw-background-color-opaque-black{
+  background-color: var(--hw-color-opaque-black);
+}
+
+
 
 
 

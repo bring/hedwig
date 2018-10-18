@@ -14,6 +14,11 @@
   --hw-color-primary-lighter: #d8ecc9;
 
   /**
+  * Opaque colors
+  */
+  --hw-color-opaque-primary: rgba(123,193,68, 0.95); /* #7bc144 */
+
+  /**
     * Link Colors
     */
 

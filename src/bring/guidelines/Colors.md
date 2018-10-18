@@ -114,3 +114,12 @@ Block with background color primary
 Block with background color primary-lighter
 </div>
 ```
+
+## Opaque background colors
+Background colors with opacity 95%
+The following classes can be used to set an opaque background of an element
+```code
+hw-background-color-opaque-primary
+hw-background-color-opaque-black
+```
+

@@ -38,6 +38,14 @@
   --hw-color-secondary: #fdbb2f;
 
   /**
+  * Colors with opacity 85%
+  */
+
+  --hw-color-opaque-black: rgba(0,0,0, 0.20); /* #000000 */
+
+
+
+  /**
    * Width limitations
    */
 
