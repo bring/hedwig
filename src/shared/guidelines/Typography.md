@@ -52,6 +52,26 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
   <p class="hw-text-smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
 ```
 
+### Modifiers
+Certain tags/components have modifiers 
+
+These are the available modifiers and the tags/components they are available for
+
+
+```table
+rows:
+  - Modifier: hw-text-bold
+    Available for: h5, .hw-h5
+  - Modifier: hw-text-light
+    Available for: p, .hw-text-small, .hw-text-smaller
+    ```
+
+#### Examples
+```html|span-4,plain,light
+<h5 class="hw-text-bold">H5 tag with modifier hw-text-bold</h5>
+<p class="hw-text-light">Paragraph with modifier hw-text-light</p>
+```
+
 ### Colors
 ```hint
 Posten uses color primary and Bring uses color primary darker because of accessability purposes
@@ -89,3 +109,5 @@ hw-color-secondary
 ```html|span-4,plain,light
   <p class="hw-color-primary-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
 ```
+
+
