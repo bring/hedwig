@@ -8,6 +8,7 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 [h2]             h2 font size 25 - 42px
 [h3]             h3 font size 22 - 31px
 [h4]             h4 font size 20 - 23px
+[h5]             h5 font size 18 - 20px
 [p]              p
 
 [Lead]           hw-text-lead
@@ -27,6 +28,7 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
   <h2>H2 Headline example</h2>
   <h3>H3 Headline example</h3>
   <h4>H4 Headline example</h4>
+  <h5>H5 Headline example</h5>
 ```
 
 ### Paragraph
