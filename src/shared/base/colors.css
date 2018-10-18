@@ -120,63 +120,13 @@
 
 /* Background colors with opacity*/
 
-.hw-background-color-opaque-primary-darker {
-  background-color:var(--hw-color-opaque-primary-darker);
-}
-.hw-background-color-opaque-primary-dark {
-  background-color: var(--hw-color-opaque-primary-dark);
-}
 .hw-background-color-opaque-primary {
   background-color: var(--hw-color-opaque-primary);
-}
-.hw-background-color-opaque-primary-light {
-  background-color: var(--hw-color-opaque-primary-light);
-}
-.hw-background-color-opaque-primary-lighter {
-  background-color: var(--hw-color-opaque-primary-lighter);
-}
-.hw-background-color-opaque-gray-lightest{
-  background-color: var(--hw-color-opaque-gray-lightest);
-}
-.hw-background-color-opaque-gray-lighter{
-  background-color: var(--hw-color-opaque-gray-lighter);
-}
-.hw-background-color-opaque-gray-light{
-  background-color: var(--hw-color-opaque-gray-light);
-}
-.hw-background-color-opaque-gray{
-  background-color: var(--hw-color-opaque-gray);
-}
-.hw-background-color-opaque-gray-dark{
-  background-color: var(--hw-color-opaque-gray-dark);
-}
-.hw-background-color-opaque-gray-darker{
-  background-color: var(--hw-color-opaque-gray-darker);
-}
-.hw-background-color-opaque-gray-darkest{
-  background-color: var(--hw-color-opaque-gray-darkest);
-}
-.hw-background-color-opaque-yellow{
-  background-color: var(--hw-color-opaque-yellow);
-}
-.hw-background-color-opaque-green{
-  background-color: var(--hw-color-opaque-green);
-}
-.hw-background-color-opaque-red{
-  background-color: var(--hw-color-opaque-red);
-}
-.hw-background-color-opaque-white{
-  background-color: var(--hw-color-opaque-white);
 }
 .hw-background-color-opaque-black{
   background-color: var(--hw-color-opaque-black);
 }
-.hw-background-color-opaque-avocado{
-  background-color: var(--hw-color-opaque-avocado);
-}
-.hw-background-color-opaque-secondary{
-  background-color: var(--hw-color-opaque-secondary);
-}
+
 
 
 

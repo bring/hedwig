@@ -16,12 +16,7 @@
   /**
   * Opaque colors
   */
-  --hw-color-opaque-primary: rgba(123,193,68, 0.85); /* #7bc144 */
-  --hw-color-opaque-primary-dark: rgba(76,162,0, 0.85); /* #4ca200 */
-  --hw-color-opaque-primary-darker:rgba(35,56,19, 0.85); /* #233813 */
-  --hw-color-opaque-primary-light: rgba(183,221,152, 0.85); /* #b7dd98 */
-  --hw-color-opaque-primary-lighter: rgba(216,236,201, 0.85); /* #d8ecc9 */
-
+  --hw-color-opaque-primary: rgba(123,193,68, 0.95); /* #7bc144 */
 
   /**
     * Link Colors

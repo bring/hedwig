@@ -116,27 +116,10 @@ Block with background color primary-lighter
 ```
 
 ## Opaque background colors
-Background colors with opacity 85%
+Background colors with opacity 95%
 The following classes can be used to set an opaque background of an element
 ```code
-hw-background-color-opaque-primary-darker                     
-hw-background-color-opaque-primary-dark
 hw-background-color-opaque-primary
-hw-background-color-opaque-primary-light
-hw-background-color-opaque-primary-lighter
-hw-background-color-opaque-gray-lightest
-hw-background-color-opaque-gray-lighter
-hw-background-color-opaque-gray-light
-hw-background-color-opaque-gray
-hw-background-color-opaque-gray-dark
-hw-background-color-opaque-gray-darker
-hw-background-color-opaque-gray-darkest
-hw-background-color-opaque-yellow
-hw-background-color-opaque-green
-hw-background-color-opaque-red
-hw-background-color-opaque-white
 hw-background-color-opaque-black
-hw-background-color-opaque-avocado
-hw-background-color-opaque-secondary
 ```
 
