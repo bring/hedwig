@@ -94,6 +94,10 @@ h4,
 h5,
 .hw-h5 {
   font-size: var(--hw-font-size-h5);
+
+  &.hw-text-bold {
+    font-family: var(--hw-font-primary-bold);
+  }
 }
 
 @media (--xlarge) {
@@ -118,3 +122,11 @@ h5,
 .hw-text-smaller {
   font-size: var(--hw-font-size-smaller);
 }
+
+.hw-text-small .hw-text-light,
+.hw-text-smaller .hw-text-light,
+p.hw-text-light {
+  font-family: var(--hw-font-primary-regular);
+}
+
+
