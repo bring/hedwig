@@ -37,6 +37,12 @@ Horizontal rule
   <hr class="hw-hr hw-hr--centered" />
 ```
 
+### Dashed
+
+```html|span-6
+  <hr class="hw-hr hw-hr--dashed" />
+```
+
 ## Other colors
 
 ### Gray
