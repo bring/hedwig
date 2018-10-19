@@ -1,0 +1,4 @@
+/* Remove the default X reset button in IE */
+input::-ms-clear {
+  display: none;
+}
