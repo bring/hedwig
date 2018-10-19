@@ -26,10 +26,29 @@
 
   &__input {
     margin: 0;
-    border: 0;
     width: 100%;
     transition: outline 100ms;
-    height: 72px;
+    border: 3px solid var(--hw-color-gray-light);
+    padding: var(--hw-spacing-smallest) var(--hw-spacing-large);
+    height: auto;
+    font-size: var(--hw-font-size-p);
+    &:hover {
+      border-color: var(--hw-color-gray);
+    }
+    &:focus {
+      border-color: var(--hw-color-gray-darker);
+      outline-width: 0;
+      background-color: var(--hw-color-white);
+      @media (--large){
+        outline-width: initial;
+      }
+    }
+    @media (--large){
+      height: 72px;
+      border: 0;
+      font-size: var(--hw-font-size-lead);
+      padding: 21px calc(var(--hw-spacing-larger) + var(--hw-spacing-smaller));
+    }
   }
 
   &__placeholder {
@@ -39,14 +58,26 @@
     color: var(--hw-color-gray-dark);
     animation: movePlaceholder 3s ease-out infinite 0.3s;
     z-index: -1;
+    font-size: var(--hw-font-size-p);
+    padding: var(--hw-spacing-smallest) var(--hw-spacing-large);
+    border: 3px solid transparent;
+    @media (--large){
+      font-size: var(--hw-font-size-lead);
+      padding: 21px calc(var(--hw-spacing-larger) + var(--hw-spacing-smaller));
+      border: 0;
+    }
   }
 
   &__icon {
     position: absolute;
-    left: var(--hw-spacing-small);
     top: 50%;
     transform: translateY(-50%);
-    font-size: 1.5em;
+    font-size: 1em;
+    left: var(--hw-spacing-smaller);
+    @media (--large) {
+      font-size: 1.5em;
+      left: var(--hw-spacing-small);
+    }
   }
 
   &__button {
@@ -66,14 +97,18 @@
 
   &__suggestions {
     position: absolute;
-    padding-top: 72px;
+    top: 41px;
     margin: 0;
     list-style-type: none;
     padding-left: 0;
     width: 100%;
-    background-color: var(--hw-color-white);
+    background-color: var(--hw-color-gray-lighter);
     left: 0;
     right: 0;
+    @media (--large){
+      top: 72px;
+      background-color: var(--hw-color-white);
+    }
   }
 
   &__suggestion {
@@ -81,7 +116,10 @@
       border-top: 2px solid var(--hw-color-gray-light);
     }
     &:not(:first-of-type) .hw-search__suggestion-link .hw-search__suggestion-title {
-      border-top: 2px solid var(--hw-color-gray-lighter);
+      border-top: 2px solid var(--hw-color-gray-lightest);
+      @media (--large) {
+        border-top-color: var(--hw-color-gray-lighter);
+      }
     }
     &:last-of-type .hw-search__suggestion-link {
       padding-bottom: 12px;
@@ -92,12 +130,14 @@
   }
 
   &__suggestion-link {
-    padding-left: 24px;
     display: inline-block;
     width: 100%;
     &:hover, &:focus {
       color: var(--hw-color-black);
       background-color: var(--hw-color-gray-lighter);
+    }
+    @media (--large){
+      padding-left: 24px;
     }
   }
 

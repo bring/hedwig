@@ -91,6 +91,7 @@ library.add(fab.faTwitter);
 library.add(far.faBars);
 library.add(far.faLockOpenAlt);
 library.add(far.faSearch);
+library.add(far.faTimes);
 library.add(far.faUser);
 
 library.add(fal.faTimes);

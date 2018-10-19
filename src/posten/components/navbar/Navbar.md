@@ -50,7 +50,7 @@
 
     <div class="hw-drawer" data-hw-drawer="login">
       <div class="hw-drawer__overlay hw-animate hw-animate--fade-in-overlay" data-hw-drawer-trigger="Drawer2"></div>
-      <div class="hw-drawer__content">
+      <div class="hw-drawer__content" data-hw-navbar-content>
         <div class="hw-drawer__header">
           <div class="hw-drawer__close">
             <button class="hw-drawer__close-button" data-hw-drawer-trigger="login">
@@ -242,22 +242,68 @@
     </section>
     <div class="hw-navbar__overlay" data-hw-navbar-overlay></div>
     <section class="hw-navbar__search">
-      <div class="hw-search hw-search--large" data-hw-search>
-        <span class="hw-search__background"></span>
-        <div class="hw-search__inner">
-          <input
-            data-hw-search-input
-            class="hw-search__input" type="text"
-            aria-label="Søk"
-            placeholder="Søk"
-          />
-          <i class="far fa-search hw-search__icon"></i>
+      <div class="hw-container hw-container--slim">
+        <div class="hw-block hw-block--px-fluid">
+          <div class="hw-search hw-search--large" data-hw-search>
+            <span class="hw-search__background"></span>
+            <div class="hw-search__inner">
+              <input
+                data-hw-search-input
+                class="hw-search__input" type="text"
+                aria-label="Søk"
+                placeholder="Søk"
+                value="flytte"
+              />
+              <i class="far fa-search hw-search__icon"></i>
+              <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
+            </div>
+            <ul class="hw-search__suggestions">
+              <li class="hw-search__suggestion" data-hw-search-suggestion>
+                <a class="hw-search__suggestion-link" tabindex="-1" href="3">
+                  <p class="hw-search__suggestion-title">Flyttetips</p>
+                  <p class="hw-search__suggestion-extra">Innhold</p>
+                </a>
+              </li>
+              <li class="hw-search__suggestion" data-hw-search-suggestion>
+                <a class="hw-search__suggestion-link" tabindex="-1" href="3">
+                  <p class="hw-search__suggestion-title">Adresseendring</p>
+                  <p class="hw-search__suggestion-extra">Innhold</p>
+                </a>
+              </li>
+              <li class="hw-search__suggestion" data-hw-search-suggestion>
+                <a class="hw-search__suggestion-link" tabindex="-1" href="3">
+                  <p class="hw-search__suggestion-title">Tolltjenester</p>
+                  <p class="hw-search__suggestion-extra">Innhold</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <button class="hw-navbar__close-search" data-hw-navbar-close-search>
+        <i class="far fa-times fa-2x"></i>
+      </button>
     </section>
   </div>
 </header>
 ```
+
+
+The navbar `menu` and `search` functions depends on the following page structure.
+When opening the menu or search, Hedwig will modify both <main> and <footer> to improve scrolling.
+```
+<html>
+  <body>
+    <header>...</header>
+    <main>...</main>
+    <footer>...</footer>
+  </body>
+</html>
+```
+
+#### Disclaimer
+
+On this page, only the first navbar is able to open the search, menu and login. Normally you'll have only one Navbar on a page.
 
 
 

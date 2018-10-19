@@ -17,8 +17,10 @@ const HWNavbar = ({
   activeClass = 'hw-navbar--active',
   loginActiveClass = 'hw-navbar--login-active',
   showSearchClass = 'hw-navbar--searching',
+  searching = 'hw--searching',
   activeHamburgerClass = 'hw-hamburger--active',
   desktopSearchFieldSelector = '.hw-navbar__search .hw-search__input',
+  closeSearchSelector = '[data-hw-navbar-close-search]'
 } = {}) => {
   // Module settings object
   const SETTINGS = {
@@ -27,6 +29,7 @@ const HWNavbar = ({
     menuButtonLabelMenu: q('.hw-navbar__menu-button-label-menu'),
     menuButtonLabelClose: q('.hw-navbar__menu-button-label-close'),
     searchButton: q(searchButtonSelector),
+    closeSearch: q(closeSearchSelector),
     overlay: q(overlaySelector),
     hamburgerIcon: q(hamburgerIcon),
     desktopSearchField: q(desktopSearchFieldSelector),
@@ -78,10 +81,22 @@ const HWNavbar = ({
   function toggleSearch() {
     if (SETTINGS.navbar.classList.contains(showSearchClass)) {
       SETTINGS.navbar.classList.remove(showSearchClass);
+      if(SETTINGS.main) {
+        SETTINGS.main.classList.remove(searching);
+      }
+      if(SETTINGS.footer) {
+        SETTINGS.footer.classList.remove(searching);
+      }
       return;
     }
 
     SETTINGS.navbar.classList.add(showSearchClass);
+    if(SETTINGS.main) {
+      SETTINGS.main.classList.add(searching);
+    }
+    if(SETTINGS.footer) {
+      SETTINGS.footer.classList.add(searching);
+    }
     if (SETTINGS.desktopSearchField) {
       SETTINGS.desktopSearchField.focus();
     }
@@ -120,6 +135,9 @@ const HWNavbar = ({
       SETTINGS.searchButton.addEventListener('click', toggleSearch);
       SETTINGS.overlay.addEventListener('click', toggleSearch);
       q('.hw-navbar__search').addEventListener('keydown', e => onEscape(e));
+    }
+    if(SETTINGS.closeSearch){
+      SETTINGS.closeSearch.addEventListener('click', toggleSearch);
     }
   }
 
