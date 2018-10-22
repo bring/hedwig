@@ -126,7 +126,9 @@
     }
   }
 
-  & .hw-navbar__item, & .hw-navbar__search-button, & .hw-navbar__menu-button {
+  & .hw-navbar__item, & .hw-navbar__search-button, & .hw-navbar__menu-button,
+  &__item, &__search-button, &__menu-button
+  {
     outline: 0;
     & .hw-hamburger__part {
       background: var(--hw-color-gray-darker);
