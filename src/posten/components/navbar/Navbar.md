@@ -301,6 +301,25 @@ When opening the menu or search, Hedwig will modify both <main> and <footer> to 
 </html>
 ```
 
+
+## Items
+
+The navbar can have items inside the `hw-navbar__menu` subitem.
+
+```html
+<button class="hw-navbar__item">Logg inn<!--
+  --><i class="hw-navbar__icon far fa-user fa-2x"></i>
+</button>
+```
+
+The buttons can either use tag <button> or <a>. Here is an <a>
+```html
+<a class="hw-navbar__item">Logg inn<!--
+--><i class="hw-navbar__icon far fa-user fa-2x"></i>
+</a>
+```
+
+
 #### Disclaimer
 
 On this page, only the first navbar is able to open the search, menu and login. Normally you'll have only one Navbar on a page.

@@ -318,6 +318,7 @@ The buttons can either use tag <button> or <a>. Here is an <a>
 </a>
 ```
 
+
 #### Disclaimer
 
 On this page, only the first navbar is able to open the search, menu and login. Normally you'll have only one Navbar on a page.
