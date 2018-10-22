@@ -20,8 +20,12 @@
   }
 
   &__input, &__placeholder {
-    font-size: var(--hw-font-size-lead);
-    padding: 21px 60px;
+    font-size: var(--hw-font-size-p);
+    padding: var(--hw-spacing-smallest) var(--hw-spacing-large);
+    @media (--large) {
+      font-size: var(--hw-font-size-lead);
+      padding: 21px 60px;
+    }
   }
 
   &__input {
@@ -29,9 +33,7 @@
     width: 100%;
     transition: outline 100ms;
     border: 3px solid var(--hw-color-gray-light);
-    padding: var(--hw-spacing-smallest) var(--hw-spacing-large);
     height: auto;
-    font-size: var(--hw-font-size-p);
     &:hover {
       border-color: var(--hw-color-gray);
     }
@@ -46,8 +48,6 @@
     @media (--large){
       height: 72px;
       border: 0;
-      font-size: var(--hw-font-size-lead);
-      padding: 21px 60px;
     }
   }
 
@@ -58,12 +58,8 @@
     color: var(--hw-color-gray-dark);
     animation: movePlaceholder 3s ease-out infinite 0.3s;
     z-index: -1;
-    font-size: var(--hw-font-size-p);
-    padding: var(--hw-spacing-smallest) var(--hw-spacing-large);
     border: 3px solid transparent;
     @media (--large){
-      font-size: var(--hw-font-size-lead);
-      padding: 21px 60px;
       border: 0;
     }
   }
