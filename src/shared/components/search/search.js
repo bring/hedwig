@@ -1,6 +1,7 @@
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import findParent from '../../utilities/js/findParent';
+import KEYS from '../../utilities/js/keys';
 
 /**
  * @function HWSearch
@@ -84,6 +85,41 @@ const HWSearch = ({
     }
   }
 
+  function onArrowDownOrUp(e) {
+    if (e.keyCode === KEYS.DOWN) {
+      const hwSearch = findParent({ selector, elem: e.target });
+      if(e.target.tagName == 'INPUT'){ // We are currently in the search input field
+        const suggestionLinks = qa('[data-hw-search-suggestion] a', hwSearch); //Find the current search field's suggestionLinks
+        suggestionLinks[0].focus();
+      } else if ( e.target.tagName == 'A'){
+        const next = findParent({ selector: '.hw-search__suggestion', elem: e.target }).nextElementSibling;
+        if(next){
+          q('.hw-search__suggestion-link', next).focus();
+        } else {
+          q(searchInputSelector, hwSearch).focus();
+        }
+      }
+      e.preventDefault();
+    }
+
+    if(e.keyCode === KEYS.UP) {
+      const hwSearch = findParent({ selector, elem: e.target });
+      if(e.target.tagName == 'INPUT'){
+        const suggestionLinks = qa('[data-hw-search-suggestion] a', hwSearch); //Find the current search field's suggestionLinks
+        suggestionLinks[suggestionLinks.length - 1].focus();
+      } else if ( e.target.tagName == 'A'){
+        const previous = findParent({ selector: '.hw-search__suggestion', elem: e.target }).previousElementSibling;
+        if(previous){
+          q('.hw-search__suggestion-link', previous).focus();
+        } else {
+          q(searchInputSelector, hwSearch).focus();
+        }
+      }
+      e.preventDefault();
+    }
+  }
+
+
   /**
    * @function bindEvents
    * @desc Adds listener to dropdown
@@ -92,8 +128,11 @@ const HWSearch = ({
     const input = q(searchInputSelector, search);
     input.addEventListener('focus', toggleActive);
     input.addEventListener('blur', toggleActive);
+    const suggestions = q('.hw-search__suggestions', search);
+    if(suggestions) {
+      search.addEventListener('keydown', e => onArrowDownOrUp(e));
+    }
   }
-
 
   function init() {
     // Check if any search fields exist, return if not.
