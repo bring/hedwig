@@ -83,7 +83,7 @@ A simple component for adding one or more pieces of content into a frame, with o
 
 ```html|span-6,responsive
   <div class="hw-frame">
-    <div class="hw-frame__item hw-frame__item--bg-gray-lighter">
+    <div class="hw-frame__item">
       <div class="hw-block hw-block--pt hw-block--pb">
         <h3>First item</h3>
         some content
@@ -95,7 +95,7 @@ A simple component for adding one or more pieces of content into a frame, with o
         background primary
       </div>
     </div>
-    <div class="hw-frame__item hw-frame__item--bg-gray-lighter hw-frame__item--ml">
+    <div class="hw-frame__item hw-frame__item--bg-gray-light hw-frame__item--ml">
       <div class="hw-block hw-block--pt hw-block--pb">
         <h3 class="hw-h3">Third item</h3>
         background gray light<br>
