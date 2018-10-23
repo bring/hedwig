@@ -119,6 +119,11 @@ const HWSearch = ({
     }
   }
 
+  function onReset(e, search){
+    let input = q(searchInputSelector, search);
+    input.value = ''; // triggers an input event, even in IE 11
+    input.focus();
+  }
 
   /**
    * @function bindEvents
@@ -131,6 +136,10 @@ const HWSearch = ({
     const suggestions = q('.hw-search__suggestions', search);
     if(suggestions) {
       search.addEventListener('keydown', e => onArrowDownOrUp(e));
+    }
+    const resetButton = q('[data-hw-search-reset]', search);
+    if(resetButton){
+      resetButton.addEventListener('click', e => onReset(e, search));
     }
   }
 
