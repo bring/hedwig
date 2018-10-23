@@ -1,5 +1,6 @@
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
+import KEYS from '../../utilities/js/keys';
 
 let returnFocusEl = null;
 const focusableElsSelector =
@@ -13,10 +14,9 @@ function trapFocus(element) {
   const focusableEls = qa(focusableElsSelector, element);
   const firstFocusableEl = focusableEls[0];
   const lastFocusableEl = focusableEls[focusableEls.length - 1];
-  const KEYCODE_TAB = 9;
 
   element.addEventListener('keydown', e => {
-    const isTabPressed = e.key === 'Tab' || e.keyCode === KEYCODE_TAB;
+    const isTabPressed = e.keyCode === KEYS.TAB;
     if (!isTabPressed) {
       return;
     }
@@ -68,7 +68,9 @@ export const HWDrawer = ({
       returnFocusEl = elem;
       drawer.setAttribute('aria-hidden', false);
       body.style.overflow = 'hidden';
-      drawerContent.classList.remove('hw-drawer__content--animate-out');
+      if(drawerContent) {
+        drawerContent.classList.remove('hw-drawer__content--animate-out');
+      }
       drawer.classList.remove('hw-drawer--animate-out');
       drawer.classList.add('hw-drawer--open');
 
@@ -79,7 +81,9 @@ export const HWDrawer = ({
     } else {
       drawer.setAttribute('aria-hidden', true);
       // animation out drawer
-      drawerContent.classList.add('hw-drawer__content--animate-out');
+      if(drawerContent) {
+        drawerContent.classList.add('hw-drawer__content--animate-out');
+      }
       drawer.classList.add('hw-drawer--animate-out');
       setTimeout(() => {
         drawer.classList.remove('hw-drawer--open');
