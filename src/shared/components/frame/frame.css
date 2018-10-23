@@ -54,6 +54,8 @@
 
 }
 
+
+
 @media (--medium) {
   .hw-frame {
     flex-direction: row;
@@ -66,3 +68,17 @@
   
 }
 
+@media only screen 
+and (--high-res-mobile)
+{
+  .hw-frame {
+    flex-direction: column;
+    border:0;
+  }
+}
+
+@media only screen and (--max-medium) {
+  .hw-frame {
+    flex-direction: column;
+  }
+}
