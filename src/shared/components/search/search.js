@@ -121,7 +121,11 @@ const HWSearch = ({
 
   function onReset(e, search){
     let input = q(searchInputSelector, search);
-    input.value = ''; // triggers an input event, even in IE 11
+    input.value = ''; // triggers an input event in IE 11, but not in Chrome
+    //Create an input event
+    var event = document.createEvent('Event');
+    event.initEvent('input', true, true);
+    input.dispatchEvent(event);
     input.focus();
   }
 
