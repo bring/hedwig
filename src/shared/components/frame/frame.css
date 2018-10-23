@@ -38,7 +38,7 @@
 
 }
 
-@media (--only-small) {
+@media (--max-medium) {
   .hw-frame {
     flex-direction: column;
     border:0;
@@ -51,12 +51,9 @@
       margin-top:3px;
     }
   }
-
 }
 
-
-
-@media (--medium) {
+@media (--large) {
   .hw-frame {
     flex-direction: row;
     border: 3px solid var(--hw-color-gray-lighter);
@@ -75,10 +72,13 @@ and (--high-res-mobile)
     flex-direction: column;
     border:0;
   }
-}
+  .hw-frame__item {
+    margin:0;
 
-@media only screen and (--max-medium) {
-  .hw-frame {
-    flex-direction: column;
+    &--ml {
+      margin-top:3px;
+    }
   }
 }
+
+
