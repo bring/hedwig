@@ -110,6 +110,14 @@
   @custom-media --only-large (min-width: 940px) and (max-width: 1199px);
   @custom-media --only-xlarge (min-width: 1200px);
 
+  /* Max values */
+  @custom-media --max-medium (max-width: 939px);
+  @custom-media --max-large (max-width: 1199px);
+
+  /* For high resolution mobiles */
+  @custom-media --high-res-mobile (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2);
+
+
   /**
    * Global z-index values
    */

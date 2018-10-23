@@ -58,7 +58,7 @@
     }
 
     &--right {
-      
+
       align-items:flex-end;
     }
 
@@ -78,4 +78,24 @@
   &--full {
     min-height: 100vh;
   }
+
+  
 }
+
+
+@media (--high-res-mobile) {
+  .hw-hero { 
+    min-height: 40vh;
+    max-height: 40vh;
+
+    &--full {
+      min-height: 100vh;
+    }
+
+    &--small {
+    min-height: 35vh;
+  }
+
+  }
+}
+
