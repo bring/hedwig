@@ -39,6 +39,12 @@ It will apply the correct margins/paddings and vertical rythm for headlines, par
     <li>List item 2</li>
     <li>List item 3</li>
   </ul>
+
+  <ol>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ol>
 </div>
 ```
 

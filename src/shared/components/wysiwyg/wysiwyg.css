@@ -46,6 +46,11 @@
     @extend .hw-list;
   }
 
+  & ol {
+    @extend .hw-list;
+    @extend .hw-list--numbered;
+  }
+
   /* Image */
   & figure {
     @extend .hw-figure;
