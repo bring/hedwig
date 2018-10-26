@@ -199,9 +199,9 @@ const HWAccordion = ({
           trigger.setAttribute('aria-expanded', 'false');
           contents.setAttribute('aria-hidden', 'true');
           item.style.height = `${triggerHeight}px`;
-          // Set up event listeners for opening accordion
-          bindEvents(trigger);
         }
+        // Set up event listeners for opening accordion
+        bindEvents(trigger);
       } else {
         item.style.height = contents.getAttribute('aria-hidden') === 'true' ? `${triggerHeight}px` : `${totalHeight}px`;
       }
