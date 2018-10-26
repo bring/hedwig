@@ -146,14 +146,11 @@ const HWAccordion = ({
       // Mark as initialised
       accordion.setAttribute('data-hw-accordion-initialised', true);
 
-      // Find accordion name
-      const accordionName = accordion.getAttribute('data-hw-accordion');
-
       // Find all accordion items
       const items = qa('.hw-accordion__item', accordion);
 
       // Attach listeners, aria-attributes and heights to all items
-      function configureAcccordionItems(items, true);
+      configureAcccordionItems(items, true);
 
       return null;
     });
@@ -164,6 +161,9 @@ const HWAccordion = ({
    * @param {boolean} isInit 
    */
   function configureAcccordionItems(accordionItems, isInit) {
+    // Find accordion name
+    const accordionName = accordion.getAttribute('data-hw-accordion');
+
     // Attach listeners, aria-attributes and heights to all items
     accordionItems.forEach((item, index) => {
       const trigger = q('.hw-accordion__trigger', item);
@@ -252,6 +252,7 @@ const HWAccordion = ({
       return null;
     });
   }, 500, false);
+  
   //Resize event to get the new sizes
   window.addEventListener("resize", resizeAccordion);
 
