@@ -32,11 +32,6 @@
       margin-right: 0;
     }
 
-    & .hw-icon {
-      width: var(--hw-spacing-small);
-      height: 22px;
-    }
-
     &:hover,
     &:active,
     &:focus {
@@ -44,8 +39,11 @@
       color: var(--hw-color-white);
     }
 
-    & .hw-icon {
-      margin: 0;
+    &--facebook, &--twitter, &--linkedin, &--google, &--instagram, &--email {
+      & svg {
+        height: 22px;
+        width: var(--hw-spacing-small);
+      }
     }
 
     &--facebook {
