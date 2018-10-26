@@ -158,18 +158,22 @@ const HWAccordion = ({
       return null;
     });
   }
-
-  function configureAcccordionItems(accordionItems, isInit){
+  /**
+   * @desc Function to set accordion items' and content heights
+   * @param {array} accordionItems 
+   * @param {boolean} isInit 
+   */
+  function configureAcccordionItems(accordionItems, isInit) {
     // Attach listeners, aria-attributes and heights to all items
     accordionItems.forEach((item, index) => {
       const trigger = q('.hw-accordion__trigger', item);
       if (!trigger) return;
       const contents = q('.hw-accordion__contents', item);
 
-      if(isInit){
-      // Set name and index attributes
-      trigger.setAttribute('aria-controls', `${accordionName}-${index}`);
-      contents.setAttribute('id', `${accordionName}-${index}`);
+      if (isInit) {
+        // Set name and index attributes
+        trigger.setAttribute('aria-controls', `${accordionName}-${index}`);
+        contents.setAttribute('id', `${accordionName}-${index}`);
       }
 
       // Get heights
@@ -182,30 +186,27 @@ const HWAccordion = ({
       contents.setAttribute('data-hw-accordion-contents-height', contentsHeight);
       item.setAttribute('data-hw-accordion-item-height', totalHeight);
 
-      if(isInit){
-      // Check for default expanded option
-      const openByDefault = item.getAttribute('data-hw-accordion-default-expanded');
+      if (isInit) {
+        // Check for default expanded option
+        const openByDefault = item.getAttribute('data-hw-accordion-default-expanded');
 
-      if (openByDefault !== null) {
-        item.classList.add(activeItemClass);
-        trigger.setAttribute('aria-expanded', 'true');
-        contents.setAttribute('aria-hidden', 'false');
-        item.style.height = `${totalHeight}px`;
+        if (openByDefault !== null) {
+          item.classList.add(activeItemClass);
+          trigger.setAttribute('aria-expanded', 'true');
+          contents.setAttribute('aria-hidden', 'false');
+          item.style.height = `${totalHeight}px`;
+        } else {
+          trigger.setAttribute('aria-expanded', 'false');
+          contents.setAttribute('aria-hidden', 'true');
+          item.style.height = `${triggerHeight}px`;
+          // Set up event listeners for opening accordion
+          bindEvents(trigger);
+        }
       } else {
-        trigger.setAttribute('aria-expanded', 'false');
-        contents.setAttribute('aria-hidden', 'true');
-        item.style.height = `${triggerHeight}px`;
-        // Set up event listeners for opening accordion
-        bindEvents(trigger);
-      }
-    }else{
         item.style.height = contents.getAttribute('aria-hidden') === 'true' ? `${triggerHeight}px` : `${totalHeight}px`;
-    }
+      }
     });
   }
-
-  // Initialise HWAccordion component
-  init();
 
   /**
    * @param {function} func 
@@ -253,6 +254,9 @@ const HWAccordion = ({
   }, 500, false);
   //Resize event to get the new sizes
   window.addEventListener("resize", resizeAccordion);
+
+  // Initialise HWAccordion component
+  init();
 
 };
 
