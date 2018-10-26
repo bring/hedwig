@@ -264,16 +264,6 @@
         display: block;
       }
     }
-
-    & .hw-navbar__logo-gray {
-      opacity: 1;
-      visibility: visible;
-
-      @media (--large) {
-        display: block;
-        height: auto;
-      }
-    }
   }
 
   &--absolute {
