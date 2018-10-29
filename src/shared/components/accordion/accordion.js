@@ -146,26 +146,26 @@ const HWAccordion = ({
       // Mark as initialised
       accordion.setAttribute('data-hw-accordion-initialised', true);
 
-      // Find all accordion items
-      const items = qa('.hw-accordion__item', accordion);
-
       // Attach listeners, aria-attributes and heights to all items
-      configureAcccordionItems(items, true);
+      configureAcccordionItems(accordion, true);
 
       return null;
     });
   }
   /**
    * @desc Function to set accordion items' and content heights
-   * @param {array} accordionItems 
+   * @param {HTMLElement} accordion 
    * @param {boolean} isInit 
    */
-  function configureAcccordionItems(accordionItems, isInit) {
+  function configureAcccordionItems(accordion, isInit) {
+    // Find all accordion items
+    const items = qa('.hw-accordion__item', accordion);
+
     // Find accordion name
     const accordionName = accordion.getAttribute('data-hw-accordion');
 
     // Attach listeners, aria-attributes and heights to all items
-    accordionItems.forEach((item, index) => {
+    items.forEach((item, index) => {
       const trigger = q('.hw-accordion__trigger', item);
       if (!trigger) return;
       const contents = q('.hw-accordion__contents', item);
@@ -244,11 +244,8 @@ const HWAccordion = ({
     }
     // Loop through all accordions and initialise each
     SETTINGS.elements.forEach((accordion) => {
-      // Find all accordion items
-      const items = qa('.hw-accordion__item', accordion);
-
       // Attach listeners, aria-attributes and heights to all items
-      configureAcccordionItems(items);
+      configureAcccordionItems(accordion);
       return null;
     });
   }, 500, false);
