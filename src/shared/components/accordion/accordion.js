@@ -12,9 +12,9 @@ import KEYS from '../../utilities/js/keys';
  * @param {object} settings
  */
 const HWAccordion = ({
-    accordionSelector = '[data-hw-accordion]',
-    activeItemClass = 'hw-accordion__item--expanded',
-  } = {}) => {
+  accordionSelector = '[data-hw-accordion]',
+  activeItemClass = 'hw-accordion__item--expanded',
+} = {}) => {
   // Module settings object
   const SETTINGS = {
     elements: qa(accordionSelector), // All accordion DOM nodes
@@ -33,7 +33,7 @@ const HWAccordion = ({
     // Collapse all items
     items.forEach((item) => {
       const trigger = q('.hw-accordion__trigger', item);
-      if(!trigger) return;
+      if (!trigger) return;
       const contents = q('.hw-accordion__contents', item);
       const triggerHeight = trigger.getAttribute('data-hw-accordion-trigger-height');
 
@@ -52,12 +52,21 @@ const HWAccordion = ({
    */
   function toggleAccordion(e) {
     // Determine if we've clicked on an option
-    const elem = findParent({selector: '.hw-accordion__trigger', elem: e.target});
+    const elem = findParent({
+      selector: '.hw-accordion__trigger',
+      elem: e.target
+    });
 
     // Find contents and parent item
     const contents = elem.nextElementSibling;
-    const accordion = findParent({ selector: '[data-hw-accordion]', elem });
-    const item = findParent({ selector: '.hw-accordion__item', elem });
+    const accordion = findParent({
+      selector: '[data-hw-accordion]',
+      elem
+    });
+    const item = findParent({
+      selector: '.hw-accordion__item',
+      elem
+    });
 
     // Find heights
     const triggerHeight = elem.getAttribute('data-hw-accordion-trigger-height');
@@ -130,38 +139,54 @@ const HWAccordion = ({
     // Loop through all accordions and initialise each
     SETTINGS.elements.forEach((accordion) => {
       // Skip if already initialised
-      if (accordion.getAttribute('data-hw-accordion-initialised') === 'true') { return false; }
+      if (accordion.getAttribute('data-hw-accordion-initialised') === 'true') {
+        return false;
+      }
 
       // Mark as initialised
       accordion.setAttribute('data-hw-accordion-initialised', true);
 
-      // Find accordion name
-      const accordionName = accordion.getAttribute('data-hw-accordion');
-
-      // Find all accordion items
-      const items = qa('.hw-accordion__item', accordion);
-
       // Attach listeners, aria-attributes and heights to all items
-      items.forEach((item, index) => {
-        const trigger = q('.hw-accordion__trigger', item);
-        if(!trigger) return;
-        const contents = q('.hw-accordion__contents', item);
+      configureAcccordionItems(accordion, true);
 
+      return null;
+    });
+  }
+  /**
+   * @desc Function to set accordion items' and content heights
+   * @param {HTMLElement} accordion 
+   * @param {boolean} isInit 
+   */
+  function configureAcccordionItems(accordion, isInit) {
+    // Find all accordion items
+    const items = qa('.hw-accordion__item', accordion);
+
+    // Find accordion name
+    const accordionName = accordion.getAttribute('data-hw-accordion');
+
+    // Attach listeners, aria-attributes and heights to all items
+    items.forEach((item, index) => {
+      const trigger = q('.hw-accordion__trigger', item);
+      if (!trigger) return;
+      const contents = q('.hw-accordion__contents', item);
+
+      if (isInit) {
         // Set name and index attributes
         trigger.setAttribute('aria-controls', `${accordionName}-${index}`);
         contents.setAttribute('id', `${accordionName}-${index}`);
+      }
 
-        // Get heights
-        const triggerHeight = trigger.offsetHeight;
-        const contentsHeight = contents.offsetHeight;
-        const totalHeight = parseInt(contentsHeight, 10) + parseInt(triggerHeight, 10);
+      // Get heights
+      const triggerHeight = trigger.offsetHeight;
+      const contentsHeight = contents.offsetHeight;
+      const totalHeight = parseInt(contentsHeight, 10) + parseInt(triggerHeight, 10);
 
-        // Set height attributes
-        trigger.setAttribute('data-hw-accordion-trigger-height', triggerHeight);
-        contents.setAttribute('data-hw-accordion-contents-height', contentsHeight);
-        item.setAttribute('data-hw-accordion-item-height', totalHeight);
+      // Set height attributes
+      trigger.setAttribute('data-hw-accordion-trigger-height', triggerHeight);
+      contents.setAttribute('data-hw-accordion-contents-height', contentsHeight);
+      item.setAttribute('data-hw-accordion-item-height', totalHeight);
 
-
+      if (isInit) {
         // Check for default expanded option
         const openByDefault = item.getAttribute('data-hw-accordion-default-expanded');
 
@@ -175,18 +200,62 @@ const HWAccordion = ({
           contents.setAttribute('aria-hidden', 'true');
           item.style.height = `${triggerHeight}px`;
         }
-
         // Set up event listeners for opening accordion
         bindEvents(trigger);
-      });
-
-      return null;
+      } else {
+        item.style.height = contents.getAttribute('aria-hidden') === 'true' ? `${triggerHeight}px` : `${totalHeight}px`;
+      }
     });
   }
 
+  /**
+   * @param {function} func 
+   * @param {time} wait 
+   * @param {boolean} immediate 
+   * @desc This function is optimise the number of calls made a function
+   */
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return () => {
+      const context = this,
+        args = arguments;
+      const later = function () {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      const callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  /**
+   * @desc Handles resize of accordion in the page
+   */
+  const resizeAccordion = debounce(function (e) {
+    // Module settings object
+    const SETTINGS = {
+      elements: qa(accordionSelector), // All accordion DOM nodes
+    };
+    // Check if any accordions exist, return if not.
+    if (SETTINGS.elements.length < 1) {
+      return;
+    }
+    // Loop through all accordions and initialise each
+    SETTINGS.elements.forEach((accordion) => {
+      // Attach listeners, aria-attributes and heights to all items
+      configureAcccordionItems(accordion);
+      return null;
+    });
+  }, 500, false);
+  
+  //Resize event to get the new sizes
+  window.addEventListener("resize", resizeAccordion);
 
   // Initialise HWAccordion component
   init();
+
 };
 
 HWAccordion();
