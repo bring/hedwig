@@ -28,15 +28,13 @@
 
 /**
  * 1. Add border box sizing in all browsers (opinionated).
- * 2. Add the default cursor in all browsers (opinionated).
- * 3. Prevent font size adjustments after orientation changes in IE and iOS.
+ * 2. Prevent font size adjustments after orientation changes in IE and iOS.
  */
 
 html {
 	box-sizing: border-box; /* 1 */
-	cursor: default; /* 2 */
-	-ms-text-size-adjust: 100%; /* 3 */
-	-webkit-text-size-adjust: 100%; /* 3 */
+	-ms-text-size-adjust: 100%; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections (https://html.spec.whatwg.org/multipage/semantics.html#sections)
