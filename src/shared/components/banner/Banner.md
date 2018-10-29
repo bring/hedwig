@@ -23,7 +23,7 @@ Required:
         <button class="hw-banner__trigger-close">
           <i class="fas fa-lg fa-chevron-up" title="Close banner information"></i>
         </button>
-        <div class="hw-banner__title">Hot! Hot! Hot!</div>
+        <div class="hw-banner__title" role="heading" aria-level="2">Hot! Hot! Hot!</div>
         <div class="hw-banner__time">
           <time>24.09.76</time>|<time>17:45</time>
         </div>
@@ -49,7 +49,7 @@ Required:
         <button class="hw-banner__trigger-close">
           <i class="fas fa-lg fa-chevron-up" title="Close banner information"></i>
         </button>
-        <div class="hw-banner__title">14 Meters of snow expected</div>
+        <div class="hw-banner__title" role="heading" aria-level="2">14 Meters of snow expected</div>
         <div class="hw-banner__time">
           <time>24.09.76</time>|<time>17:45</time>
         </div>
