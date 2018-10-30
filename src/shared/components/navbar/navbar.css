@@ -198,6 +198,23 @@
     }
   }
 
+  &__menu-button-toggle {
+    width: 26.25px;
+  }
+
+  &__bars, &__times {
+    transition: opacity 0.1s ease;
+  }
+
+  &__bars {
+    visibility: visible;
+  }
+
+  &__times {
+    position: absolute;
+    opacity: 0;
+  }
+
   /**
   * Modifers: states
   */
@@ -263,6 +280,14 @@
       @media (--large) {
         display: block;
       }
+    }
+
+    & .hw-navbar__bars {
+      opacity: 0;
+    }
+    
+    & .hw-navbar__times {
+      opacity: 1;
     }
   }
 

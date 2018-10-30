@@ -36,14 +36,12 @@
         <button class="hw-navbar__item" data-hw-drawer-trigger="login">Logg inn<!--
           --><i class="hw-navbar__icon far fa-user fa-2x"></i>
         </button>
-        <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-          <span class="hw-navbar__menu-button-label-menu">Menu</span>
-          <span class="hw-navbar__menu-button-label-close">Close</span>
-          <div class="hw-hamburger" data-hw-menu-icon>
-            <span class="hw-hamburger__part"></span>
-            <span class="hw-hamburger__part"></span>
-            <span class="hw-hamburger__part"></span>
-          </div>
+        <button class="hw-navbar__menu-button" data-hw-toggle-menu><!--
+          --><span class="hw-navbar__menu-button-label-menu">Menu</span><!--
+          --><span class="hw-navbar__menu-button-label-close">Close</span><!--
+          --><span class="fa-stack hw-navbar__menu-button-toggle">
+              <i class="hw-navbar__bars far fa-bars fa-stack-2x"></i>
+              <i class="hw-navbar__times far fa-times fa-stack-2x"></i>
         </button>
       </nav>
     </div>
@@ -343,14 +341,12 @@ On this page, only the first navbar is able to open the search, menu and login. 
         </svg>
       </a>
       <nav class="hw-navbar__menu">
-        <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-          <span class="hw-navbar__menu-button-label-menu">Menu</span>
-          <span class="hw-navbar__menu-button-label-close">Close</span>
-          <div class="hw-hamburger" data-hw-menu-icon>
-            <span class="hw-hamburger__part"></span>
-            <span class="hw-hamburger__part"></span>
-            <span class="hw-hamburger__part"></span>
-          </div>
+        <button class="hw-navbar__menu-button" data-hw-toggle-menu><!--
+          --><span class="hw-navbar__menu-button-label-menu">Menu</span><!--
+          --><span class="hw-navbar__menu-button-label-close">Close</span><!--
+          --><span class="fa-stack hw-navbar__menu-button-toggle">
+              <i class="hw-navbar__bars far fa-bars fa-stack-2x"></i>
+              <i class="hw-navbar__times far fa-times fa-stack-2x"></i>
         </button>
       </nav>
     </div>
@@ -529,14 +525,12 @@ On this page, only the first navbar is able to open the search, menu and login. 
         <a href="#" class="hw-navbar__item">Login<!--
           --><i class="hw-navbar__icon far fa-user fa-2x"></i>
         </a>
-        <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-          <span class="hw-navbar__menu-button-label-menu">Meny</span>
-          <span class="hw-navbar__menu-button-label-close">Lukk</span>
-          <div class="hw-hamburger" data-hw-menu-icon>
-            <span class="hw-hamburger__part"></span>
-            <span class="hw-hamburger__part"></span>
-            <span class="hw-hamburger__part"></span>
-          </div>
+        <button class="hw-navbar__menu-button" data-hw-toggle-menu><!--
+          --><span class="hw-navbar__menu-button-label-menu">Menu</span><!--
+          --><span class="hw-navbar__menu-button-label-close">Close</span><!--
+          --><span class="fa-stack hw-navbar__menu-button-toggle">
+              <i class="hw-navbar__bars far fa-bars fa-stack-2x"></i>
+              <i class="hw-navbar__times far fa-times fa-stack-2x"></i>
         </button>
       </nav>
     </div>
@@ -588,14 +582,12 @@ On this page, only the first navbar is able to open the search, menu and login. 
         <a href="#" class="hw-navbar__item">Login<!--
         --><i class="hw-navbar__icon far fa-user fa-2x"></i>
         </a>
-        <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-          <span class="hw-navbar__menu-button-label-menu">Menu</span>
-          <span class="hw-navbar__menu-button-label-close">Close</span>
-          <div class="hw-hamburger" data-hw-menu-icon>
-            <span class="hw-hamburger__part"></span>
-            <span class="hw-hamburger__part"></span>
-            <span class="hw-hamburger__part"></span>
-          </div>
+        <button class="hw-navbar__menu-button" data-hw-toggle-menu><!--
+          --><span class="hw-navbar__menu-button-label-menu">Menu</span><!--
+          --><span class="hw-navbar__menu-button-label-close">Close</span><!--
+          --><span class="fa-stack hw-navbar__menu-button-toggle">
+              <i class="hw-navbar__bars far fa-bars fa-stack-2x"></i>
+              <i class="hw-navbar__times far fa-times fa-stack-2x"></i>
         </button>
       </nav>
     </div>
