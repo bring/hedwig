@@ -25,6 +25,19 @@ Styling for buttons.
 [Primary]        .hw-button--primary
 ```
 
+The buttons can be used either as `<button>`-tags or `<a>`-tags as needed
+
+### Button using <a>-tag
+```html|span-4
+  <a class="hw-button hw-button--primary">
+    Normal state
+  </a>
+  <a class="hw-button hw-button--primary" disabled>
+    Disabled state
+  </a>
+```
+
+
 ### Secondary
 
 ```html|span-4
