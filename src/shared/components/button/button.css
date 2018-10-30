@@ -23,7 +23,7 @@
     margin-right: 0;
   }
 
-  &:disabled {
+  &:disabled, &[disabled], &[disabled]:active {
     color: var(--hw-color-white) !important;
     fill: var(--hw-color-white) !important;
     background: var(--hw-color-gray-light) !important;
