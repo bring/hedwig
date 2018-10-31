@@ -6,7 +6,7 @@
   text-align: left; /* IE */
   display: block;
   width: 100%;
-  max-width: 36px;
+  max-width: var(--hw-spacing);
   height: 3px;
   border: 0;
   margin: 0;
