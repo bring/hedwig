@@ -94,7 +94,7 @@
 
   &--menu {
     border: 0;
-    color: var(--hw-color-primary-dark);
+    color: var(--hw-color-link);
     background-color: transparent;
     & .hw-accordion__item:not(:first-child) {
       border-top: 3px solid var(--hw-color-gray-lightest);
@@ -110,12 +110,15 @@
         background-color: rgb(0,0,0,0.1);
         transition: 0s;
       }
+      &:hover, &:focus {
+        color: var(--hw-color-link);
+      }
     }
     & .hw-accordion__link {
       padding-top: var(--hw-spacing-smaller);
       padding-bottom: var(--hw-spacing-smaller);
       display: inline-block;
-      color: var(--hw-color-primary-dark);
+      color: var(--hw-color-link);
       width: 100%;
       transition: background-color 0.5s ease;
       &:active {
@@ -130,6 +133,9 @@
 
     & .hw-accordion__contents {
       padding-left: 0;
+    }
+    & .hw-accordion__item--expanded .hw-accordion__trigger {
+      color: var(--hw-color-link);
     }
   }
 
