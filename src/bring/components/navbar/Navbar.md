@@ -58,9 +58,7 @@
         </div>
         <div class="hw-drawer__body">
           <div class="hw-block hw-block--mb hw-text-center">
-            <svg class="hw-icon--gray-lighter" role="img" aria-labelledby="avatar">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#avatar"></use>
-          </svg>
+            <i class="far fa-user fa-7x hw-color-gray-light"></i>
           </div>
           <div class="hw-block hw-block--mb">
             <h3 class="hw-text-center">Hvor vil du logge inn?</h3>
