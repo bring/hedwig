@@ -77,12 +77,6 @@
     }
   }
 
-  &__logo:focus {
-    cursor: pointer;
-    outline: 0;
-    background: var(--hw-color-gray-lightest);
-  }
-
   &__menu {
     display: flex;
   }
