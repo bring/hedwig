@@ -1,37 +1,8 @@
 import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
-import KEYS from '../../utilities/js/keys';
+import trapFocus from '../../utilities/js/trapFocus';
 
 let returnFocusEl = null;
-const focusableElsSelector =
-  'a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select';
-/**
- * @function trapFocus
- * @desc trap focus in an element
- * @param {node} element
- */
-function trapFocus(element) {
-  const focusableEls = qa(focusableElsSelector, element);
-  const firstFocusableEl = focusableEls[0];
-  const lastFocusableEl = focusableEls[focusableEls.length - 1];
-
-  element.addEventListener('keydown', e => {
-    const isTabPressed = e.keyCode === KEYS.TAB;
-    if (!isTabPressed) {
-      return;
-    }
-
-    if (e.shiftKey) {
-      /* shift + tab */ if (document.activeElement === firstFocusableEl) {
-        lastFocusableEl.focus();
-        e.preventDefault();
-      }
-    } /* tab */ else if (document.activeElement === lastFocusableEl) {
-      firstFocusableEl.focus();
-      e.preventDefault();
-    }
-  });
-}
 
 /**
  * @function HWModal
@@ -75,7 +46,7 @@ export const HWDrawer = ({
       drawer.classList.add('hw-drawer--open');
 
       // set focus to first element in drawer
-      const focusableEls = qa(focusableElsSelector, drawer);
+      const focusableEls = qa('a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select', drawer);
       const firstFocusableEl = focusableEls[0];
       firstFocusableEl.focus();
     } else {
