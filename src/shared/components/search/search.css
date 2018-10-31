@@ -41,9 +41,6 @@
       border-color: var(--hw-color-gray-darker);
       outline-width: 0;
       background-color: var(--hw-color-white);
-      @media (--large){
-        outline-width: initial;
-      }
     }
     @media (--large){
       height: 72px;
