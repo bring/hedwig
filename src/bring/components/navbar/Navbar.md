@@ -63,7 +63,7 @@
           </svg>
           </div>
           <div class="hw-block hw-block--mb">
-            <h2 class="hw-text-center">Hvor vil du logge inn?</h2>
+            <h3 class="hw-text-center">Hvor vil du logge inn?</h3>
           </div>
           <hr class="hw-hr hw-hr--centered">
           <div class="hw-block hw-block--mt">
