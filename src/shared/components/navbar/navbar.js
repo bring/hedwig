@@ -1,4 +1,5 @@
 import q from '../../../shared/utilities/js/q';
+import qa from '../../../shared/utilities/js/qa';
 import KEYS from '../../utilities/js/keys';
 
 /**
@@ -35,7 +36,10 @@ const HWNavbar = ({
     desktopSearchField: q(desktopSearchFieldSelector),
     footer: q('footer'),
     main: q('main'),
+    searchSection: q('.hw-navbar__search')
   };
+  // Keep track of where focus was before trapFocus()
+  let returnFocusEl = null;
 
 
   function setMenuButtonLabelWidths(){
@@ -78,6 +82,42 @@ const HWNavbar = ({
     }
   }
 
+
+  const focusableElsSelector =
+    'a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select';
+  /**
+   * @function trapFocus
+   * @desc trap focus in an element
+   * @param {node} element
+   */
+  function trapFocus(element) {
+    const focusableEls = qa(focusableElsSelector, element).filter((element) => {
+      // Filter out elements that are not focusable
+      return element.tabIndex != -1;
+    });
+    const firstFocusableEl = focusableEls[0];
+    const lastFocusableEl = focusableEls[focusableEls.length - 1];
+
+    element.addEventListener('keydown', e => {
+      const isTabPressed = e.keyCode === KEYS.TAB;
+      if (!isTabPressed) {
+        return;
+      }
+
+      if (e.shiftKey) {
+        /* shift + tab */ if (document.activeElement === firstFocusableEl) {
+          lastFocusableEl.focus();
+          e.preventDefault();
+        }
+      } /* tab */ else if (document.activeElement === lastFocusableEl) {
+        firstFocusableEl.focus();
+        e.preventDefault();
+      }
+    });
+  }
+
+
+
   function toggleSearch() {
     if (SETTINGS.navbar.classList.contains(showSearchClass)) {
       SETTINGS.navbar.classList.remove(showSearchClass);
@@ -87,9 +127,12 @@ const HWNavbar = ({
       if(SETTINGS.footer) {
         SETTINGS.footer.classList.remove(searching);
       }
+      returnFocusEl.focus();
       return;
     }
 
+    trapFocus(SETTINGS.searchSection);
+    returnFocusEl = document.activeElement;
     SETTINGS.navbar.classList.add(showSearchClass);
     if(SETTINGS.main) {
       SETTINGS.main.classList.add(searching);
