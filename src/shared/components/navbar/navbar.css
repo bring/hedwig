@@ -112,7 +112,7 @@
       margin-right: 0;
     }
     &__item, &__menu-button, &__search-button {
-      padding-left: var(--hw-spacing-smaller);
+      padding-left: var(--hw-spacing-small);
     }
     &__logo-gray {
       height: 100%;
