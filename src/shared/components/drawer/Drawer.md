@@ -29,7 +29,7 @@ Drawer component
     <div data-hw-drawer-content class="hw-drawer__content">
       <div class="hw-drawer__header">
         <button class="hw-drawer__close-button" data-hw-drawer-trigger="Drawer2">
-          <i class="fal fa-times fa-2x" title="Close drawer"></i>
+          <i class="fal fa-times fa-2x hw-drawer__close-button-x" title="Close drawer"></i>
         </button>
       </div>
       <div class="hw-drawer__body">
