@@ -119,6 +119,7 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-cloud-download"></i> cloud-download<br/><br/>
 <i class="fa-2x fa-fw fas fa-cloud-upload"></i> cloud-upload<br/><br/>
 <i class="fa-2x fa-fw fas fa-comments"></i> comments<br/><br/>
+<i class="fa-2x fa-fw fas fa-comments-alt"></i> comments-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-credit-card"></i> credit-card<br/><br/>
 <i class="fa-2x fa-fw fas fa-desktop"></i> desktop<br/><br/>
 <i class="fa-2x fa-fw fas fa-dot-circle"></i> dot-circle<br/><br/>
