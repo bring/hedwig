@@ -50,7 +50,7 @@ You can size service icons by directly setting width and height.
 hw-color-primary
 hw-color-green
 hw-color-red
-hw-color-gray-lighter
+hw-color-gray-light
 hw-color-gray-darker
 ```
 
@@ -65,7 +65,7 @@ hw-color-gray-darker
 <svg class="hw-icon hw-color-red" style="width: 40px; height: 40px;">
     <use xlink:href="#bud"></use>
 </svg>
-<svg class="hw-icon hw-color-gray-lighter" style="width: 40px; height: 40px;">
+<svg class="hw-icon hw-color-gray-light" style="width: 40px; height: 40px;">
     <use xlink:href="#bud"></use>
 </svg>
 <svg class="hw-icon hw-color-gray-darker" style="width: 40px; height: 40px;">
