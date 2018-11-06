@@ -1,4 +1,8 @@
 /* global test expect document */
+Object.defineProperty(window.HTMLElement.prototype, 'dataset', {
+  writable: true,
+  value: {},
+});
 window.HTMLElement.prototype.dataset = {};
 // Set up our document body
 document.body.innerHTML = `<label class="hw-label">
