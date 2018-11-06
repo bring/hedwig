@@ -44,6 +44,7 @@ library.add(fas.faClock);
 library.add(fas.faCloudDownload);
 library.add(fas.faCloudUpload);
 library.add(fas.faComments);
+library.add(fas.faCommentsAlt);
 library.add(fas.faCreditCard);
 library.add(fas.faDesktop);
 library.add(fas.faDotCircle);
