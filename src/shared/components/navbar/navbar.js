@@ -15,12 +15,10 @@ const HWNavbar = ({
   menuButtonSelector = '[data-hw-toggle-menu]',
   searchButtonSelector = '[data-hw-toggle-search]',
   overlaySelector = '[data-hw-navbar-overlay]',
-  hamburgerIcon = '[data-hw-menu-icon]',
   activeClass = 'hw-navbar--active',
   loginActiveClass = 'hw-navbar--login-active',
   showSearchClass = 'hw-navbar--searching',
   searching = 'hw--searching',
-  activeHamburgerClass = 'hw-hamburger--active',
   desktopSearchFieldSelector = '.hw-navbar__search .hw-search__input',
   closeSearchSelector = '[data-hw-navbar-close-search]'
 } = {}) => {
@@ -33,7 +31,6 @@ const HWNavbar = ({
     searchButton: q(searchButtonSelector),
     closeSearch: q(closeSearchSelector),
     overlay: q(overlaySelector),
-    hamburgerIcon: q(hamburgerIcon),
     desktopSearchField: q(desktopSearchFieldSelector),
     footer: q('footer'),
     main: q('main'),
@@ -58,7 +55,6 @@ const HWNavbar = ({
   function toggleMenu() {
     if (SETTINGS.navbar.classList.contains(activeClass)) {
       SETTINGS.navbar.classList.remove(activeClass);
-      SETTINGS.hamburgerIcon.classList.remove(activeHamburgerClass);
       if (SETTINGS.footer && SETTINGS.main) {
         SETTINGS.main.style.display = 'block';
         SETTINGS.footer.style.display = 'block';
@@ -68,7 +64,6 @@ const HWNavbar = ({
 
     if (SETTINGS.navbar.classList.contains(loginActiveClass)) {
       SETTINGS.navbar.classList.remove(loginActiveClass);
-      SETTINGS.hamburgerIcon.classList.remove(activeHamburgerClass);
       return;
     }
 
@@ -76,7 +71,6 @@ const HWNavbar = ({
       setMenuButtonLabelWidths();
     }
     SETTINGS.navbar.classList.add(activeClass);
-    SETTINGS.hamburgerIcon.classList.add(activeHamburgerClass);
     if (SETTINGS.footer && SETTINGS.main) {
       SETTINGS.main.style.display = 'none';
       SETTINGS.footer.style.display = 'none';
