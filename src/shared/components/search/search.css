@@ -86,6 +86,8 @@
     top: 50%;
     transform: translateY(-50%);
     border: 0;
+    opacity: 0;
+    transition: opacity 0.1s ease;
   }
 
   &__suggestions {
@@ -152,6 +154,10 @@
 
   &--active .hw-search__placeholder, &--dirty .hw-search__placeholder {
     visibility: hidden;
+  }
+
+  &--hasvalue .hw-search__button-inside {
+    opacity: 1;
   }
 
   /** Manual modifiers **/

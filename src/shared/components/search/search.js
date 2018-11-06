@@ -129,6 +129,14 @@ const HWSearch = ({
     input.focus();
   }
 
+  function onInput(e, search) {
+    if(e.target.value === ''){
+      search.classList.remove('hw-search--hasvalue');
+    } else {
+      search.classList.add('hw-search--hasvalue');
+    }
+  }
+
   /**
    * @function bindEvents
    * @desc Adds listener to dropdown
@@ -141,6 +149,7 @@ const HWSearch = ({
     if(suggestions) {
       search.addEventListener('keydown', e => onArrowDownOrUp(e));
     }
+    input.addEventListener('input', e => onInput(e, search));
     const resetButton = q('[data-hw-search-reset]', search);
     if(resetButton){
       resetButton.addEventListener('click', e => onReset(e, search));
