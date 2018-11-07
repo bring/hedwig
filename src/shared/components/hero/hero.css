@@ -82,5 +82,15 @@
   
 }
 
+@media(--max-medium) {
+  .hw-hero { 
+    &__content {
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+    }
+  }
+}
+
 
 
