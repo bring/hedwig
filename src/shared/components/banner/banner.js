@@ -11,10 +11,10 @@ import findParent from '../../utilities/js/findParent';
  * @param {object} settings
  */
 const HWBanner = ({
-    bannerSelector = '[data-hw-banner]',
-    activeItemClass = 'hw-banner--expanded',
-    readMoreClass = 'hw-banner--read-more-expanded',
-  } = {}) => {
+  bannerSelector = '[data-hw-banner]',
+  activeItemClass = 'hw-banner--expanded',
+  readMoreClass = 'hw-banner--read-more-expanded',
+} = {}) => {
 
   // Module settings object
   const SETTINGS = {
@@ -32,7 +32,10 @@ const HWBanner = ({
     const elem = e.target;
 
     // Find container and elem
-    const container = findParent({ selector: '[data-hw-banner]', elem });
+    const container = findParent({
+      selector: '[data-hw-banner]',
+      elem
+    });
     const contents = q('.hw-banner__contents', container);
 
     // Display/hide banner
@@ -57,7 +60,10 @@ const HWBanner = ({
     const elem = e.target;
 
     // Find container and elem
-    const container = findParent({ selector: '[data-hw-banner]', elem });
+    const container = findParent({
+      selector: '[data-hw-banner]',
+      elem
+    });
     const contents = q('.hw-banner__read-more-contents', container);
 
     // Display/hide banner
@@ -96,7 +102,9 @@ const HWBanner = ({
     // Loop through all banners and initialise each
     SETTINGS.elements.forEach((banner) => {
       // Skip if already initialised
-      if (banner.getAttribute('data-hw-banner-initialised') === 'true') { return false; }
+      if (banner.getAttribute('data-hw-banner-initialised') === 'true') {
+        return false;
+      }
 
       // Mark as initialised
       banner.setAttribute('data-hw-banner-initialised', true);
@@ -106,26 +114,28 @@ const HWBanner = ({
       const closeTrigger = q('.hw-banner__trigger-close', banner);
       const contents = q('.hw-banner__contents', banner);
 
-      // Find banner name
-      const bannerName = banner.getAttribute('data-hw-banner');
+      if (trigger && contents) {
+        // Find banner name
+        const bannerName = banner.getAttribute('data-hw-banner');
 
-      // Apply aria-roles
-      trigger.setAttribute('aria-controls', `banner-${bannerName}`);
-      contents.setAttribute('id', `banner-${bannerName}`);
-
-      // Set up event listeners for opening banner
-      bindToggleEvents(trigger);
-      bindToggleEvents(closeTrigger);
-
-      // Check for "read more" functionality
-      const readMoreTrigger = q('.hw-banner__read-more-button', banner);
-      const readMoreContents = q('.hw-banner__read-more-contents', banner);
-
-      if (readMoreTrigger) {
         // Apply aria-roles
-        readMoreTrigger.setAttribute('aria-controls', `banner-readmore-${bannerName}`);
-        readMoreContents.setAttribute('id', `banner-readmore-${bannerName}`);
-        readMoreTrigger.addEventListener('click', toggleReadMore);
+        trigger.setAttribute('aria-controls', `banner-${bannerName}`);
+        contents.setAttribute('id', `banner-${bannerName}`);
+
+        // Set up event listeners for opening banner
+        bindToggleEvents(trigger);
+        bindToggleEvents(closeTrigger);
+
+        // Check for "read more" functionality
+        const readMoreTrigger = q('.hw-banner__read-more-button', banner);
+        const readMoreContents = q('.hw-banner__read-more-contents', banner);
+
+        if (readMoreTrigger) {
+          // Apply aria-roles
+          readMoreTrigger.setAttribute('aria-controls', `banner-readmore-${bannerName}`);
+          readMoreContents.setAttribute('id', `banner-readmore-${bannerName}`);
+          readMoreTrigger.addEventListener('click', toggleReadMore);
+        }
       }
     });
   }
