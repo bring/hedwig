@@ -9,7 +9,7 @@
   padding-right: var(--hw-spacing-smaller);
   border: 0;
   font-size: var(--hw-font-size-small);
-  transition: color 0.2s ease;
+  transition: color 0.1s ease;
   height: 54px;
 
   &-label-menu, &-label-close {
