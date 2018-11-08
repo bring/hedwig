@@ -101,15 +101,12 @@
     left: 0;
     right: 0;
     @media (--large){
-      top: 72px;
+      top: 74px;
       background-color: var(--hw-color-white);
     }
   }
 
   &__suggestion {
-    &:first-of-type {
-      border-top: 2px solid var(--hw-color-gray-light);
-    }
     &:not(:first-of-type) .hw-search__suggestion-link .hw-search__suggestion-title {
       border-top: 2px solid var(--hw-color-gray-lightest);
     }
