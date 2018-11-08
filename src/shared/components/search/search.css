@@ -122,8 +122,11 @@
     display: inline-block;
     width: 100%;
     &:hover, &:focus {
-      color: var(--hw-color-black);
+      color: var(--hw-color-gray-darkest);
       background-color: var(--hw-color-gray-lightest);
+      & .hw-search__suggestion-extra {
+        color: var(--hw-color-gray-darkest);
+      }
     }
     @media (--large){
       padding-left: var(--hw-spacing);
