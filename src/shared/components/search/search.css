@@ -132,6 +132,7 @@
 
   &__suggestion-title {
     padding-top: var(--hw-spacing-smallest);
+    line-height: 1.2;
   }
 
   &__suggestion-extra {
