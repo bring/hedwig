@@ -140,7 +140,7 @@
   &__suggestion-extra {
     font-size: var(--hw-font-size-small);
     padding-bottom: var(--hw-spacing-smallest);
-    color: var(--hw-color-primary);
+    color: var(--hw-color-primary-dark);
   }
 
   /**
