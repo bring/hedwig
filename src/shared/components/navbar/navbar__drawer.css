@@ -1,6 +1,6 @@
 .hw-navbar {
   &__drawer {
-    background: var(--hw-color-gray-lighter);
+    background: var(--hw-color-gray-lightest);
     width: 100%;
     min-height: 100vh;
     padding: 0;
