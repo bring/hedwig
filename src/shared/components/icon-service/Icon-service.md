@@ -164,6 +164,16 @@ innenfordoeren
 internasjonalt
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#jul"></use>
+</svg>
+jul
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#kundeservice"></use>
+</svg>
+kundeservice
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#leverthjem"></use>
 </svg>
 leverthjem
