@@ -96,7 +96,7 @@
     }
   }
 
-  &__icon, & .hw-hamburger {
+  &__icon {
     vertical-align: middle;
   }
 
@@ -106,10 +106,6 @@
     }
     &__icon {
       margin-left: var(--hw-spacing-smallest);
-    }
-    & .hw-hamburger {
-      margin-left: auto;
-      margin-right: 0;
     }
     &__item, &__menu-button, &__search-button {
       padding-left: var(--hw-spacing-small);
@@ -124,14 +120,8 @@
   &__item, &__search-button, &__menu-button
   {
     outline: 0;
-    & .hw-hamburger__part {
-      background: var(--hw-color-gray-darker);
-    }
     &:hover, &:focus {
       color: var(--hw-color-primary-dark);
-      & .hw-hamburger__part {
-        background: var(--hw-color-primary-dark);
-      }
     }
   }
 
@@ -247,9 +237,6 @@
 
     & .hw-navbar__search-button, & .hw-navbar__item, & .hw-navbar__menu-button {
       color: var(--hw-color-gray);
-      & .hw-hamburger__part {
-        background: var(--hw-color-gray);
-      }
     }
     /**
      * Logo while the menu is open
