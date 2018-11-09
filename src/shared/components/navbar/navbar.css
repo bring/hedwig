@@ -87,7 +87,7 @@
     border: 0;
     cursor: pointer;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.1s ease;
     font-size: var(--hw-font-size-small);
     line-height: 54px;
 

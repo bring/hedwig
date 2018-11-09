@@ -66,7 +66,7 @@
           <hr class="hw-hr hw-hr--centered">
           <div class="hw-block hw-block--mt">
             <div class="hw-container hw-container--narrow">
-              <a class="hw-button hw-button--secondary hw-button--large hw-button--full" href="#">
+              <a class="hw-button hw-button--primary hw-button--large hw-button--full" href="#">
                 Mybring
               </a>
               <a class="hw-button hw-button--secondary hw-button--large hw-button--full" href="#">
