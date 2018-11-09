@@ -10,9 +10,9 @@ document.body.innerHTML = `
           <title id="Logo">Go to homepage</title>
           <use xlink:href="#logo-bring"></use>
         </svg>
-        <svg class="hw-navbar__logo-white" aria-labelledby="Logo" role="img">
+        <svg class="hw-navbar__logo-gray" aria-labelledby="Logo" role="img">
           <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-bring-white"></use>
+          <use xlink:href="#logo-bring-gray"></use>
         </svg>
       </a>
 
@@ -24,21 +24,19 @@ document.body.innerHTML = `
         <button class="hw-navbar__item" data-hw-drawer-trigger="login">Logg inn<!--
           --><i class="hw-navbar__icon far fa-user fa-2x"></i>
         </button>
-        <button class="hw-navbar__menu-button" data-hw-toggle-menu>
-          <span class="hw-navbar__menu-button-label-menu">Menu</span>
-          <span class="hw-navbar__menu-button-label-close">Close</span>
-          <div class="hw-hamburger" data-hw-menu-icon>
-            <span class="hw-hamburger__part"></span>
-            <span class="hw-hamburger__part"></span>
-            <span class="hw-hamburger__part"></span>
-          </div>
+        <button class="hw-navbar__menu-button" data-hw-toggle-menu><!--
+          --><span class="hw-navbar__menu-button-label-menu">Menu</span><!--
+          --><span class="hw-navbar__menu-button-label-close">Close</span><!--
+          --><span class="fa-stack hw-navbar__menu-button-toggle">
+              <i class="hw-navbar__bars far fa-bars fa-stack-2x"></i>
+              <i class="hw-navbar__times far fa-times fa-stack-2x"></i>
         </button>
       </nav>
     </div>
 
     <div class="hw-drawer" data-hw-drawer="login">
       <div class="hw-drawer__overlay hw-animate hw-animate--fade-in-overlay" data-hw-drawer-trigger="Drawer2"></div>
-      <div class="hw-drawer__content">
+      <div class="hw-drawer__content" data-hw-drawer-content>
         <div class="hw-drawer__header">
           <div class="hw-drawer__close">
             <button class="hw-drawer__close-button" data-hw-drawer-trigger="login">
@@ -48,17 +46,15 @@ document.body.innerHTML = `
         </div>
         <div class="hw-drawer__body">
           <div class="hw-block hw-block--mb hw-text-center">
-            <svg class="hw-icon--gray-lighter" role="img" aria-labelledby="avatar">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#avatar"></use>
-          </svg>
+            <i class="far fa-user fa-7x hw-color-gray-light"></i>
           </div>
           <div class="hw-block hw-block--mb">
-            <h2 class="hw-text-center">Hvor vil du logge inn?</h2>
+            <h3 class="hw-text-center">Hvor vil du logge inn?</h3>
           </div>
           <hr class="hw-hr hw-hr--centered">
           <div class="hw-block hw-block--mt">
             <div class="hw-container hw-container--narrow">
-              <a class="hw-button hw-button--secondary hw-button--large hw-button--full" href="#">
+              <a class="hw-button hw-button--primary hw-button--large hw-button--full" href="#">
                 Mybring
               </a>
               <a class="hw-button hw-button--secondary hw-button--large hw-button--full" href="#">
@@ -85,11 +81,86 @@ document.body.innerHTML = `
     <section class="hw-navbar__drawer" data-hw-menu-drawer>
       <div class="hw-navbar__drawer-content">
         <div class="hw-navbar__drawer-mobile">
+          <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Sende
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="#">Post - like formater</a>
+                        </li>
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="#">Post - blandede formater</a>
+                        </li>
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="#" target="_blank">En ekstern lenke</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Motta
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="#">Spore</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Kundeservice
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="#" target="_blank">Må ha en lenke ja</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <button class="hw-accordion__trigger">
+                    Ekstra Kolonne
+                    <div class="hw-accordion__arrow"></div>
+                </button>
+                <div class="hw-accordion__contents">
+                    <ul class="hw-accordion__link-items">
+                        <li class="hw-accordion__link-item">
+                            <a class="hw-accordion__link" href="#" target="_blank">Hmm</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="#">Kundeservice</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="#" target="_blank">Tittel med passe lengde</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="#" target="_blank">Frimerker til samling</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="#">Adresseendring og oppbevaring</a>
+            </li>
+            <li class="hw-accordion__item">
+                <a class="hw-accordion__link" href="#" target="_blank">Femte</a>
+            </li>
+          </ul>
         </div>
         <div class="hw-navbar__drawer-desktop">
           <div class="hw-grid">
             <div class="hw-grid__item hw-one-quarter">
-              <h2>Sende</h2>
+              <h3>Sende</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -106,7 +177,7 @@ document.body.innerHTML = `
               </ul>
             </div><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h2>Motta</h2>
+              <h3>Motta</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -120,7 +191,7 @@ document.body.innerHTML = `
               </ul>
             </div><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h2>Rådgivning</h2>
+              <h3>Rådgivning</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -137,7 +208,7 @@ document.body.innerHTML = `
               </ul>
             </div><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h2>Kundeservice</h2>
+              <h3>Kundeservice</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
               </div>
@@ -155,18 +226,46 @@ document.body.innerHTML = `
     </section>
     <div class="hw-navbar__overlay" data-hw-navbar-overlay></div>
     <section class="hw-navbar__search">
-      <div class="hw-search hw-search--large" data-hw-search>
-        <span class="hw-search__background"></span>
-        <div class="hw-search__inner">
-          <input
-            data-hw-search-input
-            class="hw-search__input" type="text"
-            aria-label="Søk"
-            placeholder="Søk"
-          />
-          <i class="far fa-search hw-search__icon"></i>
+      <div class="hw-container hw-container--slim">
+        <div class="hw-block hw-block--px-fluid">
+          <div class="hw-search hw-search--large" data-hw-search>
+            <span class="hw-search__background"></span>
+            <div class="hw-search__inner">
+              <input
+                data-hw-search-input
+                class="hw-search__input" type="text"
+                aria-label="Søk"
+                placeholder="Søk"
+              />
+              <i class="far fa-search hw-search__icon"></i>
+              <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
+            </div>
+            <ul class="hw-search__suggestions">
+              <li class="hw-search__suggestion" data-hw-search-suggestion>
+                <a class="hw-search__suggestion-link" tabindex="-1" href="3">
+                  <p class="hw-search__suggestion-title">Flyttetips</p>
+                  <p class="hw-search__suggestion-extra">Innhold</p>
+                </a>
+              </li>
+              <li class="hw-search__suggestion" data-hw-search-suggestion>
+                <a class="hw-search__suggestion-link" tabindex="-1" href="3">
+                  <p class="hw-search__suggestion-title">Adresseendring</p>
+                  <p class="hw-search__suggestion-extra">Innhold</p>
+                </a>
+              </li>
+              <li class="hw-search__suggestion" data-hw-search-suggestion>
+                <a class="hw-search__suggestion-link" tabindex="-1" href="3">
+                  <p class="hw-search__suggestion-title">Tolltjenester</p>
+                  <p class="hw-search__suggestion-extra">Innhold</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <button class="hw-navbar__close-search" data-hw-navbar-close-search>
+        <i class="far fa-times fa-2x"></i>
+      </button>
     </section>
   </div>
 </header>
@@ -183,12 +282,12 @@ require('../navbar');
  */
 
 test('If added class to menu button', () => {
-  const menuButtonSelector = document.body.querySelectorAll('[data-hw-toggle-menu]')[0];
-  const menuButtonIconSelector = document.body.querySelectorAll('[data-hw-menu-icon]')[0];
-  const activeClass = 'hw-hamburger--active';
+  const menuButton = document.body.querySelectorAll('[data-hw-toggle-menu]')[0];
+  const navbar = document.body.querySelectorAll('.hw-navbar')[0];
+  const activeClass = 'hw-navbar--active';
 
-  menuButtonSelector.click();
+  menuButton.click();
 
-  const hasAddedActiveClass = menuButtonIconSelector.classList.contains(activeClass);
+  const hasAddedActiveClass = navbar.classList.contains(activeClass);
   expect(hasAddedActiveClass).toEqual(true);
 });
