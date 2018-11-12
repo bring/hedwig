@@ -31,7 +31,7 @@ library.add(fas.faBarcodeAlt);
 library.add(fas.faBars);
 library.add(fas.faBox);
 library.add(fas.faCalculator);
-library.add(fas.faCalendar);
+library.add(fas.faCalendarAlt);
 library.add(fas.faCamera);
 library.add(fas.faChartLine);
 library.add(fas.faCheck);
