@@ -12,8 +12,10 @@
   &__icon {
     position: absolute;
     cursor: pointer;
-    right: var(--hw-spacing-smaller);
-    bottom: var(--hw-spacing-smaller);
+    right: var(--hw-spacing-small);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: var(--hw-font-size-lead);
   }
 
   &__inner {
