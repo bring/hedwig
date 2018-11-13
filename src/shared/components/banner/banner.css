@@ -99,7 +99,7 @@
   }
 
   &__subtitle {
-    @extend .hw-h3;
+    @extend .hw-text-lead;
 
     max-width: var(--hw-width-default);
     margin: var(--hw-spacing-small) auto 0 auto;
