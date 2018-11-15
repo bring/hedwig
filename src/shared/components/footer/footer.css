@@ -7,19 +7,31 @@
    */
 
    &__mobile {
-    margin: 0 auto;
-
-    @media (--large) {
-      display: none;
+    display:none;
+    
+    @media (--high-res-mobile) {
+      display:block;
+      margin: 0 auto;
     }
+
+    @media (--max-medium) {
+      display:block;
+      margin: 0 auto;
+    }
+
   }
 
   &__desktop {
-    display: none;
+    
+    display: block;
+    margin: 0 auto;
+     
+    @media (--high-res-mobile) {
+      display: none;
+    }
 
-    @media (--large) {
-      display: block;
-      margin: 0 auto;
+    @media (--max-medium) {
+      display:none;
     }
   }
 
