@@ -1,4 +1,4 @@
-import { library, dom } from "@fortawesome/fontawesome-svg-core";
+import { library, dom, config } from "@fortawesome/fontawesome-svg-core";
 import * as fas from "@fortawesome/pro-solid-svg-icons";
 import * as far from "@fortawesome/pro-regular-svg-icons";
 import * as fal from "@fortawesome/pro-light-svg-icons";
@@ -16,12 +16,11 @@ import * as fab from "@fortawesome/free-brands-svg-icons";
  */
 
 /** Enable searching through pseudo elements like ::before and ::after for icons
- *  Also see https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
+ *  Also see:
+ *  - https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
+ *  - https://fontawesome.com/how-to-use/with-the-api/setup/configuration#searchpseudoelements
  */
-
-window.FontAwesomeConfig = {
-  searchPseudoElements: true
-};
+config.searchPseudoElements = true;
 
 // We are only using the some of the icons
 library.add(fas.faAt);
