@@ -31,6 +31,17 @@
     @extend .hw-link;
   }
 
+  /* Buttons */
+  & a.hw-button{
+    @extend .hw-button;
+  }
+  & a.hw-button--primary{
+     @extend .hw-button--primary;
+   }
+  & a.hw-button--secondary{
+     @extend .hw-button--secondary;
+   }
+
   /* Combinations */
   & p + h2,
   & p + h3 {
