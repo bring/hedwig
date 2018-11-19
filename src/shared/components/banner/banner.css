@@ -6,6 +6,7 @@
   display: block;
   color: var(--hw-color-gray-darkest);
   background-color: var(--hw-color-gray-lightest);
+  position: relative;
 
   /**
    * Elements
@@ -31,6 +32,7 @@
       border-right: 25px solid transparent;
       border-top: 25px solid var(--hw-color-secondary);
       transform: translateX(-50%);
+      z-index: 1;
 
       @media (--medium) {
         display: none;
@@ -41,11 +43,11 @@
   &__trigger svg {
     position: absolute;
     left: 50%;
-    bottom: 5px;
+    bottom: -14px;
     width: 15px;
     fill: var(--hw-color-gray-darker);
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 2;
 
     @media (--medium) {
       position: static;
