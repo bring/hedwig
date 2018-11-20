@@ -68,23 +68,27 @@ function build() {
   //   - Colors
   //   - Layout
   // Components
+  // CommonCombos
   // Icons
   // Utilities
   // Contact
 
   const sharedComponents = []; // KEEP
+  const sharedCommonCombos = [];
   const sharedGuidelines = [];
   const sharedPages = [];
   const sharedUtilities = [];
   const sharedLayout = [];
 
   const bringComponents = [];
+  const bringCommonCombos = [];
   const bringGuidelines = [];
   const bringPages = [];
   const bringUtilities = [];
   const bringLayout = [];
 
   const postenComponents = [];
+  const postenCommonCombos = [];
   const postenGuidelines = [];
   const postenPages = [];
   const postenUtilities = [];
@@ -114,6 +118,7 @@ function build() {
       const filePath = file.split('/');
       const fileSection = filePath[1]; // Will be shared, posten or bring
       var components;
+      var commonCombos;
       var guidelines;
       var pages;
       var layout;
@@ -122,6 +127,7 @@ function build() {
       switch (fileSection) {
           case 'posten':
               components = postenComponents;
+              commonCombos = postenCommonCombos;
               guidelines = postenGuidelines;
               pages = postenPages;
               layout = postenLayout;
@@ -129,6 +135,7 @@ function build() {
               break;
           case 'bring':
               components = bringComponents;
+              commonCombos = bringCommonCombos;
               guidelines = bringGuidelines;
               pages = bringPages;
               layout = bringLayout;
@@ -137,6 +144,7 @@ function build() {
           default:
           case 'shared':
               components = sharedComponents;
+              commonCombos = sharedCommonCombos;
               guidelines = sharedGuidelines;
               pages = sharedPages;
               layout = sharedLayout;
@@ -211,6 +219,37 @@ function build() {
     }
 
     
+    /**
+     * Check if the page is a common combo
+     var title = filename.split('.').shift();
+    */
+
+    if (file.indexOf('commonCombos') !== -1) {
+
+      var filename = file.split('/').pop();
+      var title = filename.split('.').shift();
+
+      /**
+       * Copy md files to docs
+       */
+
+      fs.createReadStream(file).pipe(
+        fs.createWriteStream(`docs/md/${fileSection}/` + filename)
+      );
+
+      /**
+       * Add components pages to the compoents array
+       */
+      commonCombos.push({
+        title: title,
+        path: title,
+        src: `md/${fileSection}/${filename}`,
+      });
+
+      return;
+    }
+
+
 
     /**
      * Check if the page is a layout helper
@@ -330,6 +369,13 @@ function build() {
     ]),
   });
   bringMergedPages.push({
+    title: 'Common Combos',
+    pages: sortPages([
+      ...sharedCommonCombos,
+      ...bringCommonCombos,
+    ]),
+  });
+  bringMergedPages.push({
     title: 'Utilities',
     pages: sortPages([
       ...sharedUtilities,
@@ -370,6 +416,13 @@ function build() {
     pages: sortPages([
       ...sharedComponents,
       ...postenComponents,
+    ]),
+  });
+  postenMergedPages.push({
+    title: 'Common Combos',
+    pages: sortPages([
+      ...sharedCommonCombos,
+      ...postenCommonCombos,
     ]),
   });
   postenMergedPages.push({
