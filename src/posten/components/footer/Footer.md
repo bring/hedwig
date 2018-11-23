@@ -55,14 +55,16 @@
           </ul>
         </div>
       </div><div class="hw-grid__item hw-one-quarter">
-        <div class="hw-block hw-block--mb-smaller">
+        <div class="hw-block hw-block--mb-smallest">
           <button class="hw-button hw-button--full hw-button--primary">
             A button
           </button>
         </div>
+        <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--secondary">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
+      </div>
         <div class="hw-block hw-block--mt">
           <div class="hw-block hw-block--mb-smallest">
             <p class="hw-text-small">Follow us on social media</p>
@@ -81,18 +83,22 @@
           
         </div></div>
       </div>
-      <div class="hw-block hw-block--pt">
-        <div class="hw-hr hw-hr--full hw-hr--gray-lightest"></div>
+      <div class="hw-block hw-block--pt-large">
+        <div class="hw-hr hw-hr--full hw-hr--gray-lighter"></div>
       </div> 
     </div>
     <div class="hw-footer__mobile">
       <nav class="hw-footer__navigation">
+        <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--primary">
           A button
         </button>
+      </div>
+      <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--secondary">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
+      </div>
         <div class="hw-block hw-block--mt">
         <div class="hw-block hw-block--mb-smallest">
         <p class="hw-text-small">Follow us on social media</p>
@@ -110,6 +116,7 @@
         </div>
         
       </div>
+      <div class="hw-block hw-block--mt">
         <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
@@ -187,6 +194,7 @@
             </div>
           </li>
         </ul>
+      </div>
       </nav>
       
     </div>
@@ -217,11 +225,11 @@
 
 ```
 
-### Footer with 3 columns
+### Footer with 3 columns and on a page with gray background
 
 
 ```html
-
+<div class="hw-background-color-gray-lighter">
 <footer class="hw-footer">
  <div class="hw-container">
    <div class="hw-block hw-block--pt-large hw-block--pb-large">
@@ -256,14 +264,16 @@
           </ul>
         </div>
       </div><div class="hw-grid__item hw-one-quarter">
-        <div class="hw-block hw-block--mb-smaller">
+        <div class="hw-block hw-block--mb-smallest">
           <button class="hw-button hw-button--full hw-button--primary">
             A button
           </button>
         </div>
+        <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--secondary">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
+      </div>
         <div class="hw-block hw-block--mt">
         <div class="hw-block hw-block--mb-smallest">
           <p class="hw-text-small">Follow us on social media</p>
@@ -283,18 +293,22 @@
           </div>
         </div></div>
       </div>
-      <div class="hw-block hw-block--pt">
-        <div class="hw-hr hw-hr--full hw-hr--gray-lightest"></div>
+      <div class="hw-block hw-block--pt-large">
+        <div class="hw-hr hw-hr--full hw-hr--gray-lighter"></div>
       </div> 
     </div>
     <div class="hw-footer__mobile">
       <nav class="hw-footer__navigation">
+        <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--primary">
           A button
         </button>
+      </div>
+      <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--secondary">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
+      </div>
         <div class="hw-block hw-block--mt">
         <div class="hw-block hw-block--mb-smallest">
         <p class="hw-text-small">Follow us on social media</p>
@@ -312,6 +326,7 @@
         </div>
         
       </div>
+      <div class="hw-block hw-block--mt">
         <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
@@ -364,6 +379,7 @@
             </div>
           </li>
         </ul>
+      </div>
       </nav>
       
     </div>
@@ -391,7 +407,7 @@
 </div>
 </div>
 </footer>
-
+</div>
 
 ```
 
@@ -404,18 +420,6 @@
  <div class="hw-container">
    <div class="hw-block hw-block--pt hw-block--pb-large">
     <div class="hw-footer__shared">
-      
-      <!-- Logo -->
-       <div class="hw-footer__logo">
-      <a href="#" class="hw-footer__logo-link">
-        <svg class="hw-footer__logo-link-standard">
-          <use xlink:href="#logo-posten"></use>
-        </svg>
-        <svg class="hw-footer__logo-link-gray">
-          <use xlink:href="#logo-posten-gray"></use>
-        </svg>
-        </a>
-      </div>
 
       <div class="hw-block">
         <div class="hw-block hw-block--pb-smaller">All rights reserved @ posten</div>
