@@ -115,7 +115,7 @@
         
       </div>
       <div class="hw-block hw-block--mt">
-        <ul class="hw-accordion hw-accordion--menu hw-footer__accordion" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
+        <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
               Lorum ipsum
@@ -324,7 +324,7 @@
         
       </div>
       <div class="hw-block hw-block--mt">
-        <ul class="hw-accordion hw-accordion--menu hw-footer__accordion" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
+        <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
               Lorum ipsum

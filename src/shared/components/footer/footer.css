@@ -14,10 +14,6 @@
      {
       display:block;
       margin: 0 auto;
-
-      & .hw-footer__accordion {
-        padding: 0 3px;
-      }
     }
 
   
