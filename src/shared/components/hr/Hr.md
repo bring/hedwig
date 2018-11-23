@@ -27,7 +27,7 @@ Horizontal rule
 ```
 
 ### Full
-
+A full hr is a shade darker than the background by default
 ```html|span-6
   <hr class="hw-hr hw-hr--full" />
 ```
