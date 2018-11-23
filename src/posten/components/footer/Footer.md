@@ -81,8 +81,8 @@
           
         </div></div>
       </div>
-      <div class="hw-block hw-block--pt">
-        <div class="hw-hr hw-hr--full hw-hr--gray-lightest"></div>
+      <div class="hw-block hw-block--pt-large">
+        <div class="hw-hr hw-hr--full hw-hr--gray-lighter"></div>
       </div> 
     </div>
     <div class="hw-footer__mobile">
@@ -110,7 +110,8 @@
         </div>
         
       </div>
-        <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
+      <div class="hw-block hw-block--mt">
+        <ul class="hw-accordion hw-accordion--menu hw-footer__accordion" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
               Lorum ipsum
@@ -187,6 +188,7 @@
             </div>
           </li>
         </ul>
+      </div>
       </nav>
       
     </div>
@@ -217,11 +219,11 @@
 
 ```
 
-### Footer with 3 columns
+### Footer with 3 columns and on a page with gray background
 
 
 ```html
-
+<div class="hw-background-color-gray-lighter">
 <footer class="hw-footer">
  <div class="hw-container">
    <div class="hw-block hw-block--pt-large hw-block--pb-large">
@@ -283,8 +285,8 @@
           </div>
         </div></div>
       </div>
-      <div class="hw-block hw-block--pt">
-        <div class="hw-hr hw-hr--full hw-hr--gray-lightest"></div>
+      <div class="hw-block hw-block--pt-large">
+        <div class="hw-hr hw-hr--full hw-hr--gray-lighter"></div>
       </div> 
     </div>
     <div class="hw-footer__mobile">
@@ -312,7 +314,8 @@
         </div>
         
       </div>
-        <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
+      <div class="hw-block hw-block--mt">
+        <ul class="hw-accordion hw-accordion--menu hw-footer__accordion" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
           <li class="hw-accordion__item">
             <button class="hw-accordion__trigger">
               Lorum ipsum
@@ -364,6 +367,7 @@
             </div>
           </li>
         </ul>
+      </div>
       </nav>
       
     </div>
@@ -391,7 +395,7 @@
 </div>
 </div>
 </footer>
-
+</div>
 
 ```
 
@@ -404,18 +408,6 @@
  <div class="hw-container">
    <div class="hw-block hw-block--pt hw-block--pb-large">
     <div class="hw-footer__shared">
-      
-      <!-- Logo -->
-       <div class="hw-footer__logo">
-      <a href="#" class="hw-footer__logo-link">
-        <svg class="hw-footer__logo-link-standard">
-          <use xlink:href="#logo-posten"></use>
-        </svg>
-        <svg class="hw-footer__logo-link-gray">
-          <use xlink:href="#logo-posten-gray"></use>
-        </svg>
-        </a>
-      </div>
 
       <div class="hw-block">
         <div class="hw-block hw-block--pb-smaller">All rights reserved @ posten</div>

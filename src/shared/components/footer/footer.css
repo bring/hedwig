@@ -1,6 +1,6 @@
  .hw-footer {
   display: block;
-  background: var(--hw-color-gray-lighter);
+  background: var(--hw-color-gray-lightest);
 
   /**
    * Elements
@@ -9,16 +9,18 @@
    &__mobile {
     display:none;
     
-    @media (--high-res-mobile) {
+
+    @media (--high-res-mobile), (--max-medium)
+     {
       display:block;
       margin: 0 auto;
+
+      & .hw-footer__accordion {
+        padding: 0 3px;
+      }
     }
 
-    @media (--max-medium) {
-      display:block;
-      margin: 0 auto;
-    }
-
+  
   }
 
   &__desktop {
@@ -41,8 +43,8 @@
 
     &-link {
       position:relative;
-      height: 80px;
-      width:150px;
+      height: 75px;
+      width:var(--hw-logo-width);
       display:inline-block;
 
       & svg {
@@ -80,3 +82,11 @@
   }
 
 }
+
+/**** Special cases ****/ 
+
+.hw-background-color-gray-lightest .hw-footer {
+  background: var(--hw-color-gray-lighter);
+}
+
+
