@@ -55,14 +55,16 @@
           </ul>
         </div>
       </div><div class="hw-grid__item hw-one-quarter">
-        <div class="hw-block hw-block--mb-smaller">
+        <div class="hw-block hw-block--mb-smallest">
           <button class="hw-button hw-button--full hw-button--primary">
             A button
           </button>
         </div>
+        <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--secondary">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
+      </div>
         <div class="hw-block hw-block--mt">
           <div class="hw-block hw-block--mb-smallest">
             <p class="hw-text-small">Follow us on social media</p>
@@ -87,12 +89,16 @@
     </div>
     <div class="hw-footer__mobile">
       <nav class="hw-footer__navigation">
+        <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--primary">
           A button
         </button>
+      </div>
+      <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--secondary">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
+      </div>
         <div class="hw-block hw-block--mt">
         <div class="hw-block hw-block--mb-smallest">
         <p class="hw-text-small">Follow us on social media</p>
@@ -258,14 +264,16 @@
           </ul>
         </div>
       </div><div class="hw-grid__item hw-one-quarter">
-        <div class="hw-block hw-block--mb-smaller">
+        <div class="hw-block hw-block--mb-smallest">
           <button class="hw-button hw-button--full hw-button--primary">
             A button
           </button>
         </div>
+        <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--secondary">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
+      </div>
         <div class="hw-block hw-block--mt">
         <div class="hw-block hw-block--mb-smallest">
           <p class="hw-text-small">Follow us on social media</p>
@@ -291,12 +299,16 @@
     </div>
     <div class="hw-footer__mobile">
       <nav class="hw-footer__navigation">
+        <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--primary">
           A button
         </button>
+      </div>
+      <div class="hw-block hw-block--mb-smallest">
         <button class="hw-button hw-button--full hw-button--secondary">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
+      </div>
         <div class="hw-block hw-block--mt">
         <div class="hw-block hw-block--mb-smallest">
         <p class="hw-text-small">Follow us on social media</p>
