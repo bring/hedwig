@@ -96,6 +96,7 @@
     border: 0;
     color: var(--hw-color-link);
     background-color: transparent;
+    padding: 0 3px;
     & .hw-accordion__item:not(:first-child) {
       border-top: 3px solid var(--hw-color-gray-lightest);
     }
