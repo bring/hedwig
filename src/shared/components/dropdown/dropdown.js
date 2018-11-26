@@ -277,16 +277,28 @@ export const HWDropdown = ({
     });
   }
 
+  /**
+   * @function changeValue
+   * @desc event handler for dropdown change event
+   * @param e
+   */
+  function changeValue(e) {
+    const customDropdown = q('[data-hw-dropdown-custom="' + e.target.id + '"]');
+    selectOption(customDropdown, e.target.value, false);
+
+  }
+
 
   /**
    * @function bindEvents
    * @desc Adds listener to dropdown
    * @param {node} dropdown
    */
-  function bindEvents(customDropdown, isSearchable) {
+  function bindEvents(customDropdown, isSearchable, dropdown) {
     window.addEventListener('click', clickOutside)
     customDropdown.addEventListener('click', toggleDropdown);
     customDropdown.addEventListener('keydown', handleKeyboardEvents);
+    dropdown.addEventListener('change', changeValue);
 
     if (isSearchable) {
       const searchInput = q('input', customDropdown);
@@ -380,7 +392,7 @@ export const HWDropdown = ({
       if (!isSearchable) { selectOption(customDropdown, defaultOption, false); }
 
       // Set up event listeners for opening dropdown
-      bindEvents(customDropdown, isSearchable);
+      bindEvents(customDropdown, isSearchable, dropdown);
     });
   }
 
