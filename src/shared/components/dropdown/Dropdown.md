@@ -216,3 +216,21 @@ var countriesDropdown = document.getElementById('countries');
 countriesDropdown.setAttribute('data-hw-dropdown-dirty', true);
 hedwig.HWDropdown();
 ```
+
+#### Changing the value using javascript
+You can change the value using javascript, but you also need to fire a change event on the dropdown.
+Using Javascript:
+```code
+var countriesDropdown = document.getElementById('countries');
+countriesDropdown.value = '2'; //Select Algerie
+
+// Create and dispatch event
+const evt = document.createEvent('HTMLEvents');
+evt.initEvent('change', false, true);
+countriesDropdown.dispatchEvent(evt);
+```
+
+Using jQuery:
+```code
+$('#countries').val('2').change();
+```
