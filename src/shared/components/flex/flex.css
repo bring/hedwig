@@ -14,6 +14,10 @@
    * Modifiers
   */
 
+  /*
+  * Make the flex break at 940
+  */
+  
   &--responsive {
     flex-direction: column;
 
