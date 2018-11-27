@@ -17,7 +17,7 @@
   &--responsive {
     flex-direction: column;
 
-    @media (--medium) {
+    @media (--large) {
       flex-direction: row;
     }
   }
