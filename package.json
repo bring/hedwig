@@ -64,7 +64,7 @@
     "cache:purge:jsdelivr:js:default": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@latest\"]}'"
   },
   "dependencies": {
-    "express": "^4.15.2",
+    "express": "^4.16.4",
     "sanitize.css": "^5.0.0",
     "zenscroll": "^4.0.0"
   },
