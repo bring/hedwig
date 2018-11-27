@@ -65,7 +65,6 @@
   },
   "dependencies": {
     "express": "^4.15.2",
-    "rellax": "^1.0.0",
     "sanitize.css": "^5.0.0",
     "stickybits": "^3.5.3",
     "whatwg-fetch": "^2.0.3",
