@@ -16,10 +16,10 @@
 
   & a {
     @extend .hw-link;
-    font-size: var(--hw-font-size-small);
+    font-size: var(--hw-font-size-p);
   }
   /** Modifications **/
-  &--large a{
-    font-size: var(--hw-font-size-p);
+  &--small a{
+    font-size: var(--hw-font-size-small);
   }
 }
