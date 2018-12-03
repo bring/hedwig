@@ -64,6 +64,7 @@ library.add(fas.faMapMarkerAlt);
 library.add(fas.faMinus);
 library.add(fas.faMobile);
 library.add(fas.faPaperclip);
+library.add(fas.faPauseCircle);
 library.add(fas.faPlay);
 library.add(fas.faPencil);
 library.add(fas.faPhone);
