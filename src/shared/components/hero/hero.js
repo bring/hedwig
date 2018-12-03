@@ -44,7 +44,7 @@ const HWHero = ({
   function toggleImages(imageContainer, images) {
     const width = window.innerWidth;
     const { small, large } = images;
-    if (width < 720 || screen.width < 720) {
+    if (width < 940 || screen.width < 940) {
       imageContainer.style.backgroundImage = `url("${small}")`;
     } else {
       imageContainer.style.backgroundImage = `url("${large}")`;
