@@ -60,10 +60,10 @@ export const HWDropdown = ({
         option.dataset.hwDropdownOptionSelected = true;
         // Set selected value in either input-placeholder or div-placeholder
         if (isSearchable === 'true') {
-          placeHolderEl.placeholder = customPlaceholder || option.innerText;
+          placeHolderEl.placeholder = customPlaceholder || option.innerText.trim();
           placeHolderEl.value = option.innerText;
         } else {
-          placeHolderEl.innerText = customPlaceholder || option.innerText;
+          placeHolderEl.innerText = customPlaceholder || option.innerText.trim();
         }
       } else {
         option.dataset.hwDropdownOptionSelected = false;
