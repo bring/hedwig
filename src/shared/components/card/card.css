@@ -5,7 +5,7 @@
 .hw-card {
   position: relative;
   background: var(--hw-color-white);
-  transition: transform 0,3s;
+  transition: transform 0.3s;
   display: flex;
   flex-direction: column;
   margin-bottom: var(--hw-spacing);
