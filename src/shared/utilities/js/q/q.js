@@ -7,6 +7,6 @@ const doc = document;
  * @param {node} context element or document to search inside of
  * @return {HTMLelement} - First element that matched query.
  */
-const q = (el, context = doc) => [].slice.call(context.querySelectorAll(el))[0];
+export const q = (el, context = doc) => [].slice.call(context.querySelectorAll(el))[0];
 
 export default q;
