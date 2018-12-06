@@ -7,6 +7,6 @@ const doc = document;
  * @param {node} context element or document to search inside of
  * @return {array} - Elements that matched query.
  */
-const qa = (el, context = doc) => [].slice.call(context.querySelectorAll(el));
+export const qa = (el, context = doc) => [].slice.call(context.querySelectorAll(el));
 
 export default qa;
