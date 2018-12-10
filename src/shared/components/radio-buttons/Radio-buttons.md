@@ -9,20 +9,30 @@
 
 ```html
 <label class="hw-radio-button">
-  One
+  <span class="hw-radio-button__label">One</span>
   <input type="radio" name="hedwdig" value="one" />
   <i class="hw-radio-button__indicator"></i>
 </label>
 
 <label class="hw-radio-button">
-  Two
+  <span class="hw-radio-button__label">Two</span>
   <input type="radio" name="hedwdig" value="two" />
   <i class="hw-radio-button__indicator"></i>
 </label>
 
 <label class="hw-radio-button">
-  Three
+  <span class="hw-radio-button__label">Three</span>
   <input type="radio" name="hedwdig" value="three" />
+  <i class="hw-radio-button__indicator"></i>
+</label>
+```
+
+### Long label
+
+```html|span-2
+<label class="hw-radio-button">
+  <span class="hw-radio-button__label">A very long label that will occupy more than one line for sure</span>
+  <input type="radio" name="hedwdig" value="one" />
   <i class="hw-radio-button__indicator"></i>
 </label>
 ```
@@ -31,7 +41,7 @@
 
 ```html
 <label class="hw-radio-button hw-radio-button--error">
-  One
+  <span class="hw-radio-button__label">One</span>
   <input type="radio" name="hedwdig" value="one" />
   <i class="hw-radio-button__indicator"></i>
 </label>
