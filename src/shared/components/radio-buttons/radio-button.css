@@ -29,6 +29,11 @@
       transform 0.3s ease;
   }
 
+  &__label {
+    display: inline-block;
+    max-width: calc(100% - 22px - 0.4rem);
+  }
+
   & > input {
     position: absolute;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
