@@ -72,6 +72,7 @@ library.add(fas.faPlus);
 library.add(fas.faQuestionCircle);
 library.add(fas.faReply);
 library.add(fas.faSearch);
+library.add(fas.faShippingFast);
 library.add(fas.faShoppingCart);
 library.add(fas.faStar);
 library.add(fas.faSyncAlt);
