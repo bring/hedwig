@@ -1,22 +1,15 @@
 .hw-icon-link {
   padding: var(--hw-spacing);
   display: block;
-  color: var(--hw-color-link);
+  color: var(--hw-color-gray-darkest);
   text-align: center;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+
   & .hw-icon {
     margin: 0 auto var(--hw-spacing);
     width: 74px;
     height: var(--hw-spacing-larger);
     display: block;
-  }
-
-  &--gray {
-    color: var(--hw-color-gray-darkest);
-  }
-
-  &--white {
-    color: var(--hw-color-white);
   }
 
   &--border {
@@ -25,25 +18,7 @@
   }
 
   &:hover {
-    color: var(--hw-color-gray-darkest);
+    background-color: rgba(0,0,0,0.04);
     border-color: var(--hw-color-gray-light);
-    & .hw-icon-link__text {
-      border-bottom: 2px solid var(--hw-color-gray-darkest);
-    }
   }
-
-  &--gray:hover {
-    color: var(--hw-color-link);
-    & .hw-icon-link__text {
-      border-bottom: 2px solid var(--hw-color-link-underline);
-    }
-  }
-
-  &--white:hover {
-    color: var(--hw-color-white);
-    & .hw-icon-link__text {
-      border-bottom: 2px solid var(--hw-color-white);
-    }
-  }
-
 }
