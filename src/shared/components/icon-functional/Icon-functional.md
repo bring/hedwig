@@ -149,6 +149,7 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-question-circle"></i> question-circle<br/><br/>
 <i class="fa-2x fa-fw fas fa-reply"></i> reply<br/><br/>
 <i class="fa-2x fa-fw fas fa-search"></i> search<br/><br/>
+<i class="fa-2x fa-fw fas fa-shipping-fast"></i> shipping-fast<br/><br/>
 <i class="fa-2x fa-fw fas fa-shopping-cart"></i> shopping-cart<br/><br/>
 <i class="fa-2x fa-fw fas fa-star"></i> star<br/><br/>
 <i class="fa-2x fa-fw fas fa-sync-alt"></i> sync-alt<br/><br/>
