@@ -85,4 +85,13 @@
     border: 3px solid var(--hw-color-secondary) !important;
     transition: border 150ms;
   }
+
+  &--nohover input{
+    &:hover ~ .hw-radio-button__indicator{
+      border-color:var(--hw-color-gray-light);
+    }
+    &:checked ~ .hw-radio-button__indicator{
+      border-color:var(--hw-color-gray-darker);
+    }
+  }
 }

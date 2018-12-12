@@ -3,6 +3,7 @@
 ```code
 [Base]                  .hw-radio-button
 [Error version]         .hw-radio-button--error
+[No hover version]      .hw-radio-button--nohover
 ```
 
 ### Example code
@@ -57,4 +58,14 @@
   <i class="hw-radio-button__indicator"></i>
 </label>
 <div class="hw-error-simple hw-error--align-left">Error message!</div>
+```
+
+### Version with no hover style
+
+```html
+<label class="hw-radio-button hw-radio-button--nohover">
+  <span class="hw-radio-button__label">One</span>
+  <input type="radio" name="hedwdig" value="one" />
+  <i class="hw-radio-button__indicator"></i>
+</label>
 ```
