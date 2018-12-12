@@ -40,7 +40,7 @@
     clip: rect(1px, 1px, 1px, 1px);
     vertical-align: middle;
 
-    &:hover ~ .hw-radio-button__indicator {
+    &:hover:not([disabled]) ~ .hw-radio-button__indicator {
       border-color: var(--hw-color-gray-darker);
     }
 
@@ -74,6 +74,12 @@
         transform: translateY(-50%) translateX(-50%);
         background: var(--hw-color-gray-darker);
       }
+    }
+    
+    &:disabled ~ .hw-radio-button__indicator {
+      border-color: var(--hw-color-gray-lighter);
+      background-color: transparent;
+      cursor: not-allowed;
     }
   }
 

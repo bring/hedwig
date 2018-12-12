@@ -36,6 +36,12 @@
   <input type="radio" name="hedwig" value="three" />
   <i class="hw-radio-button__indicator"></i>
 </label>
+
+<label class="hw-radio-button">
+  <span class="hw-radio-button__label">Disabled</span>
+  <input type="radio" name="hedwdig" value="four" disabled />
+  <i class="hw-radio-button__indicator"></i>
+</label>
 ```
 
 ### Long label
