@@ -40,7 +40,7 @@
     clip: rect(1px, 1px, 1px, 1px);
     vertical-align: middle;
 
-    &:hover ~ .hw-radio-button__indicator {
+    &:hover:not([disabled]) ~ .hw-radio-button__indicator {
       border-color: var(--hw-color-gray-darker);
     }
 
@@ -75,6 +75,12 @@
         background: var(--hw-color-gray-darker);
       }
     }
+    
+    &:disabled ~ .hw-radio-button__indicator {
+      border-color: var(--hw-color-gray-lighter);
+      background-color: transparent;
+      cursor: not-allowed;
+    }
   }
 
   /**
@@ -84,14 +90,5 @@
   &--error .hw-radio-button__indicator {
     border: 3px solid var(--hw-color-secondary) !important;
     transition: border 150ms;
-  }
-
-  &--nohover input{
-    &:hover ~ .hw-radio-button__indicator{
-      border-color:var(--hw-color-gray-light);
-    }
-    &:checked ~ .hw-radio-button__indicator{
-      border-color:var(--hw-color-gray-darker);
-    }
   }
 }
