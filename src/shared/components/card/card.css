@@ -48,7 +48,7 @@
     height: 100%;
     background-position: center;
     background-size: cover;
-    transition: all 1.4s cubic-bezier(0, 0, 0.1, 1);
+    transition: all 0.3s cubic-bezier(0, 0, 0.1, 1);
   }
 
   &__body {
