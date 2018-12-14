@@ -4,7 +4,7 @@
   <svg class="hw-icon">
     <use xlink:href="#bud"></use>
   </svg>
-  <span class="hw-icon-link__text">Here is the link text</span>
+  <h4>Here is the link text</h4>
 </a>
 ```
 
@@ -14,7 +14,7 @@
   <svg class="hw-icon">
     <use xlink:href="#bud"></use>
   </svg>
-  <span class="hw-icon-link__text">Here is the link text</span>
+  <h4>Here is the link text</h4>
 </a>
 ```
 
@@ -25,25 +25,25 @@
     <svg class="hw-icon">
       <use xlink:href="#adresseendringogoppbevaring"></use>
     </svg>
-    <span class="hw-icon-link__text">Adresseendring og oppbevaring</span>
+    <h4>Adresseendring og oppbevaring</h4>
   </a>
   <a class="hw-icon-link" href="#">
     <svg class="hw-icon">
       <use xlink:href="#brev"></use>
     </svg>
-    <span class="hw-icon-link__text">Pakker og brev</span>
+    <h4>Pakker og brev</h4>
   </a>
   <a class="hw-icon-link" href="#">
     <svg class="hw-icon">
       <use xlink:href="#godstransport"></use>
     </svg>
-    <span class="hw-icon-link__text">Sporing</span>
+    <h4>Sporing</h4>
   </a>
   <a class="hw-icon-link" href="#">
     <svg class="hw-icon">
       <use xlink:href="#toll"></use>
     </svg>
-    <span class="hw-icon-link__text">Toll</span>
+    <h4>Toll</h4>
   </a>
 </div>
 ```
@@ -55,25 +55,25 @@
     <svg class="hw-icon">
       <use xlink:href="#adresseendringogoppbevaring"></use>
     </svg>
-    <span class="hw-icon-link__text">Adresseendring og oppbevaring</span>
+    <h4>Adresseendring og oppbevaring</h4>
   </a>
   <a class="hw-icon-link hw-icon-link--border" href="#">
     <svg class="hw-icon">
       <use xlink:href="#brev"></use>
     </svg>
-    <span class="hw-icon-link__text">Pakker og brev</span>
+    <h4>Pakker og brev</h4>
   </a>
   <a class="hw-icon-link hw-icon-link--border" href="#">
     <svg class="hw-icon">
       <use xlink:href="#sporing"></use>
     </svg>
-    <span class="hw-icon-link__text">Sporing</span>
+    <h4>Sporing</h4>
   </a>
   <a class="hw-icon-link hw-icon-link--border" href="#">
     <svg class="hw-icon">
       <use xlink:href="#toll"></use>
     </svg>
-    <span class="hw-icon-link__text">Toll</span>
+    <h4>Toll</h4>
   </a>
 </div>
 ```
