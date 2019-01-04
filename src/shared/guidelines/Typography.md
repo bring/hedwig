@@ -11,9 +11,10 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 [h5]             h5 font size 18 - 20px
 [p]              p
 
-[Lead]           hw-text-lead
-[Small]          hw-text-small
-[Smaller]        hw-text-smaller
+[Lead]             hw-text-lead
+[Small]            hw-text-small
+[Smaller]          hw-text-smaller
+[Less line-height] hw-text-less-line-height
 
 [Color primary]       hw-color-primary
 [Color primary dark]  hw-color-primary-dark
@@ -50,6 +51,11 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 ### Smaller
 ```html|span-4,plain,light
   <p class="hw-text-smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora, possimus veniam consequuntur commodi provident doloribus repellat rem ut earum? Distinctio voluptatibus suscipit error repellat, numquam deserunt fuga.</p>
+```
+
+### Less line-height
+```html|span-2,plain,light
+  <p class="hw-text-less-line-height">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
 
 ### Modifiers

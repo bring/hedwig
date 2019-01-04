@@ -1,15 +1,22 @@
 .hw-icon-link {
-  padding: var(--hw-spacing);
+  padding: var(--hw-spacing-smaller) var(--hw-spacing);
   display: block;
   color: var(--hw-color-gray-darkest);
   text-align: center;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 
+  @media (--large) {
+    padding: var(--hw-spacing-large);
+  }
+
   & .hw-icon {
-    margin: 0 auto var(--hw-spacing);
+    margin: 0 auto var(--hw-spacing-smaller);
     width: 74px;
     height: var(--hw-spacing-larger);
     display: block;
+    @media (--large) {
+      margin-bottom: var(--hw-spacing);
+    }
   }
 
   &--border {
