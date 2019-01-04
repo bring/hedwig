@@ -91,6 +91,7 @@
     border: 0;
     background-color: var(--hw-color-secondary);
     text-align: center;
+    color: var(--hw-color-gray-darkest);
   }
 
   &__date {
