@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Hero({title, imgUrl, children}) {
   return (
     <div className="hw-block hw-block--mt">

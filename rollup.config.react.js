@@ -17,7 +17,7 @@ export default {
     console.warn(warning.message);
   },
   output: {
-    file: 'dist/hedwig-react.es6',
+    file: 'dist/hedwig-react.js',
     format: 'es',
   },
   plugins: [
