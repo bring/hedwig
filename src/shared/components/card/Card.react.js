@@ -1,6 +1,6 @@
 console.log('hello from react stuff :) :) :) :)');
 
-const Card = ({title, imgUrl, children}) => {
+export default function Card({title, imgUrl, children}) {
   return (
     <div className="hw-block hw-block--mt">
       <div className="tr-card no-padding">

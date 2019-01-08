@@ -1,4 +1,4 @@
-const Hero = ({title, imgUrl, children}) => {
+export default function Hero ({title, imgUrl, children}) {
   return (
     <div className="hw-block hw-block--mt">
       <div className="tr-card no-padding">
