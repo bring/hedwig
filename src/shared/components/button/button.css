@@ -98,6 +98,41 @@
     }
   }
 
+  &--picture-yellow {
+    background: var(--hw-color-yellow);
+    border: 2px solid var(--hw-color-yellow);
+    color: var(--hw-color-gray-darkest);
+    fill: var(--hw-color-gray-darkest);
+
+    &:hover {
+      background: var(--hw-color-yellow-darker);
+      border: 2px solid var(--hw-color-yellow-darker);
+    }
+
+    &:active,
+    &:focus {
+      border: 2px solid var(--hw-color-yellow-darker);
+    }
+  }
+
+  &--picture-dark {
+    background: var(--hw-color-gray-darkest);
+    border: 2px solid var(--hw-color-gray-darkest);
+    color: var(--hw-color-white);
+    fill: var(--hw-color-white);
+
+    &:hover {
+      background: var(--hw-color-black);
+      border: 2px solid var(--hw-color-black);
+    }
+
+    &:active,
+    &:focus {
+      background: var(--hw-color-gray-dark);
+      border: 2px solid var(--hw-color-black);
+    }
+  }
+
   &--outline {
     border: 3px solid var(--hw-color-gray);
     background: none;
@@ -172,6 +207,8 @@
     &:active {
       background: var(--hw-color-gray-lightest);
     }
+
+
   }
 
   &--stripped {

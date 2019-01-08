@@ -54,6 +54,26 @@ The buttons can be used either as `<button>`-tags or `<a>`-tags as needed
 ```
 
 
+### Picture button - Yellow, dark
+These buttons are for use on top of images
+
+```html|span-4
+  <button class="hw-button hw-button--picture-yellow">
+    Normal state  
+  </button>
+  <button class="hw-button hw-button--picture-yellow" disabled>
+    Disabled state
+  </button>
+  <br>
+  <button class="hw-button hw-button--picture-dark">
+    Normal state
+  </button>
+  <button class="hw-button hw-button--picture-dark" disabled>
+    Disabled state
+  </button>
+```
+
+
 ### Outline
 
 ```html|span-4
@@ -95,9 +115,11 @@ The buttons can be used either as `<button>`-tags or `<a>`-tags as needed
   </button>
 ```
 
+
 ```code
 [Outline dark]        .hw-button--outline-dark
 ```
+
 
 ### Button with icon
 
