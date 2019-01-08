@@ -8,6 +8,7 @@ import jsx from 'rollup-plugin-jsx'
 
 export default {
   input: 'src/hedwig-react.jsx',
+  external: ['react'],
   onwarn: (warning) => {
     // Skip certain warnings
     if (warning.code === 'THIS_IS_UNDEFINED') {
@@ -18,7 +19,7 @@ export default {
   },
   output: {
     file: 'dist/hedwig-react.js',
-    format: 'es',
+    format: 'cjs',
   },
   plugins: [
     jsx( {factory: 'React.createElement'} ),
