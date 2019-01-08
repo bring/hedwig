@@ -7,7 +7,7 @@ import jsx from 'rollup-plugin-jsx'
 
 
 export default {
-  input: 'src/hedwig-react.js',
+  input: 'src/hedwig-react.jsx',
   onwarn: (warning) => {
     // Skip certain warnings
     if (warning.code === 'THIS_IS_UNDEFINED') {
@@ -17,7 +17,7 @@ export default {
     console.warn(warning.message);
   },
   output: {
-    file: 'dist/hedwig-react.js',
+    file: 'dist/hedwig-react.es6',
     format: 'es',
   },
   plugins: [
