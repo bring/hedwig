@@ -64,6 +64,9 @@
     "cache:purge:jsdelivr:js": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@9/dist/main.js\",\"npm/@posten/hedwig@latest/dist/main.js\"]}'",
     "cache:purge:jsdelivr:js:default": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@latest\"]}'"
   },
+  "peerDependencies": {
+    "react": "^16.7.0"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "sanitize.css": "^5.0.0",
