@@ -1,5 +1,3 @@
-console.log('hello from react stuff :) :) :) :)');
-
 export default function Card({title, imgUrl, children}) {
   return (
     <div className="hw-block hw-block--mt">

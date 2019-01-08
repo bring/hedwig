@@ -28,7 +28,7 @@
     }
   ],
   "license": "BSD-2-Clause",
-  "main": "dist/main.js",
+  "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
     "build": "npm run docs:build && npm run css:build && npm run js:build && npm run svg",
