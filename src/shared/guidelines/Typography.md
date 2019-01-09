@@ -70,12 +70,19 @@ rows:
     Available for: h5, .hw-h5
   - Modifier: hw-text-light
     Available for: p, .hw-text-small, .hw-text-smaller
+  - Modifier: hw-text-dropcap
+    Available for: p, .hw-text-lead, .hw-text-small, .hw-text-smaller
     ```
 
 #### Examples
 ```html|span-4,plain,light
 <h5 class="hw-text-bold">H5 tag with modifier hw-text-bold</h5>
 <p class="hw-text-light">Paragraph with modifier hw-text-light</p>
+```
+
+#### Drop cap
+```html|span-2,plain,light
+  <p class="hw-text-dropcap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
 
 ### Colors
