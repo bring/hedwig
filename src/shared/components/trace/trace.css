@@ -50,8 +50,11 @@
     }
     @media (--large){
       height: 60px;
-      border: 0;
     }
+  }
+
+  &--borders &__input{
+    border:3px solid var(--hw-color-gray-light);
   }
 
   &__placeholder {
@@ -81,6 +84,13 @@
     outline:none;
   }
 
+  &--borders &__button {
+    @media(--large){
+      margin-left: 3px;
+    }
+  }
+
+
   &__button-inside {
     position: absolute;
     right: var(--hw-spacing-small);
@@ -90,8 +100,6 @@
     opacity: 0;
     transition: opacity 0.1s ease;
   }
-
-
   
 
   /** Modifiers added by javascript **/
@@ -107,7 +115,9 @@
     opacity: 1;
   }
 
+
   }
+  
 
 @keyframes movePlaceholder {
   0% {
