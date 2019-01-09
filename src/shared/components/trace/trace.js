@@ -24,8 +24,6 @@ const HWtrace = ({
     elements: qa(selector), // All dropdown DOM nodes
   };
 
-  // const traceContainer = q(traceContainerSelector);
-  // const traceInput = q(traceInputSelector);
 
   /**
    * @function startPlaceholderRotate
@@ -62,13 +60,9 @@ const HWtrace = ({
     }, 3000);
   }
 
-  /**
-   * @function toggleActive
-   * @desc Toggles the dropdown options list for a dropdown
-   */
   function toggleActive(e) {
     e.preventDefault();
-    // Determine if we've clicked on an option
+
     const input = e.currentTarget;
     const container = findParent({ selector: '[data-hw-trace]', elem: input });
 
@@ -104,10 +98,6 @@ const HWtrace = ({
     }
   }
 
-  /**
-   * @function bindEvents
-   * @desc Adds listener to dropdown
-   */
   function bindEvents(trace) {
     const input = q(traceInputSelector, trace);
     input.addEventListener('focus', toggleActive);
