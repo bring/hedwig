@@ -86,40 +86,6 @@ const HWtrace = ({
     }
   }
 
-  function onArrowDownOrUp(e) {
-    if (e.keyCode === KEYS.DOWN) {
-      const hwtrace = findParent({ selector, elem: e.target });
-      if(e.target.tagName == 'INPUT'){ // We are currently in the trace input field
-        const suggestionLinks = qa('[data-hw-trace-suggestion] a', hwtrace); //Find the current trace field's suggestionLinks
-        suggestionLinks[0].focus();
-      } else if ( e.target.tagName == 'A'){
-        const next = findParent({ selector: '.hw-trace__suggestion', elem: e.target }).nextElementSibling;
-        if(next){
-          q('.hw-trace__suggestion-link', next).focus();
-        } else {
-          q(traceInputSelector, hwtrace).focus();
-        }
-      }
-      e.preventDefault();
-    }
-
-    if(e.keyCode === KEYS.UP) {
-      const hwtrace = findParent({ selector, elem: e.target });
-      if(e.target.tagName == 'INPUT'){
-        const suggestionLinks = qa('[data-hw-trace-suggestion] a', hwtrace); //Find the current trace field's suggestionLinks
-        suggestionLinks[suggestionLinks.length - 1].focus();
-      } else if ( e.target.tagName == 'A'){
-        const previous = findParent({ selector: '.hw-trace__suggestion', elem: e.target }).previousElementSibling;
-        if(previous){
-          q('.hw-trace__suggestion-link', previous).focus();
-        } else {
-          q(traceInputSelector, hwtrace).focus();
-        }
-      }
-      e.preventDefault();
-    }
-  }
-
   function onReset(e, trace){
     let input = q(traceInputSelector, trace);
     input.value = ''; // triggers an input event in IE 11, but not in Chrome
@@ -146,10 +112,6 @@ const HWtrace = ({
     const input = q(traceInputSelector, trace);
     input.addEventListener('focus', toggleActive);
     input.addEventListener('blur', toggleActive);
-    const suggestions = q('.hw-trace__suggestions', trace);
-    if(suggestions) {
-      trace.addEventListener('keydown', e => onArrowDownOrUp(e));
-    }
     input.addEventListener('input', e => onInput(e, trace));
     const resetButton = q('[data-hw-trace-reset]', trace);
     if(resetButton){

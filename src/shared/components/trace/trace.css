@@ -1,7 +1,3 @@
-/**
- * Modifiers
- */
-
 .hw-trace {
   position: relative;
   width: 100%;
@@ -12,8 +8,6 @@
 @media(--large){
   flex-direction: row;
 }
-
-  
 
   &__inner {
     position: relative;
@@ -38,8 +32,13 @@
     width: 100%;
     transition: outline 100ms;
     border:0;
-   /* border: 3px solid var(--hw-color-gray-light);*/
-    height: auto;
+    text-align: center;
+    height: auto
+
+    @media(--large){
+      text-align:left;
+    }
+
     &:hover {
       border-color: var(--hw-color-gray);
     }
