@@ -17,7 +17,7 @@ NB: The search field position and the opaque background overlay is not controlle
   data-hw-search 
   data-hw-search-placeholders='["Placeholder", "Another one"]'>
   <div class="hw-search__inner">
-    <input class="hw-search__input" type="text" data-hw-search-input type="text" />
+    <input class="hw-search__input" type="text" data-hw-search-input />
     <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
   </div>
