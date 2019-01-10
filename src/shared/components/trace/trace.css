@@ -76,9 +76,10 @@
   }
 
   &__button {
-    margin-left: 3px;
+    
  
     @media(--large){
+      margin-left: 3px;
       margin-top: 0;
       padding-top: initial;
       padding-bottom: initial;
