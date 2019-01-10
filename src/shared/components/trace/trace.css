@@ -15,6 +15,11 @@
     overflow: hidden;
     z-index: 1;
     width: 100%;
+    text-align:center;
+
+    @media(--large){
+      text-align:left;
+    }
 
   }
 
@@ -23,7 +28,7 @@
     padding: var(--hw-spacing-smallest) var(--hw-spacing-large);
     @media (--large) {
       font-size: var(--hw-font-size-lead);
-      padding: 16px 16px;
+      padding: 11px 16px;
     }
   }
 
@@ -33,7 +38,7 @@
     transition: outline 100ms;
     border:0;
     text-align: center;
-    height: auto;
+    height: 46px;
 
     @media(--large){
       text-align:left;
@@ -48,7 +53,7 @@
       background-color: var(--hw-color-white);
     }
     @media (--large){
-      height: 60px;
+      height: 52px;
     }
   }
 
@@ -64,6 +69,7 @@
     animation: movePlaceholder 3s ease-out infinite 0.3s;
     z-index: -1;
     border: 3px solid transparent;
+    width:100%;
     @media (--large){
       border: 0;
     }
@@ -73,22 +79,12 @@
     
  
     @media(--large){
+      margin-left: 3px;
       margin-top: 0;
       padding-top: initial;
       padding-bottom: initial;
     }
   }
-
-  &__button:hover {
-    outline:none;
-  }
-
-  &--borders &__button {
-    @media(--large){
-      margin-left: 3px;
-    }
-  }
-
 
   &__button-inside {
     position: absolute;
