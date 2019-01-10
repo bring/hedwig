@@ -14,7 +14,7 @@ The trace field is simular to the search field and contains a rotating placehold
   data-hw-trace 
   data-hw-trace-placeholders='["Placeholder", "Another one"]'>
   <div class="hw-trace__inner">
-    <input class="hw-trace__input" type="text" data-hw-trace-input type="text" />
+    <input class="hw-trace__input" type="text" data-hw-trace-input />
     <span class="hw-trace__placeholder" data-hw-trace-placeholder></span>
     <button class="hw-trace__button-inside" data-hw-trace-reset><i class="fas fa-times-circle"></i></button>
   </div>
@@ -29,7 +29,7 @@ The trace field is simular to the search field and contains a rotating placehold
   data-hw-trace 
   data-hw-trace-placeholders='["Placeholder", "Another one"]'>
   <div class="hw-trace__inner">
-    <input class="hw-trace__input" type="text" data-hw-trace-input type="text" />
+    <input class="hw-trace__input" type="text" data-hw-trace-input />
     <span class="hw-trace__placeholder" data-hw-trace-placeholder></span>
     <button class="hw-trace__button-inside" data-hw-trace-reset><i class="fas fa-times-circle"></i></button>
   </div>
@@ -43,7 +43,7 @@ The trace field is simular to the search field and contains a rotating placehold
   data-hw-trace 
   data-hw-trace-placeholders='["Placeholder", "Another one"]'>
   <div class="hw-trace__inner">
-    <input class="hw-trace__input" type="text" data-hw-trace-input type="text" />
+    <input class="hw-trace__input" type="text" data-hw-trace-input />
     <span class="hw-trace__placeholder" data-hw-trace-placeholder></span>
     <button class="hw-trace__button-inside" data-hw-trace-reset><i class="fas fa-times-circle"></i></button>
   </div>
@@ -56,7 +56,7 @@ The trace field is simular to the search field and contains a rotating placehold
   data-hw-trace 
   data-hw-trace-placeholders='["One placeholder"]'>
   <div class="hw-trace__inner">
-    <input class="hw-trace__input" type="text" data-hw-trace-input type="text" />
+    <input class="hw-trace__input" type="text" data-hw-trace-input />
     <span class="hw-trace__placeholder" data-hw-trace-placeholder></span>
     <button class="hw-trace__button-inside" data-hw-trace-reset><i class="fas fa-times-circle"></i></button>
   </div>
