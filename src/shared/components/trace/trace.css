@@ -33,7 +33,7 @@
     transition: outline 100ms;
     border:0;
     text-align: center;
-    height: auto
+    height: auto;
 
     @media(--large){
       text-align:left;
