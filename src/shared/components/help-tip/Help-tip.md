@@ -48,6 +48,15 @@ Some text in need of an explanation
 </div>
 ```
 
+Default with title
+```html
+Some text in need of an explanation
+<div class="hw-help-tip hw-help-tip">
+  <button class="hw-help-tip__button"></button>
+  <div class="hw-help-tip__content"> <h5 class="hw-help-tip__title">A title, should you need</h5>In need of help? Here is the answer. Some more lines for this one I think</div>
+</div>
+```
+
 #### Left
 
 ```html
@@ -90,7 +99,8 @@ Help text is shown in three different places based on screen size
 Some text in need of an explanation
 <div class="hw-help-tip hw-help-tip--small--left hw-help-tip--large--middle hw-help-tip--xlarge--right">
   <button class="hw-help-tip__button"></button>
-  <div class="hw-help-tip__content">In need of help? Here is the answer</div>
+  <div class="hw-help-tip__content">
+    In need of help? Here is the answer</div>
 </div>
 ```
 

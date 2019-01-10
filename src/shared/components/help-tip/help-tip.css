@@ -1,3 +1,25 @@
+/* Placeholder  for the help tip contents */
+%left {
+  left: -80px;
+}
+%left::after {
+  left: 94%;
+}
+
+%right {
+  left: 95px;
+}
+%right::after {
+  left: 7%;
+}
+
+%middle {
+  left: 50%;
+}
+%middle::after {
+  left: 50%;
+}
+
 .hw-help-tip {
     display: inline-block;
     position: relative;
@@ -17,12 +39,20 @@
         visibility: visible;
     }
 
+    &__title{
+      font-family: var(--hw-font-primary-bold);
+      font-size: var(--hw-font-size-small);
+    }
+
     &__content {
+       @extend .hw-text-less-line-height;
         display: block;
         visibility: hidden;
         color: var(--hw-color-gray-lightest);
         background-color: var(--hw-color-gray-darkest);
         padding: var(--hw-spacing-smaller);
+        font-family: var(--hw-font-primary-regular);
+        font-size: var(--hw-font-size-small);
         max-width: 200px;
         width: 200px;
         position: absolute;
@@ -41,28 +71,6 @@
             border-color: var(--hw-color-gray-darkest) transparent transparent transparent;
         }
     }
-
-  /* Placeholder  for the help tip contents */
-  %left {
-    left: -80px;
-  }
-  %left::after {
-    left: 94%;
-  }
-
-  %right {
-    left: 95px;
-  }
-  %right::after {
-    left: 7%;
-  }
-
-  %middle {
-    left: 50%;
-  }
-  %middle::after {
-    left: 50%;
-  }
 
   /* Not responsive */
   &--left &__content {
