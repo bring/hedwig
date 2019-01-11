@@ -9,23 +9,9 @@
    * Modifiers
    */
 
-  &--primary {
-    fill: var(--hw-color-primary);
-  }
-
-  &--green {
-    fill: var(--hw-color-green);
-  }
-
-  &--red {
-    fill: var(--hw-color-red);
-  }
-
-  &--gray-lighter {
-    fill: var(--hw-color-gray-lighter);
-  }
-
-  &--gray-darker {
-    fill: var(--hw-color-gray-darker);
+  &--size-medium {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
   }
 }
