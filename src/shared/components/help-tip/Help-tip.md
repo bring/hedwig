@@ -6,7 +6,7 @@ Show a question mark icon that shows a help text when clicked or hovered
 
 ```code
 <div class="hw-help-tip">
-  <button class="hw-help-tip__button"></button>
+  <button class="hw-help-tip__button"><span>Some text in need of an explanation</span></button>
   <div class="hw-help-tip__content">In need of help? Here is the answer</div>
 </div>
 ```
@@ -41,18 +41,17 @@ Place the help bubble to the right, left or middle
 #### Middle
 Default
 ```html
-Some text in need of an explanation
 <div class="hw-help-tip hw-help-tip">
-  <button class="hw-help-tip__button"></button>
+  <button class="hw-help-tip__button"><span>Some text in need of an explanation</span></button>
   <div class="hw-help-tip__content">In need of help? Here is the answer. Some more lines for this one I think</div>
 </div>
 ```
 
 Default with title
 ```html
-Some text in need of an explanation
-<div class="hw-help-tip hw-help-tip">
-  <button class="hw-help-tip__button"></button>
+
+<div class="hw-help-tip hw-help-tip"> 
+  <button class="hw-help-tip__button"><span>Some text in need of an explanation</span></button>
   <div class="hw-help-tip__content"> <h5 class="hw-help-tip__title">A title, should you need</h5>In need of help? Here is the answer. Some more lines for this one I think</div>
 </div>
 ```
@@ -60,9 +59,8 @@ Some text in need of an explanation
 #### Left
 
 ```html
-Some text in need of an explanation
 <div class="hw-help-tip hw-help-tip--left">
-  <button class="hw-help-tip__button"></button>
+  <button class="hw-help-tip__button"><span>Some text in need of an explanation</span></button>
   <div class="hw-help-tip__content">In need of help? Here is the answer</div>
 </div>
 ```
@@ -72,19 +70,17 @@ Some text in need of an explanation
 
 ```html
 <div class="hw-help-tip hw-help-tip--right">
-  <button class="hw-help-tip__button"></button>
+  <button class="hw-help-tip__button"><span>Small Eg</span></button>
   <div class="hw-help-tip__content">In need of help? Here is the answer</div>
 </div>
-Some text in need of an explanation
 ```
 
 
 #### Large Left
 
 ```html
-Some text in need of an explanation
 <div class="hw-help-tip hw-help-tip--large--left">
-  <button class="hw-help-tip__button"></button>
+  <button class="hw-help-tip__button"><span>Some text in need of an explanation</span></button>
   <div class="hw-help-tip__content">In need of help? Here is the answer</div>
 </div>
 ```
@@ -96,9 +92,8 @@ Help text is shown in three different places based on screen size
 - Right on xlarge screens
 
 ```html
-Some text in need of an explanation
 <div class="hw-help-tip hw-help-tip--small--left hw-help-tip--large--middle hw-help-tip--xlarge--right">
-  <button class="hw-help-tip__button"></button>
+  <button class="hw-help-tip__button"><span>Some text in need of an explanation</span></button>
   <div class="hw-help-tip__content">
     In need of help? Here is the answer</div>
 </div>
