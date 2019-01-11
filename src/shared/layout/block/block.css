@@ -174,11 +174,21 @@
     padding-left: var(--hw-spacing-smaller);
     padding-right: var(--hw-spacing-smaller);
   }
+
+  &--px-mobile {
+    padding-left: var(--hw-spacing-smaller);
+    padding-right: var(--hw-spacing-smaller);
+  }
 }
 
 @media (--medium) {
   .hw-block--px-fluid {
     padding-left: var(--hw-spacing);
     padding-right: var(--hw-spacing);
+  }
+
+  .hw-block--px-mobile {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
