@@ -2,6 +2,8 @@
   display:flex;
   align-items: stretch;
   justify-content: space-between;
+
+
 }
 
 .hw-frame__item {
@@ -57,6 +59,10 @@
   .hw-frame {
     flex-direction: row;
     border: 3px solid var(--hw-color-gray-lighter);
+
+    &--no-border {
+      border:none;
+    }
   }
 
   .hw-frame__item--ml {

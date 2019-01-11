@@ -28,7 +28,7 @@ A simple component for adding one or more pieces of content into a frame, with o
 ```html|span-6
   <div class="hw-frame">
     <div class="hw-frame__item">
-      <div class="hw-block hw-block--pt hw-block--pb">
+      <div class="hw-block hw-block--pt hw-block--pb hw-block--px">
         <h3 class="hw-h3">First and only item</h3>
       </div>
     </div>
@@ -40,13 +40,13 @@ A simple component for adding one or more pieces of content into a frame, with o
 ```html|span-6
   <div class="hw-frame">
     <div class="hw-frame__item hw-frame__item--bg-gray-lighter">
-      <div class="hw-block hw-block--pt hw-block--pb">
+      <div class="hw-block hw-block--pt hw-block--pb hw-block--px">
         <h3 class="hw-h3">First item</h3>
         some content
       </div>
     </div>
     <div class="hw-frame__item hw-frame__item--ml hw-frame__item--bg-gray-lighter">
-      <div class="hw-block hw-block--pt hw-block--pb"> 
+      <div class="hw-block hw-block--pt hw-block--pb hw-block--px"> 
         <h3 class="hw-h3">Second item</h3>
         with margin left
       </div>
@@ -59,21 +59,40 @@ A simple component for adding one or more pieces of content into a frame, with o
 ```html|span-6
   <div class="hw-frame">
     <div class="hw-frame__item">
-      <div class="hw-block hw-block--pt hw-block--pb">
+      <div class="hw-block hw-block--pt hw-block--pb hw-block--px">
         <h3>First item</h3>
         some content
       </div>
     </div>
     <div class="hw-frame__item hw-frame__item--bg-primary ">
-      <div class="hw-block hw-block--pt hw-block--pb">
+      <div class="hw-block hw-block--pt hw-block--pb hw-block--px">
         <h3 class="hw-h3">Second item</h3>
         background primary
       </div>
     </div>
     <div class="hw-frame__item hw-frame__item--bg-gray-light">
-      <div class="hw-block hw-block--pt hw-block--pb">
+      <div class="hw-block hw-block--pt hw-block--pb hw-block--px">
         <h3 class="hw-h3">Third item</h3>
         background 
+      </div>
+    </div>
+  </div>
+```
+
+### Frame with no border
+
+```html|span-6
+  <div class="hw-frame hw-frame--no-border">
+    <div class="hw-frame__item hw-frame__item--bg-gray-lighter">
+      <div class="hw-block hw-block--pt hw-block--pb hw-block--px">
+        <h3 class="hw-h3">First item</h3>
+        some content
+      </div>
+    </div>
+    <div class="hw-frame__item hw-frame__item--ml hw-frame__item--bg-primary">
+      <div class="hw-block hw-block--pt hw-block--pb hw-block--px"> 
+        <h3 class="hw-h3">Second item</h3>
+        with margin left
       </div>
     </div>
   </div>
@@ -84,19 +103,19 @@ A simple component for adding one or more pieces of content into a frame, with o
 ```html|span-6,responsive
   <div class="hw-frame">
     <div class="hw-frame__item">
-      <div class="hw-block hw-block--pt hw-block--pb">
+      <div class="hw-block hw-block--pt hw-block--pb hw-block--px">
         <h3>First item</h3>
         some content
       </div>
     </div>
     <div class="hw-frame__item hw-frame__item--bg-primary hw-frame__item--ml">
-      <div class="hw-block hw-block--pt hw-block--pb">
+      <div class="hw-block hw-block--pt hw-block--pb hw-block--px">
         <h3 class="hw-h3">Second item</h3>
         background primary
       </div>
     </div>
     <div class="hw-frame__item hw-frame__item--bg-gray-light hw-frame__item--ml">
-      <div class="hw-block hw-block--pt hw-block--pb">
+      <div class="hw-block hw-block--pt hw-block--pb hw-block--px">
         <h3 class="hw-h3">Third item</h3>
         background gray light<br>
         Lorem ipsum...
