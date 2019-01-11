@@ -76,7 +76,7 @@
   }
 
   &__button {
-    
+    margin-top:var(--hw-spacing-smallest);
  
     @media(--large){
       margin-left: 3px;
