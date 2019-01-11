@@ -1,138 +1,18 @@
 /**
  * Responsive utility classes
  *
- * .hw-hide-small-up
- * .hw-hide-small-down
- *
- * .hw-hide-medium-up
- * .hw-hide-medium-down
- *
- * .hw-hide-large-up
- * .hw-hide-large-down
- *
- * .hw-hide-xlarge-up
- * .hw-hide-xlarge-down
- *
- * .hw-only-base
- * .hw-only-small
- * .hw-only-medium
- * .hw-only-large
- * .hw-only-xlarge
- *
- */
-
-/**
- * Small
- */
-
-.hw-hide-small-up {
-  @media (--small) {
-    display: none;
-  }
-}
-
-.hw-hide-small-down {
-  display: none;
-
-  @media (--small) {
-    display: block;
-  }
-}
-
-/**
- * Medium
- */
-
-.hw-hide-medium-up {
-  @media (--medium) {
-    display: none;
-  }
-}
-
-.hw-hide-medium-down {
-  display: none;
-
-  @media (--medium) {
-    display: block;
-  }
-}
-
-/**
-* Large
 */
 
-.hw-hide-large-up {
-  @media (--large) {
+ .hw-mobile-only {
+  @media(--large){
+    display:none;
+  }
+ }
+
+ .hw-desktop-only {
+  @media(--max-medium),
+  @media(--high-res-mobile){
     display: none;
   }
-}
+ }
 
-.hw-hide-large-down {
-  display: none;
-
-  @media (--large) {
-    display: block;
-  }
-}
-
-/**
-* Large
-*/
-
-.hw-hide-xlarge-up {
-  @media (--xlarge) {
-    display: none;
-  }
-}
-
-.hw-hide-xlarge-down {
-  display: none;
-
-  @media (--xlarge) {
-    display: block;
-  }
-}
-
-/**
- * Only
- */
-
-.hw-only-base {
-  display: none;
-
-  @media (--only-base) {
-    display: block;
-  }
-}
-
-.hw-only-small {
-  display: none;
-
-  @media (--only-small) {
-    display: block;
-  }
-}
-
-.hw-only-medium {
-  display: none;
-
-  @media (--only-medium) {
-    display: block;
-  }
-}
-
-.hw-only-large {
-  display: none;
-
-  @media (--only-large) {
-    display: block;
-  }
-}
-
-.hw-only-xlarge {
-  display: none;
-
-  @media (--only-xlarge) {
-    display: block;
-  }
-}
