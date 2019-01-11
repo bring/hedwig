@@ -84,7 +84,8 @@
   }
 
   /* Responsive */
-  @media (--small) {
+  @media (--small), 
+   (--only-base) {
     &--small--left &__content {
       @extend %left;
     }
