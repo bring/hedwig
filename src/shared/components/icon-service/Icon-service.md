@@ -32,15 +32,16 @@ See [Examples of including](#examples-of-including)
 
 
 ### Sizing
-Hedwig does not deliver sizing for service icons
-You can size service icons by directly setting width and height.
+
+Service icons does not have a default size
+There is a size modifier: `hw-icon--size-medium`
 ```code
-<svg class="hw-icon" style="width: 100px; height: 100px">
+<svg class="hw-icon hw-icon--size-medium">
     <use xlink:href="#bud"></use>
 </svg>
 ```
 ```html
-<svg class="hw-icon" style="width: 100px; height: 100px">
+<svg class="hw-icon hw-icon--size-medium">
     <use xlink:href="#bud"></use>
 </svg>
 ```
