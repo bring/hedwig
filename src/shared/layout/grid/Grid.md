@@ -124,8 +124,9 @@ Example
 .hw-medium--eleven-twelfths
 ```
 
-### Responsive hide-classes
+### Responsive hide-classes -- NB: DEPRECATED
 
+DEPRECATED: will be removed in version 10
 This will hide the grid item on a set screen size (only until the next breakpoint)
 
 
@@ -137,12 +138,6 @@ This will hide the grid item on a set screen size (only until the next breakpoin
 [XLarge]          .hw-xlarge--none
 ```
 
-Example
-```code
-.hw-small--none
-.hw-medium--none
-.hw-large--none
-```
 
 ### Responsive example
 
@@ -155,6 +150,7 @@ Example
       <p class="hw-helpers-highlight">medium-three-quarters</p>
     </div>
   </div>
+
 ```
 
 ### Narrow grid gutters
