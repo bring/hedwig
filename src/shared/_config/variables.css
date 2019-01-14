@@ -90,7 +90,7 @@
   --hw-font-size-h5: calc(var(--hw-font-size-min-h5)px + (var(--hw-font-size-max-h5) - var(--hw-font-size-min-h5)) * ((100vw - var(--hw-font-size-min-view-port)px) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-lead: 22px;
   --hw-font-size-p: 18px;
-  --hw-font-size-small: 15px;
+  --hw-font-size-small: 16px;
   --hw-font-size-smaller: 12px;
 
   /**
