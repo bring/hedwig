@@ -95,6 +95,7 @@ library.add(far.faLockOpenAlt);
 library.add(far.faSearch);
 library.add(far.faTimes);
 library.add(far.faUser);
+library.add(far.faCheckCircle);
 
 library.add(fal.faTimes);
 
