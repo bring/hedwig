@@ -138,15 +138,19 @@ p.hw-text-light {
     font-size: 310%;
     line-height: 75%;
     margin: 0;
-    margin-top: 1.7%;
+    margin-top: 6px;
     letter-spacing: var(--hw-spacing-smallest);
   }
 
+  &.hw-text-lead::first-letter {
+    margin-top: 5px;
+  }
+
   &.hw-text-small::first-letter {
-    margin-top: 1.3%;
+    margin-top: 4px;
   }
 
   &.hw-text-smaller::first-letter {
-    margin-top: 1%;
+    margin-top: 3px;
   }
 }
