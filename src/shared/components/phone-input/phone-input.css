@@ -102,7 +102,7 @@
       & .hw-dropdown__inner {
         height: auto;
         border: 3px solid var(--hw-color-gray);
-        background: #fff;
+        background: var(--hw-color-white);
 
         &::after {
           top: 0;

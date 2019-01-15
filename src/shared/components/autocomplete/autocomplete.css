@@ -107,7 +107,7 @@
     position: absolute;
     top: calc(var(--hw-spacing-larger) + 3px);
     width: 100%;
-    background: #fff;
+    background: var(--hw-color-white);
     border: 3px solid var(--hw-color-gray-darker);
     overflow-y: scroll;
     z-index: 2;

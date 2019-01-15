@@ -40,7 +40,7 @@
     overflow: auto;
     animation-name: slide-in-drawer;
     animation-duration: 0.2s;
-    background: #fff;
+    background: var(--hw-color-white);
 
     &--animate-out {
       animation-name: slide-out-drawer;
@@ -142,7 +142,7 @@
   &__window {
     z-index: 0;
     width: 100%;
-    background: #fff;
+    background: var(--hw-color-white);
   }
 }
 

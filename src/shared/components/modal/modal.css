@@ -60,7 +60,7 @@
   &__content {
     z-index: var(--z-index--modal-foreground);
     width: 100%;
-    background: #fff;
+    background: var(--hw-color-white);
     padding: var(--hw-spacing);
     margin: var(--hw-spacing);
 
@@ -102,6 +102,6 @@
   &__window {
     z-index: 0;
     width: 100%;
-    background: #fff;
+    background: var(--hw-color-white);
   }
 }
