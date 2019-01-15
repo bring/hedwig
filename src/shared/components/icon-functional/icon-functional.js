@@ -91,11 +91,14 @@ library.add(fab.faLinkedinIn);
 library.add(fab.faTwitter);
 
 library.add(far.faBars);
+library.add(far.faCheckCircle);
+library.add(far.faFileInvoiceDollar);
 library.add(far.faLockOpenAlt);
+library.add(far.faRulerCombined);
 library.add(far.faSearch);
 library.add(far.faTimes);
 library.add(far.faUser);
-library.add(far.faCheckCircle);
+library.add(far.faWeightHanging);
 
 library.add(fal.faTimes);
 

@@ -164,10 +164,13 @@ hw-color-gray-darker
 
 ```html
 <i class="fa-2x fa-fw far fa-bars"></i> bars<br/><br/>
+<i class="fa-2x fa-fw far fa-check-circle"></i> check-circle<br/><br/>
+<i class="fa-2x fa-fw far fa-file-invoice-dollar"></i> file-invoice-dollar<br/><br/>
 <i class="fa-2x fa-fw far fa-lock-open-alt"></i> lock-open-alt<br/><br/>
+<i class="fa-2x fa-fw far fa-ruler-combined"></i> ruler-combined<br/><br/>
 <i class="fa-2x fa-fw far fa-search"></i> search<br/><br/>
 <i class="fa-2x fa-fw far fa-user"></i> user<br/><br/>
-<i class="fa-2x fa-fw far fa-check-circle"></i> check-circle<br/><br/>
+<i class="fa-2x fa-fw far fa-weight-hanging"></i> weight-hanging<br/><br/>
 ```
 
 #### Light icons - fal
