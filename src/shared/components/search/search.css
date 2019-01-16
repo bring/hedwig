@@ -90,6 +90,10 @@
     transition: opacity 0.1s ease;
   }
 
+  &__button-inside:hover {
+    color: var(--hw-color-gray);
+  }
+
   &__suggestions {
     position: absolute;
     top: 41px;

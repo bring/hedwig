@@ -22,8 +22,8 @@
     right: var(--hw-spacing-small);
     padding: 0;
     border: none;
-    opacity: 0.33;
     cursor: pointer;
+
   }
 
   &[data-hw-autocomplete-reset-visible="true"]
@@ -36,6 +36,7 @@
     .hw-autocomplete__input:hover
     + .hw-autocomplete__input-reset {
     display: block;
+    color:var(--hw-color-gray);
   }
 
   &[data-hw-autocomplete-reset-visible="true"]
@@ -46,7 +47,7 @@
   &[data-hw-autocomplete-reset-visible="true"]
     .hw-autocomplete__input-reset:active {
     display: block;
-    opacity: 0.66;
+    
   }
 
   &__input {
