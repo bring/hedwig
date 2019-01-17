@@ -84,6 +84,12 @@ rows:
 ```html|span-2,plain,light
   <p class="hw-text-dropcap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
+```html|span-2,plain,light
+  <p class="hw-text-dropcap hw-text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+```
+```html|span-2,plain,light
+  <p class="hw-text-dropcap hw-text-smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+```
 
 ### Colors
 ```hint

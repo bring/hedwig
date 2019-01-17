@@ -132,14 +132,25 @@ p.hw-text-light {
 .hw-text-less-line-height {
   line-height: 1.2;
 }
-.hw-text-dropcap::first-letter{
-  float: left;
-  font-size: 305%;
-  line-height: 75%;
-  margin: 0;
-  margin-top: 1.5%;
-  letter-spacing: 3px;
-}
-.hw-text-dropcap.hw-text-smaller::first-letter{
-  margin-top: 1%;
+.hw-text-dropcap {
+  &::first-letter {
+    float: left;
+    font-size: 310%;
+    line-height: 75%;
+    margin: 0;
+    margin-top: 6px;
+    letter-spacing: var(--hw-spacing-smallest);
+  }
+
+  &.hw-text-lead::first-letter {
+    margin-top: 5px;
+  }
+
+  &.hw-text-small::first-letter {
+    margin-top: 4px;
+  }
+
+  &.hw-text-smaller::first-letter {
+    margin-top: 3px;
+  }
 }
