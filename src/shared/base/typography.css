@@ -33,6 +33,7 @@ h3,
 h4,
 h5,
 .hw-h1,
+.hw-h1-large,
 .hw-h2,
 .hw-h3,
 .hw-h4,
@@ -48,6 +49,7 @@ h2,
 h3,
 h4,
 .hw-h1,
+.hw-h1-large,
 .hw-h2,
 .hw-h3,
 .hw-h4 {
@@ -179,12 +181,5 @@ p.hw-text-light {
 /** (``) **/
 
 .hw-h1-ridiculously-huge {
-    font-size:var(--hw-font-size-h1-large);
-  } 
-
-@media (--xlarge) {
- 
-  .hw-h1-ridiculously-huge {
-    font-size: var(--hw-font-size-max-h1-large)px;
-  }
+  @extend .hw-h1-large;
 }
