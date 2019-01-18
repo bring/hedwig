@@ -4,12 +4,20 @@ Our font is [Foundry Monoline](https://www.fonts.com/font/the-foundry/foundry-mo
 The font size on H-tags are responsive on viewports between 300 - 1200px, and static on viewports smaller and bigger viewports
 
 ```code
-[h1]             h1 font size 28 - 56px
-[h2]             h2 font size 25 - 42px
-[h3]             h3 font size 22 - 31px
-[h4]             h4 font size 20 - 23px
-[h5]             h5 font size 18 - 20px
+[h1]             h1 font size 28 - 44px
+[h2]             h2 font size 25 - 35px
+[h3]             h3 font size 22 - 28px
+[h4]             h4 font size 20 - 22px
+[h5]             h5 font size 18px
 [p]              p
+
+[.hw-h1-large]       font size 32 - 54px
+[.hw-h1]             font size 28 - 44px
+[.hw-h2]             font size 25 - 35px
+[.hw-h3]             font size 22 - 28px
+[.hw-h4]             font size 20 - 22px
+[.hw-h5]             font size 18px
+
 
 [Lead]             hw-text-lead
 [Small]            hw-text-small
@@ -24,7 +32,8 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 
 ### Headers
 
-```html|span-6,plain,light
+```html|responsive
+  <h1 class="hw-h1-ridiculously-huge">H1 Headline large example</h1>
   <h1>H1 Headline example</h1>
   <h2>H2 Headline example</h2>
   <h3>H3 Headline example</h3>
