@@ -34,3 +34,26 @@
   <span class="hw-breadcrumb__current">Current content</span>
 </div>
 ```
+```code
+<div class="hw-breadcrumbs">
+  <div class="hw-breadcrumb">
+    <a class="hw-link" href="#">Home</a>
+  </div>
+  <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>
+  
+  <div class="hw-breadcrumb">
+    <a class="hw-link" href="#">Level 2</a>
+  </div>
+  <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>
+  
+  <div class="hw-breadcrumb">
+    <a class="hw-link" href="#">
+      <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow-mobile"></i>
+      Level 3
+    </a>
+  </div>
+  <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>
+  
+  <span class="hw-breadcrumb__current">Current content</span>
+</div>
+```
