@@ -44,6 +44,17 @@ h5,
 }
 
 h1,
+h2,
+h3,
+h4,
+.hw-h1,
+.hw-h2,
+.hw-h3,
+.hw-h4 {
+  letter-spacing: -0.03em;
+}
+
+h1,
 .hw-h1 {
   font-size: var(--hw-font-size-h1);
 }
@@ -52,6 +63,16 @@ h1,
   h1,
   .hw-h1 {
     font-size: var(--hw-font-size-max-h1)px;
+  }
+}
+
+.hw-h1-large {
+  font-size: var(--hw-font-size-h1-large);
+}
+
+@media (--xlarge) {
+  .hw-h1-large {
+    font-size: var(--hw-font-size-max-h1-large)px;
   }
 }
 
@@ -152,5 +173,18 @@ p.hw-text-light {
 
   &.hw-text-smaller::first-letter {
     margin-top: 3px;
+  }
+}
+
+/** (``) **/
+
+.hw-h1-ridiculously-huge {
+    font-size:var(--hw-font-size-h1-large);
+  } 
+
+@media (--xlarge) {
+ 
+  .hw-h1-ridiculously-huge {
+    font-size: var(--hw-font-size-max-h1-large)px;
   }
 }
