@@ -77,4 +77,15 @@
   </a>
 </div>
 ```
-
+### Example with more than one line of text
+```html|span-2
+<a class="hw-icon-link" href="#">
+  <svg class="hw-icon">
+    <use xlink:href="#bud"></use>
+  </svg>
+  <div class="hw-block hw-block--mb-smallest">
+    <h4>Here is the link text</h4>
+  </div>
+  <h4 class="hw-text-light">Second line of text</h4>
+</a>
+```
