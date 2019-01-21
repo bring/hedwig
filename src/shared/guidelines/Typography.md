@@ -78,7 +78,7 @@ rows:
   - Modifier: hw-text-bold
     Available for: h5, .hw-h5
   - Modifier: hw-text-light
-    Available for: p, .hw-text-small, .hw-text-smaller
+    Available for: h4, p, .hw-text-small, .hw-text-smaller
   - Modifier: hw-text-dropcap
     Available for: p, .hw-text-lead, .hw-text-small, .hw-text-smaller
     ```
