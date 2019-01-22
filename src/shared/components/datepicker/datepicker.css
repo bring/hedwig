@@ -239,7 +239,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
 .is-selected .pika-button,
 .has-event .pika-button {
-  color: #fff;
+  color: var(--hw-color-white);
   font-weight: bold;
   background: var(--hw-color-primary);
 }
@@ -254,13 +254,13 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }
 
 .is-startrange .pika-button {
-  color: #fff;
+  color: var(--hw-color-white);
   background: #6cb31d;
   box-shadow: none;
 }
 
 .is-endrange .pika-button {
-  color: #fff;
+  color: var(--hw-color-white);
   background: #33af;
   box-shadow: none;
 }
@@ -285,7 +285,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
 .pika-button:hover,
 .pika-row.pick-whole-week:hover .pika-button {
-  color: #fff;
+  color: var(--hw-color-white);
   background: var(--hw-color-gray-darker);
   box-shadow: none;
 }

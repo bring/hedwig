@@ -43,7 +43,7 @@
   */
 
   --hw-color-opaque-black: rgba(0,0,0, 0.20); /* #000000 */
-
+  --hw-color-opaque-white: rgba(255, 255, 255, 0.50);
 
 
   /**

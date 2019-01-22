@@ -31,7 +31,7 @@
 
   &--inverted {
     color: var(--hw-color-white);
-    border-color: var(--hw-color-white);
+    border-color: var(--hw-color-opaque-white);
   }
 
   &--small {
