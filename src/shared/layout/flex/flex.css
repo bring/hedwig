@@ -29,6 +29,10 @@
       }
     }
 
+
+    /* Calculation on the widths follows this logic:
+        Percentage of width minus (margins between items divided by number of items)
+    */
     &--thirds > * {
       min-width: calc((100% / 3) - (var(--hw-spacing-tiny) * 2 / 3)); /* 3 * 2 / 3 = 2 */
       max-width: calc((100% / 3) - (var(--hw-spacing-tiny) * 2 / 3));
