@@ -28,7 +28,7 @@
     }
   ],
   "license": "BSD-2-Clause",
-  "main": "dist/main.js",
+  "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
     "build": "npm run docs:build && npm run css:build && npm run js:build && npm run svg",
@@ -41,9 +41,10 @@
     "css:build:bring": "postcss tmp/bring.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./dist/bring.css",
     "css:build:posten": "postcss tmp/posten.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./dist/posten.css",
     "js:dev": "rollup -m inline -c --name \"hedwig\"",
-    "js:build": "npm run js:build:main && npm run js:build:icons",
+    "js:build": "npm run js:build:main && npm run js:build:icons && npm run js:build:react",
     "js:build:main": "rollup -c --name \"hedwig\" --output.file dist/main.js",
     "js:build:icons": "rollup -c rollup.config.icons.js",
+    "js:build:react": "rollup -c rollup.config.react.js",
     "docs:build": "node ./scripts/docs-build",
     "watcher": "node ./scripts/watcher",
     "server": "node ./server",
@@ -63,15 +64,14 @@
     "cache:purge:jsdelivr:js": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@9/dist/main.js\",\"npm/@posten/hedwig@latest/dist/main.js\"]}'",
     "cache:purge:jsdelivr:js:default": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@latest\"]}'"
   },
+  "peerDependencies": {
+    "react": "*"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "sanitize.css": "^5.0.0",
     "stickybits": "^3.5.7",
     "zenscroll": "^4.0.2"
-  },
-  "engines": {
-    "node": "8.9.0",
-    "npm": "5.5.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
@@ -100,6 +100,7 @@
     "rollup": "^0.51.8",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-jsx": "^1.0.3",
     "rollup-plugin-multi-entry": "^2.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-uglify": "^4.0.0",

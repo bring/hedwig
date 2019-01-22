@@ -79,6 +79,7 @@ function build() {
   const sharedPages = [];
   const sharedUtilities = [];
   const sharedLayout = [];
+  const sharedReact = [];
 
   const bringComponents = [];
   const bringCommonCombos = [];
@@ -86,6 +87,7 @@ function build() {
   const bringPages = [];
   const bringUtilities = [];
   const bringLayout = [];
+  const bringReact = [];
 
   const postenComponents = [];
   const postenCommonCombos = [];
@@ -93,6 +95,7 @@ function build() {
   const postenPages = [];
   const postenUtilities = [];
   const postenLayout = [];
+  const postenReact = [];
 
 
   /**
@@ -132,6 +135,7 @@ function build() {
               pages = postenPages;
               layout = postenLayout;
               utilities = postenUtilities;
+              react = postenReact;
               break;
           case 'bring':
               components = bringComponents;
@@ -140,6 +144,7 @@ function build() {
               pages = bringPages;
               layout = bringLayout;
               utilities = bringUtilities;
+              react = bringReact;
               break;
           default:
           case 'shared':
@@ -149,6 +154,7 @@ function build() {
               pages = sharedPages;
               layout = sharedLayout;
               utilities = sharedUtilities;
+              react = sharedReact;
               break;
       }
 
@@ -312,6 +318,36 @@ function build() {
     }
 
     /**
+     * Check if the page is React
+     var title = filename.split('.').shift();
+    */
+
+    if (file.indexOf('-react') !== -1) {
+
+      var filename = file.split('/').pop();
+      var title = filename.split('.').shift();
+
+      /**
+       * Copy md files to docs
+       */
+
+      fs.createReadStream(file).pipe(
+        fs.createWriteStream(`docs/md/${fileSection}/` + filename)
+      );
+
+      /**
+       * Add page to a pages array
+       */
+      react.push({
+        title: title.split('-react').join(''),
+        path: title,
+        src: `md/${fileSection}/${filename}`,
+      });
+
+      return;
+    }
+
+    /**
      * Process remaining pages
      */
 
@@ -382,6 +418,13 @@ function build() {
       ...bringUtilities,
     ]),
   });
+  bringMergedPages.push({
+    title: 'React Components',
+    pages: sortPages([
+      ...sharedReact,
+      ...bringReact,
+    ]),
+  });
 
   const bringCatalogSettings = Object.assign(bringDocsConfig, { pages: bringMergedPages });
   const CatalogJSBring = `Catalog.render(${JSON.stringify(bringCatalogSettings)}, document.getElementById('catalog'))`;
@@ -430,6 +473,13 @@ function build() {
     pages: sortPages([
       ...sharedUtilities,
       ...postenUtilities,
+    ]),
+  });
+  postenMergedPages.push({
+    title: 'React',
+    pages: sortPages([
+      ...sharedReact,
+      ...postenReact,
     ]),
   });
 
