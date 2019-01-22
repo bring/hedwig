@@ -64,14 +64,15 @@
     "cache:purge:jsdelivr:js": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@9/dist/main.js\",\"npm/@posten/hedwig@latest/dist/main.js\"]}'",
     "cache:purge:jsdelivr:js:default": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@latest\"]}'"
   },
-  "peerDependencies": {
-    "react": "*"
-  },
   "dependencies": {
     "express": "^4.16.4",
     "sanitize.css": "^5.0.0",
     "stickybits": "^3.5.7",
     "zenscroll": "^4.0.2"
+  },
+  "engines": {
+    "node": "8.9.0",
+    "npm": "5.5.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
