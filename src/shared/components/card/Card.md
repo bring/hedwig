@@ -38,7 +38,7 @@ Styling for cards.
           <h3 class="hw-card__title">Card Title</h3>
           <hr class="hw-hr" />
           <div class="hw-card__text">
-            (This text is too long and will be trimmed) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
           </div>
         </div>
       </a>
