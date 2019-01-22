@@ -22,13 +22,30 @@ import * as fab from "@fortawesome/free-brands-svg-icons";
  */
 config.searchPseudoElements = true;
 
-// We are only using the some of the icons
-library.add(fas.faAt);
+// We are only using some of the icons
+library.add(fab.faFacebookF);
+library.add(fab.faGooglePlusG);
+library.add(fab.faInstagram);
+library.add(fab.faLinkedinIn);
+library.add(fab.faTwitter);
+library.add(fal.faTimes);
+library.add(far.faBars);
+library.add(far.faExclamationCircle);
+library.add(far.faInfoCircle);
+library.add(far.faLockOpenAlt);
+library.add(far.faQuestionCircle);
+library.add(far.faSearch);
+library.add(far.faTimes);
+library.add(far.faUser);
 library.add(fas.faArrowsAltH);
+library.add(fas.faArrowSquareLeft);
+library.add(fas.faAt);
 library.add(fas.faAward);
 library.add(fas.faBarcodeAlt);
 library.add(fas.faBars);
 library.add(fas.faBox);
+library.add(fas.faBoxCheck);
+library.add(fas.faBoxOpen);
 library.add(fas.faCalculator);
 library.add(fas.faCalendarAlt);
 library.add(fas.faCamera);
@@ -51,6 +68,7 @@ library.add(fas.faEnvelope);
 library.add(fas.faEnvelopeOpen);
 library.add(fas.faExclamation);
 library.add(fas.faExclamationCircle);
+library.add(fas.faExclamationSquare);
 library.add(fas.faEye);
 library.add(fas.faFile);
 library.add(fas.faFlag);
@@ -58,45 +76,36 @@ library.add(fas.faFolder);
 library.add(fas.faGlobe);
 library.add(fas.faHome);
 library.add(fas.faInfo);
+library.add(fas.faInfoCircle);
 library.add(fas.faKey);
+library.add(fas.faLocationArrow);
 library.add(fas.faLock);
 library.add(fas.faMapMarkerAlt);
 library.add(fas.faMinus);
 library.add(fas.faMobile);
 library.add(fas.faPaperclip);
+library.add(fas.faPaste);
 library.add(fas.faPauseCircle);
-library.add(fas.faPlay);
 library.add(fas.faPencil);
+library.add(fas.faPersonDolly);
+library.add(fas.faPersonDolly);
 library.add(fas.faPhone);
+library.add(fas.faPlay);
 library.add(fas.faPlus);
 library.add(fas.faQuestionCircle);
+library.add(fas.faQuestionSquare);
 library.add(fas.faReply);
 library.add(fas.faSearch);
 library.add(fas.faShippingFast);
 library.add(fas.faShoppingCart);
 library.add(fas.faStar);
+library.add(fas.faStoreAlt);
 library.add(fas.faSyncAlt);
 library.add(fas.faTimes);
 library.add(fas.faTimesCircle);
 library.add(fas.faTrashAlt);
 library.add(fas.faUnlock);
 library.add(fas.faUser);
-library.add(fas.faLocationArrow);
-library.add(fas.faBoxOpen);
-
-library.add(fab.faFacebookF);
-library.add(fab.faGooglePlusG);
-library.add(fab.faInstagram);
-library.add(fab.faLinkedinIn);
-library.add(fab.faTwitter);
-
-library.add(far.faBars);
-library.add(far.faLockOpenAlt);
-library.add(far.faSearch);
-library.add(far.faTimes);
-library.add(far.faUser);
-
-library.add(fal.faTimes);
 
 // Replace any existing <i> tags with <svg> and set up a MutationObserver to
 // continue doing this as the DOM changes.

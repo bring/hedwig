@@ -98,12 +98,14 @@ hw-color-gray-darker
 #### Solid icons - fas
 
 ```html
-<i class="fa-2x fa-fw fas fa-at"></i> at<br/><br/>
+<i class="fa-2x fa-fw fas fa-arrow-square-left"></i> arrow-square-left<br/><br/>
 <i class="fa-2x fa-fw fas fa-arrows-alt-h"></i> arrows-alt-h<br/><br/>
+<i class="fa-2x fa-fw fas fa-at"></i> at<br/><br/>
 <i class="fa-2x fa-fw fas fa-award"></i> award<br/><br/>
 <i class="fa-2x fa-fw fas fa-barcode-alt"></i> barcode-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-bars"></i> bars<br/><br/>
 <i class="fa-2x fa-fw fas fa-box"></i> box<br/><br/>
+<i class="fa-2x fa-fw fas fa-box-check"></i> box-check<br/><br/>
 <i class="fa-2x fa-fw fas fa-box-open"></i> box-open<br/><br/>
 <i class="fa-2x fa-fw fas fa-calculator"></i> calculator<br/><br/>
 <i class="fa-2x fa-fw fas fa-calendar-alt"></i> calendar-alt<br/><br/>
@@ -127,6 +129,7 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-envelope-open"></i> envelope-open<br/><br/>
 <i class="fa-2x fa-fw fas fa-exclamation"></i> exclamation<br/><br/>
 <i class="fa-2x fa-fw fas fa-exclamation-circle"></i> exclamation-circle<br/><br/>
+<i class="fa-2x fa-fw fas fa-exclamation-square"></i> fa-exclamation-square<br/><br/>
 <i class="fa-2x fa-fw fas fa-eye"></i> eye<br/><br/>
 <i class="fa-2x fa-fw fas fa-file"></i> file<br/><br/>
 <i class="fa-2x fa-fw fas fa-flag"></i> flag<br/><br/>
@@ -134,24 +137,29 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-globe"></i> globe<br/><br/>
 <i class="fa-2x fa-fw fas fa-home"></i> home<br/><br/>
 <i class="fa-2x fa-fw fas fa-info"></i> info<br/><br/>
+<i class="fa-2x fa-fw fas fa-info-circle"></i> fa-info-circle<br/><br/>
 <i class="fa-2x fa-fw fas fa-key"></i> key<br/><br/>
-<i class="fa-2x fa-fw fas fa-lock"></i> lock<br/><br/>
 <i class="fa-2x fa-fw fas fa-location-arrow"></i> location-arrow<br/><br/>
+<i class="fa-2x fa-fw fas fa-lock"></i> lock<br/><br/>
 <i class="fa-2x fa-fw fas fa-map-marker-alt"></i> map-marker-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-minus"></i> minus<br/><br/>
 <i class="fa-2x fa-fw fas fa-mobile"></i> mobile<br/><br/>
 <i class="fa-2x fa-fw fas fa-paperclip"></i> paperclip<br/><br/>
+<i class="fa-2x fa-fw fas fa-paste"></i> paste<br/><br/>
 <i class="fa-2x fa-fw fas fa-pause-circle"></i> pause-circle<br/><br/>
-<i class="fa-2x fa-fw fas fa-play"></i> play<br/><br/>
 <i class="fa-2x fa-fw fas fa-pencil"></i> pencil<br/><br/>
+<i class="fa-2x fa-fw fas fa-person-dolly"></i> store-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-phone"></i> phone<br/><br/>
+<i class="fa-2x fa-fw fas fa-play"></i> play<br/><br/>
 <i class="fa-2x fa-fw fas fa-plus"></i> plus<br/><br/>
 <i class="fa-2x fa-fw fas fa-question-circle"></i> question-circle<br/><br/>
+<i class="fa-2x fa-fw fas fa-question-square"></i> fa-question-square<br/><br/>
 <i class="fa-2x fa-fw fas fa-reply"></i> reply<br/><br/>
 <i class="fa-2x fa-fw fas fa-search"></i> search<br/><br/>
 <i class="fa-2x fa-fw fas fa-shipping-fast"></i> shipping-fast<br/><br/>
 <i class="fa-2x fa-fw fas fa-shopping-cart"></i> shopping-cart<br/><br/>
 <i class="fa-2x fa-fw fas fa-star"></i> star<br/><br/>
+<i class="fa-2x fa-fw fas fa-store-alt"></i> store-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-sync-alt"></i> sync-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-times"></i> times<br/><br/>
 <i class="fa-2x fa-fw fas fa-times-circle"></i> times-circle<br/><br/>
@@ -164,7 +172,10 @@ hw-color-gray-darker
 
 ```html
 <i class="fa-2x fa-fw far fa-bars"></i> bars<br/><br/>
+<i class="fa-2x fa-fw far fa-exclamation-circle"></i> fa-exclamation-circle<br/><br/>
+<i class="fa-2x fa-fw far fa-info-circle"></i> fa-info-circle<br/><br/>
 <i class="fa-2x fa-fw far fa-lock-open-alt"></i> lock-open-alt<br/><br/>
+<i class="fa-2x fa-fw far fa-question-circle"></i> fa-question-circle<br/><br/>
 <i class="fa-2x fa-fw far fa-search"></i> search<br/><br/>
 <i class="fa-2x fa-fw far fa-user"></i> user<br/><br/>
 ```
