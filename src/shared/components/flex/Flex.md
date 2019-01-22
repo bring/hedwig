@@ -1,16 +1,278 @@
-## Flex
+# Flex
 
-Flexible card grid
+Flexible grid with 3px gutters
 
 ```code
-[Flex]           .hw-flex
-[Responsive]     .hw-flex--responsive
-[Guttered]       .hw-flex--guttered - Gives a margin between elements
+[Flex]                  .hw-flex
+[Thirds]                .hw-flex--thirds                - Wraps after three items
+[Fourths]               .hw-flex--fourths               - Wraps after four items
+[Large gutter desktop]  .hw-flex--gutter-large-desktop  - Gives a large margin between elements on desktop
 ```
 
-### Default flex
+## Example
 
-```html|span-6
+```html
+<div class="hw-flex">
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+
+## Example with large gutter desktop
+
+```html
+<div class="hw-flex hw-flex--gutter-large-desktop">
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+
+## Example with fourths
+
+```html
+<div class="hw-flex hw-flex--fourths">
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Example with thirds
+
+```html
+<div class="hw-flex hw-flex--thirds">
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Example with thirds and large gutter desktop
+
+```html
+<div class="hw-flex hw-flex--thirds hw-flex--gutter-large-desktop">
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Example with fourths and large gutter desktop
+
+```html
+<div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+
+### Default flex with cards
+
+```html
   <section class="hw-flex hw-flex--guttered">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
@@ -39,10 +301,34 @@ Flexible card grid
   </section>
 ```
 
-### Responsive flex
+### Large gutter on desktop with wrap after three items
 
 ```html|span-6
-  <section class="hw-flex hw-flex--guttered hw-flex--responsive">
+  <section class="hw-flex hw-flex--gutter-large-desktop hw-flex--thirds">
+      <a href="#" class="hw-card">
+        <div class="hw-card__media">
+          <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+        </div>
+        <div class="hw-card__body">
+          <h3 class="hw-card__title">Card Title</h3>
+          <hr class="hw-hr" />
+          <div class="hw-card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
+          </div>
+        </div>
+      </a>
+      <a href="#" class="hw-card">
+        <div class="hw-card__media">
+          <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+        </div>
+        <div class="hw-card__body">
+          <h3 class="hw-card__title">Card Title</h3>
+          <hr class="hw-hr" />
+          <div class="hw-card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
+          </div>
+        </div>
+      </a>
       <a href="#" class="hw-card">
         <div class="hw-card__media">
           <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>

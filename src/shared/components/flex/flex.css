@@ -3,46 +3,58 @@
  */
 
 .hw-flex {
-  display: flex;
-  flex-wrap: wrap;
-
   & > * {
-    flex: 1;
+    margin-bottom: var(--hw-spacing-tiny);
   }
 
-  /*
-   * Modifiers
-  */
-
-  /*
-  * Make the flex break at 940
-  */
-  
-  &--responsive {
-    flex-direction: column;
-
-    @media (--large) {
-      flex-direction: row;
-    }
-  }
-
-  &--guttered {
+  @media (--large) {
+    display: flex;
     & > * {
-      margin-left: var(--hw-spacing);
+      flex: 1;
+      margin-right: var(--hw-spacing-tiny);
+      margin-bottom: 0;
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
 
-    & > *:first-of-type {
-      margin-left: 0;
+    &--gutter-large-desktop > * {
+      margin-right: var(--hw-spacing-small);
     }
-    &.hw-flex--responsive > * {
-      margin-left: 0;
-      margin-top: var(--hw-spacing);
-      @media (--large) {
-        margin-left: var(--hw-spacing);
+
+    &--thirds, &--fourths {
+      flex-wrap: wrap;
+      & > * {
+        margin-bottom: var(--hw-spacing-tiny);
       }
-      &:first-of-type {
-        margin-left: 0;
+    }
+
+    &--thirds > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-tiny) * 2 / 3)); /* 3 * 2 / 3 = 2 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-tiny) * 2 / 3));
+      &:nth-of-type(3n) {
+        margin-right: 0;
       }
+    }
+
+    &--fourths > * {
+      min-width: calc(25% - (var(--hw-spacing-tiny) * 3 / 4)); /* 3 * 3 / 4 = 2.25 */
+      max-width: calc(25% - (var(--hw-spacing-tiny) * 3 / 4));
+      &:nth-of-type(4n) {
+        margin-right: 0;
+      }
+    }
+
+    &--gutter-large-desktop&--thirds > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-small) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-small) * 2 / 3));
+      margin-bottom: var(--hw-spacing-small);
+    }
+
+    &--gutter-large-desktop&--fourths > * {
+      min-width: calc(25% - (var(--hw-spacing-small) * 3 / 4)); /* 18 * 3 / 4 = 13.5 */
+      max-width: calc(25% - (var(--hw-spacing-small) * 3 / 4));
+      margin-bottom: var(--hw-spacing-small);
     }
   }
 }
