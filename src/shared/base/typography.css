@@ -33,6 +33,7 @@ h3,
 h4,
 h5,
 .hw-h1,
+.hw-h1-large,
 .hw-h2,
 .hw-h3,
 .hw-h4,
@@ -44,6 +45,18 @@ h5,
 }
 
 h1,
+h2,
+h3,
+h4,
+.hw-h1,
+.hw-h1-large,
+.hw-h2,
+.hw-h3,
+.hw-h4 {
+  letter-spacing: -0.03em;
+}
+
+h1,
 .hw-h1 {
   font-size: var(--hw-font-size-h1);
 }
@@ -52,6 +65,16 @@ h1,
   h1,
   .hw-h1 {
     font-size: var(--hw-font-size-max-h1)px;
+  }
+}
+
+.hw-h1-large {
+  font-size: var(--hw-font-size-h1-large);
+}
+
+@media (--xlarge) {
+  .hw-h1-large {
+    font-size: var(--hw-font-size-max-h1-large)px;
   }
 }
 
@@ -125,10 +148,39 @@ h5,
 
 .hw-text-small .hw-text-light,
 .hw-text-smaller .hw-text-light,
-p.hw-text-light {
+p.hw-text-light,
+h4.hw-text-light {
   font-family: var(--hw-font-primary-regular);
 }
 
 .hw-text-less-line-height {
   line-height: 1.2;
+}
+.hw-text-dropcap {
+  &::first-letter {
+    float: left;
+    font-size: 310%;
+    line-height: 75%;
+    margin: 0;
+    margin-top: 6px;
+    letter-spacing: var(--hw-spacing-smallest);
+  }
+
+  &.hw-text-lead::first-letter {
+    margin-top: 5px;
+  }
+
+  &.hw-text-small::first-letter {
+    margin-top: 4px;
+  }
+
+  &.hw-text-smaller::first-letter {
+    margin-top: 3px;
+  }
+}
+
+/** (``) **/
+
+.hw-h1-ridiculously-huge {
+  @extend .hw-h1-large;
 }

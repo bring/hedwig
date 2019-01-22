@@ -1,0 +1,145 @@
+.hw-trace {
+  position: relative;
+  width: 100%;
+  transition: width 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275), background 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+
+@media(--large){
+  flex-direction: row;
+}
+
+  &__inner {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    text-align:center;
+
+    @media(--large){
+      text-align:left;
+    }
+
+  }
+
+  &__input, &__placeholder {
+    font-size: var(--hw-font-size-p);
+    padding: var(--hw-spacing-smallest) var(--hw-spacing-large);
+    @media (--large) {
+      font-size: var(--hw-font-size-lead);
+      padding: 11px 16px;
+    }
+  }
+
+  &__input {
+    margin: 0;
+    width: 100%;
+    transition: outline 100ms;
+    border:0;
+    text-align: center;
+    height: 46px;
+
+    @media(--large){
+      text-align:left;
+    }
+
+    &:hover {
+      border-color: var(--hw-color-gray);
+    }
+    &:focus {
+      border-color: var(--hw-color-gray-darker);
+      outline-width: 0;
+      background-color: var(--hw-color-white);
+    }
+    @media (--large){
+      height: 52px;
+    }
+  }
+
+  &--borders &__input{
+    border:3px solid var(--hw-color-gray-light);
+  }
+
+  &__placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--hw-color-gray-dark);
+    animation: movePlaceholder 3s ease-out infinite 0.3s;
+    z-index: -1;
+    border: 3px solid transparent;
+    width:100%;
+    @media (--large){
+      border: 0;
+    }
+  }
+
+  &__button {
+    margin-top:var(--hw-spacing-smallest);
+ 
+    @media(--large){
+      margin-left: 3px;
+      margin-top: 0;
+      padding-top: initial;
+      padding-bottom: initial;
+    }
+  }
+
+  &__button-inside {
+    position: absolute;
+    right: var(--hw-spacing-small);
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+  }
+
+  &__button-inside:hover {
+    color: var(--hw-color-gray);
+  }
+  
+
+  /** Modifiers added by javascript **/
+  &--static .hw-trace__placeholder {
+    animation: none;
+  }
+
+  &--active .hw-trace__placeholder, &--dirty .hw-trace__placeholder {
+    visibility: hidden;
+  }
+
+  &--hasvalue .hw-trace__button-inside {
+    opacity: 1;
+  }
+
+
+  }
+  
+
+@keyframes movePlaceholder {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  90% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  91% {
+    transform: translateY(50px);
+  }
+
+  92% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,35 @@
+.hw-breadcrumbs {
+  /* Flex to get rid of white space */
+  display: flex;
+  align-items: center;
+}
+.hw-breadcrumb {
+  &:not(:last-of-type) {
+    display: none;
+    @media (--large){
+      display: inline;
+    }
+  }
+
+  &__current {
+    display: none;
+    @media (--large){
+      display: inline;
+    }
+  }
+  &__arrow {
+    display: none;
+    margin-right: 12px;
+    margin-left: 12px;
+    @media (--large) {
+      display: inline-block;
+    }
+  }
+  &__arrow-mobile {
+    margin-right: 12px;
+    @media (--large){
+      display: none;
+    }
+  }
+}
+

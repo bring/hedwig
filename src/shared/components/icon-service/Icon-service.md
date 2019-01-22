@@ -32,15 +32,16 @@ See [Examples of including](#examples-of-including)
 
 
 ### Sizing
-Hedwig does not deliver sizing for service icons
-You can size service icons by directly setting width and height.
+
+Service icons does not have a default size
+There is a size modifier: `hw-icon--size-medium`
 ```code
-<svg class="hw-icon" style="width: 100px; height: 100px">
+<svg class="hw-icon hw-icon--size-medium">
     <use xlink:href="#bud"></use>
 </svg>
 ```
 ```html
-<svg class="hw-icon" style="width: 100px; height: 100px">
+<svg class="hw-icon hw-icon--size-medium">
     <use xlink:href="#bud"></use>
 </svg>
 ```
@@ -268,7 +269,53 @@ sjoetransport
 <br/> 
 ```
 
-
+#### Numbers
+```html
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#number-01"></use>
+</svg>
+number-01
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#number-02"></use>
+</svg>
+number-02
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#number-03"></use>
+</svg>
+number-03
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#number-04"></use>
+</svg>
+number-04
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#number-05"></use>
+</svg>
+number-05
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#number-06"></use>
+</svg>
+number-06
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#number-07"></use>
+</svg>
+number-07
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#number-08"></use>
+</svg>
+number-08
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#number-09"></use>
+</svg>
+number-09
+```
 
 
 ### Examples of including
