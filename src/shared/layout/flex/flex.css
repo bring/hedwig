@@ -5,6 +5,11 @@
 .hw-flex {
   & > * {
     margin-bottom: var(--hw-spacing-tiny);
+    @media (--max-medium) {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 
   @media (--large) {
