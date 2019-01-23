@@ -3,63 +3,37 @@
 Can contain images or video.
 
 ```code
-[Base]      .hw-figure
-[Large]     .hw-figure--large
-[Full]      .hw-figure--full
-[Figcaption].hw-figure__figcaption
+[Base]        .hw-figure
+
+Sub elements
+[Container]   .hw-figure__container
+[Figcaption]  .hw-figure__figcaption
 ```
 
 ### Default figure
 
 ```html|span-3
 <figure class="hw-figure">
-  <img
-    alt="Picture of happy people"
-    src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
-  />
+  <div class="hw-figure__container">
+    <img
+      alt="Picture of happy people"
+      src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
+    />
+  </div>
 </figure>
 ```
 
+### With figcaption
 ```html|span-3
 <figure class="hw-figure">
-  <img
-    alt="Picture of happy people"
-    src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
-  />
+  <div class="hw-figure__container">
+    <img
+      alt="Picture of happy people"
+      src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
+    />
+  </div>
   <figcaption class="hw-figure__figcaption">
     Can I help you? Yeah, can I have a dozen red roses, please? Oh, hi, Johnny. I didn't know it was you. 
-  </figcaption>
-</figure>
-```
-
-### Large figure
-
-The large image pokes outside of it's container.
-
-```html|span-4
-<figure class="hw-figure hw-figure--large">
-  <img
-    alt="Picture of happy people"
-    src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
-  />
-  <figcaption>
-    With caption
-  </figcaption>
-</figure>
-```
-
-### Full figure
-
-The full version always takes up all it's space.
-
-```html|span-6
-<figure class="hw-figure hw-figure--full">
-  <img
-    alt="Picture of happy people"
-    src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
-  />
-  <figcaption class="hw-figure__figcaption">
-    With caption
   </figcaption>
 </figure>
 ```
