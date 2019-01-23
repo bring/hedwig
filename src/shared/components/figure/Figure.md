@@ -3,11 +3,11 @@
 Can contain images or video.
 
 ```code
-[Base]      .hw-figure
+[Base]        .hw-figure
 
 Sub elements
-[Large]     .hw-figure__container
-[Figcaption].hw-figure__figcaption
+[Container]   .hw-figure__container
+[Figcaption]  .hw-figure__figcaption
 ```
 
 ### Default figure
