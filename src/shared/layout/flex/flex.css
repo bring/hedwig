@@ -1,0 +1,69 @@
+/**
+ * Block
+ */
+
+.hw-flex {
+  & > * {
+    margin-bottom: var(--hw-spacing-tiny);
+    @media (--max-medium) {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (--large) {
+    display: flex;
+    & > * {
+      flex: 1;
+      margin-right: var(--hw-spacing-tiny);
+      margin-bottom: 0;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &--gutter-large-desktop > * {
+      margin-right: var(--hw-spacing-small);
+    }
+
+    &--thirds, &--fourths {
+      flex-wrap: wrap;
+      & > * {
+        margin-bottom: var(--hw-spacing-tiny);
+      }
+    }
+
+
+    /* Calculation on the widths follows this logic:
+        Percentage of width minus (margins between items divided by number of items)
+    */
+    &--thirds > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-tiny) * 2 / 3)); /* 3 * 2 / 3 = 2 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-tiny) * 2 / 3));
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+    }
+
+    &--fourths > * {
+      min-width: calc(25% - (var(--hw-spacing-tiny) * 3 / 4)); /* 3 * 3 / 4 = 2.25 */
+      max-width: calc(25% - (var(--hw-spacing-tiny) * 3 / 4));
+      &:nth-of-type(4n) {
+        margin-right: 0;
+      }
+    }
+
+    &--gutter-large-desktop&--thirds > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-small) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-small) * 2 / 3));
+      margin-bottom: var(--hw-spacing-small);
+    }
+
+    &--gutter-large-desktop&--fourths > * {
+      min-width: calc(25% - (var(--hw-spacing-small) * 3 / 4)); /* 18 * 3 / 4 = 13.5 */
+      max-width: calc(25% - (var(--hw-spacing-small) * 3 / 4));
+      margin-bottom: var(--hw-spacing-small);
+    }
+  }
+}
