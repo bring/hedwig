@@ -9,7 +9,7 @@ if (production) {
     'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/fonts.css',
     'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/bring.css',
   ];
-  scripts = ['https://cdn.jsdelivr.net/npm/@posten/hedwig@latest'];
+  scripts = ['https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/main.js'];
   logo = 'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/hedwig-logo.svg';
 } else {
   styles = ['http://localhost:3001/fonts.css', 'http://localhost:3001/bring.css'];
