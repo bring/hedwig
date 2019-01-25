@@ -25,6 +25,10 @@
     transition: border-color 0.3s ease;
   }
 
+  &--border-under {
+    border-bottom: 1px solid var(--hw-color-gray-light);
+  }
+
   &:hover {
     background-color: rgba(0,0,0,0.04);
     border-color: var(--hw-color-gray-light);
