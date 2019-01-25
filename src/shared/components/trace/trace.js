@@ -124,6 +124,13 @@ const HWtrace = ({
       // Mark as initialised
       trace.setAttribute('data-hw-trace-initialised', true);
 
+      const input = q(traceInputSelector, trace);
+      if(input.value === ''){
+      trace.classList.remove('hw-trace--hasvalue');
+    } else {
+      trace.classList.add('hw-trace--hasvalue');
+    }
+
       // Set up event listeners
       bindEvents(trace);
 
