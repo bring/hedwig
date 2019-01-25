@@ -32,6 +32,11 @@
   &--inverted {
     color: var(--hw-color-white);
     border-color: var(--hw-color-opaque-white);
+    &:hover,
+    &:active {
+      color: var(--hw-color-white);
+      border-color: var(--hw-color-white);
+    }
   }
 
   &--small {
