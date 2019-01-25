@@ -114,6 +114,10 @@
     opacity: 1;
   }
 
+  &--hasvalue .hw-trace__placeholder {
+    display: none;
+  }
+
 
   }
   
