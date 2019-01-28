@@ -1,20 +1,20 @@
 /* Placeholder for the help tip contents in px as the content box width is fixed */
 %left {
-  right: -3px;
+  right: -7px;
 }
 %left::after {
   right: 6%;
 }
 
 %right {
-  right: -177px;
+  right: -270px;
 }
 %right::after {
   right: 93%;
 }
 
 %middle {
-  right: -90px;
+  right: -140px;
 }
 %middle::after {
   right: 50%;
@@ -48,7 +48,7 @@
     }
     /* The placement of the content box is from right and is given in pixels as the width is fixed */
     &__content {
-       @extend .hw-text-less-line-height;
+        @extend .hw-text-less-line-height;
         display: block;
         visibility: hidden;
         color: var(--hw-color-gray-lightest);
@@ -56,11 +56,11 @@
         padding: var(--hw-spacing-smaller);
         font-family: var(--hw-font-primary-regular);
         font-size: var(--hw-font-size-small);
-        max-width: 200px;
-        width: 200px;
+        max-width: 300px;
+        width: 300px;
         position: absolute;
         bottom: 120%;
-        right: -90px;
+        right: -140px;
         margin-left: -100px;
 
         &::after{
