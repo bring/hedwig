@@ -23,6 +23,10 @@
 .hw-help-tip {
     display: inline-block;
     position: relative;
+    margin-right: var(--hw-spacing-smallest);
+    &:last-of-type {
+      margin-right: 0;
+    }
 
     &__button {
         border: 0;
