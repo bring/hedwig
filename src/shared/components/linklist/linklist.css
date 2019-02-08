@@ -12,11 +12,13 @@
     &:last-of-type {
       margin-bottom: 0;
     }
+
   }
 
   & a {
     @extend .hw-link;
     font-size: var(--hw-font-size-p);
+    line-height: 1.7;
   }
   /** Modifications **/
   &--small a{
