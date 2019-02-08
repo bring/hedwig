@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
 
-
   & li {
     margin-bottom: var(--hw-spacing-smallest);
     &:last-of-type {
