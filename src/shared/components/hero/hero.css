@@ -7,7 +7,7 @@
   position: relative;
   min-height: 55vh;
   overflow: hidden;
-  background-position-y:top;  
+  background-position:top;  
 
   &::after {
     content: '';
