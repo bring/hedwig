@@ -172,8 +172,10 @@ const HWAccordion = ({
 
       if (isInit) {
         // Set name and index attributes
-        trigger.setAttribute('aria-controls', `${accordionName}-${index}`);
-        contents.setAttribute('id', `${accordionName}-${index}`);
+        const randomID = Math.ceil(Math.random() * 1000);
+      
+        trigger.setAttribute('aria-controls', `${accordionName}-${randomID}`);
+        contents.setAttribute('id', `${accordionName}-${randomID}`);
       }
 
       // Get heights
