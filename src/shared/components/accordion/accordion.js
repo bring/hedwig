@@ -162,7 +162,6 @@ const HWAccordion = ({
     const items = qa('.hw-accordion__item', accordion);
 
     // Find accordion name
-    const accordionName = accordion.getAttribute('data-hw-accordion');
 
     // Attach listeners, aria-attributes and heights to all items
     items.forEach((item, index) => {
@@ -172,8 +171,10 @@ const HWAccordion = ({
 
       if (isInit) {
         // Set name and index attributes
-        trigger.setAttribute('aria-controls', `${accordionName}-${index}`);
-        contents.setAttribute('id', `${accordionName}-${index}`);
+        const randomID = Math.ceil(Math.random() * 1000);
+      
+        trigger.setAttribute('aria-controls', `hw-accordion-control-${randomID}`);
+        contents.setAttribute('id', `hw-accordion-control-${randomID}`);
       }
 
       // Get heights
