@@ -7,7 +7,7 @@ In these examples, the contents are wrapped in the [Wysiwyg Container](/Wysiwyg)
 ```code
 Required:
 
-[data-hw-accordion="name"]            name of accordion (must be unique, used for aria-roles)
+[data-hw-accordion]
 
 Modifiers:
 [Dark]    .hw-accordion--dark
@@ -23,7 +23,7 @@ Optional:
 ### Example accordion
 
 ```html|span-6
-  <ul class="hw-accordion" data-hw-accordion="example1">
+  <ul class="hw-accordion" data-hw-accordion>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Hvordan finner jeg hvilket hentested som tilhører min adresse?
@@ -71,7 +71,7 @@ Optional:
 ### Accordion with default opened item
 
 ```html|span-6
-  <ul class="hw-accordion" data-hw-accordion="example2">
+  <ul class="hw-accordion" data-hw-accordion>
     <li class="hw-accordion__item" data-hw-accordion-default-expanded>
       <button class="hw-accordion__trigger">
         Hva er hentefristen på sendinger jeg må hente på Posten?
@@ -118,7 +118,7 @@ Optional:
 ### Accordion that allows multiple items to be open at once
 
 ```html|span-6
-  <ul class="hw-accordion" data-hw-accordion="example3" data-hw-accordion-allow-multiple>
+  <ul class="hw-accordion" data-hw-accordion data-hw-accordion-allow-multiple>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Hva er hentefristen på sendinger jeg må hente på Posten?
@@ -163,7 +163,7 @@ Optional:
 This version is used in the footer and navbar (on mobile)
 
 ```html|span-6
-  <ul class="hw-accordion hw-accordion--dark" data-hw-accordion="example3" data-hw-accordion-allow-multiple>
+  <ul class="hw-accordion hw-accordion--dark" data-hw-accordion data-hw-accordion-allow-multiple>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Kundeservice
@@ -220,7 +220,7 @@ This version is used in the footer and navbar (on mobile)
 This version is used in the menu on mobile
 
 ```html|span-4
-  <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="example4" data-hw-accordion-allow-multiple>
+  <ul class="hw-accordion hw-accordion--menu" data-hw-accordion data-hw-accordion-allow-multiple>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Kundeservice
