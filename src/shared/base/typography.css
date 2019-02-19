@@ -157,6 +157,14 @@
       letter-spacing: 0.02em;
     }
 
+    &-center {
+      text-align: center;
+    }
+
+    &-right {
+      text-align: right;
+    }
+
   }
 
 
