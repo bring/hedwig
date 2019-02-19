@@ -122,7 +122,6 @@
  * Grid item styles
  */
 
-@import '../../globals.css';
 
 .hw-grid__item {
   display: inline-block;
