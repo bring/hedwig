@@ -24,6 +24,8 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 [Smaller]          hw-text-smaller
 [Less line-height] hw-text-less-line-height
 [Uppercase]        hw-text-uppercase
+[Center]           hw-text-center
+[Right]            hw-text-right
 
 [Color primary]       hw-color-primary
 [Color primary dark]  hw-color-primary-dark
@@ -70,6 +72,14 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 ### Uppercase
 ```html|span-4,plain,light
   <p class="hw-text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+```
+
+### Text align
+```html|span-4,plain,light
+  <p>Default (left aligned)</p>
+  <p class="hw-text-center">Center aligned</p>
+  <p class="hw-text-right">Right aligned</p>
+
 ```
 
 ### Modifiers
