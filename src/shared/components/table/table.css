@@ -26,7 +26,7 @@
     padding-top: var(--hw-spacing-smaller);
     padding-left: var(--hw-spacing);
     padding-right: var(--hw-spacing);
-    font-size: var(--hw-font-size-p);
+    font-size: var(--hw-font-size-small);
   }
 
   & td {
