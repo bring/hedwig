@@ -1,6 +1,31 @@
 ## Table - WORK IN PROGRESS
 
-### Table - fixed header
+### Simple table
+```html
+<div class="hw-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Content</td>
+      <td>Some more content</td>
+    </tr>
+    <tr>
+      <td>Even more content</td>
+      <td>A bit more content</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+
+### Table 
 
 ```html
 <div class="hw-table">
@@ -112,11 +137,5 @@
       </tr>
     </tbody>
   </table>
-  <div class="hw-table__scroll-hint">
-    <small>
-      Scroll
-      <i class="fas fa-arrows-alt-h fa-2x" data-fa-transform="down-3"></i>
-    </small>
-  </div>
 </div>
 ```

@@ -1,159 +1,59 @@
-/**
- * Block
- */
-
 .hw-table {
-  width: 100%;
-  border: 0;
-  position: relative;
-  display: block;
-  font-size: var(--hw-font-size-small);
-
-  /**
-   * Elements
-   */
-
-  & a {
-    font-size: var(--hw-font-size-small);
-
-    &:hover {
-      color: var(--hw-color-black);
-    }
-  }
 
   & table {
-    width: 100%;
-    table-layout: fixed;
     border-collapse: collapse;
-    display: block;
-    overflow: auto;
+    border:none;
+    width:100%;
+    text-align: left;
+  }
+  
+  & thead tr{
+    border-bottom: 3px solid var(--hw-color-primary);
+  }
 
-    &::-webkit-scrollbar {
-      width: 1px;
-      height: 6px;
-    }
+  & tbody tr {
+    border-bottom: 2px solid var(--hw-color-gray-lighter);
+  }
 
-    &::-webkit-scrollbar-track {
-      background: var(--hw-color-gray-lighter);
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: var(--hw-color-gray);
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-      background: var(--hw-color-gray-dark);
-    }
+  & tbody tr:hover {
+    font-weight: bold;
+    font-color:var(--hw-color-black);
   }
 
   & th {
-    min-width: 200px;
-    max-width: 200px;
-    padding: var(--hw-spacing-smaller);
+    color:var(--hw-color-primary-dark);
+    padding-bottom: var(--hw-spacing-smallest);
+    padding-top: var(--hw-spacing-smaller);
+    padding-left: var(--hw-spacing);
+    padding-right: var(--hw-spacing);
+    font-size: var(--hw-font-size-p);
   }
 
   & td {
-    min-width: 200px;
-    max-width: 400px;
-    padding: var(--hw-spacing-smaller);
+    padding-bottom: var(--hw-spacing-smallest);
+    padding-top: var(--hw-spacing-smaller);
+    padding-left: var(--hw-spacing);
+    padding-right: var(--hw-spacing);
+    font-size: var(--hw-font-size-smaller);
+    font-family: var(--hw-font-primary-regular);
+    white-space: nowrap;
+  } 
+
+  & th:first-of-type,
+  & td:first-of-type {
+    padding-left: var(--hw-spacing-tiny);
+  } 
+
+  & td a,
+  & td p {
+    font-size: var(--hw-font-size-smaller);
+    font-family: var(--hw-font-primary-regular);
   }
 
-  & thead {
-    position: absolute;
-    overflow: hidden;
-    color: var(--hw-color-white);
-    text-align: left;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    display: block;
-    vertical-align: middle;
+}
 
-    & th {
-      background-color: var(--hw-color-gray-darker);
-      border: 0;
-      position: relative;
-    }
-
-    & th:nth-last-of-type {
-      border-right: 0;
-    }
-
-    & th[data-hw-sort-arrows] {
-      cursor: pointer;
-    }
-
-    & th[data-hw-sort-arrows]:hover {
-      background-color: var(--hw-color-gray-dark);
-    }
-
-    & th[data-hw-sort-arrows]::after {
-      content: '';
-      position: absolute;
-      right: var(--hw-spacing-small);
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    & th[data-hw-sort-arrows]:hover::after {
-      content: '\2193';
-      opacity: 1;
-      background-color: var(--hw-color-gray-dark);
-    }
-
-    & th[aria-sort='ascending'] {
-      background-color: var(--hw-color-gray-dark);
-    }
-
-    & th[aria-sort='descending'] {
-      background-color: var(--hw-color-gray-dark);
-    }
-
-    & th[data-hw-sort-arrows][aria-sort='ascending']::after {
-      opacity: 1;
-      content: '\2191';
-    }
-
-    & th[data-hw-sort-arrows][aria-sort='descending']::after {
-      opacity: 1;
-      content: '\2193';
-    }
-  }
-
-  & th[data-hw-table-fixed-left] {
-    position: relative;
-    box-shadow: 2px 0 3px rgba(0, 0, 0, 0.25);
-    z-index: 99;
-  }
-
-  & tbody {
-    position: relative;
-    display: block;
-    max-height: 70vh;
-
-    @media (--medium) {
-      max-height: 80vh;
-    }
-
-    & th {
-      padding: var(--hw-spacing-small);
-      background-color: var(--hw-color-white);
-      border-color: var(--hw-color-gray-lighter);
-      display: block;
-    }
-
-    & td {
-      border-width: 2px;
-      border-style: solid;
-      background-color: var(--hw-color-white);
-      border-color: var(--hw-color-gray-lighter);
-      border-top: 0;
-
-      &:hover {
-        background-color: var(--hw-color-gray-lightest);
-        color: var(--hw-color-black);
-      }
-    }
+@media(--max-medium){
+  .hw-table {
+    overflow-x:auto;
   }
 }
