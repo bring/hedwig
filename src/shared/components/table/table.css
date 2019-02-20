@@ -12,7 +12,7 @@
   }
 
   & tbody tr {
-    border-bottom: 2px solid var(--hw-color-gray-lighter);
+    border-bottom: 2px solid var(--hw-color-opaque-black-10);
   }
 
   & tbody tr:hover {
