@@ -22,6 +22,21 @@ The trace field is simular to the search field and contains a rotating placehold
 </div>
 ```
 
+### Trace field - no break
+
+```html
+<div class="hw-trace hw-trace--no-break" 
+  data-hw-trace 
+  data-hw-trace-placeholders='["Placeholder", "Another one"]'>
+  <div class="hw-trace__inner">
+    <input class="hw-trace__input" type="text" data-hw-trace-input />
+    <span class="hw-trace__placeholder" data-hw-trace-placeholder></span>
+    <button type="button" class="hw-trace__button-inside" data-hw-trace-reset><i class="fas fa-times-circle"></i></button>
+  </div>
+    <button type="submit" class="hw-button hw-button--picture-yellow hw-trace__button">Trace</button>
+</div>
+```
+
 ### Trace field with borders
 
 ```html

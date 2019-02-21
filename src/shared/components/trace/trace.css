@@ -75,7 +75,7 @@
     }
   }
 
-  &__button {
+    &__button {
     margin-top:var(--hw-spacing-smallest);
  
     @media(--large){
@@ -118,6 +118,18 @@
     display: none;
   }
 
+  &--no-break {
+    flex-direction: row;
+  }
+
+  &--no-break &__button{
+      margin-left: 3px;
+      margin-top: 0;
+    }
+
+  &--no-break &__inner { 
+    height: 52px;
+  }
 
   }
   
