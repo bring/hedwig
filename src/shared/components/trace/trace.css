@@ -132,6 +132,7 @@
   &--no-break &__input {
     height: 52px;
     padding: 11px 16px;
+    text-align: left;
   }
 
   &--no-break &__placeholder {
