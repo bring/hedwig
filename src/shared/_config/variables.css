@@ -125,6 +125,10 @@
   @custom-media --high-res-mobile (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 939px) ;
 
 
+  /* Navbar heights */
+  --hw-navbar-height-mobile: 54px;
+  --hw-navbar-height-desktop: 72px;
+
   /**
    * Global z-index values
    */
