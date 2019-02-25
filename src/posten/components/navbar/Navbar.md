@@ -170,8 +170,8 @@
           </ul>
         </div>
         <div class="hw-navbar__drawer-desktop">
-          <div class="hw-grid">
-            <div class="hw-grid__item hw-one-quarter">
+          <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
+            <div>
               <h3>Sende</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
@@ -187,8 +187,8 @@
                 <li><a href="#">Gods i Norge</a></li>
                 <li><a href="#">Gods internasjonalt</a></li>
               </ul>
-            </div><!--
-            --><div class="hw-grid__item hw-one-quarter">
+            </div>
+            <div>
               <h3>Motta</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
@@ -201,8 +201,8 @@
                 <li><a href="#">Leie av postboks</a></li>
                 <li><a href="#">Import og fortolling</a></li>
               </ul>
-            </div><!--
-            --><div class="hw-grid__item hw-one-quarter">
+            </div>
+            <div>
               <h3>Rådgivning</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
@@ -218,8 +218,8 @@
                 <li><a href="#">Kundedialog</a></li>
                 <li><a href="#">Logistikkløsninger</a></li>
               </ul>
-            </div><!--
-            --><div class="hw-grid__item hw-one-quarter">
+            </div>
+            <div>
               <h3>Kundeservice</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
@@ -428,8 +428,8 @@ On this page, only the first navbar is able to open the search, menu and login. 
           </ul>
         </div>
         <div class="hw-navbar__drawer-desktop">
-          <div class="hw-grid">
-            <div class="hw-grid__item hw-one-quarter">
+          <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
+            <div>
               <h3>Sende</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
@@ -445,8 +445,8 @@ On this page, only the first navbar is able to open the search, menu and login. 
                 <li><a href="#">Gods i Norge</a></li>
                 <li><a href="#">Gods internasjonalt</a></li>
               </ul>
-            </div><!--
-            --><div class="hw-grid__item hw-one-quarter">
+            </div>
+            <div>
               <h3>Motta</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
@@ -459,8 +459,8 @@ On this page, only the first navbar is able to open the search, menu and login. 
                 <li><a href="#">Leie av postboks</a></li>
                 <li><a href="#">Import og fortolling</a></li>
               </ul>
-            </div><!--
-            --><div class="hw-grid__item hw-one-quarter">
+            </div>
+            <div>
               <h3>Rådgivning</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
@@ -476,8 +476,8 @@ On this page, only the first navbar is able to open the search, menu and login. 
                 <li><a href="#">Kundedialog</a></li>
                 <li><a href="#">Logistikkløsninger</a></li>
               </ul>
-            </div><!--
-            --><div class="hw-grid__item hw-one-quarter">
+            </div>
+            <div>
               <h3>Kundeservice</h3>
               <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                 <hr class="hw-hr hw-hr--gray-light"/>
