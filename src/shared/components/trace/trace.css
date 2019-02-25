@@ -75,7 +75,7 @@
     }
   }
 
-  &__button {
+    &__button {
     margin-top:var(--hw-spacing-smallest);
  
     @media(--large){
@@ -118,6 +118,30 @@
     display: none;
   }
 
+  /* No break, keep the button on the same line as the input */
+
+  &--no-break {
+    flex-direction: row;
+  }
+
+  &--no-break &__button{
+      margin-left: 3px;
+      margin-top: 0;
+    }
+
+  &--no-break &__input {
+    height: 52px;
+    padding: 11px 16px;
+    text-align: left;
+  }
+
+  &--no-break &__placeholder {
+    font-size: var(--hw-font-size-lead);
+    text-align: left;
+    height: 52px;
+    padding: 11px 16px;
+    border: 0;
+  }
 
   }
   
