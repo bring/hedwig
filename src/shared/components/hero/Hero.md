@@ -27,7 +27,8 @@ Changed from 20vh to 35vh in version 6.1.4
   </div>
 ```
 
-### Hero full (100vh)
+### Hero full (100vh minus [height of navbar])
+Together with navbar this will occupy full height of viewport
 
 ```html|span-6
   <div class="hw-hero hw-hero--full">
