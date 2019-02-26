@@ -130,6 +130,22 @@ These buttons are for use on top of images
   </button>
 ```
 
+### Chat button
+
+```html|span-4
+  <button class="hw-button hw-button--primary hw-button--chat">
+    <i class="fas fa-2x fa-comments-alt" title="Chat button"></i>
+  </button>
+  <button class="hw-button hw-button--primary hw-button--chat-fixed">
+    <i class="fas fa-2x fa-comments-alt" title="Chat button"></i>
+  </button>
+```
+
+```code
+[chat]        .hw-button--chat
+[chat-fixed]  .hw-button--chat-fixed (Preview is in the bottom-right corner of this page)
+```
+
 ### Extra modifiers
 
 ```html|span-4
