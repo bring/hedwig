@@ -158,63 +158,6 @@ Optional:
   </ul>
 ```
 
-### Dark accordion
-
-This version is used in the footer and navbar (on mobile)
-
-```html|span-6
-  <ul class="hw-accordion hw-accordion--dark" data-hw-accordion data-hw-accordion-allow-multiple>
-    <li class="hw-accordion__item">
-      <button class="hw-accordion__trigger">
-        Kundeservice
-        <div class="hw-accordion__arrow"></div>
-      </button>
-      <div class="hw-accordion__contents">
-      <ul class="hw-accordion__link-items">
-        <li class="hw-accordion__link-item">
-          <a href="#" class="hw-accordion__link">Lenke</a>
-        </li>
-        <li class="hw-accordion__link-item">
-          <a href="#" class="hw-accordion__link">Lenke</a>
-        </li>
-      </ul>
-      </div>
-    </li>
-    <li class="hw-accordion__item">
-      <button class="hw-accordion__trigger">
-        Våre tjenester
-        <div class="hw-accordion__arrow"></div>
-      </button>
-      <div class="hw-accordion__contents">
-        <ul class="hw-accordion__link-items">
-          <li class="hw-accordion__link-item">
-            <a href="#" class="hw-accordion__link">Lenke</a>
-          </li>
-          <li class="hw-accordion__link-item">
-            <a href="#" class="hw-accordion__link">Lenke</a>
-          </li>
-        </ul>
-      </div>
-    </li>
-    <li class="hw-accordion__item">
-      <button class="hw-accordion__trigger">
-        Søk etter
-        <div class="hw-accordion__arrow"></div>
-      </button>
-      <div class="hw-accordion__contents">
-        <ul class="hw-accordion__link-items">
-          <li class="hw-accordion__link-item">
-            <a href="#" class="hw-accordion__link">Lenke</a>
-          </li>
-          <li class="hw-accordion__link-item">
-            <a href="#" class="hw-accordion__link">Lenke</a>
-          </li>
-        </ul>
-      </div>
-    </li>
-  </ul>
-```
-
 ### Menu accordion
 
 This version is used in the menu on mobile
