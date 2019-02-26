@@ -23,8 +23,7 @@
     font-size: var(--hw-font-size-p);
     padding: var(--hw-spacing-smallest) var(--hw-spacing-large);
     @media (--large) {
-      font-size: var(--hw-font-size-lead);
-      padding: 21px 60px;
+      padding: 24px 60px;
     }
   }
 
@@ -43,7 +42,7 @@
       background-color: var(--hw-color-white);
     }
     @media (--large){
-      height: 72px;
+      height: var(--hw-navbar-height-desktop);
       border: 0;
     }
   }
