@@ -233,6 +233,20 @@
     border-radius: 50%;
     fill: var(--hw-color-white);
     color: var(--hw-color-white);
+    border: 2px solid var(--hw-color-primary);
+    background: var(--hw-color-primary);
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: var(--hw-color-primary-dark);
+      background: var(--hw-color-primary-dark);
+      outline: none;
+      box-shadow: 0 0 0 1px var(--hw-color-primary-dark);
+    }
+    &:active {
+      background: var(--hw-color-primary) !important;
+    }
   }
   &--chat-fixed{
     position: fixed;

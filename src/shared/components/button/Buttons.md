@@ -133,10 +133,10 @@ These buttons are for use on top of images
 ### Chat button
 
 ```html|span-4
-  <button class="hw-button hw-button--primary hw-button--chat">
+  <button class="hw-button hw-button--chat">
     <i class="fas fa-2x fa-comments-alt" title="Chat button"></i>
   </button>
-  <button class="hw-button hw-button--primary hw-button--chat-fixed">
+  <button class="hw-button hw-button--chat-fixed">
     <i class="fas fa-2x fa-comments-alt" title="Chat button"></i>
   </button>
 ```
