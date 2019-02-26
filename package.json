@@ -57,11 +57,11 @@
     "svg": "npm run svg:min && npm run svg:sprite",
     "css:fix": "stylelint 'src/**/*.css' --fix",
     "cache:purge:jsdelivr": "npm run cache:purge:jsdelivr:svg && npm run cache:purge:jsdelivr:iconsjs && npm run cache:purge:jsdelivr:css:bring && npm run cache:purge:jsdelivr:css:posten && npm run cache:purge:jsdelivr:js && npm run cache:purge:jsdelivr:js:default",
-    "cache:purge:jsdelivr:svg": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"/npm/@posten/hedwig@9/dist/svg-sprite.svg\",\"/npm/@posten/hedwig@latest/dist/svg-sprite.svg\"]}'",
-    "cache:purge:jsdelivr:iconsjs": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@9/dist/icons.min.js\",\"npm/@posten/hedwig@latest/dist/icons.min.js\"]}'",
-    "cache:purge:jsdelivr:css:bring": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@9/dist/bring.css\",\"npm/@posten/hedwig@latest/dist/bring.css\"]}'",
-    "cache:purge:jsdelivr:css:posten": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@9/dist/posten.css\",\"npm/@posten/hedwig@latest/dist/posten.css\"]}'",
-    "cache:purge:jsdelivr:js": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@9/dist/main.js\",\"npm/@posten/hedwig@latest/dist/main.js\"]}'",
+    "cache:purge:jsdelivr:svg": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"/npm/@posten/hedwig@10/dist/svg-sprite.svg\",\"/npm/@posten/hedwig@latest/dist/svg-sprite.svg\"]}'",
+    "cache:purge:jsdelivr:iconsjs": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@10/dist/icons.min.js\",\"npm/@posten/hedwig@latest/dist/icons.min.js\"]}'",
+    "cache:purge:jsdelivr:css:bring": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@10/dist/bring.css\",\"npm/@posten/hedwig@latest/dist/bring.css\"]}'",
+    "cache:purge:jsdelivr:css:posten": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@10/dist/posten.css\",\"npm/@posten/hedwig@latest/dist/posten.css\"]}'",
+    "cache:purge:jsdelivr:js": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@10/dist/main.js\",\"npm/@posten/hedwig@latest/dist/main.js\"]}'",
     "cache:purge:jsdelivr:js:default": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@latest\"]}'"
   },
   "dependencies": {
