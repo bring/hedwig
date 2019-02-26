@@ -225,4 +225,31 @@
       color: var(--hw-color-gray-darker);
     }
   }
+  &--chat{
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    padding: 13px 12px 13px;
+    border-radius: 50%;
+    fill: var(--hw-color-white);
+    color: var(--hw-color-white);
+    border: 2px solid var(--hw-color-primary);
+    background: var(--hw-color-primary);
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: var(--hw-color-primary-dark);
+      background: var(--hw-color-primary-dark);
+      outline: none;
+      box-shadow: 0 0 0 1px var(--hw-color-primary-dark);
+    }
+  }
+  &--chat-fixed{
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    z-index: var(--z-index--stickynav);
+    @extend .hw-button--chat;
+  }
 }
