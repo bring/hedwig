@@ -105,7 +105,7 @@
     left: 0;
     right: 0;
     @media (--large){
-      top: 74px;
+      top: calc(var(--hw-navbar-height-desktop) + 2);
       background-color: var(--hw-color-white);
     }
   }
