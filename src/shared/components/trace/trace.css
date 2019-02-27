@@ -27,8 +27,7 @@
     font-size: var(--hw-font-size-p);
     padding: var(--hw-spacing-smallest) var(--hw-spacing-large);
     @media (--large) {
-      font-size: var(--hw-font-size-lead);
-      padding: 11px 16px;
+      padding: 14px 16px;
     }
   }
 
@@ -132,15 +131,14 @@
 
   &--no-break &__input {
     height: 52px;
-    padding: 11px 16px;
+    padding: 14px 16px;
     text-align: left;
   }
 
   &--no-break &__placeholder {
-    font-size: var(--hw-font-size-lead);
     text-align: left;
     height: 52px;
-    padding: 11px 16px;
+    padding: 14px 16px;
     border: 0;
   }
 
