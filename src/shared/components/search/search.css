@@ -145,8 +145,10 @@
   &__suggestion-extra {
     font-size: var(--hw-font-size-small);
     padding-bottom: var(--hw-spacing-smallest);
-    color: var(--hw-color-primary-dark);
+    color: var(--hw-color-link);
   }
+
+
 
   /**
    * Modifers
@@ -195,9 +197,17 @@
       font-size: var(--hw-font-size-p);
     }
   }
-  &__suggestions--simple .hw-search__suggestion-title {
-    padding-bottom: var(--hw-spacing-smallest);
+
+  &__suggestions--simple &__suggestion-title {
+    color: var(--hw-color-link);
+    padding-top: var(--hw-spacing-smaller);
+    padding-bottom: var(--hw-spacing-smaller);
   }
+
+  &__suggestions--simple &__suggestion-title:hover {
+    color: var(--hw-color-link-hover);
+  }
+  
 }
 
 /**
