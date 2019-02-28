@@ -90,4 +90,7 @@
       margin-bottom: var(--hw-spacing-smaller);
     }
   }
+  & :last-child{
+     margin-bottom:0px;
+  }
 }
