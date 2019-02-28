@@ -19,7 +19,7 @@
   }
 
   & .hw-dropdown {
-    width: 92px;
+    width: auto;
     max-height: 42px;
     border: 3px solid transparent;
     overflow: hidden;
@@ -52,6 +52,7 @@
       background: var(--hw-color-white);
       border: 3px solid var(--hw-color-gray);
       width: 0;
+      display: none;
     }
 
     &__option:first-of-type {
@@ -63,6 +64,7 @@
       padding: 9px var(--hw-spacing-smallest) 9px var(--hw-spacing-small) !important;
       display: inline-block;
       width: auto !important;
+      vertical-align: top;
     }
 
     &:focus .hw-dropdown__placeholder::after {
@@ -73,7 +75,7 @@
       display: inline-block;
       position: relative !important;
       height: 41px;
-      width: 24px;
+      width: 30px;
       background: transparent;
     }
 
@@ -123,6 +125,7 @@
       & .hw-dropdown__options {
         width: 100%;
         border: 0;
+        display: block;
       }
     }
   }
