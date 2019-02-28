@@ -29,7 +29,8 @@
   &__inner {
     position: absolute;
     z-index: 1;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
     width: 100%;
     max-height: var(--hw-spacing-larger);
@@ -85,6 +86,8 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+    width: 100%;
+    background: var(--hw-color-white);
   }
 
   &__option {
@@ -111,19 +114,20 @@
   /**
   * Modifiers
   */
+  &--expanded .hw-dropdown {
+    &__inner {
+      z-index: 2;
+      max-height: calc(100vh - 60px);
+      border-color: var(--hw-color-gray-darker);
+    }
 
-  &--expanded .hw-dropdown__inner {
-    z-index: 2;
-    max-height: calc(100vh - 60px);
-    border-color: var(--hw-color-gray-darker);
-  }
+    &__arrow::before {
+      transform: rotate(45deg);
+    }
 
-  &--expanded .hw-dropdown__arrow::before {
-    transform: rotate(45deg);
-  }
-
-  &--expanded .hw-dropdown__arrow::after {
-    transform: rotate(-45deg);
+    &__arrow::after {
+      transform: rotate(-45deg);
+    }
   }
 
   &--searchable {
