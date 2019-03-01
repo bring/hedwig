@@ -278,12 +278,12 @@ export const HWDropdown = ({
   }
 
   /**
-   * @function changeValue
+   * @function changeValue - update custom dropdown if the value has changed for the original dropdown.
    * @desc event handler for dropdown change event
    * @param e
    */
   function changeValue(e) {
-    const customDropdown = q('[data-hw-dropdown-custom="' + e.target.id + '"]');
+    const customDropdown = q('[data-hw-dropdown-custom="' + e.target.dataset.hwDropdown + '"]');
     selectOption(customDropdown, e.target.value, false);
 
   }
