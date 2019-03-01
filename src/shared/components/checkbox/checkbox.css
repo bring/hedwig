@@ -4,7 +4,7 @@
 
 .hw-checkbox {
   position: relative;
-  display: block;
+  display: table;
   padding-left: 2rem;
   margin-bottom: var(--hw-spacing-smaller);
   cursor: pointer;
