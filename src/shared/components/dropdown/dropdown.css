@@ -131,6 +131,8 @@
     &__arrow::after {
       transform: rotate(-45deg);
     }
+    /* Arrow hidden when open only for dropdown - it is needed in phone-input */
+    &__arrow,
     &__placeholder{
       display: none;
     }

@@ -102,6 +102,10 @@
           height: 3px;
           background: var(--hw-color-gray-lighter);
         }
+
+        & .hw-dropdown__arrow{
+          display: block;
+        }
       }
       
       & .hw-dropdown__options {
