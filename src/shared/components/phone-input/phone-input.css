@@ -107,13 +107,6 @@
       & .hw-dropdown__options {
         display: block;
       }
-      /* Override - Display placeholder always */
-      & .hw-dropdown__placeholder{
-        display: block;
-      }
-    }
-    &--transition .hw-dropdown__placeholder{
-      display: block;
     }
   }
 

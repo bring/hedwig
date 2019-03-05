@@ -14,7 +14,6 @@ import KEYS from '../../utilities/js/keys';
 export const HWDropdown = ({
     dropdownSelector = '[data-hw-dropdown]',
     activeClass = 'hw-dropdown--expanded',
-    transitionClass = 'hw-dropdown--transition',
     tooBigClass = 'hw-dropdown--is-too-big'
   } = {}) => {
 
@@ -112,7 +111,6 @@ export const HWDropdown = ({
     customDropdown.classList.remove(tooBigClass);
     dropDownContents.style.transform = '';
     dropDownContents.scrollTop = 0;
-    setTimeout(function() { customDropdown.classList.remove(transitionClass) }, 300);
   }
 
 
@@ -144,7 +142,7 @@ export const HWDropdown = ({
       resetPosition(customDropdown);
     } else {
       list.setAttribute('aria-hidden', false);
-      customDropdown.classList.add(activeClass,transitionClass);
+      customDropdown.classList.add(activeClass);
       handleFitInViewport(customDropdown);
     }
   }
@@ -261,7 +259,7 @@ export const HWDropdown = ({
     // Always open the dropdown when searcing
     const list = q('.hw-dropdown__options', customDropdown);
     list.setAttribute('aria-hidden', false);
-    customDropdown.classList.add(activeClass, transitionClass);
+    customDropdown.classList.add(activeClass);
     handleFitInViewport(customDropdown);
 
     const searchText = e.target.value.toLowerCase();
