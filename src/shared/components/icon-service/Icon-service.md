@@ -85,6 +85,36 @@ hw-color-gray-darker
 adresseendringogoppbevaring
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#adresser"></use>
+</svg>
+adresser
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#adressevask"></use>
+</svg>
+adressevask
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#alfakroell"></use>
+</svg>
+alfakroell
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#api-edi"></use>
+</svg>
+api-edi
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#avis"></use>
+</svg>
+avis
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#bankkort"></use>
+</svg>
+bankkort
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#bankogfinans"></use>
 </svg>
 bankogfinans
@@ -95,6 +125,11 @@ bankogfinans
 billetter
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#blandede-formater"></use>
+</svg>
+blandede-formater
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#brev"></use>
 </svg>
 brev
@@ -103,6 +138,16 @@ brev
   <use xlink:href="#bud"></use>
 </svg>
 bud
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#chatbot"></use>
+</svg>
+chatbot
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#digipost"></use>
+</svg>
+digipost
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#digitaltfrimerke"></use>
@@ -118,6 +163,11 @@ ekspress
   <use xlink:href="#ekspressfly"></use>
 </svg>
 ekspressfly
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#farlig-gods"></use>
+</svg>
+farlig-gods
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#flytransport"></use>
@@ -138,6 +188,11 @@ frimerker
   <use xlink:href="#frimerkertilsamling"></use>
 </svg>
 frimerkertilsamling
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#handlekurv"></use>
+</svg>
+handlekurv
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#henteipostkassen"></use>
@@ -165,14 +220,44 @@ innenfordoeren
 internasjonalt
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#internett"></use>
+</svg>
+internett
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#jul"></use>
 </svg>
 jul
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#kalender"></use>
+</svg>
+kalender
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#klargjoering"></use>
+</svg>
+klargjoering
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#kundeservice"></use>
 </svg>
 kundeservice
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#laas"></use>
+</svg>
+laas
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#lager"></use>
+</svg>
+lager
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#legitimasjon"></use>
+</svg>
+legitimasjon
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#leverthjem"></use>
@@ -183,6 +268,16 @@ leverthjem
   <use xlink:href="#leverttilbedrift"></use>
 </svg>
 leverttilbedrift
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#merker"></use>
+</svg>
+merker
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#olje"></use>
+</svg>
+olje
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#paadoeren"></use>
@@ -210,6 +305,16 @@ palltilbedrift
 partigods
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#person"></use>
+</svg>
+person
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#personer"></use>
+</svg>
+personer
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#postkasse"></use>
 </svg>
 postkasse
@@ -218,6 +323,11 @@ postkasse
   <use xlink:href="#retur"></use>
 </svg>
 retur
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#signatur"></use>
+</svg>
+signatur
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#skreddersoem"></use>
@@ -235,6 +345,11 @@ sporing
 stykkgods
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#sykkelbud"></use>
+</svg>
+sykkelbud
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#temperaturregulert"></use>
 </svg>
 temperaturregulert
@@ -248,6 +363,16 @@ toll
   <use xlink:href="#utenforhuset"></use>
 </svg>
 utenforhuset
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#verdi"></use>
+</svg>
+verdi
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#verksted"></use>
+</svg>
+verksted
 <br/>
 
 
