@@ -20,6 +20,7 @@ NB: The search field position and the opaque background overlay is not controlle
     <input class="hw-search__input" type="text" data-hw-search-input />
     <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+    <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
   </div>
 </div>
 ```
@@ -39,6 +40,7 @@ NB: The search field position and the opaque background overlay is not controlle
       aria-label="Search" />
     <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+    <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
   </div>
   <button type="submit" class="hw-button hw-button--primary hw-search__button">Search</button>
 </div>
@@ -58,6 +60,7 @@ NB: The search field position and the opaque background overlay is not controlle
       aria-label="Search" />
     <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+    <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
   </div>
 </div>
 ```
@@ -76,29 +79,10 @@ NB: The search field position and the opaque background overlay is not controlle
       aria-label="Search" />
     <i class="far fa-search hw-search__icon"></i>
     <span class="hw-search__placeholder" data-hw-search-placeholder></span>
-  </div>
-</div>
-```
-
-### Search with button inside
-
-```html
-<div class="hw-search"
-  data-hw-search
-  data-hw-search-placeholders='["Hi!"]'
->
-  <div class="hw-search__inner">
-    <input
-      data-hw-search-input
-      class="hw-search__input" type="text"
-      aria-label="Search" />
-    <i class="far fa-search hw-search__icon"></i>
-    <span class="hw-search__placeholder" data-hw-search-placeholder></span>
     <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
   </div>
 </div>
 ```
-
 
 ### Search with suggestions
 

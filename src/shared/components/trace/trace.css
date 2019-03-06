@@ -93,11 +93,11 @@
     border: 0;
     opacity: 0;
     transition: opacity 0.1s ease;
-    color:var(--hw-color-gray);
+    color:var(--hw-color-gray-lighter);
   }
 
   &__button-inside:hover {
-    color: var(--hw-color-gray-darker);
+    color: var(--hw-color-gray-light);
   }
   
 
