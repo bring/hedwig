@@ -231,10 +231,9 @@
     margin: 0px;
     padding: 13px 12px 13px;
     border-radius: 50%;
-    fill: var(--hw-color-white);
-    color: var(--hw-color-white);
     border: 2px solid var(--hw-color-primary);
     background: var(--hw-color-primary);
+    outline: none;
 
     &:hover,
     &:active,
