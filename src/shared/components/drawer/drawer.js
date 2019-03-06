@@ -46,7 +46,7 @@ export const HWDrawer = ({
       drawer.classList.add('hw-drawer--open');
 
       // set focus to first element in drawer
-      const focusableEls = qa('a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select', drawer);
+      const focusableEls = qa('a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], input[type="submit"], select', drawer);
       const firstFocusableEl = focusableEls[0];
       firstFocusableEl.focus();
     } else {
