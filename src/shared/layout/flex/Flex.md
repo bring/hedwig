@@ -4,6 +4,7 @@ Flexible grid with 3px gutters
 
 ```code
 [Flex]                  .hw-flex
+[Twos]                  .hw-flex--twos                  - Wraps after two items
 [Thirds]                .hw-flex--thirds                - Wraps after three items
 [Fourths]               .hw-flex--fourths               - Wraps after four items
 [Large gutter desktop]  .hw-flex--gutter-large-desktop  - Gives a large margin between elements on desktop
@@ -175,6 +176,100 @@ Flexible grid with 3px gutters
 </div>
 ```
 
+## Example with twos
+
+```html
+<div class="hw-flex hw-flex--twos">
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Example with twos and large gutter desktop
+
+```html
+<div class="hw-flex hw-flex--twos hw-flex--gutter-large-desktop">
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-block--bg-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
 ## Example with thirds and large gutter desktop
 
 ```html
@@ -273,7 +368,7 @@ Flexible grid with 3px gutters
 ### Default flex with cards
 
 ```html
-  <section class="hw-flex hw-flex--guttered">
+  <div class="hw-flex">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
           <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
@@ -298,13 +393,13 @@ Flexible grid with 3px gutters
           </div>
         </div>
       </a>
-  </section>
+  </div>
 ```
 
 ### Large gutter on desktop with wrap after three items
 
 ```html|span-6
-  <section class="hw-flex hw-flex--gutter-large-desktop hw-flex--thirds">
+  <div class="hw-flex hw-flex--gutter-large-desktop hw-flex--thirds">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
           <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
@@ -353,5 +448,5 @@ Flexible grid with 3px gutters
           </div>
         </div>
       </a>
-  </section>
+  </div>
 ```
