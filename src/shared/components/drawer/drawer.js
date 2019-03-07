@@ -103,7 +103,7 @@ export const HWDrawer = ({
       const closeButton = q('button[data-hw-drawer-trigger].hw-drawer__close-button', drawer);
       if(!closeButton){
         const drawerName = drawer.getAttribute('data-hw-drawer');
-        console.warn(`The close button of drawer '${drawerName}' is not of type button, or it is missing. This should be fixed to improve accessability.`);
+        console.warn(`The close button of drawer '${drawerName}' is not of type button, or it is missing. This is required to improve accessibility.`);
       }
     });
 
