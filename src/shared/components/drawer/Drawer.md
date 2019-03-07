@@ -15,6 +15,10 @@ Drawer component
 [data-hw-drawer-trigger]    Refers to a specific drawer that you want to toggle. Will toggle drawer if a
                             clicked button with this parameter matches data-hw-drawer attribute for a drawer.
 [data-hw-drawer-content]    Specifies element for the content of the drawer
+
+```
+```hint
+The close button needs to be of type `button` for tab-navigation to be able to focus on it.
 ```
 
 ```html

@@ -46,9 +46,13 @@ export const HWDrawer = ({
       drawer.classList.add('hw-drawer--open');
 
       // set focus to first element in drawer
-      const focusableEls = qa('a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select', drawer);
-      const firstFocusableEl = focusableEls[0];
-      firstFocusableEl.focus();
+      const focusableEls = qa('a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], input[type="submit"], select', drawer);
+      if(focusableEls.length < 1) {
+        console.warn(`No focusable elements in drawer '${drawerId}'. At least the close button needs to be a <button>`);
+      } else {
+        const firstFocusableEl = focusableEls[0];
+        firstFocusableEl.focus();
+      }
     } else {
       drawer.setAttribute('aria-hidden', true);
       // animation out drawer
@@ -96,6 +100,11 @@ export const HWDrawer = ({
       // Mark as initialised
       drawer.setAttribute('data-hw-drawer-initialised', true);
       drawer.setAttribute('aria-hidden', true);
+      const closeButton = q('button[data-hw-drawer-trigger].hw-drawer__close-button', drawer);
+      if(!closeButton){
+        const drawerName = drawer.getAttribute('data-hw-drawer');
+        console.warn(`The close button of drawer '${drawerName}' is not of type button, or it is missing. This is required to improve accessibility.`);
+      }
     });
 
     // Example of binding event to button
