@@ -16,7 +16,9 @@ Drawer component
                             clicked button with this parameter matches data-hw-drawer attribute for a drawer.
 [data-hw-drawer-content]    Specifies element for the content of the drawer
 
-The close button needs to be a button for tab-navigation to be able to focus on it.
+```
+```hint
+The close button needs to be of type `button` for tab-navigation to be able to focus on it.
 ```
 
 ```html
