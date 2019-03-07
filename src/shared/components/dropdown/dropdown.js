@@ -85,7 +85,7 @@ export const HWDropdown = ({
     const selectedOption = q('[data-hw-dropdown-option-selected="true"]', customDropdown);
     const viewportHeight = window.innerHeight;
     const position = getPosition(customDropdown);
-    const selPosition = getPosition(selectedOption);
+    const selPosition = selectedOption ? getPosition(selectedOption) : "";
     const dropDownHeight = dropDownOptions.offsetHeight + 50;
 
     // Check if dropdown is too large for viewport
@@ -103,11 +103,12 @@ export const HWDropdown = ({
       dropDownInner.style.transform = `translateY(-${overflowAmount + 30}px)`;
       return;
     }
-
-    let overflowToSelected = selPosition.offsetFromTop - position.offsetFromTop;
-    overflowToSelected = overflowToSelected == 6 ? 0 : selPosition.offsetFromTop - position.offsetFromTop
-    if(overflowToSelected < position.offsetFromTop)
-      dropDownInner.style.transform = `translateY(-${overflowToSelected}px)`;
+    if(selPosition){
+      let overflowToSelected = selPosition.offsetFromTop - position.offsetFromTop;
+      overflowToSelected = overflowToSelected == 6 ? 0 : overflowToSelected
+      if(overflowToSelected < position.offsetFromTop)
+        dropDownInner.style.transform = `translateY(-${overflowToSelected}px)`;
+    }
   }
 
 
