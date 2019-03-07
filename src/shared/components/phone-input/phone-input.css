@@ -102,11 +102,22 @@
           height: 3px;
           background: var(--hw-color-gray-lighter);
         }
+
+        & .hw-dropdown__arrow{
+          display: block;
+        }
       }
       
       & .hw-dropdown__options {
         display: block;
       }
+      /* Override - Display placeholder always */
+      & .hw-dropdown__placeholder{
+        display: block;
+      }
+    }
+    &--transition .hw-dropdown__placeholder{
+      display: block;
     }
   }
 

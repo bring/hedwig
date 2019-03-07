@@ -14,6 +14,7 @@ import KEYS from '../../utilities/js/keys';
 export const HWDropdown = ({
     dropdownSelector = '[data-hw-dropdown]',
     activeClass = 'hw-dropdown--expanded',
+    transitionClass = 'hw-dropdown--transition',
     tooBigClass = 'hw-dropdown--is-too-big'
   } = {}) => {
 
@@ -81,14 +82,17 @@ export const HWDropdown = ({
   function handleFitInViewport(customDropdown) {
     const dropDownInner = q('.hw-dropdown__inner', customDropdown);
     const dropDownOptions = q('.hw-dropdown__options', customDropdown);
+    const selectedOption = q('[data-hw-dropdown-option-selected="true"]', customDropdown);
     const viewportHeight = window.innerHeight;
     const position = getPosition(customDropdown);
+    const selPosition = getPosition(selectedOption);
     const dropDownHeight = dropDownOptions.offsetHeight + 50;
 
     // Check if dropdown is too large for viewport
     if (dropDownHeight > viewportHeight) {
       customDropdown.classList.add(tooBigClass);
       dropDownInner.style.transform = `translateY(-${position.offsetFromTop - 30}px)`;
+      dropDownInner.scrollTop=selectedOption.offsetTop;
       return;
     }
 
@@ -97,7 +101,13 @@ export const HWDropdown = ({
     if (dropDownBottom > viewportHeight) {
       const overflowAmount = dropDownBottom - viewportHeight;
       dropDownInner.style.transform = `translateY(-${overflowAmount + 30}px)`;
+      return;
     }
+
+    let overflowToSelected = selPosition.offsetFromTop - position.offsetFromTop;
+    overflowToSelected = overflowToSelected == 6 ? 0 : selPosition.offsetFromTop - position.offsetFromTop
+    if(overflowToSelected < position.offsetFromTop)
+      dropDownInner.style.transform = `translateY(-${overflowToSelected}px)`;
   }
 
 
@@ -111,6 +121,7 @@ export const HWDropdown = ({
     customDropdown.classList.remove(tooBigClass);
     dropDownContents.style.transform = '';
     dropDownContents.scrollTop = 0;
+    setTimeout(function() { customDropdown.classList.remove(transitionClass) }, 300);
   }
 
 
@@ -142,7 +153,7 @@ export const HWDropdown = ({
       resetPosition(customDropdown);
     } else {
       list.setAttribute('aria-hidden', false);
-      customDropdown.classList.add(activeClass);
+      customDropdown.classList.add(activeClass,transitionClass);
       handleFitInViewport(customDropdown);
     }
   }
@@ -259,7 +270,7 @@ export const HWDropdown = ({
     // Always open the dropdown when searcing
     const list = q('.hw-dropdown__options', customDropdown);
     list.setAttribute('aria-hidden', false);
-    customDropdown.classList.add(activeClass);
+    customDropdown.classList.add(activeClass, transitionClass);
     handleFitInViewport(customDropdown);
 
     const searchText = e.target.value.toLowerCase();

@@ -46,7 +46,7 @@
   }
 
   &__placeholder {
-    padding: 9px var(--hw-spacing-large) 9px var(--hw-spacing-small);
+    padding: 11px var(--hw-spacing-large) 9px var(--hw-spacing-small);
     margin: 3px 0;
     line-height: var(--hw-font-size-p);
     width: 100%;
@@ -105,6 +105,9 @@
         color: var(--hw-color-gray);
       }
     }
+    &:first-child{
+      border-top: 0;
+    }
   }
 
   &__option[data-hw-dropdown-option-selected="true"] {
@@ -127,6 +130,17 @@
 
     &__arrow::after {
       transform: rotate(-45deg);
+    }
+    /* Arrow hidden when open only for dropdown - it is needed in phone-input */
+    &__arrow,
+    &__placeholder{
+      display: none;
+    }
+  }
+
+  &--transition .hw-dropdown {
+    &__placeholder{
+      display: none;
     }
   }
 
