@@ -27,7 +27,7 @@
       margin-right: var(--hw-spacing-small);
     }
 
-    &--thirds, &--fourths {
+    &--twos, &--thirds, &--fourths{
       flex-wrap: wrap;
       & > * {
         margin-bottom: var(--hw-spacing-tiny);
@@ -38,6 +38,14 @@
     /* Calculation on the widths follows this logic:
         Percentage of width minus (margins between items divided by number of items)
     */
+    &--twos > * {
+      min-width: calc(50% - (var(--hw-spacing-tiny) / 2)); /* 3 / 2 = 1.5 */
+      max-width: calc(50% - (var(--hw-spacing-tiny) / 2));
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+    }
+
     &--thirds > * {
       min-width: calc((100% / 3) - (var(--hw-spacing-tiny) * 2 / 3)); /* 3 * 2 / 3 = 2 */
       max-width: calc((100% / 3) - (var(--hw-spacing-tiny) * 2 / 3));
@@ -52,6 +60,12 @@
       &:nth-of-type(4n) {
         margin-right: 0;
       }
+    }
+
+    &--gutter-large-desktop&--twos > * {
+      min-width: calc(50% - (var(--hw-spacing-small) / 2)); /* 18 / 2 = 9 */
+      max-width: calc(50% - (var(--hw-spacing-small) / 2));
+      margin-bottom: var(--hw-spacing-small);
     }
 
     &--gutter-large-desktop&--thirds > * {
