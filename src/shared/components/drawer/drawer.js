@@ -47,8 +47,12 @@ export const HWDrawer = ({
 
       // set focus to first element in drawer
       const focusableEls = qa('a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], input[type="submit"], select', drawer);
-      const firstFocusableEl = focusableEls[0];
-      firstFocusableEl.focus();
+      if(focusableEls.length < 1) {
+        console.warn(`No focusable elements in drawer '${drawerId}'. At least the close button needs to be a <button>`);
+      } else {
+        const firstFocusableEl = focusableEls[0];
+        firstFocusableEl.focus();
+      }
     } else {
       drawer.setAttribute('aria-hidden', true);
       // animation out drawer
