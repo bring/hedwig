@@ -83,6 +83,7 @@ export const HWDropdown = ({
     const dropDownInner = q('.hw-dropdown__inner', customDropdown);
     const dropDownOptions = q('.hw-dropdown__options', customDropdown);
     const selectedOption = q('[data-hw-dropdown-option-selected="true"]', customDropdown);
+    const isSearchable = customDropdown.getAttribute('data-hw-dropdown-searchable');
     const viewportHeight = window.innerHeight;
     const position = getPosition(customDropdown);
     const selPosition = selectedOption ? getPosition(selectedOption) : "";
@@ -103,7 +104,7 @@ export const HWDropdown = ({
       dropDownInner.style.transform = `translateY(-${overflowAmount + 30}px)`;
       return;
     }
-    if(selPosition){
+    if(selPosition && !isSearchable){
       let overflowToSelected = selPosition.offsetFromTop - position.offsetFromTop;
       overflowToSelected = overflowToSelected == 6 ? 0 : overflowToSelected
       if(overflowToSelected < position.offsetFromTop)
