@@ -149,6 +149,10 @@
       outline: 0;
       border: 0;
     }
+    &.hw-dropdown--expanded .hw-dropdown__placeholder,
+    &.hw-dropdown--transition .hw-dropdown__placeholder{
+      display: block;
+    }
   }
 
   &--small {
