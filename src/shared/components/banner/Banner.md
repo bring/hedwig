@@ -66,3 +66,14 @@ Required:
       </div>
   </section>
 ```
+
+### Banner with no expand section
+```html
+<section class="hw-banner" data-hw-banner="example1">
+      <div class="hw-banner__trigger">
+        <span class="hw-banner__text">
+          All traffic in Norway is on hold due to the heat wave
+        </span>
+      </div>
+  </section>
+```
