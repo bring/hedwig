@@ -397,18 +397,18 @@ function build() {
       ...bringLayout,
     ]),
   });
+   bringMergedPages.push({
+    title: 'Common Combos',
+    pages: sortPages([
+      ...sharedCommonCombos,
+      ...bringCommonCombos,
+    ]),
+  });
   bringMergedPages.push({
     title: 'Components',
     pages: sortPages([
       ...sharedComponents,
       ...bringComponents,
-    ]),
-  });
-  bringMergedPages.push({
-    title: 'Common Combos',
-    pages: sortPages([
-      ...sharedCommonCombos,
-      ...bringCommonCombos,
     ]),
   });
   bringMergedPages.push({
@@ -455,17 +455,17 @@ function build() {
     ]),
   });
   postenMergedPages.push({
-    title: 'Components',
-    pages: sortPages([
-      ...sharedComponents,
-      ...postenComponents,
-    ]),
-  });
-  postenMergedPages.push({
     title: 'Common Combos',
     pages: sortPages([
       ...sharedCommonCombos,
       ...postenCommonCombos,
+    ]),
+  });
+  postenMergedPages.push({
+    title: 'Components',
+    pages: sortPages([
+      ...sharedComponents,
+      ...postenComponents,
     ]),
   });
   postenMergedPages.push({
