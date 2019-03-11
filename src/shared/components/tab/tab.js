@@ -37,7 +37,7 @@ const HWTab = ({
 
   function moveMarkerTo(item){
     var itemProperties = item.getBoundingClientRect();
-    var left = itemProperties.x - SETTINGS.tab.getBoundingClientRect().x + SETTINGS.tab.scrollLeft;
+    var left = itemProperties.left - SETTINGS.tab.getBoundingClientRect().left + SETTINGS.tab.scrollLeft;
     SETTINGS.marker.style.left = left + 'px';
     SETTINGS.marker.style.width = itemProperties.width + 'px';
     const offset = item.offsetLeft - (SETTINGS.tab.clientWidth / 2) + (item.clientWidth / 2);
@@ -78,7 +78,7 @@ export function HWTab_adjustMarker(){
   const tab = q('.hw-tab');
   const marker = q('.hw-tab__marker');
   const itemProperties = q('.hw-tab__item--selected').getBoundingClientRect();
-  const left = itemProperties.x - tab.getBoundingClientRect().x + tab.scrollLeft;
+  const left = itemProperties.left - tab.getBoundingClientRect().left + tab.scrollLeft;
   marker.style.left = left + 'px';
   marker.style.width = itemProperties.width + 'px';
 }
