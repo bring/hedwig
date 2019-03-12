@@ -23,6 +23,8 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 [Small]            hw-text-small
 [Smaller]          hw-text-smaller
 [Less line-height] hw-text-less-line-height
+[Bold]             hw-text-bold
+[Light]            hw-text-light
 [Uppercase]        hw-text-uppercase
 [Center]           hw-text-center
 [Right]            hw-text-right
@@ -69,6 +71,16 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 ```html|span-2,plain,light
   <p class="hw-text-less-line-height">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
+
+### Bold
+```html|span-2,plain,light
+  <p class="hw-text-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+```
+
+### Light
+```html|span-2,plain,light
+  <p class="hw-text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+```
 ### Uppercase
 ```html|span-4,plain,light
   <p class="hw-text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -82,29 +94,8 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 
 ```
 
-### Modifiers
-Certain tags/components have modifiers 
-
-These are the available modifiers and the tags/components they are available for
-
-
-```table
-rows:
-  - Modifier: hw-text-bold
-    Available for: h5, .hw-h5
-  - Modifier: hw-text-light
-    Available for: h4, p, .hw-text-small, .hw-text-smaller
-  - Modifier: hw-text-dropcap
-    Available for: p, .hw-text-lead, .hw-text-small, .hw-text-smaller
-    ```
-
-#### Examples
-```html|span-4,plain,light
-<h5 class="hw-text-bold">H5 tag with modifier hw-text-bold</h5>
-<p class="hw-text-light">Paragraph with modifier hw-text-light</p>
-```
-
 #### Drop cap
+Available for: p, .hw-text-lead, .hw-text-small, .hw-text-smaller
 ```html|span-2,plain,light
   <p class="hw-text-dropcap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
