@@ -82,6 +82,18 @@
     }
   }
 
+  &--fluid {
+    min-height: initial;
+  }
+
+  &--fluid .hw-hero__image,
+  &--fluid .hw-hero__overlay,
+  &--fluid.hw-hero::after {
+    position:relative;
+  } 
+
+
+
   
 }
 

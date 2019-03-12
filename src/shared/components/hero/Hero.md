@@ -12,7 +12,7 @@ Hero component
 
 ```html|span-6
   <div class="hw-hero">
-    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"/>
+    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"></div>
   </div>
 ```
 
@@ -23,7 +23,7 @@ Changed from 20vh to 35vh in version 6.1.4
 
 ```html|span-6
   <div class="hw-hero hw-hero--small">
-    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"/>
+    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"></div>
   </div>
 ```
 
@@ -32,7 +32,7 @@ Together with navbar this will occupy full height of viewport
 
 ```html|span-6
   <div class="hw-hero hw-hero--full">
-    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"/>
+    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"></div>
   </div>
 ```
 
@@ -60,7 +60,7 @@ Content can be placed on top of the hero image and positioned right, left or cen
 ```html|span-6
   
   <div class="hw-hero">
-    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"/>
+    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');">
     <div class="hw-hero__overlay hw-background-color-opaque-primary">
       <div class="hw-hero__content hw-hero__content--center hw-hero__content--middle">
         <div class="hw-block">
@@ -69,5 +69,32 @@ Content can be placed on top of the hero image and positioned right, left or cen
       </div>
       </div>
   </div>
+</div>
+```
+### Hero fluid
+This hero will grow with its content
 
+```html|span-6
+  
+  <div class="hw-hero hw-hero--fluid">
+    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');">
+    <div class="hw-hero__overlay hw-background-color-opaque-primary">
+      <div class="hw-hero__content hw-hero__content--center">
+      <!--  Add your content here -->
+        <div class="hw-block hw-block--mt hw-block--mb hw-block--pt hw-block--pb">
+          <div class="hw-block hw-block--pt hw-block--pb hw-block--px hw-background-color-white ">
+            <p class="">Hero that will grow with its content</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+          </div>
+        </div>
+        <!-- -->
+        </div>
+      </div>
+  </div>
+</div>
 ```
