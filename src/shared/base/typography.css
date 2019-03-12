@@ -117,10 +117,6 @@
   h5,
   .hw-h5 {
     font-size: var(--hw-font-size-h5);
-
-    &.hw-text-bold {
-      font-family: var(--hw-font-primary-bold);
-    }
   }
 
   @media (--xlarge) {
@@ -165,17 +161,16 @@
       text-align: right;
     }
 
+    &-bold {
+      font-family: var(--hw-font-primary-bold);
+    }
+
+    &-light {
+      font-family: var(--hw-font-primary-regular);
+    }
+
   }
 
-
-
-
-  .hw-text-small .hw-text-light,
-  .hw-text-smaller .hw-text-light,
-  p.hw-text-light,
-  h4.hw-text-light {
-    font-family: var(--hw-font-primary-regular);
-  }
 
   .hw-text-dropcap {
     &::first-letter {
