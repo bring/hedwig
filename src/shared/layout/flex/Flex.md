@@ -14,7 +14,7 @@ Flexible grid with 3px gutters
 
 ```html
 <div class="hw-flex">
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -22,7 +22,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -30,7 +30,7 @@ Flexible grid with 3px gutters
       <h4>A link with so much text that it gets two lines</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -38,7 +38,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -54,7 +54,7 @@ Flexible grid with 3px gutters
 
 ```html
 <div class="hw-flex hw-flex--gutter-large-desktop">
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -62,7 +62,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -70,7 +70,7 @@ Flexible grid with 3px gutters
       <h4>A link with so much text that it gets two lines</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -86,7 +86,7 @@ Flexible grid with 3px gutters
 
 ```html
 <div class="hw-flex hw-flex--fourths">
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -94,7 +94,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -102,7 +102,7 @@ Flexible grid with 3px gutters
       <h4>A link with so much text that it gets two lines</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -110,7 +110,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -118,7 +118,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -133,7 +133,7 @@ Flexible grid with 3px gutters
 
 ```html
 <div class="hw-flex hw-flex--thirds">
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -141,7 +141,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -149,7 +149,7 @@ Flexible grid with 3px gutters
       <h4>A link with so much text that it gets two lines</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -157,7 +157,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -165,7 +165,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -180,7 +180,7 @@ Flexible grid with 3px gutters
 
 ```html
 <div class="hw-flex hw-flex--twos">
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -188,7 +188,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -196,7 +196,7 @@ Flexible grid with 3px gutters
       <h4>A link with so much text that it gets two lines</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -204,7 +204,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -212,7 +212,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -227,7 +227,7 @@ Flexible grid with 3px gutters
 
 ```html
 <div class="hw-flex hw-flex--twos hw-flex--gutter-large-desktop">
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -235,7 +235,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -243,7 +243,7 @@ Flexible grid with 3px gutters
       <h4>A link with so much text that it gets two lines</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -251,7 +251,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -259,7 +259,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -274,7 +274,7 @@ Flexible grid with 3px gutters
 
 ```html
 <div class="hw-flex hw-flex--thirds hw-flex--gutter-large-desktop">
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -282,7 +282,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -290,7 +290,7 @@ Flexible grid with 3px gutters
       <h4>A link with so much text that it gets two lines</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -298,7 +298,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -306,7 +306,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -321,7 +321,7 @@ Flexible grid with 3px gutters
 
 ```html
 <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -329,7 +329,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -337,7 +337,7 @@ Flexible grid with 3px gutters
       <h4>A link with so much text that it gets two lines</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -345,7 +345,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
@@ -353,7 +353,7 @@ Flexible grid with 3px gutters
       <h4>A link</h4>
     </a>
   </div>
-  <div class="hw-block hw-block--bg-white">
+  <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
         <use xlink:href="#bud"></use>
