@@ -238,10 +238,15 @@
     &:hover,
     &:active,
     &:focus {
+      color: var(--hw-color-white);
+      fill: var(--hw-color-white);
       border-color: var(--hw-color-primary-dark);
       background: var(--hw-color-primary-dark);
       outline: none;
       box-shadow: 0 0 0 1px var(--hw-color-primary-dark);
+    }
+    &:active {
+      background: var(--hw-color-primary);
     }
   }
   &--chat-fixed{
