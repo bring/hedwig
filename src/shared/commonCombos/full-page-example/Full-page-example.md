@@ -1,4 +1,4 @@
-### Form examples
+### Example page
 
 ```html
 <div class="hw-container hw-container--mt hw-container--mb">
