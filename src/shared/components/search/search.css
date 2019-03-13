@@ -32,6 +32,7 @@
     width: 100%;
     transition: outline 100ms;
     border: 3px solid var(--hw-color-gray-light);
+    border-radius: 0px;
     height: auto;
     &:hover {
       border-color: var(--hw-color-gray);
