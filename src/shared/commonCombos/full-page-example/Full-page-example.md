@@ -1,21 +1,21 @@
-### Form examples
+### Example page
 
 ```html
 <div class="hw-container hw-container--mt hw-container--mb">
   <div class="hw-block">
-    <h1><i class="fas fa-1x fa-user"></i> Mine adresser</h1>
+    <h1><i class="fas fa-1x fa-user"></i> Profile</h1>
   </div>
   <div class="hw-block hw-block--pt-smaller">
     <hr class="hw-hr hw-hr--full"/>
   </div>
   <div class="hw-block hw-block--mt hw-block--mb">
-    Du er logget inn som Per Person
+    You are logged in as Peter Pan
   </div>
 
   <div class="hw-grid"><!--
   --><div class="hw-grid__item hw-large--two-thirds">
     <div class="hw-block hw-block--pt hw-block--pb hw-block--px-fluid hw-block--mb hw-background-color-gray-lighter">
-      <h3 class="">Hovedadresse</h3>
+      <h3 class="">My info</h3>
       <div class="hw-block hw-block--mt-smaller hw-block--mb">
         <div class="hw-hr hw-hr--full hw-hr--gray-lightest"></div>
       </div>
@@ -26,7 +26,7 @@
         0461 Oslo
       </div>
       <div class="hw-block hw-block--mb-smallest">
-        I samme postkasse
+        Waistcoat quinoa cray banjo 
       </div>
       <div class="hw-block">
         <i class="fas fa-1x fa-user"></i> Justin Case
@@ -39,18 +39,18 @@
       </div>
       <div class="hw-block hw-block--mb">
         <ul class="hw-linklist">
-          <li><a href="">Meld feil</a></li>
-          <li><a href="">Legg til personer fra samme adresse</a></li>
+          <li><a href="">Cloud bread adaptogen</a></li>
+          <li><a href="">Echo park enamel pin chartreuse</a></li>
         </ul>       
       </div>
       <div class="hw-block">
-        <button class="hw-button hw-button--secondary">Meld flytting</button>
-        <button class="hw-button hw-button--outline">Legg til annen adresse</button>
+        <button class="hw-button hw-button--secondary">Brunch glossier</button>
+        <button class="hw-button hw-button--outline">Bitters live-edge wayfarers</button>
       </div>
     </div>
 
     <div class="hw-block hw-block--pt hw-block--pb hw-block--px-fluid hw-block--mb hw-background-color-gray-lighter">
-      <h3 class="">Adresse 2</h3>
+      <h3 class="">Asymmetrical pug sartorial</h3>
       <div class="hw-block hw-block--mt-smaller hw-block--mb">
         <div class="hw-hr hw-hr--full hw-hr--gray-lightest"></div>
       </div>
@@ -61,24 +61,24 @@
         3600 Asker
       </div>
       <div class="hw-block hw-block--mb">
-        <a href="" class="hw-link">Legg til personer fra samme adresse</a>
+        <a href="" class="hw-link">Bitters live-edge wayfarers ennui viral</a>
       </div>
       <div class="hw-block">
-        <button class="hw-button hw-button--secondary">Velg som hovedadresse</button>
-        <button class="hw-button hw-button--outline">Legg til annen adresse</button>
-        <button class="hw-button hw-button--outline">Fjern</button>
+        <button class="hw-button hw-button--secondary">Jean shorts schlitz</button>
+        <button class="hw-button hw-button--outline">Vegan coloring book</button>
+        <button class="hw-button hw-button--outline">Tumblr tote</button>
       </div>
     </div>
 
     <div class="hw-block hw-block--pt hw-block--pb hw-block--px-fluid hw-block--mb hw-background-color-gray-lighter">
-      <h3 class="">Min kontaktinformasjon</h3>
+      <h3 class="">Biodiesel irony asymmetrical</h3>
       <div class="hw-block hw-block--mt-smaller hw-block--mb">
         <div class="hw-hr hw-hr--full hw-hr--gray-lightest"></div>
       </div>
       <form>
         <div class="hw-block hw-block--mb">
           <div class="hw-phone-input">
-            <label class="hw-phone-input__label">Mobilnummer
+            <label class="hw-phone-input__label">Sustainable poke
               <div class="hw-phone-input__group">
                 <select data-hw-dropdown="numbers" data-hw-dropdown-small>
                   <option data-hw-dropdown-placeholder="+47" value="1">+47 Norge</option>
@@ -100,13 +100,13 @@
         </div>
         <div class="hw-block hw-block--mb">
           <label class="hw-label">
-            E-postadresse
+            Tbh kickstarter 
             <input class="hw-input" type="text" value="epostadresse@epostadresse.no" />
           </label>
         </div> 
         <div class="hw-block hw-block--mb">
           <label class="hw-checkbox">
-            <p class="hw-text-small">Bruk denne kontaktinformasjonen til å varsle meg om postsendinger.</p>
+            <p class="hw-text-small">Post-ironic knausgaard lyft laborum cornhole.</p>
             <input type="checkbox" checked />
             <i class="hw-checkbox__indicator"></i>
           </label>
@@ -118,24 +118,23 @@
     </div>
 
     <div class="hw-block hw-block--pt hw-block--pb hw-block--px-fluid hw-block--mb hw-background-color-gray-lighter">
-      <h3 class="">Videresending eller oppbevaring av post</h3>
+      <h3 class="">Pariatur air plant fixie kitsch authentic cardigan dolore VHS</h3>
       <div class="hw-block hw-block--mt-smaller hw-block--mb">
         <div class="hw-hr hw-hr--full hw-hr--gray-lightest"></div>
       </div>
       <div class="hw-block hw-block--mb">
-        Skal du være borte en stund og vil lese posten din der du er? Da videresender vi posten til deg.
-        For at du skal slippe å tenke på at postkassen blir full når du er på ferie, oppbevarer vi posten din til du er tilbake.
+        Viral marfa pour-over portland meh affogato commodo cray gastropub food truck. Letterpress master cleanse ullamco, brunch photo booth est prism etsy asymmetrical laboris hell of dolore laborum officia sint
       </div>
       <div class="hw-block">
-        <button class="hw-button hw-button--secondary">Bestill videresending</button>
-        <button class="hw-button hw-button--outline">Bestill oppbevaring</button>
+        <button class="hw-button hw-button--secondary">Kinfolk aesthetic mlkshk la croix</button>
+        <button class="hw-button hw-button--outline">Forage glossier dolore</button>
       </div>
     </div>
 
     </div><!--
   --><div class="hw-grid__item hw-large--one-third">
     <div class="hw-block hw-block--pt hw-block--pb hw-block--px hw-block--bordered hw-background-color-white">
-      <h3>Oppbevaring av post</h3>
+      <h3>Fugiat roof party DIY pabst</h3>
       <div class="hw-block hw-block--mt-smaller hw-block--mb">
         <div class="hw-hr hw-hr--full hw-hr--gray-lightest"></div>
       </div>
@@ -143,14 +142,14 @@
         Drammensveien 1, 0461 Oslo
       </div>
       <div class="hw-block hw-block--mb">
-        <h5 class="hw-text-bold">Gjelder fra 01.05.19</h5>
-        Postlevering til fast adresse fra 01.06.19
+        <h5 class="hw-text-bold">Literally chicharrones 01.05.19</h5>
+        Next level consectetur portland eiusmod, keytar mlkshk post-ironic bushwick 01.06.19
       </div>
       <div class="hw-block">
         <ul class="hw-linklist">
-          <li><a href="#">Endre denne bestillingen</a></li>
-          <li><a href="#">Bestill utlevering</a></li>
-          <li><a href="#">Avslutt bestilling</a></li>
+          <li><a href="#">Godard tofu</a></li>
+          <li><a href="#">Taxidermy schlitz cray</a></li>
+          <li><a href="#">Typewriter shoreditch</a></li>
         </ul>
       </div>
     </div>
