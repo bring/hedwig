@@ -165,6 +165,11 @@ ekspress
 ekspressfly
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#faktura"></use>
+</svg>
+faktura
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#farlig-gods"></use>
 </svg>
 farlig-gods
