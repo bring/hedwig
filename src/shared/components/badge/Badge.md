@@ -29,12 +29,12 @@ The badge will have a size 75% of surrounding content unless size modifiers are 
 </div>
 ```
 
-### In a sentence
+### Skrkiv noe her
 
 ```html|span-4
 I am a <div class="hw-badge">
   Badge
-</div> in a sentence
+</div> 
 ```
 
 ### Sizes
