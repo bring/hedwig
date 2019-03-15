@@ -29,7 +29,7 @@ The badge will have a size 75% of surrounding content unless size modifiers are 
 </div>
 ```
 
-### Skrkiv noe her
+### Example badge
 
 ```html|span-4
 I am a <div class="hw-badge">
