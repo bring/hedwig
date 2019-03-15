@@ -88,13 +88,13 @@
     border: 0;
     opacity: 0;
     transition: opacity 0.1s ease;
-    color: var(--hw-color-gray-lighter);
+    color: var(--hw-color-gray-light);
     outline:none;
 
   }
 
   &__button-inside:hover {
-    color: var(--hw-color-gray-light); 
+    color: var(--hw-color-gray); 
   }
 
   &__suggestions {
