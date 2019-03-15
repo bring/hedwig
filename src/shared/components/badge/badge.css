@@ -8,6 +8,7 @@
   line-height: 1.1;
   background-color: var(--hw-color-primary-dark);
   color: var(--hw-color-white);
+  font-size: 0.75em; /* 75% of surrounding content unless spesified otherwise*/
 
   &--large {
     font-size: var(--hw-font-size-h2);
