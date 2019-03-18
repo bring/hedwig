@@ -21,6 +21,11 @@ Optional:
 [data-hw-dropdown-searchable]         Overrides the placeholder with custom value
 [data-hw-dropdown-placeholder]        Add short placeholder to an option
 [data-hw-dropdown-dirty]              Set to 'true' when updates are needed for a specific dropdown
+.hw-dropdown--native                  Use the browser native select.
+                                      Native is not compatible with the following: 
+                                      data-hw-dropdown-searchable
+                                      data-hw-dropdown-small
+                                      data-hw-dropdown-placeholder
 
 Client side rendering, see further down
 ```
@@ -37,6 +42,66 @@ Client side rendering, see further down
     <option value="4">Austraoptiona</option>
     <option value="5">Booptionvia</option>
     <option value="6">Bosnia</option>
+  </select>
+</label>
+```
+
+### Native
+Use the browser native select function
+```html
+<label class="hw-label">
+  Select country
+  <select class="hw-dropdown--native" data-hw-dropdown="countries-native" id="countries-native">
+    <option selected="true" disabled="disabled">Select country</option>
+    <option value="1">Afghanistan</option>
+    <option value="2">Albania</option>
+    <option value="3">Algeria</option>
+    <option value="4">Andorra</option>
+    <option value="5">Angola</option>
+    <option value="6">Antigua and Barbuda</option>
+    <option value="7">Argentina</option>
+    <option value="8">Armenia</option>
+    <option value="9">Aruba</option>
+    <option value="10">Austraoptiona</option>
+    <option value="11">Austria</option>
+    <option value="12">Azerbaijan</option>
+    <option value="13">Bahamas, The</option>
+    <option value="14">Bahrain</option>
+    <option value="15">Bangladesh</option>
+    <option value="16">Barbados</option>
+    <option value="17">Belarus</option>
+    <option value="18">Belgium</option>
+    <option value="19">Beoptionze</option>
+    <option value="20">Benin</option>
+    <option value="21">Bhutan</option>
+    <option value="22">Booptionvia</option>
+    <option value="23">Bosnia and Herzegovina</option>
+    <option value="24">Botswana</option>
+    <option value="25">Brazil</option>
+    <option value="26">Brunei</option>
+    <option value="27">Bulgaria</option>
+    <option value="28">Burkina Faso</option>
+    <option value="29">Burma</option>
+    <option value="30">Burundi</option>
+    <option value="31">Cambodia</option>
+    <option value="32">Cameroon</option>
+    <option value="33">Canada</option>
+    <option value="34">Cabo Verde</option>
+    <option value="35">Central African Repuboptionc</option>
+    <option value="36">Chad</option>
+    <option value="37">Chile</option>
+    <option value="38">China</option>
+    <option value="39">Colombia</option>
+    <option value="40">Comoros</option>
+    <option value="41">Congo, Democratic Repuboptionc of the</option>
+    <option value="42">Congo, Repuboptionc of the</option>
+    <option value="43">Costa Rica</option>
+    <option value="44">Cote d'Ivoire</option>
+    <option value="45">Croatia</option>
+    <option value="46">Cuba</option>
+    <option value="47">Curacao</option>
+    <option value="48">Cyprus</option>
+    <option value="49">Czechia</option>
   </select>
 </label>
 ```

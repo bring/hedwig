@@ -364,6 +364,10 @@ export const HWDropdown = ({
 
     // Loop through all dropdowns and initialise each
     SETTINGS.elements.forEach((dropdown) => {
+      // Don't initialize native dropdowns
+      if(dropdown.classList.contains('hw-dropdown--native')){
+        return false;
+      }
       const dropdownName = dropdown.getAttribute('data-hw-dropdown');
       if (dropdown.getAttribute('data-hw-dropdown-dirty') === 'true'){
         // Remove the previously rendered markup
