@@ -5,6 +5,7 @@ Available in version 6.1.2
 ```
 
 PS: This component is dependent on the dropdown component.
+Not compatible with the native version of dropdown component
 
 ```html
 <div class="hw-phone-input">
