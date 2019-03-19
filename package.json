@@ -36,7 +36,7 @@
     "css:dev": "npm run css:dev:bring & npm run css:dev:posten",
     "css:dev:bring": "postcss tmp/bring.css --use postcss-cssnext postcss-extend -o ./dist/bring.css",
     "css:dev:posten": "postcss tmp/posten.css --use postcss-cssnext postcss-extend -o ./dist/posten.css",
-    "css:build": "npm run css:build:bring & npm run css:build:posten",
+    "css:build": "npm run css:build:bring && npm run css:build:posten",
     "css:build:test": "npm run css:build:bring:test & npm run css:build:posten:test",
     "css:build:bring": "postcss tmp/bring.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./dist/bring.css",
     "css:build:posten": "postcss tmp/posten.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./dist/posten.css",
