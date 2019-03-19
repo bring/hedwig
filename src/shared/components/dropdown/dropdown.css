@@ -173,6 +173,46 @@
   * Modifiers: Extra settings
   */
 
+  &--native {
+    position: relative;
+    height: 48px;
+    margin: 3px 0;
+    border: 3px solid #c1c1c1;
+    border-radius: 0;
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    -webkit-appearance: none;
+    padding: 11px 36px 9px 18px;
+    transition: border-color 0.3s ease;
+    &:hover, &:active, &:focus {
+      border-color: var(--hw-color-gray-darker);
+    }
+    &:focus {
+      outline: 0;
+    }
+    background-image:
+    /* Cut off the sharp ends of the arrow */
+    linear-gradient(45deg, rgba(0, 0, 0, 0) 74%, var(--hw-color-white) 0%),
+    linear-gradient(135deg, var(--hw-color-white) 26%, rgba(0, 0, 0, 0) 26%),
+    /* Draw the arrow */
+    linear-gradient(135deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
+    linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 41%, rgba(0,0,0,0) 43%, rgba(0,0,0,0) 100%),
+    linear-gradient(135deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 58%, var(--hw-color-gray) 59%, var(--hw-color-gray) 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%);
+    background-size: var(--hw-spacing-small) var(--hw-spacing-small);
+    background-position: calc(100% - var(--hw-spacing-small)) 40%;
+    background-repeat: no-repeat;
+    /* Remove default down-arrow for IE */
+    &::-ms-expand {
+      display: none;
+    }
+    /* Color the selected option with the correct color for IE */
+    &::-ms-value {
+      color: var(--hw-color-gray-darker);
+      background: none;
+    }
+  }
+
   &--is-too-big .hw-dropdown__inner {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
