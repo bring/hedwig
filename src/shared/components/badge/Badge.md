@@ -21,18 +21,20 @@ Provides styling for badges
 
 ### Primary
 
+The badge will have a size 75% of surrounding content unless size modifiers are used
+
 ```html|span-4
 <div class="hw-badge">
   Badge
 </div>
 ```
 
-### In a sentence
+### Example badge
 
 ```html|span-4
-I am a <div class="hw-badge hw-badge--small">
+I am a <div class="hw-badge">
   Badge
-</div> in a sentence
+</div> 
 ```
 
 ### Sizes
@@ -43,10 +45,6 @@ I am a <div class="hw-badge hw-badge--small">
 </div>
 
 <div class="hw-badge hw-badge--large">
-  Badge
-</div>
-
-<div class="hw-badge">
   Badge
 </div>
 
