@@ -29,7 +29,7 @@ The close button needs to be of type `button` for tab-navigation to be able to f
     class="hw-drawer"
     data-hw-drawer="Drawer2">
 
-    <div class="hw-drawer__overlay hw-animate hw-animate--fade-in-overlay" data-hw-drawer-trigger="Drawer2"></div>
+    <div class="hw-drawer__overlay" data-hw-drawer-trigger="Drawer2"></div>
     <div data-hw-drawer-content class="hw-drawer__content">
       <div class="hw-drawer__header">
         <button class="hw-drawer__close-button" data-hw-drawer-trigger="Drawer2">
