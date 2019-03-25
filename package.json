@@ -95,7 +95,7 @@
     "lodash": "^4.17.4",
     "node-watch": "^0.5.2",
     "np": "^3.0.4",
-    "postcss-cli": "^3.2.0",
+    "postcss-cli": "^6.1.2",
     "postcss-cssnext": "^2.11.0",
     "postcss-extend": "^1.0.5",
     "rollup": "^0.51.8",
