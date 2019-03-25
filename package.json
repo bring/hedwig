@@ -31,7 +31,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
-    "build": "rm -Rf dist && npm run docs:build && npm run js:build && npm run svg",
+    "build": "rm -Rf dist && npm run docs:build && npm run css:build && npm run js:build && npm run svg",
     "release": "npm run build && np --any-branch && npm run cache:purge:jsdelivr",
     "css:dev": "npm run css:dev:bring & npm run css:dev:posten",
     "css:dev:bring": "postcss tmp/bring.css --use postcss-cssnext postcss-extend -o ./dist/bring.css",
