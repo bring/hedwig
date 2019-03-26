@@ -47,12 +47,14 @@ export const HWDrawer = ({
 
       // set focus to first element in drawer
       const focusableEls = qa('a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], input[type="submit"], select', drawer);
-      if(focusableEls.length < 1) {
-        console.warn(`No focusable elements in drawer '${drawerId}'. At least the close button needs to be a <button>`);
-      } else {
-        const firstFocusableEl = focusableEls[0];
-        firstFocusableEl.focus();
-      }
+      setTimeout(function () {
+        if (focusableEls.length < 1) {
+          console.warn(`No focusable elements in drawer '${drawerId}'. At least the close button needs to be a <button>`);
+        } else {
+          const firstFocusableEl = focusableEls[0];
+          firstFocusableEl.focus();
+        }
+      }, 250);
     } else {
       drawer.setAttribute('aria-hidden', true);
       // animation out drawer
@@ -62,7 +64,7 @@ export const HWDrawer = ({
       drawer.classList.add('hw-drawer--animate-out');
       setTimeout(() => {
         drawer.classList.remove('hw-drawer--open');
-      }, 200);
+      }, 250);
       body.style.overflow = 'visible';
 
       // set focus on button which opens drawer after drawer removed
