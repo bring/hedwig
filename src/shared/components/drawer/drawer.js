@@ -54,7 +54,7 @@ export const HWDrawer = ({
           const firstFocusableEl = focusableEls[0];
           firstFocusableEl.focus();
         }
-      }, 250);
+      }, 300);
     } else {
       drawer.setAttribute('aria-hidden', true);
       // animation out drawer
