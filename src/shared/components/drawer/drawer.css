@@ -31,6 +31,7 @@
     position: fixed;
     overflow: auto;
     z-index: -1;
+    background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.20s linear;
   }
 
@@ -41,8 +42,8 @@
     height: 100%;
     overflow: auto;
     background: var(--hw-color-white);
-    transition: transform 0.25s ease-in;
-    transform: translateX(500px);
+    transition: transform 100ms ease;
+    transform: translateX(700px);
     opacity: 0;
 
     @media (--large) {
@@ -121,8 +122,8 @@
       opacity: 1;
       transform: translateX(0);
       &--animate-out {
-        transform: translateX(500px);
-        transition: opacity 0.1s linear 0.25s, transform 0.25s ease-in;
+        transform: translateX(700px);
+        transition: opacity 0.1s linear 0.25s, transform 100ms ease;
         opacity: 0;
       }
     }
