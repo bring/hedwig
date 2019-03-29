@@ -23,7 +23,7 @@
   }
 
   /* Don't show the icon for error for datepicker */
-  & .hw-error [data-fa-pseudo-element=":before"] {
+  & .hw-error::before {
     display: none;
   }
 }
@@ -124,13 +124,21 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   border: 0;
   padding: 0;
   width: 20px;
-  height: 30px;
+  height: 20px;
   text-indent: 20px; /* hide text using text-indent trick, using width value (it's enough) */
   white-space: nowrap;
   overflow: hidden;
   opacity: 0.5;
   *position: absolute; /* IE7 */
   *top: 0; /* IE7 */
+  background-image:
+    /* Cut off the sharp ends of the arrow */
+    linear-gradient(45deg, rgba(0, 0, 0, 0) 74%, var(--hw-color-white) 0%),
+    linear-gradient(135deg, var(--hw-color-white) 26%, rgba(0, 0, 0, 0) 26%),
+    /* Draw the arrow */
+    linear-gradient(135deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
+    linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 41%, rgba(0,0,0,0) 43%, rgba(0,0,0,0) 100%),
+    linear-gradient(135deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 58%, var(--hw-color-gray) 59%, var(--hw-color-gray) 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%);
 }
 
 .pika-prev:hover,
@@ -138,39 +146,23 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   opacity: 1;
 }
 
-.pika-prev, .pika-next {
-  &::before {
-    font-family: "Font Awesome 5 Solid";
-    font-weight: 900;
-    display: none;
+.pika {
+  &-prev{
+    transform: rotate(90deg);
   }
-
-  & [data-fa-pseudo-element=":before"]{
-    height: 25px;
-    display: block;
-    margin: 0 auto;
-    pointer-events: none;
+  &-next{
+    transform: rotate(-90deg);
   }
 }
 
 .pika-prev,
 .is-rtl .pika-next {
   float: left;
-
-  &::before {
-    content: "\f053";
-  }
-
 }
 
 .pika-next,
 .is-rtl .pika-prev {
   float: right;
-
-  &::before {
-    content: "\f054";
-  }
-  *right: 0;
 }
 
 .pika-prev.is-disabled,
