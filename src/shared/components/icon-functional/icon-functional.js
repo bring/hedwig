@@ -20,7 +20,6 @@ import * as fab from "@fortawesome/free-brands-svg-icons";
  *  - https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
  *  - https://fontawesome.com/how-to-use/with-the-api/setup/configuration#searchpseudoelements
  */
-config.searchPseudoElements = true;
 
 // We are only using some of the icons
 library.add(fab.faFacebookF);
