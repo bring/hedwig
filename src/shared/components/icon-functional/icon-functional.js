@@ -101,6 +101,7 @@ library.add(fas.faQuestionCircle);
 library.add(fas.faQuestionSquare);
 library.add(fas.faReply);
 library.add(fas.faSearch);
+library.add(fas.faShieldAlt);
 library.add(fas.faShippingFast);
 library.add(fas.faShoppingCart);
 library.add(fas.faStar);
