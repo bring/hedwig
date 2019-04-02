@@ -123,3 +123,11 @@ hw-background-color-opaque-primary
 hw-background-color-opaque-black
 ```
 
+## Responsive Opaque background colors
+```code
+[Responsive Mobile only]     hw-background-color-opaque-primary-mobile
+[Responsive Mobile only]     hw-background-color-opaque-black-mobile
+
+[Responsive Desktop only]    hw-background-color-opaque-primary-desktop
+[Responsive Desktop only]    hw-background-color-opaque-black-desktop
+```
