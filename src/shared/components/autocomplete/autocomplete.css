@@ -16,38 +16,27 @@
   }
 
   &__input-reset {
-    display: none;
+    visibility: hidden;
     position: absolute;
     top: 12px;
     right: var(--hw-spacing-small);
+    color:var(--hw-color-gray-light);
     padding: 0;
     border: none;
     cursor: pointer;
-
+    opacity: 0;
+    transition: opacity 0.1s ease, visibility 0.1s ease 0.1s;
   }
 
   &[data-hw-autocomplete-reset-visible="true"]
-    .hw-autocomplete__input:focus
-    + .hw-autocomplete__input-reset {
-    display: block;
-  }
-
-  &[data-hw-autocomplete-reset-visible="true"]
-    .hw-autocomplete__input:hover
-    + .hw-autocomplete__input-reset {
-    display: block;
-    color:var(--hw-color-gray);
-  }
-
-  &[data-hw-autocomplete-reset-visible="true"]
-    .hw-autocomplete__input-reset:hover {
-    display: block;
-  }
-
-  &[data-hw-autocomplete-reset-visible="true"]
-    .hw-autocomplete__input-reset:active {
-    display: block;
-    
+    .hw-autocomplete__input-reset {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.1s ease;
+    &:hover,
+    &:focus {
+      color:var(--hw-color-gray);
+    }
   }
 
   &__input {
