@@ -87,13 +87,13 @@
     transform: translateY(-50%);
     border: 0;
     opacity: 0;
-    transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease, visibility 0.1s ease 0.11s;
     color: var(--hw-color-gray-light);
-    outline:none;
-
+    visibility: hidden;
   }
 
-  &__button-inside:hover {
+  &__button-inside:hover,
+  &__button-inside:focus {
     color: var(--hw-color-gray); 
   }
 
@@ -168,6 +168,8 @@
 
   &--hasvalue .hw-search__button-inside {
     opacity: 1;
+    visibility: visible;
+    transition: opacity 0.1s ease;
   }
 
   /** Manual modifiers **/
