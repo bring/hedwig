@@ -32,11 +32,9 @@
   &:hover .hw-entrance-box__label {
     border-bottom: 2px solid var(--hw-color-link-underline);
     color: var(--hw-color-gray-darker);
-    transition: all 0.1s ease;
   }
   &:hover .hw-entrance-box__text {
      border-bottom: 2px solid var(--hw-color-link-underline);
-     transition: all 0.1s ease;
   }
   &:hover .hw-entrance-box__body {
     z-index: 1;
@@ -77,17 +75,21 @@
   }
 
   &__label {
+    border-bottom: 2px solid transparent;
     margin-bottom: var(--hw-spacing-smallest);
     font-size: var(--hw-font-size-smaller);
     color: var(--hw-color-gray);
     display: inline;
+    transition: all 0.1s ease;
   }
 
   &__text {
+    border-bottom: 2px solid transparent;
     display: inline;
     min-height: 60px;
     margin-top: var(--hw-spacing-smaller);
     font-size: var(--hw-font-size-lead);
+    transition: all 0.1s ease;
   }
 
 }
