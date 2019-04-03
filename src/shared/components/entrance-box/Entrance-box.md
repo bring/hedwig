@@ -15,7 +15,7 @@ Styling for boxes.
     </div>
     <div class="hw-entrance-box__body">
       <div>
-        <h3 class="hw-entrance-box__title">Box Title</h3>
+        <h3 class="hw-entrance-box__label">Box Label</h3>
       </div>
       <div class="hw-entrance-box__text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
@@ -34,7 +34,7 @@ Styling for boxes.
         </div>
         <div class="hw-entrance-box__body">
           <div>
-            <h3 class="hw-entrance-box__title">Box Title</h3>
+            <h3 class="hw-entrance-box__label">Box Label</h3>
           </div>
           <div class="hw-entrance-box__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
@@ -49,7 +49,7 @@ Styling for boxes.
         </div>
         <div class="hw-entrance-box__body">
           <div>
-            <h3 class="hw-entrance-box__title">Box Title</h3>
+            <h3 class="hw-entrance-box__label">Box Label</h3>
           </div>
           <div class="hw-entrance-box__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
@@ -64,7 +64,7 @@ Styling for boxes.
         </div>
         <div class="hw-entrance-box__body">
           <div>
-            <h3 class="hw-entrance-box__title">Box Title</h3>
+            <h3 class="hw-entrance-box__label">Box Label</h3>
           </div>
           <div class="hw-entrance-box__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.

@@ -29,12 +29,14 @@
     }
   }
 
-  &:hover .hw-entrance-box__title {
+  &:hover .hw-entrance-box__label {
     border-bottom: 2px solid var(--hw-color-link-underline);
     color: var(--hw-color-gray-darker);
+    transition: all 0.1s ease;
   }
   &:hover .hw-entrance-box__text {
      border-bottom: 2px solid var(--hw-color-link-underline);
+     transition: all 0.1s ease;
   }
   &:hover .hw-entrance-box__body {
     z-index: 1;
@@ -74,7 +76,7 @@
     }
   }
 
-  &__title {
+  &__label {
     margin-bottom: var(--hw-spacing-smallest);
     font-size: var(--hw-font-size-smaller);
     color: var(--hw-color-gray);
