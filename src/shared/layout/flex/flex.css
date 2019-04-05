@@ -27,6 +27,10 @@
       margin-right: var(--hw-spacing-small);
     }
 
+    &--gutter-larger-desktop > * {
+      margin-right: var(--hw-spacing-larger);
+    }
+
     &--gutter-medium-desktop > *{
       margin-right: var(--hw-spacing-smallest);
     }
@@ -66,22 +70,24 @@
       }
     }
 
+    /* Medium gutter desktop calculations */
     &--gutter-medium-desktop&--twos > * {
-          min-width: calc(50% - (var(--hw-spacing-smallest) / 2)); /* 18 / 2 = 9 */
-          max-width: calc(50% - (var(--hw-spacing-smallest) / 2));
-          margin-bottom: var(--hw-spacing-smallest);
+      min-width: calc(50% - (var(--hw-spacing-smallest) / 2)); /* 18 / 2 = 9 */
+      max-width: calc(50% - (var(--hw-spacing-smallest) / 2));
+      margin-bottom: var(--hw-spacing-smallest);
     }
     &--gutter-medium-desktop&--thirds > * {
-              min-width: calc((100% / 3) - (var(--hw-spacing-smallest) * 2 / 3));
-              max-width: calc((100% / 3) - (var(--hw-spacing-smallest) * 2 / 3));
-              margin-bottom: var(--hw-spacing-smallest);
+      min-width: calc((100% / 3) - (var(--hw-spacing-smallest) * 2 / 3));
+      max-width: calc((100% / 3) - (var(--hw-spacing-smallest) * 2 / 3));
+      margin-bottom: var(--hw-spacing-smallest);
     }
     &--gutter-medium-desktop&--fourths > * {
-              min-width: calc(25% - (var(--hw-spacing-smallest) * 3 / 4));
-              max-width: calc(25% - (var(--hw-spacing-smallest) * 3 / 4));
-              margin-bottom: var(--hw-spacing-smallest);
+      min-width: calc(25% - (var(--hw-spacing-smallest) * 3 / 4));
+      max-width: calc(25% - (var(--hw-spacing-smallest) * 3 / 4));
+      margin-bottom: var(--hw-spacing-smallest);
     }
 
+    /* Large gutter desktop calculations */
     &--gutter-large-desktop&--twos > * {
       min-width: calc(50% - (var(--hw-spacing-small) / 2)); /* 18 / 2 = 9 */
       max-width: calc(50% - (var(--hw-spacing-small) / 2));
@@ -98,6 +104,25 @@
       min-width: calc(25% - (var(--hw-spacing-small) * 3 / 4)); /* 18 * 3 / 4 = 13.5 */
       max-width: calc(25% - (var(--hw-spacing-small) * 3 / 4));
       margin-bottom: var(--hw-spacing-small);
+    }
+
+    /* Larger gutter desktop calculations */
+    &--gutter-larger-desktop&--twos > * {
+      min-width: calc(50% - (var(--hw-spacing-larger) / 2)); /* 48 / 2 = 24 */
+      max-width: calc(50% - (var(--hw-spacing-larger) / 2));
+      margin-bottom: var(--hw-spacing-larger);
+    }
+
+    &--gutter-larger-desktop&--thirds > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-larger) * 2 / 3)); /* 48 * 2 / 3 = 32 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-larger) * 2 / 3));
+      margin-bottom: var(--hw-spacing-larger);
+    }
+
+    &--gutter-larger-desktop&--fourths > * {
+      min-width: calc(25% - (var(--hw-spacing-larger) * 3 / 4)); /* 48 * 3 / 4 = 36 */
+      max-width: calc(25% - (var(--hw-spacing-larger) * 3 / 4));
+      margin-bottom: var(--hw-spacing-larger);
     }
   }
 }
