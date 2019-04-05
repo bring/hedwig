@@ -23,6 +23,10 @@
       }
     }
 
+    &--variable-height {
+      align-items: flex-start;
+    }
+
     &--gutter-large-desktop > * {
       margin-right: var(--hw-spacing-small);
     }

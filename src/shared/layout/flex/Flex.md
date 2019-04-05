@@ -7,14 +7,55 @@ Flexible grid with 3px gutters
 [Twos]                  .hw-flex--twos                  - Wraps after two items
 [Thirds]                .hw-flex--thirds                - Wraps after three items
 [Fourths]               .hw-flex--fourths               - Wraps after four items
+[Medium gutter desktop] .hw-flex--gutter-medium-desktop - Gives a medium margin between elements on desktop
 [Large gutter desktop]  .hw-flex--gutter-large-desktop  - Gives a large margin between elements on desktop
 [Larger gutter desktop] .hw-flex--gutter-larger-desktop - Gives a larger margin between elements on desktop
+[Variable height]       .hw-flex--variable-height       - Don't force same height for items in flex
 ```
 
 ## Example
 
 ```html
 <div class="hw-flex">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Variable height
+
+```html
+<div class="hw-flex hw-flex--variable-height">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
