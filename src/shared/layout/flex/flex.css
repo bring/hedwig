@@ -11,6 +11,14 @@
       }
     }
   }
+  @media (--max-medium) {
+    &--gutter-large-mobile > * {
+      margin-bottom: var(--hw-spacing-small);
+    }
+    &--gutter-larger-mobile > * {
+      margin-bottom: var(--hw-spacing-larger);
+    }
+  }
 
   @media (--large) {
     display: flex;
