@@ -35,13 +35,6 @@
         }
     }
 
-    &__button::after {
-        content: '\f059'; /* question-circle */
-        font-family: "Font Awesome 5 Solid";
-        font-weight: 900;
-        display: none;
-    }
-
     &__button:focus ~ &__content, &__button:hover ~ &__content {
         visibility: visible;
     }
