@@ -84,42 +84,78 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   </div>
 ```
 
-### Variants (Alternating)
+### Sizes
 
-```html|span-4,plain,light
-    <div class="hw-block hw-block--bg-alt">
-      <p>Default block</p>
-    </div>
-    <div class="hw-block hw-block--bg-alt">
-      <p>Default block</p>
-    </div>
-    <div class="hw-block hw-block--bg-alt">
-      <p>Default block</p>
-    </div>
-    <div class="hw-block hw-block--bg-alt">
-      <p>Default block</p>
-    </div>
+```code
+smallest:     6px
+smaller:     12px
+small:       18px
+default:     24px
+large:       36px
+larger:      48px
+even-larger: 72px
 ```
 
 ### Block modifiers (margin & padding)
 
 ```code
-[Padding sides]             .hw-block--px
-[Fluid Padding sides]       .hw-block--px-fluid
-[Mobile Padding sides]      .hw-block--px-mobile
-[Margin top]                .hw-block--mt
-[Small margin top]          .hw-block--mt-small
-[Large margin top]          .hw-block--mt-large
-[Margin bottom]             .hw-block--mb
-[Small margin bottom]       .hw-block--mb-small
-[Large margin bottom]       .hw-block--mb-large
-[Padding top]               .hw-block--pt
-[Small padding top]         .hw-block--pt-small
-[Large padding top]         .hw-block--pt-large
-[Padding bottom]            .hw-block--pb
-[Small padding bottom]      .hw-block--pb-small
-[Large padding bottom]      .hw-block--pb-large
+[Padding sides]                       .hw-block--px
+[Fluid Padding sides]                 .hw-block--px-fluid
+[Mobile Padding sides]                .hw-block--px-mobile
+[Margin/Padding top/bottom] default   .hw-block--[mt/mb/pt/pb]
+[Margin/Padding top/bottom [size]]    .hw-block--[mt/mb/pt/pb]-[size]
 ```
+
+### Example
+```code
+<div class="hw-block hw-block--mb">
+  <p>Block with standard margin bottom</p>
+</div>
+<div class="hw-block hw-block--pb-larger">
+  <p>Block with larger padding bottom</p>
+</div>
+```
+```html|span-3,no-source
+<div class="hw-helpers-margin-highlighter">
+  <div class="hw-block hw-block--mb">
+    <p>Block with standard margin bottom</p>
+  </div>
+</div>
+<div class="hw-helpers-margin-highlighter">
+  <div class="hw-block hw-block--pb-larger">
+    <p>Block with larger padding bottom</p>
+  </div>
+</div>
+```
+
+### Block modifiers targeted larger and even larger margin
+```code
+[Larger margin top mobile]          .hw-block--mt-larger-mobile
+[Larger margin top desktop]         .hw-block--mt-larger-desktop
+[Larger margin bottom mobile]       .hw-block--mb-larger-mobile
+[Larger margin bottom desktop]      .hw-block--mb-larger-desktop
+
+[Even larger margin top mobile]     .hw-block--mt-even-larger-mobile
+[Even larger margin top desktop]    .hw-block--mt-even-larger-desktop
+[Even larger margin bottom mobile]  .hw-block--mb-even-larger-mobile
+[Even larger margin bottom desktop] .hw-block--mb-even-larger-desktop
+```
+
+### Example targeted margin
+```code
+<div class="hw-block hw-block--mb-larger-mobile hw-block--mb-even-larger-desktop">
+  <p>Block with larger margin bottom on mobile and even larger margin bottom on desktop</p>
+</div>
+```
+
+```html|no-source,responsive
+<div class="hw-helpers-margin-highlighter">
+  <div class="hw-block hw-block--mb-larger-mobile hw-block--mb-even-larger-desktop">
+    <p>Block with larger margin bottom on mobile and even larger margin bottom on desktop</p>
+  </div>
+</div>
+```
+
 
 ### Block modifiers (colors)
 
