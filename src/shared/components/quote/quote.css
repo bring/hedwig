@@ -29,7 +29,7 @@
 }
 
 .hw-quote__author {
-  text-transform: uppercase;
+  @extend .hw-text-uppercase;
   font-size: var(--hw-font-size-small);
   font-style: normal;
 }
