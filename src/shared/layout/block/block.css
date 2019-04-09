@@ -141,6 +141,7 @@
     background-color: var(--hw-color-white);
   }
 
+  /* Start deprecated at version 11 */
   &--bg-alt:nth-child(even) {
     background: var(--hw-color-gray-lightest);
   }
@@ -148,6 +149,7 @@
   &--bg-alt:nth-child(odd) {
     background: var(--hw-color-white);
   }
+  /* End deprecated at version 11 */
 
   /**
    * Modifiers: other variants
@@ -190,5 +192,35 @@
   .hw-block--px-mobile {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (--max-medium) {
+  .hw-block--mt-larger-mobile {
+    margin-top: var(--hw-spacing-larger);
+  }
+  .hw-block--mb-larger-mobile {
+    margin-bottom: var(--hw-spacing-larger);
+  }
+  .hw-block--mt-even-larger-mobile {
+    margin-top: var(--hw-spacing-even-larger);
+  }
+  .hw-block--mb-even-larger-mobile {
+    margin-bottom: var(--hw-spacing-even-larger);
+  }
+}
+
+@media (--large) {
+  .hw-block--mt-larger-desktop {
+    margin-top: var(--hw-spacing-larger);
+  }
+  .hw-block--mb-larger-desktop {
+    margin-bottom: var(--hw-spacing-larger);
+  }
+  .hw-block--mt-even-larger-desktop {
+    margin-top: var(--hw-spacing-even-larger);
+  }
+  .hw-block--mb-even-larger-desktop {
+    margin-bottom: var(--hw-spacing-even-larger);
   }
 }
