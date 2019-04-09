@@ -11,7 +11,7 @@ Styling for boxes.
 ```html|span-3
   <a href="#" class="hw-entrance-box">
     <div class="hw-entrance-box__media">
-      <div class="hw-entrance-box__media-inner" style="background-image: url('https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/img/demo-image-1-small.png');"></div>
+      <div class="hw-entrance-box__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
     </div>
     <div class="hw-entrance-box__body">
       <div>
