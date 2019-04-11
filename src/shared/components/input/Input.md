@@ -1,6 +1,6 @@
 ## Input fields
 
-All inputs are block elements. For layout, use [grid]('/Grid').
+All inputs are block elements. For layout, use [grid](/Grid).
 
 ```html
 <label class="hw-label">
