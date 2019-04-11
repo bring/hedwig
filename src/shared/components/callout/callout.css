@@ -6,7 +6,7 @@
   width: 100%;
   position: relative;
   display: block;
-  border: 3px solid var(--hw-color-gray-light);
+  border: 3px solid var(--hw-color-gray-lighter);
   padding: var(--hw-spacing);
   background-color: var(--hw-color-white);
 
