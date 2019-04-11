@@ -1,6 +1,6 @@
 ## Composing pages and components
 
-When building new components, concider using [containers](/Container) and [blocks](/Block) to maintain consistent margins and paddings:
+When building new components, consider using [containers](/Container) and [blocks](/Block) to maintain consistent margins and paddings:
 
 #### Example 1:
 
