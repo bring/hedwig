@@ -55,6 +55,17 @@
   }
 
   /**
+  * Responsive modifiers
+  */
+
+  &--mobile-full {
+    @media (--max-medium){
+      @extend .hw-button--full;
+    }
+  }
+
+
+  /**
    * Modifiers: types
    */
 

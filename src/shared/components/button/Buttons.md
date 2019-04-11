@@ -1,6 +1,6 @@
 ## Buttons
 
-Styling for buttons.
+The buttons can be used either as `<button>`-tags or `<a>`-tags as needed
 
 ```code
 [Base]           .hw-button
@@ -8,118 +8,81 @@ Styling for buttons.
 [Large]          .hw-button--large
 [Small]          .hw-button--small
 [Full]           .hw-button--full
+[Responsive]     .hw-button--mobile-full   //Full size on mobile, default size on desktop
+
+Colors
+[Primary]        .hw-button--primary
+[Secondary]      .hw-button--secondary
+[Yellow]         .hw-button--picture-yellow
+[Dark]           .hw-button--picture-dark
+
+[Outline]        .hw-button--outline
+[Outline white]  .hw-button--outline-white
+[Outline dark]   .hw-button--outline-dark
+
 ```
 
-### Primary
+### Sizes
+
+```html|span-4
+  <button class="hw-button hw-button--primary hw-button--small">
+    Small button
+  </button><br>
+  <button class="hw-button hw-button--primary hw-button--large">
+    Large button
+  </button>
+  <button class="hw-button hw-button--primary hw-button--full">
+    Full button
+  </button>
+  <button class="hw-button hw-button--primary hw-button--mobile-full">
+    Responsive (full on mobile)
+  </button>
+
+```
+
+### Default colors
 
 ```html|span-4
   <button class="hw-button hw-button--primary">
-    Normal state
+    Primary button
+  </button>
+  <a class="hw-button hw-button--primary">
+    Link styled as button
+  </a>
+  <button class="hw-button hw-button--secondary">
+    Secondary button
   </button>
   <button class="hw-button hw-button--primary" disabled>
-    Disabled state
+    Disabled button
   </button>
 ```
 
-```code
-[Primary]        .hw-button--primary
-```
+### Alternative colors
+Alternative colored buttons can be used where extra contrast is needed ie. when the background is a picture
 
-The buttons can be used either as `<button>`-tags or `<a>`-tags as needed
-
-### Button using <a>-tag
-```html|span-4
-  <a class="hw-button hw-button--primary">
-    Normal state
-  </a>
-  <a class="hw-button hw-button--primary" disabled>
-    Disabled state
-  </a>
-```
-
-
-### Secondary
-
-```html|span-4
-  <button class="hw-button hw-button--secondary">
-    Normal state
+```html|span-6
+<button class="hw-button hw-button--picture-yellow">
+    Yellow button 
   </button>
-  <button class="hw-button hw-button--secondary" disabled>
-    Disabled state
-  </button>
-```
-
-```code
-[Base]           .hw-button
-```
-
-
-### Picture button - Yellow, dark
-These buttons are for use on top of images
-
-```html|span-4
-  <button class="hw-button hw-button--picture-yellow">
-    Normal state  
-  </button>
-  <button class="hw-button hw-button--picture-yellow" disabled>
-    Disabled state
-  </button>
-  <br>
   <button class="hw-button hw-button--picture-dark">
-    Normal state
-  </button>
-  <button class="hw-button hw-button--picture-dark" disabled>
-    Disabled state
+    Dark button
   </button>
 ```
 
+### Outlined buttons
 
-### Outline
-
-```html|span-4
+```html|span-4,plain,light
   <button class="hw-button hw-button--outline">
-    Normal state
+    Default outline
   </button>
-  <button class="hw-button hw-button--outline" disabled>
-    Disabled state
-  </button>
-```
-
-```code
-[Outline]        .hw-button--outline
-```
-
-### Outline white
-
-```html|span-4,plain,dark
-  <button class="hw-button hw-button--outline-white">
-    Normal state
-  </button>
-  <button class="hw-button hw-button--outline-white" disabled>
-    Disabled state
-  </button>
-```
-
-```code
-[Outline white]        .hw-button--outline-white
-```
-
-### Outline dark
-
-```html|span-4
   <button class="hw-button hw-button--outline-dark">
-    Normal state
+    Dark outline
   </button>
-  <button class="hw-button hw-button--outline-dark" disabled>
-    Disabled state
+  <button class="hw-button hw-button--outline-white">
+    White outline
   </button>
+  
 ```
-
-
-```code
-[Outline dark]        .hw-button--outline-dark
-```
-
 
 ### Button with icon
 
@@ -144,24 +107,4 @@ These buttons are for use on top of images
 ```code
 [chat]        .hw-button--chat
 [chat-fixed]  .hw-button--chat-fixed (Preview is in the bottom-right corner of this page)
-```
-
-### Extra modifiers
-
-```html|span-4
-  <button class="hw-button hw-button--large">
-    Large button
-  </button>
-  <button class="hw-button hw-button--small">
-    Small button
-  </button>
-  <button class="hw-button hw-button--full">
-    Full button
-  </button>
-```
-
-```code
-[Large]       .hw-button--large
-[Small]       .hw-button--small
-[Full]        .hw-button--full
 ```
