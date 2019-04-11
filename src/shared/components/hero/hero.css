@@ -81,6 +81,35 @@
       min-height: calc(100vh - var(--hw-navbar-height-desktop));
     }
   }
+
+  /**
+  * Responsive hero
+  **/
+
+  &--mobile-small {
+    @media (--max-medium){
+      @extend .hw-hero--small;
+    }
+  }
+
+  &--desktop-small {
+    @media (--large){
+      @extend .hw-hero--small;
+    }
+  }
+
+  &--mobile-full {
+    @media (--max-medium){
+      @extend .hw-hero--full;
+    }
+  }
+
+  &--desktop-full {
+    @media (--large){
+      @extend .hw-hero--full;
+    }
+  }
+
   
 }
 
