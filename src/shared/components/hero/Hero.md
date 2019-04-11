@@ -6,6 +6,8 @@ Hero component
 [Base]           .hw-hero
 
 [Large]          .hw-hero--large
+
+[Responsive]     .hw-hero--[mobile/desktop]-[size]
 ```
 
 ### Default Hero (55vh)
@@ -71,3 +73,14 @@ Content can be placed on top of the hero image and positioned right, left or cen
   </div>
 </div>
 ```
+
+### Responsive hero (default on desktop, small on mobile)
+
+```html|span-6
+<div class="hw-hero hw-hero--mobile-small">
+    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');">
+  </div>
+</div>
+```
+
+
