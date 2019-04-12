@@ -290,6 +290,11 @@ olje
 paadoeren
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#paaske"></use>
+</svg>
+paaske
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#pakke"></use>
 </svg>
 pakke
