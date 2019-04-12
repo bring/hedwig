@@ -75,6 +75,8 @@
 
   &__title {
     position: relative;
+    display: flex;
+    align-items: center;
     
     &::before {
       content: ""; /* exclamation-circle */
@@ -83,7 +85,6 @@
       padding: 0;
       margin-right: var(--hw-spacing-smaller);
       display: inline-block;
-      vertical-align: bottom;
       border-radius: 50%;
       background:
       radial-gradient(circle closest-side at 50% 68%, rgba(255,255,255,1) 0, rgba(255,255,255,1) 24%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%), 
