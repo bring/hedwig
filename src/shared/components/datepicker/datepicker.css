@@ -20,6 +20,21 @@
 
   &__inner {
     position: relative;
+    & input{
+      display: flex;
+      -webkit-appearance: none;
+    }
+    & .hw-placeholder{
+      display: none;
+    }
+    &.hw-datepicker__native .hw-placeholder{
+      display: inline;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: var(--hw-color-gray-dark);
+      padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
+    }
   }
 
   /* Don't show the icon for error for datepicker */

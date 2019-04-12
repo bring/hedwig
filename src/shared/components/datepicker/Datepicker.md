@@ -13,9 +13,11 @@ Hedwig will automatically style the datepicker with custom styles.
 ```html|span-3
   <label class="hw-label hw-datepicker">
     Tidspunkt for levering
-    <div id="datepicker-ajsd4ks8" class="hw-datepicker__inner">
+    <div class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" />
       <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
+      <!-- Placeholder when native datepicker is used -->
+      <span class="hw-placeholder">Select a date</span>
     </div>
     <div class="hw-error hw-error--is-hidden">You must select a date</div>
   </label>
@@ -26,21 +28,12 @@ Hedwig will automatically style the datepicker with custom styles.
 ```html|span-3
   <label class="hw-label hw-datepicker">
     Tidspunkt for levering
-    <div id="datepicker-ajsd4ks9" class="hw-datepicker__inner">
+    <div class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input hw-input--error" placeholder="Select a date" />
       <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
+      <!-- Placeholder when native datepicker is used -->
+      <span class="hw-placeholder">Select a date</span>
     </div>
     <div class="hw-error">You must select a date</div>
   </label>
 ```
-
-### Example javascript
-
-```
-const datepickerWrapper = document.getElementById('datepicker-ajsd4ks8');
-var picker = new Pikaday({ 
-  container: datepickerWrapper,
-  field: datepickerWrapper.querySelector('input'), 
-});
-```
-

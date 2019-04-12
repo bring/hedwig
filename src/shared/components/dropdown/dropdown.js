@@ -364,6 +364,17 @@ export const HWDropdown = ({
 
     // Loop through all dropdowns and initialise each
     SETTINGS.elements.forEach((dropdown) => {
+      if (navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+      ) {
+        dropdown.classList.add('hw-dropdown--native');
+        return false;
+      }
       // Don't initialize native dropdowns
       if(dropdown.classList.contains('hw-dropdown--native')){
         return false;
