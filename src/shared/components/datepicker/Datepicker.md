@@ -37,3 +37,13 @@ Hedwig will automatically style the datepicker with custom styles.
     <div class="hw-error">You must select a date</div>
   </label>
 ```
+
+### Example javascript
+
+```
+const datepickerWrapper = document.getElementById('datepicker-ajsd4ks8');
+  var picker = new Pikaday({ 
+  container: datepickerWrapper,
+  field: datepickerWrapper.querySelector('input'), 
+});
+```
