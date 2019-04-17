@@ -33,99 +33,106 @@
         & span{
           margin-right: 4px;
         }
+        & .hw-help-tip__wrapper{
+          position: relative;
+          &::after{
+            content: " ";
+            visibility: hidden;
+            position: absolute;
+            bottom: 17px;
+            right: 3px;
+            border-width: 6px;
+            border-style: solid;
+            border-color: var(--hw-color-gray-darkest) transparent transparent transparent;
+          }
+        }
+        & .hw-help-tip__content {
+          @extend .hw-text-less-line-height;
+          display: block;
+          visibility: hidden;
+          color: var(--hw-color-gray-lightest);
+          background-color: var(--hw-color-gray-darkest);
+          padding: var(--hw-spacing-smaller);
+          font-family: var(--hw-font-primary-regular);
+          font-size: var(--hw-font-size-small);
+          max-width: 300px;
+          width: 300px;
+          position: absolute;
+          bottom: 140%;
+          right: -140px;
+          margin-left: -100px;
+        }
     }
 
-    &__button:focus ~ &__content, &__button:hover ~ &__content {
+    &__button:focus,
+    &__button:hover{
+      & .hw-help-tip__wrapper::after{
         visibility: visible;
+      }
+      & .hw-help-tip__content {
+        visibility: visible;
+      }
     }
 
     &__title{
       font-family: var(--hw-font-primary-bold);
       font-size: var(--hw-font-size-small);
     }
-    /* The placement of the content box is from right and is given in pixels as the width is fixed */
-    &__content {
-        @extend .hw-text-less-line-height;
-        display: block;
-        visibility: hidden;
-        color: var(--hw-color-gray-lightest);
-        background-color: var(--hw-color-gray-darkest);
-        padding: var(--hw-spacing-smaller);
-        font-family: var(--hw-font-primary-regular);
-        font-size: var(--hw-font-size-small);
-        max-width: 300px;
-        width: 300px;
-        position: absolute;
-        bottom: 120%;
-        right: -140px;
-        margin-left: -100px;
-
-        &::after{
-            content: " ";
-            position: absolute;
-            top: 100%;
-            right: 50%;
-            margin-right: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: var(--hw-color-gray-darkest) transparent transparent transparent;
-        }
-    }
 
   /* Not responsive */
-  &--left &__content {
+  &--left &__button &__content {
     @extend %left;
   }
-  &--right &__content {
+  &--right &__button &__content {
     @extend %right;
   }
 
   /* Responsive */
   @media (--small), 
    (--only-base) {
-    &--small--left &__content {
+    &--small--left &__button &__content {
       @extend %left;
     }
-    &--small--right &__content {
+    &--small--right &__button &__content {
       @extend %right;
     }
-    &--small--middle &__content {
+    &--small--middle &__button &__content {
       @extend %middle;
     }
   }
 
   @media (--medium) {
-    &--medium--left &__content {
+    &--medium--left &__button &__content {
       @extend %left;
     }
-    &--medium--right &__content {
+    &--medium--right &__button &__content {
       @extend %right;
     }
-    &--medium--middle &__content {
+    &--medium--middle &__button &__content {
       @extend %middle;
     }
   }
 
   @media (--large) {
-    &--large--left &__content {
+    &--large--left &__button &__content {
       @extend %left;
     }
-    &--large--right &__content {
+    &--large--right &__button &__content {
       @extend %right;
     }
-    &--large--middle &__content {
+    &--large--middle &__button &__content {
       @extend %middle;
     }
   }
 
   @media (--xlarge) {
-    &--xlarge--left &__content {
+    &--xlarge--left &__button &__content {
       @extend %left;
     }
-    &--xlarge--right &__content {
+    &--xlarge--right &__button &__content {
       @extend %right;
     }
-    &--xlarge--middle &__content {
+    &--xlarge--middle &__button &__content {
       @extend %middle;
     }
   }
