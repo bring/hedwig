@@ -3,39 +3,58 @@
  */
 
 .hw-card-magasinet {
-  position: relative;
-  background: var(--hw-color-white);
-  padding: var(--hw-spacing-large) var(--hw-spacing-larger);
-  text-align: center;
+  margin-bottom: var(--hw-spacing-large);
   border: 3px solid var(--hw-color-gray-light);
+    background: var(--hw-color-white);
 
-&__overlay {
-   opacity: 1;
-   background-color: #ffffff;
-&:hover {
-   opacity: 0.8;
- }
+  &__link {
+    &:hover:after {
+      opacity: 0.8;
+      background-color: #00000;
+    }
+  }
+
+  &__icon {
+    width: 72px;
+    height: 72px;
+  }
+
+&__content {
+  position: relative;
+  text-align: center;
+  padding: var(--hw-spacing-large) var(--hw-spacing-larger);
+
+  &:hover {
+    content: "";
+    width:100%;
+    height:100%;
+    background-color: var(--hw-color-opaque-black-7);
+    color: #444;
+    transition: transform 0.3s;
+
+    &::after {
+      content: "";
+      width:100%;
+      height:100%;
+      background-color:#fff;
+      opacity:1;
+    }
+  }
 }
 
 &__title {
-   margin-bottom: var(--hw-spacing-small);
-   transition: color 0.5s ease(0.165, 0.84, 0.44, 1);
- }
-
-&__sub-title {
-   margin-bottom: var(--hw-spacing-large);
+  margin-top: var(--hw-spacing-small);
+  margin-bottom: var(--hw-spacing-large);
  }
 
 &__text {
    margin-top: var(--hw-spacing-larger);
    margin-bottom: var(--hw-spacing-large);
  }
-
-&__hr {
-   border: 0;
-   background: var(--hw-color-gray);
-   height: 3px;
-   max-width: var(--hw-spacing);
-   margin-bottom: var(--hw-spacing-small);
- }
 }
+
+
+
+
+
+
