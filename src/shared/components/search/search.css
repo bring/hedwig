@@ -131,6 +131,8 @@
     &:hover, &:focus {
       color: var(--hw-color-gray-darkest);
       background-color: var(--hw-color-gray-lightest);
+      z-index: 1;
+      position: relative; /* To keep the outline on focus unobstructed */
       & .hw-search__suggestion-extra {
         color: var(--hw-color-gray-darkest);
       }
