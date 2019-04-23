@@ -11,13 +11,7 @@ const HWDatepicker = ({
    * Attach Pikaday if not on Mobile OS
    */
   function init() {
-    if (navigator.userAgent.match(/Android/i) ||
-      navigator.userAgent.match(/webOS/i) ||
-      navigator.userAgent.match(/iPhone/i) ||
-      navigator.userAgent.match(/iPad/i) ||
-      navigator.userAgent.match(/iPod/i) ||
-      navigator.userAgent.match(/BlackBerry/i)
-    ) {
+    if (navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i)) {
       SETTINGS.elements.forEach(element => {
         const _dateInput = [].slice.call(element.querySelectorAll("input"))[0];
         if (_dateInput) {
