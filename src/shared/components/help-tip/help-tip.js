@@ -36,10 +36,10 @@ const HWHelptip = ({
       if (window.innerWidth < 375) {
         alignPos = "CENTER";
       } else {
-        if(posFromLeft < 180){
+        if (posFromLeft < 180) {
           alignPos = posFromRight > 280 ? "LEFT" : "RIGHT";
         }
-        if(posFromRight < 180){
+        if (posFromRight < 180) {
           alignPos = posFromLeft > 280 ? "RIGHT" : "LEFT";
         }
       }

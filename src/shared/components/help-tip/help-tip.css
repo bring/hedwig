@@ -35,11 +35,12 @@
         }
         & .hw-help-tip__wrapper{
           position: relative;
+          display: inline-block;
           &::after{
             content: " ";
             visibility: hidden;
             position: absolute;
-            bottom: 17px;
+            bottom: 20px;
             right: 3px;
             border-width: 6px;
             border-style: solid;
@@ -58,7 +59,7 @@
           max-width: 300px;
           width: 300px;
           position: absolute;
-          bottom: 140%;
+          bottom: 128%;
           right: -140px;
           margin-left: -100px;
           text-align: left;
