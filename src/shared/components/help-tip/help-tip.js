@@ -30,15 +30,27 @@ const HWHelptip = ({
     // Loop through all helptip and initialise each
     SETTINGS.elements.forEach((helptip) => {
       const posFromLeft = helptip.getBoundingClientRect().right;
-      const posFromRight = posFromLeft - window.innerWidth;
+      const posFromRight = window.innerWidth - posFromLeft;
       const htContent = q(helptipContent, helptip);
-      console.info(posFromLeft, "SDFSD");
-      if (posFromLeft < 150 && helptip.parentElement.parentElement.classList.contains("hw-help-tip--left")) {
-        htContent.style["right"] = "-270px";
-      } else if (posFromRight > -100 || window.innerWidth < 400) {
-        htContent.style["right"] = (posFromRight + 13) + "px";
+      let alignPos = "";
+      if (window.innerWidth < 375) {
+        alignPos = "CENTER";
       } else {
-        htContent.removeAttribute("style");
+        if(posFromLeft < 180){
+          alignPos = posFromRight > 280 ? "LEFT" : "RIGHT";
+        }
+        if(posFromRight < 180){
+          alignPos = posFromLeft > 280 ? "RIGHT" : "LEFT";
+        }
+      }
+      switch(alignPos){
+        case "RIGHT": htContent.style["right"] = (-1 * posFromRight + 13) + "px";
+        break;
+        case "LEFT": htContent.style["right"] = "-270px";
+        break;
+        case "CENTER": htContent.style["right"] = (-1 * posFromRight + Math.max(Math.ceil((window.innerWidth - 300)/2), 1)) + "px";
+        break;
+        default: htContent.removeAttribute("style");
       }
     });
     return null;
