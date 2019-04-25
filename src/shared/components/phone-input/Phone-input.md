@@ -11,7 +11,7 @@ Not compatible with the native version of dropdown component
 <div class="hw-phone-input">
   <label class="hw-phone-input__label">Telefonnummer
     <div class="hw-phone-input__group">
-      <select data-hw-dropdown="numbers" data-hw-dropdown-small>
+      <select data-hw-dropdown="numbers2" data-hw-dropdown-small>
         <option data-hw-dropdown-placeholder="+47" value="1">+47 Norge</option>
         <option data-hw-dropdown-placeholder="+48" value="2">+48 Sverige</option>
         <option data-hw-dropdown-placeholder="+49" value="3">+49 Finland</option>
