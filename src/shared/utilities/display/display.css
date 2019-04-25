@@ -1,9 +1,3 @@
-.hw-display {
-  &-block {
-    display: block;
-  }
-
-  &-none {
-    display: none;
-  }
+.hw-display-none {
+  display: none;
 }
