@@ -20,6 +20,26 @@ var docsHtml = require('./config/docs-html');
 var bringHtml = require('./config/docs-html-bring');
 var postenHtml = require('./config/docs-html-posten');
 
+function prepareDocFile(file, fileSection){
+
+  var filename = file.split('/').pop();
+  var title = filename.split('.').shift();
+
+  /**
+   * Copy md files to docs
+   */
+
+  fs.createReadStream(file).pipe(
+    fs.createWriteStream(`docs/md/${fileSection}/` + filename)
+  );
+  return {
+    title,
+    path: title,
+    src: `md/${fileSection}/${filename}`
+  }
+}
+
+
 function build() {
   /**
    * Make directories if non existant
@@ -159,164 +179,31 @@ function build() {
               break;
       }
 
-      /**
-       * Check if the page is a Guideline
-       var title = filename.split('.').shift();
-      */
+      if(file.indexOf('guidelines') !== -1) {
+        guidelines.push(prepareDocFile(file, fileSection));
+        return;
+      }
 
-     if (file.indexOf('guidelines') !== -1) {
+      if(file.indexOf('components') !== -1) {
+        components.push(prepareDocFile(file, fileSection));
+        return;
+      }
 
-      var filename = file.split('/').pop();
-      var title = filename.split('.').shift();
+      if(file.indexOf('commonCombos') !== -1) {
+        commonCombos.push(prepareDocFile(file, fileSection));
+        return;
+      }
 
-      /**
-       * Copy md files to docs
-       */
+      if(file.indexOf('layout') !== -1) {
+        layout.push(prepareDocFile(file, fileSection));
+        return;
+      }
 
-      fs.createReadStream(file).pipe(
-        fs.createWriteStream(`docs/md/${fileSection}/` + filename)
-      );
+      if(file.indexOf('utilities') !== -1) {
+        utilities.push(prepareDocFile(file, fileSection));
+        return;
+      }
 
-      /**
-       * Find subsection
-       */
-
-      console.log(file);
-
-      /**
-       * Add page to a pages array
-       */
-      guidelines.push({
-        title: title,
-        path: title,
-        src: `md/${fileSection}/${filename}`,
-      });
-
-      return;
-    }
-
-    /**
-     * Check if the page is a component
-     var title = filename.split('.').shift();
-    */
-
-    if (file.indexOf('components') !== -1) {
-
-      var filename = file.split('/').pop();
-      var title = filename.split('.').shift();
-
-      /**
-       * Copy md files to docs
-       */
-
-      fs.createReadStream(file).pipe(
-        fs.createWriteStream(`docs/md/${fileSection}/` + filename)
-      );
-
-      /**
-       * Add components pages to the compoents array
-       */
-      components.push({
-        title: title,
-        path: title,
-        src: `md/${fileSection}/${filename}`,
-      });
-
-      return;
-    }
-
-    
-    /**
-     * Check if the page is a common combo
-     var title = filename.split('.').shift();
-    */
-
-    if (file.indexOf('commonCombos') !== -1) {
-
-      var filename = file.split('/').pop();
-      var title = filename.split('.').shift();
-
-      /**
-       * Copy md files to docs
-       */
-
-      fs.createReadStream(file).pipe(
-        fs.createWriteStream(`docs/md/${fileSection}/` + filename)
-      );
-
-      /**
-       * Add components pages to the compoents array
-       */
-      commonCombos.push({
-        title: title,
-        path: title,
-        src: `md/${fileSection}/${filename}`,
-      });
-
-      return;
-    }
-
-
-
-    /**
-     * Check if the page is a layout helper
-     var title = filename.split('.').shift();
-    */
-
-    if (file.indexOf('layout') !== -1) {
-
-      var filename = file.split('/').pop();
-      var title = filename.split('.').shift();
-
-      /**
-       * Copy md files to docs
-       */
-
-      fs.createReadStream(file).pipe(
-        fs.createWriteStream(`docs/md/${fileSection}/` + filename)
-      );
-
-      /**
-       * Add page to a pages array
-       */
-      layout.push({
-        title: title,
-        path: title,
-        src: `md/${fileSection}/${filename}`,
-      });
-
-      return;
-    }
-
-    /**
-     * Check if the page is an utility
-     var title = filename.split('.').shift();
-    */
-
-    if (file.indexOf('utilities') !== -1) {
-
-      var filename = file.split('/').pop();
-      var title = filename.split('.').shift();
-
-      /**
-       * Copy md files to docs
-       */
-
-      fs.createReadStream(file).pipe(
-        fs.createWriteStream(`docs/md/${fileSection}/` + filename)
-      );
-
-      /**
-       * Add page to a pages array
-       */
-      utilities.push({
-        title: title,
-        path: title,
-        src: `md/${fileSection}/${filename}`,
-      });
-
-      return;
-    }
 
     /**
      * Check if the page is React
