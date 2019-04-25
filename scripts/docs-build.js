@@ -367,7 +367,7 @@ function build() {
     * Make config for pages in root directory
     */
 
-    var path = title === 'Home' ? '/' : title;
+    var path = title === 'About' ? '/' : title;
     pages.push({
       path,
       src: `md/${fileSection}/${filename}`,
