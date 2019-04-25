@@ -122,7 +122,20 @@ Most components are tested in IE10, but IE9 is still yet to be tested.
 
 
 ## 📂 Application structure
-    ├── /build                      - Build folder. Contains minified assets. - auto generated
+    
+    ├── /assets
+    │   ├── /fonts
+    │   ├── /icons
+    │   └── /img
+    ├── /build                      - Build folder. Contains minified assets. - auto generated    
+    ├── /dist
+    │   ├── /icons                  - Service icons and Number icons
+    │   ├── bring.css               - Minified bring bundle
+    │   ├── hedwig-react.js         - React components
+    │   ├── icons.min.js            - Javascript snippet that loads the sprite on your page, minified
+    │   ├── main.js                 – Minified javascript bundle for both posten and bring
+    │   ├── posten.css              - Minified bring bundle
+    │   └── svg-sprite.svg          - Svg sprite with all icons
     ├── /docs                       - Contains the style guide system (Catalog) - auto generated
     ├── /scripts                    - Contains all scripts for building and compiling
     │
