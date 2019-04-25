@@ -126,6 +126,7 @@ function build() {
       var pages;
       var layout;
       var utilities;
+      var react;
 
       switch (fileSection) {
           case 'posten':
@@ -419,7 +420,7 @@ function build() {
     ]),
   });
   bringMergedPages.push({
-    title: 'React Components',
+    title: 'React',
     pages: sortPages([
       ...sharedReact,
       ...bringReact,
