@@ -119,6 +119,21 @@
     &--transition .hw-dropdown__placeholder{
       display: block;
     }
+    &--native{ 
+      border-right: none;
+      margin: 0;
+      flex-basis: 100px;
+      background-position: calc(100% - 14px) 40%;
+      & ~ .hw-input{
+        padding: 12px 12px 12px 0;
+        border-left: none;
+        margin: 0;
+        transition: border-color 0.3s ease;
+      }
+      &:focus ~ .hw-input{
+        border-color: var(--hw-color-gray-darker);
+      }
+    }
   }
 
   & .hw-input {
