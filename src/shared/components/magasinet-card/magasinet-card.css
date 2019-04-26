@@ -3,16 +3,14 @@
  */
 
 .hw-card-magasinet {
-  margin-bottom: var(--hw-spacing-large);
-  border: 3px solid var(--hw-color-gray-light);
+  border: 3px solid var(--hw-color-gray-lighter);
     background: var(--hw-color-white);
+    display: block;
 
-  &__link {
     &:hover:after {
       opacity: 0.8;
       background-color: #00000;
     }
-  }
 
   &__icon {
     width: 72px;
@@ -22,7 +20,7 @@
 &__content {
   position: relative;
   text-align: center;
-  padding: var(--hw-spacing-large) var(--hw-spacing-larger);
+  padding: var(--hw-spacing-large) var(--hw-spacing);
 
   &:hover {
     content: "";
@@ -43,18 +41,21 @@
 }
 
 &__title {
-  margin-top: var(--hw-spacing-small);
+  margin-top: var(--hw-spacing-smaller);
   margin-bottom: var(--hw-spacing-large);
  }
 
 &__text {
-   margin-top: var(--hw-spacing-larger);
-   margin-bottom: var(--hw-spacing-large);
+   margin: var(--hw-spacing-large) 0;
  }
+
+&__media {
+  height: auto;
+  width: 100%;
+  object-fit:cover;
+  display: block;
 }
-
-
-
+}
 
 
 
