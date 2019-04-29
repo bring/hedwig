@@ -9,7 +9,7 @@ Not compatible with the native version of dropdown component
 
 ```html
 <div class="hw-phone-input">
-  <label class="hw-phone-input__label">Telefonnummer
+  <fieldset class="hw-phone-input__label">Telefonnummer
     <div class="hw-phone-input__group">
       <select data-hw-dropdown="numbers2" data-hw-dropdown-small>
         <option data-hw-dropdown-placeholder="+47" value="1">+47 Norge</option>
