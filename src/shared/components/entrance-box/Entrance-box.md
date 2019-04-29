@@ -10,8 +10,8 @@ Styling for boxes.
 
 ```html|span-3
   <a href="#" class="hw-entrance-box">
-    <div class="hw-entrance-box__media">
-      <div class="hw-entrance-box__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+    <div>
+      <img class="hw-entrance-box__media" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
     </div>
     <div class="hw-entrance-box__body">
       <div>
@@ -29,8 +29,8 @@ Styling for boxes.
   <div class="hw-grid">
     <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-entrance-box">
-        <div class="hw-entrance-box__media">
-          <div class="hw-entrance-box__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+        <div>
+          <img class="hw-entrance-box__media" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
         </div>
         <div class="hw-entrance-box__body">
           <div>
@@ -44,8 +44,8 @@ Styling for boxes.
     </div><!--
  --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-entrance-box">
-        <div class="hw-entrance-box__media">
-          <div class="hw-entrance-box__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+        <div>
+          <img class="hw-entrance-box__media" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
         </div>
         <div class="hw-entrance-box__body">
           <div>
@@ -59,8 +59,8 @@ Styling for boxes.
     </div><!--
  --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-entrance-box">
-        <div class="hw-entrance-box__media">
-          <div class="hw-entrance-box__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+        <div>
+          <img class="hw-entrance-box__media" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
         </div>
         <div class="hw-entrance-box__body">
           <div>
