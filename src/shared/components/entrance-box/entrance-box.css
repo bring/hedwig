@@ -52,9 +52,16 @@
    */
 
   &__media {
-    height: auto;
+    overflow: hidden;
+    height: 300px;
+    flex-grow: 1;
+  }
+
+  &__media-inner {
     width: 100%;
-    object-fit:cover;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
   }
 
   &__body {
