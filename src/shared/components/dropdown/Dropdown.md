@@ -105,6 +105,12 @@ Use the browser native select function
   </select>
 </label>
 ```
+```hint
+For mobile and tablet, native mode will be enabled automatically
+```
+
+
+
 
 ### With disabled option
 Will make one option disabled, to use as a placeholder value or instruction to the end user.
