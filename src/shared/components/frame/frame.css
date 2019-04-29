@@ -9,6 +9,7 @@
 .hw-frame__item {
   flex-grow: 1;
   flex-basis: 0;
+  -ms-flex-preferred-size: auto;
 
   &--bg-primary {
     background-color: var(--hw-color-primary);
