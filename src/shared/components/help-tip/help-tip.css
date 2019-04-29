@@ -53,16 +53,17 @@
           visibility: hidden;
           color: var(--hw-color-gray-lightest);
           background-color: var(--hw-color-gray-darkest);
-          padding: var(--hw-spacing-smaller);
+          padding: var(--hw-spacing-smallest);
           font-family: var(--hw-font-primary-regular);
           font-size: var(--hw-font-size-small);
           max-width: 300px;
           width: 300px;
           position: absolute;
-          bottom: 128%;
+          bottom: 38px;
           right: -140px;
           margin-left: -100px;
           text-align: left;
+          box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-gray-darkest); /* Coverup outline chrome */
         }
     }
 

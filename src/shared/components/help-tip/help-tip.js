@@ -33,7 +33,7 @@ const HWHelptip = ({
       const posFromRight = window.innerWidth - posFromLeft;
       const htContent = q(helptipContent, helptip);
       let alignPos = "";
-      if (window.innerWidth < 375) {
+      if (window.innerWidth < 400) {
         alignPos = "CENTER";
       } else {
         if (posFromLeft < 180) {
@@ -44,7 +44,7 @@ const HWHelptip = ({
         }
       }
       switch(alignPos){
-        case "RIGHT": htContent.style["right"] = (-1 * posFromRight + 13) + "px";
+        case "RIGHT": htContent.style["right"] = (-1 * posFromRight + 23) + "px";
         break;
         case "LEFT": htContent.style["right"] = "-270px";
         break;
