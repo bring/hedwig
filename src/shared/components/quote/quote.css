@@ -12,17 +12,13 @@
   max-width: var(--hw-width-narrow);
 }
 
-.hw-quote__content {
-  margin-bottom: var(--hw-spacing);
-}
-
-.hw-quote__content::before {
+.hw-quote__content:not(:last-child):before {
   content: '\00AB';
   font-size: 1.2em;
   padding-right: 3px;
 }
 
-.hw-quote__content::after {
+.hw-quote__content:not(:last-child):after {
   content: '\00BB';
   font-size: 1.2em;
   padding-left: 3px;
@@ -32,4 +28,5 @@
   @extend .hw-text-uppercase;
   font-size: var(--hw-font-size-small);
   font-style: normal;
+  margin-top: var(--hw-spacing);
 }
