@@ -25,6 +25,7 @@
     line-height: 1.2;
     margin-top: var(--hw-spacing-smallest);
     text-align: left;
+    color: var(--hw-color-gray);
   }
 
   &__figcaption:not(:empty)::before {
