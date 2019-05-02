@@ -1,4 +1,4 @@
-## Card-Magasinet - Call to Action
+## Card 3 Call to Action
 
 Used on the home page
 
