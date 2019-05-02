@@ -95,6 +95,7 @@ function build() {
 
   const sharedComponents = []; // KEEP
   const sharedCommonCombos = [];
+  const sharedGettingStarted = [];
   const sharedGuidelines = [];
   const sharedPages = [];
   const sharedUtilities = [];
@@ -103,6 +104,7 @@ function build() {
 
   const bringComponents = [];
   const bringCommonCombos = [];
+  const bringGettingStarted = [];
   const bringGuidelines = [];
   const bringPages = [];
   const bringUtilities = [];
@@ -111,6 +113,7 @@ function build() {
 
   const postenComponents = [];
   const postenCommonCombos = [];
+  const postenGettingStarted = [];
   const postenGuidelines = [];
   const postenPages = [];
   const postenUtilities = [];
@@ -142,6 +145,7 @@ function build() {
       const fileSection = filePath[1]; // Will be shared, posten or bring
       var components;
       var commonCombos;
+      var gettingStarted;
       var guidelines;
       var pages;
       var layout;
@@ -152,6 +156,7 @@ function build() {
           case 'posten':
               components = postenComponents;
               commonCombos = postenCommonCombos;
+              gettingStarted = postenGettingStarted;
               guidelines = postenGuidelines;
               pages = postenPages;
               layout = postenLayout;
@@ -161,6 +166,7 @@ function build() {
           case 'bring':
               components = bringComponents;
               commonCombos = bringCommonCombos;
+              gettingStarted = bringGettingStarted;
               guidelines = bringGuidelines;
               pages = bringPages;
               layout = bringLayout;
@@ -171,6 +177,7 @@ function build() {
           case 'shared':
               components = sharedComponents;
               commonCombos = sharedCommonCombos;
+              gettingStarted = sharedGettingStarted;
               guidelines = sharedGuidelines;
               pages = sharedPages;
               layout = sharedLayout;
@@ -181,6 +188,11 @@ function build() {
 
       if(file.indexOf('guidelines') !== -1) {
         guidelines.push(prepareDocFile(file, fileSection));
+        return;
+      }
+
+      if(file.indexOf('gettingStarted') !== -1) {
+        gettingStarted.push(prepareDocFile(file, fileSection));
         return;
       }
 
@@ -272,6 +284,14 @@ function build() {
     ...bringPages,
   ];
   bringMergedPages.push({
+    title: 'Getting Started',
+    pages: sortPages([
+      ...sharedGettingStarted,
+      ...bringGettingStarted,
+    ]),
+  });
+
+  bringMergedPages.push({
     title: 'Guidelines',
     pages: sortPages([
       ...sharedGuidelines,
@@ -329,6 +349,14 @@ function build() {
     ...postenPages,
   ];
   postenMergedPages.push({
+    title: 'Getting Started',
+    pages: sortPages([
+      ...sharedGettingStarted,
+      ...postenGettingStarted,
+    ]),
+  });
+
+  postenMergedPages.push({
     title: 'Guidelines',
     pages: sortPages([
       ...sharedGuidelines,
@@ -342,6 +370,7 @@ function build() {
       ...bringLayout,
     ]),
   });
+
   postenMergedPages.push({
     title: 'Common Combos',
     pages: sortPages([
