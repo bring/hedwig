@@ -160,7 +160,7 @@ function build() {
               guidelines = postenGuidelines;
               pages = postenPages;
               layout = postenLayout;
-              utilities = postenUtilities;
+            //  utilities = postenUtilities;
               react = postenReact;
               break;
           case 'bring':
@@ -170,7 +170,7 @@ function build() {
               guidelines = bringGuidelines;
               pages = bringPages;
               layout = bringLayout;
-              utilities = bringUtilities;
+             // utilities = bringUtilities;
               react = bringReact;
               break;
           default:
@@ -181,7 +181,7 @@ function build() {
               guidelines = sharedGuidelines;
               pages = sharedPages;
               layout = sharedLayout;
-              utilities = sharedUtilities;
+             // utilities = sharedUtilities;
               react = sharedReact;
               break;
       }
@@ -211,10 +211,10 @@ function build() {
         return;
       }
 
-      if(file.indexOf('utilities') !== -1) {
-        utilities.push(prepareDocFile(file, fileSection));
-        return;
-      }
+      // if(file.indexOf('utilities') !== -1) {
+      //   utilities.push(prepareDocFile(file, fileSection));
+      //   return;
+      // }
 
 
     /**
@@ -319,13 +319,13 @@ function build() {
       ...bringComponents,
     ]),
   });
-  bringMergedPages.push({
-    title: 'Utilities',
-    pages: sortPages([
-      ...sharedUtilities,
-      ...bringUtilities,
-    ]),
-  });
+  // bringMergedPages.push({
+  //   title: 'Utilities',
+  //   pages: sortPages([
+  //     ...sharedUtilities,
+  //     ...bringUtilities,
+  //   ]),
+  // });
   bringMergedPages.push({
     title: 'React',
     pages: sortPages([
@@ -385,13 +385,13 @@ function build() {
       ...postenComponents,
     ]),
   });
-  postenMergedPages.push({
-    title: 'Utilities',
-    pages: sortPages([
-      ...sharedUtilities,
-      ...postenUtilities,
-    ]),
-  });
+  // postenMergedPages.push({
+  //   title: 'Utilities',
+  //   pages: sortPages([
+  //     ...sharedUtilities,
+  //     ...postenUtilities,
+  //   ]),
+  // });
   postenMergedPages.push({
     title: 'React',
     pages: sortPages([
