@@ -9,8 +9,7 @@ Used on the home page
 ### Cards in grid
 
 ```html|span-2
-   <a class="hw-card-magasinet hw-card-magasinet__link" href="https://www.bring.no/">
-    <div class="hw-card-magasinet__content">
+   <a class="hw-card-magasinet" href="https://www.bring.no/">
       <p class="hw-text-uppercase hw-color-gray hw-text-smaller">Nunc Et Aliqet</p>
       <h4 class="hw-card-magasinet__title">In rutrum dolor</h4>
       <svg class="hw-icon hw-card-magasinet__icon hw-color-gray-light">
@@ -20,11 +19,9 @@ Used on the home page
         Blandit sit amen. In volutpat scelerisque ipsum.
       </div>
       <hr class="hw-hr hw-hr--centered" />
-    </div>
    </a>
 
-   <a class="hw-card-magasinet hw-card-magasinet__link" href="https://www.bring.no/">
-    <div class="hw-card-magasinet__content">
+   <a class="hw-card-magasinet" href="https://www.bring.no/">
       <p class="hw-text-uppercase hw-color-gray hw-text-smaller">Nunc Et Aliqet</p>
       <h4 class="hw-card-magasinet__title">In rutrum dolor</h4>
       <img class="hw-card-magasinet__media" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
@@ -32,8 +29,5 @@ Used on the home page
         Blandit sit amen. In volutpat scelerisque ipsum.
       </div>
       <hr class="hw-hr hw-hr--centered" />
-    </div>
    </a>
 ```
-
-
