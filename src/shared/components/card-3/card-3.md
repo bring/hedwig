@@ -1,4 +1,4 @@
-## Card 3 Call to Action
+## Card 3
 
 Used on the home page
 
