@@ -1,0 +1,11 @@
+# Design - Work in progress
+
+## About
+
+Hedwig is Posten and Brings Front-End Style Guide.
+
+Posten and Bring must be uniform and clear in what we communicate. Design and profile are an important part of our identity, and therefore we have created a tool to make it a little easier for us who work in Posten and Bring.
+
+Our design system is a collection of reusable components that can be assembled together to build any number of applications. A unified design system is essential to building better and faster; better because a cohesive experience is more easily understood by our users, and faster because it gives us a common language to work with.
+
+[**Hedwig**](http://harrypotter.wikia.com/wiki/Hedwig) was also Harry Potter´s pet Owl
