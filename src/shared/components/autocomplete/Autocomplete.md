@@ -1,7 +1,7 @@
-# Autocomplete - WORK IN PORGRESS
+# Autocomplete - Only styling - WORK IN PROGRESS
 
 This component is meant to be used when searching up something with an API.
-Use your own javascript to toggle the active class, and to bind the selected value to the input field.
+Use your own javascript to toggle the active class, reset, and to bind the selected value to the input field.
 
 ```code
 [Base]           .hw-autocomplete
