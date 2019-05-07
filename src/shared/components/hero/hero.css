@@ -72,8 +72,10 @@
    */
 
    &--small {
+   @media (max-width: 939px){
     min-height: 35vh;
   }
+ }
 
   &--full {
     min-height: calc(100vh - var(--hw-navbar-height-mobile));
@@ -81,11 +83,8 @@
       min-height: calc(100vh - var(--hw-navbar-height-desktop));
     }
   }
-  
-}
 
-@media(--max-medium) {
-  .hw-hero { 
+  @media(--max-medium) {
     &__content {
       justify-content:center;
       align-items:center;
@@ -93,6 +92,3 @@
     }
   }
 }
-
-
-
