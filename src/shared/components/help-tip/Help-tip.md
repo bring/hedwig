@@ -1,8 +1,10 @@
 ## Help tip
 
-Show a question mark icon that shows a help text when clicked or hovered
+Show a text with an icon that shows a help text when clicked or hovered
 
-
+```hint
+The html code for this component needs an update. The previous version has been deprecated. Support for the previous format will be discontinued in Hedwig 11.
+```
 
 ```html
 <div class="hw-help-tip">
