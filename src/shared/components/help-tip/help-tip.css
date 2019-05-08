@@ -33,50 +33,98 @@
         & span{
           margin-right: 4px;
         }
+        & .hw-help-tip__wrapper{
+          position: relative;
+          display: inline-block;
+          &::after{
+            content: " ";
+            visibility: hidden;
+            position: absolute;
+            bottom: 20px;
+            right: 3px;
+            border-width: 6px;
+            border-style: solid;
+            border-color: var(--hw-color-gray-darkest) transparent transparent transparent;
+          }
+        }
+        & .hw-help-tip__content {
+          @extend .hw-text-less-line-height;
+          display: block;
+          visibility: hidden;
+          color: var(--hw-color-gray-lightest);
+          background-color: var(--hw-color-gray-darkest);
+          padding: var(--hw-spacing-smallest);
+          font-family: var(--hw-font-primary-regular);
+          font-size: var(--hw-font-size-small);
+          max-width: 300px;
+          width: 300px;
+          position: absolute;
+          bottom: 38px;
+          right: -140px;
+          margin-left: -100px;
+          text-align: left;
+          box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-gray-darkest); /* Coverup outline chrome */
+        }
     }
+    /* Old code deprecated - TO BE REMOVED  START */
+    &__content {
+      @extend .hw-text-less-line-height;
+      display: block;
+      visibility: hidden;
+      color: var(--hw-color-gray-lightest);
+      background-color: var(--hw-color-gray-darkest);
+      padding: var(--hw-spacing-smallest);
+      font-family: var(--hw-font-primary-regular);
+      font-size: var(--hw-font-size-small);
+      max-width: 300px;
+      width: 300px;
+      position: absolute;
+      bottom: 36px;
+      right: -140px;
+      margin-left: -100px;
+      text-align: left;
+      box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-gray-darkest); /* Coverup outline chrome */
 
+      &::after{
+        content: " ";
+        position: absolute;
+        bottom: -16px;
+        right: 50%;
+        margin-right: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: var(--hw-color-gray-darkest) transparent transparent transparent;
+      }
+    }
+    
     &__button:focus ~ &__content, &__button:hover ~ &__content {
+      visibility: visible;
+    }
+    /* Old code deprecated - TO BE REMOVED  END */
+
+    &__button:focus,
+    &__button:hover{
+      & .hw-help-tip__wrapper::after{
         visibility: visible;
+      }
+      & .hw-help-tip__content {
+        visibility: visible;
+        &::after{
+          display: none;
+        }
+      }
     }
 
     &__title{
       font-family: var(--hw-font-primary-bold);
       font-size: var(--hw-font-size-small);
     }
-    /* The placement of the content box is from right and is given in pixels as the width is fixed */
-    &__content {
-        @extend .hw-text-less-line-height;
-        display: block;
-        visibility: hidden;
-        color: var(--hw-color-gray-lightest);
-        background-color: var(--hw-color-gray-darkest);
-        padding: var(--hw-spacing-smaller);
-        font-family: var(--hw-font-primary-regular);
-        font-size: var(--hw-font-size-small);
-        max-width: 300px;
-        width: 300px;
-        position: absolute;
-        bottom: 120%;
-        right: -140px;
-        margin-left: -100px;
-
-        &::after{
-            content: " ";
-            position: absolute;
-            top: 100%;
-            right: 50%;
-            margin-right: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: var(--hw-color-gray-darkest) transparent transparent transparent;
-        }
-    }
 
   /* Not responsive */
-  &--left &__content {
+  &--left.hw-help-tip &__content {
     @extend %left;
   }
-  &--right &__content {
+  &--right.hw-help-tip &__content {
     @extend %right;
   }
 
