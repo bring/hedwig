@@ -4,10 +4,23 @@ Show a question mark icon that shows a help text when clicked or hovered
 
 
 
+```html
+<div class="hw-help-tip">
+  <button class="hw-help-tip__button">
+    <span>Some text in need of an explanation</span>
+    <span class="hw-help-tip__wrapper">
+      <i class="fas fa-question-circle"></i>
+      <div class="hw-help-tip__content">In need of help? Here is the answer</div>
+  </button>
+</div>
+```
 ```code
 <div class="hw-help-tip">
-  <button class="hw-help-tip__button"><span>Some text in need of an explanation</span>
-  <div class="hw-help-tip__content">In need of help? Here is the answer</div>
+  <button class="hw-help-tip__button">
+    <span>Some text in need of an explanation</span>
+    <span class="hw-help-tip__wrapper">
+      <i class="fas fa-question-circle"></i>
+      <div class="hw-help-tip__content">In need of help? Here is the answer</div>
   </button>
 </div>
 ```
@@ -42,7 +55,7 @@ Place the help bubble to the right, left or middle
 #### Middle
 Default
 ```html
-<div class="hw-help-tip hw-help-tip">
+<div class="hw-help-tip">
   <button class="hw-help-tip__button">
     <span>Some text in need of an explanation</span>
     <span class="hw-help-tip__wrapper">
@@ -55,7 +68,7 @@ Default
 Default with title
 ```html
 
-<div class="hw-help-tip hw-help-tip"> 
+<div class="hw-help-tip"> 
   <button class="hw-help-tip__button">
     <span>Some text in need of an explanation</span>
     <span class="hw-help-tip__wrapper">
@@ -68,7 +81,7 @@ Default with title
 
 Multiple after eachother
 ```html
-<div class="hw-help-tip hw-help-tip hw-help-tip--right">
+<div class="hw-help-tip hw-help-tip--right">
   <button class="hw-help-tip__button">
     <span>EDI</span>
     <span class="hw-help-tip__wrapper">
@@ -77,7 +90,7 @@ Multiple after eachother
     </span>
   </button>
 </div>
-<div class="hw-help-tip hw-help-tip hw-help-tip--right">
+<div class="hw-help-tip hw-help-tip--right">
   <button class="hw-help-tip__button">
     <span>API</span>
     <span class="hw-help-tip__wrapper">
@@ -86,7 +99,7 @@ Multiple after eachother
     </span>
   </button>
 </div>
-<div class="hw-help-tip hw-help-tip">
+<div class="hw-help-tip ">
   <button class="hw-help-tip__button">
     <span>TA-system</span>
     <span class="hw-help-tip__wrapper">
