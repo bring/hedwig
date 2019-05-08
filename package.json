@@ -1,6 +1,6 @@
 {
   "name": "@posten/hedwig",
-  "version": "10.3.14",
+  "version": "10.4.0",
   "publishConfig": {
     "access": "public"
   },
