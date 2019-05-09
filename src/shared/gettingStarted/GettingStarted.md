@@ -1,10 +1,10 @@
 ## For designers
 
-Hedwig is Posten and Brings Front-End Style Guide.
-
-Posten and Bring must be uniform and clear in what we communicate. Design and profile are an important part of our identity, and therefore we have created a tool to make it a little easier for us who work in Posten and Bring.
+Posten and Bring must be uniform and clear in what we communicate. Design and profile are an important part of our identity.
 
 Our design system is a collection of reusable components that can be assembled together to build any number of applications. A unified design system is essential to building better and faster; better because a cohesive experience is more easily understood by our users, and faster because it gives us a common language to work with.
+
+Add Hedwig Sketch Library [http://sketch.cloud](https://sketch.cloud)
 
 
 ## For developers
