@@ -18,13 +18,13 @@
     display: inline-block;
     margin-left: var(--hw-spacing-small);
     padding-bottom: 3px;
-    color: var(--hw-color-gray);
+    color: var(--hw-color-gray-dark);
     &--selected {
       /**
        * Border color will be set to transparent during runtime
        * This border is shown only if the hw-tab javascript is not running
        */
-      color: var(--hw-color-gray-darker);
+      color: var(--hw-color-gray-darkest);
       border-bottom: 3px solid var(--hw-color-primary);
     }
 
