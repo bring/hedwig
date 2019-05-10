@@ -5,7 +5,7 @@
  .hw-container {
   display: block;
   margin: 0 auto;
-  padding: 0 var(--hw-spacing-smaller);
+  padding: 0 var(--hw-spacing-small);
 }
 
 /* 720px - max-width: 590px */
