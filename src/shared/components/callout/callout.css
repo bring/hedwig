@@ -10,7 +10,7 @@
   padding: var(--hw-spacing);
   background-color: var(--hw-color-white);
 
-  @media (max-width: 939px) {
+  @media (--max-medium) {
     padding: var(--hw-spacing-smaller);
   }
 
