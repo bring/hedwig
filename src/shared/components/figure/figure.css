@@ -23,11 +23,7 @@
     line-height: 1.2;
     margin-top: var(--hw-spacing-smallest);
     text-align: left;
-    color: var(--hw-color-gray);
+    font-size: var(--hw-font-size-smaller);
+    color: var(--hw-color-gray-dark);
   }
-}
-
-figcaption {
-  font-size: var(--hw-font-size-smaller);
-  color: var(--hw-color-gray-dark);
 }
