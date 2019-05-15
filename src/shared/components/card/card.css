@@ -40,7 +40,6 @@
   &__media {
     overflow: hidden;
     height: 160px;
-    flex-grow: 1;
   }
 
   &__media-inner {
@@ -97,6 +96,7 @@
   &__date {
     color: var(--hw-color-white);
     font-size: var(--hw-font-size-lead);
+    margin-left: auto;
   }
 
   &__date svg {
