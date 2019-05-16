@@ -12,9 +12,10 @@ Styling for cards.
 ```html|span-3
   <a href="#" class="hw-card-2">
     <div class="hw-card-2__media">
-      <div class="hw-card-2__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+      <img class="hw-card-2__media-inner" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
     </div>
     <div class="hw-card-2__body">
+      <span class="hw-card-2__label">Card Label</span>
       <h3 class="hw-card-2__title">Card Title</h3>
       <hr class="hw-hr" />
       <div class="hw-card-2__text">
@@ -31,9 +32,10 @@ Styling for cards.
     <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card-2">
         <div class="hw-card-2__media">
-          <div class="hw-card-2__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+          <img class="hw-card-2__media-inner" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
         </div>
         <div class="hw-card-2__body">
+          <span class="hw-card-2__label">Card Label</span>
           <h3 class="hw-card-2__title">Card Title</h3>
           <hr class="hw-hr" />
           <div class="hw-card-2__text">
@@ -45,9 +47,10 @@ Styling for cards.
  --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card-2">
         <div class="hw-card-2__media">
-          <div class="hw-card-2__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+          <img class="hw-card-2__media-inner" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
         </div>
         <div class="hw-card-2__body">
+          <span class="hw-card-2__label">Card Label</span>
           <h3 class="hw-card-2__title">Card Title</h3>
           <hr class="hw-hr" />
           <div class="hw-card-2__text">
@@ -59,9 +62,10 @@ Styling for cards.
  --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card-2">
         <div class="hw-card-2__media">
-          <div class="hw-card-2__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+          <img class="hw-card-2__media-inner" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
         </div>
         <div class="hw-card-2__body">
+          <span class="hw-card-2__label">Card Label</span>
           <h3 class="hw-card-2__title">Card Title</h3>
           <hr class="hw-hr" />
           <div class="hw-card-2__text">
