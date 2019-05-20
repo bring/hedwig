@@ -61,7 +61,7 @@ Use your own javascript to toggle the active class, reset, and to bind the selec
         type="text"
         data-hw-autocomplete-input
         id="autcomplete"
-        class="hw-autocomplete__input hw-autocomplete__input--error"
+        class="hw-autocomplete__input hw-input--error"
         role=”combobox”
         aria-owns="suggestions"
         placeholder="Placeholder"
@@ -72,7 +72,7 @@ Use your own javascript to toggle the active class, reset, and to bind the selec
 
     </div>
 
-    <div class="hw-error-simple">No results found</div>
+    <div class="hw-error">No results found</div>
 
     <div id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
