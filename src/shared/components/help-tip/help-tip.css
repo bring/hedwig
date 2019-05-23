@@ -45,6 +45,8 @@
             border-width: 6px;
             border-style: solid;
             border-color: var(--hw-color-gray-darkest) transparent transparent transparent;
+            opacity: 0;
+            transition: visibility 0s ease-in-out 0.3s, opacity 0.3s ease-in-out;
           }
         }
         & .hw-help-tip__content {
@@ -52,8 +54,7 @@
           display: block;
           visibility: hidden;
           color: var(--hw-color-gray-lightest);
-          background-color: var(--hw-color-gray-darkest);
-          padding: var(--hw-spacing-smallest);
+          padding: var(--hw-spacing-smaller);
           font-family: var(--hw-font-primary-regular);
           font-size: var(--hw-font-size-small);
           max-width: 300px;
@@ -63,7 +64,11 @@
           right: -140px;
           margin-left: -100px;
           text-align: left;
-          box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-gray-darkest); /* Coverup outline chrome */
+          opacity: 0;
+          transition: visibility 0s ease-in-out 0.3s, background-color 0s ease-in-out 0.3s, box-shadow 0s ease-in-out 0.3s, opacity 0.3s ease-in-out;
+          &::after{
+            display: none;
+          }
         }
     }
     /* Old code deprecated - TO BE REMOVED  START */
@@ -71,8 +76,7 @@
       @extend .hw-text-less-line-height;
       display: block;
       visibility: hidden;
-      color: var(--hw-color-gray-lightest);
-      background-color: var(--hw-color-gray-darkest);
+      color: var(--hw-color-gray-lightest);      
       padding: var(--hw-spacing-smallest);
       font-family: var(--hw-font-primary-regular);
       font-size: var(--hw-font-size-small);
@@ -82,8 +86,7 @@
       bottom: 36px;
       right: -140px;
       margin-left: -100px;
-      text-align: left;
-      box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-gray-darkest); /* Coverup outline chrome */
+      text-align: left;      
 
       &::after{
         content: " ";
@@ -98,6 +101,8 @@
     }
     
     &__button:focus ~ &__content, &__button:hover ~ &__content {
+      background-color: var(--hw-color-gray-darkest);
+      box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-gray-darkest); /* Coverup outline chrome */
       visibility: visible;
     }
     /* Old code deprecated - TO BE REMOVED  END */
@@ -106,12 +111,15 @@
     &__button:hover{
       & .hw-help-tip__wrapper::after{
         visibility: visible;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
       }
       & .hw-help-tip__content {
+        background-color: var(--hw-color-gray-darkest);
+        box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-gray-darkest); /* Coverup outline chrome */
         visibility: visible;
-        &::after{
-          display: none;
-        }
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
       }
     }
 
