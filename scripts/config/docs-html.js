@@ -59,11 +59,11 @@ module.exports = `
     </head>
     <body>
       <nav class="hw-app-switcher">
-        <a class="hw-app-switcher__item" href="/bring.html#/Home">
+        <a class="hw-app-switcher__item" href="/bring.html#/">
           <img class="hw-app-switcher__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bring_logo.svg/1280px-Bring_logo.svg.png" alt="logo" />
           <img class="hw-app-switcher__owl" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/hedwig-logo.svg" alt="owl" />
         </a>
-        <a class="hw-app-switcher__item" href="/posten.html#/Home">
+        <a class="hw-app-switcher__item" href="/posten.html#/">
           <img class="hw-app-switcher__logo" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Posten-Norge-Logo.svg" alt="logo" />
           <img class="hw-app-switcher__owl" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/hedwig-logo.svg" alt="owl" />
         </a>
