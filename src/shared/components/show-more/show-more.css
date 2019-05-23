@@ -7,7 +7,6 @@
   cursor: pointer;
   position: relative;
   width: 100%;
-  font-size: var(--hw-font-size-small);
   border: 0;
   text-align: center;
 
@@ -43,6 +42,7 @@
 
   &__button {
     border: none;
+    font-size: var(--hw-font-size-small);
   }
 
   &__button::after {
