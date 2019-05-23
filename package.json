@@ -52,7 +52,7 @@
     "livereload": "live-reload --port 9091 docs/ dist/",
     "test": "jest",
     "start": "npm run docs:build & npm run server",
-    "start:staging": "npm run build && npm run cpdist && npm run server",
+    "start_staging": "npm run build && npm run cpdist && npm run server",
     "svg:min": "svgo -f ./assets/icons -o ./dist/icons",
     "svg:sprite": "node ./scripts/svg-sprite",
     "svg": "npm run svg:min && npm run svg:sprite",
