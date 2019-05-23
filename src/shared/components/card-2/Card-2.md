@@ -3,8 +3,8 @@
 Styling for cards.
 
 ```code
-[Base]           .hw-card-2
-
+[Base]    .hw-card-2
+[Tall]    .hw-card-2--tall
 ```
 
 ### Regular card
@@ -65,7 +65,7 @@ Styling for cards.
     </div><!--
  --><div class="hw-grid__item hw-large--one-quarter">
       <div class="hw-block hw-block--mb">
-        <a href="#" class="hw-card-2">
+        <a href="#" class="hw-card-2 hw-card-2--tall">
           <div class="hw-card-2__media">
             <div class="hw-card-2__media-inner" style="background-image: url(https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg)"></div>
           </div>

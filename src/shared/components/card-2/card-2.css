@@ -104,6 +104,9 @@
     &__media {
       height: 200px;
     }
+    &--tall &__media {
+      height: 250px;
+    }
     &__body:after {
       border-top: none;
     }
