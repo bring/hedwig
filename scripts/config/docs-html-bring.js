@@ -1,10 +1,15 @@
-const production = process.env.NODE_ENV === 'production';
+const nodeEnv = process.env.NODE_ENV;
 
 let reload = '<script src="//localhost:9091"></script>';
 let icons = '<script id="hw-icons" src="http://localhost:3001/icons.min.js"></script>';
 const pikaday = '<script src="https://cdn.jsdelivr.net/npm/pikaday@1.8.0/pikaday.min.js"></script>';
 
-if (production) {
+if (nodeEnv === 'staging') {
+  reload = '';
+  icons = '<script id="hw-icons" src="./icons.min.js"></script>';
+}
+
+if (nodeEnv === 'production') {
   reload = '';
   icons =
     '<script id="hw-icons" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/icons.min.js"></script>';
