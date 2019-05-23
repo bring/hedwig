@@ -57,7 +57,7 @@
     "svg:sprite": "node ./scripts/svg-sprite",
     "svg": "npm run svg:min && npm run svg:sprite",
     "concatcss": "node ./scripts/concatcss",
-    "cpdist": "ncp dist docs",
+    "cpdist": "ncp dist docs && ncp assets docs",
     "css:fix": "stylelint 'src/**/*.css' --fix",
     "cache:purge:jsdelivr": "npm run cache:purge:jsdelivr:svg && npm run cache:purge:jsdelivr:iconsjs && npm run cache:purge:jsdelivr:css:bring && npm run cache:purge:jsdelivr:css:posten && npm run cache:purge:jsdelivr:js && npm run cache:purge:jsdelivr:js:default",
     "cache:purge:jsdelivr:svg": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"/npm/@posten/hedwig@10/dist/svg-sprite.svg\",\"/npm/@posten/hedwig@latest/dist/svg-sprite.svg\"]}'",

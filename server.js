@@ -35,7 +35,7 @@ build.use((req, res, next) => {
  * Start build and assets folders
  */
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'staging') {
   build.use(express.static(`${__dirname}/assets`));
   build.use(express.static(`${__dirname}/dist`));
 
