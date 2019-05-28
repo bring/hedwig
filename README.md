@@ -67,6 +67,16 @@ http://localhost:3001/posten.css
 
 http://localhost:3001/main.js   
 ```
+
+## Staging
+The staging environment is setup in Heroku as a separate app. All the assets are copied to `docs` folder and referred from there in this branch.
+
+Pushing a new change will automatically deploy the app in Heroku.
+
+`setup_staging` task need to be run whenever the staging branch is reset. It copies the `scripts/Procfile` to the root folder. Commit and push the file in `staging` branch only.
+
+`master` branch shouldn't have a Procfile.
+
 ### Versioning
 Hedwig uses [semantic versioning](http://semver.org/) to make sure once a site starts using it, the CSS file won't suddenly change and break the site. The version number is located in `package.json`, and will be appended to the `.css` and `.js` files. Example - `bring-1.0.3.css`.
 

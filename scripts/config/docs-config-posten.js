@@ -2,15 +2,19 @@ let styles;
 let scripts;
 let logo;
 
-const production = process.env.NODE_ENV === 'production';
+const nodeEnv = process.env.NODE_ENV;
 
-if (production) {
+if (nodeEnv === 'production') {
   styles = [
     'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/fonts.css',
     'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/posten.css',
   ];
   scripts = ['https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/main.js'];
   logo = 'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/hedwig-logo.svg';
+} else if (nodeEnv === 'staging') {
+  styles = ['./fonts.css', './posten.css'];
+  scripts = ['./main.js'];
+  logo = './hedwig-logo.svg';
 } else {
   styles = ['http://localhost:3001/fonts.css', 'http://localhost:3001/posten.css'];
   scripts = ['http://localhost:3001/main.js'];
