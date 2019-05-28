@@ -154,6 +154,14 @@ const HWSearch = ({
     if(resetButton){
       resetButton.addEventListener('click', e => onReset(e, search));
     }
+    // Check if input is empty ( hasValue or not)
+    onInput({target:input}, search);
+    // Check if input is empty (and whether to allow placeholder texts to reappear)
+    if (input.value !== '') {
+      search.classList.add(dirtyClass);
+    } else {
+      search.classList.remove(dirtyClass);
+    }
   }
 
   function init() {
