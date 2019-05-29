@@ -1,3 +1,5 @@
-.hw-display-none {
+.hw-display-none, 
+.hw-display-none.hw-block,
+.hw-display-none.hw-flex {
   display: none;
 }
