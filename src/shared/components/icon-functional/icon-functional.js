@@ -43,6 +43,7 @@ library.add(far.faTimes);
 library.add(far.faUser);
 library.add(far.faWeightHanging);
 
+library.add(fas.faArrowAltToBottom);
 library.add(fas.faArrowsAltH);
 library.add(fas.faArrowSquareLeft);
 library.add(fas.faAt);

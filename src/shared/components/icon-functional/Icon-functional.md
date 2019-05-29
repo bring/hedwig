@@ -99,6 +99,7 @@ hw-color-gray-darker
 
 ```html
 <i class="fa-2x fa-fw fas fa-arrow-square-left"></i> arrow-square-left<br/><br/>
+<i class="fa-2x fa-fw fas fa-arrow-alt-to-bottom"></i> arrow-alt-to-bottom<br/><br/>
 <i class="fa-2x fa-fw fas fa-arrows-alt-h"></i> arrows-alt-h<br/><br/>
 <i class="fa-2x fa-fw fas fa-at"></i> at<br/><br/>
 <i class="fa-2x fa-fw fas fa-award"></i> award<br/><br/>
