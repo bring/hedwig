@@ -9,6 +9,7 @@ Used on the home page
 ### Cards in grid
 
 ```html|span-2
+<div class="hw-block hw-background-color-gray-lightest">
    <a class="hw-card-3" href="https://www.bring.no/">
       <p class="hw-text-uppercase hw-color-gray hw-text-smaller">Nunc Et Aliqet</p>
       <h4 class="hw-card-3__title">In rutrum dolor</h4>
@@ -20,7 +21,8 @@ Used on the home page
       </div>
       <hr class="hw-hr hw-hr--centered" />
    </a>
-
+</div>
+<div class="hw-block hw-background-color-gray-lightest">
    <a class="hw-card-3" href="https://www.bring.no/">
       <p class="hw-text-uppercase hw-color-gray hw-text-smaller">Nunc Et Aliqet</p>
       <h4 class="hw-card-3__title">In rutrum dolor</h4>
@@ -30,4 +32,5 @@ Used on the home page
       </div>
       <hr class="hw-hr hw-hr--centered" />
    </a>
+</div>
 ```
