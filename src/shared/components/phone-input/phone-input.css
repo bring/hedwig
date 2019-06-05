@@ -114,7 +114,7 @@
           display: block;
         }
       }
-      
+
       & .hw-dropdown__options {
         display: block;
       }
@@ -126,10 +126,10 @@
     &--transition .hw-dropdown__placeholder{
       display: block;
     }
-    &--native{ 
+    &--native{
       border-right: none;
       margin: 0;
-      flex-basis: 100px;
+      flex-basis: 120px;
       background-position: calc(100% - 14px) 40%;
       & ~ .hw-input{
         padding: 12px 12px 12px 0;

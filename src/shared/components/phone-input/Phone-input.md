@@ -28,6 +28,7 @@ This is because this is technically two form fields.
         <option data-hw-dropdown-placeholder="+483" value="8">+48 Sverige</option>
         <option data-hw-dropdown-placeholder="+49" value="10">+49 Finland</option>
         <option data-hw-dropdown-placeholder="+498" value="11">+498 USA</option>
+        <option data-hw-dropdown-placeholder="+4981" value="12">+4981 Narnia</option>
       </select>
       <input class="hw-input" type="tel" />
     </div>
@@ -53,6 +54,7 @@ This is because this is technically two form fields.
         <option data-hw-dropdown-placeholder="+483" value="8">+48 Sverige</option>
         <option data-hw-dropdown-placeholder="+49" value="10">+49 Finland</option>
         <option data-hw-dropdown-placeholder="+498" value="11">+498 USA</option>
+        <option data-hw-dropdown-placeholder="+4981" value="12">+4981 Narnia</option>
       </select>
       <input class="hw-input" type="tel" />
     </div>
