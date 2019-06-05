@@ -11,12 +11,14 @@ if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir);
 }
 
-/* Files that are to be concatenated to the end must be specified in the form a pattern here.
+/* 
+Files that are to be concatenated to the end must be specified in the form a pattern here.
 To learn more about glob pattern visit the following links
 https://www.npmjs.com/package/glob
 http://www.jedit.org/users-guide/globs.html
 and to test
-https://globster.xyz/*/
+https://globster.xyz/ 
+*/
 var impFiles = 'src/shared/base/display.css';
 
 
