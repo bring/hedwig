@@ -97,7 +97,7 @@
     "jest": "^23.6.0",
     "live-reload": "^1.1.0",
     "lodash": "^4.17.4",
-    "node-watch": "^0.5.2",
+    "node-watch": "^0.6.2",
     "np": "^3.0.4",
     "postcss-cli": "^6.1.2",
     "postcss-cssnext": "^2.11.0",
