@@ -554,6 +554,7 @@ On this page, only the first navbar is able to open the search, menu and login. 
         </svg>
       </a>
     </div>
+  </div>
 </header>
 ```
 
