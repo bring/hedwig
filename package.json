@@ -70,7 +70,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "sanitize.css": "^5.0.0",
+    "sanitize.css": "^10.0.0",
     "stickybits": "^3.5.7",
     "zenscroll": "^4.0.2"
   },
