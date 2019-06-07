@@ -16,7 +16,7 @@
     background: rgba(255, 255, 255, 0.95);
     overflow: hidden;
     z-index: 1;
-    width: 100%;
+    flex-grow: 1;
   }
 
   &__input, &__placeholder {
