@@ -71,7 +71,6 @@
   }
 
   & figcaption {
-    @extend .hw-figure__figcaption;
     @extend .hw-figure figcaption;
   }
 
