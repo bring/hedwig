@@ -19,7 +19,7 @@ function concat(input, output) {
     }
 
     // Then create new file
-    glob.sync(input).forEach(function(file) {
+    glob.sync(input,{nosort: true}).forEach(function(file) {
         fs.appendFileSync(output, fs.readFileSync(file, 'utf-8'));
     });
 }
