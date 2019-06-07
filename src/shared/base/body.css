@@ -9,6 +9,7 @@ html {
   color: var(--hw-color-gray-darker);
   line-height: 1.4;
   letter-spacing: -0.02em;
+  cursor: auto;
 }
 
 *,
