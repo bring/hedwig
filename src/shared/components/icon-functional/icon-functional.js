@@ -43,6 +43,7 @@ library.add(far.faTimes);
 library.add(far.faUser);
 library.add(far.faWeightHanging);
 
+library.add(fas.faArchive);
 library.add(fas.faArrowAltToBottom);
 library.add(fas.faArrowsAltH);
 library.add(fas.faArrowSquareLeft);
@@ -71,8 +72,10 @@ library.add(fas.faCommentsAlt);
 library.add(fas.faCreditCard);
 library.add(fas.faDesktop);
 library.add(fas.faDotCircle);
+library.add(fas.faEdit);
 library.add(fas.faEnvelope);
 library.add(fas.faEnvelopeOpen);
+library.add(fas.faExchangeAlt);
 library.add(fas.faExclamation);
 library.add(fas.faExclamationCircle);
 library.add(fas.faExclamationSquare);
