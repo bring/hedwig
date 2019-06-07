@@ -1,13 +1,13 @@
 .hw-grid {
   padding: 0;
   margin: 0;
-  margin-left: -var(--hw-spacing-small);
+  margin-left: calc(- var(--hw-spacing-small));
   list-style: none;
 }
 
 @media (--medium) {
   .hw-grid {
-    margin-left: -var(--hw-spacing);
+    margin-left: calc(- var(--hw-spacing));
   }
 }
 
@@ -76,7 +76,7 @@
  * Create grids with narrower gutters. Extends '.hw-grid'.
  */
 .hw-grid--narrow {
-  margin-left: -var(--hw-spacing-smaller);
+  margin-left: calc(- var(--hw-spacing-smaller));
 }
 
 .hw-grid--narrow > .hw-grid__item {
@@ -87,18 +87,18 @@
  * Create grids with wider gutters. Extends '.hw-grid'.
  */
 .hw-grid--wide {
-  margin-left: -var(--hw-spacing-small);
+  margin-left: calc(- var(--hw-spacing-small));
 }
 
 @media (--medium) {
   .hw-grid--wide {
-    margin-left: -var(--hw-spacing);
+    margin-left: calc(- var(--hw-spacing));
   }
 }
 
 @media (--xlarge) {
   .hw-grid--wide {
-    margin-left: -var(--hw-spacing-large);
+    margin-left: calc(- var(--hw-spacing-large));
   }
 }
 
