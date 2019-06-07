@@ -100,13 +100,13 @@
 
   &--mobile-full {
     @media (--max-medium){
-      @extend .hw-hero--full;
+      min-height: calc(100vh - var(--hw-navbar-height-mobile));
     }
   }
 
   &--desktop-full {
     @media (--large){
-      @extend .hw-hero--full;
+      min-height: calc(100vh - var(--hw-navbar-height-desktop));
     }
   }
 
