@@ -48,8 +48,8 @@ function concatPostenCss() {
  * Contatenating imp files at the end to the concatenated posten/bring files
  */
 function concatImpFiles() {
-  concat(`{tmp/bring_wo_impfiles.css,${impFiles}`, './tmp/bring.css');
-  concat(`{tmp/posten_wo_impfiles.css,${impFiles}`, './tmp/posten.css');
+  concat('{tmp/bring_wo_impfiles.css,' + impFiles + '}', './tmp/bring.css');
+  concat('{tmp/posten_wo_impfiles.css,' + impFiles + '}', './tmp/posten.css');
 }
 
 concatCss();

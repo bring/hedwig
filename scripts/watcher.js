@@ -13,12 +13,14 @@ const filter = require('./utilities/filter');
 const spawn = require('child_process').spawn;
 const concat = require('./utilities/concat');
 const fs = require('fs');
-/* Files that are to be concatenated to the end must be specified in the form a pattern here.
+/* 
+Files that are to be concatenated to the end must be specified in the form a pattern here.
 To learn more about glob pattern visit the following links
 https://www.npmjs.com/package/glob
 http://www.jedit.org/users-guide/globs.html
 and to test
-https://globster.xyz/*/
+https://globster.xyz/
+*/
 const impFiles = 'src/shared/base/display.css';
 
 /**
@@ -77,8 +79,8 @@ function concatPostenCss() {
  * Contatenating imp files at the end to the concatenated posten/bring files
  */
 function concatImpFiles() {
-  concat(`{tmp/bring_wo_impfiles.css,${impFiles}`, './tmp/bring.css');
-  concat(`{tmp/posten_wo_impfiles.css,${impFiles}`, './tmp/posten.css');
+  concat('{tmp/bring_wo_impfiles.css,' + impFiles + '}', './tmp/bring.css');
+  concat('{tmp/posten_wo_impfiles.css,' + impFiles + '}', './tmp/posten.css');
 }
 
 function startBringCssCompile() {
