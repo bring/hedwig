@@ -23,6 +23,7 @@
 
     &-label-menu, &-label-close {
       padding-right: 6px;
+      word-break: normal;
     }
   }
 }
