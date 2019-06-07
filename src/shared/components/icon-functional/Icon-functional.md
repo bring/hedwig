@@ -98,6 +98,7 @@ hw-color-gray-darker
 #### Solid icons - fas
 
 ```html
+<i class="fa-2x fa-fw fas fa-archive"></i> archive<br/><br/>
 <i class="fa-2x fa-fw fas fa-arrow-square-left"></i> arrow-square-left<br/><br/>
 <i class="fa-2x fa-fw fas fa-arrow-alt-to-bottom"></i> arrow-alt-to-bottom<br/><br/>
 <i class="fa-2x fa-fw fas fa-arrows-alt-h"></i> arrows-alt-h<br/><br/>
@@ -126,8 +127,10 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-credit-card"></i> credit-card<br/><br/>
 <i class="fa-2x fa-fw fas fa-desktop"></i> desktop<br/><br/>
 <i class="fa-2x fa-fw fas fa-dot-circle"></i> dot-circle<br/><br/>
+<i class="fa-2x fa-fw fas fa-edit"></i> edit<br/><br/>
 <i class="fa-2x fa-fw fas fa-envelope"></i> envelope<br/><br/>
 <i class="fa-2x fa-fw fas fa-envelope-open"></i> envelope-open<br/><br/>
+<i class="fa-2x fa-fw fas fa-exchange-alt"></i> exchange-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-exclamation"></i> exclamation<br/><br/>
 <i class="fa-2x fa-fw fas fa-exclamation-circle"></i> exclamation-circle<br/><br/>
 <i class="fa-2x fa-fw fas fa-exclamation-square"></i> fa-exclamation-square<br/><br/>
