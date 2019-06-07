@@ -18,12 +18,12 @@ function concatCss() {
 }
 
 function concatBringCss() {
-  concat('src/+(bring|shared)/**/*.css', './tmp/bring.css');
+  concat('{src/shared/**/*.css,src/bring/**/*.css}', './tmp/bring.css');
   console.log('🔨 Concatinated all Bring CSS...');
 }
 
 function concatPostenCss() {
-  concat('src/+(posten|shared)/**/*.css', './tmp/posten.css');
+  concat('{src/shared/**/*.css,src/posten/**/*.css}', './tmp/posten.css');
   console.log('🔨 Concatinated all Posten CSS...');
 }
 
