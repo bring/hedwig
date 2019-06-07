@@ -112,7 +112,7 @@
     "rollup-plugin-node-resolve": "^5.0.1",
     "rollup-plugin-uglify": "^6.0.2",
     "rollup-watch": "^4.3.1",
-    "stylelint": "^7.13.0",
+    "stylelint": "^10.0.1",
     "stylelint-config-standard": "^16.0.0",
     "svg2sprite": "^2.0.1",
     "svgo": "^0.7.2"
