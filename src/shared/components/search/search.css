@@ -31,6 +31,7 @@
     margin: 0;
     width: 100%;
     transition: outline 100ms;
+    background-color: transparent;
     border: 3px solid var(--hw-color-gray-light);
     border-radius: 0px;
     height: auto;
