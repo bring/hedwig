@@ -26,7 +26,7 @@
     }
   }
   &__arrow-mobile {
-    margin-right: 12px;
+    margin-right: 6px;
     @media (--large){
       display: none;
     }

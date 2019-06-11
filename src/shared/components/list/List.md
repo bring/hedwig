@@ -2,6 +2,18 @@
 
 Various list styles
 
+## Large List
+This is a list with lead style.
+```html
+<ul class="hw-list hw-list--large">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+```
+
+## List
+
 ```html
 <ul class="hw-list">
   <li>List item 1</li>
