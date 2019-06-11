@@ -2,11 +2,12 @@
 
 - Props:
   - title (string)
+  - href (string)
   - content (string)
 
 ### Usage Example
 
 ```
-<CtaCard title="Title Of your card" content="Her kan du skrive all teksten" />
+<CtaCard title="Title Of your card" href="https://www.bring.no" content="Her kan du skrive all teksten" />
 
 ```
