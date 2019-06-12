@@ -18,6 +18,7 @@
   cursor: pointer;
   outline: 1px solid transparent;
   margin-right: 3px;
+  word-break: normal;
 
   &:last-of-type {
     margin-right: 0;
