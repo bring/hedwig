@@ -36,7 +36,7 @@
     max-height: var(--hw-spacing-larger);
     border: 3px solid var(--hw-color-gray-light);
     background-color: var(--hw-color-white);
-    font-size: var(--hw-font-size-small);
+    font-size: inherit;
     cursor: pointer;
     transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
 
@@ -180,6 +180,8 @@
     border: 3px solid #c1c1c1;
     border-radius: 0;
     display: inline-block;
+    font-size: inherit;
+    color: inherit;
     width: 100%;
     background-color: white;
     -webkit-appearance: none;
