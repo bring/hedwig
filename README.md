@@ -141,6 +141,7 @@ Most components are tested in IE10, but IE9 is still yet to be tested.
     ├── /dist
     │   ├── /icons                  - Service icons and Number icons
     │   ├── bring.css               - Minified bring bundle
+    │   ├── examples.js             - Example javascript intended to run for the documentation
     │   ├── hedwig-react.js         - React components
     │   ├── icons.min.js            - Javascript snippet that loads the sprite on your page, minified
     │   ├── main.js                 – Minified javascript bundle for both posten and bring
