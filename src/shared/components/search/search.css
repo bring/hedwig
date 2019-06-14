@@ -140,6 +140,7 @@
     }
     @media (--large){
       padding-left: var(--hw-spacing);
+      padding-right: var(--hw-spacing);
     }
   }
 
