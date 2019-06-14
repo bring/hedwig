@@ -42,7 +42,7 @@
     "css:build:posten": "postcss tmp/posten.css --no-map --use postcss-cssnext postcss-extend cssnano -o ./dist/posten.css",
     "js:dev": "rollup -m inline -c --name \"hedwig\"",
     "js:build": "npm run js:build:main && npm run js:build:icons",
-    "js:build:main": "rollup -c --name \"hedwig\" --output.file dist/main.js",
+    "js:build:main": "rollup -c --name \"hedwig\"",
     "js:build:icons": "rollup -c rollup.config.icons.js",
     "js:build:react": "rollup -c rollup.config.react.js",
     "docs:build": "node ./scripts/docs-build",
