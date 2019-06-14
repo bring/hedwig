@@ -9,15 +9,15 @@ if (nodeEnv === 'production') {
     'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/fonts.css',
     'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/bring.css',
   ];
-  scripts = ['https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/main.js'];
+  scripts = ['https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/main.js', './examples.js'];
   logo = 'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/hedwig-logo.svg';
 } else if (nodeEnv === 'staging') {
   styles = ['./fonts.css', './bring.css'];
-  scripts = ['./main.js'];
+  scripts = ['./main.js', './examples.js'];
   logo = './hedwig-logo.svg';
 } else {
   styles = ['http://localhost:3001/fonts.css', 'http://localhost:3001/bring.css'];
-  scripts = ['http://localhost:3001/main.js'];
+  scripts = ['http://localhost:3001/main.js','http://localhost:3001/examples.js'];
   logo = 'http://localhost:3001/hedwig-logo.svg';
 }
 
