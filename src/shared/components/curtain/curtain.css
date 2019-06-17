@@ -8,6 +8,7 @@
     position: relative;
     border: 0;
     color: inherit;
+    background-color: transparent;
 
     &:hover,
     &:focus {

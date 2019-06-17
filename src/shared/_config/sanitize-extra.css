@@ -2,6 +2,3 @@
 input::-ms-clear {
   display: none;
 }
-button {
-  background-color: transparent;
-}

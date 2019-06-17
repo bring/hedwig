@@ -43,6 +43,8 @@
     border-top: 3px solid var(--hw-color-gray-lighter);
     font-size: var(--hw-font-size-small);
     text-align: left;
+    color: inherit;
+    background-color: transparent;
 
     &:hover,
     &:focus {
@@ -107,6 +109,7 @@
       width: 100%;
       border: 0;
       color: inherit;
+      background-color: transparent;
       transition: background-color 0.5s ease;
       &:active {
         background-color: var(--hw-color-opaque-black-10);

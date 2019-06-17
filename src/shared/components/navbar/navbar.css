@@ -109,7 +109,6 @@
     }
     &__item, &__menu-button, &__search-button {
       padding-left: var(--hw-spacing-small);
-      color: inherit;
     }
     &__logo-gray {
       height: 100%;
@@ -121,6 +120,8 @@
   &__item, &__search-button, &__menu-button
   {
     outline: 0;
+    color: inherit;
+    background-color: transparent;
     &:hover, &:focus {
       color: var(--hw-color-primary-dark);
     }
@@ -176,6 +177,8 @@
     line-height: 1;
     z-index: 401;
     height: var(--hw-navbar-height-mobile);
+    color: inherit;
+    background-color: transparent;
     @media (--large){
       position: absolute;
       color: var(--hw-color-white);
