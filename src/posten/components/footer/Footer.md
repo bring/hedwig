@@ -126,7 +126,7 @@
             <div class="hw-accordion__contents">
               <ul class="hw-accordion__link-items">
                 <li class="hw-accordion__link-item">                            
-                  <a class="hw-accordion__link"></a> 
+                  <a class="hw-accordion__link">Lorem</a> 
                 </li>
                 <li class="hw-accordion__link-item">
                   <a href="#" class="hw-accordion__link">Aliquam consequat</a>
@@ -151,7 +151,7 @@
             <div class="hw-accordion__contents">
               <ul class="hw-accordion__link-items">
                 <li class="hw-accordion__link-item">                            
-                  <a class="hw-accordion__link"></a> 
+                  <a class="hw-accordion__link">Ipsum</a> 
                 </li>
                 <li class="hw-accordion__link-item">
                   <a href="#" class="hw-accordion__link">Aliquam consequat</a>
@@ -176,7 +176,7 @@
             <div class="hw-accordion__contents">
               <ul class="hw-accordion__link-items">
                 <li class="hw-accordion__link-item">                            
-                  <a class="hw-accordion__link"></a> 
+                  <a class="hw-accordion__link">Lorem</a> 
                 </li>
                 <li class="hw-accordion__link-item">
                   <a href="#" class="hw-accordion__link">Aliquam consequat</a>
@@ -336,7 +336,7 @@
             <div class="hw-accordion__contents">
               <ul class="hw-accordion__link-items">
                 <li class="hw-accordion__link-item">                            
-                  <a class="hw-accordion__link"></a> 
+                  <a class="hw-accordion__link">Lorem</a> 
                 </li>
                 <li class="hw-accordion__link-item">
                   <a href="#" class="hw-accordion__link">Aliquam consequat</a>
@@ -361,7 +361,7 @@
             <div class="hw-accordion__contents">
               <ul class="hw-accordion__link-items">
                 <li class="hw-accordion__link-item">                            
-                  <a class="hw-accordion__link"></a> 
+                  <a class="hw-accordion__link">Ipsum</a> 
                 </li>
                 <li class="hw-accordion__link-item">
                   <a href="#" class="hw-accordion__link">Aliquam consequat</a>

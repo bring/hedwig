@@ -42,6 +42,8 @@
 
   &__button {
     border: none;
+    color: inherit;
+    background-color: transparent;
     font-size: var(--hw-font-size-small);
   }
 
