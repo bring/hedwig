@@ -7,6 +7,7 @@
     text-align: left;
     position: relative;
     border: 0;
+    color: inherit;
 
     &:hover,
     &:focus {

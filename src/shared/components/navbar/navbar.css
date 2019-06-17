@@ -109,6 +109,7 @@
     }
     &__item, &__menu-button, &__search-button {
       padding-left: var(--hw-spacing-small);
+      color: inherit;
     }
     &__logo-gray {
       height: 100%;

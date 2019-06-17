@@ -30,6 +30,7 @@
 
     &__button {
         border: 0;
+        color: inherit;
         & span{
           margin-right: 4px;
         }

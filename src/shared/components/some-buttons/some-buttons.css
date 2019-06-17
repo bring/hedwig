@@ -27,6 +27,7 @@
     border-radius: 50%;
     cursor: pointer;
     text-align: center;
+    color: inherit;
 
     &:last-of-type {
       margin-right: 0;
