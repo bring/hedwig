@@ -108,9 +108,13 @@
     background-color: var(--hw-color-gray-lighter);
     left: 0;
     right: 0;
+    li:first-child {
+      padding-top: var(--hw-spacing-smaller);
+    }
     @media (--large){
       top: calc(var(--hw-navbar-height-desktop) + 2px);
       background-color: var(--hw-color-white);
+      padding-top: 0;
     }
   }
 
