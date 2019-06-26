@@ -51,7 +51,7 @@
     "serve": "concurrently \"npm run server\" \"npm run livereload\"",
     "livereload": "live-reload --port 9091 docs/ dist/",
     "test": "jest",
-    "start": "npm run docs:build & cpexamples & npm run server",
+    "start": "npm run docs:build & npm run js:build & cpexamples & npm run server",
     "start_staging": "npm run build && npm run cpdist && npm run server",
     "setup_staging": "cp scripts/Procfile .",
     "svg:min": "svgo -f ./assets/icons -o ./dist/icons",
