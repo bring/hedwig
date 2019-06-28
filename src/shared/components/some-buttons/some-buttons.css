@@ -53,8 +53,8 @@
       &:hover,
       &:focus,
       &:active {
-        background-color: #3d5a98;
-        border-color: #3d5a98;
+        background-color: #1877F2;
+        border-color: #1877F2;
       }
     }
 
@@ -141,8 +141,8 @@
         &:hover,
         &:focus,
         &:active {
-          background-color: #3d5a98;
-          border-color: #3d5a98;
+          background-color: #1877F2;
+          border-color: #1877F2;
         }
       }
 
@@ -203,7 +203,7 @@
         &:hover,
         &:focus,
         &:active {
-          border-color: #3d5a98;
+          border-color: #1877F2;
         }
       }
 
