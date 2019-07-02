@@ -33,3 +33,7 @@ Default link styles
 ```html|span-6,dark
   <a href="#" class="hw-link hw-link--inverted">This is an inverted link</a>
 ```
+
+```html|span-6
+  <a href="#" class="hw-link hw-link--no-underline">This is a link without an underline until hovered</a>
+```
