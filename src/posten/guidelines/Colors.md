@@ -7,7 +7,7 @@ span: 1
 ```
 
 ```color
-value: '#cd291f'
+value: '#980000'
 name: 'Primary dark'
 span: 1
 ```
