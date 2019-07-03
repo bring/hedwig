@@ -8,7 +8,7 @@
    */
 
   --hw-color-primary: #7bc144;
-  --hw-color-primary-dark: #4ca200;
+  --hw-color-primary-dark: #00643a;
   --hw-color-primary-darker: #233813;
   --hw-color-primary-light: #b7dd98;
   --hw-color-primary-lighter: #d8ecc9;
@@ -23,7 +23,7 @@
     */
 
   --hw-color-link-underline: rgb(123, 193, 68, 0.50);
-  --hw-color-link: #377500;
+  --hw-color-link: #00643a;
   --hw-color-link-hover: #000;
   --hw-color-link-underline-hover: #000;
 
