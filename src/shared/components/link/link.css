@@ -46,4 +46,11 @@
   &--big {
     font-size: var(--hw-font-size-h3);
   }
+
+  &--no-underline {
+    border-bottom-width: 0px;
+    &:hover {
+      border-bottom-width: 2px;
+    }
+  }
 }
