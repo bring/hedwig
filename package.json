@@ -71,13 +71,14 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "npm": "^6.8.0",
     "sanitize.css": "^10.0.0",
     "stickybits": "^3.5.7",
     "zenscroll": "^4.0.2"
   },
   "engines": {
-    "node": "8.9.0",
-    "npm": "6.5.0"
+    "node": "10.16.0",
+    "npm": "6.9.0"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
