@@ -33,7 +33,7 @@
   }
 
   &:hover {
-    color: var(--hw-color-primary-dark);
+    color: var(--hw-color-primary);
   }
 
   /**
