@@ -12,7 +12,7 @@
   transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    border-color: var(--hw-color-gray-darker);
+    border-color: var(--hw-color-primary);
   }
 
   /**
