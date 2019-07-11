@@ -147,7 +147,7 @@
   }
 
   &--outline {
-    border: 3px solid var(--hw-color-gray);
+    border: 3px solid var(--hw-color-gray-light);
     background: none;
     color: var(--hw-color-gray-darker);
     fill: var(--hw-color-gray);
