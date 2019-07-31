@@ -46,7 +46,7 @@
 
     &:hover,
     &:focus {
-      color: var(--hw-color-primary-dark);
+      color: var(--hw-color-primary);
       outline: 0;
     }
   }
