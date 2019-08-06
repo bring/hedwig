@@ -111,7 +111,7 @@
    * Modifiers
    */
 
-  &--dark .hw-card__body {
+  &--dark {
     background: var(--hw-color-gray-darkest);
   }
 
