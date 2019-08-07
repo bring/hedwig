@@ -16,3 +16,13 @@
   }
  }
 
+@media print {
+  .hw-desktop-only,
+  .hw-mobile-only,
+  .hw-screen-only { display: none; }
+}
+
+@media screen {
+  .hw-print-only { display: none; }
+}
+
