@@ -1,7 +1,7 @@
 ## Primary
 
 ```color
-value: '#562022'
+value: '#4A1011'
 name: 'Primary darker'
 span: 1
 ```
@@ -19,13 +19,13 @@ span: 1
 ```
 
 ```color
-value: '#f98c87'
+value: '#FF8A5F'
 name: 'Primary light'
 span: 1
 ```
 
 ```color
-value: '#fec4c2'
+value: '#FFF5F0'
 name: 'Primary lighter'
 span: 1
 ```
