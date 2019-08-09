@@ -9,9 +9,9 @@
 
   --hw-color-primary: #e32d22;
   --hw-color-primary-dark: #980000;
-  --hw-color-primary-darker: #4A1011;
-  --hw-color-primary-light: #FF8A5F;
-  --hw-color-primary-lighter: #FFF5F0;
+  --hw-color-primary-darker: #562022;
+  --hw-color-primary-light: #f98c87;
+  --hw-color-primary-lighter: #fec4c2;
 
   /**
   * Opaque
@@ -23,7 +23,7 @@
     */
 
   --hw-color-link: #980000;
-  --hw-color-link-underline: rgba(227, 45, 34, 0.25);
+  --hw-color-link-underline: var(--hw-color-primary-light);
   --hw-color-link-hover: #000;
   --hw-color-link-underline-hover: #000;
 

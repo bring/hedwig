@@ -1,0 +1,17 @@
+@media print {
+  nav,
+  .hw-navbar,
+  .hw-footer__desktop,
+  .hw-footer__mobile,
+  .hw-button { display: none; }
+
+  .hw-list,
+  .hw-wysiwyg ol,
+  .hw-wysiwyg ul { list-style: disc; }
+
+  .hw-list li::before,
+  .hw-wysiwyg ol li::before,
+  .hw-wysiwyg ul li::before { display: none; }
+
+  .hw-accordion__item { height: auto !important; }
+}

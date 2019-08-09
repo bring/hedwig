@@ -10,7 +10,7 @@
 var fs = require('fs'),
     glob = require('glob');
 
-function concat(input, output, ignorePattern='') {
+function concat(input, output, ignorePattern='', sort=false) {
     // First delete old file
     if (fs.existsSync(output)) {
       fs.unlinkSync(output, function(err){
@@ -19,7 +19,7 @@ function concat(input, output, ignorePattern='') {
     }
 
     // Then create new file
-    glob.sync(input, {ignore: ignorePattern, nosort: true}).forEach(function(file) {
+    glob.sync(input, {ignore: ignorePattern, nosort: sort}).forEach(function(file) {
         fs.appendFileSync(output, fs.readFileSync(file, 'utf-8'));
     });
 }

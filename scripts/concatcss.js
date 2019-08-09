@@ -11,28 +11,26 @@ if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir);
 }
 
-/* 
-Files that are to be concatenated to the end must be specified in the form a pattern here.
+/* Files that are to be concatenated to the end must be specified in the form a pattern here.
 To learn more about glob pattern visit the following links
 https://www.npmjs.com/package/glob
 http://www.jedit.org/users-guide/globs.html
 and to test
-https://globster.xyz/ 
-*/
+https://globster.xyz/*/
 var impFiles = 'src/shared/base/display.css';
 
 
 function concatCss() {
   concatBringCss();
   concatPostenCss();
-  concatImpFiles();
+  concatImp();
 }
 
 /**
  * Contatenating all files except important files for bring
  */
 function concatBringCss() {
-  concat('{src/shared/**/*.css,src/bring/**/*.css}', './tmp/bring_wo_impfiles.css', impFiles);
+  concat('src/+(bring|shared)/**/*.css', './tmp/brings.css', impFiles);
   console.log('🔨 Concatinated all Bring CSS...');
 }
 
@@ -40,16 +38,16 @@ function concatBringCss() {
  * Contatenating all files except important files for posten
  */
 function concatPostenCss() {
-  concat('{src/shared/**/*.css,src/posten/**/*.css}', './tmp/posten_wo_impfiles.css', impFiles);
+  concat('src/+(posten|shared)/**/*.css', './tmp/postens.css', impFiles);
   console.log('🔨 Concatinated all Posten CSS...');
 }
 
 /**
  * Contatenating imp files at the end to the concatenated posten/bring files
  */
-function concatImpFiles() {
-  concat('{tmp/bring_wo_impfiles.css,' + impFiles + '}', './tmp/bring.css');
-  concat('{tmp/posten_wo_impfiles.css,' + impFiles + '}', './tmp/posten.css');
+function concatImp() {
+  concat('{tmp/brings,src/shared/base/display}.css', './tmp/bring.css', '', true);
+  concat('{tmp/postens,src/shared/base/display}.css', './tmp/posten.css', '', true);
 }
 
 concatCss();
