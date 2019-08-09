@@ -88,13 +88,13 @@
 
   &--mobile-small {
     @media (--max-medium){
-      @extend .hw-hero--small;
+      /* @extend .hw-hero--small; -- Extending at-rules cannot occur within unnamed rules */
     }
   }
 
   &--desktop-small {
     @media (--large){
-      @extend .hw-hero--small;
+      /* @extend .hw-hero--small; -- Extending at-rules cannot occur within unnamed rules */
     }
   }
 
