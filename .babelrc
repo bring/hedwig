@@ -6,7 +6,7 @@
   "plugins": [],
   "env": {
     "test": {
-      "presets": ["preset-env"]
+      "presets": ["@babel/preset-env"]
     }
   }
 }
