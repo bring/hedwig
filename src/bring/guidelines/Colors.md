@@ -1,27 +1,27 @@
 ## Primary
 
 ```color
-value: '#233813'
+value: '#002F19'
 name: 'Primary darker'
 span: 1
 ```
 ```color
-value: '#00643a'
+value: '#00643A'
 name: 'Primary dark'
 span: 1
 ```
 ```color
-value: '#7bc144'
+value: '#47A51D'
 name: 'Primary'
 span: 1
 ```
 ```color
-value: '#b7dd98'
+value: '#C8DC8C'
 name: 'Primary light'
 span: 1
 ```
 ```color
-value: '#d8ecc9'
+value: '#F1F7E9'
 name: 'Primary lighter'
 span: 1
 ```
