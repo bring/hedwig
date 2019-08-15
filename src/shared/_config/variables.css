@@ -1,4 +1,32 @@
 /**
+ * Media queries, should be outside the :root
+ */
+
+ @custom-media --small (min-width: 460px);
+ @custom-media --medium (min-width: 720px);
+ @custom-media --large (min-width: 940px);
+ @custom-media --xlarge (min-width: 1200px);
+
+ /* Used for min max settings */
+
+ @custom-media --only-base (min-width: 0em) and (max-width: 459px);
+ @custom-media --only-small (min-width: 460px) and (max-width: 719px);
+ @custom-media --only-medium (min-width: 720px) and (max-width: 939px);
+ @custom-media --only-large (min-width: 940px) and (max-width: 1199px);
+ @custom-media --only-xlarge (min-width: 1200px);
+
+ /* Max values */
+ @custom-media --max-medium (max-width: 939px);
+ @custom-media --max-large (max-width: 1199px);
+
+ /* For high resolution mobiles */
+ @custom-media --high-res-mobile (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 939px) ;
+
+  /* For print and/or screen */
+  @custom-media --print print;
+  @custom-media --screen screen;
+
+ /**
  * Variables - Shared
  */
 
@@ -98,30 +126,6 @@
    * Breakpoints
    * em = 16px
    */
-
-  @custom-media --small (min-width: 460px);
-  @custom-media --medium (min-width: 720px);
-  @custom-media --large (min-width: 940px);
-  @custom-media --xlarge (min-width: 1200px);
-
-  /* Used for min max settings */
-
-  @custom-media --only-base (min-width: 0em) and (max-width: 459px);
-  @custom-media --only-small (min-width: 460px) and (max-width: 719px);
-  @custom-media --only-medium (min-width: 720px) and (max-width: 939px);
-  @custom-media --only-large (min-width: 940px) and (max-width: 1199px);
-  @custom-media --only-xlarge (min-width: 1200px);
-
-  /* Max values */
-  @custom-media --max-medium (max-width: 939px);
-  @custom-media --max-large (max-width: 1199px);
-
-  /* For high resolution mobiles */
-  @custom-media --high-res-mobile (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 939px) ;
-
-  /* For print and/or screen */
-  @custom-media --print print;
-  @custom-media --screen screen;
 
   /* Navbar heights */
   --hw-navbar-height-mobile: 54px;
