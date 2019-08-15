@@ -3,6 +3,7 @@
  */
 
 :root {
+
   /**
    * Spacing
    * NOTE: This is in PX because we want them to specific.
@@ -22,18 +23,20 @@
    */
 
   --hw-color-gray-lightest: #f2f2f2;
-  --hw-color-gray-lighter: #e6e6e6;
-  --hw-color-gray-light: #c1c1c1;
-  --hw-color-gray: #888;
-  --hw-color-gray-dark: #666;
-  --hw-color-gray-darker: #444;
-  --hw-color-gray-darkest: #222;
+  --hw-color-gray-lighter: #E6E6E6;
+  --hw-color-gray-light: #C1C1C1;
+  --hw-color-gray: #888888;
+  --hw-color-gray-dark: #666666;
+  --hw-color-gray-darker: #444444;
+  --hw-color-gray-darkest: #222222;
+
   --hw-color-yellow: #fdbb2f;
   --hw-color-yellow-darker: #f5a623;
   --hw-color-green: #26b576;
   --hw-color-red: #e32d22;
-  --hw-color-white: #fff;
-  --hw-color-black: #000;
+
+  --hw-color-white: #ffffff;
+  --hw-color-black: #000000;
   --hw-color-avocado: #26b576;
   --hw-color-secondary: #fdbb2f;
 
@@ -69,26 +72,29 @@
    * NOTE: To achieve fluid font sizes on h-tags we used the calculation described here:
    * https://css-tricks.com/snippets/css/fluid-typography/
    */
-  --hw-font-size-max-view-port: 1200;
-  --hw-font-size-min-view-port: 300;
-  --hw-font-size-max-h1-large: 54;
-  --hw-font-size-min-h1-large: 32;
-  --hw-font-size-max-h1: 44;
-  --hw-font-size-min-h1: 28;
-  --hw-font-size-max-h2: 35;
-  --hw-font-size-min-h2: 25;
-  --hw-font-size-max-h3: 28;
-  --hw-font-size-min-h3: 22;
-  --hw-font-size-max-h4: 22;
-  --hw-font-size-min-h4: 20;
-  --hw-font-size-max-h5: 18;
-  --hw-font-size-min-h5: 18;
-  --hw-font-size-h1-large: calc(var(--hw-font-size-min-h1-large) + (var(--hw-font-size-max-h1-large) - var(--hw-font-size-min-h1-large)) * ((100vw - var(--hw-font-size-min-view-port)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
-  --hw-font-size-h1: calc(var(--hw-font-size-min-h1) + (var(--hw-font-size-max-h1) - var(--hw-font-size-min-h1)) * ((100vw - var(--hw-font-size-min-view-port)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
-  --hw-font-size-h2: calc(var(--hw-font-size-min-h2) + (var(--hw-font-size-max-h2) - var(--hw-font-size-min-h2)) * ((100vw - var(--hw-font-size-min-view-port)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
-  --hw-font-size-h3: calc(var(--hw-font-size-min-h3) + (var(--hw-font-size-max-h3) - var(--hw-font-size-min-h3)) * ((100vw - var(--hw-font-size-min-view-port)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
-  --hw-font-size-h4: calc(var(--hw-font-size-min-h4) + (var(--hw-font-size-max-h4) - var(--hw-font-size-min-h4)) * ((100vw - var(--hw-font-size-min-view-port)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
-  --hw-font-size-h5: calc(var(--hw-font-size-min-h5) + (var(--hw-font-size-max-h5) - var(--hw-font-size-min-h5)) * ((100vw - var(--hw-font-size-min-view-port)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+
+   
+  --hw-font-size-max-view-port:1200;
+  --hw-font-size-min-view-port:300;
+  --hw-font-size-max-h1-large:54;
+  --hw-font-size-min-h1-large:32;
+  --hw-font-size-max-h1:44;
+  --hw-font-size-min-h1:28;
+  --hw-font-size-max-h2:35;
+  --hw-font-size-min-h2:25;
+  --hw-font-size-max-h3:28;
+  --hw-font-size-min-h3:22;
+  --hw-font-size-max-h4:22;
+  --hw-font-size-min-h4:20;
+  --hw-font-size-max-h5:18;
+  --hw-font-size-min-h5:18;
+
+  --hw-font-size-h1-large: calc(var(--hw-font-size-min-h1-large)px + (var(--hw-font-size-max-h1-large) - var(--hw-font-size-min-h1-large)) * ((100vw - var(--hw-font-size-min-view-port)px) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-h1: calc(var(--hw-font-size-min-h1)px + (var(--hw-font-size-max-h1) - var(--hw-font-size-min-h1)) * ((100vw - var(--hw-font-size-min-view-port)px) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-h2: calc(var(--hw-font-size-min-h2)px + (var(--hw-font-size-max-h2) - var(--hw-font-size-min-h2)) * ((100vw - var(--hw-font-size-min-view-port)px) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-h3: calc(var(--hw-font-size-min-h3)px + (var(--hw-font-size-max-h3) - var(--hw-font-size-min-h3)) * ((100vw - var(--hw-font-size-min-view-port)px) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-h4: calc(var(--hw-font-size-min-h4)px + (var(--hw-font-size-max-h4) - var(--hw-font-size-min-h4)) * ((100vw - var(--hw-font-size-min-view-port)px) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-h5: calc(var(--hw-font-size-min-h5)px + (var(--hw-font-size-max-h5) - var(--hw-font-size-min-h5)) * ((100vw - var(--hw-font-size-min-view-port)px) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-lead: 22px;
   --hw-font-size-p: 18px;
   --hw-font-size-small: 16px;
@@ -119,6 +125,7 @@
   /* For high resolution mobiles */
   @custom-media --high-res-mobile (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 939px) ;
 
+
   /* Navbar heights */
   --hw-navbar-height-mobile: 54px;
   --hw-navbar-height-desktop: 72px;
@@ -136,4 +143,9 @@
   --z-index--hero-search: 100;
   --z-index--modal: 400;
   --z-index--modal-foreground: 500;
+
+
+
 }
+
+

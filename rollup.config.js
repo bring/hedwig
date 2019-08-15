@@ -12,7 +12,7 @@ import { uglify } from 'rollup-plugin-uglify';
 export default [{
   input: {
     include: ['src/shared/utilities/js/polyfills/*.js', 'src/**/*.js'],
-    exclude: ['src/**/*.test.js', 'src/**/*.example.js'],
+    exclude: ['src/**/*.test.js','src/**/*.example.js'],
   },
   onwarn: (warning) => {
     // Skip certain warnings

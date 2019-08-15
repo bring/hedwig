@@ -48,8 +48,8 @@
       background: var(--hw-color-gray-lightest);
       position: absolute;
       padding: var(--hw-spacing-smallest);
-      right: calc( var(--hw-spacing-small) * -1);
-      top: calc( var(--hw-spacing-small) * -1);
+      right: calc(- var(--hw-spacing-small));
+      top: calc(- var(--hw-spacing-small));
     }
 
     &:hover {
