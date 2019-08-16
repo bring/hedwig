@@ -64,7 +64,7 @@
   @media (--xlarge) {
     h1,
     .hw-h1 {
-      font-size: var(--hw-font-size-max-h1)px;
+      font-size: var(--hw-font-size-max-h1-px);
     }
   }
 
@@ -74,7 +74,7 @@
 
   @media (--xlarge) {
     .hw-h1-large {
-      font-size: var(--hw-font-size-max-h1-large)px;
+      font-size: var(--hw-font-size-max-h1-large-px);
     }
   }
 
@@ -86,7 +86,7 @@
   @media (--xlarge) {
     h2,
     .hw-h2 {
-      font-size: var(--hw-font-size-max-h2)px;
+      font-size: var(--hw-font-size-max-h2-px);
     }
   }
 
@@ -98,7 +98,7 @@
   @media (--xlarge) {
     h3,
     .hw-h3 {
-      font-size: var(--hw-font-size-max-h3)px;
+      font-size: var(--hw-font-size-max-h3-px);
     }
   }
 
@@ -110,7 +110,7 @@
   @media (--xlarge) {
     h4,
     .hw-h4 {
-      font-size: var(--hw-font-size-max-h4)px;
+      font-size: var(--hw-font-size-max-h4-px);
     }
   }
 
@@ -122,7 +122,7 @@
   @media (--xlarge) {
     h5,
     .hw-h5 {
-      font-size: var(--hw-font-size-max-h5)px;
+      font-size: var(--hw-font-size-max-h5-px);
     }
   }
 
