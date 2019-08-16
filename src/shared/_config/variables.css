@@ -125,6 +125,9 @@
   /* For high resolution mobiles */
   @custom-media --high-res-mobile (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 939px) ;
 
+  /* For print and/or screen */
+  @custom-media --print print;
+  @custom-media --screen screen;
 
   /* Navbar heights */
   --hw-navbar-height-mobile: 54px;

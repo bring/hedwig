@@ -1,0 +1,15 @@
+@media print {
+  .hw-print-hidden { display: none; }
+  .hw-print-show-block { display: block; }
+  .hw-print-show-inline { display: inline; }
+  .hw-print-show-flex { display: flex; }
+  .hw-print-show-inline-block { display: inline-block; }
+
+  .hw-print-break-before { page-break-before: always; }
+  .hw-print-break-after { page-break-after: always; }
+
+  .hw-print-no-break {
+    page-break-before: avoid;
+    page-break-after: avoid;
+  }
+}
