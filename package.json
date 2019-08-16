@@ -36,7 +36,6 @@
     "css:dev": "npm run css:dev:bring & npm run css:dev:posten",
     "css:dev:bring": "postcss tmp/bring.css -o ./dist/bring.css -c postcss.config.js",
     "css:dev:posten": "postcss tmp/posten.css -o ./dist/posten.css -c postcss.config.js",
-    
     "css:build": "npm run css:build:bring && npm run css:build:posten",
     "css:build:test": "npm run css:build:bring:test & npm run css:build:posten:test",
     "css:build:bring": "postcss tmp/bring.css --no-map cssnano -o ./dist/bring.css -c postcss.config.js",
@@ -77,7 +76,7 @@
     "stickybits": "^3.6.6",
     "zenscroll": "^4.0.2"
   },
-  "browserslist": "last 2 versions, not ie 10, not ie_mob 10",
+  "browserslist": "last 2 versions, not dead, not op_mini all, ie 10",
   "engines": {
     "node": "10.16.0",
     "npm": "6.9.0"
