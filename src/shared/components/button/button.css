@@ -61,7 +61,7 @@
 
   &--mobile-full {
     @media (--max-medium){
-      @extend .hw-button--full;
+      /* @extend .hw-button--full; -- Extending at-rules cannot occur within unnamed rules */
     }
   }
 
