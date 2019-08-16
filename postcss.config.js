@@ -6,6 +6,7 @@ module.exports = {
     'postcss-preset-env',
     'postcss-nested',
     'postcss-extend',
+    'cssnano',
   ],
   plugins: [
     require('postcss-import'),
@@ -15,5 +16,6 @@ module.exports = {
     postcssPresetEnv({ 
       stage: 0, 
     }),
+    require('cssnano'),
   ],
 };
