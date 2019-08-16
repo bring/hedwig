@@ -50,7 +50,6 @@
       }
 
       &-standard {
-        transition: opacity 0.3s ease;
         visibility: visible;
         opacity: 1;
       }
@@ -60,7 +59,6 @@
         top: 0;
         left: 0;
         opacity: 0;
-        transition: opacity 0.3s ease;
       }
 
       &:hover {

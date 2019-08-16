@@ -46,7 +46,6 @@
     opacity: 1;
 
     &-standard {
-      transition: opacity 0.3s ease;
       visibility: visible;
       opacity: 1;
     }
@@ -58,7 +57,6 @@
       height: var(--hw-navbar-height-mobile);
       padding: 9px;
       opacity: 0;
-      transition: opacity 0.3s ease;
     }
 
     @media (--large) {
