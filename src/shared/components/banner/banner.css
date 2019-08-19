@@ -63,6 +63,7 @@
     opacity: 0.5;
     border: 0;
     cursor: pointer;
+    background: transparent;
 
     & svg {
       fill: var(--hw-color-black);
