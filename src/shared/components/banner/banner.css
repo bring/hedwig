@@ -57,9 +57,11 @@
   }
 
   &__trigger-close {
+    background-color: transparent;
     display: block;
     width: 100%;
     margin: 0 auto;
+    opacity: 0.5;
     border: 0;
     cursor: pointer;
 

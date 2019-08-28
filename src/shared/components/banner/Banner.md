@@ -20,14 +20,15 @@ Required:
         <i class="fas fa-chevron-down" data-fa-transform="down-2" title="Open banner information"></i>
       </button>
       <div class="hw-banner__contents">
-        <div class="hw-banner__trigger-close">
+        <button class="hw-banner__trigger-close">
+          <i class="fas fa-lg fa-chevron-up" title="Close banner information"></i>
+        </button>
         <div class="hw-banner__title" role="heading" aria-level="2">Hot! Hot! Hot!</div>
         <div class="hw-banner__time">
           <time>24.09.76</time>|<time>17:45</time>
         </div>
         <div class="hw-banner__subtitle">
           Asfalten på veiene smelter og bilene våre kjører seg fast i tjukk olje. Droneleveransene våre går som normalt.
-        </div>
         </div>
         <a href="#" class="hw-banner__read-more-link">Read more</a>
     </div>
@@ -45,14 +46,15 @@ Required:
         <i class="fas fa-chevron-down" data-fa-transform="down-2" title="Open banner information"></i>
       </button>
       <div class="hw-banner__contents">
-        <div class="hw-banner__trigger-close">
+        <button class="hw-banner__trigger-close">
+          <i class="fas fa-lg fa-chevron-up" title="Close banner information"></i>
+        </button>
         <div class="hw-banner__title" role="heading" aria-level="2">14 Meters of snow expected</div>
         <div class="hw-banner__time">
           <time>24.09.76</time>|<time>17:45</time>
         </div>
         <div class="hw-banner__subtitle">
           The blizzard is causing delays across the Oslo region.
-        </div>
         </div>
         <a href="#" class="hw-banner__read-more-link">Read more</a>
         <button class="hw-banner__read-more-button">
