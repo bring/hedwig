@@ -56,12 +56,12 @@
         </div>
       </div><div class="hw-grid__item hw-one-quarter">
         <div class="hw-block hw-block--mb-smallest">
-          <button class="hw-button hw-button--full hw-button--primary">
+          <button class="hw-button hw-button--full hw-button--outline">
             A button
           </button>
         </div>
         <div class="hw-block hw-block--mb-smallest">
-        <button class="hw-button hw-button--full hw-button--secondary">
+        <button class="hw-button hw-button--full hw-button--outline">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
       </div>
@@ -90,12 +90,12 @@
     <div class="hw-footer__mobile">
       <nav class="hw-footer__navigation">
         <div class="hw-block hw-block--mb-smallest">
-        <button class="hw-button hw-button--full hw-button--primary">
+        <button class="hw-button hw-button--full hw-button--outline">
           A button
         </button>
       </div>
       <div class="hw-block hw-block--mb-smallest">
-        <button class="hw-button hw-button--full hw-button--secondary">
+        <button class="hw-button hw-button--full hw-button--outline">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
       </div>
@@ -265,12 +265,12 @@
         </div>
       </div><div class="hw-grid__item hw-one-quarter">
         <div class="hw-block hw-block--mb-smallest">
-          <button class="hw-button hw-button--full hw-button--primary">
+          <button class="hw-button hw-button--full hw-button--outline">
             A button
           </button>
         </div>
         <div class="hw-block hw-block--mb-smallest">
-        <button class="hw-button hw-button--full hw-button--secondary">
+        <button class="hw-button hw-button--full hw-button--outline">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
       </div>
@@ -300,12 +300,12 @@
     <div class="hw-footer__mobile">
       <nav class="hw-footer__navigation">
         <div class="hw-block hw-block--mb-smallest">
-        <button class="hw-button hw-button--full hw-button--primary">
+        <button class="hw-button hw-button--full hw-button--outline">
           A button
         </button>
       </div>
       <div class="hw-block hw-block--mb-smallest">
-        <button class="hw-button hw-button--full hw-button--secondary">
+        <button class="hw-button hw-button--full hw-button--outline">
           <i class="fa-x fa-fw fas fa-globe"></i> English site
         </button>
       </div>
