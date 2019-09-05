@@ -10,14 +10,15 @@ Our design systems is based on a few number of spacings.
 plain: true
 noSource: true
 ---
-<div style="background: gray">
+<div class="hw-helpers-margin-highlighter">
 
-<p class="hw-block hw-block--bg-primary" style="margin-left: 6px;">--hw-spacing-smallest</p>
-<p class="hw-block hw-block--bg-primary" style="margin-left: 12px;">--hw-spacing-smaller</p>
-<p class="hw-block hw-block--bg-primary" style="margin-left: 18px;">--hw-spacing-small</p>
-<p class="hw-block hw-block--bg-primary" style="margin-left: 24px;">--hw-spacing</p>
-<p class="hw-block hw-block--bg-primary" style="margin-left: 36px;">--hw-spacing-large</p>
-<p class="hw-block hw-block--bg-primary" style="margin-left: 48px;">--hw-spacing-larger</p>
+<div class="hw-block " style="margin-left: 6px;"><p>--hw-spacing-smallest</p></div>
+<div class="hw-block" style="margin-left: 12px;"><p>--hw-spacing-smaller</p></div>
+<div class="hw-block" style="margin-left: 18px;"><p>--hw-spacing-small</p></div>
+<div class="hw-block" style="margin-left: 24px;"><p>--hw-spacing</p></div>
+<div class="hw-block" style="margin-left: 36px;"><p>--hw-spacing-large</p></div>
+<div class="hw-block" style="margin-left: 48px;"><p>--hw-spacing-larger</p></div>
+<div class="hw-block" style="margin-left: 72px;"><p>--hw-spacing-even-larger</p></div>
 
 </div>
 ```
@@ -29,4 +30,5 @@ noSource: true
 --hw-spacing: 24px;
 --hw-spacing-large: 36px;
 --hw-spacing-larger: 48px;
+--hw-spacing-even-larger: 72px;
 ```
