@@ -105,7 +105,7 @@
     list-style-type: none;
     padding-left: 0;
     width: 100%;
-    background-color: var(--hw-color-gray-lighter);
+    background-color: var(--hw-color-gray-lightest);
     left: 0;
     right: 0;
     li:first-child {
@@ -121,23 +121,30 @@
   }
 
   &__suggestion {
-    &:not(:first-of-type) .hw-search__suggestion-link .hw-search__suggestion-title {
-      border-top: 3px solid var(--hw-color-gray-lightest);
-    }
+    border-top: 3px solid var(--hw-color-opaque-black-7);
     &:last-of-type .hw-search__suggestion-link {
       padding-bottom: var(--hw-spacing-smaller);
     }
-    &:not(:last-of-type) .hw-search__suggestion-link:hover, &:not(:last-of-type) .hw-search__suggestion-link:focus {
-      box-shadow: 0 3px var(--hw-color-gray-lightest);
+    @media (--large){
+      border-top: none;
+      &:not(:first-of-type) .hw-search__suggestion-link .hw-search__suggestion-title {
+        border-top: 3px solid var(--hw-color-gray-lightest);
+      }
+      &:not(:last-of-type) .hw-search__suggestion-link:hover, &:not(:last-of-type) .hw-search__suggestion-link:focus, &:not(:last-of-type) .hw-search__suggestion-link:active {
+        box-shadow: 0 3px var(--hw-color-gray-lightest);
+      }
     }
   }
 
   &__suggestion-link {
     display: inline-block;
     width: 100%;
-    &:hover, &:focus {
+    transition: background-color 0.5s ease;
+    padding-left: var(--hw-spacing-tiny);
+    &:hover, &:focus, &:active {
       color: var(--hw-color-gray-darkest);
-      background-color: var(--hw-color-gray-lightest);
+      background-color: var(--hw-color-opaque-black-7);
+      transition: background-color 0s ease;
       z-index: 1;
       position: relative; /* To keep the outline on focus unobstructed */
       & .hw-search__suggestion-extra {
@@ -145,6 +152,7 @@
       }
     }
     @media (--large){
+      transition: background-color 0s ease;
       padding-left: var(--hw-spacing);
       padding-right: var(--hw-spacing);
     }

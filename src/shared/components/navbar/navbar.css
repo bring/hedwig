@@ -136,7 +136,7 @@
     &::before {
       content: '';
       display: block;
-      background-color: var(--hw-color-gray-lighter);
+      background-color: var(--hw-color-gray-lightest);
       height: var(--hw-navbar-height-mobile);
       position: fixed;
       top: 0;
@@ -154,7 +154,7 @@
 
   &__overlay {
     visibility: hidden;
-    background: var(--hw-color-gray-lighter);
+    background: var(--hw-color-gray-lightest);
     position: fixed;
     top: 0;
     right: 0;
