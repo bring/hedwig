@@ -38,7 +38,6 @@
 
   &__logo {
     position: relative;
-    width: var(--hw-logo-width);
     height: var(--hw-navbar-height-mobile);
     padding: 9px;
     margin: 0 auto;
@@ -48,6 +47,7 @@
     &-standard {
       visibility: visible;
       opacity: 1;
+      width: var(--hw-logo-width);
     }
 
     &-gray {
@@ -57,6 +57,17 @@
       height: var(--hw-navbar-height-mobile);
       padding: 9px;
       opacity: 0;
+      width: var(--hw-logo-width);
+    }
+    @media only screen and (--only-large){
+      &-text {
+        margin-top: calc(2*(100vw + 300px)/200);
+      }
+    }
+    @media (--xlarge){
+      &-text {
+        margin-top: var(--hw-spacing-smaller);
+      }
     }
 
     @media (--large) {
