@@ -170,8 +170,9 @@
   &__close-search {
     position: fixed;
     top: 0;
-    right: 24px;
+    right: 15px;
     border: 0;
+    font-size: var(--hw-font-size-small);
     line-height: 1;
     z-index: 401;
     height: var(--hw-navbar-height-mobile);
@@ -179,8 +180,12 @@
     background-color: transparent;
     @media (--large){
       position: absolute;
+      right: 27px;
       color: var(--hw-color-white);
       height: var(--hw-navbar-height-desktop);
+    }
+    @media (--xlarge){
+      right: 39px;
     }
   }
 
