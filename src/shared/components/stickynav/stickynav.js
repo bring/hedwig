@@ -87,7 +87,7 @@ const HWStickyNav = ({
     if (!element.classList.contains('hw-stickynav__link')) { return; }
 
     // Scroll the content up or down according to the selected item
-    const target = getPosition(q(element.hash));
+    const target = getPosition(q(element.getAttribute("href")));
     zenscroll.toY((target.top - SETTINGS.element.clientHeight) + 1);
 
     // Scroll menu to the right or left
