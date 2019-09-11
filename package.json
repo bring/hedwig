@@ -82,8 +82,8 @@
     "npm": "6.9.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
+    "@babel/cli": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-brands-svg-icons": "^5.10.2",
     "@fortawesome/pro-light-svg-icons": "^5.10.2",
