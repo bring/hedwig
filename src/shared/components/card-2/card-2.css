@@ -34,7 +34,7 @@
 
   &__media {
     overflow: hidden;
-    flex-basis: 30%;
+    flex-basis: auto;
   }
 
   &__media-inner{
@@ -48,7 +48,7 @@
     z-index: 1;
     padding: 12px;
     position: relative;
-    flex-basis: 70%;
+    flex-basis: auto;
     /* Using :after here to avoid showing border on page load */
     &:after {
       content: '';

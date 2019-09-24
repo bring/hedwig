@@ -16,8 +16,8 @@
 
   &__drawer-content {
     margin-top: 70px;
-    padding-left: var(--hw-spacing);
-    padding-right: var(--hw-spacing);
+    padding-left: var(--hw-spacing-small);
+    padding-right: var(--hw-spacing-small);
 
     @media (--large) {
       margin-top: 112px;
@@ -34,6 +34,8 @@
   &__drawer-mobile {
     max-width: 690px;
     margin: 0 auto;
+    padding-left: var(--hw-spacing-smaller);
+    padding-right: var(--hw-spacing-smaller);
 
     @media (--large) {
       display: none;
