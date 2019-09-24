@@ -24,6 +24,14 @@
     text-decoration: none;
   }
 
+  input {
+    color: var(--hw-color-gray-darker);
+  }
+
+  input::placeholder {
+    color: var(--hw-color-gray-dark);
+  }
+
 /**
   * Header styles
   */
