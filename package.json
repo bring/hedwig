@@ -71,7 +71,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "npm": "^6.11.2",
+    "npm": "^6.11.3",
     "sanitize.css": "^11.0.0",
     "stickybits": "^3.6.7",
     "zenscroll": "^4.0.2"
@@ -79,7 +79,7 @@
   "browserslist": "last 2 versions, not dead, not op_mini all, ie 10",
   "engines": {
     "node": "10.16.0",
-    "npm": "6.9.0"
+    "npm": "6.11.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
