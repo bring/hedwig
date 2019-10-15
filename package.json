@@ -30,7 +30,7 @@
   "license": "BSD-2-Clause",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
+    "dev": "concurrently \"npm run watcher --scripts-prepend-node-path\" \"npm run serve --scripts-prepend-node-path\"",
     "build": "rm -Rf dist && npm run concatcss && npm run docs:build && npm run css:build && npm run js:build && npm run svg",
     "release": "npm run build && rm -rf node_modules && np && npm run cache:purge:jsdelivr",
     "css:dev": "npm run css:dev:bring & npm run css:dev:posten",
@@ -70,19 +70,29 @@
     "cache:purge:jsdelivr:js:default": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@latest\"]}'"
   },
   "dependencies": {
+    "@babel/runtime": "^7.6.2",
+    "@babel/runtime-corejs3": "^7.6.2",
+    "core-js": "^3.2.1",
     "express": "^4.17.1",
     "npm": "^6.11.3",
     "sanitize.css": "^11.0.0",
     "stickybits": "^3.6.7",
     "zenscroll": "^4.0.2"
   },
-  "browserslist": "> 0.5%, ie >= 9",
   "engines": {
     "node": "10.16.0",
     "npm": "6.11.3"
   },
+  "browserslist": [
+    "> 0.5%",
+    "ie > 11"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/plugin-transform-spread": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
