@@ -103,14 +103,6 @@
     .hw-container--pb {
       padding-bottom: var(--hw-spacing-larger);
     }
-
-    .hw-container--mt {
-      margin-top: var(--hw-spacing-even-larger);
-    }
-
-    .hw-container--mb {
-      margin-bottom: var(--hw-spacing-even-larger);
-    }
   }
 
 
