@@ -43,6 +43,7 @@
   &__button {
     border: none;
     color: inherit;
+    cursor: pointer;
     background-color: transparent;
     font-size: var(--hw-font-size-small);
   }
