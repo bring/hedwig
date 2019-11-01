@@ -1,0 +1,5 @@
+.hw-table {
+  & thead th {
+    border-bottom: 3px solid var(--hw-color-primary-light);
+  }
+}

@@ -1,6 +1,6 @@
-## Table - WORK IN PROGRESS
+## Table
 
-### Simple table
+### Simple Table
 ```html
 <div class="hw-table">
   <table>
@@ -25,18 +25,18 @@
 ```
 
 
-### Table 
+### Simple Table 
 
 ```html
 <div class="hw-table">
-  <table data-hw-table="tablename">
+  <table>
     <thead>
       <tr>
-        <th data-hw-sort-method="none">Leveringsmetode</th>
-        <th data-hw-sort-method="none">PDF</th>
-        <th data-hw-sort-method="none">Kort distanse</th>
-        <th data-hw-sort-method="none">Langtur</th>
-        <th data-hw-sort-method="none">Avdeling</th>
+        <th>Leveringsmetode</th>
+        <th>PDF</th>
+        <th>Kort distanse</th>
+        <th>Langtur</th>
+        <th>Avdeling</th>
       </tr>
     </thead>
     <tbody>
@@ -45,16 +45,16 @@
           Audbil/varebil
         </td>
         <td>
-          <a class="hw-table__link hw-table__link--download" href="#">
+          <a href="#">
             Priser
           </a>
         </td>
-        <td class="hw-table__column hw-table__column--check">
-        </td>
-        <td class="hw-table__column hw-table__column--cross">
+        <td>
         </td>
         <td>
-          <a class="hw-table__link hw-table__link--arrow" href="#">
+        </td>
+        <td>
+          <a href="#">
             Oslo
           </a>
         </td>
@@ -64,16 +64,35 @@
           Budbil/varebil
         </td>
         <td>
-          <a class="hw-table__link hw-table__link--download" href="#">
+          <a href="#">
             Priser
           </a>
         </td>
-        <td class="hw-table__column hw-table__column--check">
-        </td>
-        <td class="hw-table__column hw-table__column--cross">
+        <td>
         </td>
         <td>
-          <a class="hw-table__link hw-table__link--arrow" href="#">
+        </td>
+        <td>
+          <a href="#">
+            Oslo
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Budbil/varebil more content to check the cell and column adjustment with large content
+        </td>
+        <td>
+          <a href="#">
+            Priser
+          </a>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href="#">
             Oslo
           </a>
         </td>
@@ -83,16 +102,16 @@
           Budbil/varebil
         </td>
         <td>
-          <a class="hw-table__link hw-table__link--download" href="#">
+          <a href="#">
             Priser
           </a>
         </td>
-        <td class="hw-table__column hw-table__column--check">
-        </td>
-        <td class="hw-table__column hw-table__column--cross">
+        <td>
         </td>
         <td>
-          <a class="hw-table__link hw-table__link--arrow" href="#">
+        </td>
+        <td>
+          <a href="#">
             Oslo
           </a>
         </td>
@@ -102,16 +121,50 @@
           Budbil/varebil
         </td>
         <td>
-          <a class="hw-table__link hw-table__link--download" href="#">
+          <a href="#">
             Priser
           </a>
         </td>
-        <td class="hw-table__column hw-table__column--check">
-        </td>
-        <td class="hw-table__column hw-table__column--cross">
+        <td>
         </td>
         <td>
-          <a class="hw-table__link hw-table__link--arrow" href="#">
+        </td>
+        <td>
+          <a href="#">
+            Oslo
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+
+### Column Table 
+
+```html
+<div class="hw-table hw-table__column">
+  <table>
+    <thead>
+      <tr>
+        <th>Leveringsmetode</th>
+        <th>PDF</th>
+        <th>Avdeling</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Audbil/varebil
+        </td>
+        <td>
+          <a href="#">
+            Priser
+          </a>
+        </td>
+        <td>
+          <a href="#">
             Oslo
           </a>
         </td>
@@ -121,16 +174,57 @@
           Budbil/varebil
         </td>
         <td>
-          <a class="hw-table__link hw-table__link--download" href="#">
+          <a href="#">
             Priser
           </a>
         </td>
-        <td class="hw-table__column hw-table__column--check">
+        <td>
+          <a href="#">
+            Oslo
+          </a>
         </td>
-        <td class="hw-table__column hw-table__column--cross">
+      </tr>
+      <tr>
+        <td>
+          Budbil/varebil more content to check the cell and column adjustment with large content
         </td>
         <td>
-          <a class="hw-table__link hw-table__link--arrow" href="#">
+          <a href="#">
+            Priser
+          </a>
+        </td>
+        <td>
+          <a href="#">
+            Oslo
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Budbil/varebil
+        </td>
+        <td>
+          <a href="#">
+            Priser
+          </a>
+        </td>
+        <td>
+          <a href="#">
+            Oslo
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Budbil/varebil
+        </td>
+        <td>
+          <a href="#">
+            Priser
+          </a>
+        </td>
+        <td>
+          <a href="#">
             Oslo
           </a>
         </td>

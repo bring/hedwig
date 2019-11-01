@@ -133,6 +133,17 @@
       font-size: var(--hw-font-size-max-h5-px);
     }
   }
+  h6,
+  .hw-h6 {
+    font-size: var(--hw-font-size-h6);
+  }
+
+  @media (--xlarge) {
+    h6,
+    .hw-h6 {
+      font-size: var(--hw-font-size-max-h6-px);
+    }
+  }
 
 /**
   * Extra text styles
