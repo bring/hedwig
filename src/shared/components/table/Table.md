@@ -1,31 +1,6 @@
 ## Table
 
-### Simple Table
-```html
-<div class="hw-table">
-  <table>
-    <thead>
-      <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Content</td>
-      <td>Some more content</td>
-    </tr>
-    <tr>
-      <td>Even more content</td>
-      <td>A bit more content</td>
-    </tr>
-    </tbody>
-  </table>
-</div>
-```
-
-
-### Simple Table 
+### Horizontal Table 
 
 ```html
 <div class="hw-table">
@@ -44,104 +19,99 @@
         <td>
           Audbil/varebil
         </td>
-        <td>
-          <a href="#">
-            Priser
+        <td><a href="#">
+            Priser (Link)
           </a>
         </td>
         <td>
+            Distanse
         </td>
         <td>
+            Ja
         </td>
         <td>
-          <a href="#">
-            Oslo
-          </a>
+          Oslo
         </td>
       </tr>
       <tr>
-        <td>
-          Budbil/varebil
+        <td>Budbil/varebil
         </td>
-        <td>
-          <a href="#">
-            Priser
+        <td><a href="#">
+            Priser (Link)
           </a>
         </td>
         <td>
+            Distanse
         </td>
         <td>
+            Ja
         </td>
         <td>
-          <a href="#">
-            Oslo
-          </a>
+          Oslo
         </td>
       </tr>
       <tr>
-        <td>
-          Budbil/varebil more content to check the cell and column adjustment with large content
+        <td>Budbil/varebil
+          more content to check 
         </td>
-        <td>
-          <a href="#">
-            Priser
+        <td><a href="#">
+            Priser (Link)
           </a>
         </td>
         <td>
+            Distanse
         </td>
         <td>
+            Ja
         </td>
         <td>
-          <a href="#">
-            Oslo
-          </a>
+          Oslo
         </td>
       </tr>
       <tr>
-        <td>
-          Budbil/varebil
+        <td>Budbil/varebil
         </td>
-        <td>
-          <a href="#">
-            Priser
+        <td><a href="#">
+            Priser (Link)
           </a>
         </td>
         <td>
+            Distanse
         </td>
         <td>
+            Ja
         </td>
         <td>
-          <a href="#">
-            Oslo
-          </a>
+          Oslo
         </td>
       </tr>
       <tr>
-        <td>
-          Budbil/varebil
+        <td>Budbil/varebil
         </td>
-        <td>
-          <a href="#">
-            Priser
+        <td><a href="#">
+            Priser (Link)
           </a>
         </td>
         <td>
+            Distanse
         </td>
         <td>
+            Ja
         </td>
         <td>
-          <a href="#">
-            Oslo
-          </a>
+          Oslo
         </td>
       </tr>
     </tbody>
   </table>
+  <div class="hw-table__description">
+    *Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  </div>
 </div>
 ```
 
 
-### Column Table 
+### Vertical Table 
 
 ```html
 <div class="hw-table hw-table__column">
@@ -156,80 +126,78 @@
     <tbody>
       <tr>
         <td>
-          Audbil/varebil
+          <div class="hw-h6 hw-text-bold">Cell Header</div>Audbil/varebil
         </td>
         <td>
-          <a href="#">
-            Priser
+          <div class="hw-h6 hw-text-bold">Cell Header</div><a href="#">
+            Priser (Link)
           </a>
         </td>
         <td>
-          <a href="#">
-            Oslo
-          </a>
+          <div class="hw-h6 hw-text-bold">Cell Header</div>
+          Oslo
         </td>
       </tr>
       <tr>
         <td>
-          Budbil/varebil
+          <div class="hw-h6 hw-text-bold">Cell Header</div>Budbil/varebil
         </td>
         <td>
-          <a href="#">
-            Priser
+          <div class="hw-h6 hw-text-bold">Cell Header</div><a href="#">
+            Priser (Link)
           </a>
         </td>
         <td>
-          <a href="#">
-            Oslo
-          </a>
+          <div class="hw-h6 hw-text-bold">Cell Header</div>
+          Oslo
         </td>
       </tr>
       <tr>
         <td>
-          Budbil/varebil more content to check the cell and column adjustment with large content
+          <div class="hw-h6 hw-text-bold">Cell Header</div>Budbil/varebil more content to check the cell and row adjustment with more content
         </td>
         <td>
-          <a href="#">
-            Priser
+          <div class="hw-h6 hw-text-bold">Cell Header</div><a href="#">
+            Priser (Link)
           </a>
         </td>
         <td>
-          <a href="#">
-            Oslo
-          </a>
+          <div class="hw-h6 hw-text-bold">Cell Header</div>
+          Oslo
         </td>
       </tr>
       <tr>
         <td>
-          Budbil/varebil
+          <div class="hw-h6 hw-text-bold">Cell Header</div>Budbil/varebil
         </td>
         <td>
-          <a href="#">
-            Priser
+          <div class="hw-h6 hw-text-bold">Cell Header</div><a href="#">
+            Priser (Link)
           </a>
         </td>
         <td>
-          <a href="#">
-            Oslo
-          </a>
+          <div class="hw-h6 hw-text-bold">Cell Header</div>
+          Oslo
         </td>
       </tr>
       <tr>
         <td>
-          Budbil/varebil
+          <div class="hw-h6 hw-text-bold">Cell Header</div>Budbil/varebil
         </td>
         <td>
-          <a href="#">
-            Priser
+          <div class="hw-h6 hw-text-bold">Cell Header</div><a href="#">
+            Priser (Link)
           </a>
         </td>
         <td>
-          <a href="#">
-            Oslo
-          </a>
+          <div class="hw-h6 hw-text-bold">Cell Header</div>
+          Oslo
         </td>
       </tr>
     </tbody>
   </table>
+  <div class="hw-table__description">
+    *Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  </div>
 </div>
 ```
