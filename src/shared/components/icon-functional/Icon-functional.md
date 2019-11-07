@@ -171,6 +171,7 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-trash-alt"></i> trash-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-unlock"></i> unlock<br/><br/>
 <i class="fa-2x fa-fw fas fa-user"></i> user<br/><br/>
+<i class="fa-2x fa-fw fas fa-image"></i> image<br/><br/>
 ```
 
 #### Regular icons - far
