@@ -43,9 +43,14 @@
    }
 
   /* Combinations */
-  & p + h2,
+  & p + h2 {
+    margin-top: var(--hw-spacing-larger);
+    margin-bottom: var(--hw-spacing-small);
+  }
+
   & p + h3 {
-    margin-top: var(--hw-spacing);
+    margin-top: var(--hw-spacing-large);
+    margin-bottom: var(--hw-spacing-smaller);
   }
 
   & hr {
