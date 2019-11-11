@@ -28,12 +28,13 @@ fa-eye: Name of icon
 
 ### Icon sets
 
-We use three different icon sets from Font Awesome
+We use four different icon sets from Font Awesome
 
 ```code
 fas: Solid
 far: Regular
 fab: Brands
+fal: Light
 ```
 
 ### Example icon sets
@@ -42,6 +43,8 @@ fab: Brands
 <i class="fa-fw fas fa-user"></i> Solid<br/>
 <i class="fa-fw far fa-user"></i> Regular<br/>
 <i class="fa-fw fab fa-facebook-f"></i> Brands<br/>
+<i class="fa-fw fal fa-times"></i> Light<br/>
+
 ```
 
 ### Sizes
@@ -140,6 +143,7 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-folder"></i> folder<br/><br/>
 <i class="fa-2x fa-fw fas fa-globe"></i> globe<br/><br/>
 <i class="fa-2x fa-fw fas fa-home"></i> home<br/><br/>
+<i class="fa-2x fa-fw fas fa-image"></i> image<br/><br/>
 <i class="fa-2x fa-fw fas fa-info"></i> info<br/><br/>
 <i class="fa-2x fa-fw fas fa-info-circle"></i> fa-info-circle<br/><br/>
 <i class="fa-2x fa-fw fas fa-key"></i> key<br/><br/>
@@ -171,7 +175,6 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-trash-alt"></i> trash-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-unlock"></i> unlock<br/><br/>
 <i class="fa-2x fa-fw fas fa-user"></i> user<br/><br/>
-<i class="fa-2x fa-fw fas fa-image"></i> image<br/><br/>
 ```
 
 #### Regular icons - far
