@@ -85,6 +85,7 @@ library.add(fas.faFlag);
 library.add(fas.faFolder);
 library.add(fas.faGlobe);
 library.add(fas.faHome);
+library.add(fas.faImage);
 library.add(fas.faInfo);
 library.add(fas.faInfoCircle);
 library.add(fas.faKey);
@@ -116,7 +117,6 @@ library.add(fas.faTimesCircle);
 library.add(fas.faTrashAlt);
 library.add(fas.faUnlock);
 library.add(fas.faUser);
-library.add(fas.faImage);
 
 // Replace any existing <i> tags with <svg> and set up a MutationObserver to
 // continue doing this as the DOM changes.
