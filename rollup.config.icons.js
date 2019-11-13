@@ -3,6 +3,7 @@
  * https://rollupjs.org/
  */
 
+import 'core-js';
 import babel from 'rollup-plugin-babel';
 import { uglify } from 'rollup-plugin-uglify';
 
@@ -13,7 +14,9 @@ export default {
     format: 'cjs',
   },
   plugins: [
-    babel(),
+    babel({
+      runtimeHelpers: true,
+    }),
     uglify(),
   ],
 };

@@ -1,12 +1,16 @@
 // .babelrc
 {
   "presets": [
-    ["@babel/preset-env", { "modules": false }]
+    ["@babel/preset-env", { "modules": false, "useBuiltIns": "entry", "corejs": 3 }]
   ],
-  "plugins": [],
-  "env": {
-    "test": {
-      "presets": ["@babel/preset-env"]
+  "plugins": ["@babel/plugin-transform-spread", "@babel/plugin-transform-arrow-functions", [
+    "@babel/plugin-transform-runtime",
+    {
+      "absoluteRuntime": false,
+      "corejs": 3,
+      "helpers": true,
+      "regenerator": true,
+      "useESModules": false
     }
-  }
+  ]]
 }

@@ -30,7 +30,7 @@
   "license": "BSD-2-Clause",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run watcher\" \"npm run serve\"",
+    "dev": "concurrently \"npm run watcher --scripts-prepend-node-path\" \"npm run serve --scripts-prepend-node-path\"",
     "build": "rm -Rf dist && npm run concatcss && npm run docs:build && npm run css:build && npm run js:build && npm run svg",
     "release": "npm run build && rm -rf node_modules && np && npm run cache:purge:jsdelivr",
     "css:dev": "npm run css:dev:bring & npm run css:dev:posten",
@@ -70,17 +70,23 @@
     "cache:purge:jsdelivr:js:default": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@latest\"]}'"
   },
   "dependencies": {
+    "@babel/runtime": "^7.6.2",
+    "@babel/runtime-corejs3": "^7.6.2",
+    "core-js": "^3.2.1",
     "express": "^4.17.1",
     "npm": "^6.13.0",
     "sanitize.css": "^11.0.0",
     "stickybits": "^3.7.0",
     "zenscroll": "^4.0.2"
   },
-  "browserslist": "last 2 versions, not dead, not op_mini all, ie 10",
   "engines": {
     "node": "12.13.0",
     "npm": "6.13.0"
   },
+  "browserslist": [
+    "> 0.5%",
+    "ie > 11"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
@@ -91,6 +97,7 @@
     "@fortawesome/pro-solid-svg-icons": "^5.11.2",
     "acorn": "^7.1.0",
     "babel-jest": "^24.9.0",
+    "browserslist": "^4.7.0",
     "concurrently": "^5.0.0",
     "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
@@ -105,6 +112,7 @@
     "lodash": "^4.17.15",
     "node-watch": "^0.6.3",
     "np": "^5.1.3",
+    "npm-check-updates": "^3.1.23",
     "postcss-cli": "^6.1.3",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^12.0.1",
