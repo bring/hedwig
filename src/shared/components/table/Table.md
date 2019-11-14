@@ -104,9 +104,9 @@
       </tr>
     </tbody>
   </table>
-  <div class="hw-table__description">
-    *Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-  </div>
+</div>
+<div class="hw-table__description">
+  *Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 </div>
 ```
 
@@ -126,78 +126,78 @@
     <tbody>
       <tr>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div>Audbil/varebil
+          <div class="hw-text-bold">Cell Header</div>Audbil/varebil
         </td>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div><a href="#">
+          <div class="hw-text-bold">Cell Header</div><a href="#">
             Priser (Link)
           </a>
         </td>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div>
+          <div class="hw-text-bold">Cell Header</div>
           Oslo
         </td>
       </tr>
       <tr>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div>Budbil/varebil
+          <div class="hw-text-bold">Cell Header</div>Budbil/varebil
         </td>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div><a href="#">
+          <div class="hw-text-bold">Cell Header</div><a href="#">
             Priser (Link)
           </a>
         </td>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div>
+          <div class="hw-text-bold">Cell Header</div>
           Oslo
         </td>
       </tr>
       <tr>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div>Budbil/varebil more content to check the cell and row adjustment with more content
+          <div class="hw-text-bold">Cell Header</div>Budbil/varebil more content to check the cell and row adjustment with more content
         </td>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div><a href="#">
+          <div class="hw-text-bold">Cell Header</div><a href="#">
             Priser (Link)
           </a>
         </td>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div>
+          <div class="hw-text-bold">Cell Header</div>
           Oslo
         </td>
       </tr>
       <tr>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div>Budbil/varebil
+          <div class="hw-text-bold">Cell Header</div>Budbil/varebil
         </td>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div><a href="#">
+          <div class="hw-text-bold">Cell Header</div><a href="#">
             Priser (Link)
           </a>
         </td>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div>
+          <div class="hw-text-bold">Cell Header</div>
           Oslo
         </td>
       </tr>
       <tr>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div>Budbil/varebil
+          <div class="hw-text-bold">Cell Header</div>Budbil/varebil
         </td>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div><a href="#">
+          <div class="hw-text-bold">Cell Header</div><a href="#">
             Priser (Link)
           </a>
         </td>
         <td>
-          <div class="hw-h6 hw-text-bold">Cell Header</div>
+          <div class="hw-text-bold">Cell Header</div>
           Oslo
         </td>
       </tr>
     </tbody>
   </table>
-  <div class="hw-table__description">
-    *Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-  </div>
+</div>
+<div class="hw-table__description">
+  *Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 </div>
 ```
