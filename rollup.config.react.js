@@ -3,7 +3,7 @@
  * https://rollupjs.org/
  */
 
-import jsx from 'rollup-plugin-jsx'
+import jsx from 'rollup-plugin-jsx';
 
 
 export default {
@@ -22,6 +22,6 @@ export default {
     format: 'cjs',
   },
   plugins: [
-    jsx( {factory: 'React.createElement'} ),
+    jsx({ factory: 'React.createElement' }),
   ],
 };
