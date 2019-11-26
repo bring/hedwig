@@ -1,6 +1,6 @@
 ## Table
 
-### Horizontal Table 
+### Default Table 
 
 ```html
 <div class="hw-table">
@@ -111,10 +111,10 @@
 ```
 
 
-### Vertical Table 
+### Columned Table 
 
 ```html
-<div class="hw-table hw-table__column">
+<div class="hw-table hw-table--column">
   <table>
     <thead>
       <tr>

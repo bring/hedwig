@@ -8,11 +8,11 @@
     table-layout: fixed;
   }
     
-  &__column th, &__column td {
+  &--column th, &--column td {
     padding: var(--hw-spacing-smaller) var(--hw-spacing-tiny) var(--hw-spacing-smallest) !important;
   }
 
-  &__column table{
+  &--column table{
     border-collapse: separate;
     border-spacing: var(--hw-spacing-larger) 0;
     position: relative;
