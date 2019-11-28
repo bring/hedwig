@@ -1,7 +1,7 @@
 // .babelrc
 {
   "presets": [
-    ["@babel/preset-env", { "modules": false, "useBuiltIns": "entry", "corejs": 3 }]
+    ["@babel/preset-env", { "modules": "auto", "useBuiltIns": "entry", "corejs": 3 }]
   ],
   "plugins": ["@babel/plugin-transform-spread", "@babel/plugin-transform-arrow-functions", [
     "@babel/plugin-transform-runtime",
