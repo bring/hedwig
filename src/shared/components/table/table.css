@@ -5,17 +5,30 @@
     border:none;
     width:100%;
     text-align: left;
+    table-layout: fixed;
+  }
+    
+  &--column th, &--column td {
+    padding: var(--hw-spacing-smaller) var(--hw-spacing-tiny) var(--hw-spacing-smallest) !important;
+  }
+
+  &--column table{
+    border-collapse: separate;
+    border-spacing: var(--hw-spacing-larger) 0;
+    position: relative;
+    right: var(--hw-spacing-larger);
+    width: calc(100% + (2*var(--hw-spacing-larger))) !important;
   }
   
-  & thead tr{
+   & thead th {
     border-bottom: 3px solid var(--hw-color-primary);
   }
 
-  & tbody tr {
+  & tbody td {
     border-bottom: 2px solid var(--hw-color-opaque-black-10);
   }
 
-  & tbody tr:hover {
+  & tbody td:hover {
     font-weight: bold;
     font-color:var(--hw-color-black);
   }
@@ -27,6 +40,7 @@
     padding-left: var(--hw-spacing);
     padding-right: var(--hw-spacing);
     font-size: var(--hw-font-size-small);
+    vertical-align: top;
   }
 
   & td {
@@ -36,7 +50,7 @@
     padding-right: var(--hw-spacing);
     font-size: var(--hw-font-size-smaller);
     font-family: var(--hw-font-primary-regular);
-    white-space: nowrap;
+    vertical-align: top;
   } 
 
   & th:first-of-type,
@@ -44,16 +58,42 @@
     padding-left: var(--hw-spacing-tiny);
   } 
 
-  & td a,
+  & th:last-of-type,
+  & td:last-of-type {
+    padding-right: var(--hw-spacing-tiny);
+  } 
+
+  & td a {
+    text-decoration-line: underline;
+    font-size: var(--hw-font-size-smaller);
+    font-family: var(--hw-font-primary-regular);
+  }
+  & td a:hover {
+    font-weight: bold;
+    color: var(--hw-color-primary-dark);
+  }
+
   & td p {
     font-size: var(--hw-font-size-smaller);
     font-family: var(--hw-font-primary-regular);
   }
 
+  &__description {
+    @extend .hw-text-less-line-height;
+    @extend .hw-text-light;
+    @extend .hw-text-smaller;
+    margin-top: var(--hw-spacing-smaller);
+    padding: 0 var(--hw-spacing) 0 var(--hw-spacing-tiny);
+  }
 }
 
+
 @media(--max-medium){
-  .hw-table {
-    overflow-x:auto;
+  .hw-table{
+    overflow-x: scroll;
+    
+    & table {
+      min-width: 720px;
+    }
   }
 }
