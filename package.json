@@ -70,13 +70,13 @@
     "cache:purge:jsdelivr:js:default": "curl -X POST https://purge.jsdelivr.net/ -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{\"path\": [\"npm/@posten/hedwig@latest\"]}'"
   },
   "dependencies": {
-    "@babel/runtime": "^7.7.6",
-    "@babel/runtime-corejs3": "^7.7.6",
-    "core-js": "^3.5.0",
+    "@babel/runtime": "^7.7.7",
+    "@babel/runtime-corejs3": "^7.7.7",
+    "core-js": "^3.6.0",
     "express": "^4.17.1",
     "npm": "^6.13.4",
     "sanitize.css": "^11.0.0",
-    "stickybits": "^3.7.1",
+    "stickybits": "^3.7.2",
     "zenscroll": "^4.0.2"
   },
   "engines": {
@@ -88,11 +88,11 @@
     "ie > 11"
   ],
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
+    "@babel/cli": "^7.7.7",
     "@babel/plugin-transform-arrow-functions": "^7.7.4",
     "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/plugin-transform-spread": "^7.7.4",
-    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
     "@fortawesome/pro-light-svg-icons": "^5.12.0",
@@ -101,7 +101,7 @@
     "acorn": "^7.1.0",
     "babel-jest": "^24.9.0",
     "browserslist": "^4.8.2",
-    "concurrently": "^5.0.1",
+    "concurrently": "^5.0.2",
     "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
     "eslint": "^6.7.2",
