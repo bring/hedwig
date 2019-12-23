@@ -33,10 +33,28 @@
    * Elements
    */
 
+  &__header{
+    display: inline-flex;
+    padding: var(--hw-spacing-smaller);
+    padding-left: var(--hw-spacing);
+    width:100%;
+
+    &__icon{
+      width:14%;
+      background-color: var(--hw-color-green);
+      border-radius: 50%;
+    }
+    &__sub-header{
+      width:86%;
+      padding-left: var(--hw-spacing-smaller);
+    }
+  }
   &__media {
+    height: auto;
+    width: 100%;
+    object-fit:cover;
     overflow: hidden;
     flex-basis: auto;
-    height: 300px;
   }
 
   &__media-inner {
@@ -49,12 +67,14 @@
 
   &__body {
     z-index: 1;
-    padding: var(--hw-spacing);
+    padding: var(--hw-spacing-small);
+    padding-top: 0px;
   }
 
   &__title {
-    margin-bottom: var(--hw-spacing-smallest);
+    margin-top: var(--hw-spacing-small);
     font-size: var(--hw-font-size-h4);
+    line-height:0.8;
   }
 
   &__text-primary {
@@ -68,6 +88,9 @@
       font-size: var(--hw-font-size-p );
       color: var(--hw-color-gray);
     }
+  &__actions {
+    margin-top: var(--hw-spacing);
+  }
 
   @media(--large){
       &__media {
