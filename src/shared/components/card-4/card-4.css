@@ -40,13 +40,14 @@
     width:100%;
 
     &__icon{
-      width:14%;
+      width: 54px;
       background-color: var(--hw-color-green);
       border-radius: 50%;
     }
     &__sub-header{
       width:86%;
       padding-left: var(--hw-spacing-smaller);
+      padding-top: var(--hw-spacing-smallest);
     }
   }
   &__media {
@@ -68,11 +69,9 @@
   &__body {
     z-index: 1;
     padding: var(--hw-spacing-small);
-    padding-top: 0px;
   }
 
   &__title {
-    margin-top: var(--hw-spacing-small);
     font-size: var(--hw-font-size-h4);
     line-height:0.8;
   }
@@ -82,9 +81,11 @@
     font-size: var(--hw-font-size-p);
     color: var(--hw-color-gray);
   }
+  &__text-primary + .hw-card-4__text-secondary{
+      margin-top: var(--hw-spacing-smaller);
+  }
   &__text-secondary {
       min-height: 30px;
-      margin-top: var(--hw-spacing-smaller);
       font-size: var(--hw-font-size-p );
       color: var(--hw-color-gray);
     }
