@@ -46,6 +46,7 @@ library.add(far.faWeightHanging);
 library.add(fas.faArchive);
 library.add(fas.faArrowAltToBottom);
 library.add(fas.faArrowsAltH);
+library.add(fas.faArrowLeft);
 library.add(fas.faArrowSquareLeft);
 library.add(fas.faAt);
 library.add(fas.faAward);
