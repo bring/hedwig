@@ -113,6 +113,7 @@ hw-color-gray-darker
 <i class="fa-2x fa-fw fas fa-box"></i> box<br/><br/>
 <i class="fa-2x fa-fw fas fa-box-check"></i> box-check<br/><br/>
 <i class="fa-2x fa-fw fas fa-box-open"></i> box-open<br/><br/>
+<i class="fa-2x fa-fw fas fa-bullseye-arrow"></i> bullseye-arrow<br/><br/>
 <i class="fa-2x fa-fw fas fa-calculator"></i> calculator<br/><br/>
 <i class="fa-2x fa-fw fas fa-calendar-alt"></i> calendar-alt<br/><br/>
 <i class="fa-2x fa-fw fas fa-camera"></i> camera<br/><br/>

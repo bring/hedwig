@@ -55,6 +55,7 @@ library.add(fas.faBars);
 library.add(fas.faBox);
 library.add(fas.faBoxCheck);
 library.add(fas.faBoxOpen);
+library.add(fas.faBullseyeArrow);
 library.add(fas.faCalculator);
 library.add(fas.faCalendarAlt);
 library.add(fas.faCamera);
