@@ -72,7 +72,7 @@
     border-bottom: 2px solid transparent;
     margin-bottom: var(--hw-spacing-smallest);
     font-size: var(--hw-font-size-small);
-    color: var(--hw-color-gray);
+    color: var(--hw-color-gray-dark);
     display: inline;
     transition: all 0.1s ease;
   }
