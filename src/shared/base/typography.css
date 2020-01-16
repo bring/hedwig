@@ -9,7 +9,7 @@
     line-height: 1.4;
     padding: 0;
     margin: 0;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
   }
 
   input,
@@ -61,7 +61,7 @@
   .hw-h2,
   .hw-h3,
   .hw-h4 {
-    letter-spacing: -0.03em;
+    letter-spacing: 0;
   }
 
   h1,
@@ -168,7 +168,7 @@
 
     &-uppercase {
       text-transform: uppercase;
-      letter-spacing: 0.02em;
+      letter-spacing: 0;
     }
 
     &-center {
