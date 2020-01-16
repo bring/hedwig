@@ -105,6 +105,11 @@ alfakroell
 api-edi
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#avemballering"></use>
+</svg>
+avemballering
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#avis"></use>
 </svg>
 avis
@@ -280,6 +285,11 @@ leverttilbedrift
 merker
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#mybring"></use>
+</svg>
+mybring
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#olje"></use>
 </svg>
 olje
@@ -330,9 +340,19 @@ personer
 postkasse
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#reklamasjon"></use>
+</svg>
+reklamasjon
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#retur"></use>
 </svg>
 retur
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#smarttelefon"></use>
+</svg>
+smarttelefon
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#signatur"></use>
@@ -350,6 +370,11 @@ skreddersoem
 sporing
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#sporsmalogsvar"></use>
+</svg>
+sporsmalogsvar
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#stykkgods"></use>
 </svg>
 stykkgods
@@ -363,6 +388,11 @@ sykkelbud
   <use xlink:href="#temperaturregulert"></use>
 </svg>
 temperaturregulert
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#terminal"></use>
+</svg>
+terminal
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#toll"></use>
