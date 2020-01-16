@@ -32,7 +32,7 @@ module.exports = `
          body {
           margin: 0;
           background: #f2f2f2;
-          font-family: 'Posten Medium', sans-serif;
+          font-family: 'Foundry Monoline Medium', sans-serif;
           font-size: 18px;
           color: #444444;
           letter-spacing: -0.02em;
@@ -122,7 +122,7 @@ module.exports = `
           text-align: center;
         }
         .hw-app-switcher__link--active {
-          font-family: Posten Medium;
+          font-family: Foundry Monoline Medium;
           background-color: #e32d22;
         }
 
