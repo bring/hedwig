@@ -21,15 +21,19 @@ export const HWCurtain = () => {
   function toggleCurtain(e) {
     const curtain = findParent({selector: '.hw-curtain', elem: e.target});
     const trigger = q('.hw-curtain__trigger', curtain);
+    const content = q('.hw-curtain__content', curtain);
 
     if(curtain.classList.contains('hw-curtain--closed')){
       // Open curtain
-      const content = q('.hw-curtain__content', curtain);
       curtain.classList.remove('hw-curtain--closed');
+      trigger.setAttribute('aria-expanded', 'true');
+      content.setAttribute('aria-hidden', 'false');
       curtain.style.height = trigger.offsetHeight + content.scrollHeight + 'px';
     } else {
       // Close curtain
       curtain.classList.add('hw-curtain--closed');
+      trigger.setAttribute('aria-expanded', 'false');
+      content.setAttribute('aria-hidden', 'true');
       curtain.style.height = trigger.offsetHeight + 'px';
     }
   }
@@ -87,8 +91,12 @@ export const HWCurtain = () => {
       curtain.setAttribute('data-hw-curtain-initialised', true);
 
       const trigger = q('.hw-curtain__trigger', curtain);
+      const content = q('.hw-curtain__content', curtain);
+
       curtain.style.height = trigger.offsetHeight + 'px';
       curtain.classList.add('hw-curtain--closed');
+      trigger.setAttribute('aria-expanded', 'false');
+      content.setAttribute('aria-hidden', 'true');
 
       bindEvents(curtain);
       return null;
