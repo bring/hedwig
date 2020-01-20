@@ -27,6 +27,7 @@
           <use xlink:href="#logo-bring-gray"></use>
         </svg>
       </a>
+      <a class="hw-navbar__skip-to-content" href="#">Skip to main content</a>
 
       <nav class="hw-navbar__menu">
         <button class="hw-navbar__search-button" data-hw-toggle-search>

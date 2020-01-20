@@ -85,6 +85,28 @@
     }
   }
 
+  &__skip-to-content {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding: var(--hw-spacing-smaller);
+    position: absolute;
+    outline-offset: calc(-1 * var(--hw-spacing-smaller));
+    font-size: var(--hw-font-size-small);
+    z-index: var(--z-index--navbar);
+    color: var(--hw-color-primary);
+
+    &:active, &:focus {
+      top: var(--hw-navbar-height-mobile);
+      background-color: var(--hw-color-white);
+      opacity: 1;
+      transition: top .1s ease-in, background .5s linear;
+      @media (--large) {
+        top: var(--hw-navbar-height-desktop);
+      }
+    }
+  }
+
   &__menu {
     display: flex;
   }
