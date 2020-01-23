@@ -275,7 +275,7 @@
     background: transparent;
 
     & .hw-navbar__search-button, & .hw-navbar__item, & .hw-navbar__menu-button {
-      color: var(--hw-color-gray);
+      color: var(--hw-color-gray-darker);
     }
     /**
      * Logo while the menu is open
