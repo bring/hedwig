@@ -117,6 +117,7 @@ hw-background-color-white
 hw-background-color-black
 hw-background-color-avocado
 hw-background-color-secondary
+hw-background-color-transparent
 ```
 
 ```html|span-4
