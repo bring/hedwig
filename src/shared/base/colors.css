@@ -117,6 +117,9 @@
 .hw-background-color-secondary{
   background-color: var(--hw-color-secondary);
 }
+.hw-background-color-transparent{
+  background-color: transparent;
+}
 
 /* Background colors with opacity*/
 
