@@ -8,8 +8,7 @@
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--hw-spacing);
-
+  margin-top: var(--hw-spacing);
   &::after {
     position: absolute;
     top: 0;
@@ -17,8 +16,6 @@
     width: 100%;
     height: 100%;
     transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.15);
     content: '';
     opacity: 0;
   }
@@ -90,7 +87,9 @@
       color: var(--hw-color-gray);
     }
   &__actions {
-    margin-top: var(--hw-spacing);
+    background: var(--hw-color-white);
+    padding: var(--hw-spacing-small);
+
   }
 
   @media(--large){

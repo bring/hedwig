@@ -29,16 +29,16 @@ Styling for cards.
       <div class="hw-card-4__text-secondary">
               Lorem ipsum dolor sit amet.
       </div>
-      <div class="hw-card-4__actions">
-        <button class="hw-button hw-button--primary hw-button--small">
-            CTA1
-        </button>
-        <button class="hw-button hw-button--primary hw-button--small">
-            CTA2
-        </button>
-      </div>
     </div>
   </a>
+  <div class="hw-card-4__actions">
+    <button class="hw-button hw-button--primary hw-button--small">
+        CTA1
+    </button>
+    <button class="hw-button hw-button--primary hw-button--small">
+        CTA2
+    </button>
+  </div>
 ```
 
 
