@@ -72,9 +72,9 @@
     border-bottom: 2px solid transparent;
     margin-bottom: var(--hw-spacing-smallest);
     font-size: var(--hw-font-size-small);
-    color: var(--hw-color-gray);
     display: inline;
     transition: all 0.1s ease;
+    @extend .hw-color-gray-dark
   }
 
   &__text {
