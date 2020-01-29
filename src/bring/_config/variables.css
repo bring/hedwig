@@ -7,7 +7,7 @@
    * Colors
    */
 
-  --hw-color-primary: #47A51D;
+  --hw-color-primary: #7BC144;
   --hw-color-primary-dark: #00643a;
   --hw-color-primary-darker: #002F19;
   --hw-color-primary-light: #C8DC8C;
@@ -31,7 +31,7 @@
    * Color mappings
    */
 
-  --hw-color-button-text: var(--hw-color-white);
+  --hw-color-button-text: var(--hw-color-black);
 
   /**
    * Logo width adjusted for Bring logo
