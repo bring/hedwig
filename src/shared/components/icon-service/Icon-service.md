@@ -335,6 +335,21 @@ person
 personer
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#pickup-cargo"></use>
+</svg>
+pickup-cargo
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#pickup-cargo-partial"></use>
+</svg>
+pickup-cargo-partial
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#pickup-home"></use>
+</svg>
+pickup-home
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#postkasse"></use>
 </svg>
 postkasse
@@ -348,6 +363,46 @@ reklamasjon
   <use xlink:href="#retur"></use>
 </svg>
 retur
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#return-b2b"></use>
+</svg>
+return-b2b
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#return-b2b-partial"></use>
+</svg>
+return-b2b-partial
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#return-cargo"></use>
+</svg>
+return-cargo
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#return-cargo-partial"></use>
+</svg>
+return-cargo-partial
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#return-express"></use>
+</svg>
+return-express
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#return-pallet"></use>
+</svg>
+return-pallet
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#return-parcel"></use>
+</svg>
+return-parcel
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#return-pickup"></use>
+</svg>
+return-pickup
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#smarttelefon"></use>
