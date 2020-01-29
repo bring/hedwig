@@ -11,7 +11,7 @@ name: 'Primary dark'
 span: 1
 ```
 ```color
-value: '#47A51D'
+value: '#7BC144'
 name: 'Primary'
 span: 1
 ```
