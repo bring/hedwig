@@ -47,7 +47,7 @@
       margin-right: var(--hw-spacing-smallest);
     }
 
-    &--twos, &--thirds, &--fourths{
+    &--twos, &--thirds, &--fourths, &--two-one, &--one-two{
       flex-wrap: wrap;
       & > * {
         margin-bottom: var(--hw-spacing-tiny);
@@ -62,6 +62,26 @@
       min-width: calc(50% - (var(--hw-spacing-tiny) / 2)); /* 3 / 2 = 1.5 */
       max-width: calc(50% - (var(--hw-spacing-tiny) / 2));
       &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+    }
+
+    &--two-one > * {
+      min-width: calc((200% / 3) - (var(--hw-spacing-tiny) / 2)); /* 3 / 2 = 1.5 */
+      max-width: calc((200% / 3) - (var(--hw-spacing-tiny) / 2));
+       &:nth-of-type(2n) {
+        min-width: calc((100% / 3) - (var(--hw-spacing-tiny) / 2)); /* 3 / 2 = 1.5 */
+        max-width: calc((100% / 3) - (var(--hw-spacing-tiny) / 2));
+        margin-right: 0;
+      }
+    }
+
+    &--one-two > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-tiny) / 2)); /* 3 / 2 = 1.5 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-tiny) / 2));
+       &:nth-of-type(2n) {
+        min-width: calc((200% / 3) - (var(--hw-spacing-tiny) / 2)); /* 3 / 2 = 1.5 */
+        max-width: calc((200% / 3) - (var(--hw-spacing-tiny) / 2));
         margin-right: 0;
       }
     }
@@ -104,6 +124,30 @@
       min-width: calc(50% - (var(--hw-spacing-small) / 2)); /* 18 / 2 = 9 */
       max-width: calc(50% - (var(--hw-spacing-small) / 2));
       margin-bottom: var(--hw-spacing-small);
+    }
+
+    &--gutter-large-desktop&--two-one > * {
+      min-width: calc((200% / 3) - (var(--hw-spacing-small) / 2)); /* 18 / 2 = 9 */
+      max-width: calc((200% / 3) - (var(--hw-spacing-small) / 2));
+      margin-bottom: var(--hw-spacing-small);
+
+      &:nth-of-type(2n) {
+        min-width: calc((100% / 3) - (var(--hw-spacing-small) / 2)); /* 3 / 2 = 1.5 */
+        max-width: calc((100% / 3) - (var(--hw-spacing-small) / 2));
+        margin-right: 0;
+      }
+    }
+
+    &--gutter-large-desktop&--one-two > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-small) / 2)); /* 18 / 2 = 9 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-small) / 2));
+      margin-bottom: var(--hw-spacing-small);
+
+      &:nth-of-type(2n) {
+        min-width: calc((200% / 3) - (var(--hw-spacing-small) / 2)); /* 3 / 2 = 1.5 */
+        max-width: calc((200% / 3) - (var(--hw-spacing-small) / 2));
+        margin-right: 0;
+      }
     }
 
     &--gutter-large-desktop&--thirds > * {
