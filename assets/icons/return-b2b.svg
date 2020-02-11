@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .b8d1c0ee-4b6f-4916-bd09-419a95bb5e08 {
+        isolation: isolate;
+      }
+
+      .b2ef328e-cab6-4774-b8bc-99a3434f7c83 {
+        mix-blend-mode: multiply;
+      }
+    </style>
+  </defs>
+  <title>Master (Dont Touch!)</title>
+  <g class="b8d1c0ee-4b6f-4916-bd09-419a95bb5e08">
+    <g id="e0e3ec15-5c75-43d5-9f4c-4181c792eaea" data-name="Export here">
+      <g>
+        <path class="b2ef328e-cab6-4774-b8bc-99a3434f7c83" d="M77.24,13v97.57H25.08l17.39-17.4-9.42-9.41-33,33,33,33,9.42-9.42L26.09,123.89H98.85a30,30,0,0,1,30,30v3.33a30,30,0,0,1-30,30H82.77V200.5H98.85A43.36,43.36,0,0,0,141,167h41a7.5,7.5,0,0,0,7.5-7.5V13ZM178.5,156H142.15v-2.13a43.35,43.35,0,0,0-43.3-43.3H88.24V24H178.5Z"/>
+        <rect class="b2ef328e-cab6-4774-b8bc-99a3434f7c83" x="138.49" y="68.23" width="21.85" height="27.12"/>
+        <rect class="b2ef328e-cab6-4774-b8bc-99a3434f7c83" x="139.25" y="103.22" width="21.85" height="27.12"/>
+        <rect class="b2ef328e-cab6-4774-b8bc-99a3434f7c83" x="105.65" y="68.23" width="21.85" height="27.12"/>
+        <rect class="b2ef328e-cab6-4774-b8bc-99a3434f7c83" x="105.65" y="32.37" width="21.85" height="27.12"/>
+        <rect class="b2ef328e-cab6-4774-b8bc-99a3434f7c83" x="139.25" y="32.37" width="21.85" height="27.12"/>
+      </g>
+    </g>
+  </g>
+</svg>
