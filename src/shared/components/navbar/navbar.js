@@ -55,7 +55,8 @@ const HWNavbar = ({
   function toggleMenu() {
     if (SETTINGS.navbar.classList.contains(activeClass)) {
       SETTINGS.navbar.classList.remove(activeClass);
-      SETTINGS.navbar.querySelector('.hw-navbar__drawer').setAttribute('aria-expanded',false);
+      SETTINGS.navbar.querySelector('.hw-navbar__drawer').setAttribute('aria-hidden',true);
+      SETTINGS.menuButton.setAttribute('aria-expanded',false);
       if (SETTINGS.footer && SETTINGS.main) {
         SETTINGS.main.style.display = 'block';
         SETTINGS.footer.style.display = 'block';
@@ -72,7 +73,8 @@ const HWNavbar = ({
       setMenuButtonLabelWidths();
     }
     SETTINGS.navbar.classList.add(activeClass);
-    SETTINGS.navbar.querySelector('.hw-navbar__drawer').setAttribute('aria-expanded',true);
+    SETTINGS.navbar.querySelector('.hw-navbar__drawer').setAttribute('aria-hidden',false);
+    SETTINGS.menuButton.setAttribute('aria-expanded',true);
     if (SETTINGS.footer && SETTINGS.main) {
       SETTINGS.main.style.display = 'none';
       SETTINGS.footer.style.display = 'none';
