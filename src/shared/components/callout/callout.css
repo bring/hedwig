@@ -8,7 +8,6 @@
   display: block;
   border: 3px solid var(--hw-color-gray-lighter);
   padding: var(--hw-spacing);
-  background-color: var(--hw-color-white);
 
   @media (--max-medium) {
     padding: var(--hw-spacing-smaller);
