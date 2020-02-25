@@ -1,4 +1,4 @@
-import q from '../../utilities/js/q';
+  import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import trapFocus from '../../utilities/js/trapFocus';
 
@@ -55,6 +55,11 @@ export const HWDrawer = ({
           firstFocusableEl.focus();
         }
       }, 300);
+      setTimeout (() =>{
+      drawerContent.addEventListener("transitionend", function(){
+          drawerContent.style.transform = 'none';
+      });
+      },200)
     } else {
       drawer.setAttribute('aria-hidden', true);
       // animation out drawer
@@ -64,7 +69,10 @@ export const HWDrawer = ({
       drawer.classList.add('hw-drawer--animate-out');
       setTimeout(() => {
         drawer.classList.remove('hw-drawer--open');
-      }, 250);
+      }, 400);
+      drawerContent.addEventListener("transitionend", function(){
+          drawerContent.style.removeProperty('transform');
+      });
       body.style.overflow = 'visible';
 
       // set focus on button which opens drawer after drawer removed

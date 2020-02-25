@@ -42,7 +42,7 @@
     height: 100%;
     overflow: auto;
     background: var(--hw-color-white);
-    transition: transform 100ms ease;
+    transition: transform 0.2s ease;
     transform: translateX(700px);
     opacity: 0;
 
@@ -85,6 +85,8 @@
   }
 
   &__header {
+    position:fixed;
+    top:0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -104,7 +106,7 @@
 
   &__body {
     padding: var(--hw-spacing);
-
+    margin-top:72px;
     @media (--large) {
       padding: var(--hw-spacing-large) var(--hw-spacing-larger);
     }
@@ -122,8 +124,8 @@
       opacity: 1;
       transform: translateX(0);
       &--animate-out {
+        transition: opacity 0.2s linear 0.3s, transform 0.2s ease;
         transform: translateX(700px);
-        transition: opacity 0.1s linear 0.25s, transform 100ms ease;
         opacity: 0;
       }
     }
