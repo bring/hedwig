@@ -69,7 +69,7 @@ export const HWDrawer = ({
       drawer.classList.add('hw-drawer--animate-out');
       setTimeout(() => {
         drawer.classList.remove('hw-drawer--open');
-      }, 400);
+      }, 250);
       drawerContent.addEventListener("transitionend", function(){
           drawerContent.style.removeProperty('transform');
       });
