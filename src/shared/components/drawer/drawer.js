@@ -1,4 +1,4 @@
-  import q from '../../utilities/js/q';
+import q from '../../utilities/js/q';
 import qa from '../../utilities/js/qa';
 import trapFocus from '../../utilities/js/trapFocus';
 
