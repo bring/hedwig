@@ -118,36 +118,34 @@
       max-width: calc(25% - (var(--hw-spacing-smallest) * 3 / 4));
       margin-bottom: var(--hw-spacing-smallest);
     }
+    &--gutter-medium-desktop&--two-one > * {
+      min-width: calc((200% / 3) - (var(--hw-spacing-smallest) / 3)); /* 18 / 3 = 6 */
+      max-width: calc((200% / 3) - (var(--hw-spacing-smallest) / 3));
+      margin-bottom: var(--hw-spacing-smallest);
+
+      &:nth-of-type(2n) {
+        min-width: calc((100% / 3) - (var(--hw-spacing-smallest) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+        max-width: calc((100% / 3) - (var(--hw-spacing-smallest) * 2 / 3));
+        margin-right: 0;
+      }
+    }
+    &--gutter-medium-desktop&--one-two > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-smallest) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-smallest) * 2 / 3));
+      margin-bottom: var(--hw-spacing-smallest);
+
+      &:nth-of-type(2n) {
+        min-width: calc((200% / 3) - (var(--hw-spacing-smallest) / 3)); /* 18 / 3 = 6 */
+        max-width: calc((200% / 3) - (var(--hw-spacing-smallest) / 3));
+        margin-right: 0;
+      }
+    }
 
     /* Large gutter desktop calculations */
     &--gutter-large-desktop&--twos > * {
       min-width: calc(50% - (var(--hw-spacing-small) / 2)); /* 18 / 2 = 9 */
       max-width: calc(50% - (var(--hw-spacing-small) / 2));
       margin-bottom: var(--hw-spacing-small);
-    }
-
-    &--gutter-large-desktop&--two-one > * {
-      min-width: calc((200% / 3) - (var(--hw-spacing-small) / 2)); /* 18 / 2 = 9 */
-      max-width: calc((200% / 3) - (var(--hw-spacing-small) / 2));
-      margin-bottom: var(--hw-spacing-small);
-
-      &:nth-of-type(2n) {
-        min-width: calc((100% / 3) - (var(--hw-spacing-small) / 2)); /* 3 / 2 = 1.5 */
-        max-width: calc((100% / 3) - (var(--hw-spacing-small) / 2));
-        margin-right: 0;
-      }
-    }
-
-    &--gutter-large-desktop&--one-two > * {
-      min-width: calc((100% / 3) - (var(--hw-spacing-small) / 2)); /* 18 / 2 = 9 */
-      max-width: calc((100% / 3) - (var(--hw-spacing-small) / 2));
-      margin-bottom: var(--hw-spacing-small);
-
-      &:nth-of-type(2n) {
-        min-width: calc((200% / 3) - (var(--hw-spacing-small) / 2)); /* 3 / 2 = 1.5 */
-        max-width: calc((200% / 3) - (var(--hw-spacing-small) / 2));
-        margin-right: 0;
-      }
     }
 
     &--gutter-large-desktop&--thirds > * {
@@ -160,6 +158,30 @@
       min-width: calc(25% - (var(--hw-spacing-small) * 3 / 4)); /* 18 * 3 / 4 = 13.5 */
       max-width: calc(25% - (var(--hw-spacing-small) * 3 / 4));
       margin-bottom: var(--hw-spacing-small);
+    }
+
+        &--gutter-large-desktop&--two-one > * {
+      min-width: calc((200% / 3) - (var(--hw-spacing-small) / 3)); /* 18 / 3 = 6 */
+      max-width: calc((200% / 3) - (var(--hw-spacing-small) / 3));
+      margin-bottom: var(--hw-spacing-small);
+
+      &:nth-of-type(2n) {
+        min-width: calc((100% / 3) - (var(--hw-spacing-small) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+        max-width: calc((100% / 3) - (var(--hw-spacing-small) * 2 / 3));
+        margin-right: 0;
+      }
+    }
+
+    &--gutter-large-desktop&--one-two > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-small) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-small) * 2 / 3));
+      margin-bottom: var(--hw-spacing-small);
+
+      &:nth-of-type(2n) {
+        min-width: calc((200% / 3) - (var(--hw-spacing-small) / 3)); /* 18 / 3 = 6 */
+        max-width: calc((200% / 3) - (var(--hw-spacing-small) / 3));
+        margin-right: 0;
+      }
     }
 
     /* Larger gutter desktop calculations */
@@ -179,6 +201,30 @@
       min-width: calc(25% - (var(--hw-spacing-larger) * 3 / 4)); /* 48 * 3 / 4 = 36 */
       max-width: calc(25% - (var(--hw-spacing-larger) * 3 / 4));
       margin-bottom: var(--hw-spacing-larger);
+    }
+
+    &--gutter-larger-desktop&--two-one > * {
+      min-width: calc((200% / 3) - (var(--hw-spacing-larger) / 3)); /* 18 / 3 = 6 */
+      max-width: calc((200% / 3) - (var(--hw-spacing-larger) / 3));
+      margin-bottom: var(--hw-spacing-larger);
+
+      &:nth-of-type(2n) {
+        min-width: calc((100% / 3) - (var(--hw-spacing-larger) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+        max-width: calc((100% / 3) - (var(--hw-spacing-larger) * 2 / 3));
+        margin-right: 0;
+      }
+    }
+
+    &--gutter-larger-desktop&--one-two > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-larger) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-larger) * 2 / 3));
+      margin-bottom: var(--hw-spacing-larger);
+
+      &:nth-of-type(2n) {
+        min-width: calc((200% / 3) - (var(--hw-spacing-larger) / 3)); /* 18 / 3 = 6 */
+        max-width: calc((200% / 3) - (var(--hw-spacing-larger) / 3));
+        margin-right: 0;
+      }
     }
   }
 }
