@@ -248,10 +248,6 @@
       z-index: var(--z-index--navbar-search-foreground);
     }
 
-    & .hw-navbar__menu {
-      display: none;
-    }
-
     & .hw-navbar__overlay {
       visibility: visible;
       z-index: var(--z-index--navbar-search);
