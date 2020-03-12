@@ -70,9 +70,12 @@ export const HWDrawer = ({
       setTimeout(() => {
         drawer.classList.remove('hw-drawer--open');
       }, 250);
+      setTimeout(() => {
       drawerContent.addEventListener("transitionend", function(){
           drawerContent.style.removeProperty('transform');
       });
+      },200)
+
       body.style.overflow = 'visible';
 
       // set focus on button which opens drawer after drawer removed
