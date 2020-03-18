@@ -51,7 +51,7 @@
 
   --hw-color-gray-lightest: #f2f2f2;
   --hw-color-gray-lighter: #e6e6e6;
-  --hw-color-gray-light: #c1c1c1;
+  --hw-color-gray-light: #d6d6d6;
   --hw-color-gray: #888;
   --hw-color-gray-dark: #666;
   --hw-color-gray-darker: #444;
@@ -88,9 +88,9 @@
    * Fonts
    */
 
-  --hw-font-primary-regular: 'Foundry Monoline Regular', sans-serif;
-  --hw-font-primary-medium: 'Foundry Monoline Medium', sans-serif;
-  --hw-font-primary-bold: 'Foundry Monoline Bold', sans-serif;
+  --hw-font-primary-regular: 'Posten Sans Regular', sans-serif;
+  --hw-font-primary-medium: 'Posten Sans Medium', sans-serif;
+  --hw-font-primary-bold: 'Posten Sans Bold', sans-serif;
 
   /**
    * Font sizes

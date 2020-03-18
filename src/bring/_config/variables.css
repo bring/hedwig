@@ -8,7 +8,7 @@
    */
 
   --hw-color-primary: #7BC144;
-  --hw-color-primary-dark: #00643a;
+  --hw-color-primary-dark: #00643A;
   --hw-color-primary-darker: #002F19;
   --hw-color-primary-light: #C8DC8C;
   --hw-color-primary-lighter: #F1F7E9;
@@ -26,6 +26,12 @@
   --hw-color-link: #00643a;
   --hw-color-link-hover: #000;
   --hw-color-link-underline-hover: #000;
+
+
+  /**
+    * Button Colors
+    */
+  --hw-color-button-primary-hover: #86CC4A;
 
   /**
    * Color mappings

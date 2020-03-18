@@ -23,38 +23,33 @@
  * http://caniuse.com/#feat=eot
  * IE8-11 (no other browsers)
  *
- * NOTE:
- * -----
- * The Foundry Monoline PN font has a bug in Safari that means that we can't use the locally installed font, but
- * instead have to download the webfont. This would only affect users with the font installed locally, which -
- * since it's a licenced font - will restrict it to our programmers and designers (not regular users).
  *
  */
 
 @font-face {
-  font-family: "Foundry Monoline Regular";
-  src: url("fonts/FoundryMonolinePN-Regular.eot");
-  src: url("fonts/FoundryMonolinePN-Regular.woff2") format("woff2"),
-    url("fonts/FoundryMonolinePN-Regular.woff") format("woff"),
-    url("fonts/FoundryMonolinePN-Regular.ttf") format("truetype"),
-    url("fonts/FoundryMonolinePN-Regular.svg#FoundryMonolineReg") format("svg");
+  font-family: "Posten Sans Regular";
+  src: url("fonts/PostenSans-Regular.eot");
+  src: url("fonts/PostenSans-Regular.woff2") format("woff2"),
+    url("fonts/PostenSans-Regular.woff") format("woff"),
+    url("fonts/PostenSans-Regular.ttf") format("truetype"),
+    url("fonts/PostenSans-Regular.svg#FoundryMonolineReg") format("svg");
 }
 
 @font-face {
-  font-family: "Foundry Monoline Medium";
-  src: url("fonts/FoundryMonolinePN-Medium.eot");
-  src: url("fonts/FoundryMonolinePN-Medium.woff2") format("woff2"),
-    url("fonts/FoundryMonolinePN-Medium.woff") format("woff"),
-    url("fonts/FoundryMonolinePN-Medium.ttf") format("truetype"),
-    url("fonts/FoundryMonolinePN-Medium.svg#FoundryMonolineMedium")
+  font-family: "Posten Sans Medium";
+  src: url("fonts/PostenSans-Medium.eot");
+  src: url("fonts/PostenSans-Medium.woff2") format("woff2"),
+    url("fonts/PostenSans-Medium.woff") format("woff"),
+    url("fonts/PostenSans-Medium.ttf") format("truetype"),
+    url("fonts/PostenSans-Medium.svg#FoundryMonolineMedium")
       format("svg");
 }
 
 @font-face {
-  font-family: "Foundry Monoline Bold";
-  src: url("fonts/FoundryMonolinePN-Bold.eot");
-  src: url("fonts/FoundryMonolinePN-Bold.woff2") format("woff2"),
-    url("fonts/FoundryMonolinePN-Bold.woff") format("woff"),
-    url("fonts/FoundryMonolinePN-Bold.ttf") format("truetype"),
-    url("fonts/FoundryMonolinePN-Bold.svg#FoundryMonolineBold") format("svg");
+  font-family: "Posten Sans Bold";
+  src: url("fonts/PostenSans-Bold.eot");
+  src: url("fonts/PostenSans-Bold.woff2") format("woff2"),
+    url("fonts/PostenSans-Bold.woff") format("woff"),
+    url("fonts/PostenSans-Bold.ttf") format("truetype"),
+    url("fonts/PostenSans-Bold.svg#FoundryMonolineBold") format("svg");
 }

@@ -28,6 +28,9 @@ Colors
   <button class="hw-button hw-button--primary hw-button--small">
     Small button
   </button><br>
+  <button class="hw-button hw-button--primary hw-button--medium">
+    Medium button
+  </button><br>
   <button class="hw-button hw-button--primary hw-button--large">
     Large button
   </button>

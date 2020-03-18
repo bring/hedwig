@@ -1,6 +1,6 @@
 # Fonts
 
-Our font is [Foundry Monoline](https://www.fonts.com/font/the-foundry/foundry-monoline).
+Our font is Posten Sans.
 The font size on H-tags are responsive on viewports between 300 - 1200px, and static on viewports smaller and bigger viewports
 
 ```code
@@ -34,7 +34,7 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 ```
 
 [Example article](https://www.bring.no/test/articles/designsystems) showing typography in use.
-
+ 
 ### Headers
 
 ```html|responsive

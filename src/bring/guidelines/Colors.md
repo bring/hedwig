@@ -1,86 +1,75 @@
+
 ## Primary
 
 ```color
 value: '#002F19'
-name: 'Primary darker'
+name: 'Darker green'
 span: 1
 ```
 ```color
 value: '#00643A'
-name: 'Primary dark'
+name: 'Dark green'
 span: 1
 ```
 ```color
 value: '#7BC144'
-name: 'Primary'
+name: 'Green'
 span: 1
 ```
 ```color
 value: '#C8DC8C'
-name: 'Primary light'
+name: 'Light green'
 span: 1
 ```
 ```color
 value: '#F1F7E9'
-name: 'Primary lighter'
+name: 'Lighter green'
 span: 1
 ```
 
-## Gray
+
+## Greys
 
 ```color
-value: '#222222'
+value: '#6E6E6E'
 span: 1
-name: 'Gray darkest'
+name: 'Dark grey'
 ```
 ```color
-value: '#444444'
+value: '#D6D6D6'
 span: 1
-name: 'Gray darker'
+name: 'Grey'
 ```
 ```color
-value: '#666666'
-name: 'Gray dark'
-span: 1
-```
-```color
-value: '#888888'
-name: 'Gray'
+value: '#E4E4E4'
+name: 'Light grey stroke'
 span: 1
 ```
 ```color
-value: '#C1C1C1'
-name: 'Gray light'
+value: '#F2F2F2'
+name: 'Light grey fill'
 span: 1
 ```
-```color
-value: '#E6E6E6'
-name: 'Gray lighter'
-span: 1
-```
-```color
-value: '#f2f2f2'
-name: 'Gray lightest'
-span: 1
-```
+
 
 
 ## Other colors
-```color
-value: '#fdbb2f'
-name: 'Secondary'
-span: 1
-```
 ```color
 value: '#000000'
 name: 'Black'
 span: 1
 ```
 ```color
-value: '#ffffff'
-name: white
+value: '#FDBB2F'
+name: 'Yellow'
 span: 1
 ```
+```color
+value: '#FFFFFF'
+name: 'White'
+span: 1
+```
+
 ## Background colors
 ### Available classes
 The following classes can be used to set the background of an element

@@ -6,8 +6,8 @@
   display: inline-block;
   padding: var(--hw-spacing-smaller) var(--hw-spacing);
   margin-top: 3px;
-  border-radius: 0;
-  border: 2px solid var(--hw-color-gray);
+  border-radius: 2px;
+  border: 0px;
   background: var(--hw-color-gray);
   color: var(--hw-color-button-text);
   fill: var(--hw-color-button-text);
@@ -16,7 +16,7 @@
   transition: all cubic-bezier(0.08, 0.84, 0.07, 0.96) 120ms, background 75ms;
   text-align: center; /* Center text when this is an <a> */
   cursor: pointer;
-  outline: 1px solid transparent;
+  outline: 0px solid transparent;
   margin-right: 3px;
   word-break: normal;
 
@@ -25,10 +25,9 @@
   }
 
   &:disabled, &[disabled], &[disabled]:active {
-    color: var(--hw-color-white) !important;
-    fill: var(--hw-color-white) !important;
+    color: var(--hw-color-gray-dark) !important;
+    fill: var(--hw-color-gray-dark) !important;
     background: var(--hw-color-gray-light) !important;
-    border: 2px solid var(--hw-color-gray-light) !important;
     outline: 0 !important;
     box-shadow: none !important;
     cursor: default;
@@ -44,11 +43,17 @@
 
   &--large {
     padding: var(--hw-spacing-smaller) var(--hw-spacing-large);
+    padding: 16px 24px;
     font-size: var(--hw-font-size-p);
+  }
+
+  &--medium {
+    padding: 12px 20px;
   }
 
   &--small {
     padding: 0 var(--hw-spacing-smaller);
+    padding: 12px 16px;
   }
 
   &--full {
@@ -71,7 +76,6 @@
    */
 
   &--primary {
-    border: 2px solid var(--hw-color-primary);
     background: var(--hw-color-primary);
     color: var(--hw-color-button-text);
     fill: var(--hw-color-button-text);
@@ -79,11 +83,8 @@
     &:hover,
     &:active,
     &:focus {
-      color: var(--hw-color-white);
-      fill: var(--hw-color-white);
-      border-color: var(--hw-color-primary-dark);
-      background: var(--hw-color-primary-dark);
-      outline: 1px solid var(--hw-color-primary-dark);
+      background: var(--hw-color-button-primary-hover);
+      outline: 0px solid var(--hw-color-button-primary-hover);
     }
 
     &:active {
@@ -92,17 +93,15 @@
   }
 
   &--secondary {
-    border: 2px solid var(--hw-color-gray-dark);
-    background: var(--hw-color-gray-dark);
+    background: var(--hw-color-primary-darker);
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
 
     &:hover,
     &:active,
     &:focus {
-      border-color: var(--hw-color-gray-darker);
-      background: var(--hw-color-gray-darker);
-      outline: 1px solid var(--hw-color-gray-darker);
+      background: var(--hw-color-black);
+      outline: 0px solid var(--hw-color-black);
     }
 
     &:active {
@@ -112,7 +111,6 @@
 
   &--picture-yellow {
     background: var(--hw-color-yellow);
-    border: 2px solid var(--hw-color-yellow);
     color: var(--hw-color-gray-darkest);
     fill: var(--hw-color-gray-darkest);
 
@@ -123,32 +121,28 @@
     &:hover,
     &:active,
     &:focus {
-      border: 2px solid var(--hw-color-yellow-darker);
-      outline: 1px solid var(--hw-color-yellow-darker);
+      outline: 0px solid var(--hw-color-yellow-darker);
     }
   }
 
   &--picture-dark {
     background: var(--hw-color-gray-darkest);
-    border: 2px solid var(--hw-color-gray-darkest);
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
 
     &:hover {
       background: var(--hw-color-black);
-      outline: 1px solid var(--hw-color-black);
+      outline: 0px solid var(--hw-color-black);
     }
 
     &:active,
     &:focus {
       background: var(--hw-color-gray-dark);
-      border: 2px solid var(--hw-color-black);
-      outline: 1px solid var(--hw-color-black);
+      outline: 0px solid var(--hw-color-black);
     }
   }
 
   &--outline {
-    border: 3px solid var(--hw-color-gray-light);
     background: none;
     color: var(--hw-color-gray-darker);
     fill: var(--hw-color-gray);
@@ -164,17 +158,16 @@
       fill: var(--hw-color-white);
       border-color: var(--hw-color-gray);
       background: var(--hw-color-gray);
-      outline: 1px solid var(--hw-color-gray);
+      outline: 0px solid var(--hw-color-gray);
     }
 
     &:active {
       border-color: var(--hw-color-gray-darker);
-      outline: 1px solid var(--hw-color-gray-darker);
+      outline: 0px solid var(--hw-color-gray-darker);
     }
   }
 
   &--outline-dark {
-    border: 3px solid var(--hw-color-gray-darkest);
     background: none;
     color: var(--hw-color-gray-darkest);
     fill: var(--hw-color-gray-darkest);
@@ -188,9 +181,8 @@
     &:focus {
       color: var(--hw-color-white);
       fill: var(--hw-color-white);
-      border-color: var(--hw-color-gray-darkest);
       background: var(--hw-color-gray-darkest);
-      outline: 1px solid var(--hw-color-gray-darkest);
+      outline: 0px solid var(--hw-color-gray-darkest);
     }
 
     &:active {
@@ -199,7 +191,6 @@
   }
 
   &--outline-white {
-    border: 3px solid var(--hw-color-white);
     background: none;
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
@@ -213,9 +204,8 @@
     &:focus {
       color: var(--hw-color-gray-darker);
       fill: var(--hw-color-gray-darker);
-      border-color: var(--hw-color-white);
       background: var(--hw-color-white);
-      outline: 1px solid var(--hw-color-white);
+      outline: 0px solid var(--hw-color-white);
     }
 
     &:active {
@@ -227,7 +217,6 @@
 
   &--stripped {
     outline: 0;
-    border: 2px solid transparent;
     background: none;
     fill: var(--hw-color-gray-dark);
     color: var(--hw-color-gray-darker);
@@ -243,7 +232,6 @@
     margin: 0px;
     padding: 10px 10px 8px;
     border-radius: 50%;
-    border: 2px solid var(--hw-color-primary);
     background: var(--hw-color-primary);
     outline: none;
 
@@ -252,10 +240,10 @@
     &:focus {
       color: var(--hw-color-white);
       fill: var(--hw-color-white);
-      border-color: var(--hw-color-primary-dark);
-      background: var(--hw-color-primary-dark);
+      border-color: var(--hw-color-button-primary-hover);
+      background: var(--hw-color-button-primary-hover);
       outline: none;
-      box-shadow: 0 0 0 1px var(--hw-color-primary-dark);
+      box-shadow: 0 0 0 1px var(--hw-color-button-primary-hover);
     }
     &:active {
       background: var(--hw-color-primary);
