@@ -5,12 +5,15 @@ let logo;
 const nodeEnv = process.env.NODE_ENV;
 
 if (nodeEnv === 'production') {
-  styles = [
+  styles = ['./fonts.css', './bring.css'];
+  scripts = ['./main.js', './examples.js'];
+  logo = './hedwig-logo.svg';
+  /*styles = [
     'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/fonts.css',
     'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/bring.css',
   ];
   scripts = ['https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/main.js', './examples.js'];
-  logo = 'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/hedwig-logo.svg';
+  logo = 'https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/hedwig-logo.svg';*/
 } else if (nodeEnv === 'staging') {
   styles = ['./fonts.css', './bring.css'];
   scripts = ['./main.js', './examples.js'];
