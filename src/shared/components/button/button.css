@@ -7,8 +7,9 @@
   padding: var(--hw-spacing-smaller) var(--hw-spacing);
   margin-top: 3px;
   border-radius: 2px;
-  border: 0px;
+  border-width: 0px;
   background: var(--hw-color-gray);
+  border-color: var(--hw-color-gray);
   color: var(--hw-color-button-text);
   fill: var(--hw-color-button-text);
   font-size: var(--hw-font-size-small);
@@ -28,6 +29,7 @@
     color: var(--hw-color-gray-dark) !important;
     fill: var(--hw-color-gray-dark) !important;
     background: var(--hw-color-gray-light) !important;
+    border-color: var(--hw-color-gray-light) !important;
     outline: 0 !important;
     box-shadow: none !important;
     cursor: default;
@@ -54,6 +56,7 @@
   &--small {
     padding: 0 var(--hw-spacing-smaller);
     padding: 12px 16px;
+    font-size: var(--hw-font-size-small);
   }
 
   &--full {
@@ -77,6 +80,7 @@
 
   &--primary {
     background: var(--hw-color-primary);
+    border-color: var(--hw-color-primary);
     color: var(--hw-color-button-text);
     fill: var(--hw-color-button-text);
 
@@ -84,6 +88,7 @@
     &:active,
     &:focus {
       background: var(--hw-color-button-primary-hover);
+      border-color: var(--hw-color-primary);
       outline: 0px solid var(--hw-color-button-primary-hover);
     }
 
@@ -94,6 +99,7 @@
 
   &--secondary {
     background: var(--hw-color-primary-darker);
+    border-color: var(--hw-color-primary-darker);
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
 
@@ -111,6 +117,7 @@
 
   &--picture-yellow {
     background: var(--hw-color-yellow);
+    border-color: var(--hw-color-yellow);
     color: var(--hw-color-gray-darkest);
     fill: var(--hw-color-gray-darkest);
 
@@ -127,6 +134,7 @@
 
   &--picture-dark {
     background: var(--hw-color-gray-darkest);
+    border-color: var(--hw-color-gray-darkest);
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
 
@@ -139,26 +147,31 @@
     &:focus {
       background: var(--hw-color-gray-dark);
       outline: 0px solid var(--hw-color-black);
-    }
+    } 
   }
 
   &--outline {
     background: none;
-    color: var(--hw-color-gray-darker);
-    fill: var(--hw-color-gray);
+    color: var(--hw-color-button-text);
+    fill: var(--hw-color-button-text);
+    border-width: 1px;
 
     &:not([disabled], .hw-button--round) {
       padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
     }
 
+    &:disabled, &[disabled], &[disabled]:active {
+      background: none !important;
+    }
+
     &:hover,
     &:active,
     &:focus {
-      color: var(--hw-color-white);
-      fill: var(--hw-color-white);
-      border-color: var(--hw-color-gray);
-      background: var(--hw-color-gray);
-      outline: 0px solid var(--hw-color-gray);
+      color: var(--hw-color-primary-dark);
+      fill: var(--hw-color-primary-dark);
+      border-color: var(--hw-color-primary-dark);
+      outline: 0px solid var(--hw-color-primary-dark);
+      background: none;
     }
 
     &:active {
@@ -171,6 +184,7 @@
     background: none;
     color: var(--hw-color-gray-darkest);
     fill: var(--hw-color-gray-darkest);
+    border-width: 1px;
 
     &:not([disabled], .hw-button--round) {
       padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
@@ -194,6 +208,7 @@
     background: none;
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
+    border-width: 1px;
 
     &:not([disabled], .hw-button--round) {
       padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);

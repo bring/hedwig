@@ -75,6 +75,9 @@ Alternative colored buttons can be used where extra contrast is needed ie. when 
 ### Outlined buttons
 
 ```html|span-4,plain,light
+  <button class="hw-button hw-button--primary hw-button--outline">
+    Primary button
+  </button>
   <button class="hw-button hw-button--outline">
     Default outline
   </button>
