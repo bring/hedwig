@@ -4,11 +4,12 @@
 
 .hw-radio-button {
   display: inline-block;
-  margin: 0.2rem 1rem 0 0;
+  margin: 0.4rem 3rem 0 0;
   cursor: pointer;
+  font-family: var(--hw-font-primary-regular);
   font-size: var(--hw-font-size-small);
   position: relative;
-  line-height: 1.5;
+  line-height: 1.0;
 
   /**
    * Elements
@@ -19,19 +20,19 @@
     float: left;
     position: relative;
     margin-top: 0;
-    margin-right: 0.4rem;
-    border: 3px solid var(--hw-color-gray-light);
+    margin-right: 0.6rem;
+    border: 2px solid var(--hw-color-primary-darker);
     border-radius: 50%;
     background: var(--hw-color-white);
-    width: 22px;
-    height: 22px;
+    width: 16px;
+    height: 16px;
     transition: border-color 0.3s ease, max-height 0.3s ease,
       transform 0.3s ease;
   }
 
   &__label {
     display: inline-block;
-    max-width: calc(100% - 22px - 0.4rem);
+    max-width: calc(100% - 16px - 0.4rem);
   }
 
   & > input {
@@ -41,22 +42,22 @@
     vertical-align: middle;
 
     &:hover:not([disabled]) ~ .hw-radio-button__indicator {
-      border-color: var(--hw-color-gray-darker);
+      border-color: var(--hw-color-primary);
     }
 
     &:checked ~ .hw-radio-button__indicator {
-      border-color: var(--hw-color-gray-darker);
+      border-color: var(--hw-color-primary-darker);
 
       &::after {
         content: "";
         position: absolute;
-        width: 10px;
-        height: 10px;
+        width: 6px;
+        height: 6px;
         border-radius: 50%;
         top: 50%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
-        background: var(--hw-color-gray-darker);
+        background: var(--hw-color-primary);
       }
     }
 
@@ -66,13 +67,13 @@
       &::after {
         content: "";
         position: absolute;
-        width: 10px;
-        height: 10px;
+        width: 6px;
+        height: 6px;
         border-radius: 50%;
         top: 50%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
-        background: var(--hw-color-gray-darker);
+        background: var(--hw-color-primary);
       }
     }
     
@@ -88,7 +89,11 @@
    */
 
   &--error .hw-radio-button__indicator {
-    border: 3px solid var(--hw-color-secondary) !important;
+    border: 2px solid var(--hw-color-secondary) !important;
     transition: border 150ms;
+
+    &::after {
+      background: var(--hw-color-secondary) !important;
+    }
   }
 }
