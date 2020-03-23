@@ -39,6 +39,10 @@
     margin-right: var(--hw-spacing-smallest);
   }
 
+  svg {
+    margin-right: 6px;
+  }
+
   /**
    * Modifiers: sizes
    */
@@ -247,18 +251,19 @@
     margin: 0px;
     padding: 10px 10px 8px;
     border-radius: 50%;
-    background: var(--hw-color-primary);
+    background: var(--hw-color-primary-light);
+    color: var(--hw-color-primary-darker);
     outline: none;
 
     &:hover,
     &:active,
     &:focus {
-      color: var(--hw-color-white);
-      fill: var(--hw-color-white);
-      border-color: var(--hw-color-button-primary-hover);
-      background: var(--hw-color-button-primary-hover);
+      color: var(--hw-color-primary-darker);
+      fill: var(--hw-color-primary-darker);
+      border-color: var(--hw-color-primary);
+      background: var(--hw-color-primary);
       outline: none;
-      box-shadow: 0 0 0 1px var(--hw-color-button-primary-hover);
+      box-shadow: 0 0 0 1px var(--hw-color-primary);
     }
     &:active {
       background: var(--hw-color-primary);
