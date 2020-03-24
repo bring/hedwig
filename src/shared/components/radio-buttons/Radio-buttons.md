@@ -9,8 +9,8 @@
 
 ```
 <label class="hw-radio-button">
-  <span class="hw-radio-button__label">The label</span>
   <input type="radio" name="hedwig" value="one" />
+  <span class="hw-radio-button__label">The label</span>
   <i class="hw-radio-button__indicator"></i>
 </label>
 ```
@@ -20,36 +20,73 @@
 
 ```html
 <label class="hw-radio-button">
-  <span class="hw-radio-button__label">One</span>
   <input type="radio" name="hedwig" value="one" />
+  <span class="hw-radio-button__label">One</span>
   <i class="hw-radio-button__indicator"></i>
 </label>
 
 <label class="hw-radio-button">
-  <span class="hw-radio-button__label">Two</span>
   <input type="radio" name="hedwig" value="two" />
+  <span class="hw-radio-button__label">Two</span>
   <i class="hw-radio-button__indicator"></i>
 </label>
 
 <label class="hw-radio-button">
-  <span class="hw-radio-button__label">Three</span>
   <input type="radio" name="hedwig" value="three" />
+  <span class="hw-radio-button__label">Three</span>
   <i class="hw-radio-button__indicator"></i>
 </label>
 
 <label class="hw-radio-button">
+  <input type="radio" name="hedwig" value="four" disabled />
   <span class="hw-radio-button__label">Disabled</span>
-  <input type="radio" name="hedwdig" value="four" disabled />
   <i class="hw-radio-button__indicator"></i>
 </label>
 ```
 
+### With bounding box
+
+```html
+<label class="hw-radio-button hw-radio-button--bounding">
+  <input type="radio" name="hedwig" value="one" />
+  <span class="hw-radio-button__label">One</span>
+  <i class="hw-radio-button__indicator"></i>
+</label>
+
+<label class="hw-radio-button hw-radio-button--bounding">
+  <input type="radio" name="hedwig" value="two" />
+  <span class="hw-radio-button__label">Two</span>
+  <i class="hw-radio-button__indicator"></i>
+</label>
+
+<label class="hw-radio-button hw-radio-button--bounding">
+  <input type="radio" name="hedwig" value="three" />
+  <span class="hw-radio-button__label">Three</span>
+  <i class="hw-radio-button__indicator"></i>
+</label>
+
+<label class="hw-radio-button hw-radio-button--bounding" disabled>
+  <input type="radio" name="hedwig" value="four" disabled />
+  <span class="hw-radio-button__label">Disabled</span>
+  <i class="hw-radio-button__indicator"></i>
+</label>
+
+<label class="hw-radio-button hw-radio-button--bounding hw-radio-button--error">
+  <input type="radio" name="hedwig" value="four" />
+  <span class="hw-radio-button__label">Error</span>
+  <i class="hw-radio-button__indicator"></i>
+</label>
+
+```
+
+
+
 ### Long label
 
-```html|span-4
+```html|span-3
 <label class="hw-radio-button">
-  <span class="hw-radio-button__label">A very long label that will occupy more than one line for sure</span>
   <input type="radio" name="hedwig" value="one" />
+  <span class="hw-radio-button__label">A very, very, very, very long label that will occupy more than one line for sure</span>
   <i class="hw-radio-button__indicator"></i>
 </label>
 ```
@@ -58,8 +95,8 @@
 
 ```html
 <label class="hw-radio-button hw-radio-button--error">
+  <input type="radio" name="hedwig" value="one" />
   <span class="hw-radio-button__label">One</span>
-  <input type="radio" name="hedwdig" value="one" />
   <i class="hw-radio-button__indicator"></i>
 </label>
 <div class="hw-error-simple hw-error--align-left">Error message!</div>
