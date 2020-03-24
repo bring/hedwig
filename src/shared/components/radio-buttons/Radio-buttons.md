@@ -46,11 +46,11 @@
 
 ### Long label
 
-```html|span-2
+```html|span-4
 <label class="hw-radio-button">
+  <span class="hw-radio-button__label">A very long label that will occupy more than one line for sure</span>
   <input type="radio" name="hedwig" value="one" />
   <i class="hw-radio-button__indicator"></i>
-  <span class="hw-radio-button__label">A very long label that will occupy more than one line for sure</span>
 </label>
 ```
 
