@@ -7,10 +7,10 @@
   display: block;
   width: 100%;
   max-width: var(--hw-spacing);
-  height: 3px;
+  height: 1px;
   border: 0;
   margin: 0;
-  background-color: var(--hw-color-gray-darker);
+  background-color: var(--hw-color-gray-lighter);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   /**
@@ -21,9 +21,9 @@
     margin: 0 auto;
   }
 
-   &--full {
+  &--full {
     max-width: initial;
-    background-color: var(--hw-color-opaque-black-7);
+    background-color: var(--hw-color-gray-lighter);
   }
 
   &--white {
@@ -46,21 +46,21 @@
     background-color: var(--hw-color-gray-lightest);
   }
 
-  &--dashed{
+  &--dashed {
     background-color: transparent;
     background-image: linear-gradient(90deg, var(--hw-color-gray-darker) 4px, transparent 0%);
     background-size: 9px 3px;
     background-repeat: repeat-x;
-    &.hw-hr--white{
+    &.hw-hr--white {
       background-image: linear-gradient(90deg, var(--hw-color-white) 4px, transparent 0%);
     }    
-    &.hw-hr--gray{
+    &.hw-hr--gray {
       background-image: linear-gradient(90deg, var(--hw-color-gray) 4px, transparent 0%);
     }
-    &.hw-hr--gray-light{
+    &.hw-hr--gray-light {
       background-image: linear-gradient(90deg, var(--hw-color-gray-light) 4px, transparent 0%);
     }
-    &.hw-hr--gray-lightest{
+    &.hw-hr--gray-lightest {
       background-image: linear-gradient(90deg, var(--hw-color-gray-lightest) 4px, transparent 0%);
     }
   }
