@@ -20,10 +20,10 @@
 
   & figcaption {
     position: relative;
-    line-height: 1.2;
-    margin-top: var(--hw-spacing-smallest);
+    line-height: 1.5;
+    margin-top: var(--hw-spacing-smaller);
     text-align: left;
-    font-size: var(--hw-font-size-smaller);
-    color: var(--hw-color-gray-dark);
+    font-size: var(--hw-font-size-smallest);
+    color: var(--hw-color-black);
   }
 }
