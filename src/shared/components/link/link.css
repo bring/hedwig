@@ -3,8 +3,7 @@
  */
 
 .hw-link {
-  border-bottom: 2px solid var(--hw-color-link-underline);
-  color: var(--hw-color-link);
+  border-bottom: 1px solid var(--hw-color-link-underline);
   fill: var(--hw-color-link);
   transition: all 0.1s ease;
   cursor: pointer;
@@ -50,7 +49,7 @@
   &--no-underline {
     border-bottom-width: 0px;
     &:hover {
-      border-bottom-width: 2px;
+      border-bottom-width: 1px;
     }
   }
 }

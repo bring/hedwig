@@ -59,6 +59,17 @@
       transform 0.3s ease;
   }
 
+/*
+  input[type=radio] {
+    float: left;
+}
+
+label {
+    margin-left: 30px;
+    display: block;
+}*/
+
+
   &__label {
     display: inline-block;
     margin-top: -2px;

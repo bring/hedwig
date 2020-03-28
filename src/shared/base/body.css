@@ -2,7 +2,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
-  font-family: var(--hw-font-primary-medium);
+  font-family: var(--hw-font-primary-regular);
   font-size: var(--hw-font-size-p);
   font-weight: 400;
   fill: var(--hw-color-gray);
@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  font-family: var(--hw-font-primary-regular);
   background: var(--hw-color-gray-lightest);
   display: flex;
   flex-direction: column;
