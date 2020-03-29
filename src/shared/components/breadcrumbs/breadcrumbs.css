@@ -4,6 +4,18 @@
   align-items: center;
 }
 .hw-breadcrumb {
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  a {
+    color: var(--hw-color-gray-dark);
+    border-bottom: 0px;
+    :hover {
+      color: var(--hw-color-link-hover);
+    }
+  }
+
   &:not(:last-of-type) {
     display: none;
     @media (--large){
@@ -12,12 +24,14 @@
   }
 
   &__current {
+    text-transform: uppercase;
     display: none;
     @media (--large){
       display: inline;
     }
   }
   &__arrow {
+    color: var(--hw-color-gray-dark);
     display: none;
     margin-right: 12px;
     margin-left: 12px;
