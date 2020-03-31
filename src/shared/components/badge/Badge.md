@@ -15,8 +15,6 @@ Provides styling for badges
 [Small]    .hw-badge--small
 [Large]    .hw-badge--large
 [Larger]   .hw-badge--larger
-
-[Uppercase].hw-badge--uppercase
 ```
 
 ### Primary
