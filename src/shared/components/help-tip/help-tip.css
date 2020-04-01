@@ -46,19 +46,18 @@
             right: 3px;
             border-width: 6px;
             border-style: solid;
-            border-color: var(--hw-color-gray-darkest) transparent transparent transparent;
+            border-color: var(--hw-color-primary-lighter) transparent transparent transparent;
             opacity: 0;
             transition: visibility 0s ease-in-out 0.3s, opacity 0.3s ease-in-out;
           }
         }
         & .hw-help-tip__content {
-          @extend .hw-text-less-line-height;
           display: block;
           visibility: hidden;
-          color: var(--hw-color-gray-lightest);
-          padding: var(--hw-spacing-smaller);
+          color: var(--hw-color-black);
+          padding: var(--hw-spacing);
           font-family: var(--hw-font-primary-regular);
-          font-size: var(--hw-font-size-small);
+          font-size: var(--hw-font-size-p);
           max-width: 300px;
           width: 300px;
           position: absolute;
@@ -68,20 +67,23 @@
           text-align: left;
           opacity: 0;
           transition: visibility 0s ease-in-out 0.3s, background-color 0s ease-in-out 0.3s, box-shadow 0s ease-in-out 0.3s, opacity 0.3s ease-in-out;
-          &::after{
+          &::after {
             display: none;
+          }
+          h5 {
+            padding-bottom: 4px;
+            line-height: 1.3;
           }
         }
     }
     /* Old code deprecated - TO BE REMOVED  START */
     &__content {
-      @extend .hw-text-less-line-height;
       display: block;
       visibility: hidden;
-      color: var(--hw-color-gray-lightest);      
-      padding: var(--hw-spacing-smallest);
+      color: var(--hw-color-black);      
+      padding: var(--hw-spacing);
       font-family: var(--hw-font-primary-regular);
-      font-size: var(--hw-font-size-small);
+      font-size: var(--hw-font-size-p);
       max-width: 300px;
       width: 300px;
       position: absolute;
@@ -103,8 +105,8 @@
     }
     
     &__button:focus ~ &__content, &__button:hover ~ &__content {
-      background-color: var(--hw-color-gray-darkest);
-      box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-gray-darkest); /* Coverup outline chrome */
+      background-color: var(--hw-color-primary-lighter);
+      box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-primary-lighter); /* Coverup outline chrome */
       visibility: visible;
     }
     /* Old code deprecated - TO BE REMOVED  END */
@@ -117,8 +119,8 @@
         transition: opacity 0.3s ease-in-out;
       }
       & .hw-help-tip__content {
-        background-color: var(--hw-color-gray-darkest);
-        box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-gray-darkest); /* Coverup outline chrome */
+        background-color: var(--hw-color-primary-lighter);
+        box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-primary-lighter); /* Coverup outline chrome */
         visibility: visible;
         opacity: 1;
         transition: opacity 0.3s ease-in-out;
@@ -127,7 +129,7 @@
 
     &__title{
       font-family: var(--hw-font-primary-bold);
-      font-size: var(--hw-font-size-small);
+      font-size: var(--hw-font-size-p);
     }
 
   /* Not responsive */
