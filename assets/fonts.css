@@ -15,11 +15,6 @@
  * Opera Mobile 12, Chrome 47 for Android, Firefox 42 for Android,
  * Partial(IE Mobile 10-11), UC Browser 9.9 for Android
  *
- * http://caniuse.com/#feat=svg-fonts
- * Chrome 4-37, Safari 3.2, Opera 10.0-24, Safari & Chrome for iOS 3.2,
- * Android 3-4.4.4, Blackberry browser 7, Opera Mobile 12,
- * UC Browser 9.9 for Android
- *
  * http://caniuse.com/#feat=eot
  * IE8-11 (no other browsers)
  *
@@ -36,8 +31,7 @@
   src: url("fonts/FoundryMonolinePN-Regular.eot");
   src: url("fonts/FoundryMonolinePN-Regular.woff2") format("woff2"),
     url("fonts/FoundryMonolinePN-Regular.woff") format("woff"),
-    url("fonts/FoundryMonolinePN-Regular.ttf") format("truetype"),
-    url("fonts/FoundryMonolinePN-Regular.svg#FoundryMonolineReg") format("svg");
+    url("fonts/FoundryMonolinePN-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -45,9 +39,7 @@
   src: url("fonts/FoundryMonolinePN-Medium.eot");
   src: url("fonts/FoundryMonolinePN-Medium.woff2") format("woff2"),
     url("fonts/FoundryMonolinePN-Medium.woff") format("woff"),
-    url("fonts/FoundryMonolinePN-Medium.ttf") format("truetype"),
-    url("fonts/FoundryMonolinePN-Medium.svg#FoundryMonolineMedium")
-      format("svg");
+    url("fonts/FoundryMonolinePN-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -55,6 +47,5 @@
   src: url("fonts/FoundryMonolinePN-Bold.eot");
   src: url("fonts/FoundryMonolinePN-Bold.woff2") format("woff2"),
     url("fonts/FoundryMonolinePN-Bold.woff") format("woff"),
-    url("fonts/FoundryMonolinePN-Bold.ttf") format("truetype"),
-    url("fonts/FoundryMonolinePN-Bold.svg#FoundryMonolineBold") format("svg");
+    url("fonts/FoundryMonolinePN-Bold.ttf") format("truetype");
 }
