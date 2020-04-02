@@ -4,19 +4,19 @@ Our font is Posten Sans.
 The font size on H-tags are responsive on viewports between 300 - 1200px, and static on viewports smaller and bigger viewports
 
 ```code
-[h1]             h1 font size 28 - 44px
-[h2]             h2 font size 25 - 35px
-[h3]             h3 font size 22 - 28px
-[h4]             h4 font size 20 - 22px
-[h5]             h5 font size 18px
+[h1]             h1 font size 32 - 48px
+[h2]             h2 font size 24 - 32px
+[h3]             h3 font size 18 - 24px
+[h4]             h4 font size 18 - 20px
+[h5]             h5 font size 18 - 16px
 [p]              p
 
-[.hw-h1-large]       font size 32 - 54px
-[.hw-h1]             font size 28 - 44px
-[.hw-h2]             font size 25 - 35px
-[.hw-h3]             font size 22 - 28px
-[.hw-h4]             font size 20 - 22px
-[.hw-h5]             font size 18px
+[.hw-h1-large]       font size 48 - 72px
+[.hw-h1]             font size 32 - 48px
+[.hw-h2]             font size 24 - 32px
+[.hw-h3]             font size 18 - 24px
+[.hw-h4]             font size 18 - 20px
+[.hw-h5]             font size 18 - 16px
 
 
 [Lead]             hw-text-lead

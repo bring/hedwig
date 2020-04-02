@@ -27,12 +27,19 @@
  */
 
 @font-face {
+  font-family: "Posten Sans Light";
+  src: url("fonts/PostenSans-Light.eot");
+  src: url("fonts/PostenSans-Light.woff2") format("woff2"),
+    url("fonts/PostenSans-Light.woff") format("woff"),
+    url("fonts/PostenSans-Light.ttf") format("truetype"),
+}
+
+@font-face {
   font-family: "Posten Sans Regular";
   src: url("fonts/PostenSans-Regular.eot");
   src: url("fonts/PostenSans-Regular.woff2") format("woff2"),
     url("fonts/PostenSans-Regular.woff") format("woff"),
     url("fonts/PostenSans-Regular.ttf") format("truetype"),
-    url("fonts/PostenSans-Regular.svg#FoundryMonolineReg") format("svg");
 }
 
 @font-face {
@@ -41,7 +48,6 @@
   src: url("fonts/PostenSans-Medium.woff2") format("woff2"),
     url("fonts/PostenSans-Medium.woff") format("woff"),
     url("fonts/PostenSans-Medium.ttf") format("truetype"),
-    url("fonts/PostenSans-Medium.svg#FoundryMonolineMedium")
       format("svg");
 }
 
@@ -51,5 +57,4 @@
   src: url("fonts/PostenSans-Bold.woff2") format("woff2"),
     url("fonts/PostenSans-Bold.woff") format("woff"),
     url("fonts/PostenSans-Bold.ttf") format("truetype"),
-    url("fonts/PostenSans-Bold.svg#FoundryMonolineBold") format("svg");
 }
