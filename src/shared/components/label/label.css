@@ -3,8 +3,9 @@
  */
 
 .hw-label {
-  font-size: var(--hw-font-size-small);
-  margin-bottom: var(--hw-spacing-small);
+  color: var(--hw-color-gray-dark);
+  font-size: var(--hw-font-size-smallest);
+  margin-bottom: var(--hw-spacing-smallest);
   display: block;
 
   &[disabled] {

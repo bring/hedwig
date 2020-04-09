@@ -39,7 +39,7 @@
   --hw-spacing-tiny: 3px;
   --hw-spacing-smallest: 6px;
   --hw-spacing-smaller: 12px;
-  --hw-spacing-small: 18px;
+  --hw-spacing-small: 16px;
   --hw-spacing: 24px;
   --hw-spacing-large: 36px;
   --hw-spacing-larger: 48px;
@@ -53,7 +53,7 @@
   --hw-color-gray-lighter: #e6e6e6;
   --hw-color-gray-light: #d6d6d6;
   --hw-color-gray: #888;
-  --hw-color-gray-dark: #666;
+  --hw-color-gray-dark: #6e6e6e;
   --hw-color-gray-darker: #444;
   --hw-color-gray-darkest: #222;
   --hw-color-yellow: #fdbb2f;
@@ -62,7 +62,7 @@
   --hw-color-red: #e32d22;
   --hw-color-white: #fff;
   --hw-color-black: #000;
-  --hw-color-avocado: #26b576;
+  --hw-color-avocado: #7BC144;
   --hw-color-secondary: #fdbb2f;
 
   /**
