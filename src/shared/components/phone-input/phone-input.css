@@ -28,7 +28,7 @@
   & .hw-dropdown {
     width: auto;
     max-height: 42px;
-    border: 3px solid transparent;
+    border: var(--hw-border-thickness) solid transparent;
     overflow: hidden;
     position: absolute;
     color: var(--hw-color-gray-dark);
@@ -92,7 +92,7 @@
 
       & .hw-dropdown__inner {
         height: auto;
-        border: 3px solid var(--hw-color-gray);
+        border: var(--hw-border-thickness) solid var(--hw-color-gray);
         background: var(--hw-color-white);
 
         &::after {
@@ -119,7 +119,7 @@
         display: block;
       }
       /* Override - Display placeholder always */
-      & .hw-dropdown__placeholder{
+      & .hw-dropdown__placeholder {
         display: block;
       }
     }

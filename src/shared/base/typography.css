@@ -64,9 +64,29 @@
     letter-spacing: -0.03em;
   }
 
+
+
+
+
+
+  .hw-h1-large {
+    font-size: var(--hw-font-size-h1-large);
+    font-family: var(--hw-h1-large-font-family);
+    line-height: var(--hw-h1-large-line-height);
+  }
+
+  @media (--xlarge) {
+    .hw-h1-large {
+      font-size: var(--hw-font-size-max-h1-large-px);
+    }
+  }
+
+
   h1,
   .hw-h1 {
     font-size: var(--hw-font-size-h1);
+    font-family: var(--hw-h1-font-family);
+    line-height: var(--hw-h1-line-height);
   }
 
   @media (--xlarge) {
@@ -76,19 +96,12 @@
     }
   }
 
-  .hw-h1-large {
-    font-size: var(--hw-font-size-h1-large);
-  }
-
-  @media (--xlarge) {
-    .hw-h1-large {
-      font-size: var(--hw-font-size-max-h1-large-px);
-    }
-  }
 
   h2,
   .hw-h2 {
     font-size: var(--hw-font-size-h2);
+    font-family: var(--hw-h2-font-family);
+    line-height: var(--hw-h2-line-height);
   }
 
   @media (--xlarge) {
@@ -98,9 +111,12 @@
     }
   }
 
+
   h3,
   .hw-h3 {
     font-size: var(--hw-font-size-h3);
+    font-family: var(--hw-h3-font-family);
+    line-height: var(--hw-h3-line-height);
   }
 
   @media (--xlarge) {
@@ -110,9 +126,12 @@
     }
   }
 
+
   h4,
   .hw-h4 {
     font-size: var(--hw-font-size-h4);
+    font-family: var(--hw-h4-font-family);
+    line-height: var(--hw-h4-line-height);
   }
 
   @media (--xlarge) {
@@ -122,9 +141,12 @@
     }
   }
 
+
   h5,
   .hw-h5 {
     font-size: var(--hw-font-size-h5);
+    font-family: var(--hw-h5-font-family);
+    line-height: var(--hw-h5-line-height);
   }
 
   @media (--xlarge) {
@@ -133,9 +155,13 @@
       font-size: var(--hw-font-size-max-h5-px);
     }
   }
+
+
   h6,
   .hw-h6 {
     font-size: var(--hw-font-size-h6);
+    font-family: var(--hw-h6-line-height-font-family);
+    line-height: var(--hw-h6-line-height-line-height);
   }
 
   @media (--xlarge) {
@@ -187,8 +213,12 @@
       font-family: var(--hw-font-primary-medium);
     }
 
-    &-light {
+    &-regular {
       font-family: var(--hw-font-primary-regular);
+    }
+
+    &-light {
+      font-family: var(--hw-font-primary-light);
     }
 
   }
