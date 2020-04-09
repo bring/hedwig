@@ -16,9 +16,9 @@
   & li::before {
     content: "";
     position: absolute;
-    background: var(--hw-color-gray-darker);
-    width: 12px;
-    height: 12px;
+    background: var(--hw-color-black);
+    width: 7px;
+    height: 7px;
     margin-left: -22px;
     border-radius: 50%;
     top: var(--hw-spacing-smallest);
@@ -35,8 +35,8 @@
       margin-bottom: 0;
 
       &::before {
-        width: 14px;
-        height: 14px;
+        width: 7px;
+        height: 7px;
         margin-left: -24px;
       }
     }
@@ -51,15 +51,17 @@
   }
 
   &--small {
-    font-size: var(--hw-font-size-small);
+    font-size: var(--hw-font-size-smaller);
+    line-height: 1.8;
 
     & li {
       margin-bottom: 0;
 
       &::before {
-          width: 10px;
-          height: 10px;
+          width: 7px;
+          height: 7px;
           margin-left: -20px;
+          margin-top: 3px;
         }
     }
   }

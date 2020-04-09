@@ -14,7 +14,7 @@
   font-size: var(--hw-font-size-small);
   line-height: normal;
   border: var(--hw-border-thickness) solid var(--hw-color-gray-lightest);
-  border-radius: 2px;
+  border-radius: var(--hw-border-radius);
   transition: border 100ms;
   -webkit-appearance: none;
 

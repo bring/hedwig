@@ -4,12 +4,13 @@
 
 .hw-error {
   display: block;
-  padding: var(--hw-spacing-smallest) 0;
+  padding: var(--hw-spacing) var(--hw-spacing-even-larger) 0 var(--hw-spacing-even-larger);
   font-size: var(--hw-font-size-small);
   text-align: right;
   transform: translateY(0);
   transition: transform 200ms;
   opacity: 1;
+  border-radius: var(--hw-border-radius);
 
   &::before {
     /* Font Awesome creates an svg from this, see the next rule for styling this */
@@ -68,9 +69,9 @@
 
 .hw-error-summary {
   border: none;
-  padding: var(--hw-spacing) var(--hw-spacing) 0 var(--hw-spacing);
+  padding: var(--hw-spacing) var(--hw-spacing-even-larger) 1px var(--hw-spacing-even-larger);
   background: var(--hw-color-secondary);
-  border-radius: 2px;
+  border-radius: var(--hw-border-radius);
 
   /**
    * Elements
@@ -80,8 +81,14 @@
     position: relative;
     display: flex;
     align-items: center;
+    font-size: var(--hw-font-size-min-h3);
     
-    &::before {
+    h1, h2, h3 {
+      font-family: var(--hw-font-primary-bold) !important;
+      font-weight: var(--hw-font-weight-bold);
+    }
+    
+    &::before_INACTIVE {
       content: ""; /* exclamation-circle */
       width: 24px;
       min-width: 24px;
@@ -108,5 +115,8 @@
 
   &__contents {
     margin-top: var(--hw-spacing-smaller);
+    font-size: var(--hw-font-size-smaller);
+
+
   }
 }

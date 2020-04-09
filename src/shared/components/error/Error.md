@@ -38,7 +38,7 @@ Generic error message for input fields
 ```html
 <div class="hw-error-summary">
   <div class="hw-error-summary__title">
-    <h2> Brukerprofilen din ble ikke opprettet fordi</h2>
+    <h3>Brukerprofilen din ble ikke opprettet fordi</h3>
   </div>
   <div class="hw-error-summary__contents">
     <ul class="hw-list hw-list--small">

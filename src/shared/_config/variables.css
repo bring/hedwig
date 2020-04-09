@@ -40,10 +40,10 @@
   --hw-spacing-smallest: 6px;
   --hw-spacing-smaller: 12px;
   --hw-spacing-small: 16px;
-  --hw-spacing: 24px;
+  --hw-spacing: 28px;
   --hw-spacing-large: 36px;
   --hw-spacing-larger: 48px;
-  --hw-spacing-even-larger: 72px;
+  --hw-spacing-even-larger: 68px;
 
   /**
    * Shared colors
@@ -93,6 +93,11 @@
   --hw-font-primary-medium: 'Posten Sans Medium', sans-serif;
   --hw-font-primary-bold: 'Posten Sans Bold', sans-serif;
 
+  --hw-font-weight-light: 100;
+  --hw-font-weight-regular: 300;
+  --hw-font-weight-medium: 500;
+  --hw-font-weight-bold: 700;
+
   /**
    * Font sizes
    * NOTE: To achieve fluid font sizes on h-tags we used the calculation described here:
@@ -117,9 +122,9 @@
   --hw-h1-line-height: 1.1667;
 
   --hw-font-size-max-h2: 44;
-  --hw-font-size-max-h2-px: 44;
+  --hw-font-size-max-h2-px: 44px;
   --hw-font-size-min-h2: 28;
-  --hw-font-size-min-h2-px: 28;
+  --hw-font-size-min-h2-px: 28px;
   --hw-h2-font-family: var(--hw-font-primary-light);
   --hw-h2-line-height: 1.25;
 
@@ -177,6 +182,7 @@
 
   /* Borders */
   --hw-border-thickness: 2px;
+  --hw-border-radius: 2px;
 
   /* Navbar heights */
   --hw-navbar-height-mobile: 54px;

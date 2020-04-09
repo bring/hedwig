@@ -6,7 +6,7 @@
   display: inline-block;
   padding: var(--hw-spacing-smaller) var(--hw-spacing);
   margin-top: 3px;
-  border-radius: 2px;
+  border-radius: var(--hw-border-radius);
   border-width: 0px;
   background: var(--hw-color-gray);
   border-color: var(--hw-color-gray);
