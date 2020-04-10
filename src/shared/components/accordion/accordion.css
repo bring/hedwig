@@ -8,7 +8,7 @@
   margin: 0;
   list-style: none;
   background-color: white;
-  border: 3px solid var(--hw-color-gray-light);
+  border: none;
   transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
 
   &:hover {
@@ -35,20 +35,19 @@
   &__trigger {
     position: relative;
     display: block;
-    width: calc(100% - var(--hw-spacing-small) * 2);
-    margin: 0 var(--hw-spacing-small) 0 var(--hw-spacing-small);
-    padding: var(--hw-spacing-smaller) 0;
+    width: 100%;
+    padding: calc(var(--hw-spacing-smaller) * 2) 0;
     padding-right: var(--hw-spacing-small);
     border: 0;
-    border-top: 3px solid var(--hw-color-gray-lighter);
-    font-size: var(--hw-font-size-small);
+    border-top: 1px solid var(--hw-color-gray-lighter);
+    font-size: var(--hw-font-size-p);
     text-align: left;
     color: inherit;
     background-color: transparent;
 
     &:hover,
     &:focus {
-      color: var(--hw-color-primary);
+      color: var(--hw-color-primary-dark);
       outline: 0;
     }
   }
@@ -60,17 +59,17 @@
       top: 22px;
       right: 0;
       display: block;
-      width: 12px;
-      height: 4px;
+      width: 14px;
+      height: 2px;
       content: '';
       background-color: currentColor;
-      transform: rotate(-45deg);
+      transform: rotate(0deg);
       transition: transform 0.1s ease;
     }
 
     &::after {
-      right: 6px;
-      transform: rotate(45deg);
+      right: 0px;
+      transform: rotate(90deg);
     }
   }
 
@@ -87,11 +86,11 @@
   }
 
   &__item--expanded .hw-accordion__arrow::before {
-    transform: rotate(45deg);
+    transform: rotate(180deg);
   }
 
   &__item--expanded .hw-accordion__arrow::after {
-    transform: rotate(-45deg);
+    transform: rotate(0deg);
   }
 
   &--menu {
