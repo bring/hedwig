@@ -5,7 +5,7 @@ Available in version 6.1.0
 
 ```html
 <blockquote class="hw-quote">
-  <p class="hw-quote__content hw-h3">"More fonts. Use more fonts!"</p>
+  <p class="hw-quote__content hw-h3">More fonts. Use more fonts!</p>
   <p class="hw-quote__author">Anonymous client</p>
 </blockquote>
 ```

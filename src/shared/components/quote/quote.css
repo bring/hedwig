@@ -2,9 +2,12 @@
   display: block;
   margin: var(--hw-spacing-larger) 0;
   padding: 0 var(--hw-spacing);
-  border-left: 6px solid var(--hw-color-primary);
-  box-shadow: -6px 0 0 0 var(--hw-color-primary-dark);
   width: 100%;
+
+  &__content {
+    font-family: var(--hw-font-primary-light) !important;
+    font-weight: var(--hw-font-weight-light) !important;
+  }
 }
 
 .hw-quote--pull-right {
@@ -13,20 +16,18 @@
 }
 
 .hw-quote__content:not(:last-child):before {
-  content: '\00AB';
-  font-size: 1.2em;
+  content: '\201C';
   padding-right: 3px;
 }
 
 .hw-quote__content:not(:last-child):after {
-  content: '\00BB';
-  font-size: 1.2em;
-  padding-left: 3px;
+  content: '\201D';
+  padding-left: 0px;
 }
 
 .hw-quote__author {
   @extend .hw-text-uppercase;
-  font-size: var(--hw-font-size-small);
+  font-size: var(--hw-font-size-smaller);
   font-style: normal;
-  margin-top: var(--hw-spacing);
+  margin-top: var(--hw-spacing-smaller);
 }
