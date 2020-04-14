@@ -56,7 +56,7 @@
     &::before,
     &::after {
       position: absolute;
-      top: 22px;
+      top: var(--hw-spacing-large);
       right: 0;
       display: block;
       width: 14px;
@@ -74,7 +74,7 @@
   }
 
   &__contents {
-    padding: 0 var(--hw-spacing-larger) var(--hw-spacing-small) var(--hw-spacing-small);
+    padding: 0 var(--hw-spacing-larger) var(--hw-spacing-large) 0;
   }
 
   /**
