@@ -3,7 +3,7 @@
  */
 
 .hw-link {
-  border-bottom: 1px solid var(--hw-color-link-underline);
+  border-bottom: var(--hw-border-thickness) solid var(--hw-color-link-underline);
   fill: var(--hw-color-link);
   transition: all 0.1s ease;
   cursor: pointer;
@@ -30,11 +30,19 @@
 
   &--inverted {
     color: var(--hw-color-white);
-    border-color: var(--hw-color-opaque-white);
+    border-color: currentColor;
     &:hover,
     &:active {
-      color: var(--hw-color-white);
-      border-color: var(--hw-color-white);
+      color: var(--hw-color-primary-light);
+      border-color: currentColor;
+    }
+    &:disabled {
+      color: var(--hw-color-gray-dark);
+      fill: currentColor;
+      border-color: currentColor;
+      outline: 0 !important;
+      box-shadow: none !important;
+      cursor: default;
     }
   }
 
@@ -49,7 +57,7 @@
   &--no-underline {
     border-bottom-width: 0px;
     &:hover {
-      border-bottom-width: 1px;
+      border-bottom-width: var(--hw-border-thickness);
     }
   }
 }
