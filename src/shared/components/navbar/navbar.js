@@ -1,5 +1,4 @@
-import q from '../../../shared/utilities/js/q';
-import qa from '../../../shared/utilities/js/qa';
+import q from '../../utilities/js/q';
 import KEYS from '../../utilities/js/keys';
 import trapFocus from '../../utilities/js/trapFocus';
 
@@ -20,7 +19,7 @@ const HWNavbar = ({
   showSearchClass = 'hw-navbar--searching',
   searching = 'hw--searching',
   desktopSearchFieldSelector = '.hw-navbar__search .hw-search__input',
-  closeSearchSelector = '[data-hw-navbar-close-search]'
+  closeSearchSelector = '[data-hw-navbar-close-search]',
 } = {}) => {
   // Module settings object
   const SETTINGS = {
@@ -34,16 +33,17 @@ const HWNavbar = ({
     desktopSearchField: q(desktopSearchFieldSelector),
     footer: q('footer'),
     main: q('main'),
-    searchSection: q('.hw-navbar__search')
+    searchSection: q('.hw-navbar__search'),
+    drawer: q('.hw-navbar .hw-navbar__drawer'),
   };
   // Keep track of where focus was before trapFocus()
   let returnFocusEl = null;
 
 
-  function setMenuButtonLabelWidths(){
-    if(SETTINGS.menuButtonLabelMenu.offsetWidth > 0) {
-      SETTINGS.menuButtonLabelMenu.style.width = SETTINGS.menuButtonLabelMenu.offsetWidth + 'px';
-      SETTINGS.menuButtonLabelClose.style.width = SETTINGS.menuButtonLabelMenu.offsetWidth + 'px';
+  function setMenuButtonLabelWidths() {
+    if (SETTINGS.menuButtonLabelMenu.offsetWidth > 0) {
+      SETTINGS.menuButtonLabelMenu.style.width = `${SETTINGS.menuButtonLabelMenu.offsetWidth}px`;
+      SETTINGS.menuButtonLabelClose.style.width = `${SETTINGS.menuButtonLabelMenu.offsetWidth}px`;
     }
   }
 
@@ -55,7 +55,8 @@ const HWNavbar = ({
   function toggleMenu() {
     if (SETTINGS.navbar.classList.contains(activeClass)) {
       SETTINGS.navbar.classList.remove(activeClass);
-      SETTINGS.navbar.querySelector('.hw-navbar__drawer').setAttribute('aria-expanded',false);
+      SETTINGS.drawer.setAttribute('aria-hidden', true);
+      SETTINGS.menuButton.setAttribute('aria-expanded', false);
       if (SETTINGS.footer && SETTINGS.main) {
         SETTINGS.main.style.display = 'block';
         SETTINGS.footer.style.display = 'block';
@@ -68,11 +69,12 @@ const HWNavbar = ({
       return;
     }
 
-    if(!SETTINGS.menuButtonLabelClose.style.width){
+    if (!SETTINGS.menuButtonLabelClose.style.width) {
       setMenuButtonLabelWidths();
     }
     SETTINGS.navbar.classList.add(activeClass);
-    SETTINGS.navbar.querySelector('.hw-navbar__drawer').setAttribute('aria-expanded',true);
+    SETTINGS.drawer.setAttribute('aria-hidden', false);
+    SETTINGS.menuButton.setAttribute('aria-expanded', true);
     if (SETTINGS.footer && SETTINGS.main) {
       SETTINGS.main.style.display = 'none';
       SETTINGS.footer.style.display = 'none';
@@ -83,10 +85,10 @@ const HWNavbar = ({
   function toggleSearch() {
     if (SETTINGS.navbar.classList.contains(showSearchClass)) {
       SETTINGS.navbar.classList.remove(showSearchClass);
-      if(SETTINGS.main) {
+      if (SETTINGS.main) {
         SETTINGS.main.classList.remove(searching);
       }
-      if(SETTINGS.footer) {
+      if (SETTINGS.footer) {
         SETTINGS.footer.classList.remove(searching);
       }
       returnFocusEl.focus();
@@ -96,10 +98,10 @@ const HWNavbar = ({
     trapFocus(SETTINGS.searchSection);
     returnFocusEl = document.activeElement;
     SETTINGS.navbar.classList.add(showSearchClass);
-    if(SETTINGS.main) {
+    if (SETTINGS.main) {
       SETTINGS.main.classList.add(searching);
     }
-    if(SETTINGS.footer) {
+    if (SETTINGS.footer) {
       SETTINGS.footer.classList.add(searching);
     }
     if (SETTINGS.desktopSearchField) {
@@ -107,8 +109,8 @@ const HWNavbar = ({
     }
   }
 
-  function onEscape(e){
-    if(e.keyCode === KEYS.ESCAPE) {
+  function onEscape(e) {
+    if (e.keyCode === KEYS.ESCAPE) {
       toggleSearch();
     }
   }
@@ -139,9 +141,9 @@ const HWNavbar = ({
     if (SETTINGS.searchButton) {
       SETTINGS.searchButton.addEventListener('click', toggleSearch);
       SETTINGS.overlay.addEventListener('click', toggleSearch);
-      q('.hw-navbar__search').addEventListener('keydown', e => onEscape(e));
+      q('.hw-navbar__search').addEventListener('keydown', (e) => onEscape(e));
     }
-    if(SETTINGS.closeSearch){
+    if (SETTINGS.closeSearch) {
       SETTINGS.closeSearch.addEventListener('click', toggleSearch);
     }
   }
