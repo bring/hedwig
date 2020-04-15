@@ -110,12 +110,13 @@
   }
 
   &__read-more-link {
-    display: inline-block;
+    display: inline;
     position: relative;
     margin-top: var(--hw-spacing-small);
     font-size: var(--hw-font-size-small);
     border-bottom: 2px solid var(--hw-color-gray-darkest);
     z-index: 1;
+    color: var(--hw-color-gray-darkest);
 
     &:hover,
     &:focus {
