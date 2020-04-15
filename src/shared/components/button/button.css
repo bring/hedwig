@@ -153,7 +153,7 @@
     color: var(--hw-color-gray-darker);
     fill: var(--hw-color-gray);
 
-    &:not([disabled], .hw-button--round) {
+    &:not([disabled], .hw-button--small, .hw-button--large) {
       padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
     }
 
@@ -179,7 +179,7 @@
     color: var(--hw-color-gray-darkest);
     fill: var(--hw-color-gray-darkest);
 
-    &:not([disabled], .hw-button--round) {
+    &:not([disabled], .hw-button--small, .hw-button--large) {
       padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
     }
 
@@ -204,7 +204,7 @@
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
 
-    &:not([disabled], .hw-button--round) {
+    &:not([disabled], .hw-button--small, .hw-button--large) {
       padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
     }
 
