@@ -2,7 +2,7 @@
  * Block: Input
  */
 
-.hw-input {
+.hw-input-basic {
   color: var(--hw-color-gray-dark);
   position: relative;
   display: block;
@@ -17,6 +17,10 @@
   border-radius: var(--hw-border-radius);
   transition: border 100ms;
   -webkit-appearance: none;
+}
+
+.hw-input {
+  @extend .hw-input-basic;
 
   &::placeholder,
   &::-webkit-input-placeholder,

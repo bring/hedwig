@@ -18,9 +18,10 @@
   &__input-reset {
     visibility: hidden;
     position: absolute;
+    background: transparent;
     top: 12px;
     right: var(--hw-spacing-small);
-    color:var(--hw-color-gray-light);
+    color:var(--hw-color-gray-dark);
     padding: 0;
     border: none;
     cursor: pointer;
@@ -35,37 +36,14 @@
     transition: opacity 0.1s ease;
     &:hover,
     &:focus {
-      color:var(--hw-color-gray);
+      color:var(--hw-color-primary-dark);
     }
   }
 
   &__input {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: var(--hw-spacing-larger);
-    margin-top: 3px;
-    padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
-    padding-right: var(--hw-spacing-large);
-    background-color: var(--hw-color-white);
-    font-size: var(--hw-font-size-small);
-    line-height: normal;
-    border: 3px solid var(--hw-color-gray-light);
-    border-radius: 0px;
-    transition: border 100ms;
+    
+    @extend .hw-input;
 
-    &::placeholder {
-      color: var(--hw-color-gray-dark);
-    }
-
-    &:hover {
-      border: 3px solid var(--hw-color-gray);
-    }
-
-    &:focus {
-      border: 3px solid var(--hw-color-gray-darker);
-      outline: 0;
-    }
 
     &::-webkit-input-placeholder {
       /* Not autprefixed - Chrome/Opera/Safari */
@@ -77,26 +55,20 @@
       color: var(--hw-color-gray-dark);
     }
 
-    &[disabled] {
-      border: 3px solid var(--hw-color-gray-lighter);
-    }
-
   }
 
   /* Optional element description */
 
   &__suggestions {
+    @extend .hw-input-basic;
+
     max-height: 400px;
-    padding: 0;
-    margin: 0;
-    display: none;
-    position: absolute;
-    top: calc(var(--hw-spacing-larger) + 3px);
+    top: 3px;
     width: 100%;
-    background: var(--hw-color-white);
-    border: 3px solid var(--hw-color-gray-darker);
-    overflow-y: scroll;
+    padding: 0 !important;
+    overflow-y: auto;
     z-index: 2;
+    display: none !important;
   }
 
   &__suggestion {
@@ -112,7 +84,7 @@
       vertical-align: middle;
 
       &:checked ~ .hw-autocomplete__suggestion-text {
-        color: var(--hw-color-primary);
+        color: var(--hw-color-primary-dark);
       }
     }
 
@@ -125,7 +97,7 @@
     &:hover,
     &:focus {
       & .hw-autocomplete__suggestion-text {
-        color: var(--hw-color-primary);
+        color: var(--hw-color-primary-dark);
       }
     }
   }
@@ -139,7 +111,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    border-bottom: 3px solid var(--hw-color-gray-lighter);
+    border-bottom: 1px solid var(--hw-color-gray-lighter);
   }
 
   /**
@@ -149,7 +121,7 @@
   &--active {
     & .hw-autocomplete__suggestions {
       height: auto;
-      display: block;
+      display: block !important;
     }
   }
 }
