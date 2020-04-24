@@ -68,12 +68,29 @@ Required:
 ```
 
 ### Banner with no expand section
+###### Plain text
 ```html
 <section class="hw-banner" data-hw-banner="example1">
-      <div class="hw-banner__trigger">
-        <span class="hw-banner__text">
-          All traffic in Norway is on hold due to the heat wave
-        </span>
-      </div>
-  </section>
+  <span class="hw-banner__text">
+    All traffic in Norway is on hold due to the heat wave
+  </span>
+</section>
+```
+
+###### Link
+```html
+<section class="hw-banner" data-hw-banner="example1">
+  <span class="hw-banner__text">
+    <a href="https://example.com">All traffic in Norway is on hold due to the heat wave</a>
+  </span>
+</section>
+```
+
+###### Inline link
+```html
+<section class="hw-banner" data-hw-banner="example1">
+  <span class="hw-banner__text">
+    All traffic in Norway is on hold due to the heat wave. <a href="https://example.com">Read more</a>
+  </span>
+</section>
 ```
