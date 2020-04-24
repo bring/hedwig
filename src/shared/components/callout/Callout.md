@@ -16,21 +16,14 @@ Used in articles
 
 ### Callout with content
 
-```html|span-3
+```html|span-4
   <div class="hw-callout">
-    <div class="block">
-      <h3 class="hw-h3">Lurer du på hva Bring kan gjøre med fortolling av sendingene dine?</h3>
-    </div>
-    <div class="block hw-block--mt-smaller hw-block--mb-smaller">
-      <hr class="hw-hr hw-hr--gray-lighter hw-hr--full" />
-    </div>
-    <div class="hw-wysiwyg">
+    <h3 class="hw-h3">Lurer du på hva Bring kan gjøre med fortolling av sendingene dine?</h3>
     <p>
-    Bring tilbyr løsninger som forenkler beregning, rapportering og innbetaling av toll og merverdiavgift.
+      Bring tilbyr løsninger som forenkler beregning, rapportering og innbetaling av toll og merverdiavgift.
     </p>
-    </div>
     <div class="hw-block hw-block--full hw-block--mt-small">
-      <button class="hw-button hw-button--primary">
+      <button class="hw-button hw-button--primary hw-button--small">
         Kontakt oss
       </button>
     </div>

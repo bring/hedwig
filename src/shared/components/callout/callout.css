@@ -6,8 +6,13 @@
   width: 100%;
   position: relative;
   display: block;
-  border: 3px solid var(--hw-color-gray-lighter);
+  border: 0px solid var(--hw-color-gray-lighter);
   padding: var(--hw-spacing);
+
+  p {
+  	color: var(--hw-color-gray-dark);
+  	padding: var(--hw-spacing-small) 0 var(--hw-spacing-smallest) 0;
+  }
 
   @media (--max-medium) {
     padding: var(--hw-spacing-smaller);
