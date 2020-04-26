@@ -54,6 +54,9 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    background: transparent;
+    font-size: var(--hw-font-size-smaller);
+    color: var(--hw-color-black);
   }
 
   &__arrow {
@@ -95,7 +98,7 @@
     padding: var(--hw-spacing-smaller) 0;
     border-top: var(--hw-border-thickness) solid var(--hw-color-gray-lighter);
     margin: 3px var(--hw-spacing-small);
-    line-height: var(--hw-font-size-p);
+    line-height: var(--hw-font-size-p);0
 
     &:hover {
       color: var(--hw-color-primary-dark);
@@ -122,6 +125,7 @@
     &__inner {
       z-index: 2;
       max-height: calc(100vh - 60px);
+      overflow-y: auto;
       border-color: var(--hw-color-gray-darker);
     }
 
@@ -183,16 +187,16 @@
     color: var(--hw-color-black);
     background-color: var(--hw-color-gray-lightest);
     -webkit-appearance: none;
-    padding: 11px 36px 9px 18px;
+    padding: var(--hw-spacing-small);
     transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
-    
+
     &:hover, &:active, &:focus {
       border-color: var(--hw-color-gray-darker);
     }
     &:focus {
       outline: 0;
     }
-    background-image:
+    background-image2:
     /* Cut off the sharp ends of the arrow */
     linear-gradient(45deg, rgba(0, 0, 0, 0) 74%, var(--hw-color-white) 0%),
     linear-gradient(135deg, var(--hw-color-white) 26%, rgba(0, 0, 0, 0) 26%),

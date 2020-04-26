@@ -8,7 +8,7 @@
   padding-left: calc(16px + 12px);
   margin-bottom: var(--hw-spacing-smaller);
   cursor: pointer;
-  font-size: var(--hw-font-size-smaller);
+  font-size: var(--hw-font-size-small);
   color: var(--hw-color-black);
 
   &:last-child {
@@ -28,7 +28,7 @@
 
   &__indicator {
     position: absolute;
-    top: 3px;
+    top: 5px;
     left: 0;
     display: block;
     width: 16px;
@@ -101,6 +101,24 @@
   /**
    * Modifers
    */
+
+  &--bounding {
+    display: inline-block;
+    background: var(--hw-color-primary-lighter);
+    padding: var(--hw-spacing-smaller) calc(var(--hw-spacing-small) * 2) calc(var(--hw-spacing-smaller) - 3px) calc(var(--hw-spacing-small) * 3 - 2px);
+    border-radius: var(--hw-border-radius);
+    border: 1px solid;
+    border-color: transparent;
+
+    .hw-checkbox__indicator {
+      top: var(--hw-spacing-small);
+      left: var(--hw-spacing-small);
+    }
+
+    &:disabled {
+      background: var(--hw-color-gray-lighter);;
+    }
+  }
 
   &--error {
     position: relative;

@@ -3,7 +3,7 @@
 We use functional icons from Font Awesome
 
 ```hint
-For service icons and logos, see [Icon](/Icon)
+For service icons and logos, see [Icon-link](/Icon-link)
 ```
 
 ### Example code

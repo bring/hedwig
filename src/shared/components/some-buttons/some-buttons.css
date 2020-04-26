@@ -12,15 +12,15 @@
   */
 
   &__button {
-    background-color: transparent;
+    background-color: var(--hw-color-gray-lighter);
     border-style: solid;
-    border-color: var(--hw-color-gray-light);
+    border-color: var(--hw-color-gray-lighter);
     fill: var(--hw-color-gray-darker);
     padding: 6px;
     line-height: 3px;
     width: var(--hw-spacing-large);
     height: var(--hw-spacing-large);
-    border-width: 2px !important;
+    border-width: var(--hw-border-thickness) !important;
     margin-right: calc(var(--hw-spacing-smallest) / 2);
     margin-bottom: 3px;
     min-width: 0;
