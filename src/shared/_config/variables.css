@@ -36,7 +36,7 @@
    * NOTE: This is in PX because we want them to specific.
    */
 
-  --hw-spacing-tiny: 3px;
+  --hw-spacing-tiny: 4px;
   --hw-spacing-smallest: 6px;
   --hw-spacing-smaller: 12px;
   --hw-spacing-small: 16px;

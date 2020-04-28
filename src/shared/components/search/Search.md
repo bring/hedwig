@@ -86,12 +86,9 @@ NB: The search field position and the opaque background overlay is not controlle
 
 ### Search with suggestions
 
+
 ```html|span-4
 <!-- Some space to get past the suggestions -->
-
-
-
-
 
 
 <div class="hw-search"
@@ -129,12 +126,25 @@ NB: The search field position and the opaque background overlay is not controlle
 </div>
 ```
 
+
+‎
+‎.
 .
 .
 .
 .
 .
 .
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
 
 
 
@@ -142,6 +152,7 @@ NB: The search field position and the opaque background overlay is not controlle
 
 ```html|span-4
 <!-- Some space to get past the suggestions -->
+
 
 
 
@@ -185,6 +196,16 @@ NB: The search field position and the opaque background overlay is not controlle
 </div>
 ```
 
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
 .
 .
 .
