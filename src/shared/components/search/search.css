@@ -127,7 +127,7 @@
   }
 
   &__suggestion {
-    border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-lighter);
+    border-bottom: var(--hw-border-thickness) solid var(--hw-color-separator-gray);
     &:last-of-type {
       border-bottom: 0px solid;
     }
