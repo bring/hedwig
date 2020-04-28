@@ -1,4 +1,4 @@
-## Textara
+## Textarea
 
 ```html
 <label class="hw-label">

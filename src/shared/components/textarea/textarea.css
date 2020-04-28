@@ -4,33 +4,33 @@
 
 .hw-textarea {
   font-size: var(--hw-font-size-small);
-  padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
-  border: 3px solid var(--hw-color-gray-light);
-  border-radius: 0;
-  background-color: var(--hw-color-white);
+  padding: var(--hw-spacing-small);
+  border: none;
+  border-radius: var(--hw-border-radius);
+  background-color: var(--hw-color-gray-lightest);
   display: block;
   width: 100%;
   transition: border 100ms;
-  margin: 3px 0;
+  margin: var(--hw-spacing-tiny) 0;
   position: relative;
   -webkit-appearance: none;
 
   &::placeholder {
-    color: var(--hw-color-gray);
+    color: var(--hw-color-gray-dark);
   }
 
   &:hover {
-    border: 3px solid var(--hw-color-gray);
+
   }
 
   &:focus {
-    border: 3px solid var(--hw-color-gray-dark);
     outline: 0;
   }
 
   &[disabled] {
-    border: 3px solid var(--hw-color-gray-lighter);
+
   }
+
 
   /**
    * Modifiers
@@ -39,7 +39,7 @@
   &--error,
   &--error:focus {
     position: relative;
-    border: 3px solid var(--hw-color-secondary);
+    border-bottom: var(--hw-border-thickness) solid var(--hw-color-secondary);
     transition: border 200ms;
 
     &::before {
