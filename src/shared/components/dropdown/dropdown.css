@@ -62,9 +62,9 @@
   &__arrow {
     position: absolute;
     right: 0;
-    width: 40px;
+    width: 20px;
     top: 4px;
-    background-color: rgba(255, 255, 255, 0.86);
+    background-color: var(--hw-color-gray-dark);
 
     &::before,
     &::after {

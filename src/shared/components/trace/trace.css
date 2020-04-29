@@ -37,7 +37,7 @@
     transition: outline 100ms;
     background-color: transparent;
     border:0;
-    border-radius: 0px;
+    border-radius: var(--hw-border-radius);
     text-align: center;
     height: 46px;
 
@@ -49,9 +49,8 @@
       border-color: var(--hw-color-gray);
     }
     &:focus {
-      border-color: var(--hw-color-gray-darker);
-      outline-width: 0;
-      background-color: var(--hw-color-white);
+      outline: 0;
+      border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
     }
     @media (--large){
       height: 52px;
@@ -59,7 +58,7 @@
   }
 
   &--borders &__input{
-    border:3px solid var(--hw-color-gray-light);
+    border: var(--hw-border-thickness) solid var(--hw-color-gray-light);
   }
 
   &__placeholder {
@@ -69,7 +68,7 @@
     color: var(--hw-color-gray-dark);
     animation: movePlaceholder 3s ease-out infinite 0.3s;
     z-index: -1;
-    border: 3px solid transparent;
+    border: var(--hw-border-thickness) solid transparent;
     width:100%;
     @media (--large){
       border: 0;
@@ -89,6 +88,7 @@
 
   &__button-inside {
     position: absolute;
+    background: transparent;
     right: var(--hw-spacing-small);
     top: 50%;
     transform: translateY(-50%);
