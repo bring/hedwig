@@ -25,16 +25,31 @@
 
   &:focus {
     outline: 0;
+    border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+
+    &::placeholder {
+      color: var(--hw-color-gray-light);
+    }
   }
 
-  &[disabled] {
+  &::-webkit-resizer {
 
   }
+
+  &:disabled {
+    color: var(--hw-color-gray-light);
+    user-select: none;
+    cursor: not-allowed !important;
+  }
+
+
 
 
   /**
    * Modifiers
    */
+
+   /* This will NOT work, as textareas cannot be styled using :before and :after. This does not work with elements that cannot have other elements inside of them. Like textareas and img */;
 
   &--error,
   &--error:focus {
@@ -43,7 +58,7 @@
     transition: border 200ms;
 
     &::before {
-      background: var(--hw-color-gray);
+      background: var(--hw-color-secondary);
       color: var(--hw-color-white);
       position: absolute;
       content: '!';
@@ -54,7 +69,7 @@
       bottom: 12px;
       right: 12px;
       text-align: center;
-      z-index: 1;
+      z-index: 1000;
     }
   }
 }
