@@ -102,8 +102,8 @@
 
       & .hw-dropdown__inner {
         height: auto;
-        border: var(--hw-border-thickness) solid var(--hw-color-gray);
-        background: var(--hw-color-white);
+        border: none;
+        background: var(--hw-color-gray-lightest);
 
         &::after {
           top: 0;
@@ -116,7 +116,7 @@
           position: absolute;
           top: 42px;
           width: 100%;
-          height: 3px;
+          height: 1px;
           background: var(--hw-color-gray-lighter);
         }
 
@@ -142,7 +142,8 @@
       flex-basis: 120px;
       background-position: calc(100% - 14px) 40%;
       & ~ .hw-input{
-        padding: 12px 12px 12px 0;
+        padding: var(--hw-spacing-small);
+        height: auto;
         border-left: none;
         margin: 0;
         transition: border-color 0.3s ease;

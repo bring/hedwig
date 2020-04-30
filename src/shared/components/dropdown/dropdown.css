@@ -95,10 +95,10 @@
   }
 
   &__option {
-    padding: var(--hw-spacing-smaller) 0;
+    padding: var(--hw-spacing-small) 0;
     border-top: var(--hw-border-thickness) solid var(--hw-color-gray-lighter);
     margin: 3px var(--hw-spacing-small);
-    line-height: var(--hw-font-size-p);0
+    line-height: var(--hw-font-size-p);
 
     &:hover {
       color: var(--hw-color-primary-dark);
