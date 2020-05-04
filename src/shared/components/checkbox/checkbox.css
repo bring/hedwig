@@ -8,8 +8,8 @@
   padding-left: 2rem;
   margin-bottom: var(--hw-spacing-smaller);
   cursor: pointer;
+  @extend .hw-color-gray-darker;
   font-size: var(--hw-font-size-small);
-  color: var(--hw-color-gray-darker);
 
   &:last-child {
     margin-bottom: 0;
