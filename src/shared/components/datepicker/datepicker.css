@@ -110,6 +110,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-title {
   position: relative;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .pika-label {
@@ -120,7 +121,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   overflow: hidden;
   margin: 0;
   padding: var(--hw-spacing-smallest) var(--hw-spacing-smallest);
-  font-size: var(--hw-font-size-p);
+  font-size: var(--hw-font-size-smaller);
+  color: var(--hw-color-black);
   line-height: 20px;
 }
 
@@ -135,31 +137,43 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   opacity: 0;
 }
 
+
 .pika-prev,
 .pika-next {
   display: block;
   cursor: pointer;
   position: relative;
   outline: none;
-  background: transparent;
   border: 0;
   padding: 0;
-  width: 20px;
-  height: 20px;
-  text-indent: 20px; /* hide text using text-indent trick, using width value (it's enough) */
+  width: 18px;
+  height: 18px;
+  text-indent: 18px; /* hide text using text-indent trick, using width value (it's enough) */
   white-space: nowrap;
   overflow: hidden;
-  opacity: 0.5;
+  opacity: 1.0;
   *position: absolute; /* IE7 */
   *top: 0; /* IE7 */
+  background-color: var(--hw-color-gray-lightest);
   background-image:
     /* Cut off the sharp ends of the arrow */
-    linear-gradient(45deg, rgba(0, 0, 0, 0) 74%, transparent 0%),
-    linear-gradient(135deg, transparent 26%, rgba(0, 0, 0, 0) 26%),
+    linear-gradient(45deg, transparent 72%, var(--hw-color-gray-lightest) 0%), /* Bottom right corner of left arrow */
+    linear-gradient(135deg, var(--hw-color-gray-lightest) 26%, transparent 26%), /* Top right corner of left arrow */
     /* Draw the arrow */
-    linear-gradient(135deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 72%, transparent 73%, transparent 100%),
-    linear-gradient(45deg, transparent 0, transparent 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 41%, rgba(0,0,0,0) 43%, rgba(0,0,0,0) 100%),
-    linear-gradient(135deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 58%, var(--hw-color-gray) 59%, var(--hw-color-gray) 72%, transparent 73%, transparent 100%);
+    linear-gradient(135deg, transparent 0, transparent 65%, var(--hw-color-gray-lightest) 65%, var(--hw-color-gray-lightest) 100%), /* Bottom left corner of left arrow */
+    linear-gradient(45deg, var(--hw-color-gray-lightest) 0, var(--hw-color-gray-lightest) 31%, var(--hw-color-gray-dark) 32%, var(--hw-color-gray-dark) 38%, transparent 39%, transparent 100%), /* Upper stroke of left arrow */
+    linear-gradient(135deg, transparent 0, transparent 58%, var(--hw-color-gray-dark) 59%, var(--hw-color-gray-dark) 65%, var(--hw-color-gray-lightest) 66%, var(--hw-color-gray-lightest) 100%); /* Bottom stroke of left arrow */
+}
+
+.pika-prev {
+  transform: rotate(90deg);
+  left: 8px;
+  top: 7px;
+}
+.pika-next {
+  transform: rotate(-90deg);
+  right: 7px;
+  top: 5px;
 }
 
 .pika-prev:hover,
@@ -167,14 +181,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   opacity: 1;
 }
 
-.pika {
-  &-prev{
-    transform: rotate(90deg);
-  }
-  &-next{
-    transform: rotate(-90deg);
-  }
-}
+
+
 
 .pika-prev,
 .is-rtl .pika-next {
