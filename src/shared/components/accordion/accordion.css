@@ -62,7 +62,7 @@
       width: 14px;
       height: 2px;
       content: '';
-      background-color: currentColor;
+      background-color: var(--hw-color-primary-dark);
       transform: rotate(0deg);
       transition: transform 0.1s ease;
     }

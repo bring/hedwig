@@ -19,7 +19,7 @@
     visibility: hidden;
     position: absolute;
     background: transparent;
-    top: 12px;
+    top: var(--hw-spacing-small);
     right: var(--hw-spacing-small);
     color:var(--hw-color-gray-dark);
     padding: 0;
@@ -103,9 +103,10 @@
   }
 
   &__suggestion-text {
+    color: var(--hw-color-black);
     width: 100%;
-    padding: var(--hw-spacing-smaller) 0;
-    height: var(--hw-spacing-larger);
+    padding: var(--hw-spacing-small) 0;
+    /*height: var(--hw-spacing-larger);*/
     line-height: normal;
     display: block;
     overflow: hidden;

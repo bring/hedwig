@@ -7,7 +7,7 @@
   position: relative;
   display: block;
   width: 100%;
-  height: var(--hw-spacing-larger);
+  /*height: var(--hw-spacing-larger);*/
   margin-top: 3px;
   padding: var(--hw-spacing-small);
   background-color: var(--hw-color-gray-lightest);
@@ -29,11 +29,16 @@
     color: var(--hw-color-gray-dark);
   }
 
+
+  color: var(--hw-color-black);
+
   &:hover {
+    color: var(--hw-color-black);
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
   }
 
   &:focus {
+    color: var(--hw-color-black);
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
     outline: 0;
   }
@@ -49,7 +54,8 @@
 
   &--error {
     position: relative;
-    border-bottom: var(--hw-border-thickness) solid var(--hw-color-secondary) !important;
+    border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-secondary) !important;
+    margin-bottom: calc(-(var(--hw-border-thickness-thick)-var(--hw-border-thickness))); /* Subtract difference in border height to avoid jumping */
     transition: border 150ms;
   }
 }

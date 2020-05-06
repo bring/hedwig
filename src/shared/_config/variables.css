@@ -183,6 +183,7 @@
 
   /* Borders */
   --hw-border-thickness: 1px;
+  --hw-border-thickness-thick: 2px;
   --hw-border-radius: 2px;
 
   /* Navbar heights */

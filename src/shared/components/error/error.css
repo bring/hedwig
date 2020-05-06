@@ -4,8 +4,8 @@
 
 .hw-error {
   display: block;
-  padding: var(--hw-spacing) var(--hw-spacing-even-larger) 0 var(--hw-spacing-even-larger);
-  font-size: var(--hw-font-size-small);
+  padding: calc(var(--hw-spacing-tiny) * 2) 0 0 var(--hw-spacing-even-larger);
+  font-size: 13px; /*var(--hw-font-size-smallest);*/
   text-align: right;
   transform: translateY(0);
   transition: transform 200ms;
@@ -15,23 +15,23 @@
   &::before {
     /* Font Awesome creates an svg from this, see the next rule for styling this */
     content: ""; /* exclamation-circle */
-    width: 24px;
-    min-width: 24px;
-    height: 24px;
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
     padding: 0;
     margin: 0;
     position: absolute;
-    top: -38px;
+    top: -36px;
     right: 18px;
     border-radius: 50%;
     background:
-    radial-gradient(circle closest-side at 50% 68%, rgba(255,255,255,1) 0, rgba(255,255,255,1) 24%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%), 
+    radial-gradient(circle closest-side at 50% 68%, var(--hw-color-black) 0, var(--hw-color-black) 24%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%), 
     /* The top and bottom blocks to cut the line */
-    linear-gradient(180deg, rgb(0, 0, 0,0) 0, rgb(0, 0, 0,0) 56%, #444 57%, #444 100%),
-    linear-gradient(180deg, #444 0, #444 25%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 100%), 
+    linear-gradient(180deg, rgb(0, 0, 0,0) 0, rgb(0, 0, 0, 0) 56%, var(--hw-color-secondary) 57%, var(--hw-color-secondary) 100%),
+    linear-gradient(180deg, var(--hw-color-secondary) 0, var(--hw-color-secondary) 25%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 100%), 
     /* The lines */
-    linear-gradient(94deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 47%, rgba(255,255,255,1) 48%, rgba(255,255,255,1) 56%, #444 57%, #444 100%), 
-    linear-gradient(86deg, #444 0, #444 43%, rgba(255,255,255,1) 44%, rgba(255,255,255,1) 55%, #444 56%, #444 100%),
+    linear-gradient(94deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 47%, var(--hw-color-black) 48%, var(--hw-color-black) 56%, var(--hw-color-secondary) 57%, var(--hw-color-secondary) 100%), 
+    linear-gradient(86deg, var(--hw-color-secondary) 0, var(--hw-color-secondary) 43%, var(--hw-color-black) 44%, var(--hw-color-black) 55%, var(--hw-color-secondary) 56%, var(--hw-color-secondary) 100%),
     #444;
     background-position: 50% 50%;
     background-origin: padding-box;
