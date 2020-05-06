@@ -7,7 +7,8 @@
   position: relative;
   display: block;
   border: 0px solid var(--hw-color-gray-lighter);
-  padding: var(--hw-spacing);
+  border-top: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+  padding: var(--hw-spacing-small) 0;
 
   p {
   	color: var(--hw-color-gray-dark);

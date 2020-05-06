@@ -72,22 +72,15 @@ Alternative colored buttons can be used where extra contrast is needed ie. when 
   </button>
 ```
 
-### Outlined buttons
+### Outlined button
 
 ```html|span-4,plain,light
-  <button class="hw-button hw-button--primary hw-button--outline">
+  <button class="hw-button hw-button--outline">
     Primary button
   </button>
-  <button class="hw-button hw-button--outline">
-    Default outline
+  <button class="hw-button hw-button--outline" disabled>
+    Disabled
   </button>
-  <button class="hw-button hw-button--outline-dark">
-    Dark outline
-  </button>
-  <button class="hw-button hw-button--outline-white">
-    White outline
-  </button>
-  
 ```
 
 ### Button with icon

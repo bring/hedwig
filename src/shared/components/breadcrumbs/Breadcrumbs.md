@@ -9,7 +9,45 @@
 [Current]       .hw-breadcrumb__current       The page where we are currently at
 ```
 
-### Example breadcrumbs
+
+
+### Single level
+
+```html
+<div class="hw-breadcrumbs">
+  <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
+  <span class="hw-breadcrumb__current">Start</span>
+</div>
+```
+
+```code 
+<div class="hw-breadcrumbs">
+  <div class="hw-breadcrumb">
+    <a class="hw-link" href="#">Home</a>
+  </div>
+  <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
+  
+  <div class="hw-breadcrumb">
+    <a class="hw-link" href="#">Level 2</a>
+  </div>
+  <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
+  
+  <div class="hw-breadcrumb">
+    <a class="hw-link" href="#">
+      <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow-mobile"></i><!--
+      -->Level 3
+    </a>
+  </div>
+  <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
+  
+  <span class="hw-breadcrumb__current">Current</span>
+</div>
+```
+
+
+
+
+### Multi-level
 
 ```html
 <div class="hw-breadcrumbs">
@@ -34,6 +72,7 @@
   <span class="hw-breadcrumb__current">Current</span>
 </div>
 ```
+
 ```code 
 <div class="hw-breadcrumbs">
   <div class="hw-breadcrumb">
@@ -57,3 +96,5 @@
   <span class="hw-breadcrumb__current">Current</span>
 </div>
 ```
+
+

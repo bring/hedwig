@@ -156,10 +156,10 @@
   }
 
   &--outline {
-    background: none;
-    color: var(--hw-color-button-text);
-    fill: var(--hw-color-button-text);
-    border-width: 1px;
+    background: transparent;
+    color: var(--hw-color-primary-dark);
+    fill: var(--hw-color-primary-dark);
+    border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
 
     &:not([disabled], .hw-button--round) {
       padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
@@ -172,10 +172,10 @@
     &:hover,
     &:active,
     &:focus {
-      color: var(--hw-color-primary-dark);
-      fill: var(--hw-color-primary-dark);
-      border-color: var(--hw-color-primary-dark);
-      outline: 0px solid var(--hw-color-primary-dark);
+      color: var(--hw-color-black);
+      fill: var(--hw-color-black);
+      border-color: var(--hw-color-black);
+      outline: 0px solid var(--hw-color-black);
       background: none;
     }
 

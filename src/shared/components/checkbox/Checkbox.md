@@ -9,6 +9,9 @@
 ### Normal checkbox
 
 ```html
+light: true,
+plain: true
+---
 <form>
   <label class="hw-checkbox">
     Checkbox
@@ -33,6 +36,9 @@
 ### Horizontal checkboxes
 
 ```html
+light: true,
+plain: true
+---
 <form>
   <label class="hw-checkbox hw-checkbox--horisontal">
     <p class="hw-text-small">Checkbox</p>
@@ -57,6 +63,9 @@
 ### With bounding box
 
 ```html
+dark: true,
+plain: true
+---
 <form>
   <label class="hw-checkbox hw-checkbox--bounding">
     Checkbox
@@ -81,6 +90,9 @@
 ### Checkbox with error
 
 ```html
+light: true,
+plain: true
+---
 <form>
   <label class="hw-checkbox hw-checkbox--error">
     <p class="hw-text-small">Checkbox</p>
