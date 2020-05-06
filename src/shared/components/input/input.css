@@ -55,7 +55,7 @@
   &--error {
     position: relative;
     border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-secondary) !important;
-    margin-bottom: calc(-(var(--hw-border-thickness-thick)-var(--hw-border-thickness))); /* Subtract difference in border height to avoid jumping */
+    margin-bottom: calc(var(--hw-border-thickness) - var(--hw-border-thickness-thick)); /* Subtract difference in border height to avoid jumping */
     transition: border 150ms;
   }
 }
