@@ -23,6 +23,9 @@ Optional:
 ### Example accordion
 
 ```html|span-6
+light: true,
+plain: true
+---
   <ul class="hw-accordion" data-hw-accordion>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
@@ -71,6 +74,9 @@ Optional:
 ### Accordion with default opened item
 
 ```html|span-6
+light: true,
+plain: true
+---
   <ul class="hw-accordion" data-hw-accordion>
     <li class="hw-accordion__item" data-hw-accordion-default-expanded>
       <button class="hw-accordion__trigger">
@@ -118,6 +124,9 @@ Optional:
 ### Accordion that allows multiple items to be open at once
 
 ```html|span-6
+light: true,
+plain: true
+---
   <ul class="hw-accordion" data-hw-accordion data-hw-accordion-allow-multiple>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
@@ -163,6 +172,9 @@ Optional:
 This version is used in the menu on mobile
 
 ```html|span-4
+light: true,
+plain: true
+---
   <ul class="hw-accordion hw-accordion--menu" data-hw-accordion data-hw-accordion-allow-multiple>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">

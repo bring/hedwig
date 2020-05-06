@@ -63,7 +63,7 @@ plain: true
 ### With bounding box
 
 ```html
-dark: true,
+light: true,
 plain: true
 ---
 <form>

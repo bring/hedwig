@@ -22,6 +22,9 @@ Provides styling for badges
 The badge will have a size 75% of surrounding content unless size modifiers are used
 
 ```html|span-4
+light: true,
+plain: true
+---
 <div class="hw-badge">
   Badge
 </div>
@@ -30,6 +33,9 @@ The badge will have a size 75% of surrounding content unless size modifiers are 
 ### Example badge
 
 ```html|span-4
+light: true,
+plain: true
+---
 I am a <div class="hw-badge">
   Badge
 </div> 
@@ -38,6 +44,9 @@ I am a <div class="hw-badge">
 ### Sizes
 
 ```html
+light: true,
+plain: true
+---
 <div class="hw-badge hw-badge--larger">
   Badge
 </div>

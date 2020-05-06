@@ -9,6 +9,9 @@ Used in articles
 ### Empty callout
 
 ```html|span-3
+light: true,
+plain: true
+---
   <div class="hw-callout">
   </div>
 ```
@@ -17,6 +20,9 @@ Used in articles
 ### Callout with content
 
 ```html|span-4
+light: true,
+plain: true
+---
   <div class="hw-callout">
     <h3 class="hw-h3">Lurer du på hva Bring kan gjøre med fortolling av sendingene dine?</h3>
     <p>

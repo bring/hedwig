@@ -49,7 +49,7 @@ module.exports = {
     codeColor: '#00263E',
     linkColor: '#048ebb',
     textMedium: '#444',
-    bgLight: '#F2F2F2',
+    bgLight: '#ffffff',
     bgDark: '#333333',
     lightColor: '#D6D6D6',
   },

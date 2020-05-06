@@ -13,6 +13,9 @@ Required:
 ### Example banner
 
 ```html
+light: true,
+plain: true
+---
   <section class="hw-banner" data-hw-banner="example1">
     <button class="hw-banner__trigger">
       <span class="hw-banner__text">
@@ -31,6 +34,9 @@ Required:
 ### Example banner OLD
 
 ```html
+light: true,
+plain: true
+---
   <section class="hw-banner" data-hw-banner="example1">
       <button class="hw-banner__trigger">
         <span class="hw-banner__text">
@@ -58,6 +64,9 @@ Required:
 ### Banner with no expand section
 ###### Plain text
 ```html
+light: true,
+plain: true
+---
 <section class="hw-banner" data-hw-banner="example1">
   <span class="hw-banner__text">
     All traffic in Norway is on hold due to the heat wave
@@ -67,6 +76,9 @@ Required:
 
 ###### Link
 ```html
+light: true,
+plain: true
+---
 <section class="hw-banner" data-hw-banner="example1">
   <span class="hw-banner__text">
     <a href="https://example.com">All traffic in Norway is on hold due to the heat wave</a>
@@ -76,6 +88,9 @@ Required:
 
 ###### Inline link
 ```html
+light: true,
+plain: true
+---
 <section class="hw-banner" data-hw-banner="example1">
   <span class="hw-banner__text">
     All traffic in Norway is on hold due to the heat wave. <a href="https://example.com">Read more</a>
