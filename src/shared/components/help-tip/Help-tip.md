@@ -6,7 +6,7 @@ Show a text with an icon that shows a help text when clicked or hovered
 The html code for this component needs an update. The previous version has been deprecated. Support for the previous format will be discontinued in Hedwig 11.
 ```
 
-```html
+```html|light,plain
 <div class="hw-help-tip">
   <button class="hw-help-tip__button">
     <span>Some text in need of an explanation</span>
@@ -56,7 +56,7 @@ Place the help bubble to the right, left or middle
 
 #### Middle
 Default
-```html
+```html|light,plain
 <div class="hw-help-tip">
   <button class="hw-help-tip__button">
     <span>Some text in need of an explanation</span>
@@ -68,7 +68,7 @@ Default
 ```
 
 Default with title
-```html
+```html|light,plain
 
 <div class="hw-help-tip"> 
   <button class="hw-help-tip__button">
@@ -82,7 +82,7 @@ Default with title
 ```
 
 Multiple after eachother
-```html
+```html|light,plain
 <div class="hw-help-tip hw-help-tip--right">
   <button class="hw-help-tip__button">
     <span>EDI</span>
@@ -117,7 +117,7 @@ Multiple after eachother
 
 #### Left
 
-```html
+```html|light,plain
 <div class="hw-help-tip hw-help-tip--left">
   <button class="hw-help-tip__button">
     <span>Some text in need of an explanation</span>
@@ -132,7 +132,7 @@ Multiple after eachother
 
 #### Right
 
-```html
+```html|light,plain
 <div class="hw-help-tip hw-help-tip--right">
   <button class="hw-help-tip__button">
     <span>Small Eg</span>
@@ -147,7 +147,7 @@ Multiple after eachother
 
 #### Large Left
 
-```html
+```html|light,plain
 <div class="hw-help-tip hw-help-tip--large--left">
   <button class="hw-help-tip__button">
     <span>Some text in need of an explanation</span>
@@ -165,7 +165,7 @@ Help text is shown in three different places based on screen size
 - Middle on large screens
 - Right on xlarge screens
 
-```html
+```html|light,plain
 <div class="hw-help-tip hw-help-tip--small--left hw-help-tip--large--middle hw-help-tip--xlarge--right">
   <button class="hw-help-tip__button">
     <span>Some text in need of an explanation</span>

@@ -66,4 +66,3 @@ All inputs are block elements. For layout, use [grid](/Grid).
   <div class="hw-error hw-error--align-left">E-postadressen er ugyldig</div>
 </label>
 ```
-
