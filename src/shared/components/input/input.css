@@ -8,7 +8,7 @@
   display: block;
   width: 100%;
   /*height: var(--hw-spacing-larger);*/
-  margin-top: 3px;
+  margin-top: var(--hw-spacing-tiny);
   padding: var(--hw-spacing-small);
   background-color: var(--hw-color-gray-lightest);
   font-size: var(--hw-font-size-small);
@@ -28,7 +28,6 @@
   &::-ms-input-placeholder{
     color: var(--hw-color-gray-dark);
   }
-
 
   color: var(--hw-color-black);
 

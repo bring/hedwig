@@ -23,42 +23,17 @@
 
   }
 
-  &__input, &__placeholder {
-    font-size: var(--hw-font-size-p);
-    padding: var(--hw-spacing-smallest) var(--hw-spacing-large);
-    @media (--large) {
-      padding: 14px 16px;
-    }
+  &__input {
+    @extend .hw-input;
   }
 
-  &__input {
-    margin: 0;
-    width: 100%;
-    transition: outline 100ms;
-    background-color: transparent;
-    border:0;
-    border-radius: var(--hw-border-radius);
-    text-align: center;
-    height: 46px;
-
-    @media(--large){
-      text-align:left;
-    }
-
-    &:hover {
-      border-color: var(--hw-color-gray);
-    }
-    &:focus {
-      outline: 0;
-      border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
-    }
-    @media (--large){
-      height: 52px;
-    }
+  &__input, &__placeholder {
+    font-size: var(--hw-font-size-p);
+    margin-top: 0;
   }
 
   &--borders &__input{
-    border: var(--hw-border-thickness) solid var(--hw-color-gray-light);
+    border: var(--hw-border-thickness) solid transparent;
   }
 
   &__placeholder {
@@ -67,22 +42,23 @@
     left: 0;
     color: var(--hw-color-gray-dark);
     animation: movePlaceholder 3s ease-out infinite 0.3s;
-    z-index: -1;
+    padding: var(--hw-spacing-small) calc(var(--hw-spacing-smaller) * 2);
     border: var(--hw-border-thickness) solid transparent;
     width:100%;
+    pointer-events: none;
     @media (--large){
       border: 0;
     }
   }
 
-    &__button {
-    margin-top:var(--hw-spacing-smallest);
- 
+  &__button {
+    padding: var(--hw-spacing-small) calc(var(--hw-spacing-smaller) * 2);
+    font-size: var(--hw-font-size-p);
+    margin-top: var(--hw-spacing-tiny);
+
     @media(--large){
-      margin-left: 3px;
+      margin-left: var(--hw-spacing-tiny);
       margin-top: 0;
-      padding-top: initial;
-      padding-bottom: initial;
     }
   }
 
@@ -131,20 +107,16 @@
   }
 
   &--no-break &__button{
-      margin-left: 3px;
-      margin-top: 0;
-    }
+    margin-left: var(--hw-spacing-tiny);
+    margin-top: 0;
+  }
 
   &--no-break &__input {
-    height: 52px;
-    padding: 14px 16px;
     text-align: left;
   }
 
   &--no-break &__placeholder {
     text-align: left;
-    height: 52px;
-    padding: 14px 16px;
     border: 0;
   }
 

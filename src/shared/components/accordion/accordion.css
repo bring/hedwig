@@ -37,7 +37,7 @@
     display: block;
     width: 100%;
     padding: calc(var(--hw-spacing-smaller) * 2) 0;
-    padding-right: var(--hw-spacing-small);
+    padding-right: var(--hw-spacing);
     border: 0;
     border-top: 1px solid var(--hw-color-gray-lighter);
     font-size: var(--hw-font-size-p);
@@ -45,8 +45,7 @@
     color: inherit;
     background-color: transparent;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: var(--hw-color-primary-dark);
       outline: 0;
     }
@@ -82,7 +81,7 @@
    */
 
   &__item--expanded .hw-accordion__trigger {
-    color: var(--hw-color-primary-dark);
+    /*color: var(--hw-color-primary-dark);*/
   }
 
   &__item--expanded .hw-accordion__arrow::before {
