@@ -26,16 +26,16 @@ Generic error message for input fields
 
 ### Simple version
 
-```html
+```html|plain,light
 <input type="text" class="hw-input hw-input--error" />
 <div class="hw-error-simple">
   Simple error message
 </div>
 ```
 
-### Error summary
+### Error message
 
-```html
+```html|plain,light,span-4
 <div class="hw-error-summary">
   <div class="hw-error-summary__title">
     <h3>Brukerprofilen din ble ikke opprettet fordi</h3>

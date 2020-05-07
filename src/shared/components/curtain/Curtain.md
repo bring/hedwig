@@ -1,4 +1,4 @@
-## Curtain
+## Curtain (Deprecated)
 
 Creates interactive curtain rolling up and down 
 

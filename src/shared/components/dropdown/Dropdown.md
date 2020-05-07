@@ -32,7 +32,7 @@ Client side rendering, see further down
 
 
 ### Example
-```html
+```html|plain,light
 <label class="hw-label">
   Select country
   <select data-hw-dropdown="countries" id="countries">
@@ -48,7 +48,7 @@ Client side rendering, see further down
 
 ### Native
 Use the browser native select function
-```html
+```html|plain,light
 <label class="hw-label">
   Select country
   <select class="hw-dropdown--native" data-hw-dropdown="countries-native" id="countries-native">
@@ -115,7 +115,7 @@ For mobile and tablet, native mode will be enabled automatically
 ### With disabled option
 Will make one option disabled, to use as a placeholder value or instruction to the end user.
 
-```html
+```html|plain,light
 <label class="hw-label">
   Select country
   <select data-hw-dropdown="countries-disabled-option" id="countries-disabled-option">
@@ -133,7 +133,7 @@ Will make one option disabled, to use as a placeholder value or instruction to t
 
 ### Dropdown with default option selected
 
-```html
+```html|plain,light
 
 Select default option by using `data-hw-dropdown-default-selected`
 <label class="hw-label">
@@ -164,7 +164,7 @@ Select default option by marking selected option with `selected`
 
 Don't use default selected here as you want the user to start with an empty input.
 
-```html
+```html|plain,light
 <label class="hw-label">
   Select country
   <select
@@ -182,7 +182,7 @@ Don't use default selected here as you want the user to start with an empty inpu
 
 ### Dropdown with list too long for the screen
 
-```html
+```html|plain,light
 <label class="hw-label">
   Where do you live?
   <select
@@ -248,7 +248,7 @@ Don't use default selected here as you want the user to start with an empty inpu
 
 ```
 
-```html|span-1
+```html|span-2,plain,light
 <label class="hw-label">
   Country code
   <select
@@ -262,7 +262,7 @@ Don't use default selected here as you want the user to start with an empty inpu
 ```
 
 ### Small dropdown with placeholders
-```html|span-1
+```html|span-2,plain,light
 <label class="hw-label">
   Country code
   <select

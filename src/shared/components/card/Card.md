@@ -1,4 +1,4 @@
-## Card
+## Card (Deprecated)
 
 Styling for cards.
 

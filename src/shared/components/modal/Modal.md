@@ -1,4 +1,4 @@
-## Modal
+## Modal (Deprecated)
 
 Modal component
 

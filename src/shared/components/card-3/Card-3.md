@@ -1,4 +1,4 @@
-## Card 3
+## Card 3 (Deprecated)
 
 Used on the home page
 

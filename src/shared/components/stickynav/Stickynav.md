@@ -1,5 +1,4 @@
-
-## Stickynav
+## Stickynav (Deprecated)
 
 The stickynav component.
 

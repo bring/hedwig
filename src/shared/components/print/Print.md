@@ -62,7 +62,7 @@ inside will be visible, and not obscured, in print view.
 
 #### Example
 
-```html|span-6
+```html|span-6,light,plain
   <ul class="hw-accordion" data-hw-accordion>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">

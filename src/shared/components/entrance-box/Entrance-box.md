@@ -1,4 +1,4 @@
-## Entrance box
+## Entrance box (Deprecated)
 
 Styling for boxes.
 
