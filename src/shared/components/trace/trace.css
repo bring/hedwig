@@ -30,6 +30,7 @@
   &__input, &__placeholder {
     font-size: var(--hw-font-size-p);
     margin-top: 0;
+    margin-bottom: var(--hw-spacing-tiny);
   }
 
   &--borders &__input{
@@ -57,7 +58,7 @@
     margin-top: var(--hw-spacing-tiny);
 
     @media(--large){
-      margin-left: var(--hw-spacing-tiny);
+      margin-left: calc(var(--hw-spacing-tiny) * 2);
       margin-top: 0;
     }
   }
@@ -107,17 +108,19 @@
   }
 
   &--no-break &__button{
-    margin-left: var(--hw-spacing-tiny);
+    margin-left: calc(var(--hw-spacing-tiny) * 2);
     margin-top: 0;
   }
 
   &--no-break &__input {
     text-align: left;
+    margin-bottom: 0;
   }
 
   &--no-break &__placeholder {
     text-align: left;
     border: 0;
+    margin-bottom: 0;
   }
 
   }
