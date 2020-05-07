@@ -34,7 +34,7 @@
 
   &:hover {
     color: var(--hw-color-black);
-    border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+    /*border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);*/
   }
 
   &:focus {

@@ -2,7 +2,7 @@
 
 Styling for badge.
 
-Provides styling for badges
+Provides styling for badges.
 
 ```code
 [Base]           .hw-badge
@@ -15,6 +15,12 @@ Provides styling for badges
 [Small]    .hw-badge--small
 [Large]    .hw-badge--large
 [Larger]   .hw-badge--larger
+
+
+[Primary]  .hw-badge--primary
+[Dark]     .hw-badge--dark
+[White]    .hw-badge--white
+[Warning]  .hw-badge--warning
 ```
 
 ### Primary
@@ -41,17 +47,14 @@ I am a <div class="hw-badge">
 </div> 
 ```
 
-### Sizes
+### Variations
+###### Primary
 
 ```html
 light: true,
 plain: true
 ---
-<div class="hw-badge hw-badge--larger">
-  Badge
-</div>
-
-<div class="hw-badge hw-badge--large">
+<div class="hw-badge hw-badge--smaller">
   Badge
 </div>
 
@@ -59,7 +62,83 @@ plain: true
   Badge
 </div>
 
-<div class="hw-badge hw-badge--smaller">
+<div class="hw-badge hw-badge--large">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--larger">
+  Badge
+</div>
+```
+
+
+###### Dark
+
+```html
+light: true,
+plain: true
+---
+<div class="hw-badge hw-badge--smaller hw-badge--dark">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--small hw-badge--dark">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--large hw-badge--dark">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--larger hw-badge--dark">
+  Badge
+</div>
+```
+
+
+###### White
+
+```html
+dark: true,
+plain: true
+---
+<div class="hw-badge hw-badge--smaller hw-badge--white">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--small hw-badge--white">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--large hw-badge--white">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--larger hw-badge--white">
+  Badge
+</div>
+```
+
+
+###### Warning
+
+```html
+light: true,
+plain: true
+---
+<div class="hw-badge hw-badge--smaller hw-badge--warning">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--small hw-badge--warning">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--large hw-badge--warning">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--larger hw-badge--warning">
   Badge
 </div>
 ```

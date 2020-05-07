@@ -2,16 +2,22 @@
   display: inline-block;
   background-color: var(--hw-color-primary-lighter);
   border-color: var(--hw-color-primary-lighter);
+  color: var(--hw-color-primary-dark);
   border-style: solid;
   border-radius: 2px;
   text-transform: uppercase;
   line-height: 1.1;
-  color: var(--hw-color-primary-dark);
   font-size: 0.75em; /* 75% of surrounding content unless spesified otherwise*/
   font-family: var(--hw-font-primary-medium);
 
   -moz-osx-font-smoothing: subpixel-antialiased;
   -webkit-font-smoothing: subpixel-antialiased;
+
+
+
+
+  /* Variations */
+  /* Size variations */
 
   &--larger {
     font-size: var(--hw-font-size-small);
@@ -43,5 +49,33 @@
     border-right-width: 6px;
     border-top-width: 2px;
     border-bottom-width: 2px;
+  }
+
+
+
+  /* Color variations */
+  
+  &--primary { /* Default */
+    background-color: var(--hw-color-primary-lighter);
+    border-color: var(--hw-color-primary-lighter);
+    color: var(--hw-color-primary-dark);
+  }
+
+  &--dark {
+    background-color: var(--hw-color-primary-darker);
+    border-color: var(--hw-color-primary-darker);
+    color: var(--hw-color-white);
+  }
+
+  &--white {
+    background-color: var(--hw-color-white);
+    border-color: var(--hw-color-white);
+    color: var(--hw-color-primary-dark);
+  }
+
+  &--warning {
+    background-color: var(--hw-color-secondary);
+    border-color: var(--hw-color-secondary);
+    color: var(--hw-color-black);
   }
 }
