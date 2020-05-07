@@ -11,4 +11,8 @@
   &[disabled] {
     color: var(--hw-color-gray-light);
   }
+
+  &:focus-within {
+    color: var(--hw-color-primary-dark);
+  }
 }

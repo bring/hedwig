@@ -50,6 +50,7 @@
 
   &--align-left {
     text-align: left !important;
+    padding-left: 0;
   }
 }
 

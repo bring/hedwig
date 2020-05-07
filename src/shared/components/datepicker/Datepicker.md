@@ -12,7 +12,7 @@ Hedwig will automatically style the datepicker with custom styles.
 
 ```html|span-3
   <label class="hw-label hw-datepicker">
-    Tidspunkt for levering
+    Date picker label
     <div class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" />
       <i class="hw-datepicker__icon fas fa-calendar-alt"></i>

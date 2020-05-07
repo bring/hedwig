@@ -43,6 +43,10 @@
   & .hw-error::before {
     display: none;
   }
+
+  &:focus-within {
+    color: var(--hw-color-primary-dark);
+  }
 }
 
 .pika-single {
