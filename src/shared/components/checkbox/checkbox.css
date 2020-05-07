@@ -76,9 +76,6 @@
       }
     }
 
-    &:focus ~ .hw-checkbox__indicator {
-      border: 2px solid var(--hw-color-primary);
-    }
 
     &:disabled ~ .hw-checkbox__indicator {
       border-color: var(--hw-color-gray-lighter);
