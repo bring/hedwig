@@ -27,10 +27,7 @@ Provides styling for badges.
 
 The badge will have a size 75% of surrounding content unless size modifiers are used
 
-```html|span-4
-light: true,
-plain: true
----
+```html|span-4,plain,light
 <div class="hw-badge">
   Badge
 </div>
@@ -38,10 +35,7 @@ plain: true
 
 ### Example badge
 
-```html|span-4
-light: true,
-plain: true
----
+```html|span-4,plain,light
 I am a <div class="hw-badge">
   Badge
 </div> 
@@ -50,10 +44,7 @@ I am a <div class="hw-badge">
 ### Variations
 ###### Primary
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <div class="hw-badge hw-badge--smaller">
   Badge
 </div>
@@ -74,10 +65,7 @@ plain: true
 
 ###### Dark
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <div class="hw-badge hw-badge--smaller hw-badge--dark">
   Badge
 </div>
@@ -98,10 +86,7 @@ plain: true
 
 ###### White
 
-```html
-dark: true,
-plain: true
----
+```html|plain,dark
 <div class="hw-badge hw-badge--smaller hw-badge--white">
   Badge
 </div>
@@ -122,10 +107,7 @@ plain: true
 
 ###### Warning
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <div class="hw-badge hw-badge--smaller hw-badge--warning">
   Badge
 </div>

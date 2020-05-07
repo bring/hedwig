@@ -13,10 +13,7 @@
 
 ### Single level
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <div class="hw-breadcrumbs">
   <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
   <span class="hw-breadcrumb__current">Start</span>
@@ -52,10 +49,7 @@ plain: true
 
 ### Multi-level
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <div class="hw-breadcrumbs">
   <div class="hw-breadcrumb">
     <a class="hw-link" href="#">Home</a>

@@ -24,7 +24,7 @@ Colors
 
 ### Sizes
 
-```html|span-4
+```html|span-4,plain,light
   <button class="hw-button hw-button--primary hw-button--small">
     Small button
   </button><br>
@@ -45,7 +45,7 @@ Colors
 
 ### Default colors
 
-```html|span-4
+```html|span-4,plain,light
   <button class="hw-button hw-button--primary">
     Primary button
   </button>
@@ -64,9 +64,9 @@ Colors
 Alternative colored buttons can be used where extra contrast is needed ie. when the background is a picture
 
 ```html|span-6
-<button class="hw-button hw-button--picture-yellow">
-    Yellow button 
-  </button>
+light: true,
+plain: true
+---
   <button class="hw-button hw-button--picture-dark">
     Dark button
   </button>
@@ -85,7 +85,7 @@ Alternative colored buttons can be used where extra contrast is needed ie. when 
 
 ### Button with icon
 
-```html|span-4
+```html|span-4,plain,light
   <button class="hw-button hw-button--primary">
     <i class="fas fa-globe"></i>
     Button with icon
@@ -94,7 +94,7 @@ Alternative colored buttons can be used where extra contrast is needed ie. when 
 
 ### Chat button
 
-```html|span-4
+```html|span-4,plain,light
   <button class="hw-button hw-button--chat">
     <i class="fas fa-2x fa-comments-alt" title="Chat button"></i>
   </button>

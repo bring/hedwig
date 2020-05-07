@@ -50,7 +50,7 @@ module.exports = {
     linkColor: '#048ebb',
     textMedium: '#444',
     bgLight: '#ffffff',
-    bgDark: '#333333',
+    bgDark: '#999999',
     lightColor: '#D6D6D6',
   },
   pages: [],

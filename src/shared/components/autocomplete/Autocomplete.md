@@ -19,10 +19,7 @@ data-hw-autocomplete-reset-visible=true       Show reset button
 
 ## Closed autocomplete
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <label class="hw-label">Your address
 
   <div class="hw-autocomplete" data-hw-autocomplete>
@@ -62,10 +59,8 @@ plain: true
 
 ## Autocomplete with reset button visible
 Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset button 
-```html
-light: true,
-plain: true
----
+
+```html|plain,light
 <label class="hw-label">Your address
 
   <div class="hw-autocomplete" data-hw-autocomplete-reset-visible=true data-hw-autocomplete>
@@ -105,10 +100,7 @@ plain: true
 
 ## Closed autocomplete with error
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <label class="hw-label">Your address
 
   <div class="hw-autocomplete" data-hw-autocomplete>
@@ -150,10 +142,7 @@ plain: true
 
 ## Active autocomplete
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <label class="hw-label">Your address
   <div class="hw-autocomplete hw-autocomplete--active" data-hw-autocomplete>
 
@@ -199,10 +188,7 @@ plain: true
 
 ## Active autocomplete with lots of suggestions
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <label class="hw-label">Your address
   <div class="hw-autocomplete hw-autocomplete--active" data-hw-autocomplete>
 

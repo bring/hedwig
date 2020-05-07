@@ -56,7 +56,7 @@
         top: 5px;
         left: 3px;
         display: inline-block;
-        width: 8px;
+        width: 7px;
         height: 4px;
         border-bottom: 2px solid var(--hw-color-primary);
         content: "";
@@ -68,16 +68,12 @@
         top: 7px;
         left: 3px;
         display: inline-block;
-        width: 4px;
+        width: 3px;
         height: 4px;
         border-left: 2px solid var(--hw-color-primary);
         content: "";
         transform: translateY(-50%) rotate(-45deg);
       }
-    }
-
-    &:hover ~ .hw-checkbox__indicator {
-      border: 2px solid var(--hw-color-primary);
     }
 
     &:focus ~ .hw-checkbox__indicator {
