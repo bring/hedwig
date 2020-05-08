@@ -36,12 +36,8 @@
 
     font-size: var(--hw-font-size-p);
 
-    &:hover {
-      border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
-    }
-
-    &:focus {
-      border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+    &:hover, &:focus {
+      border-bottom: var(--hw-border-thickness) solid transparent;
       outline: 0;
     }
 
@@ -154,6 +150,11 @@
   &--standalone {
     .hw-search__input {
       background: var(--hw-color-gray-lightest);
+
+      &:hover, &:focus {
+        border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+        outline: 0;
+      }
     }
     .hw-search__suggestions {
       background-color: var(--hw-color-gray-lightest);
