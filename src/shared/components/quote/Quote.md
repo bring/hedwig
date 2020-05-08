@@ -3,7 +3,7 @@
 Available in version 6.1.0
 ```
 
-```html
+```html|plain,light
 <blockquote class="hw-quote">
   <p class="hw-quote__content hw-h3">More fonts. Use more fonts!</p>
   <p class="hw-quote__author">Anonymous client</p>
@@ -11,7 +11,7 @@ Available in version 6.1.0
 ```
 
 ## Example without cite
-```html
+```html|plain,light
 <blockquote class="hw-quote">
   <p class="hw-quote__content hw-h3">Penguins are a group of aquatic flightless birds</p>
 </blockquote>
@@ -19,7 +19,7 @@ Available in version 6.1.0
 
 ## Example in content
 
-```html
+```html|plain,light
 <div class="hw-container hw-container--small">
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tellus at metus condimentum blandit nec in mi. Nam vitae urna dapibus, tincidunt massa facilisis, tincidunt justo. Mauris et tristique dolor. Nunc mollis neque sed auctor rhoncus. Praesent sagittis ornare mauris, in volutpat diam elementum nec. Donec id posuere mi. Integer ac ipsum ligula. Etiam tempus felis tempus dolor vestibulum, vel aliquam sem placerat. Donec eget condimentum felis. Fusce sodales velit neque, vitae malesuada libero egestas vitae. Nunc quis posuere risus.

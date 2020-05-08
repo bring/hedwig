@@ -112,56 +112,48 @@
   --hw-font-size-max-h1-large-px: 80px;
   --hw-font-size-min-h1-large: 40;
   --hw-font-size-min-h1-large-px: 40px;
-  --hw-h1-large-font-family: var(--hw-font-primary-light);
   --hw-h1-large-line-height: 1.111;
 
   --hw-font-size-max-h1: 48;
   --hw-font-size-max-h1-px: 48px;
   --hw-font-size-min-h1: 32;
   --hw-font-size-min-h1-px: 32px;
-  --hw-h1-font-family: var(--hw-font-primary-light);
   --hw-h1-line-height: 1.1667;
 
   --hw-font-size-max-h2: 44;
   --hw-font-size-max-h2-px: 44px;
   --hw-font-size-min-h2: 28;
   --hw-font-size-min-h2-px: 28px;
-  --hw-h2-font-family: var(--hw-font-primary-light);
   --hw-h2-line-height: 1.25;
 
   --hw-font-size-max-h3: 28;
   --hw-font-size-max-h3-px: 28px;
   --hw-font-size-min-h3: 22;
   --hw-font-size-min-h3-px: 22px;
-  --hw-h3-font-family: var(--hw-font-primary-regular);
   --hw-h3-line-height: 1.333;
 
   --hw-font-size-max-h4: 22;
   --hw-font-size-max-h4-px: 22px;
   --hw-font-size-min-h4: 18;
   --hw-font-size-min-h4-px: 18px;
-  --hw-h4-font-family: var(--hw-font-primary-regular);
   --hw-h4-line-height: 1.4;
 
   --hw-font-size-max-h5: 20;
   --hw-font-size-max-h5-px: 20px;
   --hw-font-size-min-h5: 16;
   --hw-font-size-min-h5-px: 16px;
-  --hw-h5-font-family: var(--hw-font-primary-regular);
   --hw-h5-line-height: 1.444;
 
   --hw-font-size-max-h6: 18;
   --hw-font-size-max-h6-px: 18px;
   --hw-font-size-min-h6: 14;
   --hw-font-size-min-h6-px: 14px;
-  --hw-h6-font-family: var(--hw-font-primary-regular);
   --hw-h6-line-height: 1.5;
 
   --hw-font-size-max-caption: 13;
   --hw-font-size-max-caption-px: 13px;
   --hw-font-size-min-caption: 1;
   --hw-font-size-min-caption-px: 11px;
-  --hw-caption-font-family: var(--hw-font-primary-regular);
   --hw-caption-line-height: 1.5;
 
   --hw-font-size-h1-large: calc(var(--hw-font-size-min-h1-px) + (var(--hw-font-size-max-h1-large) - var(--hw-font-size-min-h1-large)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
