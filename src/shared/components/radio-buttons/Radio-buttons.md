@@ -79,6 +79,28 @@
 
 ```
 
+### Bounding with error
+
+```html|plain,light,span-2
+<label class="hw-radio-button hw-radio-button--bounding hw-radio-button--error hw-radio-button--full">
+  <input type="radio" name="hedwig" value="four" />
+  <span class="hw-radio-button__label">Error</span>
+  <i class="hw-radio-button__indicator"></i>
+</label>
+<div class="hw-error-simple hw-error--align-left">Error message!</div>
+
+```
+
+### Full width
+
+```html|plain,light,span-3
+<label class="hw-radio-button hw-radio-button--bounding hw-radio-button--full">
+  <input type="radio" name="hedwig" value="one" />
+  <span class="hw-radio-button__label">One</span>
+  <i class="hw-radio-button__indicator"></i>
+</label>
+```
+
 
 
 ### Long label
