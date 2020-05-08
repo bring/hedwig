@@ -14,7 +14,7 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 60%;
+    top: 50%;
     right: calc(50% + 70px);
     display: block;
     height: 1px;
@@ -25,7 +25,7 @@
     content: '';
     position: absolute;
     right: 0;
-    top: 60%;
+    top: 50%;
     left: calc(50% + 70px);
     display: block;
     height: 1px;
@@ -51,7 +51,7 @@
     color: inherit;
     cursor: pointer;
     background-color: transparent;
-    font-size: var(--hw-font-size-smallest);
+    font-size: var(--hw-font-size-smaller);
     outline: none;
   }
 
@@ -60,7 +60,8 @@
     color: var(--hw-color-primary-dark);
     margin-left: var(--hw-spacing-smaller);
     font-family: var(--hw-font-primary-regular);
-    font-size: 16px;
+    font-size: 24px;
+    vertical-align: -8%;
   }
 
   /**
