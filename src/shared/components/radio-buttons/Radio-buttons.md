@@ -18,7 +18,7 @@
 
 ### Default version
 
-```html
+```html|plain,light
 <label class="hw-radio-button">
   <input type="radio" name="hedwig" value="one" />
   <span class="hw-radio-button__label">One</span>
@@ -46,7 +46,7 @@
 
 ### With bounding box
 
-```html
+```html|plain,light
 <label class="hw-radio-button hw-radio-button--bounding">
   <input type="radio" name="hedwig" value="one" />
   <span class="hw-radio-button__label">One</span>
@@ -83,7 +83,7 @@
 
 ### Long label
 
-```html|span-3
+```html|span-3,plain,light
 <label class="hw-radio-button">
   <input type="radio" name="hedwig" value="one" />
   <span class="hw-radio-button__label">A very, very, very, very long label that will occupy more than one line for sure</span>
@@ -93,7 +93,7 @@
 
 ### Version with error
 
-```html
+```html|plain,light
 <label class="hw-radio-button hw-radio-button--error">
   <input type="radio" name="hedwig" value="one" />
   <span class="hw-radio-button__label">One</span>

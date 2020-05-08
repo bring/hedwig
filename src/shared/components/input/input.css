@@ -63,6 +63,7 @@
     background: transparent;
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-light);
     padding-left: var(--hw-spacing-small) 0;
+    border-radius: 0px;
 
     &[disabled] {
       padding: var(--hw-spacing-small);
