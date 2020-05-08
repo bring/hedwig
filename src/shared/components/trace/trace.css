@@ -5,10 +5,6 @@
   display: flex;
   flex-direction: column;
 
-@media(--large){
-  flex-direction: row;
-}
-
   &__inner {
     position: relative;
     background: rgba(255, 255, 255, 0.95);
@@ -16,11 +12,6 @@
     z-index: 1;
     flex-grow: 1;
     text-align:center;
-
-    @media(--large){
-      text-align:left;
-    }
-
   }
 
   &__input {
@@ -47,20 +38,12 @@
     border: var(--hw-border-thickness) solid transparent;
     width:100%;
     pointer-events: none;
-    @media (--large){
-      border: 0;
-    }
   }
 
   &__button {
     padding: var(--hw-spacing-small) calc(var(--hw-spacing-smaller) * 2);
     font-size: var(--hw-font-size-p);
     margin-top: var(--hw-spacing-tiny);
-
-    @media(--large){
-      margin-left: calc(var(--hw-spacing-tiny) * 2);
-      margin-top: 0;
-    }
   }
 
   &__button-inside {
