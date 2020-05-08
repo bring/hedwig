@@ -49,6 +49,9 @@
       color: var(--hw-color-primary-dark);
       outline: 0;
     }
+    &:focus {
+      outline: 0;
+    }
   }
 
   &__arrow {
@@ -63,7 +66,7 @@
       content: '';
       background-color: var(--hw-color-primary-dark);
       transform: rotate(0deg);
-      transition: transform 0.1s ease;
+      transition: transform 0.2s ease;
     }
 
     &::after {
@@ -85,11 +88,11 @@
   }
 
   &__item--expanded .hw-accordion__arrow::before {
-    transform: rotate(180deg);
+    
   }
 
   &__item--expanded .hw-accordion__arrow::after {
-    transform: rotate(0deg);
+    transform: rotate(90deg) scale(0.0, 1.0);
   }
 
   &--menu {
