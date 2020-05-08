@@ -4,8 +4,8 @@
 
 .hw-dropdown {
   position: relative;
-  height: var(--hw-spacing-larger);
-  margin: 3px 0;
+  height: var(--hw-input-field-height);
+  margin: var(--hw-spacing-tiny) 0;
 
   &:focus {
     outline: 0;
@@ -34,11 +34,11 @@
     overflow: hidden;
     width: 100%;
     border-radius: var(--hw-border-radius);
-    max-height: calc(var(--hw-spacing-small) * 2 + var(--hw-font-size-smaller));
+    max-height: var(--hw-input-field-height);
     border: none;
     color: var(--hw-color-black);
     background-color: var(--hw-color-gray-lightest);
-    font-size: var(--hw-font-size-smaller);
+    font-size: var(--hw-font-size-small);
     cursor: pointer;
     transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
 
@@ -49,21 +49,21 @@
 
   &__placeholder {
     padding: var(--hw-spacing-small);
-    line-height: var(--hw-font-size-p);
     width: 100%;
+    height: var(--hw-input-field-height);
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     background: transparent;
-    font-size: var(--hw-font-size-smaller);
+    font-size: var(--hw-font-size-small);
     color: var(--hw-color-black);
   }
 
   &__arrow {
     position: absolute;
-    right: 0;
+    right: 1px;
     width: 20px;
-    top: 4px;
+    top: 9px;
     background-color: var(--hw-color-gray-dark);
 
     &::before,
@@ -183,6 +183,7 @@
     border-radius: var(--hw-border-radius);
     display: flex;
     width: 100%;
+    height: var(--hw-input-field-height);
     font-size: var(--hw-font-size-smaller);
     cursor: pointer;
     color: var(--hw-color-black);
@@ -200,7 +201,7 @@
     background-image:
     /* Cut off the sharp ends of the arrow */
     linear-gradient(45deg, transparent 74%, var(--hw-color-gray-lightest) 0%),
-    linear-gradient(135deg, var(--hw-color-gray-lightest) 26%, rgba(0, 0, 0, 0) 26%),
+    linear-gradient(135deg, var(--hw-color-gray-lightest) 26%, transparent 26%),
     /* Draw the arrow */
     linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-gray-lightest) 73%, var(--hw-color-gray-lightest) 100%),
     linear-gradient(45deg, var(--hw-color-gray-lightest) 0, var(--hw-color-gray-lightest) 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 37%, transparent 38%, transparent 100%),

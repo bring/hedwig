@@ -12,7 +12,7 @@ This is because this is technically two form fields.
 ```
 
 ## Example
-```html
+```html|plain,light,span-4
 <div class="hw-phone-input">
   <fieldset class="hw-phone-input__label">Telefonnummer
     <div class="hw-phone-input__group">
@@ -38,7 +38,7 @@ This is because this is technically two form fields.
 
 
 ## Example with native dropdown
-```html
+```html|plain,light,span-4
 <div class="hw-phone-input">
   <fieldset class="hw-phone-input__label">Telefonnummer
     <div class="hw-phone-input__group">

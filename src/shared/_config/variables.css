@@ -186,9 +186,11 @@
   --hw-border-thickness-thick: 2px;
   --hw-border-radius: 2px;
 
-  /* Navbar heights */
+  /* Fixed heights */
   --hw-navbar-height-mobile: 54px;
   --hw-navbar-height-desktop: 72px;
+  --hw-input-field-height: 58px;
+
 
   /**
    * Global z-index values
