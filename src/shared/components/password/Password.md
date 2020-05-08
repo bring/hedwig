@@ -17,7 +17,7 @@ Input field with password strength indicator
 
 ## Default password entry field
 
-```html|span-3
+```html|span-3,light,plain
 <label class="hw-label">
   Create a password
   <div class="hw-password" data-hw-password>
@@ -51,7 +51,7 @@ Input field with password strength indicator
 
 ## Password entry with custom validation rules
 
-```html|span-3
+```html|span-3,light,plain
 <label class="hw-label">
   Create a password
   <div class="hw-password"
@@ -67,6 +67,9 @@ Input field with password strength indicator
   </div>
 </label>
 ```
+
+
+
 
 ## Default validation rules
 

@@ -13,7 +13,7 @@ Provides styling for sliding a marker between selected tabs
 
 ### Primary
 
-```html|span-4
+```html|span-4,plain,light
 <div class="hw-tab"><!--
   --><a href="#/Tab#item-1" class="hw-tab__item">Item 1</a><!--
   --><a href="#/Tab#item-2" class="hw-tab__item">Item 2</a><!--

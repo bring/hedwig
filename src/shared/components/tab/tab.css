@@ -30,7 +30,7 @@
       border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary);
     }
     &:hover {
-      color: var(--hw-color-primary);
+      color: var(--hw-color-primary-dark);
     }
 
     &:first-of-type {

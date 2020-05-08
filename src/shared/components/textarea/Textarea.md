@@ -1,6 +1,6 @@
 ## Textarea
 
-```html
+```html|plain,light
 <label class="hw-label">
   Fortell oss litt om hva vi kan hjelpe deg med
   <textarea class="hw-textarea" rows="4" cols="50" placeholder="Skriv tekst her"></textarea>
@@ -13,7 +13,7 @@
 
 ### Textarea with error
 
-```html
+```html|plain,light
 <label class="hw-label">
   Fortell oss litt om hva vi kan hjelpe deg med
   <textarea class="hw-textarea hw-textarea--error" rows="4" cols="50" placeholder="Skriv tekst her"></textarea>
@@ -25,7 +25,7 @@
 
 ### Textarea disabled
 
-```html
+```html|plain,light
 <label class="hw-label">
   Fortell oss litt om hva vi kan hjelpe deg med
   <textarea class="hw-textarea" disabled rows="4" cols="50" placeholder="Skriv tekst her"></textarea>

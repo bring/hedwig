@@ -83,6 +83,7 @@ const HWPassword = ({
     const strength = calculateStrength(e.target.value, rules);
 
     // Append class to container
+    // TODO: This removes all classes. Also added modifiers.
     container.className = 'hw-password';
     container.classList.add(`hw-password--strength-${strength}`);
 

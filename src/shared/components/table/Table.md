@@ -2,7 +2,7 @@
 
 ### Default Table 
 
-```html
+```html|plain,light
 <div class="hw-table">
   <table>
     <thead>
@@ -113,7 +113,7 @@
 
 ### Columned Table 
 
-```html
+```html|plain,light
 <div class="hw-table hw-table--column">
   <table>
     <thead>
