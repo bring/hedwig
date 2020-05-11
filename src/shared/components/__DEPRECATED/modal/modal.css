@@ -1,0 +1,107 @@
+/**
+ * Block
+ */
+
+.hw-modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-index--modal);
+  overflow-y: scroll;
+
+  @media (--medium) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  /**
+   * Elements
+   */
+
+  &__overlay {
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    overflow: auto;
+    z-index: var(--z-index--modal);
+  }
+
+  &__close {
+    cursor: pointer;
+    background: var(--hw-color-white);
+    border-radius: 50%;
+    display: block;
+    float: right;
+    border: 0;
+    margin-left: var(--hw-spacing-smaller);
+    margin-bottom: var(--hw-spacing-smaller);
+    width: 50px;
+    height: 50px;
+
+    @media (--medium) {
+      background: var(--hw-color-gray-lightest);
+      position: absolute;
+      padding: var(--hw-spacing-smallest);
+      right: calc( var(--hw-spacing-small) * -1);
+      top: calc( var(--hw-spacing-small) * -1);
+    }
+
+    &:hover {
+      fill: var(--hw-color-gray-dark);
+    }
+  }
+
+  &__content {
+    z-index: var(--z-index--modal-foreground);
+    width: 100%;
+    background: var(--hw-color-white);
+    padding: var(--hw-spacing);
+    margin: var(--hw-spacing);
+
+    @media (--medium) {
+      max-width: 700px;
+      padding: var(--hw-spacing-large);
+      margin: var(--hw-spacing-larger);
+    }
+  }
+
+  &__body {
+    padding-top: var(--hw-spacing);
+  }
+
+  &__actions {
+    text-align: right;
+    padding-top: var(--hw-spacing);
+  }
+
+  /**
+   * Modifiers
+   */
+
+  &--open {
+    display: flex;
+  }
+}
+
+/**
+ * No-js fallback
+ */
+
+.no-js .hw-modal {
+  position: relative;
+  display: flex;
+  background: none;
+  z-index: 0;
+
+  &__window {
+    z-index: 0;
+    width: 100%;
+    background: var(--hw-color-white);
+  }
+}

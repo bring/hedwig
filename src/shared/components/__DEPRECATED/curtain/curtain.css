@@ -1,0 +1,56 @@
+.hw-curtain {
+  overflow: hidden;
+  transition: height 0.3s ease;
+
+  &__trigger {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    border: 0;
+    color: inherit;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: var(--hw-color-primary-dark);
+      outline: 0;
+
+      & h2 {
+        color: var(--hw-color-primary-dark);
+      }
+    }
+  }
+
+  &__arrow {
+    &::before,
+    &::after {
+      position: absolute;
+      top: 11px;
+      right: 0;
+      display: block;
+      width: 12px;
+      height: 4px;
+      content: '';
+      background-color: currentColor;
+      transform: rotate(45deg);
+      transition: transform 0.1s ease;
+    }
+
+    &::after {
+      right: 6px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--closed {
+    & .hw-curtain__trigger {
+      & .hw-curtain__arrow::before {
+        transform: rotate(-45deg);
+      }
+
+      & .hw-curtain__arrow::after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

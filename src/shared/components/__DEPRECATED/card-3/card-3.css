@@ -1,0 +1,49 @@
+/**
+ * Block
+ */
+
+.hw-card-3 {
+  border: 3px solid var(--hw-color-opaque-black-7);
+  padding: var(--hw-spacing-large) var(--hw-spacing);
+  display: block;
+  position: relative;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+    background: var(--hw-color-opaque-black-7);
+    content: "";
+    opacity: 0;
+    box-shadow: 0px 0px 0px 3px var(--hw-color-opaque-black-7);
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &__icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  &__title {
+    margin-top: var(--hw-spacing-smaller);
+    margin-bottom: var(--hw-spacing-large);
+  }
+
+  &__text {
+    margin: var(--hw-spacing-large) 0;
+  }
+
+  &__media {
+    height: auto;
+    width: 100%;
+  }
+}
