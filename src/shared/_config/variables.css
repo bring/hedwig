@@ -37,13 +37,17 @@
    */
 
   --hw-spacing-tiny: 4px;
-  --hw-spacing-smallest: 6px;
+  --hw-spacing-smallest: 8px;
   --hw-spacing-smaller: 12px;
   --hw-spacing-small: 16px;
-  --hw-spacing: 28px;
-  --hw-spacing-large: 36px;
-  --hw-spacing-larger: 48px;
-  --hw-spacing-even-larger: 68px;
+  --hw-spacing: 24px;
+  --hw-spacing-large: 32px;
+  --hw-spacing-larger: 40px;
+  --hw-spacing-even-larger: 56px;
+  --hw-spacing-even-larger-2: 64px;
+  --hw-spacing-even-larger-3: 80px;
+  --hw-spacing-even-larger-4: 120px;
+  --hw-spacing-even-larger-5: 160px;
 
   /**
    * Shared colors

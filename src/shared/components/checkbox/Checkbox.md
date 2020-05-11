@@ -8,10 +8,7 @@
 
 ### Normal checkbox
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <form>
   <label class="hw-checkbox">
     Checkbox
@@ -35,10 +32,7 @@ plain: true
 
 ### Horizontal checkboxes
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <form>
   <label class="hw-checkbox hw-checkbox--horisontal">
     <p class="hw-text-small">Checkbox</p>
@@ -62,10 +56,7 @@ plain: true
 
 ### With bounding box
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <form>
   <label class="hw-checkbox hw-checkbox--bounding">
     Checkbox
@@ -87,12 +78,33 @@ plain: true
 </form>
 ```
 
+### With bounding box full width
+
+```html|span-3,plain,light
+<form>
+  <label class="hw-checkbox hw-checkbox--bounding hw-checkbox--full">
+    Checkbox
+    <input type="checkbox" />
+    <i class="hw-checkbox__indicator"></i>
+  </label>
+
+  <label class="hw-checkbox hw-checkbox--bounding hw-checkbox--full">
+    <p class="hw-text-small">Checked</p>
+    <input type="checkbox" checked />
+    <i class="hw-checkbox__indicator"></i>
+  </label>
+
+  <label class="hw-checkbox hw-checkbox--bounding hw-checkbox--full" disabled>
+    <p class="hw-text-small">Disabled</p>
+    <input type="checkbox" disabled />
+    <i class="hw-checkbox__indicator"></i>
+  </label>
+</form>
+```
+
 ### Checkbox with error
 
-```html
-light: true,
-plain: true
----
+```html|plain,light
 <form>
   <label class="hw-checkbox hw-checkbox--error">
     <p class="hw-text-small">Checkbox</p>

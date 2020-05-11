@@ -53,18 +53,24 @@
   &--bounding {
     display: inline-block;
     background: var(--hw-color-primary-lighter);
-    padding: var(--hw-spacing-smaller) var(--hw-spacing-small) calc(var(--hw-spacing-smaller) - 4px) calc(var(--hw-spacing-small) + var(--hw-spacing-tiny));
+    padding: var(--hw-spacing-small) 0 0 calc(var(--hw-spacing) * 2);
     border-radius: var(--hw-border-radius);
     border: var(--hw-border-thickness) solid;
     border-color: transparent;
+    height: var(--hw-input-field-height);
 
     &[disabled] {
       background: var(--hw-color-gray-lightest);
     }
 
     .hw-radio-button__indicator {
-      top: calc(var(--hw-spacing-small) - 2px);
-      left: calc(var(--hw-spacing-small) + var(--hw-spacing-tiny));
+      top: calc(var(--hw-spacing) - var(--hw-spacing-tiny));
+      left: calc(var(--hw-spacing) - var(--hw-spacing-tiny));
+    }
+    .hw-radio-button__label {
+      margin-left: 0px;
+      margin-top: 0px;
+      margin-right: calc(var(--hw-spacing-larger) - var(--hw-spacing-tiny));
     }
   }
 
