@@ -58,7 +58,7 @@
     &::before,
     &::after {
       position: absolute;
-      top: calc(var(--hw-spacing-large) * var(--hw-spacing-tiny));
+      top: 50%;
       right: 0;
       display: block;
       width: 14px;

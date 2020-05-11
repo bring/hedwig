@@ -54,6 +54,19 @@
 </form>
 ```
 
+### Checkbox with error
+
+```html|plain,light
+<form>
+  <label class="hw-checkbox hw-checkbox--error">
+    <p class="hw-text-small">Checkbox</p>
+    <input type="checkbox" />
+    <i class="hw-checkbox__indicator"></i>
+  </label>
+  <div class="hw-error-simple hw-error--align-left">Error message!</div>
+</form>
+```
+
 ### With bounding box
 
 ```html|plain,light
@@ -102,11 +115,11 @@
 </form>
 ```
 
-### Checkbox with error
+### Checkbox with bounding box and error
 
 ```html|plain,light
 <form>
-  <label class="hw-checkbox hw-checkbox--error">
+  <label class="hw-checkbox hw-checkbox--bounding hw-checkbox--error">
     <p class="hw-text-small">Checkbox</p>
     <input type="checkbox" />
     <i class="hw-checkbox__indicator"></i>

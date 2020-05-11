@@ -19,7 +19,7 @@
     visibility: hidden;
     position: absolute;
     background: transparent;
-    top: var(--hw-spacing-small);
+    top: calc(var(--hw-spacing-small) - 1px);
     right: var(--hw-spacing-small);
     color:var(--hw-color-gray-dark);
     padding: 0;
@@ -63,7 +63,7 @@
     @extend .hw-input-basic;
 
     max-height: 400px;
-    top: 3px;
+    top: var(--hw-spacing-tiny);
     width: 100%;
     padding: 0 !important;
     overflow-y: auto;

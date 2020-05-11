@@ -10,7 +10,6 @@ Required:
 [data-hw-accordion]
 
 Modifiers:
-[Dark]    .hw-accordion--dark
 [Menu]    .hw-accordion--menu
 
 Optional:

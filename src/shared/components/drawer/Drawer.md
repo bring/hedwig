@@ -44,7 +44,7 @@ The close button needs to be of type `button` for tab-navigation to be able to f
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           </p>
           <button class="hw-button hw-button--primary hw-button--large">Lagre</button>
-          <button class="hw-button hw-button--secondary hw-button--large" data-hw-drawer-trigger="Drawer2">Avbryt</button>
+          <button class="hw-button hw-button--secondary hw-button--large hw-button--outline" data-hw-drawer-trigger="Drawer2">Avbryt</button>
         </div>
       </div>
     </div>

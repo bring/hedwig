@@ -57,8 +57,7 @@
 
   &__close-button {
     cursor: pointer;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding: 3px;
     background-size: 50%;
     background-color: var(--hw-color-gray-dark);
     border-radius: 50%;
@@ -66,12 +65,17 @@
     height: 24px;
     border: 0;
     transition: background 0.3s ease;
+    color: var(--hw-color-white);
     fill: var(--hw-color-white);
+    font-size: 8px;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: var(--hw-color-gray-lighter);
+      color: var(--hw-color-gray-darkest);
       fill: var(--hw-color-gray-darkest);
+      outline: 0;
+    }
+    &:focus {
       outline: 0;
     }
 

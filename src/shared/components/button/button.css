@@ -161,10 +161,6 @@
     fill: var(--hw-color-primary-dark);
     border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
 
-    &:not([disabled], .hw-button--round) {
-      padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
-    }
-
     &:disabled, &[disabled], &[disabled]:active {
       background: none !important;
     }
@@ -191,10 +187,6 @@
     fill: var(--hw-color-gray-darkest);
     border-width: 1px;
 
-    &:not([disabled], .hw-button--round) {
-      padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
-    }
-
     &:hover,
     &:active,
     &:focus {
@@ -214,10 +206,6 @@
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
     border-width: 1px;
-
-    &:not([disabled], .hw-button--round) {
-      padding: calc(var(--hw-spacing-smaller) - 1px) var(--hw-spacing);
-    }
 
     &:hover,
     &:active,
