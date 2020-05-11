@@ -12,6 +12,7 @@
     z-index: 1;
     flex-grow: 1;
     text-align:center;
+    border-radius: var(--hw-border-radius);
   }
 
   &__input {
