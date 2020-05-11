@@ -3,7 +3,6 @@
 ```code
 [Base]            .hw-navbar
 [Absolute]        .hw-navbar--absolute
-[Transparent]     .hw-navbar--transparent
 [Fixed]           .hw-navbar--fixed
 ```
 
@@ -31,10 +30,10 @@
 
       <nav class="hw-navbar__menu">
         <button class="hw-navbar__search-button" data-hw-toggle-search>
-          <span class="hw-navbar__search-text">Søk</span><!--
+          <span class="hw-navbar__search-text">Search</span><!--
           --><i class="hw-navbar__icon far fa-search fa-2x"></i>
         </button>
-        <button class="hw-navbar__item" data-hw-drawer-trigger="login">Logg inn<!--
+        <button class="hw-navbar__item" data-hw-drawer-trigger="login">Sign in<!--
           --><i class="hw-navbar__icon far fa-user fa-2x"></i>
         </button>
         <button class="hw-navbar__menu-button" data-hw-toggle-menu><!--
@@ -501,43 +500,7 @@ On this page, only the first navbar is able to open the search, menu and login. 
 
 
 
-
-### Transparent navbar
-
-```html
-<header class="hw-navbar hw-navbar--transparent">
-  <div class="hw-navbar__content">
-    <div class="hw-navbar__top">
-      <div class="hw-navbar__logo">
-        <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
-          <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-bring-white"></use>
-        </svg>
-        <svg class="hw-navbar__logo-gray" aria-labelledby="Logo" role="img">
-          <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-bring-gray"></use>
-        </svg>
-      </div>
-      <nav class="hw-navbar__menu">
-        <a href="#" class="hw-navbar__item">English</a>
-        <a href="#" class="hw-navbar__item">Login<!--
-          --><i class="hw-navbar__icon far fa-user fa-2x"></i>
-        </a>
-        <button class="hw-navbar__menu-button" data-hw-toggle-menu><!--
-          --><span class="hw-navbar__menu-button-label-menu">Menu</span><!--
-          --><span class="hw-navbar__menu-button-label-close">Close</span><!--
-          --><span class="fa-stack hw-navbar__menu-button-toggle">
-              <i class="hw-navbar__bars far fa-bars fa-stack-2x"></i>
-              <i class="hw-navbar__times far fa-times fa-stack-2x"></i>
-        </button>
-      </nav>
-    </div>
-    <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
-  </div>
-</header>
-```
-
-## Navbar without menu
+### Navbar without menu
 
 ```html
 <header class="hw-navbar">
@@ -594,31 +557,3 @@ On this page, only the first navbar is able to open the search, menu and login. 
   </div>
 </header>
 ```
-### Navbar with logo as text
-
-```html
-<header class="hw-navbar">
-  <div class="hw-navbar__content">
-    <div class="hw-navbar__top">
-      <a href="#" class="hw-navbar__logo">
-        <h1 class="hw-h1 hw-navbar__logo-text hw-color-primary">Postlink</h1>
-      </a>
-      <nav class="hw-navbar__menu">
-        <a href="#" class="hw-navbar__item">English</a>
-        <a href="#" class="hw-navbar__item">Login<!--
-        --><i class="hw-navbar__icon far fa-user fa-2x"></i>
-        </a>
-        <button class="hw-navbar__menu-button" data-hw-toggle-menu><!--
-          --><span class="hw-navbar__menu-button-label-menu">Menu</span><!--
-          --><span class="hw-navbar__menu-button-label-close">Close</span><!--
-          --><span class="fa-stack hw-navbar__menu-button-toggle">
-              <i class="hw-navbar__bars far fa-bars fa-stack-2x"></i>
-              <i class="hw-navbar__times far fa-times fa-stack-2x"></i>
-        </button>
-      </nav>
-    </div>
-    <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
-  </div>
-</header>
-```
-

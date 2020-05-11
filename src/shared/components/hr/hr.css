@@ -6,15 +6,25 @@
   text-align: left; /* IE */
   display: block;
   width: 100%;
-  max-width: var(--hw-spacing);
   height: 1px;
   border: 0;
   margin: 0;
-  background-color: var(--hw-color-gray-lighter);
+  background-color: var(--hw-color-separator-gray);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 
   /**
    * Modifers
+   */
+
+  &--light {
+    background-color: var(--hw-color-primary-dark);
+  }
+
+
+
+  /**
+   * DEPRECATED
    */
 
   &--centered {

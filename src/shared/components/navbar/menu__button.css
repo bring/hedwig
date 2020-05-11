@@ -5,12 +5,12 @@
   top: 0;
   display: flex;
   align-items: center;
-  padding-left: var(--hw-spacing-smaller);
-  padding-right: var(--hw-spacing-smaller);
+  padding-left: var(--hw-spacing);
+  padding-right: var(--hw-spacing);
   border: 0;
   font-size: var(--hw-font-size-small);
   transition: color 0.1s ease;
-  height: 54px;
+  height: 44px;
 
   &-label-menu, &-label-close {
     display: none;
@@ -22,7 +22,7 @@
     padding-right: 0;
 
     &-label-menu, &-label-close {
-      padding-right: 6px;
+      padding-right: var(--hw-spacing-small);
       word-break: normal;
     }
   }

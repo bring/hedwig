@@ -168,6 +168,7 @@
   --hw-font-size-small: 18px;
   --hw-font-size-smaller: 16px;
   --hw-font-size-smallest: 12px;
+  --hw-font-size-technical: 16px;
   /**
    * Breakpoints
    * em = 16px
@@ -179,8 +180,8 @@
   --hw-border-radius: 2px;
 
   /* Fixed heights */
-  --hw-navbar-height-mobile: 54px;
-  --hw-navbar-height-desktop: 72px;
+  --hw-navbar-height-mobile: 112px;
+  --hw-navbar-height-desktop: 112px;
   --hw-input-field-height: 58px;
 
 
