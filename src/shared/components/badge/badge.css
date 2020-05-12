@@ -1,10 +1,14 @@
 .hw-badge {
   display: inline-block;
   background-color: var(--hw-color-primary-lighter);
-  border-color: var(--hw-color-primary-lighter);
+  border: var(--hw-border-thickness) solid var(--hw-color-primary-lighter);
+  border-radius: var(--hw-border-radius);
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+
   color: var(--hw-color-primary-dark);
-  border-style: solid;
-  border-radius: 2px;
   text-transform: uppercase;
   line-height: 1.1;
   font-size: 0.75em; /* 75% of surrounding content unless spesified otherwise*/
@@ -13,6 +17,7 @@
   -moz-osx-font-smoothing: subpixel-antialiased;
   -webkit-font-smoothing: subpixel-antialiased;
 
+  vertical-align: 10%;
 
 
 

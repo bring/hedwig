@@ -15,12 +15,17 @@
     padding: var(--hw-spacing-small) 0 !important;
   }
 
-  &--column table{
+  &--column table {
     border-collapse: separate;
     border-spacing: var(--hw-spacing-larger) 0;
     position: relative;
     right: var(--hw-spacing-larger);
     width: calc(100% + (2*var(--hw-spacing-larger))) !important;
+  }
+
+  &--subtitle {
+    font-size: 90%;
+    color: var(--hw-color-gray-dark);
   }
   
   & thead th {
@@ -28,11 +33,13 @@
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-separator-gray) !important;
     font-family: var(--hw-font-primary-medium);
     color: var(--hw-color-black);
+    padding: var(--hw-spacing) 0 var(--hw-spacing-small) 0 !important;
   }
 
   & tbody td {
     border: none;
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-separator-gray);
+    padding: var(--hw-spacing) 0 var(--hw-spacing-small) 0 !important;
   }
 
   & tbody td:hover {
