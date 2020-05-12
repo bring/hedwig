@@ -8,7 +8,7 @@ Modal component
 
 ### Default modal
 
-```html|span-6
+```html|span-6,plain,light
 
   <button class="hw-button hw-button--primary" data-hw-modal-trigger="Modal1">Default modal</button>
 
@@ -33,7 +33,7 @@ Modal component
 
 ### Modal with action buttons
 
-```html
+```html|plain,light
 
   <button class="hw-button hw-button--primary" data-hw-modal-trigger="Modal2">Modal with action buttons</button>
 

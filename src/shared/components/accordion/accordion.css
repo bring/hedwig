@@ -113,7 +113,7 @@
       background-color: transparent;
       transition: background-color 0.5s ease;
       &:active {
-        background-color: var(--hw-color-opaque-black-10);
+        color: var(--hw-color-primary-dark);
         transition: 0s;
       }
       &:hover, &:focus {
@@ -128,7 +128,7 @@
       width: 100%;
       transition: background-color 0.5s ease;
       &:active {
-        background-color: var(--hw-color-opaque-black-10);
+        color: var(--hw-color-primary-dark);
         transition: background-color 0s;
       }
     }

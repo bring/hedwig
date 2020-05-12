@@ -3,14 +3,27 @@
 Available in version 6.1.0
 ```
 
+## Normal quote with citation
+
 ```html|plain,light
 <blockquote class="hw-quote">
-  <p class="hw-quote__content hw-h3">More fonts. Use more fonts!</p>
-  <p class="hw-quote__author">Anonymous client</p>
+  <p class="hw-quote__content hw-h3">This is a quote said by someone.</p>
+  <p class="hw-quote__author">– Someone</p>
+</blockquote>
+```
+
+
+## Quote with norwegian quotation marks
+
+```html|plain,light
+<blockquote class="hw-quote hw-quote--norwegian">
+  <p class="hw-quote__content hw-h3">This is a quote said by someone.</p>
+  <p class="hw-quote__author">– Someone</p>
 </blockquote>
 ```
 
 ## Example without cite
+
 ```html|plain,light
 <blockquote class="hw-quote">
   <p class="hw-quote__content hw-h3">Penguins are a group of aquatic flightless birds</p>

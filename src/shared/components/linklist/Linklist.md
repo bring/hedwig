@@ -6,7 +6,7 @@
 ```
 
 ### Default link list
-```html
+```html|plain,light
 <ul class="hw-linklist">
   <li><a href="#">A link to somewhere</a></li>
   <li><a href="#">A link to the same place</a></li>
@@ -15,7 +15,7 @@
 ```
 
 ### Small link list
-```html
+```html|plain,light
 <ul class="hw-linklist hw-linklist--small">
   <li><a href="#">A link to somewhere</a></li>
   <li><a href="#">A link to the same place</a></li>
