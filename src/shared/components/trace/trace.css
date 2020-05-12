@@ -109,7 +109,10 @@
     margin-bottom: 0;
   }
 
+  .hw-button {
+    margin-right: 0;
   }
+}
   
 
 @keyframes movePlaceholder {

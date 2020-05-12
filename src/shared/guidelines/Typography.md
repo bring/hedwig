@@ -5,18 +5,18 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 
 ```code
 [h1]             h1 font size 32 - 48px
-[h2]             h2 font size 24 - 32px
-[h3]             h3 font size 18 - 24px
-[h4]             h4 font size 18 - 20px
-[h5]             h5 font size 18 - 16px
+[h2]             h2 font size 28 - 44px
+[h3]             h3 font size 22 - 28px
+[h4]             h4 font size 18 - 22px
+[h5]             h5 font size 16 - 20px
 [p]              p
 
-[.hw-h1-large]       font size 48 - 72px
+[.hw-h1-large]       font size 40 - 80px
 [.hw-h1]             font size 32 - 48px
-[.hw-h2]             font size 24 - 32px
-[.hw-h3]             font size 18 - 24px
-[.hw-h4]             font size 18 - 20px
-[.hw-h5]             font size 18 - 16px
+[.hw-h2]             font size 28 - 44px
+[.hw-h3]             font size 22 - 28px
+[.hw-h4]             font size 18 - 22px
+[.hw-h5]             font size 16 - 20px
 
 
 [Lead]             hw-text-lead
@@ -32,6 +32,9 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
 [Color primary]       hw-color-primary
 [Color primary dark]  hw-color-primary-dark
 ```
+
+
+
 
 [Example article](https://www.bring.no/test/articles/designsystems) showing typography in use.
  

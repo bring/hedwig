@@ -12,7 +12,7 @@ Hero component
 
 ### Default Hero (55vh)
 
-```html|span-6
+```html|span-6,light,plain
   <div class="hw-hero">
     <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"></div>
   </div>
@@ -23,7 +23,7 @@ Hero component
 Changed from 20vh to 35vh in version 6.1.4
 ```
 
-```html|span-6
+```html|span-6,light,plain
   <div class="hw-hero hw-hero--small">
     <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"></div>
   </div>
@@ -32,7 +32,7 @@ Changed from 20vh to 35vh in version 6.1.4
 ### Hero full (100vh minus [height of navbar])
 Together with navbar this will occupy full height of viewport
 
-```html|span-6
+```html|span-6,light,plain
   <div class="hw-hero hw-hero--full">
     <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"></div>
   </div>
@@ -40,7 +40,7 @@ Together with navbar this will occupy full height of viewport
 
 ### Hero large with several images for breakpoints (prevent loading of big images on mobile)
 
-```html|span-6
+```html|span-6,light,plain
   <div class="hw-hero" data-hw-hero data-hw-hero-images='{"small": "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png", "large": "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-2.png"}'>
     <div class="hw-hero__image"></div>
   </div>
@@ -59,7 +59,7 @@ Content can be placed on top of the hero image and positioned right, left or cen
 
 ```
 
-```html|span-6
+```html|span-6,light,plain
   
   <div class="hw-hero">
     <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');">
@@ -76,7 +76,7 @@ Content can be placed on top of the hero image and positioned right, left or cen
 
 ### Responsive hero (default on desktop, small on mobile)
 
-```html|span-6
+```html|span-6,light,plain
 <div class="hw-hero hw-hero--mobile-small">
     <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');">
   </div>
