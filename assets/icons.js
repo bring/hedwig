@@ -13,6 +13,7 @@ const spriteUrl = replaceLastPathofUrl(src, 'svg-sprite.svg');
 function loadIcons() {
   const ajax = new XMLHttpRequest();
 
+  ajax.withCredentials = true;
   ajax.open('GET', spriteUrl, true);
   ajax.send();
 
