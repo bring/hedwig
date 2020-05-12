@@ -33,20 +33,45 @@
       display: inline;
     }
   }
-  &__arrow {
+  &--single {
+    .hw-breadcrumb__arrow {
+      margin-right: 6px;
+    }
+    .hw-breadcrumb__arrow-hover {
+      margin-right: 6px;
+    }
+  }
+  &__arrow, &__arrow-hover {
     font-size: 9px;
     color: var(--hw-color-gray-dark);
     display: none;
     margin-right: 9px;
     margin-left: 9px;
-    margin-top: 3px;
+    margin-top: 2px;
     @media (--large) {
       display: inline-block;
     }
   }
+  &__arrow-hover {
+    margin-left: -16px;
+    opacity: 0;
+  }
+
+  &:hover {
+    .hw-breadcrumb__arrow {
+      opacity: 0;
+    }
+    .hw-breadcrumb__arrow-hover {
+      opacity: 1;
+    }
+  }
+
+
+
+
   &__arrow-mobile {
-    margin-right: 6px;
-    @media (--large){
+    margin-right: 8px;
+    @media (--large) {
       display: none;
     }
   }

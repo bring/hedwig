@@ -11,39 +11,30 @@
 
 
 
+
+
 ### Single level
 
 ```html|plain,light
 <div class="hw-breadcrumbs">
-  <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
-  <span class="hw-breadcrumb__current">Start</span>
+  <div class="hw-breadcrumb hw-breadcrumb--single">
+    <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
+    <i class="fas fa-arrow-left fa-xs hw-breadcrumb__arrow-hover"></i>
+    <a class="hw-link" href="#">Start</a>
+  </div>
 </div>
 ```
 
-```code 
+
+```code
 <div class="hw-breadcrumbs">
-  <div class="hw-breadcrumb">
-    <a class="hw-link" href="#">Home</a>
+  <div class="hw-breadcrumb hw-breadcrumb--single">
+    <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
+    <i class="fas fa-arrow-left fa-xs hw-breadcrumb__arrow-hover"></i>
+    <a class="hw-link" href="#">Start</a>
   </div>
-  <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
-  
-  <div class="hw-breadcrumb">
-    <a class="hw-link" href="#">Level 2</a>
-  </div>
-  <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
-  
-  <div class="hw-breadcrumb">
-    <a class="hw-link" href="#">
-      <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow-mobile"></i><!--
-      -->Level 3
-    </a>
-  </div>
-  <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
-  
-  <span class="hw-breadcrumb__current">Current</span>
 </div>
 ```
-
 
 
 
@@ -69,7 +60,7 @@
   </div>
   <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
   
-  <span class="hw-breadcrumb__current">Current</span>
+  <span class="hw-breadcrumb__current">Current content</span>
 </div>
 ```
 
@@ -93,7 +84,7 @@
   </div>
   <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
   
-  <span class="hw-breadcrumb__current">Current</span>
+  <span class="hw-breadcrumb__current">Current content</span>
 </div>
 ```
 

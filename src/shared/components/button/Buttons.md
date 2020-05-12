@@ -83,6 +83,17 @@ plain: true
   </button>
 ```
 
+### Outlined button light
+
+```html|span-4,plain,dark
+  <button class="hw-button hw-button--outline-white">
+    Primary button
+  </button>
+  <button class="hw-button hw-button--outline-white" disabled>
+    Disabled
+  </button>
+```
+
 ### Button with icon
 
 ```html|span-4,plain,light

@@ -185,42 +185,42 @@
     background: none;
     color: var(--hw-color-gray-darkest);
     fill: var(--hw-color-gray-darkest);
-    border-width: 1px;
+    border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
 
     &:hover,
     &:active,
     &:focus {
       color: var(--hw-color-white);
       fill: var(--hw-color-white);
-      background: var(--hw-color-gray-darkest);
+      border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
       outline: 0px solid var(--hw-color-gray-darkest);
     }
-
-    &:active {
-      background: var(--hw-color-gray);
+    &:disabled, &[disabled], &[disabled]:active {
+      border: var(--hw-border-thickness) solid var(--hw-color-gray);
+      color: var(--hw-color-gray-dark);
+      background: transparent !important;
     }
   }
 
   &--outline-white {
-    background: none;
+    background: transparent;
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
-    border-width: 1px;
+    border: var(--hw-border-thickness) solid var(--hw-color-white);
 
     &:hover,
     &:active,
     &:focus {
-      color: var(--hw-color-gray-darker);
-      fill: var(--hw-color-gray-darker);
-      background: var(--hw-color-white);
+      color: var(--hw-color-gray-light);
+      fill: var(--hw-color-gray-light);
+      border: var(--hw-border-thickness) solid var(--hw-color-gray);
       outline: 0px solid var(--hw-color-white);
     }
-
-    &:active {
-      background: var(--hw-color-gray-lightest);
+    &:disabled, &[disabled], &[disabled]:active {
+      border: var(--hw-border-thickness) solid var(--hw-color-gray-dark);
+      color: var(--hw-color-gray-light);
+      background: transparent !important;
     }
-
-
   }
 
   &--stripped {

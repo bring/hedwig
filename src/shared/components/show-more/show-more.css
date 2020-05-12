@@ -36,9 +36,6 @@
     .hw-show-more__button {
       color: var(--hw-color-primary-dark);
     }
-    .hw-show-more__button::after {
-      color: var(--hw-color-primary);
-    }
   }
 
   /**

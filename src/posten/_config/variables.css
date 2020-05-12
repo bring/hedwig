@@ -27,6 +27,13 @@
   --hw-color-link-hover: #000;
   --hw-color-link-underline-hover: #000;
 
+
+  /**
+    * Button Colors
+    */
+  --hw-color-button-primary-hover: #D62722;
+
+
   /**
    * Color mappings
    */
