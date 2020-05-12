@@ -6,27 +6,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  background: var(--hw-color-primary-lighter);
+  border-radius: var(--hw-border-radius);
+  margin-bottom: var(--hw-spacing-small);
 
-
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.3s ease;
-    background: var(--hw-color-opaque-black-7);
-    content: '';
-    opacity: 0;
+  &:hover {
+    opacity: 0.8;
   }
 
-  &:hover::after, &:active::after {
-    opacity: 1;
-  }
-
-  &:hover &__body::after, &:active &__body::after {
-    opacity: 1;
-  }
 
   /**
    * Elements
@@ -46,7 +33,7 @@
 
   &__body {
     z-index: 1;
-    padding: 12px;
+    padding: var(--hw-spacing-small);
     position: relative;
     flex-basis: auto;
     /* Using :after here to avoid showing border on page load */
@@ -59,7 +46,6 @@
       height: 100%;
       opacity: 0;
       transition: opacity 0.3s ease;
-      border: 3px solid var(--hw-color-opaque-black-7);
     }
   }
   &__label {

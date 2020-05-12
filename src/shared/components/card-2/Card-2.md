@@ -9,7 +9,7 @@ Styling for cards.
 
 ### Regular card
 
-```html|span-2
+```html|span-2,light,plain
   <a href="#" class="hw-card-2">
     <div class="hw-card-2__media">
       <div class="hw-card-2__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg')"></div>
@@ -27,7 +27,7 @@ Styling for cards.
 
 ### Cards in grid
 
-```html|span-6
+```html|span-6,light,plain
   <div class="hw-grid">
     <div class="hw-grid__item hw-large--one-quarter">
       <div class="hw-block hw-block--mb">

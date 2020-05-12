@@ -8,7 +8,7 @@ Used on the home page
 
 ### Cards in grid
 
-```html|span-2
+```html|span-2,light,plain
 <div class="hw-block hw-background-color-gray-lightest">
    <a class="hw-card-3" href="https://www.bring.no/">
       <p class="hw-text-uppercase hw-color-gray hw-text-smaller">Nunc Et Aliqet</p>

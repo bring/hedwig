@@ -30,12 +30,10 @@
   }
 
   &:hover .hw-entrance-box__label {
-    border-bottom: 2px solid var(--hw-color-link-underline);
     color: var(--hw-color-black);
   }
   &:hover .hw-entrance-box__text {
-     border-bottom: 2px solid var(--hw-color-link-underline);
-     color: var(--hw-color-black);
+     color: var(--hw-color-primary-dark);
   }
   &:hover .hw-entrance-box__body {
     z-index: 1;
@@ -69,20 +67,18 @@
 
   &__label {
     text-transform: uppercase;
-    border-bottom: 2px solid transparent;
-    margin-bottom: var(--hw-spacing-smallest);
-    font-size: var(--hw-font-size-small);
+    margin-bottom: var(--hw-spacing-small);
+    font-size: var(--hw-font-size-smaller);
     display: inline;
     transition: all 0.1s ease;
     @extend .hw-color-gray-dark
   }
 
   &__text {
-    border-bottom: 2px solid transparent;
     display: inline;
     min-height: 60px;
-    margin-top: var(--hw-spacing-smaller);
-    font-size: var(--hw-font-size-lead);
+    margin-top: var(--hw-spacing-small);
+    font-size: var(--hw-font-size-small);
     transition: all 0.1s ease;
   }
 

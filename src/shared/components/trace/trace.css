@@ -13,6 +13,7 @@
     flex-grow: 1;
     text-align:center;
     border-radius: var(--hw-border-radius);
+    height: var(--hw-input-field-height);
   }
 
   &__input {
