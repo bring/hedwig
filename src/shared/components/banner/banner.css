@@ -32,10 +32,12 @@
     border: none;
 
     font-family: var(--hw-font-primary-medium);
+    font-weight: var(--hw-font-weight-medium);
     font-size: var(--hw-font-size-smaller);
 
     a {
       font-family: var(--hw-font-primary-medium);
+      font-weight: var(--hw-font-weight-medium);
       font-size: var(--hw-font-size-smaller);
       text-decoration: underline;
     }
@@ -87,6 +89,7 @@
     padding: var(--hw-spacing-smaller);
     padding-bottom: 0;
     font-family: var(--hw-font-primary-regular);
+    font-weight: var(--hw-font-weight-regular);
     font-size: var(--hw-font-size-smaller);
 
     a {

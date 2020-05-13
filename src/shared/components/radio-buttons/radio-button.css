@@ -7,6 +7,7 @@
   cursor: pointer;
   width: auto;
   font-family: var(--hw-font-primary-regular);
+  font-weight: var(--hw-font-weight-regular);
   font-size: var(--hw-font-size-small);
   position: relative;
   line-height: 1.3;

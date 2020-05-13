@@ -7,6 +7,7 @@
   padding: calc(var(--hw-spacing-tiny) * 2) 0 0 var(--hw-spacing-even-larger);
   font-size: var(--hw-font-size-smallest);
   font-family: var(--hw-font-primary-medium);
+  font-weight: var(--hw-font-weight-medium);
   text-align: right;
   transform: translateY(0);
   transition: transform 200ms;
@@ -60,6 +61,7 @@
   padding: 0;
   margin-top: var(--hw-spacing-tiny);
   font-family: var(--hw-font-primary-medium);
+  font-weight: var(--hw-font-weight-medium);
   font-size: var(--hw-font-size-smallest);
   text-align: right;
   transform: translateY(0);

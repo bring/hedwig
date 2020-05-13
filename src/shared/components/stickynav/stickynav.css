@@ -53,6 +53,7 @@
     color: var(--hw-color-gray-dark);
     font-size: var(--hw-font-size-small);
     font-family: var(--hw-font-primary-bold);
+    font-weight: var(--hw-font-weight-bold);
     text-transform: uppercase;
 
     @media (--medium) {
