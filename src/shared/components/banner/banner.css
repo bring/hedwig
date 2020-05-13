@@ -18,6 +18,8 @@
 
   font-size: var(--hw-font-size-smaller);
 
+  transition: all var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
+
   a {
     font-size: var(--hw-font-size-smaller);
     text-decoration: underline;
@@ -83,14 +85,20 @@
   }
 
   &__contents {
+    overflow: hidden;
+    padding: var(--hw-spacing-small);
+    padding-bottom: 0;
+
+    /* Invisible state */
     display: none;
+
     background-color: var(--hw-color-secondary);
     text-align: center;
-    padding: var(--hw-spacing-smaller);
-    padding-bottom: 0;
     font-family: var(--hw-font-primary-regular);
     font-weight: var(--hw-font-weight-regular);
     font-size: var(--hw-font-size-smaller);
+
+    transition: all var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
 
     a {
       color: var(--hw-color-black);
@@ -190,6 +198,7 @@
   }
 
   &--expanded .hw-banner__contents {
+    /* Visible state */
     display: block;
   }
 

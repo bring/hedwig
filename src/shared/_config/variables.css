@@ -188,6 +188,17 @@
   --hw-navbar-height-desktop: 112px;
   --hw-input-field-height: 58px;
 
+  /**
+   * Transitions
+   */
+  --hw-transition-time-quick: 1.267s; 
+  --hw-transition-time-normal: 1.467s;
+  --hw-transition-time-slow: 1.767s;  
+
+  --hw-transition-easing-normal: ease-in-out;
+  --hw-transition-easing-in: ease-in;
+  --hw-transition-easing-out: ease-out;
+
 
   /**
    * Global z-index values
