@@ -11,11 +11,6 @@ const spriteUrl = replaceLastPathofUrl(src, 'svg-sprite.svg');
 // Load svg-sprite with ajax
 // https://css-tricks.com/ajaxing-svg-sprite/
 function loadIcons() {
-
-  if(spriteUrl.includes("localhost") == false) {
-    spriteUrl = 'https://cors-anywhere.herokuapp.com/' + spriteUrl;
-  }
-
   const ajax = new XMLHttpRequest();
 
   ajax.withCredentials = false;
