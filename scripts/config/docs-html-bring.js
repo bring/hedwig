@@ -126,6 +126,13 @@ module.exports = `
           background-color: #7bc144;
         }
 
+        /**
+         * Modifications for Catalog
+         */
+        .HeadingLink {
+          line-height: 0px; /* Fixes jumping of content when hovering an inline anchor */
+        }
+
       </style>
     </head>
     <body>
