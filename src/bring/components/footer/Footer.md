@@ -17,9 +17,6 @@
       <div class="hw-grid"><!--
       --><div class="hw-grid__item hw-one-quarter">
         <h4 class="">Lorum ipsum</h4>
-        <div class="hw-block hw-block hw-block--pt-smaller hw-block--pb-smaller">
-          <div class="hw-hr hw-hr--gray-light"></div>
-        </div>
         <div class="hw-block">
           <ul class="hw-linklist">
             <li><a href="#">Aliquam consequat</a></li>
@@ -30,9 +27,6 @@
         </div>
       </div><div class="hw-grid__item hw-one-quarter">
         <h4 class="">Lorum ipsum</h4>
-        <div class="hw-block hw-block hw-block--pt-smaller hw-block--pb-smaller">
-          <div class="hw-hr hw-hr--gray-light"></div>
-        </div>
         <div class="hw-block">
           <ul class="hw-linklist">
             <li><a href="#">Aliquam consequat</a></li>
@@ -43,11 +37,8 @@
         </div>
       </div><div class="hw-grid__item hw-one-quarter">
         <h4 class="">Lorum ipsum</h4>
-        <div class="hw-block hw-block hw-block--pt-smaller hw-block--pb-smaller">
-          <div class="hw-hr hw-hr--gray-light"></div>
-        </div>
         <div class="hw-block">
-          <ul class="hw-linklist">
+          <ul class="hw-linklist hw-linklist--light">
             <li><a href="#">Aliquam consequat</a></li>
             <li><a href="#">Vivamus eros</a></li>
             <li><a href="#">Vivamus pulvinar</a></li>
@@ -82,7 +73,7 @@
         </div></div>
       </div>
       <div class="hw-block hw-block--pt-large">
-        <div class="hw-hr hw-hr--full hw-hr--gray-lighter"></div>
+        <div class="hw-hr hw-hr--full hw-hr--lighter"></div>
       </div> 
     </div>
     <div class="hw-footer__mobile">
@@ -237,7 +228,7 @@
       --><div class="hw-grid__item hw-three-eighths">
         <h4 class="">Lorum ipsum</h4>
         <div class="hw-block hw-block hw-block--pt-smaller hw-block--pb-smaller">
-          <div class="hw-hr hw-hr--gray-light"></div>
+          <div class="hw-hr hw-hr--light"></div>
         </div>
         <div class="hw-block">
           <ul class="hw-linklist">
@@ -250,7 +241,7 @@
       </div><div class="hw-grid__item hw-three-eighths">
         <h4 class="">Lorum ipsum</h4>
         <div class="hw-block hw-block hw-block--pt-smaller hw-block--pb-smaller">
-          <div class="hw-hr hw-hr--gray-light"></div>
+          <div class="hw-hr hw-hr--light"></div>
         </div>
         <div class="hw-block">
           <ul class="hw-linklist">
@@ -291,7 +282,7 @@
         </div></div>
       </div>
       <div class="hw-block hw-block--pt-large">
-        <div class="hw-hr hw-hr--full hw-hr--gray-lighter"></div>
+        <div class="hw-hr hw-hr--full hw-hr--lighter"></div>
       </div> 
     </div>
     <div class="hw-footer__mobile">

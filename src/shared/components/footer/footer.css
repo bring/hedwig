@@ -1,6 +1,6 @@
  .hw-footer {
   display: block;
-  background: var(--hw-color-gray-lightest);
+  background: var(--hw-color-primary-darker);
 
   /**
    * Elements
