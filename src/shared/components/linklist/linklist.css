@@ -19,14 +19,10 @@
     font-size: var(--hw-font-size-p);
     line-height: 1.7;
   }
+
+  
   /** Modifications **/
   &--small a {
     font-size: var(--hw-font-size-small);
-  }
-
-  &--light {
-    & a {
-      @extend .hw-link--inverted;
-    }
   }
 }
