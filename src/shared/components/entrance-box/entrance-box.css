@@ -5,44 +5,14 @@
 
 .hw-entrance-box {
   position: relative;
-  background: var(--hw-color-white);
-  transition: transform 0.3s;
+  background: var(--hw-color-primary-lighter);
+  transition: opacity 0.3s;
   display: flex;
   flex-direction: column;
   margin-bottom: var(--hw-spacing);
 
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    background: var(--hw-color-opaque-black-7);
-    content: '';
-    opacity: 0;
-  }
-
   &:hover {
-    &::after {
-      opacity: 1;
-    }
-  }
-
-  &:hover .hw-entrance-box__label {
-    color: var(--hw-color-black);
-  }
-  &:hover .hw-entrance-box__text {
-     color: var(--hw-color-primary-dark);
-  }
-  &:hover .hw-entrance-box__body {
-    z-index: 1;
-    padding: var(--hw-spacing);
-    background: var(--hw-color-gray-lighter);
-
-    @media (--large) {
-      background: var(--hw-color-white);
-    }
+    opacity: 0.8;
   }
 
   /**
@@ -58,11 +28,6 @@
   &__body {
     z-index: 1;
     padding: var(--hw-spacing);
-    background: var(--hw-color-gray-lightest);
-
-    @media (--large) {
-      background: var(--hw-color-white);
-    }
   }
 
   &__label {
