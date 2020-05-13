@@ -22,6 +22,9 @@
     content: '';
     opacity: 0;
   }
+  &--video::after{
+    content: none;
+  }
 
   &:hover {
     &::after {
