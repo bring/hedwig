@@ -10,7 +10,11 @@
 
 <footer class="hw-footer">
   <div class="hw-container">
-    <div class="hw-block hw-block--pt-large hw-block--pb-large hw-block--mb-large">
+    <div class="hw-block">
+
+
+      <!-- Desktop footer -->
+
       <div class="hw-footer__desktop">
         
 
@@ -78,8 +82,8 @@
                     <svg class="hw-footer__logo-link-standard">
                       <use xlink:href="#logo-bring"></use>
                     </svg>
-                    <svg class="hw-footer__logo-link-gray">
-                      <use xlink:href="#logo-bring-gray"></use>
+                    <svg class="hw-footer__logo-link-white">
+                      <use xlink:href="#logo-bring-white"></use>
                     </svg>
                   </a>
                 </div>
@@ -88,26 +92,23 @@
             --><div class="hw-grid__item hw-one-quarter">
 
             </div><!--
-            --><div class="hw-grid__item hw-one-quarter">
-
-            </div><!--
-            --><div class="hw-grid__item hw-one-quarter">
+            --><div class="hw-grid__item hw-one-half">
               <div class="hw-block">
                 <div class="hw-some">
                   <button class="hw-some__button hw-some__button--facebook">
                     <i class="fab fa-facebook-f"></i>
-                  </button>
-                  <button class="hw-some__button hw-some__button--twitter">
-                    <i class="fab fa-twitter"></i>
-                  </button>
-                  <button class="hw-some__button hw-some__button--linkedin">
-                    <i class="fab fa-linkedin-in"></i>
                   </button>
                   <button class="hw-some__button hw-some__button--google">
                     <i class="fab fa-google-plus-g"></i>
                   </button>
                   <button class="hw-some__button hw-some__button--instagram">
                     <i class="fab fa-instagram"></i>
+                  </button>
+                  <button class="hw-some__button hw-some__button--twitter">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="hw-some__button hw-some__button--linkedin">
+                    <i class="fab fa-linkedin-in"></i>
                   </button>
                 </div>
               </div>
@@ -128,45 +129,29 @@
     </div>
 
 
+
+    <!-- Mobile footer -->
+
     <div class="hw-footer__mobile">
       <nav class="hw-footer__navigation">
         <div class="hw-block hw-block--mb-smallest">
           <button class="hw-button hw-button--full hw-button--outline">
-            A button
+            For bedrifter
           </button>
         </div>
         <div class="hw-block hw-block--mb-smallest">
-          <button class="hw-button hw-button--outline">
-            <i class="fa-x fa-fw fas fa-globe"></i> English site
+          <button class="hw-button hw-button--full hw-button--outline">
+            English site
           </button>
         </div>
           <div class="hw-block hw-block--mt">
           <div class="hw-block hw-block--mb-smallest">
 
           </div>
-          <div class="hw-some">
-            <button class="hw-some__button hw-some__button--facebook">
-              <i class="fab fa-facebook-f"></i>
-            </button>
-            <button class="hw-some__button hw-some__button--twitter">
-              <i class="fab fa-twitter"></i>
-            </button>
-            <button class="hw-some__button hw-some__button--linkedin">
-              <i class="fab fa-linkedin-in"></i>
-            </button>
-            <button class="hw-some__button hw-some__button--email">
-              <i class="fas fa-at"></i>
-            </button>
-            <button class="hw-some__button hw-some__button--google">
-              <i class="fab fa-google-plus-g"></i>
-            </button>
-            <button class="hw-some__button hw-some__button--instagram">
-              <i class="fab fa-instagram"></i>
-            </button>
-          </div>
+          
           
         </div>
-        <div class="hw-block hw-block--mt">
+        <div class="hw-block hw-block--mt-larger">
           <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
             <li class="hw-accordion__item">
               <button class="hw-accordion__trigger">
@@ -245,8 +230,56 @@
             </li>
           </ul>
         </div>
-      </nav>
+
+        <div class="hw-block hw-block--mb hw-block--mt-larger">
+          
+
+          <div class="hw-footer__logo">
+            <a href="#" class="hw-footer__logo-link">
+              <svg class="hw-footer__logo-link-standard">
+                <use xlink:href="#logo-bring"></use>
+              </svg>
+              <svg class="hw-footer__logo-link-white">
+                <use xlink:href="#logo-bring-white"></use>
+              </svg>
+            </a>
+          </div>
+
+
+          <div class="hw-some">
+            <button class="hw-some__button hw-some__button--facebook">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="hw-some__button hw-some__button--google">
+              <i class="fab fa-google-plus-g"></i>
+            </button>
+            <button class="hw-some__button hw-some__button--instagram">
+              <i class="fab fa-instagram"></i>
+            </button>
+            <button class="hw-some__button hw-some__button--twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button class="hw-some__button hw-some__button--linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+          </div>
+
+
+          <div class="hw-hr hw-block--mt-smallest"></div>
+
+
+          <div class="hw-block hw-block--mt">
+            <span class="hw-copyright">© Posten Norge</span>
+          </div>
+          <div class="hw-block hw-block--mt">
+            <a href="#" class="hw-link">Privacy and security</a>  
+            <a href="#" class="hw-link">Cookies</a>
+          </div>
+        </div>
       
+
+      </nav>
+
     </div>
 
 
@@ -270,13 +303,53 @@
 
 ```html
 
-<footer class="hw-footer">
+<footer class="hw-footer hw-footer--slim">
  <div class="hw-container">
    <div class="hw-block hw-block--pt hw-block--pb-large">
-    <div class="hw-footer__shared">
+    <div class="hw-footer__desktop">
 
-      <div class="hw-block">
-        <div class="hw-block hw-block--pb-smaller">All rights reserved @ bring</div>
+      <div class="hw-grid">
+        <div class="hw-grid__item hw-one-quarter">
+          <div class="hw-footer__logo">
+            <a href="#" class="hw-footer__logo-link">
+              <svg class="hw-footer__logo-link-standard">
+                <use xlink:href="#logo-bring"></use>
+              </svg>
+              <svg class="hw-footer__logo-link-white">
+                <use xlink:href="#logo-bring-white"></use>
+              </svg>
+            </a>
+          </div>
+        </div><!--
+
+        --><div class="hw-grid__item hw-three-quarters">
+          <div class="hw-block hw-block--mt hw-footer__element-float-right">
+            <span class="hw-copyright">© Posten Norge</span>
+            <a href="#" class="hw-link">Privacy and security</a>  
+            <a href="#" class="hw-link">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="hw-footer__mobile">
+
+      <div class="hw-footer__logo">
+        <a href="#" class="hw-footer__logo-link">
+          <svg class="hw-footer__logo-link-standard">
+            <use xlink:href="#logo-bring"></use>
+          </svg>
+          <svg class="hw-footer__logo-link-white">
+            <use xlink:href="#logo-bring-white"></use>
+          </svg>
+        </a>
+      </div>
+          
+      <div class="hw-block hw-block--mt">
+        <span class="hw-copyright">© Posten Norge</span>
+      </div>
+      <div class="hw-block hw-block--mt">
         <a href="#" class="hw-link">Privacy and security</a>  
         <a href="#" class="hw-link">Cookies</a>
       </div>
