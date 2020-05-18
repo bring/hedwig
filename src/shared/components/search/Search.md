@@ -15,52 +15,61 @@ NB: The search field position and the opaque background overlay is not controlle
 #### Standalone
 
 ```html|span-4,plain,light
-<div class="hw-search hw-search--standalone" 
-  data-hw-search 
-  data-hw-search-placeholders='["Placeholder", "Another one"]'>
-  <div class="hw-search__inner">
-    <input class="hw-search__input" type="text" data-hw-search-input />
-    <i class="far fa-search hw-search__icon"></i>
-    <span class="hw-search__placeholder" data-hw-search-placeholder></span>
-    <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
+<label class="hw-label">
+  Label
+  <div class="hw-search hw-search--standalone" 
+    data-hw-search 
+    data-hw-search-placeholders='["Placeholder", "Another one"]'>
+    <div class="hw-search__inner">
+      <input class="hw-search__input" type="text" data-hw-search-input />
+      <i class="far fa-search hw-search__icon"></i>
+      <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+      <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
+    </div>
   </div>
-</div>
+</label>
 ```
 
 
 #### Standalone with primary button
 
 ```html|span-4,plain,light
-<div class="hw-search hw-search--standalone" data-hw-search data-hw-search-placeholders='["Hi!"]'>
-  <div class="hw-search__inner">
-    <input
-      data-hw-search-input
-      class="hw-search__input" type="text"
-      aria-label="Search" />
-    <i class="far fa-search hw-search__icon"></i>
-    <span class="hw-search__placeholder" data-hw-search-placeholder></span>
-    <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
+<label class="hw-label">
+  Label
+  <div class="hw-search hw-search--standalone" data-hw-search data-hw-search-placeholders='["Hi!"]'>
+    <div class="hw-search__inner">
+      <input
+        data-hw-search-input
+        class="hw-search__input" type="text"
+        aria-label="Search" />
+      <i class="far fa-search hw-search__icon"></i>
+      <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+      <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
+    </div>
+    <button type="submit" class="hw-button hw-button--primary hw-search__button">Search</button>
   </div>
-  <button type="submit" class="hw-button hw-button--primary hw-search__button">Search</button>
-</div>
+</label>
 ```
 
 
 #### Standalone with secondary button
 
 ```html|span-4,plain,light
-<div class="hw-search hw-search--standalone" data-hw-search data-hw-search-placeholders='["Hi!"]'>
-  <div class="hw-search__inner">
-    <input
-      data-hw-search-input
-      class="hw-search__input" type="text"
-      aria-label="Search" />
-    <i class="far fa-search hw-search__icon"></i>
-    <span class="hw-search__placeholder" data-hw-search-placeholder></span>
-    <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
+<label class="hw-label">
+  Label
+  <div class="hw-search hw-search--standalone" data-hw-search data-hw-search-placeholders='["Hi!"]'>
+    <div class="hw-search__inner">
+      <input
+        data-hw-search-input
+        class="hw-search__input" type="text"
+        aria-label="Search" />
+      <i class="far fa-search hw-search__icon"></i>
+      <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+      <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
+    </div>
+    <button type="submit" class="hw-button hw-button--secondary hw-search__button">Search</button>
   </div>
-  <button type="submit" class="hw-button hw-button--secondary hw-search__button">Search</button>
-</div>
+</label>
 ```
 
 

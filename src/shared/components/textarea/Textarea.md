@@ -26,7 +26,7 @@
 ### Textarea disabled
 
 ```html|plain,light
-<label class="hw-label">
+<label class="hw-label hw-label--disabled">
   Fortell oss litt om hva vi kan hjelpe deg med
   <textarea class="hw-textarea" disabled rows="4" cols="50" placeholder="Skriv tekst her"></textarea>
 </label>

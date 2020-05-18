@@ -43,8 +43,13 @@
     padding: var(--hw-spacing) var(--hw-spacing-small) var(--hw-spacing-small) 0 !important;
   }
 
-  & tbody td:hover {
-    color:var(--hw-color-primary-dark);
+  & tbody tr:hover {
+    color: var(--hw-color-primary-darker);
+
+    a {
+      color: var(--hw-color-primary-dark);
+      text-underline-color: var(--hw-color-primary-dark);
+    }
   }
 
   & th {

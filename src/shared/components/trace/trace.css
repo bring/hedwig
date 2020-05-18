@@ -65,7 +65,7 @@
 
   &__button-inside:hover,
   &__button-inside:focus {
-    color: var(--hw-color-gray);
+    color: var(--hw-color-primary-dark);
   }
   
 

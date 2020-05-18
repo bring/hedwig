@@ -117,7 +117,7 @@
     }
 
     &:active {
-      background: var(--hw-color-gray-dark) !important;
+      background: var(--hw-color-primary-darker) !important;
     }
   }
 

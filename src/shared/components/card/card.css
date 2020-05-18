@@ -133,7 +133,7 @@
    */
 
   &--dark {
-    background: var(--hw-color-gray-darkest);
+    background: var(--hw-color-primary-darker);
   }
 
   &--dark .hw-card__title,

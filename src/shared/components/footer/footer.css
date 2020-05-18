@@ -66,10 +66,10 @@
       &:hover {
 
         & .hw-footer__logo-link-standard {
-          opacity: 0;
+          opacity: 1;
         }
         & .hw-footer__logo-link-gray, & .hw-footer__logo-link-white {
-          opacity: 1;
+          opacity: 0;
         }
       }
 
@@ -113,6 +113,7 @@
     font-size: var(--hw-font-size-smaller);
     &:hover {
       color: var(--hw-color-primary-light);
+      text-decoration-color: var(--hw-color-primary-light);
     }
   }
 

@@ -6,6 +6,7 @@
   color: var(--hw-color-gray-dark);
   font-size: var(--hw-font-size-smallest);
   margin-bottom: var(--hw-spacing-smallest);
+  line-height: 2;
   display: block;
 
   &[disabled] {
@@ -20,5 +21,9 @@
     &:focus-within {
       color: var(--hw-color-gray-dark);
     } 
+  }
+
+  &--disabled {
+    color: var(--hw-color-gray);
   }
 }

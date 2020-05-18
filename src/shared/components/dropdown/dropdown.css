@@ -5,7 +5,7 @@
 .hw-dropdown {
   position: relative;
   height: var(--hw-input-field-height);
-  margin: var(--hw-spacing-tiny) 0;
+  margin-bottom: var(--hw-spacing-tiny);
 
   &:focus {
     outline: 0;
@@ -41,6 +41,7 @@
     font-size: var(--hw-font-size-small);
     cursor: pointer;
     transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
+    line-height: 1.6;
 
     &:hover {
       border-color: var(--hw-color-gray-darker);
