@@ -294,15 +294,7 @@
       }
     }
 
-    & .hw-navbar__logo-standard {
-      height: 0;
-      visibility: hidden;
-      opacity: 0;
-
-      @media (--large) {
-        display: block;
-      }
-    }
+    
 
     & .hw-navbar__bars {
       opacity: 0;

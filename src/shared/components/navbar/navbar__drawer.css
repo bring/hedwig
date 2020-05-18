@@ -1,6 +1,6 @@
 .hw-navbar {
   &__drawer {
-    background: var(--hw-color-gray-lightest);
+    background: var(--hw-color-white);
     width: 100%;
     min-height: 100vh;
     padding: 0;
@@ -18,6 +18,25 @@
     margin-top: 70px;
     padding-left: var(--hw-spacing-small);
     padding-right: var(--hw-spacing-small);
+    border-top: var(--hw-border-thickness) solid var(--hw-color-gray-lighter);
+
+    font-size: var(--hw-font-size-small);
+
+    a, .hw-link {
+      border-bottom: none !important;
+      color: var(--hw-color-primary-darker);
+    }
+
+    h5 {
+      font-size: var(--hw-font-size-small);
+      font-family: var(--hw-font-primary-medium);
+      font-weight: var(--hw-font-weight-medium);
+      margin-bottom: var(--hw-spacing-small);
+    }
+
+    .hw-flex {
+      padding-top: var(--hw-spacing-even-larger-2);
+    }
 
     @media (--large) {
       margin-top: 112px;

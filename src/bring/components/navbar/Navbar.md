@@ -125,10 +125,34 @@
                  <div class="hw-navbar__drawer-desktop">
                    <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
                      <div>
-                       <h3>Sende</h3>
-                       <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
-                         <hr class="hw-hr hw-hr--gray-light"/>
-                       </div>
+                       <h5>Sende</h5>
+                       <ul class="hw-linklist">
+                         <li><a href="#"><i class="fa-fw fas fa-user"></i> Post - like formater</a></li>
+                       </ul>
+                     </div>
+                     <div>
+                       <h5>Motta</h5>
+                       <ul class="hw-linklist">
+                         <li><a href="#"><i class="fa-fw fas fa-user"></i> Spore</a></li>
+                       </ul>
+                     </div>
+                     <div>
+                       <h5>Rådgivning</h5>
+                       <ul class="hw-linklist">
+                         <li><a href="#"><i class="fa-fw fas fa-user"></i> Farlig gods</a></li>
+                       </ul>
+                     </div>
+                     <div>
+                       <h5>Kundeservice</h5>
+                       <ul class="hw-linklist">
+                         <li><a href="#"><i class="fa-fw fas fa-user"></i> Reklamasjon og klage</a></li>
+                       </ul>
+                     </div>
+                   </div>
+
+                   <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
+                     <div>
+                       <h5>Sende</h5>
                        <ul class="hw-linklist">
                          <li><a href="#">Post - like formater</a></li>
                          <li><a href="#">Post - blandede formater</a></li>
@@ -142,10 +166,7 @@
                        </ul>
                      </div>
                      <div>
-                       <h3>Motta</h3>
-                       <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
-                         <hr class="hw-hr hw-hr--gray-light"/>
-                       </div>
+                       <h5>Motta</h5>
                        <ul class="hw-linklist">
                          <li><a href="#">Spore</a></li>
                          <li><a href="#">Adresseendring, varig</a></li>
@@ -156,10 +177,7 @@
                        </ul>
                      </div>
                      <div>
-                       <h3>Rådgivning</h3>
-                       <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
-                         <hr class="hw-hr hw-hr--gray-light"/>
-                       </div>
+                       <h5>Rådgivning</h5>
                        <ul class="hw-linklist">
                          <li><a href="#">Farlig gods</a></li>
                          <li><a href="#">Klargjøring av forsendelse</a></li>
@@ -173,10 +191,7 @@
                        </ul>
                      </div>
                      <div>
-                       <h3>Kundeservice</h3>
-                       <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
-                         <hr class="hw-hr hw-hr--gray-light"/>
-                       </div>
+                       <h5>Kundeservice</h5>
                        <ul class="hw-linklist">
                          <li><a href="#">Reklamasjon og klage</a></li>
                          <li><a href="#">Fakturaspørsmål</a></li>
@@ -207,7 +222,7 @@
             <i class="far fa-user fa-7x hw-color-gray-light"></i>
           </div>
           <div class="hw-block hw-block--mb">
-            <h3 class="hw-text-center">Hvor vil du logge inn?</h3>
+            <h5 class="hw-text-center">Hvor vil du logge inn?</h5>
           </div>
           <hr class="hw-hr hw-hr--centered">
           <div class="hw-block hw-block--mt">
@@ -427,7 +442,7 @@ On this page, only the first navbar is able to open the search, menu and login. 
             <div class="hw-navbar__drawer-desktop">
               <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
                 <div>
-                  <h3>Sende</h3>
+                  <h5>Sende</h5>
                   <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                     <hr class="hw-hr hw-hr--gray-light"/>
                   </div>
@@ -444,7 +459,7 @@ On this page, only the first navbar is able to open the search, menu and login. 
                   </ul>
                 </div>
                 <div>
-                  <h3>Motta</h3>
+                  <h5>Motta</h5>
                   <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                     <hr class="hw-hr hw-hr--gray-light"/>
                   </div>
@@ -458,7 +473,7 @@ On this page, only the first navbar is able to open the search, menu and login. 
                   </ul>
                 </div>
                 <div>
-                  <h3>Rådgivning</h3>
+                  <h5>Rådgivning</h5>
                   <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                     <hr class="hw-hr hw-hr--gray-light"/>
                   </div>
@@ -475,7 +490,7 @@ On this page, only the first navbar is able to open the search, menu and login. 
                   </ul>
                 </div>
                 <div>
-                  <h3>Kundeservice</h3>
+                  <h5>Kundeservice</h5>
                   <div class="hw-block hw-block--full hw-block--pt-small hw-block--pb-small">
                     <hr class="hw-hr hw-hr--gray-light"/>
                   </div>
