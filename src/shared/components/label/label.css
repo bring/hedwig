@@ -9,7 +9,7 @@
   display: block;
 
   &[disabled] {
-    color: var(--hw-color-gray-light);
+    color: var(--hw-color-gray-dark);
   }
 
   &:focus-within {

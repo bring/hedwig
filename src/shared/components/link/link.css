@@ -3,8 +3,11 @@
  */
 
 .hw-link {
-  border-bottom: var(--hw-border-thickness) solid var(--hw-color-link-underline);
+  text-decoration: underline;
+  text-decoration-color: var(--hw-color-link-underline);
+  text-underline-position: under;
   fill: var(--hw-color-link);
+  color: var(--hw-color-link);
   transition: all 0.1s ease;
   cursor: pointer;
   margin-right: 3px;
@@ -30,6 +33,7 @@
 
   &--inverted {
     color: var(--hw-color-white);
+    text-decoration-color: var(--hw-color-primary);
     border-color: currentColor;
     &:hover,
     &:active {
@@ -55,9 +59,9 @@
   }
 
   &--no-underline {
-    border-bottom-width: 0px;
+    text-decoration: none;
     &:hover {
-      border-bottom-width: var(--hw-border-thickness);
+      text-decoration: none;
     }
   }
 }

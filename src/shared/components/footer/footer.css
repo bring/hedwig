@@ -109,6 +109,7 @@
 
   .hw-copyright, .hw-link {
     color: var(--hw-color-primary-lighter);
+    text-decoration-color: var(--hw-color-primary);
     font-size: var(--hw-font-size-smaller);
     &:hover {
       color: var(--hw-color-primary-light);

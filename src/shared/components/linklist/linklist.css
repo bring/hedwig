@@ -3,6 +3,7 @@
  */
 
 .hw-linklist {
+  color: var(--hw-color-black);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -18,6 +19,7 @@
     @extend .hw-link;
     font-size: var(--hw-font-size-p);
     line-height: 1.7;
+    text-decoration-color: var(--hw-color-primary);
   }
 
   
