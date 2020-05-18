@@ -15,4 +15,10 @@
   &:focus-within {
     color: var(--hw-color-primary-dark);
   }
+
+  &--error {
+    &:focus-within {
+      color: var(--hw-color-gray-dark);
+    } 
+  }
 }

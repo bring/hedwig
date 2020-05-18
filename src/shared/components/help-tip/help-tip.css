@@ -42,11 +42,12 @@
             content: " ";
             visibility: hidden;
             position: absolute;
-            bottom: 24px;
-            right: 5px;
-            border-width: 6px;
-            border-style: solid;
-            border-color: var(--hw-color-primary-lighter) transparent transparent transparent;
+
+            bottom: 22px;
+            right: 3px;
+            border: 8px solid transparent;
+            border-top: 11px solid var(--hw-color-primary-lighter);
+
             opacity: 0;
             transition: visibility 0s ease-in-out 0.3s, opacity 0.3s ease-in-out;
           }
@@ -62,7 +63,7 @@
           max-width: 300px;
           width: 300px;
           position: absolute;
-          bottom: 42px;
+          bottom: 48px;
           right: -140px;
           margin-left: -100px;
           text-align: left;

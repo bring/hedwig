@@ -72,13 +72,24 @@ plain: true
   </button>
 ```
 
-### Outlined button
+### Outlined button primary
 
 ```html|span-4,plain,light
-  <button class="hw-button hw-button--outline">
+  <button class="hw-button hw-button--outline-primary">
     Primary button
   </button>
-  <button class="hw-button hw-button--outline" disabled>
+  <button class="hw-button hw-button--outline-primary" disabled>
+    Disabled
+  </button>
+```
+
+### Outlined button secondary
+
+```html|span-4,plain,light
+  <button class="hw-button hw-button--outline-secondary">
+    Secondary button
+  </button>
+  <button class="hw-button hw-button--outline-secondary" disabled>
     Disabled
   </button>
 ```

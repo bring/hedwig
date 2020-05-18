@@ -205,21 +205,64 @@
 
   &--outline-white {
     background: transparent;
+    border: var(--hw-border-thickness) solid var(--hw-color-primary-light);
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
-    border: var(--hw-border-thickness) solid var(--hw-color-white);
 
     &:hover,
     &:active,
     &:focus {
-      color: var(--hw-color-gray-light);
-      fill: var(--hw-color-gray-light);
-      border: var(--hw-border-thickness) solid var(--hw-color-gray);
+      color: var(--hw-color-primary-light);
+      fill: var(--hw-color-primary-light);
       outline: 0px solid var(--hw-color-white);
     }
     &:disabled, &[disabled], &[disabled]:active {
       border: var(--hw-border-thickness) solid var(--hw-color-gray-dark);
       color: var(--hw-color-gray-light);
+      background: transparent !important;
+    }
+  }
+
+  &--outline-primary {
+    background: transparent;
+    border: var(--hw-border-thickness) solid var(--hw-color-primary);
+    color: var(--hw-color-black);
+    fill: var(--hw-color-black);
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--hw-color-primary-dark);
+      fill: var(--hw-color-primary-dark);
+      border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+      outline: 0px solid var(--hw-color-white);
+    }
+    &:disabled, &[disabled], &[disabled]:active {
+      border: var(--hw-border-thickness) solid var(--hw-color-gray-light);
+      color: var(--hw-color-gray-dark);
+      fill: var(--hw-color-gray-dark);
+      background: transparent !important;
+    }
+  }
+
+  &--outline-secondary {
+    background: transparent;
+    border: var(--hw-border-thickness) solid var(--hw-color-primary-darker);
+    color: var(--hw-color-primary-darker);
+    fill: var(--hw-color-primary-darker);
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--hw-color-black);
+      fill: var(--hw-color-black);
+      border: var(--hw-border-thickness) solid var(--hw-color-black);
+      outline: 0px solid var(--hw-color-white);
+    }
+    &:disabled, &[disabled], &[disabled]:active {
+      border: var(--hw-border-thickness) solid var(--hw-color-gray-light);
+      color: var(--hw-color-gray-dark);
+      fill: var(--hw-color-gray-dark);
       background: transparent !important;
     }
   }
@@ -253,7 +296,6 @@
       border-color: var(--hw-color-primary);
       background: var(--hw-color-primary);
       outline: none;
-      box-shadow: 0 0 0 1px var(--hw-color-primary);
     }
     &:active {
       background: var(--hw-color-primary);

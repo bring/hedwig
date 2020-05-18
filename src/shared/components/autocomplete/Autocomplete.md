@@ -101,7 +101,7 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
 ## Closed autocomplete with error
 
 ```html|plain,light
-<label class="hw-label">Your address
+<label class="hw-label hw-label--error">Your address
 
   <div class="hw-autocomplete" data-hw-autocomplete>
 

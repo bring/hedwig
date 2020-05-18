@@ -58,7 +58,7 @@
     &::before,
     &::after {
       position: absolute;
-      top: 50%;
+      top: 38px;
       right: 0;
       display: block;
       width: 14px;
