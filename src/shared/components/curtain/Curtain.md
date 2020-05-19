@@ -20,7 +20,7 @@ hedwig.HWCurtain();
 
 ### Example curtain
 
-```html|span-6
+```html|span-4,plain,light
 <div class="hw-curtain">
   <button class="hw-curtain__trigger">
     A single curtain
@@ -37,28 +37,9 @@ hedwig.HWCurtain();
 ```
 
 
-### Example with H2
-
-```html|span-6
-<div class="hw-curtain">
-  <button class="hw-curtain__trigger">
-    <h2>A single curtain with H2</h2>
-    <div class="hw-curtain__arrow"></div>
-  </button>
-  <div class="hw-curtain__content">
-    <ul class="hw-list">
-      <li>Some</li>
-      <li>list</li>
-      <li>items</li>
-    </ul>
-  </div>
-</div>
-```
-
-
 ### Example with multiple curtains
 
-```html|span-6
+```html|span-4,plain,light
 <div class="hw-curtain">
   <button class="hw-curtain__trigger">
     I will open the curtain if clicked

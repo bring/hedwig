@@ -9,21 +9,21 @@ For service icons and logos, see [Icon-link](/Icon-link)
 ### Example code
 
 ```code
-<i class="fas fa-2x fa-eye"></i>
+<i class="fas fa fa-eye"></i>
 ```
 
 ### Explanation of parts
 
 ```code
 fas: Icon set Solid
-fa-2x: Sizing
+fa: Sizing
 fa-eye: Name of icon
 ```
 
 ### Example icon
 
 ```html
-<i class="fas fa-2x fa-eye"></i>
+<i class="fas fa fa-eye"></i>
 ```
 
 ### Icon sets
@@ -65,12 +65,11 @@ Also see the [full sizing documentation from Font Awesome](https://fontawesome.c
 
 ### Example sizes
 
-```html
+```html|plain,light,span-3
 <i class="fa-xs fas fa-eye"></i>
 <i class="fa-sm fas fa-eye"></i>
-<i class="fas fa-eye"></i>
+<i class="fa as fa-eye"></i>
 <i class="fa-lg fas fa-eye"></i>
-<i class="fa-2x fas fa-eye"></i>
 <i class="fa-3x fas fa-eye"></i>
 <i class="fa-4x fas fa-eye"></i>
 <i class="fas fa-eye" style="font-size: 100px;"></i>
@@ -88,126 +87,123 @@ hw-color-gray-darker
 
 ### Example colors
 
-```html
-<i class="hw-color-primary fa-2x fas fa-eye"></i>
-<i class="hw-color-green fa-2x fas fa-eye"></i>
-<i class="hw-color-red fa-2x fas fa-eye"></i>
-<i class="hw-color-gray-lighter fa-2x fas fa-eye"></i>
-<i class="hw-color-gray-darker fa-2x fas fa-eye"></i>
+```html|plain,light,span-3
+<i class="hw-color-primary fa fas fa-eye"></i>
+<i class="hw-color-green fa fas fa-eye"></i>
+<i class="hw-color-red fa fas fa-eye"></i>
+<i class="hw-color-gray-lighter fa fas fa-eye"></i>
+<i class="hw-color-gray-darker fa fas fa-eye"></i>
 ```
 
 ### Full list
 
 #### Solid icons - fas
 
-```html
-<i class="fa-2x fa-fw fas fa-archive"></i> archive<br/><br/>
-<i class="fa-2x fa-fw fas fa-arrow-square-left"></i> arrow-square-left<br/><br/>
-<i class="fa-2x fa-fw fas fa-arrow-alt-to-bottom"></i> arrow-alt-to-bottom<br/><br/>
-<i class="fa-2x fa-fw fas fa-arrows-alt-h"></i> arrows-alt-h<br/><br/>
-<i class="fa-2x fa-fw fas fa-at"></i> at<br/><br/>
-<i class="fa-2x fa-fw fas fa-award"></i> award<br/><br/>
-<i class="fa-2x fa-fw fas fa-barcode-alt"></i> barcode-alt<br/><br/>
-<i class="fa-2x fa-fw fas fa-bars"></i> bars<br/><br/>
-<i class="fa-2x fa-fw fas fa-box"></i> box<br/><br/>
-<i class="fa-2x fa-fw fas fa-box-check"></i> box-check<br/><br/>
-<i class="fa-2x fa-fw fas fa-box-open"></i> box-open<br/><br/>
-<i class="fa-2x fa-fw fas fa-bullseye-arrow"></i> bullseye-arrow<br/><br/>
-<i class="fa-2x fa-fw fas fa-calculator"></i> calculator<br/><br/>
-<i class="fa-2x fa-fw fas fa-calendar-alt"></i> calendar-alt<br/><br/>
-<i class="fa-2x fa-fw fas fa-camera"></i> camera<br/><br/>
-<i class="fa-2x fa-fw fas fa-chart-line"></i> chart-line<br/><br/>
-<i class="fa-2x fa-fw fas fa-check"></i> check<br/><br/>
-<i class="fa-2x fa-fw fas fa-check-circle"></i> check-circle<br/><br/>
-<i class="fa-2x fa-fw fas fa-chevron-down"></i> chevron-down<br/><br/>
-<i class="fa-2x fa-fw fas fa-chevron-left"></i> chevron-left<br/><br/>
-<i class="fa-2x fa-fw fas fa-chevron-right"></i> chevron-right<br/><br/>
-<i class="fa-2x fa-fw fas fa-chevron-up"></i> chevron-up<br/><br/>
-<i class="fa-2x fa-fw fas fa-clock"></i> clock<br/><br/>
-<i class="fa-2x fa-fw fas fa-cloud-download"></i> cloud-download<br/><br/>
-<i class="fa-2x fa-fw fas fa-cloud-upload"></i> cloud-upload<br/><br/>
-<i class="fa-2x fa-fw fas fa-comments"></i> comments<br/><br/>
-<i class="fa-2x fa-fw fas fa-comments-alt"></i> comments-alt<br/><br/>
-<i class="fa-2x fa-fw fas fa-credit-card"></i> credit-card<br/><br/>
-<i class="fa-2x fa-fw fas fa-desktop"></i> desktop<br/><br/>
-<i class="fa-2x fa-fw fas fa-dot-circle"></i> dot-circle<br/><br/>
-<i class="fa-2x fa-fw fas fa-edit"></i> edit<br/><br/>
-<i class="fa-2x fa-fw fas fa-envelope"></i> envelope<br/><br/>
-<i class="fa-2x fa-fw fas fa-envelope-open"></i> envelope-open<br/><br/>
-<i class="fa-2x fa-fw fas fa-exchange-alt"></i> exchange-alt<br/><br/>
-<i class="fa-2x fa-fw fas fa-exclamation"></i> exclamation<br/><br/>
-<i class="fa-2x fa-fw fas fa-exclamation-circle"></i> exclamation-circle<br/><br/>
-<i class="fa-2x fa-fw fas fa-exclamation-square"></i> fa-exclamation-square<br/><br/>
-<i class="fa-2x fa-fw fas fa-eye"></i> eye<br/><br/>
-<i class="fa-2x fa-fw fas fa-file"></i> file<br/><br/>
-<i class="fa-2x fa-fw fas fa-flag"></i> flag<br/><br/>
-<i class="fa-2x fa-fw fas fa-folder"></i> folder<br/><br/>
-<i class="fa-2x fa-fw fas fa-globe"></i> globe<br/><br/>
-<i class="fa-2x fa-fw fas fa-home"></i> home<br/><br/>
-<i class="fa-2x fa-fw fas fa-image"></i> image<br/><br/>
-<i class="fa-2x fa-fw fas fa-info"></i> info<br/><br/>
-<i class="fa-2x fa-fw fas fa-info-circle"></i> fa-info-circle<br/><br/>
-<i class="fa-2x fa-fw fas fa-key"></i> key<br/><br/>
-<i class="fa-2x fa-fw fas fa-location-arrow"></i> location-arrow<br/><br/>
-<i class="fa-2x fa-fw fas fa-lock"></i> lock<br/><br/>
-<i class="fa-2x fa-fw fas fa-map-marker-alt"></i> map-marker-alt<br/><br/>
-<i class="fa-2x fa-fw fas fa-minus"></i> minus<br/><br/>
-<i class="fa-2x fa-fw fas fa-mobile"></i> mobile<br/><br/>
-<i class="fa-2x fa-fw fas fa-paperclip"></i> paperclip<br/><br/>
-<i class="fa-2x fa-fw fas fa-paste"></i> paste<br/><br/>
-<i class="fa-2x fa-fw fas fa-pause-circle"></i> pause-circle<br/><br/>
-<i class="fa-2x fa-fw fas fa-pencil"></i> pencil<br/><br/>
-<i class="fa-2x fa-fw fas fa-person-dolly"></i> store-alt<br/><br/>
-<i class="fa-2x fa-fw fas fa-phone"></i> phone<br/><br/>
-<i class="fa-2x fa-fw fas fa-play"></i> play<br/><br/>
-<i class="fa-2x fa-fw fas fa-plus"></i> plus<br/><br/>
-<i class="fa-2x fa-fw fas fa-question-circle"></i> question-circle<br/><br/>
-<i class="fa-2x fa-fw fas fa-question-square"></i> fa-question-square<br/><br/>
-<i class="fa-2x fa-fw fas fa-reply"></i> reply<br/><br/>
-<i class="fa-2x fa-fw fas fa-search"></i> search<br/><br/>
-<i class="fa-2x fa-fw fas fa-shield-alt"></i> shield-alt<br/><br/>
-<i class="fa-2x fa-fw fas fa-shipping-fast"></i> shipping-fast<br/><br/>
-<i class="fa-2x fa-fw fas fa-shopping-cart"></i> shopping-cart<br/><br/>
-<i class="fa-2x fa-fw fas fa-star"></i> star<br/><br/>
-<i class="fa-2x fa-fw fas fa-store-alt"></i> store-alt<br/><br/>
-<i class="fa-2x fa-fw fas fa-sync-alt"></i> sync-alt<br/><br/>
-<i class="fa-2x fa-fw fas fa-times"></i> times<br/><br/>
-<i class="fa-2x fa-fw fas fa-times-circle"></i> times-circle<br/><br/>
-<i class="fa-2x fa-fw fas fa-trash-alt"></i> trash-alt<br/><br/>
-<i class="fa-2x fa-fw fas fa-unlock"></i> unlock<br/><br/>
-<i class="fa-2x fa-fw fas fa-user"></i> user<br/><br/>
+```html|plain,light,span-3
+<i class="fa fa-fw fas fa-archive"></i> archive<br/><br/>
+<i class="fa fa-fw fas fa-award"></i> award<br/><br/>
+<i class="fa fa-fw fas fa-barcode-alt"></i> barcode-alt<br/><br/>
+<i class="fa fa-fw fas fa-box"></i> box<br/><br/>
+<i class="fa fa-fw fas fa-box-check"></i> box-check<br/><br/>
+<i class="fa fa-fw fas fa-box-open"></i> box-open<br/><br/>
+<i class="fa fa-fw fas fa-bullseye-arrow"></i> bullseye-arrow<br/><br/>
+<i class="fa fa-fw fas fa-calculator"></i> calculator<br/><br/>
+<i class="fa fa-fw fas fa-calendar-alt"></i> calendar-alt<br/><br/>
+<i class="fa fa-fw fas fa-camera"></i> camera<br/><br/>
+<i class="fa fa-fw fas fa-chart-line"></i> chart-line<br/><br/>
+<i class="fa fa-fw fas fa-check"></i> check<br/><br/>
+<i class="fa fa-fw fas fa-check-circle"></i> check-circle<br/><br/>
+<i class="fa fa-fw fas fa-clock"></i> clock<br/><br/>
+<i class="fa fa-fw fas fa-cloud-download"></i> cloud-download<br/><br/>
+<i class="fa fa-fw fas fa-cloud-upload"></i> cloud-upload<br/><br/>
+<i class="fa fa-fw fas fa-comments"></i> comments<br/><br/>
+<i class="fa fa-fw fas fa-comments-alt"></i> comments-alt<br/><br/>
+<i class="fa fa-fw fas fa-credit-card"></i> credit-card<br/><br/>
+<i class="fa fa-fw fas fa-desktop"></i> desktop<br/><br/>
+<i class="fa fa-fw fas fa-dot-circle"></i> dot-circle<br/><br/>
+<i class="fa fa-fw fas fa-edit"></i> edit<br/><br/>
+<i class="fa fa-fw fas fa-envelope"></i> envelope<br/><br/>
+<i class="fa fa-fw fas fa-envelope-open"></i> envelope-open<br/><br/>
+<i class="fa fa-fw fas fa-exchange-alt"></i> exchange-alt<br/><br/>
+<i class="fa fa-fw fas fa-exclamation"></i> exclamation<br/><br/>
+<i class="fa fa-fw fas fa-exclamation-circle"></i> exclamation-circle<br/><br/>
+<i class="fa fa-fw fas fa-exclamation-square"></i> fa-exclamation-square<br/><br/>
+<i class="fa fa-fw fas fa-eye"></i> eye<br/><br/>
+<i class="fa fa-fw fas fa-file"></i> file<br/><br/>
+<i class="fa fa-fw fas fa-flag"></i> flag<br/><br/>
+<i class="fa fa-fw fas fa-folder"></i> folder<br/><br/>
+<i class="fa fa-fw fas fa-globe"></i> globe<br/><br/>
+<i class="fa fa-fw fas fa-home"></i> home<br/><br/>
+<i class="fa fa-fw fas fa-image"></i> image<br/><br/>
+<i class="fa fa-fw fas fa-info"></i> info<br/><br/>
+<i class="fa fa-fw fas fa-info-circle"></i> fa-info-circle<br/><br/>
+<i class="fa fa-fw fas fa-key"></i> key<br/><br/>
+<i class="fa fa-fw fas fa-location-arrow"></i> location-arrow<br/><br/>
+<i class="fa fa-fw fas fa-lock"></i> lock<br/><br/>
+<i class="fa fa-fw fas fa-map-marker-alt"></i> map-marker-alt<br/><br/>
+<i class="fa fa-fw fas fa-mobile"></i> mobile<br/><br/>
+<i class="fa fa-fw fas fa-paperclip"></i> paperclip<br/><br/>
+<i class="fa fa-fw fas fa-paste"></i> paste<br/><br/>
+<i class="fa fa-fw fas fa-pause-circle"></i> pause-circle<br/><br/>
+<i class="fa fa-fw fas fa-pencil"></i> pencil<br/><br/>
+<i class="fa fa-fw fas fa-person-dolly"></i> store-alt<br/><br/>
+<i class="fa fa-fw fas fa-phone"></i> phone<br/><br/>
+<i class="fa fa-fw fas fa-play"></i> play<br/><br/>
+<i class="fa fa-fw fas fa-question-circle"></i> question-circle<br/><br/>
+<i class="fa fa-fw fas fa-question-square"></i> fa-question-square<br/><br/>
+<i class="fa fa-fw fas fa-reply"></i> reply<br/><br/>
+<i class="fa fa-fw fas fa-shield-alt"></i> shield-alt<br/><br/>
+<i class="fa fa-fw fas fa-shipping-fast"></i> shipping-fast<br/><br/>
+<i class="fa fa-fw fas fa-shopping-cart"></i> shopping-cart<br/><br/>
+<i class="fa fa-fw fas fa-star"></i> star<br/><br/>
+<i class="fa fa-fw fas fa-store-alt"></i> store-alt<br/><br/>
+<i class="fa fa-fw fas fa-sync-alt"></i> sync-alt<br/><br/>
+<i class="fa fa-fw fas fa-times"></i> times<br/><br/>
+<i class="fa fa-fw fas fa-times-circle"></i> times-circle<br/><br/>
+<i class="fa fa-fw fas fa-trash-alt"></i> trash-alt<br/><br/>
+<i class="fa fa-fw fas fa-unlock"></i> unlock<br/><br/>
+<i class="fa fa-fw fas fa-user"></i> user<br/><br/>
 ```
 
 #### Regular icons - far
 
-```html
-<i class="fa-2x fa-fw far fa-bars"></i> bars<br/><br/>
-<i class="fa-2x fa-fw far fa-check-circle"></i> check-circle<br/><br/>
-<i class="fa-2x fa-fw far fa-exclamation-circle"></i> fa-exclamation-circle<br/><br/>
-<i class="fa-2x fa-fw far fa-file-invoice-dollar"></i> file-invoice-dollar<br/><br/>
-<i class="fa-2x fa-fw far fa-info-circle"></i> fa-info-circle<br/><br/>
-<i class="fa-2x fa-fw far fa-lock-open-alt"></i> lock-open-alt<br/><br/>
-<i class="fa-2x fa-fw far fa-question-circle"></i> fa-question-circle<br/><br/>
-<i class="fa-2x fa-fw far fa-ruler-combined"></i> ruler-combined<br/><br/>
-<i class="fa-2x fa-fw far fa-search"></i> search<br/><br/>
-<i class="fa-2x fa-fw far fa-user"></i> user<br/><br/>
-<i class="fa-2x fa-fw far fa-weight-hanging"></i> weight-hanging<br/><br/>
+```html|plain,light,span-3
+<i class="fa fa-fw far fa-chevron-down"></i> chevron-down<br/><br/>
+<i class="fa fa-fw far fa-chevron-left"></i> chevron-left<br/><br/>
+<i class="fa fa-fw far fa-chevron-right"></i> chevron-right<br/><br/>
+<i class="fa fa-fw far fa-chevron-up"></i> chevron-up<br/><br/>
+<i class="fa fa-fw far fa-bars"></i> bars<br/><br/>
+<i class="fa fa-fw far fa-check-circle"></i> check-circle<br/><br/>
+<i class="fa fa-fw far fa-exclamation-circle"></i> fa-exclamation-circle<br/><br/>
+<i class="fa fa-fw far fa-file-invoice-dollar"></i> file-invoice-dollar<br/><br/>
+<i class="fa fa-fw far fa-info-circle"></i> fa-info-circle<br/><br/>
+<i class="fa fa-fw far fa-lock-open-alt"></i> lock-open-alt<br/><br/>
+<i class="fa fa-fw far fa-question-circle"></i> fa-question-circle<br/><br/>
+<i class="fa fa-fw far fa-ruler-combined"></i> ruler-combined<br/><br/>
+<i class="fa fa-fw far fa-search"></i> search<br/><br/>
+<i class="fa fa-fw far fa-user"></i> user<br/><br/>
+<i class="fa fa-fw far fa-weight-hanging"></i> weight-hanging<br/><br/>
+<i class="fa fa-fw far fa-arrow-square-left"></i> arrow-square-left<br/><br/>
+<i class="fa fa-fw far fa-arrow-alt-to-bottom"></i> arrow-alt-to-bottom<br/><br/>
+<i class="fa fa-fw far fa-arrows-alt-h"></i> arrows-alt-h<br/><br/>
 ```
 
 #### Light icons - fal
 
-```html
-<i class="fa-2x fa-fw fal fa-times"></i> times<br/><br/>
+```html|plain,light,span-3
+<i class="fa fa-fw fal fa-times"></i> times<br/><br/>
+<i class="fa fa-fw fal fa-minus"></i> minus<br/><br/>
+<i class="fa fa-fw fal fa-plus"></i> plus<br/><br/>
 ```
 
 #### Brand icons - fab
 
-```html
-<i class="fa-2x fa-fw fab fa-facebook-f"></i> facebook-f<br/><br/>
-<i class="fa-2x fa-fw fab fa-google-plus-g"></i> google-plus-g<br/><br/>
-<i class="fa-2x fa-fw fab fa-instagram"></i> instagram<br/><br/>
-<i class="fa-2x fa-fw fab fa-twitter"></i> twitter<br/><br/>
-<i class="fa-2x fa-fw fab fa-linkedin-in"></i> linkedin-in<br/><br/>
+```html|plain,light,span-3
+<i class="fa fa-fw fab fa-facebook-f"></i> facebook-f<br/><br/>
+<i class="fa fa-fw fab fa-google-plus-g"></i> google-plus-g<br/><br/>
+<i class="fa fa-fw fab fa-instagram"></i> instagram<br/><br/>
+<i class="fa fa-fw fab fa-twitter"></i> twitter<br/><br/>
+<i class="fa fa-fw fab fa-linkedin-in"></i> linkedin-in<br/><br/>
 ```
 
 ### Full documentation from Font Awesome

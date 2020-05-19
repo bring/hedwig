@@ -1,6 +1,7 @@
 .hw-curtain {
   overflow: hidden;
   transition: height 0.3s ease;
+  padding-bottom: var(--hw-spacing-smaller);
 
   &__trigger {
     width: 100%;
@@ -22,34 +23,45 @@
   }
 
   &__arrow {
+    position: absolute;
+    right: 1px;
+    width: 20px;
+    top: 9px;
+    background-color: var(--hw-color-gray-dark);
+
     &::before,
     &::after {
       position: absolute;
-      top: 11px;
-      right: 0;
+      top: 52%;
+      right: var(--hw-spacing-small);
       display: block;
-      width: 12px;
-      height: 4px;
+      width: 10px;
+      height: 2px;
       content: '';
-      background-color: currentColor;
-      transform: rotate(45deg);
+      background-color: var(--hw-color-gray);
+      transform: rotate(-45deg);
       transition: transform 0.1s ease;
     }
 
     &::after {
-      right: 6px;
-      transform: rotate(-45deg);
+      right: 9px;
+      transform: rotate(45deg);
     }
+  }
+
+  &__content {
+    padding-top: var(--hw-spacing-small);
+    padding-bottom: var(--hw-spacing-small);
   }
 
   &--closed {
     & .hw-curtain__trigger {
       & .hw-curtain__arrow::before {
-        transform: rotate(-45deg);
+        transform: rotate(45deg);
       }
 
       & .hw-curtain__arrow::after {
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
       }
     }
   }

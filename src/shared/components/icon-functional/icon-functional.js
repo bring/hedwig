@@ -42,6 +42,17 @@ library.add(far.faSearch);
 library.add(far.faTimes);
 library.add(far.faUser);
 library.add(far.faWeightHanging);
+library.add(far.faChevronDown);
+library.add(far.faChevronLeft);
+library.add(far.faChevronRight);
+library.add(far.faChevronUp);
+library.add(far.faArrowAltToBottom);
+library.add(far.faArrowsAltH);
+library.add(far.faArrowSquareLeft);
+library.add(far.faArrowLeft);
+library.add(far.faArrowRight);
+library.add(far.faArrowUp);
+library.add(far.faArrowDown);
 
 library.add(fas.faArchive);
 library.add(fas.faArrowAltToBottom);

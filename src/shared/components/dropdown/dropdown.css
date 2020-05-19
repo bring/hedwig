@@ -5,7 +5,7 @@
 .hw-dropdown {
   position: relative;
   height: var(--hw-input-field-height);
-  margin-bottom: var(--hw-spacing-tiny);
+  margin: var(--hw-spacing-tiny) 0 0 0;
 
   &:focus {
     outline: 0;

@@ -70,7 +70,8 @@ const HWTab = ({
     // Mark this Tab as initialized
     SETTINGS.tab.classList.add(initClass);
   }
-  init();
+
+  setTimeout(init, 1000);
 };
 HWTab();
 

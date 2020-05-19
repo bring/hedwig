@@ -5,7 +5,8 @@
 .hw-link {
   text-decoration: underline;
   text-decoration-color: var(--hw-color-link-underline);
-  text-underline-position: under;
+  text-underline-position: auto;
+  text-underline-offset: 0.25em;
   fill: var(--hw-color-link);
   color: var(--hw-color-link);
   transition: all 0.1s ease;
@@ -59,9 +60,14 @@
   }
 
   &--no-underline {
+    font-family: var(--hw-font-primary-medium);
+    font-weight: var(--hw-font-size-medium);
+    color: var(--hw-color-primary-dark);
     text-decoration: none;
+
     &:hover {
-      text-decoration: none;
+      text-decoration: underline;
+      text-underline-color: var(--hw-color-primary-dark);
     }
   }
 }

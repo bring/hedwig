@@ -13,7 +13,7 @@ Uses the `stickybits` node module to create a sticky nav
 
 ### Default behavior
 
-```html
+```html|plain,light
 <section class="hw-stickynav" data-hw-sticky-nav data-hw-stickynav="autocenter">
   <div class="hw-stickynav__inner" data-hw-sticky>
     <nav class="hw-stickynav__nav">
@@ -30,34 +30,34 @@ Uses the `stickybits` node module to create a sticky nav
     </nav>
   </div>
 </section>
-<section id="anchor-1" style="height: 100vh; background: #4caf50">
+<section id="anchor-1" style="height: 10vh; background: #eeeeee">
   <h2>Anchor 1 section</h2>
 </section>
-<section id="anchor-2" style="height: 100vh; background: #8bc34a">
+<section id="anchor-2" style="height: 10vh; background: #dddddd">
   <h2>Anchor 2 section</h2>
 </section>
-<section id="anchor-3" style="height: 100vh; background: #00bcd4">
+<section id="anchor-3" style="height: 10vh; background: #cccccc">
   <h2>Anchor 3 section</h2>
 </section>
-<section id="anchor-4" style="height: 100vh; background: #9c27b0">
+<section id="anchor-4" style="height: 10vh; background: #bbb">
   <h2>Anchor 4 section</h2>
 </section>
-<section id="anchor-5" style="height: 100vh; background: #3f51b5">
+<section id="anchor-5" style="height: 10vh; background: #aaa">
   <h2>Anchor 5 section</h2>
 </section>
-<section id="anchor-6" style="height: 100vh; background: #4caf50">
+<section id="anchor-6" style="height: 10vh; background: #999">
   <h2>Anchor 6 section</h2>
 </section>
-<section id="anchor-7" style="height: 100vh; background: #8bc34a">
+<section id="anchor-7" style="height: 10vh; background: #888">
   <h2>Anchor 7 section</h2>
 </section>
-<section id="anchor-8" style="height: 100vh; background: #00bcd4">
+<section id="anchor-8" style="height: 10vh; background: #777">
   <h2>Anchor 8 section</h2>
 </section>
-<section id="anchor-9" style="height: 100vh; background: #9c27b0">
+<section id="anchor-9" style="height: 10vh; background: #666">
   <h2>Anchor 9 section</h2>
 </section>
-<section id="anchor-10" style="height: 100vh; background: #3f51b5">
+<section id="anchor-10" style="height: 10vh; background: #555">
   <h2>Anchor 10 section</h2>
 </section>
 ```
