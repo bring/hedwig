@@ -40,3 +40,14 @@ const HWApp = () => {
 };
 
 HWApp();
+
+
+window.scrollToDesignGuidelines = function() {
+  window.toAnchor("design-guidelines");
+}
+window.scrollToDevelopmentGuidelines = function() {
+  window.toAnchor("development-guidelines");
+}
+window.toAnchor = function(id) {
+  document.getElementById(id).scrollIntoView(true);
+}

@@ -1,6 +1,20 @@
-## Card 3 (Deprecated)
+# Card 3 (Deprecated)
 
-Used on the home page
+Used on the home pages.
+This intro is for the whole component. Not only design or development.
+
+```html|span-6,light,plain,noSource
+<button class="hw-button hw-button--primary" onclick="window.scrollToDesignGuidelines()">Design guidelines</button>
+<button class="hw-button hw-button--secondary" onclick="window.scrollToDevelopmentGuidelines()">Development guidelines</button>
+```
+
+
+---
+
+
+
+## Development guidelines
+
 
 ```code
 [Base]           .hw-card-3
@@ -36,23 +50,18 @@ Used on the home page
 ```
 
 
+---
+***
 
 
-
-# Design guidelines
+## Design guidelines
 
 #### Image
 
-```hint
-directive: true
-span: 3
----
+```hint|directive,span-3
 Do this
 ```
-```hint
-warning: true
-span: 3
----
+```hint|warning,span-3
 Do not do this.
 ```
 
@@ -67,13 +76,17 @@ Do not do this.
 
 ```image
 plain: true
-src: "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
 span: 3
+src: "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+title: "Do"
+description: "You can do this. It is good."
 ```
 ```image
 plain: true
-src: "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
 span: 3
+src: "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+title: "Don't"
+description: "Do not do this thing right here. It does not look good."
 ```
 
 
