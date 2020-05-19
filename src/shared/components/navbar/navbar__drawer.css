@@ -24,6 +24,7 @@
 
     a, .hw-link {
       border-bottom: none !important;
+      text-decoration: none;
       color: var(--hw-color-primary-darker);
     }
 
