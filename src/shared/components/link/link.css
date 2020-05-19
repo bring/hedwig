@@ -3,10 +3,8 @@
  */
 
 .hw-link {
-  text-decoration: underline;
-  text-decoration-color: var(--hw-color-link-underline);
-  text-underline-position: auto;
-  text-underline-offset: 0.25em;
+  text-decoration: none;
+  border-bottom: var(--hw-border-thickness) solid var(--hw-color-link-underline);
   fill: var(--hw-color-link);
   color: var(--hw-color-link);
   transition: all 0.1s ease;
@@ -64,10 +62,12 @@
     font-weight: var(--hw-font-size-medium);
     color: var(--hw-color-primary-dark);
     text-decoration: none;
+    border-bottom: none;
 
     &:hover {
       text-decoration: underline;
       text-underline-color: var(--hw-color-primary-dark);
+      border-bottom: none;
     }
   }
 }
