@@ -22,6 +22,8 @@
   &__icon {
     width: 72px;
     height: 72px;
+    color: var(--hw-color-primary-dark);
+    fill: var(--hw-color-primary-dark);
   }
 
   &__title {

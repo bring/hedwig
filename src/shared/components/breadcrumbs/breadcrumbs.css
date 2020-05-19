@@ -11,6 +11,7 @@
     font-size: 13px;
     color: var(--hw-color-gray-dark);
     border-bottom: 0px;
+    text-decoration: none;
     :hover {
       color: var(--hw-color-primary-dark);
     }
@@ -33,21 +34,13 @@
       display: inline;
     }
   }
-  &--single {
-    .hw-breadcrumb__arrow {
-      margin-right: 6px;
-    }
-    .hw-breadcrumb__arrow-hover {
-      margin-right: 6px;
-    }
-  }
   &__arrow, &__arrow-hover {
     font-size: 9px;
     color: var(--hw-color-gray-dark);
     display: none;
     margin-right: 9px;
     margin-left: 9px;
-    margin-top: 2px;
+    margin-top: 3px;
     @media (--large) {
       display: inline-block;
     }
@@ -55,6 +48,14 @@
   &__arrow-hover {
     margin-left: -16px;
     opacity: 0;
+  }
+
+  &--single {
+    .hw-breadcrumb__arrow, .hw-breadcrumb__arrow-hover {
+      margin-right: 6px;
+      margin-top: 2px;
+      vertical-align: 2%;
+    }
   }
 
   &:hover {

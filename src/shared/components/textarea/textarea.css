@@ -11,7 +11,7 @@
   display: block;
   width: 100%;
   transition: border 100ms;
-  margin: var(--hw-spacing-tiny) 0;
+  margin-top: var(--hw-spacing-tiny);
   position: relative;
   -webkit-appearance: none;
 
@@ -71,5 +71,9 @@
       text-align: center;
       z-index: 1000;
     }
+  }
+
+  &--error + .hw-error:before {
+    top: -38px;
   }
 }

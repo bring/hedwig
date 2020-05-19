@@ -29,9 +29,20 @@ function prepareDocFile(file, fileSection){
    * Copy md files to docs
    */
 
-  fs.createReadStream(file).pipe(
+  /*fs.createReadStream(file).pipe(
     fs.createWriteStream(`docs/md/${fileSection}/` + filename)
-  );
+  );*/
+  fs.readFile(file, 'utf8', function (err,data) {
+    if (err) {
+      return console.log(err);
+    }
+    var result = data.replace(/{{postenbring}}/g, fileSection);
+
+    fs.writeFile("docs/md/" + fileSection + "/" + filename, result, 'utf8', function (err) {
+       if (err) return console.log(err);
+    });
+  });
+
   return {
     title,
     path: title,
@@ -186,29 +197,62 @@ function build() {
               break;
       }
 
-      if(file.indexOf('guidelines') !== -1) {
-        guidelines.push(prepareDocFile(file, fileSection));
-        return;
-      }
+      if(fileSection == "shared") {
+        if(file.indexOf('guidelines') !== -1) {
+          bringGuidelines.push(prepareDocFile(file, "bring"));
+          postenGuidelines.push(prepareDocFile(file, "posten"));
+          return;
+        }
 
-      if(file.indexOf('gettingStarted') !== -1) {
-        gettingStarted.push(prepareDocFile(file, fileSection));
-        return;
-      }
+        if(file.indexOf('gettingStarted') !== -1) {
+          bringGettingStarted.push(prepareDocFile(file, "bring"));
+          postenGettingStarted.push(prepareDocFile(file, "posten"));
+          return;
+        }
 
-      if(file.indexOf('components') !== -1) {
-        components.push(prepareDocFile(file, fileSection));
-        return;
-      }
+        if(file.indexOf('components') !== -1) {
+          bringComponents.push(prepareDocFile(file, "bring"));
+          postenComponents.push(prepareDocFile(file, "posten"));
+          return;
+        }
 
-      if(file.indexOf('commonCombos') !== -1) {
-        commonCombos.push(prepareDocFile(file, fileSection));
-        return;
-      }
+        if(file.indexOf('commonCombos') !== -1) {
+          bringCommonCombos.push(prepareDocFile(file, "bring"));
+          postenCommonCombos.push(prepareDocFile(file, "posten"));
+          return;
+        }
 
-      if(file.indexOf('layout') !== -1) {
-        layout.push(prepareDocFile(file, fileSection));
-        return;
+        if(file.indexOf('layout') !== -1) {
+          bringLayout.push(prepareDocFile(file, "bring"));
+          postenLayout.push(prepareDocFile(file, "posten"));
+          return;
+        }
+      }
+      else {
+        if(file.indexOf('guidelines') !== -1) {
+          guidelines.push(prepareDocFile(file, fileSection));
+          return;
+        }
+
+        if(file.indexOf('gettingStarted') !== -1) {
+          gettingStarted.push(prepareDocFile(file, fileSection));
+          return;
+        }
+
+        if(file.indexOf('components') !== -1) {
+          components.push(prepareDocFile(file, fileSection));
+          return;
+        }
+
+        if(file.indexOf('commonCombos') !== -1) {
+          commonCombos.push(prepareDocFile(file, fileSection));
+          return;
+        }
+
+        if(file.indexOf('layout') !== -1) {
+          layout.push(prepareDocFile(file, fileSection));
+          return;
+        }
       }
 
       // if(file.indexOf('utilities') !== -1) {
