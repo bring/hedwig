@@ -19,6 +19,11 @@
     opacity: 0.8;
   }
 
+
+  /**
+   * Elements
+   */
+   
   &__icon {
     width: 72px;
     height: 72px;

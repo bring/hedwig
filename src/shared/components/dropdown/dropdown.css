@@ -118,10 +118,12 @@
   &__option[data-hw-dropdown-option-selected="true"] {
     color: var(--hw-color-primary-dark);
   }
+  
 
   /**
   * Modifiers
   */
+
   &--expanded .hw-dropdown {
     &__inner {
       z-index: 2;

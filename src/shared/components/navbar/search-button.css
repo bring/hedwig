@@ -1,3 +1,7 @@
+/**
+ * Block
+ */
+
 .hw-navbar__search-button {
   z-index: var(--z-index--navbar-drawer-foreground);
   position: absolute;

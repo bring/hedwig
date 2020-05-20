@@ -1,4 +1,8 @@
- .hw-footer {
+/**
+ * Block
+ */
+
+.hw-footer {
   display: block;
   background: var(--hw-color-primary-darker);
 
@@ -6,21 +10,17 @@
    * Elements
    */
 
-   &__mobile {
+  &__mobile {
     display:none;
     padding: calc(var(--hw-spacing) * 2) var(--hw-spacing);
 
-    @media (--high-res-mobile), (--max-medium)
-     {
+    @media (--high-res-mobile), (--max-medium) {
       display:block;
       margin: 0 auto;
     }
-
-  
   }
 
   &__desktop {
-    
     display: block;
     margin: 0 auto;
     padding: var(--hw-spacing-even-larger) var(--hw-spacing-even-larger-2);
@@ -35,7 +35,6 @@
   }
 
   &__logo {
-
     position:relative;
 
     &-link {
@@ -61,7 +60,6 @@
         left: 0;
         opacity: 0;
       }
-
 
       &:hover {
 
@@ -179,6 +177,10 @@
   }
 
 
+  /**
+   * Modifiers
+   */
+   
   &--slim {
     .hw-footer__element-float-right {
       float: right;

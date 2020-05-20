@@ -1,7 +1,15 @@
+/**
+ * Block
+ */
+
 .hw-curtain {
   overflow: hidden;
   transition: height 0.3s ease;
   padding-bottom: var(--hw-spacing-smaller);
+
+  /**
+   * Elements
+   */
 
   &__trigger {
     width: 100%;
@@ -53,6 +61,10 @@
     padding-top: var(--hw-spacing-small);
     padding-bottom: var(--hw-spacing-small);
   }
+
+  /**
+   * Modifiers
+   */
 
   &--closed {
     & .hw-curtain__trigger {

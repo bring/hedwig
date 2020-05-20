@@ -5,8 +5,8 @@
 .hw-spinner,
 .hw-spinner::after {
   border-radius: 50%;
-  width: 10em;
-  height: 10em;
+  width: 4em;
+  height: 4em;
 }
 
 .hw-spinner {
@@ -14,10 +14,10 @@
   font-size: 10px;
   position: relative;
   text-indent: -9999em;
-  border-top: 1.1em solid var(--hw-color-gray-lighter);
-  border-right: 1.1em solid var(--hw-color-gray-lighter);
-  border-bottom: 1.1em solid var(--hw-color-gray-lighter);
-  border-left: 1.1em solid var(--hw-color-gray-lightest);
+  border-top: 0.5em solid var(--hw-color-gray-lighter);
+  border-right: 0.5em solid var(--hw-color-gray-lighter);
+  border-bottom: 0.5em solid var(--hw-color-gray-lighter);
+  border-left: 0.5em solid var(--hw-color-gray-lightest);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);

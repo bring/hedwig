@@ -1,3 +1,7 @@
+/**
+ * Block
+ */
+
 .hw-icon-link {
   padding: calc(var(--hw-spacing-smaller) * 2);
   display: block;

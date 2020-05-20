@@ -1,3 +1,7 @@
+/**
+ * Block
+ */
+
 .hw-breadcrumbs {
   /* Flex to get rid of white space */
   display: flex;
@@ -6,6 +10,19 @@
 .hw-breadcrumb {
   font-weight: normal;
   text-transform: uppercase;
+
+  &:hover {
+    .hw-breadcrumb__arrow {
+      opacity: 0;
+    }
+    .hw-breadcrumb__arrow-hover {
+      opacity: 1;
+    }
+  }
+  
+  /**
+   * Elements
+   */
 
   a {
     font-size: 13px;
@@ -50,30 +67,22 @@
     opacity: 0;
   }
 
+  &__arrow-mobile {
+    margin-right: 8px;
+    @media (--large) {
+      display: none;
+    }
+  }
+
+  /**
+   * Modifiers
+   */
+
   &--single {
     .hw-breadcrumb__arrow, .hw-breadcrumb__arrow-hover {
       margin-right: 6px;
       margin-top: 2px;
       vertical-align: 2%;
-    }
-  }
-
-  &:hover {
-    .hw-breadcrumb__arrow {
-      opacity: 0;
-    }
-    .hw-breadcrumb__arrow-hover {
-      opacity: 1;
-    }
-  }
-
-
-
-
-  &__arrow-mobile {
-    margin-right: 8px;
-    @media (--large) {
-      display: none;
     }
   }
 }

@@ -11,19 +11,6 @@
   flex-direction: column;
   margin-bottom: var(--hw-spacing);
 
-  &::after {
-    /*position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.15);
-    content: '';
-    opacity: 0;*/
-  }
-
   &:hover {
     opacity: 0.8;
 

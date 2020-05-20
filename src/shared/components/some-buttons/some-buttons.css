@@ -40,6 +40,10 @@
       color: var(--hw-color-white);
     }
 
+    /**
+     * Modifiers
+     */
+
     &--facebook, &--twitter, &--linkedin, &--google, &--instagram, &--email {
       & svg {
         height: 22px;

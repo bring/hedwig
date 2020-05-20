@@ -1,5 +1,5 @@
 /**
- * Link list
+ * Block
  */
 
 .hw-linklist {
@@ -23,7 +23,10 @@
   }
 
   
-  /** Modifications **/
+  /**
+   * Modifiers
+   */
+   
   &--small a {
     font-size: var(--hw-font-size-small);
   }

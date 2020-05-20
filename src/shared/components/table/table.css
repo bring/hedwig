@@ -1,3 +1,7 @@
+/**
+ * Block
+ */
+
 .hw-table {
 
   font-size: var(--hw-font-size-small);
@@ -9,23 +13,6 @@
     width:100%;
     text-align: left;
     table-layout: fixed;
-  }
-    
-  &--column th, &--column td {
-    padding: var(--hw-spacing-small) 0 !important;
-  }
-
-  &--column table {
-    border-collapse: separate;
-    border-spacing: var(--hw-spacing-larger) 0;
-    position: relative;
-    right: var(--hw-spacing-larger);
-    width: calc(100% + (2*var(--hw-spacing-larger))) !important;
-  }
-
-  &--subtitle {
-    font-size: 90%;
-    color: var(--hw-color-gray-dark);
   }
   
   & thead th {
@@ -81,10 +68,37 @@
     font-weight: var(--hw-font-weight-regular);
   }
 
+
+  /**
+   * Elements
+   */
+
   &__description {
     font-size: var(--hw-font-size-smallest);
     color: var(--hw-color-gray-dark);
     padding: calc(var(--hw-spacing-smaller)*2) 0 calc(var(--hw-spacing-smaller)*2) 2px;
+  }
+
+
+  /**
+   * Modifiers
+   */
+
+  &--column th, &--column td {
+    padding: var(--hw-spacing-small) 0 !important;
+  }
+
+  &--column table {
+    border-collapse: separate;
+    border-spacing: var(--hw-spacing-larger) 0;
+    position: relative;
+    right: var(--hw-spacing-larger);
+    width: calc(100% + (2*var(--hw-spacing-larger))) !important;
+  }
+
+  &--subtitle {
+    font-size: 90%;
+    color: var(--hw-color-gray-dark);
   }
 }
 

@@ -1,32 +1,37 @@
+/**
+ * Block
+ */
+
 .hw-quote {
   display: block;
   margin: var(--hw-spacing-larger) 0;
   padding: 0 var(--hw-spacing);
   width: 100%;
 
+  /**
+   * Elements
+   */
+
   &__content {
     font-family: var(--hw-font-primary-light) !important;
     font-weight: var(--hw-font-weight-light) !important;
   }
 
-
   /**
-  Modifiers
- */
+   * Modifiers
+   */
 
- &--norwegian {
-  .hw-quote__content:not(:last-child):before {
-    content: '\00AB';
-    padding-right: 3px;
+  &--norwegian {
+    .hw-quote__content:not(:last-child):before {
+      content: '\00AB';
+      padding-right: 3px;
+    }
+
+    .hw-quote__content:not(:last-child):after {
+      content: '\00BB';
+      padding-left: 0px;
+    }
   }
-
-  .hw-quote__content:not(:last-child):after {
-    content: '\00BB';
-    padding-left: 0px;
-  }
- }
-
-  
 }
 
 .hw-quote--pull-right {
@@ -49,6 +54,3 @@
   font-style: normal;
   margin-top: var(--hw-spacing-smaller);
 }
-
-
-

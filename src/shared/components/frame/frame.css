@@ -1,9 +1,11 @@
+/**
+ * Block
+ */
+
 .hw-frame {
   display:flex;
   align-items: stretch;
   justify-content: space-between;
-
-
 }
 
 .hw-frame__item {
@@ -11,6 +13,10 @@
   flex-basis: 0;
   -ms-flex-preferred-size: auto;
 
+  /**
+   * Modifiers
+   */
+   
   &--bg-primary {
     background-color: var(--hw-color-primary);
   }

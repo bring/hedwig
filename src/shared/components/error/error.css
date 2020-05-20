@@ -42,6 +42,11 @@
     background-size: auto auto;
   }
 
+
+  /**
+   * Modifiers
+   */
+
   &--is-hidden {
     visibility: hidden;
     opacity: 0;

@@ -1,6 +1,14 @@
+/**
+ * Block
+ */
+
 .hw-figure {
   margin: 0;
   padding: 0;
+
+  /**
+   * Elements
+   */
 
   &__container{
     position: relative;

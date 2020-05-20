@@ -45,6 +45,10 @@
       transform 0.3s ease;
   }
 
+  &__label {
+    display: inline-block;
+    margin-top: -2px;
+  }
 
 
   /**
@@ -81,25 +85,6 @@
 
   &--error {
     border-color: var(--hw-color-secondary);
-  }
-
-
-
-/*
-  input[type=radio] {
-    float: left;
-}
-
-label {
-    margin-left: 30px;
-    display: block;
-}*/
-
-
-  &__label {
-    display: inline-block;
-    margin-top: -2px;
-    /*max-width: calc(100% - 16px - 0.4rem);*/
   }
 
   & > input {

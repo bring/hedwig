@@ -1,3 +1,7 @@
+/**
+ * Block
+ */
+
 .hw-badge {
   display: inline-block;
   background-color: var(--hw-color-primary-lighter);
@@ -21,6 +25,9 @@
   vertical-align: 10%;
 
 
+  /**
+   * Modifiers
+   */
 
   /* Variations */
   /* Size variations */
@@ -56,8 +63,6 @@
     border-top-width: 2px;
     border-bottom-width: 2px;
   }
-
-
 
   /* Color variations */
   

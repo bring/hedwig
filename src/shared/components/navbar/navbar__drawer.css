@@ -1,4 +1,13 @@
+/**
+ * Block
+ */
+
 .hw-navbar {
+
+  /**
+   * Elements
+   */
+
   &__drawer {
     background: var(--hw-color-white);
     width: 100%;
@@ -73,6 +82,11 @@
       padding-right: var(--hw-spacing);
     }
   }
+
+
+  /**
+   * Modifiers
+   */
 
   &--active {
     & .hw-navbar__drawer {

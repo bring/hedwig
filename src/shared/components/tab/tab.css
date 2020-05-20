@@ -1,3 +1,7 @@
+/**
+ * Block
+ */
+
 .hw-tab {
   overflow-x: scroll;
   white-space: nowrap;
@@ -13,6 +17,10 @@
 
   /* The box-shadow creates the gray bar under the tab items */
   box-shadow: inset 0 -1px 0 0 var(--hw-color-gray-lighter);
+
+  /**
+   * Elements
+   */
 
   &__item {
     font-size: var(--hw-font-size-p);

@@ -1,3 +1,7 @@
+/**
+ * Block
+ */
+
 .hw-phone-input {
   display: block;
   width: 100%;
@@ -19,6 +23,10 @@
       }
     }
   }
+
+  /**
+   * Elements
+   */
 
   &__group {
     display: flex;
@@ -54,7 +62,6 @@
         right: 0;
       }
     }
-
 
     &__options {
       display: none;

@@ -1,4 +1,13 @@
+/**
+ * Block
+ */
+
 .hw-navbar {
+
+  /**
+   * Elements
+   */
+
   &__login {
     background: var(--hw-color-gray);
     width: 100%;

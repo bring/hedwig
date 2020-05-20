@@ -1,6 +1,5 @@
-/*!
- * Pikaday
- * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
+/**
+ * Block
  */
 
 .hw-datepicker {
@@ -8,6 +7,10 @@
   width: 100%;
   display: block;
   margin-bottom: var(--hw-spacing-small);
+
+  /**
+   * Elements
+   */
 
   &__icon {
     position: absolute;
@@ -48,6 +51,13 @@
     color: var(--hw-color-primary-dark);
   }
 }
+
+
+/*!
+ * Pikaday
+ * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
+ */
+
 
 .pika-single {
   z-index: var(--z-index--navbar-search);
