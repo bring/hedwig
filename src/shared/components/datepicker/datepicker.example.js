@@ -25,11 +25,13 @@ const HWDatepicker = ({
     } else {
       SETTINGS.elements.forEach(element => {
         const _dpContainer = [].slice.call(element.querySelectorAll(".hw-datepicker__inner"))[0];
-        _dpContainer.dataset.initialized = true;
-        var picker2 = new Pikaday({
-          container: _dpContainer,
-          field: _dpContainer.querySelector('input[type="text"]'),
-        });
+        if(!_dpContainer.dataset.initialized){
+          _dpContainer.dataset.initialized = true;
+          var picker2 = new Pikaday({
+                container: _dpContainer,
+                field: _dpContainer.querySelector('input[type="text"]'),
+          });
+        }
       });
     }
   }
