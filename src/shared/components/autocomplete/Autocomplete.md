@@ -58,7 +58,7 @@ data-hw-autocomplete-reset-visible=true       Show reset button
 ```
 
 ## Autocomplete with reset button visible
-Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset button 
+Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset button. Reset button appears when text has been filled.
 
 ```html|plain,light
 <label class="hw-label">Your address

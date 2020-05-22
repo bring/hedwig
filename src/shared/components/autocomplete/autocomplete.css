@@ -54,7 +54,10 @@
       /* Not autprefixed - IE 10+ */
       color: var(--hw-color-gray-dark);
     }
+  }
 
+  &__input:placeholder-shown + .hw-autocomplete__input-reset {
+    opacity: 0;
   }
 
   /* Optional element description */

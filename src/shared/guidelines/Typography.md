@@ -40,7 +40,7 @@ The font size on H-tags are responsive on viewports between 300 - 1200px, and st
  
 ### Headers
 
-```html|responsive
+```html|responsive,plain,light
   <h1 class="hw-h1-ridiculously-huge">H1 Headline large example</h1>
   <h1>H1 Headline example</h1>
   <h2>H2 Headline example</h2>
