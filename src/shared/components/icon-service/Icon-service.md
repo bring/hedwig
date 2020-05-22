@@ -390,6 +390,16 @@ return-cargo-partial
 return-express
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#return-delivery-home"></use>
+</svg>
+return-delivery-home
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#return-delivery-mailbox"></use>
+</svg>
+return-delivery-mailbox
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#return-pallet"></use>
 </svg>
 return-pallet
