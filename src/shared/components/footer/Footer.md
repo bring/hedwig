@@ -80,10 +80,10 @@
                 <div class="hw-footer__logo">
                   <a href="#" class="hw-footer__logo-link">
                     <svg class="hw-footer__logo-link-standard">
-                      <use xlink:href="#logo-bring"></use>
+                      <use xlink:href="#logo-{{postenbring}}"></use>
                     </svg>
                     <svg class="hw-footer__logo-link-white">
-                      <use xlink:href="#logo-bring-white"></use>
+                      <use xlink:href="#logo-{{postenbring}}-white"></use>
                     </svg>
                   </a>
                 </div>
@@ -237,10 +237,10 @@
           <div class="hw-footer__logo">
             <a href="#" class="hw-footer__logo-link">
               <svg class="hw-footer__logo-link-standard">
-                <use xlink:href="#logo-bring"></use>
+                <use xlink:href="#logo-{{postenbring}}"></use>
               </svg>
               <svg class="hw-footer__logo-link-white">
-                <use xlink:href="#logo-bring-white"></use>
+                <use xlink:href="#logo-{{postenbring}}-white"></use>
               </svg>
             </a>
           </div>
@@ -313,10 +313,10 @@
           <div class="hw-footer__logo">
             <a href="#" class="hw-footer__logo-link">
               <svg class="hw-footer__logo-link-standard">
-                <use xlink:href="#logo-bring"></use>
+                <use xlink:href="#logo-{{postenbring}}"></use>
               </svg>
               <svg class="hw-footer__logo-link-white">
-                <use xlink:href="#logo-bring-white"></use>
+                <use xlink:href="#logo-{{postenbring}}-white"></use>
               </svg>
             </a>
           </div>
@@ -338,10 +338,10 @@
       <div class="hw-footer__logo">
         <a href="#" class="hw-footer__logo-link">
           <svg class="hw-footer__logo-link-standard">
-            <use xlink:href="#logo-bring"></use>
+            <use xlink:href="#logo-{{postenbring}}"></use>
           </svg>
           <svg class="hw-footer__logo-link-white">
-            <use xlink:href="#logo-bring-white"></use>
+            <use xlink:href="#logo-{{postenbring}}-white"></use>
           </svg>
         </a>
       </div>
