@@ -169,11 +169,59 @@
     }
 
     & .hw-dropdown__arrow::before {
-      right: 9px;
+      right: 12px;
     }
 
     & .hw-dropdown__arrow::after {
-      right: 15px;
+      right: 18px;
+    }
+  }
+
+  &--line {
+    background: transparent;
+    border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-light);
+    padding-left: 0px;
+    padding-top: var(--hw-spacing-tiny);
+    padding-bottom: var(--hw-spacing-smaller);
+    height: calc(var(--hw-input-field-height) - var(--hw-spacing-small)  - var(--hw-spacing-small) + var(--hw-spacing-tiny) +  var(--hw-spacing-smaller));
+    border-radius: 0px;
+
+    &.hw-dropdown--native {
+      background-image:
+      /* Cut off the sharp ends of the arrow */
+      linear-gradient(45deg, transparent 74%, var(--hw-color-white) 0%),
+      linear-gradient(135deg, var(--hw-color-white) 26%, transparent 26%),
+      /* Draw the arrow */
+      linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
+      linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 37%, transparent 38%, transparent 100%),
+      linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray) 63%, var(--hw-color-gray) 71%, var(--hw-color-white) 72%, var(--hw-color-white) 100%);
+      background-size: var(--hw-spacing-small) var(--hw-spacing-small);
+      background-position: calc(100% - var(--hw-spacing-small)) 25%;
+      background-repeat: no-repeat;
+    }
+
+    .hw-dropdown__inner {
+      background: transparent;
+    }
+    .hw-dropdown__placeholder {
+      padding-left: 0px;
+      padding-top: 0px;
+    }
+    .hw-dropdown__arrow {
+      top: -5px;
+    }
+    .hw-dropdown__options {
+      background: var(--hw-color-gray-lightest);
+      padding: var(--he-spacing-small);
+    }
+
+    &:focus {
+      border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+    }
+
+    &[disabled], &:disabled, &[disabled="disabled"] {
+      background: transparent;
+      padding: var(--hw-spacing-small);
     }
   }
 

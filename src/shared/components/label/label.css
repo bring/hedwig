@@ -42,6 +42,12 @@
     .hw-input {
       @extend .hw-input--line;
     }
+    .hw-dropdown {
+      @extend .hw-dropdown--line;
+    }
+    .hw-dropdown--native {
+      @extend .hw-dropdown--line;
+    }
 
     &[disabled], &:disabled, &[disabled="disabled"] {
       background-color: var(--hw-color-gray-light);
