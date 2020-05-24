@@ -42,12 +42,16 @@
     .hw-input {
       @extend .hw-input--line;
     }
-    .hw-dropdown {
+    .hw-dropdown, .hw-dropdown--native {
       @extend .hw-dropdown--line;
     }
-    .hw-dropdown--native {
-      @extend .hw-dropdown--line;
+    .hw-autocomplete {
+      @extend .hw-autocomplete--line;
     }
+    .hw-password {
+      @extend .hw-password--line;
+    }
+
 
     &[disabled], &:disabled, &[disabled="disabled"] {
       background-color: var(--hw-color-gray-light);

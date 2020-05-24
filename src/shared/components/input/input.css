@@ -59,7 +59,7 @@
   }
 
 
-  &--line {
+  &--line-basic {
     background: transparent;
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-light);
     padding-left: 0px;
@@ -67,6 +67,9 @@
     padding-bottom: var(--hw-spacing-smaller);
     height: calc(var(--hw-input-field-height) - var(--hw-spacing-small)  - var(--hw-spacing-small) + var(--hw-spacing-tiny) +  var(--hw-spacing-smaller));
     border-radius: 0px;
+  }
+  &--line {
+    @extend .hw-input--line-basic;
 
     &:focus {
       border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);

@@ -122,6 +122,12 @@
    * Modifiers
    */
 
+  &--line {
+    input {
+      @extend .hw-input--line;
+    }
+  }
+
   &--active {
     & .hw-autocomplete__suggestions {
       height: auto;

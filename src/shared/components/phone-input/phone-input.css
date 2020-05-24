@@ -104,7 +104,6 @@
       }
     }
 
-
     &--expanded {
       max-width: 100%;
       width: 100%;
@@ -169,6 +168,22 @@
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
       }
+    }
+  }
+
+  /**
+   * Modifiers
+   */
+
+  &--line {
+    input {
+      @extend .hw-input--line;
+    }
+    .hw-input {
+      padding-left: 70px !important;
+    }
+    .hw-dropdown {
+      @extend .hw-dropdown--line;
     }
   }
 
