@@ -51,6 +51,12 @@
     .hw-password {
       @extend .hw-password--line;
     }
+    .hw-textarea {
+      @extend .hw-textarea--line;
+    }
+    .hw-error {
+      @extend .hw-error--not-indented;
+    }
 
 
     &[disabled], &:disabled, &[disabled="disabled"] {

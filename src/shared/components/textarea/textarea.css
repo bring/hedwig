@@ -49,13 +49,36 @@
    * Modifiers
    */
 
-   /* This will NOT work, as textareas cannot be styled using :before and :after. This does not work with elements that cannot have other elements inside of them. Like textareas and img */;
+  &--line {
+    background: transparent;
+    border: var(--hw-border-thickness) solid var(--hw-color-gray-light);
+    border-radius: var(--hw-border-radius);
+    height: auto;
+
+    &:focus {
+      border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+    }
+
+    &.hw-textarea--error,
+    &.hw-textarea--error:focus {
+      position: relative;
+      border: var(--hw-border-thickness-thick) solid var(--hw-color-secondary);
+    }
+
+    &.hw-textarea--error + .hw-error {
+      padding-left: var(--hw-spacing-small) !important;
+    }
+  }
+
+
 
   &--error,
   &--error:focus {
     position: relative;
-    border-bottom: var(--hw-border-thickness) solid var(--hw-color-secondary);
-    transition: border 200ms;
+    border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-secondary);
+
+
+    /* This will NOT work, as textareas cannot be styled using :before and :after. This does not work with elements that cannot have other elements inside of them. Like textareas and img */;
 
     &::before {
       background: var(--hw-color-secondary);

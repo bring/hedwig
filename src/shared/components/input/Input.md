@@ -34,7 +34,7 @@ All inputs are block elements. For layout, use [grid](/Grid).
 <label  class="hw-label">
   Label
   <input class="hw-input hw-input--error" type="text" placeholder="Placeholder" />
-  <div class="hw-error hw-error--align-left">E-postadressen er ugyldig</div>
+  <div class="hw-error hw-error--align-left hw-error--indented">E-postadressen er ugyldig</div>
 </label>
 ```
 
@@ -44,7 +44,7 @@ All inputs are block elements. For layout, use [grid](/Grid).
 
 #### Normal
 ```html|span-3,light,plain
-<label class="hw-label">
+<label class="hw-label hw-label--line">
   Label
   <input class="hw-input hw-input--line" type="text" placeholder="Placeholder" />
 </label>
@@ -52,7 +52,7 @@ All inputs are block elements. For layout, use [grid](/Grid).
 
 #### Disabled
 ```html|span-3,light,plain
-<label class="hw-label" disabled>
+<label class="hw-label hw-label--line" disabled>
   Label
   <input class="hw-input hw-input--line" type="text" value="The disabled value" disabled />
 </label>
@@ -60,7 +60,7 @@ All inputs are block elements. For layout, use [grid](/Grid).
 
 #### Error
 ```html|span-3,light,plain
-<label  class="hw-label">
+<label  class="hw-label hw-label--line">
   Label
   <input class="hw-input hw-input--error hw-input--line" type="text" placeholder="Placeholder" />
   <div class="hw-error hw-error--align-left">E-postadressen er ugyldig</div>
