@@ -132,15 +132,6 @@ module.exports = `
         .HeadingLink {
           line-height: 0px; /* Fixes jumping of content when hovering an inline anchor */
         }
-        html {
-          transition: opacity 1s;
-        }
-        html[data-hw-app-initialised=true] {
-          opacity: 1;
-        }
-        html:not([data-hw-app-initialised=true]) {
-          opacity: 0;
-        }
 
       </style>
     </head>
