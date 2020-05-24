@@ -17,13 +17,44 @@
     color: var(--hw-color-primary-dark);
   }
 
+
+  /**
+   * Modifiers
+   */
+
   &--error {
     &:focus-within {
       color: var(--hw-color-gray-dark);
     } 
   }
 
-  &--disabled {
-    color: var(--hw-color-gray);
+  &[disabled], &:disabled, &[disabled="disabled"] {
+    color: var(--hw-color-gray-dark);
+    pointer-events: none;
+
+    .hw-input {
+      color: var(--hw-color-gray-dark);
+      fill: var(--hw-color-gray-dark);
+    }
+  }
+
+  &--line {
+    .hw-input {
+      @extend .hw-input--line;
+    }
+
+    &[disabled], &:disabled, &[disabled="disabled"] {
+      background-color: var(--hw-color-gray-light);
+      padding-left: var(--hw-spacing-small);
+      padding-top: var(--hw-spacing-smallest);
+      border-radius: var(--hw-border-radius);
+
+      .hw-input {
+        padding-left: 0px;
+        padding-top: var(--hw-spacing-smallest);
+        color: var(--hw-color-gray-dark);
+        fill: var(--hw-color-gray-dark);
+      }
+    }
   }
 }

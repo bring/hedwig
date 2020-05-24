@@ -8,9 +8,11 @@ Hedwig will automatically style the datepicker with custom styles.
 [Datepicker]           .hw-datepicker
 ```
 
-### Default calendar
+## Filled
 
-```html|span-3
+#### Default
+
+```html|span-2,plain,light
   <label class="hw-label hw-datepicker">
     Date picker label
     <div class="hw-datepicker__inner">
@@ -19,26 +21,91 @@ Hedwig will automatically style the datepicker with custom styles.
       <!-- Placeholder when native datepicker is used -->
       <span class="hw-placeholder">Select a date</span>
     </div>
-    <div class="hw-error hw-error--is-hidden">You must select a date</div>
+    <div class="hw-error hw-error--align-left hw-error--is-hidden">You must select a date</div>
   </label>
 ```
 
-### Calendar with error
+#### Error
 
-```html|span-3
+```html|span-2,plain,light
   <label class="hw-label hw-datepicker">
-    Tidspunkt for levering
+    Label
     <div class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input hw-input--error" placeholder="Select a date" />
       <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
       <!-- Placeholder when native datepicker is used -->
       <span class="hw-placeholder">Select a date</span>
     </div>
-    <div class="hw-error">You must select a date</div>
+    <div class="hw-error hw-error--align-left">You must select a date</div>
   </label>
 ```
 
-### Example javascript
+#### Disabled
+
+```html|span-2,plain,light
+  <label class="hw-label hw-datepicker" disabled>
+    Label
+    <div class="hw-datepicker__inner">
+      <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" disabled />
+      <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
+      <!-- Placeholder when native datepicker is used -->
+      <span class="hw-placeholder">Select a date</span>
+    </div>
+    <div class="hw-error hw-error--align-left hw-error--is-hidden">You must select a date</div>
+  </label>
+```
+
+
+## Line
+
+#### Default
+
+```html|span-2,plain,light
+  <label class="hw-label hw-label--line hw-datepicker">
+    Label
+    <div class="hw-datepicker__inner">
+      <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" />
+      <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
+      <!-- Placeholder when native datepicker is used -->
+      <span class="hw-placeholder">Select a date</span>
+    </div>
+    <div class="hw-error hw-error--align-left hw-error--is-hidden">You must select a date</div>
+  </label>
+```
+
+#### Error
+
+```html|span-2,plain,light
+  <label class="hw-label hw-label--line hw-datepicker">
+    Label
+    <div class="hw-datepicker__inner">
+      <input type="text" readonly="readonly" class="hw-input hw-input--error" placeholder="Select a date" />
+      <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
+      <!-- Placeholder when native datepicker is used -->
+      <span class="hw-placeholder">Select a date</span>
+    </div>
+    <div class="hw-error hw-error--align-left">You must select a date</div>
+  </label>
+```
+
+#### Disabled
+
+```html|span-2,plain,light
+  <label class="hw-label hw-label--line hw-datepicker" disabled>
+    Label
+    <div class="hw-datepicker__inner">
+      <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" />
+      <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
+      <!-- Placeholder when native datepicker is used -->
+      <span class="hw-placeholder">Select a date</span>
+    </div>
+    <div class="hw-error hw-error--align-left hw-error--is-hidden">You must select a date</div>
+  </label>
+```
+
+
+
+## Example javascript
 
 ```
 const datepickerWrapper = document.getElementById('datepicker-ajsd4ks8');
