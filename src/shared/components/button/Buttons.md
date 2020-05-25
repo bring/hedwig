@@ -7,6 +7,7 @@ The buttons can be used either as `<button>`-tags or `<a>`-tags as needed
 
 [Large]          .hw-button--large
 [Small]          .hw-button--small
+[Medium]         .hw-button--medium
 [Full]           .hw-button--full
 [Responsive]     .hw-button--mobile-full   //Full size on mobile, default size on desktop
 
@@ -24,7 +25,7 @@ Colors
 
 ### Sizes
 
-```html|span-4,plain,light
+```html|span-6,plain,light
   <button class="hw-button hw-button--primary hw-button--small">
     Small button
   </button><br>
@@ -45,7 +46,7 @@ Colors
 
 ### Default colors
 
-```html|span-4,plain,light
+```html|span-6,plain,light
   <button class="hw-button hw-button--primary">
     Primary button
   </button>
@@ -74,7 +75,7 @@ plain: true
 
 ### Outlined button primary
 
-```html|span-4,plain,light
+```html|span-6,plain,light
   <button class="hw-button hw-button--outline-primary">
     Primary button
   </button>
@@ -85,7 +86,7 @@ plain: true
 
 ### Outlined button secondary
 
-```html|span-4,plain,light
+```html|span-6,plain,light
   <button class="hw-button hw-button--outline-secondary">
     Secondary button
   </button>
@@ -96,7 +97,7 @@ plain: true
 
 ### Outlined button light
 
-```html|span-4,plain,dark
+```html|span-6,plain,dark
   <button class="hw-button hw-button--outline-white">
     Primary button
   </button>
@@ -107,16 +108,21 @@ plain: true
 
 ### Button with icon
 
-```html|span-4,plain,light
-  <button class="hw-button hw-button--primary">
-    <i class="fas fa-globe"></i>
-    Button with icon
+```html|span-6,plain,light
+  <button class="hw-button hw-button--primary hw-button--small">
+    <i class="fas fa-globe"></i>Small button
+  </button>
+  <button class="hw-button hw-button--primary hw-button--medium">
+    <i class="fas fa-globe"></i>Medium button
+  </button>
+  <button class="hw-button hw-button--primary hw-button--large">
+    <i class="fas fa-globe"></i>Large button
   </button>
 ```
 
 ### Chat button
 
-```html|span-4,plain,light
+```html|span-6,plain,light
   <button class="hw-button hw-button--chat">
     <i class="fas fa-2x fa-comments-alt" title="Chat button"></i>
   </button>
