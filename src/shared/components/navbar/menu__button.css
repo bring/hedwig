@@ -22,7 +22,7 @@
     padding-right: 0;
 
     &-label-menu, &-label-close {
-      padding-right: var(--hw-spacing-small);
+      padding-right: calc(var(--hw-spacing-small) + var(--hw-spacing-smaller));
       word-break: normal;
     }
   }
