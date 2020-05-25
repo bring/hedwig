@@ -146,7 +146,7 @@
 
   &--error .hw-radio-button__indicator {
     border: 2px solid var(--hw-color-secondary) !important;
-    transition: border 150ms;
+    transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
 
     &::after {
       background: var(--hw-color-secondary) !important;

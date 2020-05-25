@@ -17,6 +17,7 @@
   border-radius: var(--hw-border-radius);
   transition: border var(--hw-transition-time-quick);
   -webkit-appearance: none;
+  transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
 }
 
 .hw-input {
@@ -55,7 +56,7 @@
     position: relative;
     border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-secondary) !important;
     margin-bottom: calc(var(--hw-border-thickness) - var(--hw-border-thickness-thick)); /* Subtract difference in border height to avoid jumping */
-    transition: border 150ms;
+    transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
   }
 
 

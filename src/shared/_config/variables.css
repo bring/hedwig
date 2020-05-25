@@ -191,9 +191,9 @@
   /**
    * Transitions
    */
-  --hw-transition-time-quick: 0.267s; 
-  --hw-transition-time-normal: 0.467s;
-  --hw-transition-time-slow: 0.767s;  
+  --hw-transition-time-quick: 0.100s; 
+  --hw-transition-time-normal: 0.250s;
+  --hw-transition-time-slow: 0.400s;  
 
   --hw-transition-easing-normal: ease-in-out;
   --hw-transition-easing-in: ease-in;

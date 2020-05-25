@@ -25,9 +25,9 @@
   &__item {
     font-size: var(--hw-font-size-p);
     display: inline-block;
-    margin-left: var(--hw-spacing-small);
+    margin-left: 0px;
     padding-bottom: var(--hw-spacing-smaller);
-    margin-right: calc(var(--hw-font-size-smaller) * 2);
+    margin-right: 32px;
     color: var(--hw-color-black);
     &--selected {
       /**
@@ -35,14 +35,10 @@
        * This border is shown only if the hw-tab javascript is not running
        */
       color: var(--hw-color-primary-dark);
-      border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary);
+      border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-primary);
     }
     &:hover {
       color: var(--hw-color-primary-dark);
-    }
-
-    &:first-of-type {
-      margin-left: 0;
     }
   }
 
@@ -50,7 +46,7 @@
     bottom: 0;
     position: absolute;
     height: 0;
-    border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary);
+    border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-primary);
 
     /**
      * The following will be modified by javascript during runtime to move the marker around
@@ -59,7 +55,7 @@
      * - width
      */
 
-    transition: left 200ms, width 200ms;
+    transition: left var(--hw-transition-time-quick), width var(--hw-transition-time-quick);
     left: 0;
     width: 0;
   }

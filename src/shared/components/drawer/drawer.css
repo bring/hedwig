@@ -42,7 +42,7 @@
     height: 100%;
     overflow: auto;
     background: var(--hw-color-white);
-    transition: transform 100ms ease;
+    transition: transform var(--hw-transition-time-slow) var(--hw-transition-easing-normal);
     transform: translateX(700px);
     opacity: 0;
 
@@ -64,7 +64,6 @@
     width: 24px;
     height: 24px;
     border: 0;
-    transition: background 0.3s ease;
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
     font-size: 8px;
@@ -128,7 +127,7 @@
       transform: translateX(0);
       &--animate-out {
         transform: translateX(700px);
-        transition: opacity 0.1s linear 0.25s, transform 100ms ease;
+        transition: all var(--hw-transition-time-slow) var(--hw-transition-easing-normal);
         opacity: 0;
       }
     }

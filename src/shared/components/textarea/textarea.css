@@ -10,7 +10,7 @@
   background-color: var(--hw-color-gray-lightest);
   display: block;
   width: 100%;
-  transition: border 100ms;
+  transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
   margin-top: var(--hw-spacing-tiny);
   position: relative;
   -webkit-appearance: none;

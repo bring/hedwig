@@ -39,7 +39,6 @@
     user-select: none;
     text-align: center;
     border-radius: 0;
-    transition: border 100ms;
   }
 
   & > input {
@@ -129,7 +128,6 @@
 
   &--error .hw-checkbox__indicator {
     border: 2px solid var(--hw-color-secondary) !important;
-    transition: border 150ms;
 
     &::before {
       border-bottom-color: var(--hw-color-black) !important

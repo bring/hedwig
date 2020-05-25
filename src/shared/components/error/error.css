@@ -10,7 +10,7 @@
   font-weight: var(--hw-font-weight-medium);
   text-align: right;
   transform: translateY(0);
-  transition: transform 200ms;
+  transition: all var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
   opacity: 1;
   border-radius: var(--hw-border-radius);
   color: var(--hw-color-gray-dark);
