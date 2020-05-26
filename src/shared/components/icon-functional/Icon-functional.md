@@ -65,7 +65,7 @@ Also see the [full sizing documentation from Font Awesome](https://fontawesome.c
 
 ### Example sizes
 
-```html|plain,light,span-3
+```html|plain,light
 <i class="fa-xs fas fa-eye"></i>
 <i class="fa-sm fas fa-eye"></i>
 <i class="fa as fa-eye"></i>

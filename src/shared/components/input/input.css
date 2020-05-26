@@ -34,12 +34,12 @@
 
   &:hover {
     color: var(--hw-color-black);
-    /*border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);*/
+    /*border-bottom: var(--hw-border-thickness) solid var(--hw-color-input-accent);*/
   }
 
   &:focus {
     color: var(--hw-color-black);
-    border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+    border-bottom: var(--hw-border-thickness) solid var(--hw-color-input-accent);
     outline: 0;
   }
 
@@ -73,7 +73,7 @@
     @extend .hw-input--line-basic;
 
     &:focus {
-      border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+      border-bottom: var(--hw-border-thickness) solid var(--hw-color-input-accent);
     }
 
     &[disabled], &:disabled, &[disabled="disabled"] {

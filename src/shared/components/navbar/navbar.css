@@ -156,7 +156,7 @@
     color: inherit;
     background-color: transparent;
     &:hover, &:focus {
-      color: var(--hw-color-primary-dark);
+      color: var(--hw-color-link-hover);
     }
     @media (--large){
       height: var(--hw-navbar-height-desktop);

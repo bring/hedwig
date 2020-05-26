@@ -12,10 +12,17 @@
   text-transform: uppercase;
 
   &:hover {
+    color: var(--hw-color-primary-dark);
+    fill: var(--hw-color-primary-dark);
+
     .hw-breadcrumb__arrow {
+      color: var(--hw-color-primary-dark);
+      fill: var(--hw-color-primary-dark);
       opacity: 0;
     }
     .hw-breadcrumb__arrow-hover {
+      color: var(--hw-color-primary-dark);
+      fill: var(--hw-color-primary-dark);
       opacity: 1;
     }
   }

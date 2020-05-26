@@ -41,8 +41,7 @@
     background: transparent;
     width: var(--hw-spacing-small);
     height: var(--hw-spacing-small);
-    transition: border-color 0.3s ease, max-height 0.3s ease,
-      transform 0.3s ease;
+    transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
   }
 
   &__label {
@@ -109,7 +108,7 @@
         top: 50%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
-        background: var(--hw-color-primary-dark);
+        background: var(--hw-color-checkbox-accent);
       }
     }
 
@@ -125,7 +124,7 @@
         top: 50%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
-        background: var(--hw-color-primary-dark);
+        background: var(--hw-color-checkbox-accent);
       }
     }
     

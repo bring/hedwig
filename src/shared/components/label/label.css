@@ -9,12 +9,8 @@
   line-height: 2;
   display: block;
 
-  &[disabled] {
-    color: var(--hw-color-gray-dark);
-  }
-
   &:focus-within {
-    color: var(--hw-color-primary-dark);
+    color: var(--hw-color-input-accent);
   }
 
 
@@ -28,8 +24,8 @@
     } 
   }
 
-  &[disabled], &:disabled, &[disabled="disabled"] {
-    color: var(--hw-color-gray-dark);
+  &[disabled], &:disabled, &[disabled="disabled"], &--disabled {
+    color: var(--hw-color-gray);
     pointer-events: none;
 
     .hw-input {
@@ -59,7 +55,7 @@
     }
 
 
-    &[disabled], &:disabled, &[disabled="disabled"] {
+    &[disabled], &:disabled, &[disabled="disabled"], &--disabled {
       background-color: var(--hw-color-gray-light);
       padding-left: var(--hw-spacing-small);
       padding-top: var(--hw-spacing-smallest);

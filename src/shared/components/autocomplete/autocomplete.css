@@ -36,7 +36,7 @@
     transition: opacity 0.1s ease;
     &:hover,
     &:focus {
-      color:var(--hw-color-primary-dark);
+      color:var(--hw-color-input-accent);
     }
   }
 
@@ -87,7 +87,7 @@
       vertical-align: middle;
 
       &:checked ~ .hw-autocomplete__suggestion-text {
-        color: var(--hw-color-primary-dark);
+        color: var(--hw-color-input-accent);
       }
     }
 
@@ -100,7 +100,7 @@
     &:hover,
     &:focus {
       & .hw-autocomplete__suggestion-text {
-        color: var(--hw-color-primary-dark);
+        color: var(--hw-color-input-accent);
       }
     }
   }

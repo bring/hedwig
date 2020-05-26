@@ -89,7 +89,7 @@
 
   &__button-inside:hover,
   &__button-inside:focus {
-    color: var(--hw-color-primary-darker); 
+    color: var(--hw-color-input-accenter); 
   }
 
   &__suggestions {
@@ -120,17 +120,18 @@
     transition: background-color 0.5s ease;
     padding: var(--hw-spacing-small);
     &:hover, &:focus, &:active {
-      color: var(--hw-color-primary-dark);
+      color: var(--hw-color-input-accent);
       transition: background-color 0s ease;
       z-index: 1;
       position: relative; /* To keep the outline on focus unobstructed */
       & .hw-search__suggestion-extra {
-        color: var(--hw-color-primary-dark);
+        color: var(--hw-color-input-accent);
       }
     }
   }
 
   &__suggestion-title {
+    color: var(--hw-color-black);
     font-size: var(--hw-font-size-small);
     line-height: 1.2;
   }
@@ -151,7 +152,7 @@
       background: var(--hw-color-gray-lightest);
 
       &:hover, &:focus {
-        border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+        border-bottom: var(--hw-border-thickness) solid var(--hw-color-input-accent);
         outline: 0;
       }
     }

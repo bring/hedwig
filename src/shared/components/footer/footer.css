@@ -109,15 +109,17 @@
     color: var(--hw-color-primary-lighter);
     text-decoration-color: var(--hw-color-primary);
     font-size: var(--hw-font-size-smaller);
-    &:hover {
-      color: var(--hw-color-primary-light);
-      text-decoration-color: var(--hw-color-primary-light);
-    }
   }
 
   .hw-link {
     margin-left: var(--hw-spacing-large);
     padding-bottom: var(--hw-spacing-tiny);
+
+    &:hover {
+      color: var(--hw-color-primary-light);
+      border-bottom-color: var(--hw-color-primary-light);
+      text-decoration-color: var(--hw-color-primary-light);
+    }
   }
 
 

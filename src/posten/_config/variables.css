@@ -22,11 +22,16 @@
     * Link Colors
     */
 
-  --hw-color-link: #980000;
-  --hw-color-link-underline: rgb(255, 138, 95, 0.75);
-  --hw-color-link-hover: #000;
-  --hw-color-link-underline-hover: #000;
+  --hw-color-link: var(--hw-color-black);
+  --hw-color-link-underline: var(--hw-color-primary);
+  --hw-color-link-hover: var(--hw-color-primary);
+  --hw-color-link-underline-hover: var(--hw-color-primary);
 
+  /**
+    * Component colors
+    */
+  --hw-color-input-accent: var(--hw-color-primary-darker);
+  --hw-color-checkbox-accent: var(--hw-color-primary);
 
   /**
     * Button Colors

@@ -19,7 +19,7 @@
     }
     &:focus-within {
       & .hw-phone-input__group{
-        border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+        border-bottom: var(--hw-border-thickness) solid var(--hw-color-input-accent);
       }
     }
   }
