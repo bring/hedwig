@@ -1,25 +1,49 @@
-## Accordion
+```html|span-6,noSource
+<button class="hw-button hw-button--primary" onclick="window.scrollToDevelopmentGuidelines()">Development guidelines</button>
+<button class="hw-button hw-button--secondary" onclick="window.scrollToDesignGuidelines()">Design guidelines</button>
+```
+
+
+
+# Development guidelines
 
 Creates interactive accordion from `<ul>`
 
 In these examples, the contents are wrapped in the [Wysiwyg Container](/Wysiwyg) component, but this is optional.
 
-```code
-Required:
 
-[data-hw-accordion]
+## Markup
+```code
+[Basic]                .hw-accordion
 
 Modifiers:
-[Menu]    .hw-accordion--menu
+[Menu]                 .hw-accordion--menu
+
+Elements:
+[Item]                 .hw-accordion__item
+[Trigger]              .hw-accordion__trigger
+[Arrow]                .hw-accordion__arrow
+[Contents]             .hw-accordion__contents
+[Item Expanded]        .hw-accordion__item-expanded
+```
+
+
+
+## Data properties
+```code
+Required:
+[data-hw-accordion]
 
 Optional:
-
 [data-hw-accordion-allow-multiple]    Allow multiple items to be open at once
 [data-hw-accordion-default-expanded]  Item to be open by default (added to li/item)
 
 ```
 
-### Example accordion
+
+## Examples
+
+#### Default
 
 ```html|span-6,plain,light
   <ul class="hw-accordion" data-hw-accordion>
@@ -67,7 +91,8 @@ Optional:
   </ul>
 ```
 
-### Accordion with default opened item
+
+#### Accordion with default opened item
 
 ```html|span-6,plain,light
   <ul class="hw-accordion" data-hw-accordion>
@@ -114,7 +139,8 @@ Optional:
   </ul>
 ```
 
-### Accordion that allows multiple items to be open at once
+
+#### Accordion that allows multiple items to be open at once
 
 ```html|span-6,plain,light
   <ul class="hw-accordion" data-hw-accordion data-hw-accordion-allow-multiple>
@@ -157,7 +183,7 @@ Optional:
   </ul>
 ```
 
-### Menu accordion
+#### Menu accordion
 
 This version is used in the menu on mobile
 
@@ -219,3 +245,64 @@ This version is used in the menu on mobile
     </li>
   </ul>
 ```
+
+
+
+
+
+
+# Design guidelines
+
+Accordions are vertically stacked lists of headers that reveal and hide associated sections of content. 
+
+
+
+```image
+plain: true
+span: 3
+src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+title: "Use of accordions"
+description: "We use accordions to show large amounts of content in a small space through progressive disclosure. The section header gives an overview of the content, allowing the user to decide which sections to read."
+```
+  
+```image
+plain: true
+span: 3
+src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+```
+
+  
+### Best practices
+  
+```image
+plain: true
+span: 3
+src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+title: "Do"
+description: "Use headings to divide content if you have multiple subtopics within a section."
+```
+```image
+plain: true
+span: 3
+src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+title: "Don't"
+description: "Don’t use accordions for important information. Accordions hides content from users, and it is important to account for a user not noticing or reading all of the included content. If the information is important for everyone to read, place it in a full scrolling page with normal headers."
+```
+
+
+
+```image
+plain: true
+span: 3
+src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+title: "Do"
+description: "Use accordion to help make it easier for users to navigate through loads of information to find what they are looking for."
+```
+```image
+plain: true
+span: 3
+src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+title: "Don't"
+description: "Don’t nest accordions inside other accordions. For subtopics, use headers to divide the content."
+```
+

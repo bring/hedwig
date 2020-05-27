@@ -53,6 +53,9 @@ This intro is for the whole component. Not only design or development.
 
 ## Design guidelines
 
+Accordions are vertically stacked lists og headers that reveal and hide associated sections of content.
+
+
 #### Image
 
 ```hint|directive,span-3
