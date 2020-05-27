@@ -36,7 +36,20 @@ function prepareDocFile(file, fileSection){
     if (err) {
       return console.log(err);
     }
-    var result = data.replace(/{{postenbring}}/g, fileSection);
+
+    var result = data;
+
+    // Replace all instances of {postenbring} with posten OR bring.
+    result = result.replace(/{postenbring}/g, fileSection);
+
+    // Remove content between unnecessary tags. Activate necessary content.
+    if(fileSection == "bring") {
+      result = result.replace(new RegExp("{posten}(.|\n)*?{/posten}", "g"), "").replace(/{bring}/g, "").replace(/{\/bring}/g, "");
+    }
+    else if(fileSection == "posten") {
+      result = result.replace(new RegExp("{bring}(.|\n)*?{/bring}", "g"), "").replace(/{posten}/g, "").replace(/{\/posten}/g, "");
+    }
+    
 
     fs.writeFile("docs/md/" + fileSection + "/" + filename, result, 'utf8', function (err) {
        if (err) return console.log(err);

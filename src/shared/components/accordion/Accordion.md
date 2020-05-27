@@ -7,12 +7,11 @@
 
 # Development guidelines
 
-Creates interactive accordion from `<ul>`
+> Creates interactive accordion from `<ul>`
+> In these examples, the contents are wrapped in the [Wysiwyg Container](/Wysiwyg) component, but this is optional.
 
-In these examples, the contents are wrapped in the [Wysiwyg Container](/Wysiwyg) component, but this is optional.
 
-
-## Markup
+### Markup
 ```code
 [Basic]                .hw-accordion
 
@@ -29,7 +28,7 @@ Elements:
 
 
 
-## Data properties
+### Data properties
 ```code
 Required:
 [data-hw-accordion]
@@ -41,7 +40,7 @@ Optional:
 ```
 
 
-## Examples
+### Examples
 
 #### Default
 
@@ -247,20 +246,21 @@ This version is used in the menu on mobile
 ```
 
 
-
+` `
+` `
 
 
 
 # Design guidelines
 
-Accordions are vertically stacked lists of headers that reveal and hide associated sections of content. 
+> Accordions are vertically stacked lists of headers that reveal and hide associated sections of content. 
 
 
 
 ```image
 plain: true
 span: 3
-src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+src: "http://localhost:3001/img/docs/{postenbring}/accordions-1-1.png"
 title: "Use of accordions"
 description: "We use accordions to show large amounts of content in a small space through progressive disclosure. The section header gives an overview of the content, allowing the user to decide which sections to read."
 ```
@@ -268,8 +268,11 @@ description: "We use accordions to show large amounts of content in a small spac
 ```image
 plain: true
 span: 3
-src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+src: "http://localhost:3001/img/docs/{postenbring}/accordions-1-2.png"
 ```
+
+` `
+` `
 
   
 ### Best practices
@@ -277,32 +280,36 @@ src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-
 ```image
 plain: true
 span: 3
-src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+src: "http://localhost:3001/img/docs/{postenbring}/accordions-2-1.png"
 title: "Do"
 description: "Use headings to divide content if you have multiple subtopics within a section."
 ```
 ```image
 plain: true
 span: 3
-src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+src: "http://localhost:3001/img/docs/{postenbring}/accordions-2-2.png"
 title: "Don't"
 description: "Don’t use accordions for important information. Accordions hides content from users, and it is important to account for a user not noticing or reading all of the included content. If the information is important for everyone to read, place it in a full scrolling page with normal headers."
 ```
 
+` `
+` `
 
 
 ```image
 plain: true
 span: 3
-src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+src: "http://localhost:3001/img/docs/{postenbring}/accordions-3-1.png"
 title: "Do"
 description: "Use accordion to help make it easier for users to navigate through loads of information to find what they are looking for."
 ```
 ```image
 plain: true
 span: 3
-src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+src: "http://localhost:3001/img/docs/{postenbring}/accordions-3-2.png"
 title: "Don't"
 description: "Don’t nest accordions inside other accordions. For subtopics, use headers to divide the content."
 ```
 
+` `
+` `

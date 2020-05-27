@@ -1,31 +1,39 @@
-## Badge
-
-Styling for badge.
-
-Provides styling for badges.
-
-```code
-[Base]           .hw-badge
+```html|span-6,noSource
+<button class="hw-button hw-button--primary" onclick="window.scrollToDevelopmentGuidelines()">Development guidelines</button>
+<button class="hw-button hw-button--secondary" onclick="window.scrollToDesignGuidelines()">Design guidelines</button>
 ```
 
-### Variations
 
+
+# Development guidelines
+
+> Styling for badge.
+> Provides styling for badges.
+
+
+### Markup
 ```code
-[Smaller]  .hw-badge--smaller
-[Small]    .hw-badge--small
-[Large]    .hw-badge--large
-[Larger]   .hw-badge--larger
+[Base]          .hw-badge
+
+Modifiers:
+[Smaller]       .hw-badge--smaller
+[Small]         .hw-badge--small
+[Large]         .hw-badge--large
+[Larger]        .hw-badge--larger
 
 
-[Primary]  .hw-badge--primary
-[Dark]     .hw-badge--dark
-[White]    .hw-badge--white
-[Warning]  .hw-badge--warning
+[Primary]       .hw-badge--primary
+[Dark]          .hw-badge--dark
+[White]         .hw-badge--white
+[Warning]       .hw-badge--warning
 ```
 
-### Primary
+> The badge will have a size 75% of surrounding content unless size modifiers are used.
 
-The badge will have a size 75% of surrounding content unless size modifiers are used
+
+### Examples
+
+#### Default
 
 ```html|span-4,plain,light
 <div class="hw-badge">
@@ -40,6 +48,7 @@ I am a <div class="hw-badge">
   Badge
 </div> 
 ```
+
 
 ### Variations
 ###### Primary
@@ -124,3 +133,163 @@ I am a <div class="hw-badge">
   Badge
 </div>
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+` `
+` `
+
+# Design guidelines
+
+> Badges are used to label, categorize or organize items using keywords to describe them.
+
+
+
+### Badge types
+
+```image
+plain: true
+span: 2
+src: "http://localhost:3001/img/docs/{postenbring}/badges-1-1.png"
+
+{bring}
+title: "Darker green"
+description: "Dark green badges should be used for lighter green backgrounds, and in need of a high contrast badge for light backgrounds."
+{/bring}
+
+{posten}
+title: "Darker red"
+description: "Dark green badges should be used for lighter green backgrounds, and in need of a high contrast badge for light backgrounds."
+{/posten}
+```
+  
+```image
+plain: true
+span: 2
+src: "http://localhost:3001/img/docs/{postenbring}/badges-1-2.png"
+
+{bring}
+title: "Lighter green"
+description: "Lighter green badges should be used for white backgrounds for a subtle expression, or if a badge is needed on a dark background."
+{/bring}
+
+{posten}
+title: "XXXXXXX"
+description: "XXXXXXX"
+{/posten}
+```
+
+```image
+plain: true
+span: 2
+src: "http://localhost:3001/img/docs/{postenbring}/badges-1-3.png"
+
+{bring}
+title: "White"
+description: "White badges should be used for lighter green backgrounds for a subtle expression, or on dark backgrounds for extra high contrast."
+{/bring}
+
+{posten}
+title: "XXXXXXX"
+description: "XXXXXXX"
+{/posten}
+```
+
+```image
+plain: true
+span: 2
+src: "http://localhost:3001/img/docs/{postenbring}/badges-1-4.png"
+
+{bring}
+title: "Yellow"
+description: "Yellow badges should only be used in case of alerts and warnings, or unexpected events."
+{/bring}
+
+{posten}
+title: "XXXXXXX"
+description: "XXXXXXX"
+{/posten}
+```
+
+` `
+` `
+
+
+### Badge sizes
+```image
+plain: true
+span: 2
+src: "http://localhost:3001/img/docs/{postenbring}/badges-2-1.png"
+```
+```image
+plain: true
+span: 2
+src: "http://localhost:3001/img/docs/{postenbring}/badges-2-2.png"
+```
+```image
+plain: true
+span: 2
+src: "http://localhost:3001/img/docs/{postenbring}/badges-2-3.png"
+```
+```image
+plain: true
+span: 2
+src: "http://localhost:3001/img/docs/{postenbring}/badges-2-4.png"
+```
+
+
+` `
+` `
+
+
+### Best practices
+  
+```image
+plain: true
+span: 3
+src: "http://localhost:3001/img/docs/{postenbring}/badges-3-1.png"
+title: "Do"
+description: "Keep the descriptions short and clear, preferably just one word."
+```
+```image
+plain: true
+span: 3
+src: "http://localhost:3001/img/docs/{postenbring}/badges-3-2.png"
+title: "Don't"
+description: "Don’t write long, complex descriptions."
+```
+
+` `
+` `
+
+```image
+plain: true
+span: 3
+src: "http://localhost:3001/img/docs/{postenbring}/badges-4-1.png"
+title: "Do"
+description: "When an item has multiple badges inherit, the badges should be placed with 8px space between them."
+```
+```image
+plain: true
+span: 3
+src: "http://localhost:3001/img/docs/{postenbring}/badges-4-2.png"
+title: "Don't"
+description: "Don’t misuse yellow badge for items that are not an alert or a warning."
+```
+
+` `
+` `

@@ -35,10 +35,10 @@ This intro is for the whole component. Not only design or development.
    </a>
 </div>
 <div class="hw-block hw-background-color-gray-lightest">
-   <a class="hw-card-3" href="https://www.{{postenbring}}.no/">
+   <a class="hw-card-3" href="https://www.{postenbring}.no/">
       <p class="hw-text-uppercase hw-text-smaller">Nunc Et Aliqet</p>
       <h4 class="hw-card-3__title">In rutrum dolor</h4>
-      <img class="hw-card-3__media" src="https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
+      <img class="hw-card-3__media" src="https://{postenbring}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
       <div class="hw-card-3__text hw-text-less-line-height">
         Blandit sit amen. In volutpat scelerisque ipsum.
       </div>
@@ -77,14 +77,14 @@ Do not do this.
 ```image
 plain: true
 span: 3
-src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+src: "https://{postenbring}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
 title: "Do"
 description: "You can do this. It is good."
 ```
 ```image
 plain: true
 span: 3
-src: "https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
+src: "https://{postenbring}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
 title: "Don't"
 description: "Do not do this thing right here. It does not look good."
 ```
@@ -118,13 +118,13 @@ Show more shares a few similarities with an accordion, in that it can hide and r
 ```html|span-3,light,plain,noSource
 <h3>Do this</h3>
 
-<img src="https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-2.png" />
+<img src="https://{postenbring}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-2.png" />
 
 <h5>Do</h5>
 Use Show more on content-heavy pages to enable users the option to click to see more content, or scroll beyond. Show more can also be used at the bottom of a search page to load more results for instance.
 ```
 ```html|span-3,light,plain,noSource
 <h4>Don't</h4>
-<img src="https://{{postenbring}}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
+<img src="https://{postenbring}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
 Show more shares a few similarities with an accordion, in that it can hide and reveal more content. But where an accordion usually holds text, Show more is intended for heavier, more complex content load, like images, cards and so forth. Therefore do not use a Show more light-weight content that an accordion is better suited for. Avoid making up custom hybrid components.
 ```
