@@ -29,8 +29,8 @@ library.add(fab.faLinkedinIn);
 library.add(fab.faTwitter);
 
 library.add(fal.faTimes);
-library.add(fal.minus);
-library.add(fal.plus);
+library.add(fal.faMinus);
+library.add(fal.faPlus);
 
 library.add(far.faBars);
 library.add(far.faCheckCircle);
