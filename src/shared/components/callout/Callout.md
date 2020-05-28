@@ -1,7 +1,14 @@
-## Callout
+{navigation}
 
-Used in articles
+ 
 
+
+
+
+> Used in articles
+
+
+### Markup
 ```code
 [Base]           .hw-callout
 ```
@@ -35,3 +42,53 @@ plain: true
     </div>
   </div>
 ```
+
+
+
+
+
+
+# Design guidelines
+
+> Callout can be used in articles and sidebars to either highlight or separate a section of content from the main content.
+
+> Callout can easily be misunderstood as a card-type of component as they share a few similarities, but the callout is more integrated with the page and content, while a card can be a standalone object.
+
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/callout-1.png"
+title: "Callout"
+description: "A callout has a dark green ruler to separate itself from other content. A heading and descriptive text follows below, with an action button at the bottom."
+```
+
+
+## Best practices
+
+### Do
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/callout-do-1.png"
+description: "Callout can be added at the end of articles for users to reach out if they have any questions about our services."
+```
+
+### Don't
+  
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/callout-dont-1.png"
+description: "Don’t write excessively long text in a callout. Keep it short and clear, and inviting for users to read it through."
+```
+
+
+
+
+
+
+
+
+

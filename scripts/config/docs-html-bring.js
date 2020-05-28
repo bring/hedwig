@@ -132,6 +132,49 @@ module.exports = `
         .HeadingLink {
           line-height: 0px; /* Fixes jumping of content when hovering an inline anchor */
         }
+        [class$="-Image"], [class$="-Image"] p {
+            font-size: 0.8rem !important;
+        }
+        [class$="-Span"] {
+            margin-bottom: 20px !important;
+        }
+        [class$="-Span"] > [class$="-Image"] {
+            margin-bottom: 20px !important;
+        }
+        [class$="headingStyle"] {
+            margin-top: 2rem !important;
+        }
+        [class$="h1-headingStyle"] {
+            margin-top: 4rem !important;
+        }
+        [class$="h2-headingStyle"] {
+            margin-top: 4rem !important;
+        }
+
+        /*
+        [class$="-p-Styled"] {
+            font-size: 0.8rem !important;
+            margin-top: 0px !important;
+        }
+        [class$="-Html"] {
+          min-height: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center
+        }
+        [class$="-Html"] > div:not([class$="-Html"]) {
+          display: flex;
+          justify-content: center;
+          align-items: center
+          height: 100%;
+        }*/
+
+  
+        /* Not working yet */
+        [class$="-Html"] > [class$="-Html"]:has(.hw-guidelines-nav) {
+          background: red !important;
+          border: none !important;
+        }
 
       </style>
     </head>

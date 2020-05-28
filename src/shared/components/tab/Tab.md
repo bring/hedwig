@@ -1,13 +1,27 @@
-## Tab
 
-Styling for tab.
 
-Provides styling for sliding a marker between selected tabs
+{navigation}
 
+
+
+
+
+
+> Styling for tab.
+
+> Provides styling for sliding a marker between selected tabs
+
+
+
+### Markup
 ```code
 [Base]           .hw-tab
-[Item]           .hw-tab__item
+
+Modifiers:
 [Selected Item]  .hw-tab__item--selected
+
+Elements:
+[Item]           .hw-tab__item
 [Marker]         .hw-tab__marker
 ```
 
@@ -30,3 +44,65 @@ Provides styling for sliding a marker between selected tabs
 If using only styling from Hedwig, the marker `hw-tab__marker` will be ignored and the active item will be underlined.
 This will not support sliding the marker between items.
 Removing the marker element will achieve this.
+
+
+
+
+
+
+
+
+# Design guidelines
+
+> Tabs indicate menu items to aid navigation. We use the Bring signal green as an underline to indicate a selected menu item.
+
+
+
+
+### {title} states
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-states-1.png"
+title: "Active"
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-states-2.png"
+title: "Inactive"
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-states-3.png"
+title: "Hover"
+```
+
+
+
+
+
+
+
+## Best practices
+
+### Do
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+description: "Use short titles for tab headings."
+```
+
+
+
+### Don't
+  
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+description: "Don’t use dropdowns in tabs."
+```

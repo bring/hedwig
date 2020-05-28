@@ -1,3 +1,28 @@
+{navigation}
+
+
+
+
+
+
+> The buttons can be used either as `<button>`-tags or `<a>`-tags as needed
+
+
+### Markup
+```code   
+[Base]                   .hw-error
+  
+Modifiers:
+[Align left version]      .hw-error--align-left
+[Hidden version]          .hw-error--is-hidden
+
+Variants:
+[Simple version]          .hw-error-simple      (no icon)
+[Summary version]         .hw-error-summary     (Error detail box)
+```
+
+
+
 ## Error message
 
 Generic error message for input fields
@@ -9,20 +34,6 @@ Generic error message for input fields
 </div>
 ```
 
-### Modifiers
-
-```code
-[Align left version]      .hw-error--align-left
-[Hidden version]          .hw-error--is-hidden
-```
-
-### Variants
-
-```code
-[Default error]           .hw-error
-[Simple version]          .hw-error-simple      (no icon)
-[Summary version]         .hw-error-summary     (Error detail box)
-```
 
 ### Simple version
 
@@ -33,7 +44,7 @@ Generic error message for input fields
 </div>
 ```
 
-### Error message
+### Error summary
 
 ```html|plain,light,span-4
 <div class="hw-error-summary">
@@ -49,3 +60,53 @@ Generic error message for input fields
   </div>
 </div>
 ```
+
+
+
+
+
+
+
+# Design guidelines
+
+> An error message appear when a mistake has occured by the user or the system, or a task is not completed or done correctly.
+
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/error-1.png"
+title: "Appearance"
+description: "When an error occurs, an error message of yellow background and black text should be displayed.
+
+Use of yellow colour is the primary signal for marking when an error has occured, most often used as the background colour of a box displaying a message explaining the cause of error."
+```
+
+
+## Best practices
+
+### Do
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/error-do-1.png"
+description: "Error message should appear if multiple mistakes or errors has occurred, to cleary explain what has happened and why."
+```
+
+### Don't
+  
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/error-dont-1.png"
+description: "Don’t apply the yellow colour to items which are not an error or warning of any kind. Do not misuse yellow to scream for attention."
+```
+
+
+
+
+
+
+
+

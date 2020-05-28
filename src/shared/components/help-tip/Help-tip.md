@@ -1,10 +1,47 @@
-## Help tip
 
-Show a text with an icon that shows a help text when clicked or hovered
+{navigation}
+
+
+
+
+
+
+> Show a text with an icon that shows a help text when clicked or hovered
+
+
+
 
 ```hint
 The html code for this component needs an update. The previous version has been deprecated. Support for the previous format will be discontinued in Hedwig 11.
 ```
+
+
+
+### Markup
+```code
+[Base] .hw-help-tip
+
+Responsive modifiers:
+Place the help bubble to the right, left or middle
+[Left]              .hw-help-tip--left
+[Right]             .hw-help-tip--right
+[Small Left]        .hw-help-tip--small--left
+[Small Middle]      .hw-help-tip--small--middle
+[Small Right]       .hw-help-tip--small--right
+[Medium Left]       .hw-help-tip--medium--left
+[Medium Middle]     .hw-help-tip--medium--middle
+[Medium Right]      .hw-help-tip--medium--right
+[Large Left]        .hw-help-tip--large--left
+[Large Middle]      .hw-help-tip--large--middle
+[Large Right]       .hw-help-tip--large--right
+[XLarge Left]       .hw-help-tip--xlarge--left
+[XLarge Middle]     .hw-help-tip--xlarge--middle
+[XLarge Right]      .hw-help-tip--xlarge--right
+```
+
+
+
+### Examples
 
 ```html|light,plain
 <div class="hw-help-tip">
@@ -28,31 +65,9 @@ The html code for this component needs an update. The previous version has been 
 ```
 
 
-```code
-[Base] .hw-help-tip
-```
-
-### Responsive classes
-Place the help bubble to the right, left or middle
-```code
-[Left]          .hw-help-tip--left
-[Right]         .hw-help-tip--right
-[Small Left]    .hw-help-tip--small--left
-[Small Middle]  .hw-help-tip--small--middle
-[Small Right]   .hw-help-tip--small--right
-[Medium Left]   .hw-help-tip--medium--left
-[Medium Middle] .hw-help-tip--medium--middle
-[Medium Right]  .hw-help-tip--medium--right
-[Large Left]    .hw-help-tip--large--left
-[Large Middle]  .hw-help-tip--large--middle
-[Large Right]   .hw-help-tip--large--right
-[XLarge Left]   .hw-help-tip--xlarge--left
-[XLarge Middle] .hw-help-tip--xlarge--middle
-[XLarge Right]  .hw-help-tip--xlarge--right
-```
 
 
-### Examples
+
 
 #### Middle
 Default
@@ -177,3 +192,105 @@ Help text is shown in three different places based on screen size
 </div>
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+# Design guidelines
+
+> Help tip shows a text when hovering or clicking the help-icon
+
+
+
+
+### Help tip
+
+```image
+plain: true
+span: 2
+src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+title: "Normal"
+```
+```image
+plain: true
+span: 4
+src: "{assets}/img/docs/{postenbring}/{component}-2.png"
+title: "Hover / Click"
+```
+
+
+
+
+
+
+
+### Types of help tip boxes
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-types-1.png"
+title: "Left-aligned arrow"
+description: "The arrow points down on the left side of the box, with the help text growing from left to right."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-types-2.png"
+title: "Center-aligned arrow"
+description: "The arrow points down in the center of the box, with the help text growing from the middle and outwards."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-types-3.png"
+title: "Right-aligned arrow"
+description: "The arrow points down on the right side of the box, with the help text growing from right to left."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-types-3.png"
+title: "With heading"
+description: "You can add a heading to your text if you need to."
+```
+
+
+
+
+
+
+
+
+## Best practices
+
+### Do
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+description: "If there are multiple phrases that need an explanation in the same sentence, combine these in one help tip if appropriate. Never combine more than three explanations as it gets too much."
+```
+
+### Don't
+  
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+description: "Avoid placing a help tip icon in the middle of a sentence."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-dont-2.png"
+description: "Avoid placing too many help tip icons in the same paragraph as it breaks the flow and rythm, and makes a messy appearance."
+```

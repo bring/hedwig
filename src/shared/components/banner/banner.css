@@ -195,6 +195,9 @@
 
   &--expanded .hw-banner__trigger {
     /*display: none;*/
+    .fa-chevron-down {
+      transform: rotate(180deg);
+    }
   }
 
   &--expanded .hw-banner__contents {

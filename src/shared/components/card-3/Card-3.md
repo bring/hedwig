@@ -11,7 +11,7 @@ This intro is for the whole component. Not only design or development.
 
 
 
-## Development guidelines
+#
 
 
 ```code

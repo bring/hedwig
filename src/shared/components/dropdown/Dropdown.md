@@ -1,34 +1,47 @@
-## Dropdowns
 
-The custom dropdown will progressively enhance a native `<select />` element into a custom dropdown list.
+{navigation}
 
-Upon selecting an option, the native select will be updated with the correct value.
 
+
+
+
+> The custom dropdown will progressively enhance a native `<select />` element into a custom dropdown list.
+
+> Upon selecting an option, the native select will be updated with the correct value.
+
+
+```hint|neutral
 PS: When javaScript is disabled, the native select element will display.
+```
 
-### Attributes
+### Markup
+```code
+[Base]              .hw-dropdown
 
+[Native]            .hw-dropdown--native                Use the browser native select.
+                                                        Native is not compatible with the following: 
+                                                        data-hw-dropdown-searchable
+                                                        data-hw-dropdown-small
+                                                        data-hw-dropdown-placeholder
+```
+
+### Data properties
 ```code
 Required:
-
 [data-hw-dropdown]                    name of dropdown list
 
 Optional:
-
 [data-hw-dropdown-default-selected]   Value of option that should be selected by default
 [data-hw-dropdown-searchable]         Makes the dropdown searchable
 [data-hw-dropdown-small]              Reduced version (see bottom of page)
 [data-hw-dropdown-searchable]         Overrides the placeholder with custom value
 [data-hw-dropdown-placeholder]        Add short placeholder to an option
 [data-hw-dropdown-dirty]              Set to 'true' when updates are needed for a specific dropdown
-.hw-dropdown--native                  Use the browser native select.
-                                      Native is not compatible with the following: 
-                                      data-hw-dropdown-searchable
-                                      data-hw-dropdown-small
-                                      data-hw-dropdown-placeholder
 
 Client side rendering, see further down
 ```
+
+
 
 
 ### Example
@@ -380,4 +393,87 @@ countriesDropdown.dispatchEvent(evt);
 Using jQuery:
 ```code
 $('#countries').val('2').change();
+```
+
+
+
+
+
+
+
+# Design guidelines
+
+> Dropdowns present a list of options of which a user can select one. It is used in forms for users to submit data. Dropdowns come in two styles: filled and lined version.
+
+> Both types of text fields provide the same functionality, so the type of text field you can use depend on style alone.
+
+
+
+### {title} styles
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-styles-1.png"
+title: "Filled"
+description: "Filled text fields have more visual emphasis than lined text fields, to stand out when surrounded by other content. It is recommended to use this style for standalone text fields, or just a few together."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-styles-2.png"
+title: "Lined"
+description: "Lined text fields are more subtle, with less visual emphasis than filled text fields. Use this in places like forms, where many text fields are placed together. Their subtle apperance helps simplify the layout."
+```
+
+
+
+### {title} types
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-types-1.png"
+title: "Default option selected"
+description: "The first option is selected by default. Open the dropdown to select another option if you want to choose another option from the list."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-types-2.png"
+title: "Disabled option"
+description: "This dropdown has not yet been activated, and the user has to open the dropdown to choose a selectable option from the list."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-types-3.png"
+title: "Search selection"
+description: "This dropdown starts with an empty input. The user can type in what they are searching for, and a dropdown will appear with a list of matching options."
+```
+
+
+
+## Best practices
+
+### Do
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+description: "Labels should be short and descriptive."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-do-2.png"
+description: "Sort list items by logic; e.g. alphabetical order, increasing order or frequency of use – whichever is the most fitting."
+```
+
+### Don't
+  
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+description: "Do not mix dropdown styles within the same instance."
 ```

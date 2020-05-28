@@ -1,14 +1,20 @@
-# Figure
 
-Can contain images or video.
 
+> Can contain images or video.
+
+
+
+### Markup
 ```code
-[Base]        .hw-figure
+[Base]              .hw-figure
 
-Sub elements
-[Container]   .hw-figure__container
-[Figcaption]  .hw-figure__figcaption
+Elements:
+[Container]         .hw-figure__container
+[Figcaption]        .hw-figure__figcaption
 ```
+
+
+
 
 ### Default figure
 
@@ -36,4 +42,63 @@ Sub elements
     Can I help you? Yeah, can I have a dozen red roses, please? Oh, hi, Johnny. I didn't know it was you. 
   </figcaption>
 </figure>
+```
+
+
+
+
+# Design guidelines
+
+> Figures can contain images or video, and be with or without a caption. 
+
+
+
+### {title} formats
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-formats-1.png"
+title: "16:9"
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-formats-2.png"
+title: "4:3"
+```
+
+
+
+
+
+## Best practices
+
+### Do
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+description: "Images should have 64 px padding at the top and the bottom. If an image is related to a specific paragraph, padding can be reduced to 32 px."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-do-2.png"
+description: "Images should be full-width within it’s parent container."
+```
+
+### Don't
+  
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+description: "Don’t use images in custom proportions."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-dont-2.png"
+description: "Don’t use images in custom proportions."
 ```
