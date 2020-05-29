@@ -97,21 +97,21 @@ This is a list with lead style.
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-styles-1.png"
+src: "{assets}/img/{postenbring}/{component}-styles-1.png"
 title: "List"
 description: "Unordered list with bullets is the deafult list style. Use this to present content of equal status or value."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-styles-2.png"
+src: "{assets}/img/{postenbring}/{component}-styles-2.png"
 title: "Numbered list"
 description: "Numbered list imply a sequence, and the order they are listed should have a reason. This is commonly used when giving a set of instructions."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-styles-3.png"
+src: "{assets}/img/{postenbring}/{component}-styles-3.png"
 title: "No bullet list"
 description: "A plain text list with no bullets or numbers. Avoid using this for long lists as it can be harder to scan."
 ```
@@ -124,19 +124,19 @@ description: "A plain text list with no bullets or numbers. Avoid using this for
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-sizes-1.png"
+src: "{assets}/img/{postenbring}/{component}-sizes-1.png"
 title: "Small list"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-sizes-2.png"
+src: "{assets}/img/{postenbring}/{component}-sizes-2.png"
 title: "Default list"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-sizes-3.png"
+src: "{assets}/img/{postenbring}/{component}-sizes-3.png"
 title: "Large list"
 ```
 
@@ -154,7 +154,7 @@ title: "Large list"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Keep it short and clear."
 ```
 ### Don't
@@ -162,6 +162,6 @@ description: "Keep it short and clear."
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Don’t use numbered lists if the order is irrelevant."
 ```

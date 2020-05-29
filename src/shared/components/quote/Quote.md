@@ -76,13 +76,13 @@ Available in version 6.1.0
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+src: "{assets}/img/{postenbring}/{component}-1.png"
 title: "English quotation marks"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-2.png"
+src: "{assets}/img/{postenbring}/{component}-2.png"
 title: "Norwegian quotation marks"
 ```
 
@@ -95,7 +95,7 @@ title: "Norwegian quotation marks"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-styling-1.png"
+src: "{assets}/img/{postenbring}/{component}-styling-1.png"
 title: "Styling"
 description: "Quotes are styled in 32 px size with Posten Sans Light as the font weight. The source text is set in 16 px, the Technical font style."
 ```
@@ -113,7 +113,7 @@ description: "Quotes are styled in 32 px size with Posten Sans Light as the font
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use quotes to break up long articles with an interesting statement that makes users want to keep reading."
 ```
 
@@ -123,6 +123,6 @@ description: "Use quotes to break up long articles with an interesting statement
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Do not quote complete paragraphs and long texts as it gets hard to read."
 ```

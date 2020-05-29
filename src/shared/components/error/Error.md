@@ -75,7 +75,7 @@ Generic error message for input fields
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/error-1.png"
+src: "{assets}/img/{postenbring}/error-1.png"
 title: "Appearance"
 description: "When an error occurs, an error message of yellow background and black text should be displayed.
 
@@ -90,7 +90,7 @@ Use of yellow colour is the primary signal for marking when an error has occured
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/error-do-1.png"
+src: "{assets}/img/{postenbring}/error-do-1.png"
 description: "Error message should appear if multiple mistakes or errors has occurred, to cleary explain what has happened and why."
 ```
 
@@ -99,7 +99,7 @@ description: "Error message should appear if multiple mistakes or errors has occ
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/error-dont-1.png"
+src: "{assets}/img/{postenbring}/error-dont-1.png"
 description: "Don’t apply the yellow colour to items which are not an error or warning of any kind. Do not misuse yellow to scream for attention."
 ```
 

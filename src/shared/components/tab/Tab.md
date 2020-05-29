@@ -63,19 +63,19 @@ Removing the marker element will achieve this.
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-states-1.png"
+src: "{assets}/img/{postenbring}/{component}-states-1.png"
 title: "Active"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-states-2.png"
+src: "{assets}/img/{postenbring}/{component}-states-2.png"
 title: "Inactive"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-states-3.png"
+src: "{assets}/img/{postenbring}/{component}-states-3.png"
 title: "Hover"
 ```
 
@@ -92,7 +92,7 @@ title: "Hover"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use short titles for tab headings."
 ```
 
@@ -103,6 +103,6 @@ description: "Use short titles for tab headings."
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Don’t use dropdowns in tabs."
 ```

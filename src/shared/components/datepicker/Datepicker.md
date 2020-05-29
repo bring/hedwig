@@ -142,14 +142,14 @@ const datepickerWrapper = document.getElementById('datepicker-ajsd4ks8');
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-styles-1.png"
+src: "{assets}/img/{postenbring}/{component}-styles-1.png"
 title: "Filled"
 description: "Filled text fields have more visual emphasis than lined text fields, to stand out when surrounded by other content. It is recommended to use this style for standalone text fields, or just a few together."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-styles-2.png"
+src: "{assets}/img/{postenbring}/{component}-styles-2.png"
 title: "Lined"
 description: "Lined text fields are more subtle, with less visual emphasis than filled text fields. Use this in places like forms, where many text fields are placed together. Their subtle apperance helps simplify the layout."
 ```
@@ -162,21 +162,21 @@ description: "Lined text fields are more subtle, with less visual emphasis than 
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-types-1.png"
+src: "{assets}/img/{postenbring}/{component}-types-1.png"
 title: "Default"
 description: "Used when the date is known by the user, and a calendar dropdown is not neccessary."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-types-2.png"
+src: "{assets}/img/{postenbring}/{component}-types-2.png"
 title: "Single with calendar"
 description: "Single with calendar should be used when you need to select one date, accompanied by a calendar dropdown."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-types-3.png"
+src: "{assets}/img/{postenbring}/{component}-types-3.png"
 title: "Range with calendar"
 description: "Range with calendar should be used when selecting a range of dates, accompanied by a calendar widget."
 ```
@@ -195,7 +195,7 @@ description: "Range with calendar should be used when selecting a range of dates
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use placeholder text so users input the date in correct format."
 ```
 
@@ -204,12 +204,12 @@ description: "Use placeholder text so users input the date in correct format."
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Dont use a calendar with dropdown when asking for a date far back in time, e.g. a birth date. It is a hassle to go years back by clicking through all the months."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-2.png"
+src: "{assets}/img/{postenbring}/{component}-dont-2.png"
 description: "Do not mix styles within the same instance."
 ```

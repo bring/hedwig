@@ -389,7 +389,7 @@
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+src: "{assets}/img/{postenbring}/{component}-1.png"
 title: "Default footer"
 ```
 
@@ -398,7 +398,7 @@ title: "Default footer"
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-2.png"
+src: "{assets}/img/{postenbring}/{component}-2.png"
 title: "Slim footer"
 ```
 
@@ -408,7 +408,7 @@ title: "Slim footer"
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-3.png"
+src: "{assets}/img/{postenbring}/{component}-3.png"
 title: "Example of expanded footer"
 ```
 
@@ -421,13 +421,13 @@ title: "Example of expanded footer"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-4.png"
+src: "{assets}/img/{postenbring}/{component}-4.png"
 title: "Footer on mobile"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-5.png"
+src: "{assets}/img/{postenbring}/{component}-5.png"
 title: "Slim footer on mobile"
 ```
 

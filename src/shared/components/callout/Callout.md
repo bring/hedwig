@@ -58,7 +58,7 @@ plain: true
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/callout-1.png"
+src: "{assets}/img/{postenbring}/callout-1.png"
 title: "Callout"
 description: "A callout has a dark green ruler to separate itself from other content. A heading and descriptive text follows below, with an action button at the bottom."
 ```
@@ -71,7 +71,7 @@ description: "A callout has a dark green ruler to separate itself from other con
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/callout-do-1.png"
+src: "{assets}/img/{postenbring}/callout-do-1.png"
 description: "Callout can be added at the end of articles for users to reach out if they have any questions about our services."
 ```
 
@@ -80,7 +80,7 @@ description: "Callout can be added at the end of articles for users to reach out
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/callout-dont-1.png"
+src: "{assets}/img/{postenbring}/callout-dont-1.png"
 description: "Don’t write excessively long text in a callout. Keep it short and clear, and inviting for users to read it through."
 ```
 

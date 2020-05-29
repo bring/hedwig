@@ -216,13 +216,13 @@ Help text is shown in three different places based on screen size
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+src: "{assets}/img/{postenbring}/{component}-1.png"
 title: "Normal"
 ```
 ```image
 plain: true
 span: 4
-src: "{assets}/img/docs/{postenbring}/{component}-2.png"
+src: "{assets}/img/{postenbring}/{component}-2.png"
 title: "Hover / Click"
 ```
 
@@ -236,28 +236,28 @@ title: "Hover / Click"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-types-1.png"
+src: "{assets}/img/{postenbring}/{component}-types-1.png"
 title: "Left-aligned arrow"
 description: "The arrow points down on the left side of the box, with the help text growing from left to right."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-types-2.png"
+src: "{assets}/img/{postenbring}/{component}-types-2.png"
 title: "Center-aligned arrow"
 description: "The arrow points down in the center of the box, with the help text growing from the middle and outwards."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-types-3.png"
+src: "{assets}/img/{postenbring}/{component}-types-3.png"
 title: "Right-aligned arrow"
 description: "The arrow points down on the right side of the box, with the help text growing from right to left."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-types-3.png"
+src: "{assets}/img/{postenbring}/{component}-types-3.png"
 title: "With heading"
 description: "You can add a heading to your text if you need to."
 ```
@@ -276,7 +276,7 @@ description: "You can add a heading to your text if you need to."
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "If there are multiple phrases that need an explanation in the same sentence, combine these in one help tip if appropriate. Never combine more than three explanations as it gets too much."
 ```
 
@@ -285,12 +285,12 @@ description: "If there are multiple phrases that need an explanation in the same
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Avoid placing a help tip icon in the middle of a sentence."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-2.png"
+src: "{assets}/img/{postenbring}/{component}-dont-2.png"
 description: "Avoid placing too many help tip icons in the same paragraph as it breaks the flow and rythm, and makes a messy appearance."
 ```

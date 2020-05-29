@@ -604,14 +604,14 @@ On this page, only the first navbar is able to open the search, menu and login. 
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-0.png"
+src: "{assets}/img/{postenbring}/{component}-0.png"
 title: "Default navbar"
 ```
 
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+src: "{assets}/img/{postenbring}/{component}-1.png"
 title: "Menu opened"
 ```
 
@@ -636,14 +636,14 @@ Primary menu items are listed at the top, with the secondary menu items listed a
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-2.png"
+src: "{assets}/img/{postenbring}/{component}-2.png"
 title: "Navbar on mobile"
 ```
 
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-3.png"
+src: "{assets}/img/{postenbring}/{component}-3.png"
 title: "Navbar opened on mobile"
 ```
 
@@ -659,13 +659,13 @@ As users start to type in keywords, a dropdown with suggestions appear.
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-4.png"
+src: "{assets}/img/{postenbring}/{component}-4.png"
 title: "Activated search field in the navbar"
 ```
 
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-5.png"
+src: "{assets}/img/{postenbring}/{component}-5.png"
 title: "Activated search field in the navbar"
 ```

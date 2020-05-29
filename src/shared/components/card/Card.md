@@ -237,7 +237,7 @@ Modifiers:
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+src: "{assets}/img/{postenbring}/{component}-1.png"
 title: "Anatomy"
 ```
 
@@ -271,28 +271,28 @@ Media can be added to the top of a card if this is wanted.
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-block-1.png"
+src: "{assets}/img/{postenbring}/{component}-block-1.png"
 title: "Standalone heading"
 description: "This is the default heading of a card, and is the minimum requirement for all cards. A heading should not exceed two lines."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-block-2.png"
+src: "{assets}/img/{postenbring}/{component}-block-2.png"
 title: "Heading with subtitle"
 description: "Use this if the heading is long and you need to split it, or you want to add a secondary text to further specify the heading."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-block-3.png"
+src: "{assets}/img/{postenbring}/{component}-block-3.png"
 title: "Heading with overline text"
 description: "This adds an overline text above the heading, and can be used as a tag or descriptor of the card."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-block-4.png"
+src: "{assets}/img/{postenbring}/{component}-block-4.png"
 title: "Heading with icon"
 description: "An icon can be added to all title block types if you want to display an icon or image next to the heading."
 ```
@@ -308,28 +308,28 @@ description: "An icon can be added to all title block types if you want to displ
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-action-1.png"
+src: "{assets}/img/{postenbring}/{component}-action-1.png"
 title: "One-style buttons"
 description: "Plain links in dark green colour, with underline on hover."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-action-2.png"
+src: "{assets}/img/{postenbring}/{component}-action-2.png"
 title: "One-style buttons with HR"
 description: "A ruler can be added above the action links as a separator from the content further above."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-action-3.png"
+src: "{assets}/img/{postenbring}/{component}-action-3.png"
 title: "Two-style buttons"
 description: "The primary action is displayed as a button, while secondary actions are plain links."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-action-4.png"
+src: "{assets}/img/{postenbring}/{component}-action-4.png"
 title: "Two-style buttons with HR"
 description: "A ruler can be added above the action links as a separator from the content further above."
 ```
@@ -342,14 +342,14 @@ description: "A ruler can be added above the action links as a separator from th
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-media-1.png"
+src: "{assets}/img/{postenbring}/{component}-media-1.png"
 title: "16:9"
 description: "Add an image in 16:9 dimension."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-media-2.png"
+src: "{assets}/img/{postenbring}/{component}-media-2.png"
 title: "4:3"
 description: "Add an image in 4:3 dimension."
 ```
@@ -372,7 +372,7 @@ a layout.
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-anatomy-1.png"
+src: "{assets}/img/{postenbring}/{component}-anatomy-1.png"
 title: "Compressed card"
 ```
 
@@ -384,13 +384,13 @@ title: "Compressed card"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-specifications-1.png"
+src: "{assets}/img/{postenbring}/{component}-specifications-1.png"
 title: "Card"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-specifications-2.png"
+src: "{assets}/img/{postenbring}/{component}-specifications-2.png"
 title: "Compressed card"
 ```
 
@@ -408,14 +408,14 @@ title: "Compressed card"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "The tallest card in a row defines the height of
 the cards."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-2.png"
+src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Keep headings and texts short and clear. A card is just the entrance or action to a destination of thorough information."
 ```
 
@@ -424,18 +424,18 @@ description: "Keep headings and texts short and clear. A card is just the entran
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Cards placed in a row should not be of different heights, making a messy appearance."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-2.png"
+src: "{assets}/img/{postenbring}/{component}-dont-2.png"
 description: "Headings should not exceed two lines."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-3.png"
+src: "{assets}/img/{postenbring}/{component}-dont-3.png"
 description: "Do not build cards in another order than specified in this guideline."
 ```

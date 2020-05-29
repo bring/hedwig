@@ -60,7 +60,7 @@ Smaller components, such as icons and type, can align to a 4 px grid.
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+src: "{assets}/img/{postenbring}/{component}-1.png"
 ```
 
 
@@ -70,7 +70,7 @@ src: "{assets}/img/docs/{postenbring}/{component}-1.png"
 plain: true
 light: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-2.png"
+src: "{assets}/img/{postenbring}/{component}-2.png"
 ```
 
 
@@ -89,20 +89,20 @@ The 8 px grid should be used when creating new components and layouts in Hedwig.
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-3.png"
+src: "{assets}/img/{postenbring}/{component}-3.png"
 title: "Primary button – Medium Outline"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-4.png"
+src: "{assets}/img/{postenbring}/{component}-4.png"
 title: "Text field – Filled"
 ```
 
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-5.png"
+src: "{assets}/img/{postenbring}/{component}-5.png"
 title: "Accordions"
 ```
 
@@ -122,13 +122,13 @@ A general guidance is that the spacing goes down one level on the spatial scale.
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-6.png"
+src: "{assets}/img/{postenbring}/{component}-6.png"
 title: "Card on desktop"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-7.png"
+src: "{assets}/img/{postenbring}/{component}-7.png"
 title: "Card on mobile"
 ```
 
@@ -147,7 +147,7 @@ Some pages have predefined page layouts that you can apply your content to.
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-8.png"
+src: "{assets}/img/{postenbring}/{component}-8.png"
 ```
 
 
@@ -165,7 +165,7 @@ There is optional spacing when information is related.
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-9.png"
+src: "{assets}/img/{postenbring}/{component}-9.png"
 title: "Bring H1"
 description: "Used for the main heading at the top of the page. Uses 64 px spacing above. 32 px should be used if the page has breadcrumbs."
 ```
@@ -175,7 +175,7 @@ description: "Used for the main heading at the top of the page. Uses 64 px spaci
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-10.png"
+src: "{assets}/img/{postenbring}/{component}-10.png"
 title: "H2"
 description: "Used for secondary headings to mark new sections within a page. Can be used as a secondary title to support H1.
  
@@ -189,7 +189,7 @@ If used as a secondary title, use 32 px."
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-11.png"
+src: "{assets}/img/{postenbring}/{component}-11.png"
 title: "H3"
 description: "The H3 style comes in two weights; medium and regular. These can be used for smaller headings within a section of a text."
 ```
@@ -198,7 +198,7 @@ description: "The H3 style comes in two weights; medium and regular. These can b
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-11.png"
+src: "{assets}/img/{postenbring}/{component}-11.png"
 title: "Body"
 description: "Body is used for all main body copy, and uses 24 px padding to its title."
 ```
@@ -206,7 +206,7 @@ description: "Body is used for all main body copy, and uses 24 px padding to its
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-12.png"
+src: "{assets}/img/{postenbring}/{component}-12.png"
 title: "Components"
 description: "When inserting a component like an image, video, quote etc. the image gets a padding both over and under the component. 
 
@@ -226,19 +226,19 @@ You can releate the component to the text above by using 32 px instead of 64 px.
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use the 8 px spatial guidance."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-do-2.png"
+src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Create a visual hiearchy using sections and subsections."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-do-3.png"
+src: "{assets}/img/{postenbring}/{component}-do-3.png"
 description: "Create components that use the same spacing."
 ```
 
@@ -247,19 +247,19 @@ description: "Create components that use the same spacing."
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Don’t use random spacing properties with no clear vertical rythm."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-dont-2.png"
+src: "{assets}/img/{postenbring}/{component}-dont-2.png"
 description: "Don't try to fit too much into a too small space. "
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-dont-3.png"
+src: "{assets}/img/{postenbring}/{component}-dont-3.png"
 description: "Don’t be unconsistent when making new components."
 ```
 

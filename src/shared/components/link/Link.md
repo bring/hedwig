@@ -67,35 +67,35 @@ Modifiers:
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-types-1.png"
+src: "{assets}/img/{postenbring}/{component}-types-1.png"
 title: "Primary link"
 description: "This is the default link type. They are used on their own, in lists, or directly following content."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-types-2.png"
+src: "{assets}/img/{postenbring}/{component}-types-2.png"
 title: "Primary link – inverted"
 description: "This is the default link type displayed inverted, for use on dark backgrounds."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-types-3.png"
+src: "{assets}/img/{postenbring}/{component}-types-3.png"
 title: "Link with icon"
 description: "A primary link can be paired up with an icon to further describe what the link is for."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-types-4.png"
+src: "{assets}/img/{postenbring}/{component}-types-4.png"
 title: "Text link"
 description: "A text link is a link within a line of text. Text links are in darker green colour, and with an underline to differantiate from plain text."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-types-5.png"
+src: "{assets}/img/{postenbring}/{component}-types-5.png"
 title: "Without underline"
 description: "Links without underline are only to be used within other components which are a link in itself, e.g. a card."
 ```
@@ -105,19 +105,19 @@ description: "Links without underline are only to be used within other component
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-sizes-1.png"
+src: "{assets}/img/{postenbring}/{component}-sizes-1.png"
 title: "Small"
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-sizes-2.png"
+src: "{assets}/img/{postenbring}/{component}-sizes-2.png"
 title: "Default"
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-sizes-3.png"
+src: "{assets}/img/{postenbring}/{component}-sizes-3.png"
 title: "Large"
 ```
 
@@ -130,7 +130,7 @@ title: "Large"
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use labels which accurately reflect the content users will find at the link destination, and keep it short, with as few words as possible."
 ```
 
@@ -139,12 +139,12 @@ description: "Use labels which accurately reflect the content users will find at
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Don’t use labels that say nothing about what the link is about."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-dont-2.png"
+src: "{assets}/img/{postenbring}/{component}-dont-2.png"
 description: "Don’t write long and complex labels. Links should be kept short and descriptive, and within one line."
 ```

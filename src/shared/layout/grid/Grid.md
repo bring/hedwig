@@ -240,7 +240,7 @@ This is the space around the grid, giving the layout the space it needs to provi
 ```image
 plain: true
 span: 6
-src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+src: "{assets}/img/{postenbring}/{component}-1.png"
 title: "Desktop"
 ```
 
@@ -248,13 +248,13 @@ title: "Desktop"
 ```image
 plain: true
 span: 4
-src: "{assets}/img/docs/{postenbring}/{component}-2.png"
+src: "{assets}/img/{postenbring}/{component}-2.png"
 title: "Ipad"
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/docs/{postenbring}/{component}-3.png"
+src: "{assets}/img/{postenbring}/{component}-3.png"
 title: "Mobile"
 ```
 
@@ -271,13 +271,13 @@ title: "Mobile"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use maximum 4 column groups."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-2.png"
+src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Use the grid to make the columns to create a varied layout."
 ```
 
@@ -286,12 +286,12 @@ description: "Use the grid to make the columns to create a varied layout."
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Don't try to give too much information at once."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-2.png"
+src: "{assets}/img/{postenbring}/{component}-dont-2.png"
 description: "Don't make gutters too large, such as the same width as the columns."
 ```

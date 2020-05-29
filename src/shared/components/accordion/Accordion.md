@@ -252,7 +252,7 @@ This version is used in the menu on mobile
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/accordions-1-1.png"
+src: "{assets}/img/{postenbring}/accordions-1-1.png"
 title: "Use of accordions"
 description: "We use accordions to show large amounts of content in a small space through progressive disclosure. The section header gives an overview of the content, allowing the user to decide which sections to read."
 ```
@@ -260,7 +260,7 @@ description: "We use accordions to show large amounts of content in a small spac
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/accordions-1-2.png"
+src: "{assets}/img/{postenbring}/accordions-1-2.png"
 ```
 
 
@@ -272,13 +272,13 @@ src: "{assets}/img/docs/{postenbring}/accordions-1-2.png"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/accordions-do-1.png"
+src: "{assets}/img/{postenbring}/accordions-do-1.png"
 description: "Use headings to divide content if you have multiple subtopics within a section."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/accordions-do-2.png"
+src: "{assets}/img/{postenbring}/accordions-do-2.png"
 description: "Don’t use accordions for important information. Accordions hides content from users, and it is important to account for a user not noticing or reading all of the included content. If the information is important for everyone to read, place it in a full scrolling page with normal headers."
 ```
 
@@ -287,12 +287,12 @@ description: "Don’t use accordions for important information. Accordions hides
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/accordions-dont-1.png"
+src: "{assets}/img/{postenbring}/accordions-dont-1.png"
 description: "Use accordion to help make it easier for users to navigate through loads of information to find what they are looking for."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/accordions-dont-2.png"
+src: "{assets}/img/{postenbring}/accordions-dont-2.png"
 description: "Don’t nest accordions inside other accordions. For subtopics, use headers to divide the content."
 ```

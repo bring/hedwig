@@ -94,14 +94,14 @@ Required:
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/banner-types-1.png"
+src: "{assets}/img/{postenbring}/banner-types-1.png"
 title: "Expand"
 description: "This banner shows a one-line heading by default, and expands when clicked, showing a short paragraph with information of the occurred event or subject. The expanded section can contain a link to a page for further reading."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/banner-types-2.png"
+src: "{assets}/img/{postenbring}/banner-types-2.png"
 title: "No expand"
 description: "This banner shows a short sentence of information on one line, with no option to expand. The banner can be static or contain links for further reading."
 ```
@@ -114,7 +114,7 @@ description: "This banner shows a short sentence of information on one line, wit
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/banner-do-1.png"
+src: "{assets}/img/{postenbring}/banner-do-1.png"
 description: "Do use a solid button for main option, and outlined buttons for other options."
 ```
 
@@ -123,6 +123,6 @@ description: "Do use a solid button for main option, and outlined buttons for ot
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/banner-dont-1.png"
+src: "{assets}/img/{postenbring}/banner-dont-1.png"
 description: "Don’t use multiple solid buttons together."
 ```

@@ -34,7 +34,7 @@
 ```image
 plain: true
 span: 5
-src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+src: "{assets}/img/{postenbring}/{component}-1.png"
 title: "Normal"
 ```
 
@@ -50,7 +50,7 @@ title: "Normal"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use Show more on content-heavy pages to enable users the option to click to see more content, or scroll beyond. Show more can also be used at the bottom of a search page to load more results for instance."
 ```
 
@@ -59,7 +59,7 @@ description: "Use Show more on content-heavy pages to enable users the option to
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Show more shares a few similarities with an accordion, in that it can hide and reveal more content. But where an accordion usually holds text, Show more is intended for heavier, more complex content load, like images, cards and so forth. Therefore do not use a Show more light-weight content that an accordion is better suited for. Avoid making up custom hybrid components.
 "
 ```

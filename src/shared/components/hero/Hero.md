@@ -106,19 +106,19 @@ Content can be placed on top of the hero image and positioned right, left or cen
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-formats-1.png"
+src: "{assets}/img/{postenbring}/{component}-formats-1.png"
 title: "Default (55vh)"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-formats-2.png"
+src: "{assets}/img/{postenbring}/{component}-formats-2.png"
 title: "Small (35vh)"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-formats-3.png"
+src: "{assets}/img/{postenbring}/{component}-formats-3.png"
 title: "Full (100vh-navbar)"
 ```
 
@@ -128,13 +128,13 @@ title: "Full (100vh-navbar)"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-mobile-1.png"
+src: "{assets}/img/{postenbring}/{component}-mobile-1.png"
 title: "Mobile – Default (55vh)"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-mobile-2.png"
+src: "{assets}/img/{postenbring}/{component}-mobile-2.png"
 title: "Mobile – Small (35vh)"
 ```
 
@@ -151,13 +151,13 @@ title: "Mobile – Small (35vh)"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Keep in mind how the image of your choice will crop when viewed in different viewport sizes. A centered motif will scale easier, with less disturbance."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-2.png"
+src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Keep in mind how the image of your choice will crop when viewed in different viewport sizes. A centered motif will scale easier, with less disturbance."
 ```
 
@@ -166,12 +166,12 @@ description: "Keep in mind how the image of your choice will crop when viewed in
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Keep in mind how the image of your choice will crop when viewed in different viewport sizes. An image with the motif to one of the sides may crop off the edges in an unfortunate way."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-2.png"
+src: "{assets}/img/{postenbring}/{component}-dont-2.png"
 description: "Keep in mind how the image of your choice will crop when viewed in different viewport sizes. An image with the motif to one of the sides may crop off the edges in an unfortunate way."
 ```

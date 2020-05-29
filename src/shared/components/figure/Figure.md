@@ -57,13 +57,13 @@ Elements:
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-formats-1.png"
+src: "{assets}/img/{postenbring}/{component}-formats-1.png"
 title: "16:9"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-formats-2.png"
+src: "{assets}/img/{postenbring}/{component}-formats-2.png"
 title: "4:3"
 ```
 
@@ -78,13 +78,13 @@ title: "4:3"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Images should have 64 px padding at the top and the bottom. If an image is related to a specific paragraph, padding can be reduced to 32 px."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-2.png"
+src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Images should be full-width within it’s parent container."
 ```
 
@@ -93,12 +93,12 @@ description: "Images should be full-width within it’s parent container."
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Don’t use images in custom proportions."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-2.png"
+src: "{assets}/img/{postenbring}/{component}-dont-2.png"
 description: "Don’t use images in custom proportions."
 ```

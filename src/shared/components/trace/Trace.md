@@ -129,7 +129,7 @@ Required:
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-types-1.png"
+src: "{assets}/img/{postenbring}/{component}-types-1.png"
 title: "Primary"
 description: "Primary trace field is used where tracing is the primary action within 
 a page."
@@ -137,7 +137,7 @@ a page."
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-types-2.png"
+src: "{assets}/img/{postenbring}/{component}-types-2.png"
 title: "Secondary"
 description: "Secondary trace field is used where tracing is a secondary action within 
 a page."
@@ -145,14 +145,14 @@ a page."
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-types-3.png"
+src: "{assets}/img/{postenbring}/{component}-types-3.png"
 title: "Stacked Primary"
 description: "Stacked Primary is a compressed component of the primary trace, where the input field and button are stacked on top of each other. This can be used when space is luxury."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-types-4.png"
+src: "{assets}/img/{postenbring}/{component}-types-4.png"
 title: "Stacked Secondary"
 description: "Stacked Secondary is a compressed component of the secondary trace, where the input field and button are stacked on top of each other. This can be used when space is luxury."
 ```
@@ -168,13 +168,13 @@ description: "Stacked Secondary is a compressed component of the secondary trace
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use primary trace when tracing is the main action of the page."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-2.png"
+src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Use secondary trace when tracing is a secondary action in the sidebar."
 ```
 
@@ -183,7 +183,7 @@ description: "Use secondary trace when tracing is a secondary action in the side
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Dont use multiple trace fields on the same page."
 ```
 

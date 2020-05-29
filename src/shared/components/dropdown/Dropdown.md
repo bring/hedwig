@@ -413,14 +413,14 @@ $('#countries').val('2').change();
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-styles-1.png"
+src: "{assets}/img/{postenbring}/{component}-styles-1.png"
 title: "Filled"
 description: "Filled text fields have more visual emphasis than lined text fields, to stand out when surrounded by other content. It is recommended to use this style for standalone text fields, or just a few together."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-styles-2.png"
+src: "{assets}/img/{postenbring}/{component}-styles-2.png"
 title: "Lined"
 description: "Lined text fields are more subtle, with less visual emphasis than filled text fields. Use this in places like forms, where many text fields are placed together. Their subtle apperance helps simplify the layout."
 ```
@@ -431,21 +431,21 @@ description: "Lined text fields are more subtle, with less visual emphasis than 
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-types-1.png"
+src: "{assets}/img/{postenbring}/{component}-types-1.png"
 title: "Default option selected"
 description: "The first option is selected by default. Open the dropdown to select another option if you want to choose another option from the list."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-types-2.png"
+src: "{assets}/img/{postenbring}/{component}-types-2.png"
 title: "Disabled option"
 description: "This dropdown has not yet been activated, and the user has to open the dropdown to choose a selectable option from the list."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-types-3.png"
+src: "{assets}/img/{postenbring}/{component}-types-3.png"
 title: "Search selection"
 description: "This dropdown starts with an empty input. The user can type in what they are searching for, and a dropdown will appear with a list of matching options."
 ```
@@ -459,13 +459,13 @@ description: "This dropdown starts with an empty input. The user can type in wha
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Labels should be short and descriptive."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-do-2.png"
+src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Sort list items by logic; e.g. alphabetical order, increasing order or frequency of use – whichever is the most fitting."
 ```
 
@@ -474,6 +474,6 @@ description: "Sort list items by logic; e.g. alphabetical order, increasing orde
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Do not mix dropdown styles within the same instance."
 ```

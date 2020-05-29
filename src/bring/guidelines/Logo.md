@@ -41,7 +41,7 @@
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+src: "{assets}/img/{postenbring}/{component}-1.png"
 title: "Logo"
 ```
 
@@ -56,24 +56,24 @@ title: "Logo"
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-usage-1.png"
+src: "{assets}/img/{postenbring}/{component}-usage-1.png"
 title: "Logo in navbar on desktop"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-usage-2.png"
+src: "{assets}/img/{postenbring}/{component}-usage-2.png"
 title: "Logo in navbar on mobile"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-usage-3.png"
+src: "{assets}/img/{postenbring}/{component}-usage-3.png"
 title: "Logo in footer on desktop"
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-usage-4.png"
+src: "{assets}/img/{postenbring}/{component}-usage-4.png"
 title: "Logo in footer on mobile"
 ```

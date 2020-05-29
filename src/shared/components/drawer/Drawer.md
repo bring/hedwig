@@ -86,7 +86,7 @@ hedwig.HWDrawer();
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+src: "{assets}/img/{postenbring}/{component}-1.png"
 ```
 
 1. Close
@@ -105,7 +105,7 @@ At the bottom you can add call-to-action buttons if this is relevant for the con
 ```image
 plain: true
 span: 3
-src: "{assets}/img/docs/{postenbring}/{component}-2.png"
+src: "{assets}/img/{postenbring}/{component}-2.png"
 title: "Drawer"
 description: "A drawer should slide out 25 % of the total width of the viewport on desktop. On small screens, like mobile, the drawer appears across the full screen."
 ```
