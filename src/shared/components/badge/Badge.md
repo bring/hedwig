@@ -29,70 +29,9 @@ The badge will have a size 75% of surrounding content unless size modifiers are 
 
 
 
-## Badge types
-
-```html|plain,light,span-3,noSource
-<div class="hw-component">
-  <div class="hw-badge hw-badge--dark">
-    Badge
-  </div>
-</div>
-
-<h3>Dark green</h3>
-<p>Dark green badges should be used for lighter green backgrounds, and in need of a high contrast badge for light backgrounds.</p>
-```
-```code|light,span-3
-<div class="hw-badge hw-badge--dark">
-  Badge
-</div>
-```
-
-
-```html|plain,light,span-3,noSource
-<div class="hw-component">
-  <div class="hw-badge hw-badge--light">
-    Badge
-  </div>
-</div>
-
-<h3>Dark green</h3>
-<p>Dark green badges should be used for lighter green backgrounds, and in need of a high contrast badge for light backgrounds.</p>
-```
-```code|light,span-3
-<div class="hw-badge hw-badge--dark">
-  Badge
-</div>
-```
-
-
-```html|plain,light,span-3
-<div class="hw-badge hw-badge--light">
-  Badge
-</div>
-```
-```html|plain,light,span-3,noSource
-<h3>Dark green</h3>
-<p>Dark green badges should be used for lighter green backgrounds, and in need of a high contrast badge for light backgrounds.</p>
-```
-
-
-
 
 
 ### Examples
-
-#### Dark green
-```hint|neutral,span-3
-Dark green badges should be used for lighter green backgrounds, and in need of a high contrast badge for light backgrounds.
-```
-```html|span-3,plain,light
-<div class="hw-badge">
-  Badge
-</div>
-```
-
-
-
 
 ### Primary
 Dark green badges should be used for lighter green backgrounds, and in need of a high contrast badge for light backgrounds.
