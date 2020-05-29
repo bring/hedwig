@@ -1,19 +1,11 @@
 # Card 3 (Deprecated)
 
-Used on the home pages.
-This intro is for the whole component. Not only design or development.
-
-```html|span-6,noSource
-<script>window.test()</script>
-<button class="hw-button hw-button--primary" onclick="window.scrollToDesignGuidelines()">Design guidelines</button>
-<button class="hw-button hw-button--secondary" onclick="window.scrollToDevelopmentGuidelines()">Development guidelines</button>
-```
+> Used on the home pages.
 
 
 
-#
 
-
+### Markup
 ```code
 [Base]           .hw-card-3
 ```
@@ -45,86 +37,4 @@ This intro is for the whole component. Not only design or development.
       <hr class="hw-hr hw-hr--centered" />
    </a>
 </div>
-```
-
-
-
-
-
-## Design guidelines
-
-Accordions are vertically stacked lists og headers that reveal and hide associated sections of content.
-
-
-#### Image
-
-```hint|directive,span-3
-Do this
-```
-```hint|warning,span-3
-Do not do this.
-```
-
-
-```html|span-3,light,plain,noSource
-<h5>Do this</h5>
-```
-```html|span-3,light,plain,noSource
-<h4>Do not do this</h4>
-```
-
-
-```image
-plain: true
-span: 3
-src: "https://{postenbring}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
-title: "Do"
-description: "You can do this. It is good."
-```
-```image
-plain: true
-span: 3
-src: "https://{postenbring}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png"
-title: "Don't"
-description: "Do not do this thing right here. It does not look good."
-```
-
-
-```hint
-neutral: true
-span: 3
----
-Do
-Use Show more on content-heavy pages to enable users the option to click to see more content, or scroll beyond. Show more can also be used at the bottom of a search page to load more results for instance.
-```
-```hint
-neutral: true
-span: 3
----
-Don’t
-Show more shares a few similarities with an accordion, in that it can hide and reveal more content. But where an accordion usually holds text, Show more is intended for heavier, more complex content load, like images, cards and so forth. Therefore do not use a Show more light-weight content that an accordion is better suited for. Avoid making up custom hybrid components.
-
-```
-
-```html|span-3,light,plain,noSource
-<h5>Do</h5>
-Use Show more on content-heavy pages to enable users the option to click to see more content, or scroll beyond. Show more can also be used at the bottom of a search page to load more results for instance.
-```
-```html|span-3,light,plain,noSource
-<h4>Don't</h4>
-Show more shares a few similarities with an accordion, in that it can hide and reveal more content. But where an accordion usually holds text, Show more is intended for heavier, more complex content load, like images, cards and so forth. Therefore do not use a Show more light-weight content that an accordion is better suited for. Avoid making up custom hybrid components.
-```
-
-```html|span-3,light,plain,noSource
-<h3>Do this</h3>
-
-<img src="https://{postenbring}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-2.png" />
-
-<h5>Do</h5>
-Use Show more on content-heavy pages to enable users the option to click to see more content, or scroll beyond. Show more can also be used at the bottom of a search page to load more results for instance.
-```
-```html|span-3,light,plain,noSource
-<h4>Don't</h4>
-<img src="https://{postenbring}-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
-Show more shares a few similarities with an accordion, in that it can hide and reveal more content. But where an accordion usually holds text, Show more is intended for heavier, more complex content load, like images, cards and so forth. Therefore do not use a Show more light-weight content that an accordion is better suited for. Avoid making up custom hybrid components.
 ```
