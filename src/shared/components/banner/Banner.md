@@ -16,7 +16,7 @@ Modifiers:
 [Expanded]            .hw-banner--expanded;
 ```
 
-### Data properties
+### Data attributes
 ```code
 Required:
 [data-hw-banner="name"]   name of toggle (must be unique, used for aria-roles)

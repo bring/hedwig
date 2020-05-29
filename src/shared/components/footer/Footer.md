@@ -1,4 +1,10 @@
-## Footer
+
+{navigation}
+
+> The footer is placed at the bottom of every page of the website.
+
+> The footer contains Bring’s logo, links and button links to often used services, as well as links to Bring’s social media platforms.
+
 
 
 
@@ -361,4 +367,68 @@
 
 
 ```
+
+
+
+
+
+
+
+
+
+
+# Design guidelines
+
+
+> The footer is placed at the bottom of every page of the website.
+
+> The footer contains Bring’s logo, links and button links to often used services, as well as links to Bring’s social media platforms.
+
+
+
+```image
+plain: true
+span: 6
+src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+title: "Default footer"
+```
+
+> In condensed spaces, a slim footer can be used, with just the logo and legal links.
+
+```image
+plain: true
+span: 6
+src: "{assets}/img/docs/{postenbring}/{component}-2.png"
+title: "Slim footer"
+```
+
+> Footers can also be expanded with another row of list items, if you need more room for all your content.
+
+
+```image
+plain: true
+span: 6
+src: "{assets}/img/docs/{postenbring}/{component}-3.png"
+title: "Example of expanded footer"
+```
+
+
+
+> Footer on mobile
+
+> On small screens the footer stacks as a vertical container, with the list items in an accordion.
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-4.png"
+title: "Footer on mobile"
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-5.png"
+title: "Slim footer on mobile"
+```
+
 

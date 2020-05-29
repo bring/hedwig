@@ -1,9 +1,21 @@
-## Link list
 
+{navigation}
+
+> A collection of links presented in a list
+
+
+
+### Markup
 ```code
 [Base]  .hw-linklist
+
+Modifiers:
 [Small] .hw-linklist--small
 ```
+
+
+
+
 
 ### Default link list
 ```html|plain,light
@@ -22,3 +34,16 @@
   <li><a href="#">Another link to the same place</a></li>
 </ul>
 ```
+
+
+
+
+
+
+# Design guidelines
+
+> {title} is a variation of Link.
+
+> See [Link](/Link#design-guidelines) for guidelines and best practices.
+
+

@@ -1,7 +1,14 @@
-# Radio buttons
+
+
+{navigation}
+
+
+
 
 ```code
 [Base]                  .hw-radio-button
+
+Modifiers:
 [Error version]         .hw-radio-button--error
 ```
 
@@ -123,3 +130,19 @@
 </label>
 <div class="hw-error-simple hw-error--align-left">Error message!</div>
 ```
+
+
+
+
+
+
+
+
+# Design guidelines
+
+> {title} are a kind of selection control.
+
+> See [Selection-controls](/Selection-controls#design-guidelines) for guidelines and best practices.
+
+
+

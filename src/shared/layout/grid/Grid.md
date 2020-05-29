@@ -1,6 +1,9 @@
-## Grid
+{navigation}
 
-We use the [Csswizandry grids](https://github.com/csswizardry/csswizardry-grids).
+> We use the [Csswizandry grids](https://github.com/csswizardry/csswizardry-grids).
+
+
+
 
 ```code
 <div class="hw-grid [grid-modifiers]">
@@ -206,4 +209,89 @@ Example:
       <p class="hw-helpers-highlight">one-half</p>
     </div>
   </div>
+```
+
+
+
+
+
+
+
+
+
+# Design guidelines
+
+> Hedwig uses a simple 12 column grid to create page layouts through a series of rows and columns that hold content. 
+
+
+
+Columns
+The grid consists of a set of 4-12 columns. These columns can be grouped and contet can be places over multiple coloumns. 
+
+Gutters
+These are the padding gaps between the columns in your grid, we use 24 px gutter on larger screens and 16 px gutters on smaller screens.
+
+Margin
+This is the space around the grid, giving the layout the space it needs to provide clear information. 
+
+
+
+
+```image
+plain: true
+span: 6
+src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+title: "Desktop"
+```
+
+
+```image
+plain: true
+span: 4
+src: "{assets}/img/docs/{postenbring}/{component}-2.png"
+title: "Ipad"
+```
+```image
+plain: true
+span: 2
+src: "{assets}/img/docs/{postenbring}/{component}-3.png"
+title: "Mobile"
+```
+
+
+
+
+
+
+
+## Best practices
+
+### Do
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-do-1.png"
+description: "Use maximum 4 column groups."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-do-2.png"
+description: "Use the grid to make the columns to create a varied layout."
+```
+
+### Don't
+  
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-dont-1.png"
+description: "Don't try to give too much information at once."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-dont-2.png"
+description: "Don't make gutters too large, such as the same width as the columns."
 ```

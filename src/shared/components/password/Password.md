@@ -1,7 +1,11 @@
-## Password input field
 
-Input field with password strength indicator
+{navigation}
 
+
+> Input field with password strength indicator
+
+
+### Data attributes
 ```code
 [data-hw-password]                        Attach js functionality
 [data-hw-password-min-length=8]           (optional) Minimum length
@@ -111,3 +115,27 @@ Input field with password strength indicator
 - At least 8 signs
 - At leat 1 capital letter
 - Must include a number or a special character
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Design guidelines
+
+> {title} is a variation of Input.
+
+> See [Input](/Input#design-guidelines) for guidelines and best practices.
+
+
+

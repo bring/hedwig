@@ -1,11 +1,22 @@
-# Fieldset
 
-The <fieldset> tag is used to group related elements in a form.
-The <legend> tag defines a caption for the <fieldset> element.
 
+{navigation}
+
+
+
+
+> The <fieldset> tag is used to group related elements in a form.
+
+> The <legend> tag defines a caption for the <fieldset> element.
+
+
+
+### Markup
+```code   
+[Base]              .hw-fieldset
 ```
-.hw--fieldset
-```
+
+  
 
 
 ## With title
@@ -147,3 +158,19 @@ The <legend> tag defines a caption for the <fieldset> element.
   </div>
 </fieldset>
 ```
+
+
+
+
+
+
+
+
+# Design guidelines
+
+> {title} is a kind of selection control.
+
+> See [Selection-controls](/Selection-controls#design-guidelines) for guidelines and best practices.
+
+
+

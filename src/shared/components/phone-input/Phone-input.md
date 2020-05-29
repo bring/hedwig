@@ -1,10 +1,15 @@
-# Phone Input
+
+{navigation}
+
+> Input field for inputting phone numbers.
 
 ```hint
 Available in version 6.1.2
 ```
 
+```hint
 PS: This component is dependent on the dropdown component.
+```
 
 ```hint
 The label for phone input must be a <fieldset> to be valid.
@@ -90,3 +95,19 @@ This is because this is technically two form fields.
 ```hint
 For mobile and tablet, native mode will be enabled automatically
 ```
+
+
+
+
+
+
+
+
+
+
+# Design guidelines
+
+> {title} is a variation of Input.
+
+> See [Input](/Input#design-guidelines) for guidelines and best practices.
+

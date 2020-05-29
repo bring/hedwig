@@ -1,7 +1,16 @@
-## Checkbox
+
+
+
+
+{navigation}
+
+
+
 
 ```code
-[Normal]          .hw-checkbox
+[Base]            .hw-checkbox
+
+Modifiers:
 [Horisontal]      .hw-checkbox--horisontal
 [Error]           .hw-checkbox--error
 ```
@@ -127,3 +136,14 @@
   <div class="hw-error-simple hw-error--align-left">Error message!</div>
 </form>
 ```
+
+
+
+
+# Design guidelines
+
+> {title} is a kind of selection control.
+
+> See [Selection-controls](/Selection-controls#design-guidelines) for guidelines and best practices.
+
+

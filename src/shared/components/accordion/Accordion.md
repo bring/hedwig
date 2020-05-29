@@ -25,7 +25,7 @@ Elements:
 
 
 
-### Data properties
+### Data attributes
 ```code
 Required:
 [data-hw-accordion]

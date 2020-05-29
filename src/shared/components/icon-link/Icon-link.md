@@ -1,7 +1,12 @@
-Icon Link (Cards with icon)
 
-```
-[Base]  .hw-icon-link
+{navigation}
+
+
+> Icon Link (Cards with icon)
+
+### Markup
+```code
+[Base]      .hw-icon-link
 ```
 
 

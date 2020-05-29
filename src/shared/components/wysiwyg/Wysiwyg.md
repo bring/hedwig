@@ -1,8 +1,10 @@
-## Wysiwyg
 
-This component is used to wrap "rich text" regions, typically for article pages that are populated from a CMS.
+{navigation}
 
-It will apply the correct margins/paddings and vertical rythm for headlines, paragraphs and images.
+
+> This component is used to wrap "rich text" regions, typically for article pages that are populated from a CMS.
+
+> It will apply the correct margins/paddings and vertical rythm for headlines, paragraphs and images.
 
 ### Example
 

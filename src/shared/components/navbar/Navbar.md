@@ -1,7 +1,13 @@
-## Navbar
+{navigation}
+
+
+> The navbar is the container for primary navigation of {postenbring}’s website. The navbar is placed at the top of every page of the website.
+
 
 ```code
 [Base]            .hw-navbar
+
+Modifiers:
 [Absolute]        .hw-navbar--absolute
 [Fixed]           .hw-navbar--fixed
 ```
@@ -571,4 +577,95 @@ On this page, only the first navbar is able to open the search, menu and login. 
     <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
   </div>
 </header>
+```
+
+
+
+
+
+
+# Design guidelines
+
+
+{bring}
+> The navbar is the container for primary navigation of Bring’s website. The navbar is placed at the top of every page of the website.
+
+> The navbar contains Bring’s logo on the left side, and three navigation links on the right side. Click on Search to activate the global search field. Sign in lets users sign in to a personal area of the website. Click on Menu to open up the full menu.
+{/bring}
+
+{posten}
+> The navbar is the container for primary navigation of Posten’s website. The navbar is placed at the top of every page of the website.
+
+> The navbar contains Posten’s logo on the left side, and three navigation links on the right side. Click on Search to activate the global search field. Sign in lets users sign in to a personal area of the website. Click on Menu to open up the full menu.
+{/posten}
+
+
+
+```image
+plain: true
+span: 6
+src: "{assets}/img/docs/{postenbring}/{component}-0.png"
+title: "Default navbar"
+```
+
+```image
+plain: true
+span: 6
+src: "{assets}/img/docs/{postenbring}/{component}-1.png"
+title: "Menu opened"
+```
+
+1. Navbar
+This is the default navbar and should not be edited or customized.
+
+2. Primary menu items
+Primary menu items are listed at the top and styled with an icon prior to the link text. These should reflect the most popular services users use on the website.
+
+3. Secondary menu items
+Secondary menu items are listed below the primary menu items. Menu items should be sorted together in columns by category.
+
+
+
+#### Navbar on mobile
+
+On small screens the logo takes the center stage, with the search icon residing on the left side and the menu icon residing on the right side.
+
+Primary menu items are listed at the top, with the secondary menu items listed as an accordion beneath.
+
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-2.png"
+title: "Navbar on mobile"
+```
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/docs/{postenbring}/{component}-3.png"
+title: "Navbar opened on mobile"
+```
+
+
+
+#### Search field in navbar
+
+Clicking on Search in the navbar activates a global search field for users to search through Bring’s entire website.
+
+As users start to type in keywords, a dropdown with suggestions appear.
+
+
+```image
+plain: true
+span: 6
+src: "{assets}/img/docs/{postenbring}/{component}-4.png"
+title: "Activated search field in the navbar"
+```
+
+```image
+plain: true
+span: 6
+src: "{assets}/img/docs/{postenbring}/{component}-5.png"
+title: "Activated search field in the navbar"
 ```

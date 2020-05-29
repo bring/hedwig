@@ -25,7 +25,7 @@ PS: When javaScript is disabled, the native select element will display.
                                                         data-hw-dropdown-placeholder
 ```
 
-### Data properties
+### Data attributes
 ```code
 Required:
 [data-hw-dropdown]                    name of dropdown list

@@ -1,17 +1,24 @@
-# Autocomplete - Styling only - WORK IN PROGRESS
+{navigation}
 
-This component is meant to be used when searching up something with an API.
-Use your own javascript to toggle the active class, reset, and to bind the selected value to the input field.
 
-### Available classes
+```hint
+Styling only - WORK IN PROGRESS
+```
+
+> This component is meant to be used when searching up something with an API.
+> Use your own javascript to toggle the active class, reset, and to bind the selected value to the input field.
+
+
+### markup
 ```code
 [Base]           .hw-autocomplete
-[Active]         .hw-autocomplete--active
 
+Modifiers:
+[Active]         .hw-autocomplete--active
 [Error]          .hw-input--error (on the input field)
 ```
 
-### Available attributes
+### Data attributes
 ``` code
 data-hw-autocomplete-reset-visible=true       Show reset button
 ``` 
@@ -314,3 +321,16 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
   </div>
 </label>
 ```
+
+
+
+
+
+
+
+# Design guidelines
+
+> {title} is a variation of Input.
+
+> See [Input](/Input#design-guidelines) for guidelines and best practices.
+

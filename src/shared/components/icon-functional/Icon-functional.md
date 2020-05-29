@@ -1,6 +1,10 @@
-## Icon - Functional
 
-We use functional icons from Font Awesome
+{navigation}
+
+
+> We use functional icons from Font Awesome
+
+
 
 ```hint
 For service icons and logos, see [Icon-link](/Icon-link)
@@ -22,7 +26,7 @@ fa-eye: Name of icon
 
 ### Example icon
 
-```html
+```html|plain,light
 <i class="fas fa fa-eye"></i>
 ```
 
@@ -39,7 +43,7 @@ fal: Light
 
 ### Example icon sets
 
-```html
+```html|plain,light
 <i class="fa-fw fas fa-user"></i> Solid<br/>
 <i class="fa-fw far fa-user"></i> Regular<br/>
 <i class="fa-fw fab fa-facebook-f"></i> Brands<br/>
@@ -297,14 +301,14 @@ For functional icons we are using Font Awesome. [Scroll up to see how to get sta
 | lock                | lock            | fas          |
 | lock-open           | unlock          | fas          |
 | marker              | map-marker-alt  | fas          |
-| minus               | minus           | fas          |
+| minus               | minus           | fas, fal     |
 | mobile              | mobile          | fas          |
 | pakke               | box             | fas          |
 | paperclip           | paperclip       | fas          |
 | parcel              | box             | fas          |
 | pencil              | pencil          | fas          |
 | phone               | phone           | fas          |
-| plus                | plus            | fas          |
+| plus                | plus            | fas, fal     |
 | questionmark-circle | question-circle | fas          |
 | remove              | times-circle    | fas          |
 | refresh             | sync-alt        | fas          |

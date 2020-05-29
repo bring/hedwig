@@ -1,3 +1,10 @@
+{navigation}
+
+
+> Textarea for inputting larger blocks of text.
+
+
+
 ## Textarea
 
 ```html|plain,light
@@ -59,3 +66,18 @@
   <textarea class="hw-textarea" disabled rows="4" cols="50" placeholder="Skriv tekst her"></textarea>
 </label>
 ```
+
+
+
+
+
+
+# Design guidelines
+
+> {title} is a variation of Input.
+
+> See [Input](/Input#design-guidelines) for guidelines and best practices.
+
+
+
+

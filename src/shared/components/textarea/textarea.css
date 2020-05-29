@@ -42,7 +42,9 @@
     cursor: not-allowed !important;
   }
 
-
+  &::-webkit-resizer {
+    /* Should be moved 2 px up and to the left. Have not found any good way to do this. Consider this a challenge :) */;
+  }
 
 
   /**
