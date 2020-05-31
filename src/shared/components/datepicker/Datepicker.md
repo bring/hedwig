@@ -19,7 +19,7 @@
 
 #### Default
 
-```html|span-2,plain,light
+```html|span-3,plain,light
   <label class="hw-label hw-datepicker">
     Date picker label
     <div class="hw-datepicker__inner">
@@ -34,7 +34,7 @@
 
 #### Error
 
-```html|span-2,plain,light
+```html|span-3,plain,light
   <label class="hw-label hw-datepicker">
     Label
     <div class="hw-datepicker__inner">
@@ -49,7 +49,7 @@
 
 #### Disabled
 
-```html|span-2,plain,light
+```html|span-3,plain,light
   <label class="hw-label hw-datepicker" disabled>
     Label
     <div class="hw-datepicker__inner">
@@ -67,7 +67,7 @@
 
 #### Default
 
-```html|span-2,plain,light
+```html|span-3,plain,light
   <label class="hw-label hw-label--line hw-datepicker">
     Label
     <div class="hw-datepicker__inner">
@@ -82,7 +82,7 @@
 
 #### Error
 
-```html|span-2,plain,light
+```html|span-3,plain,light
   <label class="hw-label hw-label--line hw-datepicker">
     Label
     <div class="hw-datepicker__inner">
@@ -97,7 +97,7 @@
 
 #### Disabled
 
-```html|span-2,plain,light
+```html|span-3,plain,light
   <label class="hw-label hw-label--line hw-datepicker" disabled>
     Label
     <div class="hw-datepicker__inner">

@@ -65,7 +65,7 @@
   margin-top: calc(var(--hw-spacing-smallest) / 2);
   position: absolute !important;
   width: 100%;
-  min-width: 300px;
+  min-width: 240px;
   background: var(--hw-color-gray-lightest);
   border: none;
   border-radius: var(--hw-border-radius);
@@ -257,7 +257,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   margin: 0;
   width: 100%;
   height: calc(280px * 0.14285714285714286);
-  padding: var(--hw-spacing-smallest);
+  padding: 0px  ;
   color: var(--hw-color-black);
   font-size: var(--hw-font-size-smallest);
   line-height: 15px;

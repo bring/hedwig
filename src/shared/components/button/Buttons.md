@@ -32,38 +32,55 @@ Colors
 
 ### Sizes
 
-```html|span-6,plain,light
+#### Small
+```html|span-3,plain,light
   <button class="hw-button hw-button--primary hw-button--small">
     Small button
-  </button><br>
+  </button>
+```
+
+#### Medium
+```html|span-3,plain,light
   <button class="hw-button hw-button--primary hw-button--medium">
     Medium button
-  </button><br>
+  </button> 
+```
+
+#### Large
+```html|span-3,plain,light
   <button class="hw-button hw-button--primary hw-button--large">
     Large button
   </button>
+```
+
+#### Full
+```html|span-3,plain,light
   <button class="hw-button hw-button--primary hw-button--full">
     Full button
   </button>
+```
+
+#### Responsive (full on mobiile)
+```html|span-3,plain,light
   <button class="hw-button hw-button--primary hw-button--mobile-full">
     Responsive (full on mobile)
   </button>
-
 ```
+
+
+
+
 
 ### Default colors
 
 ```html|span-6,plain,light
-  <button class="hw-button hw-button--primary">
+  <button class="hw-button hw-button--medium hw-button--primary">
     Primary button
-  </button>
-  <a class="hw-button hw-button--primary">
-    Link styled as button
-  </a>
-  <button class="hw-button hw-button--secondary">
+  </button> 
+  <button class="hw-button hw-button--medium hw-button--secondary">
     Secondary button
   </button>
-  <button class="hw-button hw-button--primary" disabled>
+  <button class="hw-button hw-button--medium hw-button--primary" disabled>
     Disabled button
   </button>
 ```

@@ -65,6 +65,7 @@
     margin-right: 9px;
     margin-left: 9px;
     margin-top: 3px;
+    transform: rotate(180deg);
     @media (--large) {
       display: inline-block;
     }
@@ -90,6 +91,7 @@
       margin-right: 6px;
       margin-top: 2px;
       vertical-align: 2%;
+      transform: rotate(0deg);
     }
   }
 }
