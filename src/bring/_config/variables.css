@@ -23,7 +23,7 @@
     */
 
   --hw-color-link: var(--hw-color-black);
-  --hw-color-link-underline: var(--hw-color-primary-darker);
+  --hw-color-link-underline: var(--hw-color-primary);
   --hw-color-link-hover: var(--hw-color-primary-dark);
   --hw-color-link-underline-hover: var(--hw-color-primary-dark);
 
