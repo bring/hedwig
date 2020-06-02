@@ -61,7 +61,7 @@ description: "Fieldset is a predefined component of checkboxes put together. Thi
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -70,7 +70,7 @@ src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use just one style; either plain or with bounding box, within the same instance."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

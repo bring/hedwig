@@ -137,7 +137,7 @@ description: "For breadcrumbs of more than three levels, the middle steps are co
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -147,7 +147,7 @@ description: "Use just one instance of breadcrumbs on a single page. Place it at
 of the page, below the navbar."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

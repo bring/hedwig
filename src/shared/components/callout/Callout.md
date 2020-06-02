@@ -66,7 +66,7 @@ description: "A callout has a dark green ruler to separate itself from other con
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -75,7 +75,7 @@ src: "{assets}/img/{postenbring}/callout-do-1.png"
 description: "Callout can be added at the end of articles for users to reach out if they have any questions about our services."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

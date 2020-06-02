@@ -454,7 +454,7 @@ description: "This dropdown starts with an empty input. The user can type in wha
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -469,7 +469,7 @@ src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Sort list items by logic; e.g. alphabetical order, increasing order or frequency of use – whichever is the most fitting."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

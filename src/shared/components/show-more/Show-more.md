@@ -45,7 +45,7 @@ title: "Normal"
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -54,7 +54,7 @@ src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use Show more on content-heavy pages to enable users the option to click to see more content, or scroll beyond. Show more can also be used at the bottom of a search page to load more results for instance."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

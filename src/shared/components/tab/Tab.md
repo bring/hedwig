@@ -87,7 +87,7 @@ title: "Hover"
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -98,7 +98,7 @@ description: "Use short titles for tab headings."
 
 
 
-### Don't
+#### Don't
   
 ```image
 plain: true

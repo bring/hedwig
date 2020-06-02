@@ -220,7 +220,7 @@ You can releate the component to the text above by using 32 px instead of 64 px.
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -241,7 +241,7 @@ src: "{assets}/img/{postenbring}/{component}-do-3.png"
 description: "Create components that use the same spacing."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

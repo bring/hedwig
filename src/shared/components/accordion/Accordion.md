@@ -267,7 +267,7 @@ src: "{assets}/img/{postenbring}/accordions-1-2.png"
   
 ## Best practices
 
-### Do
+#### Do
   
 ```image
 plain: true
@@ -279,16 +279,16 @@ description: "Use headings to divide content if you have multiple subtopics with
 plain: true
 span: 3
 src: "{assets}/img/{postenbring}/accordions-do-2.png"
-description: "Don’t use accordions for important information. Accordions hides content from users, and it is important to account for a user not noticing or reading all of the included content. If the information is important for everyone to read, place it in a full scrolling page with normal headers."
+description: "Use accordion to help make it easier for users to navigate through loads of information to find what they are looking for."
 ```
 
-### Don't
+#### Don't
 
 ```image
 plain: true
 span: 3
 src: "{assets}/img/{postenbring}/accordions-dont-1.png"
-description: "Use accordion to help make it easier for users to navigate through loads of information to find what they are looking for."
+description: "Don’t use accordions for important information. Accordions hides content from users, and it is important to account for a user not noticing or reading all of the included content. If the information is important for everyone to read, place it in a full scrolling page with normal headers."
 ```
 ```image
 plain: true

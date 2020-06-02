@@ -265,7 +265,7 @@ description: "This is a global search field placed in the navbar. As you start t
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -280,7 +280,7 @@ src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "If searching is the primary action of the page, one should use the search field with the primary button, and make it the main focus in the layout. If not, one should use the search field with the secondary button instead."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

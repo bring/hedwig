@@ -312,7 +312,7 @@ title: "Mobile – Bring H2"
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -333,7 +333,7 @@ src: "{assets}/img/{postenbring}/{component}-do-3.png"
 description: "Use text styles according to it’s purpose to create a good hiearchy of the content, making it easy for users to read and navigate through the information."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

@@ -149,7 +149,7 @@ title: "Large list"
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -157,7 +157,7 @@ span: 3
 src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Keep it short and clear."
 ```
-### Don't
+#### Don't
   
 ```image
 plain: true

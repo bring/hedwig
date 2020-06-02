@@ -263,7 +263,7 @@ title: "Large"
 
 ## Best practices
 
-### Do
+#### Do
   
 ```image
 plain: true
@@ -281,7 +281,7 @@ description: "When an item has multiple badges inherit, the badges should be pla
 
 
 
-### Don't
+#### Don't
 
 ```image
 plain: true
@@ -582,7 +582,7 @@ title: "Large"
 
 ## Best practices
 
-### Do
+#### Do
   
 ```image
 plain: true
@@ -600,7 +600,7 @@ description: "When an item has multiple badges inherit, the badges should be pla
 
 
 
-### Don't
+#### Don't
 
 ```image
 plain: true

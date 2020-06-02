@@ -271,7 +271,7 @@ description: "You can add a heading to your text if you need to."
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -280,7 +280,7 @@ src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "If there are multiple phrases that need an explanation in the same sentence, combine these in one help tip if appropriate. Never combine more than three explanations as it gets too much."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

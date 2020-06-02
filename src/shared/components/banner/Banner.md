@@ -109,7 +109,7 @@ description: "This banner shows a short sentence of information on one line, wit
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -118,7 +118,7 @@ src: "{assets}/img/{postenbring}/banner-do-1.png"
 description: "Keep the information short and clear, and include a link to a separate page with all the information and details for users to read."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

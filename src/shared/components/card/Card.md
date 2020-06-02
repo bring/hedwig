@@ -403,7 +403,7 @@ title: "Compressed card"
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -419,7 +419,7 @@ src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Keep headings and texts short and clear. A card is just the entrance or action to a destination of thorough information."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

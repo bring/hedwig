@@ -301,7 +301,7 @@ span: 1
 src: "{assets}/img/{postenbring}/{component}-signature-1.png"
 ```
 
-#### Do
+##### Do
 
 ```image
 plain: true
@@ -322,7 +322,7 @@ src: "{assets}/img/{postenbring}/{component}-do-1-3.png"
 description: "Do use as background colour in primary buttons."
 ```
 
-#### Don't
+##### Don't
   
 ```image
 plain: true
@@ -355,7 +355,7 @@ span: 1
 src: "{assets}/img/{postenbring}/{component}-extended-4.png"
 ```
 
-#### Do
+##### Do
 
 ```image
 plain: true
@@ -371,7 +371,7 @@ description: "Do use for inline text links in sentences."
 ```
 
 
-#### Don't
+##### Don't
   
 ```image
 plain: true
@@ -390,7 +390,7 @@ span: 1
 src: "{assets}/img/{postenbring}/{component}-extended-3.png"
 ```
 
-#### Do
+##### Do
 
 ```image
 plain: true
@@ -412,7 +412,7 @@ description: "Do use in active states."
 ```
 
 
-#### Don't
+##### Don't
   
 ```image
 plain: true
@@ -438,7 +438,7 @@ span: 1
 src: "{assets}/img/{postenbring}/{component}-extended-2.png"
 ```
 
-#### Do
+##### Do
 
 ```image
 plain: true
@@ -447,7 +447,7 @@ src: "{assets}/img/{postenbring}/{component}-do-4-1.png"
 description: "Do use as hover colour in links on dark backgrounds."
 ```
 
-#### Don't
+##### Don't
   
 ```image
 plain: true
@@ -472,7 +472,7 @@ span: 1
 src: "{assets}/img/{postenbring}/{component}-extended-1.png"
 ```
 
-#### Do
+##### Do
 
 ```image
 plain: true
@@ -487,7 +487,7 @@ src: "{assets}/img/{postenbring}/{component}-do-5-2.png"
 description: "Do use as background for subtle badges."
 ```
 
-#### Don't
+##### Don't
   
 ```image
 plain: true
@@ -515,7 +515,7 @@ span: 1
 src: "{assets}/img/{postenbring}/{component}-warning-1.png"
 ```
 
-#### Do
+##### Do
 
 ```image
 plain: true
@@ -530,7 +530,7 @@ src: "{assets}/img/{postenbring}/{component}-do-6-2.png"
 description: "Do use to highlight errors and mistakes."
 ```
 
-#### Don't
+##### Don't
   
 ```image
 plain: true

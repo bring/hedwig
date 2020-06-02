@@ -35,7 +35,6 @@ module.exports = `
           font-family: 'Posten Sans Medium', sans-serif;
           font-size: 18px;
           color: #444444;
-          letter-spacing: -0.02em;
         }
 
         .hw-helpers-margin-highlighter {

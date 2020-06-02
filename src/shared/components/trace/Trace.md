@@ -163,7 +163,7 @@ description: "Stacked Secondary is a compressed component of the secondary trace
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -178,7 +178,7 @@ src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Use secondary trace when tracing is a secondary action in the sidebar."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

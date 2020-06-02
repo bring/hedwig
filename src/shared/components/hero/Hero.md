@@ -146,7 +146,7 @@ title: "Mobile – Small (35vh)"
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -161,7 +161,7 @@ src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Keep in mind how the image of your choice will crop when viewed in different viewport sizes. A centered motif will scale easier, with less disturbance."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

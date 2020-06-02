@@ -125,7 +125,7 @@ title: "Large"
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -134,7 +134,7 @@ src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use labels which accurately reflect the content users will find at the link destination, and keep it short, with as few words as possible."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true

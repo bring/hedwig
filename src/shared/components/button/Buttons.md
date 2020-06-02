@@ -248,7 +248,7 @@ title: "Full (Responsive)"
 
 ## Best practices
 
-### Do
+#### Do
 
 ```image
 plain: true
@@ -263,7 +263,7 @@ src: "{assets}/img/{postenbring}/buttons-do-2.png"
 description: "Describe the action for each button short and clearly."
 ```
 
-### Don't
+#### Don't
   
 ```image
 plain: true
