@@ -12,17 +12,17 @@
   text-transform: uppercase;
 
   &:hover {
-    color: var(--hw-color-primary-dark);
-    fill: var(--hw-color-primary-dark);
+    color: var(--hw-color-link-hover);
+    fill: var(--hw-color-link-hover);
 
     .hw-breadcrumb__arrow {
-      color: var(--hw-color-primary-dark);
-      fill: var(--hw-color-primary-dark);
+      color: var(--hw-color-link-hover);
+      fill: var(--hw-color-link-hover);
       opacity: 0;
     }
     .hw-breadcrumb__arrow-hover {
-      color: var(--hw-color-primary-dark);
-      fill: var(--hw-color-primary-dark);
+      color: var(--hw-color-link-hover);
+      fill: var(--hw-color-link-hover);
       opacity: 1;
     }
   }
