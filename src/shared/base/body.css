@@ -9,7 +9,6 @@ html {
   fill: var(--hw-color-black);
   color: var(--hw-color-black);
   line-height: 1.4;
-  letter-spacing: -0.02em;
   cursor: auto;
 }
 
