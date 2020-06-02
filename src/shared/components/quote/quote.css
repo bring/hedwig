@@ -4,8 +4,8 @@
 
 .hw-quote {
   display: block;
-  margin: var(--hw-spacing-larger) 0;
-  padding: 0 var(--hw-spacing);
+  margin: var(--hw-spacing-medium-4) 0;
+  padding: 0 var(--hw-spacing-medium-2);
   width: 100%;
 
   /**
@@ -51,5 +51,5 @@
 .hw-quote__author {
   font-size: var(--hw-font-size-smaller);
   font-style: normal;
-  margin-top: var(--hw-spacing-smaller);
+  margin-top: var(--hw-spacing-small-3);
 }

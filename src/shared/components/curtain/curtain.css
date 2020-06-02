@@ -5,7 +5,7 @@
 .hw-curtain {
   overflow: hidden;
   transition: height 0.3s ease;
-  padding-bottom: var(--hw-spacing-smaller);
+  padding-bottom: var(--hw-spacing-small-3);
 
   /**
    * Elements
@@ -41,7 +41,7 @@
     &::after {
       position: absolute;
       top: 52%;
-      right: var(--hw-spacing-small);
+      right: var(--hw-spacing-small-4);
       display: block;
       width: 10px;
       height: 2px;
@@ -58,8 +58,8 @@
   }
 
   &__content {
-    padding-top: var(--hw-spacing-small);
-    padding-bottom: var(--hw-spacing-small);
+    padding-top: var(--hw-spacing-small-4);
+    padding-bottom: var(--hw-spacing-small-4);
   }
 
   /**

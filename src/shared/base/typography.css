@@ -234,7 +234,7 @@
       line-height: 75%;
       margin: 0;
       margin-top: 6px;
-      letter-spacing: var(--hw-spacing-smallest);
+      letter-spacing: var(--hw-spacing-small-2);
     }
 
     &.hw-text-lead::first-letter {

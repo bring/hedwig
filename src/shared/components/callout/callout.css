@@ -8,15 +8,15 @@
   display: block;
   border: 0px solid var(--hw-color-gray-lighter);
   border-top: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
-  padding: var(--hw-spacing-small) 0;
+  padding: var(--hw-spacing-small-4) 0;
 
   p {
   	color: var(--hw-color-gray-dark);
-  	padding: var(--hw-spacing-small) 0 var(--hw-spacing-smallest) 0;
+  	padding: var(--hw-spacing-small-4) 0 var(--hw-spacing-small-2) 0;
   }
 
   @media (--max-medium) {
-    padding: var(--hw-spacing-smaller);
+    padding: var(--hw-spacing-small-3);
   }
 
 }

@@ -56,7 +56,7 @@
   &__button::after {
     content: '+';
     color: var(--hw-color-primary-dark);
-    margin-left: calc(var(--hw-spacing-smallest) + var(--hw-spacing-tiny));
+    margin-left: calc(var(--hw-spacing-small-2) + var(--hw-spacing-small-1));
     font-family: var(--hw-font-primary-regular);
     font-weight: var(--hw-font-weight-regular);
     font-size: 24px;

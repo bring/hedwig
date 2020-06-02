@@ -10,7 +10,7 @@
 
 ### Markup
 ```code
-[Base]                .hw-accordion
+[Base]                 .hw-accordion
 
 Modifiers:
 [Menu]                 .hw-accordion--menu

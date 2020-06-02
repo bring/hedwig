@@ -8,8 +8,8 @@
   display: block;
   width: 100%;
   height: var(--hw-input-field-height);
-  /*margin-top: var(--hw-spacing-tiny);*/
-  padding: var(--hw-spacing-small);
+  /*margin-top: var(--hw-spacing-small-1);*/
+  padding: var(--hw-spacing-small-4);
   background-color: var(--hw-color-gray-lightest);
   font-size: var(--hw-font-size-small);
   line-height: normal;
@@ -64,9 +64,9 @@
     background: transparent;
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-light);
     padding-left: 0px;
-    padding-top: var(--hw-spacing-tiny);
-    padding-bottom: var(--hw-spacing-smaller);
-    height: calc(var(--hw-input-field-height) - var(--hw-spacing-small)  - var(--hw-spacing-small) + var(--hw-spacing-tiny) +  var(--hw-spacing-smaller));
+    padding-top: var(--hw-spacing-small-1);
+    padding-bottom: var(--hw-spacing-small-3);
+    height: calc(var(--hw-input-field-height) - var(--hw-spacing-small-4)  - var(--hw-spacing-small-4) + var(--hw-spacing-small-1) +  var(--hw-spacing-small-3));
     border-radius: 0px;
   }
   &--line {
@@ -78,7 +78,7 @@
 
     &[disabled], &:disabled, &[disabled="disabled"] {
       background: transparent;
-      padding: var(--hw-spacing-small);
+      padding: var(--hw-spacing-small-4);
     }
   }
 }

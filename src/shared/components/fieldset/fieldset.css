@@ -8,7 +8,7 @@
   padding: 0;
   border: 0;
   margin: 0;
-  line-height: var(--hw-spacing);
+  line-height: var(--hw-spacing-medium-2);
 
   /**
    * Elements
@@ -17,7 +17,7 @@
   &__legend {
     display: block;
     width: 100%;
-    padding: var(--hw-spacing-small) 0;
+    padding: var(--hw-spacing-small-4) 0;
     margin: 0;
     margin-bottom: 2px;
     background: transparent;
@@ -35,6 +35,6 @@
    */
   &__content--full {
     padding: 0;
-    padding-top: var(--hw-spacing);
+    padding-top: var(--hw-spacing-medium-2);
   }
 }

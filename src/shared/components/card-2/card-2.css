@@ -8,7 +8,7 @@
   flex-direction: column;
   background: var(--hw-color-primary-lighter);
   border-radius: var(--hw-border-radius);
-  margin-bottom: var(--hw-spacing-small);
+  margin-bottom: var(--hw-spacing-small-4);
 
   &:hover {
     opacity: 0.8;
@@ -33,7 +33,7 @@
 
   &__body {
     z-index: 1;
-    padding: var(--hw-spacing-small);
+    padding: var(--hw-spacing-small-4);
     position: relative;
     flex-basis: auto;
     /* Using :after here to avoid showing border on page load */
@@ -55,15 +55,15 @@
   }
 
   &__title {
-    margin-top: var(--hw-spacing-smallest);
-    margin-bottom: var(--hw-spacing-smallest);
+    margin-top: var(--hw-spacing-small-2);
+    margin-bottom: var(--hw-spacing-small-2);
     font-size: var(--hw-font-size-h4);
   }
 
   &__text {
     display: inline-block;
     min-height: 60px;
-    margin-top: var(--hw-spacing-smaller);
+    margin-top: var(--hw-spacing-small-3);
     font-size: var(--hw-font-size-small);
 
     @extend .hw-text-less-line-height;

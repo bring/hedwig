@@ -4,14 +4,14 @@
 
 .hw-textarea {
   font-size: var(--hw-font-size-small);
-  padding: var(--hw-spacing-small);
+  padding: var(--hw-spacing-small-4);
   border: none;
   border-radius: var(--hw-border-radius);
   background-color: var(--hw-color-gray-lightest);
   display: block;
   width: 100%;
   transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
-  margin-top: var(--hw-spacing-tiny);
+  margin-top: var(--hw-spacing-small-1);
   position: relative;
   -webkit-appearance: none;
 
@@ -68,7 +68,7 @@
     }
 
     &.hw-textarea--error + .hw-error {
-      padding-left: var(--hw-spacing-small) !important;
+      padding-left: var(--hw-spacing-small-4) !important;
     }
   }
 

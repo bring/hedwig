@@ -27,7 +27,7 @@
 .hw-help-tip {
     display: inline-block;
     position: relative;
-    margin-right: var(--hw-spacing-smallest);
+    margin-right: var(--hw-spacing-small-2);
     &:last-of-type {
       margin-right: 0;
     }
@@ -64,7 +64,7 @@
         display: block;
         visibility: hidden;
         color: var(--hw-color-black);
-        padding: var(--hw-spacing);
+        padding: var(--hw-spacing-medium-2);
         font-family: var(--hw-font-primary-regular);
         font-weight: var(--hw-font-weight-regular);
         font-size: var(--hw-font-size-p);
@@ -90,7 +90,7 @@
     
     &__button:focus ~ &__content, &__button:hover ~ &__content {
       background-color: var(--hw-color-primary-lighter);
-      box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-primary-lighter); /* Coverup outline chrome */
+      box-shadow: 0 0 0 var(--hw-spacing-small-2) var(--hw-color-primary-lighter); /* Coverup outline chrome */
       visibility: visible;
     }
     /* Old code deprecated - TO BE REMOVED  END */
@@ -104,7 +104,7 @@
       }
       & .hw-help-tip__content {
         background-color: var(--hw-color-primary-lighter);
-        box-shadow: 0 0 0 var(--hw-spacing-smallest) var(--hw-color-primary-lighter); /* Coverup outline chrome */
+        box-shadow: 0 0 0 var(--hw-spacing-small-2) var(--hw-color-primary-lighter); /* Coverup outline chrome */
         visibility: visible;
         opacity: 1;
         transition: opacity var(--hw-transition-time-quick) ease-in-out;

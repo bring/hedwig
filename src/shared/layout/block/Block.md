@@ -87,14 +87,22 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 ### Sizes
 
 ```code
-smallest:     6px
-smaller:     12px
-small:       18px
-default:     24px
-large:       36px
-larger:      48px
-even-larger: 72px
+small-1: 4px;
+small-2: 8px;
+small-3: 12px;
+small-4: 16px;
+
+medium-1: 20px;
+medium-2: 24px;
+medium-3: 32px;
+medium-4: 40px;
+
+large-1: 48px;
+large-2: 64px;
+large-3: 80px;
+large-4: 120px;
 ```
+
 
 ### Block modifiers (margin & padding)
 
@@ -128,18 +136,6 @@ even-larger: 72px
 </div>
 ```
 
-### Block modifiers targeted larger and even larger margin
-```code
-[Larger margin top mobile]          .hw-block--mt-larger-mobile
-[Larger margin top desktop]         .hw-block--mt-larger-desktop
-[Larger margin bottom mobile]       .hw-block--mb-larger-mobile
-[Larger margin bottom desktop]      .hw-block--mb-larger-desktop
-
-[Even larger margin top mobile]     .hw-block--mt-even-larger-mobile
-[Even larger margin top desktop]    .hw-block--mt-even-larger-desktop
-[Even larger margin bottom mobile]  .hw-block--mb-even-larger-mobile
-[Even larger margin bottom desktop] .hw-block--mb-even-larger-desktop
-```
 
 ### Example targeted margin
 ```code

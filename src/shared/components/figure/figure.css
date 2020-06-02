@@ -29,7 +29,7 @@
   & figcaption {
     position: relative;
     line-height: 1.5;
-    margin-top: var(--hw-spacing-smaller);
+    margin-top: var(--hw-spacing-small-3);
     text-align: left;
     font-size: var(--hw-font-size-smallest);
     color: var(--hw-color-black);

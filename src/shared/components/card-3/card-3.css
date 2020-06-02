@@ -3,13 +3,13 @@
  */
 
 .hw-card-3 {
-  padding: var(--hw-spacing-large) var(--hw-spacing);
+  padding: var(--hw-spacing-medium-3) var(--hw-spacing-medium-2);
   display: block;
   position: relative;
   text-align: center;
   background: var(--hw-color-primary-lighter);
   border-radius: var(--hw-border-radius);
-  margin-bottom: var(--hw-spacing-small);
+  margin-bottom: var(--hw-spacing-small-4);
 
   &::after {
 
@@ -32,12 +32,12 @@
   }
 
   &__title {
-    margin-top: var(--hw-spacing-smaller);
-    margin-bottom: var(--hw-spacing-large);
+    margin-top: var(--hw-spacing-small-3);
+    margin-bottom: var(--hw-spacing-medium-3);
   }
 
   &__text {
-    margin: var(--hw-spacing-large) 0;
+    margin: var(--hw-spacing-medium-3) 0;
   }
 
   &__media {

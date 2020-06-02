@@ -23,7 +23,7 @@
     overflow: auto;
     white-space: nowrap;
     text-align: center;
-    padding: 0 var(--hw-spacing);
+    padding: 0 var(--hw-spacing-medium-2);
 
     &::after {
       content: "";
@@ -31,7 +31,7 @@
       top: 0;
       bottom: 0;
       right: 0;
-      width: var(--hw-spacing-large);
+      width: var(--hw-spacing-medium-3);
       background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 90%);
     }
   }
@@ -39,7 +39,7 @@
   &__link {
     position: relative;
     display: inline-block;
-    padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
+    padding: var(--hw-spacing-small-3) var(--hw-spacing-small-4);
     color: var(--hw-color-gray-dark);
     font-size: var(--hw-font-size-small);
 

@@ -12,7 +12,7 @@
     background: var(--hw-color-gray);
     width: 100%;
     min-height: 100vh;
-    padding: 0 var(--hw-spacing-larger);
+    padding: 0 var(--hw-spacing-medium-4);
     position: absolute;
     top: 0;
     left: 0;

@@ -115,7 +115,7 @@ description: "This banner shows a short sentence of information on one line, wit
 plain: true
 span: 3
 src: "{assets}/img/{postenbring}/banner-do-1.png"
-description: "Do use a solid button for main option, and outlined buttons for other options."
+description: "Keep the information short and clear, and include a link to a separate page with all the information and details for users to read."
 ```
 
 ### Don't
@@ -124,5 +124,5 @@ description: "Do use a solid button for main option, and outlined buttons for ot
 plain: true
 span: 3
 src: "{assets}/img/{postenbring}/banner-dont-1.png"
-description: "Don’t use multiple solid buttons together."
+description: "Do not add multiple levels of nested expanding sections in a banner."
 ```

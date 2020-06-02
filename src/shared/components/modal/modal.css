@@ -39,17 +39,17 @@
     display: block;
     float: right;
     border: 0;
-    margin-left: var(--hw-spacing-smaller);
-    margin-bottom: var(--hw-spacing-smaller);
+    margin-left: var(--hw-spacing-small-3);
+    margin-bottom: var(--hw-spacing-small-3);
     width: 50px;
     height: 50px;
 
     @media (--medium) {
       background: var(--hw-color-gray-lightest);
       position: absolute;
-      padding: var(--hw-spacing-smallest);
-      right: calc( var(--hw-spacing-small) * -1);
-      top: calc( var(--hw-spacing-small) * -1);
+      padding: var(--hw-spacing-small-2);
+      right: calc( var(--hw-spacing-small-4) * -1);
+      top: calc( var(--hw-spacing-small-4) * -1);
     }
 
     &:hover {
@@ -61,23 +61,23 @@
     z-index: var(--z-index--modal-foreground);
     width: 100%;
     background: var(--hw-color-white);
-    padding: var(--hw-spacing);
-    margin: var(--hw-spacing);
+    padding: var(--hw-spacing-medium-2);
+    margin: var(--hw-spacing-medium-2);
 
     @media (--medium) {
       max-width: 700px;
-      padding: var(--hw-spacing-large);
-      margin: var(--hw-spacing-larger);
+      padding: var(--hw-spacing-medium-3);
+      margin: var(--hw-spacing-medium-4);
     }
   }
 
   &__body {
-    padding-top: var(--hw-spacing);
+    padding-top: var(--hw-spacing-medium-2);
   }
 
   &__actions {
     text-align: right;
-    padding-top: var(--hw-spacing);
+    padding-top: var(--hw-spacing-medium-2);
   }
 
   /**

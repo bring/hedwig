@@ -5,7 +5,7 @@
 .hw-dropdown {
   position: relative;
   height: var(--hw-input-field-height);
-  margin: var(--hw-spacing-tiny) 0 0 0;
+  margin: var(--hw-spacing-small-1) 0 0 0;
 
   &:focus {
     outline: 0;
@@ -49,7 +49,7 @@
   }
 
   &__placeholder {
-    padding: var(--hw-spacing-small);
+    padding: var(--hw-spacing-small-4);
     width: 100%;
     height: var(--hw-input-field-height);
     white-space: nowrap;
@@ -71,7 +71,7 @@
     &::after {
       position: absolute;
       top: 19px;
-      right: var(--hw-spacing-small);
+      right: var(--hw-spacing-small-4);
       display: block;
       width: 10px;
       height: 2px;
@@ -90,15 +90,15 @@
   &__options {
     padding: 0;
     margin: 0;
-    top: calc(var(--hw-spacing-small) * 2 + var(--hw-font-size-smaller) + 8px);
+    top: calc(var(--hw-spacing-small-4) * 2 + var(--hw-font-size-smaller) + 8px);
     list-style-type: none;
     width: 100%;
   }
 
   &__option {
-    padding: var(--hw-spacing-small) 0;
+    padding: var(--hw-spacing-small-4) 0;
     border-top: var(--hw-border-thickness) solid var(--hw-color-gray-lighter);
-    margin: 3px var(--hw-spacing-small);
+    margin: 3px var(--hw-spacing-small-4);
     line-height: var(--hw-font-size-p);
 
     &:hover {
@@ -181,9 +181,9 @@
     background: transparent;
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-light);
     padding-left: 0px;
-    padding-top: var(--hw-spacing-tiny);
-    padding-bottom: var(--hw-spacing-smaller);
-    height: calc(var(--hw-input-field-height) - var(--hw-spacing-small)  - var(--hw-spacing-small) + var(--hw-spacing-tiny) +  var(--hw-spacing-smaller));
+    padding-top: var(--hw-spacing-small-1);
+    padding-bottom: var(--hw-spacing-small-3);
+    height: calc(var(--hw-input-field-height) - var(--hw-spacing-small-4)  - var(--hw-spacing-small-4) + var(--hw-spacing-small-1) +  var(--hw-spacing-small-3));
     border-radius: 0px;
 
     &.hw-dropdown--native {
@@ -195,8 +195,8 @@
       linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
       linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 37%, transparent 38%, transparent 100%),
       linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray) 63%, var(--hw-color-gray) 71%, var(--hw-color-white) 72%, var(--hw-color-white) 100%);
-      background-size: var(--hw-spacing-small) var(--hw-spacing-small);
-      background-position: calc(100% - var(--hw-spacing-small)) 25%;
+      background-size: var(--hw-spacing-small-4) var(--hw-spacing-small-4);
+      background-position: calc(100% - var(--hw-spacing-small-4)) 25%;
       background-repeat: no-repeat;
     }
 
@@ -221,7 +221,7 @@
 
     &[disabled], &:disabled, &[disabled="disabled"] {
       background: transparent;
-      padding: var(--hw-spacing-small);
+      padding: var(--hw-spacing-small-4);
     }
   }
 
@@ -240,7 +240,7 @@
     color: var(--hw-color-black);
     background-color: var(--hw-color-gray-lightest);
     -webkit-appearance: none;
-    padding: var(--hw-spacing-small);
+    padding: var(--hw-spacing-small-4);
     transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
 
     &:hover, &:active, &:focus {
@@ -257,8 +257,8 @@
     linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-gray-lightest) 73%, var(--hw-color-gray-lightest) 100%),
     linear-gradient(45deg, var(--hw-color-gray-lightest) 0, var(--hw-color-gray-lightest) 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 37%, transparent 38%, transparent 100%),
     linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray) 63%, var(--hw-color-gray) 71%, var(--hw-color-gray-lightest) 72%, var(--hw-color-gray-lightest) 100%);
-    background-size: var(--hw-spacing-small) var(--hw-spacing-small);
-    background-position: calc(100% - var(--hw-spacing-small)) 45%;
+    background-size: var(--hw-spacing-small-4) var(--hw-spacing-small-4);
+    background-position: calc(100% - var(--hw-spacing-small-4)) 45%;
     background-repeat: no-repeat;
     /* Remove default down-arrow for IE */
     &::-ms-expand {

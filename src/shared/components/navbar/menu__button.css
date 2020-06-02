@@ -5,8 +5,8 @@
   top: 0;
   display: flex;
   align-items: center;
-  padding-left: var(--hw-spacing);
-  padding-right: var(--hw-spacing);
+  padding-left: var(--hw-spacing-medium-2);
+  padding-right: var(--hw-spacing-medium-2);
   border: 0;
   font-size: var(--hw-font-size-small);
   transition: color 0.1s ease;
@@ -22,7 +22,7 @@
     padding-right: 0;
 
     &-label-menu, &-label-close {
-      padding-right: calc(var(--hw-spacing-small) + var(--hw-spacing-smaller));
+      padding-right: calc(var(--hw-spacing-small-4) + var(--hw-spacing-small-3));
       word-break: normal;
     }
   }

@@ -6,7 +6,7 @@
   position: relative;
   width: 100%;
   display: block;
-  margin-bottom: var(--hw-spacing-small);
+  margin-bottom: var(--hw-spacing-small-4);
 
   /**
    * Elements
@@ -15,7 +15,7 @@
   &__icon {
     position: absolute;
     cursor: pointer;
-    right: var(--hw-spacing-small);
+    right: var(--hw-spacing-small-4);
     top: 50%;
     transform: translateY(-50%);
     font-size: var(--hw-font-size-lead);
@@ -62,7 +62,7 @@
 .pika-single {
   z-index: var(--z-index--navbar-search);
   display: block;
-  margin-top: calc(var(--hw-spacing-smallest) / 2);
+  margin-top: calc(var(--hw-spacing-small-2) / 2);
   position: absolute !important;
   width: 100%;
   min-width: 240px;
@@ -119,7 +119,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-lendar {
   float: left;
   width: inherit;
-  padding: var(--hw-spacing);
+  padding: var(--hw-spacing-medium-2);
 }
 
 .pika-title {
@@ -135,7 +135,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   z-index: 9999;
   overflow: hidden;
   margin: 0;
-  padding: var(--hw-spacing-smallest) var(--hw-spacing-smallest);
+  padding: var(--hw-spacing-small-2) var(--hw-spacing-small-2);
   font-size: var(--hw-font-size-smaller);
   color: var(--hw-color-black);
   line-height: 20px;

@@ -50,7 +50,7 @@ function prepareDocFile(file, fileSection){
       result = result.replace(new RegExp("{bring}(.|\n)*?{/bring}", "g"), "").replace(/{posten}/g, "").replace(/{\/posten}/g, "");
     }
 
-
+    
 
     //result = result.replace(/{assets}/g, "http://localhost:3001");
     //result = result.replace(/{assets}/g, "https://bannervisning.no/m/PostenBring");

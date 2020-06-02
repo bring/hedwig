@@ -30,7 +30,7 @@
   &__input, &__placeholder {
     font-size: var(--hw-font-size-p);
     margin-top: 0;
-    margin-bottom: var(--hw-spacing-tiny);
+    margin-bottom: var(--hw-spacing-small-1);
     height: var(--hw-input-field-height);
   }
 
@@ -44,23 +44,23 @@
     left: 0;
     color: var(--hw-color-gray-dark);
     animation: movePlaceholder 3s ease-out infinite 0.3s;
-    padding: var(--hw-spacing-small) calc(var(--hw-spacing-smaller) * 2);
+    padding: var(--hw-spacing-small-4) calc(var(--hw-spacing-small-3) * 2);
     border: var(--hw-border-thickness) solid transparent;
     width:100%;
     pointer-events: none;
   }
 
   &__button {
-    padding: var(--hw-spacing-small) calc(var(--hw-spacing-smaller) * 2);
+    padding: var(--hw-spacing-small-4) calc(var(--hw-spacing-small-3) * 2);
     font-size: var(--hw-font-size-p);
-    margin-top: var(--hw-spacing-tiny);
+    margin-top: var(--hw-spacing-small-1);
     height: var(--hw-input-field-height);
   }
 
   &__button-inside {
     position: absolute;
     background: transparent;
-    right: var(--hw-spacing-small);
+    right: var(--hw-spacing-small-4);
     top: 50%;
     transform: translateY(-50%);
     border: 0;
@@ -106,7 +106,7 @@
   }
 
   &--no-break &__button{
-    margin-left: calc(var(--hw-spacing-tiny) * 2);
+    margin-left: calc(var(--hw-spacing-small-1) * 2);
     margin-top: 0;
   }
 

@@ -4,7 +4,7 @@
 
 .hw-error {
   display: block;
-  padding: calc(var(--hw-spacing-tiny) * 2) 0 0 var(--hw-spacing-small);
+  padding: calc(var(--hw-spacing-small-1) * 2) 0 0 var(--hw-spacing-small-4);
   font-size: var(--hw-font-size-smallest);
   font-family: var(--hw-font-primary-medium);
   font-weight: var(--hw-font-weight-medium);
@@ -67,7 +67,7 @@
 .hw-error-simple {
   display: block;
   padding: 0;
-  margin-top: var(--hw-spacing-tiny);
+  margin-top: var(--hw-spacing-small-1);
   font-family: var(--hw-font-primary-medium);
   font-weight: var(--hw-font-weight-medium);
   font-size: var(--hw-font-size-smallest);
@@ -84,7 +84,7 @@
 
 .hw-error-summary {
   border: none;
-  padding: var(--hw-spacing) var(--hw-spacing-even-larger) 1px var(--hw-spacing-even-larger);
+  padding: var(--hw-spacing-medium-2) var(--hw-spacing-even-larger) 1px var(--hw-spacing-even-larger);
   background: var(--hw-color-secondary);
   border-radius: var(--hw-border-radius);
 
@@ -109,7 +109,7 @@
       min-width: 24px;
       height: 24px;
       padding: 0;
-      margin-right: var(--hw-spacing-smaller);
+      margin-right: var(--hw-spacing-small-3);
       display: inline-block;
       border-radius: 50%;
       background:
@@ -129,7 +129,7 @@
   }
 
   &__contents {
-    margin-top: var(--hw-spacing-smaller);
+    margin-top: var(--hw-spacing-small-3);
     font-size: var(--hw-font-size-smaller);
 
     li:before {

@@ -3,7 +3,7 @@
  */
 
 .hw-icon-link {
-  padding: calc(var(--hw-spacing-smaller) * 2);
+  padding: calc(var(--hw-spacing-small-3) * 2);
   display: block;
   color: var(--hw-color-gray-darkest);
   text-align: center;
@@ -14,9 +14,9 @@
 
   & .hw-icon {
     display: block;
-    margin: 0 auto var(--hw-spacing-small) auto;
-    width: calc(var(--hw-spacing-larger) * 2);
-    height: var(--hw-spacing-larger);
+    margin: 0 auto var(--hw-spacing-small-4) auto;
+    width: calc(var(--hw-spacing-medium-4) * 2);
+    height: var(--hw-spacing-medium-4);
     color: var(--hw-color-primary-dark);
   } 
 

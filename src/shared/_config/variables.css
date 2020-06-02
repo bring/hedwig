@@ -36,18 +36,18 @@
    * NOTE: This is in PX because we want them to specific.
    */
 
-  --hw-spacing-tiny: 4px;
-  --hw-spacing-smallest: 8px;
-  --hw-spacing-smaller: 12px;
-  --hw-spacing-small: 16px;
-  --hw-spacing: 24px;
-  --hw-spacing-large: 32px;
-  --hw-spacing-larger: 40px;
-  --hw-spacing-even-larger: 56px;
-  --hw-spacing-even-larger-2: 64px;
-  --hw-spacing-even-larger-3: 80px;
-  --hw-spacing-even-larger-4: 120px;
-  --hw-spacing-even-larger-5: 160px;
+  --hw-spacing-small-1: 4px;
+  --hw-spacing-small-2: 8px;
+  --hw-spacing-small-3: 12px;
+  --hw-spacing-small-4: 16px;
+  --hw-spacing-medium-1: 20px;
+  --hw-spacing-medium-2: 24px;
+  --hw-spacing-medium-3: 32px;
+  --hw-spacing-medium-4: 40px;
+  --hw-spacing-large-1: 48px;
+  --hw-spacing-large-2: 64px;
+  --hw-spacing-large-3: 80px;
+  --hw-spacing-large-4: 120px;
 
   /**
    * Shared colors

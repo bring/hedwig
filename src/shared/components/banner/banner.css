@@ -10,7 +10,7 @@
 
   display: block;
   width: 100%;
-  padding: var(--hw-spacing-smaller);
+  padding: var(--hw-spacing-small-3);
   border: 0;
   color: var(--hw-color-gray-darkest);
   text-align: center;
@@ -32,6 +32,7 @@
   &__trigger {
     background: transparent;
     border: none;
+    outline: 0;
 
     font-family: var(--hw-font-primary-medium);
     font-weight: var(--hw-font-weight-medium);
@@ -60,7 +61,7 @@
     z-index: 2;
 
     position: static;
-    margin-left: var(--hw-spacing-smaller);
+    margin-left: var(--hw-spacing-small-3);
     transform: none;
   }
 
@@ -86,7 +87,7 @@
 
   &__contents {
     overflow: hidden;
-    padding: var(--hw-spacing-small);
+    padding: var(--hw-spacing-small-4);
     padding-bottom: 0;
 
     /* Invisible state */
@@ -109,17 +110,17 @@
     @extend .hw-h2;
 
     max-width: var(--hw-width-default);
-    margin: var(--hw-spacing-small) auto 0 auto;
+    margin: var(--hw-spacing-small-4) auto 0 auto;
     color: var(--hw-color-gray-darkest);
   }
 
   &__time {
-    margin-top: var(--hw-spacing-small);
+    margin-top: var(--hw-spacing-small-4);
     font-size: var(--hw-font-size-small);
     color: var(--hw-color-gray-darkest);
 
     & time {
-      margin: var(--hw-spacing-smaller);
+      margin: var(--hw-spacing-small-3);
     }
   }
 
@@ -127,7 +128,7 @@
     @extend .hw-text-lead;
 
     max-width: var(--hw-width-default);
-    margin: var(--hw-spacing-small) auto 0 auto;
+    margin: var(--hw-spacing-small-4) auto 0 auto;
     color: var(--hw-color-black);
   }
 
@@ -142,7 +143,7 @@
   &__read-more-link {
     display: block;
     position: relative;
-    margin-top: var(--hw-spacing-small);
+    margin-top: var(--hw-spacing-small-4);
     font-size: var(--hw-font-size-small);
     z-index: 1;
   }
@@ -185,7 +186,7 @@
     display: none;
     max-width: var(--hw-width-default);
     margin: 0 auto;
-    padding: var(--hw-spacing-larger) var(--hw-spacing);
+    padding: var(--hw-spacing-medium-4) var(--hw-spacing-medium-2);
     font-size: var(--hw-font-size-smaller);
   }
 

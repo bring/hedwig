@@ -4,12 +4,12 @@
 
 .hw-wysiwyg {
   & h1 {
-    margin-bottom: var(--hw-spacing);
+    margin-bottom: var(--hw-spacing-medium-2);
   }
 
   & h2,
   & h3 {
-    margin-bottom: var(--hw-spacing-smaller);
+    margin-bottom: var(--hw-spacing-small-3);
     max-width: 690px;
   }
 
@@ -23,7 +23,7 @@
 
   /* Paragraphs */
   & p {
-    margin-bottom: var(--hw-spacing);
+    margin-bottom: var(--hw-spacing-medium-2);
   }
 
   /* Links */
@@ -44,17 +44,17 @@
 
   /* Combinations */
   & p + h2 {
-    margin-top: var(--hw-spacing-larger);
-    margin-bottom: var(--hw-spacing-small);
+    margin-top: var(--hw-spacing-medium-4);
+    margin-bottom: var(--hw-spacing-small-4);
   }
 
   & p + h3 {
-    margin-top: var(--hw-spacing-large);
-    margin-bottom: var(--hw-spacing-smaller);
+    margin-top: var(--hw-spacing-medium-3);
+    margin-bottom: var(--hw-spacing-small-3);
   }
 
   & hr {
-    margin-bottom: var(--hw-spacing);
+    margin-bottom: var(--hw-spacing-medium-2);
   }
 
   /* List */
@@ -71,8 +71,8 @@
   & figure {
     @extend .hw-figure;
 
-    margin-top: var(--hw-spacing-large);
-    margin-bottom: var(--hw-spacing-large);
+    margin-top: var(--hw-spacing-medium-3);
+    margin-bottom: var(--hw-spacing-medium-3);
   }
 
   & figcaption {
@@ -103,7 +103,7 @@
     }
 
     & p {
-      margin-bottom: var(--hw-spacing-smaller);
+      margin-bottom: var(--hw-spacing-small-3);
     }
   }
   & > :last-child{

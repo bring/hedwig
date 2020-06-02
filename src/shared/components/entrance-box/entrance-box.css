@@ -8,7 +8,7 @@
   transition: opacity 0.3s;
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--hw-spacing);
+  margin-bottom: var(--hw-spacing-medium-2);
 
   &:hover {
     opacity: 0.8;
@@ -26,12 +26,12 @@
 
   &__body {
     z-index: 1;
-    padding: var(--hw-spacing);
+    padding: var(--hw-spacing-medium-2);
   }
 
   &__label {
     text-transform: uppercase;
-    margin-bottom: var(--hw-spacing-small);
+    margin-bottom: var(--hw-spacing-small-4);
     font-size: var(--hw-font-size-smaller);
     display: inline;
     transition: all 0.1s ease;
@@ -41,7 +41,7 @@
   &__text {
     display: inline;
     min-height: 60px;
-    margin-top: var(--hw-spacing-small);
+    margin-top: var(--hw-spacing-small-4);
     font-size: var(--hw-font-size-small);
     transition: all 0.1s ease;
   }

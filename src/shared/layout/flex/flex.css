@@ -4,7 +4,7 @@
 
 .hw-flex {
   & > * {
-    margin-bottom: var(--hw-spacing-tiny);
+    margin-bottom: var(--hw-spacing-small-1);
     @media (--max-medium) {
       &:last-of-type {
         margin-bottom: 0;
@@ -13,10 +13,10 @@
   }
   @media (--max-medium) {
     &--gutter-large-mobile > * {
-      margin-bottom: var(--hw-spacing-small);
+      margin-bottom: var(--hw-spacing-small-4);
     }
     &--gutter-larger-mobile > * {
-      margin-bottom: var(--hw-spacing-larger);
+      margin-bottom: var(--hw-spacing-medium-4);
     }
   }
 
@@ -24,7 +24,7 @@
     display: flex;
     & > * {
       flex: 1;
-      margin-right: var(--hw-spacing-tiny);
+      margin-right: var(--hw-spacing-small-1);
       margin-bottom: 0;
       &:last-of-type {
         margin-right: 0;
@@ -36,21 +36,21 @@
     }
 
     &--gutter-large-desktop > * {
-      margin-right: var(--hw-spacing-small);
+      margin-right: var(--hw-spacing-small-4);
     }
 
     &--gutter-larger-desktop > * {
-      margin-right: var(--hw-spacing-larger);
+      margin-right: var(--hw-spacing-medium-4);
     }
 
     &--gutter-medium-desktop > *{
-      margin-right: var(--hw-spacing-smallest);
+      margin-right: var(--hw-spacing-small-2);
     }
 
     &--twos, &--thirds, &--fourths{
       flex-wrap: wrap;
       & > * {
-        margin-bottom: var(--hw-spacing-tiny);
+        margin-bottom: var(--hw-spacing-small-1);
       }
     }
 
@@ -59,24 +59,24 @@
         Percentage of width minus (margins between items divided by number of items)
     */
     &--twos > * {
-      min-width: calc(50% - (var(--hw-spacing-tiny) / 2)); /* 3 / 2 = 1.5 */
-      max-width: calc(50% - (var(--hw-spacing-tiny) / 2));
+      min-width: calc(50% - (var(--hw-spacing-small-1) / 2)); /* 3 / 2 = 1.5 */
+      max-width: calc(50% - (var(--hw-spacing-small-1) / 2));
       &:nth-of-type(2n) {
         margin-right: 0;
       }
     }
 
     &--thirds > * {
-      min-width: calc((100% / 3) - (var(--hw-spacing-tiny) * 2 / 3)); /* 3 * 2 / 3 = 2 */
-      max-width: calc((100% / 3) - (var(--hw-spacing-tiny) * 2 / 3));
+      min-width: calc((100% / 3) - (var(--hw-spacing-small-1) * 2 / 3)); /* 3 * 2 / 3 = 2 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-small-1) * 2 / 3));
       &:nth-of-type(3n) {
         margin-right: 0;
       }
     }
 
     &--fourths > * {
-      min-width: calc(25% - (var(--hw-spacing-tiny) * 3 / 4)); /* 3 * 3 / 4 = 2.25 */
-      max-width: calc(25% - (var(--hw-spacing-tiny) * 3 / 4));
+      min-width: calc(25% - (var(--hw-spacing-small-1) * 3 / 4)); /* 3 * 3 / 4 = 2.25 */
+      max-width: calc(25% - (var(--hw-spacing-small-1) * 3 / 4));
       &:nth-of-type(4n) {
         margin-right: 0;
       }
@@ -84,57 +84,57 @@
 
     /* Medium gutter desktop calculations */
     &--gutter-medium-desktop&--twos > * {
-      min-width: calc(50% - (var(--hw-spacing-smallest) / 2)); /* 18 / 2 = 9 */
-      max-width: calc(50% - (var(--hw-spacing-smallest) / 2));
-      margin-bottom: var(--hw-spacing-smallest);
+      min-width: calc(50% - (var(--hw-spacing-small-2) / 2)); /* 18 / 2 = 9 */
+      max-width: calc(50% - (var(--hw-spacing-small-2) / 2));
+      margin-bottom: var(--hw-spacing-small-2);
     }
     &--gutter-medium-desktop&--thirds > * {
-      min-width: calc((100% / 3) - (var(--hw-spacing-smallest) * 2 / 3));
-      max-width: calc((100% / 3) - (var(--hw-spacing-smallest) * 2 / 3));
-      margin-bottom: var(--hw-spacing-smallest);
+      min-width: calc((100% / 3) - (var(--hw-spacing-small-2) * 2 / 3));
+      max-width: calc((100% / 3) - (var(--hw-spacing-small-2) * 2 / 3));
+      margin-bottom: var(--hw-spacing-small-2);
     }
     &--gutter-medium-desktop&--fourths > * {
-      min-width: calc(25% - (var(--hw-spacing-smallest) * 3 / 4));
-      max-width: calc(25% - (var(--hw-spacing-smallest) * 3 / 4));
-      margin-bottom: var(--hw-spacing-smallest);
+      min-width: calc(25% - (var(--hw-spacing-small-2) * 3 / 4));
+      max-width: calc(25% - (var(--hw-spacing-small-2) * 3 / 4));
+      margin-bottom: var(--hw-spacing-small-2);
     }
 
     /* Large gutter desktop calculations */
     &--gutter-large-desktop&--twos > * {
-      min-width: calc(50% - (var(--hw-spacing-small) / 2)); /* 18 / 2 = 9 */
-      max-width: calc(50% - (var(--hw-spacing-small) / 2));
-      margin-bottom: var(--hw-spacing-small);
+      min-width: calc(50% - (var(--hw-spacing-small-4) / 2)); /* 18 / 2 = 9 */
+      max-width: calc(50% - (var(--hw-spacing-small-4) / 2));
+      margin-bottom: var(--hw-spacing-small-4);
     }
 
     &--gutter-large-desktop&--thirds > * {
-      min-width: calc((100% / 3) - (var(--hw-spacing-small) * 2 / 3)); /* 18 * 2 / 3 = 12 */
-      max-width: calc((100% / 3) - (var(--hw-spacing-small) * 2 / 3));
-      margin-bottom: var(--hw-spacing-small);
+      min-width: calc((100% / 3) - (var(--hw-spacing-small-4) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-small-4) * 2 / 3));
+      margin-bottom: var(--hw-spacing-small-4);
     }
 
     &--gutter-large-desktop&--fourths > * {
-      min-width: calc(25% - (var(--hw-spacing-small) * 3 / 4)); /* 18 * 3 / 4 = 13.5 */
-      max-width: calc(25% - (var(--hw-spacing-small) * 3 / 4));
-      margin-bottom: var(--hw-spacing-small);
+      min-width: calc(25% - (var(--hw-spacing-small-4) * 3 / 4)); /* 18 * 3 / 4 = 13.5 */
+      max-width: calc(25% - (var(--hw-spacing-small-4) * 3 / 4));
+      margin-bottom: var(--hw-spacing-small-4);
     }
 
     /* Larger gutter desktop calculations */
     &--gutter-larger-desktop&--twos > * {
-      min-width: calc(50% - (var(--hw-spacing-larger) / 2)); /* 48 / 2 = 24 */
-      max-width: calc(50% - (var(--hw-spacing-larger) / 2));
-      margin-bottom: var(--hw-spacing-larger);
+      min-width: calc(50% - (var(--hw-spacing-medium-4) / 2)); /* 48 / 2 = 24 */
+      max-width: calc(50% - (var(--hw-spacing-medium-4) / 2));
+      margin-bottom: var(--hw-spacing-medium-4);
     }
 
     &--gutter-larger-desktop&--thirds > * {
-      min-width: calc((100% / 3) - (var(--hw-spacing-larger) * 2 / 3)); /* 48 * 2 / 3 = 32 */
-      max-width: calc((100% / 3) - (var(--hw-spacing-larger) * 2 / 3));
-      margin-bottom: var(--hw-spacing-larger);
+      min-width: calc((100% / 3) - (var(--hw-spacing-medium-4) * 2 / 3)); /* 48 * 2 / 3 = 32 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-medium-4) * 2 / 3));
+      margin-bottom: var(--hw-spacing-medium-4);
     }
 
     &--gutter-larger-desktop&--fourths > * {
-      min-width: calc(25% - (var(--hw-spacing-larger) * 3 / 4)); /* 48 * 3 / 4 = 36 */
-      max-width: calc(25% - (var(--hw-spacing-larger) * 3 / 4));
-      margin-bottom: var(--hw-spacing-larger);
+      min-width: calc(25% - (var(--hw-spacing-medium-4) * 3 / 4)); /* 48 * 3 / 4 = 36 */
+      max-width: calc(25% - (var(--hw-spacing-medium-4) * 3 / 4));
+      margin-bottom: var(--hw-spacing-medium-4);
     }
   }
 }

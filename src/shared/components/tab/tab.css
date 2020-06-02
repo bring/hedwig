@@ -26,7 +26,7 @@
     font-size: var(--hw-font-size-p);
     display: inline-block;
     margin-left: 0px;
-    padding-bottom: var(--hw-spacing-smaller);
+    padding-bottom: var(--hw-spacing-small-3);
     margin-right: 32px;
     color: var(--hw-color-black);
     &--selected {

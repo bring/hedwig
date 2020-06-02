@@ -21,13 +21,13 @@
     font-family: var(--hw-font-primary-medium);
     font-weight: var(--hw-font-weight-medium);
     color: var(--hw-color-black);
-    padding: var(--hw-spacing) var(--hw-spacing-small) var(--hw-spacing-small) 0 !important;
+    padding: var(--hw-spacing-medium-2) var(--hw-spacing-small-4) var(--hw-spacing-small-4) 0 !important;
   }
 
   & tbody td {
     border: none;
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-separator-gray);
-    padding: var(--hw-spacing) var(--hw-spacing-small) var(--hw-spacing-small) 0 !important;
+    padding: var(--hw-spacing-medium-2) var(--hw-spacing-small-4) var(--hw-spacing-small-4) 0 !important;
   }
 
   & tbody tr:hover {
@@ -41,12 +41,12 @@
 
   & th {
     color:var(--hw-color-primary-dark);
-    padding: var(--hw-spacing-small) 0;
+    padding: var(--hw-spacing-small-4) 0;
     vertical-align: top;
   }
 
   & td {
-    padding: var(--hw-spacing-small) 0;
+    padding: var(--hw-spacing-small-4) 0;
     font-family: var(--hw-font-primary-regular);
     font-weight: var(--hw-font-weight-regular);
     vertical-align: top;
@@ -76,7 +76,7 @@
   &__description {
     font-size: var(--hw-font-size-smallest);
     color: var(--hw-color-gray-dark);
-    padding: calc(var(--hw-spacing-smaller)*2) 0 calc(var(--hw-spacing-smaller)*2) 2px;
+    padding: calc(var(--hw-spacing-small-3)*2) 0 calc(var(--hw-spacing-small-3)*2) 2px;
   }
 
 
@@ -85,15 +85,15 @@
    */
 
   &--column th, &--column td {
-    padding: var(--hw-spacing-small) 0 !important;
+    padding: var(--hw-spacing-small-4) 0 !important;
   }
 
   &--column table {
     border-collapse: separate;
-    border-spacing: var(--hw-spacing-larger) 0;
+    border-spacing: var(--hw-spacing-medium-4) 0;
     position: relative;
-    right: var(--hw-spacing-larger);
-    width: calc(100% + (2*var(--hw-spacing-larger))) !important;
+    right: var(--hw-spacing-medium-4);
+    width: calc(100% + (2*var(--hw-spacing-medium-4))) !important;
   }
 
   &--subtitle {

@@ -19,8 +19,8 @@
     visibility: hidden;
     position: absolute;
     background: transparent;
-    top: calc(var(--hw-spacing-small) - var(--hw-border-thickness));
-    right: var(--hw-spacing-small);
+    top: calc(var(--hw-spacing-small-4) - var(--hw-border-thickness));
+    right: var(--hw-spacing-small-4);
     color:var(--hw-color-gray-dark);
     padding: 0;
     border: none;
@@ -66,7 +66,7 @@
     @extend .hw-input-basic;
 
     max-height: 400px;
-    top: var(--hw-spacing-tiny);
+    top: var(--hw-spacing-small-1);
     width: 100%;
     padding: 0 !important;
     overflow-y: auto;
@@ -78,7 +78,7 @@
     width: 100%;
     display: block;
     cursor: pointer;
-    padding: 0 var(--hw-spacing-small);
+    padding: 0 var(--hw-spacing-small-4);
 
     & > input {
       position: absolute;
@@ -108,8 +108,8 @@
   &__suggestion-text {
     color: var(--hw-color-black);
     width: 100%;
-    padding: var(--hw-spacing-small) 0;
-    /*height: var(--hw-spacing-larger);*/
+    padding: var(--hw-spacing-small-4) 0;
+    /*height: var(--hw-spacing-medium-4);*/
     line-height: normal;
     display: block;
     overflow: hidden;
