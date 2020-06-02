@@ -86,11 +86,11 @@
   /* 940px - max-width: 762px 36px gutters */
   @media (--large) {
     .hw-container--mt {
-      margin-top: var(--hw-spacing-even-larger);
+      margin-top: var(--hw-spacing-large-1);
     }
 
     .hw-container--mb {
-      margin-bottom: var(--hw-spacing-even-larger);
+      margin-bottom: var(--hw-spacing-large-1);
     }
   }
 

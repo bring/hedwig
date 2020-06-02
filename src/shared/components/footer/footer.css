@@ -23,7 +23,7 @@
   &__desktop {
     display: block;
     margin: 0 auto;
-    padding: var(--hw-spacing-even-larger) var(--hw-spacing-large-2);
+    padding: var(--hw-spacing-large-1) var(--hw-spacing-large-2);
      
     @media (--high-res-mobile) {
       display: none;

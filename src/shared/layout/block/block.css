@@ -212,10 +212,10 @@
     margin-bottom: var(--hw-spacing-medium-4);
   }
   .hw-block--mt-even-larger-mobile {
-    margin-top: var(--hw-spacing-even-larger);
+    margin-top: var(--hw-spacing-large-1);
   }
   .hw-block--mb-even-larger-mobile {
-    margin-bottom: var(--hw-spacing-even-larger);
+    margin-bottom: var(--hw-spacing-large-1);
   }
 }
 
@@ -227,9 +227,9 @@
     margin-bottom: var(--hw-spacing-medium-4);
   }
   .hw-block--mt-even-larger-desktop {
-    margin-top: var(--hw-spacing-even-larger);
+    margin-top: var(--hw-spacing-large-1);
   }
   .hw-block--mb-even-larger-desktop {
-    margin-bottom: var(--hw-spacing-even-larger);
+    margin-bottom: var(--hw-spacing-large-1);
   }
 }
