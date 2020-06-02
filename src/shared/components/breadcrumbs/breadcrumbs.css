@@ -65,7 +65,6 @@
     margin-right: 9px;
     margin-left: 9px;
     margin-top: 3px;
-    transform: rotate(180deg);
     @media (--large) {
       display: inline-block;
     }

@@ -34,6 +34,7 @@
 
   &__close {
     cursor: pointer;
+    outline: 0;
     background: var(--hw-color-white);
     border-radius: 50%;
     display: block;

@@ -16,7 +16,7 @@ Modifiers:
 [Small]             .hw-button--small
 [Medium]            .hw-button--medium
 [Full]              .hw-button--full
-[Responsive]        .hw-button--mobile-full   //Full size on mobile, default size on desktop
+[Responsive]        .hw-button--mobile-full   // Full size on mobile, default size on desktop
     
 Colors    
 [Primary]           .hw-button--primary
