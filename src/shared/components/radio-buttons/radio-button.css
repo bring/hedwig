@@ -6,6 +6,7 @@
   display: inline-block;
   cursor: pointer;
   width: auto;
+  margin-bottom: var(--hw-spacing-small-1);
   font-family: var(--hw-font-primary-regular);
   font-weight: var(--hw-font-weight-regular);
   font-size: var(--hw-font-size-small);
@@ -62,6 +63,7 @@
     border: var(--hw-border-thickness) solid;
     border-color: transparent;
     height: var(--hw-input-field-height);
+    margin-bottom: var(--hw-spacing-small-4);
 
     &[disabled] {
       background: var(--hw-color-gray-lightest);
@@ -74,7 +76,7 @@
     .hw-radio-button__label {
       margin-left: 0px;
       margin-top: 0px;
-      margin-right: calc(var(--hw-spacing-medium-4) - var(--hw-spacing-small-1));
+      margin-right: var(--hw-spacing-medium-3);
     }
   }
 
@@ -84,6 +86,7 @@
 
   &--error {
     border-color: var(--hw-color-secondary);
+    margin-bottom: var(--hw-spacing-small-1);
   }
 
   & > input {

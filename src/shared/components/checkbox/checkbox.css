@@ -101,7 +101,7 @@
     border-radius: var(--hw-border-radius);
     border: 1px solid;
     border-color: transparent;
-    margin-bottom: var(--hw-spacing-small-1);
+    margin-bottom: var(--hw-spacing-small-4);
     height: var(--hw-input-field-height);
 
     .hw-checkbox__indicator {
@@ -124,6 +124,7 @@
 
   &--error {
     position: relative;
+    margin-bottom: var(--hw-spacing-small-1);
   }
 
   &--error .hw-checkbox__indicator {
