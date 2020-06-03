@@ -65,7 +65,7 @@ description: "When HR are used on dark backgrounds, e.g. the footer, the HR appe
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -74,7 +74,7 @@ src: "{assets}/img/{postenbring}/hr-do-1.png"
 description: "HR should always be 100 % wide relative to its parent container."
 ```
 
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

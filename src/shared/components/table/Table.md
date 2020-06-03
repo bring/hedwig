@@ -348,7 +348,7 @@ description: "Create a custom table with columns and column widths as needed. Ta
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -356,7 +356,7 @@ span: 3
 src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Keep headings short and clear."
 ```
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

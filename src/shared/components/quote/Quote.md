@@ -108,7 +108,7 @@ description: "Quotes are styled in 32 px size with Posten Sans Light as the font
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -118,7 +118,7 @@ description: "Use quotes to break up long articles with an interesting statement
 ```
 
 
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

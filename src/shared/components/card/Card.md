@@ -241,21 +241,20 @@ src: "{assets}/img/{postenbring}/{component}-1.png"
 title: "Anatomy"
 ```
 
-1. Surface (required)
-The surface is the background and container, holding all other elements within the card.
+**1. Surface (required)**
+  The surface is the background and container, holding all other elements within the card.
 
-2. Title block (required)
-The title block is the primary heading of the card. It can be a standalone heading, a heading with subtitle or overline text, or be accompanied by
-an icon image.
+**2. Title block (required)**
+  The title block is the primary heading of the card. It can be a standalone heading, a heading with subtitle or overline text, or be accompanied by an icon image.
 
-3. Description (optional)
-A description can be added as supportive text to further describe what the card is about.
+**3. Description (optional)**
+  A description can be added as supportive text to further describe what the card is about.
 
-4. Action (optional)
-A card can include buttons for actions if there are mulitple actions to choose within the card. Actions should always be placed at the bottom.
+**4. Action (optional)**
+  A card can include buttons for actions if there are mulitple actions to choose within the card. Actions should always be placed at the bottom.
 
-5. Media (optional)
-Media can be added to the top of a card if this is wanted.
+**5. Media (optional)**
+  Media can be added to the top of a card if this is wanted.
 
 
 > Cards are assembled by element components. The surface and description text has a single defined style, but title blocks, actions and media comes in a few variations for you to customize a card according to your needs.
@@ -403,7 +402,7 @@ title: "Compressed card"
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -419,7 +418,7 @@ src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Keep headings and texts short and clear. A card is just the entrance or action to a destination of thorough information."
 ```
 
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

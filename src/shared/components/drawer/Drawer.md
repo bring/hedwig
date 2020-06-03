@@ -89,13 +89,13 @@ span: 3
 src: "{assets}/img/{postenbring}/{component}-1.png"
 ```
 
-1. Close
+**1. Close**
 Icon button to close the drawer.
 
-2. Content area
+**2. Content area**
 This is the area you fill in your content. In the example above the heading is in H2 style with the Body Small style for body copy.
 
-3. Action buttons
+**3. Action buttons**
 At the bottom you can add call-to-action buttons if this is relevant for the content in the drawer.
 
 

@@ -66,6 +66,16 @@ This is a list with lead style.
 </ol>
 ```
 
+## Small numbered List
+
+```html|plain,light
+<ul class="hw-list hw-list--numbered hw-list--small">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+```
+
 ## No bullet List
 
 ```html|plain,light
@@ -149,7 +159,7 @@ title: "Large list"
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -157,7 +167,7 @@ span: 3
 src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Keep it short and clear."
 ```
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

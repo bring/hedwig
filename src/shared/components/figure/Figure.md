@@ -73,7 +73,7 @@ title: "4:3"
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -88,7 +88,7 @@ src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Images should be full-width within it’s parent container."
 ```
 
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

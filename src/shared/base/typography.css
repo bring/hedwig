@@ -42,6 +42,7 @@
   h5,
   .hw-h1,
   .hw-h1-large,
+  .hw-h1-display,
   .hw-h2,
   .hw-h3,
   .hw-h4,
@@ -58,6 +59,7 @@
   h4,
   .hw-h1,
   .hw-h1-large,
+  .hw-h1-display,
   .hw-h2,
   .hw-h3,
   .hw-h4 {
@@ -69,14 +71,16 @@
 
 
 
-  .hw-h1-large {
+  .hw-h1-large,
+  .hw-h1-display {
     font-size: var(--hw-font-size-h1-large);
     font-family: var(--hw-h1-large-font-family);
     line-height: var(--hw-h1-large-line-height);
   }
 
   @media (--xlarge) {
-    .hw-h1-large {
+    .hw-h1-large
+    .hw-h1-display, {
       font-size: var(--hw-font-size-max-h1-large-px);
     }
   }

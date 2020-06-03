@@ -190,7 +190,7 @@ description: "Range with calendar should be used when selecting a range of dates
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -199,7 +199,7 @@ src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use placeholder text so users input the date in correct format."
 ```
 
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

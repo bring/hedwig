@@ -14,6 +14,7 @@
 [Base]           .hw-link
 
 Modifiers:
+[Inline]         .hw-link--inline
 [Small]          .hw-link--small
 [Big]            .hw-link--big
 [Inverted]       .hw-link--inverted
@@ -24,7 +25,7 @@ Modifiers:
 ### Examples
 
 ```html|span-6,plain,light
-  <p>This is a <a href="#" class="hw-link">link</a> in a sentence.</p>
+  <p>This is a <a href="#" class="hw-link hw-link--inline">link</a> in a sentence.</p>
 ```
 
 ```html|span-6,plain,light
@@ -125,7 +126,7 @@ title: "Large"
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -134,7 +135,7 @@ src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use labels which accurately reflect the content users will find at the link destination, and keep it short, with as few words as possible."
 ```
 
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

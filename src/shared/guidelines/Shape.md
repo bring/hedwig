@@ -37,7 +37,7 @@ Images should not use rounded corners.
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -46,7 +46,7 @@ src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Use 2 px rounding on all component surfaces."
 ```
 
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

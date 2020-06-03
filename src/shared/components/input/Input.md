@@ -151,7 +151,7 @@ a dropdown of matching results as users type in their keywords."
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -166,7 +166,7 @@ src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "The width of the field should reflect the expected length of input data. Use half-width fields where short inputs are expected."
 ```
 
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

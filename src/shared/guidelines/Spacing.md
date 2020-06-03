@@ -165,7 +165,7 @@ There is optional spacing when information is related.
 plain: true
 span: 6
 src: "{assets}/img/{postenbring}/{component}-9.png"
-title: "Bring H1"
+title: "{Brand} H1"
 description: "Used for the main heading at the top of the page. Uses 64 px spacing above. 32 px should be used if the page has breadcrumbs."
 ```
 
@@ -220,7 +220,7 @@ You can releate the component to the text above by using 32 px instead of 64 px.
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -241,7 +241,7 @@ src: "{assets}/img/{postenbring}/{component}-do-3.png"
 description: "Create components that use the same spacing."
 ```
 
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

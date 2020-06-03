@@ -267,7 +267,7 @@ src: "{assets}/img/{postenbring}/accordions-1-2.png"
   
 ## Best practices
 
-#### Do
+#### Do this
   
 ```image
 plain: true
@@ -282,7 +282,7 @@ src: "{assets}/img/{postenbring}/accordions-do-2.png"
 description: "Use accordion to help make it easier for users to navigate through loads of information to find what they are looking for."
 ```
 
-#### Don't
+#### Do not do this
 
 ```image
 plain: true

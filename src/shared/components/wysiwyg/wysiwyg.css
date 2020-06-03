@@ -4,12 +4,15 @@
 
 .hw-wysiwyg {
   & h1 {
-    margin-bottom: var(--hw-spacing-medium-2);
+    margin-top: var(--hw-spacing-large-2);
   }
 
-  & h2,
+  & h2 {
+    margin-top: var(--hw-spacing-large-2);
+    max-width: 690px;
+  }
   & h3 {
-    margin-bottom: var(--hw-spacing-small-3);
+    margin-top: var(--hw-spacing-large-2);
     max-width: 690px;
   }
 
@@ -23,12 +26,15 @@
 
   /* Paragraphs */
   & p {
-    margin-bottom: var(--hw-spacing-medium-2);
+    margin-top: var(--hw-spacing-medium-2);
   }
 
   /* Links */
   & a {
     @extend .hw-link;
+  }
+  & p a {
+    @extend .hw-link--inline;
   }
 
   /* Buttons */
@@ -36,11 +42,11 @@
     @extend .hw-button;
   }
   & a.hw-button--primary{
-     @extend .hw-button--primary;
-   }
+    @extend .hw-button--primary;
+  }
   & a.hw-button--secondary{
-     @extend .hw-button--secondary;
-   }
+    @extend .hw-button--secondary;
+  }
 
   /* Combinations */
   & p + h2 {
@@ -72,7 +78,6 @@
     @extend .hw-figure;
 
     margin-top: var(--hw-spacing-medium-3);
-    margin-bottom: var(--hw-spacing-medium-3);
   }
 
   & figcaption {
@@ -81,13 +86,21 @@
 
   /* Table */
   & table {
-    & p, h1, h2, h3, h4, h5, h6{
+
+    & p, h1, h2, h3, h4, h5, h6 {
       margin-bottom: 0;
     }
     & a {
       border-bottom: none;
       color: unset;
     }
+  }
+
+  /* Components */
+  & table,
+  & ul,
+  & ol {
+    margin-top: var(--hw-spacing-medium-3);
   }
 
   /**
@@ -103,10 +116,10 @@
     }
 
     & p {
-      margin-bottom: var(--hw-spacing-small-3);
+      margin-top: var(--hw-spacing-small-3);
     }
   }
-  & > :last-child{
-     margin-bottom:0px;
+  & > :last-child {
+     margin-bottom: 0px;
   }
 }

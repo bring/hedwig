@@ -266,7 +266,7 @@ title: "Mobile"
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -281,7 +281,7 @@ src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "Use the grid to make the columns to create a varied layout."
 ```
 
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

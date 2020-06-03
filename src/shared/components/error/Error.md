@@ -85,7 +85,7 @@ Use of yellow colour is the primary signal for marking when an error has occured
 
 ## Best practices
 
-#### Do
+#### Do this
 
 ```image
 plain: true
@@ -94,7 +94,7 @@ src: "{assets}/img/{postenbring}/error-do-1.png"
 description: "Error message should appear if multiple mistakes or errors has occurred, to cleary explain what has happened and why."
 ```
 
-#### Don't
+#### Do not do this
   
 ```image
 plain: true

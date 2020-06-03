@@ -163,7 +163,7 @@ Dark green badges should be used for lighter green backgrounds, and in need of a
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-1-1.png"
+src: "{assets}/img/{postenbring}/{component}-types-1.png"
 
 {bring}
 title: "Darker green"
@@ -179,7 +179,7 @@ description: "Darker red badges should be used for lighter red backgrounds, and 
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-1-2.png"
+src: "{assets}/img/{postenbring}/{component}-types-2.png"
 
 {bring}
 title: "Lighter green"
@@ -195,7 +195,7 @@ description: "Lighter red badges should be used for white backgrounds for a subt
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-1-3.png"
+src: "{assets}/img/{postenbring}/{component}-types-3.png"
 
 {bring}
 title: "White"
@@ -211,7 +211,7 @@ description: "White badges should be used for lighter red backgrounds for a subt
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-1-4.png"
+src: "{assets}/img/{postenbring}/{component}-types-4.png"
 
 {bring}
 title: "Yellow"
@@ -230,61 +230,61 @@ description: "Yellow badges should only be used in case of alerts and warnings, 
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-2-1.png"
+src: "{assets}/img/{postenbring}/{component}-sizes-1.png"
 title: "Smaller"
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-2-2.png"
+src: "{assets}/img/{postenbring}/{component}-sizes-2.png"
 title: "Small"
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-2-3.png"
+src: "{assets}/img/{postenbring}/{component}-sizes-3.png"
 title: "Medium"
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-2-4.png"
+src: "{assets}/img/{postenbring}/{component}-sizes-4.png"
 title: "Large"
 ```
 
 
 ## Best practices
 
-#### Do
+#### Do this
   
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-3-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
 description: "Keep the descriptions short and clear, preferably just one word."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-4-1.png"
+src: "{assets}/img/{postenbring}/{component}-do-2.png"
 description: "When an item has multiple badges inherit, the badges should be placed with 8px space between them."
 ```
 
 
 
 
-#### Don't
+#### Do not do this
 
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-4-2.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Don’t misuse yellow badge for items that are not an alert or a warning."
 ```
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/badges-3-2.png"
+src: "{assets}/img/{postenbring}/{component}-dont-2.png"
 description: "Don’t write long, complex descriptions."
 ```
 
