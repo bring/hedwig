@@ -9,7 +9,7 @@
 
 ### Markup
 ```code   
-[Base]             .hw-button
+[Base]              .hw-button
   
 Modifiers:
 [Large]             .hw-button--large
@@ -176,14 +176,7 @@ plain: true
 
 # Design guidelines
 
-{bring}
-> Buttons are a key part of Bring’s call-to-action navigation. The green colours guide customers to the core Bring call-to-action items.
-{/bring}
-
-{posten}
-> Buttons are a key part of Bring’s call-to-action navigation. The green colours guide customers to the core Bring call-to-action items.
-{/posten}
-
+> Buttons are a key part of {Brand}’s call-to-action navigation. The {color} colours guide customers to the core {Brand} call-to-action items.
 
 
 ### Button types
@@ -289,10 +282,13 @@ span: 2
 src: "{assets}/img/{postenbring}/buttons-dont-4.png"
 description: "Don’t stack buttons on top of each other if there is space to place them side by side."
 ```
+
+{bring}
 ```image
 plain: true
 span: 2
 src: "{assets}/img/{postenbring}/buttons-dont-5.png"
 description: "Do not use white text in primary buttons, as the contrast do not validate."
 ```
+{/bring}
 

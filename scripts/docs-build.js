@@ -37,6 +37,8 @@ function prepareDocFile(file, fileSection){
       return console.log(err);
     }
 
+    var color = "Green";
+
     var result = data;
 
     // Replace all instances of {postenbring} with posten OR bring.
@@ -44,9 +46,11 @@ function prepareDocFile(file, fileSection){
 
     // Remove content between unnecessary tags. Activate necessary content.
     if(fileSection == "bring") {
+      color = "Green";
       result = result.replace(new RegExp("{posten}(.|\n)*?{/posten}", "g"), "").replace(/{bring}/g, "").replace(/{\/bring}/g, "");
     }
     else if(fileSection == "posten") {
+      color = "Red";
       result = result.replace(new RegExp("{bring}(.|\n)*?{/bring}", "g"), "").replace(/{posten}/g, "").replace(/{\/posten}/g, "");
     }
 
@@ -57,6 +61,11 @@ function prepareDocFile(file, fileSection){
     result = result.replace(/{assets}/g, "");
     result = result.replace(/{component}/g, title.toLowerCase());
     result = result.replace(/{title}/g, title);
+    result = result.replace(/{Title}/g, title[0].toUpperCase() + title.substring(1));
+    result = result.replace(/{color}/g, color.toLowerCase());
+    result = result.replace(/{Color}/g, color);
+    result = result.replace(/{brand}/g, fileSection);
+    result = result.replace(/{Brand}/g, fileSection[0].toUpperCase() + fileSection.substring(1));
     
 
     //result = result.replace(/{navigation}/g, '```html|span-6,noSource,plain\n<div class="hw-guidelines-nav">\n<button class="hw-button hw-button--primary" onclick="window.scrollToDevelopmentGuidelines()">Development guidelines</button>\n<button class="hw-button hw-button--secondary" onclick="window.scrollToDesignGuidelines()">Design guidelines</button>\n</div>\n```');

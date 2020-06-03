@@ -9,7 +9,7 @@
 
 
 ```code
-[Base]         .hw-breadcrumbs               Surrounding element
+[Base]          .hw-breadcrumbs               Surrounding element
 [Item]          .hw-breadcrumb                One breadcrumb
 
 Elements:
@@ -143,8 +143,7 @@ description: "For breadcrumbs of more than three levels, the middle steps are co
 plain: true
 span: 3
 src: "{assets}/img/{postenbring}/breadcrumbs-do-1.png"
-description: "Use just one instance of breadcrumbs on a single page. Place it at the top
-of the page, below the navbar."
+description: "Use just one instance of breadcrumbs on a single page. Place it at the top of the page, below the navbar."
 ```
 
 #### Don't

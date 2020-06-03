@@ -60,7 +60,7 @@ plain: true
 span: 3
 src: "{assets}/img/{postenbring}/callout-1.png"
 title: "Callout"
-description: "A callout has a dark green ruler to separate itself from other content. A heading and descriptive text follows below, with an action button at the bottom."
+description: "A callout has a dark {color} ruler to separate itself from other content. A heading and descriptive text follows below, with an action button at the bottom."
 ```
 
 

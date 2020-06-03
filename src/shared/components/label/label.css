@@ -7,7 +7,7 @@
   font-size: var(--hw-font-size-caption);
   font-family: var(--hw-font-primary-regular);
   font-weight: var(--hw-font-weight-regular);
-  margin-bottom: var(--hw-spacing-medium-1);
+  margin-bottom: 0;
   line-height: 2;
   display: block;
 

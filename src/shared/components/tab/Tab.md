@@ -54,7 +54,7 @@ Removing the marker element will achieve this.
 
 # Design guidelines
 
-> Tabs indicate menu items to aid navigation. We use the Bring signal green as an underline to indicate a selected menu item.
+> Tabs indicate menu items to aid navigation. We use the {Brand} signal {color} as an underline to indicate a selected menu item.
 
 
 

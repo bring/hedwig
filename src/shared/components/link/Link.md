@@ -58,7 +58,7 @@ Modifiers:
 
 # Design guidelines
 
-> Links are our primary navigation asset. The green coloured underline indicate that a text is a clickable link. Links may appear on their own, within a sentence or within a larger component.
+> Links are our primary navigation asset. The {color} coloured underline indicate that a text is a clickable link. Links may appear on their own, within a sentence or within a larger component.
 
 
 
@@ -90,7 +90,7 @@ plain: true
 span: 2
 src: "{assets}/img/{postenbring}/{component}-types-4.png"
 title: "Text link"
-description: "A text link is a link within a line of text. Text links are in darker green colour, and with an underline to differantiate from plain text."
+description: "A text link is a link within a line of text. Text links are in darker {color} colour, and with an underline to differantiate from plain text."
 ```
 ```image
 plain: true

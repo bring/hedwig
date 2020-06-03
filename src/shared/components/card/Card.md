@@ -310,7 +310,7 @@ plain: true
 span: 3
 src: "{assets}/img/{postenbring}/{component}-action-1.png"
 title: "One-style buttons"
-description: "Plain links in dark green colour, with underline on hover."
+description: "Plain links in dark {color} colour, with underline on hover."
 ```
 ```image
 plain: true

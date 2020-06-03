@@ -58,7 +58,7 @@ plain: true
 span: 3
 src: "{assets}/img/{postenbring}/hr-styles-2.png"
 title: "Dark backgrounds"
-description: "When HR are used on dark backgrounds, e.g. the footer, the HR appear in the dark green colour."
+description: "When HR are used on dark backgrounds, e.g. the footer, the HR appear in the dark {color} colour."
 ```
 
 
