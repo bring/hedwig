@@ -56,6 +56,7 @@
     background: transparent;
     font-size: var(--hw-font-size-small);
     color: var(--hw-color-black);
+    line-height: 1.4em;
   }
 
   &__arrow {
@@ -233,7 +234,7 @@
     display: flex;
     width: 100%;
     height: var(--hw-input-field-height);
-    font-size: var(--hw-font-size-smaller);
+    font-size: var(--hw-font-size-small);
     cursor: pointer;
     color: var(--hw-color-black);
     background-color: var(--hw-color-gray-lightest);
