@@ -151,7 +151,7 @@ description: "Use just one instance of breadcrumbs on a single page. Place it at
 ```image
 plain: true
 span: 3
-src: "{assets}/img/{postenbring}/{component} -dont-1.png"
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
 description: "Don’t expose too many breadcrumb levels. For instances of more than three levels, compress the middle steps and reaveal them in a dropdown on hover."
 ```
 

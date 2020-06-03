@@ -27,6 +27,11 @@
   &__content {
     padding: 0;
     background: transparent;
+
+    label {
+      margin-top: var(--hw-spacing-small-4);
+      margin-right: var(--hw-spacing-small-4);
+    }
   }
 
   /**

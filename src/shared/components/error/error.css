@@ -84,7 +84,7 @@
 
 .hw-error-summary {
   border: none;
-  padding: var(--hw-spacing-medium-2) var(--hw-spacing-large-1) 1px var(--hw-spacing-large-1);
+  padding: var(--hw-spacing-medium-2) var(--hw-spacing-large-1) var(--hw-spacing-medium-2) var(--hw-spacing-large-1);
   background: var(--hw-color-secondary);
   border-radius: var(--hw-border-radius);
 

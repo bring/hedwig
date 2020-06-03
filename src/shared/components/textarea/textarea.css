@@ -15,6 +15,7 @@
   position: relative;
   -webkit-appearance: none;
 
+
   &::placeholder {
     color: var(--hw-color-gray-dark);
   }

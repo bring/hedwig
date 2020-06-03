@@ -55,17 +55,3 @@ window.test = function(sender) {
   console.log("test inside window.test");
   console.log(sender);
 }
-
-/*
-var images = document.getElementsByTagName('img');
-var variant = "bring";
-if(window.location.href.includes("posten.html") == true) {
-  variant = "posten";
-}
-for(var i=0; i<images.length; i++) {
-  var image = images[i];
-  var src = image.src;
-  image.src = src.replace("{postenbring}", variant);
-  image.srcset = image.src;
-}
-*/
