@@ -12,7 +12,6 @@
     border: 0;
     padding: 0;
     margin: 0;
-    margin-bottom: var(--hw-spacing-small-4);
 
     &[disabled] {
       color: var(--hw-color-gray-light);
@@ -31,7 +30,6 @@
   &__group {
     display: flex;
     position: relative;
-    margin-top: var(--hw-spacing-small-1);
     border: var(--hw-border-thickness) solid transparent;
     border-radius: var(--hw-border-radius);
 
@@ -78,7 +76,7 @@
       width: auto !important;
       height: var(--hw-input-field-height);
       font-size: var(--hw-font-size-small);
-      line-height: 1.5em;
+      line-height: 1.2em;
     }
 
     &__arrow {
@@ -199,7 +197,6 @@
   & .hw-input {
     width: 100%;
     padding-left: calc(70px + var(--hw-spacing-small-2));
-    margin-top: 5px !important;
 
     &:hover, &:focus, &:active {
       border-color: transparent;

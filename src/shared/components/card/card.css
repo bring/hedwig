@@ -9,7 +9,6 @@
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--hw-spacing-medium-2);
   color: var(--hw-color-black);
 
   &:hover {

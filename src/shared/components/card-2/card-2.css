@@ -8,7 +8,6 @@
   flex-direction: column;
   background: var(--hw-color-primary-lighter);
   border-radius: var(--hw-border-radius);
-  margin-bottom: var(--hw-spacing-small-4);
 
   &:hover {
     opacity: 0.8;
