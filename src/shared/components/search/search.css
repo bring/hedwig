@@ -92,7 +92,7 @@
 
   &__button-inside:hover,
   &__button-inside:focus {
-    color: var(--hw-color-input-accenter); 
+    color: var(--hw-color-gray-dark); 
   }
 
   &__suggestions {

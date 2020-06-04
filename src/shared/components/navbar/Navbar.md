@@ -259,8 +259,6 @@ Modifiers:
 
     <div class="hw-navbar__overlay" data-hw-navbar-overlay></div>
     <section class="hw-navbar__search">
-      <div class="hw-container hw-container--slim">
-        <div class="hw-block hw-block--px-fluid">
           <div class="hw-search hw-search--large" data-hw-search>
             <span class="hw-search__background"></span>
             <div class="hw-search__inner">
@@ -294,8 +292,6 @@ Modifiers:
               </li>
             </ul>
           </div>
-        </div>
-      </div>
       <button class="hw-navbar__close-search" data-hw-navbar-close-search>
         <i class="far fa-times fa-2x"></i>
       </button>
