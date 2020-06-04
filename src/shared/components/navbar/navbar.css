@@ -168,23 +168,11 @@
     position: absolute;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
     z-index: var(--z-index--navbar-search);
-    top: 0px;
     height: var(--hw-navbar-height-mobile);
-
-    &::before {
-      content: '';
-      display: block;
-      background-color: var(--hw-color-gray-lightest);
-      height: var(--hw-navbar-height-mobile);
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: var(--z-index--navbar);
-      @media (--large){
-        display: none;
-      }
-    }
+    transition: all var(--hw-transition-time-debug) var(--hw-transition-easing-out);
 
     .hw-search__inner {
       background: var(--hw-color-white);
@@ -252,8 +240,10 @@
     right: 0;
     bottom: 0;
     left: 0;
-    transition: opacity 0.2s ease;
-    @media (--large){
+    opacity: 1;
+    transition: opacity var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
+    
+    @media (--large) {
       background: var(--hw-color-black);
       opacity: 0.3;
     }
@@ -303,14 +293,28 @@
   */
 
   &--searching {
-    & .hw-navbar__search {
+
+    .hw-navbar__search {
       display: block;
       z-index: var(--z-index--navbar-search-foreground);
     }
 
-    & .hw-navbar__overlay {
+    
+    
+    .hw-search__input {
+      animation-name: fadeinup;
+      animation-duration: var(--hw-transition-time-slow);
+    }
+    .hw-search__suggestions {
+      animation-name: fadeinupdelayed;
+      animation-duration: var(--hw-transition-time-slow);
+    }
+
+    .hw-navbar__overlay {
       visibility: visible;
-      z-index: var(--z-index--navbar-search);
+      z-index: var(--z-index--navbar-search);.
+      animation-name: fadein;
+      animation-duration: var(--hw-transition-time-slow);
     }
   }
 
@@ -385,7 +389,42 @@
 
 .hw--searching {
   display: none;
-  @media (--large){
+  @media (--large) {
     display: block;
+  }
+}
+
+
+
+@keyframes fadeinup {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes fadeinupdelayed {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
