@@ -16,9 +16,30 @@ Modifiers:
 ```
 
 
+### Card
+
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__media hw-card__media-16_9">
+      <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
+    </div>
+    <div class="hw-card__body">
+      <h5 class="hw-card__overline">Overline title</h5>
+      <h3 class="hw-card__title">Card Title</h3>
+      <h5 class="hw-card__subtitle">Secondary title</h5>
+      <p class="hw-card__description">This is the content on the card. The description.</p>
+    </div>
+    <div class="hw-card__footer">
+      <a href="#" class="hw-card__action-button">Action</a>
+      <a href="#" class="hw-card__action-button">Action</a>
+    </div>
+  </div>
+```
+
+
 ### Simple card
 
-```html|span-3,plain,light
+```html|span-2,plain,light
   <a href="#" class="hw-card">
     <div class="hw-card__body">
       <h3 class="hw-card__title">Card Title</h3>
@@ -29,7 +50,7 @@ Modifiers:
 
 ### Simple card with description
 
-```html|span-3,plain,light
+```html|span-2,plain,light
   <a href="#" class="hw-card">
     <div class="hw-card__body">
       <h3 class="hw-card__title">Card Title</h3>
@@ -42,7 +63,7 @@ Modifiers:
 
 ### Simple card with description and subtitle
 
-```html|span-3,plain,light
+```html|span-2,plain,light
   <a href="#" class="hw-card">
     <div class="hw-card__body">
       <h3 class="hw-card__title">Card Title</h3>
@@ -56,7 +77,7 @@ Modifiers:
 
 ### Simple card with overline text
 
-```html|span-3,plain,light
+```html|span-2,plain,light
   <a href="#" class="hw-card">
     <div class="hw-card__body">
       <h5 class="hw-card__overline">Overline text</h5>
@@ -72,10 +93,10 @@ Modifiers:
 
 ### Regular card
 
-```html|span-3,plain,light
+```html|span-2,plain,light
   <a href="#" class="hw-card">
     <div class="hw-card__media">
-      <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
     </div>
     <div class="hw-card__body">
       <h3 class="hw-card__title">Card Title</h3>
@@ -94,7 +115,7 @@ Modifiers:
     <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
-          <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+          <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
         </div>
         <div class="hw-card__body">
           <h3 class="hw-card__title">Card Title</h3>
@@ -108,7 +129,7 @@ Modifiers:
  --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
-          <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+          <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
         </div>
         <div class="hw-card__body">
           <h3 class="hw-card__title">Card Title</h3>
@@ -122,7 +143,7 @@ Modifiers:
  --><div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
-          <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+          <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
         </div>
         <div class="hw-card__body">
           <h3 class="hw-card__title">Card Title</h3>
@@ -141,7 +162,7 @@ Modifiers:
 ```html|span-3,plain,light
   <a href="#" class="hw-card hw-card--dark">
     <div class="hw-card__media">
-      <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
     </div>
     <div class="hw-card__body">
       <h3 class="hw-card__title">Card Title</h3>
@@ -159,7 +180,7 @@ Modifiers:
 <div class="hw-flex hw-flex--gutter-large-desktop hw-flex--gutter-large-mobile">
   <a href="#" class="hw-card hw-card--dark">
     <div class="hw-card__media">
-      <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
     </div>
     <div class="hw-card__body">
       <h3 class="hw-card__title">Card Title</h3>
@@ -171,7 +192,7 @@ Modifiers:
   </a>
   <a href="#" class="hw-card hw-card--dark">
     <div class="hw-card__media">
-      <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
     </div>
     <div class="hw-card__body">
       <h3 class="hw-card__title">Card Title</h3>
@@ -183,7 +204,7 @@ Modifiers:
   </a>
   <a href="#" class="hw-card hw-card--dark">
     <div class="hw-card__media">
-      <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
     </div>
     <div class="hw-card__body">
       <h3 class="hw-card__title">Card Title</h3>
@@ -208,7 +229,7 @@ Modifiers:
       </div>
     </div>
     <div class="hw-card__media">
-      <div class="hw-card__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+      <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
     </div>
     <div class="hw-card__body">
       <h3 class="hw-card__title">Card Title</h3>
