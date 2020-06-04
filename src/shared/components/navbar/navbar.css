@@ -312,7 +312,7 @@
 
     .hw-navbar__overlay {
       visibility: visible;
-      z-index: var(--z-index--navbar-search);.
+      z-index: var(--z-index--navbar-search);
       animation-name: fadein;
       animation-duration: var(--hw-transition-time-slow);
     }
