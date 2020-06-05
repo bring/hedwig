@@ -122,12 +122,14 @@
     width: 100%;
     transition: background-color 0.5s ease;
     padding: var(--hw-spacing-small-4);
+    
     &:hover, &:focus, &:active {
       color: var(--hw-color-input-accent);
       transition: background-color 0s ease;
       z-index: 1;
       position: relative; /* To keep the outline on focus unobstructed */
-      & .hw-search__suggestion-extra {
+      outline: none;
+      & .hw-search__suggestion-extra, .hw-search__suggestion-title {
         color: var(--hw-color-input-accent);
       }
     }
