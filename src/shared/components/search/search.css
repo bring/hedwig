@@ -108,6 +108,8 @@
     left: 0;
     right: 0;
     border-radius: var(--hw-border-radius);
+    overflow-y: auto;
+    max-height: 580px;
   }
 
   &__suggestion {
