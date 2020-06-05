@@ -302,7 +302,7 @@
     
     
     .hw-search__input {
-      animation-name: fadeinup;
+      animation-name: fadein;
       animation-duration: var(--hw-transition-time-slow);
     }
     .hw-search__suggestions {
@@ -395,17 +395,17 @@
 
 
 @keyframes fadeinup {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(10px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
 @keyframes fadeinupdelayed {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(10px);
   }
@@ -413,16 +413,16 @@
     opacity: 0;
     transform: translateY(10px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
 @keyframes fadein {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }

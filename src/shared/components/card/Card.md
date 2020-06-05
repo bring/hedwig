@@ -16,6 +16,146 @@ Modifiers:
 ```
 
 
+
+
+
+### Layouts — Title
+
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <h5 class="hw-card__subtitle">Secondary title</h5>
+    </div>
+  </div>
+```
+
+
+### Layouts — Description
+
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
+    </div>
+  </div>
+```
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <h5 class="hw-card__subtitle">Secondary title</h5>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
+    </div>
+  </div>
+```
+
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__body">
+      <h5 class="hw-card__overline">Overline title</h5>
+      <h3 class="hw-card__title">Card Title</h3>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
+    </div>
+  </div>
+```
+
+
+
+
+### Layouts — Buttons
+
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
+    </div>
+    <div class="hw-card__footer">
+      <a href="#" class="hw-card__action-button">Action</a>
+      <a href="#" class="hw-card__action-button">Action</a>
+    </div>
+  </div>
+```
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <h5 class="hw-card__subtitle">Secondary title</h5>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
+    </div>
+    <hr class="hw-hr hw-hr--light" />
+    <div class="hw-card__footer">
+      <a href="#" class="hw-card__action-button">Action</a>
+      <a href="#" class="hw-card__action-button">Action</a>
+    </div>
+  </div>
+```
+
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__body">
+      <h5 class="hw-card__overline">Overline title</h5>
+      <h3 class="hw-card__title">Card Title</h3>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
+    </div>
+    <div class="hw-card__footer">
+      <a href="#" class="hw-card__action-button">Action</a>
+      <a href="#" class="hw-card__action-button">Action</a>
+    </div>
+  </div>
+```
+
+
+### Layouts — Media
+
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__media hw-card__media-16_9">
+      <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
+    </div>
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
+    </div>
+  </div>
+```
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__media hw-card__media-16_9">
+      <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
+    </div>
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <h5 class="hw-card__subtitle">Secondary title</h5>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
+    </div>
+  </div>
+```
+
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__media hw-card__media-16_9">
+      <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
+    </div>
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
+    </div>
+    <div class="hw-card__footer">
+      <a href="#" class="hw-card__action-button">Action</a>
+      <a href="#" class="hw-card__action-button">Action</a>
+    </div>
+  </div>
+```
+
+
+
+
+
+# OLD
+
 ### Card
 
 ```html|span-2,plain,light
