@@ -262,12 +262,14 @@ Modifiers:
           <div class="hw-search hw-search--large" data-hw-search>
             <span class="hw-search__background"></span>
             <div class="hw-search__inner">
-              <input
-                data-hw-search-input
-                class="hw-search__input" type="text"
-                aria-label="Søk"
-                placeholder="Søk"
-              />
+              <form method="get" action="/s%C3%B8k" id="react-navbar-search-form" role="search" aria-label="nettside innhold">
+                <input
+                  data-hw-search-input
+                  class="hw-search__input" type="text"
+                  aria-label="Søk"
+                  placeholder="Søk"
+                />
+              </form>
               <i class="far fa-search hw-search__icon"></i>
               <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
             </div>

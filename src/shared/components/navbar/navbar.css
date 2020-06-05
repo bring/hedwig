@@ -177,6 +177,10 @@
     .hw-search__inner {
       background: var(--hw-color-white);
       border-radius: var(--hw-border-radius);
+
+      form {
+        position: absolute;
+      }
     }
 
     .hw-search, input {
