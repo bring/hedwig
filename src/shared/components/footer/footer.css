@@ -12,7 +12,7 @@
 
   &__mobile {
     display:none;
-    padding: calc(var(--hw-spacing-medium-2) * 2) var(--hw-spacing-medium-2);
+    padding: calc(var(--hw-spacing-medium-2) * 2) 0;
 
     @media (--high-res-mobile), (--max-medium) {
       display:block;
@@ -23,7 +23,7 @@
   &__desktop {
     display: block;
     margin: 0 auto;
-    padding: var(--hw-spacing-large-1) var(--hw-spacing-large-2);
+    padding: var(--hw-spacing-large-1) 0;
      
     @media (--high-res-mobile) {
       display: none;
