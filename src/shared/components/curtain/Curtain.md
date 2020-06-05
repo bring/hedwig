@@ -1,6 +1,14 @@
 ## Curtain (Deprecated)
 
-Creates interactive curtain rolling up and down 
+> Creates interactive curtain rolling up and down 
+
+
+
+> Since it is deprecated you should avoid using Curtains.
+> Where possible try to use [Accordion](/Accordion) instead.
+
+
+
 
 ```code
 Required:

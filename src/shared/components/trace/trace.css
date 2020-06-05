@@ -46,8 +46,9 @@
     animation: movePlaceholder 3s ease-out infinite 0.3s;
     padding: var(--hw-spacing-small-4) calc(var(--hw-spacing-small-3) * 2);
     border: var(--hw-border-thickness) solid transparent;
-    width:100%;
+    width: 100%;
     pointer-events: none;
+    line-height: 1.2em;
   }
 
   &__button {

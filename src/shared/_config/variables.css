@@ -222,10 +222,11 @@
   --hw-border-thickness-thick: 2px;
   --hw-border-radius: 2px;
 
-  /* Fixed heights */
+  /* Fixed sizes */
   --hw-navbar-height-mobile: 112px;
   --hw-navbar-height-desktop: 112px;
   --hw-input-field-height: 58px;
+  --hw-navbar-search-max-width: 530px;
 
   /**
    * Transitions

@@ -205,7 +205,7 @@ description: "Use placeholder text so users input the date in correct format."
 plain: true
 span: 3
 src: "{assets}/img/{postenbring}/{component}-dont-1.png"
-description: "Dont use a calendar with dropdown when asking for a date far back in time, e.g. a birth date. It is a hassle to go years back by clicking through all the months."
+description: "Don't use a calendar with dropdown when asking for a date far back in time, e.g. a birth date. It is a hassle to go years back by clicking through all the months."
 ```
 ```image
 plain: true

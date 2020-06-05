@@ -158,7 +158,6 @@ description: "Keep in mind how the image of your choice will crop when viewed in
 plain: true
 span: 3
 src: "{assets}/img/{postenbring}/{component}-do-2.png"
-description: "Keep in mind how the image of your choice will crop when viewed in different viewport sizes. A centered motif will scale easier, with less disturbance."
 ```
 
 #### Do not do this
@@ -173,5 +172,4 @@ description: "Keep in mind how the image of your choice will crop when viewed in
 plain: true
 span: 3
 src: "{assets}/img/{postenbring}/{component}-dont-2.png"
-description: "Keep in mind how the image of your choice will crop when viewed in different viewport sizes. An image with the motif to one of the sides may crop off the edges in an unfortunate way."
 ```

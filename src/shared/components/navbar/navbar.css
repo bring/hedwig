@@ -223,18 +223,18 @@
         height: var(--hw-navbar-height-desktop);
 
         .hw-search__suggestions {
-          max-width: 580px;
+          max-width: var(--hw-navbar-search-max-width);
           left: var(--hw-spacing-medium-4);
         }
 
         .hw-search__button-inside {
           display: block;
-          left: calc(var(--hw-spacing-medium-4) + 580px - var(--hw-spacing-small-4) - var(--hw-spacing-small-3));
+          left: calc(var(--hw-spacing-medium-4) + var(--hw-navbar-search-max-width) - var(--hw-spacing-small-4) - var(--hw-spacing-small-3));
           width: 18px;
         }
       }
       input {
-        width: calc(580px - var(--hw-spacing-medium-4));
+        width: calc(var(--hw-navbar-search-max-width) - var(--hw-spacing-medium-4));
       }
       .hw-search__inner {
         form {

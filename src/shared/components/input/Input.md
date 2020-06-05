@@ -84,7 +84,7 @@
 
 
 
-### {title} styles
+### Text field styles
 ```image
 plain: true
 span: 3
@@ -104,7 +104,7 @@ description: "Lined text fields are more subtle, with less visual emphasis than 
 
 
 
-### {title} types
+### Text field types
 ```image
 plain: true
 span: 2

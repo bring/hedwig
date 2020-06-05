@@ -77,7 +77,7 @@ plain: true
 span: 3
 src: "{assets}/img/{postenbring}/error-1.png"
 title: "Appearance"
-description: "When an error occurs, an error message of yellow background and black text should be displayed.
+description: "When an error occurs, an error message of yellow background and black text should be displayed.\n
 
 Use of yellow colour is the primary signal for marking when an error has occured, most often used as the background colour of a box displaying a message explaining the cause of error."
 ```

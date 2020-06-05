@@ -206,7 +206,7 @@ Help text is shown in three different places based on screen size
 
 # Design guidelines
 
-> Help tip shows a text when hovering or clicking the help-icon
+> Help tip shows a text when hovering or clicking the help-icon.
 
 
 
