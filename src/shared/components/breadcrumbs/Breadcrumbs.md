@@ -29,7 +29,10 @@ Elements:
   <div class="hw-breadcrumb hw-breadcrumb--single">
     <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
     <i class="fas fa-arrow-left fa-xs hw-breadcrumb__arrow-hover"></i>
-    <a class="hw-link" href="#">Start</a>
+    <a class="hw-link" href="#">
+      <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow-mobile"></i><!--
+      -->Start
+    </a>
   </div>
 </div>
 ```
@@ -85,7 +88,10 @@ Elements:
   <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>
   
   <div class="hw-breadcrumb">
-    <a class="hw-link" href="#">Level 2</a>
+    <a class="hw-link" href="#">
+      <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow-mobile"></i><!--
+      -->Level 2
+    </a>
   </div>
 
   <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>

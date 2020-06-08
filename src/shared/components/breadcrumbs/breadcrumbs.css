@@ -76,6 +76,8 @@
 
   &__arrow-mobile {
     margin-right: 8px;
+    transform: rotate(180deg);
+    vertical-align: 0px;
     @media (--large) {
       display: none;
     }
@@ -89,7 +91,6 @@
     .hw-breadcrumb__arrow, .hw-breadcrumb__arrow-hover {
       margin-right: 6px;
       margin-top: 2px;
-      vertical-align: 2%;
       transform: rotate(0deg);
     }
   }
