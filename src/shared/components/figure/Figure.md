@@ -23,7 +23,7 @@ Elements:
   <div class="hw-figure__container">
     <img
       alt="Picture of happy people"
-      src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
+      src="{assets}/img/{postenbring}/image-placeholder.jpg"
     />
   </div>
 </figure>
@@ -35,7 +35,7 @@ Elements:
   <div class="hw-figure__container">
     <img
       alt="Picture of happy people"
-      src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
+      src="{assets}/img/{postenbring}/image-placeholder.jpg"
     />
   </div>
   <figcaption class="hw-figure__figcaption">

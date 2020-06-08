@@ -17,7 +17,7 @@ Modifiers:
 
 ```html|span-6,light,plain
   <div class="hw-hero">
-    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"></div>
+    <div class="hw-hero__image" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.jpg');"></div>
   </div>
 ```
 
@@ -28,7 +28,7 @@ Changed from 20vh to 35vh in version 6.1.4
 
 ```html|span-6,light,plain
   <div class="hw-hero hw-hero--small">
-    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"></div>
+    <div class="hw-hero__image" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.jpgg');"></div>
   </div>
 ```
 
@@ -37,14 +37,14 @@ Together with navbar this will occupy full height of viewport
 
 ```html|span-6,light,plain
   <div class="hw-hero hw-hero--full">
-    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');"></div>
+    <div class="hw-hero__image" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.jpg');"></div>
   </div>
 ```
 
 ### Hero large with several images for breakpoints (prevent loading of big images on mobile)
 
 ```html|span-6,light,plain
-  <div class="hw-hero" data-hw-hero data-hw-hero-images='{"small": "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png", "large": "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-2.png"}'>
+  <div class="hw-hero" data-hw-hero data-hw-hero-images='{"small": "{assets}/img/{postenbring}/image-placeholder.jpg", "large": "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-2.png"}'>
     <div class="hw-hero__image"></div>
   </div>
 ```
@@ -65,7 +65,7 @@ Content can be placed on top of the hero image and positioned right, left or cen
 ```html|span-6,light,plain
   
   <div class="hw-hero">
-    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');">
+    <div class="hw-hero__image" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.jpg');">
     <div class="hw-hero__overlay hw-background-color-opaque-primary">
       <div class="hw-hero__content hw-hero__content--center hw-hero__content--middle">
         <div class="hw-block">
@@ -81,7 +81,7 @@ Content can be placed on top of the hero image and positioned right, left or cen
 
 ```html|span-6,light,plain
 <div class="hw-hero hw-hero--mobile-small">
-    <div class="hw-hero__image" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-1.png');">
+    <div class="hw-hero__image" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.jpg');">
   </div>
 </div>
 ```
