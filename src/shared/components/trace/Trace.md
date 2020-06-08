@@ -184,7 +184,7 @@ description: "Use secondary trace when tracing is a secondary action in the side
 plain: true
 span: 3
 src: "{assets}/img/{postenbring}/{component}-dont-1.png"
-description: "Dont use multiple trace fields on the same page."
+description: "Don't use multiple trace fields on the same page."
 ```
 
 
