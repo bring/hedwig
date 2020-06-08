@@ -208,7 +208,7 @@ description: "Used for smaller texts and descriptions, and for inline text in so
 
 
 
-Fluid typography
+### Fluid typography
 
 In code fluid typography is defined, with sizes for all text styles ranging from a minimum size to a maximum size, scaling dynamically responsive to the viewport.
 
