@@ -2,7 +2,7 @@
 {navigation}
 
 
-> The trace field is simular to the [Search](/Search) field and contains a rotating placeholder when the field is not populated.
+> The trace field is similar to the [Search](/Search) field and contains a rotating placeholder when the field is not populated.
 
 
 
