@@ -100,8 +100,8 @@
     .hw-breadcrumb--collapsed-wrapper {
       position: absolute;
       top: 0px;
-      left: -20px;
-      padding: 20px;
+      left: calc(var(--hw-spacing-medium-1) * -1);
+      padding: var(--hw-spacing-medium-1);
 
       ul {
         position: absolute;
@@ -120,7 +120,7 @@
         li {
           margin: var(--hw-spacing-small-4);
           text-transform: none;
-          
+
           &:not(:last-of-type) {
             border-bottom: var(--hw-border-thickness) solid var(--hw-color-separator-gray);
             padding-bottom: var(--hw-spacing-small-4);
@@ -139,7 +139,6 @@
       }
 
       &:hover, &:focus, &:active {
-        paddin-bottom: 200px;
         ul {
           display: block;
         }
