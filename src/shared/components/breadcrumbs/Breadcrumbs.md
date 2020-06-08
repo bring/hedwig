@@ -35,17 +35,6 @@ Elements:
 ```
 
 
-```code
-<div class="hw-breadcrumbs">
-  <div class="hw-breadcrumb hw-breadcrumb--single">
-    <i class="fas fa-chevron-left fa-xs hw-breadcrumb__arrow"></i>
-    <i class="fas fa-arrow-left fa-xs hw-breadcrumb__arrow-hover"></i>
-    <a class="hw-link" href="#">Start</a>
-  </div>
-</div>
-```
-
-
 
 ### Multi-level
 
@@ -57,11 +46,6 @@ Elements:
   <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>
   
   <div class="hw-breadcrumb">
-    <a class="hw-link" href="#">Level 2</a>
-  </div>
-  <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>
-  
-  <div class="hw-breadcrumb">
     <a class="hw-link" href="#">
       <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow-mobile"></i><!--
       -->Level 3
@@ -69,38 +53,46 @@ Elements:
   </div>
   <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>
   
-  <span class="hw-breadcrumb__current">Current content</span>
+  <span class="hw-breadcrumb__current">Current</span>
 </div>
 ```
 
-```code 
+
+
+### Multi-level (More than 3 levels)
+
+```html|plain,light
 <div class="hw-breadcrumbs">
+
   <div class="hw-breadcrumb">
     <a class="hw-link" href="#">Home</a>
   </div>
+
+  <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>
+  
+  <div class="hw-breadcrumb hw-breadcrumb--collapsed">
+    <a class="hw-link" href="#">&hellip;</a>
+
+    <div class="hw-breadcrumb--collapsed-wrapper">
+      <ul>
+        <li><a href="#">Previous 1</a></li>
+        <li><a href="#">Previous 2</a></li>
+        <li><a href="#">Previous 3</a></li>
+      </ul>
+    </div>
+  </div>
+  
   <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>
   
   <div class="hw-breadcrumb">
     <a class="hw-link" href="#">Level 2</a>
   </div>
+
   <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>
   
-  <div class="hw-breadcrumb">
-    <a class="hw-link" href="#">
-      <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow-mobile"></i><!--
-      -->Level 3
-    </a>
-  </div>
-  <i class="fas fa-chevron-right fa-xs hw-breadcrumb__arrow"></i>
-  
-  <span class="hw-breadcrumb__current">Current content</span>
+  <span class="hw-breadcrumb__current">Current</span>
 </div>
 ```
-
-
-
-
-
 
 
 
