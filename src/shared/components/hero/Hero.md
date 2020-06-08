@@ -28,7 +28,7 @@ Changed from 20vh to 35vh in version 6.1.4
 
 ```html|span-6,light,plain
   <div class="hw-hero hw-hero--small">
-    <div class="hw-hero__image" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.jpgg');"></div>
+    <div class="hw-hero__image" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.jpg');"></div>
   </div>
 ```
 
@@ -44,7 +44,7 @@ Together with navbar this will occupy full height of viewport
 ### Hero large with several images for breakpoints (prevent loading of big images on mobile)
 
 ```html|span-6,light,plain
-  <div class="hw-hero" data-hw-hero data-hw-hero-images='{"small": "{assets}/img/{postenbring}/image-placeholder.jpg", "large": "https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/hero-image-2.png"}'>
+  <div class="hw-hero" data-hw-hero data-hw-hero-images='{"small": "{assets}/img/{postenbring}/image-placeholder.jpg", "large": "{assets}/img/{postenbring}/image-placeholder.jpg"}'>
     <div class="hw-hero__image"></div>
   </div>
 ```

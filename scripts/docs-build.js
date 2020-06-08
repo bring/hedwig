@@ -54,10 +54,7 @@ function prepareDocFile(file, fileSection){
       result = result.replace(new RegExp("{bring}(.|\n)*?{/bring}", "g"), "").replace(/{posten}/g, "").replace(/{\/posten}/g, "");
     }
 
-    
-
-    //result = result.replace(/{assets}/g, "http://localhost:3001");
-    //result = result.replace(/{assets}/g, "https://bannervisning.no/m/PostenBring");
+  
     result = result.replace(/{assets}/g, "");
     result = result.replace(/{component}/g, title.toLowerCase());
     result = result.replace(/{title}/g, title);
@@ -67,8 +64,7 @@ function prepareDocFile(file, fileSection){
     result = result.replace(/{brand}/g, fileSection);
     result = result.replace(/{Brand}/g, fileSection[0].toUpperCase() + fileSection.substring(1));
     
-
-    //result = result.replace(/{navigation}/g, '```html|span-6,noSource,plain\n<div class="hw-guidelines-nav">\n<button class="hw-button hw-button--primary" onclick="window.scrollToDevelopmentGuidelines()">Development guidelines</button>\n<button class="hw-button hw-button--secondary" onclick="window.scrollToDesignGuidelines()">Design guidelines</button>\n</div>\n```');
+    // Not used
     result = result.replace(/{navigation}/g, "");
 
 
@@ -370,7 +366,7 @@ function build() {
   });
 
   bringMergedPages.push({
-    title: 'Guidelines',
+    title: 'Styling',
     pages: sortPages([
       ...sharedGuidelines,
       ...bringGuidelines,
@@ -435,7 +431,7 @@ function build() {
   });
 
   postenMergedPages.push({
-    title: 'Guidelines',
+    title: 'Styling',
     pages: sortPages([
       ...sharedGuidelines,
       ...postenGuidelines,

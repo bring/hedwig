@@ -613,13 +613,13 @@ src: "{assets}/img/{postenbring}/{component}-1.png"
 title: "Menu opened"
 ```
 
-1. Navbar
+**1. Navbar**
 This is the default navbar and should not be edited or customized.
 
-2. Primary menu items
+**2. Primary menu items**
 Primary menu items are listed at the top and styled with an icon prior to the link text. These should reflect the most popular services users use on the website.
 
-3. Secondary menu items
+**3. Secondary menu items**
 Secondary menu items are listed below the primary menu items. Menu items should be sorted together in columns by category.
 
 
