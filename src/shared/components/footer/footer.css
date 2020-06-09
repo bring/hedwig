@@ -147,7 +147,11 @@
 
   .hw-accordion {
     .hw-accordion__item {
-      border-bottom: var(--hw-border-thickness) solid var(--hw-color-white);
+      border-color: var(--hw-color-white) !important;
+
+      &:last-of-type {
+        border-bottom: var(--hw-border-thickness) solid var(--hw-color-white);
+      }
     }
     .hw-accordion__trigger, .hw-accordion__link {
       color: var(--hw-color-white);
