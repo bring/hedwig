@@ -62,6 +62,8 @@
       padding-left: var(--hw-spacing-small-4);
       padding-top: var(--hw-spacing-small-2);
       border-radius: var(--hw-border-radius);
+      color: var(--hw-color-gray-dark);
+      fill: var(--hw-color-gray-dark);
 
       .hw-input {
         padding-left: 0px;

@@ -56,7 +56,7 @@
 ```html|span-3,light,plain
 <label class="hw-label hw-label--line" disabled>
   Label
-  <input class="hw-input hw-input--line" type="text" value="The disabled value" disabled />
+  <input class="hw-input hw-input--line" type="text" placeholder="The disabled value" disabled />
 </label>
 ```
 

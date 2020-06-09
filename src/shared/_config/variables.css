@@ -66,7 +66,7 @@
   --hw-color-alert-red: #e32d22;
 
  
- 
+
   /**
   * Colors with opacity
   */
@@ -165,6 +165,12 @@
   --hw-font-size-min-p-px: 18px;
   --hw-p-line-height: 1.4;
 
+  --hw-font-size-max-lead: 22;
+  --hw-font-size-max-lead-px: 22px;
+  --hw-font-size-min-lead: 18;
+  --hw-font-size-min-lead-px: 18px;
+  --hw-lead-line-height: 1.4;
+
   --hw-font-size-max-small: 20;
   --hw-font-size-max-small-px: 20px;
   --hw-font-size-min-small: 16;
@@ -179,14 +185,25 @@
   --hw-font-size-h5: calc(var(--hw-font-size-min-h5-px) + (var(--hw-font-size-max-h5) - var(--hw-font-size-min-h5)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-h6: calc(var(--hw-font-size-min-h6-px) + (var(--hw-font-size-max-h6) - var(--hw-font-size-min-h6)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
 
-  --hw-font-size-caption: var(--hw-font-size-max-caption-px);
-  --hw-font-size-p: 20px;
-  --hw-font-size-small: 18px;
 
-  --hw-font-size-lead: 22px;
+  
+  --hw-font-size-caption: calc(var(--hw-font-size-min-caption-px) + (var(--hw-font-size-max-caption) - var(--hw-font-size-min-caption)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-p: calc(var(--hw-font-size-min-p-px) + (var(--hw-font-size-max-p) - var(--hw-font-size-min-p)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-small: calc(var(--hw-font-size-min-small-px) + (var(--hw-font-size-max-small) - var(--hw-font-size-min-small)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+
+
+  --hw-font-size-lead: calc(var(--hw-font-size-min-lead-px) + (var(--hw-font-size-max-lead) - var(--hw-font-size-min-lead)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-smaller: 16px;
   --hw-font-size-smallest: 12px;
+
+
   --hw-font-size-technical: 16px;
+  
+
+/*
+  --hw-font-size-caption: var(--hw-font-size-max-caption-px);
+  --hw-font-size-p: var(--hw-font-size-max-p);
+  --hw-font-size-small: var(--hw-font-size-max-small);
 
   @media(--small) {
     --hw-font-size-caption: var(--hw-font-size-min-caption-px);
@@ -203,12 +220,23 @@
     --hw-font-size-p: var(--hw-font-size-max-p-px);
     --hw-font-size-small: var(--hw-font-size-max-small-px);
   }
+
+  */
   @media(--xlarge) {
     --hw-font-size-caption: var(--hw-font-size-max-caption-px);
     --hw-font-size-p: var(--hw-font-size-max-p-px);
     --hw-font-size-small: var(--hw-font-size-max-small-px);
   }
+
+
+  --hw-font-size-lead: 22px;
+  --hw-font-size-smaller: 16px;
+  --hw-font-size-smallest: 12px;
+  --hw-font-size-technical: 16px;
+
   
+
+
   /**
    * Breakpoints
    * em = 16px
