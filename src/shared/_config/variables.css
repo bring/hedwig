@@ -177,6 +177,18 @@
   --hw-font-size-min-small-px: 16px;
   --hw-small-line-height: 1.444;
 
+  --hw-font-size-max-smaller: 18;
+  --hw-font-size-max-smaller-px: 18px;
+  --hw-font-size-min-smaller: 16;
+  --hw-font-size-min-smaller-px: 16px;
+  --hw-smaller-line-height: 1.450;
+
+  --hw-font-size-max-smallest: 13;
+  --hw-font-size-max-smallest-px: 13px;
+  --hw-font-size-min-smallest: 11;
+  --hw-font-size-min-smallest-px: 11px;
+  --hw-smallest-line-height: 1.5;
+
   --hw-font-size-h1-large: calc(var(--hw-font-size-min-h1-px) + (var(--hw-font-size-max-h1-large) - var(--hw-font-size-min-h1-large)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-h1: calc(var(--hw-font-size-min-h1-px) + (var(--hw-font-size-max-h1) - var(--hw-font-size-min-h1)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-h2: calc(var(--hw-font-size-min-h2-px) + (var(--hw-font-size-max-h2) - var(--hw-font-size-min-h2)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
@@ -186,19 +198,16 @@
   --hw-font-size-h6: calc(var(--hw-font-size-min-h6-px) + (var(--hw-font-size-max-h6) - var(--hw-font-size-min-h6)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
 
 
-  
   --hw-font-size-caption: calc(var(--hw-font-size-min-caption-px) + (var(--hw-font-size-max-caption) - var(--hw-font-size-min-caption)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-p: calc(var(--hw-font-size-min-p-px) + (var(--hw-font-size-max-p) - var(--hw-font-size-min-p)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-small: calc(var(--hw-font-size-min-small-px) + (var(--hw-font-size-max-small) - var(--hw-font-size-min-small)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
 
 
   --hw-font-size-lead: calc(var(--hw-font-size-min-lead-px) + (var(--hw-font-size-max-lead) - var(--hw-font-size-min-lead)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
-  --hw-font-size-smaller: 16px;
-  --hw-font-size-smallest: 12px;
+  --hw-font-size-smaller: calc(var(--hw-font-size-min-smaller-px) + (var(--hw-font-size-max-smaller) - var(--hw-font-size-min-smaller)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-smallest: calc(var(--hw-font-size-min-smallest-px) + (var(--hw-font-size-max-smallest) - var(--hw-font-size-min-smallest)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
 
 
-  --hw-font-size-technical: 16px;
-  
 
 /*
   --hw-font-size-caption: var(--hw-font-size-max-caption-px);
@@ -226,12 +235,12 @@
     --hw-font-size-caption: var(--hw-font-size-max-caption-px);
     --hw-font-size-p: var(--hw-font-size-max-p-px);
     --hw-font-size-small: var(--hw-font-size-max-small-px);
+    --hw-font-size-lead: var(--hw-font-size-max-lead-px);
+    --hw-font-size-smaller: var(--hw-font-size-max-smaller-px);
+    --hw-font-size-smallest: var(--hw-font-size-max-smallest-px);
   }
 
 
-  --hw-font-size-lead: 22px;
-  --hw-font-size-smaller: 16px;
-  --hw-font-size-smallest: 12px;
   --hw-font-size-technical: 16px;
 
   
