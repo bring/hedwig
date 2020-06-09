@@ -46,7 +46,7 @@
       width: 10px;
       height: 2px;
       content: '';
-      background-color: var(--hw-color-gray);
+      background-color: var(--hw-color-gray-normal);
       transform: rotate(-45deg);
       transition: transform 0.1s ease;
     }

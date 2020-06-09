@@ -27,7 +27,7 @@
   }
 
   &[disabled], &:disabled, &[disabled="disabled"], &--disabled {
-    color: var(--hw-color-gray);
+    color: var(--hw-color-gray-normal);
     pointer-events: none;
 
     .hw-input {
@@ -58,7 +58,7 @@
 
 
     &[disabled], &:disabled, &[disabled="disabled"], &--disabled {
-      background-color: var(--hw-color-gray-light);
+      background-color: var(--hw-color-gray-normal);
       padding-left: var(--hw-spacing-small-4);
       padding-top: var(--hw-spacing-small-2);
       border-radius: var(--hw-border-radius);

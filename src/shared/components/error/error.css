@@ -30,11 +30,11 @@
     background:
     radial-gradient(circle closest-side at 50% 68%, var(--hw-color-black) 0, var(--hw-color-black) 24%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%), 
     /* The top and bottom blocks to cut the line */
-    linear-gradient(180deg, rgb(0, 0, 0,0) 0, rgb(0, 0, 0, 0) 56%, var(--hw-color-secondary) 57%, var(--hw-color-secondary) 100%),
-    linear-gradient(180deg, var(--hw-color-secondary) 0, var(--hw-color-secondary) 25%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 100%), 
+    linear-gradient(180deg, rgb(0, 0, 0,0) 0, rgb(0, 0, 0, 0) 56%, var(--hw-color-alert-yellow) 57%, var(--hw-color-alert-yellow) 100%),
+    linear-gradient(180deg, var(--hw-color-alert-yellow) 0, var(--hw-color-alert-yellow) 25%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 100%), 
     /* The lines */
-    linear-gradient(94deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 47%, var(--hw-color-black) 48%, var(--hw-color-black) 56%, var(--hw-color-secondary) 57%, var(--hw-color-secondary) 100%), 
-    linear-gradient(86deg, var(--hw-color-secondary) 0, var(--hw-color-secondary) 43%, var(--hw-color-black) 44%, var(--hw-color-black) 55%, var(--hw-color-secondary) 56%, var(--hw-color-secondary) 100%),
+    linear-gradient(94deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 47%, var(--hw-color-black) 48%, var(--hw-color-black) 56%, var(--hw-color-alert-yellow) 57%, var(--hw-color-alert-yellow) 100%), 
+    linear-gradient(86deg, var(--hw-color-alert-yellow) 0, var(--hw-color-alert-yellow) 43%, var(--hw-color-black) 44%, var(--hw-color-black) 55%, var(--hw-color-alert-yellow) 56%, var(--hw-color-alert-yellow) 100%),
     #444;
     background-position: 50% 50%;
     background-origin: padding-box;
@@ -85,7 +85,7 @@
 .hw-error-summary {
   border: none;
   padding: var(--hw-spacing-medium-2) var(--hw-spacing-large-1) var(--hw-spacing-medium-2) var(--hw-spacing-large-1);
-  background: var(--hw-color-secondary);
+  background: var(--hw-color-alert-yellow);
   border-radius: var(--hw-border-radius);
 
   /**
@@ -118,7 +118,7 @@
       linear-gradient(180deg, rgb(0, 0, 0,0) 0, rgb(0, 0, 0,0) 56%, #444 57%, #444 100%),
       linear-gradient(180deg, #444 0, #444 25%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 100%), 
       /* The lines */
-      linear-gradient(94deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 47%, var(--hw-color-secondary) 48%, rgba(255,255,255,1) 56%, #444 57%, #444 100%), 
+      linear-gradient(94deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 47%, var(--hw-color-alert-yellow) 48%, rgba(255,255,255,1) 56%, #444 57%, #444 100%), 
       linear-gradient(86deg, #444 0, #444 43%, rgba(255,255,255,1) 44%, rgba(255,255,255,1) 55%, #444 56%, #444 100%),
       #444;
       background-position: 50% 50%;

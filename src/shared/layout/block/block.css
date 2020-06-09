@@ -131,19 +131,19 @@
   }
 
   &--bg-gray {
-    background-color: var(--hw-color-gray);
+    background-color: var(--hw-color-gray-normal);
   }
 
   &--bg-gray-light {
-    background-color: var(--hw-color-gray-light);
+    background-color: var(--hw-color-gray-normal);
   }
 
   &--bg-gray-lighter {
-    background-color: var(--hw-color-gray-lighter);
+    background-color: var(--hw-color-gray-light-fill);
   }
 
   &--bg-gray-lightest {
-    background-color: var(--hw-color-gray-lightest);
+    background-color: var(--hw-color-gray-normal);
   }
 
   &--bg-white {
@@ -152,7 +152,7 @@
 
   /* Start deprecated at version 11 */
   &--bg-alt:nth-child(even) {
-    background: var(--hw-color-gray-lightest);
+    background: var(--hw-color-gray-normal);
   }
 
   &--bg-alt:nth-child(odd) {
@@ -169,7 +169,7 @@
   }
 
   &--bordered {
-    border: 6px solid var(--hw-color-secondary);
+    border: 6px solid var(--hw-color-alert-yellow);
   }
 
   &--px {

@@ -76,14 +76,14 @@
 
 
     &:disabled ~ .hw-checkbox__indicator {
-      border-color: var(--hw-color-gray-lighter);
+      border-color: var(--hw-color-gray-normal);
       background-color: transparent;
       cursor: not-allowed;
     }
 
     &:disabled:checked ~ .hw-checkbox__indicator {
-      border-color: var(--hw-color-gray-light);
-      background: var(--hw-color-gray-lighter);
+      border-color: var(--hw-color-gray-normal);
+      background: var(--hw-color-gray-normal);
     }
   }
 
@@ -107,12 +107,12 @@
       left: calc(var(--hw-spacing-medium-2) - var(--hw-spacing-small-1));
     }
 
-    &:disabled {
-      background: var(--hw-color-gray-lighter);;
+    &[disabled] {
+      background: var(--hw-color-gray-light-fill);
     }
 
     &.hw-checkbox--error {
-      border: var(--hw-border-thickness) solid var(--hw-color-secondary);
+      border: var(--hw-border-thickness) solid var(--hw-color-alert-yellow);
     }
   }
 
@@ -126,7 +126,7 @@
   }
 
   &--error .hw-checkbox__indicator {
-    border: 2px solid var(--hw-color-secondary) !important;
+    border: 2px solid var(--hw-color-alert-yellow) !important;
 
     &::before {
       border-bottom-color: var(--hw-color-black) !important

@@ -14,7 +14,7 @@
     margin: 0;
 
     &[disabled] {
-      color: var(--hw-color-gray-light);
+      color: var(--hw-color-gray-normal);
     }
     &:focus-within {
       & .hw-phone-input__group{
@@ -45,7 +45,7 @@
     color: var(--hw-color-gray-dark);
 
     &:focus {
-      color: var(--hw-color-gray-darker);
+      color: var(--hw-color-gray-dark);
       border-bottom: none;
     }
 
@@ -95,7 +95,7 @@
         width: 5px;
         height: 1px;
         content: '';
-        background-color: var(--hw-color-gray);
+        background-color: var(--hw-color-gray-dark);
         transform: rotate(-45deg);
         transition: transform 0.1s ease;
       }
@@ -115,7 +115,7 @@
       & .hw-dropdown__inner {
         height: auto;
         border: none;
-        background: var(--hw-color-gray-lightest);
+        background: var(--hw-color-gray-light-fill);
 
         &::after {
           top: 0;
@@ -155,12 +155,12 @@
 
       background-image:
       /* Cut off the sharp ends of the arrow */
-      linear-gradient(45deg, transparent 74%, var(--hw-color-gray-lightest) 0%),
-      linear-gradient(135deg, var(--hw-color-gray-lightest) 26%, transparent 26%),
+      linear-gradient(45deg, transparent 74%, var(--hw-color-gray-light-fill) 0%),
+      linear-gradient(135deg, var(--hw-color-gray-light-fill) 26%, transparent 26%),
       /* Draw the arrow */
-      linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-gray-lightest) 73%, var(--hw-color-gray-lightest) 100%),
-      linear-gradient(45deg, var(--hw-color-gray-lightest) 0, var(--hw-color-gray-lightest) 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 37%, transparent 38%, transparent 100%),
-      linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray) 63%, var(--hw-color-gray) 71%, var(--hw-color-gray-lightest) 72%, var(--hw-color-gray-lightest) 100%);
+      linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-gray-light-fill) 73%, var(--hw-color-gray-light-fill) 100%),
+      linear-gradient(45deg, var(--hw-color-gray-light-fill) 0, var(--hw-color-gray-light-fill) 28%, var(--hw-color-gray-dark) 29%, var(--hw-color-gray-dark) 37%, transparent 38%, transparent 100%),
+      linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray-dark) 63%, var(--hw-color-gray-dark) 71%, var(--hw-color-gray-light-fill) 72%, var(--hw-color-gray-light-fill) 100%);
       background-size: 8px 8px;
       background-position: calc(100% - 18px) 48%;
       background-repeat: no-repeat;

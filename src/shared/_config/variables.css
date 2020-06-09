@@ -53,31 +53,20 @@
    * Shared colors
    */
 
-  --hw-color-gray-lightest: #f2f2f2;
-  --hw-color-gray-lighter: #e6e6e6;
-  --hw-color-gray-light: #d6d6d6;
-  --hw-color-gray: #888;
   --hw-color-gray-dark: #6e6e6e;
-  --hw-color-gray-darker: #444;
-  --hw-color-gray-darkest: #222;
-  --hw-color-yellow: #fdbb2f;
-  --hw-color-yellow-darker: #f5a623;
-  --hw-color-green: #26b576;
-  --hw-color-red: #e32d22;
+  --hw-color-gray-normal: #d6d6d6;
+  --hw-color-gray-light-stroke: #e4e4e4;
+  --hw-color-gray-light-fill: #f2f2f2;
+
   --hw-color-white: #fff;
   --hw-color-black: #000;
-  --hw-color-avocado: #7BC144;
-  --hw-color-secondary: #fdbb2f;
-  --hw-color-separator-gray: #e4e4e4;
 
-  /**
-  * Colors with opacity
-  */
+  --hw-color-alert-green: #7BC144;
+  --hw-color-alert-yellow: #fdbb2f;
+  --hw-color-alert-red: #e32d22;
 
-  --hw-color-opaque-black-20: rgba(0,0,0, 0.20); /* #000000 */
-  --hw-color-opaque-black-10: rgba(0,0,0, 0.10);
-  --hw-color-opaque-black-7: rgba(0,0,0, 0.07);
-  --hw-color-opaque-white: rgba(255, 255, 255, 0.50);
+ 
+
 
 
   /**

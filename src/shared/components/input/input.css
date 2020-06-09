@@ -8,9 +8,8 @@
   display: block;
   width: 100%;
   height: var(--hw-input-field-height);
-  /*margin-top: var(--hw-spacing-small-1);*/
   padding: var(--hw-spacing-small-4);
-  background-color: var(--hw-color-gray-lightest);
+  background-color: var(--hw-color-gray-light-fill);
   font-size: var(--hw-font-size-small);
   line-height: normal;
   border: var(--hw-border-thickness) solid transparent;
@@ -44,8 +43,8 @@
   }
 
   &[disabled], &:disabled, &[disabled="disabled"] {
-    background-color: var(--hw-color-gray-light);
-    border: var(--hw-border-thickness) solid var(--hw-color-gray-light);
+    background-color: var(--hw-color-gray-normal);
+    border: var(--hw-border-thickness) solid var(--hw-color-gray-normal);
   }
 
   /**
@@ -54,7 +53,7 @@
 
   &--error {
     position: relative;
-    border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-secondary) !important;
+    border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-alert-yellow) !important;
     margin-bottom: calc(var(--hw-border-thickness) - var(--hw-border-thickness-thick)); /* Subtract difference in border height to avoid jumping */
     transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
   }
@@ -62,7 +61,7 @@
 
   &--line-basic {
     background: transparent;
-    border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-light);
+    border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-normal);
     padding-left: 0px;
     padding-top: var(--hw-spacing-small-1);
     padding-bottom: var(--hw-spacing-small-3);

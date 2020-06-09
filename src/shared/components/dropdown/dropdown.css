@@ -11,7 +11,7 @@
   }
 
   &:focus .hw-dropdown__inner {
-    border-color: var(--hw-color-gray-darker);
+    border-color: var(--hw-color-gray-dark);
   }
 
   /* Clearfix */
@@ -36,13 +36,13 @@
     max-height: var(--hw-input-field-height);
     border: none;
     color: var(--hw-color-black);
-    background-color: var(--hw-color-gray-lightest);
+    background-color: var(--hw-color-gray-light-fill);
     font-size: var(--hw-font-size-small);
     cursor: pointer;
     transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
 
     &:hover {
-      border-color: var(--hw-color-gray-darker);
+      border-color: var(--hw-color-gray-dark);
     }
   }
 
@@ -75,7 +75,7 @@
       width: 10px;
       height: 2px;
       content: '';
-      background-color: var(--hw-color-gray);
+      background-color: var(--hw-color-gray-dark);
       transform: rotate(-45deg);
       transition: transform 0.1s ease;
     }
@@ -96,7 +96,7 @@
 
   &__option {
     padding: var(--hw-spacing-small-4) 0;
-    border-top: var(--hw-border-thickness) solid var(--hw-color-gray-lighter);
+    border-top: var(--hw-border-thickness) solid var(--hw-color-gray-light-stroke);
     margin: 3px var(--hw-spacing-small-4);
     line-height: var(--hw-font-size-p);
 
@@ -104,9 +104,9 @@
       color: var(--hw-color-primary-dark);
     }
     &--disabled {
-      color: var(--hw-color-gray);
+      color: var(--hw-color-gray-normal);
       &:hover {
-        color: var(--hw-color-gray);
+        color: var(--hw-color-gray-normal);
       }
     }
     &:first-child{
@@ -128,7 +128,7 @@
       z-index: 2;
       max-height: calc(100vh - 60px);
       overflow-y: auto;
-      border-color: var(--hw-color-gray-darker);
+      border-color: var(--hw-color-gray-dark);
     }
 
     &__arrow::before {
@@ -178,7 +178,7 @@
 
   &--line {
     background: transparent;
-    border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-light);
+    border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-normal);
     padding-left: 0px;
     padding-top: var(--hw-spacing-small-1);
     padding-bottom: var(--hw-spacing-small-3);
@@ -192,8 +192,8 @@
       linear-gradient(135deg, var(--hw-color-white) 26%, transparent 26%),
       /* Draw the arrow */
       linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
-      linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 37%, transparent 38%, transparent 100%),
-      linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray) 63%, var(--hw-color-gray) 71%, var(--hw-color-white) 72%, var(--hw-color-white) 100%);
+      linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray-normal) 29%, var(--hw-color-gray-normal) 37%, transparent 38%, transparent 100%),
+      linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray-normal) 63%, var(--hw-color-gray-normal) 71%, var(--hw-color-white) 72%, var(--hw-color-white) 100%);
       background-size: var(--hw-spacing-small-4) var(--hw-spacing-small-4);
       background-position: calc(100% - var(--hw-spacing-small-4)) 25%;
       background-repeat: no-repeat;
@@ -210,7 +210,7 @@
       top: -5px;
     }
     .hw-dropdown__options {
-      background: var(--hw-color-gray-lightest);
+      background: var(--hw-color-gray-light-fill);
       padding: var(--he-spacing-small);
     }
 
@@ -237,35 +237,38 @@
     font-size: var(--hw-font-size-small);
     cursor: pointer;
     color: var(--hw-color-black);
-    background-color: var(--hw-color-gray-lightest);
+    background-color: var(--hw-color-gray-light-fill);
     -webkit-appearance: none;
     padding: var(--hw-spacing-small-4);
     transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
 
     &:hover, &:active, &:focus {
-      border-color: var(--hw-color-gray-darker);
+      border-color: var(--hw-color-gray-dark);
     }
     &:focus {
       outline: 0;
     }
     background-image:
     /* Cut off the sharp ends of the arrow */
-    linear-gradient(45deg, transparent 74%, var(--hw-color-gray-lightest) 0%),
-    linear-gradient(135deg, var(--hw-color-gray-lightest) 26%, transparent 26%),
+    linear-gradient(45deg, transparent 74%, var(--hw-color-gray-light-fill) 0%),
+    linear-gradient(135deg, var(--hw-color-gray-light-fill) 26%, transparent 26%),
     /* Draw the arrow */
-    linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-gray-lightest) 73%, var(--hw-color-gray-lightest) 100%),
-    linear-gradient(45deg, var(--hw-color-gray-lightest) 0, var(--hw-color-gray-lightest) 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 37%, transparent 38%, transparent 100%),
-    linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray) 63%, var(--hw-color-gray) 71%, var(--hw-color-gray-lightest) 72%, var(--hw-color-gray-lightest) 100%);
+    linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-gray-light-fill) 73%, var(--hw-color-gray-light-fill) 100%),
+    linear-gradient(45deg, var(--hw-color-gray-light-fill) 0, var(--hw-color-gray-light-fill) 28%, var(--hw-color-gray-dark) 29%, var(--hw-color-gray-dark) 37%, transparent 38%, transparent 100%),
+    linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray-dark) 63%, var(--hw-color-gray-dark) 71%, var(--hw-color-gray-light-fill) 72%, var(--hw-color-gray-light-fill) 100%);
     background-size: var(--hw-spacing-small-4) var(--hw-spacing-small-4);
     background-position: calc(100% - var(--hw-spacing-small-4)) 45%;
     background-repeat: no-repeat;
+
+
+
     /* Remove default down-arrow for IE */
     &::-ms-expand {
       display: none;
     }
     /* Color the selected option with the correct color for IE */
     &::-ms-value {
-      color: var(--hw-color-gray-darker);
+      color: var(--hw-color-gray-dark);
       background: none;
     }
   }

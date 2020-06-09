@@ -103,7 +103,7 @@
   &__description {
     margin-top: calc(var(--hw-spacing-medium-2) - var(--hw-spacing-small-1));
     font-size: var(--hw-font-size-technical);
-    color: var(--hw-color-gray);
+    color: var(--hw-color-gray-dark);
   }
 
   &__text {
@@ -134,9 +134,9 @@
     min-width: 130px;
     padding: var(--hw-spacing-small-2);
     border: 0;
-    background-color: var(--hw-color-secondary);
+    background-color: var(--hw-color-alert-yellow);
     text-align: center;
-    color: var(--hw-color-gray-darkest);
+    color: var(--hw-color-black);
   }
 
   &__date {
@@ -166,7 +166,7 @@
 
   hr {
     height: var(--hw-border-thickness);
-    background-color: var(--hw-color-gray-light);
+    background-color: var(--hw-color-gray-normal);
     width: auto;
     margin: 0 var(--hw-spacing-medium-3);
   }

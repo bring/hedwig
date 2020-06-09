@@ -69,9 +69,9 @@
     font-size: 8px;
 
     &:hover {
-      background-color: var(--hw-color-gray-lighter);
-      color: var(--hw-color-gray-darkest);
-      fill: var(--hw-color-gray-darkest);
+      background-color: var(--hw-color-gray-light-fill);
+      color: var(--hw-color-black);
+      fill: var(--hw-color-black);
       outline: 0;
     }
     &:focus {
@@ -79,7 +79,7 @@
     }
 
     &:active {
-      background-color: var(--hw-color-gray-light);
+      background-color: var(--hw-color-gray-normal);
       background-size: 100%;
     }
     & .hw-drawer__close-button-x {

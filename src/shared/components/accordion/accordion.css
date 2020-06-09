@@ -12,7 +12,7 @@
   transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    border-color: var(--hw-color-gray-darker);
+    border-color: var(--hw-color-gray-dark);
   }
 
 
@@ -40,7 +40,7 @@
     padding: calc(var(--hw-spacing-small-3) * 2) 0;
     padding-right: var(--hw-spacing-medium-2);
     border: 0;
-    border-top: 1px solid var(--hw-color-gray-lighter);
+    border-top: 1px solid var(--hw-color-gray-light-fill);
     font-size: var(--hw-font-size-p);
     text-align: left;
     color: inherit;
@@ -96,7 +96,7 @@
     padding: 0 var(--hw-border-thickness);
 
     & .hw-accordion__item:not(:first-child) {
-      border-top: var(--hw-border-thickness) solid var(--hw-color-opaque-black-7);
+      border-top: var(--hw-border-thickness) solid var(--hw-color-gray-light-stroke);
     }
 
     & .hw-accordion__trigger {

@@ -27,7 +27,7 @@
     margin-top: var(--hw-navbar-height-mobile);
     padding-left: var(--hw-spacing-small-4);
     padding-right: var(--hw-spacing-small-4);
-    border-top: var(--hw-border-thickness) solid var(--hw-color-gray-lighter);
+    border-top: var(--hw-border-thickness) solid var(--hw-color-gray-light-fill);
 
     font-size: var(--hw-font-size-small);
 

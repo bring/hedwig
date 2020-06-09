@@ -7,7 +7,7 @@
   padding: var(--hw-spacing-small-4);
   border: none;
   border-radius: var(--hw-border-radius);
-  background-color: var(--hw-color-gray-lightest);
+  background-color: var(--hw-color-gray-light-fill);
   display: block;
   width: 100%;
   transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
@@ -29,7 +29,7 @@
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-input-accent);
 
     &::placeholder {
-      color: var(--hw-color-gray-light);
+      color: var(--hw-color-gray-normal);
     }
   }
 
@@ -38,7 +38,7 @@
   }
 
   &:disabled {
-    color: var(--hw-color-gray-light);
+    color: var(--hw-color-gray-normal);
     user-select: none;
     cursor: not-allowed !important;
   }
@@ -54,7 +54,7 @@
 
   &--line {
     background: transparent;
-    border: var(--hw-border-thickness) solid var(--hw-color-gray-light);
+    border: var(--hw-border-thickness) solid var(--hw-color-gray-normal);
     border-radius: var(--hw-border-radius);
     height: auto;
 
@@ -65,7 +65,7 @@
     &.hw-textarea--error,
     &.hw-textarea--error:focus {
       position: relative;
-      border: var(--hw-border-thickness-thick) solid var(--hw-color-secondary);
+      border: var(--hw-border-thickness-thick) solid var(--hw-color-alert-yellow);
     }
 
     &.hw-textarea--error + .hw-error {
@@ -78,13 +78,13 @@
   &--error,
   &--error:focus {
     position: relative;
-    border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-secondary);
+    border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-alert-yellow);
 
 
     /* This will NOT work, as textareas cannot be styled using :before and :after. This does not work with elements that cannot have other elements inside of them. Like textareas and img */;
 
     &::before {
-      background: var(--hw-color-secondary);
+      background: var(--hw-color-alert-yellow);
       color: var(--hw-color-white);
       position: absolute;
       content: '!';

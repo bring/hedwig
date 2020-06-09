@@ -85,8 +85,8 @@
   }
 
   &--warning {
-    background-color: var(--hw-color-secondary);
-    border-color: var(--hw-color-secondary);
+    background-color: var(--hw-color-alert-yellow);
+    border-color: var(--hw-color-alert-yellow);
     color: var(--hw-color-black);
   }
 }

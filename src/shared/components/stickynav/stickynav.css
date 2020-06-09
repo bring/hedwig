@@ -44,7 +44,7 @@
     font-size: var(--hw-font-size-small);
 
     &:hover {
-      color: var(--hw-color-gray-darker);
+      color: var(--hw-color-gray-dark);
     }
 
     &:hover::after {
@@ -58,7 +58,7 @@
     }
 
     &.hw-stickynav__link--active {
-      color: var(--hw-color-gray-darker);
+      color: var(--hw-color-gray-dark);
     }
 
     &.hw-stickynav__link--active::after {

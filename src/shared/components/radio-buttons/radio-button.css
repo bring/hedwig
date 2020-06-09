@@ -65,7 +65,7 @@
     margin-bottom: var(--hw-spacing-small-4);
 
     &[disabled] {
-      background: var(--hw-color-gray-lightest);
+      background: var(--hw-color-gray-light-fill);
     }
 
     .hw-radio-button__indicator {
@@ -84,7 +84,7 @@
   }
 
   &--error {
-    border-color: var(--hw-color-secondary);
+    border-color: var(--hw-color-alert-yellow);
     margin-bottom: var(--hw-spacing-small-1);
   }
 
@@ -115,7 +115,7 @@
     }
 
     &:focus ~ .hw-radio-button__indicator {
-      border-color: var(--hw-color-gray-darker);
+      border-color: var(--hw-color-gray-dark);
 
       &::after {
         content: "";
@@ -131,13 +131,13 @@
     }
     
     &:disabled ~ .hw-radio-button__indicator {
-      border-color: var(--hw-color-gray-lighter);
+      border-color: var(--hw-color-gray-normal);
       background-color: transparent;
       cursor: not-allowed;
     }
 
     &:disabled ~ .hw-radio-button__label {
-      color: var(--hw-color-gray);
+      color: var(--hw-color-gray-dark);
     }
   }
 
@@ -146,11 +146,11 @@
    */
 
   &--error .hw-radio-button__indicator {
-    border: 2px solid var(--hw-color-secondary) !important;
+    border: 2px solid var(--hw-color-alert-yellow) !important;
     transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
 
     &::after {
-      background: var(--hw-color-secondary) !important;
+      background: var(--hw-color-alert-yellow) !important;
     }
   }
 }

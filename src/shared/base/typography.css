@@ -20,12 +20,12 @@
   }
 
   a {
-    color: var(--hw-color-gray-darker);
+    color: var(--hw-color-gray-dark);
     text-decoration: none;
   }
 
   input {
-    color: var(--hw-color-gray-darker);
+    color: var(--hw-color-gray-dark);
   }
 
   input::placeholder {

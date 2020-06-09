@@ -46,7 +46,7 @@
     height: 50px;
 
     @media (--medium) {
-      background: var(--hw-color-gray-lightest);
+      background: var(--hw-color-gray-normal);
       position: absolute;
       padding: var(--hw-spacing-small-2);
       right: calc( var(--hw-spacing-small-4) * -1);

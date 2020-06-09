@@ -18,7 +18,7 @@
     right: calc(50% + 70px);
     display: block;
     height: 1px;
-    background-color: var(--hw-color-gray-lighter);
+    background-color: var(--hw-color-gray-light-fill);
   }
 
   &::after {
@@ -29,7 +29,7 @@
     left: calc(50% + 70px);
     display: block;
     height: 1px;
-    background-color: var(--hw-color-gray-lighter);
+    background-color: var(--hw-color-gray-light-fill);
   }
 
   &:hover {

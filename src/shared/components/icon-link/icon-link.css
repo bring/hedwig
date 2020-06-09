@@ -5,7 +5,7 @@
 .hw-icon-link {
   padding: calc(var(--hw-spacing-small-3) * 2);
   display: block;
-  color: var(--hw-color-gray-darkest);
+  color: var(--hw-color-black);
   text-align: center;
   transition: background-color 0.3s ease, border-color 0.3s ease;
   height: 100%;
@@ -34,6 +34,6 @@
   }
 
   &--border-under {
-    border-bottom: 1px solid var(--hw-color-gray-light);
+    border-bottom: 1px solid var(--hw-color-gray-normal);
   }
 }

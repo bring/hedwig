@@ -9,8 +9,8 @@
   margin-right: 3px;
   border-radius: var(--hw-border-radius);
   border-width: 0px;
-  background: var(--hw-color-gray);
-  border-color: var(--hw-color-gray);
+  background: var(--hw-color-gray-normal);
+  border-color: var(--hw-color-gray-normal);
   color: var(--hw-color-button-text);
   fill: var(--hw-color-button-text);
   font-family: var(--hw-font-primary-medium);
@@ -30,8 +30,8 @@
   &:disabled, &[disabled], &[disabled]:active {
     color: var(--hw-color-gray-dark) !important;
     fill: var(--hw-color-gray-dark) !important;
-    background: var(--hw-color-gray-light) !important;
-    border-color: var(--hw-color-gray-light) !important;
+    background: var(--hw-color-gray-normal) !important;
+    border-color: var(--hw-color-gray-normal) !important;
     outline: 0 !important;
     box-shadow: none !important;
     cursor: default;
@@ -126,25 +126,25 @@
   }
 
   &--picture-yellow {
-    background: var(--hw-color-yellow);
-    border-color: var(--hw-color-yellow);
-    color: var(--hw-color-gray-darkest);
-    fill: var(--hw-color-gray-darkest);
+    background: var(--hw-color-alert-yellow);
+    border-color: var(--hw-color-alert-yellow);
+    color: var(--hw-color-black);
+    fill: var(--hw-color-black);
 
     &:hover {
-      background: var(--hw-color-yellow-darker);
+      background: var(--hw-color-alert-yellow);
     }
 
     &:hover,
     &:active,
     &:focus {
-      outline: 0px solid var(--hw-color-yellow-darker);
+      outline: 0px solid var(--hw-color-alert-yellow);
     }
   }
 
   &--picture-dark {
-    background: var(--hw-color-gray-darkest);
-    border-color: var(--hw-color-gray-darkest);
+    background: var(--hw-color-black);
+    border-color: var(--hw-color-black);
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
 
@@ -181,15 +181,15 @@
     }
 
     &:active {
-      border-color: var(--hw-color-gray-darker);
-      outline: 0px solid var(--hw-color-gray-darker);
+      border-color: var(--hw-color-gray-dark);
+      outline: 0px solid var(--hw-color-gray-dark);
     }
   }
 
   &--outline-dark {
     background: none;
-    color: var(--hw-color-gray-darkest);
-    fill: var(--hw-color-gray-darkest);
+    color: var(--hw-color-black);
+    fill: var(--hw-color-black);
     border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
 
     &:hover,
@@ -198,10 +198,10 @@
       color: var(--hw-color-white);
       fill: var(--hw-color-white);
       border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
-      outline: 0px solid var(--hw-color-gray-darkest);
+      outline: 0px solid var(--hw-color-black);
     }
     &:disabled, &[disabled], &[disabled]:active {
-      border: var(--hw-border-thickness) solid var(--hw-color-gray);
+      border: var(--hw-border-thickness) solid var(--hw-color-gray-normal);
       color: var(--hw-color-gray-dark);
       background: transparent !important;
     }
@@ -222,7 +222,7 @@
     }
     &:disabled, &[disabled], &[disabled]:active {
       border: var(--hw-border-thickness) solid var(--hw-color-gray-dark);
-      color: var(--hw-color-gray-light);
+      color: var(--hw-color-gray-normal);
       background: transparent !important;
     }
   }
@@ -242,7 +242,7 @@
       outline: 0px solid var(--hw-color-white);
     }
     &:disabled, &[disabled], &[disabled]:active {
-      border: var(--hw-border-thickness) solid var(--hw-color-gray-light);
+      border: var(--hw-border-thickness) solid var(--hw-color-gray-normal);
       color: var(--hw-color-gray-dark);
       fill: var(--hw-color-gray-dark);
       background: transparent !important;
@@ -264,7 +264,7 @@
       outline: 0px solid var(--hw-color-white);
     }
     &:disabled, &[disabled], &[disabled]:active {
-      border: var(--hw-border-thickness) solid var(--hw-color-gray-light);
+      border: var(--hw-border-thickness) solid var(--hw-color-gray-normal);
       color: var(--hw-color-gray-dark);
       fill: var(--hw-color-gray-dark);
       background: transparent !important;
@@ -275,11 +275,11 @@
     outline: 0;
     background: none;
     fill: var(--hw-color-gray-dark);
-    color: var(--hw-color-gray-darker);
+    color: var(--hw-color-gray-dark);
 
     &:hover {
-      fill: var(--hw-color-gray-darker);
-      color: var(--hw-color-gray-darker);
+      fill: var(--hw-color-gray-dark);
+      color: var(--hw-color-gray-dark);
     }
   }
   &--chat{

@@ -5,7 +5,7 @@
 .hw-navbar {
   position: relative;
   background: var(--hw-color-white);
-  border-bottom: 1px solid var(--hw-color-gray-lightest);
+  border-bottom: 1px solid var(--hw-color-gray-normal);
   height: var(--hw-navbar-height-mobile);
   @media (--large) {
     height: var(--hw-navbar-height-desktop);
@@ -246,7 +246,7 @@
 
   &__overlay {
     visibility: hidden;
-    background: var(--hw-color-gray-lightest);
+    background: var(--hw-color-gray-normal);
     position: fixed;
     top: 0;
     right: 0;
@@ -342,7 +342,7 @@
     background: transparent;
 
     & .hw-navbar__search-button, & .hw-navbar__item, & .hw-navbar__menu-button {
-      /*color: var(--hw-color-gray-darker);*/
+      /*color: var(--hw-color-gray-dark);*/
     }
     /**
      * Logo while the menu is open

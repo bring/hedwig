@@ -115,7 +115,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-lighter);
+    border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-light-fill);
   }
 
   /**
