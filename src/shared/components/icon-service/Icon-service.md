@@ -200,6 +200,11 @@ frimerker
 frimerkertilsamling
 <br/>
 <svg class="hw-icon" style="width: 40px; height: 40px;">
+  <use xlink:href="#hente-selv-lager"></use>
+</svg>
+get from storage
+<br/>
+<svg class="hw-icon" style="width: 40px; height: 40px;">
   <use xlink:href="#handlekurv"></use>
 </svg>
 handlekurv
