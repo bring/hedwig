@@ -101,26 +101,23 @@ span: 1
 ### Available classes
 The following classes can be used to set the background of an element
 ```code
-hw-background-color-primary-darker                     
+hw-background-color-primary-darker
 hw-background-color-primary-dark
 hw-background-color-primary
 hw-background-color-primary-light
 hw-background-color-primary-lighter
-hw-background-color-gray-lightest
-hw-background-color-gray-lighter
+
 hw-background-color-gray-light
 hw-background-color-gray
 hw-background-color-gray-dark
-hw-background-color-gray-darker
-hw-background-color-gray-darkest
+
 hw-background-color-yellow
 hw-background-color-green
 hw-background-color-red
 hw-background-color-white
 hw-background-color-black
-hw-background-color-avocado
-hw-background-color-secondary
 hw-background-color-transparent
+
 ```
 
 ```html|span-4
@@ -231,25 +228,21 @@ span: 1
 ### Available classes
 The following classes can be used to set the background of an element
 ```code
-hw-background-color-primary-darker                     
+hw-background-color-primary-darker
 hw-background-color-primary-dark
 hw-background-color-primary
 hw-background-color-primary-light
 hw-background-color-primary-lighter
-hw-background-color-gray-lightest
-hw-background-color-gray-lighter
+
 hw-background-color-gray-light
 hw-background-color-gray
 hw-background-color-gray-dark
-hw-background-color-gray-darker
-hw-background-color-gray-darkest
+
 hw-background-color-yellow
 hw-background-color-green
 hw-background-color-red
 hw-background-color-white
 hw-background-color-black
-hw-background-color-avocado
-hw-background-color-secondary
 hw-background-color-transparent
 ```
 

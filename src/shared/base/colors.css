@@ -56,6 +56,9 @@
   color: var(--hw-color-alert-yellow);
 }
 
+
+
+
 /* Background colors */
 
 .hw-background-color-primary-darker {
@@ -73,50 +76,54 @@
 .hw-background-color-primary-lighter {
   background-color: var(--hw-color-primary-lighter);
 }
-.hw-background-color-gray-lightest{
-  background-color: var(--hw-color-gray-normal);
-}
-.hw-background-color-gray-lighter{
+
+
+.hw-background-color-gray-light {
   background-color: var(--hw-color-gray-light-fill);
 }
-.hw-background-color-gray-light{
+.hw-background-color-gray {
   background-color: var(--hw-color-gray-normal);
 }
-.hw-background-color-gray{
-  background-color: var(--hw-color-gray-normal);
-}
-.hw-background-color-gray-dark{
+.hw-background-color-gray-dark {
   background-color: var(--hw-color-gray-dark);
 }
-.hw-background-color-gray-darker{
-  background-color: var(--hw-color-gray-dark);
-}
-.hw-background-color-gray-darkest{
-  background-color: var(--hw-color-black);
-}
-.hw-background-color-yellow{
+
+.hw-background-color-yellow {
   background-color: var(--hw-color-alert-yellow);
 }
-.hw-background-color-green{
+.hw-background-color-green {
   background-color: var(--hw-color-alert-green);
 }
-.hw-background-color-red{
+.hw-background-color-red {
   background-color: var(--hw-color-alert-red);
 }
-.hw-background-color-white{
+.hw-background-color-white {
   background-color: var(--hw-color-white);
 }
-.hw-background-color-black{
+.hw-background-color-black {
   background-color: var(--hw-color-black);
 }
-.hw-background-color-avocado{
+.hw-background-color-avocado {
   background-color: var(--hw-color-alert-green);
 }
-.hw-background-color-secondary{
+.hw-background-color-secondary {
   background-color: var(--hw-color-alert-yellow);
 }
-.hw-background-color-transparent{
+.hw-background-color-transparent {
   background-color: transparent;
+}
+
+
+
+
+
+/* Background colors with opacity*/
+
+.hw-background-color-opaque-primary {
+  background-color: var(--hw-color-opaque-primary);
+}
+.hw-background-color-opaque-black{
+  background-color: var(--hw-color-opaque-black-20);
 }
 
 /* Responsive Background colors with opacity*/
@@ -134,12 +141,12 @@
 }
 .hw-background-color-opaque-black-desktop{
   @media(--large){
-    background-color: var(--hw-color-gray-light-fill);
+    background-color: var(--hw-color-opaque-black-20);
   }
 }
 .hw-background-color-opaque-black-mobile{
   @media(--max-medium),
   @media(--high-res-mobile){
-    background-color: var(--hw-color-gray-light-fill);
+    background-color: var(--hw-color-opaque-black-20);
   }
 }

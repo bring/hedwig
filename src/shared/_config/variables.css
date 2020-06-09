@@ -66,7 +66,15 @@
   --hw-color-alert-red: #e32d22;
 
  
+ 
+  /**
+  * Colors with opacity
+  */
 
+  --hw-color-opaque-black-20: rgba(0,0,0, 0.20); /* #000000 */
+  --hw-color-opaque-black-10: rgba(0,0,0, 0.10);
+  --hw-color-opaque-black-7: rgba(0,0,0, 0.07);
+  --hw-color-opaque-white: rgba(255, 255, 255, 0.50);
 
 
   /**
