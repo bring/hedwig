@@ -36,6 +36,9 @@
   & p a {
     @extend .hw-link--inline;
   }
+  & li a {
+    @extend .hw-link--inline;
+  }
 
   /* Buttons */
   & a.hw-button{

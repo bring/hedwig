@@ -44,13 +44,14 @@
   }
 
   &--numbered {
-    & li::before {
-      display: none;
-    }
+    
 
     counter-reset: li;
     list-style-type: none;
     position: relative;
+    & li::before {
+      display: none;
+    }
     
     & li::after {
         counter-increment: li;
