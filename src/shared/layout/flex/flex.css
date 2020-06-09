@@ -16,6 +16,9 @@
       margin-bottom: var(--hw-spacing-small-4);
     }
     &--gutter-larger-mobile > * {
+      margin-bottom: var(--hw-spacing-medium-2);
+    }
+    &--gutter-largest-mobile > * {
       margin-bottom: var(--hw-spacing-medium-4);
     }
   }
@@ -40,6 +43,10 @@
     }
 
     &--gutter-larger-desktop > * {
+      margin-right: var(--hw-spacing-medium-2);
+    }
+
+    &--gutter-largest-desktop > * {
       margin-right: var(--hw-spacing-medium-4);
     }
 
@@ -120,18 +127,37 @@
 
     /* Larger gutter desktop calculations */
     &--gutter-larger-desktop&--twos > * {
+      min-width: calc(50% - (var(--hw-spacing-medium-2) / 2)); /* 48 / 2 = 24 */
+      max-width: calc(50% - (var(--hw-spacing-medium-2) / 2));
+      margin-bottom: var(--hw-spacing-medium-2);
+    }
+
+    &--gutter-larger-desktop&--thirds > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-medium-2) * 2 / 3)); /* 48 * 2 / 3 = 32 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-medium-2) * 2 / 3));
+      margin-bottom: var(--hw-spacing-medium-2);
+    }
+
+    &--gutter-larger-desktop&--fourths > * {
+      min-width: calc(25% - (var(--hw-spacing-medium-2) * 3 / 4)); /* 48 * 3 / 4 = 36 */
+      max-width: calc(25% - (var(--hw-spacing-medium-2) * 3 / 4));
+      margin-bottom: var(--hw-spacing-medium-2);
+    }
+
+    /* Largest gutter desktop calculations */
+    &--gutter-largest-desktop&--twos > * {
       min-width: calc(50% - (var(--hw-spacing-medium-4) / 2)); /* 48 / 2 = 24 */
       max-width: calc(50% - (var(--hw-spacing-medium-4) / 2));
       margin-bottom: var(--hw-spacing-medium-4);
     }
 
-    &--gutter-larger-desktop&--thirds > * {
+    &--gutter-largest-desktop&--thirds > * {
       min-width: calc((100% / 3) - (var(--hw-spacing-medium-4) * 2 / 3)); /* 48 * 2 / 3 = 32 */
       max-width: calc((100% / 3) - (var(--hw-spacing-medium-4) * 2 / 3));
       margin-bottom: var(--hw-spacing-medium-4);
     }
 
-    &--gutter-larger-desktop&--fourths > * {
+    &--gutter-largest-desktop&--fourths > * {
       min-width: calc(25% - (var(--hw-spacing-medium-4) * 3 / 4)); /* 48 * 3 / 4 = 36 */
       max-width: calc(25% - (var(--hw-spacing-medium-4) * 3 / 4));
       margin-bottom: var(--hw-spacing-medium-4);

@@ -193,12 +193,3 @@
 
   }
 }
-
-/**** Special cases ****/ 
-
-.hw-background-color-gray-lightest .hw-footer {
-  background: var(--hw-color-gray-light-fill);
-}
-
-
-

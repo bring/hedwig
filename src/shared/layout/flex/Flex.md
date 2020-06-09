@@ -3,21 +3,23 @@
 Flexible grid with 3px gutters
 
 ```code
-[Flex]                  .hw-flex
-[Twos]                  .hw-flex--twos                  - Wraps after two items
-[Thirds]                .hw-flex--thirds                - Wraps after three items
-[Fourths]               .hw-flex--fourths               - Wraps after four items
-[Medium gutter desktop] .hw-flex--gutter-medium-desktop - Gives a medium margin between elements on desktop
-[Large gutter desktop]  .hw-flex--gutter-large-desktop  - Gives a large margin between elements on desktop
-[Larger gutter desktop] .hw-flex--gutter-larger-desktop - Gives a larger margin between elements on desktop
-[Large gutter mobile]   .hw-flex--gutter-large-mobile   - Gives a large margin between elements on mobile
-[Larger gutter mobile]  .hw-flex--gutter-larger-mobile  - Gives a larger margin between elements on mobile
-[Variable height]       .hw-flex--variable-height       - Don't force same height for items in flex
+[Flex]                      .hw-flex
+[Twos]                      .hw-flex--twos                     - Wraps after two items
+[Thirds]                    .hw-flex--thirds                   - Wraps after three items
+[Fourths]                   .hw-flex--fourths                  - Wraps after four items
+[Medium gutter desktop]     .hw-flex--gutter-medium-desktop    - Gives a medium margin between elements on desktop
+[Large gutter desktop]      .hw-flex--gutter-large-desktop     - Gives a large margin between elements on desktop
+[Larger gutter desktop]     .hw-flex--gutter-larger-desktop    - Gives a larger margin between elements on desktop
+[Largest gutter desktop]    .hw-flex--gutter-largest-desktop   - Gives an even larger margin between elements on desktop
+[Large gutter mobile]       .hw-flex--gutter-large-mobile      - Gives a large margin between elements on mobile
+[Larger gutter mobile]      .hw-flex--gutter-larger-mobile     - Gives a larger margin between elements on mobile
+[Largest gutter mobile]     .hw-flex--gutter-largest-mobile    - Gives an even larger margin between elements on mobile
+[Variable height]           .hw-flex--variable-height          - Don't force same height for items in flex
 ```
 
 ## Example
 
-```html
+```html|plain,light
 <div class="hw-flex">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -56,7 +58,7 @@ Flexible grid with 3px gutters
 
 ## Variable height
 
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--variable-height">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -96,7 +98,7 @@ Flexible grid with 3px gutters
 
 ## Example with large gutter desktop
 
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--gutter-large-desktop">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -128,7 +130,7 @@ Flexible grid with 3px gutters
 
 ## Example with large gutter mobile
 
-```html|responsive
+```html|plain,light,responsive
 <div class="hw-flex hw-flex--gutter-large-mobile hw-background-color-white">
   <a href="#" class="hw-entrance-box">
     <div class="hw-entrance-box__media">
@@ -162,7 +164,7 @@ Flexible grid with 3px gutters
 
 ## Example with larger gutter desktop
 
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--gutter-larger-desktop">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -193,7 +195,7 @@ Flexible grid with 3px gutters
 
 ## Example with larger gutter mobile
 
-```html|responsive
+```html|plain,light,responsive
 <div class="hw-flex hw-flex--gutter-larger-mobile hw-background-color-white">
   <a href="#" class="hw-entrance-box">
     <div class="hw-entrance-box__media">
@@ -227,7 +229,7 @@ Flexible grid with 3px gutters
 
 ## Example with fourths
 
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--fourths">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -274,7 +276,7 @@ Flexible grid with 3px gutters
 
 ## Example with thirds
 
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--thirds">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -321,7 +323,7 @@ Flexible grid with 3px gutters
 
 ## Example with twos
 
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--twos">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -367,7 +369,7 @@ Flexible grid with 3px gutters
 ```
 
 ## Example with twos and large gutter desktop
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--twos hw-flex--gutter-large-desktop">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -413,7 +415,7 @@ Flexible grid with 3px gutters
 ```
 
 ## Example with twos and larger gutter desktop
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--twos hw-flex--gutter-larger-desktop">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -460,7 +462,7 @@ Flexible grid with 3px gutters
 
 ## Example with thirds and large gutter desktop
 
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--thirds hw-flex--gutter-large-desktop">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -507,7 +509,7 @@ Flexible grid with 3px gutters
 
 ## Example with fourths and large gutter desktop
 
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -554,7 +556,7 @@ Flexible grid with 3px gutters
 ```
 ## Example with twos and medium gutter desktop
 
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--twos hw-flex--gutter-medium-desktop">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -601,7 +603,7 @@ Flexible grid with 3px gutters
 
 ## Example with thirds and medium gutter desktop
 
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--thirds hw-flex--gutter-medium-desktop">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -648,7 +650,7 @@ Flexible grid with 3px gutters
 
 ## Example with fourths and medium gutter desktop
 
-```html
+```html|plain,light
 <div class="hw-flex hw-flex--fourths hw-flex--gutter-medium-desktop">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
@@ -697,7 +699,7 @@ Flexible grid with 3px gutters
 
 ### Default flex with cards
 
-```html
+```html|plain,light
   <div class="hw-flex">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
@@ -728,7 +730,7 @@ Flexible grid with 3px gutters
 
 ### Large gutter on desktop with wrap after three items
 
-```html|span-6
+```html|plain,light,span-6
   <div class="hw-flex hw-flex--gutter-large-desktop hw-flex--thirds">
       <a href="#" class="hw-card">
         <div class="hw-card__media">
