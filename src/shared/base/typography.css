@@ -78,26 +78,11 @@
     line-height: var(--hw-h1-large-line-height);
   }
 
-  @media (--xlarge) {
-    .hw-h1-large
-    .hw-h1-display, {
-      font-size: var(--hw-font-size-max-h1-large-px);
-    }
-  }
-
-
   h1,
   .hw-h1 {
     font-size: var(--hw-font-size-h1);
     font-family: var(--hw-h1-font-family);
     line-height: var(--hw-h1-line-height);
-  }
-
-  @media (--xlarge) {
-    h1,
-    .hw-h1 {
-      font-size: var(--hw-font-size-max-h1-px);
-    }
   }
 
 
@@ -108,28 +93,12 @@
     line-height: var(--hw-h2-line-height);
   }
 
-  @media (--xlarge) {
-    h2,
-    .hw-h2 {
-      font-size: var(--hw-font-size-max-h2-px);
-    }
-  }
-
-
   h3,
   .hw-h3 {
     font-size: var(--hw-font-size-h3);
     font-family: var(--hw-h3-font-family);
     line-height: var(--hw-h3-line-height);
   }
-
-  @media (--xlarge) {
-    h3,
-    .hw-h3 {
-      font-size: var(--hw-font-size-max-h3-px);
-    }
-  }
-
 
   h4,
   .hw-h4 {
@@ -138,28 +107,12 @@
     line-height: var(--hw-h4-line-height);
   }
 
-  @media (--xlarge) {
-    h4,
-    .hw-h4 {
-      font-size: var(--hw-font-size-max-h4-px);
-    }
-  }
-
-
   h5,
   .hw-h5 {
     font-size: var(--hw-font-size-h5);
     font-family: var(--hw-h5-font-family);
     line-height: var(--hw-h5-line-height);
   }
-
-  @media (--xlarge) {
-    h5,
-    .hw-h5 {
-      font-size: var(--hw-font-size-max-h5-px);
-    }
-  }
-
 
   h6,
   .hw-h6 {
@@ -168,12 +121,31 @@
     line-height: var(--hw-h6-line-height-line-height);
   }
 
-  @media (--xlarge) {
-    h6,
-    .hw-h6 {
-      font-size: var(--hw-font-size-max-h6-px);
-    }
+
+
+
+  /**
+  * Max sizes for responsive typography
+  */
+
+  @media(--xlarge) {
+    .hw-h1-large, .hw-h1-display { font-size: var(--hw-font-size-max-h1-large-px); }
+    h1, .hw-h1 { font-size: var(--hw-font-size-max-h1-px); }
+    h2, .hw-h2 { font-size: var(--hw-font-size-max-h2-px); }
+    h3, .hw-h3 { font-size: var(--hw-font-size-max-h3-px); }
+    h4, .hw-h4 { font-size: var(--hw-font-size-max-h4-px); }
+    h5, .hw-h5 { font-size: var(--hw-font-size-max-h5-px); }
+    h6, .hw-h6 { font-size: var(--hw-font-size-max-h6-px); }
+
+    --hw-font-size-caption: var(--hw-font-size-max-caption-px);
+    --hw-font-size-p: var(--hw-font-size-max-p-px);
+    --hw-font-size-lead: var(--hw-font-size-max-lead-px);
+    --hw-font-size-technical: var(--hw-font-size-max-technical-px);
+    --hw-font-size-small: var(--hw-font-size-max-small-px);
+    --hw-font-size-smaller: var(--hw-font-size-max-smaller-px);
+    --hw-font-size-smallest: var(--hw-font-size-max-smallest-px);
   }
+
 
 /**
   * Extra text styles
