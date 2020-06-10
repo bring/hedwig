@@ -157,10 +157,12 @@
    */
 
   &--standalone {
+    transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
+    
     .hw-search__input {
       background: var(--hw-color-gray-light-fill);
 
-      &:hover, &:focus {
+      &:focus {
         border-bottom: var(--hw-border-thickness) solid var(--hw-color-input-accent);
         outline: 0;
       }

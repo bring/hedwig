@@ -30,7 +30,7 @@
   /**
     * Component colors
     */
-  --hw-color-input-accent: var(--hw-color-primary-darker);
+  --hw-color-input-accent: var(--hw-color-primary-dark);
   --hw-color-checkbox-accent: var(--hw-color-primary);
 
   /**
