@@ -11,7 +11,6 @@
   display: block;
   width: 100%;
   transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
-  margin-top: var(--hw-spacing-small-1);
   position: relative;
   -webkit-appearance: none;
 
@@ -52,7 +51,7 @@
       opacity: 1;
     }
   }
-  
+
   &:disabled {
     color: var(--hw-color-gray-normal);
     user-select: none;
