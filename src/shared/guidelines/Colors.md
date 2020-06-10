@@ -1,4 +1,7 @@
 
+
+
+
 {posten}
 
 ## Primary
@@ -33,120 +36,8 @@ name: 'Primary lighter'
 span: 1
 ```
 
-## Gray
-
-```color
-value: '#222222'
-span: 1
-name: 'Gray darkest'
-```
-
-```color
-value: '#444444'
-span: 1
-name: 'Gray darker'
-```
-
-```color
-value: '#666666'
-name: 'Gray dark'
-span: 1
-```
-
-```color
-value: '#888888'
-name: 'Gray'
-span: 1
-```
-
-```color
-value: '#C1C1C1'
-name: 'Gray light'
-span: 1
-```
-
-```color
-value: '#E6E6E6'
-name: 'Gray lighter'
-span: 1
-```
-
-```color
-value: '#f2f2f2'
-name: 'Gray lightest'
-span: 1
-```
-
-## Other colors
-
-```color
-value: '#fdbb2f'
-name: 'Secondary'
-span: 1
-```
-
-```color
-value: '#000000'
-name: 'Black'
-span: 1
-```
-
-```color
-value: '#ffffff'
-name: white
-span: 1
-```
-
-## Background colors
-### Available classes
-The following classes can be used to set the background of an element
-```code
-hw-background-color-primary-darker
-hw-background-color-primary-dark
-hw-background-color-primary
-hw-background-color-primary-light
-hw-background-color-primary-lighter
-
-hw-background-color-gray-light
-hw-background-color-gray
-hw-background-color-gray-dark
-
-hw-background-color-yellow
-hw-background-color-green
-hw-background-color-red
-hw-background-color-white
-hw-background-color-black
-hw-background-color-transparent
-
-```
-
-```html|span-4
-<div class="hw-block hw-block--pt hw-block--pb hw-background-color-primary">
-Block with background color primary
-</div>
-<div class="hw-block hw-block--pt hw-block--pb hw-background-color-primary-lighter">
-Block with background color primary-lighter
-</div>
-```
-
-## Opaque background colors
-Background colors with opacity 85%
-The following classes can be used to set an opaque background of an element
-```code
-hw-background-color-opaque-primary
-hw-background-color-opaque-black
-```
-
-## Responsive Opaque background colors
-```code
-[Responsive Mobile only]     hw-background-color-opaque-primary-mobile
-[Responsive Mobile only]     hw-background-color-opaque-black-mobile
-
-[Responsive Desktop only]    hw-background-color-opaque-primary-desktop
-[Responsive Desktop only]    hw-background-color-opaque-black-desktop
-```
-
 {/posten}
+
 
 
 
@@ -180,6 +71,10 @@ value: '#F1F7E9'
 name: 'Lighter green'
 span: 1
 ```
+
+{/bring}
+
+
 
 
 ## Greys
@@ -246,14 +141,6 @@ hw-background-color-black
 hw-background-color-transparent
 ```
 
-```html|span-4
-<div class="hw-block hw-block--pt hw-block--pb hw-background-color-primary">
-Block with background color primary
-</div>
-<div class="hw-block hw-block--pt hw-block--pb hw-background-color-primary-lighter">
-Block with background color primary-lighter
-</div>
-```
 
 ## Opaque background colors
 Background colors with opacity 95%
@@ -271,7 +158,6 @@ hw-background-color-opaque-black
 [Responsive Desktop only]    hw-background-color-opaque-primary-desktop
 [Responsive Desktop only]    hw-background-color-opaque-black-desktop
 ```
-{/bring}
 
 
 
@@ -308,14 +194,14 @@ These colours are used sparingly to ensure that our customers easily and consist
 
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-extended-1.png"
 title: "Lighter {color}"
 description: "Used as a background colour for containers, e.g. cards, to subtly elevate from the white background."
 ```
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-extended-2.png"
 title: "Light {color}"
 description: "Mostly used as a contrast colour on darker {color} backgrounds, e.g. in
@@ -323,14 +209,14 @@ the footer."
 ```
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-extended-3.png"
 title: "Dark {color}"
 description: "Used primarly as a hover colour and for emphasized text, as well as subtle details."
 ```
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-extended-4.png"
 title: "Darker {color}"
 description: "Used for Display and H1 headings, subtle details, and a contrasting background colour, as in the footer."
@@ -342,14 +228,14 @@ description: "Used for Display and H1 headings, subtle details, and a contrastin
 ### Standard colors
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-black-1.png"
 title: "Black"
 description: "Black is the default text colour and is used for all running text sizes from H2 and smaller."
 ```
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-white-1.png"
 title: "White"
 description: "White is the default background colour for all pages, as well as text colour on dark backgrounds."
@@ -359,34 +245,34 @@ description: "White is the default background colour for all pages, as well as t
 
 
 
-### Grays
+### Greys
 
 These are widely used in forms and text fields, as well as their role is to contain and delineate content, and to add tonal variation to the site.
 
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-grey-1.png"
 title: "Dark grey"
 description: "Used for small text, e.g. labels and helper text."
 ```
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-grey-2.png"
 title: "Grey"
 description: "Used for subtle details, e.g. strokes in line-styled text fields."
 ```
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-grey-3.png"
 title: "Light grey – Stroke"
 description: "Used for subtle strokes, e.g. HR."
 ```
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-grey-4.png"
 title: "Light grey – Fill"
 description: "Used for subtle backgrounds, e.g. text fields."
@@ -404,7 +290,7 @@ description: "Used for subtle backgrounds, e.g. text fields."
 
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-warning-1.png"
 title: "Yellow"
 description: "Yellow is the primary signal for marking when an error has occured, or as a warning colour."
@@ -419,14 +305,14 @@ These are reserved colours used just for certain hover states.
 
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-hover-1.png"
 title: "Green hover"
 description: "Used as hover colour for primary buttons."
 ```
 ```image
 plain: true
-span: 2
+span: 1
 src: "{assets}/img/{postenbring}/{component}-hover-2.png"
 title: "Yellow"
 description: "Used as hover colour for clickable containers of yellow colour."

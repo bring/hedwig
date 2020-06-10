@@ -5,7 +5,6 @@
 .hw-navbar {
   position: relative;
   background: var(--hw-color-white);
-  border-bottom: 1px solid var(--hw-color-gray-normal);
   height: var(--hw-navbar-height-mobile);
   @media (--large) {
     height: var(--hw-navbar-height-desktop);

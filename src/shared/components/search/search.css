@@ -100,9 +100,7 @@
     top: 84px;
     margin: 0;
     list-style-type: none;
-    padding-top: var(--hw-spacing-small-2);
-    padding-bottom: var(--hw-spacing-small-2);
-    padding-left: 0;
+    padding: 0;
     width: 100%;
     background-color: var(--hw-color-white);
     left: 0;
@@ -114,8 +112,12 @@
 
   &__suggestion {
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-light-stroke);
+    &:first-of-type {
+      margin-top: var(--hw-spacing-small-2);
+    }
     &:last-of-type {
       border-bottom: 0px solid;
+      margin-bottom: var(--hw-spacing-small-2);
     }
   }
 
@@ -210,7 +212,7 @@
   }
 
   &__suggestions--simple &__suggestion-title:hover {
-    color: var(--hw-color-link-hover);
+    color: var(--hw-color-input-accent);
   }
 
 

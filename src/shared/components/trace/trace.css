@@ -8,6 +8,24 @@
   display: flex;
   flex-direction: column;
 
+  @media(--large) {
+    flex-direction: row;
+    .hw-trace__button {
+      margin-left: var(--hw-spacing-small-1);
+      margin-top: 0;
+    }
+    &__input {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    &__placeholder {
+      text-align: left;
+      border: 0;
+      margin-bottom: 0;
+    }
+  }
+
   /**
    * Elements
    */
@@ -101,12 +119,12 @@
   }
 
   /* No break, keep the button on the same line as the input */
-
+  
   &--no-break {
     flex-direction: row;
   }
 
-  &--no-break &__button{
+  &--no-break &__button {
     margin-left: var(--hw-spacing-small-1);
     margin-top: 0;
   }
@@ -120,6 +138,10 @@
     text-align: left;
     border: 0;
     margin-bottom: 0;
+  }
+
+  &--stacked {
+    flex-direction: column;
   }
 
   .hw-button {

@@ -50,7 +50,7 @@ module.exports = {
     linkColor: '#048ebb',
     textMedium: '#444',
     bgLight: '#ffffff',
-    bgDark: '#4A1011',
+    bgDark: '#222',
     lightColor: '#D6D6D6',
     fontFamily: "'Posten Sans Regular', sans-serif",
     fontHeading: "'Posten Sans Medium', sans-serif",
