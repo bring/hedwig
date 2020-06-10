@@ -23,11 +23,19 @@
   @extend .hw-input-basic;
 
   &::placeholder,
-  &::-webkit-input-placeholder,
-  &:-ms-input-placeholder,
-  &::-ms-input-placeholder{
+  &::-webkit-input-placeholder {
     color: var(--hw-color-gray-dark);
+    opacity: 1;
   }
+  &::-ms-input-placeholder {
+    color: var(--hw-color-gray-dark);
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: var(--hw-color-gray-dark);
+    opacity: 1;
+  }
+
 
   color: var(--hw-color-black);
 
