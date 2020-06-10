@@ -5,7 +5,7 @@
 .hw-breadcrumbs {
   /* Flex to get rid of white space */
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .hw-breadcrumb {
   font-weight: normal;
