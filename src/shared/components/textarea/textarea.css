@@ -16,8 +16,18 @@
   -webkit-appearance: none;
 
 
-  &::placeholder {
+  &::placeholder,
+  &::-webkit-input-placeholder {
     color: var(--hw-color-gray-dark);
+    opacity: 1;
+  }
+  &::-ms-input-placeholder {
+    color: var(--hw-color-gray-dark);
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: var(--hw-color-gray-dark);
+    opacity: 1;
   }
 
   &:hover {
@@ -28,15 +38,21 @@
     outline: 0;
     border-bottom: var(--hw-border-thickness) solid var(--hw-color-input-accent);
 
-    &::placeholder {
-      color: var(--hw-color-gray-normal);
+    &::placeholder,
+    &::-webkit-input-placeholder {
+      color: var(--hw-color-gray-dark);
+      opacity: 1;
+    }
+    &::-ms-input-placeholder {
+      color: var(--hw-color-gray-dark);
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: var(--hw-color-gray-dark);
+      opacity: 1;
     }
   }
-
-  &::-webkit-resizer {
-
-  }
-
+  
   &:disabled {
     color: var(--hw-color-gray-normal);
     user-select: none;
