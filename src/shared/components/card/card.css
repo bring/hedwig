@@ -160,9 +160,6 @@
     font-weight: var(--hw-font-weight-medium);
     margin-right: var(--hw-spacing-small-2);
   }
-  &__action-button-link:first-of-type {
-    text-decoration: underline;
-  }
 
   hr {
     height: var(--hw-border-thickness);
