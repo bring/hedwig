@@ -202,14 +202,11 @@
   }
 
 
-
-
-:root {
-  /**
+/**
   * Max sizes for responsive typography
   */
 
-  @media(--xlarge) {
+@media(--xlarge) {
     .hw-h1-large, .hw-h1-display { font-size: var(--hw-font-size-max-h1-large-px); }
     h1, .hw-h1 { font-size: var(--hw-font-size-max-h1-px); }
     h2, .hw-h2 { font-size: var(--hw-font-size-max-h2-px); }
@@ -217,7 +214,10 @@
     h4, .hw-h4 { font-size: var(--hw-font-size-max-h4-px); }
     h5, .hw-h5 { font-size: var(--hw-font-size-max-h5-px); }
     h6, .hw-h6 { font-size: var(--hw-font-size-max-h6-px); }
+}
 
+:root {
+  @media(--xlarge) {
     --hw-font-size-caption: var(--hw-font-size-max-caption-px);
     --hw-font-size-p: var(--hw-font-size-max-p-px);
     --hw-font-size-lead: var(--hw-font-size-max-lead-px);
