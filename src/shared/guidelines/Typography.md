@@ -27,6 +27,7 @@
 [Uppercase]        hw-text-uppercase
 [Center]           hw-text-center
 [Right]            hw-text-right
+[Title]            hw-text-title
 
 [Color primary]       hw-color-primary
 [Color primary dark]  hw-color-primary-dark

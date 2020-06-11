@@ -122,20 +122,16 @@
   }
 
 
-  h1,h2,h3,h4,h5,h6,.hw-h1,.hw-h2,.hw-h3,.hw-h4,.hw-h5,.hw-h6,p,span {
-    &.hw-title {
-      font-family: var(--hw-font-primary-medium);
-      font-weight: var(--hw-font-weight-medium);
-    }
-  }
-
-
 
 /**
   * Extra text styles
   */
 
   .hw-text {
+    &-title {
+      font-family: var(--hw-font-primary-medium);
+      font-weight: var(--hw-font-weight-medium);
+    }
     &-lead {
       font-size: var(--hw-font-size-lead);
     }
