@@ -69,6 +69,27 @@ Elements:
 ```
 
 
+### Normally sized card (Compresses automatically)
+
+```html|span-2,plain,light
+  <div class="hw-card">
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <h5 class="hw-card__subtitle">Secondary title</h5>
+    </div>
+  </div>
+```
+
+### Compressed card
+
+```html|span-2,plain,light
+  <div class="hw-card hw-card--compressed">
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <h5 class="hw-card__subtitle">Secondary title</h5>
+    </div>
+  </div>
+```
 
 
 ### Layouts — Buttons

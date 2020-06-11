@@ -171,6 +171,7 @@
     margin: 0 var(--hw-spacing-medium-3);
   }
 
+
   /**
    * Modifiers
    */
@@ -184,7 +185,73 @@
     color: white;
   }
 
-  /**
-   * Elements
-   */
+  &--compressed {
+    padding-bottom: var(--hw-spacing-small-3);
+
+    .hw-card__body {
+      padding-left: var(--hw-spacing-medium-2);
+      padding-right: var(--hw-spacing-medium-2);
+      padding-top: var(--hw-spacing-medium-2);
+      padding-bottom: var(--hw-spacing-small-3);
+    }
+
+    .hw-card__footer {
+      padding-left: var(--hw-spacing-medium-2);
+      padding-right: var(--hw-spacing-medium-2);
+      padding-top: var(--hw-spacing-small-3);
+      padding-bottom: var(--hw-spacing-small-3);
+    }
+
+    .hw-card__description {
+      margin-top: calc(var(--hw-spacing-medium-1) - var(--hw-spacing-small-1));
+    }
+
+    .hw-card__text {
+      margin-top: var(--hw-spacing-small-2);
+    }
+
+    .hw-card__actions {
+      padding: var(--hw-spacing-small-2);
+      padding-bottom: var(--hw-spacing-medium-2);
+    }
+    hr {
+      margin: 0 var(--hw-spacing-medium-2);
+    }
+  }
+  
+  @media(--large-max) {
+    /* For some reason @extend .hw-card--compressed would not work. hence the duplication of styles. */
+    
+    padding-bottom: var(--hw-spacing-small-3);
+
+    .hw-card__body {
+      padding-left: var(--hw-spacing-medium-2);
+      padding-right: var(--hw-spacing-medium-2);
+      padding-top: var(--hw-spacing-medium-2);
+      padding-bottom: var(--hw-spacing-small-3);
+    }
+
+    .hw-card__footer {
+      padding-left: var(--hw-spacing-medium-2);
+      padding-right: var(--hw-spacing-medium-2);
+      padding-top: var(--hw-spacing-small-3);
+      padding-bottom: var(--hw-spacing-small-3);
+    }
+
+    .hw-card__description {
+      margin-top: calc(var(--hw-spacing-medium-1) - var(--hw-spacing-small-1));
+    }
+
+    .hw-card__text {
+      margin-top: var(--hw-spacing-small-2);
+    }
+
+    .hw-card__actions {
+      padding: var(--hw-spacing-small-2);
+      padding-bottom: var(--hw-spacing-medium-2);
+    }
+    hr {
+      margin: 0 var(--hw-spacing-medium-2);
+    }
+  }
 }
