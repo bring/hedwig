@@ -391,12 +391,6 @@ span: 2
 src: "{assets}/img/{postenbring}/{component}-do-2-1.png"
 description: "Do use in Display and H1 headings."
 ```
-```image
-plain: true
-span: 2
-src: "{assets}/img/{postenbring}/{component}-do-2-2.png"
-description: "Do use for inline text links in sentences."
-```
 
 
 ##### Do not do this

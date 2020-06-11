@@ -29,14 +29,7 @@
   /**
    * Modifers
    */
-
-  &--inline {
-    color: var(--hw-color-primary-darker);
-    fill: var(--hw-color-primary-darker);
-    text-decoration: underline;
-    border-bottom: 0px;
-  }
-
+   
   &--inverted {
     color: var(--hw-color-white);
     text-decoration-color: var(--hw-color-primary);

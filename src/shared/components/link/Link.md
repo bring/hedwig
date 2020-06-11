@@ -14,7 +14,6 @@
 [Base]           .hw-link
 
 Modifiers:
-[Inline]         .hw-link--inline
 [Small]          .hw-link--small
 [Big]            .hw-link--big
 [Inverted]       .hw-link--inverted
@@ -85,13 +84,6 @@ span: 2
 src: "{assets}/img/{postenbring}/{component}-types-3.png"
 title: "Link with icon"
 description: "A primary link can be paired up with an icon to further describe what the link is for."
-```
-```image
-plain: true
-span: 2
-src: "{assets}/img/{postenbring}/{component}-types-4.png"
-title: "Text link"
-description: "A text link is a link within a line of text. Text links are in darker {color} colour, and with an underline to differantiate from plain text."
 ```
 ```image
 plain: true

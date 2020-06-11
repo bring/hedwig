@@ -168,13 +168,6 @@ description: "Body is used for all main body copy, with Body Title for subheadin
 ```image
 plain: true
 span: 2
-src: "{assets}/img/{postenbring}/{component}-bodycopy-2.png"
-title: "Body Textlink"
-description: "Used for inline links in text. This is the same as the Body style, but with an underline to indicate that it is a link."
-```
-```image
-plain: true
-span: 2
 src: "{assets}/img/{postenbring}/{component}-bodycopy-3.png"
 title: "Body Small Title + Body Small"
 description: "Used for secondary body copy, e.g. text in a sidebar, or text within an accordion or table. Body Small Title can be used for subheadings."
