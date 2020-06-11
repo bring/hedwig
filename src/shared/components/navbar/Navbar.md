@@ -47,7 +47,7 @@ Modifiers:
           --><span class="hw-navbar__menu-button-label-close">Close</span><!--
           --><span class="fa-stack hw-navbar__menu-button-toggle">
               <i class="hw-navbar__bars far fa-bars fa-stack-2x"></i>
-              <i class="hw-navbar__times far fa-times fa-stack-2x"></i>
+              <i class="hw-navbar__times fal fa-times fa-stack-2x"></i>
         </button>
          <section class="hw-navbar__drawer" data-hw-menu-drawer>
                <div class="hw-navbar__drawer-content">
@@ -68,78 +68,54 @@ Modifiers:
 
                    <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
                      <li class="hw-accordion__item">
-                         <button class="hw-accordion__trigger">
-                             Sende
-                             <div class="hw-accordion__arrow"></div>
-                         </button>
-                         <div class="hw-accordion__contents">
-                             <ul class="hw-accordion__link-items">
-                                 <li class="hw-accordion__link-item">
-                                     <a class="hw-accordion__link" href="#">Post - like formater</a>
-                                 </li>
-                                 <li class="hw-accordion__link-item">
-                                     <a class="hw-accordion__link" href="#">Post - blandede formater</a>
-                                 </li>
-                                 <li class="hw-accordion__link-item">
-                                     <a class="hw-accordion__link" href="#" target="_blank">En ekstern lenke</a>
-                                 </li>
-                             </ul>
-                         </div>
+                       <button class="hw-accordion__trigger">Title<div class="hw-accordion__arrow"></div></button>
+                       <div class="hw-accordion__contents">
+                         <ul class="hw-accordion__link-items">
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 1</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 2</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 3</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 4</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 5</a></li>
+                         </ul>
+                       </div>
                      </li>
                      <li class="hw-accordion__item">
-                         <button class="hw-accordion__trigger">
-                             Motta
-                             <div class="hw-accordion__arrow"></div>
-                         </button>
-                         <div class="hw-accordion__contents">
-                             <ul class="hw-accordion__link-items">
-                                 <li class="hw-accordion__link-item">
-                                     <a class="hw-accordion__link" href="#">Spore</a>
-                                 </li>
-                             </ul>
-                         </div>
+                       <button class="hw-accordion__trigger">Title<div class="hw-accordion__arrow"></div></button>
+                       <div class="hw-accordion__contents">
+                         <ul class="hw-accordion__link-items">
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 1</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 2</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 3</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 4</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 5</a></li>
+                         </ul>
+                       </div>
                      </li>
                      <li class="hw-accordion__item">
-                         <button class="hw-accordion__trigger">
-                             Kundeservice
-                             <div class="hw-accordion__arrow"></div>
-                         </button>
-                         <div class="hw-accordion__contents">
-                             <ul class="hw-accordion__link-items">
-                                 <li class="hw-accordion__link-item">
-                                     <a class="hw-accordion__link" href="#" target="_blank">Må ha en lenke ja</a>
-                                 </li>
-                             </ul>
-                         </div>
+                       <button class="hw-accordion__trigger">Title<div class="hw-accordion__arrow"></div></button>
+                       <div class="hw-accordion__contents">
+                         <ul class="hw-accordion__link-items">
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 1</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 2</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 3</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 4</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 5</a></li>
+                         </ul>
+                       </div>
                      </li>
                      <li class="hw-accordion__item">
-                         <button class="hw-accordion__trigger">
-                             Ekstra Kolonne
-                             <div class="hw-accordion__arrow"></div>
-                         </button>
-                         <div class="hw-accordion__contents">
-                             <ul class="hw-accordion__link-items">
-                                 <li class="hw-accordion__link-item">
-                                     <a class="hw-accordion__link" href="#" target="_blank">Hmm</a>
-                                 </li>
-                             </ul>
-                         </div>
+                       <button class="hw-accordion__trigger">Title<div class="hw-accordion__arrow"></div></button>
+                       <div class="hw-accordion__contents">
+                         <ul class="hw-accordion__link-items">
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 1</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 2</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 3</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 4</a></li>
+                             <li class="hw-accordion__link-item"><a class="hw-accordion__link" href="#">Link item 5</a></li>
+                         </ul>
+                       </div>
                      </li>
-                     <li class="hw-accordion__item">
-                         <a class="hw-accordion__link" href="#">Kundeservice</a>
-                     </li>
-                     <li class="hw-accordion__item">
-                         <a class="hw-accordion__link" href="#" target="_blank">Tittel med passe lengde</a>
-                     </li>
-                     <li class="hw-accordion__item">
-                         <a class="hw-accordion__link" href="#" target="_blank">Frimerker til samling</a>
-                     </li>
-                     <li class="hw-accordion__item">
-                         <a class="hw-accordion__link" href="#">Adresseendring og oppbevaring</a>
-                     </li>
-                     <li class="hw-accordion__item">
-                         <a class="hw-accordion__link" href="#" target="_blank">Femte</a>
-                     </li>
+
                    </ul>
                  </div>
 

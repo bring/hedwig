@@ -136,7 +136,7 @@
       line-height: var(--hw-navbar-height-desktop);
     }
     &__icon {
-      margin-left: var(--hw-spacing-small-4);
+      margin-left: var(--hw-spacing-small-2);
     }
     &__item, &__menu-button, &__search-button {
       padding-left: var(--hw-spacing-medium-3);
@@ -348,9 +348,7 @@
      */
     & .hw-navbar__logo {
       z-index: var(--z-index--navbar-drawer-foreground);
-      transform: translateY(-100%);
       background: transparent !important;
-      opacity: 0;
 
       @media (--large) {
         transform: translateY(0);

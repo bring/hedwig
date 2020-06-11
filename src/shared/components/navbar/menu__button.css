@@ -22,9 +22,17 @@
     padding-right: 0;
 
     &-label-menu, &-label-close {
-      padding-right: calc(var(--hw-spacing-small-4) + var(--hw-spacing-small-3));
+      padding-right: var(--hw-spacing-large-2);
       word-break: normal;
     }
+  }
+
+  .hw-navbar__icon {
+    transform: scale(0.9, 0.9);
+  }
+
+  .hw-navbar__times {
+    transform: scale(0.8, 0.8) translateY(1px);
   }
 }
 
