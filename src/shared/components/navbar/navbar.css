@@ -24,6 +24,7 @@
 
   &__top {
     display: flex;
+    align-items: center;
     width: 100%;
     justify-content: space-between;
     padding-left: var(--hw-spacing-medium-3);
@@ -73,6 +74,62 @@
       margin: 0;
       height: var(--hw-navbar-height-desktop);
       padding: 0;
+    }
+  }
+
+  &__selector {
+    position: relative;
+    vertical-align: baseline;
+    margin-right: auto;
+    margin-left: 8%;
+    padding-left: var(--hw-spacing-medium-3);
+    display: none;
+    line-height: var(--hw-navbar-height-mobile);
+    z-index: var(--z-index--navbar-drawer-foreground);
+    cursor: pointer;
+    transition: color 0.1s ease;
+
+    .hw-navbar__selector-item {
+      border: none;
+      background: transparent;
+      outline: 0;
+      padding: var(--hw-spacing-small-4) var(--hw-spacing-small-2);
+      font-size: var(--hw-font-size-small);
+      margin-right: var(--hw-spacing-small-2);
+      color: var(--hw-color-black);
+
+      &:hover {
+        color: var(--hw-color-link-hover);
+      }
+
+      &.hw-navbar__selector-item__selected {
+        border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-primary) !important;
+      }
+    }
+
+    @media (--large) {
+      display: inline-block;
+      height: var(--hw-navbar-height-desktop);
+    }
+
+    &__mobile {
+      display: block;
+      width: calc(100% + var(--hw-spacing-small-3) + var(--hw-spacing-small-3) + var(--hw-spacing-small-4) + var(--hw-spacing-small-4));
+      border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-light-stroke);
+      margin-top: 0;
+      margin-left: calc(var(--hw-spacing-small-3) * -1 + var(--hw-spacing-small-4) * -1);
+      margin-bottom: var(--hw-spacing-medium-4);
+      padding: 0;
+      padding-bottom: var(--hw-spacing-small-4);
+      line-height: 1;
+
+      .hw-navbar__selector-item:first-of-type {
+        margin-left: calc(var(--hw-spacing-small-3) + var(--hw-spacing-small-4));
+      }
+
+      @media (--large) {
+        display: none;
+      }
     }
   }
 
@@ -133,10 +190,6 @@
     &__item, &__menu-button, &__search-button {
       padding-left: var(--hw-spacing-medium-3);
     }
-    &__logo-gray {
-      height: 100%;
-      padding: 0;
-    }
   }
 
   & .hw-navbar__item, & .hw-navbar__search-button, & .hw-navbar__menu-button,
@@ -149,7 +202,7 @@
     &:hover, &:focus {
       color: var(--hw-color-link-hover);
     }
-    @media (--large){
+    @media (--large) {
       height: var(--hw-navbar-height-desktop);
     }
   }

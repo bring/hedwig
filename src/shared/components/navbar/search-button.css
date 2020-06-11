@@ -6,6 +6,7 @@
   z-index: var(--z-index--navbar-drawer-foreground);
   position: absolute;
   left: 0;
+  top: 0;
   border: 0;
   font-size: var(--hw-font-size-smaller);
   padding-left: calc(var(--hw-spacing-small-4) + var(--hw-spacing-small-3));

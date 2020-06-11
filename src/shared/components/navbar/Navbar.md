@@ -15,7 +15,7 @@ Modifiers:
 
 
 
-### Default navbar (with search)
+### Default navbar (with search and selector menu)
 
 ```html
 <header class="hw-navbar">
@@ -29,6 +29,11 @@ Modifiers:
         </svg>
       </a>
       <a class="hw-navbar__skip-to-content" href="#">Skip to main content</a>
+      
+      <div class="hw-navbar__selector">
+        <a href="#" class="hw-navbar__selector-item hw-navbar__selector-item__selected">Privat</a>
+        <a href="#" class="hw-navbar__selector-item">Bedrift</a>
+      </div>
 
       <nav class="hw-navbar__menu">
         <button class="hw-navbar__search-button" data-hw-toggle-search>
@@ -48,6 +53,13 @@ Modifiers:
          <section class="hw-navbar__drawer" data-hw-menu-drawer>
                <div class="hw-navbar__drawer-content">
                  <div class="hw-navbar__drawer-mobile">
+
+                    <div class="hw-block">
+                      <div class="hw-navbar__selector hw-navbar__selector__mobile">
+                        <a href="#" class="hw-navbar__selector-item hw-navbar__selector-item__selected">Privat</a>
+                        <a href="#" class="hw-navbar__selector-item">Bedrift</a>
+                      </div>
+                    </div>
 
                     <div class="hw-block--mt-medium-2">
                      <div>
@@ -509,12 +521,13 @@ On this page, only the first navbar is able to open the search, menu and login. 
         <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
           <title id="Logo">Go to homepage</title>
           <use xlink:href="#logo-{postenbring}"></use>
-        </svg
+        </svg>
       </a>
     </div>
   </div>
 </header>
 ```
+
 
 
 ### Navbar without search
