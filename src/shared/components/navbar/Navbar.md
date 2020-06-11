@@ -129,81 +129,70 @@ Modifiers:
                    </ul>
                  </div>
                  <div class="hw-navbar__drawer-desktop">
-                   <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
+                  <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
                      <div>
-                       <h5>Sende</h5>
+                       <h5>Title</h5>
                        <ul class="hw-linklist">
-                         <li><a href="#"><i class="fa-fw fas fa-user"></i> Post - like formater</a></li>
+                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#pakke"></use></svg></i> Service name</a></li>
                        </ul>
                      </div>
                      <div>
-                       <h5>Motta</h5>
+                       <h5>&nbsp;</h5>
                        <ul class="hw-linklist">
-                         <li><a href="#"><i class="fa-fw fas fa-user"></i> Spore</a></li>
+                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#mybring"></use></svg></i> Service name</a></li>
                        </ul>
                      </div>
                      <div>
-                       <h5>Rådgivning</h5>
+                       <h5>&nbsp;</h5>
                        <ul class="hw-linklist">
-                         <li><a href="#"><i class="fa-fw fas fa-user"></i> Farlig gods</a></li>
+                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#avis"></use></svg></i> Service name</a></li>
                        </ul>
                      </div>
                      <div>
-                       <h5>Kundeservice</h5>
+                       <h5>&nbsp;</h5>
                        <ul class="hw-linklist">
-                         <li><a href="#"><i class="fa-fw fas fa-user"></i> Reklamasjon og klage</a></li>
+                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#kundeservice"></use></svg></i> Service name</a></li>
                        </ul>
                      </div>
                    </div>
 
                    <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
                      <div>
-                       <h5>Sende</h5>
+                       <h5>Title</h5>
                        <ul class="hw-linklist">
-                         <li><a href="#">Post - like formater</a></li>
-                         <li><a href="#">Post - blandede formater</a></li>
-                         <li><a href="#">Brev med sikkerhet</a></li>
-                         <li><a href="#">Pakker til postkassen</a></li>
-                         <li><a href="#">Frankering</a></li>
-                         <li><a href="#">Pakker til bedrift</a></li>
-                         <li><a href="#">Pakker til private</a></li>
-                         <li><a href="#">Gods i Norge</a></li>
-                         <li><a href="#">Gods internasjonalt</a></li>
+                         <li><a href="#">Link item 1</a></li>
+                         <li><a href="#">Link item 2</a></li>
+                         <li><a href="#">Link item 3</a></li>
+                         <li><a href="#">Link item 4</a></li>
+                         <li><a href="#">Link item 5</a></li>
                        </ul>
                      </div>
                      <div>
-                       <h5>Motta</h5>
+                       <h5>Title</h5>
                        <ul class="hw-linklist">
-                         <li><a href="#">Spore</a></li>
-                         <li><a href="#">Adresseendring, varig</a></li>
-                         <li><a href="#">Adresseendring, midlertidig</a></li>
-                         <li><a href="#">Oppbevaring av post</a></li>
-                         <li><a href="#">Leie av postboks</a></li>
-                         <li><a href="#">Import og fortolling</a></li>
+                         <li><a href="#">Link item 1</a></li>
+                         <li><a href="#">Link item 2</a></li>
+                         <li><a href="#">Link item 3</a></li>
+                         <li><a href="#">Link item 4</a></li>
+                         <li><a href="#">Link item 5</a></li>
                        </ul>
-                     </div>
-                     <div>
-                       <h5>Rådgivning</h5>
+                     </div><div>
+                       <h5>Title</h5>
                        <ul class="hw-linklist">
-                         <li><a href="#">Farlig gods</a></li>
-                         <li><a href="#">Klargjøring av forsendelse</a></li>
-                         <li><a href="#">Returløsninger</a></li>
-                         <li><a href="#">Adressetjenester</a></li>
-                         <li><a href="#">Våre integrasjonsløsninger</a></li>
-                         <li><a href="#">Lagerløsninger</a></li>
-                         <li><a href="#">Netthandel</a></li>
-                         <li><a href="#">Kundedialog</a></li>
-                         <li><a href="#">Logistikkløsninger</a></li>
+                         <li><a href="#">Link item 1</a></li>
+                         <li><a href="#">Link item 2</a></li>
+                         <li><a href="#">Link item 3</a></li>
+                         <li><a href="#">Link item 4</a></li>
+                         <li><a href="#">Link item 5</a></li>
                        </ul>
-                     </div>
-                     <div>
-                       <h5>Kundeservice</h5>
+                     </div><div>
+                       <h5>Title</h5>
                        <ul class="hw-linklist">
-                         <li><a href="#">Reklamasjon og klage</a></li>
-                         <li><a href="#">Fakturaspørsmål</a></li>
-                         <li><a href="#">Driftsmeldinger</a></li>
-                         <li><a href="#">Finn postkontor og åpningstider</a></li>
-                         <li><a href="#">Min profil</a></li>
+                         <li><a href="#">Link item 1</a></li>
+                         <li><a href="#">Link item 2</a></li>
+                         <li><a href="#">Link item 3</a></li>
+                         <li><a href="#">Link item 4</a></li>
+                         <li><a href="#">Link item 5</a></li>
                        </ul>
                      </div>
                    </div>

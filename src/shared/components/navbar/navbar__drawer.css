@@ -47,6 +47,17 @@
       padding-top: var(--hw-spacing-large-2);
     }
 
+    ul li a {
+      color: var(--hw-color-primary-darker);
+      fill: var(--hw-color-primary-darker);
+      line-height: unset;
+    }
+    ul li svg {
+      margin-left: -2px;
+      margin-right: var(--hw-spacing-small-3);
+      vertical-align: top;
+    }
+
     @media (--large) {
       margin-top: var(--hw-navbar-height-mobile);
       padding-left: var(--hw-spacing-medium-2);

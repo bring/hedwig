@@ -19,7 +19,7 @@ This is because this is technically two form fields.
 ## Example
 ```html|plain,light,span-4
 <div class="hw-phone-input">
-  <fieldset class="hw-phone-input__label">Telefonnummer
+  <fieldset class="hw-phone-input__label">Phone number
     <div class="hw-phone-input__group">
       <select data-hw-dropdown="numbers2" data-hw-dropdown-small>
         <option data-hw-dropdown-placeholder="+47" value="1">+47 Norge</option>
@@ -35,7 +35,7 @@ This is because this is technically two form fields.
         <option data-hw-dropdown-placeholder="+498" value="11">+498 USA</option>
         <option data-hw-dropdown-placeholder="+4981" value="12">+4981 Narnia</option>
       </select>
-      <input class="hw-input" type="tel" />
+      <input class="hw-input" type="tel" placeholder="Phone number" />
     </div>
   </label>
 </div>
@@ -44,12 +44,9 @@ This is because this is technically two form fields.
 ## Line
 ```html|plain,light,span-4
 <div class="hw-phone-input hw-phone-input--line">
-  <fieldset class="hw-phone-input__label">Telefonnummer
+  <fieldset class="hw-phone-input__label">Phone number
     <div class="hw-phone-input__group">
       <select data-hw-dropdown="numbers2-line" data-hw-dropdown-small>
-        <option data-hw-dropdown-placeholder="+47" value="1">+47 Norge</option>
-        <option data-hw-dropdown-placeholder="+48" value="2">+48 Sverige</option>
-        <option data-hw-dropdown-placeholder="+49" value="3">+49 Finland</option>
         <option data-hw-dropdown-placeholder="+498" value="4">+498 USA</option>
         <option data-hw-dropdown-placeholder="+47" value="5">+47 Norge</option>
         <option data-hw-dropdown-placeholder="+48" value="6">+48 Sverige</option>
@@ -60,7 +57,7 @@ This is because this is technically two form fields.
         <option data-hw-dropdown-placeholder="+498" value="11">+498 USA</option>
         <option data-hw-dropdown-placeholder="+4981" value="12">+4981 Narnia</option>
       </select>
-      <input class="hw-input" type="tel" />
+      <input class="hw-input" type="tel" placeholder="Phone number" />
     </div>
   </label>
 </div>
@@ -70,10 +67,9 @@ This is because this is technically two form fields.
 ## Example with native dropdown
 ```html|plain,light,span-4
 <div class="hw-phone-input">
-  <fieldset class="hw-phone-input__label">Telefonnummer
+  <fieldset class="hw-phone-input__label">Phone number
     <div class="hw-phone-input__group">
       <select data-hw-dropdown="numbers3" class="hw-dropdown--native" data-hw-dropdown-small>
-        <option data-hw-dropdown-placeholder="+47" value="1">+47 Norge</option>
         <option data-hw-dropdown-placeholder="+48" value="2">+48 Sverige</option>
         <option data-hw-dropdown-placeholder="+49" value="3">+49 Finland</option>
         <option data-hw-dropdown-placeholder="+498" value="4">+498 USA</option>
@@ -86,7 +82,7 @@ This is because this is technically two form fields.
         <option data-hw-dropdown-placeholder="+498" value="11">+498 USA</option>
         <option data-hw-dropdown-placeholder="+4981" value="12">+4981 Narnia</option>
       </select>
-      <input class="hw-input" type="tel" />
+      <input class="hw-input" type="tel" placeholder="Phone number" />
     </div>
   </label>
 </div>
