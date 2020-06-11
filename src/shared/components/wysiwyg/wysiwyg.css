@@ -3,18 +3,13 @@
  */
 
 .hw-wysiwyg {
-  & h1 {
-    margin-top: var(--hw-spacing-large-2);
-    max-width: var(--hw-wysiwyg-title-max-width);
-  }
-
-  & h2 {
-    margin-top: var(--hw-spacing-large-2);
-    max-width: var(--hw-wysiwyg-title-max-width);
-  }
+  & h1,
+  & h2,
   & h3 {
-    margin-top: var(--hw-spacing-large-2);
     max-width: var(--hw-wysiwyg-title-max-width);
+
+    margin-top: var(--hw-spacing-large-1);
+    @media(--large) { margin-top: var(--hw-spacing-large-2); }
   }
 
   & .hw-quote .hw-quote__content {
@@ -27,7 +22,8 @@
 
   /* Paragraphs */
   & p {
-    margin-top: var(--hw-spacing-medium-2);
+    margin-top: var(--hw-spacing-small-4);
+    @media(--large) { margin-top: var(--hw-spacing-medium-2); }
   }
 
   /* Links */
@@ -53,16 +49,11 @@
   }
 
   /* Combinations */
-  & p + h2 {
-    margin-top: var(--hw-spacing-large-2);
-  }
-
-  & p + h3 {
-    margin-top: var(--hw-spacing-large-2);
-  }
-  
+  & p + h2,
+  & p + h3,
   & p + figure {
-    margin-top: var(--hw-spacing-large-2);
+    margin-top: var(--hw-spacing-large-1);
+    @media(--large) { margin-top: var(--hw-spacing-large-2); }
   }
 
   & hr {
@@ -107,6 +98,11 @@
   & ul,
   & ol {
     margin-top: var(--hw-spacing-medium-3);
+  }
+
+  .hw-accordion {
+    margin-bottom: var(--hw-spacing-large-3);
+    @media(--large) { margin-bottom: var(--hw-spacing-large-4); }
   }
 
   /**
