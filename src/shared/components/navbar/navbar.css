@@ -74,14 +74,6 @@
       height: var(--hw-navbar-height-desktop);
       padding: 0;
     }
-    &:hover {
-      & .hw-navbar__logo-standard {
-        opacity: 0;
-      }
-      & .hw-navbar__logo-gray {
-        opacity: 1;
-      }
-    }
   }
 
   &__skip-to-content {

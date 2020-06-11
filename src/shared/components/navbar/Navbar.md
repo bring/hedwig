@@ -27,10 +27,6 @@ Modifiers:
           <title id="Logo">Go to homepage</title>
           <use xlink:href="#logo-{postenbring}"></use>
         </svg>
-        <svg class="hw-navbar__logo-gray" aria-labelledby="Logo" role="img">
-          <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-{postenbring}-gray"></use>
-        </svg>
       </a>
       <a class="hw-navbar__skip-to-content" href="#">Skip to main content</a>
 
@@ -338,10 +334,6 @@ On this page, only the first navbar is able to open the search, menu and login. 
           <title id="Logo">Go to homepage</title>
           <use xlink:href="#logo-{postenbring}"></use>
         </svg>
-        <svg class="hw-navbar__logo-gray" aria-labelledby="Logo" role="img">
-          <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-{postenbring}-gray"></use>
-        </svg>
       </a>
       <nav class="hw-navbar__menu">
         <button class="hw-navbar__menu-button" data-hw-toggle-menu><!--
@@ -517,11 +509,7 @@ On this page, only the first navbar is able to open the search, menu and login. 
         <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
           <title id="Logo">Go to homepage</title>
           <use xlink:href="#logo-{postenbring}"></use>
-        </svg>
-        <svg class="hw-navbar__logo-gray" aria-labelledby="Logo" role="img">
-          <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-{postenbring}-gray"></use>
-        </svg>
+        </svg
       </a>
     </div>
   </div>
@@ -539,10 +527,6 @@ On this page, only the first navbar is able to open the search, menu and login. 
         <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
           <title id="Logo">Go to homepage</title>
           <use xlink:href="#logo-{postenbring}"></use>
-        </svg>
-        <svg class="hw-navbar__logo-gray" aria-labelledby="Logo" role="img">
-          <title id="Logo">Go to homepage</title>
-          <use xlink:href="#logo-{postenbring}-gray"></use>
         </svg>
       </a>
       <nav class="hw-navbar__menu">

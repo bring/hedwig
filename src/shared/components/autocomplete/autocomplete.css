@@ -36,7 +36,7 @@
     transition: opacity 0.1s ease;
     &:hover,
     &:focus {
-      color:var(--hw-color-input-accent);
+      color:var(--hw-color-primary-darker);
     }
   }
 
