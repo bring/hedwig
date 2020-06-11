@@ -52,6 +52,20 @@ Modifiers:
          <section class="hw-navbar__drawer" data-hw-menu-drawer>
                <div class="hw-navbar__drawer-content">
                  <div class="hw-navbar__drawer-mobile">
+
+                    <div class="hw-block--mt-medium-2">
+                     <div>
+                       <h5>Title</h5>
+                       <ul class="hw-linklist">
+                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#pakke"></use></svg></i> Service name</a></li>
+                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#mybring"></use></svg></i> Service name</a></li>
+                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#avis"></use></svg></i> Service name</a></li>
+                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#kundeservice"></use></svg></i> Service name</a></li>
+                       </ul>
+                     </div>
+                   </div>
+
+
                    <ul class="hw-accordion hw-accordion--menu" data-hw-accordion="mobile-menu" data-hw-accordion-allow-multiple>
                      <li class="hw-accordion__item">
                          <button class="hw-accordion__trigger">
@@ -128,6 +142,14 @@ Modifiers:
                      </li>
                    </ul>
                  </div>
+
+
+
+
+
+
+
+
                  <div class="hw-navbar__drawer-desktop">
                   <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
                      <div>

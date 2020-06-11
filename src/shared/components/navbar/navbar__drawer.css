@@ -25,9 +25,9 @@
 
   &__drawer-content {
     margin-top: var(--hw-navbar-height-mobile);
+    padding-top: var(--hw-spacing-small-4);
     padding-left: var(--hw-spacing-small-4);
     padding-right: var(--hw-spacing-small-4);
-    border-top: var(--hw-border-thickness) solid var(--hw-color-gray-light-fill);
 
     font-size: var(--hw-font-size-small);
 
@@ -45,6 +45,10 @@
 
     .hw-flex {
       padding-top: var(--hw-spacing-large-2);
+    }
+
+    ul {
+      margin-bottom: var(--hw-spacing-small-4);
     }
 
     ul li a {
