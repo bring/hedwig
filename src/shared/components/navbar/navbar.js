@@ -135,6 +135,7 @@ const HWNavbar = ({
       SETTINGS.menuButton.addEventListener('click', toggleMenu);
 
       setMenuButtonLabelWidths();
+      setTimeout(setMenuButtonLabelWidths, 1000);
     }
 
     // Optional search button

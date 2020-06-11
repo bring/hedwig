@@ -22,7 +22,7 @@
     padding-right: 0;
 
     &-label-menu, &-label-close {
-      padding-right: var(--hw-spacing-large-2);
+      padding-right: var(--hw-spacing-small-4);
       word-break: normal;
     }
   }
