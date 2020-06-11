@@ -110,86 +110,86 @@
 
 
 
-  --hw-font-size-max-h1-large: 80;
-  --hw-font-size-max-h1-large-px: 80px;
+  --hw-font-size-max-h1-large: 72; /* 80 */
+  --hw-font-size-max-h1-large-px: 72px;
   --hw-font-size-min-h1-large: 40;
   --hw-font-size-min-h1-large-px: 40px;
   --hw-h1-large-line-height: 1.111;
 
-  --hw-font-size-max-h1: 48;
+  --hw-font-size-max-h1: 48; /* 48 */
   --hw-font-size-max-h1-px: 48px;
   --hw-font-size-min-h1: 32;
   --hw-font-size-min-h1-px: 32px;
   --hw-h1-line-height: 1.1667;
 
-  --hw-font-size-max-h2: 44;
-  --hw-font-size-max-h2-px: 44px;
+  --hw-font-size-max-h2: 32; /* 44 */
+  --hw-font-size-max-h2-px: 32px;
   --hw-font-size-min-h2: 28;
   --hw-font-size-min-h2-px: 28px;
   --hw-h2-line-height: 1.25;
 
-  --hw-font-size-max-h3: 28;
-  --hw-font-size-max-h3-px: 28px;
+  --hw-font-size-max-h3: 24; /* 28 */
+  --hw-font-size-max-h3-px: 24px;
   --hw-font-size-min-h3: 22;
   --hw-font-size-min-h3-px: 22px;
   --hw-h3-line-height: 1.333;
 
-  --hw-font-size-max-h4: 22;
-  --hw-font-size-max-h4-px: 22px;
+  --hw-font-size-max-h4: 20; /* 22 */
+  --hw-font-size-max-h4-px: 20px;
   --hw-font-size-min-h4: 18;
   --hw-font-size-min-h4-px: 18px;
   --hw-h4-line-height: 1.4;
 
-  --hw-font-size-max-h5: 20;
-  --hw-font-size-max-h5-px: 20px;
+  --hw-font-size-max-h5: 18; /* 20 */
+  --hw-font-size-max-h5-px: 18px;
   --hw-font-size-min-h5: 16;
   --hw-font-size-min-h5-px: 16px;
   --hw-h5-line-height: 1.444;
 
-  --hw-font-size-max-h6: 18;
-  --hw-font-size-max-h6-px: 18px;
+  --hw-font-size-max-h6: 16; /* 18 */
+  --hw-font-size-max-h6-px: 16px;
   --hw-font-size-min-h6: 14;
   --hw-font-size-min-h6-px: 14px;
   --hw-h6-line-height: 1.5;
 
-  --hw-font-size-max-caption: 13;
-  --hw-font-size-max-caption-px: 13px;
+  --hw-font-size-max-caption: 12; /* 13 */
+  --hw-font-size-max-caption-px: 12px;
   --hw-font-size-min-caption: 11;
   --hw-font-size-min-caption-px: 11px;
   --hw-caption-line-height: 1.5;
 
-  --hw-font-size-max-p: 22;
-  --hw-font-size-max-p-px: 22px;
+  --hw-font-size-max-p: 20; /* 22 */
+  --hw-font-size-max-p-px: 20px;
   --hw-font-size-min-p: 18;
   --hw-font-size-min-p-px: 18px;
   --hw-p-line-height: 1.4;
 
-  --hw-font-size-max-lead: 22;
-  --hw-font-size-max-lead-px: 22px;
+  --hw-font-size-max-lead: 20; /* 22 */
+  --hw-font-size-max-lead-px: 20px;
   --hw-font-size-min-lead: 18;
   --hw-font-size-min-lead-px: 18px;
   --hw-lead-line-height: 1.4;
 
-  --hw-font-size-max-small: 20;
-  --hw-font-size-max-small-px: 20px;
+  --hw-font-size-max-small: 18; /* 20 */
+  --hw-font-size-max-small-px: 18px;
   --hw-font-size-min-small: 16;
   --hw-font-size-min-small-px: 16px;
   --hw-small-line-height: 1.444;
 
-  --hw-font-size-max-smaller: 18;
-  --hw-font-size-max-smaller-px: 18px;
+  --hw-font-size-max-smaller: 17; /* 18 */
+  --hw-font-size-max-smaller-px: 17px;
   --hw-font-size-min-smaller: 16;
   --hw-font-size-min-smaller-px: 16px;
   --hw-smaller-line-height: 1.450;
 
-  --hw-font-size-max-technical: 17;
-  --hw-font-size-max-technical-px: 17px;
+  --hw-font-size-max-technical: 16; /* 17 */
+  --hw-font-size-max-technical-px: 16px;
   --hw-font-size-min-technical: 15;
   --hw-font-size-min-technical-px: 15px;
   --hw-technical-line-height: 1.47;
 
-  --hw-font-size-max-smallest: 13;
-  --hw-font-size-max-smallest-px: 13px;
+  --hw-font-size-max-smallest: 12; /* 13 */
+  --hw-font-size-max-smallest-px: 12px;
   --hw-font-size-min-smallest: 11;
   --hw-font-size-min-smallest-px: 11px;
   --hw-smallest-line-height: 1.5;
@@ -239,10 +239,13 @@
   --hw-navbar-height-mobile: 112px;
   --hw-navbar-height-desktop: 112px;
   --hw-input-field-height: 58px;
+  --hw-wysiwyg-title-max-width: 780px;
   --hw-navbar-search-max-width: 530px;
   @media(--large) {
     --hw-navbar-search-max-width: 70%;
   }
+
+
 
   /**
    * Transitions

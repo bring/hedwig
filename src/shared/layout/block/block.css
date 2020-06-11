@@ -24,7 +24,9 @@
     padding-bottom: var(--hw-spacing-medium-2);
   }
 
+  /* DEPRECATED */
   /* Block spacing defined using these classes are deprecated and might be removed in a future version of Hedwig. Do not use these. */
+  /* DO NOT USE THESE */
   &--mt-small { margin-top: var(--hw-spacing-small-4); }
   &--mb-small { margin-bottom: var(--hw-spacing-small-4); }
   &--mb-smaller { margin-bottom: var(--hw-spacing-small-4); }

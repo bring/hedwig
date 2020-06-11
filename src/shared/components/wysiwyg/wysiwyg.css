@@ -5,15 +5,16 @@
 .hw-wysiwyg {
   & h1 {
     margin-top: var(--hw-spacing-large-2);
+    max-width: var(--hw-wysiwyg-title-max-width);
   }
 
   & h2 {
     margin-top: var(--hw-spacing-large-2);
-    max-width: 690px;
+    max-width: var(--hw-wysiwyg-title-max-width);
   }
   & h3 {
     margin-top: var(--hw-spacing-large-2);
-    max-width: 690px;
+    max-width: var(--hw-wysiwyg-title-max-width);
   }
 
   & .hw-quote .hw-quote__content {
@@ -53,13 +54,15 @@
 
   /* Combinations */
   & p + h2 {
-    margin-top: var(--hw-spacing-medium-4);
-    margin-bottom: var(--hw-spacing-small-4);
+    margin-top: var(--hw-spacing-large-2);
   }
 
   & p + h3 {
-    margin-top: var(--hw-spacing-medium-3);
-    margin-bottom: var(--hw-spacing-small-3);
+    margin-top: var(--hw-spacing-large-2);
+  }
+  
+  & p + figure {
+    margin-top: var(--hw-spacing-large-2);
   }
 
   & hr {
@@ -67,7 +70,7 @@
   }
 
   /* List */
-  & ul {
+  & ul:not(.hw-accordion) {
     @extend .hw-list;
   }
 
