@@ -31,10 +31,10 @@
     @extend .hw-link;
   }
   & p a {
-    @extend .hw-link--inline;
+    @extend .hw-link;
   }
   & li a {
-    @extend .hw-link--inline;
+    @extend .hw-link;
   }
 
   /* Buttons */
