@@ -9,7 +9,7 @@ Styling only - WORK IN PROGRESS
 > Use your own javascript to toggle the active class, reset, and to bind the selected value to the input field.
 
 
-### markup
+### Markup
 ```code
 [Base]           .hw-autocomplete
 

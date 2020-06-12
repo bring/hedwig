@@ -60,7 +60,8 @@
         display: inline-block;
         width: 7px;
         height: 4px;
-        border-bottom: 2px solid var(--hw-color-checkbox-accent);
+        border-bottom: 2px solid;
+        border-color: var(--hw-color-checkbox-accent);
         content: "";
         transform: translateY(-50%) rotate(-45deg);
       }
@@ -72,7 +73,8 @@
         display: inline-block;
         width: 3px;
         height: 4px;
-        border-left: 2px solid var(--hw-color-checkbox-accent);
+        border-left: 2px solid;
+        border-color: var(--hw-color-checkbox-accent);
         content: "";
         transform: translateY(-50%) rotate(-45deg);
       }

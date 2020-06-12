@@ -17,7 +17,7 @@
   font-weight: var(--hw-font-weight-medium);
   font-size: var(--hw-font-size-small);
   line-height: var(--hw-font-size-p);
-  transition: all cubic-bezier(0.08, 0.84, 0.07, 0.96) var(--hw-transition-time-normal);
+  transition: all var(--hw-transition-time-quick) var(--hw-transition-easing-normal);
   text-align: center; /* Center text when this is an <a> */
   cursor: pointer;
   outline: 0px solid transparent;

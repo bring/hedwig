@@ -26,14 +26,14 @@
     border: none;
     cursor: pointer;
     opacity: 0;
-    transition: opacity 0.1s ease, visibility 0.1s ease 0.1s;
+    transition: opacity var(--hw-transition-time-quick) var(--hw-transition-easing-normal), visibility var(--hw-transition-time-quick) var(--hw-transition-easing-normal) 0.1s;
   }
 
   &[data-hw-autocomplete-reset-visible="true"]
     .hw-autocomplete__input-reset {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.1s ease;
+    transition: opacity var(--hw-transition-time-quick) var(--hw-transition-easing-normal);
     &:hover,
     &:focus {
       color:var(--hw-color-primary-darker);
@@ -109,7 +109,6 @@
     color: var(--hw-color-black);
     width: 100%;
     padding: var(--hw-spacing-small-4) 0;
-    /*height: var(--hw-spacing-medium-4);*/
     line-height: normal;
     display: block;
     overflow: hidden;

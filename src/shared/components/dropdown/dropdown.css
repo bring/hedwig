@@ -192,8 +192,8 @@
       linear-gradient(135deg, var(--hw-color-white) 26%, transparent 26%),
       /* Draw the arrow */
       linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
-      linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray-normal) 29%, var(--hw-color-gray-normal) 37%, transparent 38%, transparent 100%),
-      linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray-normal) 63%, var(--hw-color-gray-normal) 71%, var(--hw-color-white) 72%, var(--hw-color-white) 100%);
+      linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray-dark) 29%, var(--hw-color-gray-dark) 37%, transparent 38%, transparent 100%),
+      linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray-dark) 63%, var(--hw-color-gray-dark) 71%, var(--hw-color-white) 72%, var(--hw-color-white) 100%);
       background-size: var(--hw-spacing-small-4) var(--hw-spacing-small-4);
       background-position: calc(100% - var(--hw-spacing-small-4)) 25%;
       background-repeat: no-repeat;

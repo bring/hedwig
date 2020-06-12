@@ -9,7 +9,7 @@
   list-style: none;
   background-color: white;
   border: none;
-  transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
+  transition: border-color var(--hw-transition-time-normal) var(--hw-transition-easing-normal), max-height var(--hw-transition-time-normal) var(--hw-transition-easing-normal), transform var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
 
   &:hover {
     border-color: var(--hw-color-gray-dark);
@@ -21,7 +21,7 @@
    */
 
   &__item {
-    transition: height 0.3s ease;
+    transition: height var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
     overflow: hidden;
 
     &:last-child {
@@ -107,7 +107,7 @@
       border: 0;
       color: inherit;
       background-color: transparent;
-      transition: background-color 0.5s ease;
+      transition: background-color var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
 
       &:active {
         color: var(--hw-color-primary-dark);
@@ -125,7 +125,7 @@
       display: inline-block;
       color: var(--hw-color-link);
       width: 100%;
-      transition: background-color 0.5s ease;
+      transition: background-color var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
       &:active {
         color: var(--hw-color-primary-dark);
         transition: background-color 0s;

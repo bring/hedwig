@@ -33,7 +33,7 @@
 
 #### Error
 ```html|span-3,light,plain
-<label  class="hw-label">
+<label  class="hw-label hw-label--error">
   Label
   <input class="hw-input hw-input--error" type="text" placeholder="Placeholder" />
   <div class="hw-error hw-error--align-left hw-error--indented">E-postadressen er ugyldig</div>
@@ -62,7 +62,7 @@
 
 #### Error
 ```html|span-3,light,plain
-<label  class="hw-label hw-label--line">
+<label  class="hw-label hw-label--line hw-label--error">
   Label
   <input class="hw-input hw-input--error hw-input--line" type="text" placeholder="Placeholder" />
   <div class="hw-error hw-error--align-left">E-postadressen er ugyldig</div>

@@ -11,6 +11,8 @@
   line-height: 2;
   display: block;
 
+  transition: color var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
+
   &:focus-within {
     color: var(--hw-color-input-accent);
   }

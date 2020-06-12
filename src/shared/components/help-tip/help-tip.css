@@ -46,7 +46,7 @@
       & .hw-help-tip__wrapper {
         position: relative;
         display: inline-block;
-        &::after{
+        &::after {
           content: " ";
           visibility: hidden;
           position: absolute;
