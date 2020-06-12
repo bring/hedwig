@@ -95,7 +95,7 @@ Elements:
 ### Layouts — Buttons
 
 ```html|span-2,plain,light
-  <div class="hw-card">
+  <div class="hw-card hw-card__has-actions">
     <div class="hw-card__body">
       <h3 class="hw-card__title">Card Title</h3>
       <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
@@ -107,7 +107,7 @@ Elements:
   </div>
 ```
 ```html|span-2,plain,light
-  <div class="hw-card">
+  <div class="hw-card hw-card__has-actions">
     <div class="hw-card__body">
       <h3 class="hw-card__title">Card Title</h3>
       <h5 class="hw-card__subtitle">Secondary title</h5>
@@ -122,7 +122,7 @@ Elements:
 ```
 
 ```html|span-2,plain,light
-  <div class="hw-card">
+  <div class="hw-card hw-card__has-actions">
     <div class="hw-card__body">
       <h5 class="hw-card__overline">Overline title</h5>
       <h3 class="hw-card__title">Card Title</h3>
@@ -163,7 +163,7 @@ Elements:
 ```
 
 ```html|span-2,plain,light
-  <div class="hw-card">
+  <div class="hw-card hw-card__has-actions">
     <div class="hw-card__media hw-card__media-16_9">
       <div class="hw-card__media-inner" style="background-image: url('{assets}/img/{postenbring}/image-placeholder.png');"></div>
     </div>
