@@ -338,6 +338,33 @@ title: "Compressed card"
 
 
 
+### Hoverstates
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-hover-1.png"
+title: "No buttons"
+description: "If the card itself is a clickable link, then a hover-effect should be applied to the card."
+```
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-hover-2.png"
+title: "With buttons"
+description: "If the card has clickable buttons, the buttons should have hover-states, and not the card itself."
+```
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-hover-3.png"
+title: "Multiple options"
+description: "If the card has clickable buttons, and the card title itself is its own call to action, both the whole card and the buttons should have hover-states.."
+```
+
+
+
+
+
 
 ## Specifications
 ```image
