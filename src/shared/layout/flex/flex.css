@@ -71,6 +71,10 @@
       &:nth-of-type(2n) {
         margin-right: 0;
       }
+      &:nth-child(2n+1):nth-last-child(-n+2),
+      &:nth-child(2n+1):nth-last-child(-n+2) ~ div {
+        margin-bottom: 0px !important;
+      }
     }
 
     &--thirds > * {
@@ -78,6 +82,10 @@
       max-width: calc((100% / 3) - (var(--hw-spacing-small-1) * 2 / 3));
       &:nth-of-type(3n) {
         margin-right: 0;
+      }
+      &:nth-child(3n+1):nth-last-child(-n+3),
+      &:nth-child(3n+1):nth-last-child(-n+3) ~ div {
+        margin-bottom: 0px !important;
       }
     }
 
@@ -87,7 +95,12 @@
       &:nth-of-type(4n) {
         margin-right: 0;
       }
+      &:nth-child(4n+1):nth-last-child(-n+4),
+      &:nth-child(4n+1):nth-last-child(-n+4) ~ div {
+        margin-bottom: 0px !important;
+      }
     }
+
 
     /* Medium gutter desktop calculations */
     &--gutter-medium-desktop&--twos > * {

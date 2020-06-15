@@ -225,9 +225,7 @@ Flexible grid with 3px gutters
   </a>
 </div>
 ```
-
-
-## Example with fourths
+## Example with fourths (1 left over)
 
 ```html|plain,light
 <div class="hw-flex hw-flex--fourths">
@@ -245,6 +243,193 @@ Flexible grid with 3px gutters
         <use xlink:href="#bud"></use>
       </svg>
       <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Example with fourths (2 left over)
+
+```html|plain,light
+<div class="hw-flex hw-flex--fourths">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+## Example with fourths (3 left over)
+
+```html|plain,light
+<div class="hw-flex hw-flex--fourths">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+## Example with fourths (4/0 left over)
+
+```html|plain,light
+<div class="hw-flex hw-flex--fourths">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
     </a>
   </div>
   <div class="hw-block hw-background-color-white">
