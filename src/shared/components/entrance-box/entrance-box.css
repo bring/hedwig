@@ -34,8 +34,7 @@
 
   &__label {
     text-transform: uppercase;
-    margin-bottom: var(--hw-spacing-small-4);
-    font-size: var(--hw-font-size-lead);
+    font-size: var(--hw-font-size-small);
     color: var(--hw-color-primary-dark);
     display: inline;
     transition: all 0.1s ease;
@@ -44,7 +43,6 @@
   &__text {
     display: inline;
     min-height: 60px;
-    margin-top: var(--hw-spacing-small-4);
     font-size: var(--hw-font-size-lead);
     color: var(--hw-color-black);
     transition: all 0.1s ease;
