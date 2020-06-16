@@ -9,6 +9,10 @@
   display: flex;
   flex-direction: column;
 
+  @media(--large) {
+    background: transparent;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -31,17 +35,18 @@
   &__label {
     text-transform: uppercase;
     margin-bottom: var(--hw-spacing-small-4);
-    font-size: var(--hw-font-size-smaller);
+    font-size: var(--hw-font-size-lead);
+    color: var(--hw-color-primary-dark);
     display: inline;
     transition: all 0.1s ease;
-    @extend .hw-color-gray-dark
   }
 
   &__text {
     display: inline;
     min-height: 60px;
     margin-top: var(--hw-spacing-small-4);
-    font-size: var(--hw-font-size-small);
+    font-size: var(--hw-font-size-lead);
+    color: var(--hw-color-black);
     transition: all 0.1s ease;
   }
 
