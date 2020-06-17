@@ -85,8 +85,9 @@
     border: 0;
     opacity: 0;
     transition: opacity 0.1s ease, visibility 0.1s ease 0.1s;
-    color:var(--hw-color-gray-normal);
+    color: var(--hw-color-gray-dark);
     visibility: hidden;
+    cursor: pointer;
   }
 
   &__button-inside:hover,
