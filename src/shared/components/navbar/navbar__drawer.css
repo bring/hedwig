@@ -106,6 +106,13 @@
       }
     }
 
+    @media(--medium-max) {
+      .hw-container {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
     @media (--large) {
       display: none;
     }

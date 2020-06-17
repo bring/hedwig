@@ -54,14 +54,15 @@ Modifiers:
                <div class="hw-navbar__drawer-content">
                  <div class="hw-navbar__drawer-mobile">
                     <div class="hw-container">
-
-                    <div class="hw-block">
-                      <div class="hw-navbar__selector hw-navbar__selector__mobile">
-                        <a href="#" class="hw-navbar__selector-item hw-navbar__selector-item__selected">Privat</a>
-                        <a href="#" class="hw-navbar__selector-item">Bedrift</a>
+                      <div class="hw-block">
+                        <div class="hw-navbar__selector hw-navbar__selector__mobile">
+                          <a href="#" class="hw-navbar__selector-item hw-navbar__selector-item__selected">Privat</a>
+                          <a href="#" class="hw-navbar__selector-item">Bedrift</a>
+                        </div>
                       </div>
                     </div>
 
+                    <div class="hw-container">
                     <div class="hw-block--mt-medium-2">
                      <div>
                        <h5>Title</h5>
