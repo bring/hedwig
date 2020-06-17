@@ -63,11 +63,13 @@
   /* List */
   & ul:not(.hw-accordion) {
     @extend .hw-list;
+    margin-top: var(--hw-spacing-small-4);
   }
 
   & ol {
     @extend .hw-list;
     @extend .hw-list--numbered;
+    margin-top: var(--hw-spacing-small-4);
   }
 
   /* Image */

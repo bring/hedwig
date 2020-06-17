@@ -143,6 +143,13 @@
 
   &--stacked {
     flex-direction: column;
+
+    @media (--large) {
+      .hw-trace__button {
+          margin-left: 0px;
+          margin-top: var(--hw-spacing-small-2);
+      }
+    }
   }
 
   .hw-button {
