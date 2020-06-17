@@ -53,6 +53,7 @@ Modifiers:
          <section class="hw-navbar__drawer" data-hw-menu-drawer>
                <div class="hw-navbar__drawer-content">
                  <div class="hw-navbar__drawer-mobile">
+                    <div class="hw-container">
 
                     <div class="hw-block">
                       <div class="hw-navbar__selector hw-navbar__selector__mobile">
@@ -125,8 +126,8 @@ Modifiers:
                      </li>
 
                    </ul>
+                  </div>
                  </div>
-
 
 
 

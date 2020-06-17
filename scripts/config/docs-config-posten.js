@@ -51,10 +51,7 @@ module.exports = {
     textMedium: '#444',
     bgLight: '#ffffff',
     bgDark: '#222',
-    lightColor: '#D6D6D6',
-    fontFamily: "'Posten Sans Regular', sans-serif",
-    fontHeading: "'Posten Sans Medium', sans-serif",
-    baseFontSize: 14
+    lightColor: '#D6D6D6'
   },
   pages: [],
 };

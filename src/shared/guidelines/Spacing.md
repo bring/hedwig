@@ -11,20 +11,19 @@ plain: true
 noSource: true
 ---
 <div class="hw-helpers-margin-highlighter">
-
-<div class="hw-block" style="margin-left: 4px;"><p>--hw-spacing-small-1</p></div>
-<div class="hw-block" style="margin-left: 8px;"><p>--hw-spacing-small-2</p></div>
-<div class="hw-block" style="margin-left: 12px;"><p>--hw-spacing-small-3</p></div>
-<div class="hw-block" style="margin-left: 16px;"><p>--hw-spacing-small-4</p></div>
-<div class="hw-block" style="margin-left: 20px;"><p>--hw-spacing-medium-1</p></div>
-<div class="hw-block" style="margin-left: 24px;"><p>--hw-spacing-medium-2</p></div>
-<div class="hw-block" style="margin-left: 32px;"><p>--hw-spacing-medium-3</p></div>
-<div class="hw-block" style="margin-left: 40px;"><p>--hw-spacing-medium-4</p></div>
-<div class="hw-block" style="margin-left: 48px;"><p>--hw-spacing-large-1</p></div>
-<div class="hw-block" style="margin-left: 64px;"><p>--hw-spacing-large-2</p></div>
-<div class="hw-block" style="margin-left: 80px;"><p>--hw-spacing-large-3</p></div>
-<div class="hw-block" style="margin-left: 120px;"><p>--hw-spacing-large-4</p></div>
-
+  <div class="hw-block hw-block--pb-small-1">   <p><br>--hw-spacing-small-1</p>    </div>
+  <div class="hw-block hw-block--pb-small-2">   <p><br>--hw-spacing-small-2</p>    </div>
+  <div class="hw-block hw-block--pb-small-3">   <p><br>--hw-spacing-small-3</p>    </div>
+  <div class="hw-block hw-block--pb-small-4">   <p><br>--hw-spacing-small-4</p>    </div>
+  <div class="hw-block hw-block--pb-medium-1">  <p><br>--hw-spacing-medium-1</p>   </div>
+  <div class="hw-block hw-block--pb-medium-2">  <p><br>--hw-spacing-medium-2</p>   </div>
+  <div class="hw-block hw-block--pb-medium-3">  <p><br>--hw-spacing-medium-3</p>   </div>
+  <div class="hw-block hw-block--pb-medium-4">  <p><br>--hw-spacing-medium-4</p>   </div>
+  <div class="hw-block hw-block--pb-large-1">   <p><br>--hw-spacing-large-1</p>    </div>
+  <div class="hw-block hw-block--pb-large-2">   <p><br>--hw-spacing-large-2</p>    </div>
+  <div class="hw-block hw-block--pb-large-3">   <p><br>--hw-spacing-large-3</p>    </div>
+  <div class="hw-block hw-block--pb-large-4">   <p><br>--hw-spacing-large-4</p>    </div>
+  <div class="hw-block hw-block--pb-large-5">   <p><br>--hw-spacing-large-5</p>    </div>
 </div>
 ```
 
@@ -33,6 +32,7 @@ noSource: true
   --hw-spacing-small-2: 8px;
   --hw-spacing-small-3: 12px;
   --hw-spacing-small-4: 16px;
+  --hw-spacing-medium-1: 20px;
   --hw-spacing-medium-2: 24px;
   --hw-spacing-medium-3: 32px;
   --hw-spacing-medium-4: 40px;
@@ -40,6 +40,7 @@ noSource: true
   --hw-spacing-large-2: 64px;
   --hw-spacing-large-3: 80px;
   --hw-spacing-large-4: 120px;
+  --hw-spacing-large-5: 160px;
 ```
 
 

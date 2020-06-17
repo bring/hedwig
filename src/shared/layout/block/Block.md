@@ -101,6 +101,7 @@ large-1: 48px;
 large-2: 64px;
 large-3: 80px;
 large-4: 120px;
+large-5: 160px;
 ```
 
 

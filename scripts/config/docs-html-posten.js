@@ -29,11 +29,10 @@ module.exports = `
           * Margin highlighting for block demo
           */
 
-         body {
+        
+        body {
           margin: 0;
           background: #f2f2f2;
-          font-family: 'Posten Sans Medium', sans-serif;
-          font-size: 18px;
           color: #444444;
         }
 
@@ -114,6 +113,7 @@ module.exports = `
         }
 
         .hw-app-switcher__link {
+          font-family: Posten Sans Regular;
           width: 120px;
           display: inline-block;
           padding: 10px 20px;
@@ -129,8 +129,27 @@ module.exports = `
         /**
          * Modifications for Catalog
          */
+
         .HeadingLink {
           line-height: 0px; /* Fixes jumping of content when hovering an inline anchor */
+        }
+        [class$="-Image"], [class$="-Image"] p {
+            font-size: 0.8rem !important;
+        }
+        [class$="-Span"] {
+            margin-bottom: 20px !important;
+        }
+        [class$="-Span"] > [class$="-Image"] {
+            margin-bottom: 20px !important;
+        }
+        [class$="headingStyle"] {
+            margin-top: 2rem !important;
+        }
+        [class$="h1-headingStyle"] {
+            margin-top: 4rem !important;
+        }
+        [class$="h2-headingStyle"] {
+            margin-top: 4rem !important;
         }
 
 
