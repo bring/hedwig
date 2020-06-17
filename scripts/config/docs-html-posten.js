@@ -25,11 +25,11 @@ module.exports = `
       ${pikaday}
       <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/favicon.ico" />
       <style>
-        /**
-          * Margin highlighting for block demo
-          */
-
         
+        body, html {
+          font-size: 20px;
+        }
+
         body {
           margin: 0;
           background: #f2f2f2;
@@ -122,7 +122,7 @@ module.exports = `
         }
         .hw-app-switcher__link--active {
           font-family: Posten Sans Medium;
-          background-color: #e32d22;
+          background-color: #7bc144;
         }
 
 

@@ -12,7 +12,7 @@ module.exports = `
           margin: 0;
           background: #f2f2f2;
           font-family: 'Posten Sans Medium', sans-serif;
-          font-size: 18px;
+          font-size: 20px;
           color: #444444;
         }
 

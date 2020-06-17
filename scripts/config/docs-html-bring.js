@@ -2,17 +2,19 @@ const nodeEnv = process.env.NODE_ENV;
 
 let reload = '<script src="//localhost:9091/livereload.js?snipver=1"></script>';
 let icons = '<script id="hw-icons" src="http://localhost:3001/icons.min.js"></script>';
+let styles = '<link rel="stylesheet" href="http://localhost:3001/fonts.css"><link rel="stylesheet" href="http://localhost:3001/bring.css">';
 const pikaday = '<script src="https://cdn.jsdelivr.net/npm/pikaday@1.8.0/pikaday.min.js"></script>';
 
 if (nodeEnv === 'staging') {
   reload = '';
   icons = '<script id="hw-icons" src="./icons.min.js"></script>';
+  styles = '<link rel="stylesheet" href="./fonts.css"><link rel="stylesheet" href="./bring.css">';
 }
 
 if (nodeEnv === 'production') {
   reload = '';
-  icons =
-    '<script id="hw-icons" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/icons.min.js"></script>';
+  icons = '<script id="hw-icons" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/icons.min.js"></script>';
+  styles = '';
 }
 
 module.exports = `
@@ -23,12 +25,13 @@ module.exports = `
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Hedwig - Bring</title>
       ${pikaday}
+      ${styles}
       <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/favicon.ico" />
       <style>
-        /**
-          * Margin highlighting for block demo
-          */
-
+        
+        body, html {
+          font-size: 20px;
+        }
 
         body {
           margin: 0;
@@ -125,6 +128,7 @@ module.exports = `
           background-color: #7bc144;
         }
 
+
         /**
          * Modifications for Catalog
          */
@@ -150,8 +154,6 @@ module.exports = `
         [class$="h2-headingStyle"] {
             margin-top: 4rem !important;
         }
-
-
       </style>
     </head>
     <body>
