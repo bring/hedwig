@@ -297,12 +297,12 @@
     &:focus {
       color: var(--hw-color-primary-darker);
       fill: var(--hw-color-primary-darker);
-      border-color: var(--hw-color-primary);
-      background: var(--hw-color-primary);
+      border-color: var(--hw-color-button-primary-light-hover);
+      background: var(--hw-color-button-primary-light-hover);
       outline: none;
     }
     &:active {
-      background: var(--hw-color-primary);
+      background: var(--hw-color-button-primary-light-hover);
     }
   }
   &--chat-fixed{
