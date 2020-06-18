@@ -103,9 +103,18 @@ module.exports = `
           position: absolute;
           right: 0;
           top: 0;
+          height: 49px;
           background: #3a3a3a;
           text-align: right;
           z-index: 1;
+          opacity: 0;
+          animation: hw-app-switcher-show 1s linear;
+          animation-delay: 2s;
+          animation-fill-mode: forwards;
+        }
+        @keyframes hw-app-switcher-show {
+          from {opacity: 0;}
+          to {opacity: 1;}
         }
 
         @media (min-width: 1000px) {
