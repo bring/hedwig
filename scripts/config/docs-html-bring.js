@@ -109,7 +109,7 @@ module.exports = `
           z-index: 1;
           opacity: 0;
           animation: hw-app-switcher-show 1s linear;
-          animation-delay: 2s;
+          animation-delay: 1s;
           animation-fill-mode: forwards;
         }
         @keyframes hw-app-switcher-show {

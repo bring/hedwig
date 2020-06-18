@@ -126,20 +126,7 @@
   }
 
   &--picture-yellow {
-    background: var(--hw-color-alert-yellow);
-    border-color: var(--hw-color-alert-yellow);
-    color: var(--hw-color-black);
-    fill: var(--hw-color-black);
-
-    &:hover {
-      background: var(--hw-color-alert-yellow);
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-      outline: 0px solid var(--hw-color-alert-yellow);
-    }
+    @extend .hw-button--primary;
   }
 
   &--picture-dark {
@@ -187,24 +174,7 @@
   }
 
   &--outline-dark {
-    background: none;
-    color: var(--hw-color-black);
-    fill: var(--hw-color-black);
-    border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: var(--hw-color-white);
-      fill: var(--hw-color-white);
-      border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
-      outline: 0px solid var(--hw-color-black);
-    }
-    &:disabled, &[disabled], &[disabled]:active {
-      border: var(--hw-border-thickness) solid var(--hw-color-gray-normal);
-      color: var(--hw-color-gray-dark);
-      background: transparent !important;
-    }
+    @extend .hw-button--outline-secondary;
   }
 
   &--outline-white {
@@ -282,7 +252,7 @@
       color: var(--hw-color-gray-dark);
     }
   }
-  &--chat{
+  &--chat {
     width: 60px;
     height: 60px;
     margin: 0px;
@@ -305,7 +275,7 @@
       background: var(--hw-color-button-primary-light-hover);
     }
   }
-  &--chat-fixed{
+  &--chat-fixed {
     position: fixed;
     bottom: 12px;
     right: 12px;

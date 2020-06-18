@@ -106,7 +106,7 @@ module.exports = `
           z-index: 1;
           opacity: 0;
           animation: hw-app-switcher-show 1s linear;
-          animation-delay: 2s;
+          animation-delay: 1s;
           animation-fill-mode: forwards;
         }
         @keyframes hw-app-switcher-show {
@@ -131,7 +131,7 @@ module.exports = `
         }
         .hw-app-switcher__link--active {
           font-family: Posten Sans Medium;
-          background-color: #7bc144;
+          background-color: #e32d22;
         }
 
 
