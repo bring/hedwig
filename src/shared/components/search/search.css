@@ -93,6 +93,7 @@
   &__button-inside:hover,
   &__button-inside:focus {
     color: var(--hw-color-primary-darker); 
+    outline: 0;
   }
 
   &__suggestions {
