@@ -137,32 +137,12 @@ Modifiers:
 
 
                  <div class="hw-navbar__drawer-desktop">
-                  <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
-                     <div>
-                       <h5>Title</h5>
-                       <ul class="hw-linklist">
-                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#pakke"></use></svg></i> Service name</a></li>
-                       </ul>
-                     </div>
-                     <div>
-                       <h5>&nbsp;</h5>
-                       <ul class="hw-linklist">
-                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#mybring"></use></svg></i> Service name</a></li>
-                       </ul>
-                     </div>
-                     <div>
-                       <h5>&nbsp;</h5>
-                       <ul class="hw-linklist">
-                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#avis"></use></svg></i> Service name</a></li>
-                       </ul>
-                     </div>
-                     <div>
-                       <h5>&nbsp;</h5>
-                       <ul class="hw-linklist">
-                         <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#kundeservice"></use></svg></i> Service name</a></li>
-                       </ul>
-                     </div>
-                   </div>
+                  <ul class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
+                     <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#pakke"></use></svg></i> Service name</a></li>
+                     <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#mybring"></use></svg></i> Service name</a></li>
+                     <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#avis"></use></svg></i> Service name</a></li>
+                     <li><a href="#"><svg class="hw-icon hw-icon--size-medium"><use xlink:href="#kundeservice"></use></svg></i> Service name</a></li>
+                   </ul>
 
                    <div class="hw-flex hw-flex--fourths hw-flex--gutter-large-desktop">
                      <div>
