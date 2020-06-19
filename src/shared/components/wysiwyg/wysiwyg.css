@@ -12,6 +12,15 @@
     @media(--large) { margin-top: var(--hw-spacing-large-2); }
   }
 
+  & .hw-dropdown__options {
+    margin: 0;
+    padding: 0;
+  }
+  
+  & li.hw-dropdown__option::before {
+    content: initial;
+  }
+
   & .hw-quote .hw-quote__content {
     @extend .hw-quote__content;
   }

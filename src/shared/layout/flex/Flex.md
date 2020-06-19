@@ -553,6 +553,100 @@ Flexible grid with 3px gutters
 </div>
 ```
 
+## Example with two-one
+
+```html
+<div class="hw-flex hw-flex--two-one">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Example with one-two
+
+```html
+<div class="hw-flex hw-flex--one-two">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
 ## Example with twos and large gutter desktop
 ```html|plain,light
 <div class="hw-flex hw-flex--twos hw-flex--gutter-large-desktop">
@@ -602,6 +696,194 @@ Flexible grid with 3px gutters
 ## Example with twos and larger gutter desktop
 ```html|plain,light
 <div class="hw-flex hw-flex--twos hw-flex--gutter-larger-desktop">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Example with one-two and larger gutter desktop
+
+```html
+<div class="hw-flex hw-flex--one-two hw-flex--gutter-larger-desktop">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Example with two-one and larger gutter desktop
+
+```html
+<div class="hw-flex hw-flex--two-one hw-flex--gutter-larger-desktop">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Example with one-two and large gutter desktop
+
+```html
+<div class="hw-flex hw-flex--one-two hw-flex--gutter-large-desktop">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Example with two-one and large gutter desktop
+
+```html
+<div class="hw-flex hw-flex--two-one hw-flex--gutter-large-desktop">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">
@@ -743,6 +1025,99 @@ Flexible grid with 3px gutters
 
 ```html|plain,light
 <div class="hw-flex hw-flex--twos hw-flex--gutter-medium-desktop">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+## Example with one-two and medium gutter desktop
+
+```html
+<div class="hw-flex hw-flex--one-two hw-flex--gutter-medium-desktop">
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link with so much text that it gets two lines</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+  <div class="hw-block hw-background-color-white">
+    <a class="hw-icon-link" href="#">
+      <svg class="hw-icon">
+        <use xlink:href="#bud"></use>
+      </svg>
+      <h4>A link</h4>
+    </a>
+  </div>
+</div>
+```
+
+## Example with two-one and medium gutter desktop
+
+```html
+<div class="hw-flex hw-flex--two-one hw-flex--gutter-medium-desktop">
   <div class="hw-block hw-background-color-white">
     <a class="hw-icon-link" href="#">
       <svg class="hw-icon">

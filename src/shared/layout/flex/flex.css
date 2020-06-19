@@ -54,7 +54,7 @@
       margin-right: var(--hw-spacing-small-2);
     }
 
-    &--twos, &--thirds, &--fourths{
+    &--twos, &--thirds, &--fourths, &--two-one, &--one-two{
       flex-wrap: wrap;
       & > * {
         margin-bottom: var(--hw-spacing-small-1);
@@ -74,6 +74,26 @@
       &:nth-child(2n+1):nth-last-child(-n+2),
       &:nth-child(2n+1):nth-last-child(-n+2) ~ * {
         margin-bottom: 0px;
+      }
+    }
+
+    &--two-one > * {
+      min-width: calc((200% / 3) - (var(--hw-spacing-small-1) / 2)); /* 3 / 2 = 1.5 */
+      max-width: calc((200% / 3) - (var(--hw-spacing-small-1) / 2));
+       &:nth-of-type(2n) {
+        min-width: calc((100% / 3) - (var(--hw-spacing-small-1) / 2)); /* 3 / 2 = 1.5 */
+        max-width: calc((100% / 3) - (var(--hw-spacing-small-1) / 2));
+        margin-right: 0;
+      }
+    }
+
+    &--one-two > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-small-1) / 2)); /* 3 / 2 = 1.5 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-small-1) / 2));
+       &:nth-of-type(2n) {
+        min-width: calc((200% / 3) - (var(--hw-spacing-small-1) / 2)); /* 3 / 2 = 1.5 */
+        max-width: calc((200% / 3) - (var(--hw-spacing-small-1) / 2));
+        margin-right: 0;
       }
     }
 
@@ -118,6 +138,28 @@
       max-width: calc(25% - (var(--hw-spacing-small-2) * 3 / 4));
       margin-bottom: var(--hw-spacing-small-2);
     }
+    &--gutter-medium-desktop&--two-one > * {
+      min-width: calc((200% / 3) - (var(--hw-spacing--small-2) / 3)); /* 18 / 3 = 6 */
+      max-width: calc((200% / 3) - (var(--hw-spacing--small-2) / 3));
+      margin-bottom: var(--hw-spacing--small-2);
+
+      &:nth-of-type(2n) {
+        min-width: calc((100% / 3) - (var(--hw-spacing--small-2) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+        max-width: calc((100% / 3) - (var(--hw-spacing--small-2) * 2 / 3));
+        margin-right: 0;
+      }
+    }
+    &--gutter-medium-desktop&--one-two > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing--small-2) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+      max-width: calc((100% / 3) - (var(--hw-spacing--small-2) * 2 / 3));
+      margin-bottom: var(--hw-spacing--small-2);
+
+      &:nth-of-type(2n) {
+        min-width: calc((200% / 3) - (var(--hw-spacing--small-2) / 3)); /* 18 / 3 = 6 */
+        max-width: calc((200% / 3) - (var(--hw-spacing--small-2) / 3));
+        margin-right: 0;
+      }
+    }
 
     /* Large gutter desktop calculations */
     &--gutter-large-desktop&--twos > * {
@@ -136,6 +178,30 @@
       min-width: calc(25% - (var(--hw-spacing-small-4) * 3 / 4)); /* 18 * 3 / 4 = 13.5 */
       max-width: calc(25% - (var(--hw-spacing-small-4) * 3 / 4));
       margin-bottom: var(--hw-spacing-small-4);
+    }
+
+    &--gutter-large-desktop&--two-one > * {
+      min-width: calc((200% / 3) - (var(--hw-spacing-small-4) / 3)); /* 18 / 3 = 6 */
+      max-width: calc((200% / 3) - (var(--hw-spacing-small-4) / 3));
+      margin-bottom: var(--hw-spacing-small-4);
+
+      &:nth-of-type(2n) {
+        min-width: calc((100% / 3) - (var(--hw-spacing-small-4) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+        max-width: calc((100% / 3) - (var(--hw-spacing-small-4) * 2 / 3));
+        margin-right: 0;
+      }
+    }
+
+    &--gutter-large-desktop&--one-two > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-small-4) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-small-4) * 2 / 3));
+      margin-bottom: var(--hw-spacing-small-4);
+
+      &:nth-of-type(2n) {
+        min-width: calc((200% / 3) - (var(--hw-spacing-small-4) / 3)); /* 18 / 3 = 6 */
+        max-width: calc((200% / 3) - (var(--hw-spacing-small-4) / 3));
+        margin-right: 0;
+      }
     }
 
     /* Larger gutter desktop calculations */
@@ -157,6 +223,30 @@
       margin-bottom: var(--hw-spacing-medium-2);
     }
 
+    &--gutter-larger-desktop&--two-one > * {
+      min-width: calc((200% / 3) - (var(--hw-spacing-medium-2) / 3)); /* 18 / 3 = 6 */
+      max-width: calc((200% / 3) - (var(--hw-spacing-medium-2) / 3));
+      margin-bottom: var(--hw-spacing-medium-2);
+
+      &:nth-of-type(2n) {
+        min-width: calc((100% / 3) - (var(--hw-spacing-medium-2) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+        max-width: calc((100% / 3) - (var(--hw-spacing-medium-2) * 2 / 3));
+        margin-right: 0;
+      }
+    }
+
+    &--gutter-larger-desktop&--one-two > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-medium-2) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-medium-2) * 2 / 3));
+      margin-bottom: var(--hw-spacing-medium-2);
+
+      &:nth-of-type(2n) {
+        min-width: calc((200% / 3) - (var(--hw-spacing-medium-2) / 3)); /* 18 / 3 = 6 */
+        max-width: calc((200% / 3) - (var(--hw-spacing-medium-2) / 3));
+        margin-right: 0;
+      }
+    }
+
     /* Largest gutter desktop calculations */
     &--gutter-largest-desktop&--twos > * {
       min-width: calc(50% - (var(--hw-spacing-medium-4) / 2)); /* 48 / 2 = 24 */
@@ -175,5 +265,29 @@
       max-width: calc(25% - (var(--hw-spacing-medium-4) * 3 / 4));
       margin-bottom: var(--hw-spacing-medium-4);
     }
+    &--gutter-largest-desktop&--two-one > * {
+      min-width: calc((200% / 3) - (var(--hw-spacing-medium-4) / 3)); /* 18 / 3 = 6 */
+      max-width: calc((200% / 3) - (var(--hw-spacing-medium-4) / 3));
+      margin-bottom: var(--hw-spacing-medium-4);
+
+      &:nth-of-type(2n) {
+        min-width: calc((100% / 3) - (var(--hw-spacing-medium-4) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+        max-width: calc((100% / 3) - (var(--hw-spacing-medium-4) * 2 / 3));
+        margin-right: 0;
+      }
+    }
+
+    &--gutter-largest-desktop&--one-two > * {
+      min-width: calc((100% / 3) - (var(--hw-spacing-medium-4) * 2 / 3)); /* 18 * 2 / 3 = 12 */
+      max-width: calc((100% / 3) - (var(--hw-spacing-medium-4) * 2 / 3));
+      margin-bottom: var(--hw-spacing-medium-4);
+
+      &:nth-of-type(2n) {
+        min-width: calc((200% / 3) - (var(--hw-spacing-medium-4) / 3)); /* 18 / 3 = 6 */
+        max-width: calc((200% / 3) - (var(--hw-spacing-medium-4) / 3));
+        margin-right: 0;
+      }
+    }
+
   }
 }

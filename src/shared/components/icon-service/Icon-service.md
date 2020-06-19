@@ -207,6 +207,11 @@ frimerkertilsamling
 handlekurv
 <br/>
 <svg class="hw-icon" style="width: 20px; height: 20px; margin-right: 10px;">
+  <use xlink:href="#hente-selv-lager"></use>
+</svg>
+hente-selv-lager
+<br/>
+<svg class="hw-icon" style="width: 20px; height: 20px; margin-right: 10px;">
   <use xlink:href="#henteipostkassen"></use>
 </svg>
 henteipostkassen
@@ -390,6 +395,16 @@ return-cargo-partial
   <use xlink:href="#return-express"></use>
 </svg>
 return-express
+<br/>
+<svg class="hw-icon" style="width: 20px; height: 20px; margin-right: 10px;">
+  <use xlink:href="#return-delivery-home"></use>
+</svg>
+return-delivery-home
+<br/>
+<svg class="hw-icon" style="width: 20px; height: 20px; margin-right: 10px;">
+  <use xlink:href="#return-delivery-mailbox"></use>
+</svg>
+return-delivery-mailbox
 <br/>
 <svg class="hw-icon" style="width: 20px; height: 20px; margin-right: 10px;">
   <use xlink:href="#return-pallet"></use>
