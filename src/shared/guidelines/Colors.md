@@ -307,13 +307,20 @@ These are reserved colours used just for certain hover states.
 plain: true
 span: 1
 src: "{assets}/img/{postenbring}/{component}-hover-1.png"
-title: "Green hover"
+title: "{Color} hover"
 description: "Used as hover colour for primary buttons."
 ```
 ```image
 plain: true
 span: 1
 src: "{assets}/img/{postenbring}/{component}-hover-2.png"
+title: "Light {color} hover"
+description: "Used as hover colour for the chat button."
+```
+```image
+plain: true
+span: 1
+src: "{assets}/img/{postenbring}/{component}-hover-3.png"
 title: "Yellow"
 description: "Used as hover colour for clickable containers of yellow colour."
 ```
