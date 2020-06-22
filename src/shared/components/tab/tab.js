@@ -70,6 +70,7 @@ const HWTab = ({
     // Mark this Tab as initialized
     SETTINGS.tab.classList.add(initClass);
   }
+
   init();
 };
 HWTab();

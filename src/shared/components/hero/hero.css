@@ -3,7 +3,7 @@
  */
 
  .hw-hero {
-  background: var(--hw-color-gray-lightest);
+  background: var(--hw-color-gray-normal);
   position: relative;
   min-height: 55vh;
   overflow: hidden;

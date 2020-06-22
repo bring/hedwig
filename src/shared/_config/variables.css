@@ -1,34 +1,38 @@
+/** 
+* Media queries, should be outside the :root
+*/
+
+@custom-media --small (min-width: 460px);
+@custom-media --medium (min-width: 720px);
+@custom-media --large (min-width: 940px);
+@custom-media --xlarge (min-width: 1200px);
+
+@custom-media --small-max (max-width: 460px);
+@custom-media --medium-max (max-width: 720px);
+@custom-media --large-max (max-width: 940px);
+@custom-media --xlarge-max (max-width: 1200px);
+
+/* Used for min max settings */
+@custom-media --only-base (min-width: 0em) and (max-width: 459px);
+@custom-media --only-small (min-width: 460px) and (max-width: 719px);
+@custom-media --only-medium (min-width: 720px) and (max-width: 939px);
+@custom-media --only-large (min-width: 940px) and (max-width: 1199px);
+@custom-media --only-xlarge (min-width: 1200px);
+
+/* Max values */
+@custom-media --max-medium (max-width: 939px);
+@custom-media --max-large (max-width: 1199px);
+
+/* For high resolution mobiles */
+@custom-media --high-res-mobile (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 939px) ;
+
+/* For print and/or screen */
+@custom-media --print print;
+@custom-media --screen screen;
+
 /**
- * Media queries, should be outside the :root
- */
-
- @custom-media --small (min-width: 460px);
- @custom-media --medium (min-width: 720px);
- @custom-media --large (min-width: 940px);
- @custom-media --xlarge (min-width: 1200px);
-
- /* Used for min max settings */
-
- @custom-media --only-base (min-width: 0em) and (max-width: 459px);
- @custom-media --only-small (min-width: 460px) and (max-width: 719px);
- @custom-media --only-medium (min-width: 720px) and (max-width: 939px);
- @custom-media --only-large (min-width: 940px) and (max-width: 1199px);
- @custom-media --only-xlarge (min-width: 1200px);
-
- /* Max values */
- @custom-media --max-medium (max-width: 939px);
- @custom-media --max-large (max-width: 1199px);
-
- /* For high resolution mobiles */
- @custom-media --high-res-mobile (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 939px) ;
-
-  /* For print and/or screen */
-  @custom-media --print print;
-  @custom-media --screen screen;
-
- /**
- * Variables - Shared
- */
+* Variables - Shared
+*/
 
 :root {
   /**
@@ -36,34 +40,37 @@
    * NOTE: This is in PX because we want them to specific.
    */
 
-  --hw-spacing-tiny: 3px;
-  --hw-spacing-smallest: 6px;
-  --hw-spacing-smaller: 12px;
-  --hw-spacing-small: 18px;
-  --hw-spacing: 24px;
-  --hw-spacing-large: 36px;
-  --hw-spacing-larger: 48px;
-  --hw-spacing-even-larger: 72px;
+  --hw-spacing-small-1: 4px;
+  --hw-spacing-small-2: 8px;
+  --hw-spacing-small-3: 12px;
+  --hw-spacing-small-4: 16px;
+  --hw-spacing-medium-1: 20px;
+  --hw-spacing-medium-2: 24px;
+  --hw-spacing-medium-3: 32px;
+  --hw-spacing-medium-4: 40px;
+  --hw-spacing-large-1: 48px;
+  --hw-spacing-large-2: 64px;
+  --hw-spacing-large-3: 80px;
+  --hw-spacing-large-4: 120px;
+  --hw-spacing-large-5: 160px;
 
   /**
    * Shared colors
    */
 
-  --hw-color-gray-lightest: #f2f2f2;
-  --hw-color-gray-lighter: #e6e6e6;
-  --hw-color-gray-light: #c1c1c1;
-  --hw-color-gray: #888;
-  --hw-color-gray-dark: #666;
-  --hw-color-gray-darker: #444;
-  --hw-color-gray-darkest: #222;
-  --hw-color-yellow: #fdbb2f;
-  --hw-color-yellow-darker: #f5a623;
-  --hw-color-green: #26b576;
-  --hw-color-red: #e32d22;
+  --hw-color-gray-dark: #6e6e6e;
+  --hw-color-gray-normal: #d6d6d6;
+  --hw-color-gray-light-stroke: #e4e4e4;
+  --hw-color-gray-light-fill: #f2f2f2;
+
   --hw-color-white: #fff;
   --hw-color-black: #000;
-  --hw-color-avocado: #26b576;
-  --hw-color-secondary: #fdbb2f;
+
+  --hw-color-alert-green: #7BC144;
+  --hw-color-alert-yellow: #fdbb2f;
+  --hw-color-alert-red: #e32d22;
+
+ 
 
   /**
   * Colors with opacity
@@ -88,9 +95,15 @@
    * Fonts
    */
 
-  --hw-font-primary-regular: 'Foundry Monoline Regular', sans-serif;
-  --hw-font-primary-medium: 'Foundry Monoline Medium', sans-serif;
-  --hw-font-primary-bold: 'Foundry Monoline Bold', sans-serif;
+  --hw-font-primary-light: 'Posten Sans Light', sans-serif;
+  --hw-font-primary-regular: 'Posten Sans Regular', sans-serif;
+  --hw-font-primary-medium: 'Posten Sans Medium', sans-serif;
+  --hw-font-primary-bold: 'Posten Sans Bold', sans-serif;
+
+  --hw-font-weight-light: 100;
+  --hw-font-weight-regular: 300;
+  --hw-font-weight-medium: 500;
+  --hw-font-weight-bold: 700;
 
   /**
    * Font sizes
@@ -100,34 +113,93 @@
   --hw-font-size-max-view-port: 1200;
   --hw-font-size-min-view-port: 300;
   --hw-font-size-min-view-port-px: 300px;
-  --hw-font-size-max-h1-large: 54;
-  --hw-font-size-max-h1-large-px: 54px;
-  --hw-font-size-min-h1-large: 32;
-  --hw-font-size-min-h1-large-px: 32px;
-  --hw-font-size-max-h1: 44;
-  --hw-font-size-max-h1-px: 44px;
-  --hw-font-size-min-h1: 28;
-  --hw-font-size-min-h1-px: 28px;
-  --hw-font-size-max-h2: 35;
-  --hw-font-size-max-h2-px: 35px;
-  --hw-font-size-min-h2: 25;
-  --hw-font-size-min-h2-px: 25px;
-  --hw-font-size-max-h3: 28;
-  --hw-font-size-max-h3-px: 28px;
+
+
+
+  --hw-font-size-max-h1-large: 72; /* 80 */
+  --hw-font-size-max-h1-large-px: 72px;
+  --hw-font-size-min-h1-large: 40;
+  --hw-font-size-min-h1-large-px: 40px;
+  --hw-h1-large-line-height: 1.111;
+
+  --hw-font-size-max-h1: 48; /* 48 */
+  --hw-font-size-max-h1-px: 48px;
+  --hw-font-size-min-h1: 32;
+  --hw-font-size-min-h1-px: 32px;
+  --hw-h1-line-height: 1.1667;
+
+  --hw-font-size-max-h2: 32; /* 44 */
+  --hw-font-size-max-h2-px: 32px;
+  --hw-font-size-min-h2: 28;
+  --hw-font-size-min-h2-px: 28px;
+  --hw-h2-line-height: 1.25;
+
+  --hw-font-size-max-h3: 24; /* 28 */
+  --hw-font-size-max-h3-px: 24px;
   --hw-font-size-min-h3: 22;
   --hw-font-size-min-h3-px: 22px;
-  --hw-font-size-max-h4: 22;
-  --hw-font-size-max-h4-px: 22px;
-  --hw-font-size-min-h4: 20;
-  --hw-font-size-min-h4-px: 20px;
-  --hw-font-size-max-h5: 18;
+  --hw-h3-line-height: 1.333;
+
+  --hw-font-size-max-h4: 20; /* 22 */
+  --hw-font-size-max-h4-px: 20px;
+  --hw-font-size-min-h4: 18;
+  --hw-font-size-min-h4-px: 18px;
+  --hw-h4-line-height: 1.4;
+
+  --hw-font-size-max-h5: 18; /* 20 */
   --hw-font-size-max-h5-px: 18px;
-  --hw-font-size-min-h5: 18;
-  --hw-font-size-min-h5-px: 18px;
-  --hw-font-size-max-h6: 16;
+  --hw-font-size-min-h5: 16;
+  --hw-font-size-min-h5-px: 16px;
+  --hw-h5-line-height: 1.444;
+
+  --hw-font-size-max-h6: 16; /* 18 */
   --hw-font-size-max-h6-px: 16px;
-  --hw-font-size-min-h6: 16;
-  --hw-font-size-min-h6-px: 16px;
+  --hw-font-size-min-h6: 14;
+  --hw-font-size-min-h6-px: 14px;
+  --hw-h6-line-height: 1.5;
+
+  --hw-font-size-max-caption: 12; /* 13 */
+  --hw-font-size-max-caption-px: 12px;
+  --hw-font-size-min-caption: 11;
+  --hw-font-size-min-caption-px: 11px;
+  --hw-caption-line-height: 1.5;
+
+  --hw-font-size-max-p: 20; /* 22 */
+  --hw-font-size-max-p-px: 20px;
+  --hw-font-size-min-p: 18;
+  --hw-font-size-min-p-px: 18px;
+  --hw-p-line-height: 1.4;
+
+  --hw-font-size-max-lead: 20; /* 22 */
+  --hw-font-size-max-lead-px: 20px;
+  --hw-font-size-min-lead: 18;
+  --hw-font-size-min-lead-px: 18px;
+  --hw-lead-line-height: 1.4;
+
+  --hw-font-size-max-small: 18; /* 20 */
+  --hw-font-size-max-small-px: 18px;
+  --hw-font-size-min-small: 16;
+  --hw-font-size-min-small-px: 16px;
+  --hw-small-line-height: 1.444;
+
+  --hw-font-size-max-smaller: 17; /* 18 */
+  --hw-font-size-max-smaller-px: 17px;
+  --hw-font-size-min-smaller: 16;
+  --hw-font-size-min-smaller-px: 16px;
+  --hw-smaller-line-height: 1.450;
+
+  --hw-font-size-max-technical: 16; /* 17 */
+  --hw-font-size-max-technical-px: 16px;
+  --hw-font-size-min-technical: 15;
+  --hw-font-size-min-technical-px: 15px;
+  --hw-technical-line-height: 1.47;
+
+  --hw-font-size-max-smallest: 12; /* 13 */
+  --hw-font-size-max-smallest-px: 12px;
+  --hw-font-size-min-smallest: 11;
+  --hw-font-size-min-smallest-px: 11px;
+  --hw-smallest-line-height: 1.5;
+
   --hw-font-size-h1-large: calc(var(--hw-font-size-min-h1-px) + (var(--hw-font-size-max-h1-large) - var(--hw-font-size-min-h1-large)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-h1: calc(var(--hw-font-size-min-h1-px) + (var(--hw-font-size-max-h1) - var(--hw-font-size-min-h1)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-h2: calc(var(--hw-font-size-min-h2-px) + (var(--hw-font-size-max-h2) - var(--hw-font-size-min-h2)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
@@ -135,19 +207,63 @@
   --hw-font-size-h4: calc(var(--hw-font-size-min-h4-px) + (var(--hw-font-size-max-h4) - var(--hw-font-size-min-h4)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-h5: calc(var(--hw-font-size-min-h5-px) + (var(--hw-font-size-max-h5) - var(--hw-font-size-min-h5)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-h6: calc(var(--hw-font-size-min-h6-px) + (var(--hw-font-size-max-h6) - var(--hw-font-size-min-h6)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
-  --hw-font-size-lead: 22px;
-  --hw-font-size-p: 18px;
-  --hw-font-size-small: 16px;
-  --hw-font-size-smaller: 14px;
+
+
+  --hw-font-size-caption: calc(var(--hw-font-size-min-caption-px) + (var(--hw-font-size-max-caption) - var(--hw-font-size-min-caption)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-p: calc(var(--hw-font-size-min-p-px) + (var(--hw-font-size-max-p) - var(--hw-font-size-min-p)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-lead: calc(var(--hw-font-size-min-lead-px) + (var(--hw-font-size-max-lead) - var(--hw-font-size-min-lead)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-technical: calc(var(--hw-font-size-min-technical-px) + (var(--hw-font-size-max-technical) - var(--hw-font-size-min-technical)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  
+  --hw-font-size-small: calc(var(--hw-font-size-min-small-px) + (var(--hw-font-size-max-small) - var(--hw-font-size-min-small)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-smaller: calc(var(--hw-font-size-min-smaller-px) + (var(--hw-font-size-max-smaller) - var(--hw-font-size-min-smaller)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+  --hw-font-size-smallest: calc(var(--hw-font-size-min-smallest-px) + (var(--hw-font-size-max-smallest) - var(--hw-font-size-min-smallest)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
+
+
+  /*  
+  Sizes of responsive typography are limited my the max-size-setting.
+  The css media query for these are available in typography.css
+  */
+  
+
+
+
+
+  
+
 
   /**
    * Breakpoints
    * em = 16px
    */
 
-  /* Navbar heights */
-  --hw-navbar-height-mobile: 54px;
-  --hw-navbar-height-desktop: 72px;
+  /* Borders */
+  --hw-border-thickness: 1px;
+  --hw-border-thickness-thick: 2px;
+  --hw-border-radius: 2px;
+
+  /* Fixed sizes */
+  --hw-navbar-height-mobile: 112px;
+  --hw-navbar-height-desktop: 112px;
+  --hw-input-field-height: 58px;
+  --hw-wysiwyg-title-max-width: 780px;
+  --hw-navbar-search-max-width: 530px;
+  @media(--large) {
+    --hw-navbar-search-max-width: 70%;
+  }
+
+
+
+  /**
+   * Transitions
+   */
+  --hw-transition-time-quick: 0.130s; 
+  --hw-transition-time-normal: 0.300s;
+  --hw-transition-time-slow: 0.700s; 
+
+  --hw-transition-easing-normal: ease;
+  --hw-transition-easing-in: ease-in;
+  --hw-transition-easing-out: ease-out;
+
 
   /**
    * Global z-index values

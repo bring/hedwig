@@ -3,11 +3,76 @@
  */
 
 .hw-label {
-  font-size: var(--hw-font-size-small);
-  margin-bottom: var(--hw-spacing-small);
+  color: var(--hw-color-gray-dark);
+  font-size: var(--hw-font-size-caption);
+  font-family: var(--hw-font-primary-regular);
+  font-weight: var(--hw-font-weight-regular);
+  margin-bottom: 0;
+  line-height: 2;
   display: block;
 
-  &[disabled] {
-    color: var(--hw-color-gray-light);
+  transition: color var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
+
+  &:focus-within {
+    color: var(--hw-color-input-accent);
+  }
+
+
+  /**
+   * Modifiers
+   */
+
+  &--error {
+    &:focus-within {
+      color: var(--hw-color-gray-dark);
+    } 
+  }
+
+  &[disabled], &:disabled, &[disabled="disabled"], &--disabled {
+    color: var(--hw-color-gray-normal);
+    pointer-events: none;
+
+    .hw-input {
+      color: var(--hw-color-gray-dark);
+      fill: var(--hw-color-gray-dark);
+    }
+  }
+
+  &--line {
+    .hw-input {
+      @extend .hw-input--line;
+    }
+    .hw-dropdown, .hw-dropdown--native {
+      @extend .hw-dropdown--line;
+    }
+    .hw-autocomplete {
+      @extend .hw-autocomplete--line;
+    }
+    .hw-password {
+      @extend .hw-password--line;
+    }
+    .hw-textarea {
+      @extend .hw-textarea--line;
+    }
+    .hw-error {
+      @extend .hw-error--not-indented;
+    }
+
+
+    &[disabled], &:disabled, &[disabled="disabled"], &--disabled {
+      background-color: var(--hw-color-gray-normal);
+      padding-left: var(--hw-spacing-small-4);
+      padding-top: var(--hw-spacing-small-2);
+      border-radius: var(--hw-border-radius);
+      color: var(--hw-color-gray-dark);
+      fill: var(--hw-color-gray-dark);
+
+      .hw-input {
+        padding-left: 0px;
+        padding-top: var(--hw-spacing-small-2);
+        color: var(--hw-color-gray-dark);
+        fill: var(--hw-color-gray-dark);
+      }
+    }
   }
 }

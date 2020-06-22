@@ -5,34 +5,43 @@
 .hw-checkbox {
   position: relative;
   display: table;
-  padding-left: 2rem;
-  margin-bottom: var(--hw-spacing-smaller);
+  padding-left: calc(16px + 12px);
   cursor: pointer;
-  @extend .hw-color-gray-darker;
   font-size: var(--hw-font-size-small);
+  color: var(--hw-color-black);
 
   &:last-child {
     margin-bottom: 0;
   }
 
+  * {
+    line-height: unset;
+  }
+
+
+  &[disabled] {
+    color: var(--hw-color-gray-dark);
+  }
+
+
   /**
    * Elements
    */
 
+
   &__indicator {
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
     display: block;
-    width: 22px;
-    height: 22px;
-    border: 3px solid var(--hw-color-gray-light);
-    line-height: 22px;
-    background-color: var(--hw-color-white);
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--hw-color-primary-darker);
+    line-height: 16px;
+    background-color: transparent;
     user-select: none;
     text-align: center;
     border-radius: 0;
-    transition: border 100ms;
   }
 
   & > input {
@@ -42,16 +51,17 @@
     vertical-align: middle;
 
     &:checked ~ .hw-checkbox__indicator {
-      border-color: var(--hw-color-gray-darker);
+      border-color: var(--hw-color-primary-darker);
 
       &::before {
         position: absolute;
-        top: 6px;
+        top: 5px;
         left: 3px;
         display: inline-block;
-        width: 10px;
-        height: 9px;
-        border-bottom: 3px solid var(--hw-color-gray-darker);
+        width: 7px;
+        height: 4px;
+        border-bottom: 2px solid;
+        border-color: var(--hw-color-checkbox-accent);
         content: "";
         transform: translateY(-50%) rotate(-45deg);
       }
@@ -61,50 +71,80 @@
         top: 7px;
         left: 3px;
         display: inline-block;
-        width: 11px;
-        height: 7px;
-        border-left: 3px solid var(--hw-color-gray-darker);
+        width: 3px;
+        height: 4px;
+        border-left: 2px solid;
+        border-color: var(--hw-color-checkbox-accent);
         content: "";
         transform: translateY(-50%) rotate(-45deg);
       }
     }
 
-    &:hover ~ .hw-checkbox__indicator {
-      border: 3px solid var(--hw-color-gray-darker);
-    }
-
-    &:focus ~ .hw-checkbox__indicator {
-      border: 3px solid var(--hw-color-gray-darker);
-    }
 
     &:disabled ~ .hw-checkbox__indicator {
-      border-color: var(--hw-color-gray-lighter);
+      border-color: var(--hw-color-gray-normal);
       background-color: transparent;
       cursor: not-allowed;
     }
 
     &:disabled:checked ~ .hw-checkbox__indicator {
-      border-color: var(--hw-color-gray-light);
-      background: var(--hw-color-gray-lighter);
+      border-color: var(--hw-color-gray-normal);
+      background: var(--hw-color-gray-normal);
     }
   }
+
+
 
   /**
    * Modifers
    */
 
+  &--bounding {
+    display: inline-block;
+    background: var(--hw-color-primary-lighter);
+    padding: calc(var(--hw-spacing-small-4) - 2px) calc(var(--hw-spacing-medium-4) - var(--hw-spacing-small-1)) 0 calc(var(--hw-spacing-medium-2) * 2);
+    border-radius: var(--hw-border-radius);
+    border: 1px solid;
+    border-color: transparent;
+    height: var(--hw-input-field-height);
+
+    .hw-checkbox__indicator {
+      top: calc(var(--hw-spacing-medium-2) - var(--hw-spacing-small-1));
+      left: calc(var(--hw-spacing-medium-2) - var(--hw-spacing-small-1));
+    }
+
+    &[disabled] {
+      background: var(--hw-color-gray-light-fill);
+    }
+
+    &.hw-checkbox--error {
+      border: var(--hw-border-thickness) solid var(--hw-color-alert-yellow);
+    }
+  }
+
+  &--full {
+    width: 100%;
+  }
+
   &--error {
     position: relative;
+    margin-bottom: var(--hw-spacing-small-1);
   }
 
   &--error .hw-checkbox__indicator {
-    border: 3px solid var(--hw-color-secondary) !important;
-    transition: border 150ms;
+    border: 2px solid var(--hw-color-alert-yellow) !important;
+
+    &::before {
+      border-bottom-color: var(--hw-color-black) !important
+    }
+    &::after {
+      border-left-color: var(--hw-color-black) !important
+    }
   }
 
   &--horisontal {
     display: inline-block;
-    margin-left: var(--hw-spacing);
+    margin-right: var(--hw-spacing-medium-2);
 
     &.hw-text-small {
       display: inline-block;

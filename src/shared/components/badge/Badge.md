@@ -1,50 +1,67 @@
-## Badge
 
-Styling for badge.
 
-Provides styling for badges
 
+
+> Badges are used to label, categorize or organize items using keywords to describe them.
+
+
+
+### Markup
 ```code
-[Base]           .hw-badge
+[Base]          .hw-badge
+
+Modifiers size:
+[Smaller]       .hw-badge--smaller
+[Small]         .hw-badge--small
+[Large]         .hw-badge--large
+[Larger]        .hw-badge--larger
+
+Modifiers color:
+[Primary]       .hw-badge--primary
+[Dark]          .hw-badge--dark
+[White]         .hw-badge--white
+[Warning]       .hw-badge--warning
 ```
 
-### Variations
-
-```code
-[Smaller]  .hw-badge--smaller
-[Small]    .hw-badge--small
-[Large]    .hw-badge--large
-[Larger]   .hw-badge--larger
-
-[Uppercase].hw-badge--uppercase
+```hint|neutral
+The badge will have a size 75% of surrounding content unless size modifiers are used.
 ```
+
+
+
+
+
+### Examples
 
 ### Primary
-
-The badge will have a size 75% of surrounding content unless size modifiers are used
-
-```html|span-4
+Dark green badges should be used for lighter green backgrounds, and in need of a high contrast badge for light backgrounds.
+```html|span-2,plain,light
 <div class="hw-badge">
   Badge
 </div>
 ```
 
-### Example badge
-
-```html|span-4
-I am a <div class="hw-badge">
-  Badge
-</div> 
-```
-
-### Sizes
-
-```html
-<div class="hw-badge hw-badge--larger">
+### Dark green
+Dark green badges should be used for lighter green backgrounds, and in need of a high contrast badge for light backgrounds.
+```html|span-2,plain,light
+<div class="hw-badge hw-badge--dark">
   Badge
 </div>
+```
+### Light green
+Dark green badges should be used for lighter green backgrounds, and in need of a high contrast badge for light backgrounds.
+```html|span-2,plain,dark
+<div class="hw-badge hw-badge--white">
+  Badge
+</div>
+```
 
-<div class="hw-badge hw-badge--large">
+
+### Variations
+###### Primary
+
+```html|plain,light
+<div class="hw-badge hw-badge--smaller">
   Badge
 </div>
 
@@ -52,7 +69,222 @@ I am a <div class="hw-badge">
   Badge
 </div>
 
-<div class="hw-badge hw-badge--smaller">
+<div class="hw-badge hw-badge--large">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--larger">
   Badge
 </div>
 ```
+
+
+###### Dark
+
+```html|plain,light
+<div class="hw-badge hw-badge--smaller hw-badge--dark">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--small hw-badge--dark">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--large hw-badge--dark">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--larger hw-badge--dark">
+  Badge
+</div>
+```
+
+
+###### White
+
+```html|plain,dark
+<div class="hw-badge hw-badge--smaller hw-badge--white">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--small hw-badge--white">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--large hw-badge--white">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--larger hw-badge--white">
+  Badge
+</div>
+```
+
+
+###### Warning
+
+```html|plain,light
+<div class="hw-badge hw-badge--smaller hw-badge--warning">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--small hw-badge--warning">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--large hw-badge--warning">
+  Badge
+</div>
+
+<div class="hw-badge hw-badge--larger hw-badge--warning">
+  Badge
+</div>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+# Design guidelines
+
+> Badges are used to label, categorize or organize items using keywords to describe them.
+
+
+
+### Badge types
+
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-types-1.png"
+
+{bring}
+title: "Darker green"
+description: "Dark green badges should be used for lighter green backgrounds, and in need of a high contrast badge for light backgrounds."
+{/bring}
+
+{posten}
+title: "Darker red"
+description: "Darker red badges should be used for lighter red backgrounds, and in need of a high contrast badge for light backgrounds."
+{/posten}
+```
+  
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-types-2.png"
+
+{bring}
+title: "Lighter green"
+description: "Lighter green badges should be used for white backgrounds for a subtle expression, or if a badge is needed on a dark background."
+{/bring}
+
+{posten}
+title: "Lighter red"
+description: "Lighter red badges should be used for white backgrounds for a subtle expression, or if a badge is needed on a dark background."
+{/posten}
+```
+
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-types-3.png"
+
+{bring}
+title: "White"
+description: "White badges should be used for lighter green backgrounds for a subtle expression, or on dark backgrounds for extra high contrast."
+{/bring}
+
+{posten}
+title: "White"
+description: "White badges should be used for lighter red backgrounds for a subtle expression, or on dark backgrounds for extra high contrast."
+{/posten}
+```
+
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-types-4.png"
+
+{bring}
+title: "Yellow"
+description: "Yellow badges should only be used in case of alerts and warnings, or unexpected events."
+{/bring}
+
+{posten}
+title: "Yellow"
+description: "Yellow badges should only be used in case of alerts and warnings, or unexpected events."
+{/posten}
+```
+
+
+
+### Badge sizes
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-sizes-1.png"
+title: "Smaller"
+```
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-sizes-2.png"
+title: "Small"
+```
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-sizes-3.png"
+title: "Medium"
+```
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-sizes-4.png"
+title: "Large"
+```
+
+
+## Best practices
+
+#### Do this
+  
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
+description: "Keep the descriptions short and clear, preferably just one word."
+```
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-do-2.png"
+description: "When an item has multiple badges inherit, the badges should be placed with 8px space between them."
+```
+
+
+
+
+#### Do not do this
+
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
+description: "Don’t misuse yellow badge for items that are not an alert or a warning."
+```
+```image
+plain: true
+span: 2
+src: "{assets}/img/{postenbring}/{component}-dont-2.png"
+description: "Don’t write long, complex descriptions."
+```
+

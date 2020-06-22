@@ -1,14 +1,21 @@
-## Drawer
 
-Drawer component
 
-### Base
 
+{navigation}
+
+
+
+
+> Drawer is a container sliding in from the side when a trigger button is triggered. A drawer usually contains text, and in some cases call-to-action buttons.
+
+
+
+### Markup
 ```code
-[Normal]           .hw-drawer
+[Base]           .hw-drawer
 ```
 
-### Required data attributes
+### Data attributes
 
 ```code
 [data-hw-drawer]            Specifies a unique name for a drawer. Used to target a drawer with buttons.
@@ -17,6 +24,7 @@ Drawer component
 [data-hw-drawer-content]    Specifies element for the content of the drawer
 
 ```
+
 ```hint
 The close button needs to be of type `button` for tab-navigation to be able to focus on it.
 ```
@@ -43,17 +51,12 @@ The close button needs to be of type `button` for tab-navigation to be able to f
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          </p>
-          <button class="hw-button hw-button--primary">Lagre</button>
-          <button class="hw-button hw-button--secondary" data-hw-drawer-trigger="Drawer2">Avbryt</button>
         </div>
+      </div>
+
+      <div class="hw-drawer__footer">
+        <button class="hw-button hw-button--primary hw-button--large">Lagre</button>
+        <button class="hw-button hw-button--secondary hw-button--large hw-button--outline" data-hw-drawer-trigger="Drawer2">Avbryt</button>
       </div>
     </div>
   </div>
@@ -69,4 +72,43 @@ If rendering a drawer is done in the frontend, this component needs to be initia
 
 ```code
 hedwig.HWDrawer();
+```
+
+
+
+
+
+
+
+# Design guidelines
+
+> Drawer is a container sliding in from the side when a trigger button is triggered. A drawer usually contains text, and in some cases call-to-action buttons.
+
+
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/{component}-1.png"
+```
+
+**1. Close**
+Icon button to close the drawer.
+
+**2. Content area**
+This is the area you fill in your content. In the example above the heading is in H2 style with the Body Small style for body copy.
+
+**3. Action buttons**
+At the bottom you can add call-to-action buttons if this is relevant for the content in the drawer.
+
+
+
+` `
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/{component}-2.png"
+title: "Drawer"
+description: "A drawer should slide out 25 % of the total width of the viewport on desktop. On small screens, like mobile, the drawer appears across the full screen."
 ```

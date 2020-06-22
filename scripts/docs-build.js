@@ -29,9 +29,50 @@ function prepareDocFile(file, fileSection){
    * Copy md files to docs
    */
 
-  fs.createReadStream(file).pipe(
+  /*fs.createReadStream(file).pipe(
     fs.createWriteStream(`docs/md/${fileSection}/` + filename)
-  );
+  );*/
+  fs.readFile(file, 'utf8', function (err,data) {
+    if (err) {
+      return console.log(err);
+    }
+
+    var color = "Green";
+
+    var result = data;
+
+    // Replace all instances of {postenbring} with posten OR bring.
+    result = result.replace(/{postenbring}/g, fileSection);
+
+    // Remove content between unnecessary tags. Activate necessary content.
+    if(fileSection == "bring") {
+      color = "Green";
+      result = result.replace(new RegExp("{posten}(.|\n)*?{/posten}", "g"), "").replace(/{bring}/g, "").replace(/{\/bring}/g, "");
+    }
+    else if(fileSection == "posten") {
+      color = "Red";
+      result = result.replace(new RegExp("{bring}(.|\n)*?{/bring}", "g"), "").replace(/{posten}/g, "").replace(/{\/posten}/g, "");
+    }
+
+  
+    result = result.replace(/{assets}/g, "");
+    result = result.replace(/{component}/g, title.toLowerCase());
+    result = result.replace(/{title}/g, title);
+    result = result.replace(/{Title}/g, title[0].toUpperCase() + title.substring(1));
+    result = result.replace(/{color}/g, color.toLowerCase());
+    result = result.replace(/{Color}/g, color);
+    result = result.replace(/{brand}/g, fileSection);
+    result = result.replace(/{Brand}/g, fileSection[0].toUpperCase() + fileSection.substring(1));
+    
+    // Not used
+    result = result.replace(/{navigation}/g, "");
+
+
+    fs.writeFile("docs/md/" + fileSection + "/" + filename, result, 'utf8', function (err) {
+       if (err) return console.log(err);
+    });
+  });
+
   return {
     title,
     path: title,
@@ -186,29 +227,62 @@ function build() {
               break;
       }
 
-      if(file.indexOf('guidelines') !== -1) {
-        guidelines.push(prepareDocFile(file, fileSection));
-        return;
-      }
+      if(fileSection == "shared") {
+        if(file.indexOf('guidelines') !== -1) {
+          bringGuidelines.push(prepareDocFile(file, "bring"));
+          postenGuidelines.push(prepareDocFile(file, "posten"));
+          return;
+        }
 
-      if(file.indexOf('gettingStarted') !== -1) {
-        gettingStarted.push(prepareDocFile(file, fileSection));
-        return;
-      }
+        if(file.indexOf('gettingStarted') !== -1) {
+          bringGettingStarted.push(prepareDocFile(file, "bring"));
+          postenGettingStarted.push(prepareDocFile(file, "posten"));
+          return;
+        }
 
-      if(file.indexOf('components') !== -1) {
-        components.push(prepareDocFile(file, fileSection));
-        return;
-      }
+        if(file.indexOf('components') !== -1) {
+          bringComponents.push(prepareDocFile(file, "bring"));
+          postenComponents.push(prepareDocFile(file, "posten"));
+          return;
+        }
 
-      if(file.indexOf('commonCombos') !== -1) {
-        commonCombos.push(prepareDocFile(file, fileSection));
-        return;
-      }
+        if(file.indexOf('commonCombos') !== -1) {
+          bringCommonCombos.push(prepareDocFile(file, "bring"));
+          postenCommonCombos.push(prepareDocFile(file, "posten"));
+          return;
+        }
 
-      if(file.indexOf('layout') !== -1) {
-        layout.push(prepareDocFile(file, fileSection));
-        return;
+        if(file.indexOf('layout') !== -1) {
+          bringLayout.push(prepareDocFile(file, "bring"));
+          postenLayout.push(prepareDocFile(file, "posten"));
+          return;
+        }
+      }
+      else {
+        if(file.indexOf('guidelines') !== -1) {
+          guidelines.push(prepareDocFile(file, fileSection));
+          return;
+        }
+
+        if(file.indexOf('gettingStarted') !== -1) {
+          gettingStarted.push(prepareDocFile(file, fileSection));
+          return;
+        }
+
+        if(file.indexOf('components') !== -1) {
+          components.push(prepareDocFile(file, fileSection));
+          return;
+        }
+
+        if(file.indexOf('commonCombos') !== -1) {
+          commonCombos.push(prepareDocFile(file, fileSection));
+          return;
+        }
+
+        if(file.indexOf('layout') !== -1) {
+          layout.push(prepareDocFile(file, fileSection));
+          return;
+        }
       }
 
       // if(file.indexOf('utilities') !== -1) {
@@ -292,7 +366,7 @@ function build() {
   });
 
   bringMergedPages.push({
-    title: 'Guidelines',
+    title: 'Styling',
     pages: sortPages([
       ...sharedGuidelines,
       ...bringGuidelines,
@@ -357,7 +431,7 @@ function build() {
   });
 
   postenMergedPages.push({
-    title: 'Guidelines',
+    title: 'Styling',
     pages: sortPages([
       ...sharedGuidelines,
       ...postenGuidelines,

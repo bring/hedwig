@@ -1,4 +1,4 @@
-## Swish
+## Swish (Deprecated)
 
 Creates carousel from `<ul>` with left/right triggers and animations
 

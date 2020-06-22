@@ -1,11 +1,16 @@
+/**
+ * Block
+ */
+
 .hw-navbar__search-button {
   z-index: var(--z-index--navbar-drawer-foreground);
   position: absolute;
   left: 0;
+  top: 0;
   border: 0;
   font-size: var(--hw-font-size-smaller);
-  padding-left: var(--hw-spacing-smaller);
-  padding-right: var(--hw-spacing-smaller);
+  padding-left: calc(var(--hw-spacing-small-4) + var(--hw-spacing-small-3));
+  padding-right: var(--hw-spacing-small-3);
   height: 54px;
   transition: color 0.1s ease;
 

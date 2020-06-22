@@ -4,15 +4,14 @@
 
 .hw-dropdown {
   position: relative;
-  height: var(--hw-spacing-larger);
-  margin: 3px 0;
+  height: var(--hw-input-field-height);
 
   &:focus {
     outline: 0;
   }
 
   &:focus .hw-dropdown__inner {
-    border-color: var(--hw-color-gray-darker);
+    border-color: var(--hw-color-gray-dark);
   }
 
   /* Clearfix */
@@ -33,51 +32,56 @@
     flex-wrap: wrap;
     overflow: hidden;
     width: 100%;
-    max-height: var(--hw-spacing-larger);
-    border: 3px solid var(--hw-color-gray-light);
-    background-color: var(--hw-color-white);
-    font-size: inherit;
+    border-radius: var(--hw-border-radius);
+    max-height: var(--hw-input-field-height);
+    border: none;
+    color: var(--hw-color-black);
+    background-color: var(--hw-color-gray-light-fill);
+    font-size: var(--hw-font-size-small);
     cursor: pointer;
     transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
 
     &:hover {
-      border-color: var(--hw-color-gray-darker);
+      border-color: var(--hw-color-gray-dark);
     }
   }
 
   &__placeholder {
-    padding: 11px var(--hw-spacing-large) 9px var(--hw-spacing-small);
-    margin: 3px 0;
-    line-height: var(--hw-font-size-p);
+    padding: var(--hw-spacing-small-4);
     width: 100%;
+    height: var(--hw-input-field-height);
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    background: transparent;
+    font-size: var(--hw-font-size-small);
+    color: var(--hw-color-black);
+    line-height: 1.4em;
   }
 
   &__arrow {
     position: absolute;
-    right: 0;
-    width: 60px;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.86);
+    right: 1px;
+    width: 20px;
+    top: 9px;
+    background-color: var(--hw-color-gray-dark);
 
     &::before,
     &::after {
       position: absolute;
       top: 19px;
-      right: var(--hw-spacing-small);
+      right: var(--hw-spacing-small-4);
       display: block;
-      width: 12px;
-      height: 4px;
+      width: 10px;
+      height: 2px;
       content: '';
-      background-color: var(--hw-color-gray);
+      background-color: var(--hw-color-gray-dark);
       transform: rotate(-45deg);
       transition: transform 0.1s ease;
     }
 
     &::after {
-      right: 24px;
+      right: 22px;
       transform: rotate(45deg);
     }
   }
@@ -85,24 +89,24 @@
   &__options {
     padding: 0;
     margin: 0;
+    top: calc(var(--hw-spacing-small-4) * 2 + var(--hw-font-size-smaller) + 8px);
     list-style-type: none;
     width: 100%;
-    background: var(--hw-color-white);
   }
 
   &__option {
-    padding: var(--hw-spacing-smaller) 0;
-    border-top: 3px solid var(--hw-color-gray-lighter);
-    margin: 3px var(--hw-spacing-small);
+    padding: var(--hw-spacing-small-4) 0;
+    border-top: var(--hw-border-thickness) solid var(--hw-color-gray-light-stroke);
+    margin: 3px var(--hw-spacing-small-4);
     line-height: var(--hw-font-size-p);
 
     &:hover {
       color: var(--hw-color-primary-dark);
     }
     &--disabled {
-      color: var(--hw-color-gray);
+      color: var(--hw-color-gray-normal);
       &:hover {
-        color: var(--hw-color-gray);
+        color: var(--hw-color-gray-normal);
       }
     }
     &:first-child{
@@ -111,17 +115,20 @@
   }
 
   &__option[data-hw-dropdown-option-selected="true"] {
-    color: var(--hw-color-primary);
+    color: var(--hw-color-primary-dark);
   }
+  
 
   /**
   * Modifiers
   */
+
   &--expanded .hw-dropdown {
     &__inner {
       z-index: 2;
       max-height: calc(100vh - 60px);
-      border-color: var(--hw-color-gray-darker);
+      overflow-y: auto;
+      border-color: var(--hw-color-gray-dark);
     }
 
     &__arrow::before {
@@ -161,11 +168,59 @@
     }
 
     & .hw-dropdown__arrow::before {
-      right: 9px;
+      right: 12px;
     }
 
     & .hw-dropdown__arrow::after {
-      right: 15px;
+      right: 18px;
+    }
+  }
+
+  &--line {
+    background: transparent;
+    border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-normal);
+    padding-left: 0px;
+    padding-top: var(--hw-spacing-small-1);
+    padding-bottom: var(--hw-spacing-small-3);
+    height: calc(var(--hw-input-field-height) - var(--hw-spacing-small-4)  - var(--hw-spacing-small-4) + var(--hw-spacing-small-1) +  var(--hw-spacing-small-3));
+    border-radius: 0px;
+
+    &.hw-dropdown--native {
+      background-image:
+      /* Cut off the sharp ends of the arrow */
+      linear-gradient(45deg, transparent 74%, var(--hw-color-white) 0%),
+      linear-gradient(135deg, var(--hw-color-white) 26%, transparent 26%),
+      /* Draw the arrow */
+      linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
+      linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray-dark) 29%, var(--hw-color-gray-dark) 37%, transparent 38%, transparent 100%),
+      linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray-dark) 63%, var(--hw-color-gray-dark) 71%, var(--hw-color-white) 72%, var(--hw-color-white) 100%);
+      background-size: var(--hw-spacing-small-4) var(--hw-spacing-small-4);
+      background-position: calc(100% - var(--hw-spacing-small-4)) 25%;
+      background-repeat: no-repeat;
+    }
+
+    .hw-dropdown__inner {
+      background: transparent;
+    }
+    .hw-dropdown__placeholder {
+      padding-left: 0px;
+      padding-top: 0px;
+    }
+    .hw-dropdown__arrow {
+      top: -5px;
+    }
+    .hw-dropdown__options {
+      background: var(--hw-color-gray-light-fill);
+      padding: var(--he-spacing-small);
+    }
+
+    &:focus {
+      border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+    }
+
+    &[disabled], &:disabled, &[disabled="disabled"] {
+      background: transparent;
+      padding: var(--hw-spacing-small-4);
     }
   }
 
@@ -174,43 +229,46 @@
   */
 
   &--native {
-    position: relative;
-    height: 48px;
-    margin: 3px 0;
-    border: 3px solid #c1c1c1;
-    border-radius: 0;
-    display: inline-block;
-    font-size: inherit;
-    color: inherit;
+    border: none;
+    border-radius: var(--hw-border-radius);
+    display: flex;
     width: 100%;
-    background-color: white;
+    height: var(--hw-input-field-height);
+    font-size: var(--hw-font-size-small);
+    cursor: pointer;
+    color: var(--hw-color-black);
+    background-color: var(--hw-color-gray-light-fill);
     -webkit-appearance: none;
-    padding: 11px 36px 9px 18px;
-    transition: border-color 0.3s ease;
+    padding: var(--hw-spacing-small-4);
+    transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
+
     &:hover, &:active, &:focus {
-      border-color: var(--hw-color-gray-darker);
+      border-color: var(--hw-color-gray-dark);
     }
     &:focus {
       outline: 0;
     }
     background-image:
     /* Cut off the sharp ends of the arrow */
-    linear-gradient(45deg, rgba(0, 0, 0, 0) 74%, var(--hw-color-white) 0%),
-    linear-gradient(135deg, var(--hw-color-white) 26%, rgba(0, 0, 0, 0) 26%),
+    linear-gradient(45deg, transparent 74%, var(--hw-color-gray-light-fill) 0%),
+    linear-gradient(135deg, var(--hw-color-gray-light-fill) 26%, transparent 26%),
     /* Draw the arrow */
-    linear-gradient(135deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
-    linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 41%, rgba(0,0,0,0) 43%, rgba(0,0,0,0) 100%),
-    linear-gradient(135deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 58%, var(--hw-color-gray) 59%, var(--hw-color-gray) 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%);
-    background-size: var(--hw-spacing-small) var(--hw-spacing-small);
-    background-position: calc(100% - var(--hw-spacing-small)) 40%;
+    linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-gray-light-fill) 73%, var(--hw-color-gray-light-fill) 100%),
+    linear-gradient(45deg, var(--hw-color-gray-light-fill) 0, var(--hw-color-gray-light-fill) 28%, var(--hw-color-gray-dark) 29%, var(--hw-color-gray-dark) 37%, transparent 38%, transparent 100%),
+    linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray-dark) 63%, var(--hw-color-gray-dark) 71%, var(--hw-color-gray-light-fill) 72%, var(--hw-color-gray-light-fill) 100%);
+    background-size: var(--hw-spacing-small-4) var(--hw-spacing-small-4);
+    background-position: calc(100% - var(--hw-spacing-small-4)) 45%;
     background-repeat: no-repeat;
+
+
+
     /* Remove default down-arrow for IE */
     &::-ms-expand {
       display: none;
     }
     /* Color the selected option with the correct color for IE */
     &::-ms-value {
-      color: var(--hw-color-gray-darker);
+      color: var(--hw-color-gray-dark);
       background: none;
     }
   }

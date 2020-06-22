@@ -9,23 +9,23 @@
     line-height: 1.4;
     padding: 0;
     margin: 0;
-    letter-spacing: -0.02em;
   }
 
   input,
   textarea,
   select,
   button {
-    font-family: var(--hw-font-primary-medium);
+    font-family: var(--hw-font-primary-regular);
+    font-weight: var(--hw-font-weight-regular);
   }
 
   a {
-    color: var(--hw-color-gray-darker);
+    color: var(--hw-color-gray-dark);
     text-decoration: none;
   }
 
   input {
-    color: var(--hw-color-gray-darker);
+    color: var(--hw-color-gray-dark);
   }
 
   input::placeholder {
@@ -42,6 +42,7 @@
   h5,
   .hw-h1,
   .hw-h1-large,
+  .hw-h1-display,
   .hw-h2,
   .hw-h3,
   .hw-h4,
@@ -58,106 +59,85 @@
   h4,
   .hw-h1,
   .hw-h1-large,
+  .hw-h1-display,
   .hw-h2,
   .hw-h3,
   .hw-h4 {
-    letter-spacing: -0.03em;
+
+  }
+
+
+
+
+
+
+  .hw-h1-large,
+  .hw-h1-display {
+    font-size: var(--hw-font-size-h1-large);
+    font-family: var(--hw-h1-large-font-family);
+    line-height: var(--hw-h1-large-line-height);
   }
 
   h1,
   .hw-h1 {
     font-size: var(--hw-font-size-h1);
+    font-family: var(--hw-h1-font-family);
+    line-height: var(--hw-h1-line-height);
   }
 
-  @media (--xlarge) {
-    h1,
-    .hw-h1 {
-      font-size: var(--hw-font-size-max-h1-px);
-    }
-  }
-
-  .hw-h1-large {
-    font-size: var(--hw-font-size-h1-large);
-  }
-
-  @media (--xlarge) {
-    .hw-h1-large {
-      font-size: var(--hw-font-size-max-h1-large-px);
-    }
-  }
 
   h2,
   .hw-h2 {
     font-size: var(--hw-font-size-h2);
-  }
-
-  @media (--xlarge) {
-    h2,
-    .hw-h2 {
-      font-size: var(--hw-font-size-max-h2-px);
-    }
+    font-family: var(--hw-h2-font-family);
+    line-height: var(--hw-h2-line-height);
   }
 
   h3,
   .hw-h3 {
     font-size: var(--hw-font-size-h3);
-  }
-
-  @media (--xlarge) {
-    h3,
-    .hw-h3 {
-      font-size: var(--hw-font-size-max-h3-px);
-    }
+    font-family: var(--hw-h3-font-family);
+    line-height: var(--hw-h3-line-height);
   }
 
   h4,
   .hw-h4 {
     font-size: var(--hw-font-size-h4);
-  }
-
-  @media (--xlarge) {
-    h4,
-    .hw-h4 {
-      font-size: var(--hw-font-size-max-h4-px);
-    }
+    font-family: var(--hw-h4-font-family);
+    line-height: var(--hw-h4-line-height);
   }
 
   h5,
   .hw-h5 {
     font-size: var(--hw-font-size-h5);
+    font-family: var(--hw-h5-font-family);
+    line-height: var(--hw-h5-line-height);
   }
 
-  @media (--xlarge) {
-    h5,
-    .hw-h5 {
-      font-size: var(--hw-font-size-max-h5-px);
-    }
-  }
   h6,
   .hw-h6 {
     font-size: var(--hw-font-size-h6);
+    font-family: var(--hw-h6-line-height-font-family);
+    line-height: var(--hw-h6-line-height-line-height);
   }
 
-  @media (--xlarge) {
-    h6,
-    .hw-h6 {
-      font-size: var(--hw-font-size-max-h6-px);
-    }
-  }
+
 
 /**
   * Extra text styles
   */
 
   .hw-text {
-
+    &-title {
+      font-family: var(--hw-font-primary-medium);
+      font-weight: var(--hw-font-weight-medium);
+    }
     &-lead {
       font-size: var(--hw-font-size-lead);
     }
     &-small {
       font-size: var(--hw-font-size-small);
     }
-
     &-smaller {
       font-size: var(--hw-font-size-smaller);
     }
@@ -168,7 +148,6 @@
 
     &-uppercase {
       text-transform: uppercase;
-      letter-spacing: 0.02em;
     }
 
     &-center {
@@ -181,10 +160,22 @@
 
     &-bold {
       font-family: var(--hw-font-primary-bold);
+      font-weight: var(--hw-font-weight-bold);
+    }
+
+    &-medium {
+      font-family: var(--hw-font-primary-medium);
+      font-weight: var(--hw-font-weight-medium);
+    }
+
+    &-regular {
+      font-family: var(--hw-font-primary-regular);
+      font-weight: var(--hw-font-weight-regular);
     }
 
     &-light {
-      font-family: var(--hw-font-primary-regular);
+      font-family: var(--hw-font-primary-light);
+      font-weight: var(--hw-font-weight-light);
     }
 
   }
@@ -197,7 +188,7 @@
       line-height: 75%;
       margin: 0;
       margin-top: 6px;
-      letter-spacing: var(--hw-spacing-smallest);
+      letter-spacing: var(--hw-spacing-small-2);
     }
 
     &.hw-text-lead::first-letter {
@@ -212,6 +203,34 @@
       margin-top: 3px;
     }
   }
+
+
+/**
+  * Max sizes for responsive typography
+  */
+
+@media(--xlarge) {
+    .hw-h1-large, .hw-h1-display { font-size: var(--hw-font-size-max-h1-large-px); }
+    h1, .hw-h1 { font-size: var(--hw-font-size-max-h1-px); }
+    h2, .hw-h2 { font-size: var(--hw-font-size-max-h2-px); }
+    h3, .hw-h3 { font-size: var(--hw-font-size-max-h3-px); }
+    h4, .hw-h4 { font-size: var(--hw-font-size-max-h4-px); }
+    h5, .hw-h5 { font-size: var(--hw-font-size-max-h5-px); }
+    h6, .hw-h6 { font-size: var(--hw-font-size-max-h6-px); }
+}
+
+:root {
+  @media(--xlarge) {
+    --hw-font-size-caption: var(--hw-font-size-max-caption-px);
+    --hw-font-size-p: var(--hw-font-size-max-p-px);
+    --hw-font-size-lead: var(--hw-font-size-max-lead-px);
+    --hw-font-size-technical: var(--hw-font-size-max-technical-px);
+    --hw-font-size-small: var(--hw-font-size-max-small-px);
+    --hw-font-size-smaller: var(--hw-font-size-max-smaller-px);
+    --hw-font-size-smallest: var(--hw-font-size-max-smallest-px);
+  }
+}
+
 
 
   /** (``) **/

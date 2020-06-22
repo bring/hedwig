@@ -1,27 +1,33 @@
 /**
- * Link list
+ * Block
  */
 
 .hw-linklist {
+  color: var(--hw-color-black);
   list-style: none;
   margin: 0;
   padding: 0;
 
   & li {
-    margin-bottom: var(--hw-spacing-smallest);
+    margin-bottom: var(--hw-spacing-small-2);
     &:last-of-type {
       margin-bottom: 0;
     }
-
   }
 
   & a {
     @extend .hw-link;
     font-size: var(--hw-font-size-p);
     line-height: 1.7;
+    text-decoration-color: var(--hw-color-primary);
   }
-  /** Modifications **/
-  &--small a{
+
+  
+  /**
+   * Modifiers
+   */
+   
+  &--small a {
     font-size: var(--hw-font-size-small);
   }
 }

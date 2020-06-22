@@ -1,14 +1,20 @@
-# Figure
 
-Can contain images or video.
 
+> Can contain images or video.
+
+
+
+### Markup
 ```code
-[Base]        .hw-figure
+[Base]              .hw-figure
 
-Sub elements
-[Container]   .hw-figure__container
-[Figcaption]  .hw-figure__figcaption
+Elements:
+[Container]         .hw-figure__container
+[Figcaption]        .hw-figure__figcaption
 ```
+
+
+
 
 ### Default figure
 
@@ -17,7 +23,7 @@ Sub elements
   <div class="hw-figure__container">
     <img
       alt="Picture of happy people"
-      src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
+      src="{assets}/img/{postenbring}/image-placeholder.jpg"
     />
   </div>
 </figure>
@@ -29,11 +35,70 @@ Sub elements
   <div class="hw-figure__container">
     <img
       alt="Picture of happy people"
-      src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/article-image-1.jpg"
+      src="{assets}/img/{postenbring}/image-placeholder.jpg"
     />
   </div>
   <figcaption class="hw-figure__figcaption">
     Can I help you? Yeah, can I have a dozen red roses, please? Oh, hi, Johnny. I didn't know it was you. 
   </figcaption>
 </figure>
+```
+
+
+
+
+# Design guidelines
+
+> Figures can contain images or video, and be with or without a caption. 
+
+
+
+### {title} formats
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/{component}-formats-1.png"
+title: "16:9"
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/{component}-formats-2.png"
+title: "4:3"
+```
+
+
+
+
+
+## Best practices
+
+#### Do this
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/{component}-do-1.png"
+description: "Images should have 64 px padding at the top and the bottom. If an image is related to a specific paragraph, padding can be reduced to 32 px."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/{component}-do-2.png"
+description: "Images should be full-width within it’s parent container."
+```
+
+#### Do not do this
+  
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/{component}-dont-1.png"
+description: "Don’t use images in custom proportions."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/{component}-dont-2.png"
+description: "Don’t use images in custom proportions."
 ```
