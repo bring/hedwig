@@ -7,6 +7,18 @@
     margin-bottom: var(--hw-spacing);
   }
 
+  & .hw-dropdown__options {
+    margin: 0;
+    padding: 0;
+  }
+  
+  & li.hw-dropdown__option::before {
+    content: initial;
+  }
+  & label.hw-checkbox p {
+    margin: 0;
+  }
+
   & h2,
   & h3 {
     margin-bottom: var(--hw-spacing-smallest);
