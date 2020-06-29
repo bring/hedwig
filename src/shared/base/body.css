@@ -2,13 +2,13 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
-  font-family: var(--hw-font-primary-medium);
+  font-family: var(--hw-font-primary-regular);
+  font-weight: var(--hw-font-weight-regular);
   font-size: var(--hw-font-size-p);
   font-weight: 400;
-  fill: var(--hw-color-gray);
-  color: var(--hw-color-gray-darker);
+  fill: var(--hw-color-black);
+  color: var(--hw-color-black);
   line-height: 1.4;
-  letter-spacing: -0.02em;
   cursor: auto;
 }
 
@@ -19,7 +19,13 @@ html {
 }
 
 body {
-  background: var(--hw-color-gray-lightest);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--hw-font-primary-regular);
+  font-weight: var(--hw-font-weight-regular);
+  background: var(--hw-color-white);
+  fill: var(--hw-color-black);
+  color: var(--hw-color-black);
   display: flex;
   flex-direction: column;
   min-height: 100vh;

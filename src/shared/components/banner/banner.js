@@ -111,7 +111,6 @@ const HWBanner = ({
 
       // Find elements
       const trigger = q('.hw-banner__trigger', banner);
-      const closeTrigger = q('.hw-banner__trigger-close', banner);
       const contents = q('.hw-banner__contents', banner);
 
       if (trigger && contents) {
@@ -124,7 +123,6 @@ const HWBanner = ({
 
         // Set up event listeners for opening banner
         bindToggleEvents(trigger);
-        bindToggleEvents(closeTrigger);
 
         // Check for "read more" functionality
         const readMoreTrigger = q('.hw-banner__read-more-button', banner);

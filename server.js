@@ -31,6 +31,13 @@ build.use((req, res, next) => {
   next();
 });
 
+docs.use((req, res, next)=> {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
+
+
 /**
  * Start build and assets folders
  */
@@ -49,6 +56,7 @@ if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'staging')
  */
 
 docs.use(express.static(`${__dirname}/docs`));
+docs.use(express.static(`${__dirname}/assets`));
 
 docs.listen(portDocs, () => {
   console.log(`✍️ Docs is running on port ${portDocs}`);

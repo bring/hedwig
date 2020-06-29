@@ -8,8 +8,7 @@
   padding: 0;
   border: 0;
   margin: 0;
-  margin-bottom: var(--hw-spacing-small);
-  line-height: var(--hw-spacing);
+  line-height: var(--hw-spacing-medium-2);
 
   /**
    * Elements
@@ -18,16 +17,21 @@
   &__legend {
     display: block;
     width: 100%;
-    padding: var(--hw-spacing-smaller) var(--hw-spacing);
+    padding: var(--hw-spacing-small-4) 0;
     margin: 0;
     margin-bottom: 2px;
-    background: var(--hw-color-gray-lighter);
-    font-size: var(--hw-font-size-p);
+    background: transparent;
+    font-size: var(--hw-font-size-lead);
   }
 
   &__content {
-    padding: var(--hw-spacing);
-    background: var(--hw-color-gray-lighter);
+    padding: 0;
+    background: transparent;
+
+    label {
+      margin-top: var(--hw-spacing-small-4);
+      margin-right: var(--hw-spacing-small-4);
+    }
   }
 
   /**
@@ -36,6 +40,6 @@
    */
   &__content--full {
     padding: 0;
-    padding-top: var(--hw-spacing);
+    padding-top: var(--hw-spacing-medium-2);
   }
 }

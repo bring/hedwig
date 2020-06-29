@@ -1,3 +1,7 @@
+/**
+ * Block
+ */
+
 .hw-tab {
   overflow-x: scroll;
   white-space: nowrap;
@@ -12,25 +16,29 @@
   }
 
   /* The box-shadow creates the gray bar under the tab items */
-  box-shadow: inset 0 -3px 0 0 var(--hw-color-gray-lighter);
+  box-shadow: inset 0 -1px 0 0 var(--hw-color-gray-light-fill);
+
+  /**
+   * Elements
+   */
 
   &__item {
-    font-size: var(--hw-font-size-small);
+    font-size: var(--hw-font-size-p);
     display: inline-block;
-    margin-left: var(--hw-spacing-small);
-    padding-bottom: 3px;
-    color: var(--hw-color-gray-dark);
+    margin-left: 0px;
+    padding-bottom: var(--hw-spacing-small-3);
+    margin-right: 32px;
+    color: var(--hw-color-black);
     &--selected {
       /**
        * Border color will be set to transparent during runtime
        * This border is shown only if the hw-tab javascript is not running
        */
-      color: var(--hw-color-gray-darkest);
-      border-bottom: 3px solid var(--hw-color-primary);
+      color: var(--hw-color-primary-dark);
+      border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-primary);
     }
-
-    &:first-of-type {
-      margin-left: 0;
+    &:hover {
+      color: var(--hw-color-primary-dark);
     }
   }
 
@@ -38,7 +46,7 @@
     bottom: 0;
     position: absolute;
     height: 0;
-    border-bottom: 3px solid var(--hw-color-primary);
+    border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-primary);
 
     /**
      * The following will be modified by javascript during runtime to move the marker around
@@ -47,7 +55,7 @@
      * - width
      */
 
-    transition: left 200ms, width 200ms;
+    transition: left var(--hw-transition-time-quick), width var(--hw-transition-time-quick);
     left: 0;
     width: 0;
   }

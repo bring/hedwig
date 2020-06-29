@@ -29,6 +29,8 @@ library.add(fab.faLinkedinIn);
 library.add(fab.faTwitter);
 
 library.add(fal.faTimes);
+library.add(fal.faMinus);
+library.add(fal.faPlus);
 
 library.add(far.faBars);
 library.add(far.faCheckCircle);
@@ -42,11 +44,26 @@ library.add(far.faSearch);
 library.add(far.faTimes);
 library.add(far.faUser);
 library.add(far.faWeightHanging);
+library.add(far.faChevronDown);
+library.add(far.faChevronLeft);
+library.add(far.faChevronRight);
+library.add(far.faChevronUp);
+library.add(far.faArrowAltToBottom);
+library.add(far.faArrowsAltH);
+library.add(far.faArrowSquareLeft);
+library.add(far.faArrowLeft);
+library.add(far.faArrowRight);
+library.add(far.faArrowUp);
+library.add(far.faArrowDown);
 
 library.add(fas.faArchive);
 library.add(fas.faArrowAltToBottom);
 library.add(fas.faArrowsAltH);
 library.add(fas.faArrowSquareLeft);
+library.add(fas.faArrowLeft);
+library.add(fas.faArrowRight);
+library.add(fas.faArrowUp);
+library.add(fas.faArrowDown);
 library.add(fas.faAt);
 library.add(fas.faAward);
 library.add(fas.faBarcodeAlt);

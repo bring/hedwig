@@ -1,4 +1,4 @@
-## Frame
+## Frame (Deprecated)
 A simple component for adding one or more pieces of content into a frame, with or without background color and spacing
 
 ```code

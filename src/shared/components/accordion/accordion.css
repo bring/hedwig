@@ -6,26 +6,20 @@
   display: block;
   padding: 0;
   margin: 0;
+  margin-bottom: var(--hw-spacing-small-4);
   list-style: none;
   background-color: white;
-  border: 3px solid var(--hw-color-gray-light);
-  transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
+  border: none;
+  border-bottom: var(--hw-border-thickness) solid var(--hw-color-gray-light-fill);
 
-  &:hover {
-    border-color: var(--hw-color-gray-darker);
-  }
 
   /**
    * Elements
    */
 
   &__item {
-    transition: height 0.3s ease;
+    transition: height var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
     overflow: hidden;
-
-    &:last-child {
-      margin-bottom: var(--hw-spacing-small);
-    }
 
     &:first-child .hw-accordion__trigger {
       border: 0;
@@ -35,20 +29,21 @@
   &__trigger {
     position: relative;
     display: block;
-    width: calc(100% - var(--hw-spacing-small) * 2);
-    margin: 0 var(--hw-spacing-small) 0 var(--hw-spacing-small);
-    padding: var(--hw-spacing-smaller) 0;
-    padding-right: var(--hw-spacing-small);
+    width: 100%;
+    padding: calc(var(--hw-spacing-small-3) * 2) 0;
+    padding-right: var(--hw-spacing-medium-2);
     border: 0;
-    border-top: 3px solid var(--hw-color-gray-lighter);
-    font-size: var(--hw-font-size-small);
+    border-top: var(--hw-border-thickness) solid var(--hw-color-gray-light-fill);
+    font-size: var(--hw-font-size-p);
     text-align: left;
     color: inherit;
     background-color: transparent;
 
-    &:hover,
+    &:hover {
+      color: var(--hw-color-primary-dark);
+      outline: 0;
+    }
     &:focus {
-      color: var(--hw-color-primary);
       outline: 0;
     }
   }
@@ -57,51 +52,46 @@
     &::before,
     &::after {
       position: absolute;
-      top: 22px;
+      top: 38px;
       right: 0;
       display: block;
-      width: 12px;
-      height: 4px;
+      width: 14px;
+      height: 2px;
       content: '';
-      background-color: currentColor;
-      transform: rotate(-45deg);
-      transition: transform 0.1s ease;
+      background-color: var(--hw-color-primary-dark);
+      transform: rotate(0deg);
+      transition: transform 0.2s ease;
     }
 
     &::after {
-      right: 6px;
-      transform: rotate(45deg);
+      right: 0px;
+      transform: rotate(90deg);
     }
   }
 
   &__contents {
-    padding: 0 var(--hw-spacing-larger) var(--hw-spacing-small) var(--hw-spacing-small);
+    padding: 0 var(--hw-spacing-medium-4) var(--hw-spacing-medium-3) 0;
   }
+
+  &__item--expanded .hw-accordion__arrow::after {
+    transform: rotate(90deg) scale(0.0, 1.0);
+  }
+
 
   /**
    * Modifiers
    */
 
-  &__item--expanded .hw-accordion__trigger {
-    color: var(--hw-color-primary-dark);
-  }
-
-  &__item--expanded .hw-accordion__arrow::before {
-    transform: rotate(45deg);
-  }
-
-  &__item--expanded .hw-accordion__arrow::after {
-    transform: rotate(-45deg);
-  }
-
   &--menu {
     border: 0;
     color: var(--hw-color-link);
     background-color: transparent;
-    padding: 0 3px;
+    padding: 0 var(--hw-border-thickness);
+
     & .hw-accordion__item:not(:first-child) {
-      border-top: 3px solid var(--hw-color-opaque-black-7);
+      border-top: var(--hw-border-thickness) solid var(--hw-color-gray-light-stroke);
     }
+
     & .hw-accordion__trigger {
       font-size: var(--hw-font-size-p);
       margin-left: 0;
@@ -110,30 +100,34 @@
       border: 0;
       color: inherit;
       background-color: transparent;
-      transition: background-color 0.5s ease;
+      transition: background-color var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
+
       &:active {
-        background-color: var(--hw-color-opaque-black-10);
+        color: var(--hw-color-primary-dark);
         transition: 0s;
       }
+
       &:hover, &:focus {
         color: var(--hw-color-link);
       }
     }
+
     & .hw-accordion__link {
-      padding-top: var(--hw-spacing-smaller);
-      padding-bottom: var(--hw-spacing-smaller);
+      padding-top: var(--hw-spacing-small-3);
+      padding-bottom: var(--hw-spacing-small-3);
       display: inline-block;
       color: var(--hw-color-link);
       width: 100%;
-      transition: background-color 0.5s ease;
+      transition: background-color var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
       &:active {
-        background-color: var(--hw-color-opaque-black-10);
+        color: var(--hw-color-primary-dark);
         transition: background-color 0s;
       }
     }
+
     & .hw-accordion__link-items {
       list-style: none;
-      padding-left: var(--hw-spacing);
+      padding-left: var(--hw-spacing-medium-2);
     }
 
     & .hw-accordion__contents {

@@ -2,17 +2,19 @@ const nodeEnv = process.env.NODE_ENV;
 
 let reload = '<script src="//localhost:9091/livereload.js?snipver=1"></script>';
 let icons = '<script id="hw-icons" src="http://localhost:3001/icons.min.js"></script>';
+let styles = '<link rel="stylesheet" href="http://localhost:3001/fonts.css"><link rel="stylesheet" href="http://localhost:3001/bring.css">';
 const pikaday = '<script src="https://cdn.jsdelivr.net/npm/pikaday@1.8.0/pikaday.min.js"></script>';
 
 if (nodeEnv === 'staging') {
   reload = '';
   icons = '<script id="hw-icons" src="./icons.min.js"></script>';
+  styles = '<link rel="stylesheet" href="./fonts.css"><link rel="stylesheet" href="./bring.css">';
 }
 
 if (nodeEnv === 'production') {
   reload = '';
-  icons =
-    '<script id="hw-icons" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/icons.min.js"></script>';
+  icons = '<script id="hw-icons" src="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/dist/icons.min.js"></script>';
+  styles = '';
 }
 
 module.exports = `
@@ -23,19 +25,18 @@ module.exports = `
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Hedwig - Bring</title>
       ${pikaday}
+      ${styles}
       <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@posten/hedwig@latest/assets/favicon.ico" />
       <style>
-        /**
-          * Margin highlighting for block demo
-          */
+        
+        body, html {
+          font-size: 20px;
+        }
 
         body {
           margin: 0;
           background: #f2f2f2;
-          font-family: 'Foundry Monoline Medium', sans-serif;
-          font-size: 18px;
           color: #444444;
-          letter-spacing: -0.02em;
         }
 
         .hw-helpers-margin-highlighter {
@@ -102,9 +103,18 @@ module.exports = `
           position: absolute;
           right: 0;
           top: 0;
+          height: 49px;
           background: #3a3a3a;
           text-align: right;
           z-index: 1;
+          opacity: 0;
+          animation: hw-app-switcher-show 1s linear;
+          animation-delay: 1s;
+          animation-fill-mode: forwards;
+        }
+        @keyframes hw-app-switcher-show {
+          from {opacity: 0;}
+          to {opacity: 1;}
         }
 
         @media (min-width: 1000px) {
@@ -115,6 +125,7 @@ module.exports = `
         }
 
         .hw-app-switcher__link {
+          font-family: Posten Sans Regular;
           width: 120px;
           display: inline-block;
           padding: 10px 20px;
@@ -122,10 +133,36 @@ module.exports = `
           text-align: center;
         }
         .hw-app-switcher__link--active {
-          font-family: Foundry Monoline Medium;
+          font-family: Posten Sans Medium;
           background-color: #7bc144;
         }
 
+
+        /**
+         * Modifications for Catalog
+         */
+
+        .HeadingLink {
+          line-height: 0px; /* Fixes jumping of content when hovering an inline anchor */
+        }
+        [class$="-Image"], [class$="-Image"] p {
+            font-size: 0.8rem !important;
+        }
+        [class$="-Span"] {
+            margin-bottom: 20px !important;
+        }
+        [class$="-Span"] > [class$="-Image"] {
+            margin-bottom: 20px !important;
+        }
+        [class$="headingStyle"] {
+            margin-top: 2rem !important;
+        }
+        [class$="h1-headingStyle"] {
+            margin-top: 4rem !important;
+        }
+        [class$="h2-headingStyle"] {
+            margin-top: 4rem !important;
+        }
       </style>
     </head>
     <body>

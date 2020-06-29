@@ -1,4 +1,4 @@
-## Spinner
+## Spinner (Deprecated)
 
 Modal component
 

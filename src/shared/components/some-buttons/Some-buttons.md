@@ -9,7 +9,7 @@ Styling for social media buttons.
 
 ### Default style
 
-```html|span-4
+```html|span-4,plain,light
 <div class="hw-some">
   <button class="hw-some__button hw-some__button--facebook">
     <i class="fab fa-facebook-f"></i>
@@ -36,7 +36,7 @@ The Social Media buttons can be used either as `<button>`-tags or `<a>`-tags as 
 
 ### Default style with `<a>`-tags
 
-```html|span-4
+```html|span-4,plain,light
 <div class="hw-some">
   <a class="hw-some__button hw-some__button--facebook">
     <i class="fab fa-facebook-f"></i>
@@ -63,7 +63,7 @@ The Social Media buttons can be used either as `<button>`-tags or `<a>`-tags as 
 ### Outline dark
 For use on top of images only
 
-```html|span-4
+```html|span-4,plain,dark
 <div class="hw-some hw-some--outline-dark">
   <button class="hw-some__button hw-some__button--facebook">
     <i class="fab fa-facebook-f"></i>
@@ -89,7 +89,7 @@ For use on top of images only
 ### Dark style
 For use in footer only
 
-```html|span-4
+```html|span-4,plain,light
 <div class="hw-some hw-some--dark">
   <button class="hw-some__button hw-some__button--facebook">
     <i class="fab fa-facebook-f"></i>
@@ -114,7 +114,7 @@ For use in footer only
 
 ### Vertical
 
-```html|span-4
+```html|span-4,plain,light
 <div class="hw-some hw-some--vertical">
   <button class="hw-some__button hw-some__button--facebook">
     <i class="fab fa-facebook-f"></i>

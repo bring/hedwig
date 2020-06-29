@@ -1,17 +1,24 @@
-# Autocomplete - Styling only - WORK IN PROGRESS
+{navigation}
 
-This component is meant to be used when searching up something with an API.
-Use your own javascript to toggle the active class, reset, and to bind the selected value to the input field.
 
-### Available classes
+```hint
+Styling only - WORK IN PROGRESS
+```
+
+> This component is meant to be used when searching up something with an API.
+> Use your own javascript to toggle the active class, reset, and to bind the selected value to the input field.
+
+
+### Markup
 ```code
 [Base]           .hw-autocomplete
-[Active]         .hw-autocomplete--active
 
+Modifiers:
+[Active]         .hw-autocomplete--active
 [Error]          .hw-input--error (on the input field)
 ```
 
-### Available attributes
+### Data attributes
 ``` code
 data-hw-autocomplete-reset-visible=true       Show reset button
 ``` 
@@ -19,8 +26,48 @@ data-hw-autocomplete-reset-visible=true       Show reset button
 
 ## Closed autocomplete
 
-```html
+```html|span-3,plain,light
 <label class="hw-label">Your address
+
+  <div class="hw-autocomplete" data-hw-autocomplete>
+
+    <div class="hw-autocomplete__input-wrapper">
+      <input
+        type="text"
+        data-hw-autocomplete-input
+        id="autcomplete"
+        class="hw-autocomplete__input"
+        role=”combobox”
+        aria-owns="suggestions"
+        placeholder="Placeholder"
+      />
+      <button data-hw-autocomplete-reset class="hw-autocomplete__input-reset">
+        <i class="fa-sm fas fa-times-circle"></i>
+      </button>
+
+    </div>
+
+    <div id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
+      <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+        <input type="radio" name="hedwig" value="one" />
+        <span class="hw-autocomplete__suggestion-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </span>
+      </label>
+      <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+        <input type="radio" name="hedwig" value="two" />
+        <span class="hw-autocomplete__suggestion-text">Two</span>
+      </label>
+    </div>
+
+  </div>
+</label>
+```
+
+## Line
+
+```html|span-3,plain,light
+<label class="hw-label hw-label--line">Your address
 
   <div class="hw-autocomplete" data-hw-autocomplete>
 
@@ -58,8 +105,9 @@ data-hw-autocomplete-reset-visible=true       Show reset button
 ```
 
 ## Autocomplete with reset button visible
-Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset button 
-```html
+Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset button. Reset button appears when text has been filled.
+
+```html|span-3,plain,light
 <label class="hw-label">Your address
 
   <div class="hw-autocomplete" data-hw-autocomplete-reset-visible=true data-hw-autocomplete>
@@ -84,7 +132,7 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
         <input type="radio" name="hedwig" value="one" />
         <span class="hw-autocomplete__suggestion-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          This is the first suggestion
         </span>
       </label>
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
@@ -99,8 +147,8 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
 
 ## Closed autocomplete with error
 
-```html
-<label class="hw-label">Your address
+```html|span-3,plain,light
+<label class="hw-label hw-label--error">Your address
 
   <div class="hw-autocomplete" data-hw-autocomplete>
 
@@ -126,7 +174,7 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
         <input type="radio" name="hedwig" value="one" />
         <span class="hw-autocomplete__suggestion-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          This is the first suggestion
         </span>
       </label>
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
@@ -141,7 +189,7 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
 
 ## Active autocomplete
 
-```html
+```html|span-3,plain,light
 <label class="hw-label">Your address
   <div class="hw-autocomplete hw-autocomplete--active" data-hw-autocomplete>
 
@@ -152,7 +200,7 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
         data-hw-autocomplete-input
         class="hw-autocomplete__input"
         role=”combobox”
-        value="Search value"
+        value="Thi"
         aria-owns="suggestions"
         placeholder="Placeholder"
       />
@@ -166,13 +214,19 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
         <input type="radio" name="hedwig" value="one" />
         <span class="hw-autocomplete__suggestion-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          This is the first suggestion
         </span>
       </label>
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
         <input type="radio" name="hedwig" value="two" />
         <span class="hw-autocomplete__suggestion-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          This is the second suggestion
+        </span>
+      </label>
+      <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+        <input type="radio" name="hedwig" value="two" />
+        <span class="hw-autocomplete__suggestion-text">
+          Third suggesiton comes here
         </span>
       </label>
     </div>
@@ -181,13 +235,12 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
 </label>
 ```
 
-.
-.
-.
+
+
 
 ## Active autocomplete with lots of suggestions
 
-```html
+```html|span-3,plain,light
 <label class="hw-label">Your address
   <div class="hw-autocomplete hw-autocomplete--active" data-hw-autocomplete>
 
@@ -212,7 +265,7 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
         <input type="radio" name="hedwig" value="one" />
         <span class="hw-autocomplete__suggestion-text">
-          Suggestion.
+          Suggestion
         </span>
       </label>
       <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
@@ -268,3 +321,16 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
   </div>
 </label>
 ```
+
+
+
+
+
+
+
+# Design guidelines
+
+> {title} is a variation of Input.
+
+> See [Input](/Input#design-guidelines) for guidelines and best practices.
+

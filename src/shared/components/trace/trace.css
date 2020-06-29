@@ -1,13 +1,34 @@
+/**
+ * Block
+ */
+
 .hw-trace {
   position: relative;
   width: 100%;
-  transition: width 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275), background 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   flex-direction: column;
 
-@media(--large){
-  flex-direction: row;
-}
+  @media(--large) {
+    flex-direction: row;
+    .hw-trace__button {
+      margin-left: var(--hw-spacing-small-1);
+      margin-top: 0;
+    }
+    &__input {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    &__placeholder {
+      text-align: left;
+      border: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  /**
+   * Elements
+   */
 
   &__inner {
     position: relative;
@@ -16,51 +37,21 @@
     z-index: 1;
     flex-grow: 1;
     text-align:center;
+    border-radius: var(--hw-border-radius);
+    height: var(--hw-input-field-height);
+  }
 
-    @media(--large){
-      text-align:left;
-    }
-
+  &__input {
+    @extend .hw-input;
   }
 
   &__input, &__placeholder {
     font-size: var(--hw-font-size-p);
-    padding: var(--hw-spacing-smallest) var(--hw-spacing-large);
-    @media (--large) {
-      padding: 14px 16px;
-    }
+    margin-top: 0;
+    margin-bottom: var(--hw-spacing-small-2);
+    height: var(--hw-input-field-height);
   }
 
-  &__input {
-    margin: 0;
-    width: 100%;
-    transition: outline 100ms;
-    background-color: transparent;
-    border:0;
-    border-radius: 0px;
-    text-align: center;
-    height: 46px;
-
-    @media(--large){
-      text-align:left;
-    }
-
-    &:hover {
-      border-color: var(--hw-color-gray);
-    }
-    &:focus {
-      border-color: var(--hw-color-gray-darker);
-      outline-width: 0;
-      background-color: var(--hw-color-white);
-    }
-    @media (--large){
-      height: 52px;
-    }
-  }
-
-  &--borders &__input{
-    border:3px solid var(--hw-color-gray-light);
-  }
 
   &__placeholder {
     position: absolute;
@@ -68,42 +59,43 @@
     left: 0;
     color: var(--hw-color-gray-dark);
     animation: movePlaceholder 3s ease-out infinite 0.3s;
-    z-index: -1;
-    border: 3px solid transparent;
-    width:100%;
-    @media (--large){
-      border: 0;
-    }
+    padding: var(--hw-spacing-small-4) calc(var(--hw-spacing-small-3) * 2);
+    border: var(--hw-border-thickness) solid transparent;
+    width: 100%;
+    pointer-events: none;
+    line-height: 1.2em;
   }
 
-    &__button {
-    margin-top:var(--hw-spacing-smallest);
- 
-    @media(--large){
-      margin-left: 3px;
-      margin-top: 0;
-      padding-top: initial;
-      padding-bottom: initial;
-    }
+  &__button {
+    padding: var(--hw-spacing-small-4) calc(var(--hw-spacing-small-3) * 2);
+    font-size: var(--hw-font-size-p);
+    margin-top: var(--hw-spacing-small-2);
+    height: var(--hw-input-field-height);
   }
 
   &__button-inside {
     position: absolute;
-    right: var(--hw-spacing-small);
+    background: transparent;
+    right: var(--hw-spacing-small-4);
     top: 50%;
     transform: translateY(-50%);
     border: 0;
     opacity: 0;
     transition: opacity 0.1s ease, visibility 0.1s ease 0.1s;
-    color:var(--hw-color-gray-light);
+    color: var(--hw-color-gray-dark);
     visibility: hidden;
+    cursor: pointer;
   }
 
   &__button-inside:hover,
   &__button-inside:focus {
-    color: var(--hw-color-gray);
+    color: var(--hw-color-input-accent);
   }
   
+
+  /**
+   * Modifiers
+   */
 
   /** Modifiers added by javascript **/
   &--static .hw-trace__placeholder {
@@ -125,30 +117,42 @@
   }
 
   /* No break, keep the button on the same line as the input */
-
+  
   &--no-break {
     flex-direction: row;
   }
 
-  &--no-break &__button{
-      margin-left: 3px;
-      margin-top: 0;
-    }
+  &--no-break &__button {
+    margin-left: var(--hw-spacing-small-1);
+    margin-top: 0;
+  }
 
   &--no-break &__input {
-    height: 52px;
-    padding: 14px 16px;
     text-align: left;
+    margin-bottom: 0;
   }
 
   &--no-break &__placeholder {
     text-align: left;
-    height: 52px;
-    padding: 14px 16px;
     border: 0;
+    margin-bottom: 0;
   }
 
+  &--stacked {
+    flex-direction: column;
+
+    @media (--large) {
+      .hw-trace__button {
+          margin-left: 0px;
+          margin-top: var(--hw-spacing-small-2);
+      }
+    }
   }
+
+  .hw-button {
+    margin-right: 0;
+  }
+}
   
 
 @keyframes movePlaceholder {

@@ -1,4 +1,4 @@
-## Entrance box
+## Entrance box (Deprecated)
 
 Styling for boxes.
 
@@ -8,7 +8,7 @@ Styling for boxes.
 
 ### Regular Entrance box
 
-```html|span-3
+```html|span-3,light,plain
   <a href="#" class="hw-entrance-box">
     <div>
       <img class="hw-entrance-box__media" src="https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png" />
@@ -25,7 +25,7 @@ Styling for boxes.
 ```
 ### Entrance boxes in grid
 
-```html|span-6
+```html|span-6,light,plain
   <div class="hw-grid">
     <div class="hw-grid__item hw-medium--one-half hw-large--one-third">
       <a href="#" class="hw-entrance-box">

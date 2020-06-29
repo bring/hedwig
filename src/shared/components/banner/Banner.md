@@ -1,79 +1,128 @@
-## Information Banner
+{navigation}
 
-Used for the interactive information banner at the top of the page
 
+
+
+
+
+> Used for the interactive information banner at the top of the page
+
+
+### Markup
+```code   
+[Base]               .hw-banner;
+
+Modifiers:
+[Expanded]            .hw-banner--expanded;
+```
+
+### Data attributes
 ```code
 Required:
-
 [data-hw-banner="name"]   name of toggle (must be unique, used for aria-roles)
 
 ```
 
-### Example banner
 
-```html
+
+
+
+### Banner
+
+```html|plain,light
   <section class="hw-banner" data-hw-banner="example1">
-      <button class="hw-banner__trigger">
-        <span class="hw-banner__text">
-          All traffic in Norway is on hold due to the heat wave
-        </span>
-        <i class="fas fa-chevron-down" data-fa-transform="down-2" title="Open banner information"></i>
-      </button>
-      <div class="hw-banner__contents">
-        <button class="hw-banner__trigger-close">
-          <i class="fas fa-lg fa-chevron-up" title="Close banner information"></i>
-        </button>
-        <div class="hw-banner__title" role="heading" aria-level="2">Hot! Hot! Hot!</div>
-        <div class="hw-banner__time">
-          <time>24.09.76</time>|<time>17:45</time>
-        </div>
-        <div class="hw-banner__subtitle">
-          Asfalten på veiene smelter og bilene våre kjører seg fast i tjukk olje. Droneleveransene våre går som normalt.
-        </div>
-        <a href="#" class="hw-banner__read-more-link">Read more</a>
+    <button class="hw-banner__trigger">
+      <span class="hw-banner__text">
+        All traffic in Norway is on hold due to the heat wave
+      </span>
+      <i class="fas fa-chevron-down" data-fa-transform="down-2" title="Open banner information"></i>
+    </button>
+    <div class="hw-banner__contents">
+      The asphalt on the roads is melting and our vehicles are stuck in thick oil. Drone deliveries operating as normal.
+      <a href="#" class="hw-banner__read-more-link">Read more</a>
     </div>
   </section>
 ```
 
-### Banner with read more (WIP)
 
-```html
-  <section class="hw-banner" data-hw-banner="example2">
-      <button class="hw-banner__trigger">
-        <span class="hw-banner__text">
-          Snow storm causes delays
-        </span>
-        <i class="fas fa-chevron-down" data-fa-transform="down-2" title="Open banner information"></i>
-      </button>
-      <div class="hw-banner__contents">
-        <button class="hw-banner__trigger-close">
-          <i class="fas fa-lg fa-chevron-up" title="Close banner information"></i>
-        </button>
-        <div class="hw-banner__title" role="heading" aria-level="2">14 Meters of snow expected</div>
-        <div class="hw-banner__time">
-          <time>24.09.76</time>|<time>17:45</time>
-        </div>
-        <div class="hw-banner__subtitle">
-          The blizzard is causing delays across the Oslo region.
-        </div>
-        <a href="#" class="hw-banner__read-more-link">Read more</a>
-        <button class="hw-banner__read-more-button">
-          <i class="fas fa-lg fa-chevron-down" title="Read more"></i>
-        </button>
-      </div>
-      <div class="hw-banner__read-more-contents">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-  </section>
-```
 
 ### Banner with no expand section
-```html
+#### Plain text
+```html|plain,light
 <section class="hw-banner" data-hw-banner="example1">
-      <div class="hw-banner__trigger">
-        <span class="hw-banner__text">
-          All traffic in Norway is on hold due to the heat wave
-        </span>
-      </div>
-  </section>
+  <span class="hw-banner__text">
+    All traffic in Norway is on hold due to the heat wave
+  </span>
+</section>
+```
+
+#### Link
+```html|plain,light
+<section class="hw-banner" data-hw-banner="example1">
+  <span class="hw-banner__text">
+    <a href="https://example.com">All traffic in Norway is on hold due to the heat wave</a>
+  </span>
+</section>
+```
+
+#### Inline link
+```html|plain,light
+<section class="hw-banner" data-hw-banner="example1">
+  <span class="hw-banner__text">
+    All traffic in Norway is on hold due to the heat wave. <a href="https://example.com">Read more</a>
+  </span>
+</section>
+```
+
+
+
+
+
+
+
+
+
+
+
+# Design guidelines
+
+> Banners are prominent messages displayed full-width at the top of the page, below the navbar. Banners are used in case of emergency or special circumstances to inform about an event or situation that has occured.
+
+
+
+### Banner types
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/banner-types-1.png"
+title: "Expand"
+description: "This banner shows a one-line heading by default, and expands when clicked, showing a short paragraph with information of the occurred event or subject. The expanded section can contain a link to a page for further reading."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/banner-types-2.png"
+title: "No expand"
+description: "This banner shows a short sentence of information on one line, with no option to expand. The banner can be static or contain links for further reading."
+```
+
+
+## Best practices
+
+#### Do this
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/banner-do-1.png"
+description: "Keep the information short and clear, and include a link to a separate page with all the information and details for users to read."
+```
+
+#### Do not do this
+  
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/banner-dont-1.png"
+description: "Do not add multiple levels of nested expanding sections in a banner."
 ```

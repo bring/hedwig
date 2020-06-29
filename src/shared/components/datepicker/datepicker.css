@@ -1,18 +1,20 @@
-/*!
- * Pikaday
- * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
+/**
+ * Block
  */
 
 .hw-datepicker {
   position: relative;
   width: 100%;
   display: block;
-  margin-bottom: var(--hw-spacing-small);
+
+  /**
+   * Elements
+   */
 
   &__icon {
     position: absolute;
     cursor: pointer;
-    right: var(--hw-spacing-small);
+    right: var(--hw-spacing-small-4);
     top: 50%;
     transform: translateY(-50%);
     font-size: var(--hw-font-size-lead);
@@ -43,18 +45,31 @@
   & .hw-error::before {
     display: none;
   }
+
+  &:focus-within {
+    color: var(--hw-color-primary-dark);
+  }
 }
+
+
+/*!
+ * Pikaday
+ * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
+ */
+
 
 .pika-single {
   z-index: var(--z-index--navbar-search);
   display: block;
-  margin-top: calc(var(--hw-spacing-smallest) / 2);
+  margin-top: calc(var(--hw-spacing-small-2) / 2);
   position: absolute !important;
   width: 100%;
-  min-width: 300px;
-  background: var(--hw-color-white);
-  border: 3px solid var(--hw-color-gray-darker);
+  min-width: 240px;
+  background: var(--hw-color-gray-light-fill);
+  border: none;
+  border-radius: var(--hw-border-radius);
   font-family: var(--hw-font-primary-regular), Helvetica, Arial, sans-serif;
+  font-weight: var(--hw-font-weight-regular);
 }
 
 .pika-select option {
@@ -66,6 +81,8 @@
 .pika-title {
   color: var(--hw-color-gray-dark);
   text-transform: capitalize;
+  font-size: var(--hw-font-size-smaller);
+
 }
 
 /*
@@ -101,12 +118,13 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-lendar {
   float: left;
   width: inherit;
-  padding: var(--hw-spacing);
+  padding: var(--hw-spacing-medium-2);
 }
 
 .pika-title {
   position: relative;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .pika-label {
@@ -116,8 +134,9 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   z-index: 9999;
   overflow: hidden;
   margin: 0;
-  padding: var(--hw-spacing-smallest) var(--hw-spacing-smallest);
-  font-size: var(--hw-font-size-p);
+  padding: var(--hw-spacing-small-2) var(--hw-spacing-small-2);
+  font-size: var(--hw-font-size-smaller);
+  color: var(--hw-color-black);
   line-height: 20px;
 }
 
@@ -132,6 +151,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   opacity: 0;
 }
 
+
 .pika-prev,
 .pika-next {
   display: block;
@@ -140,22 +160,34 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   outline: none;
   border: 0;
   padding: 0;
-  width: 20px;
-  height: 20px;
-  text-indent: 20px; /* hide text using text-indent trick, using width value (it's enough) */
+  width: 18px;
+  height: 18px;
+  text-indent: 18px; /* hide text using text-indent trick, using width value (it's enough) */
   white-space: nowrap;
   overflow: hidden;
-  opacity: 0.5;
+  opacity: 1.0;
   *position: absolute; /* IE7 */
   *top: 0; /* IE7 */
+  background-color: var(--hw-color-gray-light-fill);
   background-image:
     /* Cut off the sharp ends of the arrow */
-    linear-gradient(45deg, rgba(0, 0, 0, 0) 74%, var(--hw-color-white) 0%),
-    linear-gradient(135deg, var(--hw-color-white) 26%, rgba(0, 0, 0, 0) 26%),
+    linear-gradient(45deg, transparent 72%, var(--hw-color-gray-light-fill) 0%), /* Bottom right corner of left arrow */
+    linear-gradient(135deg, var(--hw-color-gray-light-fill) 26%, transparent 26%), /* Top right corner of left arrow */
     /* Draw the arrow */
-    linear-gradient(135deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
-    linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray) 29%, var(--hw-color-gray) 41%, rgba(0,0,0,0) 43%, rgba(0,0,0,0) 100%),
-    linear-gradient(135deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 58%, var(--hw-color-gray) 59%, var(--hw-color-gray) 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%);
+    linear-gradient(135deg, transparent 0, transparent 65%, var(--hw-color-gray-light-fill) 65%, var(--hw-color-gray-light-fill) 100%), /* Bottom left corner of left arrow */
+    linear-gradient(45deg, var(--hw-color-gray-light-fill) 0, var(--hw-color-gray-light-fill) 31%, var(--hw-color-gray-dark) 32%, var(--hw-color-gray-dark) 38%, transparent 39%, transparent 100%), /* Upper stroke of left arrow */
+    linear-gradient(135deg, transparent 0, transparent 58%, var(--hw-color-gray-dark) 59%, var(--hw-color-gray-dark) 65%, var(--hw-color-gray-light-fill) 66%, var(--hw-color-gray-light-fill) 100%); /* Bottom stroke of left arrow */
+}
+
+.pika-prev {
+  transform: rotate(90deg);
+  left: 8px;
+  top: 7px;
+}
+.pika-next {
+  transform: rotate(-90deg);
+  right: 7px;
+  top: 5px;
 }
 
 .pika-prev:hover,
@@ -163,14 +195,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   opacity: 1;
 }
 
-.pika {
-  &-prev{
-    transform: rotate(90deg);
-  }
-  &-next{
-    transform: rotate(-90deg);
-  }
-}
+
+
 
 .pika-prev,
 .is-rtl .pika-next {
@@ -211,12 +237,14 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }
 
 .pika-table th {
-  color: var(--hw-color-gray);
-  font-size: 12px;
+  color: var(--hw-color-gray-dark);
+  font-size: var(--hw-font-size-smallest);
+  font-weight: var(--hw-font-weight-regular);
   line-height: 25px;
-  font-weight: bold;
   text-align: center;
+  text-decoration: none;
 }
+
 
 .pika-button {
   cursor: pointer;
@@ -227,12 +255,15 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   border: 0;
   margin: 0;
   width: 100%;
-  padding: var(--hw-spacing-smallest);
-  color: var(--hw-color-white);
-  font-size: var(--hw-font-size-p);
+  height: calc(280px * 0.14285714285714286);
+  padding: 0px  ;
+  color: var(--hw-color-black);
+  font-size: var(--hw-font-size-smallest);
   line-height: 15px;
   text-align: center;
-  background: var(--hw-color-gray);
+  background: transparent;
+  border-radius: var(--hw-border-radius);
+  border: var(--hw-border-thickness) solid transparent;
 }
 
 .pika-week {
@@ -241,15 +272,11 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }
 
 .is-today .pika-button {
-  color: var(--hw-color-gray-dark);
-  background: var(--hw-color-gray-light);
-  font-weight: bold;
+  border: var(--hw-border-thickness) solid var(--hw-color-black);
 }
 
 .is-selected .pika-button,
 .has-event .pika-button {
-  color: var(--hw-color-white);
-  font-weight: bold;
   background: var(--hw-color-primary);
 }
 
@@ -277,9 +304,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .is-disabled .pika-button {
   pointer-events: none;
   cursor: not-allowed;
-  color: var(--hw-color-gray);
-  background-color: var(--hw-color-gray-lighter);
-  opacity: 0.3;
+  color: var(--hw-color-gray-dark);
+  background-color: var(--hw-color-gray-light-fill);
 }
 
 .is-outside-current-month .pika-button {
@@ -294,8 +320,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 
 .pika-button:hover,
 .pika-row.pick-whole-week:hover .pika-button {
-  color: var(--hw-color-white);
-  background: var(--hw-color-gray-darker);
+  background: var(--hw-color-gray-light-stroke);
   box-shadow: none;
 }
 
@@ -303,4 +328,5 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-table abbr {
   border-bottom: none;
   cursor: help;
+  text-decoration: none;
 }

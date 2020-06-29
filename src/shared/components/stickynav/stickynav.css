@@ -6,13 +6,8 @@
   position: sticky;
   top: 0;
   width: 100%;
-  height: 45px;
   background-color: var(--hw-color-white);
   z-index: var(--z-index--stickynav);
-
-  @media (--medium) {
-    height: 72px;
-  }
 
   /**
    * Elements
@@ -24,16 +19,11 @@
   }
 
   &__nav {
-    height: 45px;
     background-color: var(--hw-color-white);
     overflow: auto;
     white-space: nowrap;
     text-align: center;
-    padding: 0 var(--hw-spacing);
-
-    @media (--medium) {
-      height: 72px;
-    }
+    padding: 0 var(--hw-spacing-medium-2);
 
     &::after {
       content: "";
@@ -41,7 +31,7 @@
       top: 0;
       bottom: 0;
       right: 0;
-      width: var(--hw-spacing-large);
+      width: var(--hw-spacing-medium-3);
       background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 90%);
     }
   }
@@ -49,19 +39,12 @@
   &__link {
     position: relative;
     display: inline-block;
-    padding: var(--hw-spacing-smaller) var(--hw-spacing-small);
+    padding: var(--hw-spacing-small-3) var(--hw-spacing-small-4);
     color: var(--hw-color-gray-dark);
     font-size: var(--hw-font-size-small);
-    font-family: var(--hw-font-primary-bold);
-    text-transform: uppercase;
-
-    @media (--medium) {
-      margin-top: 3px;
-      padding: var(--hw-spacing) var(--hw-spacing-small);
-    }
 
     &:hover {
-      color: var(--hw-color-gray-darker);
+      color: var(--hw-color-gray-dark);
     }
 
     &:hover::after {
@@ -70,12 +53,12 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: var(--hw-color-primary-light);
-      height: var(--hw-spacing-smallest);
+      background: var(--hw-color-primary);
+      height: var(--hw-border-thickness);
     }
 
     &.hw-stickynav__link--active {
-      color: var(--hw-color-gray-darker);
+      color: var(--hw-color-gray-dark);
     }
 
     &.hw-stickynav__link--active::after {
@@ -85,7 +68,7 @@
       left: 0;
       right: 0;
       background: var(--hw-color-primary);
-      height: var(--hw-spacing-smallest);
+      height: var(--hw-border-thickness);
     }
   }
 }

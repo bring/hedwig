@@ -1,6 +1,14 @@
+/**
+ * Block
+ */
+
 .hw-figure {
   margin: 0;
   padding: 0;
+
+  /**
+   * Elements
+   */
 
   &__container{
     position: relative;
@@ -20,10 +28,10 @@
 
   & figcaption {
     position: relative;
-    line-height: 1.2;
-    margin-top: var(--hw-spacing-smallest);
+    line-height: 1.5;
+    margin-top: var(--hw-spacing-small-3);
     text-align: left;
-    font-size: var(--hw-font-size-smaller);
-    color: var(--hw-color-gray-dark);
+    font-size: var(--hw-font-size-smallest);
+    color: var(--hw-color-black);
   }
 }

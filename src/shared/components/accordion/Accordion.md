@@ -1,28 +1,47 @@
-## Accordion
+{navigation}
 
-Creates interactive accordion from `<ul>`
 
-In these examples, the contents are wrapped in the [Wysiwyg Container](/Wysiwyg) component, but this is optional.
 
+
+
+> Creates interactive accordion from `<ul>`
+> In these examples, the contents are wrapped in the [Wysiwyg Container](/Wysiwyg) component, but this is optional.
+
+
+### Markup
 ```code
-Required:
-
-[data-hw-accordion]
+[Base]                 .hw-accordion
 
 Modifiers:
-[Dark]    .hw-accordion--dark
-[Menu]    .hw-accordion--menu
+[Menu]                 .hw-accordion--menu
+
+Elements:
+[Item]                 .hw-accordion__item
+[Trigger]              .hw-accordion__trigger
+[Arrow]                .hw-accordion__arrow
+[Contents]             .hw-accordion__contents
+[Item Expanded]        .hw-accordion__item-expanded
+```
+
+
+
+### Data attributes
+```code
+Required:
+[data-hw-accordion]
 
 Optional:
-
 [data-hw-accordion-allow-multiple]    Allow multiple items to be open at once
 [data-hw-accordion-default-expanded]  Item to be open by default (added to li/item)
 
 ```
 
-### Example accordion
 
-```html|span-6
+### Examples
+
+#### Default
+
+```html|span-6,plain,light
   <ul class="hw-accordion" data-hw-accordion>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
@@ -68,9 +87,10 @@ Optional:
   </ul>
 ```
 
-### Accordion with default opened item
 
-```html|span-6
+#### Accordion with default opened item
+
+```html|span-6,plain,light
   <ul class="hw-accordion" data-hw-accordion>
     <li class="hw-accordion__item" data-hw-accordion-default-expanded>
       <button class="hw-accordion__trigger">
@@ -115,9 +135,10 @@ Optional:
   </ul>
 ```
 
-### Accordion that allows multiple items to be open at once
 
-```html|span-6
+#### Accordion that allows multiple items to be open at once
+
+```html|span-6,plain,light
   <ul class="hw-accordion" data-hw-accordion data-hw-accordion-allow-multiple>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
@@ -158,11 +179,11 @@ Optional:
   </ul>
 ```
 
-### Menu accordion
+#### Menu accordion
 
 This version is used in the menu on mobile
 
-```html|span-4
+```html|span-4,plain,light
   <ul class="hw-accordion hw-accordion--menu" data-hw-accordion data-hw-accordion-allow-multiple>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
@@ -219,4 +240,59 @@ This version is used in the menu on mobile
       <a class="hw-accordion__link" href="#">Lenke</a>
     </li>
   </ul>
+```
+
+
+# Design guidelines
+
+> Accordions are vertically stacked lists of headers that reveal and hide associated sections of content. 
+
+
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/accordions-1-1.png"
+title: "Use of accordions"
+description: "We use accordions to show large amounts of content in a small space through progressive disclosure. The section header gives an overview of the content, allowing the user to decide which sections to read."
+```
+  
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/accordions-1-2.png"
+```
+
+
+  
+## Best practices
+
+#### Do this
+  
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/accordions-do-1.png"
+description: "Use headings to divide content if you have multiple subtopics within a section."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/accordions-do-2.png"
+description: "Use accordion to help make it easier for users to navigate through loads of information to find what they are looking for."
+```
+
+#### Do not do this
+
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/accordions-dont-1.png"
+description: "Don’t use accordions for important information. Accordions hides content from users, and it is important to account for a user not noticing or reading all of the included content. If the information is important for everyone to read, place it in a full scrolling page with normal headers."
+```
+```image
+plain: true
+span: 3
+src: "{assets}/img/{postenbring}/accordions-dont-2.png"
+description: "Don’t nest accordions inside other accordions. For subtopics, use headers to divide the content."
 ```

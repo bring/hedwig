@@ -5,7 +5,7 @@
  .hw-container {
   display: block;
   margin: 0 auto;
-  padding: 0 var(--hw-spacing-small);
+  padding: 0 var(--hw-spacing-small-4);
 }
 
 /* 720px - max-width: 590px */
@@ -20,7 +20,7 @@
 @media (--large) {
   .hw-container {
     max-width: var(--hw-width-wide);
-    padding: 0 var(--hw-spacing-large);
+    padding: 0 var(--hw-spacing-medium-3);
   }
 }
 
@@ -44,64 +44,64 @@
   @media (--large) {
     .hw-container--slim {
       max-width: 762px;
-      padding: 0 var(--hw-spacing-large);
+      padding: 0 var(--hw-spacing-medium-3);
     }
   }
 
   .hw-container--pt {
-    padding-top: var(--hw-spacing-smaller);
+    padding-top: var(--hw-spacing-small-3);
   }
 
   .hw-container--pb {
-    padding-bottom: var(--hw-spacing-smaller);
+    padding-bottom: var(--hw-spacing-small-3);
   }
 
   .hw-container--mt {
-    margin-top:var(--hw-spacing-smaller);
+    margin-top:var(--hw-spacing-small-3);
   }
 
   .hw-container--mb {
-    margin-bottom: var(--hw-spacing-smaller);
+    margin-bottom: var(--hw-spacing-small-3);
   }
 
   /* 720px - max-width: 590px */
   @media (--medium) {
     .hw-container--pt {
-      padding-top: var(--hw-spacing-large);
+      padding-top: var(--hw-spacing-medium-3);
     }
 
     .hw-container--pb {
-      padding-bottom: var(--hw-spacing-large);
+      padding-bottom: var(--hw-spacing-medium-3);
     }
 
     .hw-container--mt {
-      margin-top:var(--hw-spacing-large);
+      margin-top:var(--hw-spacing-medium-3);
     }
 
     .hw-container--mb {
-      margin-bottom: var(--hw-spacing-large);
+      margin-bottom: var(--hw-spacing-medium-3);
     }
   }
 
   /* 940px - max-width: 762px 36px gutters */
   @media (--large) {
     .hw-container--mt {
-      margin-top: var(--hw-spacing-even-larger);
+      margin-top: var(--hw-spacing-large-1);
     }
 
     .hw-container--mb {
-      margin-bottom: var(--hw-spacing-even-larger);
+      margin-bottom: var(--hw-spacing-large-1);
     }
   }
 
   /* 1200px - max-width: 762px 36px gutters */
   @media (--xlarge) {
     .hw-container--pt {
-      padding-top: var(--hw-spacing-larger);
+      padding-top: var(--hw-spacing-medium-4);
     }
 
     .hw-container--pb {
-      padding-bottom: var(--hw-spacing-larger);
+      padding-bottom: var(--hw-spacing-medium-4);
     }
   }
 
