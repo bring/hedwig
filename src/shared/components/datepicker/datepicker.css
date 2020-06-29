@@ -304,9 +304,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .is-disabled .pika-button {
   pointer-events: none;
   cursor: not-allowed;
-  color: var(--hw-color-gray-normal);
+  color: var(--hw-color-gray-dark);
   background-color: var(--hw-color-gray-light-fill);
-  opacity: 0.3;
 }
 
 .is-outside-current-month .pika-button {
