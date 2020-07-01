@@ -21,7 +21,6 @@ Modifiers:
 Colors    
 [Primary]           .hw-button--primary
 [Secondary]         .hw-button--secondary
-[Yellow]            .hw-button--picture-yellow
 [Dark]              .hw-button--picture-dark
     
 [Outline]           .hw-button--outline
