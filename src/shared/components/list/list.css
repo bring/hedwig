@@ -57,6 +57,7 @@
         counter-increment: li;
         content: counter(li) ".";
         position: absolute;
+        top: 0px;
         left: -2.3em;
         width: 2em;
         text-align: right;
