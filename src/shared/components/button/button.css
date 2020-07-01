@@ -125,10 +125,6 @@
     }
   }
 
-  &--picture-yellow {
-    @extend .hw-button--primary;
-  }
-
   &--picture-dark {
     background: var(--hw-color-black);
     border-color: var(--hw-color-black);
