@@ -53,7 +53,7 @@
       display: none;
     }
     
-    & li::after {
+    & > li::after {
         counter-increment: li;
         content: counter(li) ".";
         position: absolute;
