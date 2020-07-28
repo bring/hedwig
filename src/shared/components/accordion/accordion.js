@@ -11,7 +11,7 @@ import KEYS from '../../utilities/js/keys';
  * @desc Creates interactive accordion from ul
  * @param {object} settings
  */
-const HWAccordion = ({
+export const HWAccordion = ({
   accordionSelector = '[data-hw-accordion]',
   activeItemClass = 'hw-accordion__item--expanded',
 } = {}) => {
