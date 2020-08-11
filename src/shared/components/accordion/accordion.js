@@ -140,6 +140,7 @@ export const HWAccordion = ({
     SETTINGS.elements.forEach((accordion) => {
       // Skip if already initialised
       if (accordion.getAttribute('data-hw-accordion-initialised') === 'true') {
+        resizeAccordion();
         return false;
       }
 
