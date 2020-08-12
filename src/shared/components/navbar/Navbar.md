@@ -543,7 +543,33 @@ On this page, only the first navbar is able to open the search, menu and login. 
 </header>
 ```
 
+### Navbar with text logo
 
+```html
+<header class="hw-navbar">
+  <div class="hw-navbar__content">
+    <div class="hw-navbar__top">
+      <a href="#" class="hw-navbar__logo">
+        <h1 class="hw-color-primary hw-h1 hw-navbar__logo-text">Kundeservice</h1>
+      </a>
+      <nav class="hw-navbar__menu">
+        <a href="#" class="hw-navbar__item">English</a>
+        <a href="#" class="hw-navbar__item">Login<!--
+        --><i class="hw-navbar__icon far fa-user fa-2x"></i>
+        </a>
+        <button class="hw-navbar__menu-button" data-hw-toggle-menu><!--
+          --><span class="hw-navbar__menu-button-label-menu">Menu</span><!--
+          --><span class="hw-navbar__menu-button-label-close">Close</span><!--
+          --><span class="fa-stack hw-navbar__menu-button-toggle">
+              <i class="hw-navbar__bars far fa-bars fa-stack-2x"></i>
+              <i class="hw-navbar__times far fa-times fa-stack-2x"></i>
+        </button>
+      </nav>
+    </div>
+    <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
+  </div>
+</header>
+```
 
 
 
