@@ -58,15 +58,9 @@
       padding: 9px;
       opacity: 0;
     }
-    @media only screen and (--only-large){
-      &-text {
-        margin-top: calc(2*(100vw + 300px)/200);
-      }
-    }
-    @media (--xlarge){
-      &-text {
-        margin-top: var(--hw-spacing-small-3);
-      }
+
+    &-text {
+        margin-top: var(--hw-spacing-medium-2);
     }
 
     @media (--large) {
