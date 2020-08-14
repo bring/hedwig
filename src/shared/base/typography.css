@@ -181,29 +181,6 @@
   }
 
 
-  .hw-text-dropcap {
-    &::first-letter {
-      float: left;
-      font-size: 310%;
-      line-height: 75%;
-      margin: 0;
-      margin-top: 6px;
-      letter-spacing: var(--hw-spacing-small-2);
-    }
-
-    &.hw-text-lead::first-letter {
-      margin-top: 5px;
-    }
-
-    &.hw-text-small::first-letter {
-      margin-top: 4px;
-    }
-
-    &.hw-text-smaller::first-letter {
-      margin-top: 3px;
-    }
-  }
-
 
 /**
   * Max sizes for responsive typography
