@@ -60,7 +60,12 @@
     }
 
     &-text {
-        margin-top: var(--hw-spacing-medium-2);
+        line-height: var(--hw-navbar-height-desktop);
+
+        @media (--large-max){
+          line-height: calc(var(--hw-navbar-height-mobile) - 18px);
+        }
+
     }
 
     @media (--large) {
