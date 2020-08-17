@@ -550,7 +550,7 @@ On this page, only the first navbar is able to open the search, menu and login. 
   <div class="hw-navbar__content">
     <div class="hw-navbar__top">
       <a href="#" class="hw-navbar__logo">
-        <h1 class="hw-color-primary hw-h1 hw-navbar__logo-text">Kundeservice</h1>
+        <h2 class="hw-color-primary hw-h2 hw-navbar__logo-text">Kundeservice</h2>
       </a>
       <nav class="hw-navbar__menu">
         <a href="#" class="hw-navbar__item">English</a>
