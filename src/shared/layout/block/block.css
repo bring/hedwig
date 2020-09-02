@@ -209,6 +209,82 @@
     padding-right: 0;
   }
 }
+@media (--small-max){
+  .hw-block {
+      /**
+   * Modifiers: padding and padding variations
+   */
+
+    /* Use these classes for spacing in mobile */
+    &--mt-small-1--responsive  { margin-top: var(--hw-spacing-small-1); }
+    &--mt-small-2--responsive  { margin-top: var(--hw-spacing-small-2); }
+    &--mt-small-3--responsive  { margin-top: var(--hw-spacing-small-3); }
+    &--mt-small-4--responsive  { margin-top: var(--hw-spacing-small-4); }
+   
+    &--mb-small-1--responsive  { margin-bottom: var(--hw-spacing-small-1); }
+    &--mb-small-2--responsive  { margin-bottom: var(--hw-spacing-small-2); }
+    &--mb-small-3--responsive  { margin-bottom: var(--hw-spacing-small-3); }
+    &--mb-small-4--responsive  { margin-bottom: var(--hw-spacing-small-4); }
+  
+    &--mt-medium-1--responsive { margin-top: var(--hw-spacing-medium-1); }
+    &--mt-medium-2--responsive { margin-top: var(--hw-spacing-medium-2); }
+    &--mt-medium-3--responsive { margin-top: var(--hw-spacing-medium-3); }
+    &--mt-medium-4--responsive { margin-top: var(--hw-spacing-medium-4); }
+  
+    &--mb-medium-1--responsive { margin-bottom: var(--hw-spacing-medium-1); }
+    &--mb-medium-2--responsive { margin-bottom: var(--hw-spacing-medium-2); }
+    &--mb-medium-3--responsive { margin-bottom: var(--hw-spacing-medium-3); }
+    &--mb-medium-4--responsive { margin-bottom: var(--hw-spacing-medium-4); }
+  
+    &--mt-large-1--responsive  { margin-top: var(--hw-spacing-large-1); }
+    &--mt-large-2--responsive  { margin-top: var(--hw-spacing-large-2); }
+    &--mt-large-3--responsive  { margin-top: var(--hw-spacing-large-3); }
+    &--mt-large-4--responsive  { margin-top: var(--hw-spacing-large-4); }
+    &--mt-large-5--responsive  { margin-top: var(--hw-spacing-large-5); }
+   
+    &--mb-large-1--responsive  { margin-bottom: var(--hw-spacing-large-1); }
+    &--mb-large-2--responsive  { margin-bottom: var(--hw-spacing-large-2); }
+    &--mb-large-3--responsive  { margin-bottom: var(--hw-spacing-large-3); }
+    &--mb-large-4--responsive  { margin-bottom: var(--hw-spacing-large-4); }
+    &--mb-large-5--responsive  { margin-bottom: var(--hw-spacing-large-5); }
+  
+  
+    &--pt-small-1--responsive  { padding-top: var(--hw-spacing-small-1); }
+    &--pt-small-2--responsive  { padding-top: var(--hw-spacing-small-2); }
+    &--pt-small-3--responsive  { padding-top: var(--hw-spacing-small-3); }
+    &--pt-small-4--responsive  { padding-top: var(--hw-spacing-small-4); }
+   
+    &--pb-small-1--responsive  { padding-bottom: var(--hw-spacing-small-1); }
+    &--pb-small-2--responsive  { padding-bottom: var(--hw-spacing-small-2); }
+    &--pb-small-3--responsive  { padding-bottom: var(--hw-spacing-small-3); }
+    &--pb-small-4--responsive  { padding-bottom: var(--hw-spacing-small-4); }
+  
+    &--pt-medium-1--responsive { padding-top: var(--hw-spacing-medium-1); }
+    &--pt-medium-2--responsive { padding-top: var(--hw-spacing-medium-2); }
+    &--pt-medium-3--responsive { padding-top: var(--hw-spacing-medium-3); }
+    &--pt-medium-4--responsive { padding-top: var(--hw-spacing-medium-4); }
+  
+    &--pb-medium-1--responsive { padding-bottom: var(--hw-spacing-medium-1); }
+    &--pb-medium-2--responsive { padding-bottom: var(--hw-spacing-medium-2); }
+    &--pb-medium-3--responsive { padding-bottom: var(--hw-spacing-medium-3); }
+    &--pb-medium-4--responsive { padding-bottom: var(--hw-spacing-medium-4); }
+  
+    &--pt-large-1--responsive  { padding-top: var(--hw-spacing-large-1); }
+    &--pt-large-2--responsive  { padding-top: var(--hw-spacing-large-2); }
+    &--pt-large-3--responsive  { padding-top: var(--hw-spacing-large-3); }
+    &--pt-large-4--responsive  { padding-top: var(--hw-spacing-large-4); }
+    &--pt-large-5--responsive  { padding-top: var(--hw-spacing-large-5); }
+   
+    &--pb-large-1--responsive  { padding-bottom: var(--hw-spacing-large-1); }
+    &--pb-large-2--responsive  { padding-bottom: var(--hw-spacing-large-2); }
+    &--pb-large-3--responsive  { padding-bottom: var(--hw-spacing-large-3); }
+    &--pb-large-4--responsive  { padding-bottom: var(--hw-spacing-large-4); }
+    &--pb-large-5--responsive  { padding-bottom: var(--hw-spacing-large-5); }
+
+    
+  }
+}
+
 
 @media (--max-medium) {
   .hw-block--mt-larger-mobile {
