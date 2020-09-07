@@ -84,6 +84,41 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   </div>
 ```
 
+### Responsive spacing (with margins & padding higlighted)
+The values are one level down when screen is less than and equal to 720px
+
+```html|span-6,responsive
+  
+  <div class="hw-helpers-margin-highlighter">
+    <div class="
+      hw-block
+      hw-block--mb-small-2--responsive
+      hw-block--mt-small-2--responsive
+    ">
+      <p>Block with responsive spacing top and bottom margins</p>
+    </div>
+  </div>
+  <div class="hw-helpers-margin-highlighter">
+     <div class="
+      hw-block
+      hw-block--mb-small-3--responsive
+      hw-block--mt-small-3--responsive
+    ">
+      <p>Block with responsive spacing top and bottom margins</p>
+    </div>
+  </div>
+   <div class="hw-helpers-margin-highlighter">
+     <div class="
+      hw-block
+      hw-block--mb-small-4--responsive
+      hw-block--mt-small-4--responsive
+    ">
+      <p>Block with responsive spacing top and bottom margins</p>
+    </div>
+  </div>
+```
+
+
 ### Sizes
 
 ```code
@@ -108,11 +143,12 @@ large-5: 160px;
 ### Block modifiers (margin & padding)
 
 ```code
-[Padding sides]                       .hw-block--px
-[Fluid Padding sides]                 .hw-block--px-fluid
-[Mobile Padding sides]                .hw-block--px-mobile
-[Margin/Padding top/bottom] default   .hw-block--[mt/mb/pt/pb]
-[Margin/Padding top/bottom [size]]    .hw-block--[mt/mb/pt/pb]-[size]
+[Padding sides]                                   .hw-block--px
+[Fluid Padding sides]                             .hw-block--px-fluid
+[Mobile Padding sides]                            .hw-block--px-mobile
+[Margin/Padding top/bottom] default               .hw-block--[mt/mb/pt/pb]
+[Margin/Padding top/bottom [size]]                .hw-block--[mt/mb/pt/pb]-[size]
+[Margin/Padding top/bottom [size][responsive]]    .hw-block--[mt/mb/pt/pb]-[size]-responsive
 ```
 
 ### Example
