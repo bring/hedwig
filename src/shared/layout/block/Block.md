@@ -84,6 +84,41 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
   </div>
 ```
 
+### Responsive spacing (with margins & padding higlighted)
+The values are one level down when screen is less than and equal to 720px
+
+```html|span-4,plain,light,no-source
+  
+  <div class="hw-helpers-margin-highlighter">
+    <div class="
+      hw-block
+      hw-block--mb-small-2--responsive
+      hw-block--mt-small-2--responsive
+    ">
+      <p>Block with responsive spacing top and bottom margins</p>
+    </div>
+  </div>
+  <div class="hw-helpers-margin-highlighter">
+     <div class="
+      hw-block
+      hw-block--mb-small-3--responsive
+      hw-block--mt-small-3--responsive
+    ">
+      <p>Block with responsive spacing top and bottom margins</p>
+    </div>
+  </div>
+   <div class="hw-helpers-margin-highlighter">
+     <div class="
+      hw-block
+      hw-block--mb-small-4--responsive
+      hw-block--mt-small-4--responsive
+    ">
+      <p>Block with responsive spacing top and bottom margins</p>
+    </div>
+  </div>
+```
+
+
 ### Sizes
 
 ```code
