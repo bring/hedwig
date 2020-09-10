@@ -40,6 +40,15 @@
 </label>
 ```
 
+#### White background
+```html|span-3,light,plain
+<div class="hw-block hw-block--px hw-block--pt hw-block--pb hw-background-color-primary-lighter">
+  <label class="hw-label">
+    Label
+    <input class="hw-input hw-input--white" type="text" placeholder="Placeholder" />
+  </label>
+</div>
+```
 
 
 ## Line
@@ -68,8 +77,6 @@
   <div class="hw-error hw-error--align-left">E-postadressen er ugyldig</div>
 </label>
 ```
-
-
 
 
 

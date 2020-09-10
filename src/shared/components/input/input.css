@@ -66,6 +66,10 @@
     transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
   }
 
+  &--white {
+    background-color:var(--hw-color-white);
+  }
+
 
   &--line-basic {
     background: transparent;

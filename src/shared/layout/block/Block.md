@@ -10,6 +10,8 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 
 **NB:** Do not to use blocks inside reusable components, as it will be difficult to apply style changes to all components at a later point.
 
+**NB:** Backgroundcolors on blocks are deprecated. Please use hw-background-color instead
+
 ```code
 <div class="hw-block">...</div>
 ```
@@ -189,17 +191,3 @@ large-5: 160px;
 </div>
 ```
 
-
-### Block modifiers (colors)
-
-```code
-[Primary]                 .hw-block--bg-primary
-[Gray]                    .hw-block--bg-gray
-[Gray light]              .hw-block--bg-gray-light
-[Gray lighter]            .hw-block--bg-gray-lighter
-[Gray lightest]           .hw-block--bg-gray-lightest
-[Yellow border]           .hw-block--bordered
-
-[White]                   .hw-block--bg-white
-[Alternating]             .hw-block--bg-alt
-```
