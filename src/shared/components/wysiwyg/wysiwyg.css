@@ -18,7 +18,11 @@
   }
   
   & li.hw-dropdown__option::before {
-    content: initial;
+    content: initial !important;
+  }
+
+  & label.hw-checkbox p {
+    margin: 0;
   }
 
   & .hw-quote .hw-quote__content {
