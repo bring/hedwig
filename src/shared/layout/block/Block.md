@@ -189,17 +189,3 @@ large-5: 160px;
 </div>
 ```
 
-
-### Block modifiers (colors)
-
-```code
-[Primary]                 .hw-block--bg-primary
-[Gray]                    .hw-block--bg-gray
-[Gray light]              .hw-block--bg-gray-light
-[Gray lighter]            .hw-block--bg-gray-lighter
-[Gray lightest]           .hw-block--bg-gray-lightest
-[Yellow border]           .hw-block--bordered
-
-[White]                   .hw-block--bg-white
-[Alternating]             .hw-block--bg-alt
-```
