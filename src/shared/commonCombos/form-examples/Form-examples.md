@@ -1,90 +1,79 @@
 ### Form examples
 
-```html
-<div class="hw-block hw-block--mt">
-  <h1>Header</h1>
-</div>
-<div class="hw-block hw-block--pt-smaller hw-block--mb-large">
-  <hr class="hw-hr hw-hr--full"/>
-</div>
-<div class="hw-block hw-block--px-fluid hw-block--pt hw-block--pb hw-block--mb hw-background-color-gray-lighter">
-  <h3 class="">Subheader</h3>
-  <div class="hw-block hw-block--pt-smaller hw-block--mb">
-    <hr class="hw-hr hw-hr--full hw-hr--gray-lightest"/>
+```html|plain
+<div class="hw-container hw-container--slim">
+  <div class="hw-block hw-block--mt-large-2 hw-block--mb-large-2">
+    <h1>Profile</h1>
   </div>
-  <div class="hw-flex hw-flex--gutter-large-desktop hw-flex--twos">
-    <div class="hw-block hw-block--mb">
-      <label class="hw-label">
-        Label
-        <input class="hw-input" type="text" placeholder="Placeholder" />
-      </label>
-    </div>
-    <div class="hw-block">
-      <label class="hw-label">
-        Label
-        <input class="hw-input" type="text" placeholder="Placeholder" />
-      </label>
-    </div>
-    <div class="hw-block hw-block--mb">
-      <label class="hw-label">
-        Label
-        <input class="hw-input" type="text" placeholder="Placeholder" />
-      </label>
-    </div>
-    <div class="hw-block">
-      <label class="hw-label">
-        Label
-        <input class="hw-input" type="text" placeholder="Placeholder" />
-      </label>
-    </div>
-  </div>
-  
-</div>
-<div class="hw-block hw-block--px-fluid hw-block--pt hw-block--pb hw-background-color-gray-lighter">
-  <h3 class="">Subheader</h3>
-  <div class="hw-block hw-block--pt-smaller hw-block--mb">
-    <hr class="hw-hr hw-hr--full hw-hr--gray-lightest"/>
-  </div>
-  <div class="hw-block hw-block--mb">
-    <div class="hw-flex">
-      <div class="hw-block">
-        <label class="hw-radio-button">
-          <span class="hw-radio-button__label">One button with long label</span>
-          <input type="radio" name="hedwig" value="one" />
-          <i class="hw-radio-button__indicator"></i>
-        </label>
-      </div>
-      <div class="hw-block">
-        <label class="hw-radio-button">
-          <span class="hw-radio-button__label">Two</span>
-          <input type="radio" name="hedwig" value="two" />
-          <i class="hw-radio-button__indicator"></i>
-        </label>
-      </div>
-      <div class="hw-block">
-        <label class="hw-radio-button">
-          <span class="hw-radio-button__label">Three</span>
-          <input type="radio" name="hedwig" value="three" />
-          <i class="hw-radio-button__indicator"></i>
-        </label>
-      </div>
-    </div>
-  </div>
-  
 
-  <div class="hw-block hw-block--mb">
+  <div class="hw-block hw-block--mb-small-4">
+    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
+  </div>
+  <div class="hw-block hw-block--mb-medium-2">
     <label class="hw-label">
-      Label
-      <input class="hw-input" type="text" placeholder="Placeholder" />
+      First name
+      <input class="hw-input" type="text" placeholder="Enter your first name here" />
+    </label>
+  </div>
+  <div class="hw-block hw-block--mb-medium-2">
+    <label class="hw-label">
+      Last name
+      <input class="hw-input" type="text" placeholder="Enter your last name here" />
+    </label>
+  </div>
+  <div class="hw-block hw-block--mb-medium-2">
+    <label class="hw-label">
+      Address
+      <input class="hw-input" type="text" placeholder="Enter your address here" />
+    </label>
+  </div>
+  <div class="hw-block hw-block--mb-medium-2">
+    <label class="hw-label">
+      Occupation
+      <input class="hw-input" type="text" placeholder="Enter your occupation here" />
+    </label>
+  </div>
+
+  <div class="hw-block hw-block--mt-large-2 hw-block--mb-small-3">
+    <h3>Preferences</h3>
+  </div>
+  <div class="hw-block hw-block--mb-medium-4">
+    At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+  </div>
+  <div class="hw-block hw-block--mb-small-3">
+    <label class="hw-checkbox hw-checkbox--bounding hw-checkbox--full">
+      Yes, please keep me up to date
+      <input type="checkbox" />
+      <i class="hw-checkbox__indicator"></i>
     </label>
   </div>
   <div class="hw-block">
-    <label class="hw-label">
-      Label
-      <input class="hw-input" type="text" placeholder="Placeholder" />
+    <label class="hw-checkbox hw-checkbox--bounding hw-checkbox--full">
+      No thanks
+      <input type="checkbox" />
+      <i class="hw-checkbox__indicator"></i>
     </label>
   </div>
+  <div class="hw-block hw-block--mt-large-2 hw-block--mb-medium-2">
+    <h3>Please keep me up to date by</h3>
+  </div>
+  <div class="hw-block hw-block--mb-small-3">
+    <label class="hw-checkbox hw-checkbox--bounding hw-checkbox--full">
+      E-mail
+      <input type="checkbox" />
+      <i class="hw-checkbox__indicator"></i>
+    </label>
+  </div>
+  <div class="hw-block hw-block--mb-small-3">
+    <label class="hw-checkbox hw-checkbox--bounding hw-checkbox--full">
+      SMS
+      <input type="checkbox" />
+      <i class="hw-checkbox__indicator"></i>
+    </label>
+  </div>
+  <div class="hw-block hw-block--mt-large-2 hw-block--mb-large-2">
+    <button class="hw-button hw-button--primary">Save</button>
+  </div>
 </div>
-
 ```
 
