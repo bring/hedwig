@@ -154,7 +154,7 @@
       top: var(--hw-navbar-height-mobile);
       background-color: var(--hw-color-white);
       opacity: 1;
-      transition: top .1s ease-in, background .5s linear;
+      transition: top .1s ease-in;
       @media (--large) {
         top: var(--hw-navbar-height-desktop);
       }
