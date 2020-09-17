@@ -9,7 +9,7 @@ import trapFocus from '../../utilities/js/trapFocus';
  * @param {object} settings
  */
 
-const HWNavbar = ({
+export const HWNavbar = ({
   navbarSelector = '.hw-navbar',
   menuButtonSelector = '[data-hw-toggle-menu]',
   searchButtonSelector = '[data-hw-toggle-search]',
