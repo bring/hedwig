@@ -149,7 +149,7 @@ export const HWDropdown = ({
     const list = q('.hw-dropdown__options', customDropdown);
 
     // Display/hide dropdown
-    if (list.getAttribute('aria-hidden') === 'false') {
+    if (list && list.getAttribute('aria-hidden') === 'false') {
       list.setAttribute('aria-hidden', true);
       customDropdown.classList.remove(activeClass);
       resetPosition(customDropdown);
@@ -177,7 +177,7 @@ export const HWDropdown = ({
         const list = q('.hw-dropdown__options', customDropdown);
 
         // Display/hide dropdown
-        if (list.getAttribute('aria-hidden') === 'false') {
+        if (list && list.getAttribute('aria-hidden') === 'false') {
           list.setAttribute('aria-hidden', true);
           customDropdown.classList.remove(activeClass);
           resetPosition(customDropdown);
