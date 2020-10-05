@@ -43,7 +43,7 @@ export const HWDropdown = ({
       if (dropdown) {
         if ('createEvent' in document) {
           const evt = document.createEvent('HTMLEvents');
-          evt.initEvent('change', false, true);
+          evt.initEvent('change', true, true);
           dropdown.dispatchEvent(evt);
         } else {
           dropdown.fireEvent('onchange');
