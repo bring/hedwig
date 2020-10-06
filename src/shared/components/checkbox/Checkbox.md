@@ -124,6 +124,18 @@ Modifiers:
 </form>
 ```
 
+### With bounding box full width and long text
+
+```html|span-3,plain,light
+<form>
+  <label class="hw-checkbox hw-checkbox--bounding hw-checkbox--full">
+    Checkbox with looong text that will wrap over several lines and still looks good
+    <input type="checkbox" />
+    <i class="hw-checkbox__indicator"></i>
+  </label>
+</form>
+```
+
 ### Checkbox with bounding box and error
 
 ```html|plain,light
