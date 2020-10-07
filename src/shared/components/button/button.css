@@ -45,7 +45,7 @@
   &--large {
     font-size: 18px;
     height: 58px;
-    padding: 16px 24px;
+    padding: 19px 24px;
     i, svg {
       margin-right: 12px;
     }
@@ -54,7 +54,7 @@
   &--medium {
     font-size: 18px;
     height: 50px;
-    padding: 12px 20px;
+    padding: 15px 20px;
     i, svg {
       margin-right: 10px;
     }
