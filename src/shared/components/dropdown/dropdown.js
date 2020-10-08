@@ -93,7 +93,7 @@ export const HWDropdown = ({
     if (dropDownHeight > viewportHeight) {
       customDropdown.classList.add(tooBigClass);
       dropDownInner.style.transform = `translateY(-${position.offsetFromTop - 30}px)`;
-      dropDownInner.scrollTop=selectedOption.offsetTop;
+      dropDownInner.scrollTop= selectedOption ? selectedOption.offsetTop : 0;
       return;
     }
 
