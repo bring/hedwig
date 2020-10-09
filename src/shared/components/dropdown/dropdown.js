@@ -43,7 +43,7 @@ export const HWDropdown = ({
       if (dropdown) {
         if ('createEvent' in document) {
           const evt = document.createEvent('HTMLEvents');
-          evt.initEvent('change', false, true);
+          evt.initEvent('change', true, true);
           dropdown.dispatchEvent(evt);
         } else {
           dropdown.fireEvent('onchange');
@@ -93,7 +93,7 @@ export const HWDropdown = ({
     if (dropDownHeight > viewportHeight) {
       customDropdown.classList.add(tooBigClass);
       dropDownInner.style.transform = `translateY(-${position.offsetFromTop - 30}px)`;
-      dropDownInner.scrollTop=selectedOption.offsetTop;
+      dropDownInner.scrollTop= selectedOption ? selectedOption.offsetTop : 0;
       return;
     }
 
@@ -149,7 +149,7 @@ export const HWDropdown = ({
     const list = q('.hw-dropdown__options', customDropdown);
 
     // Display/hide dropdown
-    if (list.getAttribute('aria-hidden') === 'false') {
+    if (list && list.getAttribute('aria-hidden') === 'false') {
       list.setAttribute('aria-hidden', true);
       customDropdown.classList.remove(activeClass);
       resetPosition(customDropdown);
@@ -177,7 +177,7 @@ export const HWDropdown = ({
         const list = q('.hw-dropdown__options', customDropdown);
 
         // Display/hide dropdown
-        if (list.getAttribute('aria-hidden') === 'false') {
+        if (list && list.getAttribute('aria-hidden') === 'false') {
           list.setAttribute('aria-hidden', true);
           customDropdown.classList.remove(activeClass);
           resetPosition(customDropdown);
