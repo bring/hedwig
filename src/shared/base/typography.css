@@ -178,6 +178,26 @@
       font-weight: var(--hw-font-weight-light);
     }
 
+    &-technical {
+      font-family: var(--hw-technical-font-family);
+      font-size: var(--hw-font-size-technical);
+    }
+
+    &-technical-title {
+      font-family: var(--hw-font-primary-medium);
+      font-size: var(--hw-font-size-technical);
+    }
+
+    &-caption-title {
+      font-family: var(--hw-font-primary-medium);
+      font-size: var(--hw-font-size-caption);
+    }
+
+    &-caption {
+      font-family: var(--hw-caption-font-family);
+      font-size: var(--hw-font-size-caption);
+    }
+
   }
 
 

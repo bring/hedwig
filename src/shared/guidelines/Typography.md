@@ -71,6 +71,18 @@
   <p class="hw-text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 ```
 
+### Technical title and technical 
+```html|span-4,plain,light
+<p class="hw-text-technical-title">Title</p>
+<p class="hw-text-technical">Technical</p>
+```
+
+### Caption title and caption 
+```html|span-4,plain,light
+<p class="hw-text-caption-title">Title</p>
+<p class="hw-text-caption">Caption</p>
+```
+
 ### Text align
 ```html|span-4,plain,light
   <p>Default (left aligned)</p>
