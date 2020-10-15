@@ -16,6 +16,10 @@
     margin: 0;
     padding: 0;
   }
+
+  &.hw-color-white a {
+    @extend .hw-link--inverted;
+  }
   
   & li.hw-dropdown__option::before {
     content: initial !important;
