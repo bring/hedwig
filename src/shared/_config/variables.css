@@ -1,4 +1,4 @@
-/** 
+/**
 * Media queries, should be outside the :root
 */
 
@@ -70,7 +70,7 @@
   --hw-color-alert-yellow: #fdbb2f;
   --hw-color-alert-red: #e32d22;
 
- 
+
 
   /**
   * Colors with opacity
@@ -99,11 +99,6 @@
   --hw-font-primary-regular: 'Posten Sans Regular', sans-serif;
   --hw-font-primary-medium: 'Posten Sans Medium', sans-serif;
   --hw-font-primary-bold: 'Posten Sans Bold', sans-serif;
-
-  --hw-font-weight-light: 100;
-  --hw-font-weight-regular: 300;
-  --hw-font-weight-medium: 500;
-  --hw-font-weight-bold: 700;
 
   /**
    * Font sizes
@@ -213,22 +208,22 @@
   --hw-font-size-p: calc(var(--hw-font-size-min-p-px) + (var(--hw-font-size-max-p) - var(--hw-font-size-min-p)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-lead: calc(var(--hw-font-size-min-lead-px) + (var(--hw-font-size-max-lead) - var(--hw-font-size-min-lead)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-technical: calc(var(--hw-font-size-min-technical-px) + (var(--hw-font-size-max-technical) - var(--hw-font-size-min-technical)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
-  
+
   --hw-font-size-small: calc(var(--hw-font-size-min-small-px) + (var(--hw-font-size-max-small) - var(--hw-font-size-min-small)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-smaller: calc(var(--hw-font-size-min-smaller-px) + (var(--hw-font-size-max-smaller) - var(--hw-font-size-min-smaller)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
   --hw-font-size-smallest: calc(var(--hw-font-size-min-smallest-px) + (var(--hw-font-size-max-smallest) - var(--hw-font-size-min-smallest)) * ((100vw - var(--hw-font-size-min-view-port-px)) / (var(--hw-font-size-max-view-port) - var(--hw-font-size-min-view-port))));
 
 
-  /*  
+  /*
   Sizes of responsive typography are limited my the max-size-setting.
   The css media query for these are available in typography.css
   */
-  
 
 
 
 
-  
+
+
 
 
   /**
@@ -256,9 +251,9 @@
   /**
    * Transitions
    */
-  --hw-transition-time-quick: 0.130s; 
+  --hw-transition-time-quick: 0.130s;
   --hw-transition-time-normal: 0.300s;
-  --hw-transition-time-slow: 0.700s; 
+  --hw-transition-time-slow: 0.700s;
 
   --hw-transition-easing-normal: ease;
   --hw-transition-easing-in: ease-in;

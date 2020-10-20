@@ -16,7 +16,6 @@
   select,
   button {
     font-family: var(--hw-font-primary-regular);
-    font-weight: var(--hw-font-weight-regular);
   }
 
   a {
@@ -26,7 +25,6 @@
 
   b {
     font-family: var(--hw-font-primary-bold);
-    font-weight: var(--hw-font-weight-bold);
   }
 
   input {
@@ -135,7 +133,6 @@
   .hw-text {
     &-title {
       font-family: var(--hw-font-primary-medium);
-      font-weight: var(--hw-font-weight-medium);
     }
     &-lead {
       font-size: var(--hw-font-size-lead);
@@ -165,22 +162,18 @@
 
     &-bold {
       font-family: var(--hw-font-primary-bold);
-      font-weight: var(--hw-font-weight-bold);
     }
 
     &-medium {
       font-family: var(--hw-font-primary-medium);
-      font-weight: var(--hw-font-weight-medium);
     }
 
     &-regular {
       font-family: var(--hw-font-primary-regular);
-      font-weight: var(--hw-font-weight-regular);
     }
 
     &-light {
       font-family: var(--hw-font-primary-light);
-      font-weight: var(--hw-font-weight-light);
     }
 
     &-technical {
