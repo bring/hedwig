@@ -96,6 +96,7 @@
     margin-bottom: var(--hw-spacing-small-1);
     font-size: var(--hw-font-size-card-title);
     font-family: var(--hw-card-title-font-family);
+    line-height: var(--hw-card-title-line-height);
   }
 
   &__overline {
