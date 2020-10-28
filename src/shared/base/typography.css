@@ -223,6 +223,7 @@
     --hw-font-size-small: var(--hw-font-size-max-small-px);
     --hw-font-size-smaller: var(--hw-font-size-max-smaller-px);
     --hw-font-size-smallest: var(--hw-font-size-max-smallest-px);
+    --hw-font-size-card-title: var(--hw-font-size-max-card-title-px);
   }
 }
 

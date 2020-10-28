@@ -94,7 +94,7 @@
   &__title {
     margin-left: -2px; /* Visually align the larger title better with the smaller texts */
     margin-bottom: var(--hw-spacing-small-1);
-    font-size: calc(var(--hw-font-size-technical) * 2);
+    font-size: var(--hw-font-size-card-title);
     font-family: var(--hw-card-title-font-family);
   }
 
