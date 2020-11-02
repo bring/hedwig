@@ -15,6 +15,7 @@ Styling only - WORK IN PROGRESS
 
 Modifiers:
 [Active]         .hw-autocomplete--active
+[White]          .hw-autocomplete--white
 [Error]          .hw-input--error (on the input field)
 ```
 
@@ -235,6 +236,53 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
 </label>
 ```
 
+## Active autocomplete with white modifier
+
+```html|span-3
+<label class="hw-label">Your address
+  <div class="hw-autocomplete hw-autocomplete--white hw-autocomplete--active" data-hw-autocomplete>
+
+    <div class="hw-autocomplete__input-wrapper">
+      <input
+        type="text"
+        id="autcomplete"
+        data-hw-autocomplete-input
+        class="hw-autocomplete__input"
+        role=”combobox”
+        value="Thi"
+        aria-owns="suggestions"
+        placeholder="Placeholder"
+      />
+
+      <button data-hw-autocomplete-reset class="hw-autocomplete__input-reset">
+        <i class="fa-sm fas fa-times-circle"></i>
+      </button>
+    </div>
+
+    <div id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
+      <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+        <input type="radio" name="hedwig" value="one" />
+        <span class="hw-autocomplete__suggestion-text">
+          This is the first suggestion
+        </span>
+      </label>
+      <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+        <input type="radio" name="hedwig" value="two" />
+        <span class="hw-autocomplete__suggestion-text">
+          This is the second suggestion
+        </span>
+      </label>
+      <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+        <input type="radio" name="hedwig" value="two" />
+        <span class="hw-autocomplete__suggestion-text">
+          Third suggesiton comes here
+        </span>
+      </label>
+    </div>
+
+  </div>
+</label>
+```
 
 
 
