@@ -133,4 +133,14 @@
       display: block !important;
     }
   }
+
+  &--white {
+    input {
+      @extend .hw-input--white;
+    }
+
+    & .hw-autocomplete__suggestions {
+      background: var(--hw-color-white);
+    }
+  }
 }

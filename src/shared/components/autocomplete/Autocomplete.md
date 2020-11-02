@@ -15,6 +15,7 @@ Styling only - WORK IN PROGRESS
 
 Modifiers:
 [Active]         .hw-autocomplete--active
+[White]          .hw-autocomplete--white
 [Error]          .hw-input--error (on the input field)
 ```
 
@@ -236,6 +237,53 @@ Use the attribute `data-hw-autocomplete-reset-visible=true` to display the reset
 ```
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada eros in cursus rhoncus. Nullam in varius lorem, sit amet accumsan elit. Aliquam a purus ut mauris viverra pharetra. Maecenas ante tellus, placerat varius velit eget, porttitor sagittis risus. In auctor, orci eget vulputate cursus, libero quam gravida purus, eu ultrices tortor arcu et lorem. Aenean sit amet auctor ligula. Suspendisse potenti. Donec egestas sapien blandit lacus rutrum, facilisis vulputate ipsum consectetur. Sed vulputate lacus in augue aliquam, et dignissim arcu auctor. Nulla ultricies commodo varius. Vivamus efficitur gravida leo quis ullamcorper.
 
+## Active autocomplete with white modifier
+
+```html|span-3
+<label class="hw-label">Your address
+  <div class="hw-autocomplete hw-autocomplete--white hw-autocomplete--active" data-hw-autocomplete>
+
+    <div class="hw-autocomplete__input-wrapper">
+      <input
+        type="text"
+        id="autcomplete"
+        data-hw-autocomplete-input
+        class="hw-autocomplete__input"
+        role=”combobox”
+        value="Thi"
+        aria-owns="suggestions"
+        placeholder="Placeholder"
+      />
+
+      <button data-hw-autocomplete-reset class="hw-autocomplete__input-reset">
+        <i class="fa-sm fas fa-times-circle"></i>
+      </button>
+    </div>
+
+    <div id="suggestions" class="hw-autocomplete__suggestions" role="listbox">
+      <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+        <input type="radio" name="hedwig" value="one" />
+        <span class="hw-autocomplete__suggestion-text">
+          This is the first suggestion
+        </span>
+      </label>
+      <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+        <input type="radio" name="hedwig" value="two" />
+        <span class="hw-autocomplete__suggestion-text">
+          This is the second suggestion
+        </span>
+      </label>
+      <label class="hw-autocomplete__suggestion" role="option" data-hw-autocomplete-suggestion>
+        <input type="radio" name="hedwig" value="two" />
+        <span class="hw-autocomplete__suggestion-text">
+          Third suggesiton comes here
+        </span>
+      </label>
+    </div>
+
+  </div>
+</label>
+```
 
 
 
