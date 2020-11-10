@@ -75,4 +75,10 @@
       }
     }
   }
+
+  &--white {
+    .hw-dropdown, .hw-dropdown--native {
+      @extend .hw-dropdown--white;
+    }
+  }
 }

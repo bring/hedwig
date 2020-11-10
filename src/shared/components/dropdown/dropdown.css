@@ -186,17 +186,8 @@
     border-radius: 0px;
 
     &.hw-dropdown--native {
-      background-image:
-      /* Cut off the sharp ends of the arrow */
-      linear-gradient(45deg, transparent 74%, var(--hw-color-white) 0%),
-      linear-gradient(135deg, var(--hw-color-white) 26%, transparent 26%),
-      /* Draw the arrow */
-      linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
-      linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray-dark) 29%, var(--hw-color-gray-dark) 37%, transparent 38%, transparent 100%),
-      linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray-dark) 63%, var(--hw-color-gray-dark) 71%, var(--hw-color-white) 72%, var(--hw-color-white) 100%);
-      background-size: var(--hw-spacing-small-4) var(--hw-spacing-small-4);
+      /* Place the arrow, created below */
       background-position: calc(100% - var(--hw-spacing-small-4)) 25%;
-      background-repeat: no-repeat;
     }
 
     .hw-dropdown__inner {
@@ -221,6 +212,32 @@
     &[disabled], &:disabled, &[disabled="disabled"] {
       background: transparent;
       padding: var(--hw-spacing-small-4);
+    }
+  }
+
+  &--white {
+    .hw-dropdown__inner {
+      background-color: var(--hw-color-white);
+    }
+    &.hw-dropdown--native {
+      background-color: var(--hw-color-white);
+      /* Place the arrow, created below */
+      background-position: calc(100% - var(--hw-spacing-small-4)) 45%;
+    }
+  }
+
+  &--line, &--white {
+    &.hw-dropdown--native {
+      background-image:
+      /* Cut off the sharp ends of the arrow */
+      linear-gradient(45deg, transparent 74%, var(--hw-color-white) 0%),
+      linear-gradient(135deg, var(--hw-color-white) 26%, transparent 26%),
+      /* Draw the arrow */
+      linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
+      linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray-dark) 29%, var(--hw-color-gray-dark) 37%, transparent 38%, transparent 100%),
+      linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray-dark) 63%, var(--hw-color-gray-dark) 71%, var(--hw-color-white) 72%, var(--hw-color-white) 100%);
+      background-size: var(--hw-spacing-small-4) var(--hw-spacing-small-4);
+      background-repeat: no-repeat;
     }
   }
 
