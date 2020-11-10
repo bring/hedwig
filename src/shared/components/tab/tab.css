@@ -14,6 +14,9 @@
   &::-webkit-scrollbar {
     display: none;
   }
+  &__initialized {
+    overflow-x: -moz-hidden-unscrollable;
+}
 
   /* The box-shadow creates the gray bar under the tab items */
   box-shadow: inset 0 -1px 0 0 var(--hw-color-gray-light-fill);
