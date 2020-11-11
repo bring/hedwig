@@ -199,27 +199,12 @@ Use the browser native select function
 </label>
 ```
 
-### White
-```html|span-3,light
-<label class="hw-label hw-label--white">
-  Select country
-  <select class="hw-dropdown" data-hw-dropdown="countries-white" id="countries-white">
-    <option value="1">Afghanistan</option>
-    <option value="2">Algerie</option>
-    <option value="3">Antarctica</option>
-    <option value="4">Austraoptiona</option>
-    <option value="5">Booptionvia</option>
-    <option value="6">Bosnia</option>
-  </select>
-</label>
-```
-
 ### White Native
 Use the browser native select function
 ```html|span-3,light
-<label class="hw-label hw-label--white">
+<label class="hw-label">
   Select country
-  <select class="hw-dropdown--native" data-hw-dropdown="countries-white-native" id="countries-white-native">
+  <select class="hw-dropdown hw-dropdown--native hw-dropdown--white" data-hw-dropdown="countries-white-native" id="countries-white-native">
     <option selected="true" disabled="disabled">Select country</option>
     <option value="1">Afghanistan</option>
     <option value="2">Albania</option>
