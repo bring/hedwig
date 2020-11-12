@@ -14,7 +14,6 @@
   color: var(--hw-color-button-text);
   fill: var(--hw-color-button-text);
   font-family: var(--hw-font-primary-medium);
-  font-weight: var(--hw-font-weight-medium);
   font-size: var(--hw-font-size-small);
   line-height: var(--hw-font-size-p);
   transition: all var(--hw-transition-time-quick) var(--hw-transition-easing-normal);

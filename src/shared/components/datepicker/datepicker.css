@@ -69,7 +69,6 @@
   border: none;
   border-radius: var(--hw-border-radius);
   font-family: var(--hw-font-primary-regular), Helvetica, Arial, sans-serif;
-  font-weight: var(--hw-font-weight-regular);
 }
 
 .pika-select option {
@@ -239,7 +238,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-table th {
   color: var(--hw-color-gray-dark);
   font-size: var(--hw-font-size-smallest);
-  font-weight: var(--hw-font-weight-regular);
   line-height: 25px;
   text-align: center;
   text-decoration: none;
