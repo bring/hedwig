@@ -39,7 +39,6 @@
     h5 {
       font-size: var(--hw-font-size-small);
       font-family: var(--hw-font-primary-medium);
-      font-weight: var(--hw-font-weight-medium);
       margin-bottom: var(--hw-spacing-small-4);
     }
 
@@ -95,7 +94,6 @@
       li button {
         font-size: var(--hw-font-size-p);
         font-family: var(--hw-font-primary-medium);
-        font-weight: var(--hw-font-weight-medium);
       }
       .hw-accordion__link-items {
         padding-left: 0px;

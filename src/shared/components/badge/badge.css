@@ -17,7 +17,6 @@
   line-height: 1.1;
   font-size: 0.75em; /* 75% of surrounding content unless spesified otherwise*/
   font-family: var(--hw-font-primary-medium);
-  font-weight: var(--hw-font-weight-medium);
 
   -moz-osx-font-smoothing: subpixel-antialiased;
   -webkit-font-smoothing: subpixel-antialiased;
