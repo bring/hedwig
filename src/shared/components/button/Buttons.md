@@ -21,7 +21,6 @@ Modifiers:
 Colors    
 [Primary]           .hw-button--primary
 [Secondary]         .hw-button--secondary
-[Dark]              .hw-button--picture-dark
     
 [Outline]           .hw-button--outline
 [Outline white]     .hw-button--outline-white
@@ -83,18 +82,6 @@ Colors
   </button>
   <button class="hw-button hw-button--medium hw-button--primary" disabled>
     Disabled button
-  </button>
-```
-
-### Alternative colors
-Alternative colored buttons can be used where extra contrast is needed ie. when the background is a picture
-
-```html|span-6
-light: true,
-plain: true
----
-  <button class="hw-button hw-button--picture-dark">
-    Dark button
   </button>
 ```
 
