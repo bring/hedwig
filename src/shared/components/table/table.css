@@ -49,7 +49,6 @@
   & td {
     padding: var(--hw-spacing-small-4) 0;
     font-family: var(--hw-font-primary-regular);
-    font-weight: var(--hw-font-weight-regular);
     vertical-align: top;
   } 
 
@@ -57,7 +56,6 @@
     text-decoration-line: underline;
     font-size: var(--hw-font-size-smaller);
     font-family: var(--hw-font-primary-regular);
-    font-weight: var(--hw-font-weight-regular);
   }
   & td a:hover {
     color: var(--hw-color-primary-dark);
@@ -66,7 +64,6 @@
   & td p {
     font-size: var(--hw-font-size-smaller);
     font-family: var(--hw-font-primary-regular);
-    font-weight: var(--hw-font-weight-regular);
   }
 
 
