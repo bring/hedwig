@@ -35,12 +35,10 @@
     outline: 0;
 
     font-family: var(--hw-font-primary-medium);
-    font-weight: var(--hw-font-weight-medium);
     font-size: var(--hw-font-size-smaller);
 
     a {
       font-family: var(--hw-font-primary-medium);
-      font-weight: var(--hw-font-weight-medium);
       font-size: var(--hw-font-size-smaller);
       text-decoration: underline;
     }
@@ -96,7 +94,6 @@
     background-color: var(--hw-color-alert-yellow);
     text-align: center;
     font-family: var(--hw-font-primary-regular);
-    font-weight: var(--hw-font-weight-regular);
     font-size: var(--hw-font-size-smaller);
 
     transition: all var(--hw-transition-time-normal) var(--hw-transition-easing-normal);

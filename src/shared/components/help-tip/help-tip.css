@@ -66,7 +66,6 @@
         color: var(--hw-color-black);
         padding: var(--hw-spacing-medium-2);
         font-family: var(--hw-font-primary-regular);
-        font-weight: var(--hw-font-weight-regular);
         font-size: var(--hw-font-size-p);
         max-width: 300px;
         width: 300px;
@@ -113,7 +112,6 @@
 
     &__title {
       font-family: var(--hw-font-primary-medium);
-      font-weight: var(--hw-font-weight-medium);
       font-size: var(--hw-font-size-p);
     }
 

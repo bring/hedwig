@@ -59,7 +59,6 @@
 
   &--no-underline {
     font-family: var(--hw-font-primary-medium);
-    font-weight: var(--hw-font-size-medium);
     color: var(--hw-color-primary-dark);
     text-decoration: none;
     border-bottom: none;
