@@ -17,7 +17,7 @@ This is because this is technically two form fields.
 ```
 
 ```hint|warning
-IMPORTANT! The support for a custom dropdown will end shortly, we strongly recommend using the native dropdown
+IMPORTANT! The support for custom styled dropdowns will end shortly, we strongly recommend using the native dropdown
 ```
 
 ## Example with native dropdown
