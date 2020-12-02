@@ -48,7 +48,7 @@
     }
   }
 
-  &__arrow {
+  &__icon {
     &::before,
     &::after {
       position: absolute;
@@ -68,6 +68,8 @@
       transform: rotate(90deg);
     }
   }
+
+  
 
   &__contents {
     padding: 0 var(--hw-spacing-medium-4) var(--hw-spacing-medium-3) 0;
@@ -139,6 +141,14 @@
   }
 
 }
+
+
+/**
+ * Backwards compatibility
+ */
+.hw-accordion__arrow {
+    @extend .hw-accordion__icon;
+  }
 
 /**
   * no-js fallbacks
