@@ -49,6 +49,15 @@
   <h5>H5 Headline example</h5>
 ```
 
+H3 comes in two weights, regular and medium
+```html|span-4,plain,light
+<h3 class="hw-h3-title">H3 title</h3>
+<h3>Plain H3</h3>
+
+```
+
+
+
 ### Paragraph
 
 ```html|span-4,plain,light
