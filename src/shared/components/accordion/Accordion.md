@@ -18,7 +18,7 @@ Modifiers:
 Elements:
 [Item]                 .hw-accordion__item
 [Trigger]              .hw-accordion__trigger
-[Arrow]                .hw-accordion__arrow
+[Icon]                 .hw-accordion__icon
 [Contents]             .hw-accordion__contents
 [Item Expanded]        .hw-accordion__item-expanded
 ```
@@ -46,7 +46,7 @@ Optional:
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Hvordan finner jeg hvilket hentested som tilhører min adresse?
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -58,7 +58,7 @@ Optional:
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Hva er hentefristen på sendinger jeg må hente på Posten?
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -74,7 +74,7 @@ Optional:
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Hvilke regler gjelder når jeg skal motta en sending fra utlandet?
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -95,7 +95,7 @@ Optional:
     <li class="hw-accordion__item" data-hw-accordion-default-expanded>
       <button class="hw-accordion__trigger">
         Hva er hentefristen på sendinger jeg må hente på Posten?
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -111,7 +111,7 @@ Optional:
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Hvordan finner jeg hvilket hentested som tilhører min adresse?
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -122,7 +122,7 @@ Optional:
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Hvilke regler gjelder når jeg skal motta en sending fra utlandet?
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -143,7 +143,7 @@ Optional:
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Hva er hentefristen på sendinger jeg må hente på Posten?
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -155,7 +155,7 @@ Optional:
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Hvordan finner jeg hvilket hentested som tilhører min adresse?
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -166,7 +166,7 @@ Optional:
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Hvilke regler gjelder når jeg skal motta en sending fra utlandet?
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -188,7 +188,7 @@ This version is used in the menu on mobile
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Kundeservice
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
       <ul class="hw-accordion__link-items">
@@ -204,7 +204,7 @@ This version is used in the menu on mobile
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Våre tjenester
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <ul class="hw-accordion__link-items">
@@ -220,7 +220,7 @@ This version is used in the menu on mobile
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Søk etter
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <ul class="hw-accordion__link-items">
