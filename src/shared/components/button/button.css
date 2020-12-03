@@ -19,7 +19,7 @@
   transition: all var(--hw-transition-time-quick) var(--hw-transition-easing-normal);
   text-align: center; /* Center text when this is an <a> */
   cursor: pointer;
-  outline: 0px solid transparent;
+ /* outline: 0px solid transparent;*/
   word-break: normal;
 
   &:last-of-type {
@@ -94,8 +94,7 @@
     fill: var(--hw-color-button-text);
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       background: var(--hw-color-button-primary-hover);
       border-color: var(--hw-color-primary);
       outline: 0px solid var(--hw-color-button-primary-hover);
@@ -113,8 +112,7 @@
     fill: var(--hw-color-white);
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       background: var(--hw-color-black);
       outline: 0px solid var(--hw-color-black);
     }
@@ -135,8 +133,7 @@
     }
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       color: var(--hw-color-black);
       fill: var(--hw-color-black);
       border-color: var(--hw-color-black);
@@ -161,8 +158,7 @@
     fill: var(--hw-color-white);
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       color: var(--hw-color-primary-light);
       fill: var(--hw-color-primary-light);
       outline: 0px solid var(--hw-color-white);
@@ -181,8 +177,7 @@
     fill: var(--hw-color-black);
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       color: var(--hw-color-primary-dark);
       fill: var(--hw-color-primary-dark);
       border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
@@ -203,8 +198,7 @@
     fill: var(--hw-color-primary-darker);
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       color: var(--hw-color-black);
       fill: var(--hw-color-black);
       border: var(--hw-border-thickness) solid var(--hw-color-black);
@@ -237,17 +231,16 @@
     border-radius: 50%;
     background: var(--hw-color-primary-light);
     color: var(--hw-color-primary-darker);
-    outline: none;
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       color: var(--hw-color-primary-darker);
       fill: var(--hw-color-primary-darker);
       border-color: var(--hw-color-button-primary-light-hover);
       background: var(--hw-color-button-primary-light-hover);
       outline: none;
     }
+
     &:active {
       background: var(--hw-color-button-primary-light-hover);
     }

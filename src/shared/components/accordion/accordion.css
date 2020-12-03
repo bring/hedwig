@@ -43,9 +43,9 @@
       color: var(--hw-color-primary-dark);
       outline: 0;
     }
-    &:focus {
+ /*   &:focus {
       outline: 0;
-    }
+    }*/
   }
 
   &__arrow {
