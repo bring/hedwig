@@ -73,6 +73,10 @@
     padding: 0 var(--hw-spacing-medium-4) var(--hw-spacing-medium-3) 0;
   }
 
+  &__contents[aria-hidden=true] {
+    display:none;
+  }
+
   &__item--expanded .hw-accordion__arrow::after {
     transform: rotate(90deg) scale(0.0, 1.0);
   }
