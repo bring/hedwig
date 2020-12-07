@@ -27,34 +27,67 @@ The `hw-block` is the basic block component and the `hw-block--pt` adds padding 
 
 ### Sub elements
 
-Some components can containt `sub elements`, so let's look at [Frame](/Frame) that does
+Some components can containt `sub elements`, so let's look at [Accordion](/Accordion) that does
 
 ```
-<div class="hw-frame">
-    <div class="hw-frame__item hw-frame__item--bg-gray">
-        Some text in the frame
+<ul class="hw-accordion" data-hw-accordion>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Item
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg hw-wysiwyg--small">
+          <p>Item text here
+          </p>
+      </div>
     </div>
-    <div class="hw-frame__item hw-frame__item--ml hw-frame__item--bg-gray">
-        Some text in the frame
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Item
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg hw-wysiwyg--small">
+          <p>Item text here
+          </p>
+      </div>
     </div>
-</div>
+    </li>
+  </ul>
 ```
 
-```html
-<div class="hw-frame">
-    <div class="hw-frame__item hw-frame__item--bg-gray">
-        Some text in the frame
+```html|span-6,plain,light
+<ul class="hw-accordion" data-hw-accordion>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Item
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg hw-wysiwyg--small">
+          <p>Item text here
+          </p>
+      </div>
     </div>
-    <div class="hw-frame__item hw-frame__item--ml hw-frame__item--bg-gray">
-        Some text in the frame
+    </li>
+    <li class="hw-accordion__item">
+      <button class="hw-accordion__trigger">
+        Item
+        <div class="hw-accordion__arrow"></div>
+      </button>
+      <div class="hw-accordion__contents">
+        <div class="hw-wysiwyg hw-wysiwyg--small">
+          <p>Item text here
+          </p>
+      </div>
     </div>
-</div>
+    </li>
+  </ul>
 ```
 
-The component here is `hw-frame` and it contains one or more `hw-frame__item` sub elements.
-
-The `sub elements` here are the `hw-frame__item`s that contains the content of the frame items.
-`hw-frame__item--bg-gray` and `hw-frame__item--ml` are `modifiers` and adds background color and margin to the left respectively.
+The component here is `hw-accordion` and it contains one or more `hw-accordion__item` sub elements.
 
 
 #### Another component, [Icon-link](/Icon-link).
