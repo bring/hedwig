@@ -156,6 +156,7 @@
     border: var(--hw-border-thickness) solid var(--hw-color-primary-light);
     color: var(--hw-color-white);
     fill: var(--hw-color-white);
+    outline-offset: 3px;
 
     &:hover,
     &:active {
@@ -175,6 +176,7 @@
     border: var(--hw-border-thickness) solid var(--hw-color-primary);
     color: var(--hw-color-black);
     fill: var(--hw-color-black);
+    outline-offset: 3px;
 
     &:hover,
     &:active {
@@ -196,6 +198,7 @@
     border: var(--hw-border-thickness) solid var(--hw-color-primary-darker);
     color: var(--hw-color-primary-darker);
     fill: var(--hw-color-primary-darker);
+    outline-offset: 3px;
 
     &:hover,
     &:active {
