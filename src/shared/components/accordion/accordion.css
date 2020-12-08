@@ -154,6 +154,10 @@
     @extend .hw-accordion__icon;
   }
 
+.hw-accordion__item--expanded .hw-accordion__arrow::after {
+    transform: rotate(90deg) scale(0.0, 1.0);
+  }
+
 /**
   * no-js fallbacks
   */
