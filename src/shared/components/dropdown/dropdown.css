@@ -253,9 +253,7 @@
     &:hover, &:active {
       border-color: var(--hw-color-gray-dark);
     }
-    /*&:focus {
-      outline: 0;
-    }*/
+  
     background-image:
     /* Cut off the sharp ends of the arrow */
     linear-gradient(45deg, transparent 74%, var(--hw-color-gray-light-fill) 0%),
