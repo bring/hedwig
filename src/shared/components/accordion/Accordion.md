@@ -233,12 +233,6 @@ This version is used in the menu on mobile
         </ul>
       </div>
     </li>
-    <li class="hw-accordion__item">
-      <a class="hw-accordion__link" href="#">Lenke</a>
-    </li>
-    <li class="hw-accordion__item">
-      <a class="hw-accordion__link" href="#">Lenke</a>
-    </li>
   </ul>
 ```
 

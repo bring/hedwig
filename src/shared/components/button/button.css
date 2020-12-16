@@ -19,7 +19,6 @@
   transition: all var(--hw-transition-time-quick) var(--hw-transition-easing-normal);
   text-align: center; /* Center text when this is an <a> */
   cursor: pointer;
- /* outline: 0px solid transparent;*/
   word-break: normal;
 
   &:last-of-type {
@@ -137,13 +136,11 @@
       color: var(--hw-color-black);
       fill: var(--hw-color-black);
       border-color: var(--hw-color-black);
-      /*outline: 0px solid var(--hw-color-black);*/
       background: none;
     }
 
     &:active {
       border-color: var(--hw-color-gray-dark);
-      /*outline: 0px solid var(--hw-color-gray-dark);*/
     }
   }
 
@@ -162,7 +159,6 @@
     &:active {
       color: var(--hw-color-primary-light);
       fill: var(--hw-color-primary-light);
-      /*outline: 0px solid var(--hw-color-white);*/
     }
     &:disabled, &[disabled], &[disabled]:active {
       border: var(--hw-border-thickness) solid var(--hw-color-gray-dark);
@@ -183,7 +179,6 @@
       color: var(--hw-color-primary-dark);
       fill: var(--hw-color-primary-dark);
       border: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
-     /* outline: 0px solid var(--hw-color-white);*/
     }
     &:disabled, &[disabled], &[disabled]:active {
       border: var(--hw-border-thickness) solid var(--hw-color-gray-normal);
@@ -216,7 +211,6 @@
   }
 
   &--stripped {
-   /* outline: 0;*/
     background: none;
     fill: var(--hw-color-gray-dark);
     color: var(--hw-color-gray-dark);
@@ -241,7 +235,6 @@
       fill: var(--hw-color-primary-darker);
       border-color: var(--hw-color-button-primary-light-hover);
       background: var(--hw-color-button-primary-light-hover);
-      /*outline: none;*/
     }
 
     &:active {
