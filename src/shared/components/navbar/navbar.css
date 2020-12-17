@@ -91,7 +91,6 @@
     .hw-navbar__selector-item {
       border: none;
       background: transparent;
-      outline: 0;
       padding: var(--hw-spacing-small-4) var(--hw-spacing-small-2);
       font-size: var(--hw-font-size-small);
       margin-right: var(--hw-spacing-small-2);
@@ -200,10 +199,9 @@
   &__item, &__search-button, &__menu-button
   {
     height: var(--hw-navbar-height-mobile);
-    outline: 0;
     color: inherit;
     background-color: transparent;
-    &:hover, &:focus {
+    &:hover {
       color: var(--hw-color-link-hover);
     }
     @media (--large) {

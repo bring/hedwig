@@ -50,7 +50,6 @@
     cursor: pointer;
     background-color: transparent;
     font-size: var(--hw-font-size-smaller);
-    outline: none;
   }
 
   &__button::after {

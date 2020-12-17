@@ -126,11 +126,9 @@
     border: var(--hw-border-thickness) solid var(--hw-color-primary-light);
     color: var(--hw-color-white);
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       color: var(--hw-color-primary-light);
       fill: var(--hw-color-primary-light);
-      outline: 0px solid var(--hw-color-white);
     }
   }
 

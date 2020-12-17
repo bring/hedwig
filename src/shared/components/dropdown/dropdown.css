@@ -6,14 +6,6 @@
   position: relative;
   height: var(--hw-input-field-height);
 
-  &:focus {
-    outline: 0;
-  }
-
-  &:focus .hw-dropdown__inner {
-    border-color: var(--hw-color-gray-dark);
-  }
-
   /* Clearfix */
   &::after {
     display: table;
@@ -153,7 +145,6 @@
 
   &--searchable {
     & .hw-dropdown__placeholder {
-      outline: 0;
       border: 0;
     }
     &.hw-dropdown--expanded .hw-dropdown__placeholder,
@@ -259,12 +250,10 @@
     padding: var(--hw-spacing-small-4);
     transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active {
       border-color: var(--hw-color-gray-dark);
     }
-    &:focus {
-      outline: 0;
-    }
+  
     background-image:
     /* Cut off the sharp ends of the arrow */
     linear-gradient(45deg, transparent 74%, var(--hw-color-gray-light-fill) 0%),
