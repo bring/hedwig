@@ -153,10 +153,10 @@
   --hw-font-size-min-h6-px: 14px;
   --hw-h6-line-height: 1.5;
 
-  --hw-font-size-max-caption: 12; /* 13 */
-  --hw-font-size-max-caption-px: 12px;
-  --hw-font-size-min-caption: 11;
-  --hw-font-size-min-caption-px: 11px;
+  --hw-font-size-max-caption: 13;
+  --hw-font-size-max-caption-px: 13px;
+  --hw-font-size-min-caption: 12;
+  --hw-font-size-min-caption-px: 12px;
   --hw-caption-line-height: 1.5;
 
   --hw-font-size-max-p: 20; /* 22 */
