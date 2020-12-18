@@ -1,0 +1,20 @@
+/**
+ * Block
+ */
+
+ .hw-message {
+    padding: var(--hw-spacing-medium-2);
+    background-color: var(--hw-color-primary-lighter);
+    border-radius: var(--hw-border-radius);
+    @media (--large){
+        padding: var(--hw-spacing-medium-3);
+    }
+
+
+    &__title, &__body {
+        margin-bottom: var(--hw-spacing-small-3);
+        @media (--large){
+            margin-bottom: var(--hw-spacing-small-4);
+        }
+    }
+}
