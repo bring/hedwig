@@ -1,17 +1,12 @@
 
-{navigation}
-
-
-
-
 
 > The custom dropdown will progressively enhance a native `<select />` element into a custom dropdown list.
 
 > Upon selecting an option, the native select will be updated with the correct value.
 
 
-```hint|neutral
-PS: When javaScript is disabled, the native select element will display.
+```hint|warning
+IMPORTANT! We strongly recommend that you use native dropdown as we will stop supporting progressive javascriptbased dropdown shortly
 ```
 
 ### Markup
@@ -39,24 +34,6 @@ Optional:
 [data-hw-dropdown-dirty]              Set to 'true' when updates are needed for a specific dropdown
 
 Client side rendering, see further down
-```
-
-
-
-
-### Example
-```html|span-3,plain,light
-<label class="hw-label">
-  Select country
-  <select data-hw-dropdown="countries" id="countries">
-    <option value="1">Afghanistan</option>
-    <option value="2">Algerie</option>
-    <option value="3">Antarctica</option>
-    <option value="4">Austraoptiona</option>
-    <option value="5">Booptionvia</option>
-    <option value="6">Bosnia</option>
-  </select>
-</label>
 ```
 
 ### Native
@@ -120,6 +97,24 @@ Use the browser native select function
 ```
 ```hint
 For mobile and tablet, native mode will be enabled automatically
+```
+
+
+
+
+### Example
+```html|span-3,plain,light
+<label class="hw-label">
+  Select country
+  <select data-hw-dropdown="countries" id="countries">
+    <option value="1">Afghanistan</option>
+    <option value="2">Algerie</option>
+    <option value="3">Antarctica</option>
+    <option value="4">Austraoptiona</option>
+    <option value="5">Booptionvia</option>
+    <option value="6">Bosnia</option>
+  </select>
+</label>
 ```
 
 
