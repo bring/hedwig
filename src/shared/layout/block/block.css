@@ -250,7 +250,14 @@
   &--px {
     padding-left: var(--hw-spacing-medium-2);
     padding-right: var(--hw-spacing-medium-2);
+
+    &-responsive {
+      padding-left: var(--hw-spacing-medium-3);
+      padding-right: var(--hw-spacing-medium-3);
+    }
   }
+
+
 
   /**
    * Modifiers: Responsive gutter
@@ -277,6 +284,12 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  .hw-block--px-responsive {
+    padding-left: var(--hw-spacing-medium-2);
+    padding-right: var(--hw-spacing-medium-2);
+  }
+
 }
 @media (--medium-max){
   .hw-block {
