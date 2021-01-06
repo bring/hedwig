@@ -363,12 +363,15 @@
       padding-right: var(--hw-spacing-medium-2);
     }
 
+    &--pt-responsive { padding-top: var(--hw-spacing-medium-2); }
+    &--pb-responsive { padding-bottom: var(--hw-spacing-medium-2); }
+
     
   }
 }
 
 
-/****************** Removed from documentation, should these be deprecated? *******************/
+/****************** Deprecated *******************/
 
 @media (--max-medium) {
   .hw-block--mt-larger-mobile {
