@@ -16,110 +16,16 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 <div class="hw-block">...</div>
 ```
 
-### Example blocks
+### Block modifiers (margin & padding)
 
-```html|span-4,plain,light
-  <div class="hw-block">
-    <p>Default block</p>
-  </div>
+```code
+[Padding sides]                                   .hw-block--px
+[Responsive Padding sides]                        .hw-block--px-responsive
+[Mobile only Padding sides]                       .hw-block--px-mobile
+[Margin/Padding top/bottom] default               .hw-block--[mt/mb/pt/pb]
+[Margin top/bottom [size][responsive]]            .hw-block--[mt/mb]-[size]-responsive
+[Margin top/bottom [size]]                        .hw-block--[mt/mb]-[size]
 ```
-
-### Variants (with margins & padding higlighted)
-
-```html|span-4,plain,light,no-source
-  <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block">
-      <p>Default block</p>
-    </div>
-  </div>
-  <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block-px">
-      <p>Block with horizontal padding</p>
-    </div>
-  </div>
-  <div class="hw-helpers-margin-highlighter">
-    <div class="
-      hw-block
-      hw-block--mt
-      hw-block--mb
-    ">
-      <p>Block with top and bottom margins</p>
-    </div>
-  </div>
-  <div class="hw-helpers-margin-highlighter">
-    <div class="
-      hw-block
-      hw-block--mt-small
-      hw-block--mb-small
-    ">
-      <p>Block with small top and bottom margins</p>
-    </div>
-  </div>
-  <div class="hw-helpers-margin-highlighter">
-    <div class="
-      hw-block
-      hw-block--mt-large
-      hw-block--mb-large
-    ">
-      <p>Block with large top and bottom margins</p>
-    </div>
-  </div>
-```
-
-### Responsive block (px)
-
-```html|span-6,responsive
-  <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--px">
-      <p>Default px block</p>
-    </div>
-  </div>
-  <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--px-fluid">
-      <p>Fluid px block</p>
-    </div>
-  </div>
-  <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--px-mobile">
-      <p>Mobile px block</p>
-    </div>
-  </div>
-```
-
-### Responsive spacing (with margins & padding higlighted)
-The values are one level down when screen is less than and equal to 720px
-
-```html|span-6,responsive
-  
-  <div class="hw-helpers-margin-highlighter">
-    <div class="
-      hw-block
-      hw-block--mb-small-2--responsive
-      hw-block--mt-small-2--responsive
-    ">
-      <p>Block with responsive spacing top and bottom margins</p>
-    </div>
-  </div>
-  <div class="hw-helpers-margin-highlighter">
-     <div class="
-      hw-block
-      hw-block--mb-small-3--responsive
-      hw-block--mt-small-3--responsive
-    ">
-      <p>Block with responsive spacing top and bottom margins</p>
-    </div>
-  </div>
-   <div class="hw-helpers-margin-highlighter">
-     <div class="
-      hw-block
-      hw-block--mb-small-4--responsive
-      hw-block--mt-small-4--responsive
-    ">
-      <p>Block with responsive spacing top and bottom margins</p>
-    </div>
-  </div>
-```
-
 
 ### Sizes
 
@@ -142,52 +48,76 @@ large-5: 160px;
 ```
 
 
-### Block modifiers (margin & padding)
+### Variants (with margins & padding higlighted)
 
-```code
-[Padding sides]                                   .hw-block--px
-[Fluid Padding sides]                             .hw-block--px-fluid
-[Mobile Padding sides]                            .hw-block--px-mobile
-[Margin/Padding top/bottom] default               .hw-block--[mt/mb/pt/pb]
-[Margin/Padding top/bottom [size]]                .hw-block--[mt/mb/pt/pb]-[size]
-[Margin/Padding top/bottom [size][responsive]]    .hw-block--[mt/mb/pt/pb]-[size]-responsive
-```
-
-### Example
-```code
-<div class="hw-block hw-block--mb">
-  <p>Block with standard margin bottom</p>
-</div>
-<div class="hw-block hw-block--pb-larger">
-  <p>Block with larger padding bottom</p>
-</div>
-```
-```html|span-3,no-source
-<div class="hw-helpers-margin-highlighter">
-  <div class="hw-block hw-block--mb">
-    <p>Block with standard margin bottom</p>
+```html|span-4,plain,light
+  <div class="hw-helpers-margin-highlighter">
+    <div class="hw-block">
+      <p>Default block</p>
+    </div>
   </div>
-</div>
-<div class="hw-helpers-margin-highlighter">
-  <div class="hw-block hw-block--pb-larger">
-    <p>Block with larger padding bottom</p>
+  <div class="hw-helpers-margin-highlighter">
+    <div class="hw-block hw-block--px">
+      <p>Block with default horizontal padding</p>
+    </div>
   </div>
-</div>
-```
-
-
-### Example targeted margin
-```code
-<div class="hw-block hw-block--mb-larger-mobile hw-block--mb-even-larger-desktop">
-  <p>Block with larger margin bottom on mobile and even larger margin bottom on desktop</p>
-</div>
-```
-
-```html|no-source,responsive
-<div class="hw-helpers-margin-highlighter">
-  <div class="hw-block hw-block--mb-larger-mobile hw-block--mb-even-larger-desktop">
-    <p>Block with larger margin bottom on mobile and even larger margin bottom on desktop</p>
+  <div class="hw-helpers-margin-highlighter">
+    <div class="hw-block hw-block--pt hw-block--pb">
+      <p>Block with default top anb bottom padding</p>
+    </div>
   </div>
-</div>
+  <div class="hw-helpers-margin-highlighter">
+    <div class="hw-block hw-block--mt hw-block--mb">
+      <p>Block with default top and bottom margins</p>
+    </div>
+  </div>
+  <div class="hw-helpers-margin-highlighter">
+    <div class="hw-block hw-block--mt-small-4 hw-block--mb-small-4">
+      <p>Block with small top and bottom margins</p>
+    </div>
+  </div>
+  <div class="hw-helpers-margin-highlighter">
+    <div class="hw-block hw-block--mt-large-1 hw-block--mb-large-1">
+      <p>Block with large top and bottom margins</p>
+    </div>
+  </div>
 ```
+
+### Responsive spacing (with margins & padding higlighted)
+The values are one level down when screen is less than and equal to 720px
+
+```html|span-6,responsive
+  <div class="hw-helpers-margin-highlighter">
+    <div class="hw-block hw-block--px-responsive">
+      <p>Block with responsive horisontal padding</p>
+    </div>
+  </div>
+  <div class="hw-helpers-margin-highlighter">
+    <div class="hw-block hw-block--pt-responsive hw-block--pb-responsive">
+      <p>Block with responsive top and bottom padding</p>
+    </div>
+  </div>
+  <div class="hw-helpers-margin-highlighter">
+    <div class="hw-block hw-block--px-mobile">
+      <p>Block with padding only on mobile</p>
+    </div>
+  </div>
+  <div class="hw-helpers-margin-highlighter">
+    <div class="hw-block hw-block--mb-small-2--responsive hw-block--mt-small-2--responsive">
+      <p>Block with responsive spacing top and bottom margins</p>
+    </div>
+  </div>
+  <div class="hw-helpers-margin-highlighter">
+     <div class="hw-block hw-block--mb-small-3--responsive hw-block--mt-small-3--responsive">
+      <p>Block with responsive spacing top and bottom margins</p>
+    </div>
+  </div>
+   <div class="hw-helpers-margin-highlighter">
+     <div class="hw-block hw-block--mb-small-4--responsive hw-block--mt-small-4--responsive">
+      <p>Block with responsive spacing top and bottom margins</p>
+    </div>
+  </div>
+  
+```
+
 

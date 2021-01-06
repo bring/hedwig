@@ -368,6 +368,8 @@
 }
 
 
+/****************** Removed from documentation, should these be deprecated? *******************/
+
 @media (--max-medium) {
   .hw-block--mt-larger-mobile {
     margin-top: var(--hw-spacing-medium-4);
