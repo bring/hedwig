@@ -23,8 +23,8 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 [Responsive Padding sides]                        .hw-block--px-responsive
 [Mobile only Padding sides]                       .hw-block--px-mobile
 [Margin/Padding top/bottom] default               .hw-block--[mt/mb/pt/pb]
-[Margin top/bottom [size][responsive]]            .hw-block--[mt/mb]-[size]-responsive
-[Margin top/bottom [size]]                        .hw-block--[mt/mb]-[size]
+[Margin/Padding top/bottom [size][responsive]]    .hw-block--[mt/mb/pt/pb]-[size]-responsive
+[Margin/Padding top/bottom [size]]                .hw-block--[mt/mb/pt/pb]-[size]
 ```
 
 ### Sizes
