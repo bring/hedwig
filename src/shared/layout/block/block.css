@@ -250,17 +250,12 @@
   &--px {
     padding-left: var(--hw-spacing-medium-2);
     padding-right: var(--hw-spacing-medium-2);
-
-    &-responsive {
-      padding-left: var(--hw-spacing-medium-3);
-      padding-right: var(--hw-spacing-medium-3);
-    }
   }
 
 
 
   /**
-   * Modifiers: Responsive gutter
+   * Modifiers: Responsive gutter / padding
    */
 
   &--px-fluid {
@@ -272,6 +267,15 @@
     padding-left: var(--hw-spacing-small-3);
     padding-right: var(--hw-spacing-small-3);
   }
+
+  &--px-responsive {
+    padding-left: var(--hw-spacing-medium-3);
+    padding-right: var(--hw-spacing-medium-3);
+  }
+
+  &--pt-responsive { padding-top: var(--hw-spacing-medium-3); }
+  &--pb-responsive { padding-bottom: var(--hw-spacing-medium-3); }
+
 }
 
 @media (--medium) {
@@ -283,11 +287,6 @@
   .hw-block--px-mobile {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .hw-block--px-responsive {
-    padding-left: var(--hw-spacing-medium-2);
-    padding-right: var(--hw-spacing-medium-2);
   }
 
 }
@@ -358,6 +357,11 @@
     &--pb-large-3--responsive  { padding-bottom: var(--hw-spacing-large-2); }
     &--pb-large-4--responsive  { padding-bottom: var(--hw-spacing-large-3); }
     &--pb-large-5--responsive  { padding-bottom: var(--hw-spacing-large-4); }
+
+    &--px-responsive {
+      padding-left: var(--hw-spacing-medium-2);
+      padding-right: var(--hw-spacing-medium-2);
+    }
 
     
   }
