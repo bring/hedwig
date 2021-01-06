@@ -19,12 +19,17 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 ### Block modifiers (margin & padding)
 
 ```code
+Padding
 [Padding sides]                                   .hw-block--px
 [Responsive Padding sides]                        .hw-block--px-responsive
 [Mobile only Padding sides]                       .hw-block--px-mobile
-[Margin/Padding top/bottom] default               .hw-block--[mt/mb/pt/pb]
-[Margin/Padding top/bottom [size][responsive]]    .hw-block--[mt/mb/pt/pb]-[size]-responsive
-[Margin/Padding top/bottom [size]]                .hw-block--[mt/mb/pt/pb]-[size]
+[Padding top and bottom]                          .hw-block--py
+[Responsive Padding top and bottom]               .hw-block--py-responsive
+
+Margins
+[Margin top/bottom] default                       .hw-block--[mt/mb]
+[Margin top/bottom [size][responsive]]            .hw-block--[mt/mb]-[size]-responsive
+[Margin top/bottom [size]]                        .hw-block--[mt/mb]-[size]
 ```
 
 ### Sizes
@@ -62,7 +67,7 @@ large-5: 160px;
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--pt hw-block--pb">
+    <div class="hw-block hw-block--py">
       <p>Block with default top anb bottom padding</p>
     </div>
   </div>
@@ -93,7 +98,7 @@ The values are one level down when screen is less than and equal to 720px
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--pt-responsive hw-block--pb-responsive">
+    <div class="hw-block hw-block--py-responsive">
       <p>Block with responsive top and bottom padding</p>
     </div>
   </div>
