@@ -75,7 +75,7 @@
   "dependencies": {
     "@babel/runtime": "^7.10.0",
     "@babel/runtime-corejs3": "^7.10.0",
-    "core-js": "^3.6.5",
+    "core-js": "^3.8.2",
     "express": "^4.17.1",
     "glob": "^7.1.6",
     "npm": "^6.14.5",
