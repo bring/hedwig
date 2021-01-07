@@ -170,7 +170,7 @@ export const HWAccordion = ({
       if (!trigger) return;
       const contents = q('.hw-accordion__contents', item);
 
-      if (isInit || trigger.getAttribute('aria-controls') || contents.getAttribute('id')) {
+      if (isInit || trigger.getAttribute('aria-controls') == null || contents.getAttribute('id') == null) {
         // Set name and index attributes
         const randomID = Math.ceil(Math.random() * 1000);
       
@@ -188,7 +188,7 @@ export const HWAccordion = ({
       contents.setAttribute('data-hw-accordion-contents-height', contentsHeight);
       item.setAttribute('data-hw-accordion-item-height', totalHeight);
 
-      if (isInit || trigger.getAttribute('aria-expanded') || contents.getAttribute('aria-hidden')) {
+      if (isInit || trigger.getAttribute('aria-expanded') == null || contents.getAttribute('aria-hidden') == null) {
         // Check for default expanded option
         const openByDefault = item.getAttribute('data-hw-accordion-default-expanded');
 
