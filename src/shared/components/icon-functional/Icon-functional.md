@@ -132,6 +132,7 @@ hw-color-gray-darker
 <i class="fa fa-fw fas fa-exclamation"></i> exclamation<br/><br/>
 <i class="fa fa-fw fas fa-exclamation-circle"></i> exclamation-circle<br/><br/>
 <i class="fa fa-fw fas fa-exclamation-square"></i> fa-exclamation-square<br/><br/>
+<i class="fa fa-fw fas fa-exclamation-triangle"></i> fa-exclamation-triangle<br/><br/>
 <i class="fa fa-fw fas fa-eye"></i> eye<br/><br/>
 <i class="fa fa-fw fas fa-file"></i> file<br/><br/>
 <i class="fa fa-fw fas fa-flag"></i> flag<br/><br/>
@@ -141,6 +142,7 @@ hw-color-gray-darker
 <i class="fa fa-fw fas fa-image"></i> image<br/><br/>
 <i class="fa fa-fw fas fa-info"></i> info<br/><br/>
 <i class="fa fa-fw fas fa-info-circle"></i> fa-info-circle<br/><br/>
+<i class="fa fa-fw fas fa-info-square"></i> fa-info-square<br/><br/>
 <i class="fa fa-fw fas fa-key"></i> key<br/><br/>
 <i class="fa fa-fw fas fa-location-arrow"></i> location-arrow<br/><br/>
 <i class="fa fa-fw fas fa-lock"></i> lock<br/><br/>
