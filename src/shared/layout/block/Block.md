@@ -1,5 +1,9 @@
 ## Block
 
+```hint|warning
+IMPORTANT! Block sizes was updated as part of Hedwig 11, and some modifiers have been deprecated, please make sure to only use the valid modifiers listed below
+```
+
 This is the most commonly used component.
 
 The purpose of the Block component is to apply margin, padding and background-colors to all components.
@@ -50,6 +54,14 @@ large-2: 64px;
 large-3: 80px;
 large-4: 120px;
 large-5: 160px;
+```
+
+### Example code
+
+```code
+<div class="hw-block hw-block--mt-small-4 hw-block--mb-small-4">
+  <p>Block with small top and bottom margins</p>
+</div>
 ```
 
 
@@ -108,17 +120,17 @@ The values are one level down when screen is less than and equal to 720px
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--mb-small-2--responsive hw-block--mt-small-2--responsive">
+    <div class="hw-block hw-block--mb-medium-1--responsive hw-block--mt-medium-1--responsive">
       <p>Block with responsive spacing top and bottom margins</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-     <div class="hw-block hw-block--mb-small-3--responsive hw-block--mt-small-3--responsive">
+     <div class="hw-block hw-block--mb-medium-2--responsive hw-block--mt-medium-2--responsive">
       <p>Block with responsive spacing top and bottom margins</p>
     </div>
   </div>
    <div class="hw-helpers-margin-highlighter">
-     <div class="hw-block hw-block--mb-small-4--responsive hw-block--mt-small-4--responsive">
+     <div class="hw-block hw-block--mb-medium-3--responsive hw-block--mt-medium-3--responsive">
       <p>Block with responsive spacing top and bottom margins</p>
     </div>
   </div>
