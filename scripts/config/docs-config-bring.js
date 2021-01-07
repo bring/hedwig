@@ -26,7 +26,7 @@ module.exports = {
   styles,
   scripts,
   responsiveSizes: [
-    { name: 'small', width: 414, height: 500 },
+    { name: 'small', width: 414, height: 530 },
     { name: 'medium', width: 720, height: 768 },
     { name: 'large', width: 940, height: 1080 },
     { name: 'xlarge', width: 1200, height: 1080 },
