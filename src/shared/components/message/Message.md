@@ -10,9 +10,8 @@
 
 Elements:
 [Icon]                  .hw-message__icon
+[Body]                  .hw-message__body
 [Title]                 .hw-message__title
-[Text]                  .hw-message__text
-[Link]                  .hw-link
 
 Modifiers:
 [Subtle message]        .hw-message--subtle
@@ -25,9 +24,9 @@ Modifiers:
 
 ```html|plain,light
 <div class="hw-message">
-  <div>
+  <div class="hw-message__body">
     <h3 class="hw-message__title">Title</h3>
-    <p class="hw-message__text">The body text is here. Should not be very long</p>
+    <p>The body text is here. Should not be very long</p>
     <a class="hw-link" href="#">Click me</a>
   </div>
 </div>
@@ -38,9 +37,9 @@ Modifiers:
 ```html|plain,light
 <div class="hw-message">
   <i class="fas fa-lg fa-info-square hw-message__icon"></i>
-  <div>
+  <div class="hw-message__body">
     <h3 class="hw-message__title">Title</h3>
-    <p class="hw-message__text">The body text is here. Should not be very long</p>
+    <p>The body text is here. Should not be very long</p>
     <a class="hw-link" href="#">Click me</a>
   </div>
 </div>
@@ -51,7 +50,10 @@ Modifiers:
 ```html|plain,light
 <div class="hw-message hw-message--subtle">
   <i class="fas fa-info-square hw-message__icon"></i>
-  <p>The body text is here. Should not be very long</p>
+  <div class="hw-message__body">
+    <span>The body text is here. Inline elements only.</span>
+    <a href="#" class="hw-link">Click me</a>
+  </div>
 </div>
 ```
 
@@ -60,7 +62,9 @@ Modifiers:
 ```html|plain,dark
 <div class="hw-message hw-message--subtle-light">
   <i class="fas fa-info-square hw-message__icon"></i>
-  <p>The body text is here. Should not be very long</p>
+  <div class="hw-message__body">
+    <span>The body text is here. Inline elements only.</span>
+  </div>
 </div>
 ```
 
@@ -68,9 +72,9 @@ Modifiers:
 
 ```html|plain,light
 <div class="hw-message hw-message--error">
-  <div>
+  <div class="hw-message__body">
     <h3 class="hw-message__title">Title</h3>
-    <p class="hw-message__text">The body text is here. Should not be very long</p>
+    <p>The body text is here. Should not be very long</p>
     <a class="hw-link" href="#">Click me</a>
   </div>
 </div>
@@ -81,9 +85,9 @@ Modifiers:
 ```html|plain,light
 <div class="hw-message hw-message--error">
   <i class="fas fa-lg fa-exclamation-triangle hw-message__icon"></i>
-  <div>
+  <div class="hw-message__body">
     <h3 class="hw-message__title">Title</h3>
-    <p class="hw-message__text">The body text is here. Should not be very long</p>
+    <p>The body text is here. Should not be very long</p>
     <a class="hw-link" href="#">Click me</a>
   </div>
 </div>
@@ -93,7 +97,9 @@ Modifiers:
 
 ```html|plain,light
 <div class="hw-message hw-message--subtle-error">
-  <p>The body text is here. Should not be very long</p>
+  <div class="hw-message__body">
+    <span>The body text is here. Inline elements only.</span>
+  </div>
 </div>
 ```
 
@@ -102,7 +108,8 @@ Modifiers:
 ```html|plain,light
 <div class="hw-message hw-message--subtle-error">
   <i class="fas fa-exclamation-triangle hw-message__icon"></i>
-  <p>The body text is here. Should not be very long</p>
+  <div class="hw-message__body">
+    <span>The body text is here. Inline elements only.</span>
+  </div>
 </div>
 ```
-
