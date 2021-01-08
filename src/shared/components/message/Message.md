@@ -15,9 +15,10 @@ Elements:
 [Link]                  .hw-link
 
 Modifiers:
-[Error message]         .hw-message--error
 [Subtle message]        .hw-message--subtle
 [Subtle message light]  .hw-message--subtle-light
+[Error message]         .hw-message--error
+[Subtle message error]  .hw-message--subtle-error
 ```
 
 ### Basic
@@ -54,7 +55,7 @@ Modifiers:
 </div>
 ```
 
-## Subtle - light
+## Subtle light
 
 ```html|plain,dark
 <div class="hw-message hw-message--subtle-light">
@@ -62,7 +63,6 @@ Modifiers:
   <p>The body text is here. Should not be very long</p>
 </div>
 ```
-
 
 ## Error
 
@@ -75,6 +75,7 @@ Modifiers:
   </div>
 </div>
 ```
+
 ## Error - with icon
 
 ```html|plain,light
@@ -87,3 +88,21 @@ Modifiers:
   </div>
 </div>
 ```
+
+## Subtle error
+
+```html|plain,light
+<div class="hw-message hw-message--subtle-error">
+  <p>The body text is here. Should not be very long</p>
+</div>
+```
+
+## Subtle error - with icon
+
+```html|plain,light
+<div class="hw-message hw-message--subtle-error">
+  <i class="fas fa-xs fa-exclamation-triangle hw-message__icon"></i>
+  <p>The body text is here. Should not be very long</p>
+</div>
+```
+
