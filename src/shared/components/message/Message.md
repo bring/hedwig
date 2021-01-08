@@ -49,7 +49,7 @@ Modifiers:
 
 ```html|plain,light
 <div class="hw-message hw-message--subtle">
-  <i class="fas fa-lg fa-info-square hw-message__icon"></i>
+  <i class="fas fa-xs fa-info-square hw-message__icon"></i>
   <p>The body text is here. Should not be very long</p>
 </div>
 ```
@@ -58,7 +58,7 @@ Modifiers:
 
 ```html|plain,dark
 <div class="hw-message hw-message--subtle-light">
-  <i class="fas fa-lg fa-info-square hw-message__icon"></i>
+  <i class="fas fa-xs fa-info-square hw-message__icon"></i>
   <p>The body text is here. Should not be very long</p>
 </div>
 ```
