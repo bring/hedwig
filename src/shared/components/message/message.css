@@ -41,7 +41,7 @@
     */
 
 
-    &--error {
+    &--error, &--subtle-error {
         background-color: var(--hw-color-alert-yellow);
     }
 
@@ -49,6 +49,9 @@
         background: initial;
         border-width: 1px;
         border-style: solid;
+    }
+
+    &--subtle, &--subtle-light, &--subtle-error {
         align-items: center;
         padding: var(--hw-spacing-small-3) var(--hw-spacing-medium-1);
         @media (--large) {
