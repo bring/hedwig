@@ -119,7 +119,7 @@
     "lodash": "^4.17.15",
     "node-watch": "^0.6.4",
     "np": "^5.2.1",
-    "postcss": "^8.2.2",
+    "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^12.0.1",
