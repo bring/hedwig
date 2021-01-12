@@ -132,32 +132,26 @@ Flexible grid with 3px gutters
 
 ```html|plain,light,responsive
 <div class="hw-flex hw-flex--gutter-large-mobile hw-background-color-white">
-  <a href="#" class="hw-entrance-box">
-    <div class="hw-entrance-box__media">
-      <div class="hw-entrance-box__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+  <div class="hw-card hw-card__has-actions">
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
     </div>
-    <div class="hw-entrance-box__body">
-      <div>
-        <h3 class="hw-entrance-box__label">Box Label</h3>
-      </div>
-      <div class="hw-entrance-box__text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
-      </div>
+    <div class="hw-card__footer">
+      <a href="#" class="hw-card__action-button-link">Action</a>
+      <a href="#" class="hw-card__action-button-link">Action</a>
     </div>
-  </a>
-  <a href="#" class="hw-entrance-box">
-    <div class="hw-entrance-box__media">
-      <div class="hw-entrance-box__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+  </div>
+  <div class="hw-card hw-card__has-actions">
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
     </div>
-    <div class="hw-entrance-box__body">
-      <div>
-        <h3 class="hw-entrance-box__label">Box Label</h3>
-      </div>
-      <div class="hw-entrance-box__text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
-      </div>
+    <div class="hw-card__footer">
+      <a href="#" class="hw-card__action-button-link">Action</a>
+      <a href="#" class="hw-card__action-button-link">Action</a>
     </div>
-  </a>
+  </div>
 </div>
 ```
 
@@ -197,32 +191,26 @@ Flexible grid with 3px gutters
 
 ```html|plain,light,responsive
 <div class="hw-flex hw-flex--gutter-larger-mobile hw-background-color-white">
-  <a href="#" class="hw-entrance-box">
-    <div class="hw-entrance-box__media">
-      <div class="hw-entrance-box__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+  <div class="hw-card hw-card__has-actions">
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
     </div>
-    <div class="hw-entrance-box__body">
-      <div>
-        <h3 class="hw-entrance-box__label">Box Label</h3>
-      </div>
-      <div class="hw-entrance-box__text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
-      </div>
+    <div class="hw-card__footer">
+      <a href="#" class="hw-card__action-button-link">Action</a>
+      <a href="#" class="hw-card__action-button-link">Action</a>
     </div>
-  </a>
-  <a href="#" class="hw-entrance-box">
-    <div class="hw-entrance-box__media">
-      <div class="hw-entrance-box__media-inner" style="background-image: url('https://bring-hedwig.s3.amazonaws.com/hedwig/assets/images/demo-image-1.png');"></div>
+  </div>
+  <div class="hw-card hw-card__has-actions">
+    <div class="hw-card__body">
+      <h3 class="hw-card__title">Card Title</h3>
+      <p class="hw-card__description">Accio funnunculus avada lumos kedavra. Impedimenta sonorus me.</p>
     </div>
-    <div class="hw-entrance-box__body">
-      <div>
-        <h3 class="hw-entrance-box__label">Box Label</h3>
-      </div>
-      <div class="hw-entrance-box__text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, asperiores magni tempora.
-      </div>
+    <div class="hw-card__footer">
+      <a href="#" class="hw-card__action-button-link">Action</a>
+      <a href="#" class="hw-card__action-button-link">Action</a>
     </div>
-  </a>
+  </div>
 </div>
 ```
 ## Example with fourths (1 left over)
