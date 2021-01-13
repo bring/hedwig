@@ -11,9 +11,6 @@
   position: relative;
   margin-right: var(--hw-spacing-small-4);
 
-  &:last-child {
-    margin-bottom: 0;
-  }
 
 
   /**
@@ -64,6 +61,10 @@
     border-color: transparent;
     height: auto;
     margin-bottom: var(--hw-spacing-small-4);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &[disabled] {
       background: var(--hw-color-gray-light-fill);
