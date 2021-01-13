@@ -11,6 +11,9 @@
   position: relative;
   margin-right: var(--hw-spacing-small-4);
 
+  &:last-child {
+    margin-bottom: 0;
+  }
 
 
   /**
