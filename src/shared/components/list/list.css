@@ -9,7 +9,7 @@
   font-size: var(--hw-font-size-p);
 
   & li {
-    margin-bottom: 7px;
+    margin-bottom: var(--hw-spacing-small-3);
     position: relative;
   }
 
