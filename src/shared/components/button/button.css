@@ -5,8 +5,8 @@
 .hw-button {
   display: inline-block;
   padding: var(--hw-spacing-small-3) var(--hw-spacing-medium-2);
-  margin-top: 16px;
-  margin-right: 16px;
+  margin-top: var(--hw-spacing-small-4);
+  margin-right: var(--hw-spacing-small-4);
   border-radius: var(--hw-border-radius);
   border-width: 0px;
   background: var(--hw-color-gray-normal);
