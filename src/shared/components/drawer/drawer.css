@@ -74,9 +74,6 @@
       background-color: var(--hw-color-primary-darker);
       outline: 0;
     }
-    &:focus {
-      outline: 0;
-    }
 
     &:active {
       background-color: var(--hw-color-gray-normal);
