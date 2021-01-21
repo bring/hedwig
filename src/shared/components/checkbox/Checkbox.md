@@ -24,13 +24,11 @@ Modifiers:
     <input type="checkbox" />
     <i class="hw-checkbox__indicator"></i>
   </label>
-
   <label class="hw-checkbox">
     <p class="hw-text-small">Checked</p>
     <input type="checkbox" checked />
     <i class="hw-checkbox__indicator"></i>
   </label>
-
   <label class="hw-checkbox" disabled>
     <p class="hw-text-small">Disabled</p>
     <input type="checkbox" disabled />
@@ -48,13 +46,11 @@ Modifiers:
     <input type="checkbox" />
     <i class="hw-checkbox__indicator"></i>
   </label>
-
   <label class="hw-checkbox hw-checkbox--horisontal">
     <p class="hw-text-small">Checked</p>
     <input type="checkbox" checked />
     <i class="hw-checkbox__indicator"></i>
   </label>
-
   <label class="hw-checkbox hw-checkbox--horisontal" disabled>
     <p class="hw-text-small">Disabled</p>
     <input type="checkbox" disabled />

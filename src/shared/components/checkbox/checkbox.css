@@ -9,6 +9,8 @@
   cursor: pointer;
   font-size: var(--hw-font-size-small);
   color: var(--hw-color-black);
+  margin-right: var(--hw-spacing-small-4);
+  margin-top: var(--hw-spacing-small-4);
 
   &:last-child {
     margin-bottom: 0;
@@ -144,7 +146,6 @@
 
   &--horisontal {
     display: inline-block;
-    margin-right: var(--hw-spacing-medium-2);
 
     &.hw-text-small {
       display: inline-block;
