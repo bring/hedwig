@@ -32,11 +32,6 @@
 
   & tbody tr:hover {
     color: var(--hw-color-primary-darker);
-
-    a {
-      color: var(--hw-color-primary-dark);
-      text-underline-color: var(--hw-color-primary-dark);
-    }
   }
 
   & th {
