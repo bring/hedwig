@@ -34,7 +34,7 @@ Some components can containt `sub elements`, so let's look at [Accordion](/Accor
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Item
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -46,7 +46,7 @@ Some components can containt `sub elements`, so let's look at [Accordion](/Accor
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Item
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -63,7 +63,7 @@ Some components can containt `sub elements`, so let's look at [Accordion](/Accor
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Item
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
@@ -75,7 +75,7 @@ Some components can containt `sub elements`, so let's look at [Accordion](/Accor
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
         Item
-        <div class="hw-accordion__arrow"></div>
+        <div class="hw-accordion__icon"></div>
       </button>
       <div class="hw-accordion__contents">
         <div class="hw-wysiwyg hw-wysiwyg--small">
