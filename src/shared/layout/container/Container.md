@@ -1,6 +1,6 @@
 ## Container
 
-The container limits the width of it's wrapped contents and applies default side gutters.
+The container limits the width of it's wrapped contents and applies default side gutters. Containers are "root" components. You can have multiple containers following each others on the same page, but containers should never be nested or used inside other layout components such as blocks.
 
 ```code
 <div class="hw-container">...</div>
