@@ -123,7 +123,7 @@
     "postcss-cli": "^8.3.1",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^14.0.0",
-    "postcss-nested": "^5.0.3",
+    "postcss-nested": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "rollup": "^2.36.1",
     "rollup-plugin-babel": "^4.4.0",
