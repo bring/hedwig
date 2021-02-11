@@ -28,7 +28,7 @@
   }
 
   &[disabled], &:disabled, &[disabled="disabled"], &--disabled {
-    color: var(--hw-color-gray-normal);
+    color: var(--hw-color-black);
     pointer-events: none;
 
     .hw-input {
