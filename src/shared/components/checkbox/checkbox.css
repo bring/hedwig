@@ -12,6 +12,17 @@
   margin-right: var(--hw-spacing-small-4);
   margin-top: var(--hw-spacing-small-4);
 
+  a {
+    @extend .hw-link;
+    /* text-decoration: none;
+    border-bottom: var(--hw-border-thickness) solid var(--hw-color-link-underline);
+    fill: var(--hw-color-link);
+    color: var(--hw-color-link);
+    transition: all 0.1s ease;
+    cursor: pointer; */
+    font-size: var(--hw-font-size-small);
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
