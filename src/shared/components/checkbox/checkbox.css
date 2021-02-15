@@ -10,6 +10,11 @@
   font-size: var(--hw-font-size-small);
   color: var(--hw-color-black);
 
+  a {
+    @extend .hw-link;
+    font-size: var(--hw-font-size-small);
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
