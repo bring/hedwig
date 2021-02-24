@@ -70,4 +70,14 @@
       border-bottom: none;
     }
   }
+
+  &--solid {
+    color: var(--hw-color-black);
+    border-color: var(--hw-color-black);
+    &:hover,
+    &:active {
+      color: var(--hw-color-black-hover);
+      border-color: var(--hw-color-black-hover);
+    }
+  }
 }
