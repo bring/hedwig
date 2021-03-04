@@ -18,6 +18,7 @@ Modifiers:
 [Big]            .hw-link--big
 [Inverted]       .hw-link--inverted
 [No underline]   .hw-link--no-underline
+[Black]          .hw-link--solid
 ```
 
 
@@ -52,6 +53,9 @@ Modifiers:
   <a href="#" class="hw-link hw-link--no-underline">This is a link without an underline until hovered</a>
 ```
 
+```html|span-6,plain,light
+  <a href="#" class="hw-link hw-link--solid">This is a solid link for use on yellow backgrounds</a>
+```
 
 
 
