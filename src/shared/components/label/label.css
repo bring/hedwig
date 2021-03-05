@@ -59,7 +59,7 @@
     }
 
 
-    &[disabled], &:disabled, &[disabled="disabled"], &--disabled {
+    &[disabled], &:disabled, &[disabled="disabled"], &--disabled, &[readonly] {
       background-color: var(--hw-color-gray-normal);
       padding-left: var(--hw-spacing-small-4);
       padding-top: var(--hw-spacing-small-2);
@@ -74,5 +74,11 @@
         fill: var(--hw-color-gray-dark);
       }
     }
+    
+    &[readonly]:focus-within {
+      color: var(--hw-color-input-accent);
+      border-bottom: var(--hw-border-thickness) solid var(--hw-color-input-accent);
+    }
+
   }
 }
