@@ -31,6 +31,14 @@
 </label>
 ```
 
+#### Readonly
+```html|span-3,light,plain
+<label class="hw-label" readOnly>
+  Label
+  <input class="hw-input" type="text" placeholder="Placeholder" readOnly />
+</label>
+```
+
 #### Error
 ```html|span-3,light,plain
 <label  class="hw-label hw-label--error">
@@ -66,6 +74,14 @@
 <label class="hw-label hw-label--line" disabled>
   Label
   <input class="hw-input hw-input--line" type="text" placeholder="The disabled value" disabled />
+</label>
+```
+
+#### Read only
+```html|span-3,light,plain
+<label class="hw-label hw-label--line" readonly>
+  Label
+  <input class="hw-input hw-input--line" type="text" placeholder="The read only value" readonly />
 </label>
 ```
 
