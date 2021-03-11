@@ -19,6 +19,7 @@ Elements:
 
 ```html|plain,light
 <div class="hw-warning-box">
+  <i class="fas fa-lg fa-info-square hw-warning-box__icon"></i>
   <div class="hw-warning-box__body">
     <h3 class="hw-warning-box__title">Title</h3>
     <p>The body text is here. Should not be very long</p>
@@ -27,11 +28,10 @@ Elements:
 </div>
 ```
 
-### Warning box - with icon
+### Warning box - no icon
 
 ```html|plain,light
 <div class="hw-warning-box">
-  <i class="fas fa-lg fa-info-square hw-warning-box__icon"></i>
   <div class="hw-warning-box__body">
     <h3 class="hw-warning-box__title">Title</h3>
     <p>The body text is here. Should not be very long</p>

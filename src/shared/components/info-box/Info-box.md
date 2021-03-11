@@ -19,6 +19,7 @@ Elements:
 
 ```html|plain,light
 <div class="hw-info-box">
+  <i class="fas fa-lg fa-info-square hw-info-box__icon"></i>
   <div class="hw-info-box__body">
     <h3 class="hw-info-box__title">Title</h3>
     <p>The body text is here. Should not be very long</p>
@@ -27,11 +28,10 @@ Elements:
 </div>
 ```
 
-### Info box - with icon
+### Info box - no icon
 
 ```html|plain,light
 <div class="hw-info-box">
-  <i class="fas fa-lg fa-info-square hw-info-box__icon"></i>
   <div class="hw-info-box__body">
     <h3 class="hw-info-box__title">Title</h3>
     <p>The body text is here. Should not be very long</p>
