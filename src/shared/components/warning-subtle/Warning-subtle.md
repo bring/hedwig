@@ -16,16 +16,16 @@ Elements:
 
 ```html|plain,light
 <div class="hw-warning-subtle">
+    <i class="fas fa-exclamation-triangle hw-warning-subtle__icon"></i>
     The body text is here. Inline elements only.&nbsp;
     <a class="hw-link hw-link--solid">Click me</a>
 </div>
 ```
 
-## Warning subtle - with icon
+## Warning subtle - no icon
 
 ```html|plain,light
 <div class="hw-warning-subtle">
-    <i class="fas fa-exclamation-triangle hw-warning-subtle__icon"></i>
     The body text is here. Inline elements only.&nbsp;
     <a class="hw-link hw-link--solid">Click me</a>
 </div>
