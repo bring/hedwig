@@ -8,7 +8,6 @@
 
 Elements:
 [Icon]                  .hw-warning-subtle__icon
-[Body]                  .hw-warning-subtle__body
 
 
 ```
@@ -17,10 +16,8 @@ Elements:
 
 ```html|plain,light
 <div class="hw-warning-subtle">
-  <div class="hw-warning-subtle__body">
-    The body text is here. Inline elements only.
+    The body text is here. Inline elements only.&nbsp;
     <a class="hw-link hw-link--solid">Click me</a>
-  </div>
 </div>
 ```
 
@@ -28,11 +25,9 @@ Elements:
 
 ```html|plain,light
 <div class="hw-warning-subtle">
-  <i class="fas fa-exclamation-triangle hw-warning-subtle__icon"></i>
-  <div class="hw-warning-subtle__body">
-    The body text is here. Inline elements only.
+    <i class="fas fa-exclamation-triangle hw-warning-subtle__icon"></i>
+    The body text is here. Inline elements only.&nbsp;
     <a class="hw-link hw-link--solid">Click me</a>
-  </div>
 </div>
 ```
 

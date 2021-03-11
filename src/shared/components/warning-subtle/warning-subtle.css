@@ -13,17 +13,9 @@
     }
 
 
-
    /**
     * Elements
     */
-
-    .hw-warning-subtle__body > *:not(:last-child) {
-        margin-bottom: var(--hw-spacing-small-3);
-        @media (--large) {
-            margin-bottom: var(--hw-spacing-small-4);
-        }
-    }
 
     &__icon {
         margin-right: var(--hw-spacing-medium-1);
