@@ -141,11 +141,7 @@
     &--expanded .hw-warning-banner__contents {
       /* Visible state */
       display: block;
-    }
-  
-    &--read-more-expanded .hw-warning-banner__read-more-contents {
-      display: block;
-    }
+    }  
   }
   
   /**
