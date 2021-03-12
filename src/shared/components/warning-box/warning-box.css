@@ -1,0 +1,37 @@
+/**
+ * Block
+ */
+
+ .hw-warning-box {
+    background-color: var(--hw-color-alert-yellow);
+    border-radius: var(--hw-border-radius);
+    display: flex;
+    padding: var(--hw-spacing-medium-2);
+    @media (--large){
+        padding: var(--hw-spacing-medium-3);
+    }
+
+
+   /**
+    * Elements
+    */
+
+
+    &__title {
+        font-family: var(--hw-font-primary-medium);
+    }
+
+    .hw-warning-box__body > *:not(:last-child) {
+        margin-bottom: var(--hw-spacing-small-3);
+        @media (--large) {
+            margin-bottom: var(--hw-spacing-small-4);
+        }
+    }
+
+    &__icon {
+        margin-right: var(--hw-spacing-medium-1);
+        @media (--large) {
+            margin-right: var(--hw-spacing-medium-2);
+        }
+    }
+}

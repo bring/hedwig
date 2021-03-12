@@ -1,0 +1,26 @@
+/**
+ * Block
+ */
+
+ .hw-warning-subtle {
+    background-color: var(--hw-color-alert-yellow);
+    border-radius: var(--hw-border-radius);
+    display: flex;
+    align-items: center;
+    padding: var(--hw-spacing-small-3) var(--hw-spacing-medium-1);
+    @media (--large) {
+        padding: var(--hw-spacing-small-4) var(--hw-spacing-medium-2);
+    }
+
+
+   /**
+    * Elements
+    */
+
+    &__icon {
+        margin-right: var(--hw-spacing-medium-1);
+        @media (--large) {
+            margin-right: var(--hw-spacing-medium-2);
+        }
+    }
+}
