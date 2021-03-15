@@ -55,6 +55,10 @@
     border: var(--hw-border-thickness) solid var(--hw-color-gray-normal);
   }
 
+  &:read-only {
+    background-color: var(--hw-color-gray-normal);
+  }
+
   /**
    * Modifers
    */
@@ -90,6 +94,10 @@
     &[disabled], &:disabled, &[disabled="disabled"] {
       background: transparent;
       padding: var(--hw-spacing-small-4);
+    }
+
+    &:read-only:focus {
+      border-bottom: var(--hw-border-thickness) solid transparent;
     }
   }
 }
