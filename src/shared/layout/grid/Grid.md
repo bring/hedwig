@@ -116,7 +116,7 @@ Example
 .hw-medium--one-whole
 .hw-medium--one-half
 .hw-medium--one-third
-.hw-medium--two-third
+.hw-medium--two-thirds
 .hw-medium--one-quarter
 .hw-medium--three-quarters
 .hw-medium--one-fifth
