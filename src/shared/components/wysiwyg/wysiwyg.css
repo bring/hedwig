@@ -93,7 +93,8 @@
   & figure {
     @extend .hw-figure;
 
-    margin-top: var(--hw-spacing-medium-3);
+    margin-top: var(--hw-spacing-large-2);
+    margin-bottom: var(--hw-spacing-large-2);
   }
 
   & figcaption {
