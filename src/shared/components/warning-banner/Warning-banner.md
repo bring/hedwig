@@ -10,16 +10,16 @@
 
 ### Markup
 ```code   
-[Base]               .hw-banner;
+[Base]               .hw-warning-banner;
 
 Modifiers:
-[Expanded]            .hw-banner--expanded;
+[Expanded]            .hw-warning-banner--expanded;
 ```
 
 ### Data attributes
 ```code
 Required:
-[data-hw-banner="name"]   name of toggle (must be unique, used for aria-roles)
+[data-hw-warning-banner="name"]   name of toggle (must be unique, used for aria-roles)
 
 ```
 
@@ -27,30 +27,30 @@ Required:
 
 
 
-### Banner
+### Warning Banner
 
 ```html|plain,light
-  <section class="hw-banner" data-hw-banner="example1">
-    <button class="hw-banner__trigger">
-      <span class="hw-banner__text">
+  <section class="hw-warning-banner" data-hw-warning-banner="example1">
+    <button class="hw-warning-banner__trigger">
+      <span class="hw-warning-banner__text">
         All traffic in Norway is on hold due to the heat wave
       </span>
-      <i class="fas fa-chevron-down" data-fa-transform="down-2" title="Open banner information"></i>
+      <i class="fas fa-chevron-down" data-fa-transform="down-2" title="Open warning-banner information"></i>
     </button>
-    <div class="hw-banner__contents">
+    <div class="hw-warning-banner__contents">
       The asphalt on the roads is melting and our vehicles are stuck in thick oil. Drone deliveries operating as normal.
-      <a href="#" class="hw-banner__read-more-link">Read more</a>
+      <a href="#" class="hw-warning-banner__read-more-link">Read more</a>
     </div>
   </section>
 ```
 
 
 
-### Banner with no expand section
+### Warning Banner with no expand section
 #### Plain text
 ```html|plain,light
-<section class="hw-banner" data-hw-banner="example1">
-  <span class="hw-banner__text">
+<section class="hw-warning-banner" data-hw-warning-banner="example1">
+  <span class="hw-warning-banner__text">
     All traffic in Norway is on hold due to the heat wave
   </span>
 </section>
@@ -58,8 +58,8 @@ Required:
 
 #### Link
 ```html|plain,light
-<section class="hw-banner" data-hw-banner="example1">
-  <span class="hw-banner__text">
+<section class="hw-warning-banner" data-hw-warning-banner="example1">
+  <span class="hw-warning-banner__text">
     <a href="https://example.com">All traffic in Norway is on hold due to the heat wave</a>
   </span>
 </section>
@@ -67,8 +67,8 @@ Required:
 
 #### Inline link
 ```html|plain,light
-<section class="hw-banner" data-hw-banner="example1">
-  <span class="hw-banner__text">
+<section class="hw-warning-banner" data-hw-warning-banner="example1">
+  <span class="hw-warning-banner__text">
     All traffic in Norway is on hold due to the heat wave. <a href="https://example.com">Read more</a>
   </span>
 </section>
@@ -94,14 +94,14 @@ Required:
 ```image
 plain: true
 span: 3
-src: "{assets}/img/{postenbring}/banner-types-1.png"
+src: "{assets}/img/{postenbring}/warning-banner-types-1.png"
 title: "Expand"
 description: "This banner shows a one-line heading by default, and expands when clicked, showing a short paragraph with information of the occurred event or subject. The expanded section can contain a link to a page for further reading."
 ```
 ```image
 plain: true
 span: 3
-src: "{assets}/img/{postenbring}/banner-types-2.png"
+src: "{assets}/img/{postenbring}/warning-banner-types-2.png"
 title: "No expand"
 description: "This banner shows a short sentence of information on one line, with no option to expand. The banner can be static or contain links for further reading."
 ```
@@ -114,7 +114,7 @@ description: "This banner shows a short sentence of information on one line, wit
 ```image
 plain: true
 span: 3
-src: "{assets}/img/{postenbring}/banner-do-1.png"
+src: "{assets}/img/{postenbring}/warning-banner-do-1.png"
 description: "Keep the information short and clear, and include a link to a separate page with all the information and details for users to read."
 ```
 
@@ -123,6 +123,6 @@ description: "Keep the information short and clear, and include a link to a sepa
 ```image
 plain: true
 span: 3
-src: "{assets}/img/{postenbring}/banner-dont-1.png"
+src: "{assets}/img/{postenbring}/warning-banner-dont-1.png"
 description: "Do not add multiple levels of nested expanding sections in a banner."
 ```
