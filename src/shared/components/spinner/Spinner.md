@@ -1,15 +1,10 @@
-## Spinner (Deprecated)
+## Spinner 
 
-Modal component
-
-```code
-[Normal]           .hw-spinner
-```
+The hw-spinner is deprecated please use font awesome spinner icon instead 
 
 ### Spinner
 
 ```html
-
-  <div class="hw-spinner">Loading</div>
+<i class="fas fa fa-spinner-third fa-spin"></i>
 
 ```
