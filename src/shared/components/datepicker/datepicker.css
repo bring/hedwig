@@ -22,9 +22,13 @@
 
   &__inner {
     position: relative;
+    
     & input{
       display: flex;
       -webkit-appearance: none;
+      &:read-only {
+        background-color: var(--hw-color-gray-light-fill);
+      }
     }
     & .hw-placeholder{
       display: none;
