@@ -26,9 +26,6 @@
     & input{
       display: flex;
       -webkit-appearance: none;
-      &:read-only {
-        background-color: var(--hw-color-gray-light-fill);
-      }
     }
     & .hw-placeholder{
       display: none;
@@ -55,6 +52,9 @@
   }
 }
 
+.hw-datepicker:not(.hw-label--line) .hw-input:read-only{
+  background-color: var(--hw-color-gray-light-fill);
+}
 
 /*!
  * Pikaday
