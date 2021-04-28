@@ -248,7 +248,6 @@
   --hw-navbar-height-mobile: 112px;
   --hw-navbar-height-desktop: 112px;
   --hw-input-field-height: 58px;
-  --hw-wysiwyg-title-max-width: 780px;
   --hw-navbar-search-max-width: 530px;
   @media(--large) {
     --hw-navbar-search-max-width: 70%;
