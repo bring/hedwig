@@ -6,8 +6,7 @@
   & h1,
   & h2,
   & h3 {
-    max-width: var(--hw-wysiwyg-title-max-width);
-
+    
     margin-top: var(--hw-spacing-large-1);
     @media(--large) { margin-top: var(--hw-spacing-large-2); }
   }
