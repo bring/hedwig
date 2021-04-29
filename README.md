@@ -1,74 +1,82 @@
 # Hedwig
+## Posten and Bring Design System.
 
 [![GitHub release](https://img.shields.io/github/release/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig/releases) [![GitHub issues](https://img.shields.io/github/issues/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig/issues)
 
-Hedwig is Bring and Postens Design System.
+## tl;dr
 
-  📚 [Hedwig documentation is available here](https://hedwig-docs.herokuapp.com)
-
-  🚨 [This repo is public](https://github.com/bring/hedwig/issues/6), so please consider this when contributing
-
-### ⏩ tl;dr
+[Hedwig documentation](https://hedwig-docs.herokuapp.com)
 
 ```
 npm install
 npm run dev
 ```
 
-### :neckbeard: Running Hedwig locally
+## Documentation
 
-```
-clone this repo
-npm install                 # to install dependencies
-
-npm run dev                 # start local development server
-```
-[Open http://localhost:3000](http://localhost:3000) 🚀
-
-## 📚 Documentation
+Documentation is currently being moved to [Zeroheight](https://zeroheight.com/). 
+Util its fully moved the current documentation is [here](https://hedwig-docs.herokuapp.com)
 
 We use [Catalog](https://interactivethings.github.io/catalog/#/) from documentation. [Read the documentation for Catalog](https://interactivethings.github.io/catalog/#/write-documentation).
 
 Docs are auto generated from the components markdown file. The filename will generate the menu name and URL. It is recommended to save the documentation files together with your components.
 
-In development, the docs will live reload. It is recommended to always develop the components within the documentation.
+## Disclaimers
+Users of the Hedwig repo are responsible for 
+- Staying up to date on changes made - in code *and* guidelines. The best place to stay updated is in the #hedwig Slack channel
+- Following the guidelines, which also include best practices and correct brand implementation.
 
+## Contributing
+[This repo is public](https://github.com/bring/hedwig/issues/6), so please consider this when contributing
+  
+### Found a bug?
+- Create a new [issue](https://github.com/bring/hedwig/issues). 
+- If you want to fix this issue yourself, do so and then follow the development giuidelines below.
+
+### Need to change or add something new?
+First of all: let the community know on the internal #hedwig slack channel what you need and how you plan to solve it. There might be other teams that also would benefit from your solution. Either way there will probably be one of two outcomes:
+
+#### 1: Adding something new
+If you are adding new functionality to Hediwg please follow the below development giuidelines below.
+
+#### 2: Just do it locally
+If the thing you're changing or adding is specific to your project, and not all sites using Hedwig, use a separate css file to add or override functionality using your own classes and components.
+ 
+### Please note
 The documentation is **auto-deployed** to Heroku [https://hedwig-docs.herokuapp.com](https://hedwig-docs.herokuapp.com) when pushed to master.
 
-## Guidelines
+## Development guidelines
+
+- It is recommended to always develop the components within the documentation. The docs will live reload. 
 - All components should do one thing, and do that thing well.
 - All CSS should be written to adhere to the BEM methology.
 - All JS should be classless and use `data-attributes` to attach functionality.
 - New functionality should be reviewed by at least one other person before going into Hedwig.
 
-### Contributing
-All right, you need to change or add something. What do you do?
-
-  1: If the thing you're changing or adding is specific to your project, and not all sites using Hedwig, use a separate css file to add or override functionality using your own classes and components.
-
-  2: If you're adding new functionality to Hedwig, follow the below development guide below.
-  
-  3: If you've found a bug, follow the below "Found a bug?" guide below.
-
-## Development
-To develop on the project, please first read our guidelines and the contributing section above.
-
-To add a new feature:
+**To add a new feature:**
 - Create a new feature branch (`git checkout -b branchname`)
 - Develop the new feature (Template css and js files can be found in the `/templates` folder)
 - Document and test the new feature
 - Create a pull request and ask for a review
 
-To modify an existing feature follow the same process, but also remember the versioning system. If there is a breaking change, or if this might impact existing sites using hedwig, update the version number. See below for details.
+**To modify** an existing feature follow the same process, but also remember the versioning system. If there is a breaking change, or if this might impact existing sites using hedwig, update the version number. See below for details.
 
-Tip: In order to test changes on a locally running application which uses hedwig, replace the dependencies with the following dev server URLs (after running hedwig locally):
+### Running Hedwig locally
+
+```
+clone this repo
+npm install                 # to install dependencies
+npm run dev                 # start local development server
+```
+[Open http://localhost:3000](http://localhost:3000) 🚀
+
+**Tip:** In order to test changes on a locally running application which uses hedwig, replace the dependencies with the following dev server URLs (after running hedwig locally):
 ```
 http://localhost:3001/posten.css
-
 http://localhost:3001/main.js   
 ```
 
-## Staging
+### Staging
 The staging environment is setup in Heroku as a separate app. All the assets are copied to `docs` folder and referred from there in this branch.
 
 Pushing a new change will automatically deploy the app in Heroku.
@@ -82,26 +90,15 @@ Hedwig uses [semantic versioning](http://semver.org/) to make sure once a site s
 
 When a breaking change is added, a new major version is required.
 
-### 🔨 Hosting
+### Hosting
 
 Production CSS, JavaScript and assets are served through a **CDN** using [jsDelivr](https://www.jsdelivr.com/).
 
-### ⭐ Icons
+## Icons
 
-```hint
-Old functional icons are being deprecated soon. From Hedwig version 7.4 you should switch to using functional icons from Font Awesome.
-```
-We use [inline SVG's for icons](https://github.com/bring/hedwig/issues/9).
-
-..in two different ways:
-- SVG sprite - for special icons and logos
-- Font Awesome - for functional icons
-
-#### SVG Sprite Icons works like this:
-- Place icons in the `assets/icons/` folder 
-- Run `npm run svg` to generate SVG sprite. `npm run build` or `npm run dev` will both also produce the SVG sprite
-- Use icons like described in [the docs](https://hedwig-docs.herokuapp.com/bring.html#/Icon)
-
+### Functional icons
+We use [FontAwesome](https://fontawesome.com/icons?d=gallery&p=2&s=regular,solid) for functional icons. Not all FontAweseome icons are available in Hedwig You will find available icons [here](https://github.com/bring/hedwig/tree/master/src/shared/components/icon-functional).
+If you need to use an icon from FontAwesome that is not allready added in Hedwig you need to add it and open a pull request.
 
 #### Font Awesome Icons works like this
 - You need to add an environment variable with your authToken from Font Awesome. For Posten and Bring developers, contact Hedwig contributors. Otherwise, [you can get a licence](https://fontawesome.com/pricing).
@@ -113,7 +110,17 @@ export NPM_TOKEN=[authToken]
 ```
 The token needs to be replaced by a real token.
 
-### 🔧 Linting
+### Service icons
+Hedwig use SVG sprite for special icons and logos. These icons must only be used in conjunction with its service or service name.
+
+#### SVG Sprite Icons works like this:
+- Place icons in the `assets/icons/` folder 
+- Run `npm run svg` to generate SVG sprite. `npm run build` or `npm run dev` will both also produce the SVG sprite
+- Use icons like described in [the docs](https://hedwig-docs.herokuapp.com/bring.html#/Icon)
+
+We use [inline SVG's for icons](https://github.com/bring/hedwig/issues/9).
+
+### Linting
 
 Linting our project is import to keep a holistic code base. It is recommended to use a linting plugin for your editor while developing.
 
@@ -121,70 +128,21 @@ Linting our project is import to keep a holistic code base. It is recommended to
 
 **CSS** uses [Stylelint](https://github.com/stylelint/stylelint) with [the standard config](hhttps://github.com/stylelint/stylelint-config-standard).
 
-### 🌐 Browser support
-
-We support every browser 2 last version, pluss IE10. For IE9 we have partial support. We want it to work, but it won't look perfect.
-
-```
-Note:
-Most components are tested in IE10, but IE9 is still yet to be tested.
-```
-
-
-## 📂 Application structure
-    
-    ├── /assets
-    │   ├── /fonts
-    │   ├── /icons
-    │   └── /img
-    ├── /build                      - Build folder. Contains minified assets. - auto generated    
-    ├── /dist
-    │   ├── /icons                  - Service icons and Number icons
-    │   ├── bring.css               - Minified bring bundle
-    │   ├── examples.js             - Example javascript intended to run for the documentation
-    │   ├── hedwig-react.js         - React components
-    │   ├── icons.min.js            - Javascript snippet that loads the sprite on your page, minified
-    │   ├── main.js                 – Minified javascript bundle for both posten and bring
-    │   ├── posten.css              - Minified bring bundle
-    │   └── svg-sprite.svg          - Svg sprite with all icons
-    ├── /docs                       - Contains the style guide system (Catalog) - auto generated
-    ├── /scripts                    - Contains all scripts for building and compiling
-    │
-    ├── /src/[posten/bring/shared]  - All modules, split up by area
-    │   ├── /_config                - CSS Variables
-    │   ├── /base                   - Global CSS - Body and typography
-    │   │
-    │   └── /module
-    │       ├── / *.css             - Module styles
-    │       ├── / *.js              - Module scripts (if any)
-    │       └── / *.md              - Module documentation (for Catalog)
-    │
-    ├── /tmp                        - Temporary folder - auto generated
-    ├── /templates                  - Contains example `.css` and `.js` files
-    │
-    ├── / .env                      - Environment variables, required for publishing updates to s3
-    ├── / server.js                 - Node server, starts local web servers for docs and assets
-    ├── / package.json              - Contains all npm scripts
-    └── / *.*                       - Various dotfiles and config files
-
 ## Build scripts
 The `/scripts` folder contains a set of custom scripts that helps compile the docs.
 
 List of npm scripts:
 - `dev`: Starts the watcher and starts the node server (in development mode)
 
-## Found a bug?
-- If you've found a bug, you can create a new [issue](https://github.com/bring/hedwig/issues) via github. 
-- If you want to fix this issue yourself, do so and then follow the development guide above.
-
 ## FAQ
   Q: I have a question! Who do i ask?
   A: Use the Hedwig slack channel!
 
 ## Maintainers
-WIP
+The Hedwig Team is resposible for maintaining the Hedwig repo. 
+Contact us with any questions or feedback either in the #hedwig Slack channel or hedwig@posten.no
 
-## 📦 Dependencies 
+## Dependencies 
 
 development helpers:
 
