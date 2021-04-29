@@ -77,7 +77,7 @@
     visibility: hidden;
   }
 
-  &__item--expanded .hw-accordion__arrow::after {
+  &__item--expanded .hw-accordion__icon::after {
     transform: rotate(90deg) scale(0.0, 1.0);
   }
 
