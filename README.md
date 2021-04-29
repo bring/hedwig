@@ -1,18 +1,17 @@
-# Hedwig
-## Posten and Bring Design System.
+# Hedwig - Posten and Bring Design System.
 
 [![GitHub release](https://img.shields.io/github/release/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig/releases) [![GitHub issues](https://img.shields.io/github/issues/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig/issues)
 
 ## tl;dr
-
-[Hedwig documentation](https://hedwig-docs.herokuapp.com)
 
 ```
 npm install
 npm run dev
 ```
 
+
 ## Documentation
+[Hedwig documentation](https://hedwig-docs.herokuapp.com)
 
 Documentation is currently being moved to [Zeroheight](https://zeroheight.com/). 
 Util its fully moved the current documentation is [here](https://hedwig-docs.herokuapp.com)
