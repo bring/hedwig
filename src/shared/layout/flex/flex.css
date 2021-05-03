@@ -85,6 +85,11 @@
         max-width: calc((100% / 3) - (var(--hw-spacing-small-1) / 2));
         margin-right: 0;
       }
+
+      &:nth-child(2n+1):nth-last-child(-n+2),
+      &:nth-child(2n+1):nth-last-child(-n+2) ~ * {
+        margin-bottom: 0px;
+      }
     }
 
     &--one-two > * {
@@ -94,6 +99,11 @@
         min-width: calc((200% / 3) - (var(--hw-spacing-small-1) / 2)); /* 3 / 2 = 1.5 */
         max-width: calc((200% / 3) - (var(--hw-spacing-small-1) / 2));
         margin-right: 0;
+      }
+
+      &:nth-child(2n+1):nth-last-child(-n+2),
+      &:nth-child(2n+1):nth-last-child(-n+2) ~ * {
+        margin-bottom: 0px;
       }
     }
 
