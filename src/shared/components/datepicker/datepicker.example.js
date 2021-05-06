@@ -18,8 +18,6 @@ const HWDatepicker = ({
           _dateInput.parentElement.classList.add("hw-datepicker__native");
           _dateInput.type = "date";
           _dateInput.removeAttribute("readonly");
-          _dateInput.addEventListener("focus", toggleInputType);
-          _dateInput.addEventListener("blur", toggleInputType);
         }
       });
     } else {
@@ -33,20 +31,6 @@ const HWDatepicker = ({
           });
         }
       });
-    }
-  }
-
-  /**
-   * Method to handle placeholder when native datepicker is used
-   * @param {eventParam} e 
-   */
-  function toggleInputType(e) {
-    const _selParent = e.target.parentElement;
-    if (!e.target.value && e.type == "focus") {
-      _selParent.classList.remove("hw-datepicker__native");
-    }
-    if (!e.target.value && e.type == "blur") {
-      _selParent.classList.add("hw-datepicker__native");
     }
   }
 
