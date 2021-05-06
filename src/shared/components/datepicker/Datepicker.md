@@ -25,8 +25,6 @@
     <div class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" />
       <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
-      <!-- Placeholder when native datepicker is used -->
-      <span class="hw-placeholder">Select a date</span>
     </div>
     <div class="hw-error hw-error--align-left hw-error--is-hidden">You must select a date</div>
   </label>
@@ -40,8 +38,6 @@
     <div class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input hw-input--error" placeholder="Select a date" />
       <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
-      <!-- Placeholder when native datepicker is used -->
-      <span class="hw-placeholder">Select a date</span>
     </div>
     <div class="hw-error hw-error--align-left">You must select a date</div>
   </label>
@@ -55,8 +51,6 @@
     <div class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" disabled />
       <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
-      <!-- Placeholder when native datepicker is used -->
-      <span class="hw-placeholder">Select a date</span>
     </div>
     <div class="hw-error hw-error--align-left hw-error--is-hidden">You must select a date</div>
   </label>
@@ -73,8 +67,6 @@
     <div class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" />
       <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
-      <!-- Placeholder when native datepicker is used -->
-      <span class="hw-placeholder">Select a date</span>
     </div>
     <div class="hw-error hw-error--align-left hw-error--is-hidden">You must select a date</div>
   </label>
@@ -88,8 +80,6 @@
     <div class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input hw-input--error" placeholder="Select a date" />
       <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
-      <!-- Placeholder when native datepicker is used -->
-      <span class="hw-placeholder">Select a date</span>
     </div>
     <div class="hw-error hw-error--align-left">You must select a date</div>
   </label>
@@ -103,14 +93,22 @@
     <div class="hw-datepicker__inner">
       <input type="text" readonly="readonly" class="hw-input" placeholder="Select a date" />
       <i class="hw-datepicker__icon fas fa-calendar-alt"></i>
-      <!-- Placeholder when native datepicker is used -->
-      <span class="hw-placeholder">Select a date</span>
     </div>
     <div class="hw-error hw-error--align-left hw-error--is-hidden">You must select a date</div>
   </label>
 ```
 
+#### Native
 
+```html|span-3,plain,light
+<label class="hw-label hw-datepicker ">
+    Date picker label
+    <div class="hw-datepicker__inner hw-datepicker__native">
+      <input type="date" class="hw-input" />
+    </div>
+    <div class="hw-error hw-error--align-left hw-error--is-hidden">You must select a date</div>
+  </label>
+```
 
 ## Example javascript
 
