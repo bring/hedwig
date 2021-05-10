@@ -22,14 +22,16 @@
 
   &__inner {
     position: relative;
-    & input{
+
+    & input {
       display: flex;
       -webkit-appearance: none;
     }
-    & .hw-placeholder{
+    & .hw-placeholder {
       display: none;
     }
-    &.hw-datepicker__native .hw-placeholder{
+
+    &.hw-datepicker__native .hw-placeholder {
       display: block;
       position: absolute;
       top: 3px;
@@ -38,6 +40,9 @@
       background: var(--hw-color-white);
       color: var(--hw-color-gray-dark);
       padding: 10px 15px;
+    }
+    &.hw-datepicker__native .hw-datepicker__icon {
+      display: none;
     }
   }
 
@@ -49,14 +54,20 @@
   &:focus-within {
     color: var(--hw-color-primary-dark);
   }
-}
 
+  &:not(.hw-label--line) .hw-input:read-only {
+    background-color: var(--hw-color-gray-light-fill);
+  }
+
+  &:not(.hw-label--line) .hw-input:disabled {
+    background-color: var(--hw-color-gray-normal);
+  }
+}
 
 /*!
  * Pikaday
  * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
  */
-
 
 .pika-single {
   z-index: var(--z-index--navbar-search);
@@ -81,7 +92,6 @@
   color: var(--hw-color-gray-dark);
   text-transform: capitalize;
   font-size: var(--hw-font-size-smaller);
-
 }
 
 /*
@@ -150,7 +160,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   opacity: 0;
 }
 
-
 .pika-prev,
 .pika-next {
   display: block;
@@ -164,18 +173,50 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   text-indent: 18px; /* hide text using text-indent trick, using width value (it's enough) */
   white-space: nowrap;
   overflow: hidden;
-  opacity: 1.0;
+  opacity: 1;
   *position: absolute; /* IE7 */
   *top: 0; /* IE7 */
   background-color: var(--hw-color-gray-light-fill);
   background-image:
-    /* Cut off the sharp ends of the arrow */
-    linear-gradient(45deg, transparent 72%, var(--hw-color-gray-light-fill) 0%), /* Bottom right corner of left arrow */
-    linear-gradient(135deg, var(--hw-color-gray-light-fill) 26%, transparent 26%), /* Top right corner of left arrow */
-    /* Draw the arrow */
-    linear-gradient(135deg, transparent 0, transparent 65%, var(--hw-color-gray-light-fill) 65%, var(--hw-color-gray-light-fill) 100%), /* Bottom left corner of left arrow */
-    linear-gradient(45deg, var(--hw-color-gray-light-fill) 0, var(--hw-color-gray-light-fill) 31%, var(--hw-color-gray-dark) 32%, var(--hw-color-gray-dark) 38%, transparent 39%, transparent 100%), /* Upper stroke of left arrow */
-    linear-gradient(135deg, transparent 0, transparent 58%, var(--hw-color-gray-dark) 59%, var(--hw-color-gray-dark) 65%, var(--hw-color-gray-light-fill) 66%, var(--hw-color-gray-light-fill) 100%); /* Bottom stroke of left arrow */
+    /* Cut off the sharp ends of the arrow */ linear-gradient(
+      45deg,
+      transparent 72%,
+      var(--hw-color-gray-light-fill) 0%
+    ),
+    /* Bottom right corner of left arrow */
+      linear-gradient(
+        135deg,
+        var(--hw-color-gray-light-fill) 26%,
+        transparent 26%
+      ),
+    /* Top right corner of left arrow */ /* Draw the arrow */
+      linear-gradient(
+        135deg,
+        transparent 0,
+        transparent 65%,
+        var(--hw-color-gray-light-fill) 65%,
+        var(--hw-color-gray-light-fill) 100%
+      ),
+    /* Bottom left corner of left arrow */
+      linear-gradient(
+        45deg,
+        var(--hw-color-gray-light-fill) 0,
+        var(--hw-color-gray-light-fill) 31%,
+        var(--hw-color-gray-dark) 32%,
+        var(--hw-color-gray-dark) 38%,
+        transparent 39%,
+        transparent 100%
+      ),
+    /* Upper stroke of left arrow */
+      linear-gradient(
+        135deg,
+        transparent 0,
+        transparent 58%,
+        var(--hw-color-gray-dark) 59%,
+        var(--hw-color-gray-dark) 65%,
+        var(--hw-color-gray-light-fill) 66%,
+        var(--hw-color-gray-light-fill) 100%
+      ); /* Bottom stroke of left arrow */
 }
 
 .pika-prev {
@@ -193,9 +234,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-next:hover {
   opacity: 1;
 }
-
-
-
 
 .pika-prev,
 .is-rtl .pika-next {
@@ -243,7 +281,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   text-decoration: none;
 }
 
-
 .pika-button {
   cursor: pointer;
   display: block;
@@ -254,7 +291,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   margin: 0;
   width: 100%;
   height: calc(280px * 0.14285714285714286);
-  padding: 0px  ;
+  padding: 0px;
   color: var(--hw-color-black);
   font-size: var(--hw-font-size-smallest);
   line-height: 15px;
