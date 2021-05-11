@@ -25,14 +25,14 @@ The only exception to this rule is "rich text" areas from the CMS, for this case
 ```code
 Padding
 [Padding sides]                                   .hw-block--px
-[Responsive Padding sides]                        .hw-block--px-responsive
+[Responsive Padding sides]                        .hw-block--px--responsive
 [Mobile only Padding sides]                       .hw-block--px-mobile
 [Padding top and bottom]                          .hw-block--py
-[Responsive Padding top and bottom]               .hw-block--py-responsive
+[Responsive Padding top and bottom]               .hw-block--py--responsive
 
 Margins
 [Margin top/bottom] default                       .hw-block--[mt/mb]
-[Margin top/bottom [size][responsive]]            .hw-block--[mt/mb]-[size]-responsive
+[Margin top/bottom [size][responsive]]            .hw-block--[mt/mb]-[size]--responsive
 [Margin top/bottom [size]]                        .hw-block--[mt/mb]-[size]
 ```
 
@@ -105,12 +105,12 @@ The values are one level down when screen is less than and equal to 720px
 
 ```html|span-6,responsive
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--px-responsive">
+    <div class="hw-block hw-block--px--responsive">
       <p>Block with responsive horisontal padding</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--py-responsive">
+    <div class="hw-block hw-block--py--responsive">
       <p>Block with responsive top and bottom padding</p>
     </div>
   </div>

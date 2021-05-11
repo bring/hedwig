@@ -89,7 +89,7 @@
     padding-top: var(--hw-spacing-medium-2);
     padding-bottom: var(--hw-spacing-medium-2);
 
-    &-responsive {
+    &--responsive {
       padding-top: var(--hw-spacing-medium-3);
       padding-bottom: var(--hw-spacing-medium-3);
     }
@@ -100,7 +100,7 @@
     padding-left: var(--hw-spacing-medium-2);
     padding-right: var(--hw-spacing-medium-2);
 
-    &-responsive {
+    &--responsive {
       padding-left: var(--hw-spacing-medium-3);
       padding-right: var(--hw-spacing-medium-3);
     }
@@ -174,12 +174,12 @@
     &--mb-large-4--responsive  { margin-bottom: var(--hw-spacing-large-3); }
     &--mb-large-5--responsive  { margin-bottom: var(--hw-spacing-large-4); }
   
-    &--py-responsive { 
+    &--py--responsive { 
       padding-top: var(--hw-spacing-medium-2); 
       padding-bottom: var(--hw-spacing-medium-2);
     }
 
-    &--px-responsive {
+    &--px--responsive {
       padding-left: var(--hw-spacing-medium-2);
       padding-right: var(--hw-spacing-medium-2);
     }
