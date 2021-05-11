@@ -43,26 +43,7 @@ noSource: true
   --hw-spacing-large-5: 160px;
 ```
 ## Responsive spacing
-For desktop the value is same as above and its one level down for mobile devices
-
-
-```code
-  --hw-spacing-small-1--responsive: 4px;   
-  --hw-spacing-small-2--responsive: 8px; 
-  --hw-spacing-small-3--responsive: 12px;                      
-  --hw-spacing-small-4--responsive: 16px;
-  --hw-spacing-medium-1--responsive: 20px;
-  --hw-spacing-medium-2--responsive: 24px;
-  --hw-spacing-medium-3--responsive: 32px;
-  --hw-spacing-medium-4--responsive: 40px;
-  --hw-spacing-large-1--responsive: 48px;
-  --hw-spacing-large-2--responsive: 64px;
-  --hw-spacing-large-3--responsive: 80px;
-  --hw-spacing-large-4--responsive: 120px;
-  --hw-spacing-large-5--responsive: 160px; 
-```
-
-
+The value should be same as above but one level down for mobile devices.
 
 # Design guidelines
 

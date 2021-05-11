@@ -120,17 +120,17 @@ The values are one level down when screen is less than and equal to 720px
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-    <div class="hw-block hw-block--mb-medium-1--responsive hw-block--mt-medium-1--responsive">
+    <div class="hw-block hw-block--mb-medium-1-responsive hw-block--mt-medium-1-responsive">
       <p>Block with responsive spacing top and bottom margins</p>
     </div>
   </div>
   <div class="hw-helpers-margin-highlighter">
-     <div class="hw-block hw-block--mb-medium-2--responsive hw-block--mt-medium-2--responsive">
+     <div class="hw-block hw-block--mb-medium-2-responsive hw-block--mt-medium-2-responsive">
       <p>Block with responsive spacing top and bottom margins</p>
     </div>
   </div>
    <div class="hw-helpers-margin-highlighter">
-     <div class="hw-block hw-block--mb-medium-3--responsive hw-block--mt-medium-3--responsive">
+     <div class="hw-block hw-block--mb-medium-3-responsive hw-block--mt-medium-3-responsive">
       <p>Block with responsive spacing top and bottom margins</p>
     </div>
   </div>
