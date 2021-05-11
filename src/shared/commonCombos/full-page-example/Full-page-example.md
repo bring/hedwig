@@ -25,7 +25,7 @@
   </div>
 </header>
 <div class="hw-container hw-container--mt hw-container--mb">
- <div class="hw-block hw-block--mt-medium-3--responsive">
+ <div class="hw-block hw-block--mt-medium-3-responsive">
   <div class="hw-breadcrumbs">
     <div class="hw-breadcrumb">
       <a class="hw-link" href="#">Home</a>
@@ -48,23 +48,23 @@
     <span class="hw-breadcrumb__current">Current content</span>
   </div>
 </div>
-<div class="hw-block hw-block--mt-medium-3--responsive hw-block--mb-large-2--responsive">
+<div class="hw-block hw-block--mt-medium-3-responsive hw-block--mb-large-2-responsive">
   <h1>H1 Heading</h1>
 </div>
-<div class="hw-block hw-block--mb-medium-2--responsive">
+<div class="hw-block hw-block--mb-medium-2-responsive">
 <h2>H2 Heading</h2>
 </div>
-<div class="hw-block hw-block--mb-large-2--responsive">
+<div class="hw-block hw-block--mb-large-2-responsive">
 Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
 </div>
 
-<div class="hw-block hw-block--mb-medium-2--responsive">
+<div class="hw-block hw-block--mb-medium-2-responsive">
 <h3>H3 Heading</h3>
 </div>
 <div class="hw-block">
 Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
 </div>
-<div class="hw-block--mt-large-2--responsive hw-block--mb-large-2--responsive">
+<div class="hw-block--mt-large-2-responsive hw-block--mb-large-2-responsive">
 <figure class="hw-figure">
   <div class="hw-figure__container">
     <img
@@ -77,10 +77,10 @@ Bring to the table win-win survival strategies to ensure proactive domination. A
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 </div>
 
-<div class="hw-block hw-block--mt-large-2--responsive hw-block--mb-medium-3--responsive">
+<div class="hw-block hw-block--mt-large-2-responsive hw-block--mb-medium-3-responsive">
 <h2>H2 Heading</h2>
 </div>
-<div class="hw-block hw-block--mb-large-5--responsive">
+<div class="hw-block hw-block--mb-large-5-responsive">
 <ul class="hw-accordion" data-hw-accordion>
     <li class="hw-accordion__item">
       <button class="hw-accordion__trigger">
