@@ -132,6 +132,7 @@ library.add(fas.faSearch);
 library.add(fas.faShieldAlt);
 library.add(fas.faShippingFast);
 library.add(fas.faShoppingCart);
+library.add(fas.faSpinnerThird);
 library.add(fas.faStar);
 library.add(fas.faStoreAlt);
 library.add(fas.faSyncAlt);
