@@ -21,6 +21,7 @@ We use [Catalog](https://interactivethings.github.io/catalog/#/) from documentat
 Docs are auto generated from the components markdown file. The filename will generate the menu name and URL. It is recommended to save the documentation files together with your components.
 
 ## Disclaimers
+We will not support changes and updates on older major releases of Hedwig. 
 Users of the Hedwig repo are responsible for 
 - Staying up to date on changes made - in code *and* guidelines. The best place to stay updated is in the #hedwig Slack channel
 - Following the guidelines, which also include best practices and correct brand implementation.
