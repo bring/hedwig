@@ -23,7 +23,7 @@ Docs are auto generated from the components markdown file. The filename will gen
 ## Disclaimers
 We will not support changes and updates on older major releases of Hedwig. 
 Users of the Hedwig repo are responsible for 
-- Staying up to date on changes made - in code *and* guidelines. The best place to stay updated is in the #hedwig Slack channel
+- Staying up to date on changes made - in code *and* guidelines.
 - Following the guidelines, which also include best practices and correct brand implementation.
 
 ## Contributing
