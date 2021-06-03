@@ -80,11 +80,11 @@ NB: The search field position and the opaque background overlay is not controlle
 ```html|span-4,light
 <label class="hw-label">
   Label
-  <div class="hw-search hw-search--standalone" data-hw-search data-hw-search-placeholders='["Hi!"]'>
+  <div class="hw-search hw-search--standalone hw-search--white" data-hw-search data-hw-search-placeholders='["Hi!"]'>
     <div class="hw-search__inner">
       <input
         data-hw-search-input
-        class="hw-search__input hw-input--white" type="text"
+        class="hw-search__input" type="text"
         aria-label="Search" />
       <i class="far fa-search hw-search__icon"></i>
       <span class="hw-search__placeholder" data-hw-search-placeholder></span>
@@ -97,7 +97,7 @@ NB: The search field position and the opaque background overlay is not controlle
 
 ### Standalone with suggestions
 
-```html|span-4,light
+```html|span-4,plain,light
 <label class="hw-label">
   Label
   <div class="hw-search hw-search--standalone" data-hw-search data-hw-search-placeholders='["Hi!"]'>
