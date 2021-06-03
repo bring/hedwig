@@ -84,7 +84,7 @@ NB: The search field position and the opaque background overlay is not controlle
     <div class="hw-search__inner">
       <input
         data-hw-search-input
-        class="hw-search__input hw-search__input--white" type="text"
+        class="hw-search__input hw-input--white" type="text"
         aria-label="Search" />
       <i class="far fa-search hw-search__icon"></i>
       <span class="hw-search__placeholder" data-hw-search-placeholder></span>
