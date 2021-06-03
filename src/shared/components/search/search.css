@@ -167,9 +167,10 @@
         outline: 0;
       }
 
-      &--white {
-        background-color: var(--hw-color-white);
-      }
+    }
+
+    .hw-input--white {
+      background-color: var(--hw-color-white);
     }
 
     .hw-search__suggestions {
