@@ -166,9 +166,14 @@
         border-bottom: var(--hw-border-thickness) solid var(--hw-color-input-accent);
         outline: 0;
       }
+
+      &--white {
+        background-color: var(--hw-color-white);
+      }
     }
+
     .hw-search__suggestions {
-      background-color: var(--hw-color-gray-normal);
+      top:64px;
     }
     .hw-search__input, .hw-search__placeholder {
       font-size: var(--hw-font-size-small);

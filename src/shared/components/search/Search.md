@@ -75,9 +75,67 @@ NB: The search field position and the opaque background overlay is not controlle
   </div>
 </label>
 ```
+### White standalone
 
+```html|span-4,light
+<label class="hw-label">
+  Label
+  <div class="hw-search hw-search--standalone" data-hw-search data-hw-search-placeholders='["Hi!"]'>
+    <div class="hw-search__inner">
+      <input
+        data-hw-search-input
+        class="hw-search__input hw-search__input--white" type="text"
+        aria-label="Search" />
+      <i class="far fa-search hw-search__icon"></i>
+      <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+      <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
+    </div>
+    <button type="submit" class="hw-button hw-button--primary hw-search__button">Search</button>
+  </div>
+</label>
+```
 
+### Standalone with suggestions
 
+```html|span-4,light
+<label class="hw-label">
+  Label
+  <div class="hw-search hw-search--standalone" data-hw-search data-hw-search-placeholders='["Hi!"]'>
+    <div class="hw-search__inner">
+      <input
+        data-hw-search-input
+        class="hw-search__input" type="text"
+        aria-label="Search" />
+      <i class="far fa-search hw-search__icon"></i>
+      <span class="hw-search__placeholder" data-hw-search-placeholder></span>
+      <button class="hw-search__button-inside" data-hw-search-reset><i class="fas fa-times-circle"></i></button>
+    </div>
+    <ul class="hw-search__suggestions">
+    <li class="hw-search__suggestion" data-hw-search-suggestion>
+      <a class="hw-search__suggestion-link" tabindex="-1" href="#">
+        <p class="hw-search__suggestion-title">Flyttetips</p>
+        <p class="hw-search__suggestion-extra">Innhold</p>
+      </a>
+    </li>
+    <li class="hw-search__suggestion" data-hw-search-suggestion>
+      <a class="hw-search__suggestion-link" tabindex="-1" href="#">
+        <p class="hw-search__suggestion-title">Oslo Sentrum bedriftssenter</p>
+        <p class="hw-search__suggestion-extra">Postkontor</p>
+      </a>
+    </li>
+    <li class="hw-search__suggestion" data-hw-search-suggestion>
+      <a class="hw-search__suggestion-link" tabindex="-1" href="#">
+        <p class="hw-search__suggestion-title">Digitalt frimerke <span class="hw-badge hw-badge--smaller">Pdf</span></p>
+        <p class="hw-search__suggestion-extra">Innhold</p>
+      </a>
+    </li>
+  </ul>
+    <button type="submit" class="hw-button hw-button--primary hw-search__button">Search</button>
+  </div>
+</label>
+
+<!-- Space added only for preview in Hedwig --><br><br><br><br><br><br><br><br><br><br><br><br>
+```
 
 
 
