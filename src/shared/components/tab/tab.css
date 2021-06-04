@@ -32,6 +32,8 @@
     padding-bottom: var(--hw-spacing-small-3);
     margin-right: 32px;
     color: var(--hw-color-black);
+    border-width: 0px;
+    background: transparent;
     &--selected {
       /**
        * Border color will be set to transparent during runtime
