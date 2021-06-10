@@ -137,6 +137,7 @@
 
     &:disabled ~ .hw-radio-button__label {
       color: var(--hw-color-gray-dark);
+      cursor: not-allowed;
     }
   }
 
