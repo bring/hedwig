@@ -44,7 +44,7 @@ Modifiers:
   <i class="hw-radio-button__indicator"></i>
 </label>
 
-<label class="hw-radio-button">
+<label class="hw-radio-button" disabled>
   <input type="radio" name="hedwig" value="four" disabled />
   <span class="hw-radio-button__label">Disabled</span>
   <i class="hw-radio-button__indicator"></i>

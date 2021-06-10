@@ -128,11 +128,10 @@
         background: var(--hw-color-checkbox-accent);
       }
     }
-    
+
     &:disabled ~ .hw-radio-button__indicator {
       border-color: var(--hw-color-gray-normal);
       background-color: transparent;
-      cursor: not-allowed;
     }
 
     &:disabled ~ .hw-radio-button__label {
@@ -152,4 +151,9 @@
       background: var(--hw-color-alert-yellow) !important;
     }
   }
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+
 }
