@@ -9,7 +9,7 @@
   /* Clearfix */
   &::after {
     display: table;
-    content: ' ';
+    content: " ";
     clear: both;
   }
 
@@ -31,7 +31,8 @@
     background-color: var(--hw-color-gray-light-fill);
     font-size: var(--hw-font-size-small);
     cursor: pointer;
-    transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
+    transition: border-color 0.3s ease, max-height 0.3s ease,
+      transform 0.3s ease;
 
     &:hover {
       border-color: var(--hw-color-gray-dark);
@@ -66,7 +67,7 @@
       display: block;
       width: 10px;
       height: 2px;
-      content: '';
+      content: "";
       background-color: var(--hw-color-gray-dark);
       transform: rotate(-45deg);
       transition: transform 0.1s ease;
@@ -81,14 +82,17 @@
   &__options {
     padding: 0;
     margin: 0;
-    top: calc(var(--hw-spacing-small-4) * 2 + var(--hw-font-size-smaller) + 8px);
+    top: calc(
+      var(--hw-spacing-small-4) * 2 + var(--hw-font-size-smaller) + 8px
+    );
     list-style-type: none;
     width: 100%;
   }
 
   &__option {
     padding: var(--hw-spacing-small-4) 0;
-    border-top: var(--hw-border-thickness) solid var(--hw-color-gray-light-stroke);
+    border-top: var(--hw-border-thickness) solid
+      var(--hw-color-gray-light-stroke);
     margin: 3px var(--hw-spacing-small-4);
     line-height: var(--hw-font-size-p);
 
@@ -101,7 +105,7 @@
         color: var(--hw-color-gray-normal);
       }
     }
-    &:first-child{
+    &:first-child {
       border-top: 0;
     }
   }
@@ -109,7 +113,6 @@
   &__option[data-hw-dropdown-option-selected="true"] {
     color: var(--hw-color-primary-dark);
   }
-  
 
   /**
   * Modifiers
@@ -132,13 +135,13 @@
     }
     /* Arrow hidden when open only for dropdown - it is needed in phone-input */
     &__arrow,
-    &__placeholder{
+    &__placeholder {
       display: none;
     }
   }
 
   &--transition .hw-dropdown {
-    &__placeholder{
+    &__placeholder {
       display: none;
     }
   }
@@ -148,7 +151,7 @@
       border: 0;
     }
     &.hw-dropdown--expanded .hw-dropdown__placeholder,
-    &.hw-dropdown--transition .hw-dropdown__placeholder{
+    &.hw-dropdown--transition .hw-dropdown__placeholder {
       display: block;
     }
   }
@@ -173,7 +176,11 @@
     padding-left: 0px;
     padding-top: var(--hw-spacing-small-1);
     padding-bottom: var(--hw-spacing-small-3);
-    height: calc(var(--hw-input-field-height) - var(--hw-spacing-small-4)  - var(--hw-spacing-small-4) + var(--hw-spacing-small-1) +  var(--hw-spacing-small-3));
+    height: calc(
+      var(--hw-input-field-height) - var(--hw-spacing-small-4) -
+        var(--hw-spacing-small-4) + var(--hw-spacing-small-1) +
+        var(--hw-spacing-small-3)
+    );
     border-radius: 0px;
 
     &.hw-dropdown--native {
@@ -197,10 +204,13 @@
     }
 
     &:focus {
-      border-bottom: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
+      border-bottom: var(--hw-border-thickness) solid
+        var(--hw-color-primary-dark);
     }
 
-    &[disabled], &:disabled, &[disabled="disabled"] {
+    &[disabled],
+    &:disabled,
+    &[disabled="disabled"] {
       background: transparent;
       padding: var(--hw-spacing-small-4);
     }
@@ -217,16 +227,42 @@
     }
   }
 
-  &--line, &--white {
+  &--line,
+  &--white {
     &.hw-dropdown--native {
       background-image:
-      /* Cut off the sharp ends of the arrow */
-      linear-gradient(45deg, transparent 74%, var(--hw-color-white) 0%),
-      linear-gradient(135deg, var(--hw-color-white) 26%, transparent 26%),
-      /* Draw the arrow */
-      linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-white) 73%, var(--hw-color-white) 100%),
-      linear-gradient(45deg, var(--hw-color-white) 0, var(--hw-color-white) 28%, var(--hw-color-gray-dark) 29%, var(--hw-color-gray-dark) 37%, transparent 38%, transparent 100%),
-      linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray-dark) 63%, var(--hw-color-gray-dark) 71%, var(--hw-color-white) 72%, var(--hw-color-white) 100%);
+      /* Cut off the sharp ends of the arrow */ linear-gradient(
+          45deg,
+          transparent 74%,
+          var(--hw-color-white) 0%
+        ),
+        linear-gradient(135deg, var(--hw-color-white) 26%, transparent 26%),
+        /* Draw the arrow */
+          linear-gradient(
+            135deg,
+            transparent 0,
+            transparent 72%,
+            var(--hw-color-white) 73%,
+            var(--hw-color-white) 100%
+          ),
+        linear-gradient(
+          45deg,
+          var(--hw-color-white) 0,
+          var(--hw-color-white) 28%,
+          var(--hw-color-gray-dark) 29%,
+          var(--hw-color-gray-dark) 37%,
+          transparent 38%,
+          transparent 100%
+        ),
+        linear-gradient(
+          135deg,
+          transparent 0,
+          transparent 62%,
+          var(--hw-color-gray-dark) 63%,
+          var(--hw-color-gray-dark) 71%,
+          var(--hw-color-white) 72%,
+          var(--hw-color-white) 100%
+        );
       background-size: var(--hw-spacing-small-4) var(--hw-spacing-small-4);
       background-repeat: no-repeat;
     }
@@ -248,27 +284,57 @@
     background-color: var(--hw-color-gray-light-fill);
     -webkit-appearance: none;
     padding: var(--hw-spacing-small-4);
-    transition: border-color 0.3s ease, max-height 0.3s ease, transform 0.3s ease;
+    transition: border-color 0.3s ease, max-height 0.3s ease,
+      transform 0.3s ease;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       border-color: var(--hw-color-gray-dark);
     }
     /*&:focus {
       outline: 0;
     }*/
+
     background-image:
-    /* Cut off the sharp ends of the arrow */
-    linear-gradient(45deg, transparent 74%, var(--hw-color-gray-light-fill) 0%),
-    linear-gradient(135deg, var(--hw-color-gray-light-fill) 26%, transparent 26%),
-    /* Draw the arrow */
-    linear-gradient(135deg, transparent 0, transparent 72%, var(--hw-color-gray-light-fill) 73%, var(--hw-color-gray-light-fill) 100%),
-    linear-gradient(45deg, var(--hw-color-gray-light-fill) 0, var(--hw-color-gray-light-fill) 28%, var(--hw-color-gray-dark) 29%, var(--hw-color-gray-dark) 37%, transparent 38%, transparent 100%),
-    linear-gradient(135deg, transparent 0, transparent 62%, var(--hw-color-gray-dark) 63%, var(--hw-color-gray-dark) 71%, var(--hw-color-gray-light-fill) 72%, var(--hw-color-gray-light-fill) 100%);
+    /* Cut off the sharp ends of the arrow */ linear-gradient(
+        45deg,
+        transparent 74%,
+        var(--hw-color-gray-light-fill) 0%
+      ),
+      linear-gradient(
+        135deg,
+        var(--hw-color-gray-light-fill) 26%,
+        transparent 26%
+      ),
+      /* Draw the arrow */
+        linear-gradient(
+          135deg,
+          transparent 0,
+          transparent 72%,
+          var(--hw-color-gray-light-fill) 73%,
+          var(--hw-color-gray-light-fill) 100%
+        ),
+      linear-gradient(
+        45deg,
+        var(--hw-color-gray-light-fill) 0,
+        var(--hw-color-gray-light-fill) 28%,
+        var(--hw-color-gray-dark) 29%,
+        var(--hw-color-gray-dark) 37%,
+        transparent 38%,
+        transparent 100%
+      ),
+      linear-gradient(
+        135deg,
+        transparent 0,
+        transparent 62%,
+        var(--hw-color-gray-dark) 63%,
+        var(--hw-color-gray-dark) 71%,
+        var(--hw-color-gray-light-fill) 72%,
+        var(--hw-color-gray-light-fill) 100%
+      );
     background-size: var(--hw-spacing-small-4) var(--hw-spacing-small-4);
     background-position: calc(100% - var(--hw-spacing-small-4)) 45%;
     background-repeat: no-repeat;
-
-
 
     /* Remove default down-arrow for IE */
     &::-ms-expand {
@@ -290,4 +356,19 @@
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
+}
+
+.hw-label--error {
+
+  select {
+    position: relative;
+    border-bottom: var(--hw-border-thickness-thick) solid var(--hw-color-alert-yellow) !important;
+    margin-bottom: calc(var(--hw-border-thickness) - var(--hw-border-thickness-thick)); /* Subtract difference in border height to avoid jumping */
+    transition: border var(--hw-transition-time-normal) var(--hw-transition-easing-normal);
+  }
+
+  select + .hw-error:before {
+    right: 40px;
+  }
+
 }
