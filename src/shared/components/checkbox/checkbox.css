@@ -28,6 +28,7 @@
 
   &[disabled] {
     color: var(--hw-color-gray-dark);
+    cursor: not-allowed;
   }
 
 
