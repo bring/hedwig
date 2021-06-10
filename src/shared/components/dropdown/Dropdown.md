@@ -41,7 +41,7 @@ Use the browser native select function
 ```html|span-3,plain,light
 <label class="hw-label">
   Select country
-  <select class="hw-dropdown--native" data-hw-dropdown="countries-native" id="countries-native">
+  <select class="hw-dropdown--native">
     <option selected="true" disabled="disabled">Select country</option>
     <option value="1">Afghanistan</option>
     <option value="2">Albania</option>
@@ -117,6 +117,21 @@ For mobile and tablet, native mode will be enabled automatically
 </label>
 ```
 
+### Error
+```html|span-3,plain,light
+<label class="hw-label hw-label--error">
+  Select country
+  <select class="hw-dropdown--native hw-dropdown--error" data-hw-dropdown="countries-error" id="countries-error">
+    <option value="1">Afghanistan</option>
+    <option value="2">Algerie</option>
+    <option value="3">Antarctica</option>
+    <option value="4">Austraoptiona</option>
+    <option value="5">Booptionvia</option>
+    <option value="6">Bosnia</option>
+  </select>
+  <div class="hw-error hw-error--align-left hw-error--indented">This is a required field</div>
+</label>
+```
 
 
 ### Line
