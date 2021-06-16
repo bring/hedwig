@@ -29,12 +29,12 @@ Elements:
 
 ```html|span-4,plain,light
 <div class="hw-tab"><!--
-  --><button href="#/Tab#item-1" class="hw-tab__item">Item 1</button><!--
-  --><button href="#/Tab#item-2" class="hw-tab__item">Item 2</button><!--
-  --><button href="#/Tab#item-3" class="hw-tab__item hw-tab__item--selected">Item 3</button><!--
-  --><button href="#/Tab#item-4" class="hw-tab__item">Item 4 longer</button><!--
-  --><button href="#/Tab#item-5" class="hw-tab__item">Item 5<span class="hw-text-small"> (12)</span></button><!--
-  --><button href="#/Tab#item-6" class="hw-tab__item">Item 6</button><!--
+  --><button class="hw-tab__item">Item 1</button><!--
+  --><button class="hw-tab__item">Item 2</button><!--
+  --><button class="hw-tab__item hw-tab__item--selected">Item 3</button><!--
+  --><button class="hw-tab__item">Item 4 longer</button><!--
+  --><button class="hw-tab__item">Item 5<span class="hw-text-small"> (12)</span></button><!--
+  --><button class="hw-tab__item">Item 6</button><!--
   --><div class="hw-tab__marker"></div>
 </div>
 ```
