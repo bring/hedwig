@@ -5,6 +5,8 @@
 
 > The footer contains Bring’s logo, links and button links to often used services, as well as links to Bring’s social media platforms.
 
+> The h4 titles in the footer is deprecated and should use h2 instead.
+
 
 
 
@@ -27,7 +29,7 @@
         <div class="hw-block">
           <div class="hw-grid"><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h4 class="">Title</h4>
+              <h2 class="">Title</h2>
               <div class="hw-block">
                 <ul class="hw-linklist">
                   <li><a href="#">List item 1</a></li>
@@ -39,7 +41,7 @@
               </div>
             </div><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h4 class="">Title</h4>
+              <h2 class="">Title</h2>
               <div class="hw-block">
                 <ul class="hw-linklist">
                   <li><a href="#">List item 1</a></li>
@@ -51,7 +53,7 @@
               </div>
             </div><!--
             --><div class="hw-grid__item hw-one-quarter">
-              <h4 class="">Title</h4>
+              <h2 class="">Title</h2>
               <div class="hw-block">
                 <ul class="hw-linklist">
                   <li><a href="#">List item 1</a></li>
