@@ -9,9 +9,9 @@
   border: 0px solid var(--hw-color-gray-light-fill);
   border-top: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
   padding: var(--hw-spacing-small-4) 0;
+  color: var(--hw-color-gray-dark);
 
   p {
-  	color: var(--hw-color-gray-dark);
   	padding: var(--hw-spacing-small-4) 0 var(--hw-spacing-small-2) 0;
   }
 
