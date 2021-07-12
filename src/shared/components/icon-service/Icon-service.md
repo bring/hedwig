@@ -1,14 +1,8 @@
 
 {navigation}
 
+Service icons are Posten's own icons, for functional icons (font awesome), see [Icon-functional](/Icon-functional)
 
-```hint
-Old functional icons is now deprecated from version 8 of Hedwig. [See how to use the new functional icons](/Icon-functional) 
-```
-
-```hint
-For functional icons, see [Icon-functional](/Icon-functional)
-```
 
 To use Service icons or logos, add this script in your footer:
 ```code
