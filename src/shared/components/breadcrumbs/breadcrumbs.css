@@ -76,7 +76,6 @@
   &__arrow-mobile {
     margin-right: 8px;
     transform: rotate(180deg);
-    vertical-align: baseline;
     @media (--large) {
       display: none;
     }
