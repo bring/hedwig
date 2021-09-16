@@ -138,7 +138,7 @@
   }
 
   &__skip-to-content {
-    top: 0;
+    top: -50px;
     left: 0;
     opacity: 0;
     padding: var(--hw-spacing-small-3);
