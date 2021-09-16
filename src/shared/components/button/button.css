@@ -160,11 +160,7 @@
       color: var(--hw-color-primary-light);
       fill: var(--hw-color-primary-light);
     }
-    &:disabled, &[disabled], &[disabled]:active {
-      border: var(--hw-border-thickness) solid var(--hw-color-gray-dark);
-      color: var(--hw-color-gray-normal);
-      background: transparent !important;
-    }
+   
   }
 
   &--outline-primary {
