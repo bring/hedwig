@@ -21,12 +21,6 @@
    * Modifiers
    */
 
-  &--error {
-    &:focus-within {
-      color: var(--hw-color-gray-dark);
-    } 
-  }
-
   &[disabled], &:disabled, &[disabled="disabled"], &--disabled {
     color: var(--hw-color-black);
     pointer-events: none;
@@ -73,7 +67,7 @@
         fill: var(--hw-color-gray-dark);
       }
     }
-    
+
     &[readonly]:focus-within {
       color: var(--hw-color-input-accent);
       border-bottom: var(--hw-border-thickness) solid var(--hw-color-input-accent);
