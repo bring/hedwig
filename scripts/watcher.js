@@ -56,31 +56,24 @@ function buildJs(args) {
 function concatCss() {
   concatBringCss();
   concatPostenCss();
-  concatImpFiles();
 }
 
 /**
- * Contatenating all files except important files for bring
+ * Contatenating all files for bring
  */
 function concatBringCss() {
   concat('{src/shared/**/*.css,src/bring/**/*.css}', './tmp/bring_wo_impfiles.css', impFiles);
+  concat('{tmp/bring_wo_impfiles.css,' + impFiles + '}', './tmp/bring.css');
   console.log('🔨 Concatinated all Bring CSS...');
 }
 
 /**
- * Contatenating all files except important files for posten
+ * Contatenating all files for posten
  */
 function concatPostenCss() {
   concat('{src/shared/**/*.css,src/posten/**/*.css}', './tmp/posten_wo_impfiles.css', impFiles);
-  console.log('🔨 Concatinated all Posten CSS...');
-}
-
-/**
- * Contatenating imp files at the end to the concatenated posten/bring files
- */
-function concatImpFiles() {
-  concat('{tmp/bring_wo_impfiles.css,' + impFiles + '}', './tmp/bring.css');
   concat('{tmp/posten_wo_impfiles.css,' + impFiles + '}', './tmp/posten.css');
+  console.log('🔨 Concatinated all Posten CSS...');
 }
 
 function startBringCssCompile() {
