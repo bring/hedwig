@@ -149,7 +149,7 @@
         <td>Data in the column</td>
         <td>More information</td>
         <td>400</td>
-        <td>Information</td>
+        <td>Information and a <a href="">link</a></td>
       </tr>
 
     </tbody>
