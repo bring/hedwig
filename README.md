@@ -11,14 +11,7 @@ npm run dev
 
 
 ## Documentation
-[Hedwig documentation](https://hedwig-docs.herokuapp.com)
-
-Documentation is currently being moved to [Zeroheight](https://zeroheight.com/). 
-Util its fully moved the current documentation is [here](https://hedwig-docs.herokuapp.com)
-
-We use [Catalog](https://interactivethings.github.io/catalog/#/) from documentation. [Read the documentation for Catalog](https://interactivethings.github.io/catalog/#/write-documentation).
-
-Docs are auto generated from the components markdown file. The filename will generate the menu name and URL. It is recommended to save the documentation files together with your components.
+[Hedwig documentation](https://hedwig.posten.no/)
 
 ## Disclaimers
 We will not support changes and updates on older major releases of Hedwig. 
