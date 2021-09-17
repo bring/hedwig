@@ -543,6 +543,40 @@ On this page, only the first navbar is able to open the search, menu and login. 
 </header>
 ```
 
+### Navbar with Flagship service
+
+```html
+<header class="hw-navbar">
+  <div class="hw-navbar__content">
+    <div class="hw-navbar__top">
+      <span class="hw-navbar__logo hw-navbar__logo--left">
+        <a href="#">
+          <svg class="hw-navbar__logo-standard" aria-labelledby="Logo" role="img">
+            <title id="Logo">Go to homepage</title>
+            <use xlink:href="#logo-{postenbring}"></use>
+          </svg>
+        </a>
+        <span class="hw-navbar__logo-flagship">Flagship</span>
+      </span>
+      <nav class="hw-navbar__menu">
+        <a href="#" class="hw-navbar__item">English</a>
+        <a href="#" class="hw-navbar__item">Login<!--
+        --><i class="hw-navbar__icon far fa-user fa-2x"></i>
+        </a>
+        <button class="hw-navbar__menu-button" data-hw-toggle-menu><!--
+          --><span class="hw-navbar__menu-button-label-menu">Menu</span><!--
+          --><span class="hw-navbar__menu-button-label-close">Close</span><!--
+          --><span class="fa-stack hw-navbar__menu-button-toggle">
+              <i class="hw-navbar__bars far fa-bars fa-stack-2x"></i>
+              <i class="hw-navbar__times far fa-times fa-stack-2x"></i>
+        </button>
+      </nav>
+    </div>
+    <section class="hw-navbar__drawer" data-hw-menu-drawer></section>
+  </div>
+</header>
+```
+
 ### Navbar with text logo
 
 ```html

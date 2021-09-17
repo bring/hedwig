@@ -68,6 +68,25 @@
 
     }
 
+    &-flagship {
+      font-size: var(--hw-font-size-max-h2-px);
+      font-family: var(--hw-font-primary-medium);
+      color: var(--hw-color-primary-darker);
+      height: 60px;
+      top: 13px;
+      margin-left: 24px;
+      border-left: 1px solid var(--hw-color-gray-normal);
+      padding-left: 24px;
+      display: inline-block;
+      position: relative;
+      line-height: 60px;
+      text-transform: capitalize;
+    }
+
+    &-internal-service {
+      font-size: var(--hw-font-size-h3-title);
+    }
+
     @media (--large) {
       position: relative;
       margin: 0;
@@ -435,6 +454,10 @@
 
   &--frontpage {
     margin-bottom: 0;
+  }
+
+  & .hw-navbar__logo--left {
+    margin: 0;
   }
 }
 
