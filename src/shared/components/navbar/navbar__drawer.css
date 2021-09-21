@@ -88,6 +88,9 @@
       li {
         margin-bottom: var(--hw-spacing-small-4);
       }
+      a {
+        display: inline-flex;
+      }
     }
 
     .hw-accordion--menu {
