@@ -31,7 +31,7 @@ Elements:
 ### Multi-level
 
 ```html|plain,light
-<nav class="hw-breadcrumbs">
+<nav class="hw-breadcrumbs" aria-label="Breadcrumb">
     <ol>
         <li class="hw-breadcrumb">
             <a class="hw-link" href="#">Home</a>
