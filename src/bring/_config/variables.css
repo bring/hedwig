@@ -49,6 +49,7 @@
    * Logo width adjusted for Bring logo
    */
   --hw-logo-width: 128px;
+  --hw-logo-width-mobile: 94.5px;
 
   /**
    * Font families

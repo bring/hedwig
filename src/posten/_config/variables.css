@@ -49,6 +49,7 @@
    * Logo width adjusted for Posten logo
    */
   --hw-logo-width: 158px;
+  --hw-logo-width-mobile: 118.42px;
 
   /**
    * Font families
