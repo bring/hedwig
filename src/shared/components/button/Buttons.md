@@ -113,9 +113,6 @@ Colors
   <button class="hw-button hw-button--outline-white">
     Primary button
   </button>
-  <button class="hw-button hw-button--outline-white" disabled>
-    Disabled
-  </button>
 ```
 
 ### Button with icon
