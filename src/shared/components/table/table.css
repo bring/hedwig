@@ -30,10 +30,6 @@
     padding: var(--hw-spacing-medium-2) var(--hw-spacing-small-4) var(--hw-spacing-small-4) 0 !important;
   }
 
-  & tbody tr:hover {
-    color: var(--hw-color-primary-darker);
-  }
-
   & th {
     color:var(--hw-color-primary-dark);
     padding: var(--hw-spacing-small-4) 0;
@@ -88,10 +84,6 @@
     width: calc(100% + (2*var(--hw-spacing-medium-4))) !important;
   }
 
-  &--subtitle {
-    font-size: 90%;
-    color: var(--hw-color-gray-dark);
-  }
 }
 
 
