@@ -166,11 +166,11 @@
   --hw-font-size-min-p-px: 18px;
   --hw-p-line-height: 1.4;
 
-  --hw-font-size-max-lead: 20; /* 22 */
-  --hw-font-size-max-lead-px: 20px;
-  --hw-font-size-min-lead: 18;
-  --hw-font-size-min-lead-px: 18px;
-  --hw-lead-line-height: 1.4;
+  --hw-font-size-max-lead: 24; /* 22 */
+  --hw-font-size-max-lead-px: 24px;
+  --hw-font-size-min-lead: 22;
+  --hw-font-size-min-lead-px: 22px;
+  --hw-lead-line-height: 1.333;
 
   --hw-font-size-max-small: 18; /* 20 */
   --hw-font-size-max-small-px: 18px;
