@@ -13,6 +13,16 @@
 [Base]           .hw-callout
 ```
 
+### Empty callout
+
+```html|span-3
+light: true,
+plain: true
+---
+  <div class="hw-callout">
+  </div>
+```
+
 
 ### Callout with content
 
