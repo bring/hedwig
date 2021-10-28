@@ -34,9 +34,6 @@ If you are adding new functionality to Hediwg please follow the below developmen
 
 #### 2: Just do it locally
 If the thing you're changing or adding is specific to your project, and not all sites using Hedwig, use a separate css file to add or override functionality using your own classes and components.
- 
-### Please note
-The documentation is **auto-deployed** to Heroku [https://hedwig-docs.herokuapp.com](https://hedwig-docs.herokuapp.com) when pushed to master.
 
 ## Development guidelines
 
@@ -95,7 +92,7 @@ If you need to use an icon from FontAwesome that is not allready added in Hedwig
 
 #### Font Awesome Icons works like this
 - You need to add an environment variable with your authToken from Font Awesome. For Posten and Bring developers, contact Hedwig contributors. Otherwise, [you can get a licence](https://fontawesome.com/pricing).
-- Use functional icons like described in [the docs](https://hedwig-docs.herokuapp.com/bring.html#/Icon-functional)
+- Use functional icons like described in [the docs](https://hedwig.posten.no)
 
 To add the authToken to your environment, in ~/.bashrc add the following line:
 ```
@@ -109,7 +106,6 @@ Hedwig use SVG sprite for special icons and logos. These icons must only be used
 #### SVG Sprite Icons works like this:
 - Place icons in the `assets/icons/` folder 
 - Run `npm run svg` to generate SVG sprite. `npm run build` or `npm run dev` will both also produce the SVG sprite
-- Use icons like described in [the docs](https://hedwig-docs.herokuapp.com/bring.html#/Icon)
 
 We use [inline SVG's for icons](https://github.com/bring/hedwig/issues/9).
 
