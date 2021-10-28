@@ -43,7 +43,7 @@
       color: var(--hw-color-primary-dark);
       outline: 0;
     }
- 
+
   }
 
   &__icon {
@@ -67,10 +67,16 @@
     }
   }
 
-  
+
 
   &__contents {
-    padding: 0 var(--hw-spacing-medium-4) var(--hw-spacing-medium-3) 0;
+    padding: 0 0 var(--hw-spacing-medium-4);
+  }
+
+  &__contents:first-of-type p,
+  &__contents:first-of-type ul,
+  &__contents:first-of-type ol  {
+    margin-top: 0;
   }
 
   &__contents[aria-hidden=true] a {
@@ -79,6 +85,10 @@
 
   &__item--expanded .hw-accordion__icon::after {
     transform: rotate(90deg) scale(0.0, 1.0);
+  }
+
+  &__item--expanded .hw-accordion__trigger {
+    color: var(--hw-color-primary-dark);
   }
 
 
