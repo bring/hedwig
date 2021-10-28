@@ -30,8 +30,8 @@
     background: transparent;
 
     label {
-      margin-top: var(--hw-spacing-small-4);
       margin-right: var(--hw-spacing-small-4);
+      margin-bottom: var(--hw-spacing-small-4);
     }
   }
 
