@@ -17,7 +17,7 @@
     right: var(--hw-spacing-small-4);
     top: 50%;
     transform: translateY(-50%);
-    font-size: var(--hw-font-size-lead);
+    font-size: var(--hw-font-size-p);
   }
 
   &__inner {
