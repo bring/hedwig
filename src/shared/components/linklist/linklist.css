@@ -9,7 +9,7 @@
   padding: 0;
 
   & li {
-    margin-bottom: var(--hw-spacing-small-2);
+    margin-bottom: var(--hw-spacing-small-3);
     &:last-of-type {
       margin-bottom: 0;
     }
