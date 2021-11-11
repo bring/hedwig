@@ -4,11 +4,21 @@
 
 .hw-wysiwyg {
   & h1,
-  & h2,
-  & h3 {
+  & h2 {
     
     margin-top: var(--hw-spacing-large-1);
     @media(--large) { margin-top: var(--hw-spacing-large-2); }
+  }
+
+  & h3 {
+    margin-top: var(--hw-spacing-medium-4);
+    @media(--large) { margin-top: var(--hw-spacing-large-1); }
+  }
+
+  & h4,
+  & h5 {
+    margin-top: var(--hw-spacing-medium-3);
+    @media(--large) { margin-top: var(--hw-spacing-medium-4); }
   }
 
   & .hw-dropdown__options {
@@ -66,10 +76,19 @@
 
   /* Combinations */
   & p + h2,
-  & p + h3,
   & p + figure {
     margin-top: var(--hw-spacing-large-1);
     @media(--large) { margin-top: var(--hw-spacing-large-2); }
+  }
+  & p + h3 {
+    margin-top: var(--hw-spacing-medium-4);
+    @media(--large) { margin-top: var(--hw-spacing-large-1); }
+  }
+
+  & p + h4,
+  & p + h5 {
+    margin-top: var(--hw-spacing-medium-3);
+    @media(--large) { margin-top: var(--hw-spacing-medium-4); }
   }
 
   & hr {
