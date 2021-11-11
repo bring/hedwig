@@ -32,13 +32,15 @@
     </figcaption>
   </figure>
 
-  <h2>H2 Title</h3>
+  <h3>H3 Title</h3>
 
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat est gravida venenatis rutrum. Maecenas consequat mauris ipsum. In varius convallis hendrerit. Ut gravida luctus pretium. Nam sit amet mattis odio. Suspendisse vulputate in enim ac rhoncus. Ut viverra et lectus et feugiat. Nulla non aliquam nisi, nec bibendum urna. Nunc interdum orci ac ultrices pulvinar. In hac habitasse platea dictumst. Nulla rutrum, arcu in pulvinar efficitur, odio dolor consectetur urna, vel dictum ex erat semper tellus. In hac habitasse platea dictumst. Nam a hendrerit quam, vitae lobortis dui. Integer rhoncus condimentum pretium. Mauris ac enim auctor, iaculis elit id, pellentesque velit.</p>
 
-  <p>Fusce ac nibh sagittis, mattis libero vitae, tincidunt lacus. Nulla pretium justo metus, non viverra lorem consectetur et. Aenean odio mi, placerat eget suscipit in, molestie blandit mi. Phasellus sit amet felis sed ante placerat pharetra non euismod diam. Nullam aliquam metus id purus varius, vel mollis nulla lobortis. Pellentesque vehicula dignissim magna, in faucibus tortor scelerisque rutrum. Aenean ac turpis id turpis congue cursus. Aliquam hendrerit egestas nulla, ac aliquam ex accumsan vel.</p>
+  <h4>H4 Title</h4>
 
-  <h2>H2 Title</h3>
+  <p>Fusce ac nibh sagittis, mattis libero vitae, tincidunt lacus. Nulla pretium justo metus, non viverra lorem consectetur et. Aenean odio mi, placerat eget suscipit in, molestie blandit mi. Phasellus sit amet felis sed ante placerat pharetra non euismod diam. Nullam aliquam metus id purus varius, vel mollis nulla lobortis. Pellentesque vehicula dignissim magna, in faucibus tortor scelerisque rutrum. Aenean ac turpis id turpis congue cursus. Aliquam hendrerit egestas nulla, ac aliquam ex accumsan vel.</p>
+  
+  <h5>H5 Title</h5>
 
   <ul class="hw-accordion" data-hw-accordion>
     <li class="hw-accordion__item">
