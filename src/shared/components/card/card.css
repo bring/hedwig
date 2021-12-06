@@ -150,7 +150,7 @@
 
   &__date {
     color: var(--hw-color-white);
-    font-size: var(--hw-font-size-lead);
+    font-size: var(--hw-font-size-p);
     margin-left: auto;
     display: flex;
     align-items: center;
