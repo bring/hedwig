@@ -10,7 +10,7 @@
   border-top: var(--hw-border-thickness) solid var(--hw-color-primary-dark);
   padding: var(--hw-spacing-small-4) 0;
 
-  p {
+  p, div:nth-child(2) {
   	padding: var(--hw-spacing-small-4) 0 var(--hw-spacing-small-2) 0;
     color: var(--hw-color-gray-dark);
   }
