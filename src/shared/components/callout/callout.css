@@ -15,8 +15,12 @@
     color: var(--hw-color-black);
   }
 
-  p, .hw-block:nth-child(2) {
+  &> p, &> .hw-block:nth-child(2) {
   	padding: var(--hw-spacing-small-4) 0 var(--hw-spacing-small-2) 0;
+  }
+
+  .hw-wysiwyg>:first-child{
+    margin-top:0;
   }
 
   @media (--max-medium) {
