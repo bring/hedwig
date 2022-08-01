@@ -42,7 +42,7 @@
 
   &--large {
     font-size: 18px;
-    height: 58px;
+    min-height: 58px;
     padding: 19px 24px;
     i, svg {
       margin-right: 12px;
