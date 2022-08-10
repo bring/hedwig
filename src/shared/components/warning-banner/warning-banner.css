@@ -22,7 +22,6 @@
 
     a {
       font-size: var(--hw-font-size-smaller);
-      text-decoration: underline;
     }
 
     /**
@@ -118,7 +117,7 @@
     }
 
     &__read-more-link {
-      display: block;
+      display: inline-block;
       position: relative;
       margin-top: var(--hw-spacing-small-4);
       font-size: var(--hw-font-size-small);
