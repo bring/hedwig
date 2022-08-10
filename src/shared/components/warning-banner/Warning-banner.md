@@ -38,7 +38,7 @@ Required:
       <i class="fas fa-chevron-down" data-fa-transform="down-2" title="Open warning-banner information"></i>
     </button>
     <div class="hw-warning-banner__contents">
-      The asphalt on the roads is melting and our vehicles are stuck in thick oil. Drone deliveries operating as normal.
+      <p>The asphalt on the roads is melting and our vehicles are stuck in thick oil. Drone deliveries operating as normal.</p>
       <a href="#" class="hw-warning-banner__read-more-link">Read more</a>
     </div>
   </section>

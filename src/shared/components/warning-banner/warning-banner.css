@@ -117,6 +117,8 @@
     }
 
     &__read-more-link {
+      @extend .hw-link, .hw-link--solid;
+      
       display: inline-block;
       position: relative;
       margin-top: var(--hw-spacing-small-4);
