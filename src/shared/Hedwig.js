@@ -9,7 +9,6 @@ import checkSupport from './utilities/js/checkSupport';
  * @desc Bootstraps the application
  */
 const HWApp = () => {
-  console.log("HWApp");
   // Module settings object
   const SETTINGS = {
     document: q('html'), // All password DOM nodes
@@ -25,7 +24,6 @@ const HWApp = () => {
   function init() {
     // Skip if already initialised
     if (SETTINGS.document.getAttribute('data-hw-app-initialised') === 'true') { return; }
-    console.log("init");
 
     // Mark as initialised
     SETTINGS.document.setAttribute('data-hw-app-initialised', true);
