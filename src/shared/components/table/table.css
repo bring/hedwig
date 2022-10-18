@@ -12,6 +12,7 @@
     border:none;
     width:100%;
     text-align: left;
+    word-break: normal;
   }
   
   & thead th {
