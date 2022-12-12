@@ -7,16 +7,16 @@ import qa from '../../utilities/js/qa';
  * @desc Describe your module here
  * @param {object} settings
  */
-const HWModal = ({
-    modalSelector = '[data-hw-modal]',
-    modalTrigger = '[data-hw-modal-trigger]',
-  } = {}) => {
+
+export const HWModal = ({
+  modalSelector = '[data-hw-modal]',
+  modalTrigger = '[data-hw-modal-trigger]',
+} = {}) => {
   // Module settings object
   const SETTINGS = {
     modals: qa(modalSelector), // All modal DOM nodes
     triggers: qa(modalTrigger),
   };
-
 
   /**
    * @function moduleMethod
@@ -43,7 +43,6 @@ const HWModal = ({
     }
   }
 
-
   /**
    * @function bindEvents
    * @desc Adds listener to module
@@ -53,7 +52,6 @@ const HWModal = ({
   function bindEvents(trigger) {
     trigger.addEventListener('click', toggleModal);
   }
-
 
   /**
    * @function init
@@ -73,7 +71,6 @@ const HWModal = ({
       // Mark as initialised
       modal.setAttribute('data-hw-modal-initialised', true);
       modal.setAttribute('aria-hidden', true);
-
     });
 
     // Example of binding event to button
@@ -85,7 +82,6 @@ const HWModal = ({
       bindEvents(trigger);
     });
   }
-
 
   // Initialise HWModule component
   init();
