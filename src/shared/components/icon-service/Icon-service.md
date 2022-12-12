@@ -166,6 +166,11 @@ ekspress
 ekspressfly
 <br/>
 <svg class="hw-icon" style="width: 20px; height: 20px; margin-right: 10px;">
+  <use xlink:href="#ekspressnestedag"></use>
+</svg>
+ekspressnestedag
+<br/>
+<svg class="hw-icon" style="width: 20px; height: 20px; margin-right: 10px;">
   <use xlink:href="#faktura"></use>
 </svg>
 faktura
@@ -309,6 +314,11 @@ paaske
   <use xlink:href="#pakke"></use>
 </svg>
 pakke
+<br/>
+<svg class="hw-icon" style="width: 20px; height: 20px; margin-right: 10px;">
+  <use xlink:href="#pakkeliten"></use>
+</svg>
+pakkeliten
 <br/>
 <svg class="hw-icon" style="width: 20px; height: 20px; margin-right: 10px;">
   <use xlink:href="#pakkerstykkgodsogdellast"></use>
