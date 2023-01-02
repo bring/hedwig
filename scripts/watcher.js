@@ -8,7 +8,6 @@
 
 const packageJson = require('../package.json');
 const watch = require('node-watch');
-const build = require('./docs-build');
 const filter = require('./utilities/filter');
 const spawn = require('child_process').spawn;
 const concat = require('./utilities/concat');
@@ -40,11 +39,6 @@ if (!fs.existsSync(dir)) {
 /**
  * Watch tasks
  */
-
-function buildDocs(args) {
-  console.log('✍️ The DOCS was saved');
-  build();
-}
 
 function buildJs(args) {
   console.log('🎉 The JS was compiled!');
@@ -134,7 +128,6 @@ buildIconsJs();
  */
 
 watch('src', { recursive: true }, filter(/\.js$/, buildJs));
-watch('src', { recursive: true }, filter(/\.md$/, buildDocs));
 watch('src/shared', { recursive: true }, filter(/\.css$/, concatCss));
 watch('src/bring', { recursive: true }, filter(/\.css$/, concatBringCss));
 watch('src/posten', { recursive: true }, filter(/\.css$/, concatPostenCss));
