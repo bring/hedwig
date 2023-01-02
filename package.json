@@ -33,6 +33,7 @@
   "license": "BSD-2-Clause",
   "main": "dist/main.js",
   "scripts": {
+    "dev": "concurrently \"npm run watcher --scripts-prepend-node-path\" \"npm run server --scripts-prepend-node-path\"",
     "build": "rm -Rf dist && npm run concatcss && npm run css:build && npm run js:build && npm run svg",
     "release": "npm run build && rm -rf node_modules && np && npm run cache:purge:jsdelivr",
     "css:build": "npm run css:build:bring && npm run css:build:posten",
@@ -46,6 +47,7 @@
     "js:build:icons": "rollup -c rollup.config.icons.js",
     "js:dev": "rollup -m inline -c --name \"hedwig\"",
     "watcher": "node ./scripts/watcher",
+    "server": "node ./server",
     "test": "jest",
     "svg:min": "svgo -f ./assets/icons -o ./dist/icons",
     "svg:sprite": "node ./scripts/svg-sprite",
