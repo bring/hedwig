@@ -11,7 +11,10 @@ import commonjs from 'rollup-plugin-commonjs';
 import { uglify } from 'rollup-plugin-uglify';
 
 export default [{
-  input: { include: ['src/shared/utilities/js/polyfills/*.js', 'src/**/*.js'] },
+  input: {
+    include: ['src/shared/utilities/js/polyfills/*.js', 'src/**/*.js'],
+    exclude: ['src/**/*.test.js'],
+  },
   onwarn: (warning) => {
     // Skip certain warnings
     if (warning.code === 'THIS_IS_UNDEFINED') {
