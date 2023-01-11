@@ -115,7 +115,9 @@
 
     &:focus ~ .hw-radio-button__indicator {
       border-color: var(--hw-color-gray-dark);
-
+      outline: 2px solid #005fcc;
+      outline-offset: 2px;
+      
       &::after {
         content: "";
         position: absolute;
