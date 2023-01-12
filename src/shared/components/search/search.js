@@ -10,7 +10,7 @@ import KEYS from '../../utilities/js/keys';
  * @param {object} settings
  */
 
-const HWSearch = ({
+export const HWSearch = ({
   selector = '[data-hw-search]',
   activeClass = 'hw-search--active',
   dirtyClass = 'hw-search--dirty',
