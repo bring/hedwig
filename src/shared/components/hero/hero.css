@@ -5,7 +5,8 @@
  .hw-hero {
   background: var(--hw-color-gray-dark);
   position: relative;
-  min-height: 55vh;
+  height: 500px;
+  max-height: calc(65vh - 75px);
   overflow: hidden;
 
   &::after {
@@ -73,7 +74,8 @@
    */
 
    &--small {
-    min-height: 35vh;
+    height: 320px;
+    max-height: calc(60vh - 75px);
   }
 
   &--full {
