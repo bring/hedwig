@@ -56,6 +56,7 @@ library.add(far.faArrowRight);
 library.add(far.faArrowUp);
 library.add(far.faArrowDown);
 library.add(far.faBell);
+library.add(far.faWandMagicSparkles);
 library.add(fas.faArchive);
 library.add(fas.faArrowAltToBottom);
 library.add(fas.faArrowsAltH);
