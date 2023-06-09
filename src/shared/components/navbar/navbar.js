@@ -104,9 +104,6 @@ export const HWNavbar = ({
     if (SETTINGS.footer) {
       SETTINGS.footer.classList.add(searching);
     }
-    if (!SETTINGS.desktopSearchField) {
-      SETTINGS.desktopSearchField = q(desktopSearchFieldSelector);
-    }
     if (SETTINGS.desktopSearchField) {
       SETTINGS.desktopSearchField.focus();
     }
