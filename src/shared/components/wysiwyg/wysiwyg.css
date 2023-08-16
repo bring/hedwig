@@ -29,6 +29,11 @@
   &.hw-color-white a {
     @extend .hw-link--inverted;
   }
+
+  & ul ul:not(.hw-accordion) li::before {
+    border: 1px solid var(--hw-color-primary-dark);
+    background: none;
+  }
   
   & li.hw-dropdown__option::before {
     content: initial !important;
