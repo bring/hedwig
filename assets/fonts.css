@@ -18,7 +18,7 @@
  * http://caniuse.com/#feat=svg-fonts
  * Chrome 4-37, Safari 3.2, Opera 10.0-24, Safari & Chrome for iOS 3.2,
  * Android 3-4.4.4, Blackberry browser 7, Opera Mobile 12,
- * UC Browser 9.9 for Android
+ * UC Browser 9.9 for Androide
  *
  * http://caniuse.com/#feat=eot
  * IE8-11 (no other browsers)
@@ -32,6 +32,7 @@
   src: url("fonts/PostenSans-Light.woff2") format("woff2"),
     url("fonts/PostenSans-Light.woff") format("woff"),
     url("fonts/PostenSans-Light.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -40,6 +41,7 @@
   src: url("fonts/PostenSans-Regular.woff2") format("woff2"),
     url("fonts/PostenSans-Regular.woff") format("woff"),
     url("fonts/PostenSans-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -48,6 +50,7 @@
   src: url("fonts/PostenSans-Medium.woff2") format("woff2"),
     url("fonts/PostenSans-Medium.woff") format("woff"),
     url("fonts/PostenSans-Medium.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -56,4 +59,5 @@
   src: url("fonts/PostenSans-Bold.woff2") format("woff2"),
     url("fonts/PostenSans-Bold.woff") format("woff"),
     url("fonts/PostenSans-Bold.ttf") format("truetype");
+  font-display: swap;
 }
