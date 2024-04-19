@@ -27,14 +27,6 @@
  */
 
 @font-face {
-  font-family: "Posten Sans Light";
-  src: url("fonts/PostenSans-Light.eot");
-  src: url("fonts/PostenSans-Light.woff2") format("woff2"),
-    url("fonts/PostenSans-Light.woff") format("woff"),
-    url("fonts/PostenSans-Light.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Posten Sans Regular";
   src: url("fonts/PostenSans-Regular.eot");
   src: url("fonts/PostenSans-Regular.woff2") format("woff2"),
