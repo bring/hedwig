@@ -54,14 +54,14 @@
   /**
    * Font families
    */
-  --hw-h1-large-font-family: var(--hw-font-primary-light);
-  --hw-h1-font-family: var(--hw-font-primary-light);
-  --hw-h2-font-family: var(--hw-font-primary-light);
+  --hw-h1-large-font-family: var(--hw-font-primary-medium);
+  --hw-h1-font-family: var(--hw-font-primary-medium);
+  --hw-h2-font-family: var(--hw-font-primary-medium);
   --hw-h3-font-family: var(--hw-font-primary-regular);
   --hw-h4-font-family: var(--hw-font-primary-regular);
   --hw-h5-font-family: var(--hw-font-primary-regular);
   --hw-h6-font-family: var(--hw-font-primary-regular);
   --hw-caption-font-family: var(--hw-font-primary-regular);
   --hw-technical-font-family: var(--hw-font-primary-regular);
-  --hw-card-title-font-family: var(--hw-font-primary-light);
+  --hw-card-title-font-family: var(--hw-font-primary-regular);
 }
