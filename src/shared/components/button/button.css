@@ -221,11 +221,15 @@
     height: 60px;
     margin: 0px;
     padding: 10px 10px 8px;
-    border-radius: 50%;
-    background: var(--hw-color-primary-light);
+    border-radius: 2px;
+    background: var(--hds-ui-colors-white);
     color: var(--hw-color-primary-darker);
 
-    &:hover,
+    &:hover {
+      background: var(--hw-color-primary-lighter);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12); 
+    }
+    
     &:active {
       color: var(--hw-color-primary-darker);
       fill: var(--hw-color-primary-darker);
