@@ -238,7 +238,7 @@
     }
 
     &:active {
-      background: var(--hw-color-button-primary-light-hover);
+      background: var(--hw-color-primary-lighter);
     }
   }
   &--chat-fixed {
