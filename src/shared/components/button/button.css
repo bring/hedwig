@@ -217,8 +217,8 @@
     }
   }
   &--chat {
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     margin: 0px;
     padding: 10px 10px 8px;
     border-radius: 2px;
@@ -228,6 +228,8 @@
     &:hover {
       background: var(--hw-color-primary-lighter);
       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12); 
+      -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.12);
+      -moz-box-shadow:    0px 1px 3px 0px rgba(0,0,0,0.12);
     }
     
     &:active {
