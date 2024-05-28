@@ -222,7 +222,7 @@
     margin: 0px;
     padding: 10px 10px 8px;
     border-radius: 2px;
-    background: var(--hds-ui-colors-white);
+    background: none;
     color: var(--hw-color-primary-darker);
 
     &:hover {
