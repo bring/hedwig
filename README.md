@@ -1,3 +1,7 @@
+# ⚠️ DEPRECATED
+
+The new Hedwig Design System is now stable and can be found [here](https://github.com/bring/hedwig-design-system). This repository will be minimally maintained.
+
 # Hedwig - Posten and Bring Design System.
 
 [![GitHub release](https://img.shields.io/github/release/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig/releases) [![GitHub issues](https://img.shields.io/github/issues/bring/hedwig.svg?style=flat-square)](https://github.com/bring/hedwig/issues)
